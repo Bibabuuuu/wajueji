@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "finite": true,
+    "zero_rotation_strain_increment_exact": true,
+    "pure_rotation_1000_steps_preserves_stretches": true,
+    "pure_rotation_preserves_preexisting_stretches": true,
+    "old_increment_exhibits_artificial_stretch": true
+  },
+  "old_1000_steps_singular_values": [
+    3.484905242919922,
+    3.4849019050598145,
+    1.0000001192092896
+  ],
+  "candidate_1000_steps_singular_values": [
+    0.9999088644981384,
+    0.9999071955680847,
+    0.9999018311500549
+  ],
+  "old_determinant": 12.144554138183594,
+  "candidate_determinant": 0.9997179508209229,
+  "scope": "Pure rigid spin should preserve elastic stretches; this is a constitutive update invariant, not a soil trajectory acceptance."
+}

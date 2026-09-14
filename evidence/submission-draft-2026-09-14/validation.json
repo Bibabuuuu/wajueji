@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "review draft only; team fields and frozen metrics remain pending",
+  "docx": {
+    "path": "复杂介质工况自主挖掘-项目方案技术草稿-v0.1.docx",
+    "sha256": "749a68808d764a81d7d812d10884f5c1c216484fe5d526f558be1da6f3e37b1f",
+    "zip_test_bad_entry": null,
+    "zip_entries": 15
+  },
+  "render": {
+    "path": "复杂介质工况自主挖掘-项目方案技术草稿-v0.1-preview.pdf",
+    "sha256": "8a7dc3cbe28986425e3d40c7906c44f044e7c0c0eb5cd0a53c85a9d4c7b1d176",
+    "renderer": "LibreOffice 24.2 headless on remote Linux",
+    "pages": 7,
+    "page_size": "A4"
+  },
+  "visual_inspection": {
+    "pages_checked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "result": "no clipping or broken table observed; official appendix blank date page preserved"
+  },
+  "ooxml_schema_validation": "not run because bundled validator lacks defusedxml; ZIP integrity, python-docx reopen and LibreOffice render passed"
+}

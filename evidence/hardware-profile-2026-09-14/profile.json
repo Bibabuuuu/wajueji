@@ -1,0 +1,23 @@
+{
+  "captured_at": "2026-09-14T12:09:02+08:00",
+  "host": "qunwang",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 4070",
+    "memory_mib": 12282,
+    "driver_version": "580.173.02"
+  },
+  "cpu_model": "13th Gen Intel(R) Core(TM) i7-13700KF",
+  "logical_cpu_count": 24,
+  "memory_bytes": 33470394368,
+  "board_name": "CVN Z790M FROZEN D5",
+  "home_free_bytes": 627850842112,
+  "old_single_scoop": {
+    "steps": 16190,
+    "sim_time_s": 134.9166666667083,
+    "wall_time_s": 2088.99,
+    "solve_sum_s": 1457.193708833147,
+    "solve_mean_ms": 90.00578806875521,
+    "contact_readback_sum_s": 3.806074864027323,
+    "inventory_sum_s": 99.011222667119
+  }
+}

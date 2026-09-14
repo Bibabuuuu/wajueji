@@ -1,0 +1,80 @@
+{
+  "passed": false,
+  "checks": {
+    "requested_cycles_completed": false,
+    "each_cycle_path_and_holds": false,
+    "all_actual_stage_completions": false,
+    "terrain_reobserved_and_dispatch_checked": true,
+    "planning_retries_bounded": true,
+    "planning_retries_do_not_advance_physics": true,
+    "selection_history_separation": true,
+    "finite_q_and_target": true,
+    "dt_120hz": true,
+    "cycle_ids_ordered": true,
+    "internal_target_8mm": true,
+    "reference_8mm": true,
+    "one_step_wrench_delay": true,
+    "control_port_equation": true,
+    "load_compensation_sign": true,
+    "reference_acceleration": true,
+    "zero_emergency_clamps": true,
+    "closure_under_1mm": true,
+    "perception_fresh_at_dispatch": true,
+    "live_initial_selection_matches_plan": true,
+    "sources_unchanged": true,
+    "stage_confirmation_and_end_state": false,
+    "physical_clock_and_log_count": true,
+    "cycle_state_continuity": true,
+    "per_cycle_new_acquisition": false,
+    "per_cycle_stable_delivery": false,
+    "recorded_residual": true,
+    "no_sampled_scene_outliers": true,
+    "domain_sampling_complete": true
+  },
+  "status": "failed",
+  "steps": 36361,
+  "cycles": 3,
+  "sim_s": 303.0083333362683,
+  "selections": [
+    [
+      5.65,
+      0.050000000000000044
+    ],
+    [
+      5.65,
+      -0.6499999999999999
+    ],
+    [
+      5.25,
+      0.5500000000000003
+    ]
+  ],
+  "minimum_entry_separation_m": 0.6403124237432852,
+  "max_axis_error": [
+    0.0009630452704070813,
+    0.00018401768631431947,
+    0.0001862633328338914,
+    0.0004991240370697536
+  ],
+  "maximum_internal_bound_excess": [
+    -2.206292696794495,
+    -0.0014614510730358576,
+    -0.06530874116846885,
+    -0.0019040381167398923
+  ],
+  "maximum_reference_acceleration": [
+    1.5,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "max_closure_m": 0.0002643087041215273,
+  "max_force_n": 13843.197942273384,
+  "nonzero_force_steps": 33907,
+  "inputs_sha256": {
+    "report.json": "abeb13445006cbd93e6bcddb78ea50d70f8bc7e22f91a69996d131e18d782291",
+    "tracking.jsonl": "4be9622fb3ad712a9875c68a0c266fbe5ac1958a08cd152e35c869abbdf7a8ef"
+  },
+  "maximum_outlier_count": 961,
+  "maximum_scene_outlier_count": 0
+}

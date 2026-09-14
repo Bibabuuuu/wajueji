@@ -1,0 +1,116 @@
+# Python caches and local environments
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local scratch and editor state
+.scratch/
+.idea/
+.vscode/
+*.tmp
+*.bak
+
+# The local evidence store contains many immutable experiment snapshots.
+# The shared repo exposes only the current runtime, decisive results and submission inputs.
+evidence/**
+!evidence/README.md
+
+!evidence/competition-requirements-2026-09-10/
+!evidence/competition-requirements-2026-09-10/requirements.png
+
+!evidence/autonomous-delivery-2026-09-13/
+!evidence/autonomous-delivery-2026-09-13/README.md
+!evidence/autonomous-delivery-2026-09-13/contact03/
+!evidence/autonomous-delivery-2026-09-13/contact03/analysis.json
+!evidence/autonomous-delivery-2026-09-13/contact03/report.json
+!evidence/autonomous-delivery-2026-09-13/contact03/receipt-analysis.json
+
+!evidence/autonomous-multiscoop-2026-09-14-v1/
+!evidence/autonomous-multiscoop-2026-09-14-v1/*.py
+!evidence/autonomous-multiscoop-2026-09-14-v1/*.sh
+!evidence/autonomous-multiscoop-2026-09-14-v1/*.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/README.md
+!evidence/autonomous-multiscoop-2026-09-14-v1/perception/
+!evidence/autonomous-multiscoop-2026-09-14-v1/perception/*.py
+!evidence/autonomous-multiscoop-2026-09-14-v1/planning/
+!evidence/autonomous-multiscoop-2026-09-14-v1/planning/*.py
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/*.py
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/*.cc
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/*.h
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/*.xml
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/*.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator/
+!evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator/*.h
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/geometry-v5/
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/geometry-v5/report.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/empty-3cycle-v1/
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/empty-3cycle-v1/report.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/empty-3cycle-v1/analysis.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/README.md
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/result.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/manual-070934-reference.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/sections.png
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-failed-curl-timeout/
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-failed-curl-timeout/README.md
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-failed-curl-timeout/report.json
+!evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-failed-curl-timeout/analysis.json
+
+!evidence/ca-selection-2026-09-13/
+!evidence/ca-selection-2026-09-13/README.md
+!evidence/ca-selection-2026-09-13/adjudication.json
+!evidence/ca-selection-2026-09-13/candidate-comparison.csv
+
+!evidence/hardware-profile-2026-09-14/
+!evidence/hardware-profile-2026-09-14/profile.json
+!evidence/submission-draft-2026-09-14/
+!evidence/submission-draft-2026-09-14/**
+!evidence/submission-rules-2026-09-14/
+!evidence/submission-rules-2026-09-14/**
+
+# Re-apply cache rules after the selected evidence directories are unignored.
+**/__pycache__/
+*.py[cod]
+
+# Generated builds and native binaries
+build*/
+**/build*/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+**/mpm_bridge
+
+# Large or reproducible simulation artifacts
+*.npz
+*.npy
+*.jsonl
+*.ppm
+*.log
+*.stdout
+*.stderr
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.zip
+
+# Generated media should be exported deliberately for submission
+*.mp4
+*.avi
+*.mkv
+
+# Small runtime inputs that are source-like despite their extension
+!evidence/autonomous-multiscoop-2026-09-14-v1/receiver-mesh.npz
+!evidence/autonomous-multiscoop-2026-09-14-v1/retention-front-rim.npz
+
+# Independently versioned upstream simulator checkout
+excavator_simulator_mujoco/

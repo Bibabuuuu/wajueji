@@ -1,0 +1,7 @@
+{
+  "installed_source": "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/implicit_mpm_solver_kernels.py",
+  "installed_sha256": "f2fab9e1a3cf27bdf68adc71c32a101d10cdc43e1433ceda0aeb19161c72a150",
+  "candidate_sha256": "6a9579e36a1112de199a6251d587e300634f511a67d0d24088666495e30a7dcf",
+  "change": "Replace (I+E+W)F with exp(W)(I+E)F; same first-order strain update and exact finite rotation for E=0. Process-local import only.",
+  "not_claimed": "No field or trajectory validation yet; pure-spin invariance alone does not prove failure causation."
+}

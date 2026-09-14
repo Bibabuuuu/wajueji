@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "checks": {
+    "requested_cycles_completed": true,
+    "each_cycle_path_and_holds": true,
+    "all_actual_stage_completions": true,
+    "terrain_reobserved_and_dispatch_checked": true,
+    "planning_retries_bounded": true,
+    "planning_retries_do_not_advance_physics": true,
+    "selection_history_separation": true,
+    "finite_q_and_target": true,
+    "dt_120hz": true,
+    "cycle_ids_ordered": true,
+    "internal_target_8mm": true,
+    "reference_8mm": true,
+    "one_step_wrench_delay": true,
+    "control_port_equation": true,
+    "load_compensation_sign": true,
+    "reference_acceleration": true,
+    "zero_emergency_clamps": true,
+    "closure_under_1mm": true,
+    "perception_fresh_at_dispatch": true,
+    "live_initial_selection_matches_plan": true,
+    "sources_unchanged": true,
+    "stage_confirmation_and_end_state": true,
+    "physical_clock_and_log_count": true,
+    "cycle_state_continuity": true
+  },
+  "status": "passed",
+  "steps": 49258,
+  "cycles": 3,
+  "sim_s": 410.48333334350167,
+  "selections": [
+    [
+      5.65,
+      0.050000000000000044
+    ],
+    [
+      5.65,
+      -0.5499999999999999
+    ],
+    [
+      5.65,
+      0.6499999999999999
+    ]
+  ],
+  "minimum_entry_separation_m": 0.5999999999999999,
+  "max_axis_error": [
+    0.0009628165224661034,
+    0.0001836022890636113,
+    0.00018625642469893844,
+    0.0004981082665426184
+  ],
+  "maximum_internal_bound_excess": [
+    -2.2062586613986337,
+    -0.0014614507526030662,
+    -0.065308741094536,
+    -0.001023047210629957
+  ],
+  "maximum_reference_acceleration": [
+    1.5,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "max_closure_m": 0.0002597905103996852,
+  "max_force_n": 0.0,
+  "nonzero_force_steps": 0,
+  "inputs_sha256": {
+    "report.json": "4b347280a3989c4324df301b596091965ecdb42ea53b50fb15f4d4780c97188a",
+    "tracking.jsonl": "214ab7f54349e05464111fa8fdf69f9fbab98aade8c6e595c0e987f91aeea2df"
+  }
+}

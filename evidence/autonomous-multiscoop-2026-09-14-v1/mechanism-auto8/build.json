@@ -1,0 +1,41 @@
+{
+  "command": [
+    "g++",
+    "-O2",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-I/home/qunwang/codex-work/autonomous-acquisition-2026-09-13/mechanism-auto8",
+    "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/source",
+    "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+    "/home/qunwang/codex-work/autonomous-acquisition-2026-09-13/mechanism-auto8/mpm_bridge.cc",
+    "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+    "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+    "-l:libmujoco.so.2.3.8",
+    "-o",
+    "/home/qunwang/codex-work/autonomous-acquisition-2026-09-13/mechanism-auto8/mpm_bridge"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "original_before": {
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/mechanism.py": "dc70a921c8ce7a144bef1d14fcae8c35fbefda5feb20385dad17efda5c02a7eb",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/mechanism.xml": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/inertia_controller.h": "6c0f9e33faa839c38e1c026d63e052d3f6aed8bd517899a3997279ddad52fb11",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/gravity_controller.h": "ef4c0592df0f2f134e28c5476c99f489833aef99869735e0b84f9755c715da18",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/mpm_bridge.cc": "afd157167187f155389a279fb51752089e6a509c7abc93c05082ca6ad0d43506",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/excavator_simulator/bounded_velocity.h": "a98c5edf380628522516b475f70c4a421e824bf5d45f854778baee8e7c2f6e6c",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/excavator_simulator/hold_controller.h": "b623b43b5f7e54a9ae8bd8b1176366a5204af437fc37cbb34b6383ef4b40491f"
+  },
+  "original_after": {
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/mechanism.py": "dc70a921c8ce7a144bef1d14fcae8c35fbefda5feb20385dad17efda5c02a7eb",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/mechanism.xml": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/inertia_controller.h": "6c0f9e33faa839c38e1c026d63e052d3f6aed8bd517899a3997279ddad52fb11",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/gravity_controller.h": "ef4c0592df0f2f134e28c5476c99f489833aef99869735e0b84f9755c715da18",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/mpm_bridge.cc": "afd157167187f155389a279fb51752089e6a509c7abc93c05082ca6ad0d43506",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/excavator_simulator/bounded_velocity.h": "a98c5edf380628522516b475f70c4a421e824bf5d45f854778baee8e7c2f6e6c",
+    "/home/qunwang/codex-work/manual-braking-2026-09-13/mechanism-loadff-nominal/excavator_simulator/hold_controller.h": "b623b43b5f7e54a9ae8bd8b1176366a5204af437fc37cbb34b6383ef4b40491f"
+  },
+  "change": "Only isolated controller limit reserve 2mm -> 5mm, plus unchanged native 3mm braking margin gives autonomous 8mm. Plant/gains/load feedforward/braking algorithm unchanged.",
+  "original_unchanged": true,
+  "binary_sha256": "14c1ba0fe02a8ee86684bb856c1d9a5df645e7572d6d878f4a2ab088f412b091"
+}

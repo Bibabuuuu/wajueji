@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "complete_path_and_hold": true,
+    "all_actual_stage_completions": true,
+    "finite_q_and_target": true,
+    "dt_120hz": true,
+    "internal_target_8mm": true,
+    "reference_8mm": true,
+    "one_step_wrench_delay": true,
+    "control_port_equation": true,
+    "load_compensation_sign": true,
+    "reference_acceleration": true,
+    "zero_emergency_clamps": true,
+    "closure_under_1mm": true,
+    "perception_fresh_at_dispatch": true,
+    "live_initial_selection_matches_plan": true,
+    "sources_unchanged": true,
+    "stage_confirmation_and_end_state": true,
+    "physical_clock_and_log_count": true,
+    "stable_delivery_and_recorded_residual": true,
+    "no_sampled_scene_outliers": true,
+    "domain_sampling_complete": true
+  },
+  "status": "passed",
+  "steps": 16190,
+  "sim_s": 134.91666666654802,
+  "max_axis_error": [
+    0.0009588134535761794,
+    0.00018363542100546804,
+    0.00018642654861422692,
+    0.0004987550871270452
+  ],
+  "maximum_internal_bound_excess": [
+    -2.2062926964335814,
+    -0.0014614511387057716,
+    -0.06530915140430754,
+    -0.0019032964465991453
+  ],
+  "maximum_reference_acceleration": [
+    1.5,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "max_closure_m": 0.00026558299994690576,
+  "max_force_n": 14028.465957004672,
+  "nonzero_force_steps": 13901,
+  "inputs_sha256": {
+    "report.json": "96d0c3fda1502f3ca1785f10689aef9720f73d9f4977cf68ed4112bd861f10f1",
+    "tracking.jsonl": "f3135d26f7370445aacf8cfc0e9162defffad227262d99ef66f44299277fd905"
+  },
+  "maximum_outlier_count": 570,
+  "maximum_scene_outlier_count": 0
+}

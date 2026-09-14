@@ -1,0 +1,108 @@
+{
+  "time_s": 39.5166666667,
+  "capacity_liters": 255.164729950989,
+  "inside_points": 8239,
+  "reference_inside_mass_kg": 214.98640625000007,
+  "estimates": {
+    "0.02": {
+      "0.04": {
+        "main_component_points": 9054,
+        "inside_liters": 179.30874062831236,
+        "heap_liters": 1.9804315501057308,
+        "total_fill_percent": 71.04789608392953
+      },
+      "0.05": {
+        "main_component_points": 9063,
+        "inside_liters": 185.8164223533982,
+        "heap_liters": 2.5760234015484222,
+        "total_fill_percent": 73.83169523120702
+      },
+      "0.06": {
+        "main_component_points": 9068,
+        "inside_liters": 191.74932092732206,
+        "heap_liters": 3.1983290017996096,
+        "total_fill_percent": 76.40070395566283
+      }
+    },
+    "0.05": {
+      "0.04": {
+        "main_component_points": 9752,
+        "inside_liters": 180.07215965578698,
+        "heap_liters": 7.971877815366512,
+        "total_fill_percent": 73.69515273810461
+      },
+      "0.05": {
+        "main_component_points": 9777,
+        "inside_liters": 186.62383267328653,
+        "heap_liters": 9.576875059573197,
+        "total_fill_percent": 76.89178193653376
+      },
+      "0.06": {
+        "main_component_points": 9779,
+        "inside_liters": 192.64195445923522,
+        "heap_liters": 11.651447774492775,
+        "total_fill_percent": 80.06333879802582
+      }
+    },
+    "0.1": {
+      "0.04": {
+        "main_component_points": 10213,
+        "inside_liters": 181.07184851366253,
+        "heap_liters": 16.79521860444196,
+        "total_fill_percent": 77.54483433353427
+      },
+      "0.05": {
+        "main_component_points": 10251,
+        "inside_liters": 187.41806078387054,
+        "heap_liters": 19.538231223855117,
+        "total_fill_percent": 81.1069351345999
+      },
+      "0.06": {
+        "main_component_points": 10254,
+        "inside_liters": 193.69818257448796,
+        "heap_liters": 21.86128690519465,
+        "total_fill_percent": 84.47855215769296
+      }
+    },
+    "0.2": {
+      "0.04": {
+        "main_component_points": 10597,
+        "inside_liters": 182.24873974433876,
+        "heap_liters": 25.013396573198097,
+        "total_fill_percent": 81.22679664910856
+      },
+      "0.05": {
+        "main_component_points": 10653,
+        "inside_liters": 188.94829558061122,
+        "heap_liters": 29.83243817307058,
+        "total_fill_percent": 85.74097752291404
+      },
+      "0.06": {
+        "main_component_points": 10654,
+        "inside_liters": 195.39451567019017,
+        "heap_liters": 33.65546820877564,
+        "total_fill_percent": 89.76553457171012
+      }
+    },
+    "None": {
+      "0.04": {
+        "main_component_points": 11206,
+        "inside_liters": 184.72511504221995,
+        "heap_liters": 35.5240605850423,
+        "total_fill_percent": 86.31646531617704
+      },
+      "0.05": {
+        "main_component_points": 11279,
+        "inside_liters": 191.57045671472468,
+        "heap_liters": 47.27140256521609,
+        "total_fill_percent": 93.60300670308806
+      },
+      "0.06": {
+        "main_component_points": 11280,
+        "inside_liters": 198.13280352823622,
+        "heap_liters": 52.92888643657871,
+        "total_fill_percent": 98.39200347674925
+      }
+    }
+  }
+}

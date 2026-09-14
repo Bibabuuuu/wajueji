@@ -1,0 +1,928 @@
+{
+  "status": "passed",
+  "mode": "contact",
+  "sources_before": {
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/work_envelope.py": "8fd707635502ea405474845b18c91e97b53b4e4d81006e2af8b9a33da903cb3b",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/pose_goals.py": "31bcf817c04b104edf1d58c814eb4fbb3b53980595d183fe96730757148a62a6",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/run.py": "6c18b29434b3812bceb5e369de97612eb69b76c0d868e3f50df9c2ab6cc7287e",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/objective_strain.py": "6a9579e36a1112de199a6251d587e300634f511a67d0d24088666495e30a7dcf",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/test_gate.py": "49ae8c2d51dab2fe86280ff4f33c4117b83e6965dec5935e95d12e36005e778c",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/matplotlib_path_free.py": "3da7a073f9d7374ff4830f543493b44b70cebb78fa72dfdd96e2762ecb85c946",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/stage_gate.py": "e9784e004644234af6498f8aff84c21b16dfe3da3926332a5d77da119998ffca",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/truck_receiver.py": "d925267a69244776efee3e3955183c69708d36cd97c8b24fa14a556c8c39dd73",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/geometry.py": "497cf46edfcddc9be40ec1215296bf6b3855d3d24322bad9c04a7b50aaa5d312",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/reference_tracking.py": "8ad3facf7cf9e9e176f636eb4390afd8bdf0d789154c6b1f247d5c8421e01588",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/common.py": "526e126843ce543ea1b2e32bbdb8d473887bec105be33e4bd8d4d0ea926e7337",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/audit_mesh_distance.py": "80d8c7ba6fcefccade7a28c59489ddd2ba05adc9dc601fea074164fd0a357d88",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/scene_clearance.py": "d6ffd1a115ac043baf31092350f3685b89cf077ff12ec9e135f66d67f76e82ac",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/audit.py": "874f5719b5757184868caf35b3bcde84cac3b47414dacd50ad93b5fdf4dc8ba4",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/manual_scene.py": "76fede7cfaaaf275dd576899397e1a076de41e54188e9f75e43dd963477f1bf8",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/test_receipt.py": "18c30baf661373af6628903b6de4ec2d3fe8d3b08f394c251412883261596464",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/retention_observer.py": "52ac67b15f09c2c4e94974f30704ee1b0923bb7f9dd03735e863163788e399b8",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/test_envelope.py": "0f0fa4b8c9fa28f27f2da2da0651c8e7d9985a324c85e2fbedd2b59d63b7543e",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/receipt_observer.py": "1f970d1897da805d5f91639d8541e25e70019bafdce4f3abc11d86537f1b8417",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/preflight.py": "860e1124e8e5979a47ae2174eef2054a31696257df5bb58c74c32fee42cedff5",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/retention-front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/objectivity-source.json": "dfc6ad9966a4b0f7d321527bbf1dc310e1e95df7889d1a4f41b4fe8dd5483fc7",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/objectivity-test.json": "15ffc6c5db05d1f47ac63ca80510ac3452c40aaf6e442967b5f94e9cdc5cdd21",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/receiver-contract.json": "e72d6b33e6056aadde650920ded7892a943b19eea2aae1458fde02b287a1805d",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/receiver-mesh.npz": "bd379fc56bd492b4e0a342f8432869f2926a6e1f10a4face407d70c5784fa640",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/gravity_controller.h": "ef4c0592df0f2f134e28c5476c99f489833aef99869735e0b84f9755c715da18",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/inertia_controller.h": "6c0f9e33faa839c38e1c026d63e052d3f6aed8bd517899a3997279ddad52fb11",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mpm_bridge.cc": "abb1c9c2597e31d1bd7f4bf56ef42520d452f3ee95de3bab9f382e7fb0901a80",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mechanism.xml": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mechanism.py": "dc70a921c8ce7a144bef1d14fcae8c35fbefda5feb20385dad17efda5c02a7eb",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mpm_bridge": "14c1ba0fe02a8ee86684bb856c1d9a5df645e7572d6d878f4a2ab088f412b091",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/excavator_simulator/bounded_velocity.h": "a98c5edf380628522516b475f70c4a421e824bf5d45f854778baee8e7c2f6e6c",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/excavator_simulator/hold_controller.h": "b623b43b5f7e54a9ae8bd8b1176366a5204af437fc37cbb34b6383ef4b40491f",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/manual_ready.py": "2632818dd0bede4a0cf40af030cb6393eb19060fafe2f2750010643491c40895",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/bank_runtime.py": "e627d202db67d5c3ee0cb5e486b311b821a281cfecbfc096fb9f4a456f6e1616",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/bank_soil.py": "e208977990e39f497545f43f1eff148368176398cc784fcdf8f18e7c4a76909d",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/soil_surface.py": "1e99f123d1a8fd6e3a813805c5a4772f556327f64be76fc4d9fcc25d7a6daf0e",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/closed_chain.py": "7f180b7d005cda5469e9925fc1fc89e7a323d241b58e0312f2b969867ce3a521",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/truck_layout.py": "4ef7cd5131a200fb0bc91cdd9f2799db01c84e643931cf01cfa04b84e1068a02",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/operator-start.json": "8c196f9808e07d4417fa7c2a81c93e59c4adbfa580be2c15df445bcbef72b182",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/__init__.py": "54bbf9b42aa8d2fed72d70b33b2d91bbd8632c614201e592e6f2de7a9a9da2ef",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/moving_sweep.py": "1bf6e4d4fcf728ac1319eb62a6a69fb96683ab115cb9e73e0a778edf1de8f973",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/solid_bank.py": "d424ae75ecc5a25277e7362d816b900430bec499d0ffab88c32e73708399c468",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/planning/cycle.py": "6a4e07c5ffb9d0e2626444caf8445b646f908c55d334d8cd14c9da03dfd95e57",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/planning/approach.py": "456ee8044db728d833d03317b9b14180d7a144687e50e92d811cfd658274830b",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/online.py": "a9d86900835d6951f9d0c9f51fe3b5436632f39e4b6b79ee5bb0c5c750d55d95",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/core.py": "6497106e8146214d0e74faaa4d9e22c4c1e120696d90ac7a642f3324a7c537f6",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/__init__.py": "9ecacdaff4f8ff6a090bb8fc7b6381e43804a0f3b280987b726b40cb345d3f60",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/virtual_depth.py": "e6b79fb80a420b78bd763351817c24510cf2bf6e3157520bb480a9485b7336e8",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/cohesive-fine01/soil-config.json": "7b74bf798a0ddd00aa6b6e5bdaa995ae9f4dd9dabd14b794ef35a90146eb3420",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/swept_contact.py": "5e1d6c325e89c714115662c841e4ea0f13e93ad3f457b6ebb4fbef6cb08a6fbf",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/gpu_diagnostics.py": "40b1da496018f0b781d3b60a4e2692924b8f7040d4a8a43fabcf51482b250d6d",
+    "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/implicit_mpm_solver_kernels.py": "f2fab9e1a3cf27bdf68adc71c32a101d10cdc43e1433ceda0aeb19161c72a150"
+  },
+  "steps": 16190,
+  "mechanism_steps": 16190,
+  "logged_steps": 16190,
+  "mpm_steps": 16190,
+  "stages": {
+    "APPROACH": {
+      "status": "passed",
+      "start_s": 0,
+      "reference_duration_s": 17.983333333333334,
+      "end_s": 18.23333333332081,
+      "maximum_axis_error": [
+        1.1597426870582628e-06,
+        0.00014883449786740055,
+        0.0001852256160561616,
+        5.9333737599476244e-05
+      ],
+      "endpoint_error": [
+        8.914762082787991e-07,
+        1.244110349146732e-05,
+        2.7643755803496983e-05,
+        3.6272726199326755e-06
+      ],
+      "endpoint_velocity": [
+        -8.963427447730284e-07,
+        1.2016200001905535e-05,
+        3.053675978304699e-05,
+        -3.1712147467466004e-06
+      ]
+    },
+    "CUT": {
+      "status": "passed",
+      "start_s": 18.241666666654137,
+      "reference_duration_s": 4.266666666666667,
+      "end_s": 22.74999999998337,
+      "maximum_axis_error": [
+        8.840708026914418e-07,
+        9.045599327700549e-05,
+        2.8960881333917055e-05,
+        0.00018877286278717875
+      ],
+      "endpoint_error": [
+        9.797414624382328e-09,
+        7.113079425058455e-05,
+        1.6643036732155725e-05,
+        0.00014877222198994566
+      ],
+      "endpoint_velocity": [
+        -1.630030198766474e-08,
+        6.614377176064342e-05,
+        4.6668225194415634e-05,
+        -0.00012910797554388696
+      ]
+    },
+    "DEEPEN": {
+      "status": "passed",
+      "start_s": 22.758333333316696,
+      "reference_duration_s": 1.7166666666666666,
+      "end_s": 24.724999999981573,
+      "maximum_axis_error": [
+        1.3090762699535796e-08,
+        0.00010857756906285099,
+        6.709565601775713e-05,
+        0.0002709802456432042
+      ],
+      "endpoint_error": [
+        1.965974041548413e-09,
+        7.965410424659591e-05,
+        5.423724724179513e-05,
+        0.00020265174399825003
+      ],
+      "endpoint_velocity": [
+        -2.3165165028363728e-08,
+        2.099641493437263e-05,
+        0.0002244487662114136,
+        -0.0001864848109294099
+      ]
+    },
+    "CURL": {
+      "status": "passed",
+      "start_s": 24.7333333333149,
+      "reference_duration_s": 2.5166666666666666,
+      "end_s": 27.49999999997905,
+      "maximum_axis_error": [
+        1.0814363302427688e-08,
+        7.815804965133344e-05,
+        5.177958791774406e-05,
+        0.0003180087736166515
+      ],
+      "endpoint_error": [
+        1.960506444687038e-10,
+        4.703605304950953e-05,
+        2.0307368334804288e-05,
+        0.00023797587439355894
+      ],
+      "endpoint_velocity": [
+        3.899545720806664e-09,
+        5.736986970886324e-05,
+        -5.249450783361951e-05,
+        -0.0003318203662257097
+      ]
+    },
+    "LIFT": {
+      "status": "passed",
+      "start_s": 27.508333333312375,
+      "reference_duration_s": 13.45,
+      "end_s": 41.20833333329992,
+      "maximum_axis_error": [
+        1.3895246602640965e-09,
+        4.9524267681233525e-05,
+        2.550244339810659e-05,
+        0.00023496453760429858
+      ],
+      "endpoint_error": [
+        4.1590625214638077e-10,
+        3.396321620874332e-05,
+        8.188992190294453e-06,
+        2.7314204330552982e-06
+      ],
+      "endpoint_velocity": [
+        3.185676781654294e-10,
+        -2.8602452477943492e-05,
+        -3.085330110341651e-05,
+        -9.371690146646648e-06
+      ]
+    },
+    "TURN": {
+      "status": "passed",
+      "start_s": 51.21666666662415,
+      "reference_duration_s": 9.716666666666667,
+      "end_s": 61.174999999948426,
+      "maximum_axis_error": [
+        0.00031131951316332174,
+        1.987462903141335e-07,
+        1.1083988532556432e-07,
+        4.818237476778009e-07
+      ],
+      "endpoint_error": [
+        0.00024166035587147583,
+        9.552665325429643e-09,
+        1.8890866593235245e-08,
+        2.785606878497049e-08
+      ],
+      "endpoint_velocity": [
+        -0.00024281589409562716,
+        2.444643781436522e-07,
+        -2.5496338858005643e-07,
+        2.435629117024374e-07
+      ]
+    },
+    "ALIGN": {
+      "status": "passed",
+      "start_s": 61.18333333328175,
+      "reference_duration_s": 7.05,
+      "end_s": 68.47499999994179,
+      "maximum_axis_error": [
+        0.0002396541095960325,
+        1.7583949808552823e-05,
+        7.258989676672822e-05,
+        6.5237268570550455e-06
+      ],
+      "endpoint_error": [
+        1.6045492323701893e-07,
+        1.3597166967693752e-05,
+        5.6646556998163344e-05,
+        5.198467143974206e-06
+      ],
+      "endpoint_velocity": [
+        -1.6189004095279654e-07,
+        1.3982353679135022e-05,
+        5.887340431826812e-05,
+        -4.8337922372678495e-06
+      ]
+    },
+    "DUMP": {
+      "status": "passed",
+      "start_s": 68.48333333327511,
+      "reference_duration_s": 5.3,
+      "end_s": 74.02499999993674,
+      "maximum_axis_error": [
+        1.5910373729610683e-07,
+        3.4282409800745484e-05,
+        6.0303250564774924e-05,
+        0.0002535258531226603
+      ],
+      "endpoint_error": [
+        9.029268444038507e-10,
+        2.5574142478723694e-05,
+        2.7942063625219227e-05,
+        0.0001975197890914382
+      ],
+      "endpoint_velocity": [
+        -2.7808393239594805e-10,
+        -2.0825552235758358e-05,
+        -2.7708537651751597e-05,
+        0.00020416079022213057
+      ]
+    },
+    "CLEAR_TRUCK": {
+      "status": "passed",
+      "start_s": 84.03333333326097,
+      "reference_duration_s": 5.3,
+      "end_s": 89.5749999999226,
+      "maximum_axis_error": [
+        1.3070852178387327e-09,
+        3.3249539107604864e-05,
+        3.327091997140652e-05,
+        0.00025432968728844596
+      ],
+      "endpoint_error": [
+        5.2716164766763995e-11,
+        2.740341795431922e-05,
+        2.362916588760644e-05,
+        0.0001915274672913414
+      ],
+      "endpoint_velocity": [
+        1.9011214242076234e-10,
+        2.81885423069637e-05,
+        1.569125426271267e-05,
+        -0.00022649504779461032
+      ]
+    },
+    "RETURN_SWING": {
+      "status": "passed",
+      "start_s": 89.58333333325592,
+      "reference_duration_s": 9.833333333333334,
+      "end_s": 99.65833333324676,
+      "maximum_axis_error": [
+        0.0003083896899424912,
+        2.716682376546764e-05,
+        2.352081247725124e-05,
+        0.00018967067128738968
+      ],
+      "endpoint_error": [
+        0.0002393313035520765,
+        2.9578346438796643e-09,
+        3.295238804046363e-09,
+        9.551520574468952e-09
+      ],
+      "endpoint_velocity": [
+        0.00024052999638562956,
+        1.6432938737234573e-08,
+        -4.964782672207641e-08,
+        1.0536264589159119e-07
+      ]
+    },
+    "RETURN": {
+      "status": "passed",
+      "start_s": 99.66666666658008,
+      "reference_duration_s": 25.0,
+      "end_s": 124.91666666655712,
+      "maximum_axis_error": [
+        0.0002373439988097335,
+        4.151218568893e-06,
+        2.6320506966492907e-05,
+        2.450606199366767e-05
+      ],
+      "endpoint_error": [
+        2.0172654673352846e-11,
+        3.1652758978317763e-06,
+        2.035435385161488e-05,
+        1.8897902828718394e-05
+      ],
+      "endpoint_velocity": [
+        2.746990787384331e-11,
+        -2.6243027138537508e-06,
+        -2.1022461664499913e-05,
+        1.9619326037114434e-05
+      ]
+    }
+  },
+  "events": [
+    {
+      "from": "APPROACH",
+      "to": "CUT",
+      "sim_s": 18.23333333332081,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "CUT",
+      "to": "DEEPEN",
+      "sim_s": 22.74999999998337,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "DEEPEN",
+      "to": "CURL",
+      "sim_s": 24.724999999981573,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "CURL",
+      "to": "LIFT",
+      "sim_s": 27.49999999997905,
+      "actual_reached": true,
+      "cavity_kg": 54.19671735726297,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "LIFT",
+      "to": "HOLD",
+      "sim_s": 41.20833333329992,
+      "actual_reached": true,
+      "cavity_kg": 62.807654635980725,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "HOLD",
+      "to": "TURN",
+      "sim_s": 51.208333333290824,
+      "actual_reached": true,
+      "confirmation_s": 9.999999999990905
+    },
+    {
+      "from": "TURN",
+      "to": "ALIGN",
+      "sim_s": 61.174999999948426,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "ALIGN",
+      "to": "DUMP",
+      "sim_s": 68.47499999994179,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "DUMP",
+      "to": "SETTLE",
+      "sim_s": 74.02499999993674,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "SETTLE",
+      "to": "CLEAR_TRUCK",
+      "sim_s": 84.02499999992764,
+      "actual_reached": true,
+      "confirmation_s": 9.999999999990905
+    },
+    {
+      "from": "CLEAR_TRUCK",
+      "to": "RETURN_SWING",
+      "sim_s": 89.5749999999226,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "RETURN_SWING",
+      "to": "RETURN",
+      "sim_s": 99.65833333324676,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    },
+    {
+      "from": "RETURN",
+      "to": "FINAL_HOLD",
+      "sim_s": 124.91666666655712,
+      "actual_reached": true,
+      "cavity_kg": null,
+      "confirmation_s": 0.24999999999977263
+    }
+  ],
+  "gui": false,
+  "scope": "single observed-strip acquisition, delivery and return; residual observed without invented contest cutoff",
+  "reaction_lag_steps": 1,
+  "extra_projection_impulses_in_feedback": false,
+  "wall_s": 2088.9901578920108,
+  "geometry_report_sha256": "831b4ad840ff9865a5d9e6477a13128a4089a58ca22ad998bc44a8285221be6f",
+  "reference_paths_sha256": {
+    "APPROACH": "8aadc35f91e562141f79069128ba1d076c230b0ecbd5a35735ea707fbcefca11",
+    "CUT": "3f1c90b1d66316628ab26cfa2bfc668e891d1fcd5618450e63536ac255047318",
+    "DEEPEN": "833dbf620cfe79f8126c9e7e165435572071aaee3aa912c5034eb9a0d624b129",
+    "CURL": "23c10d1d1f06458f60ca4cd343a7145b5508c1ecab0403c4dffa3d1e34fb13c6",
+    "LIFT": "32b577c7a4fd07fe50090165a186a594fb076468bd67b7ac970cafa89e18d4f4",
+    "TURN": "04a2584494ca5dde80e63db0ec02aceccd96df3b5c55aaf6cd153cec4efc24c0",
+    "ALIGN": "7b6442f3864688146a962fcd165858bc9256de52bec5c1232c0586ebd98faa10",
+    "DUMP": "f9992d313ff823cf29ba0c4f41d8bea1045d407f5e9b905e22524ed9917f893e",
+    "CLEAR_TRUCK": "40c8f1328a4f27269901b71b1f67b6caad7b56047f214533250e18ba6d8c8bf3",
+    "RETURN_SWING": "65fbfd5789f818581ff4e81f39758cd2c0b624a97b4c4b7389cb057fe935e6de",
+    "RETURN": "3a759e8c5a1f80fa86a719acaae140ab7be5c9be2e339468db2f9985bc8d56b6"
+  },
+  "selection": {
+    "entry_xy_m": [
+      5.65,
+      0.050000000000000044
+    ],
+    "surface_z_m": 1.601799366785488,
+    "score": 0.3670899683392745,
+    "source": "fresh_observed_strip",
+    "candidate_count": 94,
+    "width_m": 0.6
+  },
+  "unit_tests_sha256": "c389badb3a3724c2384ac2ee82cc686cd5288d1e111251b4918aae90570d388e",
+  "probe_sha256": "840998c7c8cf6a4a583350fab7a6adc4db5d1b010c5676ac066b7e3118eda864",
+  "empty_report_sha256": "42d225f51cc2074023c6bba7cf067bfd8520d70931b47305c524198f98b8a4d2",
+  "target_bounds": [
+    [
+      -2.992,
+      2.992
+    ],
+    [
+      0.068,
+      0.552
+    ],
+    [
+      0.28800000000000003,
+      1.092
+    ],
+    [
+      0.378,
+      0.852
+    ]
+  ],
+  "work_envelope": {
+    "original_xy": [
+      [
+        1,
+        -4
+      ],
+      [
+        9,
+        4
+      ]
+    ],
+    "truck_xy": [
+      [
+        1.133783124360245,
+        1.1359233924219663
+      ],
+      [
+        6.059825078525947,
+        6.382546435004914
+      ]
+    ],
+    "z_bounds": [
+      -0.05,
+      5.0
+    ],
+    "combination": "union of footprints with unchanged height bounds",
+    "source": "actual truck_parts CAD triangles"
+  },
+  "maximum_scene_outlier_count": 0,
+  "initial_particle_q_exact": true,
+  "initial_particle_v_zero": true,
+  "original_soil_config_match": {
+    "particles": true,
+    "material": true,
+    "voxel_m": true,
+    "particle_spacing_m": true,
+    "initial_mass_kg": true,
+    "numerics": true,
+    "static_continuous_collision": true,
+    "body_map": true
+  },
+  "retention_last": {
+    "time_s": 134.9166666667083,
+    "stage": "FINAL_HOLD",
+    "mark": "final",
+    "cavity_kg": 9.315468510612845,
+    "cohorts": {
+      "initial": {
+        "initial_cavity_kg": 0.0,
+        "still_in_cavity_kg": 0.0,
+        "cavity_retained_fraction": null,
+        "outside_cavity_kg": 0.0,
+        "outside_expanded_bucket_box_kg": 0.0,
+        "outside_box_falling_kg": 0.0
+      },
+      "hold-start": {
+        "initial_cavity_kg": 62.807654635980725,
+        "still_in_cavity_kg": 9.132812265306711,
+        "cavity_retained_fraction": 0.14540922309929372,
+        "outside_cavity_kg": 53.674842370674014,
+        "outside_expanded_bucket_box_kg": 50.204373709857464,
+        "outside_box_falling_kg": 0.0
+      },
+      "hold-end": {
+        "initial_cavity_kg": 62.62499839067459,
+        "still_in_cavity_kg": 9.132812265306711,
+        "cavity_retained_fraction": 0.14583333333333334,
+        "outside_cavity_kg": 53.49218612536788,
+        "outside_expanded_bucket_box_kg": 50.204373709857464,
+        "outside_box_falling_kg": 0.0
+      },
+      "dump-arrival": {
+        "initial_cavity_kg": 14.221093384549022,
+        "still_in_cavity_kg": 9.211093513295054,
+        "cavity_retained_fraction": 0.6477064220183486,
+        "outside_cavity_kg": 5.009999871253967,
+        "outside_expanded_bucket_box_kg": 2.0092186983674765,
+        "outside_box_falling_kg": 0.0
+      },
+      "unloaded": {
+        "initial_cavity_kg": 13.281718408688903,
+        "still_in_cavity_kg": 9.211093513295054,
+        "cavity_retained_fraction": 0.693516699410609,
+        "outside_cavity_kg": 4.070624895393848,
+        "outside_expanded_bucket_box_kg": 1.1742187198251486,
+        "outside_box_falling_kg": 0.0
+      },
+      "return-arrival": {
+        "initial_cavity_kg": 9.315468510612845,
+        "still_in_cavity_kg": 9.184999763965607,
+        "cavity_retained_fraction": 0.9859943977591037,
+        "outside_cavity_kg": 0.13046874664723873,
+        "outside_expanded_bucket_box_kg": 0.0,
+        "outside_box_falling_kg": 0.0
+      },
+      "returned": {
+        "initial_cavity_kg": 9.315468510612845,
+        "still_in_cavity_kg": 9.315468510612845,
+        "cavity_retained_fraction": 1.0,
+        "outside_cavity_kg": 0.0,
+        "outside_expanded_bucket_box_kg": 0.0,
+        "outside_box_falling_kg": 0.0
+      },
+      "final": {
+        "initial_cavity_kg": 9.315468510612845,
+        "still_in_cavity_kg": 9.315468510612845,
+        "cavity_retained_fraction": 1.0,
+        "outside_cavity_kg": 0.0,
+        "outside_expanded_bucket_box_kg": 0.0,
+        "outside_box_falling_kg": 0.0
+      }
+    }
+  },
+  "receipt_last": {
+    "time_s": 134.9166666667083,
+    "stage": "FINAL_HOLD",
+    "mark": "final",
+    "core_kg": 193.25030753389,
+    "initial_core_kg": 0.0,
+    "stable_kg": 193.22421378456056,
+    "stable_acquired_kg": 44.35937386006117,
+    "stable_new_kg": 193.22421378456056,
+    "initial_not_stable_kg": 0.0,
+    "stable_net_kg": 193.22421378456056,
+    "boundary_kg": 16.412968328222632,
+    "above_rim_unverified_kg": 1.9309374503791332,
+    "bucket_kg": 9.315468510612845,
+    "window_s": 5.0,
+    "speed_limit_m_s": 0.05,
+    "maximum_sample_gap_s": 0.250001,
+    "scope": "5s persistent low-speed point-centre occupancy; support and fill uncalibrated"
+  },
+  "live_initial_selection_match": true,
+  "maximum_axis_error": [
+    0.00031131951316332174,
+    0.00014883449786740055,
+    0.0001852256160561616,
+    0.0003180087736166515
+  ],
+  "last_mechanism": {
+    "time_s": 134.91666666654802,
+    "qpos": [
+      -3.317731598107071e-14,
+      -7.694110061881364e-15,
+      0.039998908293299426,
+      0.9999999999999525,
+      1.8707142125273686e-07,
+      -2.448840105101164e-07,
+      -5.115142394176665e-14,
+      1.5647567030225727e-14,
+      -0.06573371422886387,
+      0.5505344832597263,
+      -0.07617442620906575,
+      -0.014716469937504247,
+      0.728265853523639,
+      0.3610797146593607,
+      -0.07384696722955707,
+      0.5002499990690745,
+      -0.4381691628614611,
+      -0.6602148430940611,
+      0.5340155576964232
+    ],
+    "qvel": [
+      9.968335129923701e-16,
+      -1.7590050702898633e-14,
+      -1.0121694615041234e-14,
+      1.1164820570391428e-13,
+      1.7938282841549663e-13,
+      1.426436246280648e-13,
+      -5.305117912403598e-13,
+      7.252265136862061e-10,
+      -3.507283728674783e-10,
+      8.469048806108773e-10,
+      -3.858733498014456e-11,
+      -1.2436595420210841e-09,
+      -2.117600977380281e-09,
+      2.3540553571837837e-10,
+      1.108050250524277e-09,
+      2.3059127148899855e-09,
+      3.1541229315501574e-09,
+      -2.721161027812986e-09
+    ],
+    "bucket_origin": [
+      4.174339822311406,
+      -1.159340556494836e-06,
+      3.138656527314269
+    ],
+    "bucket_rotation": [
+      0.9809732533747756,
+      -4.966318950747428e-15,
+      -0.1941429271524163,
+      -7.263718174531203e-08,
+      0.9999999999999302,
+      -3.6702412240365624e-07,
+      0.1941429271524027,
+      3.7414284250547345e-07,
+      0.980973253374707
+    ],
+    "axis_qpos_address": [
+      7,
+      9,
+      12,
+      15
+    ],
+    "axis_dof_address": [
+      6,
+      8,
+      11,
+      14
+    ],
+    "target": [
+      -4.279256046490426e-15,
+      0.5505344832477018,
+      0.7282658535343394,
+      0.5002499990723892
+    ],
+    "target_velocity": [
+      -7.36251497574062e-14,
+      -1.5145218412726535e-10,
+      -8.951372976184757e-10,
+      8.327072364977539e-10
+    ],
+    "actuator_force": [
+      0,
+      0,
+      0,
+      0,
+      0.011404943782307605,
+      122852.75999465957,
+      -23846.5286870962,
+      -4354.477741363924,
+      3.501860281970675e-07,
+      0.00013706031663122928,
+      3.683170690927756e-05,
+      -2.885270281788866e-05
+    ],
+    "applied_generalized_force": [
+      -0.01072858640289144,
+      -0.002496764243673081,
+      -152.03789166080912,
+      0.20005601973004283,
+      702.7915266673576,
+      -0.008533534769243263,
+      -0.008533534769243263,
+      0,
+      0,
+      653.2396623134141,
+      0,
+      0,
+      312.6779952257615,
+      0,
+      0,
+      0,
+      68.16694522757525,
+      0
+    ],
+    "equivalent_drive_load": [
+      -0.008533534769243263,
+      -1434.9366286491431,
+      549.2188577437777,
+      186.34049238782936
+    ],
+    "external_load_compensation": [
+      0.008533534769243263,
+      1434.9366286491431,
+      -549.2188577437777,
+      -186.34049238782936
+    ],
+    "unloaded_feedforward": [
+      0.0028714291609339983,
+      121417.82395019867,
+      -23297.30987008093,
+      -4168.137260305444
+    ],
+    "last_control_target": [
+      -4.279256046490426e-15,
+      0.5505344832477018,
+      0.7282658535343394,
+      0.5002499990723892
+    ],
+    "last_hold_control": [
+      1.1404959650921216e-08,
+      0.5530939157597612,
+      0.7223042213523831,
+      0.4987985064881581
+    ],
+    "hold_gain": [
+      1000000,
+      48000000,
+      4000000,
+      3000000
+    ],
+    "maximum_reference_acceleration": [
+      1.5,
+      1,
+      1,
+      1
+    ],
+    "emergency_reference_substeps": 0,
+    "closure_m": 0.00026558299994690576,
+    "contact_count": 0,
+    "virtual_power_residual_w": 2.7284841053187847e-12
+  },
+  "sim_s": 134.91666666654802,
+  "last_inventory": {
+    "sim_time_s": 134.90000000004164,
+    "step": 16188,
+    "source_kg": 9832.281309831887,
+    "bucket_kg": 9.315468510612845,
+    "truck_kg": 184.97858899645507,
+    "air_or_outside_kg": 160.42437087744474,
+    "bucket_reference_liters": 5.578124856654399,
+    "truck_reference_liters": 110.76562215356591,
+    "partition_residual_kg": 0.0,
+    "speed_notice_steps": 0,
+    "physics_review_required": false,
+    "max_particle_z_m": 2.4454586505889893,
+    "bounds_min_m": [
+      2.368563413619995,
+      -1.0938658714294434,
+      0.002272697165608406
+    ],
+    "bounds_max_m": [
+      6.049368381500244,
+      4.445051670074463,
+      2.4454586505889893
+    ],
+    "kinetic_energy_j": 0.00022268336105156578,
+    "speed_p99_m_s": 0.0006939018494449556,
+    "min_particle_z_m": 0.002272697165608406,
+    "max_particle_speed_m_s": 0.03376686945557594,
+    "bucket_force_n": [
+      -0.009629651632734292,
+      -0.0032821628605541817,
+      -152.03750692568656
+    ],
+    "bucket_torque_nm": [
+      0.19150709939667923,
+      68.1657454025883,
+      0.001546291185794055
+    ],
+    "transition_mass_kg": [
+      [
+        9832.281309831887,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        9.315468510612845,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        184.95249524712563,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.026093749329447746,
+        160.42437087744474
+      ]
+    ],
+    "solid_mass_kg": 0.0,
+    "global_mass_residual_kg": -0.00026178360167250503,
+    "outlier_count": 524,
+    "outlier_mass_kg": 13.673124648630619,
+    "fast_point_count": 0,
+    "fast_mass_kg": 0.0,
+    "moving_sweep_hits": 0,
+    "force_scope": "native MPM contact only; extra moving-sweep impulses not included"
+  },
+  "endpoint_arrival_s": 41.20833333329992,
+  "hold_duration_s": 9.999999999990905,
+  "hold_max_axis_error": [
+    4.2921750528779334e-10,
+    3.373022196517805e-05,
+    7.925972290878658e-06,
+    3.1837062779427328e-06
+  ],
+  "unload_wait_s": 9.999999999990905,
+  "final_hold_duration_s": 9.999999999990905,
+  "sources_after": {
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/work_envelope.py": "8fd707635502ea405474845b18c91e97b53b4e4d81006e2af8b9a33da903cb3b",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/pose_goals.py": "31bcf817c04b104edf1d58c814eb4fbb3b53980595d183fe96730757148a62a6",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/run.py": "6c18b29434b3812bceb5e369de97612eb69b76c0d868e3f50df9c2ab6cc7287e",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/objective_strain.py": "6a9579e36a1112de199a6251d587e300634f511a67d0d24088666495e30a7dcf",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/test_gate.py": "49ae8c2d51dab2fe86280ff4f33c4117b83e6965dec5935e95d12e36005e778c",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/matplotlib_path_free.py": "3da7a073f9d7374ff4830f543493b44b70cebb78fa72dfdd96e2762ecb85c946",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/stage_gate.py": "e9784e004644234af6498f8aff84c21b16dfe3da3926332a5d77da119998ffca",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/truck_receiver.py": "d925267a69244776efee3e3955183c69708d36cd97c8b24fa14a556c8c39dd73",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/geometry.py": "497cf46edfcddc9be40ec1215296bf6b3855d3d24322bad9c04a7b50aaa5d312",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/reference_tracking.py": "8ad3facf7cf9e9e176f636eb4390afd8bdf0d789154c6b1f247d5c8421e01588",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/common.py": "526e126843ce543ea1b2e32bbdb8d473887bec105be33e4bd8d4d0ea926e7337",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/audit_mesh_distance.py": "80d8c7ba6fcefccade7a28c59489ddd2ba05adc9dc601fea074164fd0a357d88",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/scene_clearance.py": "d6ffd1a115ac043baf31092350f3685b89cf077ff12ec9e135f66d67f76e82ac",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/audit.py": "874f5719b5757184868caf35b3bcde84cac3b47414dacd50ad93b5fdf4dc8ba4",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/manual_scene.py": "76fede7cfaaaf275dd576899397e1a076de41e54188e9f75e43dd963477f1bf8",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/test_receipt.py": "18c30baf661373af6628903b6de4ec2d3fe8d3b08f394c251412883261596464",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/retention_observer.py": "52ac67b15f09c2c4e94974f30704ee1b0923bb7f9dd03735e863163788e399b8",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/test_envelope.py": "0f0fa4b8c9fa28f27f2da2da0651c8e7d9985a324c85e2fbedd2b59d63b7543e",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/receipt_observer.py": "1f970d1897da805d5f91639d8541e25e70019bafdce4f3abc11d86537f1b8417",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/preflight.py": "860e1124e8e5979a47ae2174eef2054a31696257df5bb58c74c32fee42cedff5",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/retention-front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/objectivity-source.json": "dfc6ad9966a4b0f7d321527bbf1dc310e1e95df7889d1a4f41b4fe8dd5483fc7",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/objectivity-test.json": "15ffc6c5db05d1f47ac63ca80510ac3452c40aaf6e442967b5f94e9cdc5cdd21",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/receiver-contract.json": "e72d6b33e6056aadde650920ded7892a943b19eea2aae1458fde02b287a1805d",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/receiver-mesh.npz": "bd379fc56bd492b4e0a342f8432869f2926a6e1f10a4face407d70c5784fa640",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/gravity_controller.h": "ef4c0592df0f2f134e28c5476c99f489833aef99869735e0b84f9755c715da18",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/inertia_controller.h": "6c0f9e33faa839c38e1c026d63e052d3f6aed8bd517899a3997279ddad52fb11",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mpm_bridge.cc": "abb1c9c2597e31d1bd7f4bf56ef42520d452f3ee95de3bab9f382e7fb0901a80",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mechanism.xml": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mechanism.py": "dc70a921c8ce7a144bef1d14fcae8c35fbefda5feb20385dad17efda5c02a7eb",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/mpm_bridge": "14c1ba0fe02a8ee86684bb856c1d9a5df645e7572d6d878f4a2ab088f412b091",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/excavator_simulator/bounded_velocity.h": "a98c5edf380628522516b475f70c4a421e824bf5d45f854778baee8e7c2f6e6c",
+    "/home/qunwang/codex-work/autonomous-delivery-2026-09-13/mechanism-auto8/excavator_simulator/hold_controller.h": "b623b43b5f7e54a9ae8bd8b1176366a5204af437fc37cbb34b6383ef4b40491f",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/manual_ready.py": "2632818dd0bede4a0cf40af030cb6393eb19060fafe2f2750010643491c40895",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/bank_runtime.py": "e627d202db67d5c3ee0cb5e486b311b821a281cfecbfc096fb9f4a456f6e1616",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/bank_soil.py": "e208977990e39f497545f43f1eff148368176398cc784fcdf8f18e7c4a76909d",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/soil_surface.py": "1e99f123d1a8fd6e3a813805c5a4772f556327f64be76fc4d9fcc25d7a6daf0e",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/closed_chain.py": "7f180b7d005cda5469e9925fc1fc89e7a323d241b58e0312f2b969867ce3a521",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/truck_layout.py": "4ef7cd5131a200fb0bc91cdd9f2799db01c84e643931cf01cfa04b84e1068a02",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/operator-start.json": "8c196f9808e07d4417fa7c2a81c93e59c4adbfa580be2c15df445bcbef72b182",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/__init__.py": "54bbf9b42aa8d2fed72d70b33b2d91bbd8632c614201e592e6f2de7a9a9da2ef",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/moving_sweep.py": "1bf6e4d4fcf728ac1319eb62a6a69fb96683ab115cb9e73e0a778edf1de8f973",
+    "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/solid_bank.py": "d424ae75ecc5a25277e7362d816b900430bec499d0ffab88c32e73708399c468",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/planning/cycle.py": "6a4e07c5ffb9d0e2626444caf8445b646f908c55d334d8cd14c9da03dfd95e57",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/planning/approach.py": "456ee8044db728d833d03317b9b14180d7a144687e50e92d811cfd658274830b",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/online.py": "a9d86900835d6951f9d0c9f51fe3b5436632f39e4b6b79ee5bb0c5c750d55d95",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/core.py": "6497106e8146214d0e74faaa4d9e22c4c1e120696d90ac7a642f3324a7c537f6",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/__init__.py": "9ecacdaff4f8ff6a090bb8fc7b6381e43804a0f3b280987b726b40cb345d3f60",
+    "/home/qunwang/codex-work/autonomous-cycle-2026-09-12/perception/virtual_depth.py": "e6b79fb80a420b78bd763351817c24510cf2bf6e3157520bb480a9485b7336e8",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/cohesive-fine01/soil-config.json": "7b74bf798a0ddd00aa6b6e5bdaa995ae9f4dd9dabd14b794ef35a90146eb3420",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/swept_contact.py": "5e1d6c325e89c714115662c841e4ea0f13e93ad3f457b6ebb4fbef6cb08a6fbf",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/gpu_diagnostics.py": "40b1da496018f0b781d3b60a4e2692924b8f7040d4a8a43fabcf51482b250d6d",
+    "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/implicit_mpm_solver_kernels.py": "f2fab9e1a3cf27bdf68adc71c32a101d10cdc43e1433ceda0aeb19161c72a150"
+  },
+  "sources_unchanged": true
+}

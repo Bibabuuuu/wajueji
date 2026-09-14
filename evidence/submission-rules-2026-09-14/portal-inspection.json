@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-09-14T12:08:10+08:00",
+  "portal": "https://www.ictice.com/",
+  "module": "揭榜挂帅",
+  "proposition_code": "JB_INTEL_1",
+  "proposition_title": "复杂介质工况自主挖掘",
+  "workflow": [
+    "选择已提交的报名记录",
+    "选择命题",
+    "填写作品",
+    "确认提交"
+  ],
+  "required_project_plan": {
+    "required": true,
+    "format": [
+      "pdf"
+    ],
+    "limit_files": 1,
+    "template_source": "/file-zh/第十五届中国创新创业大赛AI+工程机械专业赛揭榜挂帅参赛项目计划书建议模板.docx"
+  },
+  "supporting_materials": {
+    "documents": {
+      "formats": [
+        "pdf",
+        "docx",
+        "pptx",
+        "xlsx"
+      ],
+      "max_files": 100,
+      "max_mib_each": 200
+    },
+    "media": {
+      "formats_displayed": [
+        "jpg",
+        "png",
+        "mp4"
+      ],
+      "formats_client_accepts": [
+        "png",
+        "jpg",
+        "jpeg",
+        "gif",
+        "webp",
+        "bmp",
+        "svg",
+        "mp4",
+        "mov",
+        "avi",
+        "mkv",
+        "flv",
+        "wmv",
+        "webm"
+      ],
+      "max_files": 100,
+      "max_mib_each": 200
+    },
+    "models": {
+      "formats": [
+        "glb"
+      ],
+      "max_files": 100,
+      "max_mib_each": 200
+    }
+  },
+  "naming": "模块-组别-项目名称-材料名称",
+  "fields": {
+    "project_name_max_chars": 200,
+    "project_summary_min_chars": 200,
+    "project_summary_max_chars": 2000,
+    "project_advantage_required": true
+  },
+  "not_exposed_in_public_client": [
+    "视频时长限制",
+    "总上传容量限制",
+    "仿真作品是否可作为最终验收",
+    "源代码压缩包专用格式"
+  ],
+  "template": {
+    "file": "第十五届中国创新创业大赛AI+工程机械专业赛揭榜挂帅参赛项目计划书建议模板.docx",
+    "bytes": 20570,
+    "sha256": "a8c2d3cc5326cce27b78b2469166783fc242071878eca14896f732cd849ddb35",
+    "zip_integrity": true
+  },
+  "assets": {
+    "https://www.ictice.com/": {
+      "bytes": 1266,
+      "sha256": "1acd75b1f71feda48349b34b43822d700ae8b1e72bb41fae17d9464f645f4f0d"
+    },
+    "https://www.ictice.com/assets/index.DijqhUfb.js": {
+      "bytes": 1295457,
+      "sha256": "89b54ceaf1ce472295d761a5442ef9fe3e8dfe422538b90b70dcf6ddf52e50d6"
+    },
+    "https://www.ictice.com/assets/index.B2pxsHUk.js": {
+      "bytes": 90179,
+      "sha256": "971a7e11bbb901ff8b288eb85a3c50ede64db5bc4b30c29cd97063d9ac81ce4c"
+    },
+    "https://www.ictice.com/assets/constants.DxgoBGGK.js": {
+      "bytes": 21435,
+      "sha256": "6558dcfb85bec2d3985c81dd74dc3639339b9a4ea3d6b04b8e7a726b0edd74f1"
+    }
+  }
+}
