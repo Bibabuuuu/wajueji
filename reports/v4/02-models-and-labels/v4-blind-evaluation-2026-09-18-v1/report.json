@@ -1,0 +1,174 @@
+{
+  "schema": "excavation_v4_blind_evaluation_v1",
+  "status": "failed",
+  "decision": "D-059",
+  "checks": {
+    "evaluator_hash_matches_predeclared": true,
+    "checkpoint_hash_matches_predeclared": true,
+    "exactly_two_predeclared_holdouts_opened": true,
+    "all_policy_hashes_match_predeclared": true,
+    "both_episodes_pass_all_predeclared_checks": false,
+    "mean_predicted_route_mse_at_or_better_than_cv_mean": false,
+    "swing_output_exactly_zero": true,
+    "actions_finite_and_bounded": true,
+    "actor_parameter_updates_zero": true,
+    "critic_and_sac_updates_zero": true,
+    "normalization_not_refit": true,
+    "environment_steps_zero": true,
+    "physics_modules_not_imported": true,
+    "not_deployed": true
+  },
+  "thresholds_frozen_before_opening": {
+    "per_episode_predicted_routed_controlled_axis_mse_max": 0.14701418578624725,
+    "mean_predicted_routed_controlled_axis_mse_max": 0.07634731195867062,
+    "per_episode_raw_phase_accuracy_min": 0.8025387870239774,
+    "per_episode_raw_phase_macro_f1_min": 0.7920022351922112,
+    "approach_to_penetrate_abs_error_steps_max": 124,
+    "penetrate_to_curl_error_steps_min": -2,
+    "penetrate_to_curl_error_steps_max": 62,
+    "curl_to_lift_abs_error_steps_max": 17
+  },
+  "episodes": [
+    {
+      "episode_id": "v4-demo-attempt-20260918-103349",
+      "metrics": {
+        "samples": 746,
+        "axis_weight_mass": [
+          746.0,
+          746.0,
+          746.0,
+          744.0
+        ],
+        "teacher_routed_controlled_axis_mse": 0.09108313173055649,
+        "teacher_routed_axis_mse": [
+          0.0,
+          0.11607537418603897,
+          0.08805499225854874,
+          0.06911900639533997
+        ],
+        "predicted_routed_controlled_axis_mse": 0.09142488986253738,
+        "predicted_routed_axis_mse": [
+          0.0,
+          0.11641421169042587,
+          0.08825467526912689,
+          0.06960579007863998
+        ],
+        "raw_phase_accuracy": 0.903485254691689,
+        "raw_phase_macro_f1": 0.9051166580335884,
+        "latched_phase_accuracy": 0.8096514745308311,
+        "transitions_complete": true,
+        "transition_errors": {
+          "approach_to_penetrate_deepen": {
+            "true_relative_step": 261,
+            "predicted_relative_step": 125,
+            "error_steps": -136
+          },
+          "penetrate_deepen_to_curl_load": {
+            "true_relative_step": 397,
+            "predicted_relative_step": 395,
+            "error_steps": -2
+          },
+          "curl_load_to_lift_carry": {
+            "true_relative_step": 553,
+            "predicted_relative_step": 549,
+            "error_steps": -4
+          }
+        }
+      },
+      "checks": {
+        "predicted_route_mse_within_cv_worst_fold": true,
+        "phase_accuracy_within_cv_envelope": true,
+        "phase_macro_f1_within_cv_envelope": true,
+        "all_transitions_complete": true,
+        "approach_to_penetrate_within_cv_timing_envelope": false,
+        "curl_not_early_and_within_cv_timing_envelope": true,
+        "lift_within_cv_timing_envelope": true
+      },
+      "status": "failed"
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-103536",
+      "metrics": {
+        "samples": 719,
+        "axis_weight_mass": [
+          719.0,
+          719.0,
+          719.0,
+          717.0
+        ],
+        "teacher_routed_controlled_axis_mse": 0.0720977783203125,
+        "teacher_routed_axis_mse": [
+          0.0,
+          0.08617845922708511,
+          0.11352235823869705,
+          0.016592510044574738
+        ],
+        "predicted_routed_controlled_axis_mse": 0.07227883487939835,
+        "predicted_routed_axis_mse": [
+          0.0,
+          0.08647280186414719,
+          0.11338843405246735,
+          0.016975291073322296
+        ],
+        "raw_phase_accuracy": 0.8178025034770514,
+        "raw_phase_macro_f1": 0.7800713477477871,
+        "latched_phase_accuracy": 0.9151599443671766,
+        "transitions_complete": true,
+        "transition_errors": {
+          "approach_to_penetrate_deepen": {
+            "true_relative_step": 36,
+            "predicted_relative_step": 94,
+            "error_steps": 58
+          },
+          "penetrate_deepen_to_curl_load": {
+            "true_relative_step": 383,
+            "predicted_relative_step": 385,
+            "error_steps": 2
+          },
+          "curl_load_to_lift_carry": {
+            "true_relative_step": 500,
+            "predicted_relative_step": 501,
+            "error_steps": 1
+          }
+        }
+      },
+      "checks": {
+        "predicted_route_mse_within_cv_worst_fold": true,
+        "phase_accuracy_within_cv_envelope": true,
+        "phase_macro_f1_within_cv_envelope": false,
+        "all_transitions_complete": true,
+        "approach_to_penetrate_within_cv_timing_envelope": true,
+        "curl_not_early_and_within_cv_timing_envelope": true,
+        "lift_within_cv_timing_envelope": true
+      },
+      "status": "failed"
+    }
+  ],
+  "aggregate": {
+    "episode_count": 2,
+    "sample_count": 1465,
+    "mean_predicted_routed_controlled_axis_mse": 0.08185186237096786
+  },
+  "scope": {
+    "holdout_episodes_opened": 2,
+    "holdout_status_after_run": "consumed_do_not_reuse_for_model_selection",
+    "actor_parameter_updates": 0,
+    "critic_updates": 0,
+    "sac_parameter_updates": 0,
+    "environment_steps": 0,
+    "deployed_to_environment": false,
+    "claim": "one-shot offline blind imitation and phase generalization only; no closed-loop physical-behavior claim"
+  },
+  "checkpoint_sha256": "b32a460e4c849e6a2d0986405d39e3397c9eccad309946cfeb6d803a4bd238d9",
+  "source_sha256": {
+    "/home/qunwang/codex-work/v4-blind-evaluation-2026-09-18-v1-source/v4-blind-evaluation-plan-v1.json": "5c1e048bd9ee170a7724cea484c90dee77a4a3cfc59650c096391908c6540948",
+    "/home/qunwang/codex-work/v4-actor-full-2026-09-18-v1/actor-bc-checkpoint.pt": "b32a460e4c849e6a2d0986405d39e3397c9eccad309946cfeb6d803a4bd238d9",
+    "/home/qunwang/codex-work/v4-blind-evaluation-2026-09-18-v1-source/evaluate_v4_blind_holdout.py": "a238a6512f4d42448fb743c14e4184577b7f85c49fd331d34d29cfb4093f5388",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-103349/policy-steps.ndjson": "417ee0e52e6b25288773ca8a6642571f240a40bd3d2c5feedd282fdc4fda8ffb",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-103349/truth-steps.ndjson": "e5b78cec3d9aade942754993e5ef15964abf2457f525f58ffac15fb5bbed45c7",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-103349/shadow-risk.ndjson": "f7991433ba1add38eba7abcc4406e38adfa2cf770af50c0bf1ef72c79705a400",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-103536/policy-steps.ndjson": "4269006c39d4e363b210be8de006cf30bb9c7e4c057b1759da98c1ee77988b82",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-103536/truth-steps.ndjson": "6043c25a2a63ba65c457a45f9a90f3d70b98c65949ce00324b20dfc2c1686245",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-103536/shadow-risk.ndjson": "f1fe1d63e104d9cda5625400d0c74ada6fcbeccf517dd9c044700580efb6ba49"
+  }
+}

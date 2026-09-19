@@ -114,3 +114,11 @@ build*/
 
 # Independently versioned upstream simulator checkout
 excavator_simulator_mujoco/
+
+# One-repository local workflow. These directories live inside the checkout so
+# development has a single home, but their generated/raw contents stay local.
+/local-data/
+/models-local/
+/runs/
+/offline-bundles/
+/configs/v4/local-paths.env

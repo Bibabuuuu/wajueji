@@ -1,0 +1,23 @@
+{
+  "decision": "D-071",
+  "status": "exported_pending_saved_checkpoint_audit",
+  "checkpoint": "/home/qunwang/codex-work/v4-constrained-observation-2026-09-18-v1/observation-only-checkpoint.pt",
+  "checkpoint_sha256": "db4cb5454160b385c929293f0de15ad85e0387e523894e5cfb186fe252c52d0a",
+  "offline_training_status": "offline_checks_failed",
+  "offline_failed_checks": [
+    "penetrate_fit_budget"
+  ],
+  "source_sha256": {
+    "/home/qunwang/codex-work/v4-boundary-hold-training-2026-09-18-v1/entry-actor-candidate.pt": "c6fb274c6dcac7e12e106b7daa5362be98d2cd321b38454b4cd1f5b8fe15d6a0",
+    "/home/qunwang/codex-work/v4-bucket-constrained-fit-2026-09-18-v1/report.json": "13c079f2ef67bfab1aa319770f341a530c2c1fb08ef723e696c04475c4001d5b",
+    "/home/qunwang/codex-work/v4-bucket-constrained-fit-2026-09-18-v1/predictions.npz": "4e26f02e90788324e0f3e798076347ab2c77bcca2ba4f56c8b87be66363a778a",
+    "/home/qunwang/codex-work/v4-bucket-constrained-fit-2026-09-18-v1-audit/audit.json": "1e8ef719c66a73bffc1024de825794b7fa1028674834d6c0e786c670f0d311b0",
+    "/home/qunwang/codex-work/v4-constrained-observation-2026-09-18-v1-source/export_v4_constrained_observation.py": "baaa6ca9c9f2822349b3aa41c3ba87e6c9e66a50d54f4f285ff28d1b595c39ad"
+  },
+  "qualification": "supervised_observation_only_not_baseline_or_RL",
+  "scope": {
+    "optimization_rerun": false,
+    "parameter_updates": 0,
+    "physics_steps": 0
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "checks": {
+    "diagnostic_sources_unchanged": true,
+    "independent_sources_match": true,
+    "witness_for_exactly_two_heads": true,
+    "head1_constraint_identities": true,
+    "head3_constraint_identities": true,
+    "head1_float32_model_constraints": true,
+    "head3_float32_model_constraints": true,
+    "other_heads_and_axes_outputs_exact": true,
+    "loader_transitions_match_witness": true,
+    "actual_loader_actions_match_batch": true,
+    "scratch_inference_weights_unchanged": true,
+    "all_six_curl_confirmations_match_expert": true,
+    "no_reverse_pause": true,
+    "effective_interaction_before_lift": true,
+    "stored_checkpoints_unchanged": true,
+    "no_checkpoint_written_by_diagnostic": true
+  },
+  "diagnostic_sha256": "84f3832f7b3afee6f3328c037ae76d7588b0a4fadc3392cb1e8c855ff8a971e5",
+  "auditor_sha256": "cc5faa2a8feb84368c50997009d3f09ac1da366c425b8fc1a0eb7f342ef51bd6",
+  "float32_action_constraint_max_violations": {
+    "1": 1.6689300535999152e-07,
+    "3": 3.6388635635264954e-07
+  },
+  "actual_loader_traces": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 293,
+          "confirmed_at_decision_step": 294,
+          "decision_step": 294
+        },
+        "curl_load": {
+          "onset_decision_step": 347,
+          "confirmed_at_decision_step": 348,
+          "decision_step": 348
+        },
+        "lift_carry": {
+          "onset_decision_step": 476,
+          "confirmed_at_decision_step": 477,
+          "decision_step": 477
+        }
+      },
+      "first_reverse_pause": null,
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 304,
+          "confirmed_at_decision_step": 305,
+          "decision_step": 305
+        },
+        "curl_load": {
+          "onset_decision_step": 325,
+          "confirmed_at_decision_step": 326,
+          "decision_step": 326
+        },
+        "lift_carry": {
+          "onset_decision_step": 492,
+          "confirmed_at_decision_step": 493,
+          "decision_step": 493
+        }
+      },
+      "first_reverse_pause": null,
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 318,
+          "confirmed_at_decision_step": 319,
+          "decision_step": 319
+        },
+        "curl_load": {
+          "onset_decision_step": 351,
+          "confirmed_at_decision_step": 352,
+          "decision_step": 352
+        },
+        "lift_carry": {
+          "onset_decision_step": 514,
+          "confirmed_at_decision_step": 515,
+          "decision_step": 515
+        }
+      },
+      "first_reverse_pause": null,
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 285,
+          "confirmed_at_decision_step": 286,
+          "decision_step": 286
+        },
+        "curl_load": {
+          "onset_decision_step": 376,
+          "confirmed_at_decision_step": 377,
+          "decision_step": 377
+        },
+        "lift_carry": {
+          "onset_decision_step": 503,
+          "confirmed_at_decision_step": 504,
+          "decision_step": 504
+        }
+      },
+      "first_reverse_pause": null,
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 279,
+          "confirmed_at_decision_step": 280,
+          "decision_step": 280
+        },
+        "curl_load": {
+          "onset_decision_step": 385,
+          "confirmed_at_decision_step": 386,
+          "decision_step": 386
+        },
+        "lift_carry": {
+          "onset_decision_step": 516,
+          "confirmed_at_decision_step": 517,
+          "decision_step": 517
+        }
+      },
+      "first_reverse_pause": null,
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 290,
+          "confirmed_at_decision_step": 291,
+          "decision_step": 291
+        },
+        "curl_load": {
+          "onset_decision_step": 389,
+          "confirmed_at_decision_step": 390,
+          "decision_step": 390
+        },
+        "lift_carry": {
+          "onset_decision_step": 504,
+          "confirmed_at_decision_step": 505,
+          "decision_step": 505
+        }
+      },
+      "first_reverse_pause": null,
+      "effective_interaction_before_lift": true
+    }
+  ],
+  "maximum_actual_loader_action_difference": 6.079673767089844e-06,
+  "scope": {
+    "gradient_updates": 0,
+    "saved_actor_changes": 0,
+    "physics_steps": 0,
+    "holdouts_opened": 0
+  },
+  "claim": "Feasibility witness only; minimum coefficient distance optimality not independently proven; no generalization or physical qualification."
+}

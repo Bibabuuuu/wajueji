@@ -1,0 +1,600 @@
+{
+  "schema": "excavation_v4_actor_correction_finetune_v1",
+  "status": "failed",
+  "decision": "D-062",
+  "checks": {
+    "six_original_training_episodes_retained_as_anchor": true,
+    "accepted_correction_rows_exactly_331": true,
+    "normalization_reused_without_refit": true,
+    "only_curl_and_lift_controlled_rows_trainable": true,
+    "earliest_passing_candidate_selected": false,
+    "correction_mse_improved_by_fixed_minimum": false,
+    "base_mse_degradation_within_fixed_limit": false,
+    "frozen_parameters_and_swing_rows_exact": false,
+    "both_fixed_traces_have_no_harmful_reverse_or_pause": false,
+    "critic_and_sac_not_constructed": true,
+    "environment_steps_zero": true,
+    "not_deployed": true,
+    "physics_modules_not_imported": true
+  },
+  "configuration": {
+    "learning_rate": 3e-06,
+    "candidate_gradient_steps": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "correction_batch_size": 64,
+    "anchor_batch_size": 192,
+    "anchor_loss_weight": 1.0,
+    "seed": 20260918,
+    "selection": "earliest_candidate_passing_all_fixed_gates",
+    "feature_count": 2412,
+    "feature_spec_sha256": "5b3f944484ee7edfc3b2cff25ad235ad27b961e74ea4397b9a5defd8770630ad",
+    "normalization": "reused_exactly_from_initial_checkpoint",
+    "trainable_parameter_names": [
+      "action_heads.2.bias",
+      "action_heads.2.weight",
+      "action_heads.3.bias",
+      "action_heads.3.weight"
+    ],
+    "trainable_rows": [
+      "boom",
+      "arm",
+      "bucket"
+    ]
+  },
+  "data": {
+    "base_anchor_rows": 4363,
+    "base_anchor_episodes": [
+      "human-demo-20260917-101448",
+      "human-demo-20260917-091339",
+      "v4-demo-attempt-20260917-231940",
+      "v4-demo-attempt-20260918-102031",
+      "v4-demo-attempt-20260918-102212",
+      "v4-demo-attempt-20260918-102352"
+    ],
+    "correction_rows": 331,
+    "correction_episode": "v4-milestone-20260918-142653",
+    "correction_step_range_inclusive": [
+      486,
+      816
+    ]
+  },
+  "metrics": {
+    "initial_base_teacher_routed": {
+      "controlled_axis_mse": 0.029443958774209023,
+      "axis_mse": [
+        0.0,
+        0.04184748977422714,
+        0.021822435781359673,
+        0.024661948904395103
+      ]
+    },
+    "initial_correction_teacher_routed": {
+      "controlled_axis_mse": 0.18570716679096222,
+      "axis_mse": [
+        0.0,
+        0.20145753026008606,
+        0.22611021995544434,
+        0.12955379486083984
+      ]
+    },
+    "candidate_evaluations": [
+      {
+        "gradient_steps": 25,
+        "base_teacher_routed": {
+          "controlled_axis_mse": 0.029514601454138756,
+          "axis_mse": [
+            0.0,
+            0.04188854247331619,
+            0.021975141018629074,
+            0.024680120870471
+          ]
+        },
+        "correction_teacher_routed": {
+          "controlled_axis_mse": 0.18382231891155243,
+          "axis_mse": [
+            0.0,
+            0.20086610317230225,
+            0.22175535559654236,
+            0.1288454830646515
+          ]
+        },
+        "correction_mse_improvement_fraction": 0.010149569949184749,
+        "base_mse_degradation_fraction": 0.0023992249300257692,
+        "frozen_parameter_max_abs_delta": 0.0,
+        "swing_row_max_abs_delta": 0.0,
+        "trainable_controlled_parameter_max_abs_delta": 7.750838994979858e-05,
+        "per_parameter_max_abs_delta": {
+          "trunk.0.weight": 0.0,
+          "trunk.0.bias": 0.0,
+          "trunk.2.weight": 0.0,
+          "trunk.2.bias": 0.0,
+          "phase_head.weight": 0.0,
+          "phase_head.bias": 0.0,
+          "action_heads.0.weight": 0.0,
+          "action_heads.0.bias": 0.0,
+          "action_heads.1.weight": 0.0,
+          "action_heads.1.bias": 0.0,
+          "action_heads.2.weight": 7.458031177520752e-05,
+          "action_heads.2.bias": 7.108598947525024e-05,
+          "action_heads.3.weight": 7.750838994979858e-05,
+          "action_heads.3.bias": 6.857886910438538e-05
+        },
+        "fixed_trace_replays": {
+          "v4-protected-20260918-122910": {
+            "evaluated_steps": 258,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 156,
+              "curl_load": 57,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 2,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 257,
+              "first_reverse_decision_step": 256,
+              "sim_time_s": 12.849999999992374,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                -1.0,
+                -0.9999918341636658,
+                -0.9715607166290283
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          },
+          "v4-milestone-20260918-142653-actor-prefix": {
+            "evaluated_steps": 479,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 405,
+              "curl_load": 29,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 3,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 478,
+              "first_reverse_decision_step": 477,
+              "sim_time_s": 23.899999999982324,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                0.32001543045043945,
+                -0.9521295428276062,
+                -0.2169792354106903
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          }
+        },
+        "passes_fixed_gates": false
+      },
+      {
+        "gradient_steps": 50,
+        "base_teacher_routed": {
+          "controlled_axis_mse": 0.029641570523381233,
+          "axis_mse": [
+            0.0,
+            0.04196210950613022,
+            0.022232623770833015,
+            0.024729983881115913
+          ]
+        },
+        "correction_teacher_routed": {
+          "controlled_axis_mse": 0.181868314743042,
+          "axis_mse": [
+            0.0,
+            0.20020779967308044,
+            0.21731631457805634,
+            0.1280808299779892
+          ]
+        },
+        "correction_mse_improvement_fraction": 0.020671534191469082,
+        "base_mse_degradation_fraction": 0.006711453126517268,
+        "frozen_parameter_max_abs_delta": 0.0,
+        "swing_row_max_abs_delta": 0.0,
+        "trainable_controlled_parameter_max_abs_delta": 0.0001763729378581047,
+        "per_parameter_max_abs_delta": {
+          "trunk.0.weight": 0.0,
+          "trunk.0.bias": 0.0,
+          "trunk.2.weight": 0.0,
+          "trunk.2.bias": 0.0,
+          "phase_head.weight": 0.0,
+          "phase_head.bias": 0.0,
+          "action_heads.0.weight": 0.0,
+          "action_heads.0.bias": 0.0,
+          "action_heads.1.weight": 0.0,
+          "action_heads.1.bias": 0.0,
+          "action_heads.2.weight": 0.00017010606825351715,
+          "action_heads.2.bias": 0.00014348328113555908,
+          "action_heads.3.weight": 0.0001763729378581047,
+          "action_heads.3.bias": 0.00014197267591953278
+        },
+        "fixed_trace_replays": {
+          "v4-protected-20260918-122910": {
+            "evaluated_steps": 258,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 156,
+              "curl_load": 57,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 2,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 257,
+              "first_reverse_decision_step": 256,
+              "sim_time_s": 12.849999999992374,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                -1.0,
+                -0.9999891519546509,
+                -0.970054030418396
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          },
+          "v4-milestone-20260918-142653-actor-prefix": {
+            "evaluated_steps": 479,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 405,
+              "curl_load": 29,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 3,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 478,
+              "first_reverse_decision_step": 477,
+              "sim_time_s": 23.899999999982324,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                0.31357452273368835,
+                -0.9511359333992004,
+                -0.2145853340625763
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          }
+        },
+        "passes_fixed_gates": false
+      },
+      {
+        "gradient_steps": 100,
+        "base_teacher_routed": {
+          "controlled_axis_mse": 0.03000105358660221,
+          "axis_mse": [
+            0.0,
+            0.042168062180280685,
+            0.02295585162937641,
+            0.024879246950149536
+          ]
+        },
+        "correction_teacher_routed": {
+          "controlled_axis_mse": 0.17843155562877655,
+          "axis_mse": [
+            0.0,
+            0.19906237721443176,
+            0.20941078662872314,
+            0.12682151794433594
+          ]
+        },
+        "correction_mse_improvement_fraction": 0.039177869588497484,
+        "base_mse_degradation_fraction": 0.018920513259282477,
+        "frozen_parameter_max_abs_delta": 0.0,
+        "swing_row_max_abs_delta": 0.0,
+        "trainable_controlled_parameter_max_abs_delta": 0.00039301998913288116,
+        "per_parameter_max_abs_delta": {
+          "trunk.0.weight": 0.0,
+          "trunk.0.bias": 0.0,
+          "trunk.2.weight": 0.0,
+          "trunk.2.bias": 0.0,
+          "phase_head.weight": 0.0,
+          "phase_head.bias": 0.0,
+          "action_heads.0.weight": 0.0,
+          "action_heads.0.bias": 0.0,
+          "action_heads.1.weight": 0.0,
+          "action_heads.1.bias": 0.0,
+          "action_heads.2.weight": 0.00039108283817768097,
+          "action_heads.2.bias": 0.0002667885273694992,
+          "action_heads.3.weight": 0.00039301998913288116,
+          "action_heads.3.bias": 0.00028115883469581604
+        },
+        "fixed_trace_replays": {
+          "v4-protected-20260918-122910": {
+            "evaluated_steps": 258,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 156,
+              "curl_load": 57,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 2,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 257,
+              "first_reverse_decision_step": 256,
+              "sim_time_s": 12.849999999992374,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                -1.0,
+                -0.9999825358390808,
+                -0.971626877784729
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          },
+          "v4-milestone-20260918-142653-actor-prefix": {
+            "evaluated_steps": 479,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 405,
+              "curl_load": 29,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 3,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 478,
+              "first_reverse_decision_step": 477,
+              "sim_time_s": 23.899999999982324,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                0.30323469638824463,
+                -0.949353039264679,
+                -0.2160426676273346
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          }
+        },
+        "passes_fixed_gates": false
+      },
+      {
+        "gradient_steps": 200,
+        "base_teacher_routed": {
+          "controlled_axis_mse": 0.030984623357653618,
+          "axis_mse": [
+            0.0,
+            0.04275989159941673,
+            0.024951448664069176,
+            0.025242531672120094
+          ]
+        },
+        "correction_teacher_routed": {
+          "controlled_axis_mse": 0.17281097173690796,
+          "axis_mse": [
+            0.0,
+            0.1969834268093109,
+            0.1963648796081543,
+            0.12508459389209747
+          ]
+        },
+        "correction_mse_improvement_fraction": 0.06944371225355357,
+        "base_mse_degradation_fraction": 0.05232532062889982,
+        "frozen_parameter_max_abs_delta": 0.0,
+        "swing_row_max_abs_delta": 0.0,
+        "trainable_controlled_parameter_max_abs_delta": 0.0008407868444919586,
+        "per_parameter_max_abs_delta": {
+          "trunk.0.weight": 0.0,
+          "trunk.0.bias": 0.0,
+          "trunk.2.weight": 0.0,
+          "trunk.2.bias": 0.0,
+          "phase_head.weight": 0.0,
+          "phase_head.bias": 0.0,
+          "action_heads.0.weight": 0.0,
+          "action_heads.0.bias": 0.0,
+          "action_heads.1.weight": 0.0,
+          "action_heads.1.bias": 0.0,
+          "action_heads.2.weight": 0.0008353274315595627,
+          "action_heads.2.bias": 0.0004803687334060669,
+          "action_heads.3.weight": 0.0008407868444919586,
+          "action_heads.3.bias": 0.0005340892821550369
+        },
+        "fixed_trace_replays": {
+          "v4-protected-20260918-122910": {
+            "evaluated_steps": 258,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 156,
+              "curl_load": 57,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 2,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 257,
+              "first_reverse_decision_step": 256,
+              "sim_time_s": 12.849999999992374,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                -1.0,
+                -0.9999632239341736,
+                -0.9709171056747437
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          },
+          "v4-milestone-20260918-142653-actor-prefix": {
+            "evaluated_steps": 479,
+            "phase_counts": {
+              "approach": 45,
+              "penetrate_deepen": 405,
+              "curl_load": 29,
+              "lift_carry": 0
+            },
+            "negative_post_curl_bucket_actions": 3,
+            "harmful_post_curl_bucket_actions": 2,
+            "reverse_pause_event": {
+              "schema": "excavation_curl_reverse_pause_event_v1",
+              "decision_step": 478,
+              "first_reverse_decision_step": 477,
+              "sim_time_s": 23.899999999982324,
+              "reason": "negative_bucket_after_confirmed_curl_start",
+              "reasons": [
+                "negative_bucket_after_confirmed_curl_start"
+              ],
+              "raw_action": [
+                0.0,
+                0.29372161626815796,
+                -0.9460433721542358,
+                -0.21777503192424774
+              ],
+              "routed_phase": "curl_load",
+              "curl_started": true,
+              "reverse_threshold": -0.1,
+              "confirmation_ticks": 2,
+              "safety_state": null,
+              "execution": "pause_full_action_before_physics",
+              "human_takeover_required": true,
+              "episode_autonomous_success_eligible": false,
+              "critic_eligible": false
+            },
+            "boundary": "fixed recorded observations; no physical success or closed-loop trajectory claim"
+          }
+        },
+        "passes_fixed_gates": false
+      }
+    ],
+    "selected": null
+  },
+  "checkpoint": {
+    "file": null,
+    "sha256": null,
+    "qualification": "no_candidate_passed"
+  },
+  "scope": {
+    "actor_behavior_cloning_updates": 0,
+    "critic_updates": 0,
+    "sac_parameter_updates": 0,
+    "environment_steps": 0,
+    "physical_success_claimed": false,
+    "deployed_to_environment": false
+  },
+  "runtime": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 4070",
+    "wall_s": 23.066026712000166
+  },
+  "unexpected_physics_modules": [],
+  "source_sha256": {
+    "/home/qunwang/codex-work/v4-actor-data-index-2026-09-18-v1/v4-actor-data-index.ndjson": "3f138f2e9ea8cd9755e64db34f2e554ff5db54d460a772305a32a022dd1eac16",
+    "/home/qunwang/codex-work/rl-four-axis-manual-runs-2026-09-16-v1/human-demo-20260917-101448/policy-steps.ndjson": "a75ed1dade117fb2fd10afc6bd2b7b1066b8e5f1ae1d9c4dc578f9dd85094ad0",
+    "/home/qunwang/codex-work/rl-four-axis-manual-runs-2026-09-16-v1/human-demo-20260917-091339/policy-steps.ndjson": "4d63130e783c0e6da4fd714b65e33348e8a40657fb5ca4c95c55d6458add7d85",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260917-231940/policy-steps.ndjson": "383645018905efe14cfd075e0bb7a0fb1279452137009fe7b50d04300a8e22aa",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-102031/policy-steps.ndjson": "0499e15e7c31f086afc61f48dec26c434db0276ce9fa6d5cc8e757f462eab8a4",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-102212/policy-steps.ndjson": "740838815c926503cb21ace945858ceb614f31a70ececd2ac494407df5ac3e3c",
+    "/home/qunwang/codex-work/rl-four-axis-v4-demo-attempts-2026-09-17-v1/v4-demo-attempt-20260918-102352/policy-steps.ndjson": "3e4078432200c2eefe41276942b000febd83ef4c1edcbd463d66f547b3d1d751",
+    "/home/qunwang/codex-work/v4-correction-index-2026-09-18-v1/v4-correction-index.ndjson": "cb3a3483dcf81ab4c29caf9c407f0369da33b37da2ad8f2ad4b5825cac2c2412",
+    "/home/qunwang/codex-work/rl-four-axis-v4-milestone-runs-2026-09-18-v1/v4-milestone-20260918-142653/policy-steps.ndjson": "57e62ce1b4499ccc10b8268b8a092bc048d4d5537ef6d4711567de75c6ca0477",
+    "/home/qunwang/codex-work/v4-actor-data-index-2026-09-18-v1/report.json": "a9295e80aca19ede418265fd6057b348967061b82e6e59ef1ff8ac6e5293904d",
+    "/home/qunwang/codex-work/v4-correction-index-2026-09-18-v1/report.json": "9786d169031261c12d9979c1d8f69b48df63d9aac4ebc6fc15e4bcff7809b6d9",
+    "/home/qunwang/codex-work/v4-correction-finetune-2026-09-18-v1-source/v4-correction-finetune-plan-v1.json": "4b72e295b3872ab076d1f2730fa5a010a3b8b873ab02207ca9726f0ebf11128a",
+    "/home/qunwang/codex-work/v4-actor-full-2026-09-18-v1/actor-bc-checkpoint.pt": "b32a460e4c849e6a2d0986405d39e3397c9eccad309946cfeb6d803a4bd238d9",
+    "/home/qunwang/codex-work/rl-four-axis-v4-protected-runs-2026-09-18-v1/v4-protected-20260918-122910/policy-steps.ndjson": "0ad1dea1a4cad7a3f76ad52c3430b5c8da71ba876027b3aa1dcffedcdd45383f"
+  }
+}

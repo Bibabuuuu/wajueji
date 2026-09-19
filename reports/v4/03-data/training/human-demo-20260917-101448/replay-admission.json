@@ -1,0 +1,8 @@
+{
+  "episode_id": "human-demo-20260917-101448",
+  "persistent_replay_write_performed": false,
+  "critic_eligible_transition_count": 0,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0
+}

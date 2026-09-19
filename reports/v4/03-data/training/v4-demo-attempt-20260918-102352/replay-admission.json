@@ -1,0 +1,11 @@
+{
+  "episode_id": "v4-demo-attempt-20260918-102352",
+  "persistent_replay_write_performed": false,
+  "critic_eligible_transition_count": 0,
+  "human_intervention_episode": false,
+  "dagger_correction_sample_count": 0,
+  "autonomous_success_eligible": false,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0
+}

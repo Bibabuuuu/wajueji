@@ -1,0 +1,80 @@
+{
+  "mouth_angle_deg": 78.6216519123722,
+  "digging_interaction_observed_from_mpm_wrench": true,
+  "digging_contact_current": true,
+  "terrain_contact": true,
+  "soil_body_separation_valid": true,
+  "soil_body_separation": {
+    "schema": "soil_body_separation_truth_v1",
+    "valid": true,
+    "terrain_contact": true,
+    "separated_from_main_body": false,
+    "reason": "bucket or cavity-anchored load remains connected to main soil body",
+    "particle_count": 48800,
+    "component_count": 10,
+    "main_body_component": 1,
+    "main_body_particles": 48786,
+    "fixed_support_particles": 3872,
+    "fixed_support_fraction_in_main_body": 1.0,
+    "cavity_particles": 72,
+    "cavity_component_count": 5,
+    "cavity_component_particles": 48791,
+    "cavity_connected_to_main_body": true,
+    "main_body_particles_near_bucket_shell": 506,
+    "particle_spacing_m": 0.05,
+    "connectivity_cell_m": 0.05,
+    "bucket_contact_margin_m": 0.0625,
+    "identity_contract": "fixed particle row index; no resampling",
+    "compute_wall_s": 0.01882652899803361
+  },
+  "fill_fraction": null,
+  "fill_measurement_valid": false,
+  "fill_measurement_fresh": true,
+  "fill_measurement": {
+    "schema": "online_bucket_fill_truth_v1",
+    "valid": false,
+    "fill_fraction": null,
+    "method_version": "bucket-local-density-v2-weighted",
+    "profile": "fast-5cm",
+    "qualification_scope": "fast-tier training label; balanced/reference upgrade required near 95 percent",
+    "measurement": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.05,
+      "particle_equivalent_volume_m3": 0.00012500000000000003,
+      "smoothing_sigma_cells": 0.8749999999999999,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.0056941902529914,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 8.192000000000002,
+      "heap_raw_liters": 1867.7120000000002,
+      "inside_liters": 8.238646806552508,
+      "heap_liters": 1878.3471074657955,
+      "fill_percent": 739.3599243260287,
+      "cavity_fraction_of_counted_load": 0.004366961209102385,
+      "selected_particles": 35289,
+      "cavity_particles": 72,
+      "load_region_particles": 14448,
+      "point_support_fraction": 1.0,
+      "load_density_quantiles": [
+        0.965977793931961,
+        1.1823564767837524,
+        1.4505964875221253
+      ],
+      "bulk_touches_roi_boundary": true,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "valid_estimate": false,
+      "compute_wall_s": 0.1959706549969269,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "source_hashes": {
+      "fill_module_sha256": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+      "calibration_report_sha256": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+      "held_out_report_sha256": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f"
+    }
+  },
+  "termination_machine_advanced": false,
+  "reason": null
+}

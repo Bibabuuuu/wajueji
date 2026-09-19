@@ -1,0 +1,22 @@
+{
+  "episode_id": "v4-observation-20260918-210014",
+  "persistent_replay_write_performed": false,
+  "critic_eligible_transition_count": 0,
+  "human_intervention_episode": true,
+  "dagger_correction_sample_count": 0,
+  "takeover_handshake": {
+    "schema": "excavation_takeover_handshake_summary_v1",
+    "state": "takeover_pending",
+    "requested_decision_step": 234,
+    "requested_sim_time_s": 11.69999999999342,
+    "armed_event": null,
+    "activation_event": null,
+    "first_action_buffered": false,
+    "physics_frozen_until_first_nonzero_human_action": true
+  },
+  "autonomous_success_eligible": false,
+  "autonomous_baseline_completion_observed": false,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0
+}

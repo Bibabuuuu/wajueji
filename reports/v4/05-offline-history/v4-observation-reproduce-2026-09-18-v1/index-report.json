@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "counts": {
+    "v4-milestone-20260918-142653": 331,
+    "v4-handshake-20260918-161214": 275
+  },
+  "training_rows": 606,
+  "projected_bucket_rows_masked": 218,
+  "index_sha256": "2bc1703b7751e684b9ad4dc26c8c9cbc53be2536d7de9d0e8c62aced584ed8a3",
+  "source_sha256": {
+    "/home/qunwang/codex-work/rl-four-axis-v4-milestone-runs-2026-09-18-v1/v4-milestone-20260918-142653/policy-steps.ndjson": "57e62ce1b4499ccc10b8268b8a092bc048d4d5537ef6d4711567de75c6ca0477",
+    "/home/qunwang/codex-work/v4-observation-reproduce-2026-09-18-source/evidence/accepted-old-audit.json": "2898669e8729e177b072dd9806b0112d2f004bf0b93eb7722fd552d5e2610ab5",
+    "/home/qunwang/codex-work/rl-four-axis-v4-takeover-handshake-runs-2026-09-18-v1/v4-handshake-20260918-161214/policy-steps.ndjson": "2600cf743e9a2451b9bc5e7c894405367376ad04b5fa95173171a281bc983762",
+    "/home/qunwang/codex-work/v4-observation-reproduce-2026-09-18-source/evidence/accepted-exact-audit.json": "059fcecbdcfa2fabaa4b535e98c8b942f6677e3b03df0da6dd9c71a5c6d528b7"
+  },
+  "training_updates": 0,
+  "environment_steps": 0
+}
