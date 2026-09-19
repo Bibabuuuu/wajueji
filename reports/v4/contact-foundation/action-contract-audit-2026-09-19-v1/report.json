@@ -1,0 +1,2214 @@
+{
+  "schema": "excavation_contact_data_contract_audit_v1",
+  "status": "passed",
+  "checks": {
+    "actor_index_contains_no_holdout_rows": true,
+    "actor_index_contract_passed": true,
+    "six_training_episodes_selected": true,
+    "training_policy_contracts_passed": true,
+    "indexed_rows_found_in_sources": true,
+    "correction_policy_contract_passed": true,
+    "corrections_match_policy_log": true,
+    "one_takeover_handshake_event": true,
+    "kinematic_log_contracts_passed": true,
+    "kinematic_mapping_has_sufficient_samples": true,
+    "kinematic_mapping_dominant_sign_ge_99_percent": true,
+    "corrections_are_not_critic_or_success_evidence": true,
+    "holdout_files_opened_zero": true,
+    "physics_steps_zero": true,
+    "parameter_updates_zero": true
+  },
+  "frozen_action_contract": {
+    "schema": "excavation_four_axis_action_v1",
+    "axis_order": [
+      "swing",
+      "boom",
+      "arm",
+      "bucket"
+    ],
+    "semantics": "simultaneous normalized velocity requests",
+    "speed_limit_si": {
+      "swing": 0.12,
+      "boom": 0.0225,
+      "arm": 0.0225,
+      "bucket": 0.0675
+    },
+    "speed_unit": {
+      "swing": "rad/s",
+      "boom": "m/s",
+      "arm": "m/s",
+      "bucket": "m/s"
+    },
+    "policy_hz": 20,
+    "mechanism_hz": 120,
+    "soil_hz": 60
+  },
+  "actor_index": {
+    "row_count": 4363,
+    "episode_ids": [
+      "human-demo-20260917-101448",
+      "human-demo-20260917-091339",
+      "v4-demo-attempt-20260917-231940",
+      "v4-demo-attempt-20260918-102031",
+      "v4-demo-attempt-20260918-102212",
+      "v4-demo-attempt-20260918-102352"
+    ],
+    "coverage": {
+      "human-demo-20260917-101448": {
+        "indexed_rows": 709,
+        "first_decision_step": 0,
+        "last_decision_step": 708,
+        "phase_counts": {
+          "approach": 123,
+          "curl_load": 129,
+          "lift_carry": 233,
+          "penetrate_deepen": 224
+        },
+        "axis_supervised_rows": {
+          "swing": 709,
+          "boom": 703,
+          "arm": 709,
+          "bucket": 556
+        }
+      },
+      "human-demo-20260917-091339": {
+        "indexed_rows": 856,
+        "first_decision_step": 0,
+        "last_decision_step": 855,
+        "phase_counts": {
+          "approach": 181,
+          "curl_load": 167,
+          "lift_carry": 364,
+          "penetrate_deepen": 144
+        },
+        "axis_supervised_rows": {
+          "swing": 856,
+          "boom": 856,
+          "arm": 856,
+          "bucket": 564
+        }
+      },
+      "v4-demo-attempt-20260917-231940": {
+        "indexed_rows": 695,
+        "first_decision_step": 0,
+        "last_decision_step": 694,
+        "phase_counts": {
+          "approach": 221,
+          "curl_load": 162,
+          "lift_carry": 182,
+          "penetrate_deepen": 130
+        },
+        "axis_supervised_rows": {
+          "swing": 695,
+          "boom": 695,
+          "arm": 695,
+          "bucket": 693
+        }
+      },
+      "v4-demo-attempt-20260918-102031": {
+        "indexed_rows": 690,
+        "first_decision_step": 0,
+        "last_decision_step": 689,
+        "phase_counts": {
+          "approach": 249,
+          "curl_load": 126,
+          "lift_carry": 188,
+          "penetrate_deepen": 127
+        },
+        "axis_supervised_rows": {
+          "swing": 690,
+          "boom": 690,
+          "arm": 690,
+          "bucket": 688
+        }
+      },
+      "v4-demo-attempt-20260918-102212": {
+        "indexed_rows": 704,
+        "first_decision_step": 0,
+        "last_decision_step": 703,
+        "phase_counts": {
+          "approach": 151,
+          "curl_load": 130,
+          "lift_carry": 189,
+          "penetrate_deepen": 234
+        },
+        "axis_supervised_rows": {
+          "swing": 704,
+          "boom": 704,
+          "arm": 704,
+          "bucket": 702
+        }
+      },
+      "v4-demo-attempt-20260918-102352": {
+        "indexed_rows": 709,
+        "first_decision_step": 0,
+        "last_decision_step": 708,
+        "phase_counts": {
+          "approach": 69,
+          "curl_load": 114,
+          "lift_carry": 206,
+          "penetrate_deepen": 320
+        },
+        "axis_supervised_rows": {
+          "swing": 709,
+          "boom": 709,
+          "arm": 709,
+          "bucket": 707
+        }
+      }
+    },
+    "issues": {
+      "count": 0,
+      "codes": {},
+      "samples": []
+    }
+  },
+  "training_episodes": {
+    "human-demo-20260917-101448": {
+      "row_count": 800,
+      "first_decision_step": 0,
+      "last_decision_step": 799,
+      "indexed_rows_observed": 709,
+      "raw_action_field_rows": 0,
+      "action_source_counts": {
+        "human_keyboard": 800
+      },
+      "phase_counts": {
+        "approach": 800
+      },
+      "action_sign_counts_by_phase": {
+        "approach": {
+          "swing": {
+            "zero": 800
+          },
+          "boom": {
+            "zero": 343,
+            "negative": 255,
+            "positive": 202
+          },
+          "arm": {
+            "zero": 358,
+            "negative": 296,
+            "positive": 146
+          },
+          "bucket": {
+            "zero": 495,
+            "positive": 305
+          }
+        }
+      },
+      "empirical_one_step_response": {
+        "swing": {
+          "command_samples": 0,
+          "measured_velocity_observable": 0,
+          "measured_velocity_sign_agreement": 0,
+          "position_delta_observable": 0,
+          "position_delta_sign_agreement": 0,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": null,
+          "position_delta_sign_agreement_fraction": null
+        },
+        "boom": {
+          "command_samples": 457,
+          "measured_velocity_observable": 457,
+          "measured_velocity_sign_agreement": 457,
+          "position_delta_observable": 457,
+          "position_delta_sign_agreement": 457,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 52,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.002594668669250092,
+                1.7931031984411828e-09,
+                -0.01068054154242282
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.13724941278245678
+            },
+            "positive": {
+              "sample_count": 23,
+              "mean_bucket_delta_m_per_policy_step": [
+                -0.0032271360819513734,
+                -2.0206903269549997e-09,
+                0.01016333778345482
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.13678419397638542
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "arm": {
+          "command_samples": 442,
+          "measured_velocity_observable": 442,
+          "measured_velocity_sign_agreement": 442,
+          "position_delta_observable": 442,
+          "position_delta_sign_agreement": 442,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 134,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0021154548939421956,
+                -1.0771411496525014e-09,
+                0.0033606656337142765
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.11500496241764001
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "bucket": {
+          "command_samples": 305,
+          "measured_velocity_observable": 296,
+          "measured_velocity_sign_agreement": 198,
+          "position_delta_observable": 149,
+          "position_delta_sign_agreement": 128,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 85,
+              "mean_bucket_delta_m_per_policy_step": [
+                3.8923307849526124e-05,
+                -4.2475013056574464e-09,
+                -0.000456258631057432
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.4527958162722293
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 0.668918918918919,
+          "position_delta_sign_agreement_fraction": 0.8590604026845637
+        }
+      },
+      "issues": {
+        "count": 0,
+        "codes": {},
+        "samples": []
+      },
+      "source_sha256": "a75ed1dade117fb2fd10afc6bd2b7b1066b8e5f1ae1d9c4dc578f9dd85094ad0",
+      "index_coverage": {
+        "indexed_rows": 709,
+        "first_decision_step": 0,
+        "last_decision_step": 708,
+        "phase_counts": {
+          "approach": 123,
+          "curl_load": 129,
+          "lift_carry": 233,
+          "penetrate_deepen": 224
+        },
+        "axis_supervised_rows": {
+          "swing": 709,
+          "boom": 703,
+          "arm": 709,
+          "bucket": 556
+        },
+        "source_rows_not_indexed": 91
+      }
+    },
+    "human-demo-20260917-091339": {
+      "row_count": 856,
+      "first_decision_step": 0,
+      "last_decision_step": 855,
+      "indexed_rows_observed": 856,
+      "raw_action_field_rows": 0,
+      "action_source_counts": {
+        "human_keyboard": 856
+      },
+      "phase_counts": {
+        "approach": 856
+      },
+      "action_sign_counts_by_phase": {
+        "approach": {
+          "swing": {
+            "zero": 856
+          },
+          "boom": {
+            "zero": 375,
+            "negative": 270,
+            "positive": 211
+          },
+          "arm": {
+            "zero": 275,
+            "negative": 368,
+            "positive": 213
+          },
+          "bucket": {
+            "zero": 457,
+            "positive": 399
+          }
+        }
+      },
+      "empirical_one_step_response": {
+        "swing": {
+          "command_samples": 0,
+          "measured_velocity_observable": 0,
+          "measured_velocity_sign_agreement": 0,
+          "position_delta_observable": 0,
+          "position_delta_sign_agreement": 0,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": null,
+          "position_delta_sign_agreement_fraction": null
+        },
+        "boom": {
+          "command_samples": 481,
+          "measured_velocity_observable": 481,
+          "measured_velocity_sign_agreement": 481,
+          "position_delta_observable": 481,
+          "position_delta_sign_agreement": 481,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 35,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0024820943483903134,
+                4.241689856341487e-09,
+                -0.010833063744078154
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.15391414364185485
+            },
+            "positive": {
+              "sample_count": 4,
+              "mean_bucket_delta_m_per_policy_step": [
+                -0.001011034920867182,
+                1.1421998588431195e-08,
+                0.010866879105200344
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.13194620140961533
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "arm": {
+          "command_samples": 581,
+          "measured_velocity_observable": 581,
+          "measured_velocity_sign_agreement": 581,
+          "position_delta_observable": 581,
+          "position_delta_sign_agreement": 581,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 142,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.002106917841619,
+                -4.3833210265044377e-10,
+                0.0033240376387167958
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.1143611859331016
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "bucket": {
+          "command_samples": 399,
+          "measured_velocity_observable": 347,
+          "measured_velocity_sign_agreement": 178,
+          "position_delta_observable": 109,
+          "position_delta_sign_agreement": 109,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 118,
+              "mean_bucket_delta_m_per_policy_step": [
+                8.145288816319152e-06,
+                -1.3161084252474552e-10,
+                -4.35802640046898e-05
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.06258770225410269
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 0.5129682997118156,
+          "position_delta_sign_agreement_fraction": 1.0
+        }
+      },
+      "issues": {
+        "count": 0,
+        "codes": {},
+        "samples": []
+      },
+      "source_sha256": "4d63130e783c0e6da4fd714b65e33348e8a40657fb5ca4c95c55d6458add7d85",
+      "index_coverage": {
+        "indexed_rows": 856,
+        "first_decision_step": 0,
+        "last_decision_step": 855,
+        "phase_counts": {
+          "approach": 181,
+          "curl_load": 167,
+          "lift_carry": 364,
+          "penetrate_deepen": 144
+        },
+        "axis_supervised_rows": {
+          "swing": 856,
+          "boom": 856,
+          "arm": 856,
+          "bucket": 564
+        },
+        "source_rows_not_indexed": 0
+      }
+    },
+    "v4-demo-attempt-20260917-231940": {
+      "row_count": 695,
+      "first_decision_step": 0,
+      "last_decision_step": 694,
+      "indexed_rows_observed": 695,
+      "raw_action_field_rows": 695,
+      "action_source_counts": {
+        "human_keyboard": 695
+      },
+      "phase_counts": {
+        "approach": 695
+      },
+      "action_sign_counts_by_phase": {
+        "approach": {
+          "swing": {
+            "zero": 695
+          },
+          "boom": {
+            "zero": 345,
+            "negative": 231,
+            "positive": 119
+          },
+          "arm": {
+            "zero": 363,
+            "positive": 36,
+            "negative": 296
+          },
+          "bucket": {
+            "zero": 585,
+            "positive": 110
+          }
+        }
+      },
+      "empirical_one_step_response": {
+        "swing": {
+          "command_samples": 0,
+          "measured_velocity_observable": 0,
+          "measured_velocity_sign_agreement": 0,
+          "position_delta_observable": 0,
+          "position_delta_sign_agreement": 0,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": null,
+          "position_delta_sign_agreement_fraction": null
+        },
+        "boom": {
+          "command_samples": 350,
+          "measured_velocity_observable": 350,
+          "measured_velocity_sign_agreement": 350,
+          "position_delta_observable": 350,
+          "position_delta_sign_agreement": 350,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 58,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.002205612996147173,
+                2.502508073128532e-09,
+                -0.010708622350340846
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.1250460193596152
+            },
+            "positive": {
+              "sample_count": 118,
+              "mean_bucket_delta_m_per_policy_step": [
+                -0.002352315986918247,
+                -3.5332692577181356e-09,
+                0.01083194027939439
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.12345813295572754
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "arm": {
+          "command_samples": 332,
+          "measured_velocity_observable": 332,
+          "measured_velocity_sign_agreement": 332,
+          "position_delta_observable": 332,
+          "position_delta_sign_agreement": 332,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 134,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0022788113888186166,
+                9.513240534001358e-09,
+                0.003018502883394338
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.11103704088429849
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "bucket": {
+          "command_samples": 110,
+          "measured_velocity_observable": 110,
+          "measured_velocity_sign_agreement": 110,
+          "position_delta_observable": 109,
+          "position_delta_sign_agreement": 109,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 68,
+              "mean_bucket_delta_m_per_policy_step": [
+                1.6971051132121026e-06,
+                -1.729601557364435e-09,
+                -0.0001438431205668242
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.6585459485358932
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        }
+      },
+      "issues": {
+        "count": 0,
+        "codes": {},
+        "samples": []
+      },
+      "source_sha256": "383645018905efe14cfd075e0bb7a0fb1279452137009fe7b50d04300a8e22aa",
+      "index_coverage": {
+        "indexed_rows": 695,
+        "first_decision_step": 0,
+        "last_decision_step": 694,
+        "phase_counts": {
+          "approach": 221,
+          "curl_load": 162,
+          "lift_carry": 182,
+          "penetrate_deepen": 130
+        },
+        "axis_supervised_rows": {
+          "swing": 695,
+          "boom": 695,
+          "arm": 695,
+          "bucket": 693
+        },
+        "source_rows_not_indexed": 0
+      }
+    },
+    "v4-demo-attempt-20260918-102031": {
+      "row_count": 690,
+      "first_decision_step": 0,
+      "last_decision_step": 689,
+      "indexed_rows_observed": 690,
+      "raw_action_field_rows": 690,
+      "action_source_counts": {
+        "human_keyboard": 690
+      },
+      "phase_counts": {
+        "approach": 690
+      },
+      "action_sign_counts_by_phase": {
+        "approach": {
+          "swing": {
+            "zero": 690
+          },
+          "boom": {
+            "zero": 333,
+            "negative": 246,
+            "positive": 111
+          },
+          "arm": {
+            "zero": 369,
+            "negative": 321
+          },
+          "bucket": {
+            "zero": 581,
+            "positive": 109
+          }
+        }
+      },
+      "empirical_one_step_response": {
+        "swing": {
+          "command_samples": 0,
+          "measured_velocity_observable": 0,
+          "measured_velocity_sign_agreement": 0,
+          "position_delta_observable": 0,
+          "position_delta_sign_agreement": 0,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": null,
+          "position_delta_sign_agreement_fraction": null
+        },
+        "boom": {
+          "command_samples": 357,
+          "measured_velocity_observable": 357,
+          "measured_velocity_sign_agreement": 357,
+          "position_delta_observable": 357,
+          "position_delta_sign_agreement": 357,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 41,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0021220825618127365,
+                3.890491426581509e-09,
+                -0.010963772078940035
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.11930464387119183
+            },
+            "positive": {
+              "sample_count": 111,
+              "mean_bucket_delta_m_per_policy_step": [
+                -0.0024528832656701763,
+                -3.9014916964264425e-09,
+                0.011118290728132396
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.121397349368534
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "arm": {
+          "command_samples": 321,
+          "measured_velocity_observable": 321,
+          "measured_velocity_sign_agreement": 321,
+          "position_delta_observable": 321,
+          "position_delta_sign_agreement": 321,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 129,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0020636605017903915,
+                -3.0921285439951114e-09,
+                0.00339264008242961
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.11465314751808711
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "bucket": {
+          "command_samples": 109,
+          "measured_velocity_observable": 109,
+          "measured_velocity_sign_agreement": 109,
+          "position_delta_observable": 109,
+          "position_delta_sign_agreement": 109,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 96,
+              "mean_bucket_delta_m_per_policy_step": [
+                2.5724053497711008e-05,
+                -2.6239664274839507e-09,
+                -0.00015381906431597564
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.463943964041344
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        }
+      },
+      "issues": {
+        "count": 0,
+        "codes": {},
+        "samples": []
+      },
+      "source_sha256": "0499e15e7c31f086afc61f48dec26c434db0276ce9fa6d5cc8e757f462eab8a4",
+      "index_coverage": {
+        "indexed_rows": 690,
+        "first_decision_step": 0,
+        "last_decision_step": 689,
+        "phase_counts": {
+          "approach": 249,
+          "curl_load": 126,
+          "lift_carry": 188,
+          "penetrate_deepen": 127
+        },
+        "axis_supervised_rows": {
+          "swing": 690,
+          "boom": 690,
+          "arm": 690,
+          "bucket": 688
+        },
+        "source_rows_not_indexed": 0
+      }
+    },
+    "v4-demo-attempt-20260918-102212": {
+      "row_count": 704,
+      "first_decision_step": 0,
+      "last_decision_step": 703,
+      "indexed_rows_observed": 704,
+      "raw_action_field_rows": 704,
+      "action_source_counts": {
+        "human_keyboard": 704
+      },
+      "phase_counts": {
+        "approach": 704
+      },
+      "action_sign_counts_by_phase": {
+        "approach": {
+          "swing": {
+            "zero": 704
+          },
+          "boom": {
+            "zero": 321,
+            "negative": 254,
+            "positive": 129
+          },
+          "arm": {
+            "zero": 359,
+            "negative": 345
+          },
+          "bucket": {
+            "zero": 594,
+            "positive": 110
+          }
+        }
+      },
+      "empirical_one_step_response": {
+        "swing": {
+          "command_samples": 0,
+          "measured_velocity_observable": 0,
+          "measured_velocity_sign_agreement": 0,
+          "position_delta_observable": 0,
+          "position_delta_sign_agreement": 0,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": null,
+          "position_delta_sign_agreement_fraction": null
+        },
+        "boom": {
+          "command_samples": 383,
+          "measured_velocity_observable": 383,
+          "measured_velocity_sign_agreement": 383,
+          "position_delta_observable": 383,
+          "position_delta_sign_agreement": 383,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 33,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.002237322461247782,
+                4.128834493854936e-09,
+                -0.010922726329548733
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.11781372179923678
+            },
+            "positive": {
+              "sample_count": 129,
+              "mean_bucket_delta_m_per_policy_step": [
+                -0.002728853076628545,
+                -3.997523133344981e-09,
+                0.011197433369828987
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.12087958298336063
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "arm": {
+          "command_samples": 345,
+          "measured_velocity_observable": 345,
+          "measured_velocity_sign_agreement": 345,
+          "position_delta_observable": 345,
+          "position_delta_sign_agreement": 345,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 129,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0021081452234985327,
+                -5.400980833454838e-10,
+                0.003398618351843407
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.11622767664975202
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "bucket": {
+          "command_samples": 110,
+          "measured_velocity_observable": 110,
+          "measured_velocity_sign_agreement": 110,
+          "position_delta_observable": 110,
+          "position_delta_sign_agreement": 110,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 105,
+              "mean_bucket_delta_m_per_policy_step": [
+                7.068351504813109e-06,
+                -2.4361711091641576e-09,
+                -6.582539836469022e-05
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.3124669709748366
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        }
+      },
+      "issues": {
+        "count": 0,
+        "codes": {},
+        "samples": []
+      },
+      "source_sha256": "740838815c926503cb21ace945858ceb614f31a70ececd2ac494407df5ac3e3c",
+      "index_coverage": {
+        "indexed_rows": 704,
+        "first_decision_step": 0,
+        "last_decision_step": 703,
+        "phase_counts": {
+          "approach": 151,
+          "curl_load": 130,
+          "lift_carry": 189,
+          "penetrate_deepen": 234
+        },
+        "axis_supervised_rows": {
+          "swing": 704,
+          "boom": 704,
+          "arm": 704,
+          "bucket": 702
+        },
+        "source_rows_not_indexed": 0
+      }
+    },
+    "v4-demo-attempt-20260918-102352": {
+      "row_count": 709,
+      "first_decision_step": 0,
+      "last_decision_step": 708,
+      "indexed_rows_observed": 709,
+      "raw_action_field_rows": 709,
+      "action_source_counts": {
+        "human_keyboard": 709
+      },
+      "phase_counts": {
+        "approach": 709
+      },
+      "action_sign_counts_by_phase": {
+        "approach": {
+          "swing": {
+            "zero": 709
+          },
+          "boom": {
+            "zero": 300,
+            "negative": 265,
+            "positive": 144
+          },
+          "arm": {
+            "zero": 308,
+            "negative": 350,
+            "positive": 51
+          },
+          "bucket": {
+            "zero": 600,
+            "positive": 109
+          }
+        }
+      },
+      "empirical_one_step_response": {
+        "swing": {
+          "command_samples": 0,
+          "measured_velocity_observable": 0,
+          "measured_velocity_sign_agreement": 0,
+          "position_delta_observable": 0,
+          "position_delta_sign_agreement": 0,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": null,
+          "position_delta_sign_agreement_fraction": null
+        },
+        "boom": {
+          "command_samples": 409,
+          "measured_velocity_observable": 409,
+          "measured_velocity_sign_agreement": 409,
+          "position_delta_observable": 409,
+          "position_delta_sign_agreement": 409,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 43,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.002076963542549699,
+                2.7559748952172374e-09,
+                -0.010833187371042236
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.10918002214407699
+            },
+            "positive": {
+              "sample_count": 89,
+              "mean_bucket_delta_m_per_policy_step": [
+                -0.00246963050618974,
+                -3.0859957292565595e-09,
+                0.011128650670569633
+              ],
+              "mean_mouth_delta_deg_per_policy_step": 0.12074451009278515
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "arm": {
+          "command_samples": 401,
+          "measured_velocity_observable": 401,
+          "measured_velocity_sign_agreement": 401,
+          "position_delta_observable": 401,
+          "position_delta_sign_agreement": 401,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 133,
+              "mean_bucket_delta_m_per_policy_step": [
+                0.0021286801751477847,
+                -7.688226187561697e-10,
+                0.003399530577698051
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.11617779234780588
+            },
+            "positive": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        },
+        "bucket": {
+          "command_samples": 109,
+          "measured_velocity_observable": 109,
+          "measured_velocity_sign_agreement": 109,
+          "position_delta_observable": 109,
+          "position_delta_sign_agreement": 109,
+          "single_axis_world_effect": {
+            "negative": {
+              "sample_count": 0,
+              "mean_bucket_delta_m_per_policy_step": null,
+              "mean_mouth_delta_deg_per_policy_step": null
+            },
+            "positive": {
+              "sample_count": 92,
+              "mean_bucket_delta_m_per_policy_step": [
+                2.3378633487336486e-05,
+                -2.1824382282799746e-09,
+                -0.00012893931243117938
+              ],
+              "mean_mouth_delta_deg_per_policy_step": -0.5094164933115735
+            }
+          },
+          "measured_velocity_sign_agreement_fraction": 1.0,
+          "position_delta_sign_agreement_fraction": 1.0
+        }
+      },
+      "issues": {
+        "count": 0,
+        "codes": {},
+        "samples": []
+      },
+      "source_sha256": "3e4078432200c2eefe41276942b000febd83ef4c1edcbd463d66f547b3d1d751",
+      "index_coverage": {
+        "indexed_rows": 709,
+        "first_decision_step": 0,
+        "last_decision_step": 708,
+        "phase_counts": {
+          "approach": 69,
+          "curl_load": 114,
+          "lift_carry": 206,
+          "penetrate_deepen": 320
+        },
+        "axis_supervised_rows": {
+          "swing": 709,
+          "boom": 709,
+          "arm": 709,
+          "bucket": 707
+        },
+        "source_rows_not_indexed": 0
+      }
+    }
+  },
+  "correction_policy_episode": {
+    "row_count": 760,
+    "first_decision_step": 0,
+    "last_decision_step": 759,
+    "indexed_rows_observed": 0,
+    "raw_action_field_rows": 760,
+    "action_source_counts": {
+      "actor_prefix": 478,
+      "human_correction": 282
+    },
+    "phase_counts": {
+      "approach": 760
+    },
+    "action_sign_counts_by_phase": {
+      "approach": {
+        "swing": {
+          "zero": 760
+        },
+        "boom": {
+          "negative": 394,
+          "positive": 230,
+          "zero": 136
+        },
+        "arm": {
+          "negative": 457,
+          "positive": 24,
+          "zero": 279
+        },
+        "bucket": {
+          "positive": 291,
+          "negative": 283,
+          "zero": 186
+        }
+      }
+    },
+    "empirical_one_step_response": {
+      "swing": {
+        "command_samples": 0,
+        "measured_velocity_observable": 0,
+        "measured_velocity_sign_agreement": 0,
+        "position_delta_observable": 0,
+        "position_delta_sign_agreement": 0,
+        "single_axis_world_effect": {
+          "negative": {
+            "sample_count": 0,
+            "mean_bucket_delta_m_per_policy_step": null,
+            "mean_mouth_delta_deg_per_policy_step": null
+          },
+          "positive": {
+            "sample_count": 0,
+            "mean_bucket_delta_m_per_policy_step": null,
+            "mean_mouth_delta_deg_per_policy_step": null
+          }
+        },
+        "measured_velocity_sign_agreement_fraction": null,
+        "position_delta_sign_agreement_fraction": null
+      },
+      "boom": {
+        "command_samples": 609,
+        "measured_velocity_observable": 609,
+        "measured_velocity_sign_agreement": 609,
+        "position_delta_observable": 609,
+        "position_delta_sign_agreement": 609,
+        "single_axis_world_effect": {
+          "negative": {
+            "sample_count": 4,
+            "mean_bucket_delta_m_per_policy_step": [
+              0.002623280716961718,
+              -6.844931173544339e-09,
+              -0.008500946007662269
+            ],
+            "mean_mouth_delta_deg_per_policy_step": 0.11948342235265486
+          },
+          "positive": {
+            "sample_count": 126,
+            "mean_bucket_delta_m_per_policy_step": [
+              -0.0027452234170775975,
+              -3.7097556827166626e-09,
+              0.011427384591472977
+            ],
+            "mean_mouth_delta_deg_per_policy_step": 0.12144069441850881
+          }
+        },
+        "measured_velocity_sign_agreement_fraction": 1.0,
+        "position_delta_sign_agreement_fraction": 1.0
+      },
+      "arm": {
+        "command_samples": 459,
+        "measured_velocity_observable": 459,
+        "measured_velocity_sign_agreement": 458,
+        "position_delta_observable": 455,
+        "position_delta_sign_agreement": 455,
+        "single_axis_world_effect": {
+          "negative": {
+            "sample_count": 8,
+            "mean_bucket_delta_m_per_policy_step": [
+              0.0017729188551337538,
+              1.8537239330911099e-09,
+              0.0037464844850050305
+            ],
+            "mean_mouth_delta_deg_per_policy_step": -0.11631127957318377
+          },
+          "positive": {
+            "sample_count": 0,
+            "mean_bucket_delta_m_per_policy_step": null,
+            "mean_mouth_delta_deg_per_policy_step": null
+          }
+        },
+        "measured_velocity_sign_agreement_fraction": 0.9978213507625272,
+        "position_delta_sign_agreement_fraction": 1.0
+      },
+      "bucket": {
+        "command_samples": 290,
+        "measured_velocity_observable": 290,
+        "measured_velocity_sign_agreement": 290,
+        "position_delta_observable": 290,
+        "position_delta_sign_agreement": 290,
+        "single_axis_world_effect": {
+          "negative": {
+            "sample_count": 0,
+            "mean_bucket_delta_m_per_policy_step": null,
+            "mean_mouth_delta_deg_per_policy_step": null
+          },
+          "positive": {
+            "sample_count": 75,
+            "mean_bucket_delta_m_per_policy_step": [
+              1.786104545026035e-05,
+              1.3467105770817117e-09,
+              -0.00027227266103596235
+            ],
+            "mean_mouth_delta_deg_per_policy_step": -0.6061502501399176
+          }
+        },
+        "measured_velocity_sign_agreement_fraction": 1.0,
+        "position_delta_sign_agreement_fraction": 1.0
+      }
+    },
+    "issues": {
+      "count": 0,
+      "codes": {},
+      "samples": []
+    },
+    "source_sha256": "2600cf743e9a2451b9bc5e7c894405367376ad04b5fa95173171a281bc983762"
+  },
+  "dagger_corrections": {
+    "row_count": 282,
+    "first_decision_step": 478,
+    "last_decision_step": 759,
+    "zero_human_action_rows": 56,
+    "nonzero_human_action_rows": 226,
+    "raw_action_sign_counts": {
+      "swing": {
+        "zero": 282
+      },
+      "boom": {
+        "negative": 20,
+        "zero": 136,
+        "positive": 126
+      },
+      "arm": {
+        "zero": 279,
+        "positive": 3
+      },
+      "bucket": {
+        "zero": 58,
+        "positive": 224
+      }
+    },
+    "applied_action_sign_counts": {
+      "swing": {
+        "zero": 282
+      },
+      "boom": {
+        "negative": 20,
+        "zero": 136,
+        "positive": 126
+      },
+      "arm": {
+        "zero": 279,
+        "positive": 3
+      },
+      "bucket": {
+        "zero": 186,
+        "positive": 96
+      }
+    },
+    "constant_sign_command_segments": [
+      {
+        "first_decision_step": 478,
+        "last_decision_step": 479,
+        "row_count": 2,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 0
+        }
+      },
+      {
+        "first_decision_step": 480,
+        "last_decision_step": 483,
+        "row_count": 4,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 484,
+        "last_decision_step": 486,
+        "row_count": 3,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 487,
+        "last_decision_step": 490,
+        "row_count": 4,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 491,
+        "last_decision_step": 491,
+        "row_count": 1,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 492,
+        "last_decision_step": 492,
+        "row_count": 1,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 493,
+        "last_decision_step": 494,
+        "row_count": 2,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 495,
+        "last_decision_step": 495,
+        "row_count": 1,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 496,
+        "last_decision_step": 496,
+        "row_count": 1,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 497,
+        "last_decision_step": 501,
+        "row_count": 5,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 502,
+        "last_decision_step": 505,
+        "row_count": 4,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 506,
+        "last_decision_step": 508,
+        "row_count": 3,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": -1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 509,
+        "last_decision_step": 519,
+        "row_count": 11,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 520,
+        "last_decision_step": 522,
+        "row_count": 3,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 1,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 523,
+        "last_decision_step": 561,
+        "row_count": 39,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 562,
+        "last_decision_step": 565,
+        "row_count": 4,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 0
+        }
+      },
+      {
+        "first_decision_step": 566,
+        "last_decision_step": 581,
+        "row_count": 16,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 582,
+        "last_decision_step": 707,
+        "row_count": 126,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 1,
+          "arm": 0,
+          "bucket": 1
+        }
+      },
+      {
+        "first_decision_step": 708,
+        "last_decision_step": 759,
+        "row_count": 52,
+        "raw_action_sign": {
+          "swing": 0,
+          "boom": 0,
+          "arm": 0,
+          "bucket": 0
+        }
+      }
+    ],
+    "constant_sign_command_segment_count": 19,
+    "bucket_end_stop_projected_rows": 128,
+    "takeover_event_steps": [
+      478
+    ],
+    "matched_policy_rows": 282,
+    "policy_action_source_counts": {
+      "actor_prefix": 478,
+      "human_correction": 282
+    },
+    "issues": {
+      "count": 0,
+      "codes": {},
+      "samples": []
+    },
+    "source_sha256": "21ee3c399c382224671af29580561d4b73bfb3b096176bb1374fb6ffbc0bdf0e"
+  },
+  "model_kinematics": {
+    "model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+    "model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "derived_model_dimensions": {
+      "nq": 19,
+      "nv": 18
+    },
+    "joint_addresses": {
+      "arm": {
+        "type": "hinge",
+        "qpos_address": 13,
+        "dof_address": 12
+      },
+      "arm piston rod": {
+        "type": "slide",
+        "qpos_address": 15,
+        "dof_address": 14
+      },
+      "boom": {
+        "type": "hinge",
+        "qpos_address": 10,
+        "dof_address": 9
+      },
+      "boom piston rod": {
+        "type": "slide",
+        "qpos_address": 12,
+        "dof_address": 11
+      },
+      "bucket": {
+        "type": "hinge",
+        "qpos_address": 17,
+        "dof_address": 16
+      },
+      "chassis": {
+        "type": "hinge",
+        "qpos_address": 7,
+        "dof_address": 6
+      },
+      "chassis piston rod": {
+        "type": "slide",
+        "qpos_address": 9,
+        "dof_address": 8
+      }
+    },
+    "swing_mapping": {
+      "input": "swing angular velocity rad/s",
+      "output": "chassis relative angular velocity rad/s",
+      "mapping": "identity before lower-level tracking dynamics"
+    },
+    "cylinder_to_relative_joint_mapping": {
+      "boom": {
+        "semantics": "actual relative joint angular velocity divided by actual cylinder linear velocity; internal MuJoCo coordinate sign",
+        "mapping_sample_filter": {
+          "minimum_abs_cylinder_velocity_mps": 0.005,
+          "minimum_abs_joint_velocity_radps": 0.001
+        },
+        "mapping_sample_count": 14866,
+        "observed_cylinder_position_range_m": [
+          0.2528472091082242,
+          0.5506831829453763
+        ],
+        "observed_joint_angle_range_deg": [
+          -4.3851279073510865,
+          29.48862053171501
+        ],
+        "observed_abs_joint_velocity_radps": {
+          "p95": 0.04741524919920322,
+          "maximum": 0.052868460905401274
+        },
+        "d_joint_angle_d_cylinder_length_rad_per_m": {
+          "p01": -2.1973991943099436,
+          "p05": -2.150890025233673,
+          "median": -1.9363948722235977,
+          "p95": -1.8877537614277913,
+          "p99": -1.3741603581814688
+        },
+        "absolute_ratio_rad_per_m": {
+          "p05": 1.8877577286513718,
+          "median": 1.9364394656666173,
+          "p95": 2.1510427426841328
+        },
+        "ratio_sign_counts": {
+          "negative": 14863,
+          "positive": 3
+        },
+        "dominant_sign_fraction": 0.9997981972285753,
+        "implied_abs_joint_speed_at_cylinder_action_limit_radps": {
+          "cylinder_action_limit_mps": 0.0225,
+          "p05": 0.042474548894655864,
+          "median": 0.04356988797749889,
+          "p95": 0.048398461710392984
+        },
+        "pose_dependent_lookup": [
+          {
+            "cylinder_position_min_m": 0.2528472091082242,
+            "cylinder_position_max_m": 0.2776668735946536,
+            "sample_count": 974,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.9258600083006914,
+              "median": -1.8879473444730155,
+              "p95": -1.8436339296187334
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.2776668735946536,
+            "cylinder_position_max_m": 0.30248653808108295,
+            "sample_count": 1480,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.8959065285341938,
+              "median": -1.8913814662552815,
+              "p95": -1.8854134638267381
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.3024865380810829,
+            "cylinder_position_max_m": 0.32730620256751225,
+            "sample_count": 1593,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.9033935440208918,
+              "median": -1.8985231467934913,
+              "p95": -1.8942557612686066
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.32730620256751225,
+            "cylinder_position_max_m": 0.3521258670539416,
+            "sample_count": 1591,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.9165951262023266,
+              "median": -1.909924758204408,
+              "p95": -1.903983763260463
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.3521258670539416,
+            "cylinder_position_max_m": 0.37694553154037097,
+            "sample_count": 1586,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.933743209559946,
+              "median": -1.9253157841381152,
+              "p95": -1.9177154844949362
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.3769455315403709,
+            "cylinder_position_max_m": 0.4017651960268003,
+            "sample_count": 1582,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.9549470743790842,
+              "median": -1.9445830841105287,
+              "p95": -1.9354050755203072
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.4017651960268003,
+            "cylinder_position_max_m": 0.42658486051322964,
+            "sample_count": 1311,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -1.981609139498505,
+              "median": -1.9672139208575183,
+              "p95": -1.9567011143894542
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.42658486051322964,
+            "cylinder_position_max_m": 0.451404524999659,
+            "sample_count": 1080,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -2.0154275790024863,
+              "median": -1.9985674750284423,
+              "p95": -1.9826477825429392
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.451404524999659,
+            "cylinder_position_max_m": 0.47622418948608836,
+            "sample_count": 1081,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -2.048055508127085,
+              "median": -2.030339058177591,
+              "p95": -2.0144350024027373
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.4762241894860883,
+            "cylinder_position_max_m": 0.5010438539725176,
+            "sample_count": 946,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -2.093687471447264,
+              "median": -2.06666590853871,
+              "p95": -2.04880224623393
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5010438539725177,
+            "cylinder_position_max_m": 0.5258635184589471,
+            "sample_count": 831,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -2.1466290576819698,
+              "median": -2.1168906896027258,
+              "p95": -2.0722076928301214
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5258635184589471,
+            "cylinder_position_max_m": 0.5506831829453763,
+            "sample_count": 811,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": -2.202857251401844,
+              "median": -2.168181010072387,
+              "p95": -2.1333593224406533
+            }
+          }
+        ]
+      },
+      "arm": {
+        "semantics": "actual relative joint angular velocity divided by actual cylinder linear velocity; internal MuJoCo coordinate sign",
+        "mapping_sample_filter": {
+          "minimum_abs_cylinder_velocity_mps": 0.005,
+          "minimum_abs_joint_velocity_radps": 0.001
+        },
+        "mapping_sample_count": 14621,
+        "observed_cylinder_position_range_m": [
+          0.3143168386434751,
+          0.7317260824597339
+        ],
+        "observed_joint_angle_range_deg": [
+          -25.551375595585974,
+          21.036567832225685
+        ],
+        "observed_abs_joint_velocity_radps": {
+          "p95": 0.049951939507635726,
+          "maximum": 0.06683177685724688
+        },
+        "d_joint_angle_d_cylinder_length_rad_per_m": {
+          "p01": 1.752556960811159,
+          "p05": 1.7536193703943808,
+          "median": 1.857671209460379,
+          "p95": 2.3451500725780323,
+          "p99": 2.5413315003172166
+        },
+        "absolute_ratio_rad_per_m": {
+          "p05": 1.7536193703943808,
+          "median": 1.857671209460379,
+          "p95": 2.3451500725780323
+        },
+        "ratio_sign_counts": {
+          "positive": 14604,
+          "negative": 17
+        },
+        "dominant_sign_fraction": 0.9988372888311333,
+        "implied_abs_joint_speed_at_cylinder_action_limit_radps": {
+          "cylinder_action_limit_mps": 0.0225,
+          "p05": 0.039456435833873565,
+          "median": 0.041797602212858526,
+          "p95": 0.05276587663300573
+        },
+        "pose_dependent_lookup": [
+          {
+            "cylinder_position_min_m": 0.3143168386434751,
+            "cylinder_position_max_m": 0.34910094229483,
+            "sample_count": 594,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 2.3772972216522446,
+              "median": 2.4502827677365264,
+              "p95": 2.634984602555016
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.34910094229483,
+            "cylinder_position_max_m": 0.38388504594618494,
+            "sample_count": 1031,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 2.1933423051689394,
+              "median": 2.2624241836819037,
+              "p95": 2.361602437655595
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.3838850459461849,
+            "cylinder_position_max_m": 0.4186691495975398,
+            "sample_count": 1453,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 2.063681366002122,
+              "median": 2.1089494352734,
+              "p95": 2.1797965470087117
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.4186691495975398,
+            "cylinder_position_max_m": 0.45345325324889474,
+            "sample_count": 1594,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.9704730874725747,
+              "median": 2.0114161517504696,
+              "p95": 2.054303646513352
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.45345325324889474,
+            "cylinder_position_max_m": 0.48823735690024966,
+            "sample_count": 1485,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.900763868885335,
+              "median": 1.9294240396804074,
+              "p95": 1.9630826685296288
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.4882373569002496,
+            "cylinder_position_max_m": 0.5230214605516045,
+            "sample_count": 1484,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.848962900166428,
+              "median": 1.8704762905049066,
+              "p95": 1.8954391779425548
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5230214605516046,
+            "cylinder_position_max_m": 0.5578055642029595,
+            "sample_count": 1469,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.811190525505019,
+              "median": 1.8271605331002123,
+              "p95": 1.8451924577158474
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5578055642029595,
+            "cylinder_position_max_m": 0.5925896678543143,
+            "sample_count": 1125,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.7839211682774052,
+              "median": 1.795303486902572,
+              "p95": 1.8084814847039663
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5925896678543143,
+            "cylinder_position_max_m": 0.6273737715056692,
+            "sample_count": 1111,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.7661782068849976,
+              "median": 1.7732688119125701,
+              "p95": 1.78250776918824
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.6273737715056693,
+            "cylinder_position_max_m": 0.6621578751570242,
+            "sample_count": 1114,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.7558386561009676,
+              "median": 1.7600273294747428,
+              "p95": 1.765154009651812
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.6621578751570241,
+            "cylinder_position_max_m": 0.6969419788083789,
+            "sample_count": 1114,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.7527607871532949,
+              "median": 1.7539950908212214,
+              "p95": 1.7558056756285372
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.696941978808379,
+            "cylinder_position_max_m": 0.7317260824597339,
+            "sample_count": 1047,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 1.7528223059762609,
+              "median": 1.7542742411677223,
+              "p95": 1.7569046184102377
+            }
+          }
+        ]
+      },
+      "bucket": {
+        "semantics": "actual relative joint angular velocity divided by actual cylinder linear velocity; internal MuJoCo coordinate sign",
+        "mapping_sample_filter": {
+          "minimum_abs_cylinder_velocity_mps": 0.005,
+          "minimum_abs_joint_velocity_radps": 0.001
+        },
+        "mapping_sample_count": 4024,
+        "observed_cylinder_position_range_m": [
+          0.5001692740154936,
+          0.8523370127619363
+        ],
+        "observed_joint_angle_range_deg": [
+          -37.84003428020426,
+          67.65129088872182
+        ],
+        "observed_abs_joint_velocity_radps": {
+          "p95": 0.31633664677668344,
+          "maximum": 1.1202332135052964
+        },
+        "d_joint_angle_d_cylinder_length_rad_per_m": {
+          "p01": 2.735208659364969,
+          "p05": 2.7756881622988296,
+          "median": 3.8304144402694815,
+          "p95": 15.705739029677494,
+          "p99": 22.56841033088976
+        },
+        "absolute_ratio_rad_per_m": {
+          "p05": 2.7757761906910496,
+          "median": 3.831591504402582,
+          "p95": 15.705739029677494
+        },
+        "ratio_sign_counts": {
+          "positive": 4012,
+          "negative": 12
+        },
+        "dominant_sign_fraction": 0.9970178926441352,
+        "implied_abs_joint_speed_at_cylinder_action_limit_radps": {
+          "cylinder_action_limit_mps": 0.0675,
+          "p05": 0.18736489287164587,
+          "median": 0.2586324265471743,
+          "p95": 1.060137384503231
+        },
+        "pose_dependent_lookup": [
+          {
+            "cylinder_position_min_m": 0.5001692740154936,
+            "cylinder_position_max_m": 0.5295165855776972,
+            "sample_count": 374,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 2.73470400588503,
+              "median": 2.775673008902406,
+              "p95": 2.8205799611848716
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5295165855776972,
+            "cylinder_position_max_m": 0.5588638971399008,
+            "sample_count": 333,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 2.831784823887095,
+              "median": 2.8806397781573265,
+              "p95": 2.9365767674539613
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5588638971399007,
+            "cylinder_position_max_m": 0.5882112087021043,
+            "sample_count": 319,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 2.948751886844691,
+              "median": 3.0090917604651986,
+              "p95": 3.078072201718074
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.5882112087021043,
+            "cylinder_position_max_m": 0.6175585202643079,
+            "sample_count": 313,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 3.091351307315916,
+              "median": 3.1698700842780547,
+              "p95": 3.255862479008607
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.6175585202643078,
+            "cylinder_position_max_m": 0.6469058318265114,
+            "sample_count": 313,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 3.2735552716241396,
+              "median": 3.372729911876938,
+              "p95": 3.4830662574916236
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.6469058318265114,
+            "cylinder_position_max_m": 0.676253143388715,
+            "sample_count": 313,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 3.5078173613438848,
+              "median": 3.633033507753066,
+              "p95": 3.7773457877881955
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.6762531433887149,
+            "cylinder_position_max_m": 0.7056004549509185,
+            "sample_count": 322,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 3.8111609936757858,
+              "median": 3.9868286270143396,
+              "p95": 4.1788578402212195
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.7056004549509185,
+            "cylinder_position_max_m": 0.7349477665131221,
+            "sample_count": 344,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 4.234598600981158,
+              "median": 4.457727924338688,
+              "p95": 4.755925095300341
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.7349477665131221,
+            "cylinder_position_max_m": 0.7642950780753257,
+            "sample_count": 321,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 4.814471950027221,
+              "median": 5.183643927457663,
+              "p95": 5.619047374739666
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.7642950780753257,
+            "cylinder_position_max_m": 0.7936423896375293,
+            "sample_count": 321,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 5.730764750794171,
+              "median": 6.308235501320986,
+              "p95": 7.114058574892403
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.7936423896375292,
+            "cylinder_position_max_m": 0.8229897011997328,
+            "sample_count": 326,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 7.332160522087191,
+              "median": 8.515327653878337,
+              "p95": 10.285220367694226
+            }
+          },
+          {
+            "cylinder_position_min_m": 0.8229897011997327,
+            "cylinder_position_max_m": 0.8523370127619363,
+            "sample_count": 425,
+            "d_joint_angle_d_cylinder_length_rad_per_m": {
+              "p05": 10.679902644113055,
+              "median": 15.303972315618207,
+              "p95": 22.99325203181302
+            }
+          }
+        ]
+      }
+    },
+    "episode_reports": {
+      "human-demo-20260917-101448": {
+        "row_count": 4800,
+        "mapping_sample_counts": {
+          "boom": 2795,
+          "arm": 2668,
+          "bucket": 659
+        },
+        "maximum_closure_m": 0.00046682987651694126,
+        "source_sha256": "4fb1e7746bd21f64b07b60c0fc2917f15f535460dacc89ee5213890c4a8dfe98",
+        "issues": {
+          "count": 0,
+          "codes": {},
+          "samples": []
+        }
+      },
+      "human-demo-20260917-091339": {
+        "row_count": 5136,
+        "mapping_sample_counts": {
+          "boom": 2922,
+          "arm": 3499,
+          "bucket": 696
+        },
+        "maximum_closure_m": 0.0004963708161728795,
+        "source_sha256": "16c4ca5ff5595b9747564f2782dd004f67e1a916bc6b9d238712402d209fa908",
+        "issues": {
+          "count": 0,
+          "codes": {},
+          "samples": []
+        }
+      },
+      "v4-demo-attempt-20260917-231940": {
+        "row_count": 4170,
+        "mapping_sample_counts": {
+          "boom": 2162,
+          "arm": 2009,
+          "bucket": 664
+        },
+        "maximum_closure_m": 0.0004301038492158779,
+        "source_sha256": "8b993055819fb0f8175b4f3ef0176045ecdb8d77343b7ea12d3a7f87dd055f86",
+        "issues": {
+          "count": 0,
+          "codes": {},
+          "samples": []
+        }
+      },
+      "v4-demo-attempt-20260918-102031": {
+        "row_count": 4140,
+        "mapping_sample_counts": {
+          "boom": 2169,
+          "arm": 1939,
+          "bucket": 666
+        },
+        "maximum_closure_m": 0.00043924922344041565,
+        "source_sha256": "13f0a7f3542e7a05e3900548908625a7d7523a7014f2721f6731ecd88d454421",
+        "issues": {
+          "count": 0,
+          "codes": {},
+          "samples": []
+        }
+      },
+      "v4-demo-attempt-20260918-102212": {
+        "row_count": 4224,
+        "mapping_sample_counts": {
+          "boom": 2332,
+          "arm": 2080,
+          "bucket": 687
+        },
+        "maximum_closure_m": 0.00044369242759718046,
+        "source_sha256": "a45cc171475a0e6d9a620edf18f3fe1db8554180695fc97c949821d56fac59ac",
+        "issues": {
+          "count": 0,
+          "codes": {},
+          "samples": []
+        }
+      },
+      "v4-demo-attempt-20260918-102352": {
+        "row_count": 4254,
+        "mapping_sample_counts": {
+          "boom": 2486,
+          "arm": 2426,
+          "bucket": 652
+        },
+        "maximum_closure_m": 0.0004539411536832708,
+        "source_sha256": "374b1b44c5305f4aaf1f4f4a8520e55cec71e693c66b83d23440e1b0de027d18",
+        "issues": {
+          "count": 0,
+          "codes": {},
+          "samples": []
+        }
+      }
+    },
+    "issues": {
+      "count": 0,
+      "codes": {},
+      "samples": []
+    },
+    "scope": {
+      "physics_steps": 0,
+      "source": "recorded training mechanism logs only",
+      "holdout_files_opened": 0,
+      "warning": "lookup describes this MuJoCo mechanism only; official measured joint velocity remains a state outcome, not an operator command"
+    }
+  },
+  "scope": {
+    "generator_sha256": "4b0dab60304d36459dae76a3d75055bc3a40aa1d5c55bc1f863f7afb5e580bf0",
+    "training_episode_allowlist": [
+      "human-demo-20260917-101448",
+      "human-demo-20260917-091339",
+      "v4-demo-attempt-20260917-231940",
+      "v4-demo-attempt-20260918-102031",
+      "v4-demo-attempt-20260918-102212",
+      "v4-demo-attempt-20260918-102352"
+    ],
+    "input_paths": {
+      "actor_index": "labels/v4/v4-actor-data-index.ndjson",
+      "training_root": "local-data/archive/v4-full-2026-09-19/03-data/training",
+      "mechanism_model": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+      "correction_log": "local-data/archive/v4-full-2026-09-19/03-data/corrections/v4-handshake-20260918-161214/dagger-corrections.ndjson",
+      "correction_policy_log": "local-data/archive/v4-full-2026-09-19/03-data/corrections/v4-handshake-20260918-161214/policy-steps.ndjson"
+    },
+    "holdout_path_argument_supported": false,
+    "holdout_files_opened": 0,
+    "physics_steps": 0,
+    "actor_parameter_updates": 0,
+    "critic_parameter_updates": 0,
+    "claim": "fixed-log contract and correspondence audit only"
+  }
+}
