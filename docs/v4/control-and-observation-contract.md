@@ -1,6 +1,6 @@
 # M1 数据 动作与关节空间换算契约
 
-更新：2026-09-19。状态：工作包A的固定日志审计通过；未运行物理、未训练、未读取封存轨迹。证据报告为[动作与机构换算审计](../../reports/v4/contact-foundation/action-contract-audit-2026-09-19-v1/report.json)，生成器为[`audit_contact_data_contract.py`](../../src/v4/audit_contact_data_contract.py)。
+更新：2026-09-19。状态：工作包A的固定日志审计通过；工作包B的进场漂移和卷斗反向归因也已完成。两项均未运行物理、未训练、未读取封存轨迹。证据为[动作与机构换算审计](../../reports/v4/contact-foundation/action-contract-audit-2026-09-19-v1/report.json)和[进场漂移与卷斗反向诊断](../../reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md)。
 
 ## 1 审计范围与结论
 
@@ -99,10 +99,10 @@ cylinder_velocity = inverse(J_cylinder(q)) × desired_joint_velocity
 
 ## 8 尚未完成
 
-工作包A的固定日志契约和机构换算已经通过，但以下内容仍属于M1：
+工作包A的固定日志契约和机构换算已经通过。工作包B又确认：三种铲斗参考点都存在进场高度漂移，坐标链不是主因；卷斗反向不是接口方向或`curl_load`标签整体写反。精确网络内部触发仍未知，按闭环覆盖/阶段泛化/路由契约问题处理。
 
-- 用同一参考点完成进场高度漂移归因；
-- 把卷斗反向问题与阶段路由、输入覆盖和旧标签逐项对齐；
+以下内容仍属于M1：
+
 - 生成并复核接触片段标签；
 - 实现几何接近到接触策略的交接契约并通过空载验证；
 - 冻结开发划分和M2对照配置。

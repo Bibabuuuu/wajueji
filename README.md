@@ -2,7 +2,7 @@
 
 本仓库用于整理 2026 年“复杂介质工况自主挖掘”参赛项目的源码、设计记录、验证结论和提交材料。当前规划采用分层路线：感知规划逐铲选点，几何闭环接近，自有示范初始化接触挖掘策略并研究强化学习优化，几何闭环完成运输卸料。新架构尚待集成，历史基线和当前BC能力按各自证据说明。
 
-> **总体规划与下一小节：** [自主连续三铲总体规划](docs/autonomous-excavation-plan.md) · [接触策略基础与交接详细规划](docs/v4/contact-policy-next-section.md) · [控制与观察契约](docs/v4/control-and-observation-contract.md)。固定日志动作契约和本机缸速—关节角速度换算已经通过；官方数据近期用于平台内阶段和状态规律分析。下一项先定位进场漂移和卷斗反向，再完成标注与交接验证，之后决定训练配置。
+> **总体规划与下一小节：** [自主连续三铲总体规划](docs/autonomous-excavation-plan.md) · [接触策略基础与交接详细规划](docs/v4/contact-policy-next-section.md) · [控制与观察契约](docs/v4/control-and-observation-contract.md) · [进场漂移与卷斗反向诊断](reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md)。固定日志动作/运动学契约与失败归因已经完成；官方数据近期用于平台内阶段和状态规律分析。下一项是重切几何交接后的接触片段，再完成交接验证和训练配置。
 
 > **2026-09-19 当前工作入口：** 四轴模仿学习、精确接管和最新进场漂移诊断已整理到 [`src/v4/`](src/v4/README.md)，状态与工作规则见 [`docs/v4/README.md`](docs/v4/README.md)。完整轨迹保存在本仓库内的 `local-data/`，由 Git 忽略；下文保留 2026-09-14 提交基线的历史状态。
 
