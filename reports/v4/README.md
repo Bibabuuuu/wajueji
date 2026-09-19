@@ -6,5 +6,6 @@
 
 - `contact-foundation/action-contract-audit-2026-09-19-v1/`：动作、时序、样本来源和本机缸速—关节角速度换算。
 - `contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/`：铲斗原点/斗齿尖/斗口同参考点进场对照，以及卷斗反向失败类别。
+- `contact-foundation/contact-segmentation-2026-09-19-v1/`：六条训练轨迹的接触阶段/事件候选、时间线和人工复核清单；状态为`candidate_review_pending`。
 
 两项报告的物理步数、参数更新数和封存轨迹读取数均为零；它们是诊断证据，不授予现有策略自动挖掘资格。

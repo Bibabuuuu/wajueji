@@ -2,11 +2,11 @@
 
 ## 2026-09-19 当前安排
 
-总体规划和下一小节详细规划已经形成，M1工作包A的固定日志审计与本机三缸到关节空间换算已经通过，工作包B的进场漂移与卷斗反向固定日志归因也已完成。统一入口为[自主连续三铲总体规划](../docs/autonomous-excavation-plan.md)，执行清单为[接触策略基础与交接](../docs/v4/contact-policy-next-section.md)，已完成证据见[控制与观察契约](../docs/v4/control-and-observation-contract.md)和[归因报告](../reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md)。
+总体规划已经形成，M1工作包A和B完成。工作包C的固定日志候选标签、事件和六张时间线也已生成，见[候选标注报告](../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md)；连续画面人工复核和checkpoint隔离契约未完成，因此当前训练资格仍为零。
 
 技术分工：感知规划逐铲选点；几何闭环接近；自有示范BC负责接触挖掘和带载脱土，后续按吞吐与验证门槛评估残差RL；几何闭环完成运输卸料。参数搜索/参数RL为备选和对照，不要求强制先完成参数RL再做残差RL。官方数据用于阶段和状态规律，近期先平台侧审计，不直接充当四轴命令标签。
 
-当前下一项为工作包C：在6条开发训练episode内重切`approach → penetrate_deepen → curl_load → lift_clear → off_soil_confirm`及`uncertain/recovery`，特别复核几何交接、首次接触、卷斗、离土和人工接管边界。随后依次开展几何与学习控制交接、开发划分及M2实验配置。现有BC的进场失败类别虽已定位，但策略本身尚未修复。完成M1后再进入接触BC训练和短带土验证。保留2条封存轨迹；不制作统一传输包、不上传、不启动GPU训练。
+当前下一项仍属于工作包C：按[复核清单](../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/manual-review-checklist.md)核对六条连续画面和精确接管暂停画面，处理24行`uncertain/recovery`后提交复核状态；随后冻结标签schema和checkpoint兼容性。再依次开展几何与学习控制交接、开发划分及M2实验配置。完成M1前不重训接触BC、不运行短带土、不打开2条封存轨迹，也不制作平台传输包。
 
 以下保留历史记录，其中日期、远程目录和进程状态不能作为当前执行指令。
 
