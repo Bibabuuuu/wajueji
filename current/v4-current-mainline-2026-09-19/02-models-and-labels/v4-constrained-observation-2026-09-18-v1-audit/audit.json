@@ -1,0 +1,309 @@
+{
+  "status": "passed_observation_only",
+  "checks": {
+    "all_sources_unchanged": true,
+    "independent_sources_match": true,
+    "initial_reference_and_witness_hashes": true,
+    "prediction_file_hash": true,
+    "joined_index_preserves_all_original_fields": true,
+    "prediction_rows_match_data": true,
+    "initial_predictions_reconstructed": true,
+    "final_predictions_reconstructed": true,
+    "saved_checkpoint_policy_matches_acceptance": true,
+    "saved_hash_or_no_checkpoint_matches_report": true,
+    "normalization_unchanged_from_reference": true,
+    "saved_state_equals_solver_coefficients": true,
+    "saved_normalization_and_action_freeze_exact": true,
+    "saved_contract_and_qualification": true,
+    "saved_fit_metadata_not_adam": true,
+    "no_optimizer_or_critic_state": true,
+    "saved_index_hash": true,
+    "independent_metric_reconstruction": true,
+    "head1_constraints_rebuilt": true,
+    "head1_fit_rows_and_weights_rebuilt": true,
+    "head1_solver_objective_recomputed": true,
+    "head1_reported_radius_and_violations_match": true,
+    "head3_constraints_rebuilt": true,
+    "head3_fit_rows_and_weights_rebuilt": true,
+    "head3_solver_objective_recomputed": true,
+    "head3_reported_radius_and_violations_match": true,
+    "actual_loader_outputs_match": true,
+    "actual_loader_phases_match": true,
+    "actual_loader_transitions_match": true,
+    "inference_does_not_change_weights": true,
+    "legacy_checkpoint_route_preserved": true,
+    "episode_reset_exact": true,
+    "all_offline_decisions_independently_recomputed": true,
+    "report_status_matches_decisions": true,
+    "offline_failure_preserved": true,
+    "export_report_bound": true,
+    "no_reoptimization": true,
+    "runtime_safety_physics_and_handshake_unchanged": true,
+    "runtime_new_loader_contract_and_launcher_match": true,
+    "runtime_loader_cuda": true
+  },
+  "training_behavior_status": "offline_checks_failed",
+  "independent_behavior_checks": {
+    "both_solvers_converged": true,
+    "iteration_budget_respected": true,
+    "solver_wall_budget_respected": true,
+    "float64_logit_constraints": true,
+    "l2_radius_preserved_after_float32_rounding": true,
+    "actual_float32_output_constraints": true,
+    "protected_parameters_exact": true,
+    "protected_outputs_exact": true,
+    "all_routes_complete": true,
+    "all_curl_confirmations_equal_expert": true,
+    "lift_confirmations_unchanged": true,
+    "no_reverse_pause": true,
+    "effective_interaction_before_lift": true,
+    "hold_zero_within_tolerance": true,
+    "penetrate_fit_budget": false,
+    "overall_fit_budget": true,
+    "lift_fit_improves": true,
+    "finite_bounded_swing_zero": true,
+    "inputs_unchanged": true
+  },
+  "independent_metrics": {
+    "initial_D069": {
+      "controlled_mse": 0.03082721746356271,
+      "phase_mse": {
+        "approach": 0.024932160323174312,
+        "penetrate_deepen": 0.04887561431813986,
+        "curl_load": 0.06484865563508997,
+        "lift_carry": 0.010518569641779206
+      },
+      "new_approach_mse": 0.018540780602594967,
+      "original_approach_mse": 0.029953958675058123
+    },
+    "reference_D068": {
+      "controlled_mse": 0.02923922192042226,
+      "phase_mse": {
+        "approach": 0.024932160323174312,
+        "penetrate_deepen": 0.035417171077613836,
+        "curl_load": 0.06484865563508997,
+        "lift_carry": 0.009679600615141443
+      },
+      "new_approach_mse": 0.018540780602594967,
+      "original_approach_mse": 0.029953958675058123
+    },
+    "final": {
+      "controlled_mse": 0.02943379633303091,
+      "phase_mse": {
+        "approach": 0.024932160323174312,
+        "penetrate_deepen": 0.03938859312984557,
+        "curl_load": 0.06484865563508997,
+        "lift_carry": 0.008762569576226465
+      },
+      "new_approach_mse": 0.018540780602594967,
+      "original_approach_mse": 0.029953958675058123
+    }
+  },
+  "constraint_details": [
+    {
+      "head": 1,
+      "radius": 1.2753827960769315,
+      "l2_shift_float32": 1.275382803321372,
+      "max_logit_violation": 2.1926904736346842e-14,
+      "max_output_violation": 3.457069396861634e-07,
+      "objective": 0.03360593207247503
+    },
+    {
+      "head": 3,
+      "radius": 0.4668816656962329,
+      "l2_shift_float32": 0.46688166325982794,
+      "max_logit_violation": 1.1657341758564144e-15,
+      "max_output_violation": 1.7762184142955384e-07,
+      "objective": 0.0049586122078844885
+    }
+  ],
+  "positive_lift_point_count": 22,
+  "minimum_positive_lift_delta": 0.030585944652557373,
+  "max_zero_lift_abs_output": 0.09500017762184143,
+  "actual_loader_traces": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 293,
+          "confirmed_at_decision_step": 294,
+          "decision_step": 294
+        },
+        "curl_load": {
+          "onset_decision_step": 347,
+          "confirmed_at_decision_step": 348,
+          "decision_step": 348
+        },
+        "lift_carry": {
+          "onset_decision_step": 476,
+          "confirmed_at_decision_step": 477,
+          "decision_step": 477
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 304,
+          "confirmed_at_decision_step": 305,
+          "decision_step": 305
+        },
+        "curl_load": {
+          "onset_decision_step": 325,
+          "confirmed_at_decision_step": 326,
+          "decision_step": 326
+        },
+        "lift_carry": {
+          "onset_decision_step": 492,
+          "confirmed_at_decision_step": 493,
+          "decision_step": 493
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 318,
+          "confirmed_at_decision_step": 319,
+          "decision_step": 319
+        },
+        "curl_load": {
+          "onset_decision_step": 351,
+          "confirmed_at_decision_step": 352,
+          "decision_step": 352
+        },
+        "lift_carry": {
+          "onset_decision_step": 514,
+          "confirmed_at_decision_step": 515,
+          "decision_step": 515
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 285,
+          "confirmed_at_decision_step": 286,
+          "decision_step": 286
+        },
+        "curl_load": {
+          "onset_decision_step": 376,
+          "confirmed_at_decision_step": 377,
+          "decision_step": 377
+        },
+        "lift_carry": {
+          "onset_decision_step": 503,
+          "confirmed_at_decision_step": 504,
+          "decision_step": 504
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 279,
+          "confirmed_at_decision_step": 280,
+          "decision_step": 280
+        },
+        "curl_load": {
+          "onset_decision_step": 385,
+          "confirmed_at_decision_step": 386,
+          "decision_step": 386
+        },
+        "lift_carry": {
+          "onset_decision_step": 516,
+          "confirmed_at_decision_step": 517,
+          "decision_step": 517
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 290,
+          "confirmed_at_decision_step": 291,
+          "decision_step": 291
+        },
+        "curl_load": {
+          "onset_decision_step": 389,
+          "confirmed_at_decision_step": 390,
+          "decision_step": 390
+        },
+        "lift_carry": {
+          "onset_decision_step": 504,
+          "confirmed_at_decision_step": 505,
+          "decision_step": 505
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    }
+  ],
+  "maximum_metric_difference": 0.0,
+  "maximum_loader_action_difference": 6.079673767089844e-06,
+  "report_sha256": "13c079f2ef67bfab1aa319770f341a530c2c1fb08ef723e696c04475c4001d5b",
+  "auditor_sha256": "96533faf83122c53ed1c551e8e3182bc4b0e35eab55480882146781ab65b64f9",
+  "checkpoint_sha256": "db4cb5454160b385c929293f0de15ad85e0387e523894e5cfb186fe252c52d0a",
+  "scope": {
+    "parameter_updates": 0,
+    "physics_steps": 0,
+    "holdouts_opened": 0,
+    "deployed": false
+  },
+  "claim": "Independent reconstruction and acceptance decisions, not global optimizer optimality or physical success.",
+  "decision": "D-071",
+  "offline_training_status": "offline_checks_failed",
+  "checkpoint": "/home/qunwang/codex-work/v4-constrained-observation-2026-09-18-v1/observation-only-checkpoint.pt",
+  "runtime_phase_route": "target_relative_entry_two_tick_v1",
+  "source_sha256": {
+    "/home/qunwang/codex-work/v4-constrained-observation-2026-09-18-v1/observation-only-checkpoint.pt": "db4cb5454160b385c929293f0de15ad85e0387e523894e5cfb186fe252c52d0a",
+    "/home/qunwang/codex-work/v4-bucket-constrained-fit-2026-09-18-v1/report.json": "13c079f2ef67bfab1aa319770f341a530c2c1fb08ef723e696c04475c4001d5b",
+    "/home/qunwang/codex-work/v4-bucket-constrained-fit-2026-09-18-v1/predictions.npz": "4e26f02e90788324e0f3e798076347ab2c77bcca2ba4f56c8b87be66363a778a",
+    "/home/qunwang/codex-work/v4-constrained-observation-2026-09-18-v1-source/audit_v4_constrained_actor.py": "96533faf83122c53ed1c551e8e3182bc4b0e35eab55480882146781ab65b64f9",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/preflight_takeover_handshake.py": "d53e2307abe9e9ecf8ea7129473575b21ee9cba2de58baff58b06346aad61fa0",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector_v2.py": "ad06677a032478a713a70caa995c14cd5031e51ac2b7c57b4ad2db070cc9c077",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/test_mpm_manual_demo_handshake.py": "43d3e3b77a4e5e7ee69f3279548ee63df7f22004e771b2887744f6431d650d2b",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/online_truth.py": "6965ab2bddbd067847f0196bbae3153b19e177f6e5ce9a48ce1cc212037ea7d6",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/dagger_supervisor.py": "4b47451cf763a9e213a78dfc362465a0d062cb0a4ca422ed48c2db70abce0632",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/audit_v4_milestone_guard.py": "4a4f00cfb56e6f495b1a87d41b5f5a5e5b63769ae0effa0a8fbb0c58010054f7",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/preflight_v4_milestone_actor.py": "b8eb0c578373b75c62f477150337bdb1b6210faad621c6f47e4f779bcf104758",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/v4_actor_policy.py": "1e41ec4687a7545d7d350836d304f725f5e3e86f9a0b821627eb89a46002e5ad",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_contact_smoke.py": "e68e6c8cc5da020ee482c6d31a583268f52ead940eacdb79b1c41ca3936b7fdf",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/termination.py": "432ef69ec9c8a6ea0f5422a5ac75cbdf27190ca0f1ebd6c1ebca56d8365c65df",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/contracts.py": "062a171da8cfc74ca18d3e9df672b66522b9a042a39a8bd8d2a98bc2fb711821",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/launch_dagger_takeover.py": "b54c749f7913ffe49a113fa9c1652931f5281aed5c9d33171cd77cdf4089e60d",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/entry_phase_contract.py": "ea2dae0fd2492a4c816be4a18ed306fe9344c5cfdd36a30f94839d253781b487",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/test_contracts.py": "6d22bc69036c6aae5e6803dc745d12e4dd99034f0884f5a26c0253a6269d6106",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/runtime_adapter.py": "51cf0c1e350bb558ae59afb8c4057d71d97a609d6ce7340cfeabffacd6891d1f",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector_v4.py": "5f16da4bdbe209b397a43444ac0fb8568a240b6db4e703a6fed357959043537d",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/launch_v4_milestone_protected.py": "c7cd5f52eaa8d0fc44475ad268576beaf20af861717a87ed9368dbfd0bb649ea",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_manual_demo.py": "175e60ed421ade2a33f96ece27c30b7bf44047f424748df9becf032e953c1104",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector.py": "056b92d3b30cc5cc9796651b31e1b5009943c730ea8e023447500c2fdfb0629a",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector_v3.py": "4342fc58975bc332ebbd36c881833fbe21a289138c9e8a231752760502d5ca12",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_smoke.py": "03797f2a71cc06d4ff8ff2d5f31e15a0c48a8a93abbe76a8b315d50f22a9533a",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/launch_v4_takeover_handshake.py": "a4c0e89d02a9db7564a8b1bc30a6e40f393b15b6029bae6275e7f0422851d736",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/test_dagger_supervisor.py": "b90676942eea373c074be10b22b2c82c436b3ce39d43bbd6223abf6fc1c2718f",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_episode.py": "bdd2183f40607f583b5e38f1f802d48ab01d4341439ff0073ca30960b83eebbb"
+  }
+}

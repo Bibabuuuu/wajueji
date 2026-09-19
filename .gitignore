@@ -114,3 +114,16 @@ build*/
 
 # Independently versioned upstream simulator checkout
 excavator_simulator_mujoco/
+
+# Curated 2026-09-19 v4 handoff. Its recorded artifacts are intentionally
+# versioned; large binary/trajectory formats are stored through Git LFS.
+!current/
+!current/v4-current-mainline-2026-09-19/
+!current/v4-current-mainline-2026-09-19/**
+
+# Keep generated caches and future run output local. Each committed run must be
+# selected deliberately instead of being swept into Git by default.
+current/v4-current-mainline-2026-09-19/**/__pycache__/
+current/v4-current-mainline-2026-09-19/**/*.py[cod]
+current/v4-current-mainline-2026-09-19/06-new-runs/**
+!current/v4-current-mainline-2026-09-19/06-new-runs/.gitkeep

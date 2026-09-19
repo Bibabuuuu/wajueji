@@ -1,0 +1,311 @@
+{
+  "status": "passed",
+  "checks": {
+    "checkpoint_hash": true,
+    "prediction_hash": true,
+    "all_training_sources_unchanged": true,
+    "independent_input_sources_match": true,
+    "labels_match_prediction_phase_ids": true,
+    "joined_index_hash": true,
+    "entry_contract_bound": true,
+    "frozen_parameters_exact": true,
+    "normalization_and_action_freeze_exact": true,
+    "no_optimizer_or_critic_saved": true,
+    "saved_weights_batch_outputs_match": true,
+    "saved_logits_match": true,
+    "finite_bounded_swing_zero": true,
+    "independent_training_metrics_match": true,
+    "actual_loader_explicit_new_route": true,
+    "actual_loader_phases_match": true,
+    "actual_loader_outputs_match": true,
+    "actual_loader_transitions_match": true,
+    "actual_loader_reverse_event_steps_match": true,
+    "inference_does_not_update_weights": true,
+    "episode_reset_exact": true,
+    "legacy_checkpoint_keeps_legacy_route": true,
+    "parent_checkpoint_bound": true,
+    "protected_output_rows_exact": true,
+    "initial_predictions_reconstructed": true,
+    "protected_outputs_exact": true,
+    "supervision_groups_independently_rebuilt": true,
+    "timing_and_hold_diagnostics_rebuilt": true,
+    "behavior_check_decisions_recomputed": true,
+    "reported_status_matches_all_checks": true,
+    "checkpoint_behavior_flag_matches_report": true,
+    "physics_modules_not_imported": true,
+    "offline_result_not_promoted_to_baseline": true
+  },
+  "checkpoint_sha256": "c6fb274c6dcac7e12e106b7daa5362be98d2cd321b38454b4cd1f5b8fe15d6a0",
+  "training_report_sha256": "09794d0d17f01eee265a805a931c802942046495f39c660b5b7d402f1cd84ba3",
+  "auditor_sha256": "d7711be36bc4c7eefb37c14b984a6d8283bf6e5ac73b16f2304b5137c1e1fdb0",
+  "independent_metrics": {
+    "controlled_mse": 0.03082721746356271,
+    "phase_mse": {
+      "approach": 0.024932160323174312,
+      "penetrate_deepen": 0.04887561431813986,
+      "curl_load": 0.06484865563508997,
+      "lift_carry": 0.010518569641779206
+    },
+    "new_approach_mse": 0.018540780602594967,
+    "original_approach_mse": 0.029953958675058123
+  },
+  "maximum_metric_difference": 0.0,
+  "maximum_actual_loader_action_difference": 6.079673767089844e-06,
+  "actual_loader_traces": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 293,
+          "confirmed_at_decision_step": 294,
+          "decision_step": 294
+        },
+        "curl_load": {
+          "onset_decision_step": 347,
+          "confirmed_at_decision_step": 348,
+          "decision_step": 348
+        },
+        "lift_carry": {
+          "onset_decision_step": 476,
+          "confirmed_at_decision_step": 477,
+          "decision_step": 477
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 304,
+          "confirmed_at_decision_step": 305,
+          "decision_step": 305
+        },
+        "curl_load": {
+          "onset_decision_step": 325,
+          "confirmed_at_decision_step": 326,
+          "decision_step": 326
+        },
+        "lift_carry": {
+          "onset_decision_step": 492,
+          "confirmed_at_decision_step": 493,
+          "decision_step": 493
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 318,
+          "confirmed_at_decision_step": 319,
+          "decision_step": 319
+        },
+        "curl_load": {
+          "onset_decision_step": 352,
+          "confirmed_at_decision_step": 353,
+          "decision_step": 353
+        },
+        "lift_carry": {
+          "onset_decision_step": 514,
+          "confirmed_at_decision_step": 515,
+          "decision_step": 515
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 285,
+          "confirmed_at_decision_step": 286,
+          "decision_step": 286
+        },
+        "curl_load": {
+          "onset_decision_step": 377,
+          "confirmed_at_decision_step": 378,
+          "decision_step": 378
+        },
+        "lift_carry": {
+          "onset_decision_step": 503,
+          "confirmed_at_decision_step": 504,
+          "decision_step": 504
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 279,
+          "confirmed_at_decision_step": 280,
+          "decision_step": 280
+        },
+        "curl_load": {
+          "onset_decision_step": 384,
+          "confirmed_at_decision_step": 385,
+          "decision_step": 385
+        },
+        "lift_carry": {
+          "onset_decision_step": 516,
+          "confirmed_at_decision_step": 517,
+          "decision_step": 517
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 290,
+          "confirmed_at_decision_step": 291,
+          "decision_step": 291
+        },
+        "curl_load": {
+          "onset_decision_step": 385,
+          "confirmed_at_decision_step": 386,
+          "decision_step": 386
+        },
+        "lift_carry": {
+          "onset_decision_step": 504,
+          "confirmed_at_decision_step": 505,
+          "decision_step": 505
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    }
+  ],
+  "training_behavior_checks_status": "offline_checks_failed",
+  "independently_recomputed_behavior_checks": {
+    "nonbucket_rows_and_frozen_parameters_exact": true,
+    "other_heads_and_axes_exact_on_all_states": true,
+    "all_six_routes_complete": true,
+    "effective_interaction_before_lift": true,
+    "curl_timing_within_predeclared_intervals": false,
+    "lift_confirmation_unchanged": true,
+    "no_reverse_pause_on_training_routes": true,
+    "all_lift_zero_targets_within_tolerance": true,
+    "penetrate_fit_within_budget": false,
+    "overall_fit_within_budget": false,
+    "lift_fit_improves": false,
+    "finite_bounded_swing_zero": true
+  },
+  "curl_timing": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "expert": 348,
+      "parent": 350,
+      "original_reference": 349,
+      "candidate": 348,
+      "allowed_earliest": 346,
+      "within_predeclared_interval": true
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "expert": 326,
+      "parent": 387,
+      "original_reference": 387,
+      "candidate": 326,
+      "allowed_earliest": 324,
+      "within_predeclared_interval": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "expert": 352,
+      "parent": 386,
+      "original_reference": 354,
+      "candidate": 353,
+      "allowed_earliest": 350,
+      "within_predeclared_interval": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "expert": 377,
+      "parent": 385,
+      "original_reference": 383,
+      "candidate": 378,
+      "allowed_earliest": 375,
+      "within_predeclared_interval": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "expert": 386,
+      "parent": 387,
+      "original_reference": 387,
+      "candidate": 385,
+      "allowed_earliest": 384,
+      "within_predeclared_interval": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "expert": 390,
+      "parent": 391,
+      "original_reference": 391,
+      "candidate": 386,
+      "allowed_earliest": 388,
+      "within_predeclared_interval": false
+    }
+  ],
+  "hold_zero_stats": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "rows": 59,
+      "initial_max_abs": 0.12315203249454498,
+      "final_max_abs": 0.05071122571825981
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "rows": 78,
+      "initial_max_abs": 0.33866173028945923,
+      "final_max_abs": 0.06624866276979446
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "rows": 181,
+      "initial_max_abs": 0.17607413232326508,
+      "final_max_abs": 0.08269114792346954
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "rows": 187,
+      "initial_max_abs": 0.27463558316230774,
+      "final_max_abs": 0.07903177291154861
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "rows": 188,
+      "initial_max_abs": 0.15094217658042908,
+      "final_max_abs": 0.06970247626304626
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "rows": 205,
+      "initial_max_abs": 0.18090133368968964,
+      "final_max_abs": 0.07173017412424088
+    }
+  ],
+  "scope": {
+    "parameter_updates": 0,
+    "environment_steps": 0,
+    "holdouts_opened": 0,
+    "truth_files_opened": 0,
+    "deployed": false
+  },
+  "claim": "checkpoint reconstruction and runtime loader wiring only; training-route problems remain problems"
+}

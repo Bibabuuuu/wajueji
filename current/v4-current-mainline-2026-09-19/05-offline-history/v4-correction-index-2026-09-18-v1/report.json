@@ -1,0 +1,49 @@
+{
+  "schema": "excavation_v4_actor_correction_index_report_v1",
+  "status": "passed",
+  "decision": "D-062",
+  "checks": {
+    "accepted_actor_correction_audit_exact": true,
+    "source_policy_hash_exact": true,
+    "takeover_latency_excluded": true,
+    "post_success_suffix_excluded": true,
+    "selected_rows_human_only": true,
+    "lift_boundary_is_two_tick_causal_milestone": true,
+    "projected_bucket_end_stop_masked": true,
+    "critic_and_autonomous_success_excluded": true,
+    "zero_training_and_environment_steps": true
+  },
+  "counts": {
+    "training_rows": 331,
+    "curl_load_rows": 130,
+    "lift_carry_rows": 201,
+    "takeover_latency_rows_excluded": 8,
+    "post_success_rows_excluded": 11,
+    "bucket_axis_masked_rows": 90,
+    "actor_parameter_updates": 0,
+    "critic_parameter_updates": 0,
+    "sac_parameter_updates": 0,
+    "environment_steps": 0
+  },
+  "episode_id": "v4-milestone-20260918-142653",
+  "selected_range_inclusive": [
+    486,
+    816
+  ],
+  "lift_milestone_confirmation_step": 616,
+  "source_sha256": {
+    "/home/qunwang/codex-work/rl-four-axis-v4-milestone-runs-2026-09-18-v1/v4-milestone-20260918-142653/policy-steps.ndjson": "57e62ce1b4499ccc10b8268b8a092bc048d4d5537ef6d4711567de75c6ca0477",
+    "/home/qunwang/codex-work/v4-correction-finetune-2026-09-18-v1-source/evidence/accepted-correction-audit.json": "2898669e8729e177b072dd9806b0112d2f004bf0b93eb7722fd552d5e2610ab5",
+    "/home/qunwang/codex-work/v4-correction-finetune-2026-09-18-v1-source/v4-correction-finetune-plan-v1.json": "4b72e295b3872ab076d1f2730fa5a010a3b8b873ab02207ca9726f0ebf11128a"
+  },
+  "index": {
+    "file": "v4-correction-index.ndjson",
+    "sha256": "cb3a3483dcf81ab4c29caf9c407f0369da33b37da2ad8f2ad4b5825cac2c2412"
+  },
+  "qualification": {
+    "actor_bc_correction_only": true,
+    "critic_eligible": false,
+    "sac_started": false,
+    "physical_success_claimed": false
+  }
+}

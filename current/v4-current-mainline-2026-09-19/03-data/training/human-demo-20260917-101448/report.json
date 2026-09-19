@@ -1,0 +1,350 @@
+{
+  "schema": "excavation_four_axis_manual_demo_v1",
+  "status": "recorded_pending_audit",
+  "episode_id": "human-demo-20260917-101448",
+  "stop_reason": "user_finished",
+  "failure": null,
+  "wall_s": 111.25169256799927,
+  "executed_decisions": 800,
+  "executed_sim_time_s": 40.0,
+  "phase_at_stop": "approach",
+  "peak_force_n": 22549.134413441552,
+  "initial_truth": {
+    "mouth_angle_deg": 66.15201505215369,
+    "digging_interaction_observed_from_mpm_wrench": false,
+    "digging_contact_current": false,
+    "terrain_contact": null,
+    "soil_body_separation_valid": false,
+    "soil_body_separation": {
+      "schema": "soil_body_separation_truth_v1",
+      "valid": false,
+      "terrain_contact": null,
+      "separated_from_main_body": null,
+      "reason": "fixed support cohort no longer identifies one main soil body",
+      "particle_count": 48800,
+      "component_count": 158,
+      "main_body_component": 1,
+      "main_body_particles": 832,
+      "fixed_support_particles": 3872,
+      "fixed_support_fraction_in_main_body": 0.09090909090909091,
+      "cavity_particles": 0,
+      "cavity_component_count": 0,
+      "cavity_component_particles": 0,
+      "cavity_connected_to_main_body": false,
+      "main_body_particles_near_bucket_shell": 0,
+      "particle_spacing_m": 0.05,
+      "connectivity_cell_m": 0.05,
+      "bucket_contact_margin_m": 0.0625,
+      "identity_contract": "fixed particle row index; no resampling",
+      "compute_wall_s": 0.012970652998774312
+    },
+    "fill_fraction": 0.0,
+    "fill_measurement_valid": true,
+    "fill_measurement_fresh": true,
+    "fill_measurement": {
+      "schema": "online_bucket_fill_truth_v1",
+      "valid": true,
+      "fill_fraction": 0.0,
+      "method_version": "bucket-local-density-v2-weighted",
+      "profile": "fast-5cm",
+      "qualification_scope": "fast-tier training label; balanced/reference upgrade required near 95 percent",
+      "measurement": {
+        "method_version": "bucket-local-density-v2-weighted",
+        "measurement_cell_m": 0.02,
+        "particle_spacing_m": 0.05,
+        "particle_equivalent_volume_m3": 0.00012500000000000003,
+        "smoothing_sigma_cells": 0.8749999999999999,
+        "occupancy_level": 0.4,
+        "volume_scale": 1.0056941902529914,
+        "capacity_liters": 255.164729950989,
+        "inside_raw_liters": 0.0,
+        "heap_raw_liters": 0.0,
+        "inside_liters": 0.0,
+        "heap_liters": 0.0,
+        "fill_percent": 0.0,
+        "cavity_fraction_of_counted_load": null,
+        "selected_particles": 4536,
+        "cavity_particles": 0,
+        "load_region_particles": 0,
+        "point_support_fraction": 1.0,
+        "load_density_quantiles": [],
+        "bulk_touches_roi_boundary": false,
+        "quality_reasons": [],
+        "valid_estimate": true,
+        "compute_wall_s": 0.07682642300096632,
+        "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+      },
+      "source_hashes": {
+        "fill_module_sha256": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+        "calibration_report_sha256": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+        "held_out_report_sha256": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f"
+      }
+    },
+    "termination_machine_advanced": false,
+    "reason": "fixed support cohort no longer identifies one main soil body"
+  },
+  "final_truth": {
+    "mouth_angle_deg": 18.459909298902808,
+    "digging_interaction_observed_from_mpm_wrench": true,
+    "digging_contact_current": false,
+    "terrain_contact": false,
+    "soil_body_separation_valid": true,
+    "soil_body_separation": {
+      "schema": "soil_body_separation_truth_v1",
+      "valid": true,
+      "terrain_contact": false,
+      "separated_from_main_body": true,
+      "reason": "bucket and cavity-anchored load are separated from main soil body",
+      "particle_count": 48800,
+      "component_count": 148,
+      "main_body_component": 1,
+      "main_body_particles": 45148,
+      "fixed_support_particles": 3872,
+      "fixed_support_fraction_in_main_body": 1.0,
+      "cavity_particles": 1522,
+      "cavity_component_count": 2,
+      "cavity_component_particles": 3409,
+      "cavity_connected_to_main_body": false,
+      "main_body_particles_near_bucket_shell": 0,
+      "particle_spacing_m": 0.05,
+      "connectivity_cell_m": 0.05,
+      "bucket_contact_margin_m": 0.0625,
+      "identity_contract": "fixed particle row index; no resampling",
+      "compute_wall_s": 0.01650908800002071
+    },
+    "fill_fraction": 1.0634715434337065,
+    "fill_measurement_valid": true,
+    "fill_measurement_fresh": true,
+    "fill_measurement": {
+      "schema": "online_bucket_fill_truth_v1",
+      "valid": true,
+      "fill_fraction": 1.0634715434337065,
+      "method_version": "bucket-local-density-v2-weighted",
+      "profile": "fast-5cm",
+      "qualification_scope": "fast-tier training label; balanced/reference upgrade required near 95 percent",
+      "measurement": {
+        "method_version": "bucket-local-density-v2-weighted",
+        "measurement_cell_m": 0.02,
+        "particle_spacing_m": 0.05,
+        "particle_equivalent_volume_m3": 0.00012500000000000003,
+        "smoothing_sigma_cells": 0.8749999999999999,
+        "occupancy_level": 0.4,
+        "volume_scale": 1.0056941902529914,
+        "capacity_liters": 255.164729950989,
+        "inside_raw_liters": 161.55200000000002,
+        "heap_raw_liters": 108.27200000000002,
+        "inside_liters": 162.4719078237513,
+        "heap_liters": 108.88852136707192,
+        "fill_percent": 106.34715434337065,
+        "cavity_fraction_of_counted_load": 0.5987310246679317,
+        "selected_particles": 3977,
+        "cavity_particles": 1522,
+        "load_region_particles": 2878,
+        "point_support_fraction": 1.0,
+        "load_density_quantiles": [
+          0.9847840547561646,
+          1.454568088054657,
+          108.31818847656271
+        ],
+        "bulk_touches_roi_boundary": false,
+        "quality_reasons": [],
+        "valid_estimate": true,
+        "compute_wall_s": 0.07392176500070491,
+        "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+      },
+      "source_hashes": {
+        "fill_module_sha256": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+        "calibration_report_sha256": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+        "held_out_report_sha256": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f"
+      }
+    },
+    "termination_machine_advanced": false,
+    "reason": null
+  },
+  "manual_evaluation": {
+    "mouth_angle_role": "diagnostic_only",
+    "minimum_bucket_closure_normalized": 0.95,
+    "off_soil_confirmation_sim_s": 0.5,
+    "required_hold_sim_s": 3.0,
+    "sample_period_sim_s": 0.25,
+    "completed_windows": [
+      {
+        "window_index": 0,
+        "start_sim_time_s": 32.44999999997455,
+        "end_sim_time_s": 35.44999999997182,
+        "sample_count": 13,
+        "all_samples_valid": true,
+        "minimum_fill_percent": 107.24893583477851,
+        "maximum_fill_percent": 108.0781964370172,
+        "all_samples_ge_95": true,
+        "fast_tier_classification": "provisional_pass_high_margin",
+        "formal_reference_qualified": false,
+        "result_sealed": true
+      }
+    ],
+    "current_hold_sim_s_at_stop": 7.549999999993133,
+    "current_sample_count_at_stop": 13,
+    "sealed_termination": {
+      "schema": "excavation_single_scoop_termination_v3",
+      "state": "SUCCESS",
+      "terminated": true,
+      "truncated": false,
+      "success": true,
+      "reason": "carry_window_passed",
+      "sim_time_s": 35.44999999997182,
+      "off_soil_elapsed_s": 3.4999999999968203,
+      "evaluation_start_s": 32.44999999997455,
+      "evaluation_samples": [
+        {
+          "index": 0,
+          "offset_s": 0.0,
+          "fill_fraction": 1.0786378685164748
+        },
+        {
+          "index": 1,
+          "offset_s": 0.25,
+          "fill_fraction": 1.080781964370172
+        },
+        {
+          "index": 2,
+          "offset_s": 0.5,
+          "fill_fraction": 1.078038782910295
+        },
+        {
+          "index": 3,
+          "offset_s": 0.75,
+          "fill_fraction": 1.073719060381523
+        },
+        {
+          "index": 4,
+          "offset_s": 1.0,
+          "fill_fraction": 1.0739082453097906
+        },
+        {
+          "index": 5,
+          "offset_s": 1.25,
+          "fill_fraction": 1.073119974775343
+        },
+        {
+          "index": 6,
+          "offset_s": 1.5,
+          "fill_fraction": 1.072836197382942
+        },
+        {
+          "index": 7,
+          "offset_s": 1.75,
+          "fill_fraction": 1.0726470124546745
+        },
+        {
+          "index": 8,
+          "offset_s": 2.0,
+          "fill_fraction": 1.0729938514898314
+        },
+        {
+          "index": 9,
+          "offset_s": 2.25,
+          "fill_fraction": 1.0726470124546745
+        },
+        {
+          "index": 10,
+          "offset_s": 2.5,
+          "fill_fraction": 1.0726785432760522
+        },
+        {
+          "index": 11,
+          "offset_s": 2.75,
+          "fill_fraction": 1.072552419990541
+        },
+        {
+          "index": 12,
+          "offset_s": 3.0,
+          "fill_fraction": 1.072489358347785
+        }
+      ],
+      "load_correction_start_s": null,
+      "load_correction_elapsed_s": 0.0,
+      "load_correction_samples": [],
+      "load_correction_used": false,
+      "digging_interaction_observed": true,
+      "trigger_bucket_closure_normalized": 0.9673443570213605,
+      "result_sealed": true
+    }
+  },
+  "shadow_candidate_counts": {
+    "clearance_lt_0p10": 0,
+    "clearance_lt_0p50": 0,
+    "descending": 347,
+    "ttc_lt_2p0": 0,
+    "negative_boom_and_positive_bucket": 41
+  },
+  "shadow_intervention_count": 0,
+  "training_started": false,
+  "persistent_replay_write_performed": false,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0,
+  "bc_candidate": {
+    "status": "pending_post_run_audit",
+    "user_completed_with_x": true,
+    "digging_interaction_observed": true,
+    "final_separation_valid": true,
+    "final_fill_measurement_valid": true,
+    "automatic_admission": false
+  },
+  "critic_eligible": false,
+  "critic_exclusion_reason": "human_demo_requires_terminal_reward_audit",
+  "runtime_counters": {
+    "policy_steps": 800,
+    "mechanism_steps": 4800,
+    "soil_steps": 2400,
+    "terrain_captures": 201
+  },
+  "backend_qualification": {
+    "geometry_report_sha256": "b2f1a0b64a18f6993b285708d097598a6dffaa22086f80d825ff7534e50946a2",
+    "empty_report_sha256": "bf3a46cd45147b6bbf638adbf2a8bb9a5fa6f5fb15415edffeeaacef78bb360e",
+    "empty_audit_sha256": "61578d2c4d3cb588f4751cfa47462f2ee9b9cb8b56e820b6a128fd6a87b61c0d",
+    "fast_reference_report_sha256": "4974376b00d18cbecaaa28adec671928c2068ece8db0d7900e4a63a5ba5dfbb9",
+    "source_set_matches_empty_qualification": true,
+    "initial_particle_state_exact": true,
+    "initial_particle_sha256": "c787c6fc9f6ba8f2622520b1d6426a03af23a87719c8acd1a6ce5f6dacfff819",
+    "configuration": {
+      "particles": 48800,
+      "subdivision": 2,
+      "soil_voxel_m": 0.1,
+      "soil_hz": 60,
+      "mechanism_hz": 120,
+      "numerical_profile": "train-fast",
+      "max_iterations": 80,
+      "tolerance": 0.0005,
+      "solver": "auto"
+    },
+    "scope": "independent short wiring smoke; no task-success or material qualification",
+    "online_truth": {
+      "separation_schema": "soil_body_separation_truth_v1",
+      "fill_schema": "online_bucket_fill_truth_v1",
+      "fill_method": "bucket-local-density-v2-weighted",
+      "fill_profile": "fast-5cm",
+      "source_hashes": {
+        "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/online_truth.py": "6965ab2bddbd067847f0196bbae3153b19e177f6e5ce9a48ce1cc212037ea7d6",
+        "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+        "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+        "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/held-out-phases-v1/report.json": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f",
+        "/home/qunwang/codex-work/compact-bank-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+        "/home/qunwang/codex-work/autonomous-multiscoop-speed-opt-2026-09-14-v1/retention-front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1"
+      },
+      "scope": "read-only fast-tier truth; no success qualification by installation alone"
+    }
+  },
+  "backend_sources_unchanged": true,
+  "truth_sources_unchanged": true,
+  "execution_sources_before": {
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/mpm_manual_demo.py": "5f36b61bd2874d555b9f08a099c8d5f1cc0f8b94124ff3b39bc4fb95839042a4",
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/mpm_smoke.py": "03797f2a71cc06d4ff8ff2d5f31e15a0c48a8a93abbe76a8b315d50f22a9533a",
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/mpm_episode.py": "bdd2183f40607f583b5e38f1f802d48ab01d4341439ff0073ca30960b83eebbb",
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/online_truth.py": "6965ab2bddbd067847f0196bbae3153b19e177f6e5ce9a48ce1cc212037ea7d6",
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/runtime_adapter.py": "51cf0c1e350bb558ae59afb8c4057d71d97a609d6ce7340cfeabffacd6891d1f",
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/contracts.py": "90429e851569e356bd0bb8b052eaa04d4234abb2695fe69e78316dd5cb0584af",
+    "/home/qunwang/codex-work/rl-four-axis-manual-acquisition-2026-09-16-v1/termination.py": "648176ce2db626066564b12200532650289b313ddc942d9598573f9e42291a22"
+  },
+  "execution_sources_unchanged": true
+}

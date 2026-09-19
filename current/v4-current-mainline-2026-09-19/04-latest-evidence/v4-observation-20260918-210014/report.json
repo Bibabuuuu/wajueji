@@ -1,0 +1,391 @@
+{
+  "schema": "excavation_four_axis_manual_demo_v1",
+  "status": "recorded_pending_audit",
+  "episode_id": "v4-observation-20260918-210014",
+  "session_label": "V4 D070 - OBSERVATION ONLY D071 - NO TRAINING",
+  "acquisition_mode": "protected_v4_baseline_evaluation",
+  "stop_reason": "wall_budget",
+  "failure": null,
+  "wall_s": 3600.3312651020024,
+  "executed_decisions": 234,
+  "executed_sim_time_s": 11.700000000000001,
+  "phase_at_stop": "approach",
+  "peak_force_n": 12379.062037413842,
+  "initial_truth": {
+    "mouth_angle_deg": 66.15201505215369,
+    "digging_interaction_observed_from_mpm_wrench": false,
+    "digging_contact_current": false,
+    "terrain_contact": null,
+    "soil_body_separation_valid": false,
+    "soil_body_separation": {
+      "schema": "soil_body_separation_truth_v1",
+      "valid": false,
+      "terrain_contact": null,
+      "separated_from_main_body": null,
+      "reason": "fixed support cohort no longer identifies one main soil body",
+      "particle_count": 48800,
+      "component_count": 158,
+      "main_body_component": 1,
+      "main_body_particles": 832,
+      "fixed_support_particles": 3872,
+      "fixed_support_fraction_in_main_body": 0.09090909090909091,
+      "cavity_particles": 0,
+      "cavity_component_count": 0,
+      "cavity_component_particles": 0,
+      "cavity_connected_to_main_body": false,
+      "main_body_particles_near_bucket_shell": 0,
+      "particle_spacing_m": 0.05,
+      "connectivity_cell_m": 0.05,
+      "bucket_contact_margin_m": 0.0625,
+      "identity_contract": "fixed particle row index; no resampling",
+      "compute_wall_s": 0.013113009998050984
+    },
+    "fill_fraction": 0.0,
+    "fill_measurement_valid": true,
+    "fill_measurement_fresh": true,
+    "fill_measurement": {
+      "schema": "online_bucket_fill_truth_v1",
+      "valid": true,
+      "fill_fraction": 0.0,
+      "method_version": "bucket-local-density-v2-weighted",
+      "profile": "fast-5cm",
+      "qualification_scope": "fast-tier training label; balanced/reference upgrade required near 95 percent",
+      "measurement": {
+        "method_version": "bucket-local-density-v2-weighted",
+        "measurement_cell_m": 0.02,
+        "particle_spacing_m": 0.05,
+        "particle_equivalent_volume_m3": 0.00012500000000000003,
+        "smoothing_sigma_cells": 0.8749999999999999,
+        "occupancy_level": 0.4,
+        "volume_scale": 1.0056941902529914,
+        "capacity_liters": 255.164729950989,
+        "inside_raw_liters": 0.0,
+        "heap_raw_liters": 0.0,
+        "inside_liters": 0.0,
+        "heap_liters": 0.0,
+        "fill_percent": 0.0,
+        "cavity_fraction_of_counted_load": null,
+        "selected_particles": 4536,
+        "cavity_particles": 0,
+        "load_region_particles": 0,
+        "point_support_fraction": 1.0,
+        "load_density_quantiles": [],
+        "bulk_touches_roi_boundary": false,
+        "quality_reasons": [],
+        "valid_estimate": true,
+        "compute_wall_s": 0.07625030600320315,
+        "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+      },
+      "source_hashes": {
+        "fill_module_sha256": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+        "calibration_report_sha256": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+        "held_out_report_sha256": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f"
+      }
+    },
+    "termination_machine_advanced": false,
+    "reason": "fixed support cohort no longer identifies one main soil body"
+  },
+  "final_truth": {
+    "mouth_angle_deg": 78.6216519123722,
+    "digging_interaction_observed_from_mpm_wrench": true,
+    "digging_contact_current": true,
+    "terrain_contact": true,
+    "soil_body_separation_valid": true,
+    "soil_body_separation": {
+      "schema": "soil_body_separation_truth_v1",
+      "valid": true,
+      "terrain_contact": true,
+      "separated_from_main_body": false,
+      "reason": "bucket or cavity-anchored load remains connected to main soil body",
+      "particle_count": 48800,
+      "component_count": 10,
+      "main_body_component": 1,
+      "main_body_particles": 48786,
+      "fixed_support_particles": 3872,
+      "fixed_support_fraction_in_main_body": 1.0,
+      "cavity_particles": 72,
+      "cavity_component_count": 5,
+      "cavity_component_particles": 48791,
+      "cavity_connected_to_main_body": true,
+      "main_body_particles_near_bucket_shell": 506,
+      "particle_spacing_m": 0.05,
+      "connectivity_cell_m": 0.05,
+      "bucket_contact_margin_m": 0.0625,
+      "identity_contract": "fixed particle row index; no resampling",
+      "compute_wall_s": 0.01882652899803361
+    },
+    "fill_fraction": null,
+    "fill_measurement_valid": false,
+    "fill_measurement_fresh": true,
+    "fill_measurement": {
+      "schema": "online_bucket_fill_truth_v1",
+      "valid": false,
+      "fill_fraction": null,
+      "method_version": "bucket-local-density-v2-weighted",
+      "profile": "fast-5cm",
+      "qualification_scope": "fast-tier training label; balanced/reference upgrade required near 95 percent",
+      "measurement": {
+        "method_version": "bucket-local-density-v2-weighted",
+        "measurement_cell_m": 0.02,
+        "particle_spacing_m": 0.05,
+        "particle_equivalent_volume_m3": 0.00012500000000000003,
+        "smoothing_sigma_cells": 0.8749999999999999,
+        "occupancy_level": 0.4,
+        "volume_scale": 1.0056941902529914,
+        "capacity_liters": 255.164729950989,
+        "inside_raw_liters": 8.192000000000002,
+        "heap_raw_liters": 1867.7120000000002,
+        "inside_liters": 8.238646806552508,
+        "heap_liters": 1878.3471074657955,
+        "fill_percent": 739.3599243260287,
+        "cavity_fraction_of_counted_load": 0.004366961209102385,
+        "selected_particles": 35289,
+        "cavity_particles": 72,
+        "load_region_particles": 14448,
+        "point_support_fraction": 1.0,
+        "load_density_quantiles": [
+          0.965977793931961,
+          1.1823564767837524,
+          1.4505964875221253
+        ],
+        "bulk_touches_roi_boundary": true,
+        "quality_reasons": [
+          "cavity-connected material touches measurement boundary"
+        ],
+        "valid_estimate": false,
+        "compute_wall_s": 0.1959706549969269,
+        "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+      },
+      "source_hashes": {
+        "fill_module_sha256": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+        "calibration_report_sha256": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+        "held_out_report_sha256": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f"
+      }
+    },
+    "termination_machine_advanced": false,
+    "reason": null
+  },
+  "manual_evaluation": {
+    "mouth_angle_role": "diagnostic_only",
+    "minimum_bucket_closure_normalized": 0.95,
+    "off_soil_confirmation_sim_s": 0.5,
+    "required_hold_sim_s": 3.0,
+    "sample_period_sim_s": 0.25,
+    "load_correction_reentry_confirm_ticks": 3,
+    "completed_windows": [],
+    "current_hold_sim_s_at_stop": 0.0,
+    "current_sample_count_at_stop": 0,
+    "sealed_termination": null
+  },
+  "shadow_candidate_counts": {
+    "clearance_lt_0p10": 0,
+    "clearance_lt_0p50": 0,
+    "descending": 234,
+    "ttc_lt_2p0": 1,
+    "negative_boom_and_positive_bucket": 131
+  },
+  "shadow_intervention_count": 1,
+  "end_stop_projection": {
+    "enabled": true,
+    "projection_count": 0,
+    "confirmed_at_stop": false,
+    "operator_may_hold_positive_bucket_key": true
+  },
+  "dagger_takeover": {
+    "enabled": true,
+    "policy_checkpoint_sha256": "db4cb5454160b385c929293f0de15ad85e0387e523894e5cfb186fe252c52d0a",
+    "policy_checkpoint_metadata": {
+      "schema": "excavation_phase_head_actor_entry_bc_checkpoint_v1",
+      "checkpoint_sha256": "db4cb5454160b385c929293f0de15ad85e0387e523894e5cfb186fe252c52d0a",
+      "policy_stage": "v4_compact_history_phase_actor_bc",
+      "feature_count": 2412,
+      "feature_spec_sha256": "5b3f944484ee7edfc3b2cff25ad235ad27b961e74ea4397b9a5defd8770630ad",
+      "history_ticks": 3,
+      "phase_names": [
+        "approach",
+        "penetrate_deepen",
+        "curl_load",
+        "lift_carry"
+      ],
+      "phase_route": "target_relative_entry_two_tick_v1",
+      "runtime_phase_route": "target_relative_entry_two_tick_v1",
+      "runtime_phase_milestones": {
+        "approach_to_penetrate": "valid_target_relative_pose_two_ticks",
+        "penetrate_to_curl": "post_entry_bucket_action_ge_0p5_two_ticks",
+        "curl_to_lift": "bucket_position_ge_0p90_and_boom_action_ge_0p5_two_ticks",
+        "effective_interaction": "post_entry_current_force_ge_1N_two_ticks_audit_only"
+      },
+      "train_episodes": [
+        "human-demo-20260917-101448",
+        "human-demo-20260917-091339",
+        "v4-demo-attempt-20260917-231940",
+        "v4-demo-attempt-20260918-102031",
+        "v4-demo-attempt-20260918-102212",
+        "v4-demo-attempt-20260918-102352"
+      ],
+      "validation_episodes": [],
+      "sealed_holdout_episode_ids": [
+        "v4-demo-attempt-20260918-103349",
+        "v4-demo-attempt-20260918-103536"
+      ],
+      "actor_behavior_cloning_updates": 0,
+      "critic_updates": 0,
+      "sac_gradient_steps": 0,
+      "environment_steps_at_training": 0,
+      "action_frozen_mask": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "action_frozen_values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "entry_contract": {
+        "version": "target_relative_entry_two_tick_v1",
+        "confirmation_ticks": 2,
+        "entry_relative_x_min_m": -0.3,
+        "entry_relative_z_range_m": [
+          0.85,
+          1.05
+        ],
+        "effective_force_min_n": 1.0,
+        "curl_action_min": 0.5,
+        "lift_boom_action_min": 0.5,
+        "lift_bucket_position_min": 0.9,
+        "label_boundary": "confirmation_tick_no_backdating",
+        "interaction_role": "audit_only_required_strictly_before_lift",
+        "scope": "fixed_world_x_digging_plane_existing_bucket_geometry"
+      }
+    },
+    "policy_exploration_std": 0.0,
+    "policy_observation_version": "v4",
+    "logged_observation_schema": "excavation_four_axis_observation_v3",
+    "task_phase_at_stop": "digging",
+    "task_phase_fill_blind": true,
+    "closed_bucket_negative_boom_pause_enabled": true,
+    "closed_bucket_negative_boom_pause_execution": "pause_full_action_before_physics",
+    "milestone_phase_route_enabled": true,
+    "milestone_phase_route": "causal_milestone_two_tick_episode_reset",
+    "curl_reverse_pause_enabled": true,
+    "curl_reverse_threshold": -0.1,
+    "curl_reverse_confirmation_ticks": 2,
+    "curl_reverse_pause_execution": "pause_full_action_before_physics",
+    "ttc_pause_threshold_s": 2.0,
+    "clearance_pause_threshold_m": 0.1,
+    "intervention_events": [
+      {
+        "schema": "excavation_dagger_takeover_event_v1",
+        "decision_step": 234,
+        "sim_time_s": 11.69999999999342,
+        "reasons": [
+          "predicted_ground_ttc"
+        ],
+        "safety_state": {
+          "bucket_clearance_m": 0.5733702545820889,
+          "bucket_descent_rate_mps": 0.2879194020523812,
+          "predicted_ground_ttc_s": 1.991426248092081,
+          "predicted_ground_ttc_valid": true,
+          "bucket_end_stop_confirmed": false
+        },
+        "episode_autonomous_success_eligible": false,
+        "critic_eligible": false
+      }
+    ],
+    "takeover_handshake": {
+      "schema": "excavation_takeover_handshake_summary_v1",
+      "state": "takeover_pending",
+      "requested_decision_step": 234,
+      "requested_sim_time_s": 11.69999999999342,
+      "armed_event": null,
+      "activation_event": null,
+      "first_action_buffered": false,
+      "physics_frozen_until_first_nonzero_human_action": true
+    },
+    "actor_prefix_steps": 234,
+    "human_correction_samples": 0,
+    "control_mode_at_stop": "takeover_pending",
+    "autonomous_success_eligible": false,
+    "autonomous_baseline_completion_observed": false,
+    "critic_eligible": false,
+    "claim": "protected v4 baseline evaluation; autonomous completion requires a successful sealed termination and zero takeover, and the episode never enters critic replay"
+  },
+  "training_started": false,
+  "persistent_replay_write_performed": false,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0,
+  "bc_candidate": {
+    "status": "protected_actor_evaluation_only",
+    "user_completed_with_x": false,
+    "digging_interaction_observed": true,
+    "final_separation_valid": true,
+    "final_fill_measurement_valid": false,
+    "automatic_admission": false
+  },
+  "critic_eligible": false,
+  "critic_exclusion_reason": "protected_actor_evaluation_never_enters_replay",
+  "runtime_counters": {
+    "policy_steps": 234,
+    "mechanism_steps": 1404,
+    "soil_steps": 702,
+    "terrain_captures": 59
+  },
+  "backend_qualification": {
+    "geometry_report_sha256": "b2f1a0b64a18f6993b285708d097598a6dffaa22086f80d825ff7534e50946a2",
+    "empty_report_sha256": "bf3a46cd45147b6bbf638adbf2a8bb9a5fa6f5fb15415edffeeaacef78bb360e",
+    "empty_audit_sha256": "61578d2c4d3cb588f4751cfa47462f2ee9b9cb8b56e820b6a128fd6a87b61c0d",
+    "fast_reference_report_sha256": "4974376b00d18cbecaaa28adec671928c2068ece8db0d7900e4a63a5ba5dfbb9",
+    "source_set_matches_empty_qualification": true,
+    "initial_particle_state_exact": true,
+    "initial_particle_sha256": "c787c6fc9f6ba8f2622520b1d6426a03af23a87719c8acd1a6ce5f6dacfff819",
+    "configuration": {
+      "particles": 48800,
+      "subdivision": 2,
+      "soil_voxel_m": 0.1,
+      "soil_hz": 60,
+      "mechanism_hz": 120,
+      "numerical_profile": "train-fast",
+      "max_iterations": 80,
+      "tolerance": 0.0005,
+      "solver": "auto"
+    },
+    "scope": "independent short wiring smoke; no task-success or material qualification",
+    "online_truth": {
+      "separation_schema": "soil_body_separation_truth_v1",
+      "fill_schema": "online_bucket_fill_truth_v1",
+      "fill_method": "bucket-local-density-v2-weighted",
+      "fill_profile": "fast-5cm",
+      "source_hashes": {
+        "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/online_truth.py": "6965ab2bddbd067847f0196bbae3153b19e177f6e5ce9a48ce1cc212037ea7d6",
+        "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+        "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+        "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/held-out-phases-v1/report.json": "7605eb08fdb575d3f76510c1edb00a146024345c7fef9b75db6a605e9575b48f",
+        "/home/qunwang/codex-work/compact-bank-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+        "/home/qunwang/codex-work/autonomous-multiscoop-speed-opt-2026-09-14-v1/retention-front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1"
+      },
+      "scope": "read-only fast-tier truth; no success qualification by installation alone"
+    }
+  },
+  "backend_sources_unchanged": true,
+  "truth_sources_unchanged": true,
+  "execution_sources_before": {
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_manual_demo.py": "175e60ed421ade2a33f96ece27c30b7bf44047f424748df9becf032e953c1104",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_smoke.py": "03797f2a71cc06d4ff8ff2d5f31e15a0c48a8a93abbe76a8b315d50f22a9533a",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/mpm_episode.py": "bdd2183f40607f583b5e38f1f802d48ab01d4341439ff0073ca30960b83eebbb",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/online_truth.py": "6965ab2bddbd067847f0196bbae3153b19e177f6e5ce9a48ce1cc212037ea7d6",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/runtime_adapter.py": "51cf0c1e350bb558ae59afb8c4057d71d97a609d6ce7340cfeabffacd6891d1f",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/contracts.py": "062a171da8cfc74ca18d3e9df672b66522b9a042a39a8bd8d2a98bc2fb711821",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/termination.py": "432ef69ec9c8a6ea0f5422a5ac75cbdf27190ca0f1ebd6c1ebca56d8365c65df",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/dagger_supervisor.py": "4b47451cf763a9e213a78dfc362465a0d062cb0a4ca422ed48c2db70abce0632",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector_v2.py": "ad06677a032478a713a70caa995c14cd5031e51ac2b7c57b4ad2db070cc9c077",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector.py": "056b92d3b30cc5cc9796651b31e1b5009943c730ea8e023447500c2fdfb0629a",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/v4_actor_policy.py": "1e41ec4687a7545d7d350836d304f725f5e3e86f9a0b821627eb89a46002e5ad",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector_v3.py": "4342fc58975bc332ebbd36c881833fbe21a289138c9e8a231752760502d5ca12",
+    "/home/qunwang/codex-work/v4-entry-observation-runtime-2026-09-18-v1/observation_vector_v4.py": "5f16da4bdbe209b397a43444ac0fb8568a240b6db4e703a6fed357959043537d"
+  },
+  "execution_sources_unchanged": true
+}

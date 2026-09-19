@@ -1,0 +1,136 @@
+{
+  "schema": "excavation_v4_milestone_preflight_v1",
+  "status": "passed",
+  "decision": "D-061",
+  "checks": {
+    "checkpoint_identity_exact": true,
+    "independent_actor_audit_passed": true,
+    "blind_failure_preserved": true,
+    "milestone_fixed_log_audit_passed": true,
+    "checkpoint_loaded_on_cuda": true,
+    "checkpoint_is_v4_2412": true,
+    "runtime_route_is_causal_milestone": true,
+    "router_probe_advances_one_stage_after_each_two_tick_milestone": true,
+    "failed_trace_replay_actions_finite_bounded": true,
+    "failed_trace_replay_swing_zero": true,
+    "failed_trace_replay_reverse_pause_before_original_damage": true,
+    "closed_bucket_pause_still_requires_two_ticks": true,
+    "physics_not_imported": true,
+    "actor_parameter_updates_zero": true,
+    "critic_and_sac_updates_zero": true,
+    "environment_steps_zero": true
+  },
+  "checkpoint_sha256": "b32a460e4c849e6a2d0986405d39e3397c9eccad309946cfeb6d803a4bd238d9",
+  "actor_audit_sha256": "05386a0a70f43dcf2632afdab36a1a3e20daa671dcf53f700efb422bad3662fc",
+  "blind_report_sha256": "68d582aa2b31448e96bc26201644afe772fcc56d98b06e063f7e082eed312e6f",
+  "milestone_audit_sha256": "9d942e3272d45fa9ff900051abed7faa82dba13eff1b60a553e9ef0831756ce0",
+  "failed_run_report_sha256": "ca87d8abc12492c6f9dccd4cf57f74717a36969d572fd791da2460ecfe5d6d62",
+  "fixed_observation_replay": {
+    "source_episode_id": "v4-protected-20260918-122910",
+    "evaluated_steps": 258,
+    "event": {
+      "schema": "excavation_curl_reverse_pause_event_v1",
+      "decision_step": 257,
+      "first_reverse_decision_step": 256,
+      "sim_time_s": 12.849999999992374,
+      "reason": "negative_bucket_after_confirmed_curl_start",
+      "reasons": [
+        "negative_bucket_after_confirmed_curl_start"
+      ],
+      "raw_action": [
+        0.0,
+        -1.0,
+        -0.9999939203262329,
+        -0.9735927581787109
+      ],
+      "routed_phase": "curl_load",
+      "curl_started": true,
+      "reverse_threshold": -0.1,
+      "confirmation_ticks": 2,
+      "safety_state": null,
+      "execution": "pause_full_action_before_physics",
+      "human_takeover_required": true,
+      "episode_autonomous_success_eligible": false,
+      "critic_eligible": false
+    },
+    "last_diagnostics": {
+      "raw_phase_id": 1,
+      "raw_phase": "penetrate_deepen",
+      "latched_phase_id": 2,
+      "latched_phase": "curl_load",
+      "routed_phase_id": 2,
+      "routed_phase": "curl_load",
+      "routed_phase_before_id": 2,
+      "routed_phase_before": "curl_load",
+      "milestone_advanced": false,
+      "advance_confirmation_ticks": 0,
+      "runtime_phase_route": "causal_milestone_two_tick_episode_reset",
+      "curl_started": true,
+      "phase_probabilities": [
+        3.9074941199368496e-12,
+        0.9999988079071045,
+        2.8781881762680606e-17,
+        1.1908405213034712e-06
+      ],
+      "history_valid_count": 3,
+      "decision_step": 257
+    },
+    "counterfactual_boundary": "actions are recomputed on frozen recorded observations; physical success after the pause is not claimed"
+  },
+  "router_probe": [
+    [
+      0,
+      false
+    ],
+    [
+      1,
+      true
+    ],
+    [
+      1,
+      false
+    ],
+    [
+      2,
+      true
+    ],
+    [
+      2,
+      false
+    ],
+    [
+      3,
+      true
+    ]
+  ],
+  "closed_bucket_boom_pause_event": {
+    "schema": "excavation_closed_bucket_boom_pause_event_v1",
+    "decision_step": 1,
+    "sim_time_s": 0.05,
+    "reason": "negative_boom_after_confirmed_bucket_end_stop",
+    "reasons": [
+      "negative_boom_after_confirmed_bucket_end_stop"
+    ],
+    "raw_action": [
+      0.0,
+      -0.8,
+      0.4,
+      1.0
+    ],
+    "safety_state": null,
+    "bucket_end_stop_confirmed": true,
+    "execution": "pause_full_action_before_physics",
+    "human_takeover_required": true,
+    "episode_autonomous_success_eligible": false,
+    "critic_eligible": false
+  },
+  "scope": {
+    "physics_steps": 0,
+    "actor_parameter_updates": 0,
+    "critic_parameter_updates": 0,
+    "sac_parameter_updates": 0,
+    "blind_failure_overridden": false,
+    "physical_success_claimed": false
+  },
+  "unexpected_physics_modules": []
+}

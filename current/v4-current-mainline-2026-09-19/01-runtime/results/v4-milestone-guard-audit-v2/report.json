@@ -1,0 +1,278 @@
+{
+  "schema": "excavation_v4_milestone_guard_audit_v1",
+  "status": "passed",
+  "decision": "D-061",
+  "checks": {
+    "label_report_passed": true,
+    "eight_accepted_success_references": true,
+    "reference_hashes_match": true,
+    "reference_milestone_sequences_complete": true,
+    "reference_reverse_pause_false_positives_zero": true,
+    "failed_run_is_d060_actor_only": true,
+    "failed_run_curl_started": true,
+    "failed_run_never_reached_lift_milestone": true,
+    "failed_run_reverse_pause_detected": true,
+    "failed_run_reverse_begins_at_256_pauses_before_257": true,
+    "physics_and_training_updates_zero": true
+  },
+  "configuration": {
+    "confirmation_ticks": 2,
+    "curl_action_threshold": 0.5,
+    "lift_boom_threshold": 0.5,
+    "lift_bucket_position_min": 0.9,
+    "reverse_bucket_threshold": -0.1,
+    "reverse_pause_confirmation_ticks": 2,
+    "reverse_execution": "pause_full_action_before_physics"
+  },
+  "references": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "role": "train_success_seed",
+      "source_sha256": "a75ed1dade117fb2fd10afc6bd2b7b1066b8e5f1ae1d9c4dc578f9dd85094ad0",
+      "declared_sha256": "a75ed1dade117fb2fd10afc6bd2b7b1066b8e5f1ae1d9c4dc578f9dd85094ad0",
+      "analysis": {
+        "row_count": 800,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 123,
+            "confirmed_at_decision_step": 124
+          },
+          "curl_load": {
+            "first_condition_decision_step": 347,
+            "confirmed_at_decision_step": 348
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 476,
+            "confirmed_at_decision_step": 477
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.968709467985623
+      }
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "role": "train_success_seed",
+      "source_sha256": "4d63130e783c0e6da4fd714b65e33348e8a40657fb5ca4c95c55d6458add7d85",
+      "declared_sha256": "4d63130e783c0e6da4fd714b65e33348e8a40657fb5ca4c95c55d6458add7d85",
+      "analysis": {
+        "row_count": 856,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 181,
+            "confirmed_at_decision_step": 182
+          },
+          "curl_load": {
+            "first_condition_decision_step": 325,
+            "confirmed_at_decision_step": 326
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 492,
+            "confirmed_at_decision_step": 493
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.9676465682555973
+      }
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "role": "train_success",
+      "source_sha256": "383645018905efe14cfd075e0bb7a0fb1279452137009fe7b50d04300a8e22aa",
+      "declared_sha256": "383645018905efe14cfd075e0bb7a0fb1279452137009fe7b50d04300a8e22aa",
+      "analysis": {
+        "row_count": 695,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 221,
+            "confirmed_at_decision_step": 222
+          },
+          "curl_load": {
+            "first_condition_decision_step": 351,
+            "confirmed_at_decision_step": 352
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 513,
+            "confirmed_at_decision_step": 514
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.9678881703060229
+      }
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "role": "train_success",
+      "source_sha256": "0499e15e7c31f086afc61f48dec26c434db0276ce9fa6d5cc8e757f462eab8a4",
+      "declared_sha256": "0499e15e7c31f086afc61f48dec26c434db0276ce9fa6d5cc8e757f462eab8a4",
+      "analysis": {
+        "row_count": 690,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 249,
+            "confirmed_at_decision_step": 250
+          },
+          "curl_load": {
+            "first_condition_decision_step": 376,
+            "confirmed_at_decision_step": 377
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 502,
+            "confirmed_at_decision_step": 503
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.967764473413915
+      }
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "role": "train_success",
+      "source_sha256": "740838815c926503cb21ace945858ceb614f31a70ececd2ac494407df5ac3e3c",
+      "declared_sha256": "740838815c926503cb21ace945858ceb614f31a70ececd2ac494407df5ac3e3c",
+      "analysis": {
+        "row_count": 704,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 151,
+            "confirmed_at_decision_step": 152
+          },
+          "curl_load": {
+            "first_condition_decision_step": 385,
+            "confirmed_at_decision_step": 386
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 515,
+            "confirmed_at_decision_step": 516
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.9677294269953003
+      }
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "role": "train_success",
+      "source_sha256": "3e4078432200c2eefe41276942b000febd83ef4c1edcbd463d66f547b3d1d751",
+      "declared_sha256": "3e4078432200c2eefe41276942b000febd83ef4c1edcbd463d66f547b3d1d751",
+      "analysis": {
+        "row_count": 709,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 69,
+            "confirmed_at_decision_step": 70
+          },
+          "curl_load": {
+            "first_condition_decision_step": 389,
+            "confirmed_at_decision_step": 390
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 503,
+            "confirmed_at_decision_step": 504
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.9678571159022489
+      }
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-103349",
+      "role": "sealed_blind_holdout",
+      "source_sha256": "417ee0e52e6b25288773ca8a6642571f240a40bd3d2c5feedd282fdc4fda8ffb",
+      "declared_sha256": "417ee0e52e6b25288773ca8a6642571f240a40bd3d2c5feedd282fdc4fda8ffb",
+      "analysis": {
+        "row_count": 746,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 261,
+            "confirmed_at_decision_step": 262
+          },
+          "curl_load": {
+            "first_condition_decision_step": 397,
+            "confirmed_at_decision_step": 398
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 553,
+            "confirmed_at_decision_step": 554
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.9681595256362296
+      }
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-103536",
+      "role": "sealed_blind_holdout",
+      "source_sha256": "4269006c39d4e363b210be8de006cf30bb9c7e4c057b1759da98c1ee77988b82",
+      "declared_sha256": "4269006c39d4e363b210be8de006cf30bb9c7e4c057b1759da98c1ee77988b82",
+      "analysis": {
+        "row_count": 719,
+        "transitions": {
+          "penetrate_deepen": {
+            "first_condition_decision_step": 36,
+            "confirmed_at_decision_step": 37
+          },
+          "curl_load": {
+            "first_condition_decision_step": 383,
+            "confirmed_at_decision_step": 384
+          },
+          "lift_carry": {
+            "first_condition_decision_step": 500,
+            "confirmed_at_decision_step": 501
+          }
+        },
+        "final_phase_id": 3,
+        "negative_bucket_steps_after_curl": 0,
+        "first_two_tick_reverse": null,
+        "maximum_bucket_position_normalized": 0.9677874868769547
+      }
+    }
+  ],
+  "failed_run": {
+    "episode_id": "v4-protected-20260918-122910",
+    "policy_sha256": "0ad1dea1a4cad7a3f76ad52c3430b5c8da71ba876027b3aa1dcffedcdd45383f",
+    "report_sha256": "ca87d8abc12492c6f9dccd4cf57f74717a36969d572fd791da2460ecfe5d6d62",
+    "analysis": {
+      "row_count": 473,
+      "transitions": {
+        "penetrate_deepen": {
+          "first_condition_decision_step": 44,
+          "confirmed_at_decision_step": 45
+        },
+        "curl_load": {
+          "first_condition_decision_step": 200,
+          "confirmed_at_decision_step": 201
+        }
+      },
+      "final_phase_id": 2,
+      "negative_bucket_steps_after_curl": 217,
+      "first_two_tick_reverse": {
+        "first_reverse_decision_step": 256,
+        "pause_before_decision_step": 257
+      },
+      "maximum_bucket_position_normalized": 0.13307664731887758
+    },
+    "final_fill_percent": 0.3090020495033896
+  },
+  "scope": {
+    "physics_steps": 0,
+    "actor_parameter_updates": 0,
+    "critic_parameter_updates": 0,
+    "sac_parameter_updates": 0,
+    "claim": "fixed-log causal milestone and reverse-curl counterfactual only; no physical-success claim"
+  }
+}

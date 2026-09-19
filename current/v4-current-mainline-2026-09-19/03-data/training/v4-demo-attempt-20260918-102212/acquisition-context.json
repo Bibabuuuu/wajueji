@@ -1,0 +1,10 @@
+{
+  "schema": "excavation_v4_demo_acquisition_context_v1",
+  "decision": "D-055",
+  "episode_id": "v4-demo-attempt-20260918-102212",
+  "plan_sha256": "99efc5f331804577386247e6a77f5c929aaf170842347f48ae8f11fcb5cd3669",
+  "slot_status": "unassigned_attempt_pending_audit",
+  "automatic_training_admission": false,
+  "critic_eligible": false,
+  "sac_updates_allowed": false
+}

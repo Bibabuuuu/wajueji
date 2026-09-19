@@ -1,0 +1,263 @@
+{
+  "status": "passed",
+  "checks": {
+    "all_sources_unchanged": true,
+    "independent_sources_match": true,
+    "initial_reference_and_witness_hashes": true,
+    "prediction_file_hash": true,
+    "joined_index_preserves_all_original_fields": true,
+    "prediction_rows_match_data": true,
+    "initial_predictions_reconstructed": true,
+    "final_predictions_reconstructed": true,
+    "saved_checkpoint_policy_matches_acceptance": true,
+    "saved_hash_or_no_checkpoint_matches_report": true,
+    "normalization_unchanged_from_reference": true,
+    "independent_metric_reconstruction": true,
+    "head1_constraints_rebuilt": true,
+    "head1_fit_rows_and_weights_rebuilt": true,
+    "head1_solver_objective_recomputed": true,
+    "head1_reported_radius_and_violations_match": true,
+    "head3_constraints_rebuilt": true,
+    "head3_fit_rows_and_weights_rebuilt": true,
+    "head3_solver_objective_recomputed": true,
+    "head3_reported_radius_and_violations_match": true,
+    "actual_loader_outputs_match": true,
+    "actual_loader_phases_match": true,
+    "actual_loader_transitions_match": true,
+    "inference_does_not_change_weights": true,
+    "legacy_checkpoint_route_preserved": true,
+    "episode_reset_exact": true,
+    "all_offline_decisions_independently_recomputed": true,
+    "report_status_matches_decisions": true
+  },
+  "training_behavior_status": "offline_checks_failed",
+  "independent_behavior_checks": {
+    "both_solvers_converged": true,
+    "iteration_budget_respected": true,
+    "solver_wall_budget_respected": true,
+    "float64_logit_constraints": true,
+    "l2_radius_preserved_after_float32_rounding": true,
+    "actual_float32_output_constraints": true,
+    "protected_parameters_exact": true,
+    "protected_outputs_exact": true,
+    "all_routes_complete": true,
+    "all_curl_confirmations_equal_expert": true,
+    "lift_confirmations_unchanged": true,
+    "no_reverse_pause": true,
+    "effective_interaction_before_lift": true,
+    "hold_zero_within_tolerance": true,
+    "penetrate_fit_budget": false,
+    "overall_fit_budget": true,
+    "lift_fit_improves": true,
+    "finite_bounded_swing_zero": true,
+    "inputs_unchanged": true
+  },
+  "independent_metrics": {
+    "initial_D069": {
+      "controlled_mse": 0.03082721746356271,
+      "phase_mse": {
+        "approach": 0.024932160323174312,
+        "penetrate_deepen": 0.04887561431813986,
+        "curl_load": 0.06484865563508997,
+        "lift_carry": 0.010518569641779206
+      },
+      "new_approach_mse": 0.018540780602594967,
+      "original_approach_mse": 0.029953958675058123
+    },
+    "reference_D068": {
+      "controlled_mse": 0.02923922192042226,
+      "phase_mse": {
+        "approach": 0.024932160323174312,
+        "penetrate_deepen": 0.035417171077613836,
+        "curl_load": 0.06484865563508997,
+        "lift_carry": 0.009679600615141443
+      },
+      "new_approach_mse": 0.018540780602594967,
+      "original_approach_mse": 0.029953958675058123
+    },
+    "final": {
+      "controlled_mse": 0.02943379633303091,
+      "phase_mse": {
+        "approach": 0.024932160323174312,
+        "penetrate_deepen": 0.03938859312984557,
+        "curl_load": 0.06484865563508997,
+        "lift_carry": 0.008762569576226465
+      },
+      "new_approach_mse": 0.018540780602594967,
+      "original_approach_mse": 0.029953958675058123
+    }
+  },
+  "constraint_details": [
+    {
+      "head": 1,
+      "radius": 1.2753827960769315,
+      "l2_shift_float32": 1.275382803321372,
+      "max_logit_violation": 2.1926904736346842e-14,
+      "max_output_violation": 3.457069396861634e-07,
+      "objective": 0.03360593207247503
+    },
+    {
+      "head": 3,
+      "radius": 0.4668816656962329,
+      "l2_shift_float32": 0.46688166325982794,
+      "max_logit_violation": 1.1657341758564144e-15,
+      "max_output_violation": 1.7762184142955384e-07,
+      "objective": 0.0049586122078844885
+    }
+  ],
+  "positive_lift_point_count": 22,
+  "minimum_positive_lift_delta": 0.030585944652557373,
+  "max_zero_lift_abs_output": 0.09500017762184143,
+  "actual_loader_traces": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 293,
+          "confirmed_at_decision_step": 294,
+          "decision_step": 294
+        },
+        "curl_load": {
+          "onset_decision_step": 347,
+          "confirmed_at_decision_step": 348,
+          "decision_step": 348
+        },
+        "lift_carry": {
+          "onset_decision_step": 476,
+          "confirmed_at_decision_step": 477,
+          "decision_step": 477
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 304,
+          "confirmed_at_decision_step": 305,
+          "decision_step": 305
+        },
+        "curl_load": {
+          "onset_decision_step": 325,
+          "confirmed_at_decision_step": 326,
+          "decision_step": 326
+        },
+        "lift_carry": {
+          "onset_decision_step": 492,
+          "confirmed_at_decision_step": 493,
+          "decision_step": 493
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 318,
+          "confirmed_at_decision_step": 319,
+          "decision_step": 319
+        },
+        "curl_load": {
+          "onset_decision_step": 351,
+          "confirmed_at_decision_step": 352,
+          "decision_step": 352
+        },
+        "lift_carry": {
+          "onset_decision_step": 514,
+          "confirmed_at_decision_step": 515,
+          "decision_step": 515
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 285,
+          "confirmed_at_decision_step": 286,
+          "decision_step": 286
+        },
+        "curl_load": {
+          "onset_decision_step": 376,
+          "confirmed_at_decision_step": 377,
+          "decision_step": 377
+        },
+        "lift_carry": {
+          "onset_decision_step": 503,
+          "confirmed_at_decision_step": 504,
+          "decision_step": 504
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 279,
+          "confirmed_at_decision_step": 280,
+          "decision_step": 280
+        },
+        "curl_load": {
+          "onset_decision_step": 385,
+          "confirmed_at_decision_step": 386,
+          "decision_step": 386
+        },
+        "lift_carry": {
+          "onset_decision_step": 516,
+          "confirmed_at_decision_step": 517,
+          "decision_step": 517
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "transitions": {
+        "penetrate_deepen": {
+          "onset_decision_step": 290,
+          "confirmed_at_decision_step": 291,
+          "decision_step": 291
+        },
+        "curl_load": {
+          "onset_decision_step": 389,
+          "confirmed_at_decision_step": 390,
+          "decision_step": 390
+        },
+        "lift_carry": {
+          "onset_decision_step": 504,
+          "confirmed_at_decision_step": 505,
+          "decision_step": 505
+        }
+      },
+      "first_reverse_pause": null,
+      "last_phase": "lift_carry",
+      "effective_interaction_before_lift": true
+    }
+  ],
+  "maximum_metric_difference": 0.0,
+  "maximum_loader_action_difference": 6.079673767089844e-06,
+  "report_sha256": "13c079f2ef67bfab1aa319770f341a530c2c1fb08ef723e696c04475c4001d5b",
+  "auditor_sha256": "c2c963ca27742ae96d0d740f7c3eb6fa01d2ba1652e501d7723daaa65ea22f56",
+  "checkpoint_sha256": null,
+  "scope": {
+    "parameter_updates": 0,
+    "physics_steps": 0,
+    "holdouts_opened": 0,
+    "deployed": false
+  },
+  "claim": "Independent reconstruction and acceptance decisions, not global optimizer optimality or physical success."
+}

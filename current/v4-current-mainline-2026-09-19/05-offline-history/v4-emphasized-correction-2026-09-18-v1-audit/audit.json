@@ -1,0 +1,142 @@
+{
+  "schema": "excavation_v4_anchored_correction_audit_v1",
+  "status": "passed",
+  "training_result": "failed",
+  "checks": {
+    "plan_exact": true,
+    "base_index_exact": true,
+    "initial_checkpoint_exact": true,
+    "prediction_archive_exact": true,
+    "correction_index_exact": true,
+    "source_files_unchanged": true,
+    "correction_audited_sources_unchanged": true,
+    "expected_counts": true,
+    "base_targets_masks_phases_exact": true,
+    "correction_targets_masks_phases_exact": true,
+    "direct_trigger_index_exact": true,
+    "candidate_50_selection_recomputed": true,
+    "candidate_100_selection_recomputed": true,
+    "candidate_200_selection_recomputed": true,
+    "candidate_500_selection_recomputed": true,
+    "all_metrics_recomputed": true,
+    "selection_is_earliest_passing_or_none": true,
+    "checkpoint_only_if_accepted": true,
+    "no_physics_loaded": true,
+    "reported_scope_is_actor_only_no_deployment": true
+  },
+  "maximum_metric_discrepancy": 0.0,
+  "recomputed_candidates": [
+    {
+      "step": 50,
+      "conditions": {
+        "each_correction_improved": false,
+        "base_preserved": true,
+        "each_base_phase_preserved": true,
+        "direct_trigger_improved": false,
+        "frozen_parameters_exact_reported": true,
+        "swing_rows_exact_reported": true,
+        "trainable_parameters_changed_reported": true,
+        "finite_bounded_zero_swing": true,
+        "fixed_traces_reach_curl_without_reverse_reported": false
+      },
+      "base_degradation": 0.01679109928219602,
+      "episode_improvements": {
+        "v4-milestone-20260918-142653": 0.03598365887841504,
+        "v4-handshake-20260918-161214": 0.05219674294372767
+      },
+      "phase_degradations": {
+        "approach": 0.010877572777106215,
+        "penetrate_deepen": 0.01050514394933244,
+        "curl_load": 0.03251033984505547,
+        "lift_carry": -0.021865407710968676
+      },
+      "direct_trigger_improvement": 0.14477223418407048
+    },
+    {
+      "step": 100,
+      "conditions": {
+        "each_correction_improved": false,
+        "base_preserved": false,
+        "each_base_phase_preserved": false,
+        "direct_trigger_improved": true,
+        "frozen_parameters_exact_reported": true,
+        "swing_rows_exact_reported": true,
+        "trainable_parameters_changed_reported": true,
+        "finite_bounded_zero_swing": true,
+        "fixed_traces_reach_curl_without_reverse_reported": false
+      },
+      "base_degradation": 0.09326234743462924,
+      "episode_improvements": {
+        "v4-milestone-20260918-142653": 0.06674740799615142,
+        "v4-handshake-20260918-161214": 0.09916408738297389
+      },
+      "phase_degradations": {
+        "approach": 0.12523730551749712,
+        "penetrate_deepen": 0.11644287853384827,
+        "curl_load": 0.09322214507073756,
+        "lift_carry": -0.02279967471191713
+      },
+      "direct_trigger_improvement": 0.27995176802831645
+    },
+    {
+      "step": 200,
+      "conditions": {
+        "each_correction_improved": false,
+        "base_preserved": false,
+        "each_base_phase_preserved": false,
+        "direct_trigger_improved": true,
+        "frozen_parameters_exact_reported": true,
+        "swing_rows_exact_reported": true,
+        "trainable_parameters_changed_reported": true,
+        "finite_bounded_zero_swing": true,
+        "fixed_traces_reach_curl_without_reverse_reported": false
+      },
+      "base_degradation": 0.2352990966449071,
+      "episode_improvements": {
+        "v4-milestone-20260918-142653": 0.11736869208152267,
+        "v4-handshake-20260918-161214": 0.18136379558171511
+      },
+      "phase_degradations": {
+        "approach": 0.391261089429332,
+        "penetrate_deepen": 0.3665388959514795,
+        "curl_load": 0.15072058195421478,
+        "lift_carry": -0.0348965843864818
+      },
+      "direct_trigger_improvement": 0.46555663251177426
+    },
+    {
+      "step": 500,
+      "conditions": {
+        "each_correction_improved": false,
+        "base_preserved": false,
+        "each_base_phase_preserved": false,
+        "direct_trigger_improved": true,
+        "frozen_parameters_exact_reported": true,
+        "swing_rows_exact_reported": true,
+        "trainable_parameters_changed_reported": true,
+        "finite_bounded_zero_swing": true,
+        "fixed_traces_reach_curl_without_reverse_reported": false
+      },
+      "base_degradation": 0.2619673271893661,
+      "episode_improvements": {
+        "v4-milestone-20260918-142653": 0.2275958990937803,
+        "v4-handshake-20260918-161214": 0.3790215012735342
+      },
+      "phase_degradations": {
+        "approach": 0.4238549905266953,
+        "penetrate_deepen": 0.4997521558671618,
+        "curl_load": 0.12833565390817991,
+        "lift_carry": -0.05162056815611171
+      },
+      "direct_trigger_improvement": 0.6458147621224932
+    }
+  ],
+  "boundary": "fit/regression data already used for selection; no held-out generalization or physical behavior claim",
+  "rejected_candidate_weight_and_trace_scope": "unsaved rejected weights and their trace predictions are trainer-reported; metric arithmetic and source identities independently verified",
+  "source_sha256": {
+    "report": "c9327bb9c488c5d8862a2abc4f67c78a9531da543262876f5acd139395071c13",
+    "auditor": "132c20b4d43880c17ad82e4a219a839233ebd3bb8dd67c59543a3dc103781490"
+  },
+  "training_updates_in_audit": 0,
+  "environment_steps_in_audit": 0
+}

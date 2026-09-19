@@ -1,0 +1,42 @@
+{
+  "episode_id": "v4-handshake-20260918-161214",
+  "persistent_replay_write_performed": false,
+  "critic_eligible_transition_count": 0,
+  "human_intervention_episode": true,
+  "dagger_correction_sample_count": 282,
+  "takeover_handshake": {
+    "schema": "excavation_takeover_handshake_summary_v1",
+    "state": "human_correction",
+    "requested_decision_step": 478,
+    "requested_sim_time_s": 23.899999999982324,
+    "armed_event": {
+      "schema": "excavation_takeover_handshake_event_v1",
+      "event": "human_takeover_armed",
+      "decision_step": 478,
+      "sim_time_s": 23.899999999982324,
+      "physics_advanced": false,
+      "release_condition": "first_nonzero_human_action"
+    },
+    "activation_event": {
+      "schema": "excavation_takeover_handshake_event_v1",
+      "event": "first_nonzero_human_action",
+      "decision_step": 478,
+      "sim_time_s": 23.899999999982324,
+      "raw_human_action": [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "physics_advanced_before_action": false,
+      "record_as_direct_expert_label": true
+    },
+    "first_action_buffered": false,
+    "physics_frozen_until_first_nonzero_human_action": true
+  },
+  "autonomous_success_eligible": false,
+  "autonomous_baseline_completion_observed": false,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0
+}

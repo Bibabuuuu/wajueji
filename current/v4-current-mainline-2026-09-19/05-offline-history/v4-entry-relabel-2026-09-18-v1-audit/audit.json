@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "checks": {
+    "labels_hash_matches": true,
+    "six_episodes_and_4363_unique_rows": true,
+    "source_hashes_match": true,
+    "human-demo-20260917-101448:all_labels": true,
+    "human-demo-20260917-101448:original_records": true,
+    "human-demo-20260917-101448:boundaries": true,
+    "human-demo-20260917-101448:force_before_lift": true,
+    "human-demo-20260917-091339:all_labels": true,
+    "human-demo-20260917-091339:original_records": true,
+    "human-demo-20260917-091339:boundaries": true,
+    "human-demo-20260917-091339:force_before_lift": true,
+    "v4-demo-attempt-20260917-231940:all_labels": true,
+    "v4-demo-attempt-20260917-231940:original_records": true,
+    "v4-demo-attempt-20260917-231940:boundaries": true,
+    "v4-demo-attempt-20260917-231940:force_before_lift": true,
+    "v4-demo-attempt-20260918-102031:all_labels": true,
+    "v4-demo-attempt-20260918-102031:original_records": true,
+    "v4-demo-attempt-20260918-102031:boundaries": true,
+    "v4-demo-attempt-20260918-102031:force_before_lift": true,
+    "v4-demo-attempt-20260918-102212:all_labels": true,
+    "v4-demo-attempt-20260918-102212:original_records": true,
+    "v4-demo-attempt-20260918-102212:boundaries": true,
+    "v4-demo-attempt-20260918-102212:force_before_lift": true,
+    "v4-demo-attempt-20260918-102352:all_labels": true,
+    "v4-demo-attempt-20260918-102352:original_records": true,
+    "v4-demo-attempt-20260918-102352:boundaries": true,
+    "v4-demo-attempt-20260918-102352:force_before_lift": true
+  },
+  "evidence": [
+    {
+      "episode_id": "human-demo-20260917-101448",
+      "confirmed_transitions": [
+        294,
+        348,
+        477
+      ],
+      "effective_confirmed_step": 307
+    },
+    {
+      "episode_id": "human-demo-20260917-091339",
+      "confirmed_transitions": [
+        305,
+        326,
+        493
+      ],
+      "effective_confirmed_step": 371
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260917-231940",
+      "confirmed_transitions": [
+        319,
+        352,
+        514
+      ],
+      "effective_confirmed_step": 328
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102031",
+      "confirmed_transitions": [
+        286,
+        377,
+        503
+      ],
+      "effective_confirmed_step": 302
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102212",
+      "confirmed_transitions": [
+        280,
+        386,
+        516
+      ],
+      "effective_confirmed_step": 287
+    },
+    {
+      "episode_id": "v4-demo-attempt-20260918-102352",
+      "confirmed_transitions": [
+        291,
+        390,
+        504
+      ],
+      "effective_confirmed_step": 297
+    }
+  ],
+  "report_sha256": "23484d0486c05a0b09c340dbf12765072626b526bf6549c43ed58b9d632a6011",
+  "auditor_sha256": "556e9db0b994317b65baede71f273caad5318daa26858b9d16ac72fc08f2137f",
+  "environment_steps": 0,
+  "parameter_updates": 0,
+  "truth_files_opened": 0,
+  "holdout_files_opened": 0,
+  "method": "independent pair scans; no labeler or router imports"
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "excavation_four_axis_manual_demo_status_v1",
+  "status": "closed",
+  "episode_id": "human-demo-20260917-091339",
+  "pid": 8341,
+  "task_ready": false,
+  "training_started": false,
+  "actor_parameter_updates": 0,
+  "critic_parameter_updates": 0,
+  "sac_parameter_updates": 0,
+  "wall_s": 123.54976820699994,
+  "executed_decisions": 856,
+  "phase": "approach",
+  "failure": null,
+  "sim_time_s": 42.79999999996514,
+  "bucket_min_z_m": 2.2766652369653664,
+  "force_norm_n": 6620.937213266052,
+  "mouth_angle_deg": 18.30079624740557,
+  "evaluation_hold_sim_s": 0.0,
+  "evaluation_sample_count": 0,
+  "stop_reason": "user_finished"
+}

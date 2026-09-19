@@ -1,0 +1,93 @@
+{
+  "schema": "excavation_takeover_handshake_preflight_v1",
+  "status": "passed",
+  "checks": {
+    "enter_arms_without_advancing_physics": true,
+    "zero_action_keeps_physics_frozen": true,
+    "first_nonzero_action_is_direct_expert_label": true,
+    "first_action_survives_key_release_until_execution": true,
+    "decision_step_is_exactly_preserved": true,
+    "physics_not_imported": true,
+    "environment_steps_zero": true,
+    "actor_parameter_updates_zero": true,
+    "critic_parameter_updates_zero": true,
+    "sac_parameter_updates_zero": true
+  },
+  "probe": {
+    "requested_decision_step": 478,
+    "requested_sim_time_s": 23.9,
+    "armed_event": {
+      "schema": "excavation_takeover_handshake_event_v1",
+      "event": "human_takeover_armed",
+      "decision_step": 478,
+      "sim_time_s": 23.9,
+      "physics_advanced": false,
+      "release_condition": "first_nonzero_human_action"
+    },
+    "zero_action_activation": null,
+    "activation_event": {
+      "schema": "excavation_takeover_handshake_event_v1",
+      "event": "first_nonzero_human_action",
+      "decision_step": 478,
+      "sim_time_s": 23.9,
+      "raw_human_action": [
+        0.0,
+        1.0,
+        -1.0,
+        1.0
+      ],
+      "physics_advanced_before_action": false,
+      "record_as_direct_expert_label": true
+    },
+    "buffered_action_used_for_first_step": [
+      0.0,
+      1.0,
+      -1.0,
+      1.0
+    ],
+    "handshake_after_first_step": {
+      "schema": "excavation_takeover_handshake_summary_v1",
+      "state": "human_correction",
+      "requested_decision_step": 478,
+      "requested_sim_time_s": 23.9,
+      "armed_event": {
+        "schema": "excavation_takeover_handshake_event_v1",
+        "event": "human_takeover_armed",
+        "decision_step": 478,
+        "sim_time_s": 23.9,
+        "physics_advanced": false,
+        "release_condition": "first_nonzero_human_action"
+      },
+      "activation_event": {
+        "schema": "excavation_takeover_handshake_event_v1",
+        "event": "first_nonzero_human_action",
+        "decision_step": 478,
+        "sim_time_s": 23.9,
+        "raw_human_action": [
+          0.0,
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "physics_advanced_before_action": false,
+        "record_as_direct_expert_label": true
+      },
+      "first_action_buffered": false,
+      "physics_frozen_until_first_nonzero_human_action": true
+    }
+  },
+  "scope": {
+    "physics_steps": 0,
+    "environment_steps": 0,
+    "actor_parameter_updates": 0,
+    "critic_parameter_updates": 0,
+    "sac_parameter_updates": 0,
+    "gui_started": false
+  },
+  "unexpected_physics_modules": [],
+  "source_sha256": {
+    "dagger_supervisor.py": "4b47451cf763a9e213a78dfc362465a0d062cb0a4ca422ed48c2db70abce0632",
+    "mpm_manual_demo.py": "175e60ed421ade2a33f96ece27c30b7bf44047f424748df9becf032e953c1104",
+    "preflight_takeover_handshake.py": "d53e2307abe9e9ecf8ea7129473575b21ee9cba2de58baff58b06346aad61fa0"
+  }
+}
