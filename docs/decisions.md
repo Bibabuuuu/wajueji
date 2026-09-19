@@ -1,3 +1,11 @@
+## D-032：接触策略采用三动作头新schema，视觉回执与运行准入外置（2026-09-19）
+
+**当前选择**：新接触BC只学习`penetrate_deepen`、`curl_load`、`lift_clear`三个动作头。完整标签仍保留`approach`、`off_soil_confirm`和`uncertain/recovery`，但前两者由几何层负责，恢复段由安全监督器负责。旧四头权重不得迁移、改名或部分加载为新策略；新checkpoint必须使用独立schema，并绑定reviewed标签清单、人工复核回执、开发划分、训练划分归一化与零holdout读取证明。训练checkpoint本身不授予部署资格，运行时还须提供与权重哈希绑定的独立交接审计回执。
+
+**原因与证据**：[隔离审计](../reports/v4/contact-foundation/contact-checkpoint-contract-2026-09-19-v1/report.md)证明旧四头checkpoint和新三动作头契约双向拒绝，当前34段候选也因`visual_manual_review_pending`被拒绝。6条训练轨迹和1条接管轨迹的允许目录只有7张启动画面，没有连续视频或过程关键帧；数值时间线不能代替操作者画面意图确认。
+
+**后果与重评条件**：当前不生成reviewed标签、不创建新checkpoint、不训练。下一步须选择确定性复演并同步采集视觉证据，或将旧六条永久降级为数值先验并录制新示范。只有连续画面和接管边界人工复核完成后，才签发标签回执并冻结M2开发划分；几何交接还须单独通过运行审计，不能由训练报告代替。
+
 ## D-031：接触BC候选只保留近土至脱土动作段，人工复核前禁用（2026-09-19）
 
 **当前选择**：保留旧`subphase-labels.ndjson`和演员索引不变，另建`contact-segments.ndjson`与`contact-events.ndjson`作为工作包C候选。自由空间`approach`、最终`off_soil_confirm`和`uncertain/recovery`不作为接触动作BC监督；`penetrate_deepen`、`curl_load`、`lift_clear`仅在连续画面人工复核和checkpoint兼容契约完成后才可获得训练资格。候选几何交接点以真实接触前20个决策（1秒）回看裁切，只用于保留训练上下文，禁止直接复制为在线门槛。

@@ -1,3 +1,9 @@
+## 2026-09-19：接触策略checkpoint隔离契约通过，视觉复核证据缺失
+
+新接触策略checkpoint契约已冻结：完整离线标签为5个主阶段加`uncertain/recovery`，动作策略只允许`penetrate_deepen`、`curl_load`、`lift_clear`三个动作头；`approach`和`off_soil_confirm`归几何控制，模糊恢复归安全监督器。旧`approach/penetrate_deepen/curl_load/lift_carry`四头checkpoint被新契约拒绝，新schema也被旧加载器拒绝。未来checkpoint还必须绑定已复核标签清单、互斥开发划分、仅训练划分归一化、零holdout读取和独立运行准入回执。
+
+允许的6条训练轨迹与1条接管轨迹中只找到7张`ready-with-ui.ppm`启动画面，没有连续视频或过程关键帧，不能据此完成原计划的画面级意图复核。因此34段候选仍被`contact_label_schema_not_reviewed`拒绝，训练资格行数保持0。本次只验收元数据隔离和证据可用性审计；checkpoint加载、参数更新、物理步数、封存路径读取均为0。见[checkpoint隔离审计](../reports/v4/contact-foundation/contact-checkpoint-contract-2026-09-19-v1/report.md)。
+
 ## 2026-09-19：M1工作包C固定日志候选生成通过，人工复核待完成
 
 候选生成器只从演员索引明确允许的6条训练轨迹读取4363行，并单独核对一次精确接管交界；未接受holdout路径。生成34段、33个事件和六张动作/速度/缸位/接触时间线，索引覆盖一次且边界有序。2020行自由空间接近、643行离土确认不作接触动作监督；24行接触丢失/重入标为`uncertain/recovery`且四轴掩码全零。中间三阶段1676行仅为人工复核后候选，当前训练资格行数为0。

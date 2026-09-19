@@ -107,6 +107,6 @@ cylinder_velocity = inverse(J_cylinder(q)) × desired_joint_velocity
 - 实现几何接近到接触策略的交接契约并通过空载验证；
 - 冻结开发划分和M2对照配置。
 
-其中接触片段的固定日志候选已经生成，但全部仍为`training_eligible_now=false`；六条画面复核、精确接管画面复核和checkpoint兼容契约未完成，不能把候选文件解释为工作包C已经验收。
+其中接触片段的固定日志候选已经生成，但全部仍为`training_eligible_now=false`。checkpoint兼容契约已经冻结并能双向拒绝旧四头权重与新三动作头schema；六条连续画面和精确接管画面在归档中不存在，人工复核仍未完成，不能把候选文件解释为工作包C已经验收。
 
 在这些门槛通过前，不启动接触BC重训、残差RL或官方数据预训练。

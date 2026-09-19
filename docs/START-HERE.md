@@ -1,6 +1,6 @@
 # 从这里开始：当前路线与参与方式
 
-> **2026-09-19 最新规划入口：** [自主连续三铲总体规划](autonomous-excavation-plan.md)和[接触策略基础与交接详细规划](v4/contact-policy-next-section.md)。当前确定分层路线：感知规划选点、几何闭环接近、自己的示范初始化接触策略并研究强化学习优化、几何闭环运输卸料。M1工作包A的动作/运动学契约和工作包B的固定日志归因均已完成；工作包C已生成[接触阶段候选与复核清单](../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md)，但六条连续画面和精确接管交界仍待人工复核，当前标签训练资格为零。尚未启动训练、物理运行或平台传输。
+> **2026-09-19 最新规划入口：** [自主连续三铲总体规划](autonomous-excavation-plan.md)和[接触策略基础与交接详细规划](v4/contact-policy-next-section.md)。当前确定分层路线：感知规划选点、几何闭环接近、自己的示范初始化接触策略并研究强化学习优化、几何闭环运输卸料。M1工作包A、B已完成；工作包C已生成[接触阶段候选](../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md)并冻结[checkpoint隔离契约](../reports/v4/contact-foundation/contact-checkpoint-contract-2026-09-19-v1/report.md)。归档只有启动画面而没有连续视觉证据，人工复核仍受阻，当前标签训练资格为零。尚未启动训练、物理运行或平台传输。
 
 > **2026-09-19 更新：** 2026-09-14 的连续三铲路线保留为历史提交基线。当前四轴模仿学习、精确接管和进场漂移主线从 [`v4/README.md`](v4/README.md) 继续；不要再从 `/home/qunwang/codex-work` 中按目录名猜测最新版。
 

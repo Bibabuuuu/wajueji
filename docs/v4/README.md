@@ -2,7 +2,7 @@
 
 更新：2026-09-19（Asia/Shanghai）
 
-当前路线见[总体规划](../autonomous-excavation-plan.md)，下一工作单元见[接触策略基础与交接详细规划](contact-policy-next-section.md)。拟将接近交给几何闭环，学习范围收束为近土起姿到带载脱土。M1工作包A的固定日志审计和本机缸速到关节角速度换算已经通过，工作包B也已完成[进场漂移与卷斗反向归因](../../reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md)。工作包C现已生成[接触阶段候选](../../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md)，但画面级人工复核和checkpoint隔离契约尚未完成，新分层控制器尚未实施。
+当前路线见[总体规划](../autonomous-excavation-plan.md)，下一工作单元见[接触策略基础与交接详细规划](contact-policy-next-section.md)。拟将接近交给几何闭环，学习范围收束为近土起姿到带载脱土。M1工作包A、B已经通过；工作包C已生成[接触阶段候选](../../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md)并冻结[checkpoint隔离契约](../../reports/v4/contact-foundation/contact-checkpoint-contract-2026-09-19-v1/report.md)。归档没有连续视觉证据，画面级人工复核仍受阻，新分层控制器尚未实施。
 
 ## 当前结论
 
@@ -48,10 +48,10 @@
 
 ## 下一步技术工作
 
-动作/数据契约和固定日志归因已经完成。工作包C从4363条允许索引行生成34段候选：2020行自由空间接近被排除，1676行接触动作仅在复核后可候选，643行离土确认不作动作监督，24行接触丢失/重入被显式屏蔽。当前训练资格仍为零。下一项先完成六张时间线和精确接管交界的人工复核，再冻结标签schema与checkpoint兼容契约，然后进入几何交接设计。
+动作/数据契约、固定日志归因和checkpoint隔离已经完成。工作包C从4363条允许索引行生成34段候选：2020行自由空间接近被排除，1676行接触动作仅在复核后可候选，643行离土确认不作动作监督，24行接触丢失/重入被显式屏蔽。允许目录只有7张启动画面，没有连续视频或过程关键帧；当前训练资格仍为零。
 
-1. 按[人工复核清单](../../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/manual-review-checklist.md)逐条确认接触、卷斗、离土、接管及红色模糊边界；复核前不得把候选接入训练。
-2. 冻结新标签schema和checkpoint兼容性契约；旧四阶段权重不得无声明加载五阶段加恢复状态。
+1. 决定连续视觉证据路径：复演旧轨迹并同步录屏/关键帧，或把旧六条仅作数值先验并改录新示范；随后按[人工复核清单](../../reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/manual-review-checklist.md)完成复核。
+2. checkpoint兼容性契约已经冻结；旧四阶段权重和未reviewed标签均会被拒绝。人工回执完成后再生成reviewed标签和M2开发划分。
 3. 分别保存铲斗原点、斗齿尖和斗口世界坐标，不再把旧铲斗原点入口窗口无声解释为斗齿接触条件；阶段切换不得只等待当前策略自己产生特定动作。
 4. 完成上述契约后，再实现几何交接的零物理/空载候选；反向卷斗保护保持启用。
 5. 为仓库相对路径和离线算力平台建立独立候选，并重新执行源码哈希与预检，不能沿用旧绝对路径审计结论。
