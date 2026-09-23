@@ -639,6 +639,7 @@ def run(args):
                     or not cycle_metadata['truck_enabled']
                     or audit_document.get('status') != 'hold_passed'
                     or audit_document.get('source') != checkpoint_before
+                    or audit_document.get('source_metadata') != metadata_before
                     or audit_document.get('frames_completed', 0) < 3
                     or not audit_document.get('zero_step', {}).get('exact')
                     or max(audit_document['zero_step']['cycle_errors'].values()) > 1e-12):
@@ -1362,6 +1363,8 @@ def run(args):
                     "MANUAL LOADED TRANSPORT / NOT TRAINING DATA"
                     if transport_mode else
                     "MANUAL CONTACT PILOT / NOT TRAINING DATA")
+                if cycle_mode:
+                    imgui.text(f"SCOOP {cycle_metadata['cycle_index']}/3 | continuous terrain")
                 if fill_config:
                     from live_bucket_fill import display_lines
                     if phase != "off_soil_confirm":

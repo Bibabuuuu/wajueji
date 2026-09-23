@@ -14,6 +14,18 @@ busy="$(nvidia-smi -i 0 --query-compute-apps=pid --format=csv,noheader,nounits)"
 [[ -z "$busy" ]] || { echo "GPU0 busy: $busy" >&2; exit 2; }
 export PYTHONDONTWRITEBYTECODE=1
 export PYTHONPATH="$repo/src/v4:$repo"
+export OPENBLAS_NUM_THREADS=1
+export OMP_NUM_THREADS=1
+# Fail before any physical hold/transport if this is not a completed manual
+# scoop with a following scoop to prepare. Partial transport has a different
+# starting geometry and must not enter this whole-cycle entry point.
+"$python_bin" - "$source_point" <<'PY'
+import sys
+from layered_47_cycle_checkpoint import load
+_, metadata = load(sys.argv[1])
+if metadata['stage'] != 'loaded_manual_endpoint' or metadata['cycle_index'] not in (1, 2):
+    raise ValueError('next_scoop_requires_first_or_second_normal_manual_endpoint')
+PY
 run_id="next-scoop-$(date +%Y%m%d-%H%M%S)-$$"
 output="$repo/runs/layered-47-cycle-v1/$run_id"
 mkdir -p "$output"

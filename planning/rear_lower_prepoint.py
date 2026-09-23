@@ -213,6 +213,13 @@ def mechanism_and_truck_clearance(
             geometry["body_local_vertices"] @ pose[:3, :3].T
             + pose[:3, 3])
         observed_clearance = _material_clearance(world, terrain)
+        if observed_clearance is not None and observed_clearance < MECHANISM_CLEARANCE_M:
+            # A link-wide world AABB couples the low hinge at one end with
+            # soil beneath the high end. Refine using the enclosing rotated
+            # local box against every observed solid terrain column. Both
+            # shapes still enclose their geometry; no clearance is waived.
+            observed_clearance = max(observed_clearance, oriented_terrain_separation(
+                world_corners, pose[:3, :3], terrain))
         mechanism_clearance = min(
             mechanism_clearance, float(world[:, 2].min()))
         if observed_clearance is not None:
@@ -224,6 +231,44 @@ def mechanism_and_truck_clearance(
         "mechanism_terrain_clearance_m": mechanism_clearance,
         "static_truck_aabb_separation_m": truck_clearance,
     }
+
+
+def oriented_terrain_separation(corners, rotation, terrain):
+    """Conservative SAT distance lower bound: oriented box to height columns."""
+    corners = np.asarray(corners, dtype=float)
+    height = np.asarray(terrain['height_m'], dtype=float)
+    origin = np.asarray(terrain['origin_xy_m'], dtype=float)
+    cell = float(terrain['resolution_m'])
+    lower = np.floor((corners.min(0)[:2] - .02 - origin) / cell).astype(int)
+    upper = np.floor((corners.max(0)[:2] + .02 - origin) / cell).astype(int)
+    lower = np.maximum(lower, 0)
+    upper = np.minimum(upper, np.array(height.shape[::-1]) - 1)
+    ground = float(corners[:, 2].min())
+    if np.any(lower > upper):
+        return ground
+    iy, ix = np.mgrid[lower[1]:upper[1]+1, lower[0]:upper[0]+1]
+    heights = height[iy, ix].ravel()
+    known = np.isfinite(heights) & (heights > 0)
+    if not known.any():
+        return ground
+    xy = origin + cell * (np.column_stack([ix.ravel(), iy.ravel()])[known] + .5)
+    bottom = min(0., ground) - 1.
+    centers = np.column_stack([xy, (heights[known] + bottom) / 2])
+    half = np.column_stack([np.full((len(xy), 2), cell / 2), (heights[known] - bottom) / 2])
+    axes = [*np.eye(3), *rotation.T]
+    axes += [np.cross(a, b) for a in np.eye(3) for b in rotation.T]
+    gaps = np.zeros(len(xy))
+    for axis in axes:
+        norm = np.linalg.norm(axis)
+        if norm < 1e-10:
+            continue
+        axis = axis / norm
+        projected = corners @ axis
+        center = centers @ axis
+        radius = half @ np.abs(axis)
+        gaps = np.maximum(gaps, np.maximum(center - radius - projected.max(),
+                                           projected.min() - center - radius))
+    return min(ground, float(gaps.min()))
 
 
 def _joint_bounds_ok(qpos: np.ndarray, chain) -> bool:
@@ -249,7 +294,9 @@ def plan_rear_lower_prepoint(
         maximum_segment_frames: int = 2400,
         maximum_closure_m: float = 1.0e-4,
         required_bucket_clearance_m: float =
-            REQUIRED_BUCKET_CLEARANCE_M) -> dict:
+            REQUIRED_BUCKET_CLEARANCE_M,
+        transfer_profiles: tuple[tuple[float, float], ...] | None = None,
+        prepoint_offsets: tuple[tuple[float, float], ...] | None = None) -> dict:
     """Select and validate a staged non-contact route to a rear prepoint."""
     contact_xy = np.asarray(contact_selection["contact_xy_m"], dtype=np.float64)
     anchor_xy = np.asarray(
@@ -286,6 +333,21 @@ def plan_rear_lower_prepoint(
         (0.30, 0.30, -0.32, 0.525, -0.35),
         (0.30, 0.30, -0.32, 0.50, -0.32),
     ]
+    if transfer_profiles is not None:
+        profiles = np.asarray(transfer_profiles, dtype=np.float64)
+        if (profiles.ndim != 2 or profiles.shape[1] != 2 or not 1 <= len(profiles) <= 8
+                or not np.isfinite(profiles).all()
+                or np.any((profiles[:, 0] < .50) | (profiles[:, 0] > 2.0))
+                or np.any((profiles[:, 1] < -.8) | (profiles[:, 1] > -.20))):
+            raise ValueError('rear_prepoint_transfer_profiles')
+        candidates = [(0.30, 0.30, -0.32, float(h), float(p)) for h,p in profiles]
+    if prepoint_offsets is not None:
+        offsets = np.asarray(prepoint_offsets, dtype=np.float64)
+        if (offsets.ndim != 2 or offsets.shape[1] != 2 or not 1 <= len(offsets) <= 3
+                or not np.isfinite(offsets).all() or np.any((offsets < .30) | (offsets > .60))):
+            raise ValueError('rear_prepoint_offsets')
+        candidates = [(float(out), float(up), pitch, h, p)
+                      for out, up in offsets for _, _, pitch, h, p in candidates]
     for (outward_m, upward_m, pitch_rad, high_offset_m,
          transfer_pitch_rad) in candidates:
         prepoint = np.r_[contact_xy + outward_m * radial,
@@ -336,7 +398,8 @@ def plan_rear_lower_prepoint(
                 if bucket["clearance_m"] < required_bucket_clearance:
                     raise ValueError(
                         "rear_prepoint_bucket_clearance:"
-                        f"{bucket['clearance_m']:.9f}")
+                        f"{bucket['clearance_m']:.9f}; stage={name}; "
+                        f"point={bucket['proxy_point_world_m']}; surface={bucket['cell_surface_z_m']}")
                 sweep = mechanism_and_truck_clearance(
                     geometries, bodies, terrain, truck)
                 mechanism_clearance = sweep[
@@ -372,6 +435,10 @@ def plan_rear_lower_prepoint(
                     "closure_m": closure,
                 }
 
+            # Reject an obstructed endpoint before an expensive dense sweep.
+            # This does not replace the subsequent whole-path validation.
+            for name, _, _, goal in goals:
+                check(goal, None)
             qpos = start.copy()
             segment_results = []
             all_qpos = []

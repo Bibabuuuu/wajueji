@@ -13,6 +13,10 @@ from layered_mound_checkpoint import checkpoint_identity
 from layered_47_cycle_bridge import native_restore_tokens
 
 SCHEMA = 'layered_47_cycle_checkpoint_v1'
+PHYSICS_FILES = ('bucket_integral_candidate.h', 'bucket_active_curl_candidate.h',
+                 'soil_hencky_update_candidate.py', 'moving_bucket_sweep_candidate.py',
+                 'moving_bucket_sweep_runtime.py')
+STAGES = ('loaded_manual_endpoint', 'hold', 'transport', 'unloaded', 'returned', 'prepoint', 'failure')
 CONTROLLER_KEYS = ('controller_target', 'controller_target_velocity',
                    'bucket_integral_effort', 'bucket_active_curl_effort')
 
@@ -75,10 +79,20 @@ def load(path):
             raise ValueError('cycle_failure_checkpoint_not_resumable')
         if metadata['checkpoint_sha256'] != identity['sha256']:
             raise ValueError('cycle_checkpoint_sha256')
+        if metadata.get('stage') not in STAGES or metadata.get('cycle_index') not in (1,2,3):
+            raise ValueError('cycle_metadata_stage_or_index')
+        if not isinstance(metadata.get('truck_enabled'), bool):
+            raise ValueError('cycle_metadata_truck_flag')
         state = metadata['controller_state']
     elif metadata.get('schema') == 'layered_47_manual_contact_diagnostic_snapshot_v1':
         if metadata['sha256'] != identity['sha256'] or metadata['runtime_state'] == 'fault_frozen':
             raise ValueError('cycle_diagnostic_identity_or_fault')
+        report_path = path.parent/'report.json'
+        report = json.loads(report_path.read_text())
+        if (report.get('status') != 'manual_contact_pilot_recorded'
+                or not report.get('checks') or not all(report['checks'].values())
+                or not any(item['sha256'] == identity['sha256'] for item in report.get('diagnostic_snapshots', []))):
+            raise ValueError('cycle_legacy_source_requires_normal_reviewable_episode')
         old = metadata['controller_state_diagnostic_only']
         state = {k: old[k] for k in (*CONTROLLER_KEYS,
             'bucket_linear_velocity_world_m_s', 'bucket_angular_velocity_world_rad_s')}
@@ -88,9 +102,13 @@ def load(path):
         metadata = dict(metadata, controller_state=state, cycle_index=1,
                         stage='loaded_manual_endpoint', truck_enabled=False,
                         lineage_root=identity['sha256'],
-                        historical_native_history_missing=True)
+                        historical_native_history_missing=True, runtime_bindings=report['input_bindings'])
     else:
         raise ValueError('cycle_checkpoint_schema')
+    bindings = {Path(key).name: value for key,value in metadata['runtime_bindings'].items()}
+    for name in PHYSICS_FILES:
+        if bindings.get(name) != checkpoint_identity(Path(__file__).with_name(name))['sha256']:
+            raise ValueError('cycle_physics_version_mismatch:' + name)
     validate_controller(state, 47)
     validate_sweep(metadata['moving_bucket_sweep_state'])
     metadata['source_identity'] = identity

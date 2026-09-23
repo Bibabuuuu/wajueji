@@ -20,20 +20,21 @@ def bucket_mask(points,pose):
     return cavity_mask(local,np.array(contract['bucket']['polygon_xz_m']),np.array(contract['bucket']['y_limits_m']),front)
 
 
-def stationary_terrain(runtime):
+def stationary_terrain(runtime, arrays=None):
     """Exclude a detached observed load component, never change physical arrays."""
-    q=runtime.arrays['particle_q'];pose=runtime.assembly.assemble(runtime.arrays['mechanism_qpos'],include_meshes=False)[1]['bucket']
+    arrays=runtime.arrays if arrays is None else arrays
+    q=arrays['particle_q'];pose=runtime.assembly.assemble(arrays['mechanism_qpos'],include_meshes=False)[1]['bucket']
     cavity=bucket_mask(q,pose)
     cell=.04;origin=q.min(0)-2*cell;ijk=np.floor((q-origin)/cell).astype(int)
     shape=ijk.max(0)+3
-    if np.prod(shape)>5000000:raise ValueError('cycle_observation_grid_budget')
+    if np.prod(shape)>12000000:raise ValueError('cycle_observation_grid_budget')
     grid=np.zeros(tuple(shape),dtype=bool);grid[tuple(ijk.T)]=True
     components,_=label(grid)
     labels=components[tuple(ijk.T)];anchors=np.unique(labels[cavity]);anchors=anchors[anchors>0]
     payload=np.isin(labels,anchors)
     if payload.any() and (q[payload,2].min()<.3 or np.max(np.ptp(q[payload],axis=0))>2.):
         raise ValueError('cycle_load_not_observably_detached')
-    rocks,by_id=rock_surface_points(runtime.root,runtime.records,runtime.arrays['rigid_qpos'])
+    rocks,by_id=rock_surface_points(runtime.root,runtime.records,arrays['rigid_qpos'])
     kept=[]
     for points in by_id.values():
         # Classify the rock geometry at the same observed boundary as the soil.
@@ -86,9 +87,13 @@ def triangles_intersect_box(triangles, lower, upper, margin=.02):
 
 
 class TransportClearance:
-    def __init__(self,runtime):
+    def __init__(self,runtime,terrain=None):
         self.runtime=runtime
-        self.terrain,self.observation=stationary_terrain(runtime)
+        if terrain is None:
+            self.terrain,self.observation=stationary_terrain(runtime)
+        else:
+            self.terrain=terrain
+            self.observation={'source':'fresh_full_scene_terrain','observation_only':True}
         self.samples=proxy_surface_samples(runtime.proxy)
         self.geometries,_=runtime.assembly.assemble(runtime.arrays['mechanism_qpos'])
         _,self.fixtures=load_candidate(Path(__file__).resolve().parents[2]/'configs/v4/layered-47-truck-physics-v1.json',Path(__file__).resolve().parents[2])

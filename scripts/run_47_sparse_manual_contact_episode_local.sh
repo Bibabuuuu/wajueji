@@ -41,7 +41,13 @@ out="$repo/runs/layered-47-sparse-manual-contact-v1/$run_id"
 mkdir -p "$(dirname -- "$out")"
 
 echo "Protected MANUAL single-scoop pilot; no scripted excavation; NOT training data"
-echo "Source: $handoff_dir/approach-handoff.npz"
+display_source="$handoff_dir/approach-handoff.npz"
+expect_source=false
+for argument in "$@"; do
+  if $expect_source; then display_source="$argument"; expect_source=false; fi
+  if [[ "$argument" == --checkpoint ]]; then expect_source=true; fi
+done
+echo "Source: $display_source"
 echo "Output: $out"
 echo "Start paused; Space pause/run; neutral sticks to arm; X/Esc/Back finish"
 echo "Phases: 1 penetrate, 2 curl/load, 3 lift/clear, 4 off-soil, R recovery"

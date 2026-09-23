@@ -7,10 +7,24 @@ from planning.rear_lower_prepoint import (
     mechanism_and_truck_clearance,
     proxy_surface_samples,
     sampled_surface_clearance,
+    oriented_terrain_separation,
 )
 
 
 class RearLowerPrepointTest(unittest.TestCase):
+    def test_sloped_link_box_refines_world_aabb_false_collision(self):
+        angle = np.pi / 4
+        rotation = np.array([[np.cos(angle), 0, -np.sin(angle)],
+                             [0, 1, 0], [np.sin(angle), 0, np.cos(angle)]])
+        local = np.array([[x, y, z] for x in (0., 4.) for y in (-.05, .05)
+                          for z in (-.05, .05)])
+        corners = local @ rotation.T + [0., 0., 1.]
+        terrain = dict(origin_xy_m=[2., -.5], resolution_m=1., height_m=np.array([[1.5]]))
+        self.assertLess(corners[:, 2].min() - 1.5, 0.)
+        self.assertGreater(oriented_terrain_separation(corners, rotation, terrain), .02)
+        terrain['height_m'][:] = 4.
+        self.assertEqual(oriented_terrain_separation(corners, rotation, terrain), 0.)
+
     def test_ground_completion_preserves_material_and_fills_unknown(self):
         source = {
             "valid": True,

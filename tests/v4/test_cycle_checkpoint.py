@@ -3,6 +3,11 @@ from copy import deepcopy
 from types import SimpleNamespace
 import numpy as np
 import unittest
+import json
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
+import layered_47_cycle_checkpoint as checkpoint
 from layered_47_cycle_checkpoint import validate_controller, validate_sweep, restore_sweep
 
 
@@ -21,6 +26,34 @@ def sweep():
 
 
 class CycleCheckpointTest(unittest.TestCase):
+    def test_continuation_metadata_and_physics_identity_fail_closed(self):
+        # Exercise the envelope independently of the already separately tested
+        # 256441-particle array schema, without allocating a physical scene.
+        with TemporaryDirectory() as directory:
+            path=Path(directory)/'state.npz'
+            np.savez(path,placeholder=np.zeros(1))
+            baseline=dict(schema=checkpoint.SCHEMA,
+                checkpoint_sha256=checkpoint.checkpoint_identity(path)['sha256'],
+                stage='prepoint',cycle_index=2,truck_enabled=True,
+                controller_state=controller(),moving_bucket_sweep_state=sweep(),
+                runtime_bindings={name:checkpoint.checkpoint_identity(
+                    Path(checkpoint.__file__).with_name(name))['sha256']
+                    for name in checkpoint.PHYSICS_FILES})
+            sidecar=Path(str(path)+'.json')
+            with patch.object(checkpoint.sparse,'_validate'):
+                for index in (2,3):
+                    sidecar.write_text(json.dumps(dict(baseline,cycle_index=index)))
+                    _,loaded=checkpoint.load(path)
+                    self.assertEqual(loaded['cycle_index'],index)
+                    self.assertEqual(loaded['source_metadata_identity']['sha256'],
+                                     checkpoint.checkpoint_identity(sidecar)['sha256'])
+                for key,value in [('stage','failure'),('stage','unknown'),('cycle_index',4),
+                                  ('truck_enabled',0),('checkpoint_sha256','changed'),
+                                  ('runtime_bindings',{})]:
+                    with self.subTest(key=key,value=value):
+                        sidecar.write_text(json.dumps(dict(baseline,**{key:value})))
+                        with self.assertRaises(ValueError):checkpoint.load(path)
+
     def test_invalid_controller(self):
         for key,value in [
             ('bucket_active_curl_effort',[0,0,0,60001]),('bucket_integral_effort',[1,0,0,0]),

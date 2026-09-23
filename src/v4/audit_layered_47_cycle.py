@@ -15,6 +15,7 @@ def main():
     with CycleRuntime(args.source,out,enable_truck=True if args.truck else None) as r:
         report=dict(schema='layered_47_cycle_hold_audit_v1',status='running',source=r.metadata['source_identity'],
                     historical_native_history_missing=r.metadata.get('historical_native_history_missing',False),
+                    source_metadata=r.metadata['source_metadata_identity'],
                     zero_step=r.restored, frames_requested=args.frames,training_eligible=False)
         try:
             for frame in range(args.frames):

@@ -142,7 +142,8 @@ class CycleRuntime:
     def save(self,path,stage='hold',cycle_index=None,selected_cut=None):
         return checkpoint.save(path,self.capture(),controller_snapshot(self.bridge.state),self.sweep.diagnostic_state(),
             parent=self.metadata,stage=stage,cycle_index=cycle_index or self.metadata['cycle_index'],
-            truck_enabled=self.truck_enabled,solver_profile=self.solver_profile,runtime_bindings=self.bindings,selected_cut=selected_cut)
+            truck_enabled=self.truck_enabled,solver_profile=self.solver_profile,runtime_bindings=self.bindings,
+            selected_cut=selected_cut if selected_cut is not None else self.metadata.get('selected_cut'))
 
     def close(self):
         if self.bridge is not None:self.bridge.close();self.bridge=None

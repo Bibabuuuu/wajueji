@@ -7,7 +7,7 @@ import time
 import numpy as np
 from layered_47_cycle_runtime import CycleRuntime, REPO
 from layered_47_cycle_selection import plan_next_prepoint
-from layered_excavation_approach_planner import build_fused_terrain
+from layered_47_cycle_geometry import stationary_terrain
 from planning.rear_lower_prepoint import (ground_completed_terrain, proxy_surface_samples,
     sampled_surface_clearance, mechanism_and_truck_clearance)
 from run_layered_47_sparse_manual_contact_episode import _clean
@@ -25,7 +25,9 @@ def main():
     try:
         plan=plan_next_prepoint(r);path=plan['path']
         report.update(selected=plan['selected'],rejected_pairs=plan['rejected_pairs'],observation=plan['observation'],
-                      planned_frames=path['total_frames'],next_cycle_index=plan['cycle_index'])
+                      planned_frames=path['total_frames'],next_cycle_index=plan['cycle_index'],
+                      prepoint_tip_world_m=path['prepoint_tip_world_m'],segments=path['segments'],
+                      selection_scope=plan['selection_scope'])
         np.savez(out/'plan.npz',qpos=path['qpos'],velocity=path['velocity'])
         if path['total_frames']>4800:raise ValueError('cycle_prepoint_frame_budget')
         report['status']='geometry_passed';write()
@@ -57,7 +59,7 @@ def main():
             for _ in range(30):advance(np.zeros(4),path['qpos'][-1])
             actual=np.array(r.bridge.state['mechanism_qpos']);endpoint_error=float(np.max(np.abs(actual[r.chain.axes]-path['qpos'][-1][r.chain.axes])))
             if endpoint_error>.015:raise RuntimeError('cycle_prepoint_endpoint_tracking')
-            arrays=r.capture();fresh,observation=build_fused_terrain(r.root,r.records,arrays['particle_q'],arrays['rigid_qpos'])
+            arrays=r.capture();fresh,observation=stationary_terrain(r,arrays)
             pose=r.assembly.assemble(actual,include_meshes=False)[1]['bucket']
             final_clearance=sampled_surface_clearance(samples@pose[:3,:3].T+pose[:3,3],ground_completed_terrain(fresh))['clearance_m']
             if final_clearance<.30:raise RuntimeError('cycle_prepoint_fresh_endpoint_clearance')
