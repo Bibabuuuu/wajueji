@@ -1,0 +1,572 @@
+{
+  "status": "read_only_control_diagnosis",
+  "segments": [
+    {
+      "frames": [
+        1,
+        100
+      ],
+      "simulation_s": [
+        0.0,
+        1.6666666666666667
+      ],
+      "requested_bucket_mm_s_mean": 3.314839572192514,
+      "applied_bucket_mm_s_mean": 3.314839572192514,
+      "actual_bucket_net_mm_s": 1.9459974807698677,
+      "bucket_actual_mm_start_end": [
+        515.9227081692725,
+        519.1660373038889
+      ],
+      "target_mm_start_end": [
+        515.9227081692725,
+        519.1913056792441
+      ],
+      "tracking_error_mm_min_max_mean": [
+        -0.014235967915832148,
+        0.03460350978312654,
+        0.0024598814369858335
+      ],
+      "integral_kn_start_end_peak": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        -13.092112299465237,
+        5.208689839572191
+      ],
+      "bucket_equivalent_external_load_kn_mean": -0.012018594754996439,
+      "projected_frames": 0
+    },
+    {
+      "frames": [
+        101,
+        200
+      ],
+      "simulation_s": [
+        1.6666666666666667,
+        3.3333333333333335
+      ],
+      "requested_bucket_mm_s_mean": 45.94572192513368,
+      "applied_bucket_mm_s_mean": 45.94572192513368,
+      "actual_bucket_net_mm_s": 44.570545320532155,
+      "bucket_actual_mm_start_end": [
+        519.1660373038889,
+        593.4502795047758
+      ],
+      "target_mm_start_end": [
+        520.3163056792459,
+        596.2983243957592
+      ],
+      "tracking_error_mm_min_max_mean": [
+        0.02117731069828377,
+        3.300987951335932,
+        0.9207617755297359
+      ],
+      "integral_kn_start_end_peak": [
+        0.0,
+        1.6362620708957238,
+        1.6362620708957238
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        -2.2840909090909083,
+        -0.9581550802139042
+      ],
+      "bucket_equivalent_external_load_kn_mean": -3.0422080070246973,
+      "projected_frames": 0
+    },
+    {
+      "frames": [
+        201,
+        300
+      ],
+      "simulation_s": [
+        3.3333333333333335,
+        5.0
+      ],
+      "requested_bucket_mm_s_mean": 64.45588235294117,
+      "applied_bucket_mm_s_mean": 64.45588235294117,
+      "actual_bucket_net_mm_s": 58.14857886354254,
+      "bucket_actual_mm_start_end": [
+        593.4502795047758,
+        690.36457761068
+      ],
+      "target_mm_start_end": [
+        597.3631639679483,
+        703.7241926831525
+      ],
+      "tracking_error_mm_min_max_mean": [
+        2.9096760751381456,
+        13.359615072472518,
+        7.765728623296303
+      ],
+      "integral_kn_start_end_peak": [
+        1.6961814335803145,
+        19.7012303451569,
+        19.7012303451569
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        -4.3135026737967905,
+        -3.693850267379679
+      ],
+      "bucket_equivalent_external_load_kn_mean": -30.985458053258675,
+      "projected_frames": 0
+    },
+    {
+      "frames": [
+        301,
+        400
+      ],
+      "simulation_s": [
+        5.0,
+        6.666666666666667
+      ],
+      "requested_bucket_mm_s_mean": 55.90708556149732,
+      "applied_bucket_mm_s_mean": 55.90708556149732,
+      "actual_bucket_net_mm_s": 56.0526616111954,
+      "bucket_actual_mm_start_end": [
+        690.36457761068,
+        783.7856802960057
+      ],
+      "target_mm_start_end": [
+        704.8090857312792,
+        796.9577446547473
+      ],
+      "tracking_error_mm_min_max_mean": [
+        11.691354963635936,
+        15.518656709012424,
+        13.384471489218136
+      ],
+      "integral_kn_start_end_peak": [
+        20.024510597458494,
+        51.94382756999609,
+        51.94382756999609
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        -0.8923796791443852,
+        -7.465909090909086
+      ],
+      "bucket_equivalent_external_load_kn_mean": -70.53764224665872,
+      "projected_frames": 0
+    },
+    {
+      "frames": [
+        401,
+        500
+      ],
+      "simulation_s": [
+        6.666666666666667,
+        8.333333333333334
+      ],
+      "requested_bucket_mm_s_mean": 44.73529411764705,
+      "applied_bucket_mm_s_mean": 44.73529411764705,
+      "actual_bucket_net_mm_s": 32.74188045854487,
+      "bucket_actual_mm_start_end": [
+        783.7856802960057,
+        838.3554810602471
+      ],
+      "target_mm_start_end": [
+        797.8220494675783,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        13.335157081148852,
+        20.672668297068707,
+        17.55391177197688
+      ],
+      "integral_kn_start_end_peak": [
+        52.26273326009418,
+        94.57335213535336,
+        94.57335213535336
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        0.2530748663101604,
+        -1.774732620320854
+      ],
+      "bucket_equivalent_external_load_kn_mean": -118.65555195280635,
+      "projected_frames": 0
+    },
+    {
+      "frames": [
+        501,
+        600
+      ],
+      "simulation_s": [
+        8.333333333333334,
+        10.0
+      ],
+      "requested_bucket_mm_s_mean": 64.26938502673796,
+      "applied_bucket_mm_s_mean": 64.26938502673796,
+      "actual_bucket_net_mm_s": 1.9076273272895516,
+      "bucket_actual_mm_start_end": [
+        838.3554810602471,
+        841.534859939063
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        10.465140060936907,
+        13.534646441992093,
+        11.760998368041754
+      ],
+      "integral_kn_start_end_peak": [
+        94.90057739463732,
+        120.0,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        0.0,
+        1.3447860962566835
+      ],
+      "bucket_equivalent_external_load_kn_mean": -143.84633703495987,
+      "projected_frames": 0
+    },
+    {
+      "frames": [
+        601,
+        700
+      ],
+      "simulation_s": [
+        10.0,
+        11.666666666666666
+      ],
+      "requested_bucket_mm_s_mean": 63.87232620320855,
+      "applied_bucket_mm_s_mean": 57.89985581679244,
+      "actual_bucket_net_mm_s": 2.0011484760710907,
+      "bucket_actual_mm_start_end": [
+        841.534859939063,
+        844.8701073991815
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        7.129892600818422,
+        10.462272035198229,
+        8.859325691549456
+      ],
+      "integral_kn_start_end_peak": [
+        120.0,
+        120.0,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        0.0,
+        -3.527005347593579
+      ],
+      "bucket_equivalent_external_load_kn_mean": -144.73266739927314,
+      "projected_frames": 62
+    },
+    {
+      "frames": [
+        701,
+        800
+      ],
+      "simulation_s": [
+        11.666666666666666,
+        13.333333333333334
+      ],
+      "requested_bucket_mm_s_mean": 63.83622994652408,
+      "applied_bucket_mm_s_mean": 43.19477173752622,
+      "actual_bucket_net_mm_s": 0.6939453800312023,
+      "bucket_actual_mm_start_end": [
+        844.8701073991815,
+        846.0266830325669
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        5.973316967433084,
+        7.114840737245665,
+        6.467650004295079
+      ],
+      "integral_kn_start_end_peak": [
+        120.0,
+        120.0,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        0.0,
+        -4.518048128342245
+      ],
+      "bucket_equivalent_external_load_kn_mean": -137.95635523388066,
+      "projected_frames": 100
+    },
+    {
+      "frames": [
+        801,
+        900
+      ],
+      "simulation_s": [
+        13.333333333333334,
+        15.0
+      ],
+      "requested_bucket_mm_s_mean": 57.206550802139056,
+      "applied_bucket_mm_s_mean": 32.339317300052144,
+      "actual_bucket_net_mm_s": 0.948310102590888,
+      "bucket_actual_mm_start_end": [
+        846.0266830325669,
+        847.6071998702183
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        4.392800129781604,
+        5.9516714247018765,
+        4.867031323082163
+      ],
+      "integral_kn_start_end_peak": [
+        120.0,
+        120.0,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        0.0,
+        3.527406417112302
+      ],
+      "bucket_equivalent_external_load_kn_mean": -133.26825726471395,
+      "projected_frames": 83
+    },
+    {
+      "frames": [
+        901,
+        1000
+      ],
+      "simulation_s": [
+        15.0,
+        16.666666666666668
+      ],
+      "requested_bucket_mm_s_mean": 58.12700534759356,
+      "applied_bucket_mm_s_mean": 26.431807148830046,
+      "actual_bucket_net_mm_s": -0.10193166174441437,
+      "bucket_actual_mm_start_end": [
+        847.6071998702183,
+        847.437313767311
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        4.204520507259613,
+        4.765125029286832,
+        4.419781955188369
+      ],
+      "integral_kn_start_end_peak": [
+        120.0,
+        120.0,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        5.35788770053476,
+        -2.6237967914438505
+      ],
+      "bucket_equivalent_external_load_kn_mean": -130.0852632977957,
+      "projected_frames": 89
+    },
+    {
+      "frames": [
+        1001,
+        1100
+      ],
+      "simulation_s": [
+        16.666666666666668,
+        18.333333333333332
+      ],
+      "requested_bucket_mm_s_mean": 66.91042780748666,
+      "applied_bucket_mm_s_mean": 16.24053787984036,
+      "actual_bucket_net_mm_s": 2.8645177639027963,
+      "bucket_actual_mm_start_end": [
+        847.437313767311,
+        852.2115100404824
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        -0.21151004048236555,
+        4.556237397834728,
+        2.386347485637219
+      ],
+      "integral_kn_start_end_peak": [
+        120.0,
+        120.0,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        17.125668449197864,
+        0.0
+      ],
+      "bucket_equivalent_external_load_kn_mean": -117.41308905703248,
+      "projected_frames": 100
+    },
+    {
+      "frames": [
+        1101,
+        1200
+      ],
+      "simulation_s": [
+        18.333333333333332,
+        20.0
+      ],
+      "requested_bucket_mm_s_mean": 66.89839572192516,
+      "applied_bucket_mm_s_mean": 0.0,
+      "actual_bucket_net_mm_s": 1.937261410088409,
+      "bucket_actual_mm_start_end": [
+        852.2115100404824,
+        855.4402790572964
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        -3.4402790572963804,
+        -0.2831373076760402,
+        -2.4278448803224917
+      ],
+      "integral_kn_start_end_peak": [
+        120.0,
+        115.20604832989403,
+        120.0
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        21.63569518716578,
+        0.0
+      ],
+      "bucket_equivalent_external_load_kn_mean": -96.9856541217287,
+      "projected_frames": 100
+    },
+    {
+      "frames": [
+        1201,
+        1300
+      ],
+      "simulation_s": [
+        20.0,
+        21.666666666666668
+      ],
+      "requested_bucket_mm_s_mean": 66.89839572192516,
+      "applied_bucket_mm_s_mean": 0.0,
+      "actual_bucket_net_mm_s": 0.4877712081951646,
+      "bucket_actual_mm_start_end": [
+        855.4402790572964,
+        856.2532310709549
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        -4.647420645854217,
+        -3.4582931867322975,
+        -4.012467486242753
+      ],
+      "integral_kn_start_end_peak": [
+        115.13231545152767,
+        106.43443319294175,
+        115.13231545152767
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        11.757754010695171,
+        0.0
+      ],
+      "bucket_equivalent_external_load_kn_mean": -87.14498241705503,
+      "projected_frames": 100
+    },
+    {
+      "frames": [
+        1301,
+        1400
+      ],
+      "simulation_s": [
+        21.666666666666668,
+        23.333333333333332
+      ],
+      "requested_bucket_mm_s_mean": 66.89839572192516,
+      "applied_bucket_mm_s_mean": 0.0,
+      "actual_bucket_net_mm_s": -0.18695790246450184,
+      "bucket_actual_mm_start_end": [
+        856.2532310709549,
+        855.9416345668475
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        -4.1900753066577145,
+        -3.5891752754112494,
+        -3.839143730755249
+      ],
+      "integral_kn_start_end_peak": [
+        106.34139116985922,
+        98.0825950799066,
+        106.34139116985922
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        10.848930481283407,
+        0.0
+      ],
+      "bucket_equivalent_external_load_kn_mean": -77.29459120891202,
+      "projected_frames": 100
+    },
+    {
+      "frames": [
+        1401,
+        1498
+      ],
+      "simulation_s": [
+        23.333333333333332,
+        24.966666666666665
+      ],
+      "requested_bucket_mm_s_mean": 59.38939212048456,
+      "applied_bucket_mm_s_mean": 0.0,
+      "actual_bucket_net_mm_s": 0.14234548928074922,
+      "bucket_actual_mm_start_end": [
+        855.9416345668475,
+        856.1741321993394
+      ],
+      "target_mm_start_end": [
+        852.0,
+        852.0
+      ],
+      "tracking_error_mm_min_max_mean": [
+        -4.579536496758241,
+        -3.7199141920737366,
+        -4.153063386999089
+      ],
+      "integral_kn_start_end_peak": [
+        97.99623434401619,
+        89.13595819547868,
+        97.99623434401619
+      ],
+      "applied_boom_arm_mm_s_mean": [
+        11.064198406635356,
+        0.0
+      ],
+      "bucket_equivalent_external_load_kn_mean": -68.80203609552512,
+      "projected_frames": 87
+    }
+  ],
+  "maximum_positive_tracking_error_mm": 20.672668297068707,
+  "first_target_upper_frame": 478,
+  "first_integral_cap_frame": 589,
+  "integral_cap_frames": 516,
+  "positive_request_but_zero_applied_frames": 389,
+  "projection_reasons": [
+    "None",
+    "bucket_internal_upper_target"
+  ],
+  "input_records": 1498,
+  "observation_records": 499,
+  "first_fault_frame": 1498
+}

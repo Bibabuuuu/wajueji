@@ -27,6 +27,7 @@ import warp as wp
 from contracts import ACTION_SPEED_LIMIT_SI
 from layered_47_optimized_bridge import optimized_bridge
 from layered_47_bucket_integral_candidate import bucket_integral_bridge
+from layered_47_active_curl_candidate import active_curl_bridge
 import layered_47_rigid_frequency_candidate as rigid_frequency
 import layered_47_sparse_approach_handoff_checkpoint as handoff
 import layered_47_loaded_handoff_checkpoint as loaded_handoff
@@ -322,6 +323,8 @@ def latch_hard_fault(state: dict, row: dict, frame: int) -> bool:
 
 def compact_state(state: dict) -> dict:
     return {
+        **({"bucket_active_curl_effort": list(state["bucket_active_curl_effort"])}
+           if "bucket_active_curl_effort" in state else {}),
         "bucket_integral_effort": list(state.get(
             "bucket_integral_effort", [0.0] * 4)),
         "time_s": float(state["time_s"]),
@@ -692,6 +695,11 @@ def run(args):
 
         truck_document = None
         truck_fixtures = None
+        active_curl_enabled = bool(getattr(args, "active_curl_candidate", False))
+        if active_curl_enabled and (
+                not getattr(args, "bucket_integral_candidate", False)
+                or transport_mode):
+            raise ValueError("active_curl_requires_integral_and_original_prepoint")
         if transport_mode:
             if (not getattr(args, "truck_config", None)
                     or not getattr(args, "truck_repository_root", None)
@@ -745,6 +753,11 @@ def run(args):
             binding_paths.extend([
                 Path(__file__).with_name("layered_47_bucket_integral_candidate.py"),
                 Path(__file__).with_name("bucket_integral_candidate.h"),
+            ])
+        if active_curl_enabled:
+            binding_paths.extend([
+                Path(__file__).with_name("layered_47_active_curl_candidate.py"),
+                Path(__file__).with_name("bucket_active_curl_candidate.h"),
             ])
         if getattr(args, "hencky_update_candidate", False):
             binding_paths.extend([
@@ -863,6 +876,8 @@ def run(args):
             integral_policy = contexts.enter_context(bucket_integral_bridge(
                 getattr(args, "bucket_integral_candidate", False),
                 output / "bucket-integral-build"))
+            active_curl_policy = contexts.enter_context(active_curl_bridge(
+                active_curl_enabled, output / "active-curl-build"))
             if transport_mode:
                 truck_fixtures = contexts.enter_context(
                     truck_physics.installed_candidate(
@@ -910,6 +925,7 @@ def run(args):
             report["bucket_side_winding_audit"] = fixture.bucket_side_winding_audit
             report["optimization"] = optimization.copy()
             report["bucket_integral_candidate"] = integral_policy.copy()
+            report["active_curl_candidate"] = active_curl_policy.copy()
             report["hencky_update_candidate"] = hencky_policy.copy()
             material_guard = None
             if hencky_enabled:
@@ -1256,6 +1272,9 @@ def run(args):
                 if integral_policy["enabled"]:
                     effort = bridge.state["bucket_integral_effort"][3] / 1000
                     imgui.text(f"BUCKET INTEGRAL PILOT | assist {effort:.1f} kN")
+                if active_curl_policy["enabled"]:
+                    extra = bridge.state["bucket_active_curl_effort"][3] / 1000
+                    imgui.text(f"ACTIVE CURL PILOT | extra {extra:.1f} kN")
                 if hencky_policy["enabled"]:
                     imgui.text("HENCKY SOIL CANDIDATE | guarded manual pilot")
                 if sweep_policy["enabled"]:
@@ -1384,6 +1403,7 @@ def run(args):
                         "physics_frames": len(rows),
                         "gamepad_name": report.get("gamepad_name"),
                         "bucket_integral_candidate": integral_policy.copy(),
+                        "active_curl_candidate": active_curl_policy.copy(),
                         "hencky_update_candidate": hencky_policy.copy(),
                         "moving_bucket_sweep_candidate": sweep_policy.copy(),
                         "initial_state": compact_state(bridge.state),
@@ -1632,6 +1652,9 @@ def main():
     parser.add_argument(
         "--bucket-integral-candidate", action="store_true",
         help="Opt-in D-120 bucket integral manual pilot; not stopped-qualified")
+    parser.add_argument(
+        "--active-curl-candidate", action="store_true",
+        help="Opt-in D-136 error-based curl assist; requires integral and original prepoint")
     parser.add_argument(
         "--hencky-update-candidate", action="store_true",
         help="Opt-in D-128 Hencky soil update; guarded manual pilot only")

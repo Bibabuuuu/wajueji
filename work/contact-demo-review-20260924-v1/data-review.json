@@ -1,0 +1,67 @@
+{
+  "schema": "contact_demonstration_review_v1",
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071",
+  "disposition": "retain_partial_demonstration_and_difficult_case_not_complete_success",
+  "automatic_training_admission": false,
+  "recording_integrity": {
+    "physics_frames": 1498,
+    "input_frames": 1498,
+    "observation_anchors": 499,
+    "sequential_frames": true,
+    "all_expected_observation_anchors_present": true,
+    "source_bindings_unchanged": true
+  },
+  "full_success_episode": false,
+  "hard_failure_frame": 1498,
+  "failure_cause": "middle-000 touches inherited r1_ground_push_shelf; independently confirmed source identity and convex overlap",
+  "suggested_fragment_review": [
+    {
+      "frames": [
+        1,
+        500
+      ],
+      "role": "candidate approach/contact/curl fragment; align phases before BC export"
+    },
+    {
+      "frames": [
+        501,
+        976
+      ],
+      "role": "loaded curl lag / prolonged near-end-stop effort; retain as difficult case, do not overweight as expert success"
+    },
+    {
+      "frames": [
+        977,
+        1497
+      ],
+      "role": "candidate lift fragment; terminal success label remains masked, no settled endpoint snapshot"
+    },
+    {
+      "frames": [
+        1498,
+        1498
+      ],
+      "role": "exclude from normal expert BC; keep failure diagnostics"
+    }
+  ],
+  "cautions": [
+    "Fragment boundaries are post-hoc review suggestions, not final labels or audited training samples.",
+    "Do not drop a terminal fault frame and relabel the remaining episode as complete success.",
+    "New path-protected physics differs from D129; fill decrease cannot be attributed solely to operator actions."
+  ],
+  "fill": {
+    "mixed_geometric_percent": 59.64166798794991,
+    "soil_geometric_percent": 36.18201997780244,
+    "mixed_liters": 152.18450105971783,
+    "reference_capacity_liters": 255.164729950989,
+    "rocks_included": true,
+    "held_stable_or_truck_delivered": false
+  },
+  "source_bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071/report.json": "e91d17ef61a2f9944d11e54dd862a0bab025a05ba292b8ed28bc35c2d19b2893",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071/physics.ndjson": "5bcce91dc080c8bc0905b0cbd1550fe67b0308b4e2eeacbf7a803be94dba5890",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071/input.ndjson": "bf65a1d4d4743bf3995ea37366e8a5525420af855d8af1ed24eaeb672f7a9961",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071/observation.ndjson": "37687aa00ba54190895d015df498888cfadfbac32168ed51f0638ec249256289",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071/failure-001498.diagnostic.npz": "db193e58364ffe2c388314f58fccbeaac24d89f00f32060c2ade74ccc3dc902d"
+  }
+}

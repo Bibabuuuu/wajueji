@@ -1,0 +1,43 @@
+{
+  "decision": "D-136 user accepted small position oscillation after seeing test results",
+  "original_preregistered_gates_unchanged": true,
+  "strict_stopped_qualified": false,
+  "recorded_stop_nonregression_passed": false,
+  "higher_inventory_40percent_improvement_passed": false,
+  "guarded_manual_pilot_accepted": true,
+  "reason": "user prioritizes loaded curl progress over approximately 0.15mm cylinder position range; original range approximately 0.14mm",
+  "candidate_default_enabled": false,
+  "training_eligible": false,
+  "full_bucket_cutting_verified": false,
+  "manual_activation": "from first step with positive applied bucket command and positive error; A/B recorded activation was frame601, so new manual trajectory remains independently unverified",
+  "zero_probe": "runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-004002-1069238",
+  "zero_probe_checks": {
+    "all_executed_frames_hard_safe": true,
+    "input_bindings_unchanged": true,
+    "no_scripted_excavation_motion": true,
+    "original_source_unchanged": true,
+    "restore_exact": true,
+    "smoke_or_probe_scope_obeyed": true,
+    "source_handoff_checkpoint_unchanged": true,
+    "source_handoff_metadata_unchanged": true,
+    "training_not_granted": true,
+    "truck_gate_unchanged": true
+  },
+  "zero_probe_ready": {
+    "paused": true,
+    "physics_frames": 0,
+    "restore_exact": true,
+    "gamepad_name": "Microsoft X-Box 360 pad"
+  },
+  "tests": {
+    "controller_cpp_and_bridge": 8,
+    "manual_and_sweep_adapter": 24
+  },
+  "next_boundary": "legacy push shelf remains a separate diagnosed model issue before collecting another complete high-lift episode",
+  "bucket_geometry_frame_sample_span_mm": {
+    "baseline": 3.9660288294966213,
+    "candidate": 4.2515150176324035,
+    "increase": 0.2854861881357822,
+    "native_substep_maximum_verified": false
+  }
+}
