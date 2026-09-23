@@ -9,17 +9,23 @@ from layered_47_cycle_runtime import CycleRuntime
 def main():
     p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--output',required=True)
     p.add_argument('--frames',type=int,default=30);p.add_argument('--split',type=int,default=0)
-    p.add_argument('--truck',action='store_true');args=p.parse_args()
+    p.add_argument('--truck',action='store_true')
+    p.add_argument('--require-no-bucket-contact',action='store_true');args=p.parse_args()
     if not 0<=args.frames<=120 or not 0<=args.split<args.frames:raise ValueError('bounded_audit_frames')
     out=Path(args.output).resolve()
     with CycleRuntime(args.source,out,enable_truck=True if args.truck else None) as r:
         report=dict(schema='layered_47_cycle_hold_audit_v1',status='running',source=r.metadata['source_identity'],
                     historical_native_history_missing=r.metadata.get('historical_native_history_missing',False),
                     source_metadata=r.metadata['source_metadata_identity'],
-                    zero_step=r.restored, frames_requested=args.frames,training_eligible=False)
+                    zero_step=r.restored, frames_requested=args.frames,training_eligible=False,
+                    all_hold_frames_zero_bucket_contact=True)
         try:
             for frame in range(args.frames):
                 row=r.step([0]*4)
+                no_contact=row['bucket_mpm_contact_samples']==0 and row['rock_bucket_contact_substeps']==0
+                report['all_hold_frames_zero_bucket_contact'] &= no_contact
+                if args.require_no_bucket_contact and not no_contact:
+                    raise RuntimeError('cycle_audit_nonzero_bucket_contact')
                 if frame+1==args.split:report['split_checkpoint']=r.save(out/'split.npz')
                 if (frame+1)%10==0:print('HOLD',frame+1,row['hard_guard'],flush=True)
             report.update(status='hold_passed',final_checkpoint=r.save(out/'final.npz'),frames_completed=r.frames)

@@ -84,3 +84,7 @@
 - [连续三铲详细实施来源](../v4/mixed-material-three-cycle-integration-next-section.md)
 - [当前状态](../CURRENT_STATUS.md)
 - `docs/decisions.md`中的D-082至D-097
+
+## D-139 连续采集恢复（2026-09-24）
+
+新增cycle全状态合同，包含原生时间/warmstart/加速度/控制输出体速度、新助力及防漏待反力。60连续与30+保存重开+30全24数组、控制、防漏全等；第二铲最终预备点通过独立30帧零接触保持，真实手操3帧与独立同3帧全数组/SHA相同。旧诊断历史缺失边界不消除。故障快照禁止续接，预算/探针不标正常人工终点，审计绑定NPZ和元数据身份及关键物理源码。见[证据](../../work/three-scoop-continuation-20260924-v1/README.md)。

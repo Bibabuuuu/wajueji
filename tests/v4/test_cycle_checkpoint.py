@@ -26,6 +26,14 @@ def sweep():
 
 
 class CycleCheckpointTest(unittest.TestCase):
+    def test_fault_final_and_budget_saves_cannot_seed_next_scoop(self):
+        from run_layered_47_sparse_manual_contact_episode import cycle_snapshot_stage
+        self.assertEqual(cycle_snapshot_stage('final',fault_frozen=True),'failure')
+        self.assertEqual(cycle_snapshot_stage('failure',fault_frozen=False),'failure')
+        self.assertEqual(cycle_snapshot_stage('budget',fault_frozen=False),'hold')
+        self.assertEqual(cycle_snapshot_stage('final',fault_frozen=False,zero_probe_frames=3),'hold')
+        self.assertEqual(cycle_snapshot_stage('final',fault_frozen=False),'loaded_manual_endpoint')
+
     def test_continuation_metadata_and_physics_identity_fail_closed(self):
         # Exercise the envelope independently of the already separately tested
         # 256441-particle array schema, without allocating a physical scene.

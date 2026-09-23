@@ -503,6 +503,15 @@ def _cache_rock_vertices(root: Path, records: list[dict]) -> list[np.ndarray]:
     return cached
 
 
+def cycle_snapshot_stage(label, *, fault_frozen, zero_probe_frames=0):
+    """Only normal final manual saves may seed a following scoop."""
+    if fault_frozen or label == 'failure':
+        return 'failure'
+    if label != 'final' or zero_probe_frames:
+        return 'hold'
+    return 'loaded_manual_endpoint'
+
+
 def run(args):
     root = Path(args.repository_root).resolve()
     transport_mode = bool(getattr(args, "loaded_transport", False))
@@ -603,7 +612,8 @@ def run(args):
                 lineage_root=info['sha256'], historical_native_history_missing=False)
             saved = cycle_checkpoint.save(output / f"{label}-{len(rows):06d}.cycle.npz",
                 values, controller_snapshot(bridge.state), sweep_runtime.diagnostic_state(),
-                parent=parent, stage='failure' if label=='failure' else 'loaded_manual_endpoint',
+                parent=parent, stage=cycle_snapshot_stage(label,
+                    fault_frozen=fault_frozen['active'], zero_probe_frames=args.zero_probe_frames),
                 cycle_index=parent.get('cycle_index', 1), truck_enabled=physics_truck,
                 solver_profile=approach_report['solver_profile'], runtime_bindings=bindings,
                 selected_cut=parent.get('selected_cut'))
@@ -641,6 +651,7 @@ def run(args):
                     or audit_document.get('source') != checkpoint_before
                     or audit_document.get('source_metadata') != metadata_before
                     or audit_document.get('frames_completed', 0) < 3
+                    or not audit_document.get('all_hold_frames_zero_bucket_contact', False)
                     or not audit_document.get('zero_step', {}).get('exact')
                     or max(audit_document['zero_step']['cycle_errors'].values()) > 1e-12):
                 raise ValueError('cycle_manual_requires_audited_prepoint')
