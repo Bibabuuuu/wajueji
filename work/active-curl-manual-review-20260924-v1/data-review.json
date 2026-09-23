@@ -1,0 +1,73 @@
+{
+  "schema": "manual_active_curl_review_v1",
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585",
+  "checks": {
+    "normal_user_finish": true,
+    "all_runtime_checks": true,
+    "sequential_physics_frames": true,
+    "sequential_input_frames": true,
+    "expected_observation_anchors": true,
+    "actions_match_physics": true,
+    "observation_matches_post_step_state": true,
+    "all_hard_safe": true,
+    "all_material_safe": true,
+    "all_sweep_safe": true,
+    "terminal_30_system_zero": true
+  },
+  "recording_integrity_pass": true,
+  "physics_frames": 1276,
+  "input_frames": 1276,
+  "observation_anchors": 425,
+  "operator_phase_markers": [
+    {
+      "next_frame": 180,
+      "label": "penetrate_deepen"
+    },
+    {
+      "next_frame": 290,
+      "label": "curl_load"
+    },
+    {
+      "next_frame": 642,
+      "label": "lift_clear"
+    },
+    {
+      "next_frame": 1242,
+      "label": "off_soil_confirm"
+    }
+  ],
+  "fill": {
+    "mixed_percent": 72.722371967655,
+    "mixed_liters": 185.5618440452206,
+    "capacity_liters": 255.164729950989,
+    "rocks_included": true,
+    "heap_included": true,
+    "valid_estimate": true,
+    "roi_boundary_touched": false
+  },
+  "control": {
+    "active_curl_phase_positive_command_frames": 281,
+    "mean_positive_tracking_error_mm": 9.514853083358181,
+    "maximum_positive_tracking_error_mm": 20.887275541674576,
+    "peak_extra_assist_N": 60000.0,
+    "final_bucket_axis_m": 0.8542213638779016,
+    "final_bucket_target_m": 0.852,
+    "not_matched_trajectory_to_previous_run": true
+  },
+  "disposition": "complete_contact_demonstration_candidate_recording_review_passed",
+  "training_export_completed": false,
+  "automatic_training_admission": false,
+  "next_steps": [
+    "Freeze current collection version and collect additional complete episodes.",
+    "Export causally aligned observation/action samples, excluding system tail and reviewing late phase markers.",
+    "Split by whole episodes; then first BC and independent closed-loop evaluation."
+  ],
+  "causal_alignment_note": "Observation frame t is after physics step t; do not use it to predict the action already executed at t. Initial observation and pre-step proprioception are also available.",
+  "bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/report.json": "e77264fca11a97f4adc49cfc8e3a5a4f1da07bd2fe396ca525cc9da403d1b5c0",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/physics.ndjson": "c70649de29862ab53d645236496e1fc2ecb7dc9afb026d66bd7f2f59ba866f22",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/input.ndjson": "c60a39e7978cbfbd22605cbc1af689d0ec7c59ef7882f5293a1eec8254e7d054",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/observation.ndjson": "59c3210482ce957f37685c104a0de5d49514892968e96968bb9f5eec4bf29683",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/final-001276.diagnostic.npz": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b"
+  }
+}

@@ -525,6 +525,8 @@ def run(args):
     }
     fixture = bridge = viewer = controller = None
     sweep_runtime = None
+    live_fill = None
+    fill_requested = False
     prior_sigterm = None
     source_before = metadata_before = checkpoint_before = None
     bindings: dict[str, str] = {}
@@ -734,6 +736,18 @@ def run(args):
             raise ValueError("manual_contact_kinematic_axes")
         projector = ContactCommandProjector(chain)
         cached_rock_vertices = _cache_rock_vertices(root, records)
+        fill_config = None
+        if getattr(args, "live_fill_config", None):
+            from live_bucket_fill import load_config, RESOURCE_KEYS
+            if transport_mode:
+                raise ValueError("live_fill_currently_contact_only")
+            fill_config = load_config(args.live_fill_config)
+            report["live_bucket_fill"] = {
+                "enabled": True, "trigger": "operator_off_soil_key_4",
+                "display_only": True, "automatically_confirms_detachment": False,
+                "rocks_and_heap_included": True,
+                "config": fill_config,
+            }
 
         binding_paths = [
             checkpoint_path, checkpoint_metadata_path, execution_path,
@@ -747,6 +761,12 @@ def run(args):
             Path(motion.probe.p47.__file__),
             Path(motion.probe.snapshots.__file__),
         ]
+        if fill_config:
+            binding_paths.extend([
+                Path(args.live_fill_config).resolve(),
+                Path(__file__).with_name("live_bucket_fill.py"),
+                *[Path(fill_config[key]) for key in RESOURCE_KEYS],
+            ])
         if getattr(args, "seed_auditor_source", None):
             binding_paths.append(Path(args.seed_auditor_source).resolve())
             report["historical_seed_auditor_source"] = str(
@@ -1191,7 +1211,7 @@ def run(args):
                 report["gamepad_name"] = controller.name
 
             def marker_event(kind, label):
-                nonlocal phase
+                nonlocal phase, fill_requested
                 if kind == "phase":
                     load_marker.update(
                         label=label,
@@ -1218,6 +1238,7 @@ def run(args):
                 }
                 if kind == "phase":
                     phase = label
+                    fill_requested = bool(fill_config and label == "off_soil_confirm")
                     phase_events.append(event)
                 else:
                     event_annotations.append(event)
@@ -1274,6 +1295,14 @@ def run(args):
                     "MANUAL LOADED TRANSPORT / NOT TRAINING DATA"
                     if transport_mode else
                     "MANUAL CONTACT PILOT / NOT TRAINING DATA")
+                if fill_config:
+                    from live_bucket_fill import display_lines
+                    if phase != "off_soil_confirm":
+                        imgui.text("FILL: press 4 after clearing soil")
+                    else:
+                        for line in display_lines(
+                                live_fill.latest if live_fill else None, len(rows)):
+                            imgui.text(line)
                 if integral_policy["enabled"]:
                     effort = bridge.state["bucket_integral_effort"][3] / 1000
                     imgui.text(f"BUCKET INTEGRAL PILOT | assist {effort:.1f} kN")
@@ -1380,6 +1409,22 @@ def run(args):
             prior_sigterm = signal.signal(signal.SIGTERM, signal_stop)
             draws = 0
             while viewer.is_running() and stop_reason is None:
+                if fill_requested and live_fill is None:
+                    from live_bucket_fill import LiveFillDisplay
+                    live_fill = LiveFillDisplay(
+                        fill_config, records, cached_rock_vertices,
+                        output / "live-fill.ndjson")
+                    contexts.callback(live_fill.close)
+                if live_fill is not None:
+                    live_fill.poll()
+                    if fill_requested and live_fill.due(len(rows)):
+                        fill_pose = kinematic_assembly.assemble(
+                            np.asarray(bridge.state["mechanism_qpos"]),
+                            include_meshes=False)[1]["bucket"]
+                        live_fill.submit(
+                            len(rows), fixture.state.particle_q.numpy(), fill_pose,
+                            [rock["qpos"] for rock in bridge.state["rocks"]])
+                        fill_requested = False
                 if not fault_frozen["active"]:
                     budget_reason = session_budget.poll(
                         time.perf_counter(), len(rows), viewer.is_paused())
@@ -1582,6 +1627,10 @@ def run(args):
                     if not args.ui_smoke and not args.zero_probe_frames else
                     "operator_review_then_manual_pilot"),
             )
+            if live_fill is not None:
+                live_fill.poll()
+                report["live_bucket_fill"]["last_display_result"] = live_fill.latest
+                report["live_bucket_fill"]["pending_at_exit"] = live_fill.future is not None
             bridge.close(kill=not all(checks.values()))
             bridge = None
     except (Exception, KeyboardInterrupt) as error:
@@ -1670,6 +1719,8 @@ def main():
         help="Opt-in D-133 bucket path guard for candidate demonstrations")
     parser.add_argument(
         "--zero-probe-frames", type=int, choices=(0, 3, 30), default=0)
+    parser.add_argument(
+        "--live-fill-config", help="Display-only mixed fill measurement on off-soil key 4")
     parser.add_argument("--loaded-transport", action="store_true")
     parser.add_argument("--truck-config")
     parser.add_argument("--truck-repository-root")
