@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "all_120_identities_preserved": true,
+    "all_six_scenes_completed": true,
+    "closure_within_one_mm_in_every_scene": true,
+    "ground_contact_observed_in_every_scene": true
+  },
+  "duration_per_scene_s": 1.0,
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/reports/v4/mixed-material-r2-2026-09-20-v1/generated-bridge-r2.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-rigid-bridge-r2"
+    ],
+    "generated_source_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57",
+    "runner_sha256": "99c72c2c190b29a3ed41bb24e97db6716e53552f20096c87f023e8f2cd057d02"
+  },
+  "inputs": {
+    "bridge_init_report_sha256": "039cc47e01242a4b6c6cd608495e0c5d821f99015b01dd6a13ff27e7598f3346",
+    "config_sha256": "ba91377ec15e896a0b8cfbe949a153d6c50c388410f0a2c8eabeb030bee24f6e",
+    "load_report_sha256": "b0d5bb553c6cbf4b5714b415c75b67880431edf85474fc9f15c9701b81363ac0"
+  },
+  "physics_qualified": false,
+  "rock_count_per_scene": 20,
+  "scene_count": 6,
+  "scenes": [
+    {
+      "final_maximum_linear_speed_m_s": 0.00017346436874070138,
+      "maximum_closure_m": 0.00018559952072378492,
+      "maximum_downward_displacement_m": 0.08381271903341392,
+      "maximum_horizontal_displacement_m": 0.11044787241427496,
+      "maximum_rock_displacement_m": 0.13369660544836437,
+      "model_sha256": "89bf3803d55121b878edd9e09e8b22cbe6839190866743a2f6fd5f6b63cb1603",
+      "report_sha256": "d77953b666522a8de6895dd302bdf586fbba35524f79a88faf00de6d1102c297",
+      "rock_count": 20,
+      "scene_id": "ordinary-small-rock-dominant-seed-26091911",
+      "total_contact_substeps": {
+        "rock_bucket": 0,
+        "rock_ground": 2316,
+        "rock_ramp": 0,
+        "rock_rock": 0,
+        "rock_truck": 0
+      }
+    },
+    {
+      "final_maximum_linear_speed_m_s": 0.00018977919254687447,
+      "maximum_closure_m": 0.00018559952020154584,
+      "maximum_downward_displacement_m": 0.12193619012922213,
+      "maximum_horizontal_displacement_m": 0.09838603211719454,
+      "maximum_rock_displacement_m": 0.1566787981157484,
+      "model_sha256": "0bfde495b9adf301f3e76763c64b712810dee43b490134441f3514e589d508b6",
+      "report_sha256": "7057d5eabd3bc39ae3fc81d10fd9e95e80f531e8b0af04dc0f0edaa7c9ff90e9",
+      "rock_count": 20,
+      "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+      "total_contact_substeps": {
+        "rock_bucket": 0,
+        "rock_ground": 2316,
+        "rock_ramp": 0,
+        "rock_rock": 44,
+        "rock_truck": 0
+      }
+    },
+    {
+      "final_maximum_linear_speed_m_s": 0.00019294249401835287,
+      "maximum_closure_m": 0.00018559952032367024,
+      "maximum_downward_displacement_m": 0.10859661358050399,
+      "maximum_horizontal_displacement_m": 0.0977027416043067,
+      "maximum_rock_displacement_m": 0.1355610235351966,
+      "model_sha256": "ef6b3ad94e6896cb9e9c8d5b3a41d7f4c3782e2ab22859f5ccc04d766f5823d4",
+      "report_sha256": "8c0a36a04d509e212b58a5278d392dfa13a8ece6a6aef88025da9998fbd4f90f",
+      "rock_count": 20,
+      "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+      "total_contact_substeps": {
+        "rock_bucket": 0,
+        "rock_ground": 2316,
+        "rock_ramp": 0,
+        "rock_rock": 1443,
+        "rock_truck": 0
+      }
+    },
+    {
+      "final_maximum_linear_speed_m_s": 0.00795795455173032,
+      "maximum_closure_m": 0.00018559951803220255,
+      "maximum_downward_displacement_m": 0.1044087162262137,
+      "maximum_horizontal_displacement_m": 0.13769157614043867,
+      "maximum_rock_displacement_m": 0.16614360467487374,
+      "model_sha256": "51fc06279d7bb5016a9b07ce20b57329d3ad568f17c368f13c9c5916d9fdb74a",
+      "report_sha256": "6d5aba787c9e6effc8184dee17ad3b1c0845154c209774143a3f97fc19ef689d",
+      "rock_count": 20,
+      "scene_id": "sparse-large-rock-seed-26091921",
+      "total_contact_substeps": {
+        "rock_bucket": 0,
+        "rock_ground": 2316,
+        "rock_ramp": 0,
+        "rock_rock": 2012,
+        "rock_truck": 0
+      }
+    },
+    {
+      "final_maximum_linear_speed_m_s": 0.0006504423834949296,
+      "maximum_closure_m": 0.0001855995202659378,
+      "maximum_downward_displacement_m": 0.11511323000947588,
+      "maximum_horizontal_displacement_m": 0.17619995588095885,
+      "maximum_rock_displacement_m": 0.20647672258055125,
+      "model_sha256": "eb8f48aaf1d31581067dd2c046340d4ed1514e7e91de22591d735cac54df41dc",
+      "report_sha256": "66c8006ec0ee530baf4502304866e454c1154877e77090f3ecaa97b6f5ac4a64",
+      "rock_count": 20,
+      "scene_id": "sparse-large-rock-seed-26091922",
+      "total_contact_substeps": {
+        "rock_bucket": 0,
+        "rock_ground": 2316,
+        "rock_ramp": 0,
+        "rock_rock": 156,
+        "rock_truck": 0
+      }
+    },
+    {
+      "final_maximum_linear_speed_m_s": 0.0009707504718953812,
+      "maximum_closure_m": 0.00018559952027082514,
+      "maximum_downward_displacement_m": 0.09450942997029935,
+      "maximum_horizontal_displacement_m": 0.14711096803636578,
+      "maximum_rock_displacement_m": 0.16528272672881497,
+      "model_sha256": "3f4c59423f2e857994dd23628dfd7a2a234c378fa359ca1fee52afc163c8c76b",
+      "report_sha256": "05753b72ca93285cdbb5452e88a6b8b5409fb796d383b90a14d1157896045ea6",
+      "rock_count": 20,
+      "scene_id": "sparse-large-rock-seed-26091923",
+      "total_contact_substeps": {
+        "rock_bucket": 0,
+        "rock_ground": 2316,
+        "rock_ramp": 0,
+        "rock_rock": 1891,
+        "rock_truck": 0
+      }
+    }
+  ],
+  "schema": "excavation_mixed_material_r2_settling_report_v1",
+  "scope_limit": "bounded one-second zero-command numerical/contact smoke; does not qualify multi-rock excavation, carrying, dump, MPM coupling or bucket fill rate",
+  "status": "r2_six_scene_settling_smoke_passed",
+  "total_internal_substeps": 14400,
+  "total_preserved_rock_identities": 120
+}

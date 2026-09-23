@@ -1,0 +1,77 @@
+{
+  "schema": "excavation_layered_47_truck_physics_config_v1",
+  "status": "cad_aligned_five_box_development_candidate",
+  "frozen_inputs": {
+    "receiver_contract": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/receiver-contract.json",
+      "sha256": "3fb663b0d3ff6342ffb908571d6c9ed92786714bcbefd17bc0436e554cda4651"
+    },
+    "receiver_mesh": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/receiver-mesh.npz",
+      "sha256": "bd379fc56bd492b4e0a342f8432869f2926a6e1f10a4face407d70c5784fa640"
+    },
+    "collision_protocol": {
+      "path": "configs/v4/mixed-material-r1.json",
+      "sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74"
+    }
+  },
+  "contact_ownership": {
+    "mpm_soil_to_truck": "newton_static_boxes",
+    "rigid_rock_to_truck": "mujoco_static_boxes",
+    "truck_receiver": "read_only_inventory_observer",
+    "duplicate_soil_contact_backend": false,
+    "duplicate_rock_contact_backend": false
+  },
+  "fixtures_receiver_local": [
+    {
+      "name": "r1_truck_floor",
+      "center_m": [-0.34, 4.5015, 1.697],
+      "half_size_m": [1.55, 1.04, 0.03],
+      "pitch_rad": 0.11153307743597816
+    },
+    {
+      "name": "r1_truck_wall_x_positive",
+      "center_m": [1.525, 4.5015, 2.026],
+      "half_size_m": [0.64, 1.06, 0.03],
+      "pitch_rad": -0.9582131361408948
+    },
+    {
+      "name": "r1_truck_wall_x_negative",
+      "center_m": [-1.63, 4.5015, 1.95],
+      "half_size_m": [0.27, 1.04, 0.03],
+      "pitch_rad": -0.3805063771123649
+    },
+    {
+      "name": "r1_truck_wall_y_negative",
+      "center_m": [0.02, 3.52, 2.06],
+      "half_size_m": [1.9, 0.03, 0.58],
+      "pitch_rad": 0.0
+    },
+    {
+      "name": "r1_truck_wall_y_positive",
+      "center_m": [0.02, 5.5, 2.06],
+      "half_size_m": [1.9, 0.03, 0.58],
+      "pitch_rad": 0.0
+    }
+  ],
+  "material": {
+    "friction": 0.68,
+    "mujoco_friction": [0.8, 0.005, 0.0001]
+  },
+  "acceptance": {
+    "minimum_initial_particle_clearance_m": 0.05,
+    "minimum_initial_rock_center_clearance_m": 0.05,
+    "hold_frames": 3,
+    "maximum_initial_truck_contact_samples": 0,
+    "maximum_initial_rock_truck_contact_substeps": 0
+  },
+  "scope": {
+    "development_candidate_only": true,
+    "receiver_cad_aligned": true,
+    "five_box_collision_approximation": true,
+    "full_receiver_mesh_used_for_collision": false,
+    "support_and_fill_calibrated": false,
+    "final_full_chain_evidence": false,
+    "training": false
+  }
+}

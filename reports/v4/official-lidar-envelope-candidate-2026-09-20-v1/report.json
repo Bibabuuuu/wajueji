@@ -1,0 +1,50 @@
+{
+  "config_sha256": "4495ee4d6a0d25a840ec05993af5a2f3d3e4d94ee5d71471434720151d521157",
+  "material_layout_intent": {
+    "continuous_matrix": "MPM_fine_fragment_matrix_required",
+    "exact_rigid_rock_count": null,
+    "exact_visible_rock_coverage_fraction": null,
+    "large_rock_policy": "retain_D035_limits_and_do_not_use_large_rocks_to_create_visual_density",
+    "rigid_rocks": "many_small_and_medium_with_very_sparse_large_tail"
+  },
+  "physical_scene_modified": false,
+  "preview_sha256": "c66de69cc2bd0559ab689898798b994b09fdee9cb9cd4c78bede0f45c4d1baad",
+  "schema": "excavation_official_lidar_envelope_report_v1",
+  "source_binding": {
+    "camera_lidar_extrinsic_available": false,
+    "dataset": "Autonomous_Excavation_under_Complex_Material_Conditions_datasets",
+    "finite_point_count": 24000,
+    "frame_index_zero_based": 880,
+    "pcd_member": "1726042432699817181.pcd",
+    "pcd_timestamp_ns": 1726042432699817181,
+    "session": "2024-09-11-16-12-24",
+    "source_status": "official_platform_output_human_reviewed"
+  },
+  "status": "geometry_parameter_candidate_not_physical_scene",
+  "target_envelope": {
+    "coordinate_intent": "align_uphill_direction_with_positive_simulation_x_away_from_machine",
+    "crest_height_band_m": {
+      "p05": 0.8767352350394507,
+      "p50": 1.191259019672974,
+      "p95": 1.531358658108816
+    },
+    "height_band_semantics": "scaled_p05_p50_p95_reference_band_not_exact_surface_extrema",
+    "length_x_m": 2.2,
+    "nominal_plane_rise_m": 0.8472422501701249,
+    "scaled_plane_residual_m": {
+      "p05": -0.32050701513067403,
+      "p50": -0.005983230497150718,
+      "p95": 0.33411640793869135
+    },
+    "slope_angle_deg": 21.0622,
+    "slope_dz_dx": 0.3851101137136931,
+    "toe_height_band_m": {
+      "p05": 0.029492984869325944,
+      "p50": 0.34401676950284926,
+      "p95": 0.6841164079386913
+    },
+    "toe_reference_height_m": 0.35,
+    "width_y_m": 2.2
+  },
+  "training_started": false
+}

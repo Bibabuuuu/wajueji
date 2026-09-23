@@ -1,0 +1,14 @@
+{
+  "phase": "baseline_hold1021-1140",
+  "mean_velocity_m_s": 6.52023973758742e-05,
+  "velocity_std_m_s": 0.021021735904197585,
+  "velocity_minmax_m_s": [
+    -0.022698456243894778,
+    0.024092790142228895
+  ],
+  "bucket_position_range_mm": 0.19667712609183763,
+  "sign_changes": 119,
+  "dominant_sampled_frequency_hz": 30.0,
+  "MPM_load_peak_to_peak_N": 152925.50122124236,
+  "scope": "60Hz samples; diagnostic frequency only, not proof of instability mechanism"
+}

@@ -1,0 +1,110 @@
+{
+  "bridge_implementation_count_planned": 1,
+  "checks": {
+    "all_scenes_have_twenty_real_rocks": true,
+    "jam_boundary_deferred": true,
+    "load_only_not_physics": true,
+    "no_placeholder_rocks": true,
+    "runtime_count_fixed": true,
+    "single_maximum_capacity_twenty": true,
+    "six_first_admission_scenes": true,
+    "source_model_unchanged": true,
+    "static_heightfield_in_every_scene": true
+  },
+  "deferred_jam_boundary_scene_count": 3,
+  "implementation": {
+    "assembler_sha256": "5ded470d93d8db5f5438a3d539cc63b136f0ad064ca26f1f11dc1e65e2e4aa66",
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/src/v4/mixed_material_r2_model_inspect.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-material-r2-model-inspect"
+    ],
+    "inspector_sha256": "6dec95ac55d3a8a0ce30719c4f39df06441a09535c10afc20a98b9c25b5489b1"
+  },
+  "inputs": {
+    "assembly_preflight_report_sha256": "c660b0d108fee018a9e4b5313a1bd345f3b576bdb8026ff3349d83c1cfaafc66",
+    "config_sha256": "ba91377ec15e896a0b8cfbe949a153d6c50c388410f0a2c8eabeb030bee24f6e",
+    "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a"
+  },
+  "maximum_rock_capacity": 20,
+  "physics_qualified": false,
+  "placeholder_rocks_used": false,
+  "rock_count_per_scene": 20,
+  "runtime_add_remove_used": false,
+  "scene_count": 6,
+  "scenes": [
+    {
+      "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+      "heightfield_maximum_interpolation_error_m": 9.814442024148884e-05,
+      "model_manifest_sha256": "e34a8e1a65d98f4d4648a2463cf493e6127ac828fc5094f14cde8bccb7cade5a",
+      "model_sha256": "89bf3803d55121b878edd9e09e8b22cbe6839190866743a2f6fd5f6b63cb1603",
+      "report_sha256": "e5eb5b830955279b0f12b49a22ae87a1bfdeecd2eb6616b4c9b846df21ee048a",
+      "rock_count": 20,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091911"
+    },
+    {
+      "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+      "heightfield_maximum_interpolation_error_m": 9.814442024148884e-05,
+      "model_manifest_sha256": "90686a5cca4fb771a396d3cc5dd2d822dff449f36c197d11d423514a16e71029",
+      "model_sha256": "0bfde495b9adf301f3e76763c64b712810dee43b490134441f3514e589d508b6",
+      "report_sha256": "04fdb3d2d98c42237917c9ba86dca03859fd14203a118d90754331029d405b4d",
+      "rock_count": 20,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091912"
+    },
+    {
+      "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+      "heightfield_maximum_interpolation_error_m": 9.814442024148884e-05,
+      "model_manifest_sha256": "af454c4d414ffc6dbc58a3c42f5bee9fb97c30211797fa725eda779139218797",
+      "model_sha256": "ef6b3ad94e6896cb9e9c8d5b3a41d7f4c3782e2ab22859f5ccc04d766f5823d4",
+      "report_sha256": "6c979086a342b22497e561587fa72e668958e31c241cf13e28d33f347b2f8ff0",
+      "rock_count": 20,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091913"
+    },
+    {
+      "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+      "heightfield_maximum_interpolation_error_m": 9.814442024148884e-05,
+      "model_manifest_sha256": "b82b6ded514d1e723def74acb680e8f68ca0847f8aaae2221f1763ad0f4a7484",
+      "model_sha256": "51fc06279d7bb5016a9b07ce20b57329d3ad568f17c368f13c9c5916d9fdb74a",
+      "report_sha256": "1ee85caf48903701e32aa4d3cbf5284d6122a82bb77d48da5875ada33d7cbd5d",
+      "rock_count": 20,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091921"
+    },
+    {
+      "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+      "heightfield_maximum_interpolation_error_m": 9.814442024148884e-05,
+      "model_manifest_sha256": "77fe333cf82631ae436bc96c35e8eb744f2e9c2eebcbcf7e68e187b966fc09a0",
+      "model_sha256": "eb8f48aaf1d31581067dd2c046340d4ed1514e7e91de22591d735cac54df41dc",
+      "report_sha256": "86d08d3d31ae31eda2081cba3f9f0f763802e26762611e9683a5a590354523bb",
+      "rock_count": 20,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091922"
+    },
+    {
+      "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+      "heightfield_maximum_interpolation_error_m": 9.814442024148884e-05,
+      "model_manifest_sha256": "4f6acf26fb825c3fd2e295b77c14ede24e049735524a56b4b17fd25516fe55e0",
+      "model_sha256": "3f4c59423f2e857994dd23628dfd7a2a234c378fa359ca1fee52afc163c8c76b",
+      "report_sha256": "11a4a8e3f1f7f09154622eb82c4a1dc78fec0ad4b20936c5d2bd2cec4782d886",
+      "rock_count": 20,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091923"
+    }
+  ],
+  "schema": "excavation_mixed_material_r2_load_report_v1",
+  "scope_limit": "R2 candidate generation plus load-only structural inspection; the bridge is not modified and no multi-rock physics or bucket fill-rate result is claimed",
+  "status": "r2_six_scene_load_only_passed",
+  "total_loaded_rock_records": 120
+}

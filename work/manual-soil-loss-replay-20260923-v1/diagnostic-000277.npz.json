@@ -1,0 +1,12 @@
+{
+  "path": "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-000277.npz",
+  "size_bytes": 25328323,
+  "mtime_ns": 1790159896206323336,
+  "sha256": "c038f5466aa5f347c545d743d1ef8e4f4032de13934af1f17cbe2bfa7e8f6c14",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "diagnostic replay only; nonfinite={}",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {}
+}

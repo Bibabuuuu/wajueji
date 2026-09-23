@@ -1,0 +1,153 @@
+{
+  "scope": "Difference between updated local Hencky tensor and negative compliance times projected particle stress. Diagnostic only: not global stress-solver convergence residual; grid averaging, interpolation, stress projection and frame conventions may contribute.",
+  "events": 2895,
+  "residual_norm_quantiles": [
+    0.06442927744201857,
+    0.866227883663782,
+    14.215236581553743,
+    19.104023623576555,
+    24.276966443835974
+  ],
+  "stress_compliance_norm_quantiles": [
+    0.00585107537994011,
+    0.011031204919872665,
+    0.043164548340895864
+  ],
+  "sample": [
+    {
+      "frame": 1039,
+      "H_target_eigenvalues": [
+        -0.008023981459702323,
+        0.002794009368580642,
+        0.01599672952928911
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.009018658500856995,
+        -0.0020421221053460352,
+        0.00927009818432803
+      ],
+      "local_closure_residual_norm": 0.00860184762374004,
+      "mean_normal_stress_Pa": 2984.470703125
+    },
+    {
+      "frame": 1040,
+      "H_target_eigenvalues": [
+        -1.6844952090559364,
+        -1.678146464053307,
+        -0.005609081259493754
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008956186881798028,
+        0.004473694774465574,
+        0.004632492107332453
+      ],
+      "local_closure_residual_norm": 2.3841893644494028,
+      "mean_normal_stress_Pa": -250.0
+    },
+    {
+      "frame": 1041,
+      "H_target_eigenvalues": [
+        -2.2110930047281174,
+        -2.200298011722467,
+        -0.007911177732606018
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008956412185996795,
+        0.004495670805156889,
+        0.004610741478496155
+      ],
+      "local_closure_residual_norm": 3.1257698950674397,
+      "mean_normal_stress_Pa": -250.0001678466797
+    },
+    {
+      "frame": 1042,
+      "H_target_eigenvalues": [
+        -3.877557747519346,
+        -3.861471098513204,
+        0.009366866822021324
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008954618891636162,
+        0.004386112445766815,
+        0.004718506348213093
+      ],
+      "local_closure_residual_norm": 5.47879683862979,
+      "mean_normal_stress_Pa": -249.9998321533203
+    },
+    {
+      "frame": 1043,
+      "H_target_eigenvalues": [
+        -10.41995103122047,
+        -10.18126623964326,
+        -0.0005003154490190481
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008952930182540713,
+        0.004327127802746105,
+        0.004775802379794612
+      ],
+      "local_closure_residual_norm": 14.57468042382794,
+      "mean_normal_stress_Pa": -250.0
+    },
+    {
+      "frame": 1044,
+      "H_target_eigenvalues": [
+        -8.435823788926037,
+        -8.233757909818989,
+        0.03282976664782775
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008953756877047199,
+        0.004353709276217248,
+        0.004750047503173692
+      ],
+      "local_closure_residual_norm": 11.794554407151987,
+      "mean_normal_stress_Pa": -249.9998321533203
+    },
+    {
+      "frame": 1045,
+      "H_target_eigenvalues": [
+        -6.346602236359766,
+        -6.197201860176965,
+        0.08194999281759281
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008953128054272895,
+        0.004333038867597399,
+        0.004770089284331741
+      ],
+      "local_closure_residual_norm": 8.877343449704686,
+      "mean_normal_stress_Pa": -250.0001678466797
+    },
+    {
+      "frame": 1046,
+      "H_target_eigenvalues": [
+        -4.28536890757778,
+        -4.178814483456969,
+        0.14554557704035875
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008953149618323632,
+        0.0043336818922024385,
+        0.004769467628464947
+      ],
+      "local_closure_residual_norm": 5.993987300383906,
+      "mean_normal_stress_Pa": -249.9998321533203
+    },
+    {
+      "frame": 1047,
+      "H_target_eigenvalues": [
+        -2.162541166311075,
+        -2.100428093683313,
+        0.19064311041695406
+      ],
+      "minus_compliance_stress_eigenvalues": [
+        -0.008953285275619983,
+        0.0043380641861597916,
+        0.004765198237897694
+      ],
+      "local_closure_residual_norm": 3.0277210713454124,
+      "mean_normal_stress_Pa": -249.9619140625
+    }
+  ]
+}

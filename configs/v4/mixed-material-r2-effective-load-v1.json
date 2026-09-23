@@ -1,0 +1,48 @@
+{
+  "schema": "excavation_mixed_material_r2_effective_load_config_v1",
+  "source_intake_config": {
+    "path": "configs/v4/mixed-material-r2-controlled-intake-v1.json",
+    "sha256": "8b9786fd9fa31e8d7347bb31f3138d7e4fe70cb67b12a67fce59fe8d6bcef75b"
+  },
+  "source_lift_config": {
+    "path": "configs/v4/mixed-material-r2-intake-lift-v1.json",
+    "sha256": "4093765f2d01ca3578376481659e38e245f308ec7e53485b538230ca6858bef3"
+  },
+  "superseded_strict_lift_report": {
+    "path": "reports/v4/mixed-material-r2-intake-lift-2026-09-20-v2/report.json",
+    "sha256": "2fff012018fe13e962aec37a01b35e65f2a7d63350a35f4d71856bd4d113af92",
+    "required_status": "short_lift_hold_needs_review"
+  },
+  "bucket_capacity": {
+    "value_m3": 0.255164729950989,
+    "source_path": "evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/result.json",
+    "source_sha256": "c18d6d6ba3bd5e581dc90d38cee1c3137b425a2964d3e0af83913ea8b214a30c",
+    "source_field": "capacity_liters",
+    "conversion": "capacity_liters / 1000",
+    "metric": "stable_carried_rock_solid_volume_divided_by_bucket_capacity"
+  },
+  "acceptance": {
+    "minimum_carried_rock_count": 1,
+    "minimum_vertical_lift_from_lift_start_m": 0.03,
+    "minimum_final_continuous_off_ground_duration_s": 1.0,
+    "relaxed_bucket_neighborhood_margin_m": 0.3,
+    "maximum_relative_center_drift_during_final_window_m": 0.05,
+    "maximum_final_carried_rock_speed_m_s": 0.05,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "strict_full_envelope_is_diagnostic_only": true,
+    "direct_bucket_contact_is_diagnostic_only": true
+  },
+  "scope": {
+    "two_scene_effective_load_diagnostic": true,
+    "solid_volume_fill_rate_only": true,
+    "void_compensated_bulk_fill_rate": false,
+    "all_six_scene_qualification": false,
+    "ten_second_hold_qualification": false,
+    "dump": false,
+    "truck_cad": false,
+    "mpm_coupling": false,
+    "training": false,
+    "physics_qualified": false
+  }
+}

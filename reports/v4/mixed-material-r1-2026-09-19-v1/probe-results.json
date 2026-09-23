@@ -1,0 +1,47 @@
+{
+  "all_passed": true,
+  "compiler_first_line": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "mujoco_contract": "2.3.8, zero plugins",
+  "probe_count": 2,
+  "results": [
+    {
+      "bucket_contact_steps": 5259,
+      "diameter_m": 0.12,
+      "final_position_m": [
+        0.6546268909151874,
+        -5.0515102091645234e-17,
+        -0.2380608608647726
+      ],
+      "final_speed_m_s": 0.8348597265851728,
+      "fixture_path": "reports/v4/mixed-material-r1-2026-09-19-v1/open-bucket-probe-0.12m.xml",
+      "fixture_sha256": "7189730e6651c8ae3e2bf646f18f1b1f2a8549ac243e37a5352bae2921380c0f",
+      "initial_mouth_depth_m": -0.08,
+      "maximum_contact_count": 2,
+      "maximum_mouth_depth_m": 0.6103633103186579,
+      "passed": true,
+      "schema": "excavation_open_bucket_probe_result_v1"
+    },
+    {
+      "bucket_contact_steps": 5111,
+      "diameter_m": 0.27,
+      "final_position_m": [
+        0.6056036795674065,
+        3.730858173094736e-17,
+        -0.33188488603631056
+      ],
+      "final_speed_m_s": 0.6827569366761825,
+      "fixture_path": "reports/v4/mixed-material-r1-2026-09-19-v1/open-bucket-probe-0.27m.xml",
+      "fixture_sha256": "ba6c28d23b87edc7a5aafb00b00203f1a432e130219ed82d8b305d65906c7cff",
+      "initial_mouth_depth_m": -0.08,
+      "maximum_contact_count": 2,
+      "maximum_mouth_depth_m": 0.5349567875300543,
+      "passed": true,
+      "schema": "excavation_open_bucket_probe_result_v1"
+    }
+  ],
+  "schema": "excavation_open_bucket_probe_run_v1",
+  "scope_limit": "proves short standalone entry through the open proxy and bucket contact only; does not prove mechanism-attached hold or dump",
+  "source_path": "src/v4/mixed_material_r1_probe.cc",
+  "source_sha256": "a3a77e987c1ca71112f2778056ace372ffc09ce887505cd440ddd4e358572af1",
+  "status": "passed"
+}

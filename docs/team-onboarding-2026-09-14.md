@@ -1,6 +1,6 @@
 # 队友入门：我们在做什么，现在到哪一步了
 
-> **2026-09-19范围更新：** 本页主体是9月14日纯土基线。当前目标已经改为可真实铲运的碎石/大块石头，先验证动态刚体石块与MPM基质混合物理，再重录示范和训练。请先读[START-HERE](START-HERE.md)和[混合场景专项](v4/mixed-material-scene-plan.md)；下方进度只说明已有纯土能力。
+> **历史入门页：** 本页主体是9月14日纯土基线。当前任务请从[文档索引](DOCS_INDEX.md)、[总体规划](PROJECT_PLAN.md)和[动态状态](CURRENT_STATUS.md)进入；下方进度只说明已有纯土能力。
 
 更新：2026年9月14日15:11后，北京时间。本页供两位新队友及其AI快速入门；运行进度继续变化，以`.planning/task.md`和实际`report.json`为准。
 
@@ -83,7 +83,7 @@ Tailscale提供网络连接；终端和文件操作还需要SSH等服务，图�
 
 | 顺序 | 文件 | 要弄清楚什么 |
 |---:|---|---|
-| 1 | `docs/START-HERE.md`、`AGENTS.md` | 先确认唯一主线、事实来源和修改边界 |
+| 1 | `AGENTS.md`、`docs/DOCS_INDEX.md` | 先确认唯一主线、事实来源和修改边界 |
 | 2 | `docs/team-onboarding-2026-09-14.md` | 用通俗语言理解完整系统 |
 | 3 | `.planning/task.md`、`docs/handoff.md` | 当前真正做到哪、下一项是什么 |
 | 4 | `docs/requirements.md` | 题目指标、用户范围和不能擅改的约束 |

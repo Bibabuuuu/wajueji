@@ -1,0 +1,157 @@
+{
+  "schema": "excavation_layered_mound_viewer_preview_v1",
+  "status": "geometry_only_existing_viewer_preview",
+  "visual_review": {
+    "status": "user_approved",
+    "date": "2026-09-21",
+    "scope": "geometry_distribution_and_rendering_only",
+    "physics_stability_included": false
+  },
+  "source_bank": {
+    "path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "particle_count": 390400,
+    "particle_spacing_m": 0.025
+  },
+  "mound_envelope": {
+    "outer_xy_bounds_m": [[3.8125, -1.0875], [5.9875, 1.0875]],
+    "plateau_xy_bounds_m": [[4.2, -0.55], [5.6, 0.55]],
+    "base_height_m": 0.05,
+    "plateau_height_m": 1.50,
+    "falloff": "cosine",
+    "expected_retained_particle_count": 290468
+  },
+  "work_zone_xy_m": [[4.25, -0.50], [5.55, 0.50]],
+  "construction_stages": [
+    {
+      "id": "foundation",
+      "soil_height_m": 0.32,
+      "rock_layer": null,
+      "rock_count": 0
+    },
+    {
+      "id": "lower_cover",
+      "soil_height_m": 0.56,
+      "rock_layer": "lower",
+      "rock_count": 9,
+      "placement_surface_height_m": 0.32,
+      "embed_ratio": 0.60
+    },
+    {
+      "id": "lower_middle_cover",
+      "soil_height_m": 0.84,
+      "rock_layer": "lower_middle",
+      "rock_count": 11,
+      "placement_surface_height_m": 0.58,
+      "embed_ratio": 0.56
+    },
+    {
+      "id": "middle_cover",
+      "soil_height_m": 1.12,
+      "rock_layer": "middle",
+      "rock_count": 13,
+      "placement_surface_height_m": 0.86,
+      "embed_ratio": 0.52
+    },
+    {
+      "id": "upper_cover",
+      "soil_height_m": 1.40,
+      "rock_layer": "upper",
+      "rock_count": 14,
+      "placement_surface_height_m": 1.14,
+      "embed_ratio": 0.46
+    },
+    {
+      "id": "top_exposed",
+      "soil_height_m": 1.60,
+      "rock_layer": "top",
+      "rock_count": 18,
+      "placement_surface_height_m": 1.46,
+      "embed_ratio": 0.32
+    }
+  ],
+  "rock_layers": {
+    "lower": {
+      "count": 9,
+      "layout": "clustered_jitter",
+      "layout_seed": 7611,
+      "cluster_centers_uv": [[0.20, 0.24], [0.55, 0.66], [0.82, 0.30]],
+      "cluster_jitter_uv": [0.105, 0.125],
+      "minimum_separation_factor": 0.78,
+      "height_jitter_m": 0.018,
+      "tilt_limit_deg": 9.0,
+      "diameter_cycle_m": [0.20, 0.30, 0.34, 0.22, 0.32, 0.36],
+      "prototype_cycle": ["angular_block", "angular_octa", "angular_bipyramid"]
+    },
+    "lower_middle": {
+      "count": 11,
+      "layout": "clustered_jitter",
+      "layout_seed": 7616,
+      "cluster_centers_uv": [[0.18, 0.67], [0.47, 0.27], [0.78, 0.68]],
+      "cluster_jitter_uv": [0.100, 0.120],
+      "minimum_separation_factor": 0.76,
+      "height_jitter_m": 0.016,
+      "tilt_limit_deg": 10.0,
+      "diameter_cycle_m": [0.20, 0.26, 0.30, 0.22, 0.28, 0.32],
+      "prototype_cycle": ["angular_octa", "angular_block", "angular_bipyramid"]
+    },
+    "middle": {
+      "count": 13,
+      "layout": "clustered_jitter",
+      "layout_seed": 7621,
+      "cluster_centers_uv": [[0.17, 0.28], [0.42, 0.68], [0.67, 0.25], [0.84, 0.72]],
+      "cluster_jitter_uv": [0.090, 0.115],
+      "minimum_separation_factor": 0.76,
+      "height_jitter_m": 0.016,
+      "tilt_limit_deg": 11.0,
+      "diameter_cycle_m": [0.18, 0.22, 0.26, 0.20, 0.24],
+      "prototype_cycle": ["angular_block", "angular_bipyramid", "angular_octa"]
+    },
+    "upper": {
+      "count": 14,
+      "layout": "clustered_jitter",
+      "layout_seed": 7626,
+      "cluster_centers_uv": [[0.14, 0.32], [0.36, 0.73], [0.62, 0.31], [0.84, 0.68]],
+      "cluster_jitter_uv": [0.088, 0.110],
+      "minimum_separation_factor": 0.74,
+      "height_jitter_m": 0.015,
+      "tilt_limit_deg": 12.0,
+      "diameter_cycle_m": [0.17, 0.21, 0.25, 0.19, 0.23],
+      "prototype_cycle": ["angular_bipyramid", "angular_octa", "angular_block", "angular_tetra"]
+    },
+    "top": {
+      "count": 18,
+      "layout": "clustered_jitter",
+      "layout_seed": 7631,
+      "cluster_centers_uv": [[0.14, 0.25], [0.31, 0.73], [0.51, 0.42], [0.72, 0.77], [0.86, 0.27]],
+      "cluster_jitter_uv": [0.082, 0.105],
+      "minimum_separation_factor": 0.74,
+      "height_jitter_m": 0.014,
+      "tilt_limit_deg": 13.0,
+      "diameter_cycle_m": [0.16, 0.18, 0.20, 0.17, 0.22, 0.19],
+      "prototype_cycle": ["angular_tetra", "angular_block", "angular_bipyramid", "angular_octa"]
+    }
+  },
+  "rock_rendering": {
+    "texture": "procedural_multiscale_stone",
+    "texture_size_px": 128,
+    "roughness": 0.92,
+    "metallic": 0.0,
+    "per_instance_earth_tone_variation": true
+  },
+  "viewer": {
+    "particle_display_stride": 1,
+    "soil_rendering": "existing_density_isosurface",
+    "width": 1440,
+    "height": 900,
+    "camera_position_m": [9.0, -8.0, 5.5],
+    "camera_pitch_deg": -20.0,
+    "camera_yaw_deg": 128.0
+  },
+  "scope": {
+    "uses_existing_excavator_viewer": true,
+    "geometry_only": true,
+    "physics_step": false,
+    "stability_claimed": false,
+    "fullscale_qualification_claimed": false
+  }
+}

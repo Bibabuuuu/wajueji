@@ -1,0 +1,26 @@
+{
+  "run_id": "manual-contact-20260923-235749-1040071",
+  "ready": {
+    "paused": true,
+    "physics_frames": 0,
+    "gamepad_name": "Microsoft X-Box 360 pad",
+    "restore_exact": true,
+    "moving_bucket_sweep_candidate": {
+      "actual_motion_reaction_delay_frames": 1,
+      "candidate_source_sha256": "eb69f49e4895db70724ad0f6a15e4c6261b501ee4d12dd92ecccd9c62bc11524",
+      "collection_purpose": "contact_bc_candidate_demonstrations",
+      "enabled": true,
+      "exact_rotational_ccd": false,
+      "native_projection_reaction_attributed": false,
+      "training_admission_automatic": false
+    }
+  },
+  "source_checkpoint": {
+    "mtime_ns": 1790143972849119440,
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+    "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "size_bytes": 52403258
+  },
+  "validation": "23 manual guard tests + 1 incremental reaction runtime test; archived auditor positive/current auditor negative checks; no additional physics replay",
+  "runtime_scope": "contact demonstration candidates; data review separate from capture"
+}

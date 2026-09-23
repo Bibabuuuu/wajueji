@@ -1,0 +1,12 @@
+{
+  "path": "/home/qunwang/wajueji/work/soil-hencky-full-replay-20260923-v1/candidate-000800.npz",
+  "size_bytes": 26030718,
+  "mtime_ns": 1790165910824481360,
+  "sha256": "e327d094608d3196b8e72f708df77c7e0cd5326ac5f1113fd94d3fa3745265dc",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "D127 experimental algorithm; diagnostic only, never resume/train",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {}
+}

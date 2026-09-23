@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "frozen_runner": true,
+    "frozen_header": true,
+    "prior_evidence_bindings": true,
+    "runtime_source_bindings": true,
+    "analysis_bindings": true,
+    "full_state_4x23_exact": true,
+    "prefix1140_trace_exact": true,
+    "all_original_hard_guards": true,
+    "reported1290_frames": true,
+    "syntax": true,
+    "unit_tests": true,
+    "native_compile_and_run": true,
+    "docs": true,
+    "docs_diff": true,
+    "experiment_process_ended": true
+  },
+  "artifact_verification_pass": true,
+  "physical_protocol_pass": false,
+  "default_enabled": false,
+  "training_eligible": false,
+  "unit_stdout": "RELEASE_TEST_PASS prefix-equivalence symmetry rate neutral small-command no-crossing new-direction invalid\n",
+  "docs_stdout": "DOCS_CHECK_PASS core=8 active_plans=7 checked_links=14 decisions=120\n",
+  "replay_pids": []
+}

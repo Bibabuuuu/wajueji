@@ -1,0 +1,76 @@
+{
+  "schema": "excavation_layered_47_interactive_proxy_benchmark_config_v1",
+  "status": "benchmark_nonformal_interactive_solver_profiles_only",
+  "base_preflight": {
+    "path": "configs/v4/layered-47-excavation-preflight-v1.json",
+    "sha256": "888f99d27c373759c5cbfd6c03bc02fca8109a77345e409d17ba52c99e85f81c"
+  },
+  "input_checkpoint": {
+    "checkpoint_schema": "excavation_layered_mound_continuation_checkpoint_v2",
+    "checkpoint_status": "four_layer_local_robust_hold_rejected_diagnostic",
+    "sha256": "e3176a7a8bbc3083355ad711f49a1fb57d0a7c4d247f672cfc89af7cad86b61c",
+    "source_config_sha256": "d37ef5da4a0f39b716d6e58d3eafe27ec5a058d633da6a84b5ec19b8859b0543",
+    "source_runner_sha256": "2a69e16b0cbfe0a766f687fcd0514df128bcf2c78136bd4fbdc7150b3bd26f8b",
+    "particle_count": 256441,
+    "rock_count": 47,
+    "newton_version": "1.5.1",
+    "warp_version": "1.17.0",
+    "read_only": true,
+    "metadata_required": true
+  },
+  "solver_profiles": {
+    "formal_5cm_fixed": {
+      "voxel_size_m": 0.05,
+      "grid_type": "fixed",
+      "grid_padding": 12
+    },
+    "voxel_10cm_fixed": {
+      "voxel_size_m": 0.1,
+      "grid_type": "fixed",
+      "grid_padding": 12
+    },
+    "voxel_5cm_sparse": {
+      "voxel_size_m": 0.05,
+      "grid_type": "sparse",
+      "grid_padding": 2
+    },
+    "voxel_10cm_sparse": {
+      "voxel_size_m": 0.1,
+      "grid_type": "sparse",
+      "grid_padding": 2
+    },
+    "voxel_10cm_sparse_iter25": {
+      "voxel_size_m": 0.1,
+      "grid_type": "sparse",
+      "grid_padding": 2,
+      "max_iterations": 25
+    },
+    "voxel_10cm_sparse_iter12": {
+      "voxel_size_m": 0.1,
+      "grid_type": "sparse",
+      "grid_padding": 2,
+      "max_iterations": 12
+    }
+  },
+  "benchmark": {
+    "minimum_warmup_frames": 60,
+    "maximum_warmup_frames": 240,
+    "required_consecutive_stable_frames": 60,
+    "measured_frames": 60,
+    "require_zero_bucket_contact": true,
+    "write_progress_journal": true
+  },
+  "scope": {
+    "formal_a30_equivalent": false,
+    "manual_collection_eligible": false,
+    "training_eligible": false,
+    "changes_material": false,
+    "changes_particle_spacing": false,
+    "changes_rock_count": false,
+    "changes_bucket_proxy": false,
+    "contains_iteration_budget_candidates": true,
+    "source_checkpoint_mutated": false,
+    "new_formal_checkpoint_written": false,
+    "benchmark_recovery_checkpoint_authorized": true
+  }
+}

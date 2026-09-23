@@ -1,0 +1,7 @@
+{
+  "pid": 822291,
+  "frames_before": 1329,
+  "signal": "SIGTERM",
+  "authorization": "user explicitly requested save and end paused trial",
+  "advance_physics": false
+}

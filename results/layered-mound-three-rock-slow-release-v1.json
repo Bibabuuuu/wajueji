@@ -1,0 +1,474 @@
+{
+  "acceptance": {
+    "final_manifest_pose_required": false,
+    "fully_released_post_ramp_window_required": true,
+    "rock_rotation_during_release_allowed": true,
+    "rock_translation_during_release_allowed": true
+  },
+  "checks": {
+    "bare_release_failure_bound": true,
+    "cover_continuous_stable_window_reached": true,
+    "cover_history_restored": true,
+    "cover_settle_finite": true,
+    "foundation_only_initial_activation": true,
+    "fully_released_post_ramp_stable_window_reached": false,
+    "gravity_release_ramp_completed": true,
+    "kinematic_press_finite": true,
+    "particle_partition_counts_match": true,
+    "release_centers_remain_in_bounds": true,
+    "release_contact_observed": true,
+    "release_continuous_stable_window_reached": false,
+    "release_executed_only_after_cover_pass": true,
+    "release_forbidden_contacts_zero": true,
+    "release_speed_safety_bounds": true,
+    "release_state_finite": true,
+    "single_factor_scope_preserved": true,
+    "unequal_press_schedule_preserved": true
+  },
+  "construction": {
+    "cover_contact_samples": 69214,
+    "cover_peak_particle_speed_m_s": 0.07915511727333069,
+    "cover_settle_simulated_s": 0.6333333333333333,
+    "cover_settle_steps": 76,
+    "cover_stable_window_frames": 60,
+    "cover_trace": [
+      {
+        "contact_samples": 479,
+        "finite": true,
+        "frame": 0,
+        "particle_max_speed_m_s": 0.05648735165596008,
+        "particle_minimum_z_m": 0.012387682683765888,
+        "particle_p99_speed_m_s": 0.05495596304535866,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1018,
+        "finite": true,
+        "frame": 29,
+        "particle_max_speed_m_s": 0.0016836015274748206,
+        "particle_minimum_z_m": 0.012344524264335632,
+        "particle_p99_speed_m_s": 0.001302673714235425,
+        "stable_window_frames": 14
+      },
+      {
+        "contact_samples": 911,
+        "finite": true,
+        "frame": 59,
+        "particle_max_speed_m_s": 0.000307174283079803,
+        "particle_minimum_z_m": 0.01234790962189436,
+        "particle_p99_speed_m_s": 0.00022563397942576557,
+        "stable_window_frames": 44
+      },
+      {
+        "contact_samples": 910,
+        "finite": true,
+        "frame": 75,
+        "particle_max_speed_m_s": 0.00014844656107015908,
+        "particle_minimum_z_m": 0.012347801588475704,
+        "particle_p99_speed_m_s": 0.00010367300274083391,
+        "stable_window_frames": 60
+      }
+    ],
+    "foundation_and_press_steps": 78,
+    "press_contact_samples": 3497,
+    "presses": [
+      {
+        "contact_samples": 892,
+        "held_position_world_m": [
+          4.67693670532854,
+          0.05392623766533931,
+          0.5170249926624505
+        ],
+        "manifest_rock_id": "lower-000",
+        "press_distance_m": 0.012,
+        "press_frames": 18,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 1051,
+        "held_position_world_m": [
+          5.458866700725541,
+          -0.3068783601126578,
+          0.39091281551369156
+        ],
+        "manifest_rock_id": "lower-001",
+        "press_distance_m": 0.008,
+        "press_frames": 12,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 1554,
+        "held_position_world_m": [
+          4.24808319562655,
+          -0.2922840845101988,
+          0.521814195185568
+        ],
+        "manifest_rock_id": "lower-002",
+        "press_distance_m": 0.016,
+        "press_frames": 24,
+        "press_speed_m_s": 0.08
+      }
+    ]
+  },
+  "environment": {
+    "device": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "execution": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/three-rock-cover-release-knqw2cfh/bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/three-rock-cover-release-knqw2cfh/bridge"
+    ],
+    "mujoco_step_calls": 300,
+    "newton_solver_step_calls": 454,
+    "wall_seconds": 51.49217343798955
+  },
+  "gravity_release": {
+    "bridge_step_calls": 300,
+    "duration_s": 0.5,
+    "frames": 60,
+    "fully_released_post_ramp_required_frames": 60,
+    "fully_released_post_ramp_window_reached": false,
+    "method": "external_upward_support_force_linear_ramp_to_zero",
+    "samples": [
+      {
+        "frame": 0,
+        "gravity_fraction": 0.016666666666666666,
+        "upward_support_force_n_by_runtime_id": {
+          "r1-rock-000": 516.1530405786261,
+          "r1-rock-001": 105.058628247227,
+          "r1-rock-002": 612.7019199378276
+        }
+      },
+      {
+        "frame": 59,
+        "gravity_fraction": 1.0,
+        "upward_support_force_n_by_runtime_id": {
+          "r1-rock-000": 0.0,
+          "r1-rock-001": 0.0,
+          "r1-rock-002": 0.0
+        }
+      }
+    ]
+  },
+  "inputs": {
+    "base_config_sha256": "86281ccab383da8278512336066ade2643e479713553c506467bfc7a9d472a14",
+    "base_failed_report_sha256": "4ebbf59a1fd2aff19ef41f242dbec35ea4a2417da69af3909f8c4ce0690ad45e",
+    "base_runner_sha256": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26",
+    "bridge_manifest": {
+      "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+      "formal_scene_qualified": false,
+      "generated_source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684",
+      "maximum_external_wrench_count": "rock_count_plus_bucket",
+      "maximum_rock_count": 1024,
+      "minimum_rock_count": 1,
+      "physics_qualified": false,
+      "runtime_rock_count": true,
+      "schema": "excavation_mixed_material_capacity_bridge_manifest_v1",
+      "source_bridge_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+      "stable_named_wrench_routing": true,
+      "status": "capacity_bridge_source_generated"
+    },
+    "config_sha256": "648151bf44c51909250605bce9cb24e154d16a4d1474c157ada41878b2237bd0",
+    "failed_bare_release_report_sha256": "97f73a30985c1f18e18fb1568095e4ed1596d00c3d9ad730dad38f0b73233cfa",
+    "model_manifest": {
+      "base_capacity_model_manifest": {
+        "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+        "expected_nq": 40,
+        "expected_nu": 12,
+        "expected_nv": 36,
+        "formal_scene_qualified": false,
+        "geometry_only_capacity_fixture": true,
+        "model_sha256": "76b8b222a5230a650b0b25e3a4196f01462a5935de64c86aa17b9471a6c99b3f",
+        "physics_qualified": false,
+        "rock_count": 3,
+        "schema": "excavation_mixed_material_capacity_model_manifest_v1",
+        "source_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+        "stable_rock_ids": [
+          "r1-rock-000",
+          "r1-rock-001",
+          "r1-rock-002"
+        ],
+        "status": "capacity_model_generated",
+        "synthetic_positions_world_m": [
+          [
+            3.8875,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.0625,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.2375,
+            -1.0125,
+            0.0875
+          ]
+        ]
+      },
+      "model_sha256": "26a9019d089db0c56c196a7e73f1f88bf2794667a6b9c5d8fb51685e0c65d951",
+      "provisional_geometry_only_input": true,
+      "rock_count": 3,
+      "stable_scene_claimed": false
+    },
+    "physical_manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706",
+    "runner_sha256": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26",
+    "wrapper_runner_sha256": "f64e9fb4c81ecbb1efe81161e6ff2467de58079d4673489e0ad8057bf83459a3"
+  },
+  "next_gate": "review_three_rock_slow_release_before_any_full_lower_layer",
+  "particles": {
+    "combined_count": 133079,
+    "combined_q_sha256": "33ef7b6597d7a94e3bfaf425a97d7e79e143f91b234d32ff1a5566b458032f53",
+    "cover_activation": {
+      "activated_count": 47459,
+      "active_count": 133079,
+      "deactivated_count": 0,
+      "dormant_history_restored": true,
+      "history_fields": [
+        "particle_elastic_strain",
+        "particle_transform",
+        "particle_qd_grad",
+        "particle_stress",
+        "particle_Jp"
+      ]
+    },
+    "cover_count": 47459,
+    "cover_q_sha256": "c19a63bd0b9b8a9e5ccdfbfbde7eca7c2055cf4fcb2c52a1689b0d10470a71b3",
+    "foundation_count": 85620,
+    "foundation_q_sha256": "0787b3ccb9a882b97f6f47a6090d0f8b09673ceb5f5a737ede7e60395a911ba5",
+    "initial_activation": {
+      "activated_count": 0,
+      "active_count": 85620,
+      "deactivated_count": 47459,
+      "dormant_history_restored": true,
+      "history_fields": [
+        "particle_elastic_strain",
+        "particle_transform",
+        "particle_qd_grad",
+        "particle_stress",
+        "particle_Jp"
+      ]
+    },
+    "removed_cover_particle_count_by_rock": {
+      "lower-000": 920,
+      "lower-001": 266,
+      "lower-002": 1059
+    }
+  },
+  "release": {
+    "all_finite": true,
+    "centers_inside": true,
+    "contact_samples": 402878,
+    "executed": true,
+    "final_rocks": [
+      {
+        "final_angular_speed_rad_s": 0.0008009537537368832,
+        "final_linear_speed_m_s": 0.08181481200548082,
+        "final_position_world_m": [
+          4.676931391105789,
+          0.05384805399247339,
+          0.3316309956231701
+        ],
+        "manifest_rock_id": "lower-000",
+        "rotation_from_release_rad": 0.0005925608410108138,
+        "runtime_rock_id": "r1-rock-000",
+        "translation_from_release_m": 0.1853940136011095
+      },
+      {
+        "final_angular_speed_rad_s": 0.0005736973701963435,
+        "final_linear_speed_m_s": 0.08210567860668413,
+        "final_position_world_m": [
+          5.4588995615449925,
+          -0.3069625345876302,
+          0.2061844427550195
+        ],
+        "manifest_rock_id": "lower-001",
+        "rotation_from_release_rad": 0.0002511568437548851,
+        "runtime_rock_id": "r1-rock-001",
+        "translation_from_release_m": 0.18472839485916234
+      },
+      {
+        "final_angular_speed_rad_s": 0.00013442414806458632,
+        "final_linear_speed_m_s": 0.08174173507172065,
+        "final_position_world_m": [
+          4.248253505629048,
+          -0.29224174826976346,
+          0.336378485057695
+        ],
+        "manifest_rock_id": "lower-002",
+        "rotation_from_release_rad": 0.0007187191180157042,
+        "runtime_rock_id": "r1-rock-002",
+        "translation_from_release_m": 0.18543579316971887
+      }
+    ],
+    "maximum_forbidden_contact_count": 0,
+    "maximum_particle_speed_m_s": 0.0697430744767189,
+    "maximum_rock_angular_speed_rad_s": 0.009370735020750635,
+    "maximum_rock_linear_speed_m_s": 0.08441504542534914,
+    "stable_window_frames": 0,
+    "steps": 300,
+    "trace": [
+      {
+        "contact_samples": 911,
+        "fastest_runtime_rock_id": "r1-rock-000",
+        "finite": true,
+        "frame": 0,
+        "max_rock_angular_speed_rad_s": 0.00010374848093596963,
+        "max_rock_linear_speed_m_s": 0.0013270483305296722,
+        "particle_max_speed_m_s": 0.00012111691466998309,
+        "particle_minimum_z_m": 0.012347790412604809,
+        "particle_p99_speed_m_s": 8.524653821950778e-05,
+        "stable_window_frames": 1
+      },
+      {
+        "contact_samples": 1163,
+        "fastest_runtime_rock_id": "r1-rock-002",
+        "finite": true,
+        "frame": 29,
+        "max_rock_angular_speed_rad_s": 0.002719387506758231,
+        "max_rock_linear_speed_m_s": 0.043386446118830906,
+        "particle_max_speed_m_s": 0.0063690622337162495,
+        "particle_minimum_z_m": 0.012339276261627674,
+        "particle_p99_speed_m_s": 0.0018383278511464596,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1200,
+        "fastest_runtime_rock_id": "r1-rock-000",
+        "finite": true,
+        "frame": 59,
+        "max_rock_angular_speed_rad_s": 0.0036661610902301127,
+        "max_rock_linear_speed_m_s": 0.08441504542534914,
+        "particle_max_speed_m_s": 0.014198358170688152,
+        "particle_minimum_z_m": 0.012324483133852482,
+        "particle_p99_speed_m_s": 0.002004089066758752,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1289,
+        "fastest_runtime_rock_id": "r1-rock-002",
+        "finite": true,
+        "frame": 89,
+        "max_rock_angular_speed_rad_s": 0.002189410601282726,
+        "max_rock_linear_speed_m_s": 0.08203612758619948,
+        "particle_max_speed_m_s": 0.0033912009093910456,
+        "particle_minimum_z_m": 0.01232196856290102,
+        "particle_p99_speed_m_s": 0.0004228433535899967,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1339,
+        "fastest_runtime_rock_id": "r1-rock-000",
+        "finite": true,
+        "frame": 119,
+        "max_rock_angular_speed_rad_s": 0.0015296709943819964,
+        "max_rock_linear_speed_m_s": 0.08209806812524342,
+        "particle_max_speed_m_s": 0.006788185331970453,
+        "particle_minimum_z_m": 0.012320094741880894,
+        "particle_p99_speed_m_s": 0.0003451515221968293,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1427,
+        "fastest_runtime_rock_id": "r1-rock-001",
+        "finite": true,
+        "frame": 149,
+        "max_rock_angular_speed_rad_s": 0.0008820442206174231,
+        "max_rock_linear_speed_m_s": 0.08210389534128197,
+        "particle_max_speed_m_s": 0.0021129478700459003,
+        "particle_minimum_z_m": 0.012318501248955727,
+        "particle_p99_speed_m_s": 0.0001817497395677492,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1419,
+        "fastest_runtime_rock_id": "r1-rock-000",
+        "finite": true,
+        "frame": 179,
+        "max_rock_angular_speed_rad_s": 0.0015017690111155215,
+        "max_rock_linear_speed_m_s": 0.0820164325614056,
+        "particle_max_speed_m_s": 0.008182019926607609,
+        "particle_minimum_z_m": 0.012317327782511711,
+        "particle_p99_speed_m_s": 0.0003849723725579679,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1393,
+        "fastest_runtime_rock_id": "r1-rock-001",
+        "finite": true,
+        "frame": 209,
+        "max_rock_angular_speed_rad_s": 0.0016670735542282955,
+        "max_rock_linear_speed_m_s": 0.08197564518745885,
+        "particle_max_speed_m_s": 0.012131217867136002,
+        "particle_minimum_z_m": 0.01231588888913393,
+        "particle_p99_speed_m_s": 0.00040922159678302705,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1487,
+        "fastest_runtime_rock_id": "r1-rock-000",
+        "finite": true,
+        "frame": 239,
+        "max_rock_angular_speed_rad_s": 0.0009152800622171541,
+        "max_rock_linear_speed_m_s": 0.08185476677929555,
+        "particle_max_speed_m_s": 0.004585920367389917,
+        "particle_minimum_z_m": 0.012314882129430771,
+        "particle_p99_speed_m_s": 0.00022195198107510805,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1434,
+        "fastest_runtime_rock_id": "r1-rock-000",
+        "finite": true,
+        "frame": 269,
+        "max_rock_angular_speed_rad_s": 0.0014751472093643874,
+        "max_rock_linear_speed_m_s": 0.08192770164276252,
+        "particle_max_speed_m_s": 0.00570469768717885,
+        "particle_minimum_z_m": 0.012313318438827991,
+        "particle_p99_speed_m_s": 0.00025314665981568396,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 1474,
+        "fastest_runtime_rock_id": "r1-rock-001",
+        "finite": true,
+        "frame": 299,
+        "max_rock_angular_speed_rad_s": 0.0008009537537368832,
+        "max_rock_linear_speed_m_s": 0.08210567860668413,
+        "particle_max_speed_m_s": 0.004988189786672592,
+        "particle_minimum_z_m": 0.012311654165387154,
+        "particle_p99_speed_m_s": 0.00018584125791676342,
+        "stable_window_frames": 0
+      }
+    ]
+  },
+  "schema": "excavation_layered_mound_three_rock_slow_release_report_v1",
+  "scope": {
+    "active_rock_count": 3,
+    "full_lower_layer": false,
+    "full_scene": false,
+    "fullscale_qualified": false,
+    "other_62_rocks_active": false,
+    "stable_scene_claimed": false,
+    "training": false
+  },
+  "stable_scene_claimed": false,
+  "status": "three_rocks_slow_release_post_ramp_stable_failed"
+}

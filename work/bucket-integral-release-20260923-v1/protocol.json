@@ -1,0 +1,105 @@
+{
+  "status": "frozen_before_physics",
+  "scope": "one serial local RTX4070 diagnostic replay; no manual default or physics changes",
+  "parent_protocol": "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/protocol.json",
+  "prior_candidate_dir": "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate",
+  "initial": "D115 complete saved prepoint, no APPROACH rerun",
+  "phases": [
+    {
+      "name": "curl",
+      "frames": [
+        661,
+        1020
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0.02
+      ]
+    },
+    {
+      "name": "hold",
+      "frames": [
+        1021,
+        1140
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "reverse",
+      "frames": [
+        1141,
+        1170
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        -0.02
+      ]
+    },
+    {
+      "name": "stop",
+      "frames": [
+        1171,
+        1290
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "matched_prefix": "old D120 candidate exact through frame1140; identical full state23arrays at600/660/1020/1140 plus trace fields",
+  "matched_trace_fields": [
+    "controller_target",
+    "controller_target_velocity",
+    "axis_positions",
+    "axis_velocity",
+    "actuator_force",
+    "equivalent_drive_load",
+    "rock_equivalent_drive_load",
+    "rock_qpos",
+    "bucket_pose",
+    "bucket_integral_effort"
+  ],
+  "change": "If command opposes stored integral effort, move effort toward zero at min(30000 N/s,3000000 N/m * abs(command)); never cross zero in release branch. Neutral and forward unchanged.",
+  "parameters": {
+    "ki_N_per_m_s": 1500000,
+    "cap_N": 120000,
+    "slew_N_per_s": 30000,
+    "release_gain_N_per_m": 3000000,
+    "deadband_m": 0.0005
+  },
+  "acceptance": {
+    "preserve_curl": "exact old prefix through1140, curl last30 meanerror<=.005m",
+    "reverse": "two-frame pair means: displacement>=.002m and>=2*old candidate, sustained .0002m retreat crossing<=.2s and stays crossed through end of reverse",
+    "stop": "original motion.stopped all last15frames in both neutral windows; failures kept",
+    "post_reverse_last30_mean_abs_error_m": 0.005,
+    "actual_bucket_upper_m": 0.852,
+    "hard_guards": "all original hard guards; first failure saves and ends"
+  },
+  "reverse_gate_boundary": "2mm is a local release-improvement probe, not full 10mm reference tracking or official responsiveness; first negative sample velocity is not used.",
+  "recovery": "on first failure save complete diagnostic plus failure.json; no resume from partial native state",
+  "prior_bindings": {
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/MANIFEST.sha256.json": "1f60c2d1d11dafed8d1fa75b5b45b1325090985665159bbbd2bf377885f3ee8e",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/protocol.json": "2d9ff9a3e13490a1d9969a69810567f0a1db6044981d63298fff065e20874f30",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/bucket_integral.h": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/report.json": "b9de485af2eb53ab27ac577715ca8fa31d786dc5dbf70698254bdadf11f6f218",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/trace.ndjson": "ebf217febb7195453c47e8abaaf91e359a7d87baf84bf25efc67139b3afd8ba7",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/diagnostic-000600.npz": "422eac491d17719a317f13f798f596f2b05a0f48ffa9ff69d96fdc8593f3081b",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/diagnostic-000660.npz": "fb40f7d7200810597c746a7afbef978333558b2538df81eae513c3679976bb52",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/diagnostic-001020.npz": "ce5cd9f36a75f5328f619d7f5ce9ce348e7f085158f3fcf25c91163b43c9af54",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/diagnostic-001140.npz": "1478915799014e84deb6422c059cf0366e05dc1b5b67829b1b7a4215b0af2fab"
+  },
+  "runner_sha256": "780ff70365bf2fd2d9e84d453fe68074df5ed4833bc1da94ceb898875467b801",
+  "header_sha256": "2dd29e56a9f581ac407d935685b11f220f2db5e4b82547bd7a6d52ec308f3505"
+}

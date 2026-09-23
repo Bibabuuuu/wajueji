@@ -1,0 +1,124 @@
+{
+  "schema": "excavation_mixed_material_r0_config_v1",
+  "bucket": {
+    "source_path_anchor": "codex-work/small-soil-20260910-v17-performance/scene/input/mesh/bucket.obj",
+    "source_sha256": "e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b",
+    "coordinate_frame": "bucket_body",
+    "mesh_refquat_wxyz": [
+      0.984807753012208,
+      0.0,
+      0.17364817766693033,
+      0.0
+    ],
+    "inventory_contract_path_anchor": "codex-work/compact-bank-2026-09-11/inventory-contract.json",
+    "inventory_contract_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "interior_y_limits_m": [
+      -0.29974,
+      0.29975
+    ],
+    "mouth_endpoints_xz_m": [
+      [
+        0.021459,
+        -0.157745
+      ],
+      [
+        0.213659,
+        -1.023365
+      ]
+    ],
+    "reference_prism_volume_m3": 0.2777620975255621,
+    "tooth_tip_band_m": 0.001,
+    "tooth_cluster_gap_m": 0.07
+  },
+  "rocks": {
+    "density_kg_m3": 2600.0,
+    "repository_asset_root": "assets/v4/mixed-material-r0",
+    "prototype_ids": [
+      "angular_tetra",
+      "angular_bipyramid",
+      "angular_octa",
+      "angular_block"
+    ],
+    "visual_collision_policy": "same_normalized_closed_convex_mesh",
+    "fracture_enabled": false
+  },
+  "gauge": {
+    "equivalent_diameters_m": [
+      0.27,
+      0.33,
+      0.59949
+    ],
+    "orientation_set": "proper_signed_axis_permutations_24"
+  },
+  "scenes": [
+    {
+      "scene_id": "r0-main-training-staging-v1",
+      "seed": 26091901,
+      "size_bucket": "main_training",
+      "equivalent_diameters_m": [
+        0.09,
+        0.1,
+        0.1,
+        0.11,
+        0.11,
+        0.12,
+        0.12,
+        0.12,
+        0.13,
+        0.13,
+        0.14,
+        0.14,
+        0.15,
+        0.15,
+        0.16,
+        0.16,
+        0.18,
+        0.18,
+        0.2,
+        0.23
+      ],
+      "grid_origin_xy_m": [
+        4.2,
+        -1.2
+      ],
+      "grid_columns": 5,
+      "grid_spacing_m": 0.8,
+      "ground_clearance_m": 0.02
+    },
+    {
+      "scene_id": "r0-jam-boundary-staging-v1",
+      "seed": 26091902,
+      "size_bucket": "jam_boundary",
+      "equivalent_diameters_m": [
+        0.285,
+        0.3,
+        0.315,
+        0.329
+      ],
+      "grid_origin_xy_m": [
+        4.2,
+        -0.4
+      ],
+      "grid_columns": 4,
+      "grid_spacing_m": 0.9,
+      "ground_clearance_m": 0.02
+    },
+    {
+      "scene_id": "r0-reject-reselect-staging-v1",
+      "seed": 26091903,
+      "size_bucket": "reject_reselect",
+      "equivalent_diameters_m": [
+        0.35,
+        0.38,
+        0.42
+      ],
+      "grid_origin_xy_m": [
+        4.2,
+        0.4
+      ],
+      "grid_columns": 3,
+      "grid_spacing_m": 1.0,
+      "ground_clearance_m": 0.02
+    }
+  ]
+}

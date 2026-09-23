@@ -1,0 +1,34 @@
+{
+  "schema": "excavation_formal_scene_mpm_fill_config_v1",
+  "status": "visual_stable_scene_carve_only",
+  "frozen_adapter_config": {
+    "path": "configs/v4/formal-scene-model-adapter-v1.json",
+    "sha256": "9fed6466adbcde775cbec9c061e04f6c8b475d20756d9b63342971c586490179"
+  },
+  "frozen_bank": {
+    "path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+    "q_array_sha256": "5c4cd8f0a12885f0d78bb4157dc1706d7e363c2c7564c1415093b89cfba6dba8",
+    "q_count": 390400,
+    "q_dtype": "float32",
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "material_id": 0
+  },
+  "carve_policy": "remove_particle_center_inside_closed_convex_rock_only",
+  "reference_only": {
+    "nominal_total_equivalent_volume_m3": 6.1,
+    "advisory_total_equivalent_volume_range_m3": [5.2, 7.0],
+    "volume_or_fraction_error_is_not_a_standalone_failure": true
+  },
+  "scope": {
+    "deterministic_particle_partition": true,
+    "retained_particle_rock_center_overlap_check": true,
+    "physics_step": false,
+    "mpm_or_gpu_run": false,
+    "settling": false,
+    "formal_scene_qualified": false,
+    "physics_qualified": false,
+    "training": false
+  }
+}

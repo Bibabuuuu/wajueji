@@ -1,0 +1,56 @@
+{
+  "schema": "excavation_sparse_large_stable_admission_config_v1",
+  "source_configs": {
+    "scene_reconstruction": {
+      "path": "configs/v4/scene-reconstruction-v1.json",
+      "sha256": "04ac310a1ac472f298ba4c1a5987f16ca99939ef118e8e24d379b0d6914edc75"
+    },
+    "scene_assembly_preflight": {
+      "path": "configs/v4/scene-assembly-preflight-v1.json",
+      "sha256": "c259d468f1b91b9bdbf741887595b1e319b9ae1d35b8c3c47b220dc4fd5dffcc"
+    },
+    "mixed_material_r2": {
+      "path": "configs/v4/mixed-material-r2.json",
+      "sha256": "ba91377ec15e896a0b8cfbe949a153d6c50c388410f0a2c8eabeb030bee24f6e"
+    },
+    "stabilization": {
+      "path": "configs/v4/mixed-material-r2-stabilization.json",
+      "sha256": "e3533c5c0f56fe88c3b96acda4a3c0b12cf7bd101548f671eed96ec8a640b36f"
+    }
+  },
+  "selection": {
+    "scene_class": "sparse-large-rock",
+    "fixed_seed_sequence": [
+      26091924,
+      26091925,
+      26091926,
+      26091927,
+      26091928,
+      26091929,
+      26091930,
+      26091934,
+      26091935,
+      26091936
+    ],
+    "required_selected_count": 2,
+    "stop_after_required_count": true,
+    "preserve_rejected_candidates": true,
+    "existing_retained_scene_id": "sparse-large-rock-seed-26091922"
+  },
+  "admission": {
+    "required_rock_count": 20,
+    "minimum_boundary_clearance_m_after_settling": 0.08,
+    "maximum_rebaked_displacement_m": 0.005,
+    "require_all_vertices_inside_source_region": true,
+    "require_rock_sizes_and_masses_unchanged": true,
+    "require_pre_settling_stability": true,
+    "require_rebaked_stability": true
+  },
+  "scope": {
+    "final_scene_count_changed": false,
+    "official_data_calibration": false,
+    "source_configs_modified": false,
+    "controlled_excavation": false,
+    "training": false
+  }
+}

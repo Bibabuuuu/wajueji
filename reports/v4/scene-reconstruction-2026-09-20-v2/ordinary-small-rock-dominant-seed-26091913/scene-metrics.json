@@ -1,0 +1,108 @@
+{
+  "admission_checks": {
+    "convex_narrow_phase_no_intersection": true,
+    "finite_values": true,
+    "jam_isolation": true,
+    "maximum_regular_large_count": true,
+    "maximum_regular_large_volume_fraction": true,
+    "minimum_rock_gap": true,
+    "minimum_small_count_fraction": true,
+    "region_and_boundary_clearance": true,
+    "rock_count_preserved": true,
+    "surface_support": true
+  },
+  "all_admission_checks_passed": true,
+  "coverage_grid_resolution_xy": [
+    260,
+    220
+  ],
+  "diameter_count_fraction": {
+    "medium_0p16_0p22": 0.2,
+    "small_le_0p16": 0.8
+  },
+  "diameter_d50_m": 0.13375,
+  "diameter_d95_m": 0.1923125,
+  "diameter_histogram_count": {
+    "medium_0p16_0p22": 4,
+    "small_le_0p16": 16
+  },
+  "diameter_max_m": 0.200625,
+  "jam_boundary_count": 0,
+  "large_count": 0,
+  "large_equivalent_volume_fraction": 0.0,
+  "local_density_radius_m": 0.75,
+  "local_neighbor_count": {
+    "maximum": 9,
+    "mean": 4.9,
+    "minimum": 0,
+    "per_rock": [
+      5,
+      0,
+      3,
+      2,
+      9,
+      8,
+      4,
+      3,
+      8,
+      4,
+      8,
+      7,
+      3,
+      9,
+      1,
+      8,
+      4,
+      6,
+      4,
+      2
+    ]
+  },
+  "minimum_boundary_clearance_m": 0.1167964507,
+  "minimum_sat_separating_axis_gap_m": 0.008299016264,
+  "minimum_vertex_surface_clearance_m": 0.006,
+  "nearest_neighbor_center_distance_m": {
+    "mean": 0.3848920194,
+    "minimum": 0.1535016542,
+    "per_rock": [
+      0.3560092116,
+      0.878338959,
+      0.352541161,
+      0.5705004723,
+      0.1535016542,
+      0.3141613771,
+      0.352541161,
+      0.4735896985,
+      0.289462554,
+      0.3514229844,
+      0.1535016542,
+      0.3141613771,
+      0.4341339714,
+      0.177581728,
+      0.5518988904,
+      0.2162759808,
+      0.4116253625,
+      0.3211036014,
+      0.4735896985,
+      0.5518988904
+    ]
+  },
+  "placement_attempts_total": 34,
+  "projected_surface_coverage_fraction": 0.03447552448,
+  "projected_surface_coverage_method": "deterministic cell-center union estimate of transformed convex XY hulls",
+  "prototype_counts": {
+    "angular_bipyramid": 5,
+    "angular_block": 5,
+    "angular_octa": 5,
+    "angular_tetra": 5
+  },
+  "rock_count": 20,
+  "scene_class": "ordinary-small-rock-dominant",
+  "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+  "schema": "excavation_scene_reconstruction_metrics_v1",
+  "seed": 26091913,
+  "small_count": 16,
+  "small_count_fraction": 0.8,
+  "total_equivalent_solid_volume_m3": 0.03155884241,
+  "total_mass_kg": 82.05299027
+}

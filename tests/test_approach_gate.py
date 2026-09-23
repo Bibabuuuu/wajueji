@@ -66,5 +66,24 @@ class ApproachTests(unittest.TestCase):
         def check(q,previous):
             if .04<q[0]<.06:raise ValueError('middle_obstacle')
         with self.assertRaisesRegex(ValueError,'middle_obstacle'):self.path(check)
+    def test_validation_substeps_check_midpoint_without_changing_command_rate(self):
+        calls=[]
+        result=sampled_approach([0,0],[.1,.1],axes=[0,1],speed_limits=[.1,.1],
+                                advance=lambda q,v,dt:q+v*dt,
+                                check_pose=lambda q,previous:calls.append(q.copy()),
+                                dt=1/60,validation_substeps=2)
+        self.assertEqual(len(calls),2*result['steps']+1)
+        self.assertEqual(result['validation_substeps'],2)
+        self.assertEqual(result['validation_dt_s'],1/120)
+        self.assertEqual(len(result['velocity']),result['steps'])
+        self.assertEqual(len(result['qpos']),result['steps']+1)
+        np.testing.assert_allclose(result['qpos'][-1],[.1,.1])
+    def test_validation_substeps_contract(self):
+        for bad in (0,1.5,True):
+            with self.assertRaisesRegex(ValueError,'invalid_path_input'):
+                sampled_approach([0],[.1],axes=[0],speed_limits=[.1],
+                                 advance=lambda q,v,dt:q+v*dt,
+                                 check_pose=lambda q,previous:None,
+                                 validation_substeps=bad)
 
 if __name__=='__main__':unittest.main()

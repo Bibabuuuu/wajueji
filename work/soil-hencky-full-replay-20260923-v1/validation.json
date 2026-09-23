@@ -1,0 +1,56 @@
+{
+  "status": "fixed_recorded_trajectory_verified_manual_trial_not_yet_qualified",
+  "decision": "D-128",
+  "checks": {
+    "protocol_bindings_unchanged": true,
+    "run_completed_1329": true,
+    "run_bindings_unchanged": true,
+    "all_frame_guards_passed": true,
+    "same_1329_original_actual_commands": true,
+    "final_material_finite": true,
+    "final_particle_flags_unchanged": true,
+    "candidate_update_rejections_zero": true,
+    "bottom_migration_materially_reduced": true,
+    "bottom_depleted_cells_materially_reduced": true,
+    "no_particles_below_minus5mm": true,
+    "five_snapshots_and_observed_inputs_saved": true,
+    "documentation_check_passed": true,
+    "python_syntax_passed": true,
+    "no_live_physics_process": true
+  },
+  "comparison": {
+    "baseline_final_Jp_nonfinite": 22646,
+    "candidate_final_Jp_nonfinite": 0,
+    "baseline_final_max_F_singular": 999963.8879052994,
+    "candidate_final_max_F_singular": 1.4451989001532584,
+    "baseline_final_bottom_moved_over20cm": 12839,
+    "candidate_final_bottom_moved_over20cm": 0,
+    "baseline_final_bottom_outside_footprint": 2128,
+    "candidate_final_bottom_outside_footprint": 0,
+    "baseline_final_bottom_depleted_cells": 120,
+    "candidate_final_bottom_depleted_cells": 0,
+    "common70_initial_particles": 4496,
+    "baseline_common70_final_particles": 247,
+    "candidate_common70_final_particles": 4491,
+    "baseline_last136_bottom_max_displacement_m": 6.758150543486732,
+    "candidate_last136_bottom_max_displacement_m": 0.00036485654548631323
+  },
+  "remaining_limits": {
+    "frame1327_projection_delta_m": 0.0723241110333347,
+    "projection_particle_identity_saved": false,
+    "candidate_final_max_Jp_finite": 461.65966796875,
+    "candidate_fill_estimate_valid": false,
+    "candidate_fill_invalid_reason": "cavity-connected material touches measurement boundary",
+    "default_manual_entry_enabled": false,
+    "new_human_scoop_tested": false,
+    "training_eligible": false,
+    "resume_qualified": false,
+    "truck_loading_qualified": false
+  },
+  "physical_runs": {
+    "valid_full_run_count": 1,
+    "valid_full_run_frames": 1329,
+    "valid_full_run_wall_seconds": 312.80408048199024,
+    "preflight_path_failure_scene_steps": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "all_admission_checks_passed": true,
+  "asset_sha256": {
+    "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+    "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+    "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7"
+  },
+  "boundaries": [
+    "synthetic parameters do not reproduce an official scene",
+    "no underground material or mechanical properties inferred",
+    "R1/R2 collision, settling and dynamics must be requalified"
+  ],
+  "config_sha256": "04ac310a1ac472f298ba4c1a5987f16ca99939ef118e8e24d379b0d6914edc75",
+  "generator_sha256": "3cc4fb2bf182e30f571a58f720dac9019cab137d581c8c17653f2be282580bba",
+  "input_sha256": "f604079a689531588c7f583e723ddadf40522dba9359aa2c30d391b9b77c6bbc",
+  "preview_sha256": "d2fec894e410168d8bca1cf8dfdb2542bcdca8d4cc0b77992030b1970eede5a0",
+  "scene_class": "jam-boundary",
+  "scene_id": "jam-boundary-seed-26091931",
+  "scene_manifest_sha256": "70eb0b471e222a095da97d90055a4eb0bba5bd5c25419cbe2e1d762f0b24bd52",
+  "scene_metrics_sha256": "79079e9423fd3fbef091d24b95fa1da849bc0757396e47e07eaaa88bb7fdc3d1",
+  "schema": "excavation_scene_reconstruction_report_v1",
+  "scope": "geometry only; not official reconstruction, physics or training",
+  "seed": 26091931,
+  "status": "geometry_reconstruction_candidate"
+}

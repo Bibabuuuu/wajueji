@@ -1,0 +1,47 @@
+{
+  "schema": "excavation_mixed_material_r3_c_routing_config_v1",
+  "status": "r3_c_two_rock_per_id_routing_candidate",
+  "frozen_inputs": {
+    "r3_c_config_path": "configs/v4/mixed-material-r3-c.json",
+    "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+    "r3_c_model_generator_path": "src/v4/build_mixed_multirock_candidate_r3_c.py",
+    "r3_c_model_generator_sha256": "333972f60899218d9afc19d66886644fca5d24421051ffda8e8433dda7a77c2e",
+    "r3_c_bridge_generator_path": "src/v4/build_mixed_coupled_bridge_r3_c.py",
+    "r3_c_bridge_generator_sha256": "25fd96fc7a9855c44cbd41624f1bb6e98046a31a90fb30982f807ceeb52dc42e",
+    "r3_c_preflight_report_path": "reports/v4/mixed-material-r3-c-bridge-preflight-2026-09-20-v1/report.json",
+    "r3_c_preflight_report_sha256": "730af94bf2d1c69d5e7b026dc47c346907ee250148803659b56a634946bca26f",
+    "r3_b_config_path": "configs/v4/mixed-material-r3-b.json",
+    "r3_b_config_sha256": "2e8b3296a5574a5a1156dee3871ad293b80b16e119492d4eb0c6e2d25c8eb944"
+  },
+  "routing_probe": {
+    "rock_ids": ["r1-rock-000", "r1-rock-001"],
+    "rounds": ["rock_000_mpm_only", "rock_001_mpm_only"],
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "frames": 12,
+    "command": [0.0, 0.0, 0.0, 0.0],
+    "matrix_patch_size_xyz_m": [0.4, 0.2, 0.15],
+    "matrix_patch_lower_offset_from_target_rock_m": [-0.203735402304274, -0.1, -0.065],
+    "particle_spacing_m": 0.025,
+    "minimum_target_direct_impulse_ns": 0.01,
+    "maximum_inactive_direct_impulse_ns": 1e-12,
+    "maximum_wrench_echo_residual": 1e-10,
+    "maximum_reference_point_residual_m": 1e-12,
+    "maximum_mass_error_kg": 1e-5
+  },
+  "scope": {
+    "exactly_two_rocks": true,
+    "per_id_newton_body_and_collider_mapping": true,
+    "two_single_rock_mpm_routes": true,
+    "bucket_mpm_collision": false,
+    "four_round_force_partition": false,
+    "feedback_qualification": false,
+    "repeat_qualification": false,
+    "dt_refinement_qualification": false,
+    "complete_in_process_reset": false,
+    "r3_c_physics_qualified": false,
+    "official_envelope": false,
+    "training": false,
+    "frozen_r1_r2_r3_a_r3_b_and_r3_c_preflight_modified": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "path": "/home/qunwang/wajueji/work/soil-projection-isolation-20260923-v1/failure-000001.npz",
+  "size_bytes": 25071173,
+  "mtime_ns": 1790161430942087695,
+  "sha256": "5ad9139834fd4791d917b3c374702befc325a99c653da933b9eb2013609012c3",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "causal diagnostic only; retains existing invalid Jp; never resume/train",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {}
+}

@@ -1,0 +1,38 @@
+{
+  "restore_exact": true,
+  "captured_fields_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": false,
+    "rigid_reported_angular_velocity": false,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "original_trial_initial_compact_exact": true,
+  "derived_velocities_qpos_qvel_errors": {
+    "linear": 0.0,
+    "angular": 7.806255641895632e-18
+  },
+  "source_reported_velocity_differences": {
+    "rigid_reported_linear_velocity": 5.401408086440004e-06,
+    "rigid_reported_angular_velocity": 0.00015033052704759194
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "all_activation_stages_nonempty": true,
+    "all_three_rock_layers_present": true,
+    "carve_removed_particles": true,
+    "medium_large_only_in_lower_skeleton": true,
+    "no_physics_step": true,
+    "particle_partition_closed": true,
+    "retained_particle_center_inside_rock_zero": true,
+    "rock_count_is_22": true,
+    "rock_rock_sat_no_intersection": true,
+    "rocks_within_local_patch_xy": true,
+    "small_rocks_are_count_majority": true,
+    "true_mesh_embed_ratios_exact": true
+  },
+  "config_sha256": "c5537cb9ea317b00ec1f5d5e3ecc4aeb1355e0b791ee9814188480bae1ec8ea9",
+  "formal_scene_qualified": false,
+  "mpm_or_gpu_run_executed": false,
+  "next_gate": "reduced_mixed_dynamics_per_layer_settle_then_wall_free_nominal_hold",
+  "outputs": {
+    "layered-local-bank.npz": "f761d5ab5fb0fbb31141e278b83353bcec84a4a6bd33eca1518651441809c192",
+    "metrics.json": "730a85e831b5560f5646aa7d230a22c2d0bfdd951eb5e39758a503fade1e5407",
+    "scene-manifest.json": "07701f6900a0f0def082e9a036ad63e4db1bb12c24e4b3511fda9ae58079e55b"
+  },
+  "physics_step_executed": false,
+  "schema": "excavation_layered_mixed_scene_local_preflight_report_v1",
+  "stable_scene_claimed": false,
+  "status": "reduced_three_layer_geometry_preflight_passed",
+  "wall_free_hold_executed": false
+}

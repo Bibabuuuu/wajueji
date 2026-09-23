@@ -1,0 +1,11 @@
+{
+  "isolated_candidate": true,
+  "deployed": false,
+  "gain": 0.5,
+  "clamp_N": 60000.0,
+  "slew_N_per_s": 150000.0,
+  "filter_tau_s": 0.1,
+  "activation_native_time_s": 8.0,
+  "axis": "bucket_only",
+  "source_sha256": "c2c67e6296c496949812a9405c00399a891d2c1384de5c4830230f2bd3934c43"
+}

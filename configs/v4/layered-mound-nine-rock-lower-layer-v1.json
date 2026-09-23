@@ -1,0 +1,120 @@
+{
+  "schema": "excavation_layered_mound_nine_rock_lower_layer_config_v1",
+  "status": "nine_variable_pressed_rocks_cover_settle_then_free_release",
+  "predecessor": {
+    "config_path": "configs/v4/layered-mound-three-rock-cover-release-v1.json",
+    "config_sha256": "86281ccab383da8278512336066ade2643e479713553c506467bfc7a9d472a14",
+    "runner_path": "src/v4/run_layered_mound_three_rock_cover_release.py",
+    "runner_sha256": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26",
+    "coupling_helper_path": "src/v4/mpm_rigid_free_velocity.py",
+    "coupling_helper_sha256": "9505ab0ff0448fd46ecd1d3f9b414975d28734203bc79e719f7daa0f9f81d333"
+  },
+  "failed_bare_release_gate": {
+    "config_path": "configs/v4/layered-mound-three-rock-adaptive-press-v1.json",
+    "config_sha256": "f04b2f254cba67118b8252b1677751667bc66a2f4a5f27e1b633f99b7c51071a",
+    "runner_path": "src/v4/run_layered_mound_three_rock_adaptive_press.py",
+    "runner_sha256": "ebee5a4f7d14dbfcf1ffa1edc9b8a3544576b445938ff8af356029f4e8d4ea07",
+    "report_path": "results/layered-mound-three-rock-adaptive-press-v1.json",
+    "report_sha256": "97f73a30985c1f18e18fb1568095e4ed1596d00c3d9ad730dad38f0b73233cfa"
+  },
+  "physical_geometry": {
+    "manifest_path": "results/layered-mound-physical-preflight-v1/scene-manifest.json",
+    "manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+  },
+  "capacity_bridge": {
+    "config_path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "source": {
+    "visual_config_path": "configs/v4/layered-mound-viewer-preview-v1.json",
+    "visual_config_sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32",
+    "source_bank_path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b"
+  },
+  "particles": {
+    "foundation_maximum_center_height_m": 0.32,
+    "cover_maximum_center_height_m": 0.56,
+    "foundation_particle_count": 85620,
+    "raw_cover_particle_count": 49704,
+    "cover_particle_count_after_pressed_rock_carve": 43261,
+    "combined_particle_count": 128881,
+    "cover_carve_policy": "remove_cover_particle_centers_inside_nine_pressed_rocks_only",
+    "activation_policy": "foundation_active_from_start_cover_dormant_then_history_restored"
+  },
+  "targets": [
+    {"manifest_rock_id": "lower-000", "press_distance_m": 0.012, "press_frames": 18},
+    {"manifest_rock_id": "lower-001", "press_distance_m": 0.008, "press_frames": 12},
+    {"manifest_rock_id": "lower-002", "press_distance_m": 0.016, "press_frames": 24},
+    {"manifest_rock_id": "lower-003", "press_distance_m": 0.010, "press_frames": 15},
+    {"manifest_rock_id": "lower-004", "press_distance_m": 0.014, "press_frames": 21},
+    {"manifest_rock_id": "lower-005", "press_distance_m": 0.007, "press_frames": 11},
+    {"manifest_rock_id": "lower-006", "press_distance_m": 0.011, "press_frames": 17},
+    {"manifest_rock_id": "lower-007", "press_distance_m": 0.009, "press_frames": 14},
+    {"manifest_rock_id": "lower-008", "press_distance_m": 0.013, "press_frames": 20}
+  ],
+  "construction": {
+    "start_surface_clearance_m": 0.005,
+    "foundation_presettle_frames": 24,
+    "cover_maximum_settle_frames": 240,
+    "cover_stable_window_frames": 60,
+    "rocks_held_during_cover_settle": true,
+    "simultaneous_free_release_after_cover": true,
+    "temporary_mpm_damping": 0.0,
+    "temporary_rigid_damping": 0.0,
+    "free_fall_from_height": false
+  },
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    }
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "maximum_release_frames": 360,
+    "release_stable_window_frames": 120,
+    "additional_uncontrolled_hold_frames": 240,
+    "maximum_stable_rock_linear_speed_m_s": 0.01,
+    "maximum_stable_rock_angular_speed_rad_s": 0.15,
+    "maximum_stable_particle_speed_m_s": 0.05,
+    "maximum_stable_particle_p99_speed_m_s": 0.01,
+    "maximum_particle_speed_m_s": 5.0,
+    "maximum_rock_linear_speed_m_s": 5.0,
+    "maximum_rock_angular_speed_rad_s": 25.0,
+    "maximum_forbidden_contact_count": 0,
+    "minimum_world_z_m": -0.05
+  },
+  "acceptance": {
+    "press_distances_may_differ": true,
+    "rock_translation_during_release_allowed": true,
+    "rock_rotation_during_release_allowed": true,
+    "rock_rock_contact_allowed": true,
+    "final_manifest_pose_required": false,
+    "cover_must_settle_before_release": true,
+    "continuous_release_stable_window_required": true
+  },
+  "scope": {
+    "active_rock_count": 9,
+    "other_56_rocks_active": false,
+    "full_lower_layer": true,
+    "full_scene": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

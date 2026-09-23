@@ -1,0 +1,18 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-170820-771750",
+  "report_sha256": "1743bd3098e27d4fde3e11c19d4234ca7023a3743318333851fa345cf269a30a",
+  "checks": {
+    "all_executed_frames_hard_safe": true,
+    "input_bindings_unchanged": true,
+    "no_scripted_excavation_motion": true,
+    "original_source_unchanged": true,
+    "restore_exact": true,
+    "smoke_or_probe_scope_obeyed": true,
+    "source_handoff_checkpoint_unchanged": true,
+    "source_handoff_metadata_unchanged": true,
+    "training_not_granted": true
+  },
+  "frames": 3,
+  "surface_update_interval_frames": 1,
+  "direct_controller_state_recorded": true
+}

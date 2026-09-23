@@ -1,0 +1,44 @@
+{
+  "schema": "excavation_formal_scene_time_zero_config_v1",
+  "status": "actual_n_model_load_and_time_zero_protocol_only",
+  "frozen_inputs": {
+    "capacity_protocol_config": {
+      "path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+      "sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+    },
+    "geometry_preparation_config": {
+      "path": "configs/v4/formal-scene-geometry-preparation-v1.json",
+      "sha256": "db2293abf9efbc6ad3a9aa0f7ffdf064cfb31ee6c0058dcd67ffac4d3b39961c"
+    }
+  },
+  "bundle_layout": {
+    "model": "actual-n-scene.xml",
+    "model_manifest": "actual-n-model-manifest.json",
+    "bundle_report": "geometry-bundle-report.json"
+  },
+  "report_contract": {
+    "schema": "excavation_fullscale_mixed_scene_time_zero_report_v1",
+    "passing_status": "fullscale_time_zero_passed",
+    "failure_status": "fullscale_time_zero_failed",
+    "checks": [
+      "model_loaded",
+      "ready_protocol_passed",
+      "state_time_zero",
+      "actual_n_matches",
+      "finite_state",
+      "zero_external_wrenches",
+      "zero_forbidden_contact_samples"
+    ]
+  },
+  "scope": {
+    "geometry_bundle_validation": true,
+    "bridge_compile": true,
+    "time_zero_protocol": true,
+    "physics_step": false,
+    "mpm_or_gpu_run": false,
+    "settling": false,
+    "fullscale_scene_qualification": false,
+    "p1a_single_scoop_authorization": false,
+    "training": false
+  }
+}

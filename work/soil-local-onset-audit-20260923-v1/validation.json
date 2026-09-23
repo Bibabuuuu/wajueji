@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "all1193_recorded_frames_exact": true,
+    "1000_all24_arrays_exact": true,
+    "1193_all24_arrays_exact": true,
+    "all22_bindings_unchanged": true,
+    "observer_preflight": true,
+    "weights_one": true,
+    "linear_update_verified": true,
+    "diagnostic_reject_resume": true
+  },
+  "analysis_sources": {
+    "/home/qunwang/wajueji/work/soil-local-onset-audit-20260923-v1/snapshot_audit.py": "e01cfae2840f925ab2a7097f8a9b8b264ddcf2d7c912e7732385e303945d570e",
+    "/home/qunwang/wajueji/work/soil-local-onset-audit-20260923-v1/analyze_history.py": "ae21a1afbabe0d41a22b63c4e813dff85b8aa1c25ab9a9f1fa6cf055f6ce8523",
+    "/home/qunwang/wajueji/work/soil-local-onset-audit-20260923-v1/update_mechanism.py": "60ca26d3197dae8cb97eca7f0f83aaa3082a92d610dc5bd4a3713538ebc2d500"
+  },
+  "physical_fix_implemented": false,
+  "initial_trigger_proven": false,
+  "training_eligible": false
+}

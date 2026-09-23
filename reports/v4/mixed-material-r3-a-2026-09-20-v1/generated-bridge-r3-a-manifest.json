@@ -1,0 +1,15 @@
+{
+  "allowed_external_wrench_bodies": [
+    "bucket",
+    "r1-rock-000"
+  ],
+  "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+  "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+  "frozen_r1_source_modified": false,
+  "generated_source_sha256": "9c7f30be4c6dd3aa46dfa3cd7376840f5391c00f8fb91fc27b2fe59bc5d64f90",
+  "maximum_external_wrench_count": 2,
+  "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+  "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_a_v1",
+  "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+  "status": "r3_a_bridge_source_generated"
+}

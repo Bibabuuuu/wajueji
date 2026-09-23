@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "all_9_runtime_checks": true,
+    "exactly3frames": true,
+    "integral_zero_during_zero_commands": true,
+    "ready_paused_at0frames": true,
+    "gamepad_detected": true,
+    "candidate_enabled": true,
+    "d120_header_exact": true,
+    "tests34pass": true,
+    "cpp_boundary_surrogate_pass": true
+  },
+  "all_checks_pass": true,
+  "probe_directory": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182209-821575",
+  "scope": "integration/zero-command restoration/UI only; loaded manual operation not yet verified",
+  "bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182209-821575/report.json": "c24bf86f4dae7ed2f3e1701dfb51d86b6eecbb4982fdd0190f33449699a55f4c",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182209-821575/viewer-ready.json": "09bbcdd8449a4e9d48a6933c3f707af911e5f4c99b3729e1e393df7abaa164e7",
+    "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py": "6ce0ef6e6fd98d8902da2a8d13b4475523879db2105f247dd6007d563651ff5e",
+    "/home/qunwang/wajueji/src/v4/layered_47_bucket_integral_candidate.py": "94fb8c40b1ff27fe90aedb975048f772a88bad264bc2ce93b2efd173ed4af11c",
+    "/home/qunwang/wajueji/src/v4/bucket_integral_candidate.h": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+    "/home/qunwang/wajueji/scripts/run_47_sparse_manual_contact_integral_local.sh": "b46fc555323601feb7fbda733bac04812e8114cb936c9ef1ae72f711ea909120"
+  }
+}

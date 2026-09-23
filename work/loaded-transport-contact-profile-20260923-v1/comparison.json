@@ -1,0 +1,30 @@
+{
+  "baseline_seconds": {
+    "wall_seconds": 7.4603971740434645,
+    "mpm_wall_seconds": 6.224333715959801,
+    "mujoco_wall_seconds": 1.1903958430484636,
+    "assignment_wall_seconds": 0.04566761503519956
+  },
+  "optimized_seconds": {
+    "wall_seconds": 3.4817625919531565,
+    "mpm_wall_seconds": 2.2538071379822213,
+    "mujoco_wall_seconds": 1.1837632039532764,
+    "assignment_wall_seconds": 0.04419225001765881
+  },
+  "speedup": 2.1427070275513596,
+  "components_optimized": {
+    "solver": 0.7420991989783943,
+    "projection_input_readback_and_guard": 0.14085974197951145,
+    "project_outside": 0.02948547301639337,
+    "projection_output_readback_and_diagnostics": 0.8428763910051202,
+    "contact_readback_and_filter": 0.16083120799157768,
+    "body_wrench_reduction": 0.1184156340023037,
+    "static_shape_attribution": 0.01667397399432957,
+    "particle_diagnostics": 0.18249341104819905
+  },
+  "all_36_physics_rows_exact_excluding_timing": true,
+  "terminal_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true
+  }
+}

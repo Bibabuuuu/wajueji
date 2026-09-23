@@ -1,0 +1,404 @@
+{
+  "backend": {
+    "device_requested": "cuda:0",
+    "device_resolved": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "checks": {
+    "closure_within_one_mm": true,
+    "complete_reset": true,
+    "coupled_finite": true,
+    "deterministic_repeat": true,
+    "feedback_changes_rock_support": false,
+    "forbidden_contacts_zero": true,
+    "matrix_count_conserved": true,
+    "matrix_mass_conserved": true,
+    "nonzero_rock_mpm_contact": true,
+    "nonzero_rock_mpm_wrench": true,
+    "repeat_finite": true,
+    "uncoupled_finite": true
+  },
+  "comparison": {
+    "coupled_minus_uncoupled_final_rock_z_m": 3.0282593216079956e-05,
+    "deterministic_repeat": true
+  },
+  "episodes": {
+    "coupled_first": {
+      "feedback_enabled": true,
+      "final_rock_z_m": 0.3186337200932161,
+      "frames": 2,
+      "initial_rock_z_m": 0.32,
+      "matrix": {
+        "finite": true,
+        "maximum_particle_speed_m_s": 0.09651670604944229,
+        "minimum_particle_z_m": -2.233189115941059e-05,
+        "particle_count": 4851,
+        "particle_q_sha256": "7bf663589ac58c4ad7d599621cef0af24c1f58acd3f965ee63bc8ae8156bdf99",
+        "particle_qd_sha256": "8fa26889fba32cc8d5fe81a13d7b9209a3aa4c6616375ec97ea5fa710b41e6cc",
+        "total_mass_kg": 126.58077799715102
+      },
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 0.00017130933143477478,
+      "maximum_rock_z_m": 0.32,
+      "minimum_rock_z_m": 0.3186337200932161,
+      "mpm_contact_frames": 2,
+      "mpm_contact_samples": 33,
+      "peak_mpm_force_n": 18.292517887338153,
+      "peak_mpm_torque_nm": 0.13000077514676603,
+      "reset_audit": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_vertical_displacement_m": -0.001366279906783896,
+      "simulated_time_s": 0.016666666666666666,
+      "trace": [
+        [
+          1,
+          0.008333333333333333,
+          0.31964234375000006,
+          0.10707159518267062,
+          -0.01538335748387576,
+          1.953943312391857,
+          -0.0010797124822945453,
+          0.01976508293792297,
+          -1.1857570511717028e-05,
+          31
+        ],
+        [
+          2,
+          0.016666666666666653,
+          0.3186337200932161,
+          2.740719560533762,
+          0.20036252215504646,
+          18.084925264120102,
+          0.013755737837753353,
+          0.12903464620189867,
+          0.007812892860513333,
+          2
+        ]
+      ],
+      "trace_sha256": "02a5970f793b4e829b1eb2dfe2ab52522463a6c22135f73ad7f990c2898423e4",
+      "wall_seconds": 8.980368800999713
+    },
+    "coupled_repeat": {
+      "feedback_enabled": true,
+      "final_rock_z_m": 0.3186337200932161,
+      "frames": 2,
+      "initial_rock_z_m": 0.32,
+      "matrix": {
+        "finite": true,
+        "maximum_particle_speed_m_s": 0.09651670604944229,
+        "minimum_particle_z_m": -2.233189115941059e-05,
+        "particle_count": 4851,
+        "particle_q_sha256": "7bf663589ac58c4ad7d599621cef0af24c1f58acd3f965ee63bc8ae8156bdf99",
+        "particle_qd_sha256": "8fa26889fba32cc8d5fe81a13d7b9209a3aa4c6616375ec97ea5fa710b41e6cc",
+        "total_mass_kg": 126.58077799715102
+      },
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 0.00017130933143477478,
+      "maximum_rock_z_m": 0.32,
+      "minimum_rock_z_m": 0.3186337200932161,
+      "mpm_contact_frames": 2,
+      "mpm_contact_samples": 33,
+      "peak_mpm_force_n": 18.292517887338153,
+      "peak_mpm_torque_nm": 0.13000077514676603,
+      "reset_audit": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_vertical_displacement_m": -0.001366279906783896,
+      "simulated_time_s": 0.016666666666666666,
+      "trace": [
+        [
+          1,
+          0.008333333333333333,
+          0.31964234375000006,
+          0.10707159518267062,
+          -0.01538335748387576,
+          1.953943312391857,
+          -0.0010797124822945453,
+          0.01976508293792297,
+          -1.1857570511717028e-05,
+          31
+        ],
+        [
+          2,
+          0.016666666666666653,
+          0.3186337200932161,
+          2.740719560533762,
+          0.20036252215504646,
+          18.084925264120102,
+          0.013755737837753353,
+          0.12903464620189867,
+          0.007812892860513333,
+          2
+        ]
+      ],
+      "trace_sha256": "02a5970f793b4e829b1eb2dfe2ab52522463a6c22135f73ad7f990c2898423e4",
+      "wall_seconds": 0.0703194030065788
+    },
+    "uncoupled_no_feedback": {
+      "feedback_enabled": false,
+      "final_rock_z_m": 0.31860343750000003,
+      "frames": 2,
+      "initial_rock_z_m": 0.32,
+      "matrix": {
+        "finite": true,
+        "maximum_particle_speed_m_s": 0.09636183828115463,
+        "minimum_particle_z_m": -2.2330161300487816e-05,
+        "particle_count": 4851,
+        "particle_q_sha256": "fcdecd56c5a6741a3fa2d9bc683838f99b09a141f7ccee56a962385b04139c56",
+        "particle_qd_sha256": "44f07a18e93da239d3be9bb618b3e6bdb9c925006d9a879adb27afdcb1c5c37d",
+        "total_mass_kg": 126.58077799715102
+      },
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 0.00017130933143477478,
+      "maximum_rock_z_m": 0.32,
+      "minimum_rock_z_m": 0.31860343750000003,
+      "mpm_contact_frames": 2,
+      "mpm_contact_samples": 33,
+      "peak_mpm_force_n": 18.23416843649265,
+      "peak_mpm_torque_nm": 0.12923771959002037,
+      "reset_audit": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_vertical_displacement_m": -0.001396562499999976,
+      "simulated_time_s": 0.016666666666666666,
+      "trace": [
+        [
+          1,
+          0.008333333333333333,
+          0.31964234375000006,
+          0.10707159518267062,
+          -0.01538335748387576,
+          1.953943312391857,
+          -0.0010797124822945453,
+          0.01976508293792297,
+          -1.1857570511717028e-05,
+          31
+        ],
+        [
+          2,
+          0.016666666666666653,
+          0.31860343750000003,
+          2.736869305372238,
+          0.2004400547593832,
+          18.026487976312637,
+          0.013750678294269174,
+          0.12826868690814133,
+          0.007775022195303536,
+          2
+        ]
+      ],
+      "trace_sha256": "a403cba815d67a94e6000f109242aa0a07d58e884be777ebea60b1d0fe10dbf7",
+      "wall_seconds": 0.07068996099405922
+    }
+  },
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "<temporary>/mixed-coupled-bridge-r3-a.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-coupled-bridge-r3-a"
+    ],
+    "runner_sha256": "e0dd2a47b5788f96076354d997139042447ded9562326d5d96c1c1a5543b2865",
+    "total_wall_seconds": 13.830750562003232
+  },
+  "inputs": {
+    "bridge_source_manifest": {
+      "allowed_external_wrench_bodies": [
+        "bucket",
+        "r1-rock-000"
+      ],
+      "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+      "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+      "frozen_r1_source_modified": false,
+      "generated_source_sha256": "9c7f30be4c6dd3aa46dfa3cd7376840f5391c00f8fb91fc27b2fe59bc5d64f90",
+      "maximum_external_wrench_count": 2,
+      "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+      "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_a_v1",
+      "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+      "status": "r3_a_bridge_source_generated"
+    },
+    "config_path": "/home/qunwang/wajueji/configs/v4/mixed-material-r3-a.json",
+    "config_sha256": "1b8dc3f4b5ad6f63f020cc13e963021e144f636dea6bcd4f6afaca803e2e531c",
+    "derived_model_sha256": "1a3ad10cf022168119c12cd76fcddbc75af951452de68fceb2915eacc4e1df53",
+    "r1_model_candidate_manifest": {
+      "bucket_proxy_geom_count": 18,
+      "candidate_model_sha256": "81c4f8064b45ca50875a80fe717cf38b9986ede7f3083482cbbad66f45fa31d4",
+      "contact_bits": {
+        "bucket_proxy": 512,
+        "rock": 256,
+        "rock_ground": 1024,
+        "truck_receiver_reserved": 2048
+      },
+      "expected_candidate_contract": {
+        "nplugin": 0,
+        "nq": 26,
+        "nu": 12,
+        "nv": 24,
+        "rock_count": 1
+      },
+      "frozen_source_modified": false,
+      "mouth_center_bucket_m": [
+        0.117559,
+        0.0,
+        -0.590555
+      ],
+      "mouth_inward_direction_bucket": [
+        0.9762252567359343,
+        0.0,
+        0.21675850181909675
+      ],
+      "rock": {
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "density_kg_m3": 2600.0,
+        "equivalent_diameter_m": 0.12,
+        "inertia_about_com_kg_m2": [
+          [
+            0.002730036731269096,
+            -0.00013544030291822907,
+            -1.5999552127237756e-05
+          ],
+          [
+            -0.00013544030291822907,
+            0.004496298940992804,
+            -1.4905357373961838e-05
+          ],
+          [
+            -1.5999552127237756e-05,
+            -1.4905357373961838e-05,
+            0.0051410048828723345
+          ]
+        ],
+        "initial_orientation_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_position_world_m": [
+          4.2,
+          0.0,
+          0.35
+        ],
+        "mass_kg": 2.3524245790080363,
+        "prototype_id": "angular_octa",
+        "rock_id": "r1-rock-000"
+      },
+      "rock_inertia_about_com_kg_m2": [
+        [
+          0.002730036731269096,
+          -0.00013544030291822907,
+          -1.5999552127237756e-05
+        ],
+        [
+          -0.00013544030291822907,
+          0.004496298940992804,
+          -1.4905357373961838e-05
+        ],
+        [
+          -1.5999552127237756e-05,
+          -1.4905357373961838e-05,
+          0.0051410048828723345
+        ]
+      ],
+      "rock_mass_kg": 2.3524245790080363,
+      "rocks": [
+        {
+          "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "initial_orientation_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "initial_position_world_m": [
+            4.2,
+            0.0,
+            0.35
+          ],
+          "mass_kg": 2.3524245790080363,
+          "prototype_id": "angular_octa",
+          "rock_id": "r1-rock-000"
+        }
+      ],
+      "schema": "excavation_mixed_rigid_mechanism_candidate_v1",
+      "scope_limit": "model assembly candidate only until a separate bridge loads and steps it with classified contacts and state logging",
+      "source_bucket_visual_collision_disabled": true,
+      "source_model_contract": {
+        "actuator_count": 12,
+        "mechanism_nq": 19,
+        "mechanism_nv": 18,
+        "plugin_count": 0
+      },
+      "source_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+      "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+      "total_rock_mass_kg": 2.3524245790080363,
+      "unit_fixture": null,
+      "unit_fixtures": [],
+      "unit_scenario": "freefall"
+    }
+  },
+  "physics_qualified": false,
+  "schema": "excavation_mixed_material_r3_a_probe_report_v1",
+  "scope_limit": "isolated one frozen R0 rock over a 0.5 m x 0.5 m x 0.25 m MPM matrix; per-rock wrench feedback only; bucket-to-MPM contact, multiple rocks, official 2.2 m envelope, excavation and training are not qualified",
+  "status": "r3_a_one_rock_coupling_probe_failed"
+}

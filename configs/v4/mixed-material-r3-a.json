@@ -1,0 +1,79 @@
+{
+  "schema": "excavation_mixed_material_r3_a_config_v1",
+  "status": "r3_a_isolated_one_rock_coupling_candidate",
+  "frozen_inputs": {
+    "r1_config_path": "configs/v4/mixed-material-r1.json",
+    "r1_config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+    "r1_bridge_source_path": "src/v4/mixed_rigid_bridge.cc",
+    "r1_bridge_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+    "mechanism_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+    "mechanism_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "rock_asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+    "rock_asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "rock_prototype_id": "angular_octa",
+    "rock_equivalent_diameter_m": 0.12,
+    "rock_density_kg_m3": 2600.0,
+    "rock_mass_kg": 2.3524245790080363,
+    "rock_inertia_about_com_kg_m2": [
+      [0.002730036731269096, -0.00013544030291822907, -0.000015999552127237756],
+      [-0.00013544030291822907, 0.004496298940992804, -0.000014905357373961838],
+      [-0.000015999552127237756, -0.000014905357373961838, 0.0051410048828723345]
+    ]
+  },
+  "bridge": {
+    "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+    "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+    "rock_body_name": "r1-rock-000",
+    "maximum_external_wrench_count": 2,
+    "allowed_external_wrench_bodies": ["bucket", "r1-rock-000"],
+    "external_wrench_frame": "world",
+    "external_torque_reference": "supplied_fixed_world_point",
+    "coupling_schedule": "previous_mpm_interval_wrench_applied_to_next_mujoco_interval"
+  },
+  "matrix": {
+    "center_xy_m": [4.2, 0.0],
+    "size_xyz_m": [0.5, 0.5, 0.25],
+    "particle_spacing_m": 0.025,
+    "particle_mass_discretization": "exact_matrix_volume_times_density_divided_by_emitted_particle_count",
+    "voxel_size_m": 0.05,
+    "density_kg_m3": 1670.0,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    },
+    "material_status": "reused_unscaled_compact_candidate_not_official_calibration"
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 20,
+    "mpm_steps_per_output": 1,
+    "duration_s": 1.5,
+    "zero_command": [0.0, 0.0, 0.0, 0.0],
+    "rock_initial_position_world_m": [4.2, 0.0, 0.32],
+    "rock_initial_orientation_quaternion_wxyz": [1.0, 0.0, 0.0, 0.0],
+    "required_forbidden_contact_count": 0,
+    "maximum_closure_m": 0.001
+  },
+  "scope": {
+    "one_frozen_r0_rock": true,
+    "small_mpm_matrix": true,
+    "per_body_mpm_wrench": true,
+    "bucket_mpm_contact_enabled": false,
+    "multi_rock": false,
+    "official_envelope": false,
+    "training": false,
+    "final_rock_count_selected": false,
+    "frozen_r1_or_r2_modified": false
+  }
+}

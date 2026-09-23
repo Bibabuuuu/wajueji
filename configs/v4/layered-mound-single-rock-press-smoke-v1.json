@@ -1,0 +1,81 @@
+{
+  "schema": "excavation_layered_mound_single_rock_press_smoke_config_v1",
+  "status": "one_lower_rock_controlled_press_short_smoke_only",
+  "physical_geometry": {
+    "config_path": "configs/v4/layered-mound-physical-preflight-v1.json",
+    "config_sha256": "c16cb7dd56bf8e63864fa610249410e66a41382f708d20c2846b16198c1fab74",
+    "report_path": "results/layered-mound-physical-preflight-v1/report.json",
+    "report_sha256": "109301904cf058c2de6fece30255813d39a51012c8e2a450f89fcf618e4ac685",
+    "manifest_path": "results/layered-mound-physical-preflight-v1/scene-manifest.json",
+    "manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+  },
+  "time_zero": {
+    "config_path": "configs/v4/layered-mound-time-zero-v1.json",
+    "config_sha256": "5fd8ddc8c14012bbbd188adfaf21b3ae20bf24dc58fb7b35623f654fb7f190b6",
+    "runner_path": "src/v4/run_layered_mound_time_zero.py",
+    "runner_sha256": "f9f641dce224a488a65080edd71789701aa355dd11c32e7ac19d59faddafde85",
+    "report_path": "results/layered-mound-time-zero-v1.json",
+    "report_sha256": "734fa143f77607727575af901510c5e029431f352ea7e8b2aff141c6176a9ec1"
+  },
+  "unexcavated_soil": {
+    "visual_config_path": "configs/v4/layered-mound-viewer-preview-v1.json",
+    "visual_config_sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32",
+    "source_bank_path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+    "activation_stage": 0,
+    "maximum_center_height_m": 0.32,
+    "expected_particle_count": 85620,
+    "precarved": false
+  },
+  "target": {
+    "manifest_rock_id": "lower-000",
+    "runtime_rock_id": "r1-rock-000",
+    "start_surface_clearance_m": 0.005,
+    "controlled_press_distance_m": 0.02,
+    "free_fall": false,
+    "orientation_locked": true
+  },
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    }
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "foundation_presettle_frames": 24,
+    "controlled_press_frames": 36,
+    "maximum_particle_speed_m_s": 5.0,
+    "maximum_particle_drop_below_initial_m": 0.05,
+    "minimum_nonzero_contact_samples": 1,
+    "position_tolerance_m": 1e-06
+  },
+  "scope": {
+    "full_65_rock_identity_bound_by_time_zero": true,
+    "active_soil": "unexcavated_foundation_stage_only",
+    "active_rock_count": 1,
+    "other_64_rocks_active": false,
+    "kinematic_controlled_press": true,
+    "free_fall": false,
+    "mj_step_calls": 0,
+    "newton_solver_step_calls": 60,
+    "settling_qualified": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

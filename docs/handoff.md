@@ -1,6 +1,6 @@
 # 项目交接：按9月25日提交重排，连续作业优先
 
-> **2026-09-19范围覆盖：** 本页主体是9月14日纯土提交基线。用户现已把目标物料更新为必须可真实铲运的碎石/大块石头，当前任务改为铲斗通规、动态刚体石块和MPM混合耦合资格；以[START-HERE](START-HERE.md)、[当前任务](../.planning/task.md)、[混合场景专项](v4/mixed-material-scene-plan.md)和[决策D-033](decisions.md)为准。下方纯土事实与失败仍保留，不当作碎石验收。
+> **历史交接页：** 本页主体是9月14日纯土提交基线。当前任务改为铲斗通规、动态刚体石块和MPM混合耦合资格；请以[文档索引](DOCS_INDEX.md)、[当前状态](CURRENT_STATUS.md)、对应活动小节和最新正式决策为准。下方纯土事实与失败仍保留，不当作碎石验收。
 
 更新：2026-09-14。脱离SSH运行的三铲空载已通过全部24项审计；真实`contact-3cycle-v1`已经结束，前两铲完整通过，第三铲CURL新获取仅10.4114kg、低于20kg开发门槛后超时，整轮独立审计失败。当前GPU空闲。新增两位队友从[团队入门](team-onboarding-2026-09-14.md)只读了解路线和进度；用户明确分工必须先与当前助手讨论，本轮不分配任务。团队/盖章信息也暂不处理。
 
@@ -19,7 +19,7 @@
 
 两位队友当前只读了解项目，具体分工待与用户讨论。`contact-3cycle-v1`的报告和独立审计已回收；原始大日志与快照留在远端。下一次真实三铲前先修正错误归因并对第三入口策略做有界调整，随后从完整初态和新运行名启动，不能从失败快照续跑。硬件按[吞吐决策](hardware-throughput-decision-2026-09-14.md)评估，暂无采购。
 
-题目原图与用户范围见[要求](requirements.md)，当前工作见[任务](../.planning/task.md)，架构见[总体规划](../复杂介质工况自主挖掘项目总体规划_V0.1.md)。[提交核对](submission-requirements-2026-09-14.md)记录模板及尚未确认的字段；[方案底稿](project-proposal-material-draft-2026-09-14.md)和7页DOCX/PDF草稿已生成，尚非最终提交版。用户已明确团队信息、盖章和成果证明先不管，当前只推进技术任务。
+题目原图与用户范围见[要求](requirements.md)，当前工作见[当前状态](CURRENT_STATUS.md)，架构见[总体规划](PROJECT_PLAN.md)。[提交核对](submission-requirements-2026-09-14.md)记录模板及尚未确认的字段；[方案底稿](project-proposal-material-draft-2026-09-14.md)和7页DOCX/PDF草稿已生成，尚非最终提交版。用户已明确团队信息、盖章和成果证明先不管，当前只推进技术任务。
 
 ## 冻结、范围与恢复
 
@@ -32,6 +32,6 @@
 
 ## GitHub状态
 
-用户已创建空仓库`https://github.com/Bibabuuuu/wajueji.git`。本地最新工作树已连接`origin`并建立`codex/submission-baseline`，但尚未推送。共享索引现为153文件/3.47MB；旧实验版本和约3.85GB原始数据仍完整保存在本机但不进入Git。队友AI入口为仓库根部`AGENTS.md`和[START-HERE](START-HERE.md)。截图显示远端仍为Public；首次推送前应由用户在GitHub改为Private。笔记本负责访问GitHub，台式机负责GPU任务；长任务运行时不得在对应候选目录拉取或覆盖源码。协作步骤见[GitHub与两台电脑的协作方式](repository-workflow.md)。
+用户已创建空仓库`https://github.com/Bibabuuuu/wajueji.git`。本地最新工作树已连接`origin`并建立`codex/submission-baseline`，但尚未推送。共享索引现为153文件/3.47MB；旧实验版本和约3.85GB原始数据仍完整保存在本机但不进入Git。队友AI入口为仓库根部`AGENTS.md`和[文档索引](DOCS_INDEX.md)。截图显示远端仍为Public；首次推送前应由用户在GitHub改为Private。笔记本负责访问GitHub，台式机负责GPU任务；长任务运行时不得在对应候选目录拉取或覆盖源码。协作步骤见[GitHub与两台电脑的协作方式](repository-workflow.md)。
 
 完整文件位置和验证命令见上述证据入口及[环境记录](environment.md)。本轮文档修改不会重写历史归档哈希或将其解释为当前文档哈希。

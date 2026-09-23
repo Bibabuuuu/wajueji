@@ -1,0 +1,728 @@
+{
+  "scope": "offline matrix update; not full constitutive/grid simulation",
+  "cases": {
+    "elastic_compression": {
+      "linear": {
+        "singular_values": [
+          0.98,
+          0.98,
+          0.98
+        ],
+        "determinant": 0.9411919999999999,
+        "F_error": 0.0003441122614078454,
+        "Hencky_error": 0.0003510993730096269
+      },
+      "finite_rotation_only": {
+        "singular_values": [
+          0.98,
+          0.98,
+          0.98
+        ],
+        "determinant": 0.9411919999999999,
+        "F_error": 0.0003441122614078454,
+        "Hencky_error": 0.0003510993730096269
+      },
+      "exp_increment": {
+        "singular_values": [
+          0.9801986733067553,
+          0.9801986733067553,
+          0.9801986733067553
+        ],
+        "determinant": 0.9417645335842486,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      },
+      "log_reconstruction": {
+        "singular_values": [
+          0.9801986733067553,
+          0.9801986733067553,
+          0.9801986733067553
+        ],
+        "determinant": 0.9417645335842486,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      }
+    },
+    "elastic_unload": {
+      "linear": {
+        "singular_values": [
+          0.9998026467728903,
+          0.9998026467728903,
+          0.9998026467728903
+        ],
+        "determinant": 0.9994080571558731,
+        "F_error": 0.0003418258163916377,
+        "Hencky_error": 0.0003418595510441262
+      },
+      "finite_rotation_only": {
+        "singular_values": [
+          0.9998026467728903,
+          0.9998026467728903,
+          0.9998026467728903
+        ],
+        "determinant": 0.9994080571558731,
+        "F_error": 0.0003418258163916377,
+        "Hencky_error": 0.0003418595510441262
+      },
+      "exp_increment": {
+        "singular_values": [
+          0.9999999999999999,
+          0.9999999999999999,
+          0.9999999999999999
+        ],
+        "determinant": 0.9999999999999997,
+        "F_error": 1.9229626863835638e-16,
+        "Hencky_error": 1.9229626863835638e-16
+      },
+      "log_reconstruction": {
+        "singular_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "determinant": 1.0,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      }
+    },
+    "large_elastic_state_unload": {
+      "linear": {
+        "singular_values": [
+          5907.755278982137,
+          5907.755278982137,
+          5907.755278982137
+        ],
+        "determinant": -206189948805.5727,
+        "F_error": 10234.264352687876,
+        "Hencky_error": null
+      },
+      "finite_rotation_only": {
+        "singular_values": [
+          5907.755278982137,
+          5907.755278982137,
+          5907.755278982137
+        ],
+        "determinant": -206189948805.5727,
+        "F_error": 10234.264352687876,
+        "Hencky_error": null
+      },
+      "exp_increment": {
+        "singular_values": [
+          1.0000000000000002,
+          1.0000000000000002,
+          1.0000000000000002
+        ],
+        "determinant": 1.0000000000000007,
+        "F_error": 3.8459253727671276e-16,
+        "Hencky_error": 3.845925372767127e-16
+      },
+      "log_reconstruction": {
+        "singular_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "determinant": 1.0,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      }
+    },
+    "rigid_rotation_one_step": {
+      "linear": {
+        "singular_values": [
+          1.121784292990413,
+          1.0,
+          0.9688137075826291
+        ],
+        "determinant": 1.0868,
+        "F_error": 0.029036599300320622,
+        "Hencky_error": 0.027738488467332286
+      },
+      "finite_rotation_only": {
+        "singular_values": [
+          1.1000000000000003,
+          1.0,
+          0.95
+        ],
+        "determinant": 1.0450000000000002,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      },
+      "exp_increment": {
+        "singular_values": [
+          1.1000000000000003,
+          1.0,
+          0.95
+        ],
+        "determinant": 1.0450000000000002,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      },
+      "log_reconstruction": {
+        "singular_values": [
+          1.1000000000000003,
+          1.0,
+          0.95
+        ],
+        "determinant": 1.0450000000000002,
+        "F_error": 0.0,
+        "Hencky_error": 0.0
+      }
+    },
+    "noncoaxial_unloading": {
+      "linear": {
+        "singular_values": [
+          1.045179802870219,
+          0.9968562529398445,
+          0.9295576421646723
+        ],
+        "determinant": 0.968500550417794,
+        "F_error": 0.08680057573006383,
+        "Hencky_error": 0.08284444427779225
+      },
+      "finite_rotation_only": {
+        "singular_values": [
+          0.9969192407782469,
+          0.9801045709519776,
+          0.9461124055652567
+        ],
+        "determinant": 0.9244323389033752,
+        "F_error": 0.0575615016953555,
+        "Hencky_error": 0.05904225499621122
+      },
+      "exp_increment": {
+        "singular_values": [
+          1.0024334549061293,
+          1.0016046204260614,
+          0.9959742917290956
+        ],
+        "determinant": 1.0000000000000009,
+        "F_error": 0.0007616958768453545,
+        "Hencky_error": 0.00012222807980132893
+      },
+      "log_reconstruction": {
+        "singular_values": [
+          1.0023982973598942,
+          1.0015777781178816,
+          0.9960359170342162
+        ],
+        "determinant": 0.9999999999999997,
+        "F_error": 9.891287908287532e-16,
+        "Hencky_error": 1.2026122400902658e-15
+      }
+    }
+  },
+  "rotation_100_steps": {
+    "linear": {
+      "singular_values": [
+        7.10668334627831,
+        7.1066833462783086,
+        0.9999999999999999
+      ],
+      "determinant": 50.50494818426946,
+      "F_error": 8.691480522098388,
+      "Hencky_error": 2.7733232233657916
+    },
+    "finite_rotation_only": {
+      "singular_values": [
+        1.0000000000000004,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0000000000000007,
+      "F_error": 2.862276829643022e-14,
+      "Hencky_error": 2.8263408749643818e-14
+    },
+    "exp_increment": {
+      "singular_values": [
+        1.0000000000000004,
+        1.0,
+        1.0
+      ],
+      "determinant": 1.0000000000000007,
+      "F_error": 2.862276829643022e-14,
+      "Hencky_error": 2.8263408749643818e-14
+    },
+    "log_reconstruction": {
+      "singular_values": [
+        1.0000000000000016,
+        1.0000000000000016,
+        1.0
+      ],
+      "determinant": 1.0000000000000029,
+      "F_error": 3.045620210255015e-14,
+      "Hencky_error": 3.0145775206728756e-14
+    }
+  },
+  "hydrostatic_oracle": [
+    {
+      "name": "elastic_compression",
+      "H_previous": 0,
+      "total_increment": -0.005,
+      "pressure": 25000.0,
+      "H_target": -0.005,
+      "elastic_increment": -0.005,
+      "plastic_increment": 0.0
+    },
+    {
+      "name": "compressive_yield",
+      "H_previous": 0,
+      "total_increment": -0.2,
+      "pressure": 100000.0,
+      "H_target": -0.02,
+      "elastic_increment": -0.02,
+      "plastic_increment": -0.18000000000000002
+    },
+    {
+      "name": "elastic_unload_from_yield",
+      "H_previous": -0.02,
+      "total_increment": 0.02,
+      "pressure": -0.0,
+      "H_target": 0.0,
+      "elastic_increment": 0.02,
+      "plastic_increment": 0.0
+    },
+    {
+      "name": "tensile_yield",
+      "H_previous": 0,
+      "total_increment": 0.002,
+      "pressure": -250.0,
+      "H_target": 5e-05,
+      "elastic_increment": 5e-05,
+      "plastic_increment": 0.0019500000000000001
+    },
+    {
+      "name": "large_state_zero_total_increment",
+      "H_previous": 6.907755278982137,
+      "total_increment": 0,
+      "pressure": -250.0,
+      "H_target": 5e-05,
+      "elastic_increment": -6.907705278982137,
+      "plastic_increment": 6.907705278982137
+    }
+  ],
+  "recorded_particle_53753_one_step": [
+    {
+      "frame": 1039,
+      "previous_H_eigenvalues": [
+        -0.009376939370624256,
+        0.0025073815899607117,
+        0.014868343036348486
+      ],
+      "updated_H_eigenvalues": [
+        -0.008023981459702323,
+        0.002794009368580642,
+        0.01599672952928911
+      ],
+      "predicted_singular_range_log_update": [
+        0.9920081247489332,
+        1.0161253621924249
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 0.992764795365093,
+          "max_singular": 1.0168819611496467,
+          "determinant": 1.0123256207572011,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 0.9920068500416112,
+          "max_singular": 1.0161074400481782,
+          "determinant": 1.0107913490938016,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.9920081213269397,
+          "max_singular": 1.0161254677127394,
+          "determinant": 1.0108249275514212,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.992008124748933,
+          "max_singular": 1.016125362192424,
+          "determinant": 1.0108249275514176,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1040,
+      "previous_H_eigenvalues": [
+        -0.007261486781979583,
+        0.002770744324501376,
+        0.016741019964351588
+      ],
+      "updated_H_eigenvalues": [
+        -1.6844952090559364,
+        -1.678146464053307,
+        -0.005609081259493754
+      ],
+      "predicted_singular_range_log_update": [
+        0.18553806625673452,
+        0.9944066202660328
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 0.6779660247409656,
+          "max_singular": 0.9952027765715619,
+          "determinant": 0.4784394055273778,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 0.677354996900023,
+          "max_singular": 0.9944623328666355,
+          "determinant": 0.47713389161137865,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.18553727806825848,
+          "max_singular": 0.9944209251219653,
+          "determinant": 0.034449845910790755,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.1855380662567345,
+          "max_singular": 0.9944066202660334,
+          "determinant": 0.034449845910790665,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1041,
+      "previous_H_eigenvalues": [
+        -0.3886581411640264,
+        -0.34375880554357413,
+        -0.004808763510670262
+      ],
+      "updated_H_eigenvalues": [
+        -2.2110930047281174,
+        -2.200298011722467,
+        -0.007911177732606018
+      ],
+      "predicted_singular_range_log_update": [
+        0.10958081069159092,
+        0.9921200332744454
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 0.5567771166146623,
+          "max_singular": 0.9937233889526347,
+          "determinant": 0.33693485792927663,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 0.5560890947606049,
+          "max_singular": 0.99273226297418,
+          "determinant": 0.3366924989558523,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.10957337895249049,
+          "max_singular": 0.9922882975518575,
+          "determinant": 0.012042632772626669,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.10958081069159094,
+          "max_singular": 0.9921200332744472,
+          "determinant": 0.012042632772626701,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1042,
+      "previous_H_eigenvalues": [
+        -0.5855903630002893,
+        -0.49597907121120977,
+        -0.00629637333383723
+      ],
+      "updated_H_eigenvalues": [
+        -3.877557747519346,
+        -3.861471098513204,
+        0.009366866822021324
+      ],
+      "predicted_singular_range_log_update": [
+        0.020701321347834537,
+        1.0094108732124
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 1.0034576785490532,
+          "max_singular": 1.4595332211345258,
+          "determinant": 1.8639741244516952,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 1.001847010452771,
+          "max_singular": 1.4629928911187098,
+          "determinant": 1.863620499796057,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.02068241538869343,
+          "max_singular": 1.0103309015534947,
+          "determinant": 0.00043959268345708264,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.02070132134783451,
+          "max_singular": 1.0094108732123985,
+          "determinant": 0.0004395926834570803,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1043,
+      "previous_H_eigenvalues": [
+        0.0034517180335787573,
+        0.24114252009703108,
+        0.3781165908551
+      ],
+      "updated_H_eigenvalues": [
+        -10.41995103122047,
+        -10.18126623964326,
+        -0.0005003154490190481
+      ],
+      "predicted_singular_range_log_update": [
+        2.9831340238824514e-05,
+        0.999499809687885
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 0.9983087333649159,
+          "max_singular": 14.275175635584997,
+          "determinant": 170.65476472311144,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 0.9984393079863858,
+          "max_singular": 14.27462572046612,
+          "determinant": 170.65628130583167,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 2.9804418374728668e-05,
+          "max_singular": 1.000748104135217,
+          "determinant": 1.12924385134202e-09,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 2.983134023882883e-05,
+          "max_singular": 0.9994998096878831,
+          "determinant": 1.129243851342028e-09,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1044,
+      "previous_H_eigenvalues": [
+        -0.0016926749358299612,
+        2.482813231744503,
+        2.6585219975214356
+      ],
+      "updated_H_eigenvalues": [
+        -8.435823788926037,
+        -8.233757909818989,
+        0.03282976664782775
+      ],
+      "predicted_singular_range_log_update": [
+        0.00021695430797420294,
+        1.0333746094433556
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 1.032674124656902,
+          "max_singular": 144.04888823146555,
+          "determinant": 17314.174414962137,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 1.0326757137282383,
+          "max_singular": 144.0491616053017,
+          "determinant": 17314.082546516736,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.00021628375189106235,
+          "max_singular": 1.0366025155292897,
+          "determinant": 5.953199534116518e-08,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.00021695430797422018,
+          "max_singular": 1.0333746094433574,
+          "determinant": 5.953199534116285e-08,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1045,
+      "previous_H_eigenvalues": [
+        0.032151578646766196,
+        4.756976345829385,
+        4.970152753642173
+      ],
+      "updated_H_eigenvalues": [
+        -6.346602236359766,
+        -6.197201860176965,
+        0.08194999281759281
+      ],
+      "predicted_singular_range_log_update": [
+        0.0017526922645200993,
+        1.0854015306000588
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 1.084040505184408,
+          "max_singular": 1485.8747164200145,
+          "determinant": 1866547.1876661268,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 1.0840872784841875,
+          "max_singular": 1485.8703236664949,
+          "determinant": 1866603.2718446758,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.0017449885012942197,
+          "max_singular": 1.0969388009833096,
+          "determinant": 3.87155584834151e-06,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.001752692264520112,
+          "max_singular": 1.0854015306000577,
+          "determinant": 3.871555848340836e-06,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1046,
+      "previous_H_eigenvalues": [
+        0.08069608872116885,
+        7.055146604451016,
+        7.3037588812993075
+      ],
+      "updated_H_eigenvalues": [
+        -4.28536890757778,
+        -4.178814483456969,
+        0.14554557704035875
+      ],
+      "predicted_singular_range_log_update": [
+        0.013768541265071965,
+        1.1566704509966776
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 1.1542258798325802,
+          "max_singular": 15732.56986773023,
+          "determinant": 215371819.5265523,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 1.1542889898804591,
+          "max_singular": 15732.580686608799,
+          "determinant": 215382464.16343904,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.00576131381576076,
+          "max_singular": 2.7687761177043235,
+          "determinant": 0.00024392791320771882,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.013768541265071963,
+          "max_singular": 1.156670450996676,
+          "determinant": 0.00024392791320778468,
+          "existing_guard_rejects": false
+        }
+      }
+    },
+    {
+      "frame": 1047,
+      "previous_H_eigenvalues": [
+        0.1434323512628797,
+        9.380958274588153,
+        9.663488374222108
+      ],
+      "updated_H_eigenvalues": [
+        -2.162541166311075,
+        -2.100428093683313,
+        0.19064311041695406
+      ],
+      "predicted_singular_range_log_update": [
+        0.11503243276794926,
+        1.2100275287911981
+      ],
+      "log_update_outside_existing_singular_guard": false,
+      "updates": {
+        "linear": {
+          "min_singular": 1.2085932842077556,
+          "max_singular": 170310.80720364384,
+          "determinant": 25589689063.457077,
+          "existing_guard_rejects": false
+        },
+        "finite_rotation_only": {
+          "min_singular": 1.2086522091981668,
+          "max_singular": 170310.4438140067,
+          "determinant": 25590888811.405544,
+          "existing_guard_rejects": false
+        },
+        "exp_increment": {
+          "min_singular": 0.010382676638944262,
+          "max_singular": 14.221784002915184,
+          "determinant": 0.017037710114254704,
+          "existing_guard_rejects": false
+        },
+        "log_reconstruction": {
+          "min_singular": 0.11503243276794915,
+          "max_singular": 1.2100275287911986,
+          "determinant": 0.017037710114254808,
+          "existing_guard_rejects": false
+        }
+      }
+    }
+  ],
+  "recorded_crossings_log_target": {
+    "events": 2895,
+    "below_existing_guard": 35,
+    "above_existing_guard": 0,
+    "minimum_eigenvalue_quantiles": [
+      -20.005200063124114,
+      -14.077145732656021,
+      -10.461990221320491,
+      0.0014707622120415337,
+      0.41741319851868575
+    ],
+    "maximum_eigenvalue_quantiles": [
+      -6.874334837889159,
+      -3.8352764966087305,
+      0.017137914143097278,
+      1.7385972570251733,
+      2.995957265912479
+    ]
+  },
+  "checks": {
+    "log_reconstruction_exact_all_analytic_cases": true,
+    "finite_rotation_only_does_not_fix_large_unload": true,
+    "exponential_increment_noncoaxial_residual_exists": true,
+    "finite_rotation_no_artificial_stretch": true,
+    "sources_unchanged": true
+  }
+}

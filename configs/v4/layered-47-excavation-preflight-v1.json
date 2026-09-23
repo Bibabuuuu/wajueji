@@ -1,0 +1,96 @@
+{
+  "schema": "excavation_layered_47_excavation_preflight_config_v1",
+  "status": "bind_audited_47_to_stationary_open_bucket_scene",
+  "input_checkpoint": {
+    "default_directory_from_home": "a30-layered-33-to-47-v5/checkpoints",
+    "filename_pattern": "four-layer-47-checkpoint-cuda-0-*.npz",
+    "checkpoint_schema": "excavation_layered_mound_continuation_checkpoint_v2",
+    "checkpoint_status": "four_layer_continuation_checkpoint_saved",
+    "sha256": "40b98e83bcc1f7b91366612755eee57bc5df21db2a5c53fe2accf4408c987ea5",
+    "source_config_sha256": "ac0d18752937230337f332b0fc08bfcfe639fc893f31f6fc2c840c1534dd3548",
+    "source_runner_sha256": "bf9987f3cc5563f6cf5fdb61b17d062046ca94512f80e46d59a003809135c3c5",
+    "particle_count": 256441,
+    "rock_count": 47,
+    "newton_version": "1.5.1",
+    "warp_version": "1.17.0",
+    "read_only": true,
+    "metadata_required": true
+  },
+  "physical_geometry": {
+    "manifest_path": "results/layered-mound-physical-preflight-v1/scene-manifest.json",
+    "manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+  },
+  "capacity_bridge": {
+    "config_path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "runtime_dependencies": {
+    "checkpoint_path": "src/v4/layered_mound_checkpoint.py",
+    "checkpoint_sha256": "e4009eb00af89f66523445273dc7fd063119a033a7cafccf8cea56ba51c028fa",
+    "runtime_path": "src/v4/layered_mound_checkpoint_runtime.py",
+    "runtime_sha256": "1f4f281e6f4d2de03980f7a6ba33d334bac163ff8e29d93f7ed00cba09d8e365",
+    "predictor_path": "src/v4/mpm_rigid_free_velocity.py",
+    "predictor_sha256": "9505ab0ff0448fd46ecd1d3f9b414975d28734203bc79e719f7daa0f9f81d333"
+  },
+  "operator_start": {
+    "path": "operator-start.json",
+    "sha256": "26a234f16de95ff196c536f0a972e7ad0949f5227b525838a2bb0c138e5649cf"
+  },
+  "open_bucket_proxy": {
+    "path": "reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+    "sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+  },
+  "truck_receiver_observer": {
+    "path": "evidence/autonomous-multiscoop-2026-09-14-v1/receiver-contract.json",
+    "sha256": "3fb663b0d3ff6342ffb908571d6c9ed92786714bcbefd17bc0436e554cda4651"
+  },
+  "construction": {"start_surface_clearance_m": 0.005},
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    }
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "maximum_stable_rock_linear_speed_m_s": 0.01,
+    "maximum_stable_rock_angular_speed_rad_s": 0.15,
+    "maximum_stable_particle_speed_m_s": 0.05,
+    "maximum_stable_particle_p99_speed_m_s": 0.01
+  },
+  "preflight": {
+    "hold_frames": 120,
+    "minimum_initial_vertical_clearance_m": 0.02,
+    "maximum_bucket_origin_drift_m": 0.002,
+    "maximum_bucket_rotation_drift_rad": 0.002,
+    "writes_checkpoint": false,
+    "requires_zero_bucket_contact_during_hold": true
+  },
+  "scope": {
+    "source_checkpoint_mutated": false,
+    "new_particles_added": false,
+    "new_rocks_added": false,
+    "new_checkpoint_written": false,
+    "bucket_collision_active": true,
+    "bucket_motion_commanded": false,
+    "truck_visual_and_receiver_observer_reused": true,
+    "truck_physics_collider_qualified": false,
+    "digging_executed": false,
+    "training": false
+  }
+}

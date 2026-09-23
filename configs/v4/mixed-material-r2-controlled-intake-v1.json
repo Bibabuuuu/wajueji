@@ -1,0 +1,56 @@
+{
+  "schema": "excavation_mixed_material_r2_controlled_intake_config_v1",
+  "source_r2_config": {
+    "path": "configs/v4/mixed-material-r2-v2.json",
+    "sha256": "ae048505dc5c3509cb1ba3b729e680938ab5039a00c30eca08d03c58a213f5bc"
+  },
+  "stable_model_root": {
+    "path": "reports/v4/mixed-material-r2-stabilization-2026-09-20-v2",
+    "report_sha256": "802133634a2befc2403feb8758f130898407904d7f9f4744ab995a6c81ac0468",
+    "generated_bridge_source_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57"
+  },
+  "bucket_geometry": {
+    "inventory_path": "/home/qunwang/codex-work/compact-bank-2026-09-11/inventory-contract.json",
+    "inventory_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "proxy_manifest_path": "reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+    "proxy_manifest_sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+  },
+  "selected_scenes": [
+    "ordinary-small-rock-dominant-seed-26091912",
+    "sparse-large-rock-seed-26091925"
+  ],
+  "selection_policy": "one_ordinary_and_one_sparse_scene_with_stable_rock_centers_in_bucket_width_approach_corridor",
+  "integration": {
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "external_wrench_count": 0
+  },
+  "phases": [
+    {"name": "settle", "duration_s": 0.5, "command": [0.0, 0.0, 0.0, 0.0]},
+    {"name": "coarse_vertical_approach", "duration_s": 14.0, "command": [0.0, -0.02, 0.0, 0.0]},
+    {"name": "fine_vertical_approach", "duration_s": 6.0, "command": [0.0, -0.005, 0.0, 0.0]},
+    {"name": "curl_intake", "duration_s": 2.0, "command": [0.0, 0.0, 0.0, 0.04]},
+    {"name": "settle_after_intake", "duration_s": 1.0, "command": [0.0, 0.0, 0.0, 0.0]}
+  ],
+  "acceptance": {
+    "minimum_bucket_contact_substeps": 1,
+    "minimum_final_retained_full_rock_count": 1,
+    "minimum_final_continuous_full_inside_duration_s": 0.25,
+    "maximum_final_retained_rock_speed_m_s": 0.2,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "full_envelope_tolerance_m": 0.001,
+    "mouth_straddle_depth_margin_m": 0.03,
+    "force_and_torque_are_diagnostic_not_capacity_thresholds": true
+  },
+  "scope": {
+    "controlled_two_scene_intake_diagnostic": true,
+    "all_six_scene_qualification": false,
+    "lift_hold": false,
+    "dump": false,
+    "mpm_coupling": false,
+    "fill_rate": false,
+    "training": false,
+    "physics_qualified": false
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "path": "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-000600.npz",
+  "size_bytes": 25944361,
+  "mtime_ns": 1790159964218208895,
+  "sha256": "b78a608657da091ea8d935733465841afc5a587fc02fa6b3a358e067d91922bc",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "diagnostic replay only; nonfinite={'particle_Jp': 222}",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {
+    "particle_Jp": {
+      "count": 222,
+      "first_indices": [
+        [
+          178724
+        ],
+        [
+          178728
+        ],
+        [
+          178732
+        ],
+        [
+          178744
+        ],
+        [
+          178748
+        ],
+        [
+          178762
+        ],
+        [
+          178768
+        ],
+        [
+          178769
+        ],
+        [
+          178770
+        ],
+        [
+          178771
+        ],
+        [
+          178772
+        ],
+        [
+          178773
+        ],
+        [
+          178774
+        ],
+        [
+          178775
+        ],
+        [
+          178776
+        ],
+        [
+          178777
+        ]
+      ],
+      "shape": [
+        256441
+      ]
+    }
+  }
+}

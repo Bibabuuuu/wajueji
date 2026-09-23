@@ -1,0 +1,8 @@
+{
+  "src/v4/run_layered_47_sparse_manual_contact_episode.py": "2c1b76eb1d9455456d574ff270918ad6d48bf05af414979100df3f6278f757b8",
+  "scripts/run_47_sparse_manual_contact_episode_local.sh": "ec0c5e306ba036f8994dba1811668346325761dab92e2f59178e2f6f9798bbb4",
+  "docs/CURRENT_STATUS.md": "f99a3e529712ed72b30c685dac0a602effe4a2dca0bc77d6ec540ca7bd0c0109",
+  "docs/plans/S04-contact-excavation-demonstrations.md": "2ec5745e8acf9b68aee410e4c83ea055686bad70c6faaa8558d373f7a7fe4c54",
+  "docs/decisions.md": "268a5ae50ed0630d1e26a4a6758d0a7234e6c182dd593c45586eed04e3331c3d",
+  "docs/acceptance.md": "3cee20aa14551584cbae6b5718ec5a0e135fe3e338cf1fb3679e96663e83bd78"
+}

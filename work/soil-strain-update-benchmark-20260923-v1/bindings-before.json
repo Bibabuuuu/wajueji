@@ -1,0 +1,12 @@
+{
+  "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+  "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476",
+  "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py": "9c404fa93635109fe14f5af10b592101d730996ba255c6885d8be839655f75a7",
+  "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/implicit_mpm_solver_kernels.py": "f2fab9e1a3cf27bdf68adc71c32a101d10cdc43e1433ceda0aeb19161c72a150",
+  "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/solver_implicit_mpm.py": "215aac53fb8427ed56ee7d15492ecbee78cfb2f8c298a84b41f395199ca952aa",
+  "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/rheology_solver_kernels.py": "66baec554b7b4a849323cbe4d8c0b860546ddbf2e2b394b4d659a409c13bae69",
+  "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/rasterized_collisions.py": "206424600b9956f48bc97aad17177b44892099a4d20e0602e4466bd9a36c8b73",
+  "/home/qunwang/wajueji/work/soil-local-onset-audit-20260923-v1/cohort-history.npz": "f8d505186b8507f79cdee4cc4d0214d76e4452a8876e3fea714cdeac1db48745",
+  "/home/qunwang/wajueji/work/soil-strain-update-benchmark-20260923-v1/protocol.json": "0828c59f2c04015beaa8467532c7e0ccbbffe30c849acabdfea677018559c5bf",
+  "/home/qunwang/wajueji/work/soil-strain-update-benchmark-20260923-v1/benchmark.py": "d698b0ca1a57caf2a88a58bef5b3f8cb1876dc14de7278ba99a767933ebefc31"
+}

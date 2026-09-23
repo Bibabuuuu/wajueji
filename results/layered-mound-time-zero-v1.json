@@ -1,0 +1,501 @@
+{
+  "checks": {
+    "mujoco_actual_n_and_dimensions": true,
+    "mujoco_ready_protocol": true,
+    "mujoco_state_finite": true,
+    "mujoco_time_zero_state": true,
+    "mujoco_zero_external_wrenches": true,
+    "mujoco_zero_forbidden_contacts": true,
+    "newton_body_state_finite": true,
+    "newton_particle_count": true,
+    "newton_particle_state_finite_and_zero_speed": true,
+    "newton_rock_collider_identity": true,
+    "zero_physics_steps": true
+  },
+  "environment": {
+    "device": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "execution": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/layered-mound-time-zero-nycejk6d/bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/layered-mound-time-zero-nycejk6d/bridge"
+    ],
+    "mj_step_calls": 0,
+    "newton_solver_step_calls": 0,
+    "wall_seconds": 3.3720857040025294
+  },
+  "inputs": {
+    "bridge_manifest": {
+      "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+      "formal_scene_qualified": false,
+      "generated_source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684",
+      "maximum_external_wrench_count": "rock_count_plus_bucket",
+      "maximum_rock_count": 1024,
+      "minimum_rock_count": 1,
+      "physics_qualified": false,
+      "runtime_rock_count": true,
+      "schema": "excavation_mixed_material_capacity_bridge_manifest_v1",
+      "source_bridge_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+      "stable_named_wrench_routing": true,
+      "status": "capacity_bridge_source_generated"
+    },
+    "config_sha256": "5fd8ddc8c14012bbbd188adfaf21b3ae20bf24dc58fb7b35623f654fb7f190b6",
+    "geometry_bank_sha256": "08bb8aab7a5433fb353fe62917f525bdbad5c543f680477470a6527a51899a16",
+    "geometry_manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706",
+    "model_manifest": {
+      "base_capacity_model_manifest": {
+        "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+        "expected_nq": 474,
+        "expected_nu": 12,
+        "expected_nv": 408,
+        "formal_scene_qualified": false,
+        "geometry_only_capacity_fixture": true,
+        "model_sha256": "44cbb984e7e8bea55bf80ed1309aede9320948903251004a9dd9a771625950c7",
+        "physics_qualified": false,
+        "rock_count": 65,
+        "schema": "excavation_mixed_material_capacity_model_manifest_v1",
+        "source_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+        "stable_rock_ids": [
+          "r1-rock-000",
+          "r1-rock-001",
+          "r1-rock-002",
+          "r1-rock-003",
+          "r1-rock-004",
+          "r1-rock-005",
+          "r1-rock-006",
+          "r1-rock-007",
+          "r1-rock-008",
+          "r1-rock-009",
+          "r1-rock-010",
+          "r1-rock-011",
+          "r1-rock-012",
+          "r1-rock-013",
+          "r1-rock-014",
+          "r1-rock-015",
+          "r1-rock-016",
+          "r1-rock-017",
+          "r1-rock-018",
+          "r1-rock-019",
+          "r1-rock-020",
+          "r1-rock-021",
+          "r1-rock-022",
+          "r1-rock-023",
+          "r1-rock-024",
+          "r1-rock-025",
+          "r1-rock-026",
+          "r1-rock-027",
+          "r1-rock-028",
+          "r1-rock-029",
+          "r1-rock-030",
+          "r1-rock-031",
+          "r1-rock-032",
+          "r1-rock-033",
+          "r1-rock-034",
+          "r1-rock-035",
+          "r1-rock-036",
+          "r1-rock-037",
+          "r1-rock-038",
+          "r1-rock-039",
+          "r1-rock-040",
+          "r1-rock-041",
+          "r1-rock-042",
+          "r1-rock-043",
+          "r1-rock-044",
+          "r1-rock-045",
+          "r1-rock-046",
+          "r1-rock-047",
+          "r1-rock-048",
+          "r1-rock-049",
+          "r1-rock-050",
+          "r1-rock-051",
+          "r1-rock-052",
+          "r1-rock-053",
+          "r1-rock-054",
+          "r1-rock-055",
+          "r1-rock-056",
+          "r1-rock-057",
+          "r1-rock-058",
+          "r1-rock-059",
+          "r1-rock-060",
+          "r1-rock-061",
+          "r1-rock-062",
+          "r1-rock-063",
+          "r1-rock-064"
+        ],
+        "status": "capacity_model_generated",
+        "synthetic_positions_world_m": [
+          [
+            3.8875,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.0625,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.2375,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.4125,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.5875,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.7625,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.9375,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.1125,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.2875,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.4625,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.6375,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.8125,
+            -1.0125,
+            0.0875
+          ],
+          [
+            3.8875,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            4.0625,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            4.2375,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            4.4125,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            4.5875,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            4.7625,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            4.9375,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            5.1125,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            5.2875,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            5.4625,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            5.6375,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            5.8125,
+            -0.8374999999999999,
+            0.0875
+          ],
+          [
+            3.8875,
+            -0.6625,
+            0.0875
+          ],
+          [
+            4.0625,
+            -0.6625,
+            0.0875
+          ],
+          [
+            4.2375,
+            -0.6625,
+            0.0875
+          ],
+          [
+            4.4125,
+            -0.6625,
+            0.0875
+          ],
+          [
+            4.5875,
+            -0.6625,
+            0.0875
+          ],
+          [
+            4.7625,
+            -0.6625,
+            0.0875
+          ],
+          [
+            4.9375,
+            -0.6625,
+            0.0875
+          ],
+          [
+            5.1125,
+            -0.6625,
+            0.0875
+          ],
+          [
+            5.2875,
+            -0.6625,
+            0.0875
+          ],
+          [
+            5.4625,
+            -0.6625,
+            0.0875
+          ],
+          [
+            5.6375,
+            -0.6625,
+            0.0875
+          ],
+          [
+            5.8125,
+            -0.6625,
+            0.0875
+          ],
+          [
+            3.8875,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            4.0625,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            4.2375,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            4.4125,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            4.5875,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            4.7625,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            4.9375,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            5.1125,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            5.2875,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            5.4625,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            5.6375,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            5.8125,
+            -0.48750000000000004,
+            0.0875
+          ],
+          [
+            3.8875,
+            -0.3125,
+            0.0875
+          ],
+          [
+            4.0625,
+            -0.3125,
+            0.0875
+          ],
+          [
+            4.2375,
+            -0.3125,
+            0.0875
+          ],
+          [
+            4.4125,
+            -0.3125,
+            0.0875
+          ],
+          [
+            4.5875,
+            -0.3125,
+            0.0875
+          ],
+          [
+            4.7625,
+            -0.3125,
+            0.0875
+          ],
+          [
+            4.9375,
+            -0.3125,
+            0.0875
+          ],
+          [
+            5.1125,
+            -0.3125,
+            0.0875
+          ],
+          [
+            5.2875,
+            -0.3125,
+            0.0875
+          ],
+          [
+            5.4625,
+            -0.3125,
+            0.0875
+          ],
+          [
+            5.6375,
+            -0.3125,
+            0.0875
+          ],
+          [
+            5.8125,
+            -0.3125,
+            0.0875
+          ],
+          [
+            3.8875,
+            -0.13749999999999996,
+            0.0875
+          ],
+          [
+            4.0625,
+            -0.13749999999999996,
+            0.0875
+          ],
+          [
+            4.2375,
+            -0.13749999999999996,
+            0.0875
+          ],
+          [
+            4.4125,
+            -0.13749999999999996,
+            0.0875
+          ],
+          [
+            4.5875,
+            -0.13749999999999996,
+            0.0875
+          ]
+        ]
+      },
+      "model_sha256": "56e67136f3b9fd217a7d3ac8e15e585968fc2f793ef06b39dcbb678e63b52bf4",
+      "provisional_geometry_only_input": true,
+      "rock_count": 65,
+      "stable_scene_claimed": false
+    }
+  },
+  "metrics": {
+    "model_nq": 474,
+    "model_nv": 408,
+    "mujoco": {
+      "init_default_wall_seconds": 0.003737499995622784,
+      "ready_message_bytes": 1182,
+      "ready_wall_seconds": 0.91630517799058,
+      "state_message_bytes": 29004
+    },
+    "newton_collider_count": 65,
+    "particle": {
+      "finite": true,
+      "maximum_particle_speed_m_s": 0.0,
+      "minimum_particle_z_m": 0.012500000186264515,
+      "particle_count": 263673,
+      "particle_q_sha256": "96ff322efd06f78d93a59c3cd79b66c8f89062970142c7f49bdb041ea52dc22f",
+      "particle_qd_sha256": "5b234f531b17e0455ca8c2a5e1a2d2d372771f45ef4de8a72fabe42539d0538e",
+      "total_mass_kg": 6880.217343750001
+    },
+    "rock_count": 65
+  },
+  "next_gate": "one_lower_rock_controlled_press_short_smoke",
+  "schema": "excavation_layered_mound_time_zero_report_v1",
+  "stable_scene_claimed": false,
+  "status": "actual_65_rock_and_mpm_time_zero_passed"
+}

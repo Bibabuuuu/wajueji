@@ -1,0 +1,1370 @@
+{
+  "coordinate_frame": "world",
+  "deterministic_generation": true,
+  "mass_inertia_rule": "m scales as s^3; inertia about COM scales as s^5",
+  "scenes": [
+    {
+      "equivalent_diameter_d95_m": 0.20150000000000004,
+      "initial_overlap_check": "passed_conservative_bounding_spheres",
+      "minimum_bounding_sphere_pair_clearance_m": 0.39272451227473426,
+      "minimum_ground_clearance_m": 0.01999999999999999,
+      "rock_count": 20,
+      "rocks": [
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.09728847496581444,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.09,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0010330856232685644,
+              -2.303476796613924e-05,
+              -5.9247320809932456e-05
+            ],
+            [
+              -2.303476796613924e-05,
+              0.0011804659693402469,
+              -2.198054517592691e-05
+            ],
+            [
+              -5.9247320809932456e-05,
+              -2.198054517592691e-05,
+              0.001081210893641757
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 0.9924291192690154,
+          "orientation_quaternion_wxyz": [
+            0.21016102511414844,
+            0.6887024384002062,
+            -0.6355132891193738,
+            0.27864700647459995
+          ],
+          "position_world_m": [
+            4.2,
+            -1.2,
+            0.11728847496581445
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-main-training-staging-v1-rock-000",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.09,
+          "volume_m3": 0.0003817035074111598
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.08949601752711109,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.1,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0012841025662641533,
+              -9.007508089718555e-05,
+              -5.234314363241768e-05
+            ],
+            [
+              -9.007508089718555e-05,
+              0.0015483399314469449,
+              2.890366466753472e-05
+            ],
+            [
+              -5.234314363241768e-05,
+              2.890366466753472e-05,
+              0.0017874405878093456
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 1.361356816555577,
+          "orientation_quaternion_wxyz": [
+            0.4187633965954678,
+            -0.28135252589559145,
+            -0.7722758294874967,
+            -0.3860932750429567
+          ],
+          "position_world_m": [
+            5.0,
+            -1.2,
+            0.10949601752711109
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-main-training-staging-v1-rock-001",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.1,
+          "volume_m3": 0.0005235987755982988
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.10534840516014968,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.1,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0010971405330781803,
+              -5.44304200899519e-05,
+              -6.429861162245115e-06
+            ],
+            [
+              -5.44304200899519e-05,
+              0.001806961701466373,
+              -5.990128831485438e-06
+            ],
+            [
+              -6.429861162245115e-06,
+              -5.990128831485438e-06,
+              0.0020660545600535048
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 1.3613568165555772,
+          "orientation_quaternion_wxyz": [
+            0.09479358530385303,
+            -0.37609311599449086,
+            0.9004776972765023,
+            0.19674364283097875
+          ],
+          "position_world_m": [
+            5.800000000000001,
+            -1.2,
+            0.12534840516014967
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-main-training-staging-v1-rock-002",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.1,
+          "volume_m3": 0.0005235987755982989
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.09407443583127317,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.11,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0015927031622221663,
+              -0.00020351361953827778,
+              -6.230862187233572e-05
+            ],
+            [
+              -0.00020351361953827778,
+              0.0035297067629782683,
+              -4.711479685201221e-05
+            ],
+            [
+              -6.230862187233572e-05,
+              -4.711479685201221e-05,
+              0.0040326363104399845
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 1.8119659228354732,
+          "orientation_quaternion_wxyz": [
+            0.35216742022345243,
+            -0.35213302842219374,
+            -0.16157991920898726,
+            -0.8519814364971751
+          ],
+          "position_world_m": [
+            6.6000000000000005,
+            -1.2,
+            0.11407443583127318
+          ],
+          "prototype_id": "angular_block",
+          "rock_id": "r0-main-training-staging-v1-rock-003",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.11,
+          "volume_m3": 0.0006969099703213359
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.11890813606932876,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.11,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0028176509799154193,
+              -6.282532160942084e-05,
+              -0.00016159190272079852
+            ],
+            [
+              -6.282532160942084e-05,
+              0.0032196180261853057,
+              -5.995002084926426e-05
+            ],
+            [
+              -0.00016159190272079852,
+              -5.995002084926426e-05,
+              0.0029489084596165662
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 1.8119659228354728,
+          "orientation_quaternion_wxyz": [
+            0.530913238918643,
+            -0.26399194394660686,
+            -0.7320081728952816,
+            -0.3355643322624127
+          ],
+          "position_world_m": [
+            7.4,
+            -1.2,
+            0.13890813606932875
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-main-training-staging-v1-rock-004",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.11,
+          "volume_m3": 0.0006969099703213357
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.1073952210325333,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0031952580976864165,
+              -0.00022413562529808464,
+              -0.0001302464911634175
+            ],
+            [
+              -0.00022413562529808464,
+              0.0038527652182180606,
+              7.192156686551996e-05
+            ],
+            [
+              -0.0001302464911634175,
+              7.192156686551996e-05,
+              0.004447724163457749
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 2.352424579008036,
+          "orientation_quaternion_wxyz": [
+            0.6150533160921094,
+            -0.5649027680428578,
+            -0.4388950734800699,
+            0.331610306680207
+          ],
+          "position_world_m": [
+            4.2,
+            -0.3999999999999999,
+            0.12739522103253328
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-main-training-staging-v1-rock-005",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.12,
+          "volume_m3": 0.00090477868423386
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.1264180861921796,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 2.3524245790080363,
+          "orientation_quaternion_wxyz": [
+            0.13090577591491637,
+            -0.6095561770016151,
+            -0.6732513747565251,
+            -0.39753934559957493
+          ],
+          "position_world_m": [
+            5.0,
+            -0.3999999999999999,
+            0.14641808619217958
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-main-training-staging-v1-rock-006",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.12,
+          "volume_m3": 0.0009047786842338602
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.10262665727047982,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002460807528435502,
+              -0.0003144389105125006,
+              -9.626999520485461e-05
+            ],
+            [
+              -0.0003144389105125006,
+              0.005453576775340783,
+              -7.279476147481171e-05
+            ],
+            [
+              -9.626999520485461e-05,
+              -7.279476147481171e-05,
+              0.006230628548716879
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 2.352424579008037,
+          "orientation_quaternion_wxyz": [
+            0.46692649586442475,
+            -0.48444876550305005,
+            -0.16595534560935962,
+            0.7209354092607867
+          ],
+          "position_world_m": [
+            5.800000000000001,
+            -0.3999999999999999,
+            0.12262665727047982
+          ],
+          "prototype_id": "angular_block",
+          "rock_id": "r0-main-training-staging-v1-rock-007",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.12,
+          "volume_m3": 0.0009047786842338604
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.14052779717284308,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.13,
+          "inertia_about_com_kg_m2": [
+            [
+              0.006495917971858205,
+              -0.00014483984660962487,
+              -0.00037254001736663204
+            ],
+            [
+              -0.00014483984660962487,
+              0.007422627837122531,
+              -0.0001382110206778342
+            ],
+            [
+              -0.00037254001736663204,
+              -0.0001382110206778342,
+              0.006798523875644447
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 2.9909009259726025,
+          "orientation_quaternion_wxyz": [
+            0.5528430972667,
+            0.4682224442758764,
+            -0.367492499520314,
+            0.583165084068995
+          ],
+          "position_world_m": [
+            6.6000000000000005,
+            -0.3999999999999999,
+            0.16052779717284307
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-main-training-staging-v1-rock-008",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.13,
+          "volume_m3": 0.0011503465099894626
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.11634482278524441,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.13,
+          "inertia_about_com_kg_m2": [
+            [
+              0.004767782941359162,
+              -0.0003344424701155871,
+              -0.00019434642828711256
+            ],
+            [
+              -0.0003344424701155871,
+              0.005748877781667305,
+              0.00010731728365402967
+            ],
+            [
+              -0.00019434642828711256,
+              0.00010731728365402967,
+              0.006636641781694953
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 2.990900925972602,
+          "orientation_quaternion_wxyz": [
+            0.3314304799271068,
+            -0.2818093964938682,
+            0.11375846590316231,
+            0.8931944426934197
+          ],
+          "position_world_m": [
+            7.4,
+            -0.3999999999999999,
+            0.1363448227852444
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-main-training-staging-v1-rock-009",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.13,
+          "volume_m3": 0.0011503465099894623
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.14748776722420956,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.14,
+          "inertia_about_com_kg_m2": [
+            [
+              0.0059006851006223925,
+              -0.00029273986254458294,
+              -3.4581336497233174e-05
+            ],
+            [
+              -0.00029273986254458294,
+              0.009718273701294508,
+              -3.221635048664825e-05
+            ],
+            [
+              -3.4581336497233174e-05,
+              -3.221635048664825e-05,
+              0.011111737277062163
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 3.735563104628504,
+          "orientation_quaternion_wxyz": [
+            0.6662432683200874,
+            0.396160270144669,
+            0.6168859831681219,
+            0.13648674495265284
+          ],
+          "position_world_m": [
+            4.2,
+            0.40000000000000013,
+            0.16748776722420955
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-main-training-staging-v1-rock-010",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.14,
+          "volume_m3": 0.0014367550402417323
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.11973110014889314,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.14,
+          "inertia_about_com_kg_m2": [
+            [
+              0.005318774708129566,
+              -0.0006796263849001543,
+              -0.0002080773931851842
+            ],
+            [
+              -0.0006796263849001543,
+              0.011787328300302545,
+              -0.00015733816307962462
+            ],
+            [
+              -0.0002080773931851842,
+              -0.00015733816307962462,
+              0.013466843366548952
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 3.735563104628505,
+          "orientation_quaternion_wxyz": [
+            0.04102787854061394,
+            -0.13348510493318674,
+            -0.15515249161959824,
+            0.9779704209676605
+          ],
+          "position_world_m": [
+            5.0,
+            0.40000000000000013,
+            0.13973110014889314
+          ],
+          "prototype_id": "angular_block",
+          "rock_id": "r0-main-training-staging-v1-rock-011",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.14,
+          "volume_m3": 0.0014367550402417328
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.1621474582763574,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.15,
+          "inertia_about_com_kg_m2": [
+            [
+              0.013285566142857051,
+              -0.00029622901191022683,
+              -0.0007619254219384317
+            ],
+            [
+              -0.00029622901191022683,
+              0.015180889523408523,
+              -0.00028267162006078843
+            ],
+            [
+              -0.0007619254219384317,
+              -0.00028267162006078843,
+              0.013904461080783909
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 4.594579255875072,
+          "orientation_quaternion_wxyz": [
+            0.21197972946347804,
+            0.8794439613578092,
+            0.25255262911507104,
+            -0.3433075627698004
+          ],
+          "position_world_m": [
+            5.800000000000001,
+            0.40000000000000013,
+            0.1821474582763574
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-main-training-staging-v1-rock-012",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.15,
+          "volume_m3": 0.0017671458676442582
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.13424402629066662,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.15,
+          "inertia_about_com_kg_m2": [
+            [
+              0.00975115386256841,
+              -0.0006840076455630024,
+              -0.0003974807469586716
+            ],
+            [
+              -0.0006840076455630024,
+              0.011757706354425234,
+              0.00021948720356909166
+            ],
+            [
+              -0.0003974807469586716,
+              0.00021948720356909166,
+              0.013573376963677213
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 4.59457925587507,
+          "orientation_quaternion_wxyz": [
+            0.20070520564976738,
+            0.11579801700251426,
+            0.49931612796084673,
+            -0.8348602541992027
+          ],
+          "position_world_m": [
+            6.6000000000000005,
+            0.40000000000000013,
+            0.1542440262906666
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-main-training-staging-v1-rock-013",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.15,
+          "volume_m3": 0.0017671458676442578
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.16855744825623947,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.16,
+          "inertia_about_com_kg_m2": [
+            [
+              0.011504352316129857,
+              -0.000570744321762414,
+              -6.742198098062333e-05
+            ],
+            [
+              -0.000570744321762414,
+              0.018947366730768033,
+              -6.281105329603674e-05
+            ],
+            [
+              -6.742198098062333e-05,
+              -6.281105329603674e-05,
+              0.021664152263626637
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 5.5761175206116445,
+          "orientation_quaternion_wxyz": [
+            0.3081424896661829,
+            -0.6137498743354961,
+            -0.2882407578413833,
+            0.6672904639918917
+          ],
+          "position_world_m": [
+            7.4,
+            0.40000000000000013,
+            0.18855744825623946
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-main-training-staging-v1-rock-014",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.16,
+          "volume_m3": 0.0021446605848506324
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.13683554302730644,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.16,
+          "inertia_about_com_kg_m2": [
+            [
+              0.010369822671267305,
+              -0.0013250429809251057,
+              -0.0004056809674476179
+            ],
+            [
+              -0.0013250429809251057,
+              0.022981327645880505,
+              -0.0003067565257210173
+            ],
+            [
+              -0.0004056809674476179,
+              -0.0003067565257210173,
+              0.026255817423399535
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 5.576117520611645,
+          "orientation_quaternion_wxyz": [
+            0.1467999309776025,
+            -0.2221796263989211,
+            -0.7843993964447215,
+            0.5601817390234742
+          ],
+          "position_world_m": [
+            4.2,
+            1.2000000000000004,
+            0.15683554302730643
+          ],
+          "prototype_id": "angular_block",
+          "rock_id": "r0-main-training-staging-v1-rock-015",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.16,
+          "volume_m3": 0.002144660584850633
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.19457694993162888,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.18,
+          "inertia_about_com_kg_m2": [
+            [
+              0.03305873994459406,
+              -0.0007371125749164556,
+              -0.0018959142659178386
+            ],
+            [
+              -0.0007371125749164556,
+              0.0377749110188879,
+              -0.0007033774456296611
+            ],
+            [
+              -0.0018959142659178386,
+              -0.0007033774456296611,
+              0.03459874859653622
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 7.939432954152124,
+          "orientation_quaternion_wxyz": [
+            0.020965851977634262,
+            0.4893812398366029,
+            0.003943989104764465,
+            -0.8718089699565971
+          ],
+          "position_world_m": [
+            5.0,
+            1.2000000000000004,
+            0.21457694993162887
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-main-training-staging-v1-rock-016",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.18,
+          "volume_m3": 0.0030536280592892784
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.16109283154879994,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.18,
+          "inertia_about_com_kg_m2": [
+            [
+              0.024263991179306228,
+              -0.0017020299046073303,
+              -0.0009890592922722017
+            ],
+            [
+              -0.0017020299046073303,
+              0.0292569358758434,
+              0.0005461543983850423
+            ],
+            [
+              -0.0009890592922722017,
+              0.0005461543983850423,
+              0.03377490536625728
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 7.939432954152123,
+          "orientation_quaternion_wxyz": [
+            0.6327226189086109,
+            -0.7186310796683558,
+            0.2159219604521036,
+            -0.1913352185318792
+          ],
+          "position_world_m": [
+            5.800000000000001,
+            1.2000000000000004,
+            0.18109283154879993
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-main-training-staging-v1-rock-017",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.18,
+          "volume_m3": 0.003053628059289278
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.21069681032029935,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.2,
+          "inertia_about_com_kg_m2": [
+            [
+              0.03510849705850177,
+              -0.0017417734428784607,
+              -0.00020575555719184367
+            ],
+            [
+              -0.0017417734428784607,
+              0.057822774446923936,
+              -0.000191684122607534
+            ],
+            [
+              -0.00020575555719184367,
+              -0.000191684122607534,
+              0.06611374592171215
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 10.890854532444617,
+          "orientation_quaternion_wxyz": [
+            0.36022145824569535,
+            0.4935923993067352,
+            0.6859266370525454,
+            -0.3951097226692239
+          ],
+          "position_world_m": [
+            6.6000000000000005,
+            1.2000000000000004,
+            0.23069681032029934
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-main-training-staging-v1-rock-018",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.2,
+          "volume_m3": 0.004188790204786391
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.19670109310175302,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.23,
+          "inertia_about_com_kg_m2": [
+            [
+              0.06365178638596784,
+              -0.008133345713592947,
+              -0.0024901407766959225
+            ],
+            [
+              -0.008133345713592947,
+              0.14106341106821965,
+              -0.0018829252405441188
+            ],
+            [
+              -0.0024901407766959225,
+              -0.0018829252405441188,
+              0.16116280239331782
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 16.56362838703171,
+          "orientation_quaternion_wxyz": [
+            0.6580091844015792,
+            -0.6456788689379218,
+            0.24435665991188865,
+            -0.30068677092103674
+          ],
+          "position_world_m": [
+            7.4,
+            1.2000000000000004,
+            0.216701093101753
+          ],
+          "prototype_id": "angular_block",
+          "rock_id": "r0-main-training-staging-v1-rock-019",
+          "size_bucket": "main_training",
+          "uniform_linear_scale_from_unit_asset": 0.23,
+          "volume_m3": 0.006370626302704504
+        }
+      ],
+      "scene_id": "r0-main-training-staging-v1",
+      "seed": 26091901,
+      "size_bucket": "main_training",
+      "total_rock_mass_kg": 91.52401877703144
+    },
+    {
+      "equivalent_diameter_d95_m": 0.3269,
+      "initial_overlap_check": "passed_conservative_bounding_spheres",
+      "minimum_bounding_sphere_pair_clearance_m": 0.2881989761672906,
+      "minimum_ground_clearance_m": 0.020000000000000018,
+      "rock_count": 4,
+      "rocks": [
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.30808017072507904,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.285,
+          "inertia_about_com_kg_m2": [
+            [
+              0.3289637704076219,
+              -0.007334923601619006,
+              -0.018866027753363282
+            ],
+            [
+              -0.007334923601619006,
+              0.3758938536802231,
+              -0.006999229157608981
+            ],
+            [
+              -0.018866027753363282,
+              -0.006999229157608981,
+              0.3442882217766795
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 31.51421911604711,
+          "orientation_quaternion_wxyz": [
+            0.10302392450593914,
+            -0.891593866897642,
+            0.28074157149228945,
+            0.3400450227924887
+          ],
+          "position_world_m": [
+            4.2,
+            -0.4,
+            0.32808017072507906
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-jam-boundary-staging-v1-rock-000",
+          "size_bucket": "jam_boundary",
+          "uniform_linear_scale_from_unit_asset": 0.285,
+          "volume_m3": 0.012120853506171965
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.26848805258133324,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.3,
+          "inertia_about_com_kg_m2": [
+            [
+              0.3120369236021891,
+              -0.021888244658016077,
+              -0.01271938390267749
+            ],
+            [
+              -0.021888244658016077,
+              0.3762466033416075,
+              0.007023590514210933
+            ],
+            [
+              -0.01271938390267749,
+              0.007023590514210933,
+              0.4343480628376708
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 36.75663404700056,
+          "orientation_quaternion_wxyz": [
+            0.26610854659267447,
+            -0.5376854317832769,
+            0.4110615029932889,
+            0.6863738475752583
+          ],
+          "position_world_m": [
+            5.1000000000000005,
+            -0.4,
+            0.28848805258133325
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-jam-boundary-staging-v1-rock-001",
+          "size_bucket": "jam_boundary",
+          "uniform_linear_scale_from_unit_asset": 0.3,
+          "volume_m3": 0.014137166941154062
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.3318474762544715,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.315,
+          "inertia_about_com_kg_m2": [
+            [
+              0.3402632368229019,
+              -0.01688085560878425,
+              -0.001994134119946407
+            ],
+            [
+              -0.01688085560878425,
+              0.560404632605214,
+              -0.0018577571092637613
+            ],
+            [
+              -0.001994134119946407,
+              -0.0018577571092637613,
+              0.6407587641340268
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 42.55039848865905,
+          "orientation_quaternion_wxyz": [
+            0.6109681865694065,
+            -0.1659890278510837,
+            0.5545696911367144,
+            0.5400166435450597
+          ],
+          "position_world_m": [
+            6.0,
+            -0.4,
+            0.3518474762544715
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-jam-boundary-staging-v1-rock-002",
+          "size_bucket": "jam_boundary",
+          "uniform_linear_scale_from_unit_asset": 0.315,
+          "volume_m3": 0.01636553788025348
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.2813680853498989,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.329,
+          "inertia_about_com_kg_m2": [
+            [
+              0.3811982570835619,
+              -0.048709036875722055,
+              -0.014912972248936817
+            ],
+            [
+              -0.048709036875722055,
+              0.8448015286075576,
+              -0.011276475660269888
+            ],
+            [
+              -0.014912972248936817,
+              -0.011276475660269888,
+              0.9651729019278351
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 48.479671026480645,
+          "orientation_quaternion_wxyz": [
+            0.3005518845289045,
+            0.2095337489742184,
+            -0.37911670761306854,
+            0.8497262469498987
+          ],
+          "position_world_m": [
+            6.9,
+            -0.4,
+            0.3013680853498989
+          ],
+          "prototype_id": "angular_block",
+          "rock_id": "r0-jam-boundary-staging-v1-rock-003",
+          "size_bucket": "jam_boundary",
+          "uniform_linear_scale_from_unit_asset": 0.329,
+          "volume_m3": 0.01864602731787717
+        }
+      ],
+      "scene_id": "r0-jam-boundary-staging-v1",
+      "seed": 26091902,
+      "size_bucket": "jam_boundary",
+      "total_rock_mass_kg": 159.30092267818736
+    },
+    {
+      "equivalent_diameter_d95_m": 0.416,
+      "initial_overlap_check": "passed_conservative_bounding_spheres",
+      "minimum_bounding_sphere_pair_clearance_m": 0.2226788428851626,
+      "minimum_ground_clearance_m": 0.020000000000000018,
+      "rock_count": 3,
+      "rocks": [
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.3783440693115006,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.35,
+          "inertia_about_com_kg_m2": [
+            [
+              0.9188909883250964,
+              -0.02048856379907482,
+              -0.05269827393629309
+            ],
+            [
+              -0.02048856379907482,
+              1.0499802889708931,
+              -0.019550872092023337
+            ],
+            [
+              -0.05269827393629309,
+              -0.019550872092023337,
+              0.9616966147519964
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 58.368173509820345,
+          "orientation_quaternion_wxyz": [
+            0.21037160971363542,
+            -0.24710810837094915,
+            -0.36927333825601943,
+            0.8708148886285079
+          ],
+          "position_world_m": [
+            4.2,
+            0.4,
+            0.3983440693115006
+          ],
+          "prototype_id": "angular_tetra",
+          "rock_id": "r0-reject-reselect-staging-v1-rock-000",
+          "size_bucket": "reject_reselect",
+          "uniform_linear_scale_from_unit_asset": 0.35,
+          "volume_m3": 0.022449297503777055
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.3400848666030221,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.38,
+          "inertia_about_com_kg_m2": [
+            [
+              1.017460825671713,
+              -0.07137114167502086,
+              -0.04147417779362744
+            ],
+            [
+              -0.07137114167502086,
+              1.2268297458930715,
+              0.02290186725747777
+            ],
+            [
+              -0.04147417779362744,
+              0.02290186725747777,
+              1.4162815526509223
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 74.7003712380376,
+          "orientation_quaternion_wxyz": [
+            0.2241176099260401,
+            -0.16596386140123595,
+            -0.8632388934736955,
+            0.4207682336205293
+          ],
+          "position_world_m": [
+            5.2,
+            0.4,
+            0.36008486660302214
+          ],
+          "prototype_id": "angular_bipyramid",
+          "rock_id": "r0-reject-reselect-staging-v1-rock-001",
+          "size_bucket": "reject_reselect",
+          "uniform_linear_scale_from_unit_asset": 0.38,
+          "volume_m3": 0.02873091201462985
+        },
+        {
+          "angular_velocity_world_radps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bounding_sphere_radius_m": 0.4424633016726286,
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.42,
+          "inertia_about_com_kg_m2": [
+            [
+              1.4338664794512406,
+              -0.07113578659833361,
+              -0.008403264768827655
+            ],
+            [
+              -0.07113578659833361,
+              2.361540509414564,
+              -0.007828573168255519
+            ],
+            [
+              -0.008403264768827655,
+              -0.007828573168255519,
+              2.700152158326104
+            ]
+          ],
+          "linear_velocity_world_mps": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mass_kg": 100.86020382496956,
+          "orientation_quaternion_wxyz": [
+            0.7044735510690536,
+            0.5585910766921763,
+            0.20959759210470175,
+            -0.3843980674612499
+          ],
+          "position_world_m": [
+            6.2,
+            0.4,
+            0.4624633016726286
+          ],
+          "prototype_id": "angular_octa",
+          "rock_id": "r0-reject-reselect-staging-v1-rock-002",
+          "size_bucket": "reject_reselect",
+          "uniform_linear_scale_from_unit_asset": 0.42,
+          "volume_m3": 0.038792386086526756
+        }
+      ],
+      "scene_id": "r0-reject-reselect-staging-v1",
+      "seed": 26091903,
+      "size_bucket": "reject_reselect",
+      "total_rock_mass_kg": 233.92874857282752
+    }
+  ],
+  "schema": "excavation_mixed_material_scene_manifest_v1"
+}

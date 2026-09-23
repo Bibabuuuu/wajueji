@@ -1,0 +1,67 @@
+{
+  "activation_particle_count": {
+    "foundation": 17747,
+    "lower_fill": 13230,
+    "middle_fill": 19171,
+    "top_fill": 22267
+  },
+  "checks": {
+    "all_activation_stages_nonempty": true,
+    "all_three_rock_layers_present": true,
+    "carve_removed_particles": true,
+    "medium_large_only_in_lower_skeleton": true,
+    "no_physics_step": true,
+    "particle_partition_closed": true,
+    "retained_particle_center_inside_rock_zero": true,
+    "rock_count_is_22": true,
+    "rock_rock_sat_no_intersection": true,
+    "rocks_within_local_patch_xy": true,
+    "small_rocks_are_count_majority": true,
+    "true_mesh_embed_ratios_exact": true
+  },
+  "geometry_only": true,
+  "local_source_particle_count": 78848,
+  "maximum_embed_ratio_error": 7.771561172376096e-16,
+  "minimum_rock_patch_xy_margin_m": 0.04123284673021388,
+  "minimum_rock_rock_sat_gap_m": 0.03868223032180809,
+  "removed_particle_count": 6433,
+  "removed_particle_count_by_rock_id": {
+    "local-lower-large-000": 1343,
+    "local-lower-large-001": 1566,
+    "local-lower-medium-000": 734,
+    "local-lower-medium-001": 899,
+    "local-middle-small-000": 288,
+    "local-middle-small-001": 189,
+    "local-middle-small-002": 330,
+    "local-middle-small-003": 225,
+    "local-middle-small-004": 279,
+    "local-middle-small-005": 196,
+    "local-top-small-000": 55,
+    "local-top-small-001": 12,
+    "local-top-small-002": 44,
+    "local-top-small-003": 27,
+    "local-top-small-004": 12,
+    "local-top-small-005": 31,
+    "local-top-small-006": 20,
+    "local-top-small-007": 50,
+    "local-top-small-008": 40,
+    "local-top-small-009": 22,
+    "local-top-small-010": 57,
+    "local-top-small-011": 14
+  },
+  "retained_mpm_equivalent_volume_m3": 1.1314843750000003,
+  "retained_particle_center_inside_rock_count": 0,
+  "retained_particle_count": 72415,
+  "rock_analytic_volume_m3": 0.1303781895190788,
+  "rock_count_by_layer": {
+    "lower_skeleton": 4,
+    "middle_small_dominant": 6,
+    "top_exposed_small": 12
+  },
+  "rock_count_by_size_class": {
+    "large_0p32_0p40": 2,
+    "medium_0p24_0p32": 2,
+    "small_0p16_0p24": 18
+  },
+  "schema": "excavation_layered_mixed_scene_local_metrics_v1"
+}

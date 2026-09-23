@@ -1,0 +1,102 @@
+{
+  "schema": "excavation_layered_mixed_scene_staged_settling_audit_config_v1",
+  "status": "pre_registered_independent_admission_contract",
+  "frozen_inputs": {
+    "geometry_config": {
+      "path": "configs/v4/layered-mixed-scene-local-preflight-v1.json",
+      "sha256": "c5537cb9ea317b00ec1f5d5e3ecc4aeb1355e0b791ee9814188480bae1ec8ea9"
+    },
+    "scene_manifest": {
+      "path": "reports/v4/layered-mixed-scene-local-preflight-2026-09-20-v1/scene-manifest.json",
+      "sha256": "07701f6900a0f0def082e9a036ad63e4db1bb12c24e4b3511fda9ae58079e55b"
+    },
+    "particle_bank": {
+      "path": "reports/v4/layered-mixed-scene-local-preflight-2026-09-20-v1/layered-local-bank.npz",
+      "sha256": "f761d5ab5fb0fbb31141e278b83353bcec84a4a6bd33eca1518651441809c192"
+    },
+    "geometry_metrics": {
+      "path": "reports/v4/layered-mixed-scene-local-preflight-2026-09-20-v1/metrics.json",
+      "sha256": "730a85e831b5560f5646aa7d230a22c2d0bfdd951eb5e39758a503fade1e5407"
+    }
+  },
+  "candidate_report_schema": "excavation_layered_mixed_scene_staged_settling_report_v1",
+  "expected": {
+    "particle_count": 72415,
+    "rock_count": 22,
+    "reset_count": 1,
+    "stages": [
+      {
+        "id": "foundation",
+        "active_particle_count": 17747,
+        "active_rock_count": 0,
+        "inactive_rock_count": 22
+      },
+      {
+        "id": "lower",
+        "active_particle_count": 30977,
+        "active_rock_count": 4,
+        "inactive_rock_count": 18
+      },
+      {
+        "id": "middle",
+        "active_particle_count": 50148,
+        "active_rock_count": 10,
+        "inactive_rock_count": 12
+      },
+      {
+        "id": "top",
+        "active_particle_count": 72415,
+        "active_rock_count": 22,
+        "inactive_rock_count": 0
+      }
+    ]
+  },
+  "required_evidence": {
+    "implementation_bindings": [
+      "execution_config",
+      "execution_source"
+    ],
+    "activation_history_components": [
+      "q",
+      "qd",
+      "elastic_strain",
+      "transform",
+      "qd_grad",
+      "stress",
+      "Jp"
+    ],
+    "stage_timing_and_wall_clock": true,
+    "inactive_mpm_transfer_material_contact_zero": true,
+    "construction_controls_pre_registered": true,
+    "stable_rock_mapping_hash": true,
+    "top_mpm_and_rock_outliers": true,
+    "nonfinite_failure_evidence": true
+  },
+  "thresholds": {
+    "stage_max_duration_s": 6.0,
+    "stage_min_consecutive_window_s": 0.5,
+    "stage_max_rock_linear_speed_m_s": 0.01,
+    "stage_max_rock_angular_speed_rad_s": 0.15,
+    "stage_max_mpm_speed_p99_m_s": 0.01,
+    "stage_max_mpm_speed_max_m_s": 0.15,
+    "inactive_max_pose_drift_m": 1e-12,
+    "hold_min_duration_s": 1.0,
+    "hold_tail_window_s": 0.5,
+    "hold_max_rock_displacement_m": 0.005,
+    "hold_final_max_rock_linear_speed_m_s": 0.002,
+    "hold_final_max_rock_angular_speed_rad_s": 0.03,
+    "hold_tail_max_mpm_speed_p99_m_s": 0.01,
+    "hold_tail_max_mpm_speed_max_m_s": 0.15,
+    "hold_max_closure_error_m": 0.001,
+    "hold_min_particle_z_m": -0.002
+  },
+  "scope": {
+    "independent_report_audit_only": true,
+    "physics_execution": false,
+    "parameter_tuning": false,
+    "fullscale_scene_qualification": false,
+    "fullscale_scaleup_authorization_on_pass": true,
+    "single_scoop_authorization_on_pass": false,
+    "three_cycle_qualification": false
+  }
+}

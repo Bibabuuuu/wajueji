@@ -1,0 +1,39 @@
+{
+  "schema": "excavation_layered_mound_one_rock_free_deposition_v2_config_v1",
+  "status": "soil_only_presettle_then_one_rock_dynamic_insertion",
+  "base_candidate": {
+    "config_path": "configs/v4/layered-mound-one-rock-free-deposition-v1.json",
+    "config_sha256": "1d89c45f8e02021797548b2a76d3496db7042852b57e8493790d4abd0cf62133",
+    "runner_path": "src/v4/run_layered_mound_one_rock_free_deposition.py",
+    "runner_sha256": "4ced938d2fc17491c50983a54c6471508cb341ab870f9e1a7b61be509bcd2fc9",
+    "report_path": "results/layered-mound-one-rock-free-deposition-v1.json",
+    "report_sha256": "1f8a6f4bf6e1cbda124321e29abbd9f1f6734e795a332e1a3dac7e6acbdfcbc3"
+  },
+  "correction": {
+    "reason": "v1_clearance_rock_contacted_soil_during_foundation_presettle",
+    "only_change": "park_mpm_rock_collider_during_soil_only_presettle",
+    "presettle_parking_position_world_m": [0.0, 0.0, 5.0],
+    "parked_assign_calls_including_fixture_initialization": 61,
+    "foundation_presettle_frames": 60,
+    "required_foundation_rock_contact_samples": 0,
+    "dynamic_insertion_surface_clearance_m": 0.005,
+    "collider_velocity_mode_preserved": "forward",
+    "material_changed": false,
+    "stability_thresholds_changed": false,
+    "dynamic_deposition_schedule_changed": false
+  },
+  "scope": {
+    "active_soil": "unexcavated_foundation_stage_only",
+    "active_rock_count": 1,
+    "other_64_rocks_active": false,
+    "soil_only_presettle": true,
+    "kinematic_press": false,
+    "construction_support_force": false,
+    "gravity_ramp": false,
+    "cover_soil_active": false,
+    "full_lower_layer": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

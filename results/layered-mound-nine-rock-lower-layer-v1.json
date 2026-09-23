@@ -1,0 +1,3474 @@
+{
+  "acceptance": {
+    "continuous_release_stable_window_required": true,
+    "cover_must_settle_before_release": true,
+    "final_manifest_pose_required": false,
+    "press_distances_may_differ": true,
+    "rock_rock_contact_allowed": true,
+    "rock_rotation_during_release_allowed": true,
+    "rock_translation_during_release_allowed": true
+  },
+  "additional_uncontrolled_hold": {
+    "all_frames_stable": true,
+    "executed_frames": 240,
+    "requested_frames": 240,
+    "trace": [
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 0,
+        "max_angular_speed_rad_s": 1.0666545931503601e-05,
+        "max_raw_linear_speed_m_s": 9.783416525644146e-06,
+        "particle_max_speed_m_s": 2.1253174054436386e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.4131643183645792e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 1,
+        "max_angular_speed_rad_s": 1.1636313538689722e-05,
+        "max_raw_linear_speed_m_s": 1.1965947654825154e-05,
+        "particle_max_speed_m_s": 2.1648746042046696e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.4942912457627244e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 2,
+        "max_angular_speed_rad_s": 1.3310472785242735e-05,
+        "max_raw_linear_speed_m_s": 1.2952225738796148e-05,
+        "particle_max_speed_m_s": 2.1658437617588788e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.531555608380586e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 3,
+        "max_angular_speed_rad_s": 1.3614592856847735e-05,
+        "max_raw_linear_speed_m_s": 1.2763485315338812e-05,
+        "particle_max_speed_m_s": 2.1488282072823495e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.517402779427357e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 4,
+        "max_angular_speed_rad_s": 1.1848229152904028e-05,
+        "max_raw_linear_speed_m_s": 1.1529837811022867e-05,
+        "particle_max_speed_m_s": 2.1385047148214653e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.4534193724102806e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 5,
+        "max_angular_speed_rad_s": 1.043496824835938e-05,
+        "max_raw_linear_speed_m_s": 9.487267531671254e-06,
+        "particle_max_speed_m_s": 2.079868318105582e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.3622497135656886e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 6,
+        "max_angular_speed_rad_s": 9.710599907305559e-06,
+        "max_raw_linear_speed_m_s": 7.45864377557859e-06,
+        "particle_max_speed_m_s": 2.0433944882825017e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.2873022569692694e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 7,
+        "max_angular_speed_rad_s": 9.451816597718485e-06,
+        "max_raw_linear_speed_m_s": 4.936378270087094e-06,
+        "particle_max_speed_m_s": 1.991701174119953e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.2269172657397576e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 8,
+        "max_angular_speed_rad_s": 7.845905302995057e-06,
+        "max_raw_linear_speed_m_s": 2.85942361532953e-06,
+        "particle_max_speed_m_s": 1.9397051801206544e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.1922585144930054e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 9,
+        "max_angular_speed_rad_s": 7.000168145863224e-06,
+        "max_raw_linear_speed_m_s": 1.9211513274176542e-06,
+        "particle_max_speed_m_s": 1.9269386029918678e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.1784420166804921e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 10,
+        "max_angular_speed_rad_s": 6.123347111731292e-06,
+        "max_raw_linear_speed_m_s": 3.513370413567714e-06,
+        "particle_max_speed_m_s": 1.8932549210148863e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.1808710951299872e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 11,
+        "max_angular_speed_rad_s": 9.690926620273008e-06,
+        "max_raw_linear_speed_m_s": 5.190748666856713e-06,
+        "particle_max_speed_m_s": 1.8669530618353747e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.1967967111559119e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 12,
+        "max_angular_speed_rad_s": 8.200883503073482e-06,
+        "max_raw_linear_speed_m_s": 6.437240154768068e-06,
+        "particle_max_speed_m_s": 1.868062281573657e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.2131881703680847e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 13,
+        "max_angular_speed_rad_s": 9.393063754094993e-06,
+        "max_raw_linear_speed_m_s": 7.083564895801596e-06,
+        "particle_max_speed_m_s": 1.8998904124600813e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.2284492186154239e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 14,
+        "max_angular_speed_rad_s": 1.0778210730408832e-05,
+        "max_raw_linear_speed_m_s": 7.68487754723076e-06,
+        "particle_max_speed_m_s": 1.8828561223926954e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.2405113011482172e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 15,
+        "max_angular_speed_rad_s": 9.150089265834427e-06,
+        "max_raw_linear_speed_m_s": 7.460788495282894e-06,
+        "particle_max_speed_m_s": 1.896327557915356e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.2322322618274484e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 16,
+        "max_angular_speed_rad_s": 9.004620136948627e-06,
+        "max_raw_linear_speed_m_s": 7.184776720699277e-06,
+        "particle_max_speed_m_s": 1.8768545487546362e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.2209244232508354e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 17,
+        "max_angular_speed_rad_s": 8.924543715421339e-06,
+        "max_raw_linear_speed_m_s": 6.285957020592231e-06,
+        "particle_max_speed_m_s": 1.864422665676102e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.194647848024033e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 18,
+        "max_angular_speed_rad_s": 8.223522194702648e-06,
+        "max_raw_linear_speed_m_s": 5.2787146112530965e-06,
+        "particle_max_speed_m_s": 1.8344828276894987e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.1597720913414378e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 19,
+        "max_angular_speed_rad_s": 5.160323005143785e-06,
+        "max_raw_linear_speed_m_s": 4.031641090490214e-06,
+        "particle_max_speed_m_s": 1.79381368070608e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.1292165254417341e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 20,
+        "max_angular_speed_rad_s": 3.782631164491687e-06,
+        "max_raw_linear_speed_m_s": 2.553978632805957e-06,
+        "particle_max_speed_m_s": 1.7795980966184288e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.1083714525739197e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 21,
+        "max_angular_speed_rad_s": 3.419402153682592e-06,
+        "max_raw_linear_speed_m_s": 1.344832744562845e-06,
+        "particle_max_speed_m_s": 1.7416521586710587e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.0929139534709975e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 22,
+        "max_angular_speed_rad_s": 3.057656672993313e-06,
+        "max_raw_linear_speed_m_s": 1.7984555078465424e-06,
+        "particle_max_speed_m_s": 1.7123778889072128e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.089967099687783e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 23,
+        "max_angular_speed_rad_s": 3.9479124197939165e-06,
+        "max_raw_linear_speed_m_s": 2.7773322830949346e-06,
+        "particle_max_speed_m_s": 1.709653042780701e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.0929545169346966e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 24,
+        "max_angular_speed_rad_s": 5.124218544605371e-06,
+        "max_raw_linear_speed_m_s": 3.61671288895489e-06,
+        "particle_max_speed_m_s": 1.7169797501992434e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.0960600775433704e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 25,
+        "max_angular_speed_rad_s": 6.434119621418879e-06,
+        "max_raw_linear_speed_m_s": 4.129180934606188e-06,
+        "particle_max_speed_m_s": 1.743875145621132e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.096141386369709e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 26,
+        "max_angular_speed_rad_s": 7.015744872363187e-06,
+        "max_raw_linear_speed_m_s": 4.394438598540511e-06,
+        "particle_max_speed_m_s": 1.7126239981735125e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.094353137887083e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 27,
+        "max_angular_speed_rad_s": 6.574822849759995e-06,
+        "max_raw_linear_speed_m_s": 4.705742156491425e-06,
+        "particle_max_speed_m_s": 1.7221364032593556e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0946370821329765e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 28,
+        "max_angular_speed_rad_s": 6.1277079553242586e-06,
+        "max_raw_linear_speed_m_s": 4.540530082870461e-06,
+        "particle_max_speed_m_s": 1.7040827515302226e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0840926734090317e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 29,
+        "max_angular_speed_rad_s": 5.961742982414377e-06,
+        "max_raw_linear_speed_m_s": 3.99578953468504e-06,
+        "particle_max_speed_m_s": 1.6919657355174422e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.068890833266778e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 30,
+        "max_angular_speed_rad_s": 5.213300813232394e-06,
+        "max_raw_linear_speed_m_s": 3.2025705556048244e-06,
+        "particle_max_speed_m_s": 1.685400457063224e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0519593161006924e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 31,
+        "max_angular_speed_rad_s": 5.164274744261345e-06,
+        "max_raw_linear_speed_m_s": 2.2525682214145083e-06,
+        "particle_max_speed_m_s": 1.6649421013426036e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0364014997321647e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 32,
+        "max_angular_speed_rad_s": 5.073796257031069e-06,
+        "max_raw_linear_speed_m_s": 1.2543112684164594e-06,
+        "particle_max_speed_m_s": 1.6331276128767058e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.025204619509168e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 33,
+        "max_angular_speed_rad_s": 4.6775229571839136e-06,
+        "max_raw_linear_speed_m_s": 7.495071732703575e-07,
+        "particle_max_speed_m_s": 1.6231948393397033e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0217308954452164e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 34,
+        "max_angular_speed_rad_s": 3.651725454193401e-06,
+        "max_raw_linear_speed_m_s": 1.2856505366405045e-06,
+        "particle_max_speed_m_s": 1.5868419723119587e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0172364454774652e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 35,
+        "max_angular_speed_rad_s": 2.8801472582006124e-06,
+        "max_raw_linear_speed_m_s": 1.9341678265800723e-06,
+        "particle_max_speed_m_s": 1.579967101861257e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0181789548369125e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 36,
+        "max_angular_speed_rad_s": 3.1085036437420146e-06,
+        "max_raw_linear_speed_m_s": 2.4545757908681777e-06,
+        "particle_max_speed_m_s": 1.5786325093358755e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0138850484509021e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 37,
+        "max_angular_speed_rad_s": 3.5274460453618304e-06,
+        "max_raw_linear_speed_m_s": 2.813804709992219e-06,
+        "particle_max_speed_m_s": 1.5890753275016323e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0127707355422899e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 38,
+        "max_angular_speed_rad_s": 4.128739855946546e-06,
+        "max_raw_linear_speed_m_s": 2.985283859465431e-06,
+        "particle_max_speed_m_s": 1.5569750758004375e-05,
+        "particle_minimum_z_m": 0.012318057008087635,
+        "particle_p99_speed_m_s": 1.0051617209683172e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 39,
+        "max_angular_speed_rad_s": 4.270106150118265e-06,
+        "max_raw_linear_speed_m_s": 2.861514651606721e-06,
+        "particle_max_speed_m_s": 1.5635463569196872e-05,
+        "particle_minimum_z_m": 0.01231805793941021,
+        "particle_p99_speed_m_s": 1.0021767593570985e-05,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 40,
+        "max_angular_speed_rad_s": 4.275456700898185e-06,
+        "max_raw_linear_speed_m_s": 2.608452328411036e-06,
+        "particle_max_speed_m_s": 1.54891222337028e-05,
+        "particle_minimum_z_m": 0.012318058870732784,
+        "particle_p99_speed_m_s": 9.892796697386075e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 41,
+        "max_angular_speed_rad_s": 3.7306021278473913e-06,
+        "max_raw_linear_speed_m_s": 2.096474100078031e-06,
+        "particle_max_speed_m_s": 1.5193056242424063e-05,
+        "particle_minimum_z_m": 0.012318059802055359,
+        "particle_p99_speed_m_s": 9.806362868403085e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 42,
+        "max_angular_speed_rad_s": 3.094779468364512e-06,
+        "max_raw_linear_speed_m_s": 1.4996895005716746e-06,
+        "particle_max_speed_m_s": 1.5127233382372651e-05,
+        "particle_minimum_z_m": 0.012318059802055359,
+        "particle_p99_speed_m_s": 9.712893188407179e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 43,
+        "max_angular_speed_rad_s": 2.5271100535840168e-06,
+        "max_raw_linear_speed_m_s": 9.708798812815453e-07,
+        "particle_max_speed_m_s": 1.505890213593375e-05,
+        "particle_minimum_z_m": 0.012318059802055359,
+        "particle_p99_speed_m_s": 9.683592907094862e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 44,
+        "max_angular_speed_rad_s": 1.935975041443952e-06,
+        "max_raw_linear_speed_m_s": 5.892613333895663e-07,
+        "particle_max_speed_m_s": 1.5053795323183294e-05,
+        "particle_minimum_z_m": 0.012318059802055359,
+        "particle_p99_speed_m_s": 9.618564035918098e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 45,
+        "max_angular_speed_rad_s": 2.3704984044066463e-06,
+        "max_raw_linear_speed_m_s": 7.945445280159209e-07,
+        "particle_max_speed_m_s": 1.4906613614584785e-05,
+        "particle_minimum_z_m": 0.012318059802055359,
+        "particle_p99_speed_m_s": 9.53499420575099e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 46,
+        "max_angular_speed_rad_s": 1.8148931558349827e-06,
+        "max_raw_linear_speed_m_s": 1.0541045885639536e-06,
+        "particle_max_speed_m_s": 1.4976812053646427e-05,
+        "particle_minimum_z_m": 0.012318060733377934,
+        "particle_p99_speed_m_s": 9.514807061350439e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 47,
+        "max_angular_speed_rad_s": 2.3140238889842646e-06,
+        "max_raw_linear_speed_m_s": 1.4545636211956058e-06,
+        "particle_max_speed_m_s": 1.4647923308075406e-05,
+        "particle_minimum_z_m": 0.012318061664700508,
+        "particle_p99_speed_m_s": 9.467204108659644e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 48,
+        "max_angular_speed_rad_s": 3.1653322235671175e-06,
+        "max_raw_linear_speed_m_s": 1.654314485184216e-06,
+        "particle_max_speed_m_s": 1.462409727537306e-05,
+        "particle_minimum_z_m": 0.012318062596023083,
+        "particle_p99_speed_m_s": 9.427714758203365e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 49,
+        "max_angular_speed_rad_s": 3.463694065394369e-06,
+        "max_raw_linear_speed_m_s": 1.7461562201052848e-06,
+        "particle_max_speed_m_s": 1.4564029697794467e-05,
+        "particle_minimum_z_m": 0.012318063527345657,
+        "particle_p99_speed_m_s": 9.361111551697832e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 50,
+        "max_angular_speed_rad_s": 3.0301649449332703e-06,
+        "max_raw_linear_speed_m_s": 1.7042103845331343e-06,
+        "particle_max_speed_m_s": 1.4472563634626567e-05,
+        "particle_minimum_z_m": 0.012318064458668232,
+        "particle_p99_speed_m_s": 9.3115404524724e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 51,
+        "max_angular_speed_rad_s": 3.033462704803646e-06,
+        "max_raw_linear_speed_m_s": 1.5447886489787679e-06,
+        "particle_max_speed_m_s": 1.4486747204500716e-05,
+        "particle_minimum_z_m": 0.012318064458668232,
+        "particle_p99_speed_m_s": 9.254378710465971e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 52,
+        "max_angular_speed_rad_s": 3.4173042634468965e-06,
+        "max_raw_linear_speed_m_s": 1.381112601252268e-06,
+        "particle_max_speed_m_s": 1.4449491573031992e-05,
+        "particle_minimum_z_m": 0.012318065389990807,
+        "particle_p99_speed_m_s": 9.216057151206769e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 53,
+        "max_angular_speed_rad_s": 3.519173652485029e-06,
+        "max_raw_linear_speed_m_s": 1.1076655901928718e-06,
+        "particle_max_speed_m_s": 1.4421602827496827e-05,
+        "particle_minimum_z_m": 0.012318066321313381,
+        "particle_p99_speed_m_s": 9.172955287795048e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 54,
+        "max_angular_speed_rad_s": 3.481220038394359e-06,
+        "max_raw_linear_speed_m_s": 7.978102062153069e-07,
+        "particle_max_speed_m_s": 1.4328667930385564e-05,
+        "particle_minimum_z_m": 0.012318067252635956,
+        "particle_p99_speed_m_s": 9.092782420339063e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 55,
+        "max_angular_speed_rad_s": 3.6240971250641096e-06,
+        "max_raw_linear_speed_m_s": 4.900659636976991e-07,
+        "particle_max_speed_m_s": 1.4127267604635563e-05,
+        "particle_minimum_z_m": 0.01231806818395853,
+        "particle_p99_speed_m_s": 9.04593980521895e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 56,
+        "max_angular_speed_rad_s": 3.8203527830673e-06,
+        "max_raw_linear_speed_m_s": 3.9505456418589416e-07,
+        "particle_max_speed_m_s": 1.412752772012027e-05,
+        "particle_minimum_z_m": 0.012318069115281105,
+        "particle_p99_speed_m_s": 9.027345186041202e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 57,
+        "max_angular_speed_rad_s": 3.202418245784216e-06,
+        "max_raw_linear_speed_m_s": 4.728409470693758e-07,
+        "particle_max_speed_m_s": 1.3927218788012397e-05,
+        "particle_minimum_z_m": 0.01231807004660368,
+        "particle_p99_speed_m_s": 8.988275112642441e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 58,
+        "max_angular_speed_rad_s": 3.2052211582221303e-06,
+        "max_raw_linear_speed_m_s": 7.06720526319831e-07,
+        "particle_max_speed_m_s": 1.3953672350908164e-05,
+        "particle_minimum_z_m": 0.012318070977926254,
+        "particle_p99_speed_m_s": 8.930149306252133e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 59,
+        "max_angular_speed_rad_s": 2.7691602017878512e-06,
+        "max_raw_linear_speed_m_s": 9.7047714292199e-07,
+        "particle_max_speed_m_s": 1.3853040400135797e-05,
+        "particle_minimum_z_m": 0.012318071909248829,
+        "particle_p99_speed_m_s": 8.9125369413523e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 60,
+        "max_angular_speed_rad_s": 2.2125509753892882e-06,
+        "max_raw_linear_speed_m_s": 1.1289775779136074e-06,
+        "particle_max_speed_m_s": 1.387215070280945e-05,
+        "particle_minimum_z_m": 0.012318072840571404,
+        "particle_p99_speed_m_s": 8.876695574144833e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 61,
+        "max_angular_speed_rad_s": 2.819469261684313e-06,
+        "max_raw_linear_speed_m_s": 1.1696267209357172e-06,
+        "particle_max_speed_m_s": 1.3558733371610288e-05,
+        "particle_minimum_z_m": 0.012318073771893978,
+        "particle_p99_speed_m_s": 8.837974746711552e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 62,
+        "max_angular_speed_rad_s": 2.444511316999596e-06,
+        "max_raw_linear_speed_m_s": 1.1656710866434114e-06,
+        "particle_max_speed_m_s": 1.3576363016909454e-05,
+        "particle_minimum_z_m": 0.012318074703216553,
+        "particle_p99_speed_m_s": 8.783765224507079e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 63,
+        "max_angular_speed_rad_s": 2.4782655472330977e-06,
+        "max_raw_linear_speed_m_s": 1.037404915297763e-06,
+        "particle_max_speed_m_s": 1.3374547961575445e-05,
+        "particle_minimum_z_m": 0.012318075634539127,
+        "particle_p99_speed_m_s": 8.723599421500694e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 64,
+        "max_angular_speed_rad_s": 2.3107781578238757e-06,
+        "max_raw_linear_speed_m_s": 9.212558536560097e-07,
+        "particle_max_speed_m_s": 1.3406650396063924e-05,
+        "particle_minimum_z_m": 0.012318076565861702,
+        "particle_p99_speed_m_s": 8.67237031343393e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 65,
+        "max_angular_speed_rad_s": 2.308588961513001e-06,
+        "max_raw_linear_speed_m_s": 6.902467439116523e-07,
+        "particle_max_speed_m_s": 1.3156790373614058e-05,
+        "particle_minimum_z_m": 0.012318077497184277,
+        "particle_p99_speed_m_s": 8.603000424045604e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 66,
+        "max_angular_speed_rad_s": 2.1594384388252844e-06,
+        "max_raw_linear_speed_m_s": 4.531797843857546e-07,
+        "particle_max_speed_m_s": 1.3169543308322318e-05,
+        "particle_minimum_z_m": 0.012318078428506851,
+        "particle_p99_speed_m_s": 8.563840310671367e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 67,
+        "max_angular_speed_rad_s": 2.233723011204563e-06,
+        "max_raw_linear_speed_m_s": 3.326184305049769e-07,
+        "particle_max_speed_m_s": 1.3100205251248553e-05,
+        "particle_minimum_z_m": 0.012318079359829426,
+        "particle_p99_speed_m_s": 8.519702532794327e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 68,
+        "max_angular_speed_rad_s": 2.1275352116743525e-06,
+        "max_raw_linear_speed_m_s": 3.6204075171489676e-07,
+        "particle_max_speed_m_s": 1.3037473763688467e-05,
+        "particle_minimum_z_m": 0.012318080291152,
+        "particle_p99_speed_m_s": 8.487753802910447e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 69,
+        "max_angular_speed_rad_s": 2.054371268610601e-06,
+        "max_raw_linear_speed_m_s": 4.175032098816484e-07,
+        "particle_max_speed_m_s": 1.2995759789191652e-05,
+        "particle_minimum_z_m": 0.012318081222474575,
+        "particle_p99_speed_m_s": 8.448313565168064e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 70,
+        "max_angular_speed_rad_s": 2.5110706305068454e-06,
+        "max_raw_linear_speed_m_s": 5.217208217254198e-07,
+        "particle_max_speed_m_s": 1.2972142030776013e-05,
+        "particle_minimum_z_m": 0.01231808215379715,
+        "particle_p99_speed_m_s": 8.391250048589427e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 71,
+        "max_angular_speed_rad_s": 2.9054047610579993e-06,
+        "max_raw_linear_speed_m_s": 6.535887406948894e-07,
+        "particle_max_speed_m_s": 1.2662732842727564e-05,
+        "particle_minimum_z_m": 0.012318083085119724,
+        "particle_p99_speed_m_s": 8.352665645361412e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 72,
+        "max_angular_speed_rad_s": 2.6919458999260414e-06,
+        "max_raw_linear_speed_m_s": 7.121400449161553e-07,
+        "particle_max_speed_m_s": 1.2911300473206211e-05,
+        "particle_minimum_z_m": 0.012318084016442299,
+        "particle_p99_speed_m_s": 8.313971193274483e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 73,
+        "max_angular_speed_rad_s": 3.108337857730734e-06,
+        "max_raw_linear_speed_m_s": 7.286416087581872e-07,
+        "particle_max_speed_m_s": 1.2809638064936735e-05,
+        "particle_minimum_z_m": 0.012318084947764874,
+        "particle_p99_speed_m_s": 8.257582521764562e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 74,
+        "max_angular_speed_rad_s": 3.7037323830268218e-06,
+        "max_raw_linear_speed_m_s": 6.846196878295245e-07,
+        "particle_max_speed_m_s": 1.2668343515542801e-05,
+        "particle_minimum_z_m": 0.012318085879087448,
+        "particle_p99_speed_m_s": 8.209623047150671e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 75,
+        "max_angular_speed_rad_s": 3.3855772990907928e-06,
+        "max_raw_linear_speed_m_s": 5.579430556308157e-07,
+        "particle_max_speed_m_s": 1.2587191122293007e-05,
+        "particle_minimum_z_m": 0.012318086810410023,
+        "particle_p99_speed_m_s": 8.17652380646905e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 76,
+        "max_angular_speed_rad_s": 3.510602522572975e-06,
+        "max_raw_linear_speed_m_s": 4.5990413541008507e-07,
+        "particle_max_speed_m_s": 1.248788339580642e-05,
+        "particle_minimum_z_m": 0.012318087741732597,
+        "particle_p99_speed_m_s": 8.128565241349861e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 77,
+        "max_angular_speed_rad_s": 2.6894740982902e-06,
+        "max_raw_linear_speed_m_s": 3.250931981194279e-07,
+        "particle_max_speed_m_s": 1.2514359696069732e-05,
+        "particle_minimum_z_m": 0.012318088673055172,
+        "particle_p99_speed_m_s": 8.087057722150348e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 78,
+        "max_angular_speed_rad_s": 2.901639966656272e-06,
+        "max_raw_linear_speed_m_s": 2.4856443084504996e-07,
+        "particle_max_speed_m_s": 1.222483206220204e-05,
+        "particle_minimum_z_m": 0.012318089604377747,
+        "particle_p99_speed_m_s": 8.03310194896767e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 79,
+        "max_angular_speed_rad_s": 2.9670577724230723e-06,
+        "max_raw_linear_speed_m_s": 2.7572418687632973e-07,
+        "particle_max_speed_m_s": 1.2198132935736794e-05,
+        "particle_minimum_z_m": 0.012318090535700321,
+        "particle_p99_speed_m_s": 7.990497579157818e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 80,
+        "max_angular_speed_rad_s": 2.7709503853171018e-06,
+        "max_raw_linear_speed_m_s": 2.7011040271947784e-07,
+        "particle_max_speed_m_s": 1.2301629794819746e-05,
+        "particle_minimum_z_m": 0.012318091467022896,
+        "particle_p99_speed_m_s": 7.954277862154413e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 81,
+        "max_angular_speed_rad_s": 2.84874588264312e-06,
+        "max_raw_linear_speed_m_s": 3.707121377493149e-07,
+        "particle_max_speed_m_s": 1.2196743227832485e-05,
+        "particle_minimum_z_m": 0.01231809239834547,
+        "particle_p99_speed_m_s": 7.912747605587356e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 82,
+        "max_angular_speed_rad_s": 3.096909501214547e-06,
+        "max_raw_linear_speed_m_s": 4.278424786847875e-07,
+        "particle_max_speed_m_s": 1.1910806279047392e-05,
+        "particle_minimum_z_m": 0.01231809426099062,
+        "particle_p99_speed_m_s": 7.864094186516013e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 83,
+        "max_angular_speed_rad_s": 2.944218257553469e-06,
+        "max_raw_linear_speed_m_s": 4.777475157505316e-07,
+        "particle_max_speed_m_s": 1.1912758054677397e-05,
+        "particle_minimum_z_m": 0.012318095192313194,
+        "particle_p99_speed_m_s": 7.82356619311031e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 84,
+        "max_angular_speed_rad_s": 2.5496380160480072e-06,
+        "max_raw_linear_speed_m_s": 5.167246667074657e-07,
+        "particle_max_speed_m_s": 1.1993240150331985e-05,
+        "particle_minimum_z_m": 0.012318096123635769,
+        "particle_p99_speed_m_s": 7.797989383107051e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 85,
+        "max_angular_speed_rad_s": 2.6003318621114853e-06,
+        "max_raw_linear_speed_m_s": 4.816599973021278e-07,
+        "particle_max_speed_m_s": 1.1786218237830326e-05,
+        "particle_minimum_z_m": 0.012318097054958344,
+        "particle_p99_speed_m_s": 7.756256309221499e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 86,
+        "max_angular_speed_rad_s": 2.4724023738619147e-06,
+        "max_raw_linear_speed_m_s": 3.9015418305473544e-07,
+        "particle_max_speed_m_s": 1.164632794825593e-05,
+        "particle_minimum_z_m": 0.012318097986280918,
+        "particle_p99_speed_m_s": 7.708435077802278e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 87,
+        "max_angular_speed_rad_s": 2.2946812534120886e-06,
+        "max_raw_linear_speed_m_s": 3.5156932640134794e-07,
+        "particle_max_speed_m_s": 1.1684353921737056e-05,
+        "particle_minimum_z_m": 0.012318099848926067,
+        "particle_p99_speed_m_s": 7.686770914006047e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 88,
+        "max_angular_speed_rad_s": 1.9757670937472636e-06,
+        "max_raw_linear_speed_m_s": 3.160250480344008e-07,
+        "particle_max_speed_m_s": 1.1744433322746772e-05,
+        "particle_minimum_z_m": 0.012318100780248642,
+        "particle_p99_speed_m_s": 7.658083632122725e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 89,
+        "max_angular_speed_rad_s": 2.3302979172688126e-06,
+        "max_raw_linear_speed_m_s": 3.223000444214803e-07,
+        "particle_max_speed_m_s": 1.168380185845308e-05,
+        "particle_minimum_z_m": 0.012318102642893791,
+        "particle_p99_speed_m_s": 7.64274227549322e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 90,
+        "max_angular_speed_rad_s": 2.636103046349483e-06,
+        "max_raw_linear_speed_m_s": 2.868702827444432e-07,
+        "particle_max_speed_m_s": 1.1460190762591083e-05,
+        "particle_minimum_z_m": 0.01231810450553894,
+        "particle_p99_speed_m_s": 7.590820132463705e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 91,
+        "max_angular_speed_rad_s": 3.034128007456757e-06,
+        "max_raw_linear_speed_m_s": 2.36319818292421e-07,
+        "particle_max_speed_m_s": 1.1529820767464116e-05,
+        "particle_minimum_z_m": 0.01231810636818409,
+        "particle_p99_speed_m_s": 7.55654991735355e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 92,
+        "max_angular_speed_rad_s": 2.763107405846968e-06,
+        "max_raw_linear_speed_m_s": 2.4535220556277675e-07,
+        "particle_max_speed_m_s": 1.1479627573862672e-05,
+        "particle_minimum_z_m": 0.012318108230829239,
+        "particle_p99_speed_m_s": 7.536690645792987e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 93,
+        "max_angular_speed_rad_s": 2.3970227373121146e-06,
+        "max_raw_linear_speed_m_s": 3.145325006506215e-07,
+        "particle_max_speed_m_s": 1.1307310160191264e-05,
+        "particle_minimum_z_m": 0.012318109162151814,
+        "particle_p99_speed_m_s": 7.478879524569493e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3462,
+        "finite": true,
+        "frame": 94,
+        "max_angular_speed_rad_s": 2.8285799769752133e-06,
+        "max_raw_linear_speed_m_s": 2.825727273949075e-07,
+        "particle_max_speed_m_s": 1.1486727089504711e-05,
+        "particle_minimum_z_m": 0.012318111024796963,
+        "particle_p99_speed_m_s": 7.454057595168706e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 95,
+        "max_angular_speed_rad_s": 3.3069334934759833e-06,
+        "max_raw_linear_speed_m_s": 3.1908016257825227e-07,
+        "particle_max_speed_m_s": 1.117563351726858e-05,
+        "particle_minimum_z_m": 0.012318111956119537,
+        "particle_p99_speed_m_s": 7.413590992655372e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 96,
+        "max_angular_speed_rad_s": 2.745147327678923e-06,
+        "max_raw_linear_speed_m_s": 3.840321133207933e-07,
+        "particle_max_speed_m_s": 1.1258263839408755e-05,
+        "particle_minimum_z_m": 0.012318113818764687,
+        "particle_p99_speed_m_s": 7.386893230432179e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 97,
+        "max_angular_speed_rad_s": 2.749791256030888e-06,
+        "max_raw_linear_speed_m_s": 3.7986683397438607e-07,
+        "particle_max_speed_m_s": 1.1246778740314767e-05,
+        "particle_minimum_z_m": 0.012318115681409836,
+        "particle_p99_speed_m_s": 7.34818877390353e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 98,
+        "max_angular_speed_rad_s": 2.728526827801706e-06,
+        "max_raw_linear_speed_m_s": 3.0881467158774137e-07,
+        "particle_max_speed_m_s": 1.0981128980347421e-05,
+        "particle_minimum_z_m": 0.012318117544054985,
+        "particle_p99_speed_m_s": 7.330092557822354e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 99,
+        "max_angular_speed_rad_s": 2.8967857181127384e-06,
+        "max_raw_linear_speed_m_s": 2.5367126518249765e-07,
+        "particle_max_speed_m_s": 1.0973782991641201e-05,
+        "particle_minimum_z_m": 0.012318119406700134,
+        "particle_p99_speed_m_s": 7.278932571352925e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 100,
+        "max_angular_speed_rad_s": 3.2134387235921493e-06,
+        "max_raw_linear_speed_m_s": 2.3567490113317855e-07,
+        "particle_max_speed_m_s": 1.1065475518989842e-05,
+        "particle_minimum_z_m": 0.012318121269345284,
+        "particle_p99_speed_m_s": 7.254507181642111e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 101,
+        "max_angular_speed_rad_s": 3.055714957564459e-06,
+        "max_raw_linear_speed_m_s": 2.0228262355895868e-07,
+        "particle_max_speed_m_s": 1.0823760931089055e-05,
+        "particle_minimum_z_m": 0.012318123131990433,
+        "particle_p99_speed_m_s": 7.219080998766003e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 102,
+        "max_angular_speed_rad_s": 2.5197294351653285e-06,
+        "max_raw_linear_speed_m_s": 1.7947495296664572e-07,
+        "particle_max_speed_m_s": 1.0840823961189017e-05,
+        "particle_minimum_z_m": 0.012318124994635582,
+        "particle_p99_speed_m_s": 7.1781896622269414e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 103,
+        "max_angular_speed_rad_s": 2.62445458726297e-06,
+        "max_raw_linear_speed_m_s": 1.8648019843474055e-07,
+        "particle_max_speed_m_s": 1.0727251719799824e-05,
+        "particle_minimum_z_m": 0.012318126857280731,
+        "particle_p99_speed_m_s": 7.136548447306268e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 104,
+        "max_angular_speed_rad_s": 2.4503854127651934e-06,
+        "max_raw_linear_speed_m_s": 1.9010722061883854e-07,
+        "particle_max_speed_m_s": 1.07862333607045e-05,
+        "particle_minimum_z_m": 0.01231812871992588,
+        "particle_p99_speed_m_s": 7.0939572651695926e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 105,
+        "max_angular_speed_rad_s": 2.7801841129481183e-06,
+        "max_raw_linear_speed_m_s": 2.0721984096671367e-07,
+        "particle_max_speed_m_s": 1.0681844287319109e-05,
+        "particle_minimum_z_m": 0.01231813058257103,
+        "particle_p99_speed_m_s": 7.067284059303347e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 106,
+        "max_angular_speed_rad_s": 2.8164027280092454e-06,
+        "max_raw_linear_speed_m_s": 2.1360996239137497e-07,
+        "particle_max_speed_m_s": 1.0491329703654628e-05,
+        "particle_minimum_z_m": 0.012318132445216179,
+        "particle_p99_speed_m_s": 7.0135070018295664e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 107,
+        "max_angular_speed_rad_s": 2.694031794717232e-06,
+        "max_raw_linear_speed_m_s": 2.3132978598586436e-07,
+        "particle_max_speed_m_s": 1.0587005817797035e-05,
+        "particle_minimum_z_m": 0.012318134307861328,
+        "particle_p99_speed_m_s": 7.003031896601897e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 108,
+        "max_angular_speed_rad_s": 2.7330171873817596e-06,
+        "max_raw_linear_speed_m_s": 2.7824043228058937e-07,
+        "particle_max_speed_m_s": 1.0510908396099694e-05,
+        "particle_minimum_z_m": 0.012318136170506477,
+        "particle_p99_speed_m_s": 6.9766219894518144e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 109,
+        "max_angular_speed_rad_s": 2.446778567755605e-06,
+        "max_raw_linear_speed_m_s": 2.086114767214805e-07,
+        "particle_max_speed_m_s": 1.0515127542021219e-05,
+        "particle_minimum_z_m": 0.012318138033151627,
+        "particle_p99_speed_m_s": 6.951449904590845e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 110,
+        "max_angular_speed_rad_s": 2.6697855234753608e-06,
+        "max_raw_linear_speed_m_s": 2.0276113950031827e-07,
+        "particle_max_speed_m_s": 1.0325571565772407e-05,
+        "particle_minimum_z_m": 0.012318139895796776,
+        "particle_p99_speed_m_s": 6.910620413691504e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3461,
+        "finite": true,
+        "frame": 111,
+        "max_angular_speed_rad_s": 2.8013712186775797e-06,
+        "max_raw_linear_speed_m_s": 1.9588600546149344e-07,
+        "particle_max_speed_m_s": 1.0362869033997413e-05,
+        "particle_minimum_z_m": 0.012318141758441925,
+        "particle_p99_speed_m_s": 6.871213372505736e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 112,
+        "max_angular_speed_rad_s": 2.4156028414622676e-06,
+        "max_raw_linear_speed_m_s": 1.772061132721339e-07,
+        "particle_max_speed_m_s": 1.0227128768747207e-05,
+        "particle_minimum_z_m": 0.012318143621087074,
+        "particle_p99_speed_m_s": 6.840713922429131e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 113,
+        "max_angular_speed_rad_s": 2.7236996367489688e-06,
+        "max_raw_linear_speed_m_s": 1.662572680569275e-07,
+        "particle_max_speed_m_s": 1.0258991096634418e-05,
+        "particle_minimum_z_m": 0.012318145483732224,
+        "particle_p99_speed_m_s": 6.807361842220416e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 114,
+        "max_angular_speed_rad_s": 2.259292690526336e-06,
+        "max_raw_linear_speed_m_s": 1.8411852020941433e-07,
+        "particle_max_speed_m_s": 1.0173081136599649e-05,
+        "particle_minimum_z_m": 0.012318147346377373,
+        "particle_p99_speed_m_s": 6.7865494202123955e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 115,
+        "max_angular_speed_rad_s": 2.9948247402141236e-06,
+        "max_raw_linear_speed_m_s": 2.091024394696014e-07,
+        "particle_max_speed_m_s": 1.0031413694377989e-05,
+        "particle_minimum_z_m": 0.012318149209022522,
+        "particle_p99_speed_m_s": 6.72636770104873e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 116,
+        "max_angular_speed_rad_s": 2.8880874423256756e-06,
+        "max_raw_linear_speed_m_s": 1.7055189269704163e-07,
+        "particle_max_speed_m_s": 1.0095982361235656e-05,
+        "particle_minimum_z_m": 0.012318151071667671,
+        "particle_p99_speed_m_s": 6.719265456922585e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 117,
+        "max_angular_speed_rad_s": 2.298871334428875e-06,
+        "max_raw_linear_speed_m_s": 1.6422936031224614e-07,
+        "particle_max_speed_m_s": 9.93241792457411e-06,
+        "particle_minimum_z_m": 0.01231815293431282,
+        "particle_p99_speed_m_s": 6.6757502281689085e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 118,
+        "max_angular_speed_rad_s": 2.7405532946158402e-06,
+        "max_raw_linear_speed_m_s": 1.6460775133455224e-07,
+        "particle_max_speed_m_s": 1.0177538570133038e-05,
+        "particle_minimum_z_m": 0.01231815479695797,
+        "particle_p99_speed_m_s": 6.639996627200162e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 119,
+        "max_angular_speed_rad_s": 3.2112631363548646e-06,
+        "max_raw_linear_speed_m_s": 2.0771947876726343e-07,
+        "particle_max_speed_m_s": 9.823522304941434e-06,
+        "particle_minimum_z_m": 0.012318156659603119,
+        "particle_p99_speed_m_s": 6.614878202526597e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 120,
+        "max_angular_speed_rad_s": 2.8408304006394846e-06,
+        "max_raw_linear_speed_m_s": 2.4658088091604606e-07,
+        "particle_max_speed_m_s": 9.840196071309038e-06,
+        "particle_minimum_z_m": 0.012318159453570843,
+        "particle_p99_speed_m_s": 6.600004780921154e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 121,
+        "max_angular_speed_rad_s": 3.093344521748143e-06,
+        "max_raw_linear_speed_m_s": 1.906162404680072e-07,
+        "particle_max_speed_m_s": 9.841650353337172e-06,
+        "particle_minimum_z_m": 0.012318161316215992,
+        "particle_p99_speed_m_s": 6.572190613951534e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 122,
+        "max_angular_speed_rad_s": 3.259095645839701e-06,
+        "max_raw_linear_speed_m_s": 1.9008033503986128e-07,
+        "particle_max_speed_m_s": 9.873319868347608e-06,
+        "particle_minimum_z_m": 0.012318163178861141,
+        "particle_p99_speed_m_s": 6.5532317421457265e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 123,
+        "max_angular_speed_rad_s": 2.6817141965898038e-06,
+        "max_raw_linear_speed_m_s": 1.7417657752071283e-07,
+        "particle_max_speed_m_s": 9.580098776496015e-06,
+        "particle_minimum_z_m": 0.01231816504150629,
+        "particle_p99_speed_m_s": 6.5080153035523836e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 124,
+        "max_angular_speed_rad_s": 2.806444577732653e-06,
+        "max_raw_linear_speed_m_s": 1.738101917159337e-07,
+        "particle_max_speed_m_s": 9.753357517183758e-06,
+        "particle_minimum_z_m": 0.01231816690415144,
+        "particle_p99_speed_m_s": 6.483930064860033e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 125,
+        "max_angular_speed_rad_s": 2.9338936637616147e-06,
+        "max_raw_linear_speed_m_s": 1.537832621240586e-07,
+        "particle_max_speed_m_s": 9.517937542113941e-06,
+        "particle_minimum_z_m": 0.012318168766796589,
+        "particle_p99_speed_m_s": 6.43864677840611e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 126,
+        "max_angular_speed_rad_s": 3.0268643742665574e-06,
+        "max_raw_linear_speed_m_s": 1.7423163108624175e-07,
+        "particle_max_speed_m_s": 9.616310308047105e-06,
+        "particle_minimum_z_m": 0.012318170629441738,
+        "particle_p99_speed_m_s": 6.435196610254934e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 127,
+        "max_angular_speed_rad_s": 2.836999911359274e-06,
+        "max_raw_linear_speed_m_s": 1.319179403855065e-07,
+        "particle_max_speed_m_s": 9.52719165070448e-06,
+        "particle_minimum_z_m": 0.012318172492086887,
+        "particle_p99_speed_m_s": 6.410233254428022e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 128,
+        "max_angular_speed_rad_s": 1.6666196439159343e-06,
+        "max_raw_linear_speed_m_s": 1.4073646474993217e-07,
+        "particle_max_speed_m_s": 9.39252095122356e-06,
+        "particle_minimum_z_m": 0.012318174354732037,
+        "particle_p99_speed_m_s": 6.39127210888546e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 129,
+        "max_angular_speed_rad_s": 2.717896473240669e-06,
+        "max_raw_linear_speed_m_s": 1.7841865889845198e-07,
+        "particle_max_speed_m_s": 9.454117389395833e-06,
+        "particle_minimum_z_m": 0.012318176217377186,
+        "particle_p99_speed_m_s": 6.35091555523104e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 130,
+        "max_angular_speed_rad_s": 2.72342774983456e-06,
+        "max_raw_linear_speed_m_s": 1.5269380456978602e-07,
+        "particle_max_speed_m_s": 9.368144674226642e-06,
+        "particle_minimum_z_m": 0.012318178080022335,
+        "particle_p99_speed_m_s": 6.316690814855974e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 131,
+        "max_angular_speed_rad_s": 2.7529644727775818e-06,
+        "max_raw_linear_speed_m_s": 1.473359656730734e-07,
+        "particle_max_speed_m_s": 9.43548366194591e-06,
+        "particle_minimum_z_m": 0.012318179942667484,
+        "particle_p99_speed_m_s": 6.312839559541317e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 132,
+        "max_angular_speed_rad_s": 3.224553373016939e-06,
+        "max_raw_linear_speed_m_s": 1.9258583965841795e-07,
+        "particle_max_speed_m_s": 9.288709406973794e-06,
+        "particle_minimum_z_m": 0.012318181805312634,
+        "particle_p99_speed_m_s": 6.28129737378913e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 133,
+        "max_angular_speed_rad_s": 3.0514090343361646e-06,
+        "max_raw_linear_speed_m_s": 1.6981017840165992e-07,
+        "particle_max_speed_m_s": 9.347695595351979e-06,
+        "particle_minimum_z_m": 0.012318183667957783,
+        "particle_p99_speed_m_s": 6.2660824369231705e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 134,
+        "max_angular_speed_rad_s": 2.8343707191958722e-06,
+        "max_raw_linear_speed_m_s": 1.485738965038541e-07,
+        "particle_max_speed_m_s": 9.20404363569105e-06,
+        "particle_minimum_z_m": 0.012318185530602932,
+        "particle_p99_speed_m_s": 6.221809144335566e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 135,
+        "max_angular_speed_rad_s": 2.9895155352639834e-06,
+        "max_raw_linear_speed_m_s": 1.6280162193302808e-07,
+        "particle_max_speed_m_s": 9.31284830585355e-06,
+        "particle_minimum_z_m": 0.012318187393248081,
+        "particle_p99_speed_m_s": 6.221135208761552e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 136,
+        "max_angular_speed_rad_s": 2.7099408142717156e-06,
+        "max_raw_linear_speed_m_s": 1.8102921777169666e-07,
+        "particle_max_speed_m_s": 9.177857464237604e-06,
+        "particle_minimum_z_m": 0.01231818925589323,
+        "particle_p99_speed_m_s": 6.210810624907026e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 137,
+        "max_angular_speed_rad_s": 3.099146592873809e-06,
+        "max_raw_linear_speed_m_s": 1.7483821173070742e-07,
+        "particle_max_speed_m_s": 9.162796231976245e-06,
+        "particle_minimum_z_m": 0.01231819111853838,
+        "particle_p99_speed_m_s": 6.182403922139201e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 138,
+        "max_angular_speed_rad_s": 2.7094379945361225e-06,
+        "max_raw_linear_speed_m_s": 2.062310532137922e-07,
+        "particle_max_speed_m_s": 9.23876814340474e-06,
+        "particle_minimum_z_m": 0.012318193912506104,
+        "particle_p99_speed_m_s": 6.175800081109628e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 139,
+        "max_angular_speed_rad_s": 2.9799482093367976e-06,
+        "max_raw_linear_speed_m_s": 1.7518099362136512e-07,
+        "particle_max_speed_m_s": 9.171881174552254e-06,
+        "particle_minimum_z_m": 0.012318196706473827,
+        "particle_p99_speed_m_s": 6.154128641355783e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 140,
+        "max_angular_speed_rad_s": 3.032204181469373e-06,
+        "max_raw_linear_speed_m_s": 1.3434221763452188e-07,
+        "particle_max_speed_m_s": 9.065999620361254e-06,
+        "particle_minimum_z_m": 0.012318199500441551,
+        "particle_p99_speed_m_s": 6.126628704805626e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 141,
+        "max_angular_speed_rad_s": 2.5787503874400077e-06,
+        "max_raw_linear_speed_m_s": 1.4013238800935223e-07,
+        "particle_max_speed_m_s": 9.013987437356263e-06,
+        "particle_minimum_z_m": 0.012318202294409275,
+        "particle_p99_speed_m_s": 6.091625891713193e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 142,
+        "max_angular_speed_rad_s": 2.726596516406916e-06,
+        "max_raw_linear_speed_m_s": 1.2994037747696354e-07,
+        "particle_max_speed_m_s": 9.02665124158375e-06,
+        "particle_minimum_z_m": 0.012318204157054424,
+        "particle_p99_speed_m_s": 6.0560432757483795e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 143,
+        "max_angular_speed_rad_s": 2.7515047005106105e-06,
+        "max_raw_linear_speed_m_s": 1.2989060039792296e-07,
+        "particle_max_speed_m_s": 8.860220077622216e-06,
+        "particle_minimum_z_m": 0.012318206019699574,
+        "particle_p99_speed_m_s": 6.033527370163938e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 144,
+        "max_angular_speed_rad_s": 2.8393825939367445e-06,
+        "max_raw_linear_speed_m_s": 1.6132117387654854e-07,
+        "particle_max_speed_m_s": 8.76047579367878e-06,
+        "particle_minimum_z_m": 0.012318208813667297,
+        "particle_p99_speed_m_s": 6.0010265769960824e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 145,
+        "max_angular_speed_rad_s": 3.072716281169846e-06,
+        "max_raw_linear_speed_m_s": 1.6025219688052547e-07,
+        "particle_max_speed_m_s": 8.890496246749535e-06,
+        "particle_minimum_z_m": 0.012318211607635021,
+        "particle_p99_speed_m_s": 5.980332389299292e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 146,
+        "max_angular_speed_rad_s": 3.216044489566364e-06,
+        "max_raw_linear_speed_m_s": 1.552792229229485e-07,
+        "particle_max_speed_m_s": 8.718470780877396e-06,
+        "particle_minimum_z_m": 0.012318214401602745,
+        "particle_p99_speed_m_s": 5.945908469584538e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 147,
+        "max_angular_speed_rad_s": 2.3057923108655705e-06,
+        "max_raw_linear_speed_m_s": 1.8206151339866676e-07,
+        "particle_max_speed_m_s": 8.722272468730807e-06,
+        "particle_minimum_z_m": 0.012318217195570469,
+        "particle_p99_speed_m_s": 5.931698979111388e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 148,
+        "max_angular_speed_rad_s": 2.443532326432572e-06,
+        "max_raw_linear_speed_m_s": 1.8390951345508996e-07,
+        "particle_max_speed_m_s": 8.754125701671e-06,
+        "particle_minimum_z_m": 0.012318219058215618,
+        "particle_p99_speed_m_s": 5.907549166295212e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 149,
+        "max_angular_speed_rad_s": 2.625737197410785e-06,
+        "max_raw_linear_speed_m_s": 2.0308385606781163e-07,
+        "particle_max_speed_m_s": 8.673666343383957e-06,
+        "particle_minimum_z_m": 0.012318221852183342,
+        "particle_p99_speed_m_s": 5.8870587054116186e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 150,
+        "max_angular_speed_rad_s": 2.6098364006563716e-06,
+        "max_raw_linear_speed_m_s": 1.7867919899845055e-07,
+        "particle_max_speed_m_s": 8.814405191515107e-06,
+        "particle_minimum_z_m": 0.012318224646151066,
+        "particle_p99_speed_m_s": 5.858586519025266e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 151,
+        "max_angular_speed_rad_s": 2.403783175162696e-06,
+        "max_raw_linear_speed_m_s": 1.678151245088641e-07,
+        "particle_max_speed_m_s": 8.55550570122432e-06,
+        "particle_minimum_z_m": 0.012318226508796215,
+        "particle_p99_speed_m_s": 5.834740932186833e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 152,
+        "max_angular_speed_rad_s": 2.813829252686842e-06,
+        "max_raw_linear_speed_m_s": 1.4106420463947641e-07,
+        "particle_max_speed_m_s": 8.563179108023178e-06,
+        "particle_minimum_z_m": 0.012318228371441364,
+        "particle_p99_speed_m_s": 5.811376922792988e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 153,
+        "max_angular_speed_rad_s": 2.486530117314314e-06,
+        "max_raw_linear_speed_m_s": 1.1182585386965914e-07,
+        "particle_max_speed_m_s": 8.52431094244821e-06,
+        "particle_minimum_z_m": 0.012318231165409088,
+        "particle_p99_speed_m_s": 5.783139840787044e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 154,
+        "max_angular_speed_rad_s": 2.519059625904003e-06,
+        "max_raw_linear_speed_m_s": 1.2460881138391586e-07,
+        "particle_max_speed_m_s": 8.482898010697681e-06,
+        "particle_minimum_z_m": 0.012318233959376812,
+        "particle_p99_speed_m_s": 5.775552381237503e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 155,
+        "max_angular_speed_rad_s": 2.6279095622471977e-06,
+        "max_raw_linear_speed_m_s": 1.210563239985987e-07,
+        "particle_max_speed_m_s": 8.499714567733463e-06,
+        "particle_minimum_z_m": 0.012318236753344536,
+        "particle_p99_speed_m_s": 5.750499440182466e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 156,
+        "max_angular_speed_rad_s": 2.550465708280651e-06,
+        "max_raw_linear_speed_m_s": 1.6226701884212362e-07,
+        "particle_max_speed_m_s": 8.500240255671088e-06,
+        "particle_minimum_z_m": 0.01231823954731226,
+        "particle_p99_speed_m_s": 5.726250037696445e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 157,
+        "max_angular_speed_rad_s": 2.4382577765298896e-06,
+        "max_raw_linear_speed_m_s": 2.0158302887835192e-07,
+        "particle_max_speed_m_s": 8.408540452364832e-06,
+        "particle_minimum_z_m": 0.012318242341279984,
+        "particle_p99_speed_m_s": 5.7240026762883645e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 158,
+        "max_angular_speed_rad_s": 2.2489458173095747e-06,
+        "max_raw_linear_speed_m_s": 1.9624312683967824e-07,
+        "particle_max_speed_m_s": 8.364553650608286e-06,
+        "particle_minimum_z_m": 0.012318245135247707,
+        "particle_p99_speed_m_s": 5.6979160945047624e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 159,
+        "max_angular_speed_rad_s": 2.6537846727775582e-06,
+        "max_raw_linear_speed_m_s": 1.6931606554055822e-07,
+        "particle_max_speed_m_s": 8.476268703816459e-06,
+        "particle_minimum_z_m": 0.012318247929215431,
+        "particle_p99_speed_m_s": 5.668804533343064e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 160,
+        "max_angular_speed_rad_s": 2.5030119739708045e-06,
+        "max_raw_linear_speed_m_s": 1.4256627103320262e-07,
+        "particle_max_speed_m_s": 8.229430022765882e-06,
+        "particle_minimum_z_m": 0.012318250723183155,
+        "particle_p99_speed_m_s": 5.645351848215796e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 161,
+        "max_angular_speed_rad_s": 2.238073921124055e-06,
+        "max_raw_linear_speed_m_s": 1.5544008637270026e-07,
+        "particle_max_speed_m_s": 8.293752216559369e-06,
+        "particle_minimum_z_m": 0.012318252585828304,
+        "particle_p99_speed_m_s": 5.624457571684616e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 162,
+        "max_angular_speed_rad_s": 2.5346690523306326e-06,
+        "max_raw_linear_speed_m_s": 1.4778978163259396e-07,
+        "particle_max_speed_m_s": 8.124145097099245e-06,
+        "particle_minimum_z_m": 0.012318254448473454,
+        "particle_p99_speed_m_s": 5.591347871813923e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 163,
+        "max_angular_speed_rad_s": 2.1359864422208106e-06,
+        "max_raw_linear_speed_m_s": 1.3435856073275154e-07,
+        "particle_max_speed_m_s": 8.169246029865462e-06,
+        "particle_minimum_z_m": 0.012318257242441177,
+        "particle_p99_speed_m_s": 5.581633104156936e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 164,
+        "max_angular_speed_rad_s": 3.128026387414256e-06,
+        "max_raw_linear_speed_m_s": 1.5986615609888847e-07,
+        "particle_max_speed_m_s": 8.03331749921199e-06,
+        "particle_minimum_z_m": 0.012318260036408901,
+        "particle_p99_speed_m_s": 5.5402783800673205e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 165,
+        "max_angular_speed_rad_s": 2.6384596275073312e-06,
+        "max_raw_linear_speed_m_s": 1.7143623355736025e-07,
+        "particle_max_speed_m_s": 8.104550943244249e-06,
+        "particle_minimum_z_m": 0.012318262830376625,
+        "particle_p99_speed_m_s": 5.53047993889777e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 166,
+        "max_angular_speed_rad_s": 2.7818779129353598e-06,
+        "max_raw_linear_speed_m_s": 1.5219154317211635e-07,
+        "particle_max_speed_m_s": 8.056582373683341e-06,
+        "particle_minimum_z_m": 0.012318265624344349,
+        "particle_p99_speed_m_s": 5.497840902535245e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3463,
+        "finite": true,
+        "frame": 167,
+        "max_angular_speed_rad_s": 3.2375393542680624e-06,
+        "max_raw_linear_speed_m_s": 1.544170941342167e-07,
+        "particle_max_speed_m_s": 7.96675249148393e-06,
+        "particle_minimum_z_m": 0.012318268418312073,
+        "particle_p99_speed_m_s": 5.47488207303104e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 168,
+        "max_angular_speed_rad_s": 2.53724927151338e-06,
+        "max_raw_linear_speed_m_s": 1.0978789734980052e-07,
+        "particle_max_speed_m_s": 7.919989002402872e-06,
+        "particle_minimum_z_m": 0.012318271212279797,
+        "particle_p99_speed_m_s": 5.450139724416658e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 169,
+        "max_angular_speed_rad_s": 2.1064189635372105e-06,
+        "max_raw_linear_speed_m_s": 1.1969123106974877e-07,
+        "particle_max_speed_m_s": 8.018250809982419e-06,
+        "particle_minimum_z_m": 0.01231827400624752,
+        "particle_p99_speed_m_s": 5.437637810246088e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 170,
+        "max_angular_speed_rad_s": 2.4258854695322895e-06,
+        "max_raw_linear_speed_m_s": 1.4676534165460538e-07,
+        "particle_max_speed_m_s": 7.904299309302587e-06,
+        "particle_minimum_z_m": 0.012318276800215244,
+        "particle_p99_speed_m_s": 5.427199994301191e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 171,
+        "max_angular_speed_rad_s": 2.892576068079329e-06,
+        "max_raw_linear_speed_m_s": 1.1028915307023263e-07,
+        "particle_max_speed_m_s": 7.89079876994947e-06,
+        "particle_minimum_z_m": 0.012318279594182968,
+        "particle_p99_speed_m_s": 5.401564067142317e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 172,
+        "max_angular_speed_rad_s": 2.4470618313988115e-06,
+        "max_raw_linear_speed_m_s": 1.212690887320667e-07,
+        "particle_max_speed_m_s": 7.82327424531104e-06,
+        "particle_minimum_z_m": 0.012318282388150692,
+        "particle_p99_speed_m_s": 5.369471182348207e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3472,
+        "finite": true,
+        "frame": 173,
+        "max_angular_speed_rad_s": 2.3503884883072787e-06,
+        "max_raw_linear_speed_m_s": 1.3450336832685057e-07,
+        "particle_max_speed_m_s": 7.761731467326172e-06,
+        "particle_minimum_z_m": 0.012318285182118416,
+        "particle_p99_speed_m_s": 5.344875717128161e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 174,
+        "max_angular_speed_rad_s": 2.3993763211500483e-06,
+        "max_raw_linear_speed_m_s": 1.393515404313755e-07,
+        "particle_max_speed_m_s": 7.753647878416814e-06,
+        "particle_minimum_z_m": 0.01231828797608614,
+        "particle_p99_speed_m_s": 5.340943516785046e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 175,
+        "max_angular_speed_rad_s": 2.89943056731664e-06,
+        "max_raw_linear_speed_m_s": 1.6450863865592333e-07,
+        "particle_max_speed_m_s": 7.743327842035796e-06,
+        "particle_minimum_z_m": 0.012318290770053864,
+        "particle_p99_speed_m_s": 5.323523055267287e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 176,
+        "max_angular_speed_rad_s": 3.1536754754169474e-06,
+        "max_raw_linear_speed_m_s": 1.5296880206416203e-07,
+        "particle_max_speed_m_s": 7.674579137528781e-06,
+        "particle_minimum_z_m": 0.012318293564021587,
+        "particle_p99_speed_m_s": 5.30753459315747e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 177,
+        "max_angular_speed_rad_s": 2.406486683351432e-06,
+        "max_raw_linear_speed_m_s": 1.3041962557893422e-07,
+        "particle_max_speed_m_s": 7.761327651678585e-06,
+        "particle_minimum_z_m": 0.012318296357989311,
+        "particle_p99_speed_m_s": 5.280616278469097e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 178,
+        "max_angular_speed_rad_s": 2.6152651558334183e-06,
+        "max_raw_linear_speed_m_s": 1.207966009735114e-07,
+        "particle_max_speed_m_s": 7.705166353844106e-06,
+        "particle_minimum_z_m": 0.012318299151957035,
+        "particle_p99_speed_m_s": 5.252287337498274e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 179,
+        "max_angular_speed_rad_s": 2.7176578505732986e-06,
+        "max_raw_linear_speed_m_s": 1.0324479857429117e-07,
+        "particle_max_speed_m_s": 7.639918294444215e-06,
+        "particle_minimum_z_m": 0.012318301945924759,
+        "particle_p99_speed_m_s": 5.22867230756674e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 180,
+        "max_angular_speed_rad_s": 2.8861086057219215e-06,
+        "max_raw_linear_speed_m_s": 1.2044092414606636e-07,
+        "particle_max_speed_m_s": 7.567543889308581e-06,
+        "particle_minimum_z_m": 0.012318304739892483,
+        "particle_p99_speed_m_s": 5.215787041379372e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 181,
+        "max_angular_speed_rad_s": 3.073320787215338e-06,
+        "max_raw_linear_speed_m_s": 1.3430538058400157e-07,
+        "particle_max_speed_m_s": 7.582998478028458e-06,
+        "particle_minimum_z_m": 0.012318307533860207,
+        "particle_p99_speed_m_s": 5.19290688316687e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 182,
+        "max_angular_speed_rad_s": 2.2085448547719727e-06,
+        "max_raw_linear_speed_m_s": 1.2520488385732306e-07,
+        "particle_max_speed_m_s": 7.51043717173161e-06,
+        "particle_minimum_z_m": 0.01231831032782793,
+        "particle_p99_speed_m_s": 5.17307989866822e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 183,
+        "max_angular_speed_rad_s": 2.6171166449186036e-06,
+        "max_raw_linear_speed_m_s": 1.2034743212662956e-07,
+        "particle_max_speed_m_s": 7.4505951488390565e-06,
+        "particle_minimum_z_m": 0.012318313121795654,
+        "particle_p99_speed_m_s": 5.154156951903133e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 184,
+        "max_angular_speed_rad_s": 3.401540009359834e-06,
+        "max_raw_linear_speed_m_s": 1.0925239880515834e-07,
+        "particle_max_speed_m_s": 7.535595159424702e-06,
+        "particle_minimum_z_m": 0.012318315915763378,
+        "particle_p99_speed_m_s": 5.1212300604674965e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 185,
+        "max_angular_speed_rad_s": 3.10073581199544e-06,
+        "max_raw_linear_speed_m_s": 1.0403451969119848e-07,
+        "particle_max_speed_m_s": 7.535204076702939e-06,
+        "particle_minimum_z_m": 0.012318318709731102,
+        "particle_p99_speed_m_s": 5.116162355989218e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 186,
+        "max_angular_speed_rad_s": 2.678801687213262e-06,
+        "max_raw_linear_speed_m_s": 1.3054215773525773e-07,
+        "particle_max_speed_m_s": 7.375778750429163e-06,
+        "particle_minimum_z_m": 0.012318321503698826,
+        "particle_p99_speed_m_s": 5.0861112868005875e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 187,
+        "max_angular_speed_rad_s": 3.1769469042930034e-06,
+        "max_raw_linear_speed_m_s": 1.2002150427796656e-07,
+        "particle_max_speed_m_s": 7.423882834700635e-06,
+        "particle_minimum_z_m": 0.01231832429766655,
+        "particle_p99_speed_m_s": 5.06799369759392e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 188,
+        "max_angular_speed_rad_s": 2.8964118252743607e-06,
+        "max_raw_linear_speed_m_s": 1.4043931482729933e-07,
+        "particle_max_speed_m_s": 7.324350917770062e-06,
+        "particle_minimum_z_m": 0.012318327091634274,
+        "particle_p99_speed_m_s": 5.047676040703664e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3464,
+        "finite": true,
+        "frame": 189,
+        "max_angular_speed_rad_s": 2.7041496414177114e-06,
+        "max_raw_linear_speed_m_s": 1.3738465165711804e-07,
+        "particle_max_speed_m_s": 7.439857199642574e-06,
+        "particle_minimum_z_m": 0.012318329885601997,
+        "particle_p99_speed_m_s": 5.031936325394781e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 190,
+        "max_angular_speed_rad_s": 3.281600696018863e-06,
+        "max_raw_linear_speed_m_s": 1.505750825675602e-07,
+        "particle_max_speed_m_s": 7.301454843400279e-06,
+        "particle_minimum_z_m": 0.012318332679569721,
+        "particle_p99_speed_m_s": 5.00948726767092e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 191,
+        "max_angular_speed_rad_s": 3.1494979845670076e-06,
+        "max_raw_linear_speed_m_s": 1.242522085812355e-07,
+        "particle_max_speed_m_s": 7.2440570875187404e-06,
+        "particle_minimum_z_m": 0.012318335473537445,
+        "particle_p99_speed_m_s": 5.002405941922916e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 192,
+        "max_angular_speed_rad_s": 2.7280523423521403e-06,
+        "max_raw_linear_speed_m_s": 1.4360517004279608e-07,
+        "particle_max_speed_m_s": 7.199371793831233e-06,
+        "particle_minimum_z_m": 0.012318338267505169,
+        "particle_p99_speed_m_s": 4.971598173142411e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 193,
+        "max_angular_speed_rad_s": 2.2304700575241573e-06,
+        "max_raw_linear_speed_m_s": 1.1765984068142939e-07,
+        "particle_max_speed_m_s": 7.248539986903779e-06,
+        "particle_minimum_z_m": 0.012318341061472893,
+        "particle_p99_speed_m_s": 4.965219886798877e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 194,
+        "max_angular_speed_rad_s": 3.1146799279044768e-06,
+        "max_raw_linear_speed_m_s": 1.0229553773051669e-07,
+        "particle_max_speed_m_s": 7.125542651920114e-06,
+        "particle_minimum_z_m": 0.012318343855440617,
+        "particle_p99_speed_m_s": 4.93127663503401e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 195,
+        "max_angular_speed_rad_s": 3.6239583850648616e-06,
+        "max_raw_linear_speed_m_s": 1.3550756384634955e-07,
+        "particle_max_speed_m_s": 7.194195404736092e-06,
+        "particle_minimum_z_m": 0.01231834664940834,
+        "particle_p99_speed_m_s": 4.918293598166201e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 196,
+        "max_angular_speed_rad_s": 2.7183020493209654e-06,
+        "max_raw_linear_speed_m_s": 1.1682113628149024e-07,
+        "particle_max_speed_m_s": 7.08006928107352e-06,
+        "particle_minimum_z_m": 0.012318349443376064,
+        "particle_p99_speed_m_s": 4.885886028205277e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 197,
+        "max_angular_speed_rad_s": 3.4429265883817806e-06,
+        "max_raw_linear_speed_m_s": 9.380887690173275e-08,
+        "particle_max_speed_m_s": 7.058546998450765e-06,
+        "particle_minimum_z_m": 0.012318352237343788,
+        "particle_p99_speed_m_s": 4.887382601737045e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 198,
+        "max_angular_speed_rad_s": 3.0598639351237683e-06,
+        "max_raw_linear_speed_m_s": 1.3484022912422007e-07,
+        "particle_max_speed_m_s": 6.981845217524096e-06,
+        "particle_minimum_z_m": 0.012318355031311512,
+        "particle_p99_speed_m_s": 4.869451458944241e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 199,
+        "max_angular_speed_rad_s": 2.743406819161224e-06,
+        "max_raw_linear_speed_m_s": 1.4167109838683183e-07,
+        "particle_max_speed_m_s": 7.094467946444638e-06,
+        "particle_minimum_z_m": 0.012318357825279236,
+        "particle_p99_speed_m_s": 4.849882770940894e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 200,
+        "max_angular_speed_rad_s": 2.6222325876780548e-06,
+        "max_raw_linear_speed_m_s": 1.2138090966806037e-07,
+        "particle_max_speed_m_s": 6.949293037905591e-06,
+        "particle_minimum_z_m": 0.01231836061924696,
+        "particle_p99_speed_m_s": 4.833303137274925e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 201,
+        "max_angular_speed_rad_s": 2.8873181517387544e-06,
+        "max_raw_linear_speed_m_s": 1.351895163214882e-07,
+        "particle_max_speed_m_s": 6.911031050549354e-06,
+        "particle_minimum_z_m": 0.012318363413214684,
+        "particle_p99_speed_m_s": 4.803936462849379e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 202,
+        "max_angular_speed_rad_s": 2.8163039465169067e-06,
+        "max_raw_linear_speed_m_s": 1.2205888691533152e-07,
+        "particle_max_speed_m_s": 7.006697160250042e-06,
+        "particle_minimum_z_m": 0.012318366207182407,
+        "particle_p99_speed_m_s": 4.789564627571963e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 203,
+        "max_angular_speed_rad_s": 2.9335601275866864e-06,
+        "max_raw_linear_speed_m_s": 1.3537539206616203e-07,
+        "particle_max_speed_m_s": 6.9912348408252e-06,
+        "particle_minimum_z_m": 0.012318369001150131,
+        "particle_p99_speed_m_s": 4.772910870087799e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 204,
+        "max_angular_speed_rad_s": 2.88452633637005e-06,
+        "max_raw_linear_speed_m_s": 1.1921840649340317e-07,
+        "particle_max_speed_m_s": 6.882646175654372e-06,
+        "particle_minimum_z_m": 0.012318371795117855,
+        "particle_p99_speed_m_s": 4.752155291498639e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 205,
+        "max_angular_speed_rad_s": 3.338161736686788e-06,
+        "max_raw_linear_speed_m_s": 1.275823306671301e-07,
+        "particle_max_speed_m_s": 6.879124612169107e-06,
+        "particle_minimum_z_m": 0.012318375520408154,
+        "particle_p99_speed_m_s": 4.726569386548363e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 206,
+        "max_angular_speed_rad_s": 2.725884441870312e-06,
+        "max_raw_linear_speed_m_s": 1.2989941076561794e-07,
+        "particle_max_speed_m_s": 6.87887450112612e-06,
+        "particle_minimum_z_m": 0.012318378314375877,
+        "particle_p99_speed_m_s": 4.713878752227174e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 207,
+        "max_angular_speed_rad_s": 2.9505281330895117e-06,
+        "max_raw_linear_speed_m_s": 1.264072400631352e-07,
+        "particle_max_speed_m_s": 6.6623042584978975e-06,
+        "particle_minimum_z_m": 0.012318381108343601,
+        "particle_p99_speed_m_s": 4.691959475167096e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 208,
+        "max_angular_speed_rad_s": 2.619889670239345e-06,
+        "max_raw_linear_speed_m_s": 1.5113029812673606e-07,
+        "particle_max_speed_m_s": 6.877831310703186e-06,
+        "particle_minimum_z_m": 0.012318383902311325,
+        "particle_p99_speed_m_s": 4.6759068936808035e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3470,
+        "finite": true,
+        "frame": 209,
+        "max_angular_speed_rad_s": 3.33359137181403e-06,
+        "max_raw_linear_speed_m_s": 1.6890046409066413e-07,
+        "particle_max_speed_m_s": 6.739890977769392e-06,
+        "particle_minimum_z_m": 0.012318386696279049,
+        "particle_p99_speed_m_s": 4.644924501917558e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 210,
+        "max_angular_speed_rad_s": 3.027543387075081e-06,
+        "max_raw_linear_speed_m_s": 1.1220178708292307e-07,
+        "particle_max_speed_m_s": 6.718121312587755e-06,
+        "particle_minimum_z_m": 0.012318389490246773,
+        "particle_p99_speed_m_s": 4.639337021217216e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 211,
+        "max_angular_speed_rad_s": 2.7920972657509405e-06,
+        "max_raw_linear_speed_m_s": 1.0278294733457989e-07,
+        "particle_max_speed_m_s": 6.61515150568448e-06,
+        "particle_minimum_z_m": 0.012318392284214497,
+        "particle_p99_speed_m_s": 4.614794761437224e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 212,
+        "max_angular_speed_rad_s": 2.7072653057877162e-06,
+        "max_raw_linear_speed_m_s": 1.1198578566556757e-07,
+        "particle_max_speed_m_s": 6.662517080258112e-06,
+        "particle_minimum_z_m": 0.01231839507818222,
+        "particle_p99_speed_m_s": 4.596638518705731e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 213,
+        "max_angular_speed_rad_s": 3.220798218532403e-06,
+        "max_raw_linear_speed_m_s": 1.2056985974151736e-07,
+        "particle_max_speed_m_s": 6.715173185511958e-06,
+        "particle_minimum_z_m": 0.012318397872149944,
+        "particle_p99_speed_m_s": 4.581365828926209e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3471,
+        "finite": true,
+        "frame": 214,
+        "max_angular_speed_rad_s": 3.1287329057683813e-06,
+        "max_raw_linear_speed_m_s": 1.4671081874746594e-07,
+        "particle_max_speed_m_s": 6.610676337004406e-06,
+        "particle_minimum_z_m": 0.012318400666117668,
+        "particle_p99_speed_m_s": 4.562643880490214e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3465,
+        "finite": true,
+        "frame": 215,
+        "max_angular_speed_rad_s": 2.8980262421911187e-06,
+        "max_raw_linear_speed_m_s": 1.3490877918178116e-07,
+        "particle_max_speed_m_s": 6.584441507584415e-06,
+        "particle_minimum_z_m": 0.012318403460085392,
+        "particle_p99_speed_m_s": 4.561012701742584e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 216,
+        "max_angular_speed_rad_s": 3.14442006095869e-06,
+        "max_raw_linear_speed_m_s": 1.1610727612235742e-07,
+        "particle_max_speed_m_s": 6.44434612695477e-06,
+        "particle_minimum_z_m": 0.012318406254053116,
+        "particle_p99_speed_m_s": 4.545418960333336e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 217,
+        "max_angular_speed_rad_s": 3.4298429940329357e-06,
+        "max_raw_linear_speed_m_s": 9.421223922203763e-08,
+        "particle_max_speed_m_s": 6.570228379132459e-06,
+        "particle_minimum_z_m": 0.01231840904802084,
+        "particle_p99_speed_m_s": 4.523053121374687e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3470,
+        "finite": true,
+        "frame": 218,
+        "max_angular_speed_rad_s": 2.9804120655550267e-06,
+        "max_raw_linear_speed_m_s": 1.00905289964975e-07,
+        "particle_max_speed_m_s": 6.541438324347837e-06,
+        "particle_minimum_z_m": 0.012318411841988564,
+        "particle_p99_speed_m_s": 4.509560312726535e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 219,
+        "max_angular_speed_rad_s": 3.040382331665443e-06,
+        "max_raw_linear_speed_m_s": 1.1753068430649477e-07,
+        "particle_max_speed_m_s": 6.493269211205188e-06,
+        "particle_minimum_z_m": 0.012318415567278862,
+        "particle_p99_speed_m_s": 4.48743776360061e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 220,
+        "max_angular_speed_rad_s": 3.5870884651221632e-06,
+        "max_raw_linear_speed_m_s": 1.1081620892669353e-07,
+        "particle_max_speed_m_s": 6.502568794530816e-06,
+        "particle_minimum_z_m": 0.012318418361246586,
+        "particle_p99_speed_m_s": 4.480613824853208e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3471,
+        "finite": true,
+        "frame": 221,
+        "max_angular_speed_rad_s": 3.3718198978422355e-06,
+        "max_raw_linear_speed_m_s": 1.4296938056071476e-07,
+        "particle_max_speed_m_s": 6.457327799580526e-06,
+        "particle_minimum_z_m": 0.012318422086536884,
+        "particle_p99_speed_m_s": 4.4639814404945355e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 222,
+        "max_angular_speed_rad_s": 3.1278955297394538e-06,
+        "max_raw_linear_speed_m_s": 1.4970891552855276e-07,
+        "particle_max_speed_m_s": 6.468868832598673e-06,
+        "particle_minimum_z_m": 0.012318424880504608,
+        "particle_p99_speed_m_s": 4.45031764684245e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 223,
+        "max_angular_speed_rad_s": 2.8175541170505207e-06,
+        "max_raw_linear_speed_m_s": 1.147771900615165e-07,
+        "particle_max_speed_m_s": 6.396238404704491e-06,
+        "particle_minimum_z_m": 0.012318428605794907,
+        "particle_p99_speed_m_s": 4.4381908992363606e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3470,
+        "finite": true,
+        "frame": 224,
+        "max_angular_speed_rad_s": 2.9726464541111873e-06,
+        "max_raw_linear_speed_m_s": 1.318681303568756e-07,
+        "particle_max_speed_m_s": 6.413478786271298e-06,
+        "particle_minimum_z_m": 0.01231843139976263,
+        "particle_p99_speed_m_s": 4.417480340634938e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 225,
+        "max_angular_speed_rad_s": 2.6882210635352835e-06,
+        "max_raw_linear_speed_m_s": 1.8963607338328544e-07,
+        "particle_max_speed_m_s": 6.5126937442983035e-06,
+        "particle_minimum_z_m": 0.012318434193730354,
+        "particle_p99_speed_m_s": 4.394510597194312e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 226,
+        "max_angular_speed_rad_s": 2.5824668306779648e-06,
+        "max_raw_linear_speed_m_s": 1.0912823859372508e-07,
+        "particle_max_speed_m_s": 6.261077942326665e-06,
+        "particle_minimum_z_m": 0.012318436987698078,
+        "particle_p99_speed_m_s": 4.3891900531889405e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 227,
+        "max_angular_speed_rad_s": 3.3417104280182686e-06,
+        "max_raw_linear_speed_m_s": 1.1557246633550139e-07,
+        "particle_max_speed_m_s": 6.318995019682916e-06,
+        "particle_minimum_z_m": 0.012318439781665802,
+        "particle_p99_speed_m_s": 4.360250841273228e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 228,
+        "max_angular_speed_rad_s": 3.2202785127601145e-06,
+        "max_raw_linear_speed_m_s": 1.2290234404030125e-07,
+        "particle_max_speed_m_s": 6.344745543174213e-06,
+        "particle_minimum_z_m": 0.012318442575633526,
+        "particle_p99_speed_m_s": 4.344203716755146e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3468,
+        "finite": true,
+        "frame": 229,
+        "max_angular_speed_rad_s": 3.044662585862864e-06,
+        "max_raw_linear_speed_m_s": 1.0077776221596725e-07,
+        "particle_max_speed_m_s": 6.241763458092464e-06,
+        "particle_minimum_z_m": 0.01231844536960125,
+        "particle_p99_speed_m_s": 4.3300915422150865e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3471,
+        "finite": true,
+        "frame": 230,
+        "max_angular_speed_rad_s": 2.775102645947435e-06,
+        "max_raw_linear_speed_m_s": 1.322580571570101e-07,
+        "particle_max_speed_m_s": 6.149864930193871e-06,
+        "particle_minimum_z_m": 0.012318449094891548,
+        "particle_p99_speed_m_s": 4.315615115046967e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 231,
+        "max_angular_speed_rad_s": 3.3063511606685962e-06,
+        "max_raw_linear_speed_m_s": 1.3748031313959273e-07,
+        "particle_max_speed_m_s": 6.166815637698164e-06,
+        "particle_minimum_z_m": 0.012318452820181847,
+        "particle_p99_speed_m_s": 4.300634373066714e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3470,
+        "finite": true,
+        "frame": 232,
+        "max_angular_speed_rad_s": 3.380422425831796e-06,
+        "max_raw_linear_speed_m_s": 1.7686050017034923e-07,
+        "particle_max_speed_m_s": 6.119583304098342e-06,
+        "particle_minimum_z_m": 0.012318456545472145,
+        "particle_p99_speed_m_s": 4.299307875044178e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3470,
+        "finite": true,
+        "frame": 233,
+        "max_angular_speed_rad_s": 3.4182759638905045e-06,
+        "max_raw_linear_speed_m_s": 2.1758890711430676e-07,
+        "particle_max_speed_m_s": 6.1253754211065825e-06,
+        "particle_minimum_z_m": 0.012318459339439869,
+        "particle_p99_speed_m_s": 4.295658527553314e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3466,
+        "finite": true,
+        "frame": 234,
+        "max_angular_speed_rad_s": 3.11430897800827e-06,
+        "max_raw_linear_speed_m_s": 1.987439141937967e-07,
+        "particle_max_speed_m_s": 6.14266718912404e-06,
+        "particle_minimum_z_m": 0.012318462133407593,
+        "particle_p99_speed_m_s": 4.283573161956156e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3467,
+        "finite": true,
+        "frame": 235,
+        "max_angular_speed_rad_s": 2.962079826935341e-06,
+        "max_raw_linear_speed_m_s": 1.6775466491273209e-07,
+        "particle_max_speed_m_s": 6.155413302622037e-06,
+        "particle_minimum_z_m": 0.012318464927375317,
+        "particle_p99_speed_m_s": 4.2620690692274366e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3471,
+        "finite": true,
+        "frame": 236,
+        "max_angular_speed_rad_s": 3.1734119971399643e-06,
+        "max_raw_linear_speed_m_s": 1.728505457096669e-07,
+        "particle_max_speed_m_s": 6.118096735008294e-06,
+        "particle_minimum_z_m": 0.012318468652665615,
+        "particle_p99_speed_m_s": 4.2554606807243545e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3469,
+        "finite": true,
+        "frame": 237,
+        "max_angular_speed_rad_s": 2.297875065802074e-06,
+        "max_raw_linear_speed_m_s": 1.21840357606027e-07,
+        "particle_max_speed_m_s": 6.040117568772985e-06,
+        "particle_minimum_z_m": 0.012318471446633339,
+        "particle_p99_speed_m_s": 4.234002517478075e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3470,
+        "finite": true,
+        "frame": 238,
+        "max_angular_speed_rad_s": 3.245383170441847e-06,
+        "max_raw_linear_speed_m_s": 1.3038806378461817e-07,
+        "particle_max_speed_m_s": 6.078477781557012e-06,
+        "particle_minimum_z_m": 0.012318474240601063,
+        "particle_p99_speed_m_s": 4.2185033635178115e-06,
+        "stable": true
+      },
+      {
+        "contact_samples": 3471,
+        "finite": true,
+        "frame": 239,
+        "max_angular_speed_rad_s": 3.4661447788849e-06,
+        "max_raw_linear_speed_m_s": 1.5255723787148482e-07,
+        "particle_max_speed_m_s": 6.107351055106847e-06,
+        "particle_minimum_z_m": 0.012318477965891361,
+        "particle_p99_speed_m_s": 4.210884981148411e-06,
+        "stable": true
+      }
+    ]
+  },
+  "checks": {
+    "additional_uncontrolled_hold_all_frames_stable": true,
+    "all_nine_lower_rocks_active": true,
+    "cover_continuous_stable_window_reached": true,
+    "cover_history_restored": true,
+    "cover_settle_finite": true,
+    "foundation_only_initial_activation": true,
+    "gravity_and_mpm_impulse_accounted_once": true,
+    "kinematic_press_finite": true,
+    "nine_rock_press_schedule_preserved": true,
+    "no_rigid_ground_or_bucket_support": true,
+    "particle_partition_counts_match": true,
+    "predictor_called_once_per_dynamic_step": true,
+    "release_centers_remain_in_bounds": true,
+    "release_contact_observed": true,
+    "release_continuous_stable_window_reached": true,
+    "release_executed_only_after_cover_pass": true,
+    "release_forbidden_contacts_zero": true,
+    "release_speed_safety_bounds": true,
+    "release_state_finite": true,
+    "three_rock_predecessor_bound": true
+  },
+  "construction": {
+    "cover_contact_samples": 239755,
+    "cover_peak_particle_speed_m_s": 0.07920235395431519,
+    "cover_settle_simulated_s": 0.6333333333333333,
+    "cover_settle_steps": 76,
+    "cover_stable_window_frames": 60,
+    "cover_trace": [
+      {
+        "contact_samples": 1700,
+        "finite": true,
+        "frame": 0,
+        "particle_max_speed_m_s": 0.055832166224718094,
+        "particle_minimum_z_m": 0.012387012131512165,
+        "particle_p99_speed_m_s": 0.0546303391456604,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 3301,
+        "finite": true,
+        "frame": 29,
+        "particle_max_speed_m_s": 0.0017576273530721664,
+        "particle_minimum_z_m": 0.012344609946012497,
+        "particle_p99_speed_m_s": 0.00115210039075464,
+        "stable_window_frames": 14
+      },
+      {
+        "contact_samples": 3247,
+        "finite": true,
+        "frame": 59,
+        "particle_max_speed_m_s": 0.00026109159807674587,
+        "particle_minimum_z_m": 0.012345612980425358,
+        "particle_p99_speed_m_s": 0.00017371737339999527,
+        "stable_window_frames": 44
+      },
+      {
+        "contact_samples": 3225,
+        "finite": true,
+        "frame": 75,
+        "particle_max_speed_m_s": 4.6451696107396856e-05,
+        "particle_minimum_z_m": 0.012345551513135433,
+        "particle_p99_speed_m_s": 2.546402538428083e-05,
+        "stable_window_frames": 60
+      }
+    ],
+    "foundation_and_press_steps": 176,
+    "press_contact_samples": 25988,
+    "presses": [
+      {
+        "contact_samples": 3011,
+        "held_position_world_m": [
+          4.67693670532854,
+          0.05392623766533931,
+          0.5170249926624505
+        ],
+        "manifest_rock_id": "lower-000",
+        "press_distance_m": 0.012,
+        "press_frames": 18,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 2319,
+        "held_position_world_m": [
+          5.458866700725541,
+          -0.3068783601126578,
+          0.39091281551369156
+        ],
+        "manifest_rock_id": "lower-001",
+        "press_distance_m": 0.008,
+        "press_frames": 12,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 3802,
+        "held_position_world_m": [
+          4.24808319562655,
+          -0.2922840845101988,
+          0.521814195185568
+        ],
+        "manifest_rock_id": "lower-002",
+        "press_distance_m": 0.016,
+        "press_frames": 24,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 2274,
+        "held_position_world_m": [
+          5.1730646403666505,
+          0.09856519448618738,
+          0.4714448190649084
+        ],
+        "manifest_rock_id": "lower-003",
+        "press_distance_m": 0.01,
+        "press_frames": 15,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 3070,
+        "held_position_world_m": [
+          5.68622858789861,
+          -0.6060757110218817,
+          0.4786971156176095
+        ],
+        "manifest_rock_id": "lower-004",
+        "press_distance_m": 0.014,
+        "press_frames": 21,
+        "press_speed_m_s": 0.08
+      },
+      {
+        "contact_samples": 2121,
+        "held_position_world_m": [
+          4.501716455676759,
+          -0.6940449266119415,
+          0.39701916526657643
+        ],
+        "manifest_rock_id": "lower-005",
+        "press_distance_m": 0.007,
+        "press_frames": 11,
+        "press_speed_m_s": 0.07636363636363637
+      },
+      {
+        "contact_samples": 2830,
+        "held_position_world_m": [
+          5.092123642126467,
+          0.5892007084215051,
+          0.4784085638886771
+        ],
+        "manifest_rock_id": "lower-006",
+        "press_distance_m": 0.011,
+        "press_frames": 17,
+        "press_speed_m_s": 0.0776470588235294
+      },
+      {
+        "contact_samples": 2794,
+        "held_position_world_m": [
+          5.413272770765727,
+          -0.6746956474336254,
+          0.3959433367602659
+        ],
+        "manifest_rock_id": "lower-007",
+        "press_distance_m": 0.009,
+        "press_frames": 14,
+        "press_speed_m_s": 0.07714285714285714
+      },
+      {
+        "contact_samples": 3767,
+        "held_position_world_m": [
+          5.642812916367316,
+          -0.022420891567126792,
+          0.513953397170966
+        ],
+        "manifest_rock_id": "lower-008",
+        "press_distance_m": 0.013,
+        "press_frames": 20,
+        "press_speed_m_s": 0.078
+      }
+    ]
+  },
+  "coupling": {
+    "dynamic_frames": 371,
+    "final_rocks": [
+      {
+        "linear_momentum_residual_ns": 2.830221718446982e-16,
+        "mpm_force_n": [
+          3.0257182466186805e-05,
+          1.7664552167673264e-05,
+          524.9012308096286
+        ],
+        "position_world_m": [
+          4.676962471541517,
+          0.053892089685583434,
+          0.515923975550436
+        ],
+        "raw_linear_velocity_world_m_s": [
+          -2.865926998274587e-08,
+          7.034277652437268e-08,
+          -1.3230363132535346e-07
+        ],
+        "reported_linear_velocity_world_m_s": [
+          -2.8777078997915676e-08,
+          7.027399802866787e-08,
+          -1.3165578114272542e-07
+        ],
+        "runtime_rock_id": "r1-rock-000",
+        "vertical_reaction_over_weight": 0.9999996830090849
+      },
+      {
+        "linear_momentum_residual_ns": 2.6804823706768505e-17,
+        "mpm_force_n": [
+          -3.8747830330976285e-05,
+          -1.7494494386482984e-05,
+          106.8393003419078
+        ],
+        "position_world_m": [
+          5.458951034809756,
+          -0.3069454866112333,
+          0.39011881114310676
+        ],
+        "raw_linear_velocity_world_m_s": [
+          -3.8357127542172477e-08,
+          3.510400513474129e-08,
+          -2.6128831368192514e-08
+        ],
+        "reported_linear_velocity_world_m_s": [
+          -3.7615912550434384e-08,
+          3.5438660814849727e-08,
+          -2.6461270580364266e-08
+        ],
+        "runtime_rock_id": "r1-rock-001",
+        "vertical_reaction_over_weight": 1.0000001626613881
+      },
+      {
+        "linear_momentum_residual_ns": 4.446502686243577e-17,
+        "mpm_force_n": [
+          -7.951477849488242e-05,
+          -0.0002409510370426915,
+          623.0867950423998
+        ],
+        "position_world_m": [
+          4.248075460771002,
+          -0.2922790790601247,
+          0.5205798827953853
+        ],
+        "raw_linear_velocity_world_m_s": [
+          2.055197377914319e-08,
+          -2.4176996529097692e-08,
+          2.5588916242601232e-08
+        ],
+        "reported_linear_velocity_world_m_s": [
+          2.081278552333142e-08,
+          -2.338666721642656e-08,
+          2.527140648571339e-08
+        ],
+        "runtime_rock_id": "r1-rock-002",
+        "vertical_reaction_over_weight": 1.000000155356456
+      },
+      {
+        "linear_momentum_residual_ns": 1.9466340189382286e-17,
+        "mpm_force_n": [
+          -0.00011953727772961997,
+          2.321984556630241e-05,
+          360.58277212530174
+        ],
+        "position_world_m": [
+          5.17312812260009,
+          0.09853039343231482,
+          0.47045552090468395
+        ],
+        "raw_linear_velocity_world_m_s": [
+          -2.1734170659814472e-08,
+          2.7098944047290017e-08,
+          -4.0808369739706077e-08
+        ],
+        "reported_linear_velocity_world_m_s": [
+          -2.1056643999044613e-08,
+          2.696733602735764e-08,
+          -4.189731276925721e-08
+        ],
+        "runtime_rock_id": "r1-rock-003",
+        "vertical_reaction_over_weight": 1.0000005328161612
+      },
+      {
+        "linear_momentum_residual_ns": 1.0395436388206835e-16,
+        "mpm_force_n": [
+          -0.00011590810466088897,
+          0.00011603115132707842,
+          437.61382752313995
+        ],
+        "position_world_m": [
+          5.686445642534461,
+          -0.6061039280486562,
+          0.4775367455023249
+        ],
+        "raw_linear_velocity_world_m_s": [
+          -4.149819391249342e-08,
+          7.85362944686644e-08,
+          -4.3677618535573446e-08
+        ],
+        "reported_linear_velocity_world_m_s": [
+          -4.095687816468384e-08,
+          7.79944040664912e-08,
+          -4.425908614420297e-08
+        ],
+        "runtime_rock_id": "r1-rock-004",
+        "vertical_reaction_over_weight": 1.000000284510145
+      },
+      {
+        "linear_momentum_residual_ns": 3.709263062672083e-17,
+        "mpm_force_n": [
+          -2.0526385924313217e-05,
+          4.8663151801520144e-05,
+          142.20309953916268
+        ],
+        "position_world_m": [
+          4.5017051932778696,
+          -0.6940989741385653,
+          0.39641280248589705
+        ],
+        "raw_linear_velocity_world_m_s": [
+          3.4763927738832673e-08,
+          8.152064196826625e-08,
+          4.7731604947730513e-08
+        ],
+        "reported_linear_velocity_world_m_s": [
+          3.5058934004334534e-08,
+          8.082125266839382e-08,
+          4.753161735864526e-08
+        ],
+        "runtime_rock_id": "r1-rock-005",
+        "vertical_reaction_over_weight": 1.0000000978532546
+      },
+      {
+        "linear_momentum_residual_ns": 2.5244625054324608e-17,
+        "mpm_force_n": [
+          -7.097988530269106e-05,
+          -0.0001246429130574711,
+          360.58253281914705
+        ],
+        "position_world_m": [
+          5.092154390561487,
+          0.5891847455075081,
+          0.4775871103687842
+        ],
+        "raw_linear_velocity_world_m_s": [
+          1.949992986302486e-08,
+          -9.501921259069149e-08,
+          -1.0515532007149093e-07
+        ],
+        "reported_linear_velocity_world_m_s": [
+          1.9902237541301823e-08,
+          -9.431274764288277e-08,
+          -1.0488789709561789e-07
+        ],
+        "runtime_rock_id": "r1-rock-006",
+        "vertical_reaction_over_weight": 0.9999998691508375
+      },
+      {
+        "linear_momentum_residual_ns": 8.73925216177946e-18,
+        "mpm_force_n": [
+          -5.6038679190351104e-05,
+          -1.0851232445929782e-05,
+          106.839305420894
+        ],
+        "position_world_m": [
+          5.413351429614289,
+          -0.6747361541055849,
+          0.3952494267696411
+        ],
+        "raw_linear_velocity_world_m_s": [
+          6.822767005267165e-09,
+          7.300532722706674e-08,
+          -5.022964428331404e-08
+        ],
+        "reported_linear_velocity_world_m_s": [
+          7.894742101118384e-09,
+          7.321290262158704e-08,
+          -5.065924043786001e-08
+        ],
+        "runtime_rock_id": "r1-rock-007",
+        "vertical_reaction_over_weight": 1.0000002101999532
+      },
+      {
+        "linear_momentum_residual_ns": 3.5749888996647843e-16,
+        "mpm_force_n": [
+          8.368506314582191e-06,
+          -0.000148141738236518,
+          524.9013352423935
+        ],
+        "position_world_m": [
+          5.642946382365909,
+          -0.02251131737842051,
+          0.51268988504005
+        ],
+        "raw_linear_velocity_world_m_s": [
+          -2.2910976059657478e-08,
+          -8.612800956796621e-09,
+          -1.3105432852214258e-07
+        ],
+        "reported_linear_velocity_world_m_s": [
+          -2.29435595789084e-08,
+          -8.03599800078095e-09,
+          -1.3081309654340996e-07
+        ],
+        "runtime_rock_id": "r1-rock-008",
+        "vertical_reaction_over_weight": 0.9999998819660043
+      }
+    ],
+    "formula": "mpm_proxy_v=rigid_v+g*dt; actual_mujoco_state_not_mutated",
+    "last_120_frames_max_raw_linear_speed_m_s": 2.4658088091604606e-07,
+    "last_120_frames_position_change_m": {
+      "lower-000": 1.0678274865630124e-07,
+      "lower-001": 5.7805555070209405e-08,
+      "lower-002": 4.095917785805257e-08,
+      "lower-003": 6.022768358102988e-08,
+      "lower-004": 5.629959960466339e-08,
+      "lower-005": 3.545081648189011e-08,
+      "lower-006": 1.1820809756642953e-07,
+      "lower-007": 2.8739196520030908e-08,
+      "lower-008": 6.106953036235473e-08
+    },
+    "maximum_linear_momentum_residual_ns": 5.995401092363565e-15,
+    "maximum_rigid_contact_substeps": 0
+  },
+  "environment": {
+    "device": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "execution": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/three-rock-cover-release-tfsnfely/bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/three-rock-cover-release-tfsnfely/bridge"
+    ],
+    "mujoco_step_calls": 371,
+    "newton_solver_step_calls": 623,
+    "wall_seconds": 153.69337542599533
+  },
+  "inputs": {
+    "bridge_manifest": {
+      "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+      "formal_scene_qualified": false,
+      "generated_source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684",
+      "maximum_external_wrench_count": "rock_count_plus_bucket",
+      "maximum_rock_count": 1024,
+      "minimum_rock_count": 1,
+      "physics_qualified": false,
+      "runtime_rock_count": true,
+      "schema": "excavation_mixed_material_capacity_bridge_manifest_v1",
+      "source_bridge_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+      "stable_named_wrench_routing": true,
+      "status": "capacity_bridge_source_generated"
+    },
+    "config_sha256": "83dc039269e1520141b6551b5aab62acb982045a63626897d7b491ea96917671",
+    "failed_bare_release_report_sha256": "97f73a30985c1f18e18fb1568095e4ed1596d00c3d9ad730dad38f0b73233cfa",
+    "model_manifest": {
+      "base_capacity_model_manifest": {
+        "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+        "expected_nq": 82,
+        "expected_nu": 12,
+        "expected_nv": 72,
+        "formal_scene_qualified": false,
+        "geometry_only_capacity_fixture": true,
+        "model_sha256": "1aa2914ac4b9a96c3165ad462b22b1c192284d203bde9525746602265a5eab73",
+        "physics_qualified": false,
+        "rock_count": 9,
+        "schema": "excavation_mixed_material_capacity_model_manifest_v1",
+        "source_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+        "stable_rock_ids": [
+          "r1-rock-000",
+          "r1-rock-001",
+          "r1-rock-002",
+          "r1-rock-003",
+          "r1-rock-004",
+          "r1-rock-005",
+          "r1-rock-006",
+          "r1-rock-007",
+          "r1-rock-008"
+        ],
+        "status": "capacity_model_generated",
+        "synthetic_positions_world_m": [
+          [
+            3.8875,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.0625,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.2375,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.4125,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.5875,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.7625,
+            -1.0125,
+            0.0875
+          ],
+          [
+            4.9375,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.1125,
+            -1.0125,
+            0.0875
+          ],
+          [
+            5.2875,
+            -1.0125,
+            0.0875
+          ]
+        ]
+      },
+      "model_sha256": "a66e530cbcbbab08537142ec5896c8b270a08e0c0dae654e039e74e9db6b3d30",
+      "provisional_geometry_only_input": true,
+      "rock_count": 9,
+      "stable_scene_claimed": false
+    },
+    "nine_rock_config_sha256": "83dc039269e1520141b6551b5aab62acb982045a63626897d7b491ea96917671",
+    "nine_rock_runner_sha256": "5e5f58d92b23eb4d4fa87a818ea5404aea67d2a7eab7dc2f21b72579b4a155df",
+    "physical_manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706",
+    "runner_sha256": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26"
+  },
+  "next_gate": "review_full_lower_layer_before_adding_second_layer",
+  "original_runner_status": "three_rocks_cover_then_free_release_failed",
+  "particles": {
+    "combined_count": 128881,
+    "combined_q_sha256": "7ffe8bc2029411d844eed3a2b9aa5964c5eae1ba8f24d251f53dcf0d9c116dfd",
+    "cover_activation": {
+      "activated_count": 43261,
+      "active_count": 128881,
+      "deactivated_count": 0,
+      "dormant_history_restored": true,
+      "history_fields": [
+        "particle_elastic_strain",
+        "particle_transform",
+        "particle_qd_grad",
+        "particle_stress",
+        "particle_Jp"
+      ]
+    },
+    "cover_count": 43261,
+    "cover_q_sha256": "434c380d8cf5d195b3163077bb4a38c242e921b19cd426991d4b74c4b87dd060",
+    "foundation_count": 85620,
+    "foundation_q_sha256": "0787b3ccb9a882b97f6f47a6090d0f8b09673ceb5f5a737ede7e60395a911ba5",
+    "initial_activation": {
+      "activated_count": 0,
+      "active_count": 85620,
+      "deactivated_count": 43261,
+      "dormant_history_restored": true,
+      "history_fields": [
+        "particle_elastic_strain",
+        "particle_transform",
+        "particle_qd_grad",
+        "particle_stress",
+        "particle_Jp"
+      ]
+    },
+    "removed_cover_particle_count_by_rock": {
+      "lower-000": 920,
+      "lower-001": 266,
+      "lower-002": 1059,
+      "lower-003": 834,
+      "lower-004": 974,
+      "lower-005": 351,
+      "lower-006": 822,
+      "lower-007": 270,
+      "lower-008": 947
+    }
+  },
+  "release": {
+    "all_finite": true,
+    "centers_inside": true,
+    "contact_samples": 453100,
+    "executed": true,
+    "final_rocks": [
+      {
+        "final_angular_speed_rad_s": 4.314775157973938e-06,
+        "final_linear_speed_m_s": 6.271362633563118e-06,
+        "final_position_world_m": [
+          4.676962820819028,
+          0.05389193633310989,
+          0.515924325422249
+        ],
+        "manifest_rock_id": "lower-000",
+        "rotation_from_release_rad": 0.00030887840947044047,
+        "runtime_rock_id": "r1-rock-000",
+        "translation_from_release_m": 0.001101511222770337
+      },
+      {
+        "final_angular_speed_rad_s": 6.974357786721623e-06,
+        "final_linear_speed_m_s": 5.2591512048647774e-06,
+        "final_position_world_m": [
+          5.458951323941169,
+          -0.30694553858097756,
+          0.39011894967251076
+        ],
+        "manifest_rock_id": "lower-001",
+        "rotation_from_release_rad": 0.0015708394205650965,
+        "runtime_rock_id": "r1-rock-001",
+        "translation_from_release_m": 0.0008011847533638316
+      },
+      {
+        "final_angular_speed_rad_s": 6.686876224285231e-06,
+        "final_linear_speed_m_s": 6.590060779833556e-06,
+        "final_position_world_m": [
+          4.248075768771404,
+          -0.29227913343737316,
+          0.5205800243732431
+        ],
+        "manifest_rock_id": "lower-002",
+        "rotation_from_release_rad": 0.00037615718327666263,
+        "runtime_rock_id": "r1-rock-002",
+        "translation_from_release_m": 0.0012342030891608596
+      },
+      {
+        "final_angular_speed_rad_s": 2.8679539661616478e-06,
+        "final_linear_speed_m_s": 5.733028881337841e-06,
+        "final_position_world_m": [
+          5.1731284045714405,
+          0.0985303014128616,
+          0.47045569888398725
+        ],
+        "manifest_rock_id": "lower-003",
+        "rotation_from_release_rad": 0.00015910078041747613,
+        "runtime_rock_id": "r1-rock-003",
+        "translation_from_release_m": 0.0009917873424702321
+      },
+      {
+        "final_angular_speed_rad_s": 8.945941180151455e-06,
+        "final_linear_speed_m_s": 5.914957038352725e-06,
+        "final_position_world_m": [
+          5.686445946516958,
+          -0.6061039986368449,
+          0.4775368537413021
+        ],
+        "manifest_rock_id": "lower-004",
+        "rotation_from_release_rad": 0.0005943331733811542,
+        "runtime_rock_id": "r1-rock-004",
+        "translation_from_release_m": 0.0011807847304835303
+      },
+      {
+        "final_angular_speed_rad_s": 6.352141695725951e-06,
+        "final_linear_speed_m_s": 4.823861470287877e-06,
+        "final_position_world_m": [
+          4.501705382817042,
+          -0.6940990652948252,
+          0.39641283118028126
+        ],
+        "manifest_rock_id": "lower-005",
+        "rotation_from_release_rad": 0.0009389248699964698,
+        "runtime_rock_id": "r1-rock-005",
+        "translation_from_release_m": 0.0006088469671519197
+      },
+      {
+        "final_angular_speed_rad_s": 4.2972071835856695e-06,
+        "final_linear_speed_m_s": 5.089289946039362e-06,
+        "final_position_world_m": [
+          5.0921546271491644,
+          0.5891848050367101,
+          0.47758743994542335
+        ],
+        "manifest_rock_id": "lower-006",
+        "rotation_from_release_rad": 0.00034854524113384305,
+        "runtime_rock_id": "r1-rock-006",
+        "translation_from_release_m": 0.0008218622265709014
+      },
+      {
+        "final_angular_speed_rad_s": 6.1049065755848e-06,
+        "final_linear_speed_m_s": 4.922879038574282e-06,
+        "final_position_world_m": [
+          5.4133517092625905,
+          -0.6747362284474525,
+          0.39524941262220403
+        ],
+        "manifest_rock_id": "lower-007",
+        "rotation_from_release_rad": 0.0013189006058397775,
+        "runtime_rock_id": "r1-rock-007",
+        "translation_from_release_m": 0.0006995775970935605
+      },
+      {
+        "final_angular_speed_rad_s": 6.750524906494603e-06,
+        "final_linear_speed_m_s": 6.461953386725463e-06,
+        "final_position_world_m": [
+          5.642946718416279,
+          -0.02251137764368792,
+          0.5126899598858137
+        ],
+        "manifest_rock_id": "lower-008",
+        "rotation_from_release_rad": 0.0006683738628031107,
+        "runtime_rock_id": "r1-rock-008",
+        "translation_from_release_m": 0.0012737207275816042
+      }
+    ],
+    "maximum_forbidden_contact_count": 0,
+    "maximum_particle_speed_m_s": 0.05201760306954384,
+    "maximum_rock_angular_speed_rad_s": 0.07345979549211146,
+    "maximum_rock_linear_speed_m_s": 0.04909950551524339,
+    "stable_window_frames": 120,
+    "steps": 131,
+    "trace": [
+      {
+        "contact_samples": 3435,
+        "fastest_runtime_rock_id": "r1-rock-008",
+        "finite": true,
+        "frame": 0,
+        "max_rock_angular_speed_rad_s": 0.029184579203559328,
+        "max_rock_linear_speed_m_s": 0.035875084138349576,
+        "particle_max_speed_m_s": 0.03627794608473778,
+        "particle_minimum_z_m": 0.012343797832727432,
+        "particle_p99_speed_m_s": 0.027336735278367996,
+        "stable_window_frames": 0
+      },
+      {
+        "contact_samples": 3476,
+        "fastest_runtime_rock_id": "r1-rock-002",
+        "finite": true,
+        "frame": 29,
+        "max_rock_angular_speed_rad_s": 0.004629346290335236,
+        "max_rock_linear_speed_m_s": 0.002511945310942312,
+        "particle_max_speed_m_s": 0.0024697750341147184,
+        "particle_minimum_z_m": 0.01231575571000576,
+        "particle_p99_speed_m_s": 0.002055526478216052,
+        "stable_window_frames": 19
+      },
+      {
+        "contact_samples": 3470,
+        "fastest_runtime_rock_id": "r1-rock-002",
+        "finite": true,
+        "frame": 59,
+        "max_rock_angular_speed_rad_s": 0.0003814881127284066,
+        "max_rock_linear_speed_m_s": 0.00029683977336044434,
+        "particle_max_speed_m_s": 0.0003175119054503739,
+        "particle_minimum_z_m": 0.012317956425249577,
+        "particle_p99_speed_m_s": 0.0002742328215390444,
+        "stable_window_frames": 49
+      },
+      {
+        "contact_samples": 3466,
+        "fastest_runtime_rock_id": "r1-rock-004",
+        "finite": true,
+        "frame": 89,
+        "max_rock_angular_speed_rad_s": 0.00010830086162416132,
+        "max_rock_linear_speed_m_s": 7.362332955068569e-05,
+        "particle_max_speed_m_s": 9.093127300729975e-05,
+        "particle_minimum_z_m": 0.012318025343120098,
+        "particle_p99_speed_m_s": 6.798718823119998e-05,
+        "stable_window_frames": 79
+      },
+      {
+        "contact_samples": 3465,
+        "fastest_runtime_rock_id": "r1-rock-008",
+        "finite": true,
+        "frame": 119,
+        "max_rock_angular_speed_rad_s": 2.1005419940304962e-05,
+        "max_rock_linear_speed_m_s": 1.8038480387207643e-05,
+        "particle_max_speed_m_s": 2.6435642212163657e-05,
+        "particle_minimum_z_m": 0.01231805607676506,
+        "particle_p99_speed_m_s": 1.921583134389948e-05,
+        "stable_window_frames": 109
+      },
+      {
+        "contact_samples": 3465,
+        "fastest_runtime_rock_id": "r1-rock-002",
+        "finite": true,
+        "frame": 130,
+        "max_rock_angular_speed_rad_s": 8.945941180151455e-06,
+        "max_rock_linear_speed_m_s": 6.590060779833556e-06,
+        "particle_max_speed_m_s": 2.0995083104935475e-05,
+        "particle_minimum_z_m": 0.012318055145442486,
+        "particle_p99_speed_m_s": 1.3339931683731265e-05,
+        "stable_window_frames": 120
+      }
+    ]
+  },
+  "schema": "excavation_layered_mound_nine_rock_lower_layer_report_v1",
+  "scope": {
+    "active_rock_count": 9,
+    "full_lower_layer": true,
+    "full_scene": false,
+    "fullscale_qualified": false,
+    "other_56_rocks_active": false,
+    "stable_scene_claimed": false,
+    "training": false
+  },
+  "stable_scene_claimed": false,
+  "status": "nine_rock_lower_layer_passed"
+}

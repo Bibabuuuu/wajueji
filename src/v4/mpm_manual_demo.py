@@ -30,6 +30,10 @@ from dagger_supervisor import (
     task_phase_from_termination_state,
 )
 from mpm_episode import _write_json, advance_termination
+from manual_action_input import (
+    GamepadFourAxisState, KeyboardFourAxisState, ManualInputSample,
+    load_manual_input_config,
+)
 from mpm_smoke import LiveFastTierBackend, _read, actor_observation
 from runtime_adapter import POLICY_DT_S, RESET_SCHEMA, FourAxisRuntime, ResetRequest, step_request
 from termination import (FILL_SAMPLE_COUNT,
@@ -76,14 +80,42 @@ def _shadow_row(*, decision, frame, next_frame, action, phase) -> dict:
 
 
 def _select_control_action(*, dagger_mode, control_mode, actor_action,
-                           human_action, takeover_handshake):
+                           human_action, takeover_handshake,
+                           human_source="human_keyboard"):
     """Select one action and always define whether it is the handshake first."""
     if dagger_mode and control_mode == "actor":
         return list(actor_action), "actor_prefix", False
     if dagger_mode:
         action, first = takeover_handshake.action_for_step(human_action)
         return action, "human_correction", first
-    return list(human_action), "human_keyboard", False
+    return list(human_action), human_source, False
+
+
+def _select_gamepad_controller(*, mode, controllers, index):
+    """Resolve a controller only after the caller has created a display."""
+    if mode == "keyboard":
+        return None
+    if isinstance(index, bool) or not isinstance(index, int) or index < 0:
+        raise ValueError("invalid_gamepad_index")
+    if mode == "gamepad":
+        if index >= len(controllers):
+            raise RuntimeError("requested_gamepad_not_found")
+        return controllers[index]
+    if mode == "auto":
+        if not controllers:
+            return None
+        if len(controllers) != 1:
+            raise RuntimeError("ambiguous_gamepad_auto_selection")
+        return controllers[0]
+    raise ValueError("unsupported_manual_input_mode")
+
+
+def _requires_controller_enumeration(mode):
+    if mode == "keyboard":
+        return False
+    if mode in ("gamepad", "auto"):
+        return True
+    raise ValueError("unsupported_manual_input_mode")
 
 
 def main() -> int:
@@ -98,6 +130,11 @@ def main() -> int:
     parser.add_argument("--fill-held-out-report", type=Path, required=True)
     parser.add_argument("--episode-id", default="human-demo-001")
     parser.add_argument("--session-label")
+    parser.add_argument("--manual-input", choices=("keyboard", "gamepad", "auto"),
+                        default="keyboard")
+    parser.add_argument("--manual-input-config", type=Path)
+    parser.add_argument("--gamepad-index", type=int, default=0)
+    parser.add_argument("--acquisition-domain", default="unspecified")
     parser.add_argument("--extra-site-packages", type=Path)
     parser.add_argument("--policy-site-packages", type=Path)
     parser.add_argument("--policy-checkpoint", type=Path)
@@ -120,6 +157,22 @@ def main() -> int:
         args.session_label = args.session_label.strip()
         if not args.session_label or len(args.session_label) > 80:
             raise ValueError("invalid_session_label")
+    if not args.acquisition_domain.strip() or len(args.acquisition_domain) > 120:
+        raise ValueError("invalid_acquisition_domain")
+    args.acquisition_domain = args.acquisition_domain.strip()
+    if args.gamepad_index < 0:
+        raise ValueError("invalid_gamepad_index")
+    if args.manual_input in ("gamepad", "auto") and args.manual_input_config is None:
+        raise ValueError("manual_input_config_required")
+    manual_input_config = None
+    manual_input_config_path = None
+    manual_input_config_sha256 = None
+    if args.manual_input_config is not None:
+        manual_input_config_path = args.manual_input_config.resolve()
+        if not manual_input_config_path.is_file():
+            raise FileNotFoundError("manual_input_config_missing:" + str(manual_input_config_path))
+        manual_input_config = load_manual_input_config(manual_input_config_path)
+        manual_input_config_sha256 = sha256(manual_input_config_path)
     if args.extra_site_packages is not None:
         extra_site_packages = args.extra_site_packages.resolve()
         if not extra_site_packages.is_dir():
@@ -151,7 +204,7 @@ def main() -> int:
     source_names = [
         "mpm_manual_demo.py", "mpm_smoke.py", "mpm_episode.py",
         "online_truth.py", "runtime_adapter.py", "contracts.py", "termination.py",
-        "dagger_supervisor.py", "observation_vector_v2.py",
+        "dagger_supervisor.py", "observation_vector_v2.py", "manual_action_input.py",
     ]
     if args.policy_checkpoint is not None:
         source_names.extend(("observation_vector.py",))
@@ -166,6 +219,8 @@ def main() -> int:
         else:
             source_names.extend(("sac_agent.py",))
     source_paths = tuple(source_root / name for name in source_names)
+    if manual_input_config_path is not None:
+        source_paths = source_paths + (manual_input_config_path,)
     sources_before = {str(path): sha256(path) for path in source_paths}
     geometry = _read(args.geometry_report)
     target = geometry["selection"]["entry_xy_m"] + [geometry["selection"]["surface_z_m"]]
@@ -197,6 +252,11 @@ def main() -> int:
     viewer = None
     surface = None
     streams = []
+    manual_input_actual_mode = "keyboard"
+    manual_input_device_name = None
+    manual_input_device_index = None
+    gamepad_disconnect_count = 0
+    gamepad_emergency_stop_triggered = False
     started = time.perf_counter()
     executed = 0
     phase = "approach"
@@ -324,8 +384,13 @@ def main() -> int:
         phase_log = (args.output / "phase-events.ndjson").open("w", encoding="utf-8", newline="\n")
         evaluation_log = (args.output / "manual-fill-samples.ndjson").open(
             "w", encoding="utf-8", newline="\n")
+        manual_input_log = (args.output / "manual-input.ndjson").open(
+            "w", encoding="utf-8", newline="\n")
+        manual_input_event_log = (args.output / "manual-input-events.ndjson").open(
+            "w", encoding="utf-8", newline="\n")
         streams = [
-            policy_log, truth_log, terrain_log, shadow_log, phase_log, evaluation_log]
+            policy_log, truth_log, terrain_log, shadow_log, phase_log, evaluation_log,
+            manual_input_log, manual_input_event_log]
         correction_log = None
         intervention_log = None
         handshake_log = None
@@ -373,23 +438,19 @@ def main() -> int:
         surface = (SoilSurface(backend.soil.state.particle_q)
                    if SoilSurface is not None else None)
         surface_enabled = {"value": surface is not None}
-        held = set()
-        focus = {"active": False}
-        motion_keys = (key.J, key.L, key.I, key.K, key.U, key.O, key.N, key.M)
+        keyboard_input = KeyboardFourAxisState()
+        gamepad_input = None
+        manual_input_state = keyboard_input
+        manual_gamepad = None
+        gamepad_manager = None
+        focus = {"active": True}
+        motion_keys = {
+            key.J: "J", key.L: "L", key.I: "I", key.K: "K",
+            key.U: "U", key.O: "O", key.N: "N", key.M: "M",
+        }
 
         def human_action_from_held():
-            if not focus["active"]:
-                return [0.0, 0.0, 0.0, 0.0]
-
-            def diff(positive, negative):
-                return float(int(positive in held) - int(negative in held))
-
-            return [
-                diff(key.L, key.J),
-                diff(key.I, key.K),
-                diff(key.O, key.U),
-                diff(key.M, key.N),
-            ]
+            return manual_input_state.action(window_focused=focus["active"])
 
         def stop_signal(*_):
             stop.update(value=True, reason="signal_requested")
@@ -401,17 +462,39 @@ def main() -> int:
 
         def deactivated():
             focus["active"] = False
-            held.clear()
+            keyboard_input.clear()
+
+        def activate_human_correction_if_armed():
+            nonlocal control_mode, safety_pause
+            if not (dagger_mode and control_mode == "human_correction_armed"):
+                return
+            first_action = human_action_from_held()
+            if not any(abs(value) > 0.0 for value in first_action):
+                return
+            activation_event = takeover_handshake.activate(
+                raw_action=first_action,
+                decision_step=executed,
+                sim_time_s=frame["sim_time_s"],
+            )
+            if activation_event is not None:
+                _write_line(handshake_log, activation_event)
+                control_mode = "human_correction"
+                safety_pause = False
+                # ViewerGL exposes pause through the same private field its
+                # own Space-key GUI handler uses.  Clear it here so the first
+                # keyboard or gamepad motion command resumes safely.
+                viewer._paused = False
+                save_status(frame)
 
         def press(symbol, modifiers):
             nonlocal phase, control_mode, safety_pause
             del modifiers
             if symbol in motion_keys:
                 focus["active"] = True
-                held.add(symbol)
+                keyboard_input.press(motion_keys[symbol])
             if (dagger_mode and symbol == key.ENTER
                     and control_mode == "takeover_pending"):
-                held.clear()
+                keyboard_input.clear()
                 armed_event = takeover_handshake.arm(
                     decision_step=executed,
                     sim_time_s=frame["sim_time_s"],
@@ -423,24 +506,9 @@ def main() -> int:
                 return
             if (dagger_mode and symbol in motion_keys
                     and control_mode == "human_correction_armed"):
-                first_action = human_action_from_held()
-                activation_event = takeover_handshake.activate(
-                    raw_action=first_action,
-                    decision_step=executed,
-                    sim_time_s=frame["sim_time_s"],
-                )
-                if activation_event is not None:
-                    _write_line(handshake_log, activation_event)
-                    control_mode = "human_correction"
-                    safety_pause = False
-                    # ViewerGL exposes pause through the same private field its
-                    # own Space-key GUI handler uses.  Clear it here so the
-                    # first motion command resumes even if Space was pressed
-                    # while the safety boundary was armed.
-                    viewer._paused = False
-                    save_status(frame)
+                activate_human_correction_if_armed()
             if symbol == key.SPACE:
-                held.clear()
+                keyboard_input.clear()
             if symbol == key.T and surface is not None:
                 surface_enabled["value"] = not surface_enabled["value"]
             if symbol == key.X:
@@ -456,7 +524,8 @@ def main() -> int:
 
         def release(symbol, modifiers):
             del modifiers
-            held.discard(symbol)
+            if symbol in motion_keys:
+                keyboard_input.release(motion_keys[symbol])
 
         viewer.renderer.window.push_handlers(
             on_activate=activated,
@@ -464,6 +533,65 @@ def main() -> int:
             on_key_press=press,
             on_key_release=release,
         )
+
+        # Import and enumerate controllers only after ViewerGL created a display.
+        # The default keyboard route never reaches this branch, preserving the
+        # headless A30 fallback without a controller dependency.
+        if _requires_controller_enumeration(args.manual_input):
+            import pyglet.input
+
+            gamepad_manager = pyglet.input.ControllerManager()
+            controllers = gamepad_manager.get_controllers()
+            manual_gamepad = _select_gamepad_controller(
+                mode=args.manual_input,
+                controllers=controllers,
+                index=args.gamepad_index,
+            )
+            if manual_gamepad is not None:
+                manual_gamepad.open()
+                gamepad_input = GamepadFourAxisState(manual_input_config)
+                manual_input_state = gamepad_input
+                manual_input_actual_mode = "gamepad"
+                manual_input_device_name = manual_gamepad.name
+                manual_input_device_index = (
+                    args.gamepad_index if args.manual_input == "gamepad" else 0)
+
+                def gamepad_stick_motion(controller, stick, vector):
+                    if controller is manual_gamepad:
+                        gamepad_input.set_stick(stick, vector.x, vector.y)
+                        activate_human_correction_if_armed()
+
+                def gamepad_button_press(controller, button):
+                    nonlocal gamepad_emergency_stop_triggered
+                    if controller is manual_gamepad:
+                        gamepad_input.press_button(button)
+                        if gamepad_input.emergency_stop_latched:
+                            gamepad_emergency_stop_triggered = True
+                            _write_line(manual_input_event_log, {
+                                "schema": "excavation_manual_input_event_v1",
+                                "event": "manual_emergency_stop",
+                                "decision_step": executed,
+                                "sim_time_s": float(frame["sim_time_s"]),
+                            })
+                            stop.update(value=True, reason="manual_emergency_stop")
+
+                def gamepad_disconnect(controller):
+                    nonlocal gamepad_disconnect_count
+                    if controller is manual_gamepad:
+                        gamepad_input.disconnect()
+                        gamepad_disconnect_count += 1
+                        _write_line(manual_input_event_log, {
+                            "schema": "excavation_manual_input_event_v1",
+                            "event": "gamepad_disconnect",
+                            "decision_step": executed,
+                            "sim_time_s": float(frame["sim_time_s"]),
+                        })
+
+                manual_gamepad.push_handlers(
+                    on_stick_motion=gamepad_stick_motion,
+                    on_button_press=gamepad_button_press,
+                )
+                gamepad_manager.push_handlers(on_disconnect=gamepad_disconnect)
 
         def ui(imgui):
             imgui.text(
@@ -478,6 +606,11 @@ def main() -> int:
             imgui.text("Space: start/pause | X: save and finish")
             imgui.text("J/L swing -/+ | I/K boom +/-")
             imgui.text("U/O arm -/+ | N/M bucket -/+")
+            imgui.text(
+                "Manual input: %s (requested %s)" % (
+                    manual_input_actual_mode, args.manual_input))
+            if manual_input_actual_mode == "gamepad":
+                imgui.text("Gamepad BACK: emergency stop and save")
             if dagger_mode:
                 imgui.text(
                     "Actor drives first; ENTER arms takeover, first motion key resumes")
@@ -731,7 +864,13 @@ def main() -> int:
                         actor_action=actor_action,
                         human_action=human_action,
                         takeover_handshake=takeover_handshake,
+                        human_source=(
+                            "human_gamepad" if manual_input_actual_mode == "gamepad"
+                            else "human_keyboard"),
                     ))
+                manual_action_before_projection = (
+                    list(human_action) if action_source == "actor_prefix"
+                    else list(raw_action))
                 action, end_stop = end_stop_projector.project(
                     raw_action, legacy_observation, record_projection=False)
                 if dagger_mode and control_mode == "actor":
@@ -761,7 +900,7 @@ def main() -> int:
                         )
                         control_mode = "takeover_pending"
                         safety_pause = True
-                        held.clear()
+                        keyboard_input.clear()
                         save_status(frame)
                         continue
                 try:
@@ -872,6 +1011,29 @@ def main() -> int:
                         "next_observation": next_observation,
                     }
                     _write_line(policy_log, policy_row)
+                    if action_source != "actor_prefix" and (
+                            policy_row["raw_action"]["normalized_velocity"]
+                            != manual_action_before_projection):
+                        raise RuntimeError("manual_input_policy_raw_action_mismatch")
+                    _write_line(manual_input_log, ManualInputSample(
+                        episode_id=args.episode_id,
+                        decision_step=executed,
+                        sim_time_s=float(frame["sim_time_s"]),
+                        sample_wall_monotonic_s=time.perf_counter(),
+                        acquisition_domain=args.acquisition_domain,
+                        input_device=manual_input_actual_mode,
+                        device_name=manual_input_device_name,
+                        device_index=manual_input_device_index,
+                        config_sha256=manual_input_config_sha256,
+                        window_focused=focus["active"],
+                        connected=(
+                            gamepad_input.connected if gamepad_input is not None else True),
+                        raw_controls=manual_input_state.raw_controls(),
+                        normalized_before_projection=tuple(manual_action_before_projection),
+                        emergency_stop_latched=(
+                            gamepad_input.emergency_stop_latched
+                            if gamepad_input is not None else False),
+                    ).as_dict())
                     if dagger_mode and action_source == "human_correction":
                         correction_samples += 1
                         _write_line(correction_log, {
@@ -915,7 +1077,7 @@ def main() -> int:
                             )
                             control_mode = "takeover_pending"
                             safety_pause = True
-                            held.clear()
+                            keyboard_input.clear()
                     if next_frame["terrain_sequence"] != last_terrain_sequence:
                         _write_line(terrain_log, {
                             "terrain_sequence": next_frame["terrain_sequence"],
@@ -1025,6 +1187,16 @@ def main() -> int:
             "status": report_status,
             "episode_id": args.episode_id,
             "session_label": args.session_label,
+            "manual_input": {
+                "requested_mode": args.manual_input,
+                "actual_mode": manual_input_actual_mode,
+                "device_name": manual_input_device_name,
+                "device_index": manual_input_device_index,
+                "config_sha256": manual_input_config_sha256,
+                "acquisition_domain": args.acquisition_domain,
+                "disconnect_count": gamepad_disconnect_count,
+                "emergency_stop_triggered": gamepad_emergency_stop_triggered,
+            },
             "acquisition_mode": (
                 "protected_v4_baseline_evaluation" if protected_v4_mode else
                 "dagger_takeover" if dagger_mode else "manual_demo"),

@@ -1,0 +1,739 @@
+{
+  "bridge_ready": {
+    "external_wrench_input": "reserved_zero_only",
+    "mechanism_nq": 19,
+    "mechanism_nv": 18,
+    "rock_count": 1,
+    "schema": "excavation_mixed_rigid_bridge_v1"
+  },
+  "build": {
+    "bridge_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/codex-work/autonomous-acquisition-2026-09-13/mechanism-auto8",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/src/v4/mixed_rigid_bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/mixed-rigid-bridge-smoke-qqlxjg56/mixed-rigid-bridge"
+    ],
+    "bridge_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+    "inspector_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/src/v4/mixed_material_r1_model_inspect.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/mixed-rigid-bridge-smoke-qqlxjg56/model-inspect"
+    ],
+    "model_inspector_sha256": "cb510f0eaa53459b65df3e6e209318b758eb7b5e163d94c0ad3c68aad1b5ce12"
+  },
+  "candidate_manifest": {
+    "bucket_proxy_geom_count": 18,
+    "candidate_model_sha256": "fc493f522cc36f6e2f66784aba531043b478a825eaad9567a70aadf2b1832bf9",
+    "contact_bits": {
+      "bucket_proxy": 512,
+      "rock": 256,
+      "rock_ground": 1024,
+      "truck_receiver_reserved": 2048
+    },
+    "expected_candidate_contract": {
+      "nplugin": 0,
+      "nq": 26,
+      "nu": 12,
+      "nv": 24,
+      "rock_count": 1
+    },
+    "frozen_source_modified": false,
+    "mouth_center_bucket_m": [
+      0.117559,
+      0.0,
+      -0.590555
+    ],
+    "mouth_inward_direction_bucket": [
+      0.9762252567359343,
+      0.0,
+      0.21675850181909675
+    ],
+    "rock": {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.12,
+      "inertia_about_com_kg_m2": [
+        [
+          0.002730036731269096,
+          -0.00013544030291822907,
+          -1.5999552127237756e-05
+        ],
+        [
+          -0.00013544030291822907,
+          0.004496298940992804,
+          -1.4905357373961838e-05
+        ],
+        [
+          -1.5999552127237756e-05,
+          -1.4905357373961838e-05,
+          0.0051410048828723345
+        ]
+      ],
+      "initial_orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_position_world_m": [
+        5.133735402304274,
+        0.46,
+        2.955
+      ],
+      "mass_kg": 2.3524245790080363,
+      "prototype_id": "angular_octa",
+      "rock_id": "r1-rock-000"
+    },
+    "rock_inertia_about_com_kg_m2": [
+      [
+        0.002730036731269096,
+        -0.00013544030291822907,
+        -1.5999552127237756e-05
+      ],
+      [
+        -0.00013544030291822907,
+        0.004496298940992804,
+        -1.4905357373961838e-05
+      ],
+      [
+        -1.5999552127237756e-05,
+        -1.4905357373961838e-05,
+        0.0051410048828723345
+      ]
+    ],
+    "rock_mass_kg": 2.3524245790080363,
+    "rocks": [
+      {
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "density_kg_m3": 2600.0,
+        "equivalent_diameter_m": 0.12,
+        "inertia_about_com_kg_m2": [
+          [
+            0.002730036731269096,
+            -0.00013544030291822907,
+            -1.5999552127237756e-05
+          ],
+          [
+            -0.00013544030291822907,
+            0.004496298940992804,
+            -1.4905357373961838e-05
+          ],
+          [
+            -1.5999552127237756e-05,
+            -1.4905357373961838e-05,
+            0.0051410048828723345
+          ]
+        ],
+        "initial_orientation_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_position_world_m": [
+          5.133735402304274,
+          0.46,
+          2.955
+        ],
+        "mass_kg": 2.3524245790080363,
+        "prototype_id": "angular_octa",
+        "rock_id": "r1-rock-000"
+      }
+    ],
+    "schema": "excavation_mixed_rigid_mechanism_candidate_v1",
+    "scope_limit": "model assembly candidate only until a separate bridge loads and steps it with classified contacts and state logging",
+    "source_bucket_visual_collision_disabled": true,
+    "source_model_contract": {
+      "actuator_count": 12,
+      "mechanism_nq": 19,
+      "mechanism_nv": 18,
+      "plugin_count": 0
+    },
+    "source_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+    "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "total_rock_mass_kg": 2.3524245790080363,
+    "unit_fixture": {
+      "friction": [
+        0.8,
+        0.005,
+        0.0001
+      ],
+      "half_size_m": [
+        0.6,
+        0.55,
+        0.03
+      ],
+      "name": "r1_ground_push_shelf",
+      "position_world_m": [
+        5.13,
+        0.65,
+        2.86
+      ],
+      "quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "slope_degrees": 0.0,
+      "type": "box"
+    },
+    "unit_fixtures": [
+      {
+        "friction": [
+          0.8,
+          0.005,
+          0.0001
+        ],
+        "half_size_m": [
+          0.6,
+          0.55,
+          0.03
+        ],
+        "name": "r1_ground_push_shelf",
+        "position_world_m": [
+          5.13,
+          0.65,
+          2.86
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 0.0,
+        "type": "box"
+      }
+    ],
+    "unit_scenario": "bucket_push"
+  },
+  "checks": {
+    "angular_impulse_decomposition_passed": true,
+    "bridge_rock_count_matches_manifest": true,
+    "bridge_schema_passed": true,
+    "bucket_contact_observed": true,
+    "bucket_moved_positive_y": true,
+    "bucket_reaction_opposes_push": true,
+    "closure_below_1mm": true,
+    "forbidden_contacts_zero": true,
+    "mass_matches_r0_geometry": true,
+    "model_inspection_passed": true,
+    "rock_pushed_positive_y": true,
+    "source_model_unchanged": true,
+    "total_mass_matches_manifest": true
+  },
+  "model_inspection": {
+    "bucket_proxy_geom_count": 18,
+    "initial_contact_count": 0,
+    "nplugin": 0,
+    "nq": 26,
+    "nu": 12,
+    "nv": 24,
+    "passed": true,
+    "rock_count": 1,
+    "rock_dof_address": 18,
+    "rock_mass_kg": 2.3524245790080363,
+    "rock_masses_kg": [
+      2.3524245790080363
+    ],
+    "rock_qpos_address": 19,
+    "schema": "excavation_mixed_rigid_model_inspect_v1",
+    "total_rock_mass_kg": 2.3524245790080363
+  },
+  "run": {
+    "angular_impulse_decomposition_residual_nms": 0.0,
+    "bucket_origin_displacement_m": [
+      -0.007208123858403859,
+      0.2741248337997465,
+      -0.0017673748995745697
+    ],
+    "command_schedule": [
+      {
+        "command": [
+          0.06,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 1.0,
+        "end_step_exclusive": 120,
+        "name": "constant",
+        "start_step": 0,
+        "steps": 120
+      }
+    ],
+    "dt_s": 0.008333333333333333,
+    "final_bucket_origin_m": [
+      4.665936706475013,
+      0.2741248337997465,
+      3.457001302814862
+    ],
+    "final_continuous_full_rock_inside_duration_s": 0.0,
+    "final_continuous_inside_duration_s": 0.0,
+    "final_entry_observation": {
+      "center_inside_bucket_prism": false,
+      "mouth_depth_m": 0.5261628770494101,
+      "rock_center_bucket_m": [
+        0.6170513436678853,
+        0.4087099598658127,
+        -0.41272651672894967
+      ]
+    },
+    "final_full_rock_observation": {
+      "all_vertices_inside_bucket_prism": false,
+      "containment_tolerance_m": 0.0,
+      "inside_vertex_count": 0,
+      "maximum_vertex_mouth_depth_m": 0.63478910932551,
+      "minimum_vertex_mouth_depth_m": 0.42553699459200744,
+      "vertex_count": 6,
+      "vertices_bucket_m": [
+        [
+          0.7280490127361711,
+          0.348215935820526,
+          -0.41149240461534153
+        ],
+        [
+          0.5138635198687129,
+          0.45883145751940435,
+          -0.41222514159461937
+        ],
+        [
+          0.6504437705886238,
+          0.47493846555518593,
+          -0.4580443512279838
+        ],
+        [
+          0.5723322617652881,
+          0.3482115619291842,
+          -0.3773997182684809
+        ],
+        [
+          0.6320628428607925,
+          0.435343395281118,
+          -0.3506311047327094
+        ],
+        [
+          0.5910863939083733,
+          0.38713440459320597,
+          -0.46888355483381505
+        ]
+      ],
+      "vertices_world_m": [
+        [
+          5.286842972627714,
+          0.6594199569696573,
+          2.921596055665201
+        ],
+        [
+          5.069874980192022,
+          0.757479224254836,
+          2.959292557585023
+        ],
+        [
+          5.194860102048429,
+          0.7809569698263875,
+          2.889718745389475
+        ],
+        [
+          5.140019987171384,
+          0.6507896293603446,
+          2.9830659361063616
+        ],
+        [
+          5.198363599328015,
+          0.741499416632882,
+          2.9986869087198365
+        ],
+        [
+          5.139774691474187,
+          0.6897652109826116,
+          2.889701909985868
+        ]
+      ]
+    },
+    "final_mechanism_qpos": [
+      7.138031159923124e-11,
+      -2.4336264922019486e-10,
+      0.03999890868328316,
+      0.9999999999999604,
+      1.9704346948192086e-07,
+      -1.9830580959560665e-07,
+      -1.2743354697368993e-09,
+      0.05868304449389603,
+      0.0003354654349441889,
+      0.5150324890203519,
+      0.0003856206835840179,
+      -4.895222943538585e-06,
+      0.5251315034682941,
+      4.891097380117295e-05,
+      -3.023758966199428e-06,
+      0.7031645661789148,
+      -2.191404074816349e-05,
+      -1.984690244294312e-05,
+      1.1349419194776177e-05
+    ],
+    "final_mechanism_qvel": [
+      1.91678522601912e-08,
+      -5.248109844747631e-08,
+      -5.466864631331935e-09,
+      3.2008990532730976e-07,
+      1.7291117520411697e-07,
+      -1.913149420858449e-08,
+      0.05988521146462827,
+      0.0004110362650554973,
+      -0.00021220715742027878,
+      0.00047243200920206365,
+      -0.0001278461897774406,
+      0.0006523091736114655,
+      0.0012085283802577282,
+      0.00011503792017865286,
+      0.0002083059747656983,
+      0.0004919975111853471,
+      0.0008792276143613213,
+      -0.0006602785897766037
+    ],
+    "final_rock_position_m": [
+      5.1740644483078055,
+      0.713392491001153,
+      2.9402910426653612
+    ],
+    "final_rock_qvel": [
+      0.01761760287186135,
+      0.3020893878148432,
+      0.04076748577446596,
+      0.2425540254467455,
+      -1.0622948393672302,
+      -0.5940220221915219
+    ],
+    "final_rock_speed_norm": 0.30533648006366454,
+    "final_rocks": [
+      {
+        "position": [
+          5.1740644483078055,
+          0.713392491001153,
+          2.9402910426653612
+        ],
+        "qpos": [
+          5.1740644483078055,
+          0.713392491001153,
+          2.9402910426653612,
+          0.9301813822123979,
+          -0.2982890867855078,
+          0.115793657601249,
+          -0.17993900563642945
+        ],
+        "qvel": [
+          0.01761760287186135,
+          0.3020893878148432,
+          0.04076748577446596,
+          0.2425540254467455,
+          -1.0622948393672302,
+          -0.5940220221915219
+        ],
+        "rock_id": "r1-rock-000"
+      }
+    ],
+    "initial_bucket_origin_m": [
+      4.673144830333417,
+      0,
+      3.4587686777144366
+    ],
+    "initial_entry_observation": {
+      "center_inside_bucket_prism": false,
+      "mouth_depth_m": 0.45406808756033307,
+      "rock_center_bucket_m": [
+        0.5433081959602961,
+        0.46000000000000013,
+        -0.41321030945144854
+      ]
+    },
+    "initial_full_rock_observation": {
+      "all_vertices_inside_bucket_prism": false,
+      "containment_tolerance_m": 0.0,
+      "inside_vertex_count": 0,
+      "maximum_vertex_mouth_depth_m": 0.580003722922724,
+      "minimum_vertex_mouth_depth_m": 0.3398059690422442,
+      "vertex_count": 6,
+      "vertices_bucket_m": [
+        [
+          0.6686408705797059,
+          0.4602425401782473,
+          -0.39668171714900546
+        ],
+        [
+          0.42991554021761985,
+          0.4543700271053482,
+          -0.42965877178996764
+        ],
+        [
+          0.5402175388485847,
+          0.5468621080035089,
+          -0.41257999445822546
+        ],
+        [
+          0.53483452255358,
+          0.37802735715766,
+          -0.4240046511643501
+        ],
+        [
+          0.5353540063711856,
+          0.4529018988371234,
+          -0.344822642369695
+        ],
+        [
+          0.538777894939461,
+          0.4631787967146968,
+          -0.4784994184525201
+        ]
+      ],
+      "vertices_world_m": [
+        [
+          5.2600027250289925,
+          0.4602425401782472,
+          2.9488325935202044
+        ],
+        [
+          5.01922968904013,
+          0.4543700271053481,
+          2.959109491397778
+        ],
+        [
+          5.130807437425212,
+          0.5468621080035088,
+          2.9561732348613283
+        ],
+        [
+          5.123466796084089,
+          0.3780273571576599,
+          2.945896336983755
+        ],
+        [
+          5.138148078766337,
+          0.4529018988371233,
+          3.023707135199668
+        ],
+        [
+          5.11759428301119,
+          0.4631787967146967,
+          2.8915755910594383
+        ]
+      ]
+    },
+    "initial_mechanism_qpos": [
+      0,
+      0,
+      0.04,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.5150344831098326,
+      0,
+      0,
+      0.5251408526465162,
+      0,
+      0,
+      0.7031752253719131,
+      0,
+      0,
+      0
+    ],
+    "initial_rock_position_m": [
+      5.133735402304274,
+      0.46,
+      2.955
+    ],
+    "initial_rocks": [
+      {
+        "position": [
+          5.133735402304274,
+          0.46,
+          2.955
+        ],
+        "qpos": [
+          5.133735402304274,
+          0.46,
+          2.955,
+          1,
+          0,
+          0,
+          0
+        ],
+        "qvel": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rock_id": "r1-rock-000"
+      }
+    ],
+    "inside_output_steps": 0,
+    "maximum_closure_m": 0.00018577010725814527,
+    "maximum_continuous_full_rock_inside_duration_s": 0.0,
+    "maximum_continuous_inside_duration_s": 0.0,
+    "maximum_forbidden_contact_count": 0,
+    "maximum_mechanism_abs_qvel": 0.06025116962745543,
+    "maximum_mechanism_qpos_delta": 0.05868304449389603,
+    "maximum_mouth_depth_m": 0.5261628770494101,
+    "minimum_hold_rock_origin_z_m": null,
+    "minimum_rock_origin_z_m": 2.9308835782508416,
+    "phase_end_observations": {
+      "constant": {
+        "entry_observation": {
+          "center_inside_bucket_prism": false,
+          "mouth_depth_m": 0.5261628770494101,
+          "rock_center_bucket_m": [
+            0.6170513436678853,
+            0.4087099598658127,
+            -0.41272651672894967
+          ]
+        },
+        "full_rock_observation": {
+          "all_vertices_inside_bucket_prism": false,
+          "containment_tolerance_m": 0.0,
+          "inside_vertex_count": 0,
+          "maximum_vertex_mouth_depth_m": 0.63478910932551,
+          "minimum_vertex_mouth_depth_m": 0.42553699459200744,
+          "vertex_count": 6,
+          "vertices_bucket_m": [
+            [
+              0.7280490127361711,
+              0.348215935820526,
+              -0.41149240461534153
+            ],
+            [
+              0.5138635198687129,
+              0.45883145751940435,
+              -0.41222514159461937
+            ],
+            [
+              0.6504437705886238,
+              0.47493846555518593,
+              -0.4580443512279838
+            ],
+            [
+              0.5723322617652881,
+              0.3482115619291842,
+              -0.3773997182684809
+            ],
+            [
+              0.6320628428607925,
+              0.435343395281118,
+              -0.3506311047327094
+            ],
+            [
+              0.5910863939083733,
+              0.38713440459320597,
+              -0.46888355483381505
+            ]
+          ],
+          "vertices_world_m": [
+            [
+              5.286842972627714,
+              0.6594199569696573,
+              2.921596055665201
+            ],
+            [
+              5.069874980192022,
+              0.757479224254836,
+              2.959292557585023
+            ],
+            [
+              5.194860102048429,
+              0.7809569698263875,
+              2.889718745389475
+            ],
+            [
+              5.140019987171384,
+              0.6507896293603446,
+              2.9830659361063616
+            ],
+            [
+              5.198363599328015,
+              0.741499416632882,
+              2.9986869087198365
+            ],
+            [
+              5.139774691474187,
+              0.6897652109826116,
+              2.889701909985868
+            ]
+          ]
+        },
+        "rock_position_m": [
+          5.1740644483078055,
+          0.713392491001153,
+          2.9402910426653612
+        ],
+        "rock_translational_speed_mps": 0.30533648006366454,
+        "time_s": 0.999999999999953
+      }
+    },
+    "rock_accumulated_orientation_change_rad": 1.7041129772433143,
+    "rock_bucket_contact_substeps": 1777,
+    "rock_ground_contact_substeps": 2055,
+    "rock_orientation_change_rad": 0.7517793934332079,
+    "rock_position_displacement_m": [
+      0.04032904600353149,
+      0.25339249100115296,
+      -0.01470895733463884
+    ],
+    "rock_ramp_contact_substeps": 2055,
+    "rock_rock_contact_substeps": 0,
+    "rock_truck_contact_substeps": 0,
+    "simulated_duration_s": 0.999999999999953,
+    "steps": 120,
+    "substeps": 20,
+    "total_bucket_rock_angular_impulse_world_nms": [
+      -9.394677713117726,
+      -6.801510780941739,
+      -14.302015821575626
+    ],
+    "total_bucket_rock_contact_torque_impulse_world_nms": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "total_bucket_rock_impulse_world_ns": [
+      -0.543468873076828,
+      -29.19636902650466,
+      14.09179986134724
+    ],
+    "total_bucket_rock_moment_arm_impulse_world_nms": [
+      -9.394677713117726,
+      -6.801510780941739,
+      -14.302015821575626
+    ]
+  },
+  "schema": "excavation_mixed_rigid_bridge_bucket_push_v1",
+  "scope_limit": "qualifies one controlled positive-y bucket push, reaction impulse sign, and torque decomposition only; entry and hold remain pending",
+  "source_model_sha256_after": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+  "source_model_sha256_before": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+  "status": "passed",
+  "unit_scenario": "bucket_push"
+}

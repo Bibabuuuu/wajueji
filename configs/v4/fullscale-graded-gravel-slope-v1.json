@@ -1,0 +1,84 @@
+{
+  "schema": "excavation_fullscale_graded_gravel_slope_config_v2",
+  "scenario_name": "mixed-autonomous-fullscale-graded-gravel-slope-truck-v1",
+  "seed": 260920240,
+  "coordinate_frame": "world",
+  "inputs": {
+    "initial_bank_npz": {
+      "path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+      "sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+      "q_array_sha256": "5c4cd8f0a12885f0d78bb4157dc1706d7e363c2c7564c1415093b89cfba6dba8",
+      "q_count": 390400,
+      "q_dtype": "float32",
+      "q_bounds_min_m": [3.8125, -1.087499976158142, 0.012500000186264515],
+      "q_bounds_max_m": [5.987500190734863, 1.087499976158142, 1.587499976158142]
+    },
+    "solid_bank_source": {
+      "path": "/home/qunwang/codex-work/compact-bank-2026-09-11/terrain/solid_bank.py",
+      "sha256": "d424ae75ecc5a25277e7362d816b900430bec499d0ffab88c32e73708399c468"
+    },
+    "r0_geometry_source": {
+      "path": "src/v4/mixed_material_r0.py",
+      "sha256": "605005d3815032c54cf4f72d42b9df2d108aec56621a70ae009b1ba2d07f4001"
+    }
+  },
+  "bank": {
+    "nominal_bounds_min_m": [3.8, -1.1, 0.0],
+    "nominal_bounds_max_m": [6.0, 1.1, 1.6],
+    "occupied_cell_size_m": 0.1,
+    "occupied_cell_count": 6100,
+    "nominal_volume_m3": 6.1,
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "source_initial_mass_kg": 10186.9997382164,
+    "material_ids": {"mpm_fines": 0}
+  },
+  "material_recipe": {
+    "small_rigid_fraction": 0.6,
+    "mpm_fines_fraction": 0.3,
+    "medium_rigid_fraction": 0.08,
+    "large_rigid_fraction": 0.02,
+    "relative_total_volume_tolerance": 0.02,
+    "relative_rigid_class_volume_tolerance": 0.005
+  },
+  "rocks": {
+    "density_kg_m3": 2600.0,
+    "asset_root": "assets/v4/mixed-material-r0",
+    "assets": {
+      "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43"
+    },
+    "size_classes": [
+      {"class_id": "small_0p16_0p24", "target_fraction": 0.6, "target_volume_m3": 3.66, "diameter_range_m": [0.16, 0.24]},
+      {"class_id": "medium_0p24_0p32", "target_fraction": 0.08, "target_volume_m3": 0.488, "diameter_range_m": [0.24, 0.32]},
+      {"class_id": "large_0p32_0p40", "target_fraction": 0.02, "target_volume_m3": 0.122, "diameter_range_m": [0.32, 0.4]}
+    ],
+    "prototype_assignment": "balanced_per_size_class",
+    "fracture_enabled": false
+  },
+  "placement": {
+    "minimum_rock_sat_gap_m": 0.00001,
+    "boundary_clearance_m": 0.00001,
+    "deep_depth_threshold_m": 0.45,
+    "minimum_medium_deep_fraction": 0.8,
+    "minimum_large_deep_fraction": 0.8,
+    "large_median_depth_margin_over_medium_m": 0.05,
+    "surface_exposure_height_m": 0.0,
+    "small_visible_share_minimum": 0.8,
+    "relaxation_iterations": 60,
+    "relaxation_tolerance_m": 0.000002,
+    "candidate_grid_spacing_m": 0.16,
+    "carve_policy": "remove_particle_center_inside_closed_convex_rock",
+    "mechanism_collision_check": "pending_mainline_geometry_binding",
+    "truck_collision_check": "pending_mainline_geometry_binding"
+  },
+  "claims": {
+    "geometry_only": true,
+    "physics_executed": false,
+    "physics_qualified": false,
+    "training_executed": false,
+    "three_scoop_qualified": false
+  }
+}

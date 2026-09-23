@@ -1,0 +1,40 @@
+{
+  "schema": "excavation_layered_47_interactive_proxy_practice_config_v1",
+  "status": "hardware_practice_only_no_training_data",
+  "resume_audit_config": {
+    "path": "configs/v4/layered-47-interactive-proxy-resume-audit-v1.json",
+    "sha256": "c932e92080d5ed96268b7c985c8c40d31b8d1edc811adbf47a9d3697c0e548f7"
+  },
+  "manual_input_config": {
+    "path": "configs/v4/manual-input-v1.json",
+    "sha256": "ad50e8ea4c0664312ca95783fc99e18939ab8da5ac4101fb1ecbd7b0549eef4e"
+  },
+  "control": {
+    "axis_order": ["swing", "boom", "arm", "bucket"],
+    "command_limits_si": [0.12, 0.0225, 0.0225, 0.0675],
+    "command_scale": 1.0,
+    "start_paused": true,
+    "maximum_wall_seconds": 1800.0,
+    "maximum_simulation_seconds": 60.0
+  },
+  "display": {
+    "backend_root": "/home/qunwang/codex-work/autonomous-multiscoop-speed-opt-2026-09-14-v1",
+    "width": 1440,
+    "height": 900,
+    "soil_render_mode": "gpu_density_surface_with_loose_particles",
+    "surface_voxel_m": 0.04,
+    "surface_update_interval_frames": 1,
+    "camera_position_m": [9.0, -8.0, 5.5],
+    "camera_pitch_deg": -20.0,
+    "camera_yaw_deg": 128.0
+  },
+  "scope": {
+    "practice_only": true,
+    "physics_enabled": true,
+    "checkpoint_written": false,
+    "formal_a30_equivalent": false,
+    "manual_collection_eligible": false,
+    "training_eligible": false,
+    "writes_training_episode": false
+  }
+}

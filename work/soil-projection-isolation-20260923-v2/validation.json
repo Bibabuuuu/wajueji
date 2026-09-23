@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "completed1329": true,
+    "prefix24_arrays_exact": true,
+    "bindings_unchanged": true,
+    "projection_disabled_only_after1000": true,
+    "disabled_projection_zero_displacement": true,
+    "positions_velocities_finite": true,
+    "no_forbidden_contacts": true,
+    "closure_guard": true,
+    "diagnostic_metadata_reject_resume": true
+  },
+  "analysis_sha256": "bfbd6c8041c53c77f21d7187aa592688503d767b1fd9e9217519aeba4edc931e",
+  "physical_fix_verified": false,
+  "projection_disable_deployed": false,
+  "known_nonfinite_Jp_preserved": true,
+  "training_eligible": false
+}

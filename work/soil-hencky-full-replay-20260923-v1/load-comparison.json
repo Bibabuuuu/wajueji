@@ -1,0 +1,142 @@
+{
+  "method": "Same fixed CAD cavity/front-rim, calibration and 1.25cm rock sampling as the prior manual fill diagnostic.",
+  "original": {
+    "label": "original",
+    "snapshot": "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-001329.npz",
+    "capacity_liters": 255.164729950989,
+    "cavity_soil_particles": 5308,
+    "soil_geometry": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 61.43200000000001,
+      "heap_raw_liters": 37.21600000000001,
+      "inside_liters": 62.134452554103206,
+      "heap_liters": 37.64155141055973,
+      "fill_percent": 39.10258442999842,
+      "cavity_fraction_of_counted_load": 0.6227394371908198,
+      "selected_particles": 114244,
+      "cavity_particles": 5308,
+      "load_region_particles": 9463,
+      "point_support_fraction": 0.9914403466131249,
+      "load_density_quantiles": [
+        0.554683780670166,
+        1.5636996030807495,
+        6.877238941192655
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.26422347100742627,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_geometry_rock_samples_0p0125m": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 91.608,
+      "heap_raw_liters": 65.936,
+      "inside_liters": 92.65550412775566,
+      "heap_liters": 66.68995415430636,
+      "fill_percent": 62.44807356905026,
+      "cavity_fraction_of_counted_load": 0.5814756512466359,
+      "selected_particles": 255692,
+      "cavity_particles": 21031,
+      "load_region_particles": 40253,
+      "point_support_fraction": 0.997441184507987,
+      "load_density_quantiles": [
+        0.6624181628227234,
+        0.997261106967926,
+        2.834347343444825
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.4252511310041882,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_fill_percent": 62.44807356905026
+  },
+  "candidate": {
+    "label": "candidate",
+    "snapshot": "/home/qunwang/wajueji/work/soil-hencky-full-replay-20260923-v1/candidate-001329.npz",
+    "capacity_liters": 255.164729950989,
+    "cavity_soil_particles": 5447,
+    "soil_geometry": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 73.04,
+      "heap_raw_liters": 51.720000000000006,
+      "inside_liters": 73.87518580791279,
+      "heap_liters": 52.31139937000615,
+      "fill_percent": 49.45298874266689,
+      "cavity_fraction_of_counted_load": 0.5854440525809554,
+      "selected_particles": 119663,
+      "cavity_particles": 5447,
+      "load_region_particles": 10875,
+      "point_support_fraction": 0.9945747126436781,
+      "load_density_quantiles": [
+        0.6110949993133545,
+        1.3010268211364746,
+        6.066027450561524
+      ],
+      "bulk_touches_roi_boundary": true,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "valid_estimate": false,
+      "compute_wall_s": 0.2685841100028483,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_geometry_rock_samples_0p0125m": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 96.84800000000001,
+      "heap_raw_liters": 87.03200000000001,
+      "inside_liters": 97.95542161999914,
+      "heap_liters": 88.02717923376595,
+      "fill_percent": 72.88726811479309,
+      "cavity_fraction_of_counted_load": 0.526691320426365,
+      "selected_particles": 264419,
+      "cavity_particles": 18073,
+      "load_region_particles": 41658,
+      "point_support_fraction": 0.9984396754524941,
+      "load_density_quantiles": [
+        0.6928948044776917,
+        0.9966272115707397,
+        2.4733953952789305
+      ],
+      "bulk_touches_roi_boundary": true,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "valid_estimate": false,
+      "compute_wall_s": 0.4349600760033354,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_fill_percent": 72.88726811479309
+  },
+  "scope": "Single-snapshot geometry diagnostic. It is not stable retained load, calibrated mixed-material mass, delivered truck volume, or full-scoop qualification."
+}

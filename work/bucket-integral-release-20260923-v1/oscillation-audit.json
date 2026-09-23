@@ -1,0 +1,32 @@
+{
+  "baseline": {
+    "last60_velocity_vs_mpm_force_correlation": 0.9999690435562844,
+    "mpm_force_vs_previous_velocity_correlation": -0.9999775325649604,
+    "mpm_force_range_N": 137662.10829445103,
+    "rock_force_range_N": 18555.587637068056,
+    "bucket_reduced_mass_diagonal_mean_kg": 29319.312190567096,
+    "velocity_sign_changes": 59,
+    "qrange_mm": 0.08561508841065102
+  },
+  "candidate": {
+    "last60_velocity_vs_mpm_force_correlation": 0.9999033867946293,
+    "mpm_force_vs_previous_velocity_correlation": -0.9999246152467136,
+    "mpm_force_range_N": 203312.9172815379,
+    "rock_force_range_N": 37810.044028272045,
+    "bucket_reduced_mass_diagonal_mean_kg": 78548.31740322993,
+    "velocity_sign_changes": 59,
+    "qrange_mm": 0.18168582937161393
+  },
+  "code_observations": {
+    "bucket_proxy": "Newton kinematic open bucket mass100kg lock_inertia; is_kinematic=True, mass is not validated articulated effective mass",
+    "mpm_input": "previous MuJoCo end-of-frame bucket linear/angular velocity",
+    "mpm_output": "single60Hz contact wrench held for two120Hz blocks of4800Hz rigid integration",
+    "causal_boundary": "Strong delayed alternating correlation supports examining explicit coupling; no frequency or coupling intervention performed, so mechanism is not proved."
+  },
+  "source_bindings": {
+    "/home/qunwang/wajueji/src/v4/run_layered_47_excavation_preflight.py": "b24e871c90d10d5bea4ddb6b9b713c09379c120f7c8e3b65b5cacd4a2b860e11",
+    "/home/qunwang/wajueji/src/v4/run_layered_47_interactive_proxy_benchmark.py": "90665175da21ed12b235239ea249aef3b761adca8010e4100a9408f0ae8ba53e",
+    "/home/qunwang/wajueji/src/v4/layered_47_rigid_frequency_candidate.py": "622a25c42ed02eeba3780618ab59494094bb97b6ac9be154edb19c287dff0bc1",
+    "/home/qunwang/wajueji/src/v4/layered_frequency_bridge.py": "7a5cb04992c90e4b7e10b334c0ba7370b5ad4b0b0fa915b1fa2758d2a660341c"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "excavation_fullscale_layered_mixed_scene_qualification_audit_config_v1",
+  "status": "pre_registered_independent_p1a_admission_contract",
+  "frozen_inputs": {
+    "formal_scene_model_adapter_config": {
+      "path": "configs/v4/formal-scene-model-adapter-v1.json",
+      "sha256": "9fed6466adbcde775cbec9c061e04f6c8b475d20756d9b63342971c586490179"
+    },
+    "formal_scene_geometry_preparation_config": {
+      "path": "configs/v4/formal-scene-geometry-preparation-v1.json",
+      "sha256": "db2293abf9efbc6ad3a9aa0f7ffdf064cfb31ee6c0058dcd67ffac4d3b39961c"
+    },
+    "scaled_settling_audit_config": {
+      "path": "configs/v4/layered-mixed-scene-staged-settling-audit-v1.json",
+      "sha256": "a13ebf0c8a10f12d3c16c2105b60a69b099b8cddb0d3af213f4d01cb09192dc3"
+    }
+  },
+  "candidate_report_schema": "excavation_fullscale_layered_mixed_scene_qualification_report_v1",
+  "artifact_contracts": {
+    "scene_manifest": {
+      "schema": "excavation_fullscale_visual_stable_scene_manifest_v1",
+      "status": "visual_stable_geometry_candidate",
+      "required_true_checks": [
+        "finite_state",
+        "stable_id_count",
+        "rock_rock_no_intersection",
+        "stable_rigid_skeleton",
+        "small_surface_dominant",
+        "medium_large_lower_bias"
+      ]
+    },
+    "geometry_bundle_report": {
+      "schema": "excavation_formal_scene_geometry_bundle_report_v1",
+      "status": "formal_scene_geometry_bundle_candidate",
+      "required_true_checks": [
+        "single_scene_manifest_bound",
+        "model_and_fill_rock_count_match",
+        "mpm_particle_partition",
+        "retained_particle_center_inside_rock_zero"
+      ]
+    },
+    "time_zero_report": {
+      "schema": "excavation_fullscale_mixed_scene_time_zero_report_v1",
+      "passing_status": "fullscale_time_zero_passed",
+      "failure_status": "fullscale_time_zero_failed",
+      "required_true_checks": [
+        "model_loaded",
+        "ready_protocol_passed",
+        "state_time_zero",
+        "actual_n_matches",
+        "finite_state",
+        "zero_external_wrenches",
+        "zero_forbidden_contact_samples"
+      ]
+    },
+    "settling_report": {
+      "schema": "excavation_fullscale_layered_mixed_scene_staged_settling_report_v1",
+      "passing_status": "fullscale_staged_settling_passed",
+      "failure_status": "fullscale_staged_settling_failed",
+      "required_true_checks": [
+        "same_solver_and_state",
+        "actual_n_bound",
+        "fullscale_staged_settling_passed",
+        "nominal_hold_passed",
+        "visual_review_passed",
+        "mpm_connectivity_passed",
+        "identity_and_mass_closed"
+      ]
+    }
+  },
+  "required_candidate_checks": [
+    "stable_scene_manifest_valid",
+    "geometry_bundle_cross_bound",
+    "actual_n_time_zero_passed",
+    "fullscale_staged_settling_passed",
+    "nominal_hold_passed",
+    "visual_review_passed",
+    "mpm_connectivity_passed",
+    "identity_and_mass_closed"
+  ],
+  "scope": {
+    "independent_report_audit_only": true,
+    "physics_execution": false,
+    "gpu_run": false,
+    "parameter_tuning": false,
+    "may_authorize_p1a_on_pass": true,
+    "three_cycle_qualification": false,
+    "training": false
+  }
+}

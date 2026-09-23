@@ -1,5 +1,7 @@
 # M1 数据 动作与关节空间换算契约
 
+> 状态：`frozen-supporting-contract`。由[S04](../plans/S04-contact-excavation-demonstrations.md)和[S05](../plans/S05-imitation-and-rl.md)引用；修改动作或观察接口前必须阅读，但它不保存项目动态状态。
+
 更新：2026-09-19。状态：工作包A的固定日志审计通过；工作包B的进场漂移和卷斗反向归因也已完成。两项均未运行物理、未训练、未读取封存轨迹。证据为[动作与机构换算审计](../../reports/v4/contact-foundation/action-contract-audit-2026-09-19-v1/report.json)和[进场漂移与卷斗反向诊断](../../reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md)。
 
 ## 1 审计范围与结论

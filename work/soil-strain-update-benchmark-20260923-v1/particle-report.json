@@ -1,0 +1,170 @@
+{
+  "scope": "Actual installed production particle integrand in one unit cell; prescribed fields, no full MPM step",
+  "rows": [
+    {
+      "name": "biaxial_large_unload",
+      "F_new": [
+        [
+          -5907.75537109375,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -5907.75537109375,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "singular_values": [
+        5907.75537109375,
+        5907.75537109375,
+        1.0
+      ],
+      "retained_previous": false,
+      "Jp": 1.0
+    },
+    {
+      "name": "isotropic_large_unload",
+      "F_new": [
+        [
+          1000.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1000.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1000.0
+        ]
+      ],
+      "singular_values": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "retained_previous": true,
+      "Jp": 1.0
+    },
+    {
+      "name": "small_compression",
+      "F_new": [
+        [
+          0.9800000190734863,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9800000190734863,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9800000190734863
+        ]
+      ],
+      "singular_values": [
+        0.9800000190734863,
+        0.9800000190734863,
+        0.9800000190734863
+      ],
+      "retained_previous": false,
+      "Jp": 1.0
+    },
+    {
+      "name": "small_exact_unload",
+      "F_new": [
+        [
+          0.9998026490211487,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9998026490211487,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9998026490211487
+        ]
+      ],
+      "singular_values": [
+        0.9998026490211487,
+        0.9998026490211487,
+        0.9998026490211487
+      ],
+      "retained_previous": false,
+      "Jp": 1.0
+    }
+  ],
+  "postprocess_to_particle_update": [
+    {
+      "name": "elastic_compression",
+      "F_singular_values": [
+        0.9950000047683716,
+        0.9950000047683716,
+        0.9950000047683716
+      ],
+      "Jp_after_one_step": 1.0,
+      "retained_previous": false
+    },
+    {
+      "name": "compressive_yield",
+      "F_singular_values": [
+        0.9800000190734863,
+        0.9800000190734863,
+        0.9800000190734863
+      ],
+      "Jp_after_one_step": 0.5827482342720032,
+      "retained_previous": false
+    },
+    {
+      "name": "elastic_unload_from_yield",
+      "F_singular_values": [
+        0.9998026490211487,
+        0.9998026490211487,
+        0.9998026490211487
+      ],
+      "Jp_after_one_step": 1.0,
+      "retained_previous": false
+    },
+    {
+      "name": "tensile_yield",
+      "F_singular_values": [
+        1.0000499486923218,
+        1.0000499486923218,
+        1.0000499486923218
+      ],
+      "Jp_after_one_step": 1.0058671236038208,
+      "retained_previous": false
+    },
+    {
+      "name": "large_state_zero_total_increment",
+      "F_singular_values": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "Jp_after_one_step": 10.0,
+      "retained_previous": true
+    }
+  ],
+  "checks": {
+    "production_guard_allows_biaxial_flip_amplification": true,
+    "production_guard_rejects_isotropic_orientation_reversal": true,
+    "small_unload_has_nonzero_residual": true
+  }
+}

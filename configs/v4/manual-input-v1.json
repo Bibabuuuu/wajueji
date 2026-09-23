@@ -1,0 +1,15 @@
+{
+  "schema": "excavation_manual_input_config_v1",
+  "status": "keyboard_and_local_gamepad_candidate",
+  "axis_order": ["swing", "boom", "arm", "bucket"],
+  "gamepad": {
+    "deadzone": 0.12,
+    "axes": {
+      "swing": {"stick": "leftstick", "component": "x", "sign": 1.0},
+      "boom": {"stick": "leftstick", "component": "y", "sign": 1.0},
+      "arm": {"stick": "rightstick", "component": "y", "sign": 1.0},
+      "bucket": {"stick": "rightstick", "component": "x", "sign": 1.0}
+    },
+    "emergency_stop_button": "back"
+  }
+}

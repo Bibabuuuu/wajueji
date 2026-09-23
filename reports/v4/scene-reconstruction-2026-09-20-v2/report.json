@@ -1,0 +1,90 @@
+{
+  "all_scenes_passed": true,
+  "asset_sha256": {
+    "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+    "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+    "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7"
+  },
+  "config_sha256": "e2f317ea1550547c34d17792cc858ed3a2224f9aef10e0323752b74893ade755",
+  "generator_sha256": "3cc4fb2bf182e30f571a58f720dac9019cab137d581c8c17653f2be282580bba",
+  "input_sha256": "496271c6d6220fd2a3d2241855e25e6127116d4ee19d2cbbc06acf674430cbc0",
+  "scene_count": 9,
+  "scenes": [
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "bbc75f1c2b796d5078b50a4b8b13b49216fe0d23bd24b3b474a11d45f906ee9a",
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091911",
+      "seed": 26091911,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "0932d883de6a93dd02584dcc6c4c5ba3a53dae68df9bf308b14b555e776565c2",
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+      "seed": 26091912,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "1feb52383aafa7137afde3c5dcf473c2f5e51350873a55ef22b3e12c90b3d21c",
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+      "seed": 26091913,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "84f30aa8f49a78a2190d234ae3b119793c1ba6445e6a93cf68075690a1e29c0a",
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091922",
+      "seed": 26091922,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "c0f3062b13143bd982bca257c6bb22375451fbaff56fc610338d2f2ac562493a",
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091925",
+      "seed": 26091925,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "3022a902b2daa5381d77be1e53b3cb7175eb91c0a12b08ae5bb159c25ce5e195",
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091926",
+      "seed": 26091926,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "3ea7ee5534987c931bc301411e2a0ea065c72c74411a7bfecc9351336afb97fb",
+      "scene_class": "jam-boundary",
+      "scene_id": "jam-boundary-seed-26091931",
+      "seed": 26091931,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "75b12908b4e3ff439dfcc593a2ffb7e66dcea9f4f3922aaad6209c6577027d1b",
+      "scene_class": "jam-boundary",
+      "scene_id": "jam-boundary-seed-26091932",
+      "seed": 26091932,
+      "status": "geometry_reconstruction_candidate"
+    },
+    {
+      "all_admission_checks_passed": true,
+      "report_sha256": "65f5ed2c735c1762df96552ab3633ad0f52f23551482e8069dd4030011909fc3",
+      "scene_class": "jam-boundary",
+      "scene_id": "jam-boundary-seed-26091933",
+      "seed": 26091933,
+      "status": "geometry_reconstruction_candidate"
+    }
+  ],
+  "schema": "excavation_scene_reconstruction_index_v1",
+  "scope": "nine deterministic geometry candidates; no physics or training",
+  "status": "geometry_reconstruction_candidate"
+}

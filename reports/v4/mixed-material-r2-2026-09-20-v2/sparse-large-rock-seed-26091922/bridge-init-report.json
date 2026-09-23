@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "actual_count_twenty": true,
+    "finite_state": true,
+    "legacy_first_alias_exact": true,
+    "maximum_capacity_twenty": true,
+    "mechanism_state_dimensions": true,
+    "no_placeholder_rocks": true,
+    "no_runtime_add_remove": true,
+    "per_rock_state_dimensions": true,
+    "ready_schema_v2": true,
+    "stable_contiguous_rock_ids": true,
+    "state_schema_v2": true,
+    "time_remained_zero": true,
+    "twenty_exact_rock_records": true,
+    "zero_initial_contact_counters": true,
+    "zero_initial_forbidden_count": true
+  },
+  "maximum_rock_capacity": 20,
+  "mj_step_called": false,
+  "model_sha256": "eb8f48aaf1d31581067dd2c046340d4ed1514e7e91de22591d735cac54df41dc",
+  "physics_qualified": false,
+  "ready_line_sha256": "ca9fabc3fb4e9f67650e2b7484fd18b959b179e7c6c515b6ce31cf2b9121747e",
+  "rock_count": 20,
+  "scene_id": "sparse-large-rock-seed-26091922",
+  "schema": "excavation_mixed_material_r2_bridge_init_scene_report_v1",
+  "scope_limit": "bridge start, mj_forward-based initialization and state emission only; no integration step or multi-rock dynamics qualification",
+  "state_line_sha256": "985a0aeaf1d29ad3aa34c06a4125f9c96eeb6cc61f05258a61c9a013432f952e",
+  "status": "r2_bridge_init_passed",
+  "time_advanced": false
+}

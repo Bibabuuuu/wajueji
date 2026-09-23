@@ -1,0 +1,127 @@
+{
+  "checks": {
+    "baseline_all_1329_reproduced": true,
+    "late_130_lift_requests_preserved": true,
+    "all_predicted_poses_hard_bounded_and_closed": true,
+    "actual_pose_never_changed": true,
+    "physical_limits_restored": true,
+    "hard_bound_rejection": true
+  },
+  "cases": [
+    {
+      "name": "lift",
+      "requested": [
+        0,
+        0.0225,
+        0,
+        0
+      ],
+      "applied": [
+        0.0,
+        0.0225,
+        0.0,
+        0.0
+      ],
+      "reason": null
+    },
+    {
+      "name": "tiny_open",
+      "requested": [
+        0,
+        0,
+        0,
+        -0.0001
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        -0.0001
+      ],
+      "reason": null
+    },
+    {
+      "name": "open",
+      "requested": [
+        0,
+        0,
+        0,
+        -0.02
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        -0.02
+      ],
+      "reason": null
+    },
+    {
+      "name": "curl_and_lift",
+      "requested": [
+        0,
+        0.0225,
+        0,
+        0.0675
+      ],
+      "applied": [
+        0.0,
+        0.0225,
+        0.0,
+        0.0
+      ],
+      "reason": "bucket_internal_upper_target"
+    },
+    {
+      "name": "neutral",
+      "requested": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reason": null
+    },
+    {
+      "name": "invalid_hard_position",
+      "bucket_m": 0.860001,
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reason": "joint_working_range"
+    },
+    {
+      "name": "invalid_hard_position",
+      "bucket_m": 0.369999,
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reason": "joint_working_range"
+    }
+  ],
+  "changed_commands": 466,
+  "maximum_accepted_preview_closure_m": 9.891380159388063e-09,
+  "physics_advanced": false,
+  "loaded_lift_verified": false,
+  "soil_loss_fixed": false,
+  "bindings": {
+    "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py": "9c404fa93635109fe14f5af10b592101d730996ba255c6885d8be839655f75a7",
+    "/home/qunwang/wajueji/work/manual-soft-limit-fix-20260923-v1/manual-before.py": "3f200a67b8465c2cecab64d0f9944c901545063a47c23dde9cef8f9951e9c79c",
+    "/home/qunwang/wajueji/work/manual-soft-limit-fix-20260923-v1/regression.py": "bd97a8a56451dab78c44f5d9eac6e99c30bb1773504b233daf9458612adb5717",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279/physics.ndjson": "d0b5946573e310483efb330203d64bd20ba0c04407ae1e82158195503f5e0836",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/closed_chain.py": "a1d4dd0a1a580c7c206e446d9f0257bb72e63af80c42df42a0bd20695b323bb6",
+    "/home/qunwang/codex-work/small-soil-20260910-v13-boundary/candidate06/scene/input/model/A.xml": "959098bed4286ae5909858acb02a22eb8b9050ef2029ebe7d2c6a5f3d4d5e320"
+  }
+}

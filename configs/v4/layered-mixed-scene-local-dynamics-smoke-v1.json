@@ -1,0 +1,61 @@
+{
+  "schema": "excavation_layered_mixed_scene_local_dynamics_smoke_config_v1",
+  "status": "final_assembled_short_mixed_dynamics_smoke_only",
+  "geometry": {
+    "config_path": "configs/v4/layered-mixed-scene-local-preflight-v1.json",
+    "config_sha256": "c5537cb9ea317b00ec1f5d5e3ecc4aeb1355e0b791ee9814188480bae1ec8ea9",
+    "manifest_path": "reports/v4/layered-mixed-scene-local-preflight-2026-09-20-v1/scene-manifest.json",
+    "manifest_sha256": "07701f6900a0f0def082e9a036ad63e4db1bb12c24e4b3511fda9ae58079e55b",
+    "bank_path": "reports/v4/layered-mixed-scene-local-preflight-2026-09-20-v1/layered-local-bank.npz",
+    "bank_sha256": "f761d5ab5fb0fbb31141e278b83353bcec84a4a6bd33eca1518651441809c192"
+  },
+  "capacity_bridge": {
+    "config_path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    }
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "frames": 12,
+    "zero_command": [0.0, 0.0, 0.0, 0.0],
+    "maximum_mechanism_closure_m": 0.001,
+    "maximum_forbidden_contact_count": 0,
+    "maximum_particle_speed_m_s": 5.0,
+    "maximum_rock_linear_speed_m_s": 5.0,
+    "maximum_rock_angular_speed_rad_s": 25.0
+  },
+  "scope": {
+    "all_final_particles_active_from_frame_zero": true,
+    "all_22_rocks_active_from_frame_zero": true,
+    "per_rock_mpm_wrench_feedback": true,
+    "bucket_mpm_collision": false,
+    "gravity_ramp": false,
+    "staged_activation": false,
+    "construction_walls": false,
+    "short_smoke_only": true,
+    "settling_qualified": false,
+    "wall_free_hold_qualified": false,
+    "formal_scene_qualified": false,
+    "training": false
+  }
+}

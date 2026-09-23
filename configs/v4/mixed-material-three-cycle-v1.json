@@ -1,0 +1,116 @@
+{
+  "schema": "excavation_mixed_material_three_cycle_config_v1",
+  "status": "p0_contract_candidate",
+  "frozen_inputs": {
+    "r3_c_shared_config": {
+      "path": "configs/v4/mixed-material-r3-c-shared-four-round-v1.json",
+      "sha256": "87cf8a3b8eeb04fb7cfde0b1ef6c25d977e689efff4a3031fae1d4acc629c917"
+    },
+    "r3_c_shared_report": {
+      "path": "reports/v4/mixed-material-r3-c-shared-four-round-2026-09-20-v1/report.json",
+      "sha256": "550f72c9c84b108db51aa215365ea3290be0720d367332802e26489ed3c2c35e"
+    },
+    "r3_c_convergence_config": {
+      "path": "configs/v4/mixed-material-r3-c-convergence-v1.json",
+      "sha256": "e96b47ef669ef724a7297ad75a687d91365829aff2e1827e1ed0c5ba5e222f41"
+    },
+    "r3_c_convergence_report": {
+      "path": "reports/v4/mixed-material-r3-c-convergence-2026-09-20-v1/report.json",
+      "sha256": "7853b57194e631d080b91097cdef015ae2861448d1d316c9f9f5f2e98609a7f1"
+    },
+    "existing_three_cycle_runner": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/run.py",
+      "sha256": "e852793da8f6d14e9a738f24a3a0684b1e8ab620a6305fdba7cec6bce157c236"
+    },
+    "existing_runtime_plan": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/runtime_plan.py",
+      "sha256": "fec4e6af511ceb463cfdaf1a5aa734f14c5effecd78d7ed949ccef9caf165f1e"
+    },
+    "existing_truck_receiver": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/truck_receiver.py",
+      "sha256": "d925267a69244776efee3e3955183c69708d36cd97c8b24fa14a556c8c39dd73"
+    },
+    "existing_truck_contract": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/receiver-contract.json",
+      "sha256": "3fb663b0d3ff6342ffb908571d6c9ed92786714bcbefd17bc0436e554cda4651"
+    },
+    "existing_truck_mesh": {
+      "path": "evidence/autonomous-multiscoop-2026-09-14-v1/receiver-mesh.npz",
+      "sha256": "bd379fc56bd492b4e0a342f8432869f2926a6e1f10a4face407d70c5784fa640"
+    },
+    "existing_cycle_selector": {
+      "path": "planning/cycle.py",
+      "sha256": "a993fe0cc0a57cc27a73b62897e9ce8dd1297b25fa066e355a17b03bcbf689e6"
+    },
+    "existing_cycle_geometry": {
+      "path": "planning/cycle_geometry.py",
+      "sha256": "4514292bd8e0d222fba5283e63ee2746b51d29602d9afb39b4cf845479eb8ad1"
+    }
+  },
+  "scene_binding": {
+    "representative_scene_manifest": null,
+    "representative_scene_binding_pending": true,
+    "p1_execution_authorized": false
+  },
+  "representative_scene_target": {
+    "scenario_name": "mixed-autonomous-fullscale-graded-gravel-slope-truck-v1",
+    "nominal_material_volume_m3": 6.1,
+    "volume_fraction_basis": "material_equivalent_solid_volume",
+    "volume_fractions": {
+      "small_rigid_rock": 0.6,
+      "mpm_soil_and_gap_fill": 0.3,
+      "medium_rigid_rock": 0.08,
+      "large_rigid_rock": 0.02
+    },
+    "equivalent_diameter_ranges_m": {
+      "small": [0.16, 0.24],
+      "medium": [0.24, 0.32],
+      "large": [0.32, 0.4]
+    },
+    "placement": {
+      "small_rock_surface_dominant": true,
+      "medium_and_large_rock_lower_region": true,
+      "soil_fills_inter_rock_space": true
+    },
+    "rock_count_policy": "derived_from_target_volume_not_fixed",
+    "planning_estimate_only": {
+      "small": 840,
+      "medium": 40,
+      "large": 5,
+      "total": 885
+    },
+    "capacity_preflight_rock_counts": [64, 256, 512],
+    "formal_count_source": "frozen_scene_manifest_after_volume_closure"
+  },
+  "runtime_contract": {
+    "cycles_requested": 3,
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "one_physics_instance": true,
+    "fresh_planning_observation_each_cycle": true,
+    "fresh_dispatch_observation_each_cycle": true,
+    "next_cycle_uses_previous_cycle_terrain": true,
+    "material_reset_between_cycles": false,
+    "material_refill_between_cycles": false,
+    "material_deletion_between_cycles": false,
+    "cycle_index_entry_lookup": false
+  },
+  "development_acceptance": {
+    "minimum_positive_acquisition_kg": 1e-09,
+    "minimum_positive_delivery_kg": 1e-09,
+    "submission_thresholds_frozen": false
+  },
+  "scope": {
+    "p0_contract_only": true,
+    "gpu_run": false,
+    "physics_run": false,
+    "mixed_material": true,
+    "reuse_existing_truck": true,
+    "reuse_existing_three_cycle_loop": true,
+    "complete_in_process_reset": false,
+    "r3_c_physics_qualified": false,
+    "official_envelope": false,
+    "training": false,
+    "frozen_prior_evidence_modified": false
+  }
+}

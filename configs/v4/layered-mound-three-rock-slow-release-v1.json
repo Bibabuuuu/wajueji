@@ -1,0 +1,47 @@
+{
+  "schema": "excavation_layered_mound_three_rock_slow_release_config_v1",
+  "status": "single_factor_slow_gravity_release_after_cover",
+  "base_candidate": {
+    "config_path": "configs/v4/layered-mound-three-rock-cover-release-v1.json",
+    "config_sha256": "86281ccab383da8278512336066ade2643e479713553c506467bfc7a9d472a14",
+    "runner_path": "src/v4/run_layered_mound_three_rock_cover_release.py",
+    "runner_sha256": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26",
+    "report_path": "results/layered-mound-three-rock-cover-release-v1.json",
+    "report_sha256": "4ebbf59a1fd2aff19ef41f242dbec35ea4a2417da69af3909f8c4ce0690ad45e"
+  },
+  "correction": {
+    "reason": "avoid_one_external_step_full_gravity_impulse_when_releasing_held_rocks",
+    "change_scope": [
+      "release.external_upward_support_force_linear_ramp",
+      "release.maximum_frames",
+      "release.required_continuous_window_including_post_ramp_window"
+    ],
+    "gravity_release_frames": 60,
+    "gravity_release_duration_s": 0.5,
+    "support_force_formula": "Fz=(1-alpha)*mass*9.81; alpha=(frame+1)/60",
+    "maximum_release_frames": 300,
+    "required_total_continuous_stable_frames": 120,
+    "required_fully_released_stable_frames": 60,
+    "target_runtime_rock_ids": ["r1-rock-000", "r1-rock-001", "r1-rock-002"],
+    "mpm_material_changed": false,
+    "rigid_damping_changed": false,
+    "stability_thresholds_changed": false,
+    "press_schedule_changed": false,
+    "cover_schedule_changed": false
+  },
+  "acceptance": {
+    "rock_translation_during_release_allowed": true,
+    "rock_rotation_during_release_allowed": true,
+    "final_manifest_pose_required": false,
+    "fully_released_post_ramp_window_required": true
+  },
+  "scope": {
+    "active_rock_count": 3,
+    "other_62_rocks_active": false,
+    "full_lower_layer": false,
+    "full_scene": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

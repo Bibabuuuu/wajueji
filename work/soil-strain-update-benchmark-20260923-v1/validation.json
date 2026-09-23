@@ -1,0 +1,32 @@
+{
+  "status": "bounded_benchmark_complete_candidate_not_deployed",
+  "checks": {
+    "all_bound_inputs_unchanged": true,
+    "python_syntax": true,
+    "benchmark_log_reconstruction_exact_all_analytic_cases": true,
+    "benchmark_finite_rotation_only_does_not_fix_large_unload": true,
+    "benchmark_exponential_increment_noncoaxial_residual_exists": true,
+    "benchmark_finite_rotation_no_artificial_stretch": true,
+    "benchmark_sources_unchanged": true,
+    "kernel_elastic_kernel_matches_oracle": true,
+    "kernel_plastic_kernel_matches_oracle": true,
+    "kernel_strain_split_matches_prescribed_total": true,
+    "particle_production_guard_allows_biaxial_flip_amplification": true,
+    "particle_production_guard_rejects_isotropic_orientation_reversal": true,
+    "particle_small_unload_has_nonzero_residual": true,
+    "kernel_script_unchanged": true,
+    "particle_script_unchanged": true
+  },
+  "full_scene_physics_steps": 0,
+  "shared_solver_modified": false,
+  "manual_window_opened": false,
+  "candidate_gpu_implemented": false,
+  "soil_loss_fix_verified": false,
+  "original_prepoint_unchanged": true,
+  "known_limitations": [
+    "Prescribed homogeneous kernel input is not a complete grid solve",
+    "Float64 candidate does not yet establish float32/GIMP implementation",
+    "Recorded one-step counterfactuals are not a candidate trajectory",
+    "Full finite-shear objectivity and earliest trigger remain unverified"
+  ]
+}

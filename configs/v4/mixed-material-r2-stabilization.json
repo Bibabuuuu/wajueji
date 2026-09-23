@@ -1,0 +1,53 @@
+{
+  "schema": "excavation_mixed_material_r2_stabilization_config_v1",
+  "source_r2_config": {
+    "path": "configs/v4/mixed-material-r2.json",
+    "sha256": "ba91377ec15e896a0b8cfbe949a153d6c50c388410f0a2c8eabeb030bee24f6e"
+  },
+  "baseline_model_root": {
+    "path": "reports/v4/mixed-material-r2-2026-09-20-v1",
+    "load_report_sha256": "b0d5bb553c6cbf4b5714b415c75b67880431edf85474fc9f15c9701b81363ac0",
+    "bridge_init_report_sha256": "039cc47e01242a4b6c6cd608495e0c5d821f99015b01dd6a13ff27e7598f3346",
+    "settling_report_sha256": "0d642502319925614c612aab0c7aa49f9e96dd74d73c765f5360e04ec0fa7006"
+  },
+  "pre_settling": {
+    "maximum_duration_s": 6.0,
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "continuous_stability_window_s": 0.5,
+    "maximum_linear_speed_m_s": 0.002,
+    "maximum_angular_speed_rad_s": 0.03,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "command": [0.0, 0.0, 0.0, 0.0],
+    "external_wrench_count": 0
+  },
+  "rebaked_verification": {
+    "duration_s": 1.0,
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "maximum_rock_displacement_m": 0.005,
+    "maximum_final_linear_speed_m_s": 0.002,
+    "maximum_final_angular_speed_rad_s": 0.03,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "command": [0.0, 0.0, 0.0, 0.0],
+    "external_wrench_count": 0
+  },
+  "spatial_review": {
+    "require_all_vertices_inside_source_region": true,
+    "require_original_boundary_safety_retention": true,
+    "maximum_surface_penetration_m": 0.002,
+    "maximum_center_horizontal_shift_m": 0.25
+  },
+  "scope": {
+    "source_scene_manifests_modified": false,
+    "source_assembly_plans_modified": false,
+    "rock_count_or_size_modified": false,
+    "stable_pose_candidates_generated": true,
+    "rebaked_models_generated": true,
+    "controlled_excavation": false,
+    "physics_qualification": false,
+    "training": false
+  }
+}

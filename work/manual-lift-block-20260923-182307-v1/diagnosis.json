@@ -1,0 +1,191 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279",
+  "captured_frames": 1329,
+  "read_only_no_physics_advanced": true,
+  "phase_marks_do_not_control_motion": true,
+  "late_window": [
+    1194,
+    1329
+  ],
+  "late_boom_requests": 130,
+  "late_boom_requests_blocked": 130,
+  "last_boom_error_mm": 0.799104348917723,
+  "last_bucket_mm": 855.1365765316981,
+  "max_bucket_mm": 856.1875861189009,
+  "soft_violations": [
+    {
+      "qpos_address": 15,
+      "actual": 0.8551365765316981,
+      "soft_low": 0.375,
+      "soft_high": 0.855,
+      "hard_low": 0.37,
+      "hard_high": 0.86
+    }
+  ],
+  "read_only_command_preview": [
+    {
+      "name": "boom_only",
+      "requested": [
+        0,
+        0.0225,
+        0,
+        0
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reason": "joint_margin"
+    },
+    {
+      "name": "bucket_open_small",
+      "requested": [
+        0,
+        0,
+        0,
+        -0.005
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        -0.005
+      ],
+      "reason": null
+    },
+    {
+      "name": "bucket_open_medium",
+      "requested": [
+        0,
+        0,
+        0,
+        -0.02
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        -0.02
+      ],
+      "reason": null
+    },
+    {
+      "name": "neutral",
+      "requested": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "applied": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reason": null
+    }
+  ],
+  "all_recorded_hard_guards": true,
+  "reason_counts": {
+    "None": 799,
+    "joint_margin": 423,
+    "bucket_internal_upper_target": 107
+  },
+  "evidence_rows": [
+    {
+      "frame": 800,
+      "requested_command_si": [
+        0.0,
+        0.0,
+        0.00966577540106952,
+        0.056671122994652406
+      ],
+      "applied_command_si": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_projection_reason": "joint_margin",
+      "axis_positions": [
+        0.035494587244989106,
+        0.2685892847968073,
+        0.36862887911951825,
+        0.848165009030077
+      ],
+      "bucket_integral_effort": [
+        0,
+        0,
+        0,
+        120000
+      ],
+      "hard_guard": true
+    },
+    {
+      "frame": 1250,
+      "requested_command_si": [
+        0.0,
+        0.0225,
+        0.0,
+        0.0
+      ],
+      "applied_command_si": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_projection_reason": "joint_margin",
+      "axis_positions": [
+        0.004730020740391814,
+        0.30792568822377997,
+        0.3517047834146096,
+        0.8561328299864769
+      ],
+      "bucket_integral_effort": [
+        0,
+        0,
+        0,
+        106689.0051017783
+      ],
+      "hard_guard": true
+    },
+    {
+      "frame": 1329,
+      "requested_command_si": [
+        0.00235294117647059,
+        0.02229946524064171,
+        0.0,
+        0.0
+      ],
+      "applied_command_si": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "command_projection_reason": "joint_margin",
+      "axis_positions": [
+        0.004037763780180235,
+        0.30791274439925653,
+        0.3515132399175429,
+        0.8551365765316981
+      ],
+      "bucket_integral_effort": [
+        0,
+        0,
+        0,
+        100244.47379489306
+      ],
+      "hard_guard": true
+    }
+  ],
+  "source_bindings": {
+    "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py": "6ce0ef6e6fd98d8902da2a8d13b4475523879db2105f247dd6007d563651ff5e",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/closed_chain.py": "a1d4dd0a1a580c7c206e446d9f0257bb72e63af80c42df42a0bd20695b323bb6",
+    "/home/qunwang/wajueji/src/v4/bucket_integral_candidate.h": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc"
+  }
+}

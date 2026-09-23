@@ -1,0 +1,82 @@
+{
+  "assembly_plan_sha256": "011a6939628d7eb225291656c66d06fb515e44f61a2dbe99369faca549298f7e",
+  "checks": {
+    "all_vertices_inside_source_region": true,
+    "geometry_admission_passed": true,
+    "minimum_boundary_clearance_retained": true,
+    "pre_settling_stable": true,
+    "rebaked_displacement_within_limit": true,
+    "rebaked_stability_passed": true,
+    "required_rock_count": true,
+    "rock_sizes_and_masses_unchanged": true,
+    "surface_penetration_within_limit": true
+  },
+  "model_sha256": "a261d95076f67fc1a8ea3625949f4538a19a62cf1b5ded0925ed218db16d505c",
+  "physics_qualified": false,
+  "pre_settling": {
+    "checks": {
+      "closure_within_limit": true,
+      "continuous_stability_window_reached": true,
+      "ground_contact_observed": true,
+      "no_forbidden_contacts": true
+    },
+    "continuous_stable_steps": 60,
+    "elapsed_s": 1.341666666666673,
+    "final_maximum_angular_speed_rad_s": 0.0014374722380851492,
+    "final_maximum_linear_speed_m_s": 0.00017286048886017236,
+    "internal_substep_count": 3220,
+    "maximum_closure_m": 0.00018559952021975383,
+    "maximum_downward_shift_from_source_m": 0.0795593633432172,
+    "maximum_horizontal_shift_from_source_m": 0.18109734465265778,
+    "output_step_count": 161,
+    "required_continuous_stable_steps": 60,
+    "status": "pre_settling_stable",
+    "total_contact_substeps": {
+      "rock_bucket": 0,
+      "rock_ground": 3136,
+      "rock_ramp": 0,
+      "rock_rock": 0,
+      "rock_truck": 0
+    }
+  },
+  "rebaked_verification": {
+    "checks": {
+      "closure_within_limit": true,
+      "displacement_within_limit": true,
+      "final_angular_speed_within_limit": true,
+      "final_linear_speed_within_limit": true,
+      "ground_contact_observed": true,
+      "no_forbidden_contacts": true,
+      "one_second_completed": true,
+      "twenty_rocks_preserved": true
+    },
+    "final_maximum_angular_speed_rad_s": 0.0009129674621705789,
+    "final_maximum_linear_speed_m_s": 0.0001546810666039517,
+    "forbidden_contact_count": 0,
+    "maximum_closure_m": 0.00018559951071377308,
+    "maximum_rock_displacement_m": 0.00015450209972659083,
+    "rock_ground_contact_substeps": 2400,
+    "status": "rebaked_stability_passed"
+  },
+  "scene_id": "sparse-large-rock-seed-26091925",
+  "scene_manifest_sha256": "a40e1fea5d5bd193ed145a587f362913e8c32f60249a5fbff59ed39e95a9521f",
+  "schema": "excavation_sparse_large_stable_candidate_report_v1",
+  "seed": 26091925,
+  "sequence_index": 1,
+  "spatial_review": {
+    "checks": {
+      "all_vertices_inside_source_region": true,
+      "center_horizontal_shift_within_limit": true,
+      "original_boundary_safety_retained": true,
+      "rock_count_unchanged": true,
+      "rock_sizes_and_masses_unchanged": true,
+      "surface_penetration_within_limit": true
+    },
+    "maximum_center_horizontal_shift_m": 0.17328517251636005,
+    "minimum_boundary_clearance_m": 0.11183300214293901,
+    "minimum_vertex_analytic_surface_clearance_m": -9.098933399825926e-05,
+    "source_boundary_safety_requirement_m": 0.08
+  },
+  "stable_initial_state_sha256": "6d151ee795bac5cf9be3773eba52645f1045ec06abe6e548cb46d6219c83437b",
+  "status": "selected"
+}

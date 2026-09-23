@@ -1,0 +1,70 @@
+{
+  "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+  "model_manifest_sha256": "735fb5eca5bbc807382d486bd7a4a6afe1aed95200814bcd4cb09459e415f038",
+  "model_sha256": "c1bcf143279f6394cd28185de032e8081dbdf841aefab911e2e45a156f9aea3c",
+  "physics_qualified": false,
+  "pre_settling": {
+    "checks": {
+      "closure_within_limit": true,
+      "continuous_stability_window_reached": true,
+      "ground_contact_observed": true,
+      "no_forbidden_contacts": true
+    },
+    "continuous_stable_steps": 60,
+    "elapsed_s": 3.6666666666670364,
+    "final_maximum_angular_speed_rad_s": 0.000860656535510672,
+    "final_maximum_linear_speed_m_s": 0.00019580678652546808,
+    "internal_substep_count": 8800,
+    "maximum_closure_m": 0.00018559951803220255,
+    "maximum_downward_shift_from_source_m": 0.1044087162262137,
+    "maximum_horizontal_shift_from_source_m": 0.13769157614043867,
+    "output_step_count": 440,
+    "required_continuous_stable_steps": 60,
+    "status": "pre_settling_stable",
+    "total_contact_substeps": {
+      "rock_bucket": 0,
+      "rock_ground": 8716,
+      "rock_ramp": 0,
+      "rock_rock": 8412,
+      "rock_truck": 0
+    }
+  },
+  "rebaked_verification": {
+    "checks": {
+      "closure_within_limit": true,
+      "displacement_within_limit": true,
+      "final_angular_speed_within_limit": true,
+      "final_linear_speed_within_limit": true,
+      "ground_contact_observed": true,
+      "no_forbidden_contacts": true,
+      "one_second_completed": true,
+      "twenty_rocks_preserved": true
+    },
+    "final_maximum_angular_speed_rad_s": 0.0008611729013337023,
+    "final_maximum_linear_speed_m_s": 0.00019524202331851851,
+    "forbidden_contact_count": 0,
+    "maximum_closure_m": 0.00018559952023795845,
+    "maximum_rock_displacement_m": 0.00019366652085713327,
+    "rock_ground_contact_substeps": 2400,
+    "status": "rebaked_stability_passed"
+  },
+  "scene_class": "sparse-large-rock",
+  "scene_id": "sparse-large-rock-seed-26091921",
+  "schema": "excavation_mixed_material_r2_stabilization_scene_report_v1",
+  "spatial_review": {
+    "checks": {
+      "all_vertices_inside_source_region": true,
+      "center_horizontal_shift_within_limit": true,
+      "original_boundary_safety_retained": false,
+      "rock_count_unchanged": true,
+      "rock_sizes_and_masses_unchanged": true,
+      "surface_penetration_within_limit": true
+    },
+    "maximum_center_horizontal_shift_m": 0.12443500317155379,
+    "minimum_boundary_clearance_m": 0.009794881048371451,
+    "minimum_vertex_analytic_surface_clearance_m": -0.00013962329109869914,
+    "source_boundary_safety_requirement_m": 0.08
+  },
+  "stable_initial_state_sha256": "0b400f0ba9424106f6d0d77ba6291f9a1688af8bd98ea37c36d5e112b4ca3224",
+  "status": "stable_initial_state_needs_review"
+}

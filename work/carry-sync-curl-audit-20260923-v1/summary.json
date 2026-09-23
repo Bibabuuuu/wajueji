@@ -1,0 +1,113 @@
+{
+  "frames": 1370,
+  "windows": [
+    {
+      "frames": [
+        481,
+        600
+      ],
+      "count": 120,
+      "projection_cohort_max_m": {
+        "max": 0.015229539014399052,
+        "frame": 500
+      },
+      "projection_global_max_m": {
+        "max": 0.015229539014399052,
+        "frame": 500
+      },
+      "cohort_max_step_m": {
+        "max": 0.017767146229743958,
+        "frame": 500
+      },
+      "cohort_p99_step_m": {
+        "max": 0.013070693239569664,
+        "frame": 500
+      },
+      "cohort_max_up_step_m": {
+        "max": 0.017013847827911377,
+        "frame": 500
+      },
+      "cohort_p99_rigid_carry_error_m": {
+        "max": 0.00942937718219198,
+        "frame": 498
+      },
+      "display_bucket_motion_staleness_p99_m": {
+        "max": 0.019875314546186917,
+        "frame": 599
+      },
+      "target_actual_bucket_error_mean_m": 0.03569601631092873
+    },
+    {
+      "frames": [
+        1014,
+        1340
+      ],
+      "count": 327,
+      "projection_cohort_max_m": {
+        "max": 0.008844105526804924,
+        "frame": 1289
+      },
+      "projection_global_max_m": {
+        "max": 0.05957446247339249,
+        "frame": 1140
+      },
+      "cohort_max_step_m": {
+        "max": 0.013903526589274406,
+        "frame": 1340
+      },
+      "cohort_p99_step_m": {
+        "max": 0.006813691463321447,
+        "frame": 1074
+      },
+      "cohort_max_up_step_m": {
+        "max": 0.009018659591674805,
+        "frame": 1074
+      },
+      "cohort_p99_rigid_carry_error_m": {
+        "max": 0.005927904423175149,
+        "frame": 1073
+      },
+      "display_bucket_motion_staleness_p99_m": {
+        "max": 0.022005298657165127,
+        "frame": 1121
+      },
+      "target_actual_bucket_error_mean_m": 0.014928705712366675
+    },
+    {
+      "frames": [
+        1341,
+        1370
+      ],
+      "count": 30,
+      "projection_cohort_max_m": {
+        "max": 0.002935401862487197,
+        "frame": 1344
+      },
+      "projection_global_max_m": {
+        "max": 0.09776479750871658,
+        "frame": 1361
+      },
+      "cohort_max_step_m": {
+        "max": 0.012792727909982204,
+        "frame": 1341
+      },
+      "cohort_p99_step_m": {
+        "max": 0.0018993375124409795,
+        "frame": 1341
+      },
+      "cohort_max_up_step_m": {
+        "max": 0.0019030570983886719,
+        "frame": 1360
+      },
+      "cohort_p99_rigid_carry_error_m": {
+        "max": 0.0013127183201373392,
+        "frame": 1341
+      },
+      "display_bucket_motion_staleness_p99_m": {
+        "max": 0.004245138957424689,
+        "frame": 1343
+      },
+      "target_actual_bucket_error_mean_m": 0.012709855948169342
+    }
+  ]
+}

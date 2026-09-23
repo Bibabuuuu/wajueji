@@ -1,0 +1,568 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-163839-751464",
+  "snapshot": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-163839-751464/final-001370.diagnostic.npz",
+  "snapshot_sha256": "1cff463525e77a0726fb5115970b89b395d89046ac2a06832b170bf12e5e066a",
+  "final_frame": 1370,
+  "final_simulation_seconds": 22.833333333333332,
+  "all_hard_guards_passed": true,
+  "capacity_liters": 255.164729950989,
+  "measurement": {
+    "soil_geometry_only": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 67.74400000000001,
+      "heap_raw_liters": 40.632000000000005,
+      "inside_liters": 68.51862797605756,
+      "heap_liters": 41.09661212687722,
+      "fill_percent": 42.95861740922785,
+      "cavity_fraction_of_counted_load": 0.6250830442164317,
+      "selected_particles": 61743,
+      "cavity_particles": 5609,
+      "load_region_particles": 9066,
+      "point_support_fraction": 0.9944848885947496,
+      "load_density_quantiles": [
+        0.5828599631786346,
+        1.1604799032211304,
+        5.126639366149902
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.18799227899580728,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_geometry_rock_samples_0.025": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 72.13600000000001,
+      "heap_raw_liters": 71.91200000000002,
+      "inside_liters": 72.9608488970372,
+      "heap_liters": 72.73428753859015,
+      "fill_percent": 57.09846202631997,
+      "cavity_fraction_of_counted_load": 0.5007775186049095,
+      "selected_particles": 70427,
+      "cavity_particles": 5917,
+      "load_region_particles": 11576,
+      "point_support_fraction": 0.995162404975812,
+      "load_density_quantiles": [
+        0.6127220988273621,
+        1.091847836971283,
+        4.721195220947266
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.19902899899170734,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_geometry_rock_samples_0.0125": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 71.92000000000002,
+      "heap_raw_liters": 72.26400000000001,
+      "inside_liters": 72.74237901567754,
+      "heap_liters": 73.09031253043551,
+      "fill_percent": 57.15237038211511,
+      "cavity_fraction_of_counted_load": 0.4988070798424236,
+      "selected_particles": 130639,
+      "cavity_particles": 7886,
+      "load_region_particles": 26654,
+      "point_support_fraction": 0.9974863059953478,
+      "load_density_quantiles": [
+        0.6439654886722564,
+        0.9953925311565399,
+        2.7979114055633554
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.26300802700279746,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_velocity_screen_0.25": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 71.92000000000002,
+      "heap_raw_liters": 72.26400000000001,
+      "inside_liters": 72.74237901567754,
+      "heap_liters": 73.09031253043551,
+      "fill_percent": 57.15237038211511,
+      "cavity_fraction_of_counted_load": 0.4988070798424236,
+      "selected_particles": 130619,
+      "cavity_particles": 7886,
+      "load_region_particles": 26654,
+      "point_support_fraction": 0.9974863059953478,
+      "load_density_quantiles": [
+        0.6439654886722564,
+        0.9953925311565399,
+        2.7979114055633554
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.26027671300107613,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_velocity_screen_0.5": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 71.92000000000002,
+      "heap_raw_liters": 72.26400000000001,
+      "inside_liters": 72.74237901567754,
+      "heap_liters": 73.09031253043551,
+      "fill_percent": 57.15237038211511,
+      "cavity_fraction_of_counted_load": 0.4988070798424236,
+      "selected_particles": 130635,
+      "cavity_particles": 7886,
+      "load_region_particles": 26654,
+      "point_support_fraction": 0.9974863059953478,
+      "load_density_quantiles": [
+        0.6439654886722564,
+        0.9953925311565399,
+        2.7979114055633554
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.26060693299223203,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_velocity_screen_1.0": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 71.92000000000002,
+      "heap_raw_liters": 72.26400000000001,
+      "inside_liters": 72.74237901567754,
+      "heap_liters": 73.09031253043551,
+      "fill_percent": 57.15237038211511,
+      "cavity_fraction_of_counted_load": 0.4988070798424236,
+      "selected_particles": 130638,
+      "cavity_particles": 7886,
+      "load_region_particles": 26654,
+      "point_support_fraction": 0.9974863059953478,
+      "load_density_quantiles": [
+        0.6439654886722564,
+        0.9953925311565399,
+        2.7979114055633554
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.2596702769951662,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    }
+  },
+  "rock_candidates": [
+    {
+      "id": "lower-001",
+      "index": 1,
+      "volume_liters": 4.188790204786392,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.7638750555937186,
+        -0.3948901291412477,
+        -1.1614200558406016
+      ],
+      "minimum_world_z": 0.5857786698799159,
+      "relative_center_drift_last_0p5s_m": 0.008685259839272414
+    },
+    {
+      "id": "lower-008",
+      "index": 8,
+      "volume_liters": 20.579526276115534,
+      "fraction_in_cavity": 0.015117157974300832,
+      "center_bucket_m": [
+        0.0421972379977964,
+        0.0023080350769935872,
+        -0.9805074221898595
+      ],
+      "minimum_world_z": 2.231255462982911,
+      "relative_center_drift_last_0p5s_m": 0.0017087108429406838
+    },
+    {
+      "id": "lower_middle-006",
+      "index": 15,
+      "volume_liters": 11.494040321933863,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.49693135319331,
+        -0.403633394511178,
+        -0.981333521856838
+      ],
+      "minimum_world_z": 0.88074469444769,
+      "relative_center_drift_last_0p5s_m": 0.007639649085531639
+    },
+    {
+      "id": "lower_middle-007",
+      "index": 16,
+      "volume_liters": 5.575279762570685,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        0.9495640223071937,
+        0.13710025207151244,
+        -1.2043908116297812
+      ],
+      "minimum_world_z": 1.3679316507568688,
+      "relative_center_drift_last_0p5s_m": 0.007018617222930069
+    },
+    {
+      "id": "lower_middle-009",
+      "index": 18,
+      "volume_liters": 5.575279762570685,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.6561726537699513,
+        -0.18971508378937404,
+        -1.1801178985772156
+      ],
+      "minimum_world_z": 0.6127933677980187,
+      "relative_center_drift_last_0p5s_m": 0.00856889601144077
+    },
+    {
+      "id": "middle-000",
+      "index": 20,
+      "volume_liters": 7.23822947387088,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.4016889202281553,
+        0.470895792337325,
+        -0.540630214999031
+      ],
+      "minimum_world_z": 1.141599502891245,
+      "relative_center_drift_last_0p5s_m": 0.006552597787126024
+    },
+    {
+      "id": "middle-002",
+      "index": 22,
+      "volume_liters": 7.2382294738708834,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.5779963939070112,
+        0.28731671190593727,
+        -1.1852421517138136
+      ],
+      "minimum_world_z": 0.764272198235974,
+      "relative_center_drift_last_0p5s_m": 0.00840772243923847
+    },
+    {
+      "id": "middle-003",
+      "index": 23,
+      "volume_liters": 4.188790204786391,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.8436006668186735,
+        -0.6088166745323514,
+        -0.40681007736493985
+      ],
+      "minimum_world_z": 0.7944903954510073,
+      "relative_center_drift_last_0p5s_m": 0.007648871996225216
+    },
+    {
+      "id": "middle-006",
+      "index": 26,
+      "volume_liters": 5.575279762570684,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.5200381978031579,
+        -0.04866572496091459,
+        -1.2894392340829952
+      ],
+      "minimum_world_z": 0.7821185818523964,
+      "relative_center_drift_last_0p5s_m": 0.008573100645345165
+    },
+    {
+      "id": "middle-007",
+      "index": 27,
+      "volume_liters": 5.575279762570687,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.5896326625142003,
+        -0.6006032869377143,
+        -0.879247549858184
+      ],
+      "minimum_world_z": 0.8155828779888487,
+      "relative_center_drift_last_0p5s_m": 0.007565156827938074
+    },
+    {
+      "id": "middle-008",
+      "index": 28,
+      "volume_liters": 4.188790204786392,
+      "fraction_in_cavity": 1.0,
+      "center_bucket_m": [
+        0.3215726544995381,
+        0.13815990465596548,
+        -0.5633872754263487
+      ],
+      "minimum_world_z": 2.203051386254543,
+      "relative_center_drift_last_0p5s_m": 0.0036874975722532735
+    },
+    {
+      "id": "middle-010",
+      "index": 30,
+      "volume_liters": 9.202772079915698,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.4877060049264634,
+        0.5632682491795478,
+        -1.4136456100085297
+      ],
+      "minimum_world_z": 0.75566977811477,
+      "relative_center_drift_last_0p5s_m": 0.008537465158182092
+    },
+    {
+      "id": "middle-011",
+      "index": 31,
+      "volume_liters": 3.0536280592892795,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.481560821956234,
+        -0.23755978098505645,
+        -1.2111606441458274
+      ],
+      "minimum_world_z": 0.8351581309737515,
+      "relative_center_drift_last_0p5s_m": 0.008244553272975774
+    },
+    {
+      "id": "upper-000",
+      "index": 33,
+      "volume_liters": 4.849048260815844,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.0669976353162887,
+        0.25897734255005445,
+        -1.2779190421354865
+      ],
+      "minimum_world_z": 1.1953109581590864,
+      "relative_center_drift_last_0p5s_m": 0.007590479855502691
+    },
+    {
+      "id": "upper-001",
+      "index": 34,
+      "volume_liters": 4.849048260815844,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.2819827687675154,
+        -0.1522003500444966,
+        -1.4755825026850888
+      ],
+      "minimum_world_z": 0.9270911571495102,
+      "relative_center_drift_last_0p5s_m": 0.008599627747825894
+    },
+    {
+      "id": "upper-002",
+      "index": 35,
+      "volume_liters": 3.591364001828732,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.2535771699489873,
+        0.5075117945381783,
+        -1.4718842247357051
+      ],
+      "minimum_world_z": 0.9985143512921325,
+      "relative_center_drift_last_0p5s_m": 0.008210904253204046
+    },
+    {
+      "id": "upper-003",
+      "index": 36,
+      "volume_liters": 8.181230868723421,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.0523299923785172,
+        0.7085850128142109,
+        -0.7692131656345058
+      ],
+      "minimum_world_z": 1.3635454260696718,
+      "relative_center_drift_last_0p5s_m": 0.0058913196603714935
+    },
+    {
+      "id": "upper-004",
+      "index": 37,
+      "volume_liters": 4.849048260815845,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.2080588474619296,
+        -0.4175396555337693,
+        -0.9589604078182408
+      ],
+      "minimum_world_z": 1.1664587950265495,
+      "relative_center_drift_last_0p5s_m": 0.006717022864753055
+    },
+    {
+      "id": "upper-005",
+      "index": 38,
+      "volume_liters": 8.18123086872342,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.2042243827518582,
+        -0.1553322247086686,
+        -1.7164787004021798
+      ],
+      "minimum_world_z": 0.9292640957023616,
+      "relative_center_drift_last_0p5s_m": 0.00930861554502819
+    },
+    {
+      "id": "upper-006",
+      "index": 39,
+      "volume_liters": 6.370626302704501,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.2941490302983567,
+        0.27079830500799695,
+        -1.2913263391925534
+      ],
+      "minimum_world_z": 0.9996798946576064,
+      "relative_center_drift_last_0p5s_m": 0.008092349898696245
+    },
+    {
+      "id": "upper-007",
+      "index": 40,
+      "volume_liters": 2.5724407845144426,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        0.03610402589849471,
+        0.3282016588502718,
+        -0.6460274242217157
+      ],
+      "minimum_world_z": 2.4422289926653895,
+      "relative_center_drift_last_0p5s_m": 0.005351601209964137
+    },
+    {
+      "id": "upper-008",
+      "index": 41,
+      "volume_liters": 6.370626302704502,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        -0.16991219562247917,
+        -0.0733618307759491,
+        -0.9064324165239375
+      ],
+      "minimum_world_z": 2.5210704405692232,
+      "relative_center_drift_last_0p5s_m": 0.003630076005247062
+    },
+    {
+      "id": "upper-009",
+      "index": 42,
+      "volume_liters": 3.591364001828732,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.1528682659063911,
+        0.20860340631797444,
+        -1.6594297920095729
+      ],
+      "minimum_world_z": 1.0161015144202332,
+      "relative_center_drift_last_0p5s_m": 0.009234455648059884
+    },
+    {
+      "id": "upper-010",
+      "index": 43,
+      "volume_liters": 2.5724407845144417,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.3514412118368495,
+        0.5543828875010982,
+        -1.0920165984427812
+      ],
+      "minimum_world_z": 1.0325635517032807,
+      "relative_center_drift_last_0p5s_m": 0.0074855550028573225
+    },
+    {
+      "id": "upper-011",
+      "index": 44,
+      "volume_liters": 8.181230868723418,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.5434372082947143,
+        0.6956499162645884,
+        -0.36946180185305555
+      ],
+      "minimum_world_z": 1.0781743726686397,
+      "relative_center_drift_last_0p5s_m": 0.0066765316169624086
+    },
+    {
+      "id": "upper-012",
+      "index": 45,
+      "volume_liters": 2.572440784514443,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.3823093283050922,
+        -0.6353872564237337,
+        -0.9871647074539446
+      ],
+      "minimum_world_z": 1.0677578295748746,
+      "relative_center_drift_last_0p5s_m": 0.007146541078585047
+    },
+    {
+      "id": "upper-013",
+      "index": 46,
+      "volume_liters": 3.5913640018287314,
+      "fraction_in_cavity": 0.0,
+      "center_bucket_m": [
+        1.2412414879273763,
+        -0.5139377504114817,
+        -1.5832931185964734
+      ],
+      "minimum_world_z": 0.965314246473962,
+      "relative_center_drift_last_0p5s_m": 0.008356186054391267
+    }
+  ],
+  "cavity_soil_particles": 5609,
+  "cavity_soil_relative_speed_quantiles": [
+    6.298969338005354e-05,
+    0.0020466776510091027,
+    0.005153475028379745,
+    0.16467158849498564
+  ],
+  "calibration": {
+    "particle_spacing_m": 0.025,
+    "smoothing_sigma_cells": 0.43749999999999994,
+    "occupancy_level": 0.4,
+    "volume_scale": 1.011434635924326,
+    "measurement_cell_m": 0.02
+  },
+  "scope": "Snapshot geometric diagnostic; pure-soil calibration extended with solid-rock interior samples is not qualified mixed-material fill. Velocity screens are sensitivity only, not validated retention rules. No stable truck-delivery qualification.",
+  "source_bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-163839-751464/final-001370.diagnostic.npz": "1cff463525e77a0726fb5115970b89b395d89046ac2a06832b170bf12e5e066a",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-163839-751464/report.json": "8635bac906d53a2dfc6bbeb1bccc335e925b59e2ed5492b31edae21945c2c23e",
+    "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+    "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+    "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+    "/home/qunwang/wajueji/work/manual-fill-20260923-163839-v1/measure.py": "9569927317f54d100debd629ef2a2b12fc2f2b3f16f863fd1de8272e6eddc290"
+  }
+}

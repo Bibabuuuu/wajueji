@@ -1,0 +1,36 @@
+{
+  "schema": "excavation_layered_mound_physical_preflight_config_v1",
+  "status": "approved_visual_intent_to_nonintersecting_geometry_only",
+  "visual_config": {
+    "path": "configs/v4/layered-mound-viewer-preview-v1.json",
+    "sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32",
+    "required_review_status": "user_approved"
+  },
+  "packing": {
+    "method": "deterministic_stage_footprint_cluster_preserving_rejection",
+    "minimum_sat_gap_m": 0.001,
+    "boundary_margin_m": 0.003,
+    "local_candidate_count": 3500,
+    "total_candidate_count": 5000,
+    "accepted_candidate_pool_size": 80,
+    "candidate_sigma_xy_m": [0.17, 0.17],
+    "nearest_neighbor_score_weight": 0.025,
+    "seed_base": 70000,
+    "maximum_target_xy_shift_m": 0.45,
+    "maximum_mean_target_xy_shift_m": 0.09
+  },
+  "construction": {
+    "carve_policy": "remove_particle_center_inside_closed_convex_rock_only",
+    "activation_policy": "six_height_stages_from_approved_visual_config",
+    "rock_density_kg_m3": 2600.0
+  },
+  "scope": {
+    "geometry_only": true,
+    "physics_step": false,
+    "mpm_or_gpu_run": false,
+    "visual_style_preserved": true,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "definitions": {
+    "bottom_cohort": "same particle IDs whose initial z < 0.2m",
+    "outside_footprint": "outside initial particle XY AABB expanded by 0.1m",
+    "depleted_cells": "fixed 0.1m cells below z=0.2m, initial >=32 particles, current <25% initial",
+    "common70": "70 retrospective bottom cells depleted in both original and no-late-projection D123/D124 finals; diagnosis only"
+  },
+  "initial_particle_count": 256441,
+  "initial_bottom_count": 55520,
+  "snapshots": {
+    "600": {
+      "baseline": {
+        "file": "diagnostic-000600.npz",
+        "sha256": "b78a608657da091ea8d935733465841afc5a587fc02fa6b3a358e067d91922bc",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {
+          "particle_Jp": 222
+        },
+        "Jp_nonfinite": 222,
+        "Jp_min_p50_p99_max_finite": [
+          0.5395665168762207,
+          1.0,
+          2.9088527584075976,
+          3.3512345490861125e+38
+        ],
+        "F_singular_min": 0.007238417561018278,
+        "F_max_singular_p50_p99_max": [
+          1.0084084001752998,
+          1.0599897077256497,
+          994632.4041902149
+        ],
+        "F_frobenius_over1000": 340,
+        "bottom_displacement_median_p99_max_m": [
+          0.011974640135816101,
+          0.06695557457834958,
+          0.09965477761904082
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 743,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4496,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.004397799260914326,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.01833850636335264,
+          4.456080149881506
+        ]
+      },
+      "candidate": {
+        "file": "candidate-000600.npz",
+        "sha256": "925b2aee6b3e0f90b63fd065acb9c2cd506cb727dfda3b70fbcceb7a2d5c4338",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {},
+        "Jp_nonfinite": 0,
+        "Jp_min_p50_p99_max_finite": [
+          0.4762154519557953,
+          1.0,
+          2.58946270942688,
+          39.28108596801758
+        ],
+        "F_singular_min": 0.8527605081751246,
+        "F_max_singular_p50_p99_max": [
+          1.0084490390523757,
+          1.0503966677244696,
+          1.2061054671432698
+        ],
+        "F_frobenius_over1000": 0,
+        "bottom_displacement_median_p99_max_m": [
+          0.012123203590143737,
+          0.0673913732976845,
+          0.09917730530657465
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 906,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4491,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.0043541803024709225,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.01896194259153758,
+          0.6184533481278874
+        ]
+      }
+    },
+    "800": {
+      "baseline": {
+        "file": "diagnostic-000800.npz",
+        "sha256": "0dd66e0fbab643dfccc67031907e9484f447c2995f96d363c080bfba902d819c",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {
+          "particle_Jp": 498
+        },
+        "Jp_nonfinite": 498,
+        "Jp_min_p50_p99_max_finite": [
+          0.3387618064880371,
+          1.0,
+          3.9787147808074916,
+          1.0804831046370595e+38
+        ],
+        "F_singular_min": 0.003177328982206165,
+        "F_max_singular_p50_p99_max": [
+          1.0085666245964877,
+          1.063587690049501,
+          996888.2304810414
+        ],
+        "F_frobenius_over1000": 527,
+        "bottom_displacement_median_p99_max_m": [
+          0.012018093088489952,
+          0.0678055067979049,
+          0.10344565729171983
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1506,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4495,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.004325978457927704,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.016305539017641014,
+          0.38129786672460664
+        ]
+      },
+      "candidate": {
+        "file": "candidate-000800.npz",
+        "sha256": "e327d094608d3196b8e72f708df77c7e0cd5326ac5f1113fd94d3fa3745265dc",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {},
+        "Jp_nonfinite": 0,
+        "Jp_min_p50_p99_max_finite": [
+          0.4751432240009308,
+          1.0,
+          3.7881466388702423,
+          49.86795425415039
+        ],
+        "F_singular_min": 0.8635264248498677,
+        "F_max_singular_p50_p99_max": [
+          1.008664604226966,
+          1.0509531455343422,
+          1.2010688286972646
+        ],
+        "F_frobenius_over1000": 0,
+        "bottom_displacement_median_p99_max_m": [
+          0.01216735305956252,
+          0.06860137353272518,
+          0.10282893140018669
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1840,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4489,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.004128182772547007,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.024450700564088143,
+          0.5379117878113553
+        ]
+      }
+    },
+    "1000": {
+      "baseline": {
+        "file": "diagnostic-001000.npz",
+        "sha256": "eae6f44c8685123a8a5acedb1df8b1833de2692e62adfbe306c596261ce3ef7c",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {
+          "particle_Jp": 1582
+        },
+        "Jp_nonfinite": 1582,
+        "Jp_min_p50_p99_max_finite": [
+          4.31165644840803e-05,
+          1.0,
+          7.164513778686446,
+          2.7727562939466345e+38
+        ],
+        "F_singular_min": 0.001442236212034697,
+        "F_max_singular_p50_p99_max": [
+          1.0083026433448141,
+          1.901970441345167,
+          999655.4015056829
+        ],
+        "F_frobenius_over1000": 2500,
+        "bottom_displacement_median_p99_max_m": [
+          0.011917369243662344,
+          0.06672892196083177,
+          0.10222133458233117
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1294,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4493,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.004680865444242954,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.06408004592253867,
+          4.272019328329842
+        ]
+      },
+      "candidate": {
+        "file": "candidate-001000.npz",
+        "sha256": "62ed8df7bf64aa963d7446b62a4c2feda4e2f57140ae02036335700c96267726",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {},
+        "Jp_nonfinite": 0,
+        "Jp_min_p50_p99_max_finite": [
+          0.47575950622558594,
+          1.0,
+          4.319558048248293,
+          73.19605255126953
+        ],
+        "F_singular_min": 0.8638314467757533,
+        "F_max_singular_p50_p99_max": [
+          1.0083378443691973,
+          1.0514680177504148,
+          1.1996872881350709
+        ],
+        "F_frobenius_over1000": 0,
+        "bottom_displacement_median_p99_max_m": [
+          0.012047343667625453,
+          0.0679862624508653,
+          0.10190959341719326
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1687,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4485,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.004356876015663147,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.009744081560926586,
+          0.1825215770488476
+        ]
+      }
+    },
+    "1193": {
+      "baseline": {
+        "file": "diagnostic-001193.npz",
+        "sha256": "6945f984ee4b94845e82169b6a3067cdf68db835cdd204356ed66ff28799ae4c",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {
+          "particle_Jp": 11502
+        },
+        "Jp_nonfinite": 11502,
+        "Jp_min_p50_p99_max_finite": [
+          4.983280632586684e-07,
+          1.0,
+          25.055974960327084,
+          3.0512921911444305e+38
+        ],
+        "F_singular_min": 3.488315075792386e-05,
+        "F_max_singular_p50_p99_max": [
+          1.0089252698481026,
+          734834.675242603,
+          999889.9675906355
+        ],
+        "F_frobenius_over1000": 13119,
+        "bottom_displacement_median_p99_max_m": [
+          0.015781957410557823,
+          0.48189568418569595,
+          1.6199052970342096
+        ],
+        "bottom_moved_over20cm": 3752,
+        "bottom_outside_footprint": 432,
+        "all_outside_footprint": 1760,
+        "bottom_depleted_cells": 44,
+        "common70_current_particles": 1854,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 33,
+        "minimum_z_m": -1.078945729204861e-06,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.39787366467419744,
+          9.8700453086724
+        ]
+      },
+      "candidate": {
+        "file": "candidate-001193.npz",
+        "sha256": "fc60bd2df539200e66d77dd6be3bcfffddc5fa06b1f34f5dc56c492b2300caf1",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {},
+        "Jp_nonfinite": 0,
+        "Jp_min_p50_p99_max_finite": [
+          0.49321281909942627,
+          1.0,
+          5.872758865356447,
+          174.9563446044922
+        ],
+        "F_singular_min": 0.8484335190125167,
+        "F_max_singular_p50_p99_max": [
+          1.0083437577076775,
+          1.0497024672689637,
+          1.194487195123237
+        ],
+        "F_frobenius_over1000": 0,
+        "bottom_displacement_median_p99_max_m": [
+          0.01205901040784145,
+          0.06804871533983076,
+          0.10206025187743759
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1653,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4492,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.00439083157107234,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.12241832575583779,
+          1.0447877324373191
+        ]
+      }
+    },
+    "1329": {
+      "baseline": {
+        "file": "diagnostic-001329.npz",
+        "sha256": "398cfdb4924ec402d6b60fd53fdc580b82b5e8a4b73076281a866c0d74fbbfd1",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {
+          "particle_Jp": 22646
+        },
+        "Jp_nonfinite": 22646,
+        "Jp_min_p50_p99_max_finite": [
+          3.714683722926168e-29,
+          1.003702163696289,
+          2.3816399390533335e+26,
+          3.334602161914734e+38
+        ],
+        "F_singular_min": 6.841295694291712e-06,
+        "F_max_singular_p50_p99_max": [
+          1.0103859929562815,
+          896349.9881149328,
+          999963.8879052994
+        ],
+        "F_frobenius_over1000": 29695,
+        "bottom_displacement_median_p99_max_m": [
+          0.03239396076763893,
+          1.1854133284835127,
+          7.822686417649431
+        ],
+        "bottom_moved_over20cm": 12839,
+        "bottom_outside_footprint": 2128,
+        "all_outside_footprint": 4540,
+        "bottom_depleted_cells": 120,
+        "common70_current_particles": 247,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 70,
+        "minimum_z_m": -0.0005398668581619859,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          1.1140078138922052,
+          7.170094522042913
+        ]
+      },
+      "candidate": {
+        "file": "candidate-001329.npz",
+        "sha256": "be9b557b8a2e2a301bb2c81a063b9ce435871d32c77cef99edbc1646f8d3b8a7",
+        "particle_count": 256441,
+        "flags_unchanged": true,
+        "nonfinite_fields": {},
+        "Jp_nonfinite": 0,
+        "Jp_min_p50_p99_max_finite": [
+          0.49321281909942627,
+          1.0,
+          6.6593733787537035,
+          461.65966796875
+        ],
+        "F_singular_min": 0.7003077754315173,
+        "F_max_singular_p50_p99_max": [
+          1.0083758139671763,
+          1.0522932838895305,
+          1.4451989001532584
+        ],
+        "F_frobenius_over1000": 0,
+        "bottom_displacement_median_p99_max_m": [
+          0.012054852795711446,
+          0.06802080726902489,
+          0.10203873114235139
+        ],
+        "bottom_moved_over20cm": 0,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1649,
+        "bottom_depleted_cells": 0,
+        "common70_current_particles": 4491,
+        "common70_initial_particles": 4440,
+        "common70_cells_below25pct_initial": 0,
+        "minimum_z_m": 0.004425674676895142,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.16209622515414293,
+          0.5689563048148493
+        ]
+      }
+    }
+  },
+  "last136": {
+    "baseline": {
+      "all_moved_over20cm": 25683,
+      "initial_bottom_moved_over20cm": 12055,
+      "moved_over20cm_initial_z_min_p50_max_m": [
+        0.011242588981986046,
+        0.2069685310125351,
+        1.377530813217163
+      ],
+      "initial_bottom_displacement_p50_p99_max_m": [
+        0.005521915461022672,
+        0.9328900877546198,
+        6.758150543486732
+      ]
+    },
+    "candidate": {
+      "all_moved_over20cm": 17,
+      "initial_bottom_moved_over20cm": 0,
+      "moved_over20cm_initial_z_min_p50_max_m": [
+        0.6496618390083313,
+        1.372082233428955,
+        1.3758306503295898
+      ],
+      "initial_bottom_displacement_p50_p99_max_m": [
+        4.968744327985671e-05,
+        0.00016432557719086007,
+        0.00036485654548631323
+      ]
+    }
+  },
+  "last136_projection": {
+    "baseline": {
+      "frames": 136,
+      "sum_corrected_particle_count": 163309,
+      "max_corrected_particle_count": 2541,
+      "max_position_delta_m": 0.09310458561420266,
+      "max_position_delta_frame": 1230,
+      "frames_position_delta_over2cm": 17,
+      "max_velocity_delta_m_s": 5.58626842870741,
+      "max_pre_projection_speed_m_s": 14.640864615944949
+    },
+    "candidate": {
+      "frames": 136,
+      "sum_corrected_particle_count": 53915,
+      "max_corrected_particle_count": 1124,
+      "max_position_delta_m": 0.0723241110333347,
+      "max_position_delta_frame": 1327,
+      "frames_position_delta_over2cm": 1,
+      "max_velocity_delta_m_s": 4.339446407615925,
+      "max_pre_projection_speed_m_s": 4.339446407615925
+    }
+  },
+  "final_candidate_over_baseline_ratios": {
+    "bottom_moved_over20cm": 0.0,
+    "bottom_outside_footprint": 0.0,
+    "bottom_depleted_cells": 0.0,
+    "common70_current_particles": 18.182186234817813
+  },
+  "checks": {
+    "1329_frames_completed": true,
+    "all_candidate_frame_guards_passed": true,
+    "all_bindings_unchanged": true,
+    "same_original_applied_commands": true,
+    "final_material_finite": true,
+    "final_particle_flags_unchanged": true,
+    "bottom_migration_materially_reduced": true,
+    "bottom_depleted_cells_materially_reduced": true,
+    "no_particles_below_minus5mm": true,
+    "full_human_scoop_qualified": false,
+    "training_eligible": false
+  },
+  "limits": [
+    "The candidate changes the coupled trajectory from frame 1; equal commands do not mean equal bucket/rock state after that point.",
+    "The common70 set is retrospective diagnostic evidence, not a pre-registered generalization metric.",
+    "Particle counts and fixed-cell occupancy are not calibrated bucket volume or mass loss.",
+    "Passing the recorded trajectory does not replace a new human full-scoop test with the repaired soft-limit command chain.",
+    "Jp remains finite but continues to grow; with hardening=0 it does not change yield strength in this configuration."
+  ]
+}

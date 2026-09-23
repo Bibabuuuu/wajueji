@@ -1,0 +1,8 @@
+{
+  "decision": "D-126",
+  "scope": "Authorized small material-update benchmarks; no full-scene physics or shared solver modification",
+  "cases": ["isotropic elastic compression and unloading", "hydrostatic compressive/tensile yield and plastic remainder using installed postprocess kernel", "rigid rotation", "noncoaxial elastic-state reconstruction", "one-step replay of recorded D125 updates"],
+  "candidates": ["current linear update", "historical finite rotation only", "finite rotation plus exponential elastic increment", "reconstruct from updated spatial Hencky tensor and previous polar rotation"],
+  "acceptance": {"float64_analytic_error": 1e-10, "float32_kernel_tensor_error": 2e-5, "source_bindings_unchanged": true},
+  "limits": "Prescribed homogeneous constitutive states are not a coupled grid solve. Recorded-input counterfactual updates are not a new physical trajectory. No candidate is adopted solely from these tests. Preserve original prepoint, material, projection, controller, frequency and all historical evidence."
+}

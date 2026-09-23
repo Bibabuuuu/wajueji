@@ -1,0 +1,58 @@
+{
+  "status": "frozen_before_physics",
+  "source": "D115 rear-lower complete handoff",
+  "prefix_frames": 1370,
+  "prefix_commands": "original recorded manual applied commands",
+  "candidate": "unchanged D119 bucket-only half attributed MPM load, clamp +/-60000 N, slew150000 N/s, tau0.1 s, activation after480frames",
+  "phases": [
+    {
+      "frames": [
+        1371,
+        1490
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "purpose": "2s neutral load retention"
+    },
+    {
+      "frames": [
+        1491,
+        1520
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        -0.02
+      ],
+      "purpose": "0.5s low-rate reverse retreat"
+    },
+    {
+      "frames": [
+        1521,
+        1580
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "purpose": "1s stop after reversal"
+    }
+  ],
+  "runtime": "serial local RTX4070 cuda:0;60HzMPM/4800Hzrigid unchanged",
+  "guards": "original manual.hard_guard_checks every frame; abort and save first failed state; fresh tail commands existing ContactCommandProjector must preserve",
+  "stop_gate": "original motion.stopped for every final15frame of each neutral phase; diagnostic failure recorded, no relaxation",
+  "force_gate": "audit compiled model limits, report signed sum hold+drive per axis; no calibrated physical force cap available; no artificial force threshold added",
+  "retention": "same particle identities across each hold, cavity geometry and fixed-calibration mixed-soil/rock geometric occupancy at phase endpoints; no formal stable-payload or truck qualification",
+  "replay_gates": "23 arrays at480 exact vs D119baseline; baseline1370 exact vs user run; candidate600 exact vs previous candidate",
+  "default_control_changed": false,
+  "training_eligible": false,
+  "runner_sha256": "0b8c9c0b151fd06d3e3d503e6a1970951e8c42d1fdbc93175818961c631c35cb",
+  "v1_failure": "frame1 diagnostic stopped() adapter missing axis_velocity; recovery saved; no physics policy changes"
+}

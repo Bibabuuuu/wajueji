@@ -1,0 +1,4160 @@
+{
+  "inner_clear_width_m": 0.5994900000000001,
+  "limiting_spherical_gauge_m": 0.5994900000000001,
+  "method": "zero-thickness rectangular mouth aperture in the qualified bucket-body frame; convex prototype projection over 24 proper signed-axis poses",
+  "mouth_chord_m": 0.8867010907853897,
+  "prototype_pose_results": [
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.4315968935338586,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.37994518144121325,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.41315846157812725,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.4067838913672978,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.39705322707109336,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.46886158918982024,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.4487551529483169,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.4061287409612878,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.3756264472606545,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.45478708382076793,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.4628296583173692,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.3608817273502188,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.3756264472606545,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.45478708382076793,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.4628296583173692,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.3608817273502188,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.39705322707109336,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.46886158918982024,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.4487551529483169,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.4061287409612878,
+      "projected_width_m": 0.46998207422241967,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.4315968935338586,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.37994518144121325,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.41315846157812725,
+      "projected_width_m": 0.38649841630133197,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.4067838913672978,
+      "projected_width_m": 0.37722245431010004,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.3329095104103141,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.3894443809070946,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.3384094069966627,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.31832808929304784,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.32987171434421697,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.47213616123968444,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.408950003064864,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.32136588535914495,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.36392689395187866,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.4405430821522742,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.4405430821522742,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.36392689395187866,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.36392689395187866,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.4405430821522742,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.4405430821522742,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.36392689395187866,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.32987171434421697,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.47213616123968444,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.408950003064864,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.32136588535914495,
+      "projected_width_m": 0.4512719570739806,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.3329095104103141,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.3894443809070946,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.3384094069966627,
+      "projected_width_m": 0.33354883783729006,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.31832808929304784,
+      "projected_width_m": 0.37278987758285353,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.3002520612955328,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.3672666035346217,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.37442676242234163,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.2802036164099168,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.2952399500741288,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.5317236810200532,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.5259955539098772,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.2852157276313208,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.37585879419988566,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.5338717286863692,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.5238475062435612,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.3658345717570777,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.37585879419988566,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.5338717286863692,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.5238475062435612,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.3658345717570777,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.2952399500741288,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.5317236810200532,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.5259955539098772,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.2852157276313208,
+      "projected_width_m": 0.5417393309749412,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.3002520612955328,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.3672666035346217,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.37442676242234163,
+      "projected_width_m": 0.29729597431551646,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.2802036164099168,
+      "projected_width_m": 0.3798781894031599,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.2288977348548785,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.2923313697005659,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.30255518833542255,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.22324782500845464,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.20640533385819382,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.4320282019375523,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.3603925325291915,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.19923334104393545,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.2565480044785675,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.423849147029667,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.3900799059949225,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.20998750032285834,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.2565480044785675,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.423849147029667,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.3900799059949225,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.20998750032285834,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.20640533385819382,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.4320282019375523,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.3603925325291915,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.19923334104393545,
+      "projected_width_m": 0.4032766816269038,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.2288977348548785,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.2923313697005659,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.30255518833542255,
+      "projected_width_m": 0.17215905122084196,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.22324782500845464,
+      "projected_width_m": 0.228759287238653,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.5275073143191604,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.46437744398370506,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.5049714530399332,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.4971803116711417,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.48528727753133627,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.5730530534542246,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.5484785202701651,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.49637957228601837,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.45909899109635544,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.555850880225383,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.5656806934990067,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.4410776667613785,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.45909899109635544,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.555850880225383,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.5656806934990067,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.4410776667613785,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.48528727753133627,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.5730530534542246,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.5484785202701651,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.49637957228601837,
+      "projected_width_m": 0.574422535160735,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.5275073143191604,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.46437744398370506,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.5049714530399332,
+      "projected_width_m": 0.4723869532571835,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.4971803116711417,
+      "projected_width_m": 0.46104966637901107,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.4068894016126061,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.47598757666422675,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.41361149744036557,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.3890676646915029,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.4031765397540429,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.5770553081818365,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.49982778152372265,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.392780526550066,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.44479953705229613,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.5384415448527795,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.5384415448527795,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.44479953705229613,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.44479953705229613,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.5384415448527795,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.5384415448527795,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.44479953705229613,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.4031765397540429,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.5770553081818365,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.49982778152372265,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.392780526550066,
+      "projected_width_m": 0.5515546142015317,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.4068894016126061,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.47598757666422675,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.41361149744036557,
+      "projected_width_m": 0.40767080180113224,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.3890676646915029,
+      "projected_width_m": 0.45563207260126537,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.36697474158342896,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.44888140432009316,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.45763270962730646,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.3424710867232316,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.36084882786837963,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.6498844990245096,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.6428834547787388,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.34859700043828096,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.4593829706887491,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.6525098906166735,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.6402580631865749,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.44713114325865044,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.4593829706887491,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.6525098906166735,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.6402580631865749,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.44713114325865044,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.36084882786837963,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.6498844990245096,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.6428834547787388,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.34859700043828096,
+      "projected_width_m": 0.6621258489693725,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.36697474158342896,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.44888140432009316,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.45763270962730646,
+      "projected_width_m": 0.36336174638563123,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.3424710867232316,
+      "projected_width_m": 0.46429556482608436,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.2797638981559626,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.35729389630069164,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.3697896746321831,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.2728584527881112,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.25227318582668135,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.5280344690347861,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.44047976198012295,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.2435074168314767,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.31355867214047145,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.5180378463695929,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.4767643295493497,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.2566513892834935,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.31355867214047145,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.5180378463695929,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.4767643295493497,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.2566513892834935,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.25227318582668135,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.5280344690347861,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.44047976198012295,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.2435074168314767,
+      "projected_width_m": 0.49289372198843795,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.2797638981559626,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.35729389630069164,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.3697896746321831,
+      "projected_width_m": 0.21041661815880683,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.33,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.2728584527881112,
+      "projected_width_m": 0.2795946844027981,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.958288969276344,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.8436049511933069,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.917349504190635,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.9031958334658569,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.8815905151735175,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 1.0410290151977972,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.9963860245962461,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.9017411811810461,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.8340159217344063,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 1.0097789217767115,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 1.027636118017332,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.8012777286266022,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.8340159217344063,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 1.0097789217767115,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 1.027636118017332,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.8012777286266022,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.8815905151735175,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 1.0410290151977972,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.9963860245962461,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.9017411811810461,
+      "projected_width_m": 1.043516865465179,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.958288969276344,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.8436049511933069,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.917349504190635,
+      "projected_width_m": 0.8581553169943906,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.9031958334658569,
+      "projected_width_m": 0.8375595893865253,
+      "prototype_id": "angular_tetra"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.7391700829477006,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.8646963404073857,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.7513816866682568,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.7067944675936638,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.7324251630822762,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 1.0482996566725125,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.9080053234716863,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.7135393874590881,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.8080390135378213,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.9781524900720995,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.9781524900720993,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.8080390135378213,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.8080390135378213,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.9781524900720995,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.9781524900720993,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.8080390135378213,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.7324251630822762,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 1.0482996566725125,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.9080053234716863,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.7135393874590881,
+      "projected_width_m": 1.001974168689928,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.7391700829477006,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.8646963404073857,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.7513816866682568,
+      "projected_width_m": 0.7405896029447294,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.7067944675936638,
+      "projected_width_m": 0.8277177915264623,
+      "prototype_id": "angular_bipyramid"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.6666596600965146,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.8154542820480382,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.8313522214984058,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.6221454296354851,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.6555311024812572,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 1.1806038130915246,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 1.1678854615312306,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.6332739872507425,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.8345318093884793,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 1.185373194926635,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 1.1631160796961204,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.8122746941579646,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.8345318093884793,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 1.185373194926635,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 1.1631160796961204,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.8122746941579646,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.6555311024812572,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 1.1806038130915246,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 1.1678854615312306,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.6332739872507425,
+      "projected_width_m": 1.2028418945413608,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.6666596600965146,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.8154542820480382,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.8313522214984058,
+      "projected_width_m": 0.6600961616385517,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.6221454296354851,
+      "projected_width_m": 0.8434562065381492,
+      "prototype_id": "angular_octa"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-00",
+      "projected_mouth_chord_m": 0.5082292706227818,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-01",
+      "projected_mouth_chord_m": 0.6490730845251564,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-02",
+      "projected_mouth_chord_m": 0.6717733698340831,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-03",
+      "projected_mouth_chord_m": 0.49568458746043875,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-04",
+      "projected_mouth_chord_m": 0.458288642943143,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-05",
+      "projected_mouth_chord_m": 0.9592466177020118,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-06",
+      "projected_mouth_chord_m": 0.8001915530589815,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-07",
+      "projected_mouth_chord_m": 0.4423644282312181,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-08",
+      "projected_mouth_chord_m": 0.5696220859439127,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-09",
+      "projected_mouth_chord_m": 0.9410863894548703,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        -0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-10",
+      "projected_mouth_chord_m": 0.8661074179440595,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-11",
+      "projected_mouth_chord_m": 0.4662422465501864,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-12",
+      "projected_mouth_chord_m": 0.5696220859439127,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-13",
+      "projected_mouth_chord_m": 0.9410863894548703,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-14",
+      "projected_mouth_chord_m": 0.8661074179440595,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-15",
+      "projected_mouth_chord_m": 0.4662422465501864,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.0,
+        0.0,
+        -0.7071067811865475
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-16",
+      "projected_mouth_chord_m": 0.458288642943143,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-17",
+      "projected_mouth_chord_m": 0.9592466177020118,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.5,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-18",
+      "projected_mouth_chord_m": 0.8001915530589815,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": false,
+      "pose_id": "axis24-19",
+      "projected_mouth_chord_m": 0.4423644282312181,
+      "projected_width_m": 0.8954086587722685,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-20",
+      "projected_mouth_chord_m": 0.5082292706227818,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-21",
+      "projected_mouth_chord_m": 0.6490730845251564,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        0.7071067811865476,
+        -0.7071067811865475,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-22",
+      "projected_mouth_chord_m": 0.6717733698340831,
+      "projected_width_m": 0.3822504800606761,
+      "prototype_id": "angular_block"
+    },
+    {
+      "equivalent_diameter_m": 0.59949,
+      "orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "passes_zero_thickness_aperture": true,
+      "pose_id": "axis24-23",
+      "projected_mouth_chord_m": 0.49568458746043875,
+      "projected_width_m": 0.5079218707655558,
+      "prototype_id": "angular_block"
+    }
+  ],
+  "prototype_pose_summaries": [
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.27,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_tetra",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.27,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_bipyramid",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.27,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_octa",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.27,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_block",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.33,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_tetra",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.33,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_bipyramid",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": false,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.33,
+      "passing_pose_count": 16,
+      "prototype_id": "angular_octa",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": true,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.33,
+      "passing_pose_count": 24,
+      "prototype_id": "angular_block",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": false,
+      "any_tested_pose_passes": false,
+      "equivalent_diameter_m": 0.59949,
+      "passing_pose_count": 0,
+      "prototype_id": "angular_tetra",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": false,
+      "any_tested_pose_passes": false,
+      "equivalent_diameter_m": 0.59949,
+      "passing_pose_count": 0,
+      "prototype_id": "angular_bipyramid",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": false,
+      "any_tested_pose_passes": false,
+      "equivalent_diameter_m": 0.59949,
+      "passing_pose_count": 0,
+      "prototype_id": "angular_octa",
+      "tested_pose_count": 24
+    },
+    {
+      "all_tested_poses_pass": false,
+      "any_tested_pose_passes": true,
+      "equivalent_diameter_m": 0.59949,
+      "passing_pose_count": 12,
+      "prototype_id": "angular_block",
+      "tested_pose_count": 24
+    }
+  ],
+  "schema": "excavation_bucket_aperture_gauge_v1",
+  "scope_limit": "geometric preflight only; it does not prove swept passage through a validated open-cavity rigid collision decomposition",
+  "sphere_gauges": [
+    {
+      "diameter_m": 0.27,
+      "mouth_chord_clearance_m": 0.6167010907853897,
+      "passes": true,
+      "width_clearance_m": 0.32949000000000006
+    },
+    {
+      "diameter_m": 0.33,
+      "mouth_chord_clearance_m": 0.5567010907853898,
+      "passes": true,
+      "width_clearance_m": 0.26949000000000006
+    },
+    {
+      "diameter_m": 0.59949,
+      "mouth_chord_clearance_m": 0.28721109078538976,
+      "passes": true,
+      "width_clearance_m": 1.1102230246251565e-16
+    }
+  ]
+}

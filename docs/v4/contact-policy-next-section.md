@@ -1,5 +1,7 @@
 # 接触策略基础与交接详细规划
 
+> 状态：`supporting-paused`。当前接触挖掘和人工演示方案见[`../plans/S04-contact-excavation-demonstrations.md`](../plans/S04-contact-excavation-demonstrations.md)，学习路线见[`../plans/S05-imitation-and-rl.md`](../plans/S05-imitation-and-rl.md)。本文件保留M1审计和历史实施细节。
+
 更新：2026-09-19。阶段：M1。状态：物料范围更新后暂停在已完成审计处。工作包A和B已经完成；工作包C的固定日志候选和checkpoint隔离契约已经生成。用户已把目标场景改为可真实铲运的碎石混合物料，当前先执行[混合场景专项](mixed-material-scene-plan.md)，其物理资格通过后再续接本节人工复核、几何交接和训练。归档没有连续视觉证据，人工复核仍受阻。尚未修改控制器、运行物理或启动训练。
 
 对应[总体规划](../autonomous-excavation-plan.md)。本小节要解决：四轴动作是否表达正确、演示与在线状态是否一致、接触片段如何标注，以及几何接近怎样把控制权可靠交给策略。结束时应能明确说明“下一版接触BC用哪些样本，从什么状态开始，怎样交接，如何验收”。

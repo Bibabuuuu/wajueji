@@ -1,0 +1,311 @@
+{
+  "physics_steps": 0,
+  "source_unchanged": true,
+  "source_sha256": "1cff463525e77a0726fb5115970b89b395d89046ac2a06832b170bf12e5e066a",
+  "synthetic_shift_m_per_frame": 0.004,
+  "results": [
+    {
+      "interval": 6,
+      "rows": [
+        {
+          "frame": 0,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.000860060506965965,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.06928003299981356,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 1,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.000860060506965965,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.010602863010717556,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 2,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.000860060506965965,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.011172667000209913,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 3,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.000860060506965965,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.010750586006906815,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 4,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.000860060506965965,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.0072762170020723715,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 5,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.000860060506965965,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.011300412006676197,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 6,
+          "token": 1,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905844677239656,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.015495879008085467,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 7,
+          "token": 1,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905844677239656,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.007049392996123061,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 8,
+          "token": 1,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905844677239656,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.011356214992702007,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 9,
+          "token": 1,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905844677239656,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.007504092005547136,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 10,
+          "token": 1,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905844677239656,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.0094259420002345,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 11,
+          "token": 1,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905844677239656,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.008911162993172184,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 12,
+          "token": 2,
+          "mesh_centroid": [
+            4.720900058746338,
+            0.00182565045543015,
+            0.8649493455886841
+          ],
+          "wall_seconds": 0.017539045002195053,
+          "particle_state_unchanged": true
+        }
+      ],
+      "update_count": 3,
+      "warm_update_seconds_mean": 0.00897408499440644,
+      "warm_draw_plus_update_seconds_mean": 0.010698706168720188
+    },
+    {
+      "interval": 1,
+      "rows": [
+        {
+          "frame": 0,
+          "token": 0,
+          "mesh_centroid": [
+            4.726478576660156,
+            0.0008600610308349133,
+            0.8164845108985901
+          ],
+          "wall_seconds": 0.013854727003490552,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 1,
+          "token": 1,
+          "mesh_centroid": [
+            4.736749172210693,
+            0.0011102162534371018,
+            0.8059400916099548
+          ],
+          "wall_seconds": 0.017330454997136258,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 2,
+          "token": 2,
+          "mesh_centroid": [
+            4.720881938934326,
+            0.0018235900206491351,
+            0.8249483108520508
+          ],
+          "wall_seconds": 0.014106161004747264,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 3,
+          "token": 3,
+          "mesh_centroid": [
+            4.72446346282959,
+            0.001189031871035695,
+            0.8303505182266235
+          ],
+          "wall_seconds": 0.014416595993679948,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 4,
+          "token": 4,
+          "mesh_centroid": [
+            4.726395606994629,
+            0.0016080938512459397,
+            0.8366634845733643
+          ],
+          "wall_seconds": 0.014315759995952249,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 5,
+          "token": 5,
+          "mesh_centroid": [
+            4.726116180419922,
+            0.0017261571483686566,
+            0.840202808380127
+          ],
+          "wall_seconds": 0.014278047005063854,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 6,
+          "token": 6,
+          "mesh_centroid": [
+            4.726057052612305,
+            0.00016905911616049707,
+            0.8430150747299194
+          ],
+          "wall_seconds": 0.0143608310027048,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 7,
+          "token": 7,
+          "mesh_centroid": [
+            4.7255330085754395,
+            -0.00010388276859885082,
+            0.8456057906150818
+          ],
+          "wall_seconds": 0.014594113003113307,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 8,
+          "token": 8,
+          "mesh_centroid": [
+            4.725526332855225,
+            -0.00020355440210551023,
+            0.8486846685409546
+          ],
+          "wall_seconds": 0.014270103012677282,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 9,
+          "token": 9,
+          "mesh_centroid": [
+            4.725542068481445,
+            6.363563443301246e-05,
+            0.8525617122650146
+          ],
+          "wall_seconds": 0.015772136001032777,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 10,
+          "token": 10,
+          "mesh_centroid": [
+            4.726494789123535,
+            0.0008596498519182205,
+            0.8564820289611816
+          ],
+          "wall_seconds": 0.012893866005470045,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 11,
+          "token": 11,
+          "mesh_centroid": [
+            4.736772060394287,
+            0.0011139916023239493,
+            0.8459316492080688
+          ],
+          "wall_seconds": 0.013953144996776246,
+          "particle_state_unchanged": true
+        },
+        {
+          "frame": 12,
+          "token": 12,
+          "mesh_centroid": [
+            4.720900058746338,
+            0.0018256533658131957,
+            0.8649493455886841
+          ],
+          "wall_seconds": 0.013932861998910084,
+          "particle_state_unchanged": true
+        }
+      ],
+      "update_count": 13,
+      "warm_update_seconds_mean": 0.006623675168763536,
+      "warm_draw_plus_update_seconds_mean": 0.014518672918105343
+    }
+  ],
+  "pass": true
+}

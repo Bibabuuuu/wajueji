@@ -1,0 +1,49 @@
+{
+  "schema": "excavation_mixed_material_r3_c_shared_four_round_config_v1",
+  "status": "r3_c_shared_matrix_four_round_candidate",
+  "frozen_inputs": {
+    "r3_c_config_path": "configs/v4/mixed-material-r3-c.json",
+    "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+    "routing_config_path": "configs/v4/mixed-material-r3-c-routing-v1.json",
+    "routing_config_sha256": "dd56ba42e008258183c0265c2cd132d766101161fcb0d08e78e8746aaa6f7eea",
+    "routing_report_path": "reports/v4/mixed-material-r3-c-routing-2026-09-20-v1/report.json",
+    "routing_report_sha256": "c996bb9271b6c5299f59e07a7ce77168f94aad100dd1048f8fe8f60ef8ec7e09",
+    "dynamics_bridge_generator_path": "src/v4/build_mixed_coupled_bridge_r3_c_dynamics.py",
+    "dynamics_bridge_generator_sha256": "23c98c449e3c27a975d555a246ea9f56579b51cb44b7d413916757f9d98a9d8b",
+    "r3_b_config_path": "configs/v4/mixed-material-r3-b.json",
+    "r3_b_config_sha256": "2e8b3296a5574a5a1156dee3871ad293b80b16e119492d4eb0c6e2d25c8eb944"
+  },
+  "probe": {
+    "rock_ids": ["r1-rock-000", "r1-rock-001"],
+    "qualification_rounds": ["clear", "mpm_only", "rigid_only", "combined"],
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "duration_s": 1.0,
+    "command": [0.06, 0.0, 0.0, 0.0],
+    "matrix_patch_lower_world_m": [4.93, 0.36, 2.89],
+    "matrix_patch_size_xyz_m": [0.4, 0.4, 0.15],
+    "particle_spacing_m": 0.025,
+    "minimum_active_component_impulse_ns": 0.01,
+    "maximum_inactive_component_impulse_ns": 1e-12,
+    "maximum_force_partition_residual_n": 1e-10,
+    "maximum_torque_partition_residual_nm": 1e-10,
+    "maximum_reference_point_residual_m": 1e-12,
+    "maximum_mass_error_kg": 1e-5,
+    "maximum_closure_m": 0.001
+  },
+  "scope": {
+    "exactly_two_rocks": true,
+    "one_shared_mpm_matrix": true,
+    "bucket_and_both_rocks_mpm_collision_in_combined": true,
+    "four_round_force_partition": true,
+    "per_rock_rigid_bucket_accounting": true,
+    "per_rock_mpm_reference_echo": true,
+    "repeat_qualification": false,
+    "dt_refinement_qualification": false,
+    "complete_in_process_reset": false,
+    "r3_c_physics_qualified": false,
+    "official_envelope": false,
+    "training": false,
+    "frozen_prior_gates_modified": false
+  }
+}

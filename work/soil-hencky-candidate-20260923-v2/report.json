@@ -1,0 +1,86 @@
+{
+  "status": "candidate_short_prefix_passed",
+  "frames": 600,
+  "rejection_reason": null,
+  "restore_exact": true,
+  "initial_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": false,
+    "rigid_reported_angular_velocity": false,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "material_peaks": {
+    "max_F_frobenius": 1.8837274312973022,
+    "max_Jp": 39.28108596801758,
+    "rejected_particles": 0
+  },
+  "last_material_audit": {
+    "nonfinite_fields": {},
+    "rejection_count": 0,
+    "rejection_codes": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "max_F_frobenius": 1.8816407918930054,
+    "F_frobenius_over1000": 0,
+    "Jp_nonpositive": 0,
+    "max_Jp": 39.28108596801758,
+    "min_Jp": 0.4762154519557953,
+    "F_singular_min_max": [
+      0.8527605081751246,
+      1.2061054671432698
+    ],
+    "F_singular_max_over2": 0,
+    "weight_min_max": [
+      1.0,
+      1.0
+    ],
+    "local_H_stress_closure_norm_p50_p99_max": [
+      0.0069556995524026905,
+      0.07067064539344517,
+      0.19281350477809134
+    ]
+  },
+  "last_guards": {
+    "all_arrays_finite": true,
+    "no_candidate_update_rejection": true,
+    "no_extreme_elastic_F": true,
+    "Jp_positive": true,
+    "position_velocity_and_bridge_finite": true,
+    "mechanism_hard_bounds": true,
+    "closure": true,
+    "no_forbidden_contacts": true,
+    "no_unmapped_colliders": true,
+    "finite_colliders": true,
+    "particle_flags_unchanged": true
+  },
+  "source_commands": "original actual commands; full coupled mechanics feedback; no original-state equality expected after frame1",
+  "wall_seconds": 151.55300514599367,
+  "physics_and_audit_wall_seconds": 148.5254728870059,
+  "soil_loss_fixed": false,
+  "manual_deployed": false,
+  "training_eligible": false,
+  "resume_qualified": false,
+  "bindings_unchanged": true
+}

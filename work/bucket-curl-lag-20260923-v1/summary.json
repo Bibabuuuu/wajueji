@@ -1,0 +1,156 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-163839-751464",
+  "observed_frames": 1013,
+  "all_hard_guards_passed": true,
+  "all_phases_unmarked": true,
+  "outer_projection_reasons": [
+    null
+  ],
+  "controller_target_upper_m": 0.852,
+  "target_derivation": "joint upper .86 minus bridge margin .005 minus governor margin .003",
+  "bucket_position_gain_N_m": 3000000.0,
+  "bucket_velocity_gain_N_s_m": 100000.0,
+  "segments": [
+    {
+      "frames": [
+        1,
+        100
+      ],
+      "mean_command_mm_s": 21.982620320855617,
+      "mean_actual_velocity_mm_s": 21.137977920036395,
+      "mean_mpm_equivalent_bucket_load_N": -87.81154816795997,
+      "rock_bucket_contact_frames": 0
+    },
+    {
+      "frames": [
+        301,
+        400
+      ],
+      "mean_command_mm_s": 58.987299465240625,
+      "mean_actual_velocity_mm_s": 49.301260780911754,
+      "mean_mpm_equivalent_bucket_load_N": -78802.69223433682,
+      "rock_bucket_contact_frames": 100
+    },
+    {
+      "frames": [
+        501,
+        600
+      ],
+      "mean_command_mm_s": 64.08288770053476,
+      "mean_actual_velocity_mm_s": 1.3548394303345996,
+      "mean_mpm_equivalent_bucket_load_N": -101773.47261607126,
+      "rock_bucket_contact_frames": 100
+    },
+    {
+      "frames": [
+        601,
+        800
+      ],
+      "mean_command_mm_s": 67.13903743315508,
+      "mean_actual_velocity_mm_s": 3.6066094761303082,
+      "mean_mpm_equivalent_bucket_load_N": -78497.91556995052,
+      "rock_bucket_contact_frames": 200
+    },
+    {
+      "frames": [
+        901,
+        1013
+      ],
+      "mean_command_mm_s": 14.164852586247694,
+      "mean_actual_velocity_mm_s": -1.9533441201665396,
+      "mean_mpm_equivalent_bucket_load_N": -42461.49780663149,
+      "rock_bucket_contact_frames": 112
+    }
+  ],
+  "inferred_controller_samples": [
+    {
+      "frame": 100,
+      "actual_m": 0.5509016615433201,
+      "target_inferred_m": 0.551087964740295,
+      "reference_velocity_inferred_m_s": 0.026012224959877626,
+      "requested_m_s": 0.025989304812834225
+    },
+    {
+      "frame": 200,
+      "actual_m": 0.648678077536377,
+      "target_inferred_m": 0.6599314484480799,
+      "reference_velocity_inferred_m_s": 0.06535212388925546,
+      "requested_m_s": 0.06569518716577541
+    },
+    {
+      "frame": 300,
+      "actual_m": 0.7102924174765022,
+      "target_inferred_m": 0.7323508542463151,
+      "reference_velocity_inferred_m_s": 0.03804106825347581,
+      "requested_m_s": 0.03802139037433156
+    },
+    {
+      "frame": 400,
+      "actual_m": 0.7924301326539868,
+      "target_inferred_m": 0.8305509510061484,
+      "reference_velocity_inferred_m_s": 0.06569751329611592,
+      "requested_m_s": 0.06569518716577541
+    },
+    {
+      "frame": 450,
+      "actual_m": 0.8081902040381775,
+      "target_inferred_m": 0.8435185712970619,
+      "reference_velocity_inferred_m_s": 0.06432573875223149,
+      "requested_m_s": 0.06569518716577541
+    },
+    {
+      "frame": 500,
+      "actual_m": 0.8156389075189692,
+      "target_inferred_m": 0.8519972988287934,
+      "reference_velocity_inferred_m_s": -0.0008071425390666943,
+      "requested_m_s": 0.048850267379679145
+    },
+    {
+      "frame": 550,
+      "actual_m": 0.8170793644931701,
+      "target_inferred_m": 0.8519991619404892,
+      "reference_velocity_inferred_m_s": 3.1645316904565374e-05,
+      "requested_m_s": 0.0675
+    },
+    {
+      "frame": 600,
+      "actual_m": 0.8177688488980493,
+      "target_inferred_m": 0.8520017018108889,
+      "reference_velocity_inferred_m_s": 2.0439266982703874e-05,
+      "requested_m_s": 0.0675
+    },
+    {
+      "frame": 700,
+      "actual_m": 0.8243257917348557,
+      "target_inferred_m": 0.852000636562605,
+      "reference_velocity_inferred_m_s": 3.17954427735607e-05,
+      "requested_m_s": 0.0675
+    },
+    {
+      "frame": 800,
+      "actual_m": 0.8302104108524399,
+      "target_inferred_m": 0.8519998958626194,
+      "reference_velocity_inferred_m_s": -0.00037731649131524954,
+      "requested_m_s": 0.06629679144385027
+    },
+    {
+      "frame": 900,
+      "actual_m": 0.8368227570782446,
+      "target_inferred_m": 0.8519957934456593,
+      "reference_velocity_inferred_m_s": -0.0005727185709374118,
+      "requested_m_s": 0.0
+    },
+    {
+      "frame": 1013,
+      "actual_m": 0.8336489132691121,
+      "target_inferred_m": 0.8520012030925201,
+      "reference_velocity_inferred_m_s": 2.7949932705740102e-05,
+      "requested_m_s": 0.06028074866310161
+    }
+  ],
+  "inference_boundary": "Targets inferred from position/velocity actuator effort and unloaded feedforward; recorded q/qd are one final 4800Hz integration step later than effort evaluation, so values are approximate. No direct internal target trace persisted.",
+  "physics_advanced_by_diagnosis": false,
+  "source_trace_sha256": "89fe25f1a1b167872842c917371aa527134c3f64a1b13f630c8a55d4b69ad271",
+  "external_load_compensation_applied": false,
+  "full_particle_snapshot_saved": false
+}

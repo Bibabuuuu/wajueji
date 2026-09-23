@@ -1,0 +1,127 @@
+{
+  "schema": "excavation_scene_reconstruction_config_v1",
+  "coordinate_frame": "world",
+  "status": "synthetic_compiler_validation_with_post_settling_admission_not_official_scene_reconstruction",
+  "sources": {
+    "synthetic_baseline": {
+      "status": "synthetic_assumption",
+      "source_id": "scene-reconstruction-v2-post-settling-admission",
+      "measurement_method": "v1 engineering baseline with sparse-large seeds selected by fixed-sequence post-settling boundary admission",
+      "human_reviewed": true
+    },
+    "r0_frozen_assets": {
+      "status": "measured",
+      "source_id": "mixed-material-r0-2026-09-19-v1",
+      "measurement_method": "closed convex meshes and tetrahedral mass-property integration",
+      "human_reviewed": true
+    },
+    "r0_density_assumption": {
+      "status": "synthetic_assumption",
+      "source_id": "mixed-material-r0-density-2600kgm3",
+      "measurement_method": "explicit R0 simulation assumption; not an official material truth",
+      "human_reviewed": true
+    }
+  },
+  "parameter_sources": {
+    "/region": "synthetic_baseline",
+    "/surface": "synthetic_baseline",
+    "/placement": "synthetic_baseline",
+    "/scene_classes": "synthetic_baseline",
+    "/rocks/assets": "r0_frozen_assets",
+    "/rocks/density_kg_m3": "r0_density_assumption",
+    "/rocks/prototype_mix": "synthetic_baseline"
+  },
+  "region": {
+    "polygon_xy_m": [[4.0, -1.8], [7.4, -1.8], [7.4, 1.8], [4.0, 1.8], [4.0, -1.8]],
+    "boundary_safety_distance_m": 0.08
+  },
+  "surface": {
+    "origin_xy_m": [4.0, 0.0],
+    "base_height_m": 0.02,
+    "slope_dz_dx": 0.04,
+    "slope_dz_dy": -0.015,
+    "bumps": [
+      {"center_xy_m": [5.15, -0.45], "amplitude_m": 0.035, "sigma_xy_m": [0.62, 0.48]},
+      {"center_xy_m": [6.45, 0.72], "amplitude_m": -0.022, "sigma_xy_m": [0.72, 0.55]}
+    ]
+  },
+  "rocks": {
+    "density_kg_m3": 2600.0,
+    "asset_root": "assets/v4/mixed-material-r0",
+    "assets": {
+      "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43"
+    },
+    "prototype_mix": {
+      "angular_tetra": 0.25,
+      "angular_bipyramid": 0.25,
+      "angular_octa": 0.25,
+      "angular_block": 0.25
+    },
+    "orientation_base_quaternion_wxyz": [1.0, 0.0, 0.0, 0.0]
+  },
+  "placement": {
+    "ground_clearance_m": 0.006,
+    "minimum_rock_gap_m": 0.008,
+    "narrow_phase_neighbor_margin_m": 0.12,
+    "maximum_attempts_per_rock": 3500,
+    "background_weight": 0.58,
+    "strata_columns": 10,
+    "strata_rows": 8,
+    "clusters": [
+      {"center_xy_m": [5.0, -0.55], "sigma_xy_m": [0.46, 0.38], "weight": 0.24},
+      {"center_xy_m": [6.35, 0.62], "sigma_xy_m": [0.54, 0.42], "weight": 0.18}
+    ],
+    "local_density_radius_m": 0.75,
+    "coverage_grid_resolution_xy": [260, 220]
+  },
+  "scene_classes": [
+    {
+      "scene_class": "ordinary-small-rock-dominant",
+      "primary_constraint": "rock_count",
+      "rock_count": 20,
+      "target_coverage_fraction": null,
+      "seeds": [26091911, 26091912, 26091913],
+      "diameter_bins": [
+        {"bin_id": "small_le_0p16", "minimum_m": 0.09, "maximum_m": 0.16, "count": 16},
+        {"bin_id": "medium_0p16_0p22", "minimum_m": 0.17, "maximum_m": 0.205, "count": 4}
+      ]
+    },
+    {
+      "scene_class": "sparse-large-rock",
+      "primary_constraint": "rock_count",
+      "rock_count": 20,
+      "target_coverage_fraction": null,
+      "seeds": [26091922, 26091925, 26091926],
+      "diameter_bins": [
+        {"bin_id": "small_le_0p16", "minimum_m": 0.09, "maximum_m": 0.16, "count": 16},
+        {"bin_id": "medium_0p16_0p22", "minimum_m": 0.17, "maximum_m": 0.195, "count": 3},
+        {"bin_id": "large_0p22_0p27", "minimum_m": 0.23, "maximum_m": 0.23, "count": 1}
+      ]
+    },
+    {
+      "scene_class": "jam-boundary",
+      "primary_constraint": "rock_count",
+      "rock_count": 13,
+      "target_coverage_fraction": null,
+      "seeds": [26091931, 26091932, 26091933],
+      "diameter_bins": [
+        {"bin_id": "small_le_0p16", "minimum_m": 0.10, "maximum_m": 0.16, "count": 10},
+        {"bin_id": "medium_0p16_0p22", "minimum_m": 0.175, "maximum_m": 0.205, "count": 2},
+        {"bin_id": "jam_gt_0p285", "minimum_m": 0.30, "maximum_m": 0.30, "count": 1}
+      ]
+    }
+  ],
+  "admission": {
+    "minimum_small_count_fraction": 0.8,
+    "small_maximum_diameter_m": 0.16,
+    "large_minimum_diameter_m": 0.22,
+    "large_maximum_diameter_m": 0.27,
+    "maximum_large_count": 1,
+    "maximum_large_volume_fraction": 0.2,
+    "jam_minimum_diameter_m": 0.285,
+    "maximum_regular_scene_fraction_with_0p27m": 0.25
+  }
+}

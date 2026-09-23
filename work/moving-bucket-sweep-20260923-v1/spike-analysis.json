@@ -1,0 +1,70 @@
+{
+  "replayed_20_recorded_states_exact": false,
+  "maximum_numeric_state_absolute_difference": 2.0108914533523148e-14,
+  "tracked_particle_positions_exact": true,
+  "input_bindings_unchanged": true,
+  "pre_projection_speed_over_10_count": 3,
+  "protected_speed_over_10_count": 2,
+  "candidate_position_delta_over_20mm_count": 1,
+  "events": [
+    {
+      "id": 219134,
+      "original_cavity": false,
+      "pre_projection_speed_m_s": 40.958030700683594,
+      "native_projected_speed_m_s": 40.958030700683594,
+      "protected_speed_m_s": 2.506251573562622,
+      "candidate_position_delta_m": 0.10038980096578598,
+      "sweep_hits": 1,
+      "world_pre_projection": [
+        3.468661069869995,
+        3.6849007606506348,
+        3.634967803955078
+      ],
+      "world_protected": [
+        3.531249523162842,
+        3.629629135131836,
+        3.579237699508667
+      ]
+    },
+    {
+      "id": 255231,
+      "original_cavity": true,
+      "pre_projection_speed_m_s": 17.554601669311523,
+      "native_projected_speed_m_s": 17.554601669311523,
+      "protected_speed_m_s": 17.554601669311523,
+      "candidate_position_delta_m": 0.0,
+      "sweep_hits": 0,
+      "world_pre_projection": [
+        3.68733811378479,
+        3.4817655086517334,
+        3.420206069946289
+      ],
+      "world_protected": [
+        3.68733811378479,
+        3.4817655086517334,
+        3.420206069946289
+      ]
+    },
+    {
+      "id": 255408,
+      "original_cavity": false,
+      "pre_projection_speed_m_s": 12.794047355651855,
+      "native_projected_speed_m_s": 12.794047355651855,
+      "protected_speed_m_s": 12.794047355651855,
+      "candidate_position_delta_m": 0.0,
+      "sweep_hits": 0,
+      "world_pre_projection": [
+        3.774193286895752,
+        3.452072858810425,
+        3.305213212966919
+      ],
+      "world_protected": [
+        3.774193286895752,
+        3.452072858810425,
+        3.305213212966919
+      ]
+    }
+  ],
+  "inference": "high velocity already exists before native project_outside and this frame sweep; does not exclude effects of earlier candidate dynamics",
+  "not_yet_known": "specific contact/strain trigger and origin of energy; no full new-physics qualification"
+}

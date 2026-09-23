@@ -1,12 +1,14 @@
 # 复杂介质工况自主挖掘
 
+> **当前权威入口（2026-09-22）：** 总体路线见[`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md)，动态进度见[`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)，七个必读小节见[`docs/plans/INDEX.md`](docs/plans/INDEX.md)。本README只介绍仓库，不再保存实时状态。
+
 本仓库用于整理 2026 年“复杂介质工况自主挖掘”参赛项目的源码、设计记录、验证结论和提交材料。当前规划采用分层路线：感知规划逐铲选点，几何闭环接近，自有示范初始化接触挖掘策略并研究强化学习优化，几何闭环完成运输卸料。新架构尚待集成，历史基线和当前BC能力按各自证据说明。
 
-> **总体规划与下一小节：** [自主连续三铲总体规划](docs/autonomous-excavation-plan.md) · [接触策略基础与交接详细规划](docs/v4/contact-policy-next-section.md) · [进场漂移与卷斗反向诊断](reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md) · [接触阶段候选标注](reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md) · [checkpoint隔离审计](reports/v4/contact-foundation/contact-checkpoint-contract-2026-09-19-v1/report.md)。新三动作头已与旧四阶段权重隔离，但归档没有连续视觉证据；取得复演画面或改录新示范前，候选训练资格仍为零。
+> **按需支撑材料：** [详细研究路线](docs/autonomous-excavation-plan.md) · [接触策略基础与交接](docs/v4/contact-policy-next-section.md) · [进场漂移与卷斗反向诊断](reports/v4/contact-foundation/entry-drift-and-reverse-diagnosis-2026-09-19-v1/report.md) · [接触阶段候选标注](reports/v4/contact-foundation/contact-segmentation-2026-09-19-v1/report.md) · [checkpoint隔离审计](reports/v4/contact-foundation/contact-checkpoint-contract-2026-09-19-v1/report.md)。这些材料不能替代顶部权威入口。
 
 > **2026-09-19 当前工作入口：** 四轴模仿学习、精确接管和最新进场漂移诊断已整理到 [`src/v4/`](src/v4/README.md)，状态与工作规则见 [`docs/v4/README.md`](docs/v4/README.md)。完整轨迹保存在本仓库内的 `local-data/`，由 Git 忽略；下文保留 2026-09-14 提交基线的历史状态。
 
-## 当前进度
+## 历史进度快照（2026-09-19）
 
 - 单铲自主“挖取—抬升保持—回转—装车—返回”已经在冻结的 MPM 工况中完成闭环验证。
 - 同一物理实例中的三铲空载流程已经完成，49,258 个机构步连续运行，独立审计 24 项全部通过。
@@ -40,15 +42,29 @@ Git 只保存源码、文档、小型 JSON/CSV 结论和选定图片。粒子状
 
 ## 快速阅读
 
-1. `docs/START-HERE.md`：五分钟了解唯一主线、真实进度和参与方式。
-2. `AGENTS.md`：队友 AI 的事实来源、修改边界和最小验证。
-3. `.planning/task.md`：当前正在做什么、边界和下一步。
-4. `docs/handoff.md`：中断后如何恢复工作。
-5. `docs/acceptance.md`：哪些能力已经通过，哪些仍未验收。
-6. `docs/decisions.md`：关键技术取舍及原因。
+1. `AGENTS.md`：AI协作纪律和强制阅读顺序。
+2. `docs/PROJECT_PLAN.md`：唯一总体规划。
+3. `docs/CURRENT_STATUS.md`：当前正在做什么和下一道门。
+4. `docs/requirements.md`：用户要求和比赛边界。
+5. `docs/plans/INDEX.md`：七个当前小节方案，复杂任务必须全部阅读。
+6. `docs/DOCS_INDEX.md`：其他设计、证据和历史资料的读取地图。
+7. `docs/acceptance.md`与`docs/decisions.md`：已验证能力和重要取舍。
 
 ## 本地协作
 
 笔记本负责整理、提交并通过可访问 GitHub 的网络推送；GPU 台式机负责长时间 MPM 仿真。每条长任务运行期间不要在对应目录中切分支、拉取或覆盖源码。任务结束后再通过 Tailscale/SSH 同步已提交版本，并用新的运行名启动后续实验。
 
 仓库在参赛材料冻结前应保持私有。文档包含尚未公开的实现路线、实验结果和本机协作信息；公开发布应在提交后另做脱敏与许可证检查。
+
+## 当前接触示范入口（2026-09-24）
+
+主线状态以[当前状态](docs/CURRENT_STATUS.md)为准。D-134独立入口为
+`scripts/run_47_contact_bc_collection_local.sh --manual-input gamepad`：
+恢复已保存后侧预备点并暂停，显式启用Hencky材料、铲斗积分和移动铲斗路径保护。
+完整接入记录见[采集入口记录](work/moving-bucket-sweep-manual-integration-20260923-v1/README.md)。
+候选演示记录与训练准入分开，未授予正式三铲/训练成功资格。
+
+GitHub保留源码、配置、测试、规划和精选小型证据；原始逐帧记录、完整检查点、
+依赖运行时与本地资产留在本机/平台。现有本地启动脚本包含明确的本机资源路径，
+克隆源码不等于拥有全部运行输入，平台部署仍需按[A30运行手册](docs/runbooks/a30-platform.md)
+制作并预检不可变包。源码整理范围见[共享说明](docs/runbooks/github-source-snapshot.md)。

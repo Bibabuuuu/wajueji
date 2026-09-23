@@ -1,0 +1,8 @@
+{
+  "status": "execution_failed",
+  "frames": 0,
+  "error": "AssertionError({'particle_q': True, 'particle_qd': True, 'particle_f': True, 'particle_flags': True, 'particle_elastic_strain': True, 'particle_transform': True, 'particle_qd_grad': True, 'particle_stress': True, 'particle_Jp': True, 'rigid_ids': True, 'rigid_qpos': True, 'rigid_qvel': True, 'rigid_reported_linear_velocity': False, 'rigid_reported_angular_velocity': False, 'mechanism_qpos': True, 'mechanism_qvel': True, 'simulation_time_s': True, 'grid_reference_particle_q': True, 'solver_grid_transform': True, 'solver_grid_cell_ijk': True, 'solver_grid_node_ijk': True, 'solver_ws_impulse': True, 'solver_ws_stress': True, 'solver_body_q_prev': True})",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/qunwang/wajueji/work/soil-hencky-candidate-20260923-v1/replay.py\", line 62, in <module>\n    assert all(exact.values()),exact\n           ^^^^^^^^^^^^^^^^^^^\nAssertionError: {'particle_q': True, 'particle_qd': True, 'particle_f': True, 'particle_flags': True, 'particle_elastic_strain': True, 'particle_transform': True, 'particle_qd_grad': True, 'particle_stress': True, 'particle_Jp': True, 'rigid_ids': True, 'rigid_qpos': True, 'rigid_qvel': True, 'rigid_reported_linear_velocity': False, 'rigid_reported_angular_velocity': False, 'mechanism_qpos': True, 'mechanism_qvel': True, 'simulation_time_s': True, 'grid_reference_particle_q': True, 'solver_grid_transform': True, 'solver_grid_cell_ijk': True, 'solver_grid_node_ijk': True, 'solver_ws_impulse': True, 'solver_ws_stress': True, 'solver_body_q_prev': True}\n",
+  "failure_snapshot": "/home/qunwang/wajueji/work/soil-hencky-candidate-20260923-v1/failure-000000.npz",
+  "bindings_unchanged": true
+}

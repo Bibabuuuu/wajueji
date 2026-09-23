@@ -1,0 +1,26 @@
+{
+  "all_admission_checks_passed": true,
+  "asset_sha256": {
+    "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+    "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+    "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7"
+  },
+  "boundaries": [
+    "synthetic parameters do not reproduce an official scene",
+    "no underground material or mechanical properties inferred",
+    "R1/R2 collision, settling and dynamics must be requalified"
+  ],
+  "config_sha256": "e2f317ea1550547c34d17792cc858ed3a2224f9aef10e0323752b74893ade755",
+  "generator_sha256": "3cc4fb2bf182e30f571a58f720dac9019cab137d581c8c17653f2be282580bba",
+  "input_sha256": "496271c6d6220fd2a3d2241855e25e6127116d4ee19d2cbbc06acf674430cbc0",
+  "preview_sha256": "3ae5022065a578b7f4309560c8ac2df3ff316a775e8f5fd688823a18ee46702c",
+  "scene_class": "sparse-large-rock",
+  "scene_id": "sparse-large-rock-seed-26091926",
+  "scene_manifest_sha256": "5542ac3a0d9c891466e91cdf33dfe397d9d338b9af12a62844883b034b622eee",
+  "scene_metrics_sha256": "c3beb6d375fab9963cae18038d36ebc2a38449441b68aefb259cdd58a31f2a31",
+  "schema": "excavation_scene_reconstruction_report_v1",
+  "scope": "geometry only; not official reconstruction, physics or training",
+  "seed": 26091926,
+  "status": "geometry_reconstruction_candidate"
+}

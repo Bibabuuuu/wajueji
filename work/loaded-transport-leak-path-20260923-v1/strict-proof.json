@@ -1,0 +1,562 @@
+{
+  "query_only_no_physics": true,
+  "criterion": "initial cavity particle; first closed proxy boundary exit at shell; within 5 frames reaches actual outer face; same shell material owner; pre point strictly inside outer half slab; post point past outer face by >0.1mm; pre/post tangential coordinates within wall by >0.1mm; SDF negative and outward gradient dot >0.999",
+  "count": 3970,
+  "unique_particles": 3970,
+  "source_cavity_particles": 6494,
+  "examples": [
+    {
+      "particle_id": 221261,
+      "tracked_index": 9881,
+      "frame": 551,
+      "first_crossing_frame": 548,
+      "face": "bucket_shell_04",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.677626410882281,
+        -0.26456782933678535,
+        -0.1421764046616191
+      ],
+      "post_local_same_collider_pose": [
+        0.6895830529206922,
+        -0.2645677680785545,
+        -0.13067387061348287
+      ],
+      "slab_outward_z_pre_m": 0.002095999090580284,
+      "slab_outward_z_post_m": 0.018687249144726713,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.015903890132904053,
+      "query_owner": 48,
+      "query_material": 58,
+      "bucket_sdf_m": -0.015903890132904053,
+      "bucket_material": 58,
+      "query_gradient_world": [
+        0.6714445352554321,
+        0.4579596519470215,
+        -0.5826107263565063
+      ],
+      "query_velocity_world": [
+        -0.061874303966760635,
+        0.2706669867038727,
+        -0.032311394810676575
+      ],
+      "bucket_gradient_local": [
+        0.7206612825393677,
+        1.873901396720612e-06,
+        0.6932873129844666
+      ],
+      "projection_displacement_world_m": [
+        0.011140108108520508,
+        0.007598161697387695,
+        -0.009666204452514648
+      ]
+    },
+    {
+      "particle_id": 179043,
+      "tracked_index": 3981,
+      "frame": 642,
+      "first_crossing_frame": 637,
+      "face": "bucket_shell_06",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.7657573966486644,
+        -0.22561560421413887,
+        -0.3127439501201536
+      ],
+      "post_local_same_collider_pose": [
+        0.781369755630593,
+        -0.22562027853456776,
+        -0.31006962848746555
+      ],
+      "slab_outward_z_pre_m": 0.008197618397666147,
+      "slab_outward_z_post_m": 0.02403727981213868,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.00980245228856802,
+      "query_owner": 48,
+      "query_material": 60,
+      "bucket_sdf_m": -0.00980245228856802,
+      "bucket_material": 60,
+      "query_gradient_world": [
+        0.29726314544677734,
+        0.22276276350021362,
+        -0.9284456968307495
+      ],
+      "query_velocity_world": [
+        0.431198388338089,
+        0.32208505272865295,
+        -0.23943617939949036
+      ],
+      "bucket_gradient_local": [
+        0.9862101078033447,
+        1.520146270195255e-06,
+        0.16549831628799438
+      ],
+      "projection_displacement_world_m": [
+        0.0047512054443359375,
+        0.0035545825958251953,
+        -0.014686346054077148
+      ]
+    },
+    {
+      "particle_id": 179065,
+      "tracked_index": 4003,
+      "frame": 642,
+      "first_crossing_frame": 637,
+      "face": "bucket_shell_06",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.7657858585354201,
+        -0.28115442373062277,
+        -0.3130380199550733
+      ],
+      "post_local_same_collider_pose": [
+        0.7814140106966934,
+        -0.2811588412410214,
+        -0.31032028785910454
+      ],
+      "slab_outward_z_pre_m": 0.008177019723743855,
+      "slab_outward_z_post_m": 0.024039440890816492,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.00982312299311161,
+      "query_owner": 48,
+      "query_material": 60,
+      "bucket_sdf_m": -0.00982312299311161,
+      "bucket_material": 60,
+      "query_gradient_world": [
+        0.29726454615592957,
+        0.22276189923286438,
+        -0.9284454584121704
+      ],
+      "query_velocity_world": [
+        0.43123045563697815,
+        0.32210829854011536,
+        -0.23956134915351868
+      ],
+      "bucket_gradient_local": [
+        0.9862099885940552,
+        -0.0,
+        0.16549897193908691
+      ],
+      "projection_displacement_world_m": [
+        0.0047876834869384766,
+        0.0035822391510009766,
+        -0.014692544937133789
+      ]
+    },
+    {
+      "particle_id": 219279,
+      "tracked_index": 8951,
+      "frame": 642,
+      "first_crossing_frame": 637,
+      "face": "bucket_shell_04",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.6856537191803456,
+        -0.2966708921393179,
+        -0.14062328689793768
+      ],
+      "post_local_same_collider_pose": [
+        0.6972232786007174,
+        -0.29665663808456577,
+        -0.12918046197557262
+      ],
+      "slab_outward_z_pre_m": 0.008957731832305131,
+      "slab_outward_z_post_m": 0.0252286305671782,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.009042467921972275,
+      "query_owner": 48,
+      "query_material": 58,
+      "bucket_sdf_m": -0.009042467921972275,
+      "bucket_material": 58,
+      "query_gradient_world": [
+        0.6647603511810303,
+        0.49815306067466736,
+        -0.5567201375961304
+      ],
+      "query_velocity_world": [
+        0.38647380471229553,
+        0.2885270416736603,
+        -0.16716673970222473
+      ],
+      "bucket_gradient_local": [
+        0.7206634283065796,
+        -0.0,
+        0.6932850480079651
+      ],
+      "projection_displacement_world_m": [
+        0.010908126831054688,
+        0.008192062377929688,
+        -0.008871078491210938
+      ]
+    },
+    {
+      "particle_id": 221423,
+      "tracked_index": 10043,
+      "frame": 642,
+      "first_crossing_frame": 637,
+      "face": "bucket_shell_04",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.6774468448168542,
+        -0.11784029256878557,
+        -0.1327424181069359
+      ],
+      "post_local_same_collider_pose": [
+        0.6892507204164385,
+        -0.1179294778291201,
+        -0.12102012751531228
+      ],
+      "slab_outward_z_pre_m": 0.008507047386977006,
+      "slab_outward_z_post_m": 0.025140558677566798,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.009493101388216019,
+      "query_owner": 48,
+      "query_material": 58,
+      "bucket_sdf_m": -0.009493101388216019,
+      "bucket_material": 58,
+      "query_gradient_world": [
+        0.6647646427154541,
+        0.49815139174461365,
+        -0.5567165017127991
+      ],
+      "query_velocity_world": [
+        0.3829610049724579,
+        0.2858944535255432,
+        -0.16422703862190247
+      ],
+      "bucket_gradient_local": [
+        0.720660388469696,
+        -3.924207703676075e-06,
+        0.6932882070541382
+      ],
+      "projection_displacement_world_m": [
+        0.011228561401367188,
+        0.008302927017211914,
+        -0.009040594100952148
+      ]
+    },
+    {
+      "particle_id": 179046,
+      "tracked_index": 3984,
+      "frame": 642,
+      "first_crossing_frame": 637,
+      "face": "bucket_shell_06",
+      "first_crossing_phase": "rigid_pose_advance",
+      "pre_local": [
+        0.7649211515741703,
+        -0.18450619550988803,
+        -0.31113897634577925
+      ],
+      "post_local_same_collider_pose": [
+        0.7810742600172522,
+        -0.1845100788444033,
+        -0.3083893547318368
+      ],
+      "slab_outward_z_pre_m": 0.00763852560231236,
+      "slab_outward_z_post_m": 0.024023941601686798,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.010361566208302975,
+      "query_owner": 48,
+      "query_material": 60,
+      "bucket_sdf_m": -0.010361566208302975,
+      "bucket_material": 60,
+      "query_gradient_world": [
+        0.2972617745399475,
+        0.22276520729064941,
+        -0.92844557762146
+      ],
+      "query_velocity_world": [
+        0.4309639632701874,
+        0.32190802693367004,
+        -0.23868873715400696
+      ],
+      "bucket_gradient_local": [
+        0.9862099885940552,
+        4.314355919632362e-06,
+        0.16549868881702423
+      ],
+      "projection_displacement_world_m": [
+        0.0049016475677490234,
+        0.0036683082580566406,
+        -0.015198707580566406
+      ]
+    },
+    {
+      "particle_id": 179153,
+      "tracked_index": 4091,
+      "frame": 642,
+      "first_crossing_frame": 637,
+      "face": "bucket_shell_07",
+      "first_crossing_phase": "rigid_pose_advance",
+      "pre_local": [
+        0.7583129157453937,
+        -0.20935093615266534,
+        -0.3954413160271478
+      ],
+      "post_local_same_collider_pose": [
+        0.7739384150299895,
+        -0.20935100775489657,
+        -0.39744272706143874
+      ],
+      "slab_outward_z_pre_m": 0.006670026865642971,
+      "slab_outward_z_post_m": 0.022423181280488834,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.011330150067806244,
+      "query_owner": 48,
+      "query_material": 61,
+      "bucket_sdf_m": -0.011330150067806244,
+      "bucket_material": 61,
+      "query_gradient_world": [
+        0.06948171555995941,
+        0.052064448595047,
+        -0.9962237477302551
+      ],
+      "query_velocity_world": [
+        0.4359916150569916,
+        0.3256988823413849,
+        -0.2791793644428253
+      ],
+      "bucket_gradient_local": [
+        0.9918965101242065,
+        -2.6303555387130473e-06,
+        -0.1270488053560257
+      ],
+      "projection_displacement_world_m": [
+        0.0010945796966552734,
+        0.000820159912109375,
+        -0.01569366455078125
+      ]
+    },
+    {
+      "particle_id": 171202,
+      "tracked_index": 2082,
+      "frame": 642,
+      "first_crossing_frame": 639,
+      "face": "bucket_shell_08",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.6673602320913625,
+        -0.07737926490477866,
+        -0.5916928411411226
+      ],
+      "post_local_same_collider_pose": [
+        0.6824161472641577,
+        -0.07737538690651335,
+        -0.5989351798366251
+      ],
+      "slab_outward_z_pre_m": 0.004353934966328167,
+      "slab_outward_z_post_m": 0.02106069433920771,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.013646170496940613,
+      "query_owner": 48,
+      "query_material": 62,
+      "bucket_sdf_m": -0.013646170496940613,
+      "bucket_material": 62,
+      "query_gradient_world": [
+        -0.19150784611701965,
+        -0.14351065456867218,
+        -0.9709426164627075
+      ],
+      "query_velocity_world": [
+        0.41939789056777954,
+        0.31332138180732727,
+        -0.3799588680267334
+      ],
+      "bucket_gradient_local": [
+        0.8978279829025269,
+        -0.0,
+        -0.4403464198112488
+      ],
+      "projection_displacement_world_m": [
+        -0.0031027793884277344,
+        -0.0023202896118164062,
+        -0.016251802444458008
+      ]
+    },
+    {
+      "particle_id": 176571,
+      "tracked_index": 3335,
+      "frame": 642,
+      "first_crossing_frame": 639,
+      "face": "bucket_shell_08",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.6670641016499784,
+        -0.07073003268828362,
+        -0.5921755812742813
+      ],
+      "post_local_same_collider_pose": [
+        0.6821771533244657,
+        -0.07072830122808152,
+        -0.5994323079851345
+      ],
+      "slab_outward_z_pre_m": 0.004300633760269342,
+      "slab_outward_z_post_m": 0.021065027590467463,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.013699538074433804,
+      "query_owner": 48,
+      "query_material": 62,
+      "bucket_sdf_m": -0.013699538074433804,
+      "bucket_material": 62,
+      "query_gradient_world": [
+        -0.19150781631469727,
+        -0.14350856840610504,
+        -0.9709429144859314
+      ],
+      "query_velocity_world": [
+        0.4193496108055115,
+        0.3132874071598053,
+        -0.38021278381347656
+      ],
+      "bucket_gradient_local": [
+        0.8978285193443298,
+        1.631569034543645e-06,
+        -0.44034525752067566
+      ],
+      "projection_displacement_world_m": [
+        -0.003103017807006836,
+        -0.002323150634765625,
+        -0.016310691833496094
+      ]
+    },
+    {
+      "particle_id": 176572,
+      "tracked_index": 3336,
+      "frame": 642,
+      "first_crossing_frame": 642,
+      "face": "bucket_shell_08",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.6644559117877609,
+        -0.0471129926761196,
+        -0.5928002430164907
+      ],
+      "post_local_same_collider_pose": [
+        0.6815230510994235,
+        -0.04713613247242721,
+        -0.6007962374112203
+      ],
+      "slab_outward_z_pre_m": 0.002233995840300651,
+      "slab_outward_z_post_m": 0.021078358016617005,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.015766186639666557,
+      "query_owner": 48,
+      "query_material": 62,
+      "bucket_sdf_m": -0.015766186639666557,
+      "bucket_material": 62,
+      "query_gradient_world": [
+        -0.19150446355342865,
+        -0.14351366460323334,
+        -0.9709427952766418
+      ],
+      "query_velocity_world": [
+        0.41920119524002075,
+        0.31317654252052307,
+        -0.38098883628845215
+      ],
+      "bucket_gradient_local": [
+        0.8978282809257507,
+        -4.4893872654938605e-06,
+        -0.44034555554389954
+      ],
+      "projection_displacement_world_m": [
+        -0.003333568572998047,
+        -0.002526998519897461,
+        -0.018377304077148438
+      ]
+    },
+    {
+      "particle_id": 179368,
+      "tracked_index": 4305,
+      "frame": 642,
+      "first_crossing_frame": 642,
+      "face": "bucket_shell_08",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.6644652423346044,
+        0.009539035632134795,
+        -0.5921890665374238
+      ],
+      "post_local_same_collider_pose": [
+        0.6818116411578058,
+        0.009462651901881437,
+        -0.6001979523096576
+      ],
+      "slab_outward_z_pre_m": 0.001973243601243728,
+      "slab_outward_z_post_m": 0.02107400942646964,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.01602688804268837,
+      "query_owner": 48,
+      "query_material": 62,
+      "bucket_sdf_m": -0.01602688804268837,
+      "bucket_material": 62,
+      "query_gradient_world": [
+        -0.19150957465171814,
+        -0.143506720662117,
+        -0.9709428548812866
+      ],
+      "query_velocity_world": [
+        0.4192602038383484,
+        0.3132212460041046,
+        -0.3807384967803955
+      ],
+      "bucket_gradient_local": [
+        0.8978284001350403,
+        4.183920282230247e-06,
+        -0.44034555554389954
+      ],
+      "projection_displacement_world_m": [
+        -0.003264188766479492,
+        -0.0025415420532226562,
+        -0.018652915954589844
+      ]
+    },
+    {
+      "particle_id": 179273,
+      "tracked_index": 4210,
+      "frame": 643,
+      "first_crossing_frame": 638,
+      "face": "bucket_shell_05",
+      "first_crossing_phase": "mpm_before_projection",
+      "pre_local": [
+        0.7544436833247145,
+        -0.11996777242575887,
+        -0.2385905079437855
+      ],
+      "post_local_same_collider_pose": [
+        0.7658510274985254,
+        -0.11996764968504671,
+        -0.23330629951812612
+      ],
+      "slab_outward_z_pre_m": 0.012460142994285441,
+      "slab_outward_z_post_m": 0.025031951129013626,
+      "slab_half_thickness_m": 0.018,
+      "query_sdf_m": -0.005539838690310717,
+      "query_owner": 48,
+      "query_material": 59,
+      "bucket_sdf_m": -0.005539838690310717,
+      "bucket_material": 59,
+      "query_gradient_world": [
+        0.4880990982055664,
+        0.3657650649547577,
+        -0.792448878288269
+      ],
+      "query_velocity_world": [
+        0.41601404547691345,
+        0.30923226475715637,
+        -0.20916712284088135
+      ],
+      "bucket_gradient_local": [
+        0.9073726534843445,
+        1.3449092648443184e-06,
+        0.42032718658447266
+      ],
+      "projection_displacement_world_m": [
+        0.006136178970336914,
+        0.004598379135131836,
+        -0.00996255874633789
+      ]
+    }
+  ],
+  "share": 0.6113335386510625
+}
