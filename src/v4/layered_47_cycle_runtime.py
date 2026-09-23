@@ -148,4 +148,11 @@ class CycleRuntime:
         if self.bridge is not None:self.bridge.close();self.bridge=None
         self.contexts.close()
 
-    def __exit__(self,*exc):self.close()
+    def __exit__(self,*exc):
+        if exc[0] is not None and self.bridge is not None and hasattr(self, 'sweep'):
+            try:
+                saved=self.save(self.output/'failure.npz',stage='failure')
+                (self.output/'failure.json').write_text(json.dumps(dict(error=str(exc[1]),checkpoint=saved),indent=2))
+            except Exception as error:
+                (self.output/'failure-save-error.txt').write_text(repr(error))
+        self.close()

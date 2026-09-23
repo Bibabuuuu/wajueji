@@ -106,6 +106,15 @@ def controller_snapshot(state):
     }
 
 
+def restore_frame_interface(state, arrays, controller):
+    """Restore exactly the reported velocities consumed by the next MPM frame."""
+    for i, rock in enumerate(state['rocks']):
+        rock['linear_velocity_world_m_s'] = arrays['rigid_reported_linear_velocity'][i].tolist()
+        rock['angular_velocity_world_rad_s'] = arrays['rigid_reported_angular_velocity'][i].tolist()
+    for key in ('bucket_linear_velocity_world_m_s', 'bucket_angular_velocity_world_rad_s'):
+        state[key] = list(controller[key])
+
+
 @contextmanager
 def installed_cycle_bridge(build_dir):
     import layered_mound_checkpoint_runtime as runtime

@@ -1,6 +1,6 @@
 # 技术决策日志
 
-> 状态：`active-log`。本文件保留完整决策正文；项目当前路线先读[`PROJECT_PLAN.md`](PROJECT_PLAN.md)和[`plans/INDEX.md`](plans/INDEX.md)。决策编号不代表正文物理顺序，新增决策必须同时更新本顶部索引。
+> 状态：`active-log`。本文件保留完整决策正文；项目当前路线先读[`PROJECT_PLAN.md`](PROJECT_PLAN.md)和[`plans/INDEX.md`](plans/INDEX.md)。决策编号不代表正文物理顺序，新增决策必须同时更新本顶部索引。文档权威层级遵循 D-098。
 
 ## 当前决策索引（2026-09-24）
 

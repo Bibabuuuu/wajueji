@@ -506,6 +506,10 @@ def _cache_rock_vertices(root: Path, records: list[dict]) -> list[np.ndarray]:
 def run(args):
     root = Path(args.repository_root).resolve()
     transport_mode = bool(getattr(args, "loaded_transport", False))
+    cycle_mode = bool(getattr(args, "cycle_checkpoint", False))
+    cycle_save = bool(getattr(args, "cycle_save", False) or cycle_mode)
+    physics_truck = transport_mode or cycle_mode
+    cycle_metadata = None
     phase_markers = (
         TRANSPORT_PHASE_MARKERS if transport_mode else PHASE_MARKERS)
     output = Path(args.output).resolve()
@@ -592,6 +596,18 @@ def run(args):
         info["metadata_sha256"] = motion.probe.bench.sha256(metadata_path)
         report.setdefault("diagnostic_snapshots", []).append(info)
         progress("diagnostic_snapshot", label=label, snapshot=info)
+        if cycle_save:
+            import layered_47_cycle_checkpoint as cycle_checkpoint
+            from layered_47_cycle_bridge import controller_snapshot
+            parent = cycle_metadata or dict(source_identity=checkpoint_before,
+                lineage_root=info['sha256'], historical_native_history_missing=False)
+            saved = cycle_checkpoint.save(output / f"{label}-{len(rows):06d}.cycle.npz",
+                values, controller_snapshot(bridge.state), sweep_runtime.diagnostic_state(),
+                parent=parent, stage='failure' if label=='failure' else 'loaded_manual_endpoint',
+                cycle_index=parent.get('cycle_index', 1), truck_enabled=physics_truck,
+                solver_profile=approach_report['solver_profile'], runtime_bindings=bindings,
+                selected_cut=parent.get('selected_cut'))
+            report.setdefault('cycle_checkpoints', []).append(saved)
         return info
 
     try:
@@ -612,66 +628,89 @@ def run(args):
         manual_config_path = Path(args.manual_config).resolve()
         display_config_path = Path(args.display_config).resolve()
 
-        approach_report = json.loads(
-            approach_report_path.read_text(encoding="utf-8"))
-        if (approach_report.get("schema") !=
-                "layered_47_sparse_approach_handoff_run_v1"
-                or approach_report.get("status") !=
-                "sparse_approach_handoff_saved_unaudited"
-                or not all(approach_report.get("checks", {}).values())):
-            raise ValueError("manual_contact_approach_report")
-        provenance = approach_report["handoff_provenance"]
-        if transport_mode:
-            arrays, loaded_metadata, checkpoint_before = (
-                loaded_handoff.load_checkpoint_readonly(
-                    checkpoint_path, checkpoint_metadata_path))
+        if cycle_mode:
+            import layered_47_cycle_checkpoint as cycle_checkpoint
+            arrays, cycle_metadata = cycle_checkpoint.load(checkpoint_path)
+            checkpoint_before = cycle_metadata['source_identity']
+            metadata_before = cycle_metadata['source_metadata_identity']
+            audit_document = json.loads(audit_path.read_text())
+            if (cycle_metadata['stage'] != 'prepoint'
+                    or cycle_metadata['cycle_index'] not in (2, 3)
+                    or not cycle_metadata['truck_enabled']
+                    or audit_document.get('status') != 'hold_passed'
+                    or audit_document.get('source') != checkpoint_before
+                    or audit_document.get('frames_completed', 0) < 3
+                    or not audit_document.get('zero_step', {}).get('exact')
+                    or max(audit_document['zero_step']['cycle_errors'].values()) > 1e-12):
+                raise ValueError('cycle_manual_requires_audited_prepoint')
+            face = cycle_metadata['selected_cut']['contact']
+            selected_cut = dict(entry_xy_m=face['contact_xy_m'], surface_z_m=face['contact_surface_z_m'])
+            approach_report = {'solver_profile': cycle_metadata['solver_profile']}
+            report['cycle_lineage'] = {key: cycle_metadata[key] for key in (
+                'cycle_index', 'lineage_root', 'parent_checkpoint', 'historical_native_history_missing')}
         else:
-            arrays, _, checkpoint_before = handoff.load_checkpoint_readonly(
-                checkpoint_path, checkpoint_metadata_path, provenance)
-        metadata_before = motion.probe.bench.checkpoint_identity(
-            checkpoint_metadata_path)
-        if transport_mode:
-            audit_document = json.loads(audit_path.read_text(encoding="utf-8"))
-            if (audit_document.get("status") !=
-                    "truck_physics_static_gate_passed"
-                    or not all(audit_document.get("checks", {}).values())
-                    or audit_document.get("checks", {}).get(
-                        "static_shape_mapping_verified") is not True
-                    or audit_document.get("checks", {}).get(
-                        "static_shape_query_probe_passed") is not True
-                    or audit_document.get("source_checkpoint") !=
-                        checkpoint_before
-                    or audit_document.get("source_metadata") !=
-                        metadata_before
-                    or audit_document.get("scope", {}).get(
-                        "transport_unload_development_eligible") is not True):
-                raise ValueError("manual_transport_truck_gate")
-        elif (approach_report["handoff_checkpoint"] != checkpoint_before
-                or approach_report["handoff_metadata"] != metadata_before):
-            raise ValueError("manual_contact_handoff_identity")
+            approach_report = json.loads(
+                approach_report_path.read_text(encoding="utf-8"))
+            if (approach_report.get("schema") !=
+                    "layered_47_sparse_approach_handoff_run_v1"
+                    or approach_report.get("status") !=
+                    "sparse_approach_handoff_saved_unaudited"
+                    or not all(approach_report.get("checks", {}).values())):
+                raise ValueError("manual_contact_approach_report")
+            provenance = approach_report["handoff_provenance"]
+            if transport_mode:
+                arrays, loaded_metadata, checkpoint_before = (
+                    loaded_handoff.load_checkpoint_readonly(
+                        checkpoint_path, checkpoint_metadata_path))
+            else:
+                arrays, _, checkpoint_before = handoff.load_checkpoint_readonly(
+                    checkpoint_path, checkpoint_metadata_path, provenance)
+            metadata_before = motion.probe.bench.checkpoint_identity(
+                checkpoint_metadata_path)
+            if transport_mode:
+                audit_document = json.loads(audit_path.read_text(encoding="utf-8"))
+                if (audit_document.get("status") !=
+                        "truck_physics_static_gate_passed"
+                        or not all(audit_document.get("checks", {}).values())
+                        or audit_document.get("checks", {}).get(
+                            "static_shape_mapping_verified") is not True
+                        or audit_document.get("checks", {}).get(
+                            "static_shape_query_probe_passed") is not True
+                        or audit_document.get("source_checkpoint") !=
+                            checkpoint_before
+                        or audit_document.get("source_metadata") !=
+                            metadata_before
+                        or audit_document.get("scope", {}).get(
+                            "transport_unload_development_eligible") is not True):
+                    raise ValueError("manual_transport_truck_gate")
+            elif (approach_report["handoff_checkpoint"] != checkpoint_before
+                    or approach_report["handoff_metadata"] != metadata_before):
+                raise ValueError("manual_contact_handoff_identity")
 
-        execution = json.loads(execution_path.read_text(encoding="utf-8"))
-        if (motion.probe.bench.sha256(execution_path) !=
-                provenance["approach_execution_report_sha256"]
-                or execution.get("schema") !=
-                    "layered_47_sparse_approach_execution_v1"
-                or execution.get("status") !=
-                    "sparse_noncontact_approach_passed"
-                or not all(execution.get("checks", {}).values())):
-            raise ValueError("manual_contact_execution_report")
-        selected_cut = selected_contact_target(execution)
-        if not transport_mode:
-            audit_document = json.loads(audit_path.read_text(encoding="utf-8"))
-            if not contact.audit_report_passes(
-                    audit_document, checkpoint_before, metadata_before):
-                raise ValueError("manual_contact_restore_audit")
+            execution = json.loads(execution_path.read_text(encoding="utf-8"))
+            if (motion.probe.bench.sha256(execution_path) !=
+                    provenance["approach_execution_report_sha256"]
+                    or execution.get("schema") !=
+                        "layered_47_sparse_approach_execution_v1"
+                    or execution.get("status") !=
+                        "sparse_noncontact_approach_passed"
+                    or not all(execution.get("checks", {}).values())):
+                raise ValueError("manual_contact_execution_report")
+            selected_cut = selected_contact_target(execution)
+            if not transport_mode:
+                audit_document = json.loads(audit_path.read_text(encoding="utf-8"))
+                if not contact.audit_report_passes(
+                        audit_document, checkpoint_before, metadata_before):
+                    raise ValueError("manual_contact_restore_audit")
 
         loader, identity = motion.probe.select(47)
         base = loader(config_path, root)
         base["input_checkpoint"] = json.loads(
             local_source_config.read_text(encoding="utf-8"))[
                 "input_checkpoint"]
-        if transport_mode:
+        if cycle_mode:
+            source_before = checkpoint_before
+        elif transport_mode:
             source_before = approach_report["source_checkpoint"]
         else:
             source_arrays, source, source_before = motion.audit.load_candidate(
@@ -681,7 +720,7 @@ def run(args):
                 candidate_report, source, source_before, 47, HZ,
                 auditor_source_path=getattr(args, "seed_auditor_source", None))
             del source_arrays
-        if (not transport_mode and (source_before["sha256"] !=
+        if (not transport_mode and not cycle_mode and (source_before["sha256"] !=
                 provenance["source_checkpoint_sha256"]
                 or motion.probe.bench.sha256(
                     Path(source_before["path"] + ".json")) !=
@@ -703,7 +742,7 @@ def run(args):
                 not getattr(args, "bucket_integral_candidate", False)
                 or transport_mode):
             raise ValueError("active_curl_requires_integral_and_original_prepoint")
-        if transport_mode:
+        if physics_truck:
             if (not getattr(args, "truck_config", None)
                     or not getattr(args, "truck_repository_root", None)
                     or not getattr(args, "bucket_integral_candidate", False)
@@ -712,6 +751,10 @@ def run(args):
             truck_document, truck_fixtures = truck_physics.load_candidate(
                 args.truck_config, args.truck_repository_root)
 
+        if cycle_save and not all(getattr(args, key, False) for key in (
+                'bucket_integral_candidate', 'active_curl_candidate',
+                'hencky_update_candidate', 'moving_bucket_sweep_candidate')):
+            raise ValueError('cycle_save_requires_full_candidate_stack')
         manifest_path = root / base["physical_geometry"]["manifest_path"]
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         records = [record for record in manifest["rocks"]
@@ -791,7 +834,7 @@ def run(args):
                 Path(__file__).with_name("moving_bucket_sweep_candidate.py"),
                 Path(__file__).with_name("moving_bucket_sweep_runtime.py"),
             ])
-        if transport_mode:
+        if physics_truck:
             binding_paths.extend([
                 Path(args.truck_config), audit_path,
                 Path(__file__).with_name(
@@ -800,6 +843,9 @@ def run(args):
                 Path(__file__).with_name(
                     "layered_47_loaded_handoff_checkpoint.py"),
             ])
+        if cycle_save:
+            binding_paths.extend(Path(__file__).with_name(name) for name in (
+                'layered_47_cycle_bridge.py', 'layered_47_cycle_checkpoint.py'))
         bindings = {str(path): motion.probe.bench.sha256(path)
                     for path in binding_paths}
         initial_terrain, initial_observation = build_fused_terrain(
@@ -841,8 +887,8 @@ def run(args):
                 "rock_bucket_contact_allowed": True,
                 "rock_ground_contact_allowed": True,
                 "rock_ramp_contact_allowed": False,
-                "rock_truck_contact_allowed": transport_mode,
-                "soil_truck_contact_allowed": transport_mode,
+                "rock_truck_contact_allowed": physics_truck,
+                "soil_truck_contact_allowed": physics_truck,
                 "continuous_collision_proven": False,
                 "postsolve_projection": {
                     "enabled": True,
@@ -883,7 +929,7 @@ def run(args):
                 "loaded_transport_mode": transport_mode,
                 "truck_contact_ownership": (
                     truck_document["contact_ownership"]
-                    if transport_mode else None),
+                    if physics_truck else None),
             },
         )
         progress("validated_inputs", handoff=checkpoint_before,
@@ -900,8 +946,12 @@ def run(args):
                 getattr(args, "bucket_integral_candidate", False),
                 output / "bucket-integral-build"))
             active_curl_policy = contexts.enter_context(active_curl_bridge(
-                active_curl_enabled, output / "active-curl-build"))
-            if transport_mode:
+                active_curl_enabled, output / "active-curl-build",
+                initialize_from_d120=cycle_mode))
+            if cycle_save:
+                from layered_47_cycle_bridge import installed_cycle_bridge
+                contexts.enter_context(installed_cycle_bridge(output / 'cycle-build'))
+            if physics_truck:
                 truck_fixtures = contexts.enter_context(
                     truck_physics.installed_candidate(
                         args.truck_config, args.truck_repository_root))
@@ -929,7 +979,22 @@ def run(args):
                 )
             raw = contexts.enter_context(tempfile.TemporaryDirectory(
                 prefix="sparse-manual-contact-"))
-            if transport_mode:
+            if cycle_mode:
+                with loaded_handoff.restored_sparse_grid_topology(arrays):
+                    fixture, held, restored = motion.audit.restore_candidate_runtime(
+                        args, base, root, records, arrays, proxy,
+                        cycle_metadata['solver_profile'], Path(raw),
+                        cycle_metadata['controller_state'], truck_fixtures)
+                from layered_47_cycle_bridge import restore_frame_interface, controller_snapshot
+                restore_frame_interface(held.bridge.state, arrays, cycle_metadata['controller_state'])
+                fixture.assign(held.bridge.state)
+                actual = controller_snapshot(held.bridge.state)
+                errors = {key: float(np.max(np.abs(np.asarray(value)-np.asarray(actual[key]))))
+                          for key,value in cycle_metadata['controller_state'].items()
+                          if key != 'native_state_kind'}
+                if max(errors.values()) > 1e-12: raise ValueError('cycle_manual_native_restore_inexact')
+                restored['cycle_errors'] = errors
+            elif transport_mode:
                 with loaded_handoff.restored_sparse_grid_topology(arrays):
                     fixture, held, restored = (
                         motion.audit.restore_candidate_runtime(
@@ -986,6 +1051,8 @@ def run(args):
                 from moving_bucket_sweep_runtime import MovingBucketSweepRuntime
                 sweep_runtime = MovingBucketSweepRuntime(
                     fixture, bridge, proxy, base["mpm"]["material"]["friction"])
+                if cycle_mode:
+                    cycle_checkpoint.restore_sweep(sweep_runtime, cycle_metadata["moving_bucket_sweep_state"])
                 sweep_policy["candidate_source_sha256"] = bindings[str(
                     Path(__file__).with_name("moving_bucket_sweep_candidate.py"))]
             report["moving_bucket_sweep_candidate"] = sweep_policy.copy()
@@ -1099,7 +1166,7 @@ def run(args):
                          or row["hencky_material_guard"]["safe"]))
                 row["stopped"] = motion.stopped(row)
                 row["hard_guard_checks"] = hard_guard_checks(
-                    row, allow_truck=transport_mode)
+                    row, allow_truck=physics_truck)
                 row["hard_guard"] = all(
                     row["hard_guard_checks"].values())
                 row["advisory_checks"] = advisory_checks(row)
@@ -1162,9 +1229,9 @@ def run(args):
 
             import pyglet
             import pyglet.display.xlib as pyglet_xlib
-            from pyglet.window import key
             if not hasattr(pyglet_xlib.XlibScreen, "is_primary"):
                 pyglet_xlib.XlibScreen.is_primary = False
+            from pyglet.window import key
             (display_assembly, display_model, display_state,
              display_names, to_pose) = display_helpers._display_runtime(
                  display)
@@ -1721,6 +1788,8 @@ def main():
         "--zero-probe-frames", type=int, choices=(0, 3, 30), default=0)
     parser.add_argument(
         "--live-fill-config", help="Display-only mixed fill measurement on off-soil key 4")
+    parser.add_argument('--cycle-checkpoint', action='store_true', help='Audited continuous second/third scoop prepoint')
+    parser.add_argument('--cycle-save', action='store_true', help='Also save full native/controller/sweep frame state')
     parser.add_argument("--loaded-transport", action="store_true")
     parser.add_argument("--truck-config")
     parser.add_argument("--truck-repository-root")
