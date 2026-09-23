@@ -28,6 +28,7 @@ from contracts import ACTION_SPEED_LIMIT_SI
 from layered_47_optimized_bridge import optimized_bridge
 from layered_47_bucket_integral_candidate import bucket_integral_bridge
 from layered_47_active_curl_candidate import active_curl_bridge
+from legacy_push_shelf_cleanup import cleaned_manual_model
 import layered_47_rigid_frequency_candidate as rigid_frequency
 import layered_47_sparse_approach_handoff_checkpoint as handoff
 import layered_47_loaded_handoff_checkpoint as loaded_handoff
@@ -742,6 +743,7 @@ def run(args):
             proxy_path, Path(args.kinematics_model), Path(__file__),
             Path(__file__).with_name("soil_surface.py"),
             Path(__file__).with_name("mixed_material_r1.py"),
+            Path(__file__).with_name("legacy_push_shelf_cleanup.py"),
             Path(motion.probe.p47.__file__),
             Path(motion.probe.snapshots.__file__),
         ]
@@ -871,6 +873,7 @@ def run(args):
         wp.init()
         wp.set_device(args.device)
         with ExitStack() as contexts:
+            contexts.enter_context(cleaned_manual_model())
             optimization = contexts.enter_context(optimized_bridge(
                 args.mechanism_header_dir, output / "build"))
             integral_policy = contexts.enter_context(bucket_integral_bridge(
@@ -922,6 +925,8 @@ def run(args):
             bridge = rigid_frequency.RigidFrequencyCommandBridge(
                 held.bridge, RIGID_INTERNAL_HZ)
             report["restore"] = restored
+            report["legacy_push_shelf_cleanup"] = restored[
+                "runtime_build"]["model"]["legacy_push_shelf_cleanup"]
             report["bucket_side_winding_audit"] = fixture.bucket_side_winding_audit
             report["optimization"] = optimization.copy()
             report["bucket_integral_candidate"] = integral_policy.copy()
@@ -1408,6 +1413,8 @@ def run(args):
                         "moving_bucket_sweep_candidate": sweep_policy.copy(),
                         "initial_state": compact_state(bridge.state),
                         "restore_exact": bool(restored["exact"]),
+                        "legacy_push_shelf_cleanup": report[
+                            "legacy_push_shelf_cleanup"],
                         "source_handoff": checkpoint_before,
                     }
                     motion.probe.bench._write_json(
@@ -1662,7 +1669,7 @@ def main():
         "--moving-bucket-sweep-candidate", action="store_true",
         help="Opt-in D-133 bucket path guard for candidate demonstrations")
     parser.add_argument(
-        "--zero-probe-frames", type=int, choices=(0, 3), default=0)
+        "--zero-probe-frames", type=int, choices=(0, 3, 30), default=0)
     parser.add_argument("--loaded-transport", action="store_true")
     parser.add_argument("--truck-config")
     parser.add_argument("--truck-repository-root")

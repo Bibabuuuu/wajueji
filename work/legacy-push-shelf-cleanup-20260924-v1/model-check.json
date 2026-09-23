@@ -1,0 +1,79 @@
+{
+  "checks": {
+    "removed_exactly_identified_shelf": true,
+    "other_xml_structure_and_attributes_exact": true,
+    "mechanism_and_rock_dimensions_unchanged": true,
+    "exactly_one_geom_removed": true,
+    "original_failure_contact_reproduced": true,
+    "shelf_absent_in_compiled_model": true,
+    "all_other_contact_pairs_unchanged": true,
+    "frozen_source_model_unchanged": true,
+    "failure_snapshot_unchanged": true
+  },
+  "passed": true,
+  "source_model": "/home/qunwang/wajueji/work/active-curl-assist-20260924-v1/recorded-baseline/runtime-build/audit.xml",
+  "source_model_sha256": "75cfa0cc1572a61bf493efeb9785466405e161e7b7d26201368f64c9b67cceb5",
+  "failure_snapshot": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-235749-1040071/failure-001498.diagnostic.npz",
+  "failure_snapshot_sha256": "db193e58364ffe2c388314f58fccbeaac24d89f00f32060c2ade74ccc3dc902d",
+  "cleanup": {
+    "enabled": true,
+    "removed_geoms": [
+      {
+        "name": "r1_ground_push_shelf",
+        "type": "box",
+        "pos": "5.1299999999999999 0.65000000000000002 2.8599999999999999",
+        "quat": "1 0 0 0",
+        "size": "0.59999999999999998 0.55000000000000004 0.029999999999999999",
+        "friction": "0.80000000000000004 0.0050000000000000001 0.0001",
+        "rgba": "0.35 0.35 0.35 1",
+        "contype": "1024",
+        "conaffinity": "256"
+      }
+    ],
+    "removed_count": 1,
+    "geometry_name": "r1_ground_push_shelf",
+    "generated_model_before_sha256": "75cfa0cc1572a61bf493efeb9785466405e161e7b7d26201368f64c9b67cceb5",
+    "generated_model_after_sha256": "5584e04694a1ead3e79e39758dad297023824a23079ad39001ce4d58fd90ebc5",
+    "collision_guards_changed": false
+  },
+  "original": {
+    "version": "2.3.8",
+    "nq": 348,
+    "nv": 300,
+    "nbody": 62,
+    "ngeom": 228,
+    "ncon": 8,
+    "shelf_geom_id": 0,
+    "pairs": {
+      "ground_plane | r1_rock_geom_036": 3,
+      "r1_bucket_shell_10 | r1_rock_geom_008": 1,
+      "r1_bucket_side_positive | r1_rock_geom_020": 1,
+      "r1_bucket_tooth_01 | r1_rock_geom_008": 1,
+      "r1_bucket_tooth_03 | r1_rock_geom_016": 1,
+      "r1_ground_push_shelf | r1_rock_geom_020": 1
+    },
+    "physics_steps": 0
+  },
+  "clean": {
+    "version": "2.3.8",
+    "nq": 348,
+    "nv": 300,
+    "nbody": 62,
+    "ngeom": 227,
+    "ncon": 7,
+    "shelf_geom_id": -1,
+    "pairs": {
+      "ground_plane | r1_rock_geom_036": 3,
+      "r1_bucket_shell_10 | r1_rock_geom_008": 1,
+      "r1_bucket_side_positive | r1_rock_geom_020": 1,
+      "r1_bucket_tooth_01 | r1_rock_geom_008": 1,
+      "r1_bucket_tooth_03 | r1_rock_geom_016": 1
+    },
+    "physics_steps": 0
+  },
+  "removed_contact_pairs": {
+    "r1_ground_push_shelf | r1_rock_geom_020": 1
+  },
+  "physics_steps": 0,
+  "scope": "native MuJoCo forward collision check only; no failure snapshot continuation"
+}
