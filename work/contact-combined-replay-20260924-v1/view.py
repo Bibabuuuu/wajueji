@@ -4,7 +4,7 @@ from pathlib import Path
 from types import SimpleNamespace
 import numpy as np
 from view_contact_bc_probe import cache_digest
-def show(output, *, start_frame=0):
+def show(output, *, start_frame=0, manifest=None):
     import os
     import pyglet.display.xlib as xlib
     if not hasattr(xlib.XlibScreen,'is_primary'):xlib.XlibScreen.is_primary=False
@@ -14,23 +14,32 @@ def show(output, *, start_frame=0):
     import run_layered_47_sparse_manual_contact_episode as manual
     from soil_surface import SoilSurface
     from PIL import Image
-    prior=Path('/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/display')
-    lift=Path('/home/qunwang/wajueji/runs/contact-preview-lift-20260924-v1/continuation/display')
+    definition=json.loads(Path(manifest).read_text()) if manifest else dict(
+        label='THIRD SCOOP | 48.8% WORKING FILL',
+        summary='Final working fill: 48.8% / 124.5 L; formal 95% NOT passed',
+        sources=[dict(path='/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/display',label='D152 cut/curl'),
+                 dict(path='/home/qunwang/wajueji/runs/contact-preview-lift-20260924-v1/continuation/display',label='D153 lift')])
     output.mkdir(parents=True,exist_ok=False)
-    sources=[]
-    for directory in (prior,lift):
+    sources=[];states=[];arrays=[];boundaries=[]
+    for item in definition['sources']:
+        directory=Path(item['path'])
         verified=json.loads((directory/'reconstruction.json').read_text())
         for name,digest in verified['cache_sha256'].items():
             if cache_digest(directory/name)!=digest:raise ValueError('changed_replay_cache:'+str(directory/name))
-        sources.append(dict(path=str(directory),cache_sha256=verified['cache_sha256']))
-    before=json.loads((prior/'states.json').read_text());after=json.loads((lift/'states.json').read_text())
-    first=np.load(prior/'particles.npy',mmap_mode='r');second=np.load(lift/'particles.npy',mmap_mode='r')
-    if before[-1]!=after[0] or not np.array_equal(first[len(before)-1],second[0]):raise ValueError('replay_boundary_not_exact')
+        current=json.loads((directory/'states.json').read_text());particles=np.load(directory/'particles.npy',mmap_mode='r')
+        if len(current)!=verified['frames']+1:raise ValueError('replay_valid_range')
+        if states and (states[-1]!=current[0] or not np.array_equal(arrays[-1][len(previous)-1],particles[0])):
+            raise ValueError('replay_boundary_not_exact')
+        start=max(0,len(states)-1);boundaries.append(start);arrays.append(particles)
+        states.extend(current if not states else current[1:]);previous=current
+        sources.append(dict(path=str(directory),label=item['label'],start=start,end=len(states)-1,cache_sha256=verified['cache_sha256']))
     class CombinedParticles:
-        def __getitem__(self,frame):return first[frame] if frame<len(before) else second[frame-len(before)+1]
-    particles=CombinedParticles();states=before+after[1:];last=len(states)-1
-    scene=json.loads((prior/'scene.json').read_text())
-    report=dict(status='verified_cache_composition',label='THIRD SCOOP | 48.8% WORKING FILL',probe_status='D152 cut/curl + D153 off-soil; no new physics',sources=sources,boundary_frame=2400,frames=last)
+        def __getitem__(self,frame):
+            i=int(np.searchsorted(boundaries,frame,side='right')-1)
+            return arrays[i][frame-boundaries[i]]
+    particles=CombinedParticles();last=len(states)-1
+    scene=json.loads((Path(sources[0]['path'])/'scene.json').read_text())
+    report=dict(status='verified_cache_composition',label=definition['label'],probe_status=definition['summary'],sources=sources,frames=last)
     (output/'replay-manifest.json').write_text(json.dumps(report,indent=2)+'\n')
     display=json.loads((Path(__file__).resolve().parents[2]/'configs/v4/layered-47-interactive-proxy-practice-v1.json').read_text())['display']
     wp.init();wp.set_device('cuda:0')
@@ -56,9 +65,9 @@ def show(output, *, start_frame=0):
         elif symbol==key.END:viewer._paused=True;move(last)
     viewer.renderer.window.push_handlers(on_key_press=on_key)
     def ui(imgui):
-        imgui.text('THIRD SCOOP | VERIFIED RECORDED PLAYBACK')
-        imgui.text('Final working fill: 48.8% / 124.5 L; formal 95% NOT passed')
-        imgui.text('0-2400: cut/curl (D152); 2401-2824: bounded lift (D153)')
+        imgui.text(definition['label'])
+        imgui.text(definition['summary'])
+        for item in sources:imgui.text(f"{item['start']}-{item['end']}: {item['label']}")
         imgui.text(f"Frame {cursor['frame']}/{last} | simulation {cursor['frame']/60:.2f} s")
         imgui.text('Space: play/pause | R: rewind and pause')
         imgui.text('Left/Right: one frame | Home/End: start/end')
@@ -92,5 +101,6 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path,required=True)
     parser.add_argument('--start-frame',type=int,default=0)
+    parser.add_argument('--manifest',type=Path)
     args=parser.parse_args()
-    show(args.output,start_frame=args.start_frame)
+    show(args.output,start_frame=args.start_frame,manifest=args.manifest)
