@@ -1,0 +1,232 @@
+{
+  "configured_axis_deadzone": 0.12,
+  "classification": "Small cross-axis commands are observable; intent cannot be determined from logs. No relabeling or deadzone change.",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "input_sha256": "c60a39e7978cbfbd22605cbc1af689d0ec7c59ef7882f5293a1eec8254e7d054",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 76,
+        "small_swing_at_most_5pct_frames": 4,
+        "small_swing_while_boom_over_30pct_frames": 3,
+        "raw_left_x_min": -0.011764705882352941,
+        "raw_left_x_max": 0.3254901960784314,
+        "normalized_swing_mean": 0.12397504456327986
+      },
+      "whole": {
+        "frames": 1246,
+        "nonzero_swing_frames": 381,
+        "small_swing_at_most_5pct_frames": 17,
+        "small_swing_while_boom_over_30pct_frames": 15,
+        "raw_left_x_min": -0.050980392156862744,
+        "raw_left_x_max": 0.3254901960784314,
+        "normalized_swing_mean": 0.048026769441177904
+      }
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "input_sha256": "fbe43e78a77675b804ea799d57e6f02b7e4886420efcd9cd2bca1ca7972fd80f",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 60,
+        "small_swing_at_most_5pct_frames": 2,
+        "small_swing_while_boom_over_30pct_frames": 2,
+        "raw_left_x_min": -0.011764705882352941,
+        "raw_left_x_max": 0.7019607843137254,
+        "normalized_swing_mean": 0.25527332144979203
+      },
+      "whole": {
+        "frames": 1281,
+        "nonzero_swing_frames": 249,
+        "small_swing_at_most_5pct_frames": 2,
+        "small_swing_while_boom_over_30pct_frames": 2,
+        "raw_left_x_min": -0.9450980392156862,
+        "raw_left_x_max": 0.7019607843137254,
+        "normalized_swing_mean": 0.040214794313154965
+      }
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "input_sha256": "e1118c54076728b9fa2c6d90cbb4bcb2521eb218e5fea67f9362a67ac3dd78b7",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 42,
+        "small_swing_at_most_5pct_frames": 4,
+        "small_swing_while_boom_over_30pct_frames": 4,
+        "raw_left_x_min": -0.37254901960784315,
+        "raw_left_x_max": 1.5259021896696368e-05,
+        "normalized_swing_mean": -0.03189245395127748
+      },
+      "whole": {
+        "frames": 1693,
+        "nonzero_swing_frames": 362,
+        "small_swing_at_most_5pct_frames": 89,
+        "small_swing_while_boom_over_30pct_frames": 86,
+        "raw_left_x_min": -0.9294117647058824,
+        "raw_left_x_max": 0.5137254901960784,
+        "normalized_swing_mean": -0.01688403439558716
+      }
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "input_sha256": "b362f30290db505ae54c74909c2a4765432faa5952d18f205b0fd2d58d093035",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 10,
+        "small_swing_at_most_5pct_frames": 5,
+        "small_swing_while_boom_over_30pct_frames": 5,
+        "raw_left_x_min": -0.17647058823529413,
+        "raw_left_x_max": 0.10588235294117647,
+        "normalized_swing_mean": -0.003713606654783127
+      },
+      "whole": {
+        "frames": 1152,
+        "nonzero_swing_frames": 230,
+        "small_swing_at_most_5pct_frames": 90,
+        "small_swing_while_boom_over_30pct_frames": 90,
+        "raw_left_x_min": -0.1843137254901961,
+        "raw_left_x_max": 0.30196078431372547,
+        "normalized_swing_mean": 0.007421023965141614
+      }
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "input_sha256": "6a1ca7b568161c0ce519f51ac36005c656278ab71fddb299035162a6e77b439a",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 10,
+        "small_swing_at_most_5pct_frames": 6,
+        "small_swing_while_boom_over_30pct_frames": 6,
+        "raw_left_x_min": -0.2784313725490196,
+        "raw_left_x_max": 0.2549019607843137,
+        "normalized_swing_mean": -0.00010398098633392803
+      },
+      "whole": {
+        "frames": 1102,
+        "nonzero_swing_frames": 258,
+        "small_swing_at_most_5pct_frames": 117,
+        "small_swing_while_boom_over_30pct_frames": 117,
+        "raw_left_x_min": -0.38823529411764707,
+        "raw_left_x_max": 0.6235294117647059,
+        "normalized_swing_mean": 0.011963340029956878
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "input_sha256": "a1ea514824b68cc5c31207397188c27cc1c85f5a666e8d5f1a9c67fc8ff1c5f8",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 64,
+        "small_swing_at_most_5pct_frames": 1,
+        "small_swing_while_boom_over_30pct_frames": 1,
+        "raw_left_x_min": 0.0,
+        "raw_left_x_max": 0.2784313725490196,
+        "normalized_swing_mean": 0.04172608437314321
+      },
+      "whole": {
+        "frames": 1431,
+        "nonzero_swing_frames": 311,
+        "small_swing_at_most_5pct_frames": 153,
+        "small_swing_while_boom_over_30pct_frames": 153,
+        "raw_left_x_min": -0.09019607843137255,
+        "raw_left_x_max": 0.5607843137254902,
+        "normalized_swing_mean": 0.01620720710620822
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "input_sha256": "917b763152fb773a71d38ab6e0502ba454fb351801ed75db77cf4ec00d846392",
+      "first120": {
+        "frames": 116,
+        "nonzero_swing_frames": 83,
+        "small_swing_at_most_5pct_frames": 26,
+        "small_swing_while_boom_over_30pct_frames": 26,
+        "raw_left_x_min": 0.0,
+        "raw_left_x_max": 1.0,
+        "normalized_swing_mean": 0.15302108304136702
+      },
+      "whole": {
+        "frames": 1368,
+        "nonzero_swing_frames": 576,
+        "small_swing_at_most_5pct_frames": 322,
+        "small_swing_while_boom_over_30pct_frames": 322,
+        "raw_left_x_min": -0.27058823529411763,
+        "raw_left_x_max": 1.0,
+        "normalized_swing_mean": 0.0230777850746891
+      }
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "input_sha256": "3aa174fc198f9cf6f519efae6f24f2583e371708bf0de5e6802ec10da6431e49",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 73,
+        "small_swing_at_most_5pct_frames": 2,
+        "small_swing_while_boom_over_30pct_frames": 2,
+        "raw_left_x_min": -1.0,
+        "raw_left_x_max": 0.5294117647058824,
+        "normalized_swing_mean": 0.02422756981580511
+      },
+      "whole": {
+        "frames": 1381,
+        "nonzero_swing_frames": 191,
+        "small_swing_at_most_5pct_frames": 82,
+        "small_swing_while_boom_over_30pct_frames": 82,
+        "raw_left_x_min": -1.0,
+        "raw_left_x_max": 0.5294117647058824,
+        "normalized_swing_mean": -0.0026938034775492725
+      }
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "input_sha256": "b6b432b1f1e78241b5a5bb315eaba960d9fcd36a08880da9b3c98df0baa875bb",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 0,
+        "small_swing_at_most_5pct_frames": 0,
+        "small_swing_while_boom_over_30pct_frames": 0,
+        "raw_left_x_min": 0.0,
+        "raw_left_x_max": 0.09019607843137255,
+        "normalized_swing_mean": 0.0
+      },
+      "whole": {
+        "frames": 1644,
+        "nonzero_swing_frames": 173,
+        "small_swing_at_most_5pct_frames": 98,
+        "small_swing_while_boom_over_30pct_frames": 98,
+        "raw_left_x_min": -0.11372549019607843,
+        "raw_left_x_max": 0.27058823529411763,
+        "normalized_swing_mean": 0.0052510940230991775
+      }
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "input_sha256": "004d7477808680d05ba73667e8ae3c8629a37b6f19088e5b6d4e4be4d3c79f80",
+      "first120": {
+        "frames": 120,
+        "nonzero_swing_frames": 104,
+        "small_swing_at_most_5pct_frames": 104,
+        "small_swing_while_boom_over_30pct_frames": 104,
+        "raw_left_x_min": -0.13725490196078433,
+        "raw_left_x_max": 0.00392156862745098,
+        "normalized_swing_mean": -0.01684491978609627
+      },
+      "whole": {
+        "frames": 1460,
+        "nonzero_swing_frames": 669,
+        "small_swing_at_most_5pct_frames": 274,
+        "small_swing_while_boom_over_30pct_frames": 274,
+        "raw_left_x_min": -0.4823529411764706,
+        "raw_left_x_max": 0.20784313725490197,
+        "normalized_swing_mean": -0.03634654359875956
+      }
+    }
+  ],
+  "bc_first120": {
+    "normalized_swing_mean": 0.030158244812628254,
+    "normalized_swing_max": 0.4798315465450287,
+    "normalized_swing_min": -0.04140758141875267
+  },
+  "source_files_changed": false
+}
