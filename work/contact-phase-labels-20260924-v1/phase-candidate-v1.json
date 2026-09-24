@@ -1,0 +1,29 @@
+{
+  "schema": "partial_contact_phase_candidate_v1",
+  "parameters": {
+    "curl_angle_threshold_deg": -5.881154296396837,
+    "soil_force_threshold_n": 10.0,
+    "soil_confirmation_frames": 3,
+    "rock_confirmation_frames": 3
+  },
+  "status": "offline_replay_only_not_live_deployed",
+  "angle_rule_sha256": "8173c5fd0bc1d8740ff44c498a2ee8599a6727921d06ea37b7cb67a584ac64d2",
+  "force_definition": "strictly >10 N for 3 consecutive frame ends",
+  "rock_definition": "rock_bucket_contact_substeps >0 for 3 consecutive frame ends; pair presence, not calibrated force",
+  "frequency_hz": 60,
+  "maximum_rock_substeps_per_frame": 80,
+  "causal_rule": "Phase before decision n uses end states only through n-1",
+  "latching": true,
+  "initial_phase": "approach_contact",
+  "missing_frames": "reject_without_mutation",
+  "below_angle_at_contact": "flag_unresolved; do not invent a curl transition",
+  "implemented_transitions": [
+    "approach_contact_to_penetrate",
+    "penetrate_to_curl_load"
+  ],
+  "unsupported_phases": [
+    "lift",
+    "off_soil"
+  ],
+  "production_router_qualified": false
+}
