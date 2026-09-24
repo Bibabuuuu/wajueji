@@ -1,0 +1,19 @@
+{
+  "status": "cpu_and_import_checks_passed_batch_launched",
+  "cpu_unittest_count": 16,
+  "physical_steps_in_import_preflight": 0,
+  "import_report": "/home/qunwang/wajueji/runs/night-dual-search-20260925-v1/preflight/imports.json",
+  "import_report_sha256": "506a224274d614efe5702e56df43fab84aff739cbd86737a416e4ca2c54ce6f5",
+  "manifest_sha256": "6044712e4d80095dbaf4110f69a8864acf4d64694c3b103b1e54e29082afddf0",
+  "launch_report": "/home/qunwang/wajueji/runs/night-dual-search-20260925-v1/launch.json",
+  "launch_report_sha256": "2b27e5f00a9553102bd5e880a16a8d9f386319e99741c24c3bfa68b60369b2df",
+  "launch_confirmation": {
+    "status": "running",
+    "pid": 2132580,
+    "active_trial": "baseline/first",
+    "started_at_unix": 1790279898.0279171,
+    "deadline_unix": 1790308576.9312809
+  },
+  "physics_improvement_verified": false,
+  "neural_training": false
+}
