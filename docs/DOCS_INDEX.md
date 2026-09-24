@@ -107,3 +107,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [D158专属高位续接](../work/contact-fixed-truck-continuation-20260925-v1/README.md)：源例外待确认，直接当前末态的恢复/观察/固定卸料路线准备。
 
 - [用户首铲四图意见](../evidence/user-first-scoop-review-20260925-v1/README.md)：998/2011/2926/3981帧原图，取料/晃动/视觉重叠仅记录，三铲流程优先。
+
+- [D159回转预览坐标修复](../work/contact-fixed-truck-continuation-20260925-v2/README.md)：同一高位源、旋转残差/拒绝命令回滚、六项回归和有界续段。

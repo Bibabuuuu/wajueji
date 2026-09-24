@@ -1,0 +1,17 @@
+{
+  "status": "reference_commands_passed",
+  "physics_steps_added": 0,
+  "scope": "Every nominal reference pose, not closed-loop physical or kinematic rollout",
+  "count": 4120,
+  "max_normalized_command_step": 0.032460632159388846,
+  "wall_seconds": 98.66924474501866,
+  "inputs": {
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/controller.py": "c4905b252fd0b593e318a0d887d5e8f1dfc8d1d8e950370079216e631e39e3e4",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/yaw_preview.py": "4cb930a02ae30d74addf974959326f0022bfb5f166f77dcef245ff521302faec",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/plan.py": "bf45f906cd39b2fa12b17576300abe894c08985923c30759d049ca6d5546fb2d",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/load_tracking.py": "172d22e5a86dcdea4912e9a6b024cbcf2260ea266e06ccad6c5faaedd144fae1",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/observation.py": "3bd28a1577bb9888bc80185db54b34a0bbcc1016bae20268d71a6b446bdd35cb",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/runtime.py": "b084b3dbb904fafcc3a7a2d24dda675a990e999fe84695c5a0f62a2d7867bbb1",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8"
+  }
+}
