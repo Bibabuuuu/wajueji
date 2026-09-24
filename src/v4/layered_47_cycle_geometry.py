@@ -112,7 +112,8 @@ class TransportClearance:
         height[inside]=np.where(np.isfinite(surface),np.maximum(surface,0),0)
         return float(np.min(points[:,2]-height))
 
-    def check(self,q,previous=None,*,physical=False):
+    def measure_clearance(self,q):
+        """Return geometry measurements without granting a free-space pass."""
         _,bodies=self.runtime.assembly.assemble(q,include_meshes=False)
         pose=bodies['bucket'];points=self.samples@pose[:3,:3].T+pose[:3,3]
         bucket_truck=clearance(points,self.fixtures)['minimum_point_center_clearance_m']
@@ -133,6 +134,13 @@ class TransportClearance:
         closure=float(np.max(np.abs(self.runtime.chain.residual(q))))
         result=dict(bucket_truck_m=bucket_truck,bucket_terrain_m=bucket_terrain,
                     mechanism_truck_m=mechanism_truck,mechanism_ground_m=mechanism_ground,closure_m=closure)
+        return result,nearest_mesh
+
+    def check(self,q,previous=None,*,physical=False):
+        result,nearest_mesh=self.measure_clearance(q)
+        bucket_truck=result['bucket_truck_m'];bucket_terrain=result['bucket_terrain_m']
+        mechanism_truck=result['mechanism_truck_m'];mechanism_ground=result['mechanism_ground_m']
+        closure=result['closure_m']
         if bucket_truck<.04 or bucket_terrain<.04 or mechanism_truck<.02 or mechanism_ground<.02 or closure>(.001 if physical else .0001):
             raise ValueError('cycle_transport_clearance:'+str(result)+':mesh='+str(nearest_mesh))
         return result

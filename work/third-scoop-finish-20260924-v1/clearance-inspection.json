@@ -1,0 +1,195 @@
+{
+  "observation": {
+    "detached_payload_particles": 10888,
+    "detached_dynamic_particles": 46506,
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "ground-connected stock surface; detached material remains fully simulated"
+  },
+  "bucket_bounds": [
+    [
+      4.01969848342757,
+      -0.7936208746530986,
+      1.4383032129500855
+    ],
+    [
+      5.238490708161367,
+      -0.009172020671805448,
+      2.205815576783663
+    ]
+  ],
+  "worst": [
+    {
+      "sample": [
+        4.8810442921510395,
+        -0.08917989807588783,
+        1.4454099000021097
+      ],
+      "gap": -0.06435560578860078,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.07510825057062015
+    },
+    {
+      "sample": [
+        4.883098965533327,
+        -0.06510451880421764,
+        1.445409902333327
+      ],
+      "gap": -0.06435560345738356,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.05484136040920258
+    },
+    {
+      "sample": [
+        4.856587219550616,
+        -0.08709265005136585,
+        1.4489515469222765
+      ],
+      "gap": -0.06081395886843399,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.06481887216360718
+    },
+    {
+      "sample": [
+        4.858641892932903,
+        -0.06301727077969566,
+        1.4489515492534935
+      ],
+      "gap": -0.060813956537216995,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.04417689768058892
+    },
+    {
+      "sample": [
+        4.83778071517551,
+        -0.08548764024193117,
+        1.4506916301273436
+      ],
+      "gap": -0.05907387566336686,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.049695979118091545
+    },
+    {
+      "sample": [
+        4.839835388557797,
+        -0.06141226097026098,
+        1.4506916324585608
+      ],
+      "gap": -0.05907387333214964,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.03728486167068273
+    },
+    {
+      "sample": [
+        4.832130146950193,
+        -0.08500540202684381,
+        1.4524931938424435
+      ],
+      "gap": -0.057272311948266985,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.045042212175148186
+    },
+    {
+      "sample": [
+        4.83418482033248,
+        -0.06093002275517362,
+        1.4524931961736605
+      ],
+      "gap": -0.05727230961704999,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.034273444042418735
+    },
+    {
+      "sample": [
+        4.817251338856877,
+        -0.08373559562871907,
+        1.4612066897294893
+      ],
+      "gap": -0.048558816061221144,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.036385672771866086
+    },
+    {
+      "sample": [
+        4.819306012239164,
+        -0.05966021635704888,
+        1.4612066920607065
+      ],
+      "gap": -0.048558813730003925,
+      "height": 1.5097655057907104,
+      "cell_lower_xy": [
+        4.8,
+        -0.09999999999999987
+      ],
+      "ground_soil_count": 386,
+      "ground_soil_max": 1.5097655057907104,
+      "rock_surface": [],
+      "nearest_ground_soil_distance": 0.028823593826812096
+    }
+  ],
+  "payload_soil": 10888,
+  "ground_soil": 209935
+}

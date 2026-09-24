@@ -1,0 +1,89 @@
+{
+  "exact_same_results": true,
+  "cases": [
+    {
+      "index": 0,
+      "result": "reject"
+    },
+    {
+      "index": 1,
+      "result": "reject"
+    },
+    {
+      "index": 2,
+      "result": "reject"
+    },
+    {
+      "index": 3,
+      "result": "reject"
+    },
+    {
+      "index": 4,
+      "result": "reject"
+    },
+    {
+      "index": 5,
+      "result": "reject"
+    },
+    {
+      "index": 6,
+      "result": "reject"
+    },
+    {
+      "index": 7,
+      "result": "reject"
+    },
+    {
+      "index": 8,
+      "result": "pass"
+    },
+    {
+      "index": 9,
+      "result": "pass"
+    },
+    {
+      "index": 10,
+      "result": "pass"
+    },
+    {
+      "index": 11,
+      "result": "pass"
+    },
+    {
+      "index": 12,
+      "result": "pass"
+    },
+    {
+      "index": 13,
+      "result": "pass"
+    },
+    {
+      "index": 14,
+      "result": "pass"
+    },
+    {
+      "index": 15,
+      "result": "pass"
+    },
+    {
+      "index": 16,
+      "result": "pass"
+    },
+    {
+      "index": 17,
+      "result": "pass"
+    },
+    {
+      "index": 18,
+      "result": "pass"
+    },
+    {
+      "index": 19,
+      "result": "pass"
+    },
+    {
+      "index": 20,
+      "result": "pass"
+    }
+  ]
+}
