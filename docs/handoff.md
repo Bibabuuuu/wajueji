@@ -29,11 +29,11 @@ v4交接后规划报`cycle_observation_grid_budget`，同物理数组recovery不
 
 ## 夜间准备包与下一道门
 
-`work/night-parameter-search-20260925-v1/`：参数、受约束接触适配、评分、批次预算、回放清单、只读preflight和8项CPU测试。`work/night-search-tail-20260925-v1/`：固定补收/抬离，最佳复验时才接ALIGN/DUMP。源文件未修改，导入检查通过，物理0步。
+当前使用`work/night-parameter-search-20260925-v2/`及`work/night-search-tail-20260925-v2/`，原v1保留。v2已接入三段基线评分/回放及D-162固定静态几何，10项CPU测试/导入通过，物理0步。普通候选到CLEAR_PILE，最佳复验才追加固定ALIGN/DUMP。
 
-当前`readiness.json`为launch_blocked。包绑定失败v4，不能运行8h；先解决第二铲观察阻塞、保存连续剩余段并完成审核，再把真实分段基线接入评分/回放、重冻manifest。不要更改failure标签凑出启动条件。之后在总预算内先做120帧全数组恒等短检，未过即停止；再至多6候选，留1h复验/保存。任何失败无自动重试。
+当前主线仍在运行，readiness为launch_blocked，manifest为prepared_awaiting_baseline；不能冻结运行中的report作为最终证据。结束成功后在`work/contact-second-fixed-route-review-20260925-v1/`执行`prefix_checks.py contact`、`prefix_checks.py carry`、`audit.py`、`replay.py`做一次统一审核。均为零新增物理，已有结果不覆盖。原v4失败不改标签，carry仅核验规划失败前的正常439帧handoff前缀。
 
-候选结果写`runs/night-parameter-search-20260925-v1/`，包含batch/best/comparison、逐帧缓存、检查点及replay清单。未复验候选不作为最终选择；不自动部署。`runs/`和外部依赖只在本机，不进Git。
+全部审核/连续性通过后重新执行v2的`batch.py --prepare`、`preflight.py`冻结最终三段证据。确认GPU没有其他物理实例，再在已授权8h内启动一次`--run`，先120帧全1参数全数组恒等检查，再最多6候选，保留1h复验/保存。失败不自动重跑。输出`runs/night-parameter-search-20260925-v2/`，含batch/best/comparison及基线/最佳回放；不自动部署、不更新神经权重。具体命令见[v2说明](../work/night-parameter-search-20260925-v2/README.md)。
 
 ## 环境与便宜检查
 
