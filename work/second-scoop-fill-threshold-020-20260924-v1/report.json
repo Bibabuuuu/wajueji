@@ -1,0 +1,38 @@
+{
+  "snapshot": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/final-001723.cycle.npz",
+    "sha256": "840b7b40ef39825bed64c76f35c602e75ff09a409054ddb2668efc746a0604b1"
+  },
+  "occupancy_level": 0.2,
+  "calibration_status": "user_selected_threshold_not_recalibrated",
+  "result": {
+    "method_version": "bucket-local-density-v2-weighted",
+    "measurement_cell_m": 0.02,
+    "particle_spacing_m": 0.025,
+    "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+    "smoothing_sigma_cells": 0.43749999999999994,
+    "occupancy_level": 0.2,
+    "volume_scale": 1.011434635924326,
+    "capacity_liters": 255.164729950989,
+    "inside_raw_liters": 180.30400000000003,
+    "heap_raw_liters": 94.65600000000002,
+    "inside_liters": 182.3657105956997,
+    "heap_liters": 95.73835689805303,
+    "fill_percent": 108.99001109877915,
+    "cavity_fraction_of_counted_load": 0.6557462903695083,
+    "selected_particles": 53702,
+    "cavity_particles": 23404,
+    "load_region_particles": 38468,
+    "point_support_fraction": 1.0,
+    "load_density_quantiles": [
+      0.6655096232891083,
+      1.0041474103927612,
+      3.048152661323549
+    ],
+    "bulk_touches_roi_boundary": false,
+    "quality_reasons": [],
+    "valid_estimate": true,
+    "compute_wall_s": 0.19047525300993584,
+    "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+  }
+}

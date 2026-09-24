@@ -1,6 +1,7 @@
 {
   "schema": "live_bucket_fill_v1",
   "interval_wall_s": 2.0,
+  "occupancy_level_override": 0.2,
   "measurement_source": "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py",
   "contract": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
   "front_rim": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz",

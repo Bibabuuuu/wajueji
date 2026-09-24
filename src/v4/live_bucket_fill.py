@@ -4,6 +4,7 @@ Uses the same calibrated density/heap measurement as the offline review. The
 worker receives copied arrays, has no simulator access, and never issues actions.
 """
 from concurrent.futures import ThreadPoolExecutor
+from dataclasses import replace
 import importlib.util
 import json
 import os
@@ -27,6 +28,10 @@ def load_config(path):
             raise ValueError('live_fill_resource_missing:' + key)
     if not 1 <= float(config['interval_wall_s']) <= 10:
         raise ValueError('live_fill_interval')
+    if 'occupancy_level_override' in config:
+        level = float(config['occupancy_level_override'])
+        if not np.isfinite(level) or level <= 0:
+            raise ValueError('live_fill_occupancy_level')
     return config
 
 
@@ -47,6 +52,11 @@ class MixedFillEstimator:
             raise ValueError('live_fill_calibration_failed')
         self.calibration = module.Calibration.from_dict(
             calibration['profiles']['reference-2p5cm']['selected']['calibration'])
+        self.calibration_status = 'reference_calibration'
+        if 'occupancy_level_override' in config:
+            self.calibration = replace(
+                self.calibration, occupancy_level=float(config['occupancy_level_override']))
+            self.calibration_status = 'user_selected_threshold_not_recalibrated'
         self.rocks = []
         spacing = .0125
         for volume, local in zip(volumes, vertices, strict=True):
@@ -88,6 +98,8 @@ class MixedFillEstimator:
             'quality_reasons': result['quality_reasons'],
             'capacity_liters': result['capacity_liters'],
             'rocks_and_heap_included': True,
+            'occupancy_level': self.calibration.occupancy_level,
+            'calibration_status': self.calibration_status,
             'compute_wall_s': time.perf_counter()-started,
             'display_only': True,
         }
