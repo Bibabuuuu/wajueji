@@ -4,7 +4,7 @@
 
 先读AGENTS.md、总体规划、当前状态、要求、七个活动小节，再读本文件。核对实际分支/HEAD/进程；唯一仓库`/home/qunwang/wajueji`，分支`codex/contact-bc-collection-20260924`。本轮开始HEAD为`6b5a7b1`，不能据此猜下一次实际HEAD。不要覆盖无关未跟踪产物。
 
-动态事实以[CURRENT_STATUS](CURRENT_STATUS.md)为准：第二铲v4已退出，补收交接通过、卸料未完成。夜间仅参数搜索准备，无训练/搜索运行；`automation-2`已暂停。旧回放窗口不推进物理。
+动态事实以[CURRENT_STATUS](CURRENT_STATUS.md)为准：第二铲v4已退出，补收交接通过。D-162固定路线运行已启动，入口work/contact-second-fixed-route-20260925-v1/run.py，输出runs/contact-second-fixed-route-20260925-v1/physical/，当前尚未完成卸料。夜间仅参数搜索准备，无训练/搜索运行；`automation-2`已切换到D-162结束统一审核并启用。旧回放窗口不推进物理。
 
 ## 用户已确认的范围
 
@@ -25,7 +25,7 @@
 
 v4交接后规划报`cycle_observation_grid_budget`，同物理数组recovery不代表其元数据与正常handoff相同。优先保留正常交接点，下一续接先核验自身schema/完整控制状态/零步恢复，不重做2725+439帧。完整独立审核尚未完成。
 
-只读诊断[报告](../work/night-parameter-search-20260925-v1/baseline-observation-review.json)：远土粒在接触末态已存在，使密集4cm观察网格21,823,340格超12,000,000预算。不得删粒子、隐藏飞散或覆盖冻结观察器；用户明确不再调查飞散原因，零散土粒不应成为运输障碍。下一候选按纯土固定抬升/回转/卸料目标去除运输对全场土粒地图的依赖，保留静态车体/地面/限位/保斗保护；用户已确认D-162，新包work/contact-second-fixed-route-20260925-v1已实现、4项CPU通过，24数组零步及3398条全路线指令预检通过；准备启动剩余卸料，不更改物理碰撞/物料。下一铲选点仍需剩余土堆观测。
+只读诊断[报告](../work/night-parameter-search-20260925-v1/baseline-observation-review.json)：远土粒在接触末态已存在，使密集4cm观察网格21,823,340格超12,000,000预算。不得删粒子、隐藏飞散或覆盖冻结观察器；用户明确不再调查飞散原因，零散土粒不应成为运输障碍。下一候选按纯土固定抬升/回转/卸料目标去除运输对全场土粒地图的依赖，保留静态车体/地面/限位/保斗保护；用户已确认D-162，新包work/contact-second-fixed-route-20260925-v1已实现、4项CPU通过，24数组零步及3398条全路线指令预检通过；已启动剩余卸料，不更改物理碰撞/物料。下一铲选点仍需剩余土堆观测。
 
 ## 夜间准备包与下一道门
 
