@@ -1,0 +1,32 @@
+{
+  "schema": "teacher_tolerance_stop_audit_v2",
+  "frame": 1207,
+  "matched_prefix_frames": 1206,
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 0,
+  "differences": {
+    "mechanism_qpos": 6.331740687315346e-17,
+    "mechanism_qvel": 3.7406275993356886e-14,
+    "controller_target": 0.0,
+    "controller_target_velocity": 0.0,
+    "bucket_integral_effort": 0.0,
+    "bucket_active_curl_effort": 0.0,
+    "rock_qpos": 5.384581669432009e-15,
+    "rock_qvel": 1.1089358598059817e-12
+  },
+  "hard_guards_passed": true,
+  "source_unchanged": true,
+  "original_endpoint_unchanged": true,
+  "report": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-teacher-replay-v1/third-scoop-v2/report.json",
+    "sha256": "d3e7da8fd2a470a3706366bd5f92f355e8f3da4cd297cdf5508c96372d860c8b"
+  },
+  "script_sha256": "e436e885f7c0c7352c68bf1ed81c21706c7b8e333c90624a2490b6d19b8dc9c9",
+  "failure_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-teacher-replay-v1/third-scoop-v2/failure.npz",
+    "sha256": "ef35eca2609b1fc2396dac2cfcd9168ec807ca0061371e430431af7f50cda613"
+  },
+  "total_physics_frames_including_v1": 2411,
+  "off_soil_observed": false,
+  "conclusion": "Numerical replay gate failed at negligible state differences, not a physical hard-guard failure. Full old-particle trajectory equality is not established."
+}

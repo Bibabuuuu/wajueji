@@ -1,0 +1,27 @@
+{
+  "schema": "teacher_strict_stop_audit_v1",
+  "frame": 1204,
+  "exact_prefix_frames": 1203,
+  "hard_guards_passed": true,
+  "actions_equal": true,
+  "max_absolute_differences": {
+    "mechanism_qpos": 1.4889251025954498e-23,
+    "mechanism_qvel": 2.42861286636753e-17,
+    "controller_target": 0.0,
+    "controller_target_velocity": 0.0,
+    "bucket_integral_effort": 0.0,
+    "bucket_active_curl_effort": 0.0
+  },
+  "strict_stop_preserved": true,
+  "report": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-teacher-replay-v1/third-scoop/report.json",
+    "sha256": "7d4eddd3fc9896b925c302cede99bb78c09db30ef8bb69d11dd793d3eab3e5cd"
+  },
+  "original_script_sha256": "839405d8251ec14fe5afc1fdb7ab5c32e0b3cf30dab3aed3db08cfb2b5371ac5",
+  "failure_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-teacher-replay-v1/third-scoop/failure.npz",
+    "sha256": "5791a87e6e59866fc0f373a0de645e590ad34dbec83fddff006b154d315d7d1b"
+  },
+  "qualification": "Rigid/controller state differences only; no original per-frame particles available for equality check at this point.",
+  "next_check": "v2 absolute state tolerance 1e-12 with rtol 0; final full-array equality remains independently checked."
+}
