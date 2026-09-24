@@ -1,0 +1,8 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079",
+  "event": "viewer_ready",
+  "gamepad_name": "Microsoft X-Box 360 pad",
+  "paused": true,
+  "scope": "viewer readiness only; no completed demonstration",
+  "ready_event_sha256": "18f6a434fb8facffe546fe6ce7da039f06f6b8e89337f951c9f24eff30e291da"
+}

@@ -33,6 +33,30 @@ def validate_material_history_policy(metadata, bindings):
         raise ValueError('cycle_material_history_version_mismatch')
 
 
+def validate_training_reset(metadata):
+    reset = metadata.get('training_reset')
+    if reset is None:
+        return
+    if reset.get('mode') != 'fast_contact_collection_v1':
+        raise ValueError('unknown_training_reset_mode')
+    if reset.get('continuous_physics') is not False or not reset.get('entries'):
+        raise ValueError('training_reset_boundary_or_inventory_missing')
+    seen = {'soil': set(), 'rock': set()}
+    for entry in reset['entries']:
+        for kind, count in (('soil', 256441), ('rock', 47)):
+            ids = entry[kind + '_indices']
+            if (entry[kind + '_count'] != len(ids) or len(set(ids)) != len(ids)
+                    or any(type(i) is not int or not 0 <= i < count for i in ids)
+                    or seen[kind].intersection(ids)):
+                raise ValueError('training_reset_inventory_ids:' + kind)
+            seen[kind].update(ids)
+        shift = np.asarray(entry['translation_m'])
+        if shift.shape != (3,) or not np.isfinite(shift).all():
+            raise ValueError('training_reset_inventory_translation')
+        if entry.get('ownership') != 'withdrawn_for_training_only_not_truck_delivery':
+            raise ValueError('training_reset_inventory_ownership')
+
+
 def validate_sweep(state):
     state = deepcopy(state)
     vectors = []
@@ -78,11 +102,15 @@ def validate_controller(state, count):
     native_restore_tokens(state, count)
 
 
-def load(path):
+def load(path, *, allow_training_reset=False):
     path = Path(path).resolve()
     identity = checkpoint_identity(path)
     sidecar = Path(str(path) + '.json')
     metadata = json.loads(sidecar.read_text())
+    if metadata.get('training_reset') is not None:
+        if not allow_training_reset:
+            raise ValueError('training_reset_not_continuous_physics')
+        validate_training_reset(metadata)
     with np.load(path, allow_pickle=False) as data:
         arrays = {k: data[k].copy() for k in data.files}
     sparse._validate(arrays, 256441, 47)
@@ -101,6 +129,8 @@ def load(path):
             raise ValueError('cycle_diagnostic_identity_or_fault')
         report_path = path.parent/'report.json'
         report = json.loads(report_path.read_text())
+        if report.get('training_reset') is not None:
+            raise ValueError('training_reset_requires_full_cycle_checkpoint')
         if (report.get('status') != 'manual_contact_pilot_recorded'
                 or not report.get('checks') or not all(report['checks'].values())
                 or not any(item['sha256'] == identity['sha256'] for item in report.get('diagnostic_snapshots', []))):
@@ -134,6 +164,7 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
     validate_controller(controller, 47)
     sweep = validate_sweep(sweep)
     validate_material_history_policy(parent, runtime_bindings)
+    validate_training_reset(parent)
     if controller['native_state_kind'] != 'full':
         raise ValueError('cycle_save_requires_full_native_state')
     if stage not in ('loaded_manual_endpoint', 'hold', 'transport', 'unloaded',
@@ -152,6 +183,8 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
         simulation_time_s=float(arrays['simulation_time_s'][0]))
     if parent.get('material_history_policy') is not None:
         document['material_history_policy'] = parent['material_history_policy']
+    if parent.get('training_reset') is not None:
+        document['training_reset'] = deepcopy(parent['training_reset'])
     # The NPZ is never overwritten. A missing sidecar is an invalid checkpoint.
     with Path(str(path)+'.json').open('x') as out:
         json.dump(document, out, indent=2, allow_nan=False)

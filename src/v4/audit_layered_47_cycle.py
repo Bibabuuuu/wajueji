@@ -11,16 +11,18 @@ def main():
     p.add_argument('--frames',type=int,default=30);p.add_argument('--split',type=int,default=0)
     p.add_argument('--truck',action='store_true')
     p.add_argument('--freeze-passive-jp',action='store_true',help='Explicitly freeze unused Jp history; requires exactly zero hardening')
+    p.add_argument('--training-reset-checkpoint',action='store_true',help='Audit a marked contact-training branch, not a continuous cycle')
     p.add_argument('--require-no-bucket-contact',action='store_true');args=p.parse_args()
     if not 0<=args.frames<=120 or not 0<=args.split<args.frames:raise ValueError('bounded_audit_frames')
     out=Path(args.output).resolve()
-    with CycleRuntime(args.source,out,enable_truck=True if args.truck else None,freeze_passive_jp=args.freeze_passive_jp) as r:
+    with CycleRuntime(args.source,out,enable_truck=True if args.truck else None,freeze_passive_jp=args.freeze_passive_jp,allow_training_reset=args.training_reset_checkpoint) as r:
         report=dict(schema='layered_47_cycle_hold_audit_v1',status='running',source=r.metadata['source_identity'],
                     historical_native_history_missing=r.metadata.get('historical_native_history_missing',False),
                     source_metadata=r.metadata['source_metadata_identity'],
                     zero_step=r.restored, frames_requested=args.frames,training_eligible=False,
                     all_hold_frames_zero_bucket_contact=True)
         report['material_history_policy']=r.metadata.get('material_history_policy')
+        report['training_reset']=r.metadata.get('training_reset')
         try:
             for frame in range(args.frames):
                 row=r.step([0]*4)

@@ -9,7 +9,11 @@ cycle_point="$(realpath -- "$1")"
 cycle_audit="$(realpath -- "$2")"
 shift 2
 [[ -f "$cycle_point" && -f "$cycle_point.json" && -f "$cycle_audit" ]]
-echo "Continuous manual scoop: exact saved prepoint, initially paused"
+if [[ " $* " == *" --training-reset-checkpoint "* ]]; then
+  echo "Fast collection branch: saved excavated terrain, direct empty prepoint, initially paused"
+else
+  echo "Continuous manual scoop: exact saved prepoint, initially paused"
+fi
 echo "Source: $cycle_point"
 exec bash "$repo/scripts/run_47_contact_bc_active_curl_local.sh" \
   --checkpoint "$cycle_point" --metadata "$cycle_point.json" \

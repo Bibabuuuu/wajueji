@@ -37,9 +37,9 @@ def local_arguments():
 
 
 class CycleRuntime:
-    def __init__(self, source, output, *, enable_truck=None, freeze_passive_jp=False):
+    def __init__(self, source, output, *, enable_truck=None, freeze_passive_jp=False, allow_training_reset=False):
         self.output=Path(output).resolve(); self.output.mkdir(parents=True, exist_ok=False)
-        self.arrays,self.metadata=checkpoint.load(source)
+        self.arrays,self.metadata=checkpoint.load(source,allow_training_reset=allow_training_reset)
         if freeze_passive_jp:
             from soil_passive_jp_history import POLICY
             self.metadata['material_history_policy'] = POLICY
@@ -83,10 +83,8 @@ class CycleRuntime:
                 fixtures=enter(truck.installed_candidate(REPO/'configs/v4/layered-47-truck-physics-v1.json',REPO))
             enter(hencky.installed_candidate())
             work=self.output/'runtime';work.mkdir()
-            with restored_sparse_grid_topology(self.arrays):
-                self.fixture,held,self.restored=motion.audit.restore_candidate_runtime(
-                    self.args,self.base,self.root,self.records,self.arrays,self.proxy,self.solver_profile,
-                    work,self.metadata['controller_state'],fixtures)
+            with self._grid_restore_context():
+                self.fixture,held,self.restored=self._initialize_fixture(work,fixtures)
             # MuJoCo emit preserves the pre-integration cvel of the last native
             # step. mj_forward during restore recomputes it at the endpoint.
             # MPM consumes the emitted values, so preserve that exact frame
@@ -121,6 +119,14 @@ class CycleRuntime:
             return self
         except BaseException:
             self.close();raise
+
+    def _grid_restore_context(self):
+        return restored_sparse_grid_topology(self.arrays)
+
+    def _initialize_fixture(self,work,fixtures):
+        return motion.audit.restore_candidate_runtime(
+            self.args,self.base,self.root,self.records,self.arrays,self.proxy,self.solver_profile,
+            work,self.metadata['controller_state'],fixtures)
 
     def step(self, command):
         command=np.asarray(command,dtype=float)

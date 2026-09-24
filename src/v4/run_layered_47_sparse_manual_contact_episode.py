@@ -516,6 +516,8 @@ def run(args):
     root = Path(args.repository_root).resolve()
     transport_mode = bool(getattr(args, "loaded_transport", False))
     cycle_mode = bool(getattr(args, "cycle_checkpoint", False))
+    if getattr(args, "training_reset_checkpoint", False) and not cycle_mode:
+        raise ValueError("training_reset_requires_cycle_checkpoint")
     cycle_save = bool(getattr(args, "cycle_save", False) or cycle_mode)
     physics_truck = transport_mode or cycle_mode
     cycle_metadata = None
@@ -600,6 +602,8 @@ def run(args):
                 sweep_runtime.diagnostic_state() if sweep_runtime else None),
             **info,
         }
+        if cycle_metadata and cycle_metadata.get('training_reset'):
+            metadata['training_reset'] = cycle_metadata['training_reset']
         metadata_path = Path(info["path"] + ".json")
         motion.probe.bench._write_json(metadata_path, metadata)
         info["metadata_sha256"] = motion.probe.bench.sha256(metadata_path)
@@ -640,7 +644,8 @@ def run(args):
 
         if cycle_mode:
             import layered_47_cycle_checkpoint as cycle_checkpoint
-            arrays, cycle_metadata = cycle_checkpoint.load(checkpoint_path)
+            arrays, cycle_metadata = cycle_checkpoint.load(checkpoint_path,
+                allow_training_reset=getattr(args,'training_reset_checkpoint',False))
             checkpoint_before = cycle_metadata['source_identity']
             metadata_before = cycle_metadata['source_metadata_identity']
             audit_document = json.loads(audit_path.read_text())
@@ -660,6 +665,7 @@ def run(args):
             approach_report = {'solver_profile': cycle_metadata['solver_profile']}
             report['cycle_lineage'] = {key: cycle_metadata[key] for key in (
                 'cycle_index', 'lineage_root', 'parent_checkpoint', 'historical_native_history_missing')}
+            report['training_reset'] = cycle_metadata.get('training_reset')
         else:
             approach_report = json.loads(
                 approach_report_path.read_text(encoding="utf-8"))
@@ -1383,7 +1389,8 @@ def run(args):
                     if transport_mode else
                     "MANUAL CONTACT PILOT / NOT TRAINING DATA")
                 if cycle_mode:
-                    imgui.text(f"SCOOP {cycle_metadata['cycle_index']}/3 | continuous terrain")
+                    mode_label = "FAST COLLECTION RESET" if cycle_metadata.get('training_reset') else "continuous terrain"
+                    imgui.text(f"SCOOP {cycle_metadata['cycle_index']}/3 | {mode_label}")
                 if fill_config:
                     from live_bucket_fill import display_lines
                     if phase != "off_soil_confirm":
@@ -1812,6 +1819,7 @@ def main():
         "--live-fill-config", help="Display-only mixed fill measurement on off-soil key 4")
     parser.add_argument('--cycle-checkpoint', action='store_true', help='Audited continuous second/third scoop prepoint')
     parser.add_argument('--cycle-save', action='store_true', help='Also save full native/controller/sweep frame state')
+    parser.add_argument('--training-reset-checkpoint', action='store_true', help='Explicitly load a marked fast contact-collection prepoint')
     parser.add_argument("--loaded-transport", action="store_true")
     parser.add_argument("--truck-config")
     parser.add_argument("--truck-repository-root")

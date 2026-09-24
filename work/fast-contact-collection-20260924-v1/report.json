@@ -1,0 +1,145 @@
+{
+  "status": "fast_second_prepoint_qualified",
+  "checks": {
+    "source_unchanged": true,
+    "unwithdrawn_state_exact": true,
+    "initial_material_native_readback_exact": true,
+    "all_ids_retained": true,
+    "prepare_hold_passed": true,
+    "qualified_same_arrays": true,
+    "independent_restore_exact": true,
+    "independent_hold_no_contact": true,
+    "manual_checks_passed": true,
+    "manual_matches_audit": true,
+    "reset_metadata_inherited": true,
+    "same_lineage": true,
+    "explicit_noncontinuous": true,
+    "runs/fast-contact-collection-20260924-v1/prepare-clear_zero_contact": true,
+    "runs/fast-contact-collection-20260924-v1/restore-audit_zero_contact": true,
+    "runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-105824-1419412_zero_contact": true
+  },
+  "tests": 46,
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/new-chain-second-20260924-v1/contact-exit-physical/cleared.npz",
+    "size_bytes": 53068154,
+    "mtime_ns": 1790216896245549992,
+    "sha256": "1bf4e9ca796bd36a9d8c22b145e03eb06776b6c222d5f9b0858dc23d7c9f1102"
+  },
+  "prepoint": {
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection-20260924-v1/prepare-clear/prepoint.npz",
+    "sha256": "b324d7bd3738fd7e6cabd70ce491ab3a82b773ff339d0bf5a99f7a1aeeae366b"
+  },
+  "lineage_root": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+  "cycle_index": 2,
+  "inventory": {
+    "soil_count": 12024,
+    "rock_count": 6,
+    "rock_indices": [
+      8,
+      13,
+      16,
+      28,
+      40,
+      41
+    ],
+    "translation_m": [
+      -3.6376514434814453,
+      -3.6292290538549423,
+      -2.172819347381592
+    ],
+    "ownership": "withdrawn_for_training_only_not_truck_delivery"
+  },
+  "inventory_ids_sha256": "b761789f44229afb7dd195ab7cb0844458655511c0a4b8c173a6c90ca577a188",
+  "selected_contact": [
+    5.548367169576101,
+    -0.5812575130032106
+  ],
+  "selected_contact_z_m": 1.1445946097373962,
+  "initial_tip_world_m": [
+    6.04564578553627,
+    -0.6333533680085617,
+    1.7445946097373963
+  ],
+  "future_entry_xy_m": [
+    [
+      5.25,
+      0.6499999999999999
+    ]
+  ],
+  "initial_bucket_clearance_m": 1.1132455869734703,
+  "prepare_wall_seconds": 8.19253332601511,
+  "independent_audit": "/home/qunwang/wajueji/runs/fast-contact-collection-20260924-v1/restore-audit/audit.json",
+  "manual_probe": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-105824-1419412",
+  "manual_checks": {
+    "all_executed_frames_hard_safe": true,
+    "input_bindings_unchanged": true,
+    "no_scripted_excavation_motion": true,
+    "original_source_unchanged": true,
+    "restore_exact": true,
+    "smoke_or_probe_scope_obeyed": true,
+    "source_handoff_checkpoint_unchanged": true,
+    "source_handoff_metadata_unchanged": true,
+    "training_not_granted": true,
+    "truck_gate_unchanged": true
+  },
+  "manual_audit_equal_arrays": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "boundaries": [
+    "explicit training reset, not continuous physical cycle",
+    "not truck delivery or G4/G5",
+    "candidate demonstration entry, no training admission"
+  ],
+  "rejected_first_candidate": {
+    "positions": [
+      [
+        5.849999904632568,
+        -0.75,
+        1.4500000476837158
+      ]
+    ],
+    "impulses": [
+      [
+        -2.1191628452044142e-09,
+        2.2208214434105145e-10,
+        8.085052627393452e-09
+      ]
+    ],
+    "nearest_distance": [
+      0.34945140220299076
+    ],
+    "nearest_ids": [
+      256259
+    ]
+  },
+  "implementation_sha256": {
+    "src/v4/layered_47_training_reset.py": "0b4e681e1945c59da9c24ed0f7ef42402e7f21d73aacd93c278e4ba0ca390269",
+    "src/v4/prepare_47_fast_collection.py": "3ea9923182570ae4bfeda4883d0fee48d7882be80bde6137b6eacd9ee2b1d352",
+    "src/v4/layered_47_cycle_checkpoint.py": "86a2c5902041c89567d506246217415327cdae52cdbf9ad29308caacf338a893",
+    "src/v4/layered_47_cycle_runtime.py": "21f3ce61be891b7589f7d9b30467d7e30a07379ea3b547875f808a2e8e1b0ab3",
+    "src/v4/run_layered_47_sparse_manual_contact_episode.py": "192e01f9084894feaf5f87e39ad0367f6e4d0bbf518807545cb9a9cf001558b2"
+  }
+}

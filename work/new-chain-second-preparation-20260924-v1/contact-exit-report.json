@@ -1,0 +1,63 @@
+{
+  "schema": "bounded_contact_exit_full_surface_v1",
+  "status": "retreat_passed",
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/passive-jp-overflow-20260924-v1/integrated-six/final.npz",
+    "size_bytes": 52988018,
+    "mtime_ns": 1790216508121962155,
+    "sha256": "d612bd6f3e0db37112aeac5e51ba16e64e66b590427c54ad017e87a039d5e26a"
+  },
+  "initial_clearance": {
+    "bucket_truck_m": 1.6601882377531723,
+    "bucket_terrain_m": -0.9137892478606462,
+    "mechanism_truck_m": 0.8688749474897124,
+    "mechanism_ground_m": 0.9016766209453712,
+    "closure_m": 6.514671780810666e-05
+  },
+  "protocol": {
+    "boom_extension_m": 0.04,
+    "boom_command_m_s": 0.01,
+    "profile": "constant_command_native_controller_limits",
+    "maximum_frames": 600,
+    "maximum_wall_seconds": 180,
+    "xy_drift_m": 0.2,
+    "minimum_sample_rise_m": -0.002,
+    "minimum_endpoint_rise_m": 0.15,
+    "maximum_tracking_error_m": 0.015,
+    "minimum_endpoint_terrain_clearance_m": 0.04,
+    "preserve_initial_controller_target_offset": true,
+    "free_space_gate_unchanged": true,
+    "training_eligible": false
+  },
+  "planned_frames": 240,
+  "minimum_clearance": {
+    "bucket_truck_m": 1.5876586421860528,
+    "bucket_terrain_m": -0.9137892478606462,
+    "mechanism_truck_m": 0.8688749474897124,
+    "mechanism_ground_m": 0.9016766209453712,
+    "closure_m": 4.840572387365683e-13
+  },
+  "endpoint_observation": {
+    "detached_payload_particles": 12024,
+    "detached_dynamic_particles": 14841,
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "ground-connected stock surface; detached material remains fully simulated"
+  },
+  "final_clearance": {
+    "bucket_truck_m": 1.5880545313726167,
+    "bucket_terrain_m": 0.2889397122457953,
+    "mechanism_truck_m": 0.8698552057919116,
+    "mechanism_ground_m": 0.9055183432853479,
+    "closure_m": 6.364405349912339e-05
+  },
+  "actual_rise_m": 0.34177677579750965,
+  "frames": 270,
+  "checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/new-chain-second-20260924-v1/contact-exit-physical/cleared.npz",
+    "size_bytes": 53068154,
+    "mtime_ns": 1790216896245549992,
+    "sha256": "1bf4e9ca796bd36a9d8c22b145e03eb06776b6c222d5f9b0858dc23d7c9f1102"
+  },
+  "wall_seconds": 54.26408064700081
+}
