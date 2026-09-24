@@ -1,0 +1,74 @@
+{
+  "status": "bounded_probe_completed",
+  "frames_requested": 600,
+  "frames_completed": 600,
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+    "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+  },
+  "policy": {
+    "path": "/home/qunwang/wajueji/runs/contact-bc-native60-pilot-20260924-v1/pilot.pt",
+    "sha256": "4bd50c9f2bd9d5d31b0adee2335f2320b19056b518a097a23a11d2373bcf371c"
+  },
+  "source_unchanged": true,
+  "prefix_frames_verified": 120,
+  "prefix_final_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "prefix_review": {
+    "path": "/home/qunwang/wajueji/work/contact-bc-closed-loop-20260924-v1/probe120-review.json",
+    "sha256": "00c7faab661c2dcf56075679f2ad315ff0f8732e1db8818e6892c9e5c4467113"
+  },
+  "all_executed_frames_safe": true,
+  "wall_seconds": 110.71276774202124,
+  "code_sha256": {
+    "run_contact_bc_probe.py": "bc4a308b1dddd1098b574b3683ca3c192ad87a37f74765201c3383afa38861bb",
+    "contact_bc_inference.py": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+    "contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+    "contact_bc_data.py": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34",
+    "view_contact_bc_probe.py": "c200787a37a598e8919474c38138df2c887c12d0589b381ce89ea5df417fe21d"
+  },
+  "inference_roundtrip_seconds_quantiles": [
+    0.0011681030155159533,
+    0.0012942419853061438,
+    0.0014696251411805861,
+    0.0017398929921910167
+  ],
+  "display_cache": {
+    "status": "captured_probe",
+    "capture_origin": "live_policy_rollout",
+    "probe_status": "bounded_probe_completed",
+    "frames": 600,
+    "playback_physics_steps": 0,
+    "live_inference": false,
+    "label": "BC CONTACT WINDOW REPLAY",
+    "cache_sha256": {
+      "particles.npy": "f461cf2493431026659a45e3985fbe2ed3d92ca0ad2b617faae77d8fb5bdf6ef",
+      "states.json": "ac61e4da0301e221475b9ac8b2ee5315f5823ec40510b0275572db4275da25dd",
+      "scene.json": "e811e51b06dedb61c7322474250b8820f749d2a6c365cf0e04015bac229c05b8"
+    }
+  }
+}

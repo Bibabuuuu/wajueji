@@ -5,12 +5,43 @@ recorded mechanism state and all final physics arrays before viewing.
 """
 import argparse
 import copy
+import hashlib
 import json
 from pathlib import Path
 import time
 from types import SimpleNamespace
 import numpy as np
 from contact_bc_inference import sha
+
+
+def cache_digest(path):
+    digest=hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for block in iter(lambda:stream.read(1024*1024),b''):digest.update(block)
+    return digest.hexdigest()
+
+
+class ProbeDisplayCache:
+    """Capture display state during a live probe, without a second simulation."""
+    def __init__(self,output,maximum_frames,particle_shape,scene):
+        self.output=Path(output);self.output.mkdir(parents=True,exist_ok=False)
+        self.states=[]
+        self.positions=np.lib.format.open_memmap(self.output/'particles.npy',mode='w+',dtype=np.float32,
+            shape=(maximum_frames+1,*particle_shape))
+        (self.output/'scene.json').write_text(json.dumps(scene,allow_nan=False))
+    def capture(self,frame,state,particles):
+        if frame!=len(self.states) or frame>=len(self.positions):raise ValueError('display_cache_frame_order')
+        if not np.isfinite(particles).all():raise ValueError('display_cache_nonfinite_particles')
+        copied=json.loads(json.dumps(state,allow_nan=False))
+        self.positions[frame]=particles;self.states.append(copied)
+    def finish(self,probe_status):
+        self.positions.flush();del self.positions
+        (self.output/'states.json').write_text(json.dumps(self.states,allow_nan=False))
+        report=dict(status='captured_probe',capture_origin='live_policy_rollout',probe_status=probe_status,
+            frames=len(self.states)-1,playback_physics_steps=0,live_inference=False,label='BC CONTACT WINDOW REPLAY',
+            cache_sha256={name:cache_digest(self.output/name) for name in ('particles.npy','states.json','scene.json')})
+        (self.output/'reconstruction.json').write_text(json.dumps(report,indent=2)+'\n')
+        return report
 
 
 def read_rows(path):
@@ -61,7 +92,7 @@ def reconstruct(review_path, output):
             (output/'scene.json').write_text(json.dumps(dict(records=r.records,root=str(r.root),
                 selected_cut=r.metadata['selected_cut'],particle_spacing_m=r.base['mpm']['particle_spacing_m'])))
         report.update(status='reconstruction_passed',wall_seconds=time.monotonic()-started,source_unchanged=sha(source)==review['inputs'][0]['sha256'])
-        report['cache_sha256']={name:sha(output/name) for name in ('particles.npy','states.json','scene.json')}
+        report['cache_sha256']={name:cache_digest(output/name) for name in ('particles.npy','states.json','scene.json')}
         write()
     except BaseException as e:
         report.update(status='failed',failure=repr(e));write();raise
@@ -78,9 +109,9 @@ def show(output):
     from soil_surface import SoilSurface
     from PIL import Image
     report=json.loads((output/'reconstruction.json').read_text())
-    if report['status']!='reconstruction_passed':raise ValueError('unverified_replay')
+    if report['status'] not in ('reconstruction_passed','captured_probe'):raise ValueError('unverified_replay')
     for name,digest in report['cache_sha256'].items():
-        if sha(output/name)!=digest:raise ValueError('changed_replay_cache')
+        if cache_digest(output/name)!=digest:raise ValueError('changed_replay_cache')
     states=json.loads((output/'states.json').read_text());scene=json.loads((output/'scene.json').read_text())
     particles=np.load(output/'particles.npy',mmap_mode='r');last=len(states)-1
     display=json.loads((Path(__file__).resolve().parents[2]/'configs/v4/layered-47-interactive-proxy-practice-v1.json').read_text())['display']
@@ -88,7 +119,7 @@ def show(output):
     assembly,model,model_state,names,to_pose=manual.display_helpers._display_runtime(display)
     viewer=newton.viewer.ViewerGL(width=display['width'],height=display['height'],vsync=False,paused=True)
     viewer.set_model(model);viewer.picking_enabled=False
-    viewer.renderer.set_title('BC STARTUP REPLAY - Space play/pause | R restart | arrows step | X close')
+    viewer.renderer.set_title(report.get('label','BC STARTUP REPLAY')+' - Space play/pause | R restart | arrows step | X close')
     viewer.set_camera(wp.vec3(*display['camera_position_m']),pitch=display['camera_pitch_deg'],yaw=display['camera_yaw_deg'])
     positions=wp.array(particles[0],dtype=wp.vec3,device='cuda:0');fixture=SimpleNamespace(state=SimpleNamespace(particle_q=positions))
     surface=SoilSurface(positions,particle_spacing_m=scene['particle_spacing_m'],voxel_size_m=display['surface_voxel_m'])
@@ -107,14 +138,14 @@ def show(output):
         elif symbol==key.END:viewer._paused=True;move(last)
     viewer.renderer.window.push_handlers(on_key_press=on_key)
     def ui(imgui):
-        imgui.text('RECORDED BC STARTUP | CACHED PLAYBACK')
+        imgui.text('RECORDED BC | CACHED PLAYBACK')
         imgui.text(f"Frame {cursor['frame']}/{last} | simulation {cursor['frame']/60:.2f} s")
         imgui.text('Space: play/pause | R: rewind and pause')
         imgui.text('Left/Right: one frame | Home/End: start/end')
         imgui.text('Playback: 0.5x | X/Esc: close')
         imgui.text('No new physics or gamepad input during playback')
         imgui.text('Green: fixed target center | Cyan: target width')
-        imgui.text('Only startup is tested; curling/lifting not included')
+        imgui.text('Result: '+report.get('probe_status','startup_only'))
     viewer.register_ui_callback(ui,position='side');draws=0
     try:
         while viewer.is_running():

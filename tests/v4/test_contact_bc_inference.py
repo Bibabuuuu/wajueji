@@ -5,6 +5,30 @@ from contact_bc_policy import encode_episode
 from test_contact_bc_policy import data
 
 class LiveInferenceTest(unittest.TestCase):
+    def test_contact_window_is_explicit_and_bounded(self):
+        from run_contact_bc_probe import probe_budget
+        self.assertEqual(probe_budget(120,False),180)
+        self.assertEqual(probe_budget(600,True),240)
+        for frames,contact in ((121,False),(601,True),(-1,True)):
+            with self.assertRaisesRegex(ValueError,'bounded_bc'):probe_budget(frames,contact)
+
+    def test_display_cache_preserves_partial_failed_rollout(self):
+        import tempfile,json
+        from pathlib import Path
+        from view_contact_bc_probe import ProbeDisplayCache,cache_digest
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'cache';cache=ProbeDisplayCache(path,10,(2,3),{'scene':'test'})
+            particles=np.ones((2,3),dtype=np.float32)
+            cache.capture(0,{'time_s':0.},particles)
+            cache.capture(1,{'time_s':1/60},particles+1)
+            with self.assertRaisesRegex(ValueError,'frame_order'):cache.capture(3,{},particles)
+            with self.assertRaisesRegex(ValueError,'nonfinite'):cache.capture(2,{},particles*np.nan)
+            report=cache.finish('failed')
+            self.assertEqual(report['frames'],1);self.assertEqual(report['playback_physics_steps'],0)
+            self.assertEqual(len(json.loads((path/'states.json').read_text())),2)
+            np.testing.assert_array_equal(np.load(path/'particles.npy',mmap_mode='r')[1],particles+1)
+            self.assertEqual(report['cache_sha256']['particles.npy'],cache_digest(path/'particles.npy'))
+
     def test_streaming_equals_batch_every_frame(self):
         a=data();a['sequence_id'][6:]=2;a['frame'][6:]+=1
         expected,_,digest=encode_episode(a)
