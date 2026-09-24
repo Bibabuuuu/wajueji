@@ -1,0 +1,16 @@
+{
+  "fragment": "/home/qunwang/.codex/visualizations/2026/09/23/01a0cd4b-2e0a-7340-aa6b-46df674ac029/bucket-phase-review.html",
+  "sha256": "276e5dd9c38cb98971699e525ae763c85eec68748a6ca12ba3b78950d660d64a",
+  "bytes": 80625,
+  "checks": [
+    "initial frame581",
+    "jump610 changes geometry",
+    "step625",
+    "width320 redraw",
+    "range clamp",
+    "under1MB"
+  ],
+  "validation": "Node DOM harness; not a full browser screenshot verification",
+  "physics_steps": 0,
+  "human_annotation_received": false
+}

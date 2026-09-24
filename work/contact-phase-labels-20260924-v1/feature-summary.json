@@ -1,0 +1,474 @@
+[
+  {
+    "run": "manual-contact-20260924-010900-1088617",
+    "frames": 1311,
+    "closest_vertical": {
+      "frame": 581,
+      "angle": -0.0536340134883815
+    },
+    "keys": [
+      {
+        "frame": 430,
+        "label": "penetrate_deepen"
+      },
+      {
+        "frame": 610,
+        "label": "curl_load"
+      },
+      {
+        "frame": 784,
+        "label": "lift_clear"
+      },
+      {
+        "frame": 1275,
+        "label": "off_soil_confirm"
+      },
+      {
+        "frame": 1277,
+        "label": "off_soil_confirm"
+      }
+    ],
+    "samples": [
+      {
+        "frame": 0,
+        "mouth_chord_from_down_deg": 30.84479901219196,
+        "tip_z_m": 0.9499569876602508,
+        "command": null,
+        "soil_samples": null
+      },
+      {
+        "frame": 120,
+        "mouth_chord_from_down_deg": 27.24202024896172,
+        "tip_z_m": 0.7571786243750765,
+        "command": [
+          0.6524064171122994,
+          -0.679144385026738,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 126
+      },
+      {
+        "frame": 240,
+        "mouth_chord_from_down_deg": 22.59647590508331,
+        "tip_z_m": 0.5085437481248836,
+        "command": [
+          0.5900178253119428,
+          -0.7415329768270945,
+          -0.9019607843137255,
+          0.3315508021390374
+        ],
+        "soil_samples": 105
+      },
+      {
+        "frame": 360,
+        "mouth_chord_from_down_deg": 18.806736526195635,
+        "tip_z_m": 0.44286033902822686,
+        "command": [
+          -0.9376114081996435,
+          0.26024955436720143,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 106
+      },
+      {
+        "frame": 480,
+        "mouth_chord_from_down_deg": 17.555812901352787,
+        "tip_z_m": 0.5033113000088667,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "soil_samples": 186
+      },
+      {
+        "frame": 600,
+        "mouth_chord_from_down_deg": -4.629308285066741,
+        "tip_z_m": 0.4359130136221716,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.9910873440285206
+        ],
+        "soil_samples": 486
+      },
+      {
+        "frame": 720,
+        "mouth_chord_from_down_deg": -45.395182736861464,
+        "tip_z_m": 0.6669855047247646,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "soil_samples": 658
+      },
+      {
+        "frame": 840,
+        "mouth_chord_from_down_deg": -66.99011919930308,
+        "tip_z_m": 1.0652668482516456,
+        "command": [
+          0.0,
+          0.28698752228163993,
+          0.19786096256684493,
+          0.8345697729766774
+        ],
+        "soil_samples": 657
+      },
+      {
+        "frame": 960,
+        "mouth_chord_from_down_deg": -68.52684415012088,
+        "tip_z_m": 1.4419315282314453,
+        "command": [
+          0.0,
+          0.9910873440285204,
+          0.19786096256684493,
+          0.41098096502925585
+        ],
+        "soil_samples": 623
+      },
+      {
+        "frame": 1080,
+        "mouth_chord_from_down_deg": -67.54834874394129,
+        "tip_z_m": 1.8464755423913783,
+        "command": [
+          0.0,
+          1.0,
+          0.0,
+          0.15708589038200943
+        ],
+        "soil_samples": 636
+      },
+      {
+        "frame": 1200,
+        "mouth_chord_from_down_deg": -67.01011325496802,
+        "tip_z_m": 2.2331226860406606,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 708
+      }
+    ],
+    "first_nonzero_soil_sample_frame": 1
+  },
+  {
+    "run": "manual-contact-20260924-100857-1387193",
+    "frames": 1132,
+    "closest_vertical": {
+      "frame": 285,
+      "angle": -0.05156599386598679
+    },
+    "keys": [
+      {
+        "frame": 160,
+        "label": "penetrate_deepen"
+      },
+      {
+        "frame": 291,
+        "label": "curl_load"
+      },
+      {
+        "frame": 602,
+        "label": "lift_clear"
+      },
+      {
+        "frame": 1085,
+        "label": "off_soil_confirm"
+      }
+    ],
+    "samples": [
+      {
+        "frame": 0,
+        "mouth_chord_from_down_deg": 30.84479901219196,
+        "tip_z_m": 0.9499569876602508,
+        "command": null,
+        "soil_samples": null
+      },
+      {
+        "frame": 120,
+        "mouth_chord_from_down_deg": 24.346253172925508,
+        "tip_z_m": 0.6210408296549301,
+        "command": [
+          0.1532976827094474,
+          -0.9732620320855615,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 169
+      },
+      {
+        "frame": 240,
+        "mouth_chord_from_down_deg": 8.780476399264556,
+        "tip_z_m": 0.5098197604169818,
+        "command": [
+          0.0,
+          0.0,
+          0.1711229946524064,
+          0.9554367201426025
+        ],
+        "soil_samples": 364
+      },
+      {
+        "frame": 360,
+        "mouth_chord_from_down_deg": -12.95637004631425,
+        "tip_z_m": 0.5008099815655396,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.64349376114082
+        ],
+        "soil_samples": 521
+      },
+      {
+        "frame": 480,
+        "mouth_chord_from_down_deg": -36.088240383932174,
+        "tip_z_m": 0.6332701633819345,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "soil_samples": 641
+      },
+      {
+        "frame": 600,
+        "mouth_chord_from_down_deg": -67.27054321131538,
+        "tip_z_m": 1.0509355323307472,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.9707212900230894
+        ],
+        "soil_samples": 760
+      },
+      {
+        "frame": 720,
+        "mouth_chord_from_down_deg": -71.42345923424658,
+        "tip_z_m": 1.283717380805685,
+        "command": [
+          0.0,
+          1.0,
+          0.6345811051693405,
+          0.5993055565745524
+        ],
+        "soil_samples": 683
+      },
+      {
+        "frame": 840,
+        "mouth_chord_from_down_deg": -73.87897568221071,
+        "tip_z_m": 1.4959538028085873,
+        "command": [
+          -0.09090909090909093,
+          0.8306595365418894,
+          0.0,
+          0.2806568770296566
+        ],
+        "soil_samples": 642
+      },
+      {
+        "frame": 960,
+        "mouth_chord_from_down_deg": -75.12886668986393,
+        "tip_z_m": 1.9290065840492774,
+        "command": [
+          0.11764705882352942,
+          0.9732620320855615,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 666
+      },
+      {
+        "frame": 1080,
+        "mouth_chord_from_down_deg": -72.31630162495618,
+        "tip_z_m": 2.299975057561777,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 724
+      }
+    ],
+    "first_nonzero_soil_sample_frame": 1
+  },
+  {
+    "run": "manual-contact-20260924-110932-1426831",
+    "frames": 1408,
+    "closest_vertical": {
+      "frame": 552,
+      "angle": -0.09933942306508574
+    },
+    "keys": [
+      {
+        "frame": 354,
+        "label": "penetrate_deepen"
+      },
+      {
+        "frame": 514,
+        "label": "curl_load"
+      },
+      {
+        "frame": 796,
+        "label": "lift_clear"
+      },
+      {
+        "frame": 1348,
+        "label": "off_soil_confirm"
+      }
+    ],
+    "samples": [
+      {
+        "frame": 0,
+        "mouth_chord_from_down_deg": 30.85308187219666,
+        "tip_z_m": 1.5550311670888115,
+        "command": null,
+        "soil_samples": null
+      },
+      {
+        "frame": 120,
+        "mouth_chord_from_down_deg": 27.309341077248675,
+        "tip_z_m": 1.2002127051896125,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "soil_samples": 7
+      },
+      {
+        "frame": 240,
+        "mouth_chord_from_down_deg": 24.18085910557488,
+        "tip_z_m": 0.8318322847651881,
+        "command": [
+          0.09982174688057042,
+          -0.9821746880570409,
+          -0.4563279857397505,
+          0.0
+        ],
+        "soil_samples": 77
+      },
+      {
+        "frame": 360,
+        "mouth_chord_from_down_deg": 20.315891361017258,
+        "tip_z_m": 0.4687116943519263,
+        "command": [
+          0.0,
+          0.0,
+          0.9910873440285204,
+          0.0
+        ],
+        "soil_samples": 137
+      },
+      {
+        "frame": 480,
+        "mouth_chord_from_down_deg": 12.397795203151176,
+        "tip_z_m": 0.24301669977401263,
+        "command": [
+          0.0,
+          0.0,
+          0.8039215686274509,
+          0.5098039215686274
+        ],
+        "soil_samples": 310
+      },
+      {
+        "frame": 600,
+        "mouth_chord_from_down_deg": -10.951243213648231,
+        "tip_z_m": 0.18194146457065452,
+        "command": [
+          0.0,
+          0.0,
+          0.14438502673796794,
+          0.9643493761140819
+        ],
+        "soil_samples": 557
+      },
+      {
+        "frame": 720,
+        "mouth_chord_from_down_deg": -44.243607289156245,
+        "tip_z_m": 0.39248544623917814,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "soil_samples": 676
+      },
+      {
+        "frame": 840,
+        "mouth_chord_from_down_deg": -76.25340220578005,
+        "tip_z_m": 0.9942594702120835,
+        "command": [
+          -0.01960784313725492,
+          0.9910873440285204,
+          0.7593582887700534,
+          0.5632798573975045
+        ],
+        "soil_samples": 671
+      },
+      {
+        "frame": 960,
+        "mouth_chord_from_down_deg": -79.3310338509185,
+        "tip_z_m": 1.3767392581747901,
+        "command": [
+          -0.01960784313725492,
+          0.9910873440285204,
+          0.7593582887700534,
+          0.34054804260142535
+        ],
+        "soil_samples": 712
+      },
+      {
+        "frame": 1080,
+        "mouth_chord_from_down_deg": -80.68198331028674,
+        "tip_z_m": 1.7228783291844048,
+        "command": [
+          -0.01960784313725492,
+          0.9910873440285204,
+          0.7593582887700534,
+          0.1398464064284667
+        ],
+        "soil_samples": 697
+      },
+      {
+        "frame": 1200,
+        "mouth_chord_from_down_deg": -80.42971473132782,
+        "tip_z_m": 2.0472310950696286,
+        "command": [
+          0.0,
+          1.0,
+          0.607843137254902,
+          0.014213942765533224
+        ],
+        "soil_samples": 725
+      },
+      {
+        "frame": 1320,
+        "mouth_chord_from_down_deg": -79.56329076568223,
+        "tip_z_m": 2.365368334376481,
+        "command": [
+          0.0,
+          1.0,
+          0.607843137254902,
+          0.0
+        ],
+        "soil_samples": 702
+      }
+    ],
+    "first_nonzero_soil_sample_frame": 38
+  }
+]

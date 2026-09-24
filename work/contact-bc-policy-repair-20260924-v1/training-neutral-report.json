@@ -1,0 +1,584 @@
+{
+  "schema": "contact_bc_native60_history_mlp_v1",
+  "status": "bounded_offline_pilot_completed",
+  "steps": 1000,
+  "requested_steps": 1000,
+  "seed": 20260924,
+  "training_wall_seconds": 1.4794812120089773,
+  "device": "cuda:0",
+  "torch_version": "2.11.0+cu128",
+  "feature_count": 2509,
+  "development_rows": 8103,
+  "validation_rows": 4476,
+  "normalization_fit_runs": [
+    "manual-contact-20260924-005742-1081585",
+    "manual-contact-20260924-010900-1088617",
+    "manual-contact-20260924-083547-1327233",
+    "manual-contact-20260924-100857-1387193",
+    "manual-contact-20260924-110051-1421079",
+    "manual-contact-20260924-110932-1426831"
+  ],
+  "loss_initial": 0.07801859080791473,
+  "loss_final": 0.005376363173127174,
+  "checkpoint": "/home/qunwang/wajueji/runs/contact-bc-repair-neutral-20260924-v1/pilot.pt",
+  "checkpoint_sha256": "8ada30e759d52874e5a96eb7aa256ecf0f0f7793182c20508a4a78dbe5ace51b",
+  "reload_max_abs_error": 1.1920928955078125e-07,
+  "evaluation": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "split": "development",
+      "rows": 1243,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.014634301885962486,
+          0.04070230945944786,
+          0.05869279056787491,
+          0.04800530523061752
+        ],
+        "mae": 0.040508661419153214,
+        "mse": 0.006207384169101715,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.04814263805747032,
+          0.39554154872894287,
+          0.36836928129196167,
+          0.3812869191169739
+        ],
+        "mae": 0.29833510518074036,
+        "mse": 0.22799189388751984,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.0011128281528423871,
+          0.00902021827592969,
+          0.008750617572052252,
+          0.011752083058370746
+        ],
+        "mae": 0.00765893676479876,
+        "mse": 0.0037250917354075467,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "split": "development",
+      "rows": 1278,
+      "goal_valid": false,
+      "model": {
+        "mae_by_axis": [
+          0.02466396428644657,
+          0.03493161499500275,
+          0.045205116271972656,
+          0.05445483326911926
+        ],
+        "mae": 0.03981388360261917,
+        "mse": 0.00683926697820425,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.13045938313007355,
+          0.3876994252204895,
+          0.12648698687553406,
+          0.4150111675262451
+        ],
+        "mae": 0.2649141550064087,
+        "mse": 0.21045370399951935,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.004268036409350188,
+          0.007105030839732447,
+          0.009501259274462704,
+          0.019201057962224856
+        ],
+        "mae": 0.01001884612144255,
+        "mse": 0.005211123215858417,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "split": "development",
+      "rows": 1690,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.013097384013235569,
+          0.05675945058465004,
+          0.06741849333047867,
+          0.06773650646209717
+        ],
+        "mae": 0.05125297233462334,
+        "mse": 0.008847495540976524,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.01946234703063965,
+          0.5375258922576904,
+          0.4143105149269104,
+          0.26788029074668884
+        ],
+        "mae": 0.3097938895225525,
+        "mse": 0.25745654106140137,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.003191680779166351,
+          0.015139927023888491,
+          0.012325843262935033,
+          0.011800383919561246
+        ],
+        "mae": 0.010614458746387735,
+        "mse": 0.005793795353223134,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "split": "development",
+      "rows": 1149,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.04815469682216644,
+          0.07855803519487381,
+          0.13355572521686554,
+          0.06814400106668472
+        ],
+        "mae": 0.08210311830043793,
+        "mse": 0.016180656850337982,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.012317926622927189,
+          0.5487675666809082,
+          0.3506653904914856,
+          0.32646963000297546
+        ],
+        "mae": 0.3095555305480957,
+        "mse": 0.2567733824253082,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.0012473066774200488,
+          0.014207513884938993,
+          0.02097305826042365,
+          0.00810622864102408
+        ],
+        "mae": 0.011133526865951673,
+        "mse": 0.00630752989243989,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "split": "development",
+      "rows": 1099,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.020799478515982628,
+          0.05885542556643486,
+          0.03993059694766998,
+          0.05013781413435936
+        ],
+        "mae": 0.04243084043264389,
+        "mse": 0.008034735918045044,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.02499118633568287,
+          0.38952159881591797,
+          0.12154620885848999,
+          0.4466720521450043
+        ],
+        "mae": 0.245682492852211,
+        "mse": 0.1966533362865448,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.006945221797104214,
+          0.020332868567079276,
+          0.008054642570994341,
+          0.01602677839984046
+        ],
+        "mae": 0.012839877833754558,
+        "mse": 0.006903099466436358,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "split": "development",
+      "rows": 1428,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.01630493625998497,
+          0.04441226273775101,
+          0.05250542238354683,
+          0.05656389147043228
+        ],
+        "mae": 0.04244663193821907,
+        "mse": 0.0064602806232869625,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.016241243109107018,
+          0.6358382701873779,
+          0.4632956087589264,
+          0.2671760022640228
+        ],
+        "mae": 0.34563738107681274,
+        "mse": 0.2888224720954895,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.002077123438006829,
+          0.01065401566222668,
+          0.011368016667221608,
+          0.007633064437040621
+        ],
+        "mae": 0.007933055051124016,
+        "mse": 0.004111906078716785,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "split": "development",
+      "rows": 1365,
+      "goal_valid": false,
+      "model": {
+        "mae_by_axis": [
+          0.02453223057091236,
+          0.056983403861522675,
+          0.04182933270931244,
+          0.05601968616247177
+        ],
+        "mae": 0.04484115168452263,
+        "mse": 0.006311750505119562,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.03161659091711044,
+          0.6208322644233704,
+          0.4458787143230438,
+          0.3010646104812622
+        ],
+        "mae": 0.3498469293117523,
+        "mse": 0.28902286291122437,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.005082499788951358,
+          0.014393461206120643,
+          0.013011836753016993,
+          0.005582778178922447
+        ],
+        "mae": 0.009517643981752906,
+        "mse": 0.004823861217150961,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "split": "validation",
+      "rows": 1378,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.02639343962073326,
+          0.053832098841667175,
+          0.07180114090442657,
+          0.07210888713598251
+        ],
+        "mae": 0.05603388324379921,
+        "mse": 0.010561839677393436,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.0300766509026289,
+          0.3993328809738159,
+          0.35433465242385864,
+          0.35029223561286926
+        ],
+        "mae": 0.28350913524627686,
+        "mse": 0.22758106887340546,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.005317842258020407,
+          0.010405438838004124,
+          0.008432753373299531,
+          0.014196749529784745
+        ],
+        "mae": 0.009588195999777288,
+        "mse": 0.005356258802008317,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "split": "validation",
+      "rows": 1641,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.019051168113946915,
+          0.06543000787496567,
+          0.10028769075870514,
+          0.08400363475084305
+        ],
+        "mae": 0.06719310581684113,
+        "mse": 0.01089395396411419,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.005260691046714783,
+          0.5530454516410828,
+          0.40638241171836853,
+          0.1817491054534912
+        ],
+        "mae": 0.2866092920303345,
+        "mse": 0.2490341067314148,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.0007929604084323104,
+          0.008747566305340434,
+          0.012804693995222086,
+          0.011457910837591415
+        ],
+        "mae": 0.008450782886646585,
+        "mse": 0.004372016184808343,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "split": "validation",
+      "rows": 1457,
+      "goal_valid": true,
+      "model": {
+        "mae_by_axis": [
+          0.03463303670287132,
+          0.12756457924842834,
+          0.09595178812742233,
+          0.1321115493774414
+        ],
+        "mae": 0.097565196454525,
+        "mse": 0.01792076975107193,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "zero_baseline": {
+        "mae_by_axis": [
+          0.03779664635658264,
+          0.5868732333183289,
+          0.4793641269207001,
+          0.25386378169059753
+        ],
+        "mae": 0.33947426080703735,
+        "mse": 0.2795012295246124,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      },
+      "previous_action_baseline": {
+        "mae_by_axis": [
+          0.0022559976659598507,
+          0.006366718527360517,
+          0.009789864245078056,
+          0.005421794567713535
+        ],
+        "mae": 0.005958593751527997,
+        "mse": 0.0030726683183515094,
+        "axes": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ]
+      }
+    }
+  ],
+  "manifest_sha256": "cfbb1264e6b7bfddb2cbe492c1c8598106ea034fe0cac5522ac22bbbd13b25df",
+  "assignment_sha256": "cbf65032435f619be6431c75d581433e39cc346c83963bc1589d010c016a2bd4",
+  "code_sha256": {
+    "/home/qunwang/wajueji/src/v4/train_contact_bc.py": "5c1eeae0e0b9bfc8b70cf68146758b4813cd215706850aa8ceb92ff33cea86b0",
+    "/home/qunwang/wajueji/src/v4/contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f"
+  },
+  "physics_rollout_qualified": false,
+  "formal_training_admission": false,
+  "command_dropout": 0.0,
+  "terrain_scale_floor_m": 0.25,
+  "neutral_axis_weight": 4.0,
+  "excluded_fit_runs": [
+    "manual-contact-20260924-093202-1362929"
+  ],
+  "model_selection": "fixed 1000-step pilot budget; no validation-based checkpoint selection",
+  "scope": "Pipeline smoke and development action errors, not autonomous excavation success or formal A30 training."
+}

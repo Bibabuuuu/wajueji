@@ -1,0 +1,5 @@
+{
+  "run": "runs/contact-bc-repair-state-20260924-v1",
+  "status": "rejected_offline_implementation_mismatch",
+  "reason": "command-dropout=1 trained with masked commands but first prototype did not mask at inference; never deployed or used in comparison. Corrected state-masked checkpoint retains mask through normalization_frozen."
+}

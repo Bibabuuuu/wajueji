@@ -1,0 +1,13 @@
+{
+  "tests": 23,
+  "passed": true,
+  "suites": [
+    "test_contact_bc_policy",
+    "test_contact_bc_training",
+    "test_contact_bc_inference",
+    "test_contact_bc_data",
+    "test_contact_bc_ground_guard"
+  ],
+  "log_sha256": "c6eec30cec1dabb80bfbf43fcb6ced47d6fef91ea2900b535c8dd13f70b9db5f",
+  "scope": "unit tests only; closed-loop behavior failed separately"
+}

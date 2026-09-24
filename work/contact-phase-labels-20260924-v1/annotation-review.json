@@ -1,0 +1,19 @@
+{
+  "schema": "contact_phase_human_review_v1",
+  "run": "manual-contact-20260924-010900-1088617",
+  "status": "awaiting_human_boundary_review",
+  "phases": [
+    "approach_contact",
+    "penetrate",
+    "curl_load",
+    "lift",
+    "off_soil"
+  ],
+  "human_boundaries": {},
+  "candidate_vertical_reference": "CAD cavity upper rim to cutting rim chord",
+  "candidate_vertical_frame": 581,
+  "original_key2_next_frame": 610,
+  "thresholds_frozen": false,
+  "automatic_labeling_validated": false,
+  "other_trajectory_validation": "pending"
+}
