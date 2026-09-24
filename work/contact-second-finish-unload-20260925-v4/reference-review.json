@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "physics_steps_added": 0,
+  "counterfactual_saved_states_only": true,
+  "frames": 343,
+  "maximum_normalized_command_change": 0.03333333333333337,
+  "first_hold_frame": 2977,
+  "samples": [
+    {
+      "frame": 2726,
+      "command": [
+        -2.9759445298441603e-10,
+        0.0009999999999999998,
+        -0.0009999999999999998,
+        0.0029311267685822816
+      ],
+      "hold_latched": false,
+      "native_headroom_m": 0.022662890770842048,
+      "zero_curl_center_velocity_m_s": 0.012895193656603377
+    },
+    {
+      "frame": 2786,
+      "command": [
+        -4.055296353242838e-07,
+        0.0004269161379653877,
+        -0.00928059887838622,
+        0.005
+      ],
+      "hold_latched": false,
+      "native_headroom_m": 0.01722574858651027,
+      "zero_curl_center_velocity_m_s": 0.03617132459608093
+    },
+    {
+      "frame": 2846,
+      "command": [
+        -2.4997535904627343e-06,
+        0.0,
+        -0.007753560048679824,
+        0.005
+      ],
+      "hold_latched": false,
+      "native_headroom_m": 0.012121355848174864,
+      "zero_curl_center_velocity_m_s": 0.02741170611453018
+    },
+    {
+      "frame": 2906,
+      "command": [
+        -6.942701026124801e-06,
+        0.0,
+        -0.004140892263100561,
+        0.005
+      ],
+      "hold_latched": false,
+      "native_headroom_m": 0.007121355848008881,
+      "zero_curl_center_velocity_m_s": 0.01479091184288841
+    },
+    {
+      "frame": 2966,
+      "command": [
+        -9.41977737575356e-06,
+        0.0,
+        -0.0007664510040720919,
+        0.004571186159476328
+      ],
+      "hold_latched": false,
+      "native_headroom_m": 0.0021213558478428984,
+      "zero_curl_center_velocity_m_s": 0.0027055966999818735
+    },
+    {
+      "frame": 3026,
+      "command": [
+        -1.2077725852415726e-06,
+        0.009728587689327254,
+        0.0005650377699323195,
+        0.0
+      ],
+      "hold_latched": true,
+      "native_headroom_m": 0.0,
+      "zero_curl_center_velocity_m_s": 0.08909616397405012
+    },
+    {
+      "frame": 3066,
+      "command": [
+        -1.3388310711966804e-06,
+        0.009738899872322446,
+        0.0005905801423494928,
+        0.0
+      ],
+      "hold_latched": true,
+      "native_headroom_m": 0.0,
+      "zero_curl_center_velocity_m_s": 0.08907532676753001
+    },
+    {
+      "frame": 3067,
+      "command": [
+        -1.3371045941601523e-06,
+        0.009740120170282465,
+        0.0005975433575706054,
+        0.0
+      ],
+      "hold_latched": true,
+      "native_headroom_m": 0.0,
+      "zero_curl_center_velocity_m_s": 0.08906855781059285
+    },
+    {
+      "frame": 3068,
+      "command": [
+        -1.3347610838152032e-06,
+        0.00974145304846002,
+        0.0006050450870386474,
+        0.0
+      ],
+      "hold_latched": true,
+      "native_headroom_m": 0.0,
+      "zero_curl_center_velocity_m_s": 0.08906129365877119
+    }
+  ]
+}
