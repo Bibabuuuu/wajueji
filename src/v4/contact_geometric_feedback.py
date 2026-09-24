@@ -21,16 +21,19 @@ class FeedbackConfig:
     preview_seconds: float = .15
     ground_clearance_m: float = .03
     maximum_lateral_error_m: float = .10
+    terrain_relative_cut: bool = False
+    root_embed_m: float = .03
 
     def __post_init__(self):
-        values=np.asarray(list(asdict(self).values()))
+        values=np.asarray([v for k,v in asdict(self).items() if k!="terrain_relative_cut"])
+        if type(self.terrain_relative_cut) is not bool:raise ValueError("invalid_feedback_configuration")
         if not np.isfinite(values).all() or np.any(values<=0):
             raise ValueError('invalid_feedback_configuration')
         if self.ground_clearance_m<=.005 or self.preview_seconds>.5:
             raise ValueError('invalid_feedback_ground_preview')
 
 
-def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False, depth_lower=None):
+def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False, depth_lower=None, pitch_upper=None):
     """Four normalized axes: weighted velocity fit with box and ground constraints."""
     j=np.asarray(jac,float);v=np.asarray(target,float);g=np.asarray(ground_gradient,float)
     if j.shape!=(4,4) or v.shape!=(4,) or g.shape!=(4,) or not np.isfinite(np.r_[j.ravel(),v,g,ground_lower]).all():
@@ -44,19 +47,23 @@ def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,
     if depth_lower is not None:
         if not np.isfinite(depth_lower):raise ValueError('invalid_feedback_depth_velocity')
         constraints.append({'type':'ineq','fun':lambda u:j[2]@u-depth_lower,'jac':lambda u:j[2]})
+    if pitch_upper is not None:
+        if not np.isfinite(pitch_upper):raise ValueError('invalid_feedback_pitch_upper')
+        constraints.append({'type':'ineq','fun':lambda u:pitch_upper-j[3]@u,'jac':lambda u:-j[3]})
     result=minimize(lambda u:.5*u@h@u-f@u,seed,jac=lambda u:h@u-f,
                     bounds=[(-1.,1.)]*4,method='SLSQP',
                     constraints=constraints,
                     options={'ftol':1e-10,'maxiter':60})
     if (not result.success or g@result.x<ground_lower-1e-7
             or (exact_pitch and abs(j[3]@result.x-v[3])>1e-7)
-            or (depth_lower is not None and j[2]@result.x<depth_lower-1e-7)):
+            or (depth_lower is not None and j[2]@result.x<depth_lower-1e-7)
+            or (pitch_upper is not None and j[3]@result.x>pitch_upper+1e-7)):
         raise ValueError('feedback_velocity_infeasible:'+result.message)
     return np.clip(result.x,-1,1)
 
 
 class ContactGeometryFeedback:
-    def __init__(self,assembly,chain,ground_guard,goal,initial_qpos,config=FeedbackConfig()):
+    def __init__(self,assembly,chain,ground_guard,goal,initial_qpos,config=FeedbackConfig(),cut_reference=None):
         self.assembly=assembly;self.chain=chain;self.ground=ground_guard;self.config=config
         self.entry=np.r_[goal['entry_xy_m'],goal['surface_z_m']].astype(float)
         if self.entry.shape!=(3,) or not np.isfinite(self.entry).all() or np.linalg.norm(self.entry[:2])<1e-6:
@@ -65,6 +72,8 @@ class ContactGeometryFeedback:
         self.rotation=np.array([[*self.radial,0.],[*self.lateral,0.],[0.,0.,1.]])
         self.initial=self.coordinates(initial_qpos);self.contact=None;self.cut_target=None
         self.last_phase='approach_contact';self.last_frame=0
+        self.cut_reference=cut_reference;self.soil_plan=None;self.root_ready=False;self.root_ready_count=0
+        if config.terrain_relative_cut and cut_reference is None:raise ValueError('missing_cut_reference')
 
     def coordinates(self,q):
         tip,pitch=tool_pose(self.assembly,np.asarray(q),TIP)
@@ -108,7 +117,19 @@ class ContactGeometryFeedback:
             self.contact=state.copy();self.cut_target=state.copy()
             self.cut_target[:3]+=np.array([-cfg.cut_retract_m,-state[1],-cfg.cut_drop_m])
             self.cut_target[3]=cfg.cut_pitch_rad
-        target=None;progress=None
+            if cfg.terrain_relative_cut:
+                pose=self.assembly.assemble(q,include_meshes=False)[1]['bucket']
+                tip,_=tool_pose(self.assembly,q,TIP)
+                self.soil_plan=self.cut_reference.plan(pose,tip,state[3],self.radial,cfg.cut_retract_m,cfg.root_embed_m)
+                self.cut_target[2]=self.soil_plan['tip_target_z_m']
+                if self.cut_target[2]>=state[2]-.02:raise ValueError('cut_reference_no_downward_cut')
+        target=None;progress=None;root_excess=None;pitch_upper=None
+        if self.soil_plan is not None:
+            pose=self.assembly.assemble(q,include_meshes=False)[1]['bucket']
+            root=pose[:3,:3]@np.asarray(self.soil_plan['root_local_m'])+pose[:3,3]
+            root_excess=float(root[2]-self.soil_plan['surface_z_m'])
+            self.root_ready_count=self.root_ready_count+1 if root_excess<=0 else 0
+            self.root_ready=self.root_ready or self.root_ready_count>=3
         if phase=='approach_contact':
             target=np.r_[self.rotation@self.entry,self.initial[3]]
             velocity=cfg.position_gain_s*(target-state)
@@ -118,7 +139,16 @@ class ContactGeometryFeedback:
             progress=float(np.clip((self.contact[0]-state[0])/cfg.cut_retract_m,0.,1.))
             # Curl overlaps cutting, with pitch progressing by actual inward
             # motion rather than by a timer or a forced semantic phase change.
-            target[3]=self.contact[3]+min(1.,progress+.15)*(cfg.cut_pitch_rad-self.contact[3])
+            if self.soil_plan is None:
+                target[3]=self.contact[3]+min(1.,progress+.15)*(cfg.cut_pitch_rad-self.contact[3])
+            else:
+                depth_progress=float(np.clip((self.contact[2]-state[2])/(self.contact[2]-self.cut_target[2]),0.,1.))
+                target[3]=self.contact[3]+min(progress,depth_progress)*(cfg.cut_pitch_rad-self.contact[3])
+                if not self.root_ready:
+                    # Permit overlapping curl, but approach vertical only as
+                    # the root reaches the pre-cut local soil surface.
+                    pitch_ceiling=max(self.contact[3],self.soil_plan['vertical_pitch_rad']-max(0.,root_excess))
+                    pitch_upper=cfg.position_gain_s*(pitch_ceiling-state[3])
             velocity=cfg.position_gain_s*(target-state)
             mode='geometric_penetrate'
         else:
@@ -133,7 +163,7 @@ class ContactGeometryFeedback:
         lower=(cfg.ground_clearance_m-clearance)/cfg.preview_seconds
         depth_lower=None if self.cut_target is None else cfg.position_gain_s*(self.cut_target[2]-state[2])
         normalized=bounded_velocity(jac,velocity,ground_gradient,lower,
-                                    exact_pitch=phase=='approach_contact',depth_lower=depth_lower)
+                                    exact_pitch=phase=='approach_contact',depth_lower=depth_lower,pitch_upper=pitch_upper)
         requested=normalized*LIMITS
         # Preserve the existing 150ms joint/closure projector, then inspect its
         # actual result; never check a different vector from the one dispatched.
@@ -159,6 +189,7 @@ class ContactGeometryFeedback:
         self.last_frame=frame;self.last_phase=phase
         return requested,accepted,dict(mode=mode,coordinates=state.tolist(),target=None if target is None else target.tolist(),
             cut_target=None if self.cut_target is None else self.cut_target.tolist(),contact=None if self.contact is None else self.contact.tolist(),
+            soil_plan=self.soil_plan,root_above_surface_m=root_excess,root_ready=self.root_ready,pitch_velocity_upper=pitch_upper,
             progress=progress,desired_task_velocity=velocity.tolist(),predicted_task_velocity=(jac@(accepted/LIMITS)).tolist(),
             normalized_requested=normalized.tolist(),preview_minimum_clearance_m=minimum,preview_scale=factor,
             original_projection_reason=reason,ground_linear_lower=lower,depth_velocity_lower=depth_lower)

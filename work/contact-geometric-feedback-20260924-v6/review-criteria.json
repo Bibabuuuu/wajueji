@@ -1,0 +1,5 @@
+{
+  "max_root_above_surface_at_vertical_m": 0.01,
+  "scope": "local surface estimator tolerance; not ground safety margin",
+  "complete_scoop_requires_causal_off_soil": true
+}
