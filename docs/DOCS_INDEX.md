@@ -100,3 +100,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [毫米抖动容忍交接](../work/contact-carry-handoff-tolerant-20260924-v1/README.md)：用户修正后的显式参数、连续历史和缓存验证，尚无真实交接。
 
 - [D156首铲保斗运输](../work/contact-carry-transport-20260924-v1/README.md)：当前完整末态专属恢复、全路线指令预检、单次运行及回放边界。
+
+- [D157固定车位交接修正](../work/contact-carry-transport-20260924-v2/README.md)：纯土两铲对照、负载偏置、取消新增角度门及剩余有界运输验证。
