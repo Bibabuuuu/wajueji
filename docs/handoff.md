@@ -1,16 +1,16 @@
-# 跨会话交接：第二铲剩余卸料与夜间挖掘参数搜索
+# 跨会话交接：第二铲检查完成，夜间双起点挖掘优化
 
 ## 开始顺序
 
-先读AGENTS.md、总体规划、当前状态、要求、七个活动小节，再读本文件。核对实际分支/HEAD/进程；唯一仓库`/home/qunwang/wajueji`，分支`codex/contact-bc-collection-20260924`。本轮开始HEAD为`6b5a7b1`，不能据此猜下一次实际HEAD。不要覆盖无关未跟踪产物。
+先读AGENTS.md、总体规划、当前状态、要求、七个活动小节，再读本文件。核对实际分支/HEAD/进程；唯一仓库`/home/qunwang/wajueji`，分支`codex/contact-bc-collection-20260924`。本轮开始HEAD为`b7f9b0e`，不能据此猜下一次实际HEAD。不要覆盖无关未跟踪产物。
 
-动态事实以[CURRENT_STATUS](CURRENT_STATUS.md)为准：第二铲v4已退出，补收交接通过。D-162固定路线运行已启动，入口work/contact-second-fixed-route-20260925-v1/run.py，输出runs/contact-second-fixed-route-20260925-v1/physical/，当前尚未完成卸料。夜间仅参数搜索准备，无训练/搜索运行；`automation-2`已切换到D-162结束统一审核并启用。旧回放窗口不推进物理。
+动态事实以[CURRENT_STATUS](CURRENT_STATUS.md)为准：第二铲D-162正常卸料3398帧/1104.554693秒，三段127项统一审核及6562帧回放连续性通过。第二源120帧短检24数组/末态SHA与原gate-120全等，检查总耗66.631579秒，未启动夜间搜索。automation-2已暂停。用户新要求今晚同时使用第一、第二铲固定起点；当前v2仍只实现第二源，不直接启动旧单源六候选。
 
 ## 用户已确认的范围
 
 今晚完成第二铲卸料，不回位、不第三铲；持续运行自动保存，完成或保护退出后统一检查，不自动重跑。直接恢复保存点。10mm累计回落仅限FINISH_CURL，其他阶段不受此新增门限制。原物理保护、原始示范和冻结证据不改。
 
-夜间本机约8h，优先少量挖掘参数搜索，最佳参数及对照回放，不是神经网络RL。学习只到带载抬离，运输/卸料/回位固定。最多6组收斗配合倍率；普通候选不跑卸料，最佳复验才接固定卸料。详见[S05](plans/S05-imitation-and-rl.md)和[准备说明](../work/night-parameter-search-20260925-v1/README.md)。
+夜间本机约8h，优先少量挖掘参数搜索，最佳参数及对照回放，不是神经网络RL。学习只到带载抬离，运输/卸料/回位固定。原单源最多6组倍率；双源按8h重新减少组合并成对评价，具体配额待准备。普通候选不跑卸料，最佳复验才接固定卸料。详见[S05](plans/S05-imitation-and-rl.md)和[准备说明](../work/night-parameter-search-20260925-v2/README.md)。
 
 专项任务`01a0d459-acca-70d3-b21f-a69d646ddece`讨论满斗、晃动、视觉穿模；交接`work/user-three-issues-discussion-20260925-v1/README.md`，未经充分讨论不扩大修复。
 
@@ -23,22 +23,24 @@
 | v4补收439帧正常交接点 | runs/contact-second-finish-unload-20260925-v4/physical/handoff.npz | f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d |
 | 阶段BC权重 | runs/contact-phase-bc-pilot-v1/pilot.pt | b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095 |
 
-v4交接后规划报`cycle_observation_grid_budget`，同物理数组recovery不代表其元数据与正常handoff相同。优先保留正常交接点，下一续接先核验自身schema/完整控制状态/零步恢复，不重做2725+439帧。完整独立审核尚未完成。
+旧v4交接后规划报cycle_observation_grid_budget，正常handoff已由D162恢复并完成卸料；127项完整审核已通过，不需重做前缀或恢复。原failure仍保留。最终固定路线快照SHA `620b50d6d69fa2d6c036c8f500284265ffab1978cc4506df655fe7c69179f7a9`。
 
-只读诊断[报告](../work/night-parameter-search-20260925-v1/baseline-observation-review.json)：远土粒在接触末态已存在，使密集4cm观察网格21,823,340格超12,000,000预算。不得删粒子、隐藏飞散或覆盖冻结观察器；用户明确不再调查飞散原因，零散土粒不应成为运输障碍。下一候选按纯土固定抬升/回转/卸料目标去除运输对全场土粒地图的依赖，保留静态车体/地面/限位/保斗保护；用户已确认D-162，新包work/contact-second-fixed-route-20260925-v1已实现、4项CPU通过，24数组零步及3398条全路线指令预检通过；已启动剩余卸料，不更改物理碰撞/物料。下一铲选点仍需剩余土堆观测。
+远土粒使原密集观察网格超预算的[诊断](../work/night-parameter-search-20260925-v1/baseline-observation-review.json)冻结。用户不再调查飞散、不删物料；D162固定运输已去掉全场土粒地图依赖，静态车体/地面/限位/保斗及物理碰撞保留。下一铲选点仍观察余土。
 
-## 夜间准备包与下一道门
+## 已完成审核与下一道门
 
-当前使用`work/night-parameter-search-20260925-v2/`及`work/night-search-tail-20260925-v2/`，原v1保留。v2已接入三段基线评分/回放及D-162固定静态几何，10项CPU测试/导入通过，物理0步。普通候选到CLEAR_PILE，最佳复验才追加固定ALIGN/DUMP。
+当前v2及尾段代码已冻结，12项CPU检查通过。统一contact/carry/tail审核均通过，127项；三段6562帧缓存SHA和边界通过。审核在`work/contact-second-fixed-route-review-20260925-v1/`，无需重做。原v4规划失败标签仍保留。
 
-当前主线仍在运行，readiness为launch_blocked，manifest为prepared_awaiting_baseline；不能冻结运行中的report作为最终证据。结束成功后在`work/contact-second-fixed-route-review-20260925-v1/`执行`prefix_checks.py contact`、`prefix_checks.py carry`、`audit.py`、`replay.py`做一次统一审核。均为零新增物理，已有结果不覆盖。原v4失败不改标签，carry仅核验规划失败前的正常439帧handoff前缀。
+`batch.py --check-only`已运行一次：基线工作满斗率30.21405%；全1倍率120帧、24数组及末态NPZ SHA与原gate-120完全一致。证据`work/night-parameter-search-20260925-v2/short-check-review.json`、`runs/night-parameter-search-20260925-v2/precheck.json`。没有batch.json或任何候选。不要重新prepare或重跑短检；当前同版本--run具备SHA验证后复用能力，扣除66.631579秒。
 
-全部审核/连续性通过后重新执行v2的`batch.py --prepare`、`preflight.py`冻结最终三段证据。确认GPU没有其他物理实例，再在已授权8h内启动一次`--run`，先120帧全1参数全数组恒等检查，再最多6候选，保留1h复验/保存。失败不自动重跑。输出`runs/night-parameter-search-20260925-v2/`，含batch/best/comparison及基线/最佳回放；不自动部署、不更新神经权重。具体命令见[v2说明](../work/night-parameter-search-20260925-v2/README.md)。
+用户最新双起点方向：第一源`runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz`，SHA `700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545`，schema为layered_47_cycle_checkpoint_v1、cycle1、truck_enabled=false；120帧参考`runs/contact-multisource-lift-20260924-v1/first-candidate/gate-120.npz`，SHA `b05c0ecd5fb38ee3e65e154057d093568874ee02dedc54fa80af71e5b042ed09`。第二源见上表。
+
+下一步独立准备双源版本，明确两源加载/控制历史/车体状态及第一源尾段接入，不改冻结v2。先第一源零步/120验证，再对齐双源全1基线与评价。建议候选成对跑、避免单铲改善牺牲另一铲，总预算8h内减少组合，为最佳双源复验留时间；具体候选表和配额尚未实现。只学挖掘，不学运输卸料、不更新神经权重。当前第二源通过不等于第一源或双源批次已准备就绪。
 
 ## 环境与便宜检查
 
 物理Python `/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python`；策略Python `/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python`。`PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`，仓库根目录运行。本机RTX4070，策略/MPM60Hz、刚体4800Hz，未改变。
 
-可运行`test_search.py -v`、`batch.py --prepare`、`preflight.py`，最后一条当前预期退出2、零物理。文档检查`python3 scripts/check_docs.py`及`git diff --check`。禁止执行旧冻结run覆盖结果，禁止用旧审核替代新候选。
+可以只读核对`preflight.py`；不要重绑已完成短检的manifest。preflight是只读准备检查；实际物理资格看short-check-review.json。文档检查`python3 scripts/check_docs.py`及`git diff --check`。禁止执行旧冻结run覆盖结果，禁止用旧审核替代新候选。
 
-当前第二铲已打开的旧缓存为接触2725+v2失败343帧，manifest `work/contact-combined-replay-20260924-v1/second-curl-stop-v1.json`；不能称它是v4成功补收回放。v4显示缓存仍在其physical/display。新回放使用已有view.py并另建输出目录；不得控制或关闭用户原窗口。
+完整第二铲回放manifest为`work/contact-second-fixed-route-review-20260925-v1/second-replay.json`，6562帧。可以使用原view.py另建输出目录观看，播放零物理；旧失败段缓存不能替代完整结果，不控制或关闭用户原窗口。

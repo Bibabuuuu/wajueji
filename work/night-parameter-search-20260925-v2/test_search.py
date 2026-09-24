@@ -68,4 +68,27 @@ class Tests(unittest.TestCase):
    with patch.object(batch,'W',work),patch.object(batch,'baseline_readiness',return_value=['baseline_running']),patch.object(batch,'RUN',root/'batch'),patch.object(batch,'run_process') as run,patch.object(sys,'argv',['batch','--run']):
     with self.assertRaisesRegex(ValueError,'baseline_not_admitted'):batch.main()
     run.assert_not_called();self.assertFalse((root/'batch').exists())
+ def test_check_only_never_starts_candidates(self):
+  import batch
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory);work=root/'work';work.mkdir()
+   (work/'manifest.json').write_text('{"bindings":{},"status":"prepared_not_launched"}')
+   with patch.object(batch,'W',work),patch.object(batch,'RUN',root/'run'),patch.object(batch,'baseline_readiness',return_value=[]),patch.object(batch,'precheck',return_value={'status':'passed'}) as check,patch.object(batch,'trial') as trial,patch.object(sys,'argv',['batch','--check-only']):
+    batch.main();check.assert_called_once();trial.assert_not_called()
+    self.assertFalse((root/'run/batch.json').exists())
+ def test_precheck_reuse_requires_unchanged_evidence(self):
+  import batch
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory);(root/'manifest.json').write_text('{}');evidence=root/'evidence';evidence.write_text('original')
+   review=dict(status='passed',manifest_sha256=batch.sha(root/'manifest.json'),bindings={str(evidence):batch.sha(evidence)},wall_seconds=60)
+   batch.save(root/'precheck.json',review)
+   with patch.object(batch,'W',root),patch.object(batch,'RUN',root),patch.object(batch,'run_process') as run:
+    self.assertEqual(batch.precheck({}),review);run.assert_not_called()
+    evidence.write_text('changed')
+    with self.assertRaisesRegex(ValueError,'precheck_evidence_changed'):batch.precheck({})
+    review['status']='stopped';batch.save(root/'precheck.json',review)
+    with self.assertRaisesRegex(ValueError,'no automatic retry'):batch.precheck({})
+    run.assert_not_called()
 if __name__=='__main__':unittest.main()

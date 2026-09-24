@@ -1,15 +1,8 @@
 {
-  "status": "launch_blocked",
-  "blockers": [
-    "fixed_route_not_completed:running",
-    "baseline_review_pending:contact-audit.json",
-    "baseline_review_pending:carry-audit.json",
-    "baseline_review_pending:audit-review.json",
-    "baseline_review_pending:replay-review.json",
-    "manifest_pending_final_baseline_binding"
-  ],
+  "status": "ready_for_smoke_and_bounded_search",
+  "blockers": [],
   "bindings_match": true,
-  "free_bytes": 461045325824,
+  "free_bytes": 453746487296,
   "source_sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
   "policy_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
   "maximum_wall_seconds": 28800,
@@ -17,8 +10,8 @@
   "physical_steps_added": 0,
   "neural_training_started": false,
   "batch_started": false,
-  "baseline_status": "running",
-  "baseline_frames": 1350,
+  "baseline_status": "second_scoop_unload_completed",
+  "baseline_frames": 3398,
   "baseline_handoff": {
     "ready": true,
     "frame_end": 3164,

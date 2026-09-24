@@ -1,6 +1,6 @@
 # 夜间8小时挖掘参数搜索：固定路线与三段基线
 
-状态：`已实现、10项CPU测试/导入通过、等待基线完成和结束审核`。本包未启动物理/搜索/神经训练，原v1准备包和所有失败证据保留。用户仍选择有限参数搜索，只有挖掘参与优化，不更新BC权重。
+状态：`第二源基线审核、评分与120帧短检通过；未启动候选搜索`。本包12项CPU测试通过，新增物理仅120帧；原v1和所有失败证据保留。用户仍选择有限参数搜索，只有挖掘参与优化，不更新BC权重。
 
 ## 本轮变化
 
@@ -40,15 +40,18 @@
 
 ## 接下来的执行顺序
 
-1. 让当前第二铲固定路线自然结束或保护退出，不并发GPU试验。结束时按用户要求一次统一检查。若失败，不自动重跑或启动搜索。
-2. 成功后，在物理Python环境执行审核目录的`prefix_checks.py contact`、`prefix_checks.py carry`、`audit.py`和`replay.py`；全部只读已有轨迹/缓存，不新增物理。已有结果不覆盖。补收审核仅授予正常保存前缀可信性，原规划失败仍保留。
-3. 重新运行本包`batch.py --prepare`和`preflight.py`，冻结最终三段证据，核对没有其他物理实例。若仍有blockers不启动。
-4. 在已授权8h窗口用`batch.py --run`启动一次；首先做全1参数120帧检查，全部物理数组须与原gate-120全等，失败即止；然后按预算执行候选/最佳复验并自动保存比较和回放入口。正式启动前记录命令/日志/设备/中断方式。
+用户最新要求先完成统一审核及120帧短验证。本轮使用`batch.py --check-only`：完成真实基线评分和全1参数120帧验证后退出，不启动六组候选，也不创建batch.json。新增入口的12项CPU测试通过。
+
+检查结果保存在`runs/night-parameter-search-20260925-v2/precheck.json`；成功后绑定manifest和评分/短检证据。后续`--run`只在这些SHA完全未变时复用本次短检，不重复跑120帧，并从28800秒预算扣除本次检查用时。检查失败不自动重试；检查开始后禁止重新prepare覆盖输入身份。
+
+固定第二铲预备点只支持同条件参数比较，不证明跨铲泛化。同源最佳复验也只证明复现性。用户已询问此风险，建议最佳参数另在第一铲和第三铲开发预备点验证；这是待讨论的后续扩展，当前未加入六候选预算或启动额外物理。
+
+本轮已完成上述审核、最终prepare、preflight和--check-only，不重新执行。短检证据见[short-check-review.json](short-check-review.json)：24数组与原gate-120全等，120帧43.213983秒，评分＋检查66.631579秒；基线工作满斗30.21405%。
+
+用户新增第一、第二铲双起点方向，本包仍只支持第二源，因此暂不执行旧--run。双源需独立新包，先第一源加载与零步/120验证，再成对比较、减少组合并保留复验预算；详见docs/CURRENT_STATUS.md和S05。
 
 ## 当前已做与未做
 
-10项CPU测试通过：全1恒等、阶段/95%范围、倍率拒绝、排名、语法、子进程失败传播、未复验回退、失败基线禁止启动、分段时间/动作边界、三段回放顺序。接触模块和固定几何尾段导入通过，未构造物理实例。
+已完成：127项三段结束审核、6562帧回放SHA/边界、最终证据冻结、12项CPU测试、真实有效基线工作装载评分、第二源全1参数120帧恒等检查。未完成：第一源新接口短检、双源候选闭环、最佳复验或改善。准备检查readiness.json是短检前只读预检，实际物理结论看short-check-review.json。
 
-尚未验证：分段基线完整结束审核、新包120帧物理恒等、真实有效评分、候选闭环、最佳复验或改善。当前检查结果以[readiness.json](readiness.json)为准；不将准备工作描述成训练完成。
-
-物理Python `/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python`，策略Python `/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python`。在仓库根设`PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`。可运行`test_search.py -v`、`batch.py --prepare`、`preflight.py`；preflight当前预期退出2，不启动GPU。
+物理Python `/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python`；策略Python `/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python`。环境`PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`。禁止修改已经被检查绑定的源码或重新prepare；重复--check-only仅校验并复用成功结果，不重跑物理。

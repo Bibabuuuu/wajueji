@@ -15,6 +15,7 @@ def save(p,data):
  p=Path(p);tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n');tmp.replace(p)
 def prepare():
  if (RUN/'batch.json').exists():raise ValueError('cannot_rebind_started_batch')
+ if (RUN/'precheck.json').exists():raise ValueError('cannot_rebind_started_precheck')
  base=read(ROOT/'work/contact-next-scoop-20260925-v1/protocol.json')
  paths=[*W.glob('*.py'),*TAIL.glob('*.py'),SOURCE,Path(str(SOURCE)+'.json'),POLICY,
  ROOT/'configs/v4/live-bucket-fill-local-v1.json']
@@ -77,35 +78,67 @@ def trial(name,parameters,frames=3000,mode='dig_only'):
  export_replay(out/'replay.json',out/'contact',out/'tail',name,'Development digging parameter trial; not a three-scoop result')
  return out
 
+def precheck(manifest):
+ """One bounded qualification, reusable only with identical frozen inputs/results."""
+ path=RUN/'precheck.json'
+ if path.exists():
+  review=read(path)
+  if review['status']!='passed' or review['manifest_sha256']!=sha(W/'manifest.json'):
+   raise ValueError('precheck_not_reusable; no automatic retry')
+  for p,h in review['bindings'].items():
+   if sha(p)!=h:raise ValueError('precheck_evidence_changed:'+p)
+  return review
+ started=time.monotonic()
+ review=dict(status='running',manifest_sha256=sha(W/'manifest.json'),started_at_unix=time.time(),neural_training=False,candidate_trials_started=0)
+ save(path,review)
+ try:
+  run_process([str(PHYS),str(W/'score.py'),str(BASE_CONTACT),str(BASE_TAIL),str(RUN/'baseline-score.json'),str(BASE_PREFIX)],environment(),RUN/'baseline-score.log',180)
+  if not read(RUN/'baseline-score.json')['eligible']:raise ValueError('baseline_not_eligible_for_working_volume_comparison')
+  export_replay(RUN/'baseline-replay.json',BASE_CONTACT,BASE_TAIL,'BASELINE','Three continuous segments; original prefix planner stop preserved',prefix=BASE_PREFIX)
+  smoke=trial('smoke-baseline-120',BASELINE,frames=120)
+  import numpy as np
+  with np.load(smoke/'contact/final.npz') as new,np.load(BASE_CONTACT/'gate-120.npz') as old:
+   if set(new.files)!=set(old.files):raise ValueError('baseline_adapter_array_keys_changed')
+   exact={k:bool(np.array_equal(new[k],old[k])) for k in old.files}
+  identity=dict(arrays_exact=exact,passed=all(exact.values()))
+  save(smoke/'identity-review.json',identity)
+  if not identity['passed']:raise ValueError('baseline_adapter_smoke_not_identical')
+  physical=read(smoke/'contact/report.json')
+  if physical['status']!='bounded_probe_completed' or physical['frames_completed']!=120:
+   raise ValueError('smoke_not_completed_120')
+  paths=[RUN/'baseline-score.json',RUN/'baseline-replay.json',smoke/'identity-review.json',
+   smoke/'config.json',smoke/'contact-protocol.json',smoke/'contact/final.npz',smoke/'contact/final.npz.json',smoke/'contact/report.json',BASE_CONTACT/'gate-120.npz']
+  review.update(status='passed',bindings={str(p):sha(p) for p in paths},physical_frames=120)
+ except BaseException as error:
+  review.update(status='stopped',failure=repr(error));raise
+ finally:
+  review.update(wall_seconds=time.monotonic()-started,finished_at_unix=time.time());save(path,review)
+ return review
+
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--prepare',action='store_true');parser.add_argument('--run',action='store_true');args=parser.parse_args()
- if args.prepare and not args.run:prepare();return
- if not args.run or args.prepare:raise ValueError('choose --prepare or --run')
+ parser=argparse.ArgumentParser();group=parser.add_mutually_exclusive_group(required=True)
+ group.add_argument('--prepare',action='store_true');group.add_argument('--run',action='store_true');group.add_argument('--check-only',action='store_true');args=parser.parse_args()
+ if args.prepare:prepare();return
  manifest=read(W/'manifest.json');verify(manifest)
  issues=baseline_readiness()
  if manifest.get('status')!='prepared_not_launched' or issues:raise ValueError('baseline_not_admitted; no batch launched:'+str(issues))
  RUN.mkdir(parents=True,exist_ok=True)
  lock=(RUN/'batch.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
  if (RUN/'batch.json').exists():raise ValueError('immutable_batch_already_started; no automatic resume/reset of deadline')
+ if args.check_only:
+  result=precheck(manifest);print(json.dumps(result,indent=2));return
+ prior_check_seconds=read(RUN/'precheck.json')['wall_seconds'] if (RUN/'precheck.json').exists() else 0.
  started=time.time();started_monotonic=time.monotonic();deadline=started_monotonic+28800
- report=dict(status='running',started_at_unix=started,deadline_unix=started+28800,trials=[],manifest_sha256=sha(W/'manifest.json'),neural_training=False)
+ deadline-=prior_check_seconds
+ report=dict(status='running',started_at_unix=started,deadline_unix=started+28800-prior_check_seconds,trials=[],manifest_sha256=sha(W/'manifest.json'),neural_training=False,prior_check_seconds=prior_check_seconds)
  save(RUN/'batch.json',report)
  def remaining():return deadline-time.monotonic()
  try:
-  run_process([str(PHYS),str(W/'score.py'),str(BASE_CONTACT),str(BASE_TAIL),str(RUN/'baseline-score.json'),str(BASE_PREFIX)],environment(),RUN/'baseline-score.log',180)
+  precheck(manifest)
   baseline=read(RUN/'baseline-score.json')
   if not baseline['eligible']:raise ValueError('baseline_not_eligible_for_working_volume_comparison')
   baseline_entry=dict(name='baseline',parameters=BASELINE,score=baseline,selection_status='baseline')
   best=baseline_entry.copy();save(RUN/'best.json',best)
-  export_replay(RUN/'baseline-replay.json',BASE_CONTACT,BASE_TAIL,'BASELINE','Three continuous segments; original prefix planner stop preserved',prefix=BASE_PREFIX)
-  smoke=trial('smoke-baseline-120',BASELINE,frames=120)
-  # Same executable environment, source and parameters must reproduce old physics.
-  import numpy as np
-  with np.load(smoke/'contact/final.npz') as new,np.load(BASE_CONTACT/'gate-120.npz') as old:
-   if set(new.files)!=set(old.files):raise ValueError('baseline_adapter_array_keys_changed')
-   exact={k:bool(np.array_equal(new[k],old[k])) for k in old.files}
-  save(smoke/'identity-review.json',dict(arrays_exact=exact,passed=all(exact.values())))
-  if not all(exact.values()):raise ValueError('baseline_adapter_smoke_not_identical')
   from score import better
   for item in manifest['candidates']:
    if remaining()<990+120+2090+180+3600:report['stop_reason']='reserve_for_comparison_and_save';break

@@ -1,51 +1,51 @@
 # 当前状态
 
-- 状态：`第二铲固定路线续接已启动，正在保斗抬升至固定运输姿态；夜间搜索未启动`
+- 状态：`第二铲卸料与统一检查通过；第二铲120帧短验证通过；夜间搜索未启动；第一／第二铲双起点准备待接线`
 - 最后复核：2026-09-25（Asia/Shanghai）
 - 唯一仓库：`/home/qunwang/wajueji`；分支 `codex/contact-bc-collection-20260924`
-- 权威范围：此刻进度、当前输入、运行任务和下一道门。历史过程查验收、决策及Git记录；不再将旧“运行中”当当前事实。
+- 权威范围：此刻进度、运行任务和下一道门；历史看验收、决策及Git。
 
 ## 当前主线实证
 
-第一铲D159运输、卸料及返回4120帧/1273.792秒，37项独立审核通过，开发接收原斗腔土粒25371/25372、残留0。工作满斗45.53%；不授予正式稳定混合体积或95%资格。全链全局8101帧返回点SHA `be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0`。
+第一铲D159运输、卸料及返回4120帧/1273.792秒，37项独立审核通过，开发接收原斗腔土粒25371/25372、残留0。工作满斗45.53%；不是正式稳定混合体积或95%资格。全局8101帧返回点SHA `be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0`。
 
-第二铲真实预备点2619帧/816.881秒，严格零接触资格false保留：尾30帧MPM接触样本最多11，石接触0。按用户授权开发连续流程继续；不是正式G2。接触2725帧/907.961秒预算保存，收斗95.3006%。
+第二铲真实预备点2619帧/816.881秒。严格零接触资格false保留：尾30帧MPM接触样本最多11、石接触0，按授权继续开发流程，不是正式G2。接触2725帧/907.961秒，补收439帧/161.04354秒，≥99%保持3秒且持续上升ready，正常handoff SHA `f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d`。随后旧v4规划报cycle_observation_grid_budget；失败原件保留，正常前缀独立审核通过，不重挖/重做补收。
 
-第二铲尾段v4从上述正常接触点恢复24数组全等，补收439帧/161.04354秒，在第二接触累计3164帧交接ready：≥99%保持3秒且持续上升，末3秒原点/最低点回落均0；439返回帧硬门均true。随后PLAN_TRANSPORT阶段报`cycle_observation_grid_budget`，抬离运输物理尚未开始，未卸料。独立完整控制审计仍待做，不能用返回硬门代替完整验收。
+D-162从正常handoff直接恢复，固定抬升→回转→卸料3398帧/1104.554693秒正常完成，未回位/第三铲。开发接收22233/22234原载荷土粒、斗内残留0；最终SHA `620b50d6d69fa2d6c036c8f500284265ffab1978cc4506df655fe7c69179f7a9`。独立三段审核59＋30＋38＝127项全部通过，控制复算误差均0；接触行为15项通过；6562帧回放SHA及两处状态/粒子边界精确一致。[统一检查](../work/contact-second-fixed-route-review-20260925-v1/README.md)。CLEAR_PILE末五帧工作装载中位数30.21405%，有效开发估计，未达95%。
 
-旧v4物理进程已退出。D-162固定路线新运行已启动（本次核对PID2073754），已恢复完整入口并进入CLEAR_PILE；运行入口`work/contact-second-fixed-route-20260925-v1/run.py`，输出`runs/contact-second-fixed-route-20260925-v1/physical/`，日志`runs/contact-second-fixed-route-20260925-v1-physical.log`。实际入口快照SHA与正常handoff全等。无夜间搜索或神经网络训练；结束统一检查自动化`automation-2`已更新为当前候选并启用。回放窗口不推进物理，是否仍开查进程。
+当前无主线物理/夜间批次/神经训练；检查自动化automation-2已暂停，防止重复执行。用户要求今晚只完成第二铲卸料，三铲仍未验证。
 
-## 当前阻塞与保留点
+## 120帧短验证结果
 
-正常`runs/contact-second-finish-unload-20260925-v4/physical/handoff.npz`已在规划失败前保存，SHA `f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d`。不得为了观察问题重挖或重做补收；专用续接仍须验证完整控制/物理恢复，不能直接宣称可精确续跑。
+用户要求先结束审核及短检，因此新增`batch.py --check-only`：只评分和验证，不启动候选。12项CPU测试通过。v2最终三段证据已冻结；第二铲全1倍率短检120帧/43.213983秒，零步24数组全等、原生控制误差0、全部执行硬门通过；末态24数组与原gate-120全部精确一致，NPZ SHA同为 `97e4212b7eec410211383a577b2e3221242bfd0695c5315699fb6737c859cbdd`。
 
-只读定位：第二铲接触末态已有1个距原点超过15m的土粒（索引235557，位置约[-35.28,13.59,0.0345]m），将4cm密集观察网格扩大至21,823,340格，超过原12,000,000预算；原预备点无该远粒。补收v4没有新增此问题。用户明确不再调查飞散原因，零散土粒不应成为运输障碍；物料仍保留，原结果不改。[冻结只读报告](../work/night-parameter-search-20260925-v1/baseline-observation-review.json)。
+评分＋短检合计66.631579秒。`runs/night-parameter-search-20260925-v2/precheck.json`为passed；不存在batch.json，未试候选。后续同版本--run须验证manifest及检查证据SHA才能复用，扣除上述已用预算，不重新跑120帧；失败不自动重跑，已开始检查禁止prepare重绑。[短检证据](../work/night-parameter-search-20260925-v2/short-check-review.json)。
 
-用户要求沿用纯土固定车位路线。核对原代码：纯土用固定LIFT/TURN/ALIGN/DUMP目标及静态车体/地面检查；当前运输目标也固定，阻塞来自额外全场土粒地形图。下一候选准备去除运输对全场土粒地图的依赖，保持固定保斗抬升→回转→卸料和车体/地面/限位/实际保斗保护；下一铲选点仍观察剩余土堆。D-162已获用户确认并实现隔离候选[固定路线](../work/contact-second-fixed-route-20260925-v1/README.md)，4项CPU、24数组零步/原生误差0及3398条全路线名义指令检查通过，已启动新物理；旧v4不改。从正常交接点一次续接，使用原尾段剩余≤5561帧/1830秒，120帧及阶段末保存。用户今晚只要求第二铲卸料，不回位或第三铲；第三铲仍未验证。
+## 夜间8h：用户新增双起点要求
 
-## 夜间8小时挖掘优化
+用户明确希望今晚同时使用第一、第二铲固定预备点。两源均有保存点和120帧参考，不需要重新接近。第一源 `runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz`，SHA `700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545`；第二源 `runs/contact-next-prepoint-20260925-v1/physical/prepoint.npz`，SHA `ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e`。
 
-用户已选择本机RTX4070、约8h小规模参数搜索，产出最佳参数和对照回放；明确只优化近土预备点→挖掘→带载抬离，不学运输卸料回位，不更新神经网络权重。最多6组倍率候选，只调整curl_load且实际收斗<95%的BC意图，原几何/保护照常执行。普通候选至CLEAR_PILE；最佳候选独立重复后用固定运输卸料验收。
+状态区分：双起点方向已获用户要求，具体运行包尚未实现/验证。当前v2绑定第二源，第一源为原cycle schema、cycle1、truck_enabled=false，现第二源专用加载器/尾段会拒绝，不能只替换路径。下一步独立接入第一源、保持来源/原生控制/碰撞身份，再做零步和120帧核验；不得改已冻结v2或将第二源短检冒充双源通过。
 
-[新版准备包](../work/night-parameter-search-20260925-v2/README.md)已实现批次预算、120帧恒等短检入口、周期保存、失败停批、评分、未复验回退和对照回放导出。10项CPU检查及接触/固定几何尾段导入通过；新增物理0步。未完成新包120帧物理、真实成功评分及候选验证，不称已准备完毕可直接长跑。[readiness](../work/night-parameter-search-20260925-v2/readiness.json)为launch_blocked，原因基线第二铲卸料未完成。
+建议每组参数在两源成对比较，要求两源有效且不以明显牺牲一铲换另一铲改善；8h内减少参数组合数量，为最佳双源复验预留预算。具体候选表/双源基线对齐尚待收口，未启动新第一源物理。固定两源也不证明第三铲或任意地形泛化；同源复验只证明复现性。
 
-新版v2已接入接触2725＋补收439＋固定路线续段的三段基线评分/回放，候选尾段复用D-162固定几何。原v1及v4失败不改。等待主线结束后一次补齐contact/carry/续段/回放审核，再重新prepare冻结完整最终证据；运行中manifest为prepared_awaiting_baseline，启动器拒绝。8h包含短检、候选、复验和保存，预留1h；任何保护/无效测量/进程失败停批，不自动重跑。
+仍为本机RTX4070有限参数搜索，只有近土预备点→挖掘→带载抬离参与优化；运输卸料回位固定。不更新BC神经权重，不部署A30。原v2单源方案为最多6组收斗<95%阶段意图倍率，普通试验止CLEAR_PILE、最佳复验接卸料；双源扩展另准备，不直接启动旧六组单源批次。
 
-## 保持的边界与专项任务
+## 保持的边界
 
-- 10mm累计回落只限FINISH_CURL，不传给抬升运输回转卸料。v4端点参考感知修复和此前失败均冻结。
-- 用户的取料轨迹、晃动、尾部视觉疑似穿模已记录在[evidence](../evidence/user-first-scoop-review-20260925-v1/README.md)。专项任务`01a0d459-acca-70d3-b21f-a69d646ddece`须充分讨论后实施；夜间已确认的小范围参数搜索不授权额外物理/渲染重构。
-- 原始示范、冻结结果、BC权重及物理保护保留；A30不部署，本地运行。重复同一预备点实验不冒充同实例连续三铲。
-- 首批10条示范、阶段BC与历史第三铲48.81%开发结果保留；正式95%满斗、稳定混合卸车体积、同实例三铲及神经RL均未验证。
+- 10mm累计回落仅FINISH_CURL；抬升/运输/回转/卸料不受该新增限制。
+- 固定运输不依赖全场土粒地形图；远粒不追查、不删除，静态车体/地面/限位/保斗和实际物理保护保留；下一铲选点仍观察余土。
+- 三个取料/晃动/疑似视觉穿模问题交专项任务`01a0d459-acca-70d3-b21f-a69d646ddece`充分讨论后处理；原图在evidence/user-first-scoop-review-20260925-v1。
+- 原示范、BC权重、冻结失败和保护均保留。重复起点试验不冒充连续三铲；正式95%满斗、稳定混合卸车体积、连续第三铲和神经RL未验证。
 
-## 读取与操作入口
+## 权威入口
 
-遵循[总体规划](PROJECT_PLAN.md)、[要求](requirements.md)和[七个活动小节](plans/INDEX.md)。精确源路径/环境/下一步操作见[交接](handoff.md)；能力只看[验收](acceptance.md)，路线选择看[决策](decisions.md)。历史状态可在`6b5a7b1:docs/CURRENT_STATUS.md`及更早Git版本追溯。
+[总体规划](PROJECT_PLAN.md)、[要求](requirements.md)、[七个活动小节](plans/INDEX.md)、[验收](acceptance.md)、[决策](decisions.md)、[交接](handoff.md)。
 
-- [S01 场景物理与检查点](plans/S01-scene-physics-checkpoints.md)
-- [S02 感知、选点与工作面管理](plans/S02-observation-target-selection.md)
-- [S03 非接触APPROACH与控制交接](plans/S03-approach-control-handoff.md)
-- [S04 单铲接触挖掘与人工演示](plans/S04-contact-excavation-demonstrations.md)
-- [S05 模仿学习与强化学习](plans/S05-imitation-and-rl.md)
-- [S06 三铲目标、奖励与评价](plans/S06-three-scoop-objective-evaluation.md)
-- [S07 装车、复现与提交](plans/S07-truck-reproduction-submission.md)
+- [S01-scene-physics-checkpoints.md](plans/S01-scene-physics-checkpoints.md)
+- [S02-observation-target-selection.md](plans/S02-observation-target-selection.md)
+- [S03-approach-control-handoff.md](plans/S03-approach-control-handoff.md)
+- [S04-contact-excavation-demonstrations.md](plans/S04-contact-excavation-demonstrations.md)
+- [S05-imitation-and-rl.md](plans/S05-imitation-and-rl.md)
+- [S06-three-scoop-objective-evaluation.md](plans/S06-three-scoop-objective-evaluation.md)
+- [S07-truck-reproduction-submission.md](plans/S07-truck-reproduction-submission.md)
