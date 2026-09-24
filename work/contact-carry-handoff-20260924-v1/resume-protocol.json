@@ -1,6 +1,6 @@
 {
   "schema": "D155_handoff_resume_protocol_v1",
-  "status": "prepared_pending_budget_confirmation",
+  "status": "authorized_single_continuation",
   "source_sha256": "3e95b08e05d6fe4eddac7fdbc7f1d459954e83becf328678997313b18b7f5eb9",
   "maximum_frames": 600,
   "maximum_wall_seconds": 240,
@@ -55,5 +55,11 @@
       "path": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/final.npz.json",
       "sha256": "9452d8e018e3e1b5703d3f084a807aaabde669219503b464f077c70f58c1ade7"
     }
-  ]
+  ],
+  "authorization": {
+    "user_reply": "可以",
+    "scope": "确认从第一铲2327帧保存点单次600帧/240秒续段，新交接后60帧停止，不重跑前缀或自动重试",
+    "recorded_at": "2026-09-24T23:12:47.822068+08:00",
+    "baseline_commit": "9263781"
+  }
 }

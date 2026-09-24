@@ -1,6 +1,6 @@
 # D-155 保斗交接：原始手动按4证据与候选状态
 
-状态：用户已确认99%/3秒/持续上升，无高度硬门。新交接候选、缓存核对、运动学和完整零步恢复通过；真实带载续段待预算确认。没有新增物理或训练。
+状态：用户已确认99%/3秒/持续上升，无高度硬门。新交接候选与预检通过；唯一真实续段600帧已审核，补收完成但趋势门未交接。当前无物理或训练。
 
 用户最新要求覆盖前一版本：取消高度硬门，以几乎卷到底持续3秒并实际持续上升作为控制器交接条件；交接后保斗抬升，回转/卸料各自检查路径。旧3mm粒子间隙只作交接诊断，原碰撞、行程、材料与状态保护保留。用户要求核对原手动按4时实际行程，核对后明确同意99%。95%建议已被替代。
 
@@ -40,9 +40,9 @@
 
 ## 下一段及未验证边界
 
-[候选协议](resume-protocol.json)、[执行器](run_resume.py)已准备：本机RTX4070，从D154第一铲完整末态SHA3e95b08e…恢复，最多600帧/240秒，首次新交接后再观察60帧即结束；只执行一次，失败保存并不自动重跑。协议当前`prepared_pending_budget_confirmation`，CLI在预算检查处实测拒绝启动，未创建物理输出目录；尚未获该新物理预算。
+[候选协议](resume-protocol.json)、[执行器](run_resume.py)已准备：本机RTX4070，从D154第一铲完整末态SHA3e95b08e…恢复，最多600帧/240秒，首次新交接后再观察60帧即结束；只执行一次，失败保存并不自动重跑。历史预检时协议为`prepared_pending_budget_confirmation`，CLI预算拒绝验证通过。随后用户明确同意，协议转为`authorized_single_continuation`并记录原话/时间；已执行唯一一次，不可重复使用授权。
 
-拟启动命令（仅预算确认后）：
+本次已执行命令（授权已消耗，不得重复运行）：
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python work/contact-carry-handoff-20260924-v1/run_resume.py --protocol work/contact-carry-handoff-20260924-v1/resume-protocol.json
@@ -51,3 +51,15 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THR
 日志/缓存/完整终态：`runs/contact-carry-handoff-20260924-v1/first-resume/`；正常末态和控制状态在退出前保存，失败另存recovery并不授予自动恢复资格；中断可SIGINT，保存仍须事后核验。原源、示范、冻结结果、全部物理保护及60/60/4800Hz不改。
 
 本段不执行回转、卸料、第二铲或RL。`LIFT/ALIGN`保斗目标接口尚未在完整路线验证，旧运输连通观察入口还需接线，不能直接拿新gate绕过全部路径检查。当前第一铲无有效满斗率，新的交接布尔条件不代替携料、洒落和稳定卸车测量。99%规则不是95%满斗。
+
+## 唯一真实续段结果与独立核对
+
+D-155唯一续段已完成600帧/10仿真秒、173.45秒墙时，从第一铲2327帧末态直接接至2927，没有重跑前缀。实际收斗96.97%→99.914%，斗原点上升0.29631m；600条控制复算、1200半帧/时钟/载荷、完整响应矩阵、24数组恢复、来源与物理保护审核通过。未交接：99%保持3秒已满足，但毫米级短暂回落未过候选1mm/0.2秒持续上升规则；不是物理硬保护失败。
+
+首次99%保持3秒窗口2498–2678净上升75.26mm，每0.5秒净上升至少6.47mm，但原点/斗最低点最大回落1.29/1.84mm；末3秒净上升114.97mm、最大回落4.56/7.51mm。工程趋势判定需讨论，冻结结果不改判，未自动追加物理。首铲末五帧工作装载量仍因连通材料触及量测边界无效，不报告有效满斗率。完整运输、卸料、第二铲、三铲和RL仍未验证。
+
+本轮单次600帧/240秒预算已用完，当前无物理或训练任务。末态final.npz SHA dc7378f44d2b8204186354d0c58fd72993d3abb8ebfe29e8e84a31b9b868ae06，专属候选schema与continuation_qualified=false保留；尚未做新末态零步恢复，不自动续跑。下一步先利用缓存分析趋势判定及取料/保料，不重跑挖掘前缀。
+
+证据：[运行审核](resume-audit.json)、[上升窗口复核](rise-review.json)、[末态工作装载](resume-fill.json)。原始运行与完整快照在`runs/contact-carry-handoff-20260924-v1/first-resume/`，日志在其父目录`first-resume.log`，预算按600帧正常结束，没有实际交接，保斗交接后1秒观察未执行。
+
+只读审核首次完成控制复算后因第一铲快照省略可选training_reset字段发生KeyError；原脚本和错误日志保留。`review_resume.py`只将读取元数据中缺失可选字段规范为None，未改源/快照/物理，复核通过。初始audit_resume.py/fill_resume.py在运行期间新增，被save的目录通配绑定一并记录，故保留其原文；包装脚本不改冻结绑定。

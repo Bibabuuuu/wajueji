@@ -1,0 +1,45 @@
+{
+  "physics_steps_added": 0,
+  "inputs": {
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/physics/frames.ndjson": "cfc8ab94f322112edd054dd5865e80a9c5100f0f79d7fb5282e6451e7cbee36a",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/handoff.ndjson": "dc7faaab6e552f46c7e544b123f9c49607f69ed151e1d9fbda9f6ed1c35b1c74"
+  },
+  "windows": [
+    {
+      "name": "first_99_percent_held_3s",
+      "frame_start": 2498,
+      "frame_end": 2678,
+      "minimum_closure_fraction": 0.990085694986629,
+      "net_origin_rise_m": 0.07526019541321505,
+      "minimum_rolling_rise_m": {
+        "0.2": -0.00123559990533062,
+        "0.5": 0.006472072145032648,
+        "1.0": 0.018868879673835437
+      },
+      "maximum_drawdown_m": {
+        "minimum_bucket_z_m": 0.0018413791702618365,
+        "origin_z_m": 0.0012882712677364516
+      },
+      "frozen_gate_ready": false
+    },
+    {
+      "name": "final_3s",
+      "frame_start": 2747,
+      "frame_end": 2927,
+      "minimum_closure_fraction": 0.9963112996643386,
+      "net_origin_rise_m": 0.11497359303932786,
+      "minimum_rolling_rise_m": {
+        "0.2": -0.004530286334857525,
+        "0.5": 0.011699083791563591,
+        "1.0": 0.025175258481718643
+      },
+      "maximum_drawdown_m": {
+        "minimum_bucket_z_m": 0.007511128100499587,
+        "origin_z_m": 0.0045575729536673215
+      },
+      "frozen_gate_ready": false
+    }
+  ],
+  "ready_count": 0,
+  "conclusion": "Actual net rise coexists with millimetre-scale brief drawdowns. No gate or frozen result has been changed; no transport handoff executed."
+}

@@ -92,4 +92,7 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 
 - `work/contact-first-lift-review-20260924-v1/README.md`：D154第一铲2327帧未离土、独立几何/量测及后续恢复限制。
 
-- [D-155保斗交接与手动按4行程](../work/contact-carry-handoff-20260924-v1/README.md)：99%/3秒/持续上升交接候选、原始按键行程、缓存/运动学/零步证据及待授权600帧续段。
+- [D-155保斗交接与手动按4行程](../work/contact-carry-handoff-20260924-v1/README.md)：99%/3秒/持续上升交接候选、原始按键行程、缓存/运动学/零步及唯一600帧真实续段、趋势门未交接和独立审核证据。
+
+- [满斗损失只读调查](../work/contact-fill-loss-review-20260924-v1/README.md)：原显示缓存土粒固定ID/腔内抽样及边界，不是满斗体积。
+- [取料控制只读调查](../work/contact-intake-control-review-20260924-v1/README.md)：80%–95%协调缩放、旧假停顿、回收距离及旧/新物理手动对照边界。
