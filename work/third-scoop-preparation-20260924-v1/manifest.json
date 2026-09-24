@@ -1,0 +1,17 @@
+{
+  "git_head": "2b577be37790d09c75315696a12ba6f7b637005e",
+  "run_directory": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-scoop-20260924-090702-1347301",
+  "source_sha256": "840b7b40ef39825bed64c76f35c602e75ff09a409054ddb2668efc746a0604b1",
+  "scope": "Second manual scoop endpoint to actual third manual prepoint; no manual excavation or training.",
+  "device": "RTX 4070 cuda:0 single instance",
+  "source_bindings": {
+    "scripts/prepare_47_next_scoop_local.sh": "f11e7842e2007bd462bcd0e466c59cf7cd043834f236410b796a68a1d8d59922",
+    "src/v4/run_layered_47_cycle_transport.py": "f97cb76a5409cb8e110fc9ef8d090de7b25ae22dfd8072aa6b03ca24d2e3f1fa",
+    "src/v4/run_layered_47_cycle_prepoint.py": "9cd0d21d2bc3a92c0b1c41135c92e4592042d41a4faa371c9bbee48056ce26e2",
+    "src/v4/qualify_layered_47_cycle_prepoint.py": "5ca773b91983cb9c9d3bd999d05d01a1c0aaf0b1f8085ec00c75bb197763b4c6",
+    "src/v4/layered_47_cycle_runtime.py": "f416645a6d474549809b1add2d05e0e8c72b43656027a30e82c3187f420cc17d",
+    "src/v4/layered_47_cycle_selection.py": "6555d4123e2bedd3f23a2b54c9c27c07d977e2730062448f0b26eb3e507b4d74",
+    "src/v4/layered_47_cycle_geometry.py": "10fbccd026e3cda80254d759c1a471fdc017ae7bc7285f229fb6fb80685fc153",
+    "src/v4/audit_layered_47_cycle.py": "78138b6f7a09f21e91b3a3182b7ffe8928484cf260cb7acb008a2795b710c2ec"
+  }
+}

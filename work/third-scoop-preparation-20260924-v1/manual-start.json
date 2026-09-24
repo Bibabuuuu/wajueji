@@ -1,0 +1,13 @@
+{
+  "paused": true,
+  "physics_frames": 0,
+  "restore_exact": true,
+  "source_handoff": {
+    "mtime_ns": 1790213466139968175,
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-scoop-20260924-090702-1347301/qualified-prepoint/prepoint.npz",
+    "sha256": "7fe149dd7351b29f2e4f136e06d5f7641d502aff2cc9b9182487158627bc57e1",
+    "size_bytes": 54658022
+  },
+  "gamepad_name": "Microsoft X-Box 360 pad",
+  "run_directory": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929"
+}
