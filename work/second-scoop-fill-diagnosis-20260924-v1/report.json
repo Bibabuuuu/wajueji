@@ -1,0 +1,891 @@
+{
+  "schema": "second_scoop_fill_decomposition_v1",
+  "same_snapshot": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/final-001723.cycle.npz",
+  "official_unchanged": {
+    "method_version": "bucket-local-density-v2-weighted",
+    "measurement_cell_m": 0.02,
+    "particle_spacing_m": 0.025,
+    "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+    "smoothing_sigma_cells": 0.43749999999999994,
+    "occupancy_level": 0.4,
+    "volume_scale": 1.011434635924326,
+    "capacity_liters": 255.164729950989,
+    "inside_raw_liters": 152.76000000000005,
+    "heap_raw_liters": 64.88800000000002,
+    "inside_liters": 154.50675498380008,
+    "heap_liters": 65.62997065585769,
+    "fill_percent": 86.27239575075313,
+    "cavity_fraction_of_counted_load": 0.7018672351687129,
+    "selected_particles": 53702,
+    "cavity_particles": 23404,
+    "load_region_particles": 38201,
+    "point_support_fraction": 0.9983508285123426,
+    "load_density_quantiles": [
+      0.6725501418113708,
+      1.004867672920227,
+      3.060211181640625
+    ],
+    "bulk_touches_roi_boundary": false,
+    "quality_reasons": [],
+    "valid_estimate": true,
+    "compute_wall_s": 0.18203011399600655,
+    "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+  },
+  "rock_details": [
+    {
+      "index": 0,
+      "rock_id": "lower-000",
+      "actual_volume_liters": 20.579526276115534,
+      "center_bucket_m": [
+        2.281407995384417,
+        0.22445979051432685,
+        -0.5271366246325698
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 1,
+      "rock_id": "lower-001",
+      "actual_volume_liters": 4.188790204786392,
+      "center_bucket_m": [
+        0.13922377367727515,
+        -0.17501032800469488,
+        -0.9986706027312973
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.10102420856610801,
+      "fraction_in_anchored_bulk": 0.9711359404096834,
+      "above_rim_fraction": 0.9632216014897579,
+      "density_supported_fraction": 0.9972067039106145
+    },
+    {
+      "index": 2,
+      "rock_id": "lower-002",
+      "actual_volume_liters": 24.429024474314225,
+      "center_bucket_m": [
+        2.4471689655524544,
+        -0.16848520891649427,
+        -0.8347027699866346
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 3,
+      "rock_id": "lower-003",
+      "actual_volume_liters": 14.137166941154065,
+      "center_bucket_m": [
+        1.6999413140289081,
+        0.43933586936786073,
+        -0.6793419953257491
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 4,
+      "rock_id": "lower-004",
+      "actual_volume_liters": 17.15728467880506,
+      "center_bucket_m": [
+        2.283928473424735,
+        -0.3851394908416525,
+        0.752888821223937
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 5,
+      "rock_id": "lower-005",
+      "actual_volume_liters": 5.575279762570687,
+      "center_bucket_m": [
+        2.4351319440223427,
+        -0.5380171540556414,
+        -0.3718770901198181
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 6,
+      "rock_id": "lower-006",
+      "actual_volume_liters": 14.137166941154065,
+      "center_bucket_m": [
+        2.103387166027971,
+        0.8640999718646358,
+        -0.627109396374191
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 7,
+      "rock_id": "lower-007",
+      "actual_volume_liters": 4.188790204786392,
+      "center_bucket_m": [
+        2.388716301145156,
+        -0.49672918404364885,
+        0.5281967603776154
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 8,
+      "rock_id": "lower-008",
+      "actual_volume_liters": 20.579526276115534,
+      "center_bucket_m": [
+        0.4691775528076038,
+        0.10801196396313605,
+        -0.5588789484879818
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 1.0,
+      "fraction_in_anchored_bulk": 0.9928774928774928,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 1.0
+    },
+    {
+      "index": 9,
+      "rock_id": "lower_middle-000",
+      "actual_volume_liters": 9.202772079915702,
+      "center_bucket_m": [
+        2.2019658047160915,
+        -0.2564285523093067,
+        -0.41897775250707076
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 10,
+      "rock_id": "lower_middle-001",
+      "actual_volume_liters": 11.494040321933863,
+      "center_bucket_m": [
+        1.0681445406724515,
+        4.216166050137722,
+        -2.111736326723266
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 11,
+      "rock_id": "lower_middle-002",
+      "actual_volume_liters": 4.188790204786391,
+      "center_bucket_m": [
+        2.4095985177840653,
+        0.5576382269556269,
+        -1.004018455023644
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 12,
+      "rock_id": "lower_middle-003",
+      "actual_volume_liters": 4.188790204786391,
+      "center_bucket_m": [
+        2.149405488536714,
+        -0.4878941550495614,
+        0.11884672475655371
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 13,
+      "rock_id": "lower_middle-004",
+      "actual_volume_liters": 17.157284678805055,
+      "center_bucket_m": [
+        1.5135193801974405,
+        0.2399124341058704,
+        -0.7422692792297176
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.7446153846153846
+    },
+    {
+      "index": 14,
+      "rock_id": "lower_middle-005",
+      "actual_volume_liters": 9.202772079915702,
+      "center_bucket_m": [
+        2.5156248987317724,
+        0.173517051047024,
+        -1.1156659489558731
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 15,
+      "rock_id": "lower_middle-006",
+      "actual_volume_liters": 11.494040321933863,
+      "center_bucket_m": [
+        0.07167704977993845,
+        -0.19973236771397437,
+        -0.8478486385788451
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.025958601968103154,
+      "fraction_in_anchored_bulk": 0.9808279606379369,
+      "above_rim_fraction": 0.999830335934849,
+      "density_supported_fraction": 0.997455039022735
+    },
+    {
+      "index": 16,
+      "rock_id": "lower_middle-007",
+      "actual_volume_liters": 5.575279762570685,
+      "center_bucket_m": [
+        1.790407628630095,
+        0.0992979318642543,
+        -0.7128248153002501
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 17,
+      "rock_id": "lower_middle-008",
+      "actual_volume_liters": 14.137166941154062,
+      "center_bucket_m": [
+        2.2332018602520156,
+        0.3386610082845684,
+        -0.8928012423757141
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 18,
+      "rock_id": "lower_middle-009",
+      "actual_volume_liters": 5.575279762570685,
+      "center_bucket_m": [
+        1.789533654207775,
+        -0.09866951083091426,
+        -0.6141442449543033
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 19,
+      "rock_id": "lower_middle-010",
+      "actual_volume_liters": 14.137166941154062,
+      "center_bucket_m": [
+        0.9861477018515599,
+        3.316296289763011,
+        -2.3769476761390287
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 20,
+      "rock_id": "middle-000",
+      "actual_volume_liters": 7.23822947387088,
+      "center_bucket_m": [
+        1.0496742081350772,
+        3.3237730379998944,
+        -1.7221920149368755
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 21,
+      "rock_id": "middle-001",
+      "actual_volume_liters": 9.202772079915702,
+      "center_bucket_m": [
+        2.207316190970978,
+        -0.5846306956298714,
+        -0.8890985741885367
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 22,
+      "rock_id": "middle-002",
+      "actual_volume_liters": 7.2382294738708834,
+      "center_bucket_m": [
+        2.114869583713115,
+        0.44598637936094637,
+        -1.1618043320117541
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 23,
+      "rock_id": "middle-003",
+      "actual_volume_liters": 4.188790204786391,
+      "center_bucket_m": [
+        1.8697789417541866,
+        -0.36517213072135074,
+        0.40222514968119816
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 24,
+      "rock_id": "middle-004",
+      "actual_volume_liters": 3.053628059289278,
+      "center_bucket_m": [
+        1.0951203661644848,
+        3.683721344960877,
+        -1.799809343542429
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 25,
+      "rock_id": "middle-005",
+      "actual_volume_liters": 3.0536280592892786,
+      "center_bucket_m": [
+        2.35967745660829,
+        -0.052037911606451444,
+        -1.1411308891188552
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 26,
+      "rock_id": "middle-006",
+      "actual_volume_liters": 5.575279762570684,
+      "center_bucket_m": [
+        1.9953057241677206,
+        -0.006644202234269042,
+        -0.7894919416998883
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 27,
+      "rock_id": "middle-007",
+      "actual_volume_liters": 5.575279762570687,
+      "center_bucket_m": [
+        1.8434730391618992,
+        -0.3863381666748924,
+        -0.10072090891527195
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 28,
+      "rock_id": "middle-008",
+      "actual_volume_liters": 4.188790204786392,
+      "center_bucket_m": [
+        0.2595092371904429,
+        0.16697081346063689,
+        -0.3899958228533947
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.9604283054003724,
+      "fraction_in_anchored_bulk": 0.9869646182495344,
+      "above_rim_fraction": 0.1904096834264432,
+      "density_supported_fraction": 0.9990689013035382
+    },
+    {
+      "index": 29,
+      "rock_id": "middle-009",
+      "actual_volume_liters": 5.575279762570685,
+      "center_bucket_m": [
+        2.3539855522758364,
+        -0.34437451351702597,
+        -1.2314668345223858
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 30,
+      "rock_id": "middle-010",
+      "actual_volume_liters": 9.202772079915698,
+      "center_bucket_m": [
+        2.3379038883153536,
+        0.7378476576115435,
+        -1.275975900632145
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 31,
+      "rock_id": "middle-011",
+      "actual_volume_liters": 3.0536280592892795,
+      "center_bucket_m": [
+        1.7342891961744595,
+        -0.2397222495952541,
+        -0.6341959733332636
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 32,
+      "rock_id": "middle-012",
+      "actual_volume_liters": 9.2027720799157,
+      "center_bucket_m": [
+        0.9514296794803332,
+        3.0339330177946855,
+        -3.1817835292441567
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 33,
+      "rock_id": "upper-000",
+      "actual_volume_liters": 4.849048260815844,
+      "center_bucket_m": [
+        1.8236169792790449,
+        0.10203385927454667,
+        -1.1373586560977766
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 34,
+      "rock_id": "upper-001",
+      "actual_volume_liters": 4.849048260815844,
+      "center_bucket_m": [
+        2.1301637060949763,
+        -0.08191127180078679,
+        -1.2222093675214687
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 35,
+      "rock_id": "upper-002",
+      "actual_volume_liters": 3.591364001828732,
+      "center_bucket_m": [
+        2.3747798509986313,
+        0.6192284915562246,
+        -1.5851745823765155
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 36,
+      "rock_id": "upper-003",
+      "actual_volume_liters": 8.181230868723421,
+      "center_bucket_m": [
+        1.861276859023721,
+        0.7543229694131154,
+        -0.6429985284845817
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 37,
+      "rock_id": "upper-004",
+      "actual_volume_liters": 4.849048260815845,
+      "center_bucket_m": [
+        1.6231290699692935,
+        -0.30550882563535925,
+        -0.6147171522901776
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.08142799839550742
+    },
+    {
+      "index": 38,
+      "rock_id": "upper-005",
+      "actual_volume_liters": 8.18123086872342,
+      "center_bucket_m": [
+        2.425945701375516,
+        -0.11131324234666085,
+        -1.603228277239587
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 39,
+      "rock_id": "upper-006",
+      "actual_volume_liters": 6.370626302704501,
+      "center_bucket_m": [
+        2.171557003943389,
+        0.39862653322862673,
+        -1.4325697864801923
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 40,
+      "rock_id": "upper-007",
+      "actual_volume_liters": 2.5724407845144426,
+      "center_bucket_m": [
+        2.1495334495927856,
+        1.0837317719974497,
+        0.09426335124923818
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 41,
+      "rock_id": "upper-008",
+      "actual_volume_liters": 6.370626302704502,
+      "center_bucket_m": [
+        0.02318472845971692,
+        -0.20689121987159972,
+        -0.6520530235909003
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.9641324340895157,
+      "above_rim_fraction": 1.0,
+      "density_supported_fraction": 0.9935622317596566
+    },
+    {
+      "index": 42,
+      "rock_id": "upper-009",
+      "actual_volume_liters": 3.591364001828732,
+      "center_bucket_m": [
+        2.472984585338386,
+        0.27455856713723753,
+        -1.6888344362440995
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 43,
+      "rock_id": "upper-010",
+      "actual_volume_liters": 2.5724407845144417,
+      "center_bucket_m": [
+        2.0338030220506944,
+        0.7237721294722835,
+        -1.4149431844401832
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 44,
+      "rock_id": "upper-011",
+      "actual_volume_liters": 8.181230868723418,
+      "center_bucket_m": [
+        1.0105622776694163,
+        3.095204846695972,
+        -1.9760931848297014
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 45,
+      "rock_id": "upper-012",
+      "actual_volume_liters": 2.572440784514443,
+      "center_bucket_m": [
+        1.7584940802870892,
+        -0.5745438803609588,
+        -0.3431570917133831
+      ],
+      "included_by_distance_gate": true,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    },
+    {
+      "index": 46,
+      "rock_id": "upper-013",
+      "actual_volume_liters": 3.5913640018287314,
+      "center_bucket_m": [
+        2.025382402441274,
+        -0.5344648513190443,
+        -1.093375082634024
+      ],
+      "included_by_distance_gate": false,
+      "cavity_fraction": 0.0,
+      "fraction_in_anchored_bulk": 0.0,
+      "above_rim_fraction": 0.0,
+      "density_supported_fraction": 0.0
+    }
+  ],
+  "excluded_disconnected_above_rim_liters": 8.245215152055106,
+  "connected_below_rim_outside_cavity_liters": 8.698337868949205,
+  "enclosed_holes_inside_cavity_liters": 2.7106448242771943,
+  "enclosed_holes_total_liters": 3.600707303890601,
+  "cavity_voxel_capacity_liters": 248.96665850204474,
+  "empty_cavity_voxel_liters": 94.45990351824467,
+  "sensitivity_diagnostic_only": [
+    {
+      "occupancy_level": 0.3,
+      "fill_percent": 96.86697320437611,
+      "inside_liters": 168.40791261994403,
+      "heap_liters": 78.76243796869913,
+      "valid_estimate": true
+    },
+    {
+      "occupancy_level": 0.35,
+      "fill_percent": 91.4095449500555,
+      "inside_liters": 161.24695539759978,
+      "heap_liters": 71.99796312363723,
+      "valid_estimate": true
+    },
+    {
+      "occupancy_level": 0.4,
+      "fill_percent": 86.27239575075313,
+      "inside_liters": 154.50675498380008,
+      "heap_liters": 65.62997065585769,
+      "valid_estimate": true
+    },
+    {
+      "occupancy_level": 0.45,
+      "fill_percent": 81.24623434279371,
+      "inside_liters": 147.4024381010676,
+      "heap_liters": 59.909296355069685,
+      "valid_estimate": true
+    },
+    {
+      "occupancy_level": 0.5,
+      "fill_percent": 76.39448232123038,
+      "inside_liters": 140.2414808787234,
+      "heap_liters": 54.690293633700165,
+      "valid_estimate": true
+    }
+  ],
+  "cavity_sections": [
+    {
+      "axis": 0,
+      "lo": 0.041459000000000024,
+      "hi": 0.18145900200000004,
+      "capacity_liters": 19.945491020427717,
+      "occupied_liters": 10.146712267592841
+    },
+    {
+      "axis": 0,
+      "lo": 0.18145900200000004,
+      "hi": 0.32145900400000005,
+      "capacity_liters": 75.55821304209086,
+      "occupied_liters": 44.41411773270901
+    },
+    {
+      "axis": 0,
+      "lo": 0.32145900400000005,
+      "hi": 0.46145900600000006,
+      "capacity_liters": 66.64140529178201,
+      "occupied_liters": 41.064246218527636
+    },
+    {
+      "axis": 0,
+      "lo": 0.46145900600000006,
+      "hi": 0.6014590080000001,
+      "capacity_liters": 54.20480500845649,
+      "occupied_liters": 37.01850767483034
+    },
+    {
+      "axis": 0,
+      "lo": 0.6014590080000001,
+      "hi": 0.74145901,
+      "capacity_liters": 32.61674413928767,
+      "occupied_liters": 21.863171090140234
+    },
+    {
+      "axis": 1,
+      "lo": -0.2797400000000001,
+      "hi": -0.1677399980000001,
+      "capacity_liters": 51.51034313835409,
+      "occupied_liters": 24.10451024334854
+    },
+    {
+      "axis": 1,
+      "lo": -0.1677399980000001,
+      "hi": -0.0557399960000001,
+      "capacity_liters": 51.51034313835409,
+      "occupied_liters": 34.05702706084391
+    },
+    {
+      "axis": 1,
+      "lo": -0.0557399960000001,
+      "hi": 0.05626000599999992,
+      "capacity_liters": 42.9252859486284,
+      "occupied_liters": 32.81903106647254
+    },
+    {
+      "axis": 1,
+      "lo": 0.05626000599999992,
+      "hi": 0.1682600079999999,
+      "capacity_liters": 51.51034313835409,
+      "occupied_liters": 36.92140994978161
+    },
+    {
+      "axis": 1,
+      "lo": 0.1682600079999999,
+      "hi": 0.28026000999999995,
+      "capacity_liters": 51.51034313835409,
+      "occupied_liters": 26.604776663353476
+    },
+    {
+      "axis": 2,
+      "lo": -1.003365,
+      "hi": -0.8113649980000001,
+      "capacity_liters": 18.068268336152162,
+      "occupied_liters": 10.25190146972897
+    },
+    {
+      "axis": 2,
+      "lo": -0.8113649980000001,
+      "hi": -0.6193649960000001,
+      "capacity_liters": 44.34938591600985,
+      "occupied_liters": 29.39633625850462
+    },
+    {
+      "axis": 2,
+      "lo": -0.6193649960000001,
+      "hi": -0.42736499400000005,
+      "capacity_liters": 54.43945784399094,
+      "occupied_liters": 42.21323596493768
+    },
+    {
+      "axis": 2,
+      "lo": -0.42736499400000005,
+      "hi": -0.23536499200000005,
+      "capacity_liters": 72.74237901567754,
+      "occupied_liters": 51.49416018417929
+    },
+    {
+      "axis": 2,
+      "lo": -0.23536499200000005,
+      "hi": -0.043364990000000096,
+      "capacity_liters": 59.367167390214256,
+      "occupied_liters": 21.15112110644951
+    }
+  ]
+}
