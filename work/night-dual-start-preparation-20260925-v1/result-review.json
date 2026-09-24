@@ -1,0 +1,73 @@
+{
+  "status": "stopped",
+  "manifest_sha256": "ae42172ca72e29ffedad25a3089b61f1c63f73872852d2cd71afe6d77551b253",
+  "started_at_unix": 1790278573.1580377,
+  "second": {
+    "status": "reused_unchanged_second_pipeline",
+    "precheck_sha256": "1886a5454b816f48bc74765ef55bf7dc4d16eba16de6c864c125a80f40a7345c",
+    "source_sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
+    "prior_check_seconds": 66.63157915600459,
+    "new_physical_frames": 0
+  },
+  "new_physical_frame_budget": 120,
+  "overnight_search_started": false,
+  "neural_training_started": false,
+  "first_zero": {
+    "passed": true,
+    "frames": 0,
+    "arrays_exact": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_ids": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "endpoint_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+    "reference_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+    "wall_seconds": 6.773861924011726,
+    "native_restore_errors": {
+      "controller_target": 0.0,
+      "controller_target_velocity": 0.0,
+      "bucket_integral_effort": 0.0,
+      "bucket_active_curl_effort": 0.0,
+      "bucket_linear_velocity_world_m_s": 0.0,
+      "bucket_angular_velocity_world_rad_s": 0.0,
+      "native_time_s": 0.0,
+      "native_last_time_s": 0.0,
+      "native_timestep_s": 0.0,
+      "native_warmstart": 0.0,
+      "native_qacc": 0.0,
+      "native_ctrl": 0.0
+    },
+    "source_unchanged": true,
+    "report_sha256": "d925e06452cf476f90a78ca807a821a54165db4b726a86e719978520c59b8da0"
+  },
+  "failure": "RuntimeError('entry_child_failed:/home/qunwang/wajueji/runs/night-dual-start-preparation-20260925-v1/first-120/console.log:1')",
+  "wall_seconds": 12.180153802997665,
+  "finished_at_unix": 1790278585.3381543,
+  "frozen_report_bindings": {
+    "/home/qunwang/wajueji/runs/night-dual-start-preparation-20260925-v1/entry-review.json": "bf301931f944d340504d93923e4fc9f08a6cc0d6778305e8d0d03ef3aa32338b",
+    "/home/qunwang/wajueji/runs/night-dual-start-preparation-20260925-v1/first-zero/contact/report.json": "d925e06452cf476f90a78ca807a821a54165db4b726a86e719978520c59b8da0",
+    "/home/qunwang/wajueji/runs/night-dual-start-preparation-20260925-v1/first-zero/identity-review.json": "3779af44f306769de2c4b2cb4c96fcb28bc6be8c3f29bba43ac304eab4f9f9ff",
+    "/home/qunwang/wajueji/runs/night-dual-start-preparation-20260925-v1/first-120/console.log": "aa13a4893b42fd90dda858217c65da8d0f8e5a5420afd6d908faa68e70479769"
+  }
+}
