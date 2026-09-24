@@ -28,6 +28,13 @@ class FeedbackTest(unittest.TestCase):
         self.assertAlmostEqual((jac@action)[3],0.,places=7)
         self.assertLessEqual((jac@action)[2],1.)
 
+    def test_cut_can_slow_curl_to_maintain_depth(self):
+        jac=np.eye(4);jac[3]=[0.,0.,-1.,.1]
+        action=bounded_velocity(jac,[0.,0.,-.02,.8],[0.,0.,1.,0.],-10.,depth_lower=-.02)
+        self.assertGreaterEqual((jac@action)[2],-.0200001)
+        self.assertLess((jac@action)[3],.13)
+        self.assertGreater((jac@action)[3],0.)
+
     def test_impossible_ground_recovery_rejected(self):
         with self.assertRaisesRegex(ValueError,'infeasible'):
             bounded_velocity(np.eye(4),np.zeros(4),[0.,0.,1.,0.],2.)

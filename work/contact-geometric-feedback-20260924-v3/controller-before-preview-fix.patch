@@ -1,0 +1,21 @@
+--- a/src/v4/contact_geometric_feedback.py
++++ b/src/v4/contact_geometric_feedback.py
+@@ -33 +33 @@
+-def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False):
++def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False, depth_lower=None):
+@@ -43,0 +44,3 @@
++    if depth_lower is not None:
++        if not np.isfinite(depth_lower):raise ValueError('invalid_feedback_depth_velocity')
++        constraints.append({'type':'ineq','fun':lambda u:j[2]@u-depth_lower,'jac':lambda u:j[2]})
+@@ -49 +52,2 @@
+-            or (exact_pitch and abs(j[3]@result.x-v[3])>1e-7)):
++            or (exact_pitch and abs(j[3]@result.x-v[3])>1e-7)
++            or (depth_lower is not None and j[2]@result.x<depth_lower-1e-7)):
+@@ -129,0 +134 @@
++        depth_lower=None if self.cut_target is None else cfg.position_gain_s*(self.cut_target[2]-state[2])
+@@ -131 +136 @@
+-                                    exact_pitch=phase in ('approach_contact','penetrate'))
++                                    exact_pitch=phase=='approach_contact',depth_lower=depth_lower)
+@@ -159 +164 @@
+-            original_projection_reason=reason,ground_linear_lower=lower)
++            original_projection_reason=reason,ground_linear_lower=lower,depth_velocity_lower=depth_lower)

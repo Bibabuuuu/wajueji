@@ -30,7 +30,7 @@ class FeedbackConfig:
             raise ValueError('invalid_feedback_ground_preview')
 
 
-def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False):
+def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False, depth_lower=None):
     """Four normalized axes: weighted velocity fit with box and ground constraints."""
     j=np.asarray(jac,float);v=np.asarray(target,float);g=np.asarray(ground_gradient,float)
     if j.shape!=(4,4) or v.shape!=(4,) or g.shape!=(4,) or not np.isfinite(np.r_[j.ravel(),v,g,ground_lower]).all():
@@ -41,12 +41,16 @@ def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,
     constraints=[{'type':'ineq','fun':lambda u:g@u-ground_lower,'jac':lambda u:g}]
     if exact_pitch:
         constraints.append({'type':'eq','fun':lambda u:j[3]@u-v[3],'jac':lambda u:j[3]})
+    if depth_lower is not None:
+        if not np.isfinite(depth_lower):raise ValueError('invalid_feedback_depth_velocity')
+        constraints.append({'type':'ineq','fun':lambda u:j[2]@u-depth_lower,'jac':lambda u:j[2]})
     result=minimize(lambda u:.5*u@h@u-f@u,seed,jac=lambda u:h@u-f,
                     bounds=[(-1.,1.)]*4,method='SLSQP',
                     constraints=constraints,
                     options={'ftol':1e-10,'maxiter':60})
     if (not result.success or g@result.x<ground_lower-1e-7
-            or (exact_pitch and abs(j[3]@result.x-v[3])>1e-7)):
+            or (exact_pitch and abs(j[3]@result.x-v[3])>1e-7)
+            or (depth_lower is not None and j[2]@result.x<depth_lower-1e-7)):
         raise ValueError('feedback_velocity_infeasible:'+result.message)
     return np.clip(result.x,-1,1)
 
@@ -127,8 +131,9 @@ class ContactGeometryFeedback:
         velocity[3]=np.clip(velocity[3],-cfg.pitch_speed_rad_s,cfg.pitch_speed_rad_s)
         clearance=self.ground.measure(q)['clearance_m']
         lower=(cfg.ground_clearance_m-clearance)/cfg.preview_seconds
+        depth_lower=None if self.cut_target is None else cfg.position_gain_s*(self.cut_target[2]-state[2])
         normalized=bounded_velocity(jac,velocity,ground_gradient,lower,
-                                    exact_pitch=phase in ('approach_contact','penetrate'))
+                                    exact_pitch=phase=='approach_contact',depth_lower=depth_lower)
         requested=normalized*LIMITS
         # Preserve the existing 150ms joint/closure projector, then inspect its
         # actual result; never check a different vector from the one dispatched.
@@ -141,8 +146,8 @@ class ContactGeometryFeedback:
                 scale=max(1.,float(np.max(np.abs(candidate)/np.array([.12,.0225,.0225,.0225]))))
                 minimum=clearance
                 while remaining>1e-12:
-                    dt=min(1/60,remaining)
-                    predicted,_=projector._advance_preview(candidate/scale,dt*scale)
+                    dt=min(1/60,remaining,.05/scale)
+                    predicted,_=projector._advance_preview(candidate/scale,min(.05,dt*scale))
                     minimum=min(minimum,self.ground.measure(predicted)['clearance_m'])
                     remaining-=dt
                 if minimum>=cfg.ground_clearance_m-1e-6:
@@ -156,4 +161,4 @@ class ContactGeometryFeedback:
             cut_target=None if self.cut_target is None else self.cut_target.tolist(),contact=None if self.contact is None else self.contact.tolist(),
             progress=progress,desired_task_velocity=velocity.tolist(),predicted_task_velocity=(jac@(accepted/LIMITS)).tolist(),
             normalized_requested=normalized.tolist(),preview_minimum_clearance_m=minimum,preview_scale=factor,
-            original_projection_reason=reason,ground_linear_lower=lower)
+            original_projection_reason=reason,ground_linear_lower=lower,depth_velocity_lower=depth_lower)
