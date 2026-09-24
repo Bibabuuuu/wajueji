@@ -87,3 +87,7 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - `work/contact-preview-lift-20260924-v1/README.md`：D-153末态离土已验证，工作装载48.8%，完整三铲仍未通过。
 
 - `work/contact-multisource-lift-20260924-v1/README.md`：D-154两源完整接触入口与零步回归、待确认物理预算及连续链边界。
+
+- `work/contact-combined-replay-20260924-v1/README.md`：D152/D153精确衔接的第三铲缓存回放，0新物理，用户查看装载不足。
+
+- `work/contact-first-lift-review-20260924-v1/README.md`：D154第一铲2327帧未离土、独立几何/量测及后续恢复限制。
