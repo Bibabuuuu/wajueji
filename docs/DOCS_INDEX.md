@@ -83,3 +83,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [D-151机构响应接口核验](../work/contact-effective-response-20260924-v1/README.md)：有效惯性候选前置CPU诊断与有条件场景预算。
 
 - `work/contact-full-response-20260924-v1/README.md`：D-152用户授权的完整闭链响应接口隔离原型、门限与有界预算；非生产基线。
+
+- `work/contact-preview-lift-20260924-v1/README.md`：D-153显式候选末态恢复、连续预览与有界抬升，先离线门再有界续段。

@@ -1,0 +1,14 @@
+{
+  "history_path": "/home/qunwang/wajueji/runs/contact-preview-lift-20260924-v1/control-history.json",
+  "history_sha256": "b8e2d1169b2d8da39d03a83d3f5b383d5fe96fc6ca505a482c40baf41b31731d",
+  "source_sha256": "37cb63c32f9070bcf119fac3a729be64ad6cde31593fa9f5ac8a17a6b5c6a0f2",
+  "commands_and_phases_exact": true,
+  "feature_serialization_exact": true,
+  "last_three_bc_actions_exact": [
+    2398,
+    2399,
+    2400
+  ],
+  "physics_steps_added": 0,
+  "wall_seconds": 100.0264873309934
+}
