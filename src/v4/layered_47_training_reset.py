@@ -75,7 +75,10 @@ def select_direct_prepoint(runtime, terrain, clearance_terrain):
     rejected=[]
     for candidate in candidates[:16]:
         face=candidate['contact'];xy=np.asarray(face['contact_xy_m']);radial=xy/np.linalg.norm(xy)
-        for outward,upward in ((.5,.6),(.5,.7),(.6,.6)):
+        # A 0.6 m rise left a tiny MPM grid impulse on real residual stock.
+        # Require the higher candidate; unreachable pairs must select new stock.
+        # Every selected pose still requires the independent zero-contact hold.
+        for outward,upward in ((.5,.7),(.6,.7)):
             target=np.r_[xy+outward*radial,face['contact_surface_z_m']+upward]
             seed=open_seed.copy();seed[7]=np.arctan2(xy[1],xy[0])
             try:

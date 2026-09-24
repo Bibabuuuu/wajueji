@@ -1,0 +1,296 @@
+{
+  "status": "failed",
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz",
+    "size_bytes": 53145698,
+    "mtime_ns": 1790221227913964855,
+    "sha256": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace"
+  },
+  "failure": "ValueError('training_prepoint_bucket_contact')",
+  "frames": 6,
+  "wall_seconds": 4.9632594819995575,
+  "unexpected_contact": {
+    "positions": [
+      [
+        6.050000190734863,
+        -0.75,
+        1.5
+      ]
+    ],
+    "impulses": [
+      [
+        2.482154037863893e-08,
+        -3.0729485622771335e-09,
+        4.589057311932265e-08
+      ]
+    ],
+    "nearest_distance": [
+      0.3942933888433778
+    ],
+    "nearest_ids": [
+      256245
+    ]
+  },
+  "tip_world_m": [
+    6.143180344269663,
+    -0.7605842331000534,
+    1.6922052264213563
+  ],
+  "rejected": [
+    {
+      "entry_xy_m": [
+        5.65,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00370683236, position_error_m=0.127529288, pitch_error_rad=-0.00446478909, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.65,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00744187497, position_error_m=0.189629178, pitch_error_rad=6.40245786e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.65,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00373382605, position_error_m=0.0982767059, pitch_error_rad=3.983866e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.550000000000001,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00374892764, position_error_m=0.128099224, pitch_error_rad=-0.00448672168, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.550000000000001,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00745925567, position_error_m=0.19022971, pitch_error_rad=6.41501772e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.550000000000001,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.0037646864, position_error_m=0.0989040372, pitch_error_rad=4.00450889e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.550000000000001,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00588860123, position_error_m=0.133024577, pitch_error_rad=-0.0102775653, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.550000000000001,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00613776941, position_error_m=0.211346302, pitch_error_rad=-0.00331745493, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.550000000000001,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.0037436912, position_error_m=0.111162775, pitch_error_rad=-0.00533230817, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.0037923882, position_error_m=0.128689393, pitch_error_rad=-0.00450944925, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00747716452, position_error_m=0.190852022, pitch_error_rad=6.42799471e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00379650893, position_error_m=0.0995537086, pitch_error_rad=4.02582048e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00593984475, position_error_m=0.133556057, pitch_error_rad=-0.0103232767, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00616111942, position_error_m=0.211935869, pitch_error_rad=-0.00332696312, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00337640531, position_error_m=0.107509632, pitch_error_rad=-0.00789930973, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.35,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00476205908, position_error_m=0.0940106974, pitch_error_rad=-0.00608449454, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.35,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00648758504, position_error_m=0.189407306, pitch_error_rad=-0.00617370293, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.35,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00623280913, position_error_m=0.048864606, pitch_error_rad=1.31670556e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.35,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00466548568, position_error_m=0.097505797, pitch_error_rad=-0.00630911803, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.35,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00804357389, position_error_m=0.170491386, pitch_error_rad=-0.0126136083, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.35,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00602556504, position_error_m=0.0529602536, pitch_error_rad=1.41326628e-05, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.25,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00452769882, position_error_m=0.0212993222, pitch_error_rad=3.73648123e-06, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.25,
+        -0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00772700276, position_error_m=0.138069466, pitch_error_rad=-0.00834803345, active_bounds=[12]"
+    }
+  ],
+  "report_sha256": "72fcf234e87ba0960a7aeb550d075a711368a8127bf81cf0e9727627023f45c4",
+  "response": "Higher alternatives failed IK, fallback selected original rejected lower pose. Remove lower fallback; reselect target/prepoint pair with required 0.7 m rise."
+}
