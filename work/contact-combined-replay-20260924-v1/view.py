@@ -1,10 +1,10 @@
 """Zero-copy composition of verified cached cut/curl and lift; no physics."""
-import json,time
+import argparse,json,time
 from pathlib import Path
 from types import SimpleNamespace
 import numpy as np
 from view_contact_bc_probe import cache_digest
-def show(output):
+def show(output, *, start_frame=0):
     import os
     import pyglet.display.xlib as xlib
     if not hasattr(xlib.XlibScreen,'is_primary'):xlib.XlibScreen.is_primary=False
@@ -16,6 +16,7 @@ def show(output):
     from PIL import Image
     prior=Path('/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/display')
     lift=Path('/home/qunwang/wajueji/runs/contact-preview-lift-20260924-v1/continuation/display')
+    output.mkdir(parents=True,exist_ok=False)
     sources=[]
     for directory in (prior,lift):
         verified=json.loads((directory/'reconstruction.json').read_text())
@@ -43,7 +44,7 @@ def show(output):
     manual.display_helpers._prepare_rock_visuals(viewer,scene['records'],Path(scene['root']),'cuda:0')
     selected=scene['selected_cut'];face=selected.get('contact',selected)
     goal=dict(entry_xy_m=face.get('contact_xy_m',face.get('entry_xy_m')),surface_z_m=face.get('contact_surface_z_m',face.get('surface_z_m')))
-    cursor=dict(frame=last,drawn=-1,clock=time.monotonic(),fps=30.)
+    cursor=dict(frame=max(0,min(last,start_frame)),drawn=-1,clock=time.monotonic(),fps=30.)
     def move(frame):
         cursor['frame']=max(0,min(last,frame));cursor['clock']=time.monotonic()
     def on_key(symbol,modifiers):
@@ -87,4 +88,9 @@ def show(output):
         viewer.close();(output/'viewer-closed.json').write_text(json.dumps(dict(frame=cursor['frame'],playback_physics_steps=0)))
 
 
-if __name__=='__main__':show(Path('/home/qunwang/wajueji/runs/contact-combined-replay-20260924-v1'))
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--start-frame',type=int,default=0)
+    args=parser.parse_args()
+    show(args.output,start_frame=args.start_frame)

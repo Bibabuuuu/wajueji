@@ -96,3 +96,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 
 - [满斗损失只读调查](../work/contact-fill-loss-review-20260924-v1/README.md)：原显示缓存土粒固定ID/腔内抽样及边界，不是满斗体积。
 - [取料控制只读调查](../work/contact-intake-control-review-20260924-v1/README.md)：80%–95%协调缩放、旧假停顿、回收距离及旧/新物理手动对照边界。
+
+- [毫米抖动容忍交接](../work/contact-carry-handoff-tolerant-20260924-v1/README.md)：用户修正后的显式参数、连续历史和缓存验证，尚无真实交接。
