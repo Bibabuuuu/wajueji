@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "checks": {
+    "all_frames": true,
+    "trigger_exists": true,
+    "no_boom_down": true,
+    "no_body_down": true,
+    "keeps_curl": true
+  },
+  "error": null,
+  "frames": 1500,
+  "trigger": {
+    "frame": 981,
+    "old_command": [
+      0.0001073391349295678,
+      0.016749754909385045,
+      0.0225,
+      0.025716323795370293
+    ],
+    "command": [
+      0.0001073391349295678,
+      0.016749754909385045,
+      0.0225,
+      0.025716323795370293
+    ],
+    "mode": "bc_with_lateral_depth_feedback",
+    "coordinates": [
+      4.714006890012584,
+      -0.00034631066387548346,
+      0.24173785991462082,
+      0.875304992018062
+    ],
+    "target": null,
+    "cut_target": [
+      5.329948147477293,
+      0.0,
+      0.18769727976637998,
+      0.38
+    ],
+    "contact": [
+      5.904948147477294,
+      4.333503863148431e-06,
+      1.0326927421643388,
+      -0.3199472345814125
+    ],
+    "soil_plan": {
+      "surface_z_m": 1.1041159629821777,
+      "tip_target_z_m": 0.18769727976637998,
+      "root_target_xy_m": [
+        5.30052826554781,
+        0.5552977132917533
+      ],
+      "root_local_m": [
+        0.021459,
+        0.0,
+        -0.157745
+      ],
+      "vertical_pitch_rad": 0.2184927986558317,
+      "strip_heights_m": [
+        0.5135850489139557,
+        1.1802775621414183,
+        1.1272870302200315,
+        1.0568621456623077,
+        1.1041159629821777,
+        1.2257560789585114,
+        0.9726982235908508
+      ],
+      "strip_counts": [
+        375,
+        615,
+        832,
+        918,
+        771,
+        766,
+        734
+      ],
+      "ground_connected_particles": 250625,
+      "observation_frame": 0,
+      "reference": "frozen_current_scoop_ground_soil",
+      "surface_estimator": "median_of_seven_strip_z95",
+      "root_embed_m": 0.03
+    },
+    "root_above_surface_m": -0.16013371576058932,
+    "root_ready": true,
+    "pitch_velocity_upper": null,
+    "progress": null,
+    "desired_task_velocity": [
+      -0.22,
+      0.0005194659958132252,
+      0.18934238245137958,
+      0.3
+    ],
+    "predicted_task_velocity": [
+      -0.1813165656113555,
+      0.0005193006689206101,
+      0.19658254508522838,
+      0.15176217949196844
+    ],
+    "normalized_requested": [
+      0.0008944927910797317,
+      0.7444335515282243,
+      1.0,
+      0.38098257474622654
+    ],
+    "preview_minimum_clearance_m": 0.15500815044193117,
+    "preview_scale": 1.0,
+    "closure_fraction": 0.8045961295217727,
+    "no_down_latched": true,
+    "no_down_trigger_frame": 981,
+    "no_down_minimum_velocity_m_s": -1.3877787807814457e-17,
+    "no_down_preview_minimum_delta_m": 0.0,
+    "original_projection_reason": null,
+    "ground_linear_lower": -0.8333876696128745,
+    "depth_velocity_lower": -0.08106087022236126,
+    "command_rate_per_s": 2.0,
+    "slew_safety_override": "slew_box_disjoint_from_safety_bounds"
+  },
+  "active_frames": 520,
+  "zeroed_frames": 0,
+  "preview_scale_counts": {
+    "1.0": 520,
+    "0.5": 0,
+    "0.25": 0,
+    "0.125": 0,
+    "0.0": 0
+  },
+  "minimum_velocity": -4.163336342344337e-17,
+  "minimum_preview_delta": 0.0,
+  "last": {
+    "frame": 1500,
+    "old_command": [
+      -1.2765076759013044e-05,
+      0.005790892064648368,
+      0.006303559159991916,
+      0.00835425049215792
+    ],
+    "command": [
+      -1.266246376974104e-05,
+      0.005790880342635098,
+      0.006303472410068793,
+      0.008354275592531974
+    ],
+    "mode": "bc_with_lateral_depth_feedback",
+    "coordinates": [
+      3.880147935846242,
+      3.2942784959670455e-05,
+      1.5569949410201287,
+      1.8689774516625346
+    ],
+    "target": null,
+    "cut_target": [
+      5.329948147477293,
+      0.0,
+      0.18769727976637998,
+      0.38
+    ],
+    "contact": [
+      5.904948147477294,
+      4.333503863148431e-06,
+      1.0326927421643388,
+      -0.3199472345814125
+    ],
+    "soil_plan": {
+      "surface_z_m": 1.1041159629821777,
+      "tip_target_z_m": 0.18769727976637998,
+      "root_target_xy_m": [
+        5.30052826554781,
+        0.5552977132917533
+      ],
+      "root_local_m": [
+        0.021459,
+        0.0,
+        -0.157745
+      ],
+      "vertical_pitch_rad": 0.2184927986558317,
+      "strip_heights_m": [
+        0.5135850489139557,
+        1.1802775621414183,
+        1.1272870302200315,
+        1.0568621456623077,
+        1.1041159629821777,
+        1.2257560789585114,
+        0.9726982235908508
+      ],
+      "strip_counts": [
+        375,
+        615,
+        832,
+        918,
+        771,
+        766,
+        734
+      ],
+      "ground_connected_particles": 250625,
+      "observation_frame": 0,
+      "reference": "frozen_current_scoop_ground_soil",
+      "surface_estimator": "median_of_seven_strip_z95",
+      "root_embed_m": 0.03
+    },
+    "root_above_surface_m": 0.38272719572149017,
+    "root_ready": true,
+    "pitch_velocity_upper": null,
+    "progress": null,
+    "desired_task_velocity": [
+      -0.003261616689947122,
+      -4.9414177439505687e-05,
+      0.22,
+      0.3
+    ],
+    "predicted_task_velocity": [
+      -0.0032546951172248324,
+      -4.918019125795627e-05,
+      0.2238649171075556,
+      0.17947991115459927
+    ],
+    "normalized_requested": [
+      -0.00010552053141450868,
+      0.25737245967267103,
+      0.28015432933639084,
+      0.12376704581528851
+    ],
+    "preview_minimum_clearance_m": 0.8049258626909098,
+    "preview_scale": 1.0,
+    "closure_fraction": 0.9950280294791356,
+    "no_down_latched": true,
+    "no_down_trigger_frame": 981,
+    "no_down_minimum_velocity_m_s": -6.938893903907228e-18,
+    "no_down_preview_minimum_delta_m": 0.0,
+    "original_projection_reason": null,
+    "ground_linear_lower": -5.166172417939399,
+    "depth_velocity_lower": -2.053946491880623,
+    "command_rate_per_s": 2.0,
+    "slew_safety_override": null
+  },
+  "source_actions_sha256": "4188bcb1aa7ee2dc0de3617c6aade2138b6c082c99af48dfd1fc059e8c3b5a21",
+  "code_sha256": "9065b4c9b3670e30e422151d2c5742946d4dead5e2f5f5b878a1075147673ff0",
+  "scope": "counterfactual commands on old actual states, zero physics; does not qualify new trajectory, braking, lift or fill"
+}

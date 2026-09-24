@@ -1,9 +1,36 @@
 import unittest
 import numpy as np
-from contact_geometric_feedback import bounded_velocity, FeedbackConfig, ContactGeometryFeedback
+from contact_geometric_feedback import bounded_velocity, rate_bounded_velocity, FeedbackConfig, ContactGeometryFeedback
 
 
 class FeedbackTest(unittest.TestCase):
+    def test_slew_spans_phase_target_changes(self):
+        previous=np.zeros(4)
+        for target in ([1.,-1.,1.,1.],[-1.,1.,-1.,-1.])*10:
+            command,reason=rate_bounded_velocity(np.eye(4),target,[0.,0.,1.,0.],-10.,previous=previous,rate=2.)
+            self.assertIsNone(reason)
+            self.assertLessEqual(np.max(abs(command-previous)),2/60+1e-9)
+            previous=command
+
+    def test_no_down_safety_overrides_slew(self):
+        command,reason=rate_bounded_velocity(np.eye(4),[0.,-.5,0.,.5],[0.,0.,1.,0.],-10.,
+            previous=[0.,-.5,0.,.5],rate=2.,no_down_gradient=np.array([[0.,1.,0.,-1.]]),
+            axis_bounds=[(-1.,1.),(0.,1.),(-1.,1.),(-1.,1.)])
+        self.assertIsNotNone(reason)
+        self.assertGreaterEqual(command[1],command[3]-1e-7)
+
+    def test_ground_safety_overrides_feasible_slew_box(self):
+        command,reason=rate_bounded_velocity(np.eye(4),[0.,0.,-1.,0.],[0.,0.,1.,0.],.2,
+            previous=np.zeros(4),rate=2.)
+        self.assertIsNotNone(reason)
+        self.assertGreaterEqual(command[2],.2-1e-7)
+
+    def test_infeasible_safety_is_not_swallowed(self):
+        with self.assertRaisesRegex(ValueError,'infeasible'):
+            rate_bounded_velocity(np.eye(4),np.zeros(4),[0.,0.,1.,0.],2.,previous=np.zeros(4),rate=2.)
+        for rate in (0.,-1.,float('nan')):
+            with self.assertRaises(ValueError):FeedbackConfig(command_rate_per_s=rate)
+
     def test_ground_constraint_preserves_independent_curl(self):
         action=bounded_velocity(np.eye(4),[0.,0.,-1.,.7],[0.,0.,1.,0.],0.)
         self.assertGreaterEqual(action[2],-1e-7)

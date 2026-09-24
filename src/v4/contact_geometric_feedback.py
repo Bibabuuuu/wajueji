@@ -26,9 +26,10 @@ class FeedbackConfig:
     root_embed_m: float = .03
     late_curl_no_down: bool = False
     late_curl_fraction: float = .8
+    command_rate_per_s: float | None = None
 
     def __post_init__(self):
-        values=np.asarray([v for k,v in asdict(self).items() if k not in ("terrain_relative_cut","late_curl_no_down")])
+        values=np.asarray([v for k,v in asdict(self).items() if k not in ("terrain_relative_cut","late_curl_no_down") and v is not None])
         if any(type(v) is not bool for v in (self.terrain_relative_cut,self.late_curl_no_down)):raise ValueError("invalid_feedback_configuration")
         if not np.isfinite(values).all() or np.any(values<=0):
             raise ValueError('invalid_feedback_configuration')
@@ -86,6 +87,7 @@ class ContactGeometryFeedback:
         self.last_phase='approach_contact';self.last_frame=0
         self.cut_reference=cut_reference;self.soil_plan=None;self.root_ready=False;self.root_ready_count=0
         self.no_down_latched=False;self.no_down_frame=None
+        self.previous_command=np.zeros(4)
         # Every CAD vertex lies in this local box. Rigid-point vertical
         # velocity is affine in local position: eight corners bound all of it.
         self.body_corners=np.asarray(list(product(*zip(ground_guard.vertices.min(axis=0),ground_guard.vertices.max(axis=0))))) if config.late_curl_no_down else None
@@ -198,9 +200,15 @@ class ContactGeometryFeedback:
         clearance=self.ground.measure(q)['clearance_m']
         lower=(cfg.ground_clearance_m-clearance)/cfg.preview_seconds
         depth_lower=None if self.cut_target is None else cfg.position_gain_s*(self.cut_target[2]-state[2])
-        normalized=bounded_velocity(jac,velocity,ground_gradient,lower,
-                                    exact_pitch=phase=='approach_contact',depth_lower=depth_lower,pitch_upper=pitch_upper,
-                                    no_down_gradient=no_down_gradient,axis_bounds=axis_bounds)
+        constraints=dict(exact_pitch=phase=='approach_contact',depth_lower=depth_lower,
+                         pitch_upper=pitch_upper,no_down_gradient=no_down_gradient)
+        slew_override=None
+        if cfg.command_rate_per_s is None:
+            normalized=bounded_velocity(jac,velocity,ground_gradient,lower,axis_bounds=axis_bounds,**constraints)
+        else:
+            normalized,slew_override=rate_bounded_velocity(jac,velocity,ground_gradient,lower,
+                previous=self.previous_command/LIMITS,rate=cfg.command_rate_per_s,
+                axis_bounds=axis_bounds,**constraints)
         requested=normalized*LIMITS
         # Preserve the existing 150ms joint/closure projector, then inspect its
         # actual result; never check a different vector from the one dispatched.
@@ -229,6 +237,7 @@ class ContactGeometryFeedback:
         if accepted is None:raise ValueError('feedback_ground_preview_infeasible:'+str(preview_error))
         if abs(state[1])>cfg.maximum_lateral_error_m:raise ValueError('feedback_lateral_corridor_exceeded')
         self.last_frame=frame;self.last_phase=phase
+        self.previous_command=accepted.copy()
         return requested,accepted,dict(mode=mode,coordinates=state.tolist(),target=None if target is None else target.tolist(),
             cut_target=None if self.cut_target is None else self.cut_target.tolist(),contact=None if self.contact is None else self.contact.tolist(),
             soil_plan=self.soil_plan,root_above_surface_m=root_excess,root_ready=self.root_ready,pitch_velocity_upper=pitch_upper,
@@ -237,4 +246,30 @@ class ContactGeometryFeedback:
             closure_fraction=closure_fraction,no_down_latched=self.no_down_latched,no_down_trigger_frame=self.no_down_frame,
             no_down_minimum_velocity_m_s=None if no_down_gradient is None else float(np.min(no_down_gradient@(accepted/LIMITS))),
             no_down_preview_minimum_delta_m=None if not self.no_down_latched else minimum_body_delta,
-            original_projection_reason=reason,ground_linear_lower=lower,depth_velocity_lower=depth_lower)
+            original_projection_reason=reason,ground_linear_lower=lower,depth_velocity_lower=depth_lower,
+            **({} if cfg.command_rate_per_s is None else dict(command_rate_per_s=cfg.command_rate_per_s,
+                slew_safety_override=slew_override)))
+
+
+def rate_bounded_velocity(jac,target,ground_gradient,ground_lower,*,previous,rate,axis_bounds=None,**constraints):
+    """Slew within the same safety solve, reverting only the slew if infeasible.
+
+    The original endpoint and sampled preview still run afterwards. Their
+    safety intervention is authoritative, and the next step uses that actual
+    accepted command as its reference. No filter follows a safety projection.
+    """
+    previous=np.asarray(previous,float)
+    if previous.shape!=(4,) or not np.isfinite(previous).all() or not np.isfinite(rate) or rate<=0:
+        raise ValueError('invalid_feedback_command_rate')
+    bounds=np.asarray([(-1.,1.)]*4 if axis_bounds is None else axis_bounds,float)
+    if bounds.shape!=(4,2) or not np.isfinite(bounds).all() or np.any(bounds[:,0]>bounds[:,1]) or np.any(abs(bounds)>1):
+        raise ValueError('invalid_feedback_axis_bounds')
+    limited=np.column_stack((np.maximum(bounds[:,0],previous-rate/60),np.minimum(bounds[:,1],previous+rate/60)))
+    reason='slew_box_disjoint_from_safety_bounds'
+    if np.all(limited[:,0]<=limited[:,1]):
+        try:
+            return bounded_velocity(jac,target,ground_gradient,ground_lower,axis_bounds=limited,**constraints),None
+        except ValueError as error:
+            if not str(error).startswith('feedback_velocity_infeasible:'):raise
+            reason=str(error)
+    return bounded_velocity(jac,target,ground_gradient,ground_lower,axis_bounds=bounds,**constraints),reason
