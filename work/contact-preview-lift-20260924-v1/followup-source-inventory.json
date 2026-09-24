@@ -1,0 +1,45 @@
+{
+  "schema": "D153_followup_source_inventory_v1",
+  "physics_steps_added": 0,
+  "grants_new_interface_validation": false,
+  "sources": [
+    {
+      "scoop": "first",
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz",
+        "sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545"
+      },
+      "source_current_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "stage": "prepoint",
+      "cycle_index": 1,
+      "training_reset": null,
+      "prior_startup_review": "/home/qunwang/wajueji/work/contact-first-source-20260924-v1/startup-review.json",
+      "prior_startup_review_sha256": "916a81b3f6ef551b76153f810d6fff07244193351b48c1072e2f17db40b02556",
+      "prior_120_passed": true,
+      "qualification": "saved_input_identity_only_not_D153_multisource_validation"
+    },
+    {
+      "scoop": "second",
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
+        "sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46"
+      },
+      "source_current_sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "stage": "prepoint",
+      "cycle_index": 2,
+      "training_reset": {
+        "mode": "fast_contact_collection_v1",
+        "continuous_physics": false,
+        "entry_count": 1,
+        "metadata_sha256": "3ee4fe592f42074cc66c06cb8d62394a3e599347a17d65a45148b278f87d6c11",
+        "note": "full inventory remains in original source metadata; not copied into Git"
+      },
+      "prior_startup_review": "/home/qunwang/wajueji/work/contact-second-source-20260924-v1/startup-review.json",
+      "prior_startup_review_sha256": "4a4d568f8ec2904f0eb5388e8619642de0d2d8cb9bce9adf0d90147da434c8e8",
+      "prior_120_passed": true,
+      "qualification": "saved_input_identity_only_not_D153_multisource_validation"
+    }
+  ]
+}

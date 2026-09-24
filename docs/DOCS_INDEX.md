@@ -84,4 +84,6 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 
 - `work/contact-full-response-20260924-v1/README.md`：D-152用户授权的完整闭链响应接口隔离原型、门限与有界预算；非生产基线。
 
-- `work/contact-preview-lift-20260924-v1/README.md`：D-153显式候选末态恢复、连续预览与有界抬升，先离线门再有界续段。
+- `work/contact-preview-lift-20260924-v1/README.md`：D-153末态离土已验证，工作装载48.8%，完整三铲仍未通过。
+
+- `work/contact-multisource-lift-20260924-v1/README.md`：D-154两源完整接触入口与零步回归、待确认物理预算及连续链边界。
