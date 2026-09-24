@@ -1,0 +1,249 @@
+{
+  "zero_and_initial_attempts": [
+    {
+      "status": "failed",
+      "failure": "KeyError('bucket_origin_world_m')",
+      "frames_requested": 0,
+      "frames_completed": 0,
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+        "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+      },
+      "policy": {
+        "path": "/home/qunwang/wajueji/runs/contact-bc-native60-pilot-20260924-v1/pilot.pt",
+        "sha256": "4bd50c9f2bd9d5d31b0adee2335f2320b19056b518a097a23a11d2373bcf371c"
+      },
+      "source_unchanged": true,
+      "zero_step_arrays_exact": {
+        "particle_q": true,
+        "particle_qd": true,
+        "particle_f": true,
+        "particle_flags": true,
+        "particle_elastic_strain": true,
+        "particle_transform": true,
+        "particle_qd_grad": true,
+        "particle_stress": true,
+        "particle_Jp": true,
+        "rigid_ids": true,
+        "rigid_qpos": true,
+        "rigid_qvel": true,
+        "rigid_reported_linear_velocity": true,
+        "rigid_reported_angular_velocity": true,
+        "mechanism_qpos": true,
+        "mechanism_qvel": true,
+        "simulation_time_s": true,
+        "grid_reference_particle_q": true,
+        "solver_grid_transform": true,
+        "solver_grid_cell_ijk": true,
+        "solver_grid_node_ijk": true,
+        "solver_ws_impulse": true,
+        "solver_ws_stress": true,
+        "solver_body_q_prev": true
+      },
+      "restore": {
+        "exact": true,
+        "cycle_errors": {
+          "controller_target": 0.0,
+          "controller_target_velocity": 0.0,
+          "bucket_integral_effort": 0.0,
+          "bucket_active_curl_effort": 0.0,
+          "bucket_linear_velocity_world_m_s": 0.0,
+          "bucket_angular_velocity_world_rad_s": 0.0,
+          "native_time_s": 0.0,
+          "native_last_time_s": 0.0,
+          "native_timestep_s": 0.0,
+          "native_warmstart": 0.0,
+          "native_qacc": 0.0,
+          "native_ctrl": 0.0
+        }
+      },
+      "code_sha256": {
+        "run_contact_bc_probe.py": "c42a59b7438ffed9303860e79f6b0a7567cc1a1c2c302734b938b606eba0503f",
+        "contact_bc_inference.py": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+        "contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+        "contact_bc_data.py": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34"
+      },
+      "wall_seconds": 4.911650709982496,
+      "run": "runs/contact-bc-closed-loop-20260924-v1/zero-step",
+      "report_sha256": "5b6c1169fa50c13b333bac508bc860e406e381de64c58d9ce7ff791613e3a3c2"
+    },
+    {
+      "status": "zero_step_passed",
+      "frames_requested": 0,
+      "frames_completed": 0,
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+        "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+      },
+      "policy": {
+        "path": "/home/qunwang/wajueji/runs/contact-bc-native60-pilot-20260924-v1/pilot.pt",
+        "sha256": "4bd50c9f2bd9d5d31b0adee2335f2320b19056b518a097a23a11d2373bcf371c"
+      },
+      "source_unchanged": true,
+      "zero_step_arrays_exact": {
+        "particle_q": true,
+        "particle_qd": true,
+        "particle_f": true,
+        "particle_flags": true,
+        "particle_elastic_strain": true,
+        "particle_transform": true,
+        "particle_qd_grad": true,
+        "particle_stress": true,
+        "particle_Jp": true,
+        "rigid_ids": true,
+        "rigid_qpos": true,
+        "rigid_qvel": true,
+        "rigid_reported_linear_velocity": true,
+        "rigid_reported_angular_velocity": true,
+        "mechanism_qpos": true,
+        "mechanism_qvel": true,
+        "simulation_time_s": true,
+        "grid_reference_particle_q": true,
+        "solver_grid_transform": true,
+        "solver_grid_cell_ijk": true,
+        "solver_grid_node_ijk": true,
+        "solver_ws_impulse": true,
+        "solver_ws_stress": true,
+        "solver_body_q_prev": true
+      },
+      "restore": {
+        "exact": true,
+        "cycle_errors": {
+          "controller_target": 0.0,
+          "controller_target_velocity": 0.0,
+          "bucket_integral_effort": 0.0,
+          "bucket_active_curl_effort": 0.0,
+          "bucket_linear_velocity_world_m_s": 0.0,
+          "bucket_angular_velocity_world_rad_s": 0.0,
+          "native_time_s": 0.0,
+          "native_last_time_s": 0.0,
+          "native_timestep_s": 0.0,
+          "native_warmstart": 0.0,
+          "native_qacc": 0.0,
+          "native_ctrl": 0.0
+        }
+      },
+      "code_sha256": {
+        "run_contact_bc_probe.py": "824d76d2d5fd3ff2e15b6a97540bd8bda8e494f49e5116fa698383e5e37744bf",
+        "contact_bc_inference.py": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+        "contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+        "contact_bc_data.py": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34"
+      },
+      "wall_seconds": 4.915695277013583,
+      "run": "runs/contact-bc-closed-loop-20260924-v1/zero-step-v2",
+      "report_sha256": "4fbf167a11251041ed35e13fdcb7db62f6b583385f5907eaef625cf6b34711e7",
+      "prediction": {
+        "frame": 1,
+        "terrain_anchor_frame": 0,
+        "feature_spec_sha256": "9c3e23c34d13e69c7b08f039b7e2abdaf015dd8966021e821601ff189a9063a6",
+        "action_normalized": [
+          0.02110396884381771,
+          -0.051222022622823715,
+          0.0005142166628502309,
+          0.1096891462802887
+        ],
+        "requested_command_si": [
+          0.002532476261258125,
+          -0.0011524955090135335,
+          1.1569874914130196e-05,
+          0.007404017373919487
+        ],
+        "applied_command_si": [
+          0.002532476261258125,
+          -0.0011524955090135335,
+          1.1569874914130196e-05,
+          0.007404017373919487
+        ],
+        "command_projection_reason": null,
+        "timing": {
+          "roundtrip_seconds": 0.0016104649985209107,
+          "worker_seconds": 0.0006023150053806603
+        },
+        "source": "native60_bc_candidate"
+      }
+    },
+    {
+      "status": "failed",
+      "failure": "KeyError('equivalent_drive_load')",
+      "frames_requested": 120,
+      "frames_completed": 1,
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+        "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+      },
+      "policy": {
+        "path": "/home/qunwang/wajueji/runs/contact-bc-native60-pilot-20260924-v1/pilot.pt",
+        "sha256": "4bd50c9f2bd9d5d31b0adee2335f2320b19056b518a097a23a11d2373bcf371c"
+      },
+      "source_unchanged": true,
+      "zero_step_arrays_exact": {
+        "particle_q": true,
+        "particle_qd": true,
+        "particle_f": true,
+        "particle_flags": true,
+        "particle_elastic_strain": true,
+        "particle_transform": true,
+        "particle_qd_grad": true,
+        "particle_stress": true,
+        "particle_Jp": true,
+        "rigid_ids": true,
+        "rigid_qpos": true,
+        "rigid_qvel": true,
+        "rigid_reported_linear_velocity": true,
+        "rigid_reported_angular_velocity": true,
+        "mechanism_qpos": true,
+        "mechanism_qvel": true,
+        "simulation_time_s": true,
+        "grid_reference_particle_q": true,
+        "solver_grid_transform": true,
+        "solver_grid_cell_ijk": true,
+        "solver_grid_node_ijk": true,
+        "solver_ws_impulse": true,
+        "solver_ws_stress": true,
+        "solver_body_q_prev": true
+      },
+      "restore": {
+        "exact": true,
+        "cycle_errors": {
+          "controller_target": 0.0,
+          "controller_target_velocity": 0.0,
+          "bucket_integral_effort": 0.0,
+          "bucket_active_curl_effort": 0.0,
+          "bucket_linear_velocity_world_m_s": 0.0,
+          "bucket_angular_velocity_world_rad_s": 0.0,
+          "native_time_s": 0.0,
+          "native_last_time_s": 0.0,
+          "native_timestep_s": 0.0,
+          "native_warmstart": 0.0,
+          "native_qacc": 0.0,
+          "native_ctrl": 0.0
+        }
+      },
+      "code_sha256": {
+        "run_contact_bc_probe.py": "824d76d2d5fd3ff2e15b6a97540bd8bda8e494f49e5116fa698383e5e37744bf",
+        "contact_bc_inference.py": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+        "contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+        "contact_bc_data.py": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34"
+      },
+      "wall_seconds": 5.467229447007412,
+      "run": "runs/contact-bc-closed-loop-20260924-v1/probe120",
+      "report_sha256": "60d4eb5d47b49b67f3998809564fd487e5b2eb4dac6cb5f27e02d8f5dd503f80"
+    }
+  ],
+  "tests": {
+    "passed": 15,
+    "command": "PYTHONPATH=src/v4:tests/v4:. <training-python> -m unittest test_contact_bc_inference test_contact_bc_data test_contact_bc_policy -v"
+  },
+  "report_failure_after_completed_run": {
+    "run": "runs/contact-bc-closed-loop-20260924-v1/probe120-v2",
+    "error": "TypeError: Object of type int64 is not JSON serializable",
+    "log_sha256": "3ea9f7862ac176846bc66e7beaba0a9f901859224b991e4bfdc3bd504f8c1893",
+    "physics_rerun_after_report_repair": false
+  },
+  "final_code_sha256": {
+    "contact_bc_inference.py": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+    "run_contact_bc_probe.py": "dd4f462d7f69990b1794239c1d78d360388c708b925cca377b82a63635d27d45",
+    "contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+    "contact_bc_data.py": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34"
+  }
+}
