@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-09-24T20:19:35.144350+08:00",
+  "scope": "Read-only closure after user paused physical experiments; no physics or training started",
+  "branch": "codex/contact-bc-collection-20260924",
+  "implementation_head": "cfec8b84990d94c24f21257bd91c27e43483984f",
+  "project_processes": [],
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+      "unchanged": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
+      "sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
+      "unchanged": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+      "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+      "unchanged": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz",
+      "sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+      "unchanged": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+      "unchanged": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/failure.npz",
+      "sha256": "54ef3a70042909f81357565c33591e642583e222ed036a82362457d5a6f92ce1",
+      "unchanged": true
+    }
+  ],
+  "syntax_checked": [
+    "work/contact-geometric-feedback-20260924-v9-handoff/review_run.py",
+    "work/contact-geometric-feedback-20260924-v9-handoff/review_failure.py",
+    "work/contact-speed-audit-20260924-v1/audit_v7_gap.py",
+    "work/contact-multisource-validation-20260924-v1/prepare_first_v3.py",
+    "work/contact-first-source-20260924-v1/review_startup.py"
+  ],
+  "reports": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v9-handoff/contact1200-review.json",
+      "sha256": "caafeebe2a66f2a4f32cc8451302a840d09231d27677c7bab480fd29d7719f6a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v9-handoff/contact1200-speed-review.json",
+      "sha256": "5440a88ae557cfb804339e140e08556c93a579a67026ed9c7982dfea1d3baa21"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v9-handoff/failure-diagnosis.json",
+      "sha256": "d705df3d02fc2159ce84aa6963b73f79fba1788d3d8df52c1eabf1b4bbde5b3d"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-first-source-20260924-v1/startup-review.json",
+      "sha256": "916a81b3f6ef551b76153f810d6fff07244193351b48c1072e2f17db40b02556"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-second-source-20260924-v1/startup-review.json",
+      "sha256": "4a4d568f8ec2904f0eb5388e8619642de0d2d8cb9bce9adf0d90147da434c8e8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-multisource-validation-20260924-v1/first-initialization-v3.json",
+      "sha256": "26d883209f4babb47054b89542b67753ddafa42196b1a5416ab10315bf08eb7c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-speed-audit-20260924-v1/v7-gap-audit.json",
+      "sha256": "87afa57fa87a80e0279628d6d9f81dd7cc06539a696e686cff30742e221ce80a"
+    }
+  ],
+  "limits": "Local only; remote A30 not queried. Raw data, checkpoints and dependencies remain local; partial startup qualification only."
+}

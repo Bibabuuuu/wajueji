@@ -26,7 +26,7 @@ endpoint=run/('final.npz' if report['status']=='bounded_probe_completed' else 'p
 ground=[guard.measure(row['after_state']['mechanism_qpos']) for row in physical]
 coordinates=np.array([f.coordinates(row['after_state']['mechanism_qpos']) for row in physical])
 trace=rows(run/'phase-trace.ndjson')
-checks=dict(frames=n==report['frames_completed'] and len(actions)==n+(1 if report['status']=='failed' else 0),exact_restore=all(report['zero_step_arrays_exact'].values()),
+checks=dict(frames=n==report['frames_completed'] and len(actions) in ((n,n+1) if report['status']=='failed' else (n,)),exact_restore=all(report['zero_step_arrays_exact'].values()),
  control_recomputed=command_error<1e-12 and feedback_equal,
  commands=all(x['applied_command_si']==y['applied_command_si'] for x,y in zip(actions,physical)),
  actual_previous=all(actions[i]['before_state']==physical[i-1]['after_state'] for i in range(1,len(actions))),
@@ -63,7 +63,7 @@ result['complete_scoop']=report.get('final_phase')=='off_soil'
 result['pending_failed_step_commands']=len(actions)-n
 if report['status']=='failed':
  result['primary_failure']=read(run/'physics/failure.json')['error']
- result['failure_state_scope']='Failure checkpoint is diagnostic only. Failed step may have partly advanced coupled physics; last valid returned rigid state is frame '+str(n)+'. No continuation qualification.'
+ result['failure_state_scope']=('Failure before dispatch; no extra physics step. Saved physical state matches last valid frame, but control history is not resumable.' if len(actions)==n else 'Failure after dispatch; a step may have partly advanced coupled physics. Diagnostic only.')
 contact_events=[e for e in actions if e['feedback']['cut_target'] is not None]
 result['tip_vertical_motion_m']=dict(initial_z=float(f.coordinates(initial['mechanism_qpos'])[2]),minimum_z=float(coordinates[:,2].min()),initial_to_minimum=float(f.coordinates(initial['mechanism_qpos'])[2]-coordinates[:,2].min()))
 if contact_events:
