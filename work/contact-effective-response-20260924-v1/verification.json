@@ -1,0 +1,96 @@
+{
+  "audit_passed": true,
+  "checks": {
+    "inputs_unchanged": true,
+    "native_checks": true,
+    "exact_repeat": true,
+    "count": true,
+    "no_MPM": true,
+    "finite_response": true,
+    "linearity": true,
+    "old972_zero_central_difference": true,
+    "old972_held_previous_load_central_difference": true,
+    "new1160_zero_central_difference": true,
+    "physical_fit_parameters_and_errors_independently_recomputed": true
+  },
+  "interface_admitted": false,
+  "native_probe_count": 78,
+  "native_substeps": 6240,
+  "CPU_wall_seconds": 84.05903115699766,
+  "MPM_steps": 0,
+  "scene_candidate_started": false,
+  "summary": {
+    "old972_zero": {
+      "linearity_relative_error": 0.003188134856193929,
+      "fit_overall_error": 0.35657358884173257,
+      "fit_max_column_error": 1.0069253513402396,
+      "fit_center_bound": false,
+      "passed": false
+    },
+    "old972_held_previous_load": {
+      "linearity_relative_error": 2.258537847329149e-05,
+      "fit_overall_error": 0.3606269350151006,
+      "fit_max_column_error": 1.0033675077348243,
+      "fit_center_bound": false,
+      "passed": false
+    },
+    "new1160_zero": {
+      "linearity_relative_error": 5.958792496448697e-09,
+      "fit_overall_error": 0.3562817197309691,
+      "fit_max_column_error": 1.0019981515528928,
+      "fit_center_bound": false,
+      "passed": false
+    }
+  },
+  "files": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-effective-response-20260924-v1/report.json",
+      "sha256": "9e60684bd71905cefd30612b5cf98afdca94d23593252e2b45fbb33dba89e54c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-effective-response-20260924-v1/exact-response.json",
+      "sha256": "d287c23058de345970979933f20d8fce731847e9e0abfa81989fc213eccd7973"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/protocol.json",
+      "sha256": "5cd9893bff6d99a01c0bae894604bc260aa11b19a96d5409296223f6e3ed4d49"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/response-review.json",
+      "sha256": "bfff4362b93cc7cb521a7ec5efe2e4b422963d4fea02daa57c95dce32b6a8ee4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/physical-fit-review.json",
+      "sha256": "6fbe5b58d97caf220df6cb6b98e0752eb5c261e497cee22471d8eb57f1b203dd"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/diagnose.py",
+      "sha256": "bc17ad155fad3874eaa01a4fe0c4f849933b3433aa46ee94b219743ac40a5bc2"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/fit_response.py",
+      "sha256": "9d8f7038ccd004aa0fdd28e4d14056048a56287c9059dc847808b2e353a4119a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/fit_physical.py",
+      "sha256": "d5d8c420d1e8dc3be8ce40c61d75c1bbe83a55dbc44b1d0c34002d0d8574fefd"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/endpoint_velocity.cc",
+      "sha256": "fd027b20f2ac71fb79ac5f7d63cf3625eea1a770ce0369ed827793fe2793f329"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/exact_response.py",
+      "sha256": "d3f4e6bf281685bb59b2302097c767effe8a8cca59960c3e1ce0547f1def220c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/test_fit.py",
+      "sha256": "7213fae08261e97684d94f6104c6e2a4a791ede2d3c502464c8baa17aaa825da"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/test_physical_fit.py",
+      "sha256": "c0d3f91b1fb04a349662dec0d3a669aedd08dd57143009643dcefa2a480f20d1"
+    }
+  ],
+  "unit_tests_passed": 6
+}

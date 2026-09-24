@@ -79,3 +79,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 新增文档前先判断能否更新现有权威文件。不得再创建含义重复的“最新版规划”“最终方案2”或无索引的`next-section`。
 
 - [D-150交换频率与耗时对照](../work/contact-coupling-120hz-20260924-v1/README.md)：120Hz候选与60Hz比较，输入/预算/护栏/结果边界。
+
+- [D-151机构响应接口核验](../work/contact-effective-response-20260924-v1/README.md)：有效惯性候选前置CPU诊断与有条件场景预算。
