@@ -1,0 +1,185 @@
+{
+  "status": "D155_preflight_passed",
+  "physics_steps_added": 0,
+  "history": {
+    "path": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/verified-preflight/repaired-control-state.json",
+    "sha256": "13039aa0f1bcb37b27249f0262626377c02e4a4586c2735ec967cdc36b003994",
+    "old_feature_frame": 2328,
+    "new_feature_frame": 2327,
+    "common_nine_feature_rows_exact": true,
+    "root_ready_count_rebuilt": 0
+  },
+  "source_sha256": "3e95b08e05d6fe4eddac7fdbc7f1d459954e83becf328678997313b18b7f5eb9",
+  "kinematic": {
+    "steps": 330,
+    "first_command_exact": true,
+    "handoff": {
+      "ready": true,
+      "frame_end": 2627,
+      "first_available_decision_frame": 2628,
+      "closure_held": true,
+      "contact_history_complete": true,
+      "sustained_actual_rise": true,
+      "height_is_diagnostic_only": true,
+      "observed_span_seconds": 3.0,
+      "bucket_above_initial_soil_m": 0.19937416923968287,
+      "maximum_drawdown_m": {
+        "origin_z_m": 0.0,
+        "minimum_bucket_z_m": 0.0
+      },
+      "initial_soil_top_m": 1.3804421424865723,
+      "source_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545"
+    },
+    "final": {
+      "frame": 2657,
+      "applied_command_si": [
+        -1.1819181902809664e-08,
+        1.2403776233695208e-05,
+        2.9304447176222686e-05,
+        3.579925245119427e-09
+      ],
+      "qpos": [
+        -5.4466508437540546e-11,
+        -3.337959471491562e-10,
+        0.03999972277934447,
+        0.9999999999999989,
+        4.807359107213891e-08,
+        1.6628315016047634e-08,
+        -2.0171739329885443e-09,
+        -0.008992607434154429,
+        0.2736747165238167,
+        0.36385800406034724,
+        0.3033145999948143,
+        0.029092133076481095,
+        0.4222133084755697,
+        -0.19878756845959528,
+        0.1200427825503009,
+        0.8519999995226766,
+        0.4306683375556336,
+        1.18064171052995,
+        -0.6834145411327301
+      ],
+      "control": {
+        "stage": "CLEAR_PILE",
+        "requested_command_si": [
+          -1.1819181902809664e-08,
+          1.2403776233695208e-05,
+          2.9304447176222686e-05,
+          3.579925245119427e-09
+        ],
+        "carry_pitch_rad": 1.4666397297751428,
+        "carry_cylinder_m": 0.8519999968576607,
+        "minimum_bucket_z_m": 1.5879567106337975,
+        "minimum_preview_body_delta_m": 0.0,
+        "desired_task_velocity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0023177870151295243
+        ],
+        "projection_reason": null,
+        "slew_safety_override": null
+      },
+      "gate": {
+        "ready": false,
+        "frame_end": 2657,
+        "first_available_decision_frame": 2658,
+        "closure_held": true,
+        "contact_history_complete": true,
+        "sustained_actual_rise": false,
+        "height_is_diagnostic_only": true,
+        "observed_span_seconds": 3.0,
+        "bucket_above_initial_soil_m": 0.20751492351316636,
+        "maximum_drawdown_m": {
+          "origin_z_m": 0.0,
+          "minimum_bucket_z_m": 0.0
+        },
+        "initial_soil_top_m": 1.3804421424865723,
+        "source_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545"
+      }
+    },
+    "maximum_normalized_command_step": 0.03333333333333337,
+    "physics_steps_added": 0,
+    "scope": "Kinematic preview only: no soil forces, load response, spill or unload prediction"
+  },
+  "arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "controller_errors": {
+    "controller_target": 0.0,
+    "controller_target_velocity": 0.0,
+    "bucket_integral_effort": 0.0,
+    "bucket_active_curl_effort": 0.0,
+    "bucket_linear_velocity_world_m_s": 0.0,
+    "bucket_angular_velocity_world_rad_s": 0.0,
+    "native_time_s": 0.0,
+    "native_last_time_s": 0.0,
+    "native_timestep_s": 0.0,
+    "native_warmstart": 0.0,
+    "native_qacc": 0.0,
+    "native_ctrl": 0.0
+  },
+  "live_state_unchanged": true,
+  "pending_reaction_unchanged": true,
+  "first_command_exact": true,
+  "first_preview": {
+    "stage": "FINISH_CURL",
+    "requested_command_si": [
+      0.00021758836967914909,
+      0.0011592415750089182,
+      0.0029062940827397745,
+      1.112391428970126e-18
+    ],
+    "carry_pitch_rad": 1.2954061057899746,
+    "carry_cylinder_m": 0.8373856407488854,
+    "minimum_bucket_z_m": 1.2652878865620267,
+    "minimum_preview_body_delta_m": 0.0,
+    "desired_task_velocity": [
+      0.0,
+      0.0,
+      0.08,
+      0.07200929213522388
+    ],
+    "projection_reason": null,
+    "slew_safety_override": null
+  },
+  "zero_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/verified-preflight/zero.npz",
+    "size_bytes": 52491722,
+    "mtime_ns": 1790262155536403425,
+    "sha256": "3e95b08e05d6fe4eddac7fdbc7f1d459954e83becf328678997313b18b7f5eb9"
+  },
+  "wall_seconds": 19.38738081700285,
+  "source_unchanged": true,
+  "candidate_code": {
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/carry_feedback.py": "b4a486d11835affdcea5cbe164b83d8a7d6d57a9d5b8cd7d709503d8c0a050d8",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/restore_runtime.py": "889faea0f60bcc2583d0730bf05784e2d7157641fa78bd9867f9426ab60b546b",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/manual_key4_review.py": "6b48cc2d2cb3bf21f9b0e76c81f22e48dcd7036e126db3f080f5a28cf2d7c94b",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/test_handoff.py": "a4bcfce540afb198aab7f7b44c00eaaf7a2192e225955200168aff9817daf627",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/cache_review.py": "9ca7e6dcc82ff56c815db02af633a1717e2061dee36005347d281563427a382d",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/preflight.py": "5e44f83862bde5617651514d5708b8d4dd5836c30d6c1a5d101fe60443d8afb5"
+  }
+}

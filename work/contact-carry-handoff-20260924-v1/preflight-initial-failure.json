@@ -1,0 +1,24 @@
+{
+  "status": "preflight_failed",
+  "physics_steps_added": 0,
+  "history": {
+    "path": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/repaired-control-state.json",
+    "sha256": "13039aa0f1bcb37b27249f0262626377c02e4a4586c2735ec967cdc36b003994",
+    "old_feature_frame": 2328,
+    "new_feature_frame": 2327,
+    "common_nine_feature_rows_exact": true,
+    "root_ready_count_rebuilt": 0
+  },
+  "source_sha256": "3e95b08e05d6fe4eddac7fdbc7f1d459954e83becf328678997313b18b7f5eb9",
+  "failure": "ValueError('carry_projection_exceeds_slew')",
+  "wall_seconds": 1.3091246639960445,
+  "source_unchanged": true,
+  "candidate_code": {
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/carry_feedback.py": "fa80014f0fe3d59805196a62f5c469ced38c5d681a640539b03b6ef7cf030cfb",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/restore_runtime.py": "889faea0f60bcc2583d0730bf05784e2d7157641fa78bd9867f9426ab60b546b",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/manual_key4_review.py": "6b48cc2d2cb3bf21f9b0e76c81f22e48dcd7036e126db3f080f5a28cf2d7c94b",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/test_handoff.py": "a4bcfce540afb198aab7f7b44c00eaaf7a2192e225955200168aff9817daf627",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/cache_review.py": "9ca7e6dcc82ff56c815db02af633a1717e2061dee36005347d281563427a382d",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/preflight.py": "a25d5d7f29d8b2ac6828a295f5d9c5a42f9d3e7441764162fe67ff1aeecece51"
+  }
+}

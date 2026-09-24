@@ -92,4 +92,4 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 
 - `work/contact-first-lift-review-20260924-v1/README.md`：D154第一铲2327帧未离土、独立几何/量测及后续恢复限制。
 
-- [D-155保斗交接与手动按4行程](../work/contact-carry-handoff-20260924-v1/README.md)：原始10条按键实际行程只读证据；新交接尚未接线，百分比阈值待讨论。
+- [D-155保斗交接与手动按4行程](../work/contact-carry-handoff-20260924-v1/README.md)：99%/3秒/持续上升交接候选、原始按键行程、缓存/运动学/零步证据及待授权600帧续段。
