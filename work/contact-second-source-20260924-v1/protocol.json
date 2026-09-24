@@ -1,0 +1,141 @@
+{
+  "schema": "contact_geometric_feedback_probe_v1",
+  "source_sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
+  "policy_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+  "interface_review": {
+    "path": "/home/qunwang/wajueji/work/contact-phase-bc-closed-loop-20260924-v1/interface-review.json",
+    "sha256": "f1410679f6b293ae7ff58315d2d1da2df66463c73c83bd1e05c8b28bb131ca5c"
+  },
+  "contact_config": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-v1.json",
+  "completion_config": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+  "cavity_config": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
+      "sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz.json",
+      "sha256": "3ee4fe592f42074cc66c06cb8d62394a3e599347a17d65a45148b278f87d6c11"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/training-report.json",
+      "sha256": "2771c3492e9078e303a8008ab231c0ba7d99c0ad37ae0bb0f6b9d0720c67996f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-v1.json",
+      "sha256": "19b9d5c403bda9de1eca7ae67aa7b4c639c1389097af15405851f4d8e63c4db8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+      "sha256": "79b1150d043b03b45d3fd844f3e6186642962739dc795536b0a79ba383ac2bdf"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+      "sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+      "sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_contact_phase_bc_probe.py",
+      "sha256": "095105f50979eaccbf2064d2bccbdff6b1dbc127191b31822202dc184b43cfb4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_bc_inference.py",
+      "sha256": "bfc173a346e4647288753d46a36e264b1fe0827b618d386c38d73f60efd90195"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_live.py",
+      "sha256": "2a8f29abfb171f17640102b4380b93cb78a95ee8a41bb9ec0cc1e70dde02a432"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_bc_policy.py",
+      "sha256": "b610e60774b02afe5f9a5c220819ce82f4b1a8c446a4fd8e30b31ab688114789"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_inference.py",
+      "sha256": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_data.py",
+      "sha256": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_policy.py",
+      "sha256": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_ground_guard.py",
+      "sha256": "fc2da166651feab62f7948e1c11ecbcc7321e79e62483f2e5463f0b567471758"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_candidate.py",
+      "sha256": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_completion.py",
+      "sha256": "c3fa5093e88b19fa27cf41ddce1b15e171fef4b06d76339eabefc806d9ae4b43"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_geometry.py",
+      "sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_geometric_feedback.py",
+      "sha256": "9065b4c9b3670e30e422151d2c5742946d4dead5e2f5f5b878a1075147673ff0"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_contact_geometric_probe.py",
+      "sha256": "c541c92e6a3d8623df3ce19b97d206cd8dfcf4394518e6cc16e0c33285a65f94"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v1/development-geometry.json",
+      "sha256": "f745d1189c434e5632cf70ef87191a25480518cfdad8624433827e078174f61a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_cut_reference.py",
+      "sha256": "20af1cc2424cbb76ab3fd3a3e5e4c34796e5513ddb16d8505980cd8392bc6f3c"
+    }
+  ],
+  "device": "local_RTX4070_cuda0",
+  "sequence": "zero -> 120 audited; no longer contact run under this protocol",
+  "startup_wall_seconds": 180,
+  "contact_wall_seconds": 360,
+  "physics_hz": 60,
+  "ground_margin_m": 0.005,
+  "no_threshold_or_model_changes": "original causal phase and physical guards unchanged; new geometric controller parameters above",
+  "no_training": true,
+  "stop": "Save failure and stop physical process without extra physical steps; cached replay remains available. Off-soil first confirmation ends probe without transport handoff.",
+  "feedback_parameters": {
+    "cut_drop_m": 0.3,
+    "cut_retract_m": 0.575,
+    "cut_pitch_rad": 0.38,
+    "translation_speed_m_s": 0.15,
+    "pitch_speed_rad_s": 0.3,
+    "position_gain_s": 1.5,
+    "preview_seconds": 0.15,
+    "ground_clearance_m": 0.03,
+    "maximum_lateral_error_m": 0.1,
+    "terrain_relative_cut": true,
+    "root_embed_m": 0.03,
+    "late_curl_no_down": true,
+    "late_curl_fraction": 0.8,
+    "command_rate_per_s": 2.0
+  },
+  "behavior_gate": {
+    "max_lateral_error_m": 0.1,
+    "minimum_cad_ground_m": 0.005,
+    "enter_curl_and_run_bc": true,
+    "maximum_approach_pitch_error_rad": 0.03,
+    "maximum_cut_depth_undershoot_m": 0.03
+  },
+  "scope": "Second-scoop real residual-terrain zero/120 startup only; main controller handoff not yet qualified",
+  "revision": "v9 bounded slower task translation 0.15m/s; v8 0.22m/s failed actual depth gate despite smooth commands; all safety and physics unchanged",
+  "scoop_wall_seconds": 900
+}

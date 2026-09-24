@@ -1,0 +1,110 @@
+{
+  "run": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120",
+  "frames": 120,
+  "passed": true,
+  "checks": {
+    "completed": true,
+    "zero_step": true,
+    "exact_restore": true,
+    "frames": true,
+    "actions_match": true,
+    "state_chain": true,
+    "startup_identity": true,
+    "causal_terrain": true,
+    "terrain_anchors": true,
+    "previous_action": true,
+    "hard_guards": true,
+    "material": true,
+    "sweep": true,
+    "ground": true,
+    "finite": true,
+    "particles": true,
+    "rocks": true,
+    "final_state": true,
+    "elapsed": true,
+    "source": true,
+    "policy": true,
+    "lineage": true,
+    "inventory": true,
+    "phase_frames": true,
+    "phase_before_matches_action": true,
+    "phase_next_decision": true,
+    "evidence_previous": true,
+    "no_unresolved": true,
+    "phase_protocol": true,
+    "feedback_present": true,
+    "approach_pitch_tracking": true,
+    "maximum_lateral_error": true,
+    "preview_ground": true,
+    "code_run_contact_geometric_probe.py": true,
+    "code_contact_geometric_feedback.py": true,
+    "code_contact_cut_reference.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true
+  },
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
+      "sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/actions.ndjson",
+      "sha256": "2c1f1748f010d9cbef9b5ebe6fb293f9e4cfdc226d10244114328d1ae95d0dce"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/phase-trace.ndjson",
+      "sha256": "9dca9871f0f3f5d690a5a609869e2b50ae84586be294bd98d0479a7c88ef850f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/terrain.ndjson",
+      "sha256": "e1fd0cd8b50e71741c7c6b7e8e8db93f93e97c5ade93ba0364462b6912329bbf"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/physics/frames.ndjson",
+      "sha256": "d9eafe8acc1b875216efa2eca79d7de98261226aa89a0a8799f70ae7c0270307"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/ground-guard.ndjson",
+      "sha256": "9b145cb2936e1c2ba82d3a366d7b45fc20b8c9b131dbdbed601c22f8c582ca31"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/final.npz",
+      "sha256": "3f2edbc2687a9cef6ce62ad05a9d6b741ed108c6e42ee501f572790274cf2ff9"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/final.npz.json",
+      "sha256": "192258c711283a56033c23811970ed733797a1a9e9811ef280ad0dac2c0e0bba"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-source-20260924-v1/startup120/report.json",
+      "sha256": "0a37b596e957d85f1608dc372ced3b512fcb1a75990618010b7d6305a8ec41de"
+    }
+  ],
+  "qualification": "geometric feedback startup only, not excavation success",
+  "source_unchanged": true
+}

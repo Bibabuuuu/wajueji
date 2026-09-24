@@ -1,0 +1,20 @@
+{
+  "status": "discussion_only_no_training_started",
+  "basis": {
+    "path": "runs/contact-geometric-probe-20260924-v7/scoop1500/report.json",
+    "frames": 1500,
+    "wall_seconds": 345.9456247839844,
+    "wall_seconds_per_step": 0.23063041652265626
+  },
+  "limits": [
+    "Includes this probe controller/observation/cache workload, not measured RL loop throughput",
+    "Does not include extra reset/evaluation/training/failure overhead",
+    "A30 current throughput and concurrency unmeasured; no two-GPU linear speedup assumption"
+  ],
+  "recommendation": "First discuss a <=30 minute reset/step/throughput qualification budget after a stable baseline; agree training steps and hours separately before any RL run.",
+  "extrapolated_hours_same_probe_workload": {
+    "10000": 0.6406400458962673,
+    "100000": 6.406400458962674,
+    "1000000": 64.06400458962673
+  }
+}

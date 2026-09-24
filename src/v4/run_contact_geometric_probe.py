@@ -11,8 +11,9 @@ from contact_phase_completion import CompletionConfig
 from run_layered_47_sparse_contact_handoff import wrench_summary
 
 
-def probe_budget(frames,contact_window,scoop_window=False):
-    if not 0<=frames<=(2400 if scoop_window else 900 if contact_window else 120):raise ValueError('bounded_bc_probe_frames')
+def probe_budget(frames,contact_window,scoop_window=False,handoff_review_frames=900):
+    if type(handoff_review_frames) is not int or handoff_review_frames not in (900,1200):raise ValueError('invalid_handoff_review_frames')
+    if not 0<=frames<=(2400 if scoop_window else handoff_review_frames if contact_window else 120):raise ValueError('bounded_bc_probe_frames')
     return 900 if scoop_window else 360 if contact_window else 180
 
 
@@ -30,7 +31,7 @@ def main():
     p.add_argument('--source',required=True);p.add_argument('--policy',required=True);p.add_argument('--policy-sha256',required=True)
     p.add_argument('--output',required=True);p.add_argument('--frames',type=int,default=0)
     p.add_argument('--training-python',required=True);p.add_argument('--training-reset-checkpoint',action='store_true')
-    p.add_argument('--contact-window',action='store_true',help='Explicit bounded extension to at most 900 frames')
+    p.add_argument('--contact-window',action='store_true',help='Bounded handoff window: 900 frames, or explicit protocol 1200')
     p.add_argument('--prefix-review',type=Path,help='Audited startup prefix required for contact extension')
     p.add_argument('--scoop-window',action='store_true',help='Audited contact extension, at most 2400 frames / 900 seconds')
     p.add_argument('--contact-review',type=Path)
@@ -49,7 +50,8 @@ def main():
     phase_config=json.loads(Path(contract['contact_config']).read_text())['parameters']
     completion_config=json.loads(Path(contract['completion_config']).read_text())['parameters']
     polygon=json.loads(Path(contract['cavity_config']).read_text())['bucket']['polygon_xz_m']
-    wall_budget=probe_budget(args.frames,args.contact_window,args.scoop_window)
+    handoff_frames=contract.get('handoff_review_frames',900)
+    wall_budget=probe_budget(args.frames,args.contact_window,args.scoop_window,handoff_frames)
     if args.contact_window and args.prefix_review is None:p.error('contact window requires --prefix-review')
     prefix_actions=[];prefix_rows=[];prefix_run=None
     if args.prefix_review is not None:
@@ -64,7 +66,7 @@ def main():
     if args.scoop_window:
         if args.contact_review is None or args.prefix_review is None:raise ValueError('scoop_requires_contact_and_startup_reviews')
         contact=json.loads(args.contact_review.read_text());contact_run=Path(contact['run'])
-        if not contact['audit_passed'] or not contact['behavior_gate_passed'] or contact['frames']!=900:
+        if not contact['audit_passed'] or not contact['behavior_gate_passed'] or contact['frames']!=handoff_frames:
             raise ValueError('scoop_contact_not_qualified')
         for item in contact['outputs']:
             if sha(item['path'])!=item['sha256']:raise ValueError('scoop_contact_changed')
@@ -77,6 +79,7 @@ def main():
                 source=dict(path=str(source),sha256=sha(source)),policy=dict(path=str(Path(args.policy).resolve()),sha256=args.policy_sha256),
                 no_scripted_excavation=False, geometric_feedback=True,manual_default_changed=False,policy_resume_qualified=False,formal_training_admission=False)
     report.update(contact_window=args.contact_window,scoop_window=args.scoop_window,wall_budget_seconds=wall_budget,prefix_frames_verified=0,events=[],
+                  handoff_review_frames=handoff_frames,
                   phase_contract=dict(path=str(args.phase_contract.resolve()),sha256=sha(args.phase_contract)),phase_inputs=contract['inputs'])
     if args.prefix_review is not None:
         report['prefix_review']=dict(path=str(args.prefix_review.resolve()),sha256=sha(args.prefix_review))
