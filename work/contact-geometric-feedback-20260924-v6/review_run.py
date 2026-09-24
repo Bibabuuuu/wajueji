@@ -26,14 +26,14 @@ endpoint=run/('final.npz' if report['status']=='bounded_probe_completed' else 'p
 ground=[guard.measure(row['after_state']['mechanism_qpos']) for row in physical]
 coordinates=np.array([f.coordinates(row['after_state']['mechanism_qpos']) for row in physical])
 trace=rows(run/'phase-trace.ndjson')
-checks=dict(frames=n==report['frames_completed']==len(actions),exact_restore=all(report['zero_step_arrays_exact'].values()),
+checks=dict(frames=n==report['frames_completed'] and len(actions)==n+(1 if report['status']=='failed' else 0),exact_restore=all(report['zero_step_arrays_exact'].values()),
  control_recomputed=command_error<1e-12 and feedback_equal,
  commands=all(x['applied_command_si']==y['applied_command_si'] for x,y in zip(actions,physical)),
- actual_previous=all(actions[i]['before_state']==physical[i-1]['after_state'] for i in range(1,n)),
- previous_actions=all(actions[i]['previous_applied_action_si']==actions[i-1]['applied_command_si'] for i in range(1,n)),
+ actual_previous=all(actions[i]['before_state']==physical[i-1]['after_state'] for i in range(1,len(actions))),
+ previous_actions=all(actions[i]['previous_applied_action_si']==actions[i-1]['applied_command_si'] for i in range(1,len(actions))),
  phase_timing=all(x['latest_allowed_phase_evidence_frame']==x['frame']-1 for x in actions),
  phase_action=all(e['phase']==t['phase']['phase_before_observation'] for e,t in zip(actions,trace)),
- phase_next=all(actions[i]['phase']==trace[i-1]['phase']['phase_for_next_decision'] for i in range(1,min(n,len(trace)))),
+ phase_next=all(actions[i]['phase']==trace[i-1]['phase']['phase_for_next_decision'] for i in range(1,min(len(actions),len(trace)+1))),
  finite=all(np.isfinite(final[key]).all() for key in final.files if final[key].dtype.kind in 'fciu'),
  final_physical=np.array_equal(final['mechanism_qpos'],physical[-1]['after_state']['mechanism_qpos']),
  particles=initial['particle_q'].shape==final['particle_q'].shape,rocks=np.array_equal(initial['rigid_ids'],final['rigid_ids']),
@@ -60,6 +60,10 @@ if report['status']=='bounded_probe_completed':result['outputs'] += [{'path':str
 result['soil_plan']=f.soil_plan
 result['first_vertical']=None if not vertical else dict(frame=vertical[0]['frame'],root_above_surface_m=vertical[0]['feedback']['root_above_surface_m'])
 result['complete_scoop']=report.get('final_phase')=='off_soil'
+result['pending_failed_step_commands']=len(actions)-n
+if report['status']=='failed':
+ result['primary_failure']=read(run/'physics/failure.json')['error']
+ result['failure_state_scope']='Failure checkpoint is diagnostic only. Failed step may have partly advanced coupled physics; last valid returned rigid state is frame '+str(n)+'. No continuation qualification.'
 contact_events=[e for e in actions if e['feedback']['cut_target'] is not None]
 result['tip_vertical_motion_m']=dict(initial_z=float(f.coordinates(initial['mechanism_qpos'])[2]),minimum_z=float(coordinates[:,2].min()),initial_to_minimum=float(f.coordinates(initial['mechanism_qpos'])[2]-coordinates[:,2].min()))
 if contact_events:

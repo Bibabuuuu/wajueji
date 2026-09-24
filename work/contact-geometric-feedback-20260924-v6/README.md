@@ -22,4 +22,10 @@ run.sh从原第三铲预备点直接恢复，不重走APPROACH。原始输出run
 
 D-147 v6地形相对切深/斗角候选通过54项定向测试、纯运动学、零步24数组、120帧、900帧真实接触及逐帧独立重算。近竖直第739帧根沿低于参考土面1.595cm；第823帧确认收斗，824帧交接BC。目标齿尖z=0.18770m由本铲地形计算；实测最低0.16841m，接触后下降0.86428m，最大中线横偏1.386cm，整斗CAD最低离地7.426cm。所有局部行为/物理/材料/防漏门通过；尚无离土满斗率结果。 总墙钟188.94秒；参考面1.10412m、竖直几何角0.218493rad。root_ready在实际收斗交接前已满足；模型参数和原因果阶段阈值不改。前120帧/全24数组与起步运行一致。
 
-完整单铲命令：`bash work/contact-geometric-feedback-20260924-v6/run.sh --frames 2400 --scoop-window --prefix-review work/contact-geometric-feedback-20260924-v6/startup-review.json --contact-review work/contact-geometric-feedback-20260924-v6/contact900-review.json --capture-display --output runs/contact-geometric-probe-20260924-v6/scoop2400`。该任务正在运行，尚无结果；日志scoop.log，超过预算或真实故障保存现场并结束，不重训或扩大扫描。
+完整单铲命令：`bash work/contact-geometric-feedback-20260924-v6/run.sh --frames 2400 --scoop-window --prefix-review work/contact-geometric-feedback-20260924-v6/startup-review.json --contact-review work/contact-geometric-feedback-20260924-v6/contact900-review.json --capture-display --output runs/contact-geometric-probe-20260924-v6/scoop2400`。该任务已失败结束；日志scoop.log，现场与全部已完成帧缓存保留。
+
+## 完整单铲结果：未通过
+
+完整单铲候选在1327个有效返回物理帧后，第1328步触发joint range；异常关闭又报three_press_bridge_close_failed，原始失败保留在physics/failure.json。前900物理帧/全24数组与短窗一致，1328条控制（含1条已发但无有效返回的失败步）独立重算和证据审核通过；behavior_gate_passed=false，未进入lift/off_soil，没有有效离土满斗率。最后有效铲斗缸q15=0.859953m、硬上限0.860m，向上限速度0.017078m/s；852mm后正收斗指令已为0，但实际超调约7.95mm。末积分助力69.21kN、主动附加助力0，积分可能参与过冲但未作因果隔离。后端未报告越界关节ID，最后有效三个限位关节的余量和速度强烈指向铲斗缸。总墙钟278.18秒。
+
+物理/训练均结束，只读1327帧回放已启动。失败快照为诊断态，失败步可能部分推进耦合物理，不能作为精确续跑点。下一步需解决真实收斗末端制动和收斗到位后的抬升交接；BC当前仍请求下压。进一步增加反馈抬升兜底会改变BC职责范围，先与用户讨论，当前不重训、不继续无界试跑、不放宽硬限位。 证据scoop2400-review.json、last-valid-joint-margins.json。不能用已通过的900帧替代完整单铲结论，也不把未离土的瞬时浸土量报告为满斗率。
