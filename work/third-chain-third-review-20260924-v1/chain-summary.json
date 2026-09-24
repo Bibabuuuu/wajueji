@@ -1,0 +1,52 @@
+{
+  "schema": "third_chain_recording_summary_v1",
+  "checks": {
+    "indices_in_order": true,
+    "same_lineage": true,
+    "all_recording_reviews_pass": true,
+    "all_preparations_pass": true,
+    "real_previous_endpoints": true,
+    "inventory_prefix_preserved": true,
+    "original_snapshots_unchanged": true
+  },
+  "lineage_root": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+  "scoops": [
+    {
+      "scoop": 1,
+      "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279",
+      "frames": 1411,
+      "fill_percent": 102.38465197399715,
+      "liters": 261.24952072070977,
+      "working_fill_meets_95": true,
+      "occupancy_level": 0.2,
+      "recording_review_pass": true,
+      "expert_success_admission": "pending_phase_goal_and_action_contract_review"
+    },
+    {
+      "scoop": 2,
+      "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582",
+      "frames": 1674,
+      "fill_percent": 77.78975741239894,
+      "liters": 198.4920244308772,
+      "working_fill_meets_95": false,
+      "occupancy_level": 0.2,
+      "recording_review_pass": true,
+      "expert_success_admission": "pending_phase_goal_and_action_contract_review"
+    },
+    {
+      "scoop": 3,
+      "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627",
+      "frames": 1490,
+      "fill_percent": 109.55446329475186,
+      "liters": 279.54435041530894,
+      "working_fill_meets_95": true,
+      "occupancy_level": 0.2,
+      "recording_review_pass": true,
+      "expert_success_admission": "pending_phase_goal_and_action_contract_review"
+    }
+  ],
+  "continuous_physics": false,
+  "truck_delivery_completed": false,
+  "training_eligible": false,
+  "scope": "Three linked contact recordings with explicit fast resets, not a continuous autonomous three-scoop run."
+}
