@@ -37,4 +37,3 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THR
 用户最新要求仅记录满斗/晃动/视觉穿模意见，暂不修复，继续三铲。四张原图及第998、2011、2926、3981帧意见已保存至[evidence/user-first-scoop-review-20260925-v1](../../evidence/user-first-scoop-review-20260925-v1/README.md)。不改接触取料策略、振荡参数或渲染。
 
 按当前继续三铲及此前直接恢复保存点的授权，D158只接入本次非物理故障的观察误报现场：37项审核、24数组零步、4120指令和7640几何样本均通过，保留原failure报告；显式SHA加载器和全部物理保护保留。此单点来源准入是当前实施判断，不把用户原话改写为批准通用失败恢复。准备从3981直接回转/卸料/返回，最多4917帧/1415秒，未重新抬升。
-
