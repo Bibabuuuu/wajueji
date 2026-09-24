@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": {
+    "completed": true,
+    "audited": true,
+    "schema": true,
+    "stage": true,
+    "cycle": true,
+    "training_reset": true,
+    "tail_length": true,
+    "tail_soil": false,
+    "tail_rock": true,
+    "physical_guards": true,
+    "endpoint": true,
+    "source_sha": true
+  },
+  "source": "/home/qunwang/wajueji/runs/contact-next-prepoint-20260925-v1/physical/prepoint.npz",
+  "source_sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
+  "source_metadata_sha256": "6aa565c61e7c66d0c70cf347464e1af08e10697af042db7e5c939c484656a96e",
+  "physics_steps_added": 0,
+  "tail_contact_frames": 30,
+  "strict_zero_contact_qualified": false,
+  "maximum_tail_soil_samples": 11,
+  "development_only": true,
+  "authorization": "\u7528\u6237\u8981\u6c42\u6301\u7eed\u8fd0\u884c\u5e76\u4fdd\u5b58\uff0c\u5230\u5b8c\u6210\u7b2c\u4e8c\u94f2\u5378\u6599\u6216\u4fdd\u62a4\u9000\u51fa\u540e\u7edf\u4e00\u68c0\u67e5\uff1b\u63a5\u89e6\u8ba1\u6570\u5982\u5b9e\u4fdd\u7559\uff0c\u4e0d\u6388\u4e88G2\u3002",
+  "formal_three_scoop_qualified": false
+}

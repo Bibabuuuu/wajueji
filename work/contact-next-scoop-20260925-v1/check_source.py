@@ -19,8 +19,14 @@ def main():
         tail_rock=all(r['rock_bucket_contact_substeps']==0 for r in tail),
         physical_guards=all(r['hard_guard'] for r in rows),endpoint=np.array_equal(physical['mechanism_qpos'],rows[-1]['after_state']['mechanism_qpos']),
         source_sha=meta['checkpoint_sha256']==sha(SOURCE))
-    result=dict(passed=all(checks.values()),checks={k:bool(v) for k,v in checks.items()},source=str(SOURCE),source_sha256=sha(SOURCE),
+    strict_zero=checks['tail_soil'] and checks['tail_rock']
+    # User now requests continuous development execution and a single final
+    # review. This does not grant the formal non-contact APPROACH qualification.
+    admission=all(v for k,v in checks.items() if k not in ('tail_soil','tail_rock'))
+    result=dict(passed=admission,checks={k:bool(v) for k,v in checks.items()},source=str(SOURCE),source_sha256=sha(SOURCE),
         source_metadata_sha256=sha(str(SOURCE)+'.json'),physics_steps_added=0,tail_contact_frames=30,
+        strict_zero_contact_qualified=bool(strict_zero),maximum_tail_soil_samples=max(r['bucket_mpm_contact_samples'] for r in tail),
+        development_only=True,authorization='用户要求持续运行并保存，到完成第二铲卸料或保护退出后统一检查；接触计数如实保留，不授予G2。',
         formal_three_scoop_qualified=False)
     (W/'source-review.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2));assert result['passed']
 if __name__=='__main__':main()

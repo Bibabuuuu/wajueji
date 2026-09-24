@@ -38,7 +38,7 @@ class ContactRuntime(CandidateRuntime):
             super().__init__(source,output,freeze_passive_jp=True,**kw)
         finally:checkpoint.load=original
     def step(self,command):
-        if read(W/'protocol.json')['status']!='authorized_after_preflight':raise ValueError('next_contact_not_preflighted')
+        if read(W/'protocol.json')['status']!='authorized_continuous_run':raise ValueError('next_contact_not_authorized')
         return super().step(command)
     def save(self,path,**kw):
         result=super().save(path,**kw);side=Path(str(path)+'.json');meta=read(side)
