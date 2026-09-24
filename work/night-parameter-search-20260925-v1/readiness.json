@@ -1,0 +1,47 @@
+{
+  "status": "launch_blocked",
+  "blockers": [
+    "baseline_second_unload_incomplete:ValueError('cycle_observation_grid_budget')"
+  ],
+  "bindings_match": true,
+  "free_bytes": 466491887616,
+  "source_sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
+  "policy_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+  "maximum_wall_seconds": 28800,
+  "maximum_candidates": 6,
+  "physical_steps_added": 0,
+  "neural_training_started": false,
+  "batch_started": false,
+  "baseline_status": "failed",
+  "baseline_frames": 439,
+  "baseline_handoff": {
+    "ready": true,
+    "frame_end": 3164,
+    "first_available_decision_frame": 3165,
+    "closure_held": true,
+    "contact_history_complete": true,
+    "sustained_actual_rise": true,
+    "height_is_diagnostic_only": true,
+    "observed_span_seconds": 3.0,
+    "bucket_above_initial_soil_m": -0.1982763846756943,
+    "maximum_drawdown_m": {
+      "origin_z_m": 0.0,
+      "minimum_bucket_z_m": 0.0
+    },
+    "initial_soil_top_m": 1.346285343170166,
+    "source_sha256": "a006213a953947eabd73f975af29dc388fa4ed9dbd3307dc66abf491eec86c1f"
+  },
+  "baseline_handoff_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-second-finish-unload-20260925-v4/physical/handoff.npz",
+    "size_bytes": 53128118,
+    "mtime_ns": 1790273533687284602,
+    "sha256": "f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d"
+  },
+  "pending_checks": [
+    "physical120_frame_identity_smoke",
+    "candidate_and_tail_physical_validation",
+    "valid_retained_volume_scoring",
+    "selected_candidate_fixed_unload_confirmation"
+  ],
+  "scope": "Only curl_load below95pct adjusted. Same saved prepoint per trial; not continuous scoops."
+}
