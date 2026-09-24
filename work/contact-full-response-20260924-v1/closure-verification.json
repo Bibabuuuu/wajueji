@@ -1,0 +1,11 @@
+{
+  "all_frozen_protocol_inputs_unchanged": true,
+  "audit_passed": true,
+  "final_checkpoint_sha256": "37cb63c32f9070bcf119fac3a729be64ad6cde31593fa9f5ac8a17a6b5c6a0f2",
+  "full_scene_runs": 1,
+  "full_scene_frames": 2400,
+  "training_started": false,
+  "first_second_source_new_interface_runs": 0,
+  "metadata_legacy_fields_disclosed": true,
+  "run_scripts_unchanged_since_scene": true
+}

@@ -1,0 +1,492 @@
+{
+  "status": "read_only_kinematic_diagnosis",
+  "native_steps": 0,
+  "MPM_steps": 0,
+  "not_a_new_policy_or_authorized_physical_candidate": true,
+  "samples": [
+    {
+      "frame": 1124,
+      "closure_fraction": 0.8006645051283536,
+      "recorded_applied": [
+        -0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recorded_preview_scale": 0.0,
+      "checks": {
+        "original_request": {
+          "requested": [
+            -0.0004073737428415295,
+            0.011251652737485903,
+            0.0225,
+            0.0036967529617996744
+          ],
+          "projected": [
+            -0.0004073737428415295,
+            0.011251652737485903,
+            0.0225,
+            0.0036967529617996744
+          ],
+          "linear_minimum_body_velocity": -2.7755575615628914e-17,
+          "within_previous_command_rate": false,
+          "trials": [
+            {
+              "factor": 1.0,
+              "minimum_body_delta_m": -0.000483429861534157,
+              "ground_clearance_m": 0.17508133881209476,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.5,
+              "minimum_body_delta_m": -0.00048415742878538115,
+              "ground_clearance_m": 0.17508133881209476,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.25,
+              "minimum_body_delta_m": -0.00048437158948411163,
+              "ground_clearance_m": 0.17508133881209476,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.125,
+              "minimum_body_delta_m": -0.00048444122165836045,
+              "ground_clearance_m": 0.17508133881209476,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-06,
+              "minimum_body_delta_m": -0.000484481981338436,
+              "ground_clearance_m": 0.17495784990090668,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-09,
+              "minimum_body_delta_m": -0.00048448198078065996,
+              "ground_clearance_m": 0.1749578489045852,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.17508133881209476,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": true,
+              "error": null
+            }
+          ]
+        },
+        "small_boom_up_only": {
+          "requested": [
+            0.0,
+            0.00075,
+            0.0,
+            0.0
+          ],
+          "projected": [
+            0.0,
+            0.00075,
+            0.0,
+            0.0
+          ],
+          "linear_minimum_body_velocity": 0.00628972672554277,
+          "within_previous_command_rate": false,
+          "trials": [
+            {
+              "factor": 1.0,
+              "minimum_body_delta_m": -0.00034316652978272355,
+              "ground_clearance_m": 0.1750695237881189,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.5,
+              "minimum_body_delta_m": -0.0004138242863628294,
+              "ground_clearance_m": 0.175013686274902,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.25,
+              "minimum_body_delta_m": -0.00044915314168814113,
+              "ground_clearance_m": 0.17498576757182693,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.125,
+              "minimum_body_delta_m": -0.0004668175637884131,
+              "ground_clearance_m": 0.1749718082335311,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-06,
+              "minimum_body_delta_m": -0.00048448184058746957,
+              "ground_clearance_m": 0.17495784901595746,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-09,
+              "minimum_body_delta_m": -0.0004844819816728352,
+              "ground_clearance_m": 0.17495784890446475,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.17508133881209476,
+              "maximum_closure_residual_m": 5.5456423009982794e-05,
+              "original_preview_pass": true,
+              "error": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 1200,
+      "closure_fraction": 0.7975184084501028,
+      "recorded_applied": [
+        -0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recorded_preview_scale": 0.0,
+      "checks": {
+        "original_request": {
+          "requested": [
+            -0.0004861862212299845,
+            0.0007499999999999987,
+            0.0005525207732350679,
+            0.0015115820661320727
+          ],
+          "projected": [
+            -0.0004861862212299845,
+            0.0007499999999999987,
+            0.0005525207732350679,
+            0.0015115820661320727
+          ],
+          "linear_minimum_body_velocity": -1.3010426069826053e-17,
+          "within_previous_command_rate": true,
+          "trials": [
+            {
+              "factor": 1.0,
+              "minimum_body_delta_m": -0.0003788819734811266,
+              "ground_clearance_m": 0.15908392741603383,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.5,
+              "minimum_body_delta_m": -0.00037864115192420833,
+              "ground_clearance_m": 0.15905081388564224,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.25,
+              "minimum_body_delta_m": -0.00037858350956510023,
+              "ground_clearance_m": 0.15900983524347623,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.125,
+              "minimum_body_delta_m": -0.000378570372769893,
+              "ground_clearance_m": 0.15898934628816574,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-06,
+              "minimum_body_delta_m": -0.00037856743402453485,
+              "ground_clearance_m": 0.15896885774131075,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-09,
+              "minimum_body_delta_m": -0.00037856743445119356,
+              "ground_clearance_m": 0.15896885757768586,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.15908392741603383,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": true,
+              "error": null
+            }
+          ]
+        },
+        "small_boom_up_only": {
+          "requested": [
+            0.0,
+            0.0007499999999999987,
+            0.0,
+            0.0
+          ],
+          "projected": [
+            0.0,
+            0.0007499999999999987,
+            0.0,
+            0.0
+          ],
+          "linear_minimum_body_velocity": 0.006273624101419766,
+          "within_previous_command_rate": true,
+          "trials": [
+            {
+              "factor": 1.0,
+              "minimum_body_delta_m": -0.00023750510640407896,
+              "ground_clearance_m": 0.1590802633648677,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.5,
+              "minimum_body_delta_m": -0.0003080363019480892,
+              "ground_clearance_m": 0.15902456039852997,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.25,
+              "minimum_body_delta_m": -0.00034330187576758764,
+              "ground_clearance_m": 0.15899670896979723,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.125,
+              "minimum_body_delta_m": -0.0003609346569592997,
+              "ground_clearance_m": 0.15898278326882687,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-06,
+              "minimum_body_delta_m": -0.0003785672927841821,
+              "ground_clearance_m": 0.15896885768858104,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-09,
+              "minimum_body_delta_m": -0.0003785674338065981,
+              "ground_clearance_m": 0.15896885757720713,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.15908392741603383,
+              "maximum_closure_residual_m": 4.2234856377955877e-05,
+              "original_preview_pass": true,
+              "error": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "frame": 1376,
+      "closure_fraction": 0.801665738017987,
+      "recorded_applied": [
+        -0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "recorded_preview_scale": 0.0,
+      "checks": {
+        "original_request": {
+          "requested": [
+            -0.00027774323649339865,
+            0.0007499999999999988,
+            0.0006105708360123291,
+            0.0014489311354244948
+          ],
+          "projected": [
+            -0.00027774323649339865,
+            0.0007499999999999988,
+            0.0006105708360123291,
+            0.0014489311354244948
+          ],
+          "linear_minimum_body_velocity": -2.0816681711721685e-17,
+          "within_previous_command_rate": true,
+          "trials": [
+            {
+              "factor": 1.0,
+              "minimum_body_delta_m": -0.00010717510355306992,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.5,
+              "minimum_body_delta_m": -0.00010695318535736131,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.25,
+              "minimum_body_delta_m": -0.000106896523793365,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.125,
+              "minimum_body_delta_m": -0.00010688176138740069,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-06,
+              "minimum_body_delta_m": -0.00010687439100509621,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-09,
+              "minimum_body_delta_m": -0.00010687439138856725,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": true,
+              "error": null
+            }
+          ]
+        },
+        "small_boom_up_only": {
+          "requested": [
+            0.0,
+            0.0007499999999999988,
+            0.0,
+            0.0
+          ],
+          "projected": [
+            0.0,
+            0.0007499999999999988,
+            0.0,
+            0.0
+          ],
+          "linear_minimum_body_velocity": 0.006217313685126967,
+          "within_previous_command_rate": true,
+          "trials": [
+            {
+              "factor": 1.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": true,
+              "error": null
+            },
+            {
+              "factor": 0.5,
+              "minimum_body_delta_m": -3.6665018296022645e-05,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.25,
+              "minimum_body_delta_m": -7.176971343403338e-05,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.125,
+              "minimum_body_delta_m": -8.932205439915464e-05,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-06,
+              "minimum_body_delta_m": -0.00010687425055200261,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 1e-09,
+              "minimum_body_delta_m": -0.00010687439075651728,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": false,
+              "error": null
+            },
+            {
+              "factor": 0.0,
+              "minimum_body_delta_m": 0.0,
+              "ground_clearance_m": 0.14049933641429002,
+              "maximum_closure_residual_m": 3.253896399293704e-05,
+              "original_preview_pass": true,
+              "error": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "source_sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+}

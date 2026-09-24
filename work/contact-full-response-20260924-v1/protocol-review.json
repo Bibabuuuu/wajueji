@@ -1,0 +1,32 @@
+{
+  "protocol_sha256": "d41ab781cf4f6ea358688e695b9da8d66b20c545ac068c00d8c63da108c01fff",
+  "legacy_metadata_consistent": false,
+  "legacy_fields": {
+    "sequence": "60Hz matched120 timing;120Hz single instance zero->120->1200->max2400 if original gates pass",
+    "startup_wall_seconds": 180,
+    "contact_wall_seconds": 360,
+    "scope": "D150 user-authorized 120Hz exchange candidate and measured cost versus60Hz",
+    "maximum_physical_runs": 2,
+    "candidate_coupling_hz": 120
+  },
+  "effective_scope": {
+    "control_hz": 60,
+    "mpm_hz": 60,
+    "rigid_hz": 4800,
+    "frames": 2400,
+    "wall_seconds": 900,
+    "intermediate_wall_caps": false,
+    "same_instance_gates": [
+      0,
+      120,
+      1200
+    ],
+    "physics": "full_closed_linkage_response",
+    "production_default_changed": false
+  },
+  "budget_assignment_unconditional_900": true,
+  "budget_check_uses_only_total_wall_budget": true,
+  "interpretation": "Frozen protocol copied D150 legacy descriptive fields; D152_scope and executed candidate code explicitly set one 60Hz 2400-frame run, unified 900 seconds. Legacy fields are unused by the runner, retained as provenance; do not mutate frozen protocol or rerun physics for a metadata correction.",
+  "physics_run_count_authorized": 1,
+  "physics_runs_launched": 1
+}

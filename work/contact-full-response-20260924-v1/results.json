@@ -1,0 +1,220 @@
+{
+  "status": "bounded_probe_completed",
+  "failure": null,
+  "frames": 2400,
+  "wall_seconds": 655.139499804005,
+  "startup_wall_seconds": 5.803889041009825,
+  "timing": {
+    "120": {
+      "simulated_seconds": 2.0,
+      "loop_seconds_per_sim_second": 15.602291415503714,
+      "physics_wall_seconds": 11.197436185961124,
+      "runtime_step_wall_seconds": 12.917732579473522,
+      "mpm_wall_seconds": 8.538348789035808,
+      "mujoco_wall_seconds": 2.5733769264334114,
+      "predictor_wall_seconds": 3.1635158145072637,
+      "mpm_excluding_shadow_seconds_per_sim_second": 5.374832974528545
+    },
+    "2400": {
+      "simulated_seconds": 40.0,
+      "loop_seconds_per_sim_second": 16.06544841567229,
+      "physics_wall_seconds": 11.415823389631987,
+      "runtime_step_wall_seconds": 12.868276193182101,
+      "mpm_wall_seconds": 8.495477942536672,
+      "mujoco_wall_seconds": 2.833874839370401,
+      "predictor_wall_seconds": 3.2190161989063197,
+      "mpm_excluding_shadow_seconds_per_sim_second": 5.276461743630352
+    }
+  },
+  "windows": {
+    "all": {
+      "range": [
+        1,
+        2400
+      ],
+      "half_count": 4800,
+      "maximum_absolute_speed_m_s": 0.059727579358714006,
+      "maximum_adjacent_half_jump_m_s": 0.022858429507773635,
+      "peak": {
+        "frame": 1080,
+        "half": 2,
+        "velocity": 0.059727579358714006,
+        "command": 0.05178277614933952
+      },
+      "largest_jump": {
+        "from_frame": 1124,
+        "from_half": 1,
+        "to_frame": 1124,
+        "to_half": 2,
+        "before": 0.028822335659713202,
+        "after": 0.005963906151939565
+      },
+      "direction_reversals_over_1mm_s": 1
+    },
+    "old_failure": {
+      "range": [
+        940,
+        972
+      ],
+      "half_count": 66,
+      "maximum_absolute_speed_m_s": 0.023931089533140548,
+      "maximum_adjacent_half_jump_m_s": 0.00046820161885334846,
+      "peak": {
+        "frame": 940,
+        "half": 1,
+        "velocity": 0.023931089533140548,
+        "command": 0.02138830570800018
+      },
+      "largest_jump": {
+        "from_frame": 956,
+        "from_half": 2,
+        "to_frame": 957,
+        "to_half": 1,
+        "before": 0.022184824690782166,
+        "after": 0.022653026309635515
+      },
+      "direction_reversals_over_1mm_s": 0
+    },
+    "old_120hz_late": {
+      "range": [
+        1118,
+        1160
+      ],
+      "half_count": 86,
+      "maximum_absolute_speed_m_s": 0.04394199630903304,
+      "maximum_adjacent_half_jump_m_s": 0.022858429507773635,
+      "peak": {
+        "frame": 1120,
+        "half": 2,
+        "velocity": 0.04394199630903304,
+        "command": 0.04933631983741568
+      },
+      "largest_jump": {
+        "from_frame": 1124,
+        "from_half": 1,
+        "to_frame": 1124,
+        "to_half": 2,
+        "before": 0.028822335659713202,
+        "after": 0.005963906151939565
+      },
+      "direction_reversals_over_1mm_s": 1
+    },
+    "late": {
+      "range": [
+        1200,
+        2400
+      ],
+      "half_count": 2402,
+      "maximum_absolute_speed_m_s": 0.031073409609021652,
+      "maximum_adjacent_half_jump_m_s": 0.005121314309469764,
+      "peak": {
+        "frame": 1667,
+        "half": 1,
+        "velocity": 0.031073409609021652,
+        "command": 0.010789017103731929
+      },
+      "largest_jump": {
+        "from_frame": 1666,
+        "from_half": 2,
+        "to_frame": 1667,
+        "to_half": 1,
+        "before": 0.025952095299551888,
+        "after": 0.031073409609021652
+      },
+      "direction_reversals_over_1mm_s": 0
+    }
+  },
+  "final_phase": "curl_load",
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 433
+        }
+      ],
+      "confirmation_frame_end": 435,
+      "first_available_decision_frame": 436
+    },
+    {
+      "transition": "penetrate_to_curl_load",
+      "evidence": [
+        {
+          "kind": "frozen_angle_downward_crossing",
+          "onset_frame_end": 977
+        }
+      ],
+      "confirmation_frame_end": 977,
+      "first_available_decision_frame": 978
+    }
+  ],
+  "same_instance_gates": {
+    "120": {
+      "passed": true,
+      "checks": {
+        "all_hard": true,
+        "material": true,
+        "sweep": true,
+        "ground": true,
+        "lateral_corridor": true,
+        "cut_depth_respected": true,
+        "approach_pitch_tracking": true,
+        "action_matches_physics": true,
+        "state_chain": true,
+        "causal_terrain": true,
+        "causal_phase": true
+      },
+      "frames": 120,
+      "maximum_cut_depth_undershoot_m": 0.0,
+      "maximum_approach_pitch_error_rad": 0.0002017821035628642,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/gate-120.npz",
+        "size_bytes": 54098390,
+        "mtime_ns": 1790257301583732055,
+        "sha256": "d6e07f7195b37c9851a76dcf291357b392f0d59e4002e0108e5d76dc641baa81"
+      }
+    },
+    "1200": {
+      "passed": true,
+      "checks": {
+        "all_hard": true,
+        "material": true,
+        "sweep": true,
+        "ground": true,
+        "lateral_corridor": true,
+        "cut_depth_respected": true,
+        "approach_pitch_tracking": true,
+        "action_matches_physics": true,
+        "state_chain": true,
+        "causal_terrain": true,
+        "causal_phase": true,
+        "entered_curl": true,
+        "bc_controlled_after_curl": true,
+        "root_reached_soil_before_bc": true,
+        "root_at_vertical": true
+      },
+      "frames": 1200,
+      "maximum_cut_depth_undershoot_m": 0.002656211200027153,
+      "maximum_approach_pitch_error_rad": 0.0002017821035628642,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/gate-1200.npz",
+        "size_bytes": 54112538,
+        "mtime_ns": 1790257578902778403,
+        "sha256": "965c8f60d1e4aaf4abee6fad21c4c33e45a627afc51c4188d68c9cc0701d82a9"
+      }
+    }
+  },
+  "source_unchanged": true,
+  "full_loop_overhead_first120": 0.34085960238401736,
+  "endpoint_response_check": {
+    "definition": "endpoint twist = private free prediction (includes pending reaction) + C*(total bucket wrench - pending wrench)*dt",
+    "linear_speed_error_max_m_s": 0.040614115760753425,
+    "angular_speed_error_max_rad_s": 0.22669626726174222,
+    "loaded_frames": 1937,
+    "limitation": "Full nonlinear scene may couple rock MPM loads through direct native contacts; these cross-body response blocks are not in bucket C.",
+    "loaded_scaled_twist_rms_error": 0.01912072069183875,
+    "loaded_scaled_actual_rms": 0.0379195018757156
+  },
+  "physics_steps_added": 0
+}
