@@ -55,7 +55,7 @@
 
 ## 5. 证据和报告
 
-当前S05物理试验已暂停，证据入口：[v9-handoff保护停止](../work/contact-geometric-feedback-20260924-v9-handoff/README.md)、[速度与离土只读诊断](../work/contact-speed-audit-20260924-v1/README.md)、[第一/第二铲初态及短程资格](../work/contact-multisource-validation-20260924-v1/README.md)。原[v7后段约束及1500帧结果](../work/contact-geometric-feedback-20260924-v7/README.md)冻结保留；新会话先读[交接及暂停边界](handoff.md)。
+当前S05已完成[D-149响应诊断](../work/contact-response-diagnosis-20260924-v1/README.md)，正在优先推进今晚三铲基线；旧候选证据入口：[v9-handoff保护停止](../work/contact-geometric-feedback-20260924-v9-handoff/README.md)、[速度与离土只读诊断](../work/contact-speed-audit-20260924-v1/README.md)、[第一/第二铲初态及短程资格](../work/contact-multisource-validation-20260924-v1/README.md)。原[v7后段约束及1500帧结果](../work/contact-geometric-feedback-20260924-v7/README.md)冻结保留；新会话先读[交接及暂停边界](handoff.md)。
 
 S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contact-bc-data-preparation-20260924-v1/README.md)。初始地形缺失修正与旧索引适用边界以此证据和S05为准。
 

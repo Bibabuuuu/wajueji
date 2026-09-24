@@ -1,0 +1,387 @@
+{
+  "physics_steps_added": 0,
+  "window": [
+    940,
+    972
+  ],
+  "rows": [
+    {
+      "frame": 940,
+      "phase": "penetrate",
+      "command_m_s": 0.024756529519550964,
+      "velocity_endpoint_m_s": 0.027597871192959023,
+      "target_error_m": 0.0033448973904889323,
+      "integral_n": 21031.999462064618,
+      "active_n": 14103.881681925006,
+      "previous_external_projected_n": -45838.102187614466,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 941,
+      "phase": "penetrate",
+      "command_m_s": 0.024609851449651658,
+      "velocity_endpoint_m_s": 0.025749050903550712,
+      "target_error_m": 0.0033137972772365742,
+      "integral_n": 21102.805925628567,
+      "active_n": 13914.969977049113,
+      "previous_external_projected_n": -45016.01229069545,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 942,
+      "phase": "penetrate",
+      "command_m_s": 0.02444900664252217,
+      "velocity_endpoint_m_s": 0.02506736493809675,
+      "target_error_m": 0.0033018150341299624,
+      "integral_n": 21173.113983183954,
+      "active_n": 13842.22441095218,
+      "previous_external_projected_n": -44696.52243390489,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 943,
+      "phase": "penetrate",
+      "command_m_s": 0.024296020418275815,
+      "velocity_endpoint_m_s": 0.02472179020604625,
+      "target_error_m": 0.00329529293693831,
+      "integral_n": 21243.200634034372,
+      "active_n": 13802.659859387228,
+      "previous_external_projected_n": -44862.50094246298,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 944,
+      "phase": "penetrate",
+      "command_m_s": 0.024152700444521065,
+      "velocity_endpoint_m_s": 0.025157234661316866,
+      "target_error_m": 0.0032818932657654454,
+      "integral_n": 21313.06308482849,
+      "active_n": 13722.806137919324,
+      "previous_external_projected_n": -45017.770577575735,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 945,
+      "phase": "penetrate",
+      "command_m_s": 0.024009526224863516,
+      "velocity_endpoint_m_s": 0.02468819467751199,
+      "target_error_m": 0.003268377949009249,
+      "integral_n": 21382.557397777826,
+      "active_n": 13641.127937402247,
+      "previous_external_projected_n": -44830.28934116537,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 946,
+      "phase": "penetrate",
+      "command_m_s": 0.023876001281841273,
+      "velocity_endpoint_m_s": 0.024911700727690063,
+      "target_error_m": 0.003252124334978679,
+      "integral_n": 21451.701752561938,
+      "active_n": 13543.88563578191,
+      "previous_external_projected_n": -44910.13213704058,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 947,
+      "phase": "penetrate",
+      "command_m_s": 0.023749644292010617,
+      "velocity_endpoint_m_s": 0.027624693874054935,
+      "target_error_m": 0.003195323958988139,
+      "integral_n": 21520.01509532197,
+      "active_n": 13206.474621271675,
+      "previous_external_projected_n": -44755.04211667048,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 948,
+      "phase": "penetrate",
+      "command_m_s": 0.023562514844630258,
+      "velocity_endpoint_m_s": 0.02063749298106768,
+      "target_error_m": 0.0032119584374512566,
+      "integral_n": 21587.5037285902,
+      "active_n": 13297.547490934041,
+      "previous_external_projected_n": -43747.54993110005,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 949,
+      "phase": "penetrate",
+      "command_m_s": 0.02346679314162201,
+      "velocity_endpoint_m_s": 0.027416444408850143,
+      "target_error_m": 0.003180091484548786,
+      "integral_n": 21655.259242564065,
+      "active_n": 13114.819462803467,
+      "previous_external_projected_n": -45213.94924025351,
+      "rock_contact_substeps": 57
+    },
+    {
+      "frame": 950,
+      "phase": "penetrate",
+      "command_m_s": 0.023332861473907795,
+      "velocity_endpoint_m_s": 0.019863624599409102,
+      "target_error_m": 0.0032020990248028403,
+      "integral_n": 21722.410055803193,
+      "active_n": 13237.42367956649,
+      "previous_external_projected_n": -43908.51360760367,
+      "rock_contact_substeps": 18
+    },
+    {
+      "frame": 951,
+      "phase": "penetrate",
+      "command_m_s": 0.023284229654337223,
+      "velocity_endpoint_m_s": 0.028372464884257445,
+      "target_error_m": 0.003158370461673443,
+      "integral_n": 21789.826145204792,
+      "active_n": 12985.688351145891,
+      "previous_external_projected_n": -45417.46529494806,
+      "rock_contact_substeps": 37
+    },
+    {
+      "frame": 952,
+      "phase": "penetrate",
+      "command_m_s": 0.023168161776119713,
+      "velocity_endpoint_m_s": 0.016842115842900674,
+      "target_error_m": 0.003210543172999847,
+      "integral_n": 21856.675640711328,
+      "active_n": 13284.311682802536,
+      "previous_external_projected_n": -43482.64472155395,
+      "rock_contact_substeps": 0
+    },
+    {
+      "frame": 953,
+      "phase": "penetrate",
+      "command_m_s": 0.023186395121163342,
+      "velocity_endpoint_m_s": 0.03580519154808651,
+      "target_error_m": 0.003085724915811938,
+      "integral_n": 21923.638048525943,
+      "active_n": 12559.105984306878,
+      "previous_external_projected_n": -46112.64535917688,
+      "rock_contact_substeps": 9
+    },
+    {
+      "frame": 954,
+      "phase": "penetrate",
+      "command_m_s": 0.022966635005747922,
+      "velocity_endpoint_m_s": 0.006161832234990412,
+      "target_error_m": 0.003229479139649327,
+      "integral_n": 21989.210908724897,
+      "active_n": 13384.577128189529,
+      "previous_external_projected_n": -41343.0885847451,
+      "rock_contact_substeps": 34
+    },
+    {
+      "frame": 955,
+      "phase": "penetrate",
+      "command_m_s": 0.02307943022683491,
+      "velocity_endpoint_m_s": 0.0587563647102899,
+      "target_error_m": 0.002868951092597216,
+      "integral_n": 22054.829297400596,
+      "active_n": 11287.152011471018,
+      "previous_external_projected_n": -48208.46330996192,
+      "rock_contact_substeps": 46
+    },
+    {
+      "frame": 956,
+      "phase": "penetrate",
+      "command_m_s": 0.022481958541126213,
+      "velocity_endpoint_m_s": -0.027283425054484684,
+      "target_error_m": 0.0032671286834539126,
+      "integral_n": 22116.29449099141,
+      "active_n": 12331.80566618256,
+      "previous_external_projected_n": -34981.448101104106,
+      "rock_contact_substeps": 53
+    },
+    {
+      "frame": 957,
+      "phase": "penetrate",
+      "command_m_s": 0.022807193306764853,
+      "velocity_endpoint_m_s": 0.1271904687088169,
+      "target_error_m": 0.002258352581273604,
+      "integral_n": 22178.265979638407,
+      "active_n": 7794.849993450322,
+      "previous_external_projected_n": -53995.402302553644,
+      "rock_contact_substeps": 44
+    },
+    {
+      "frame": 958,
+      "phase": "penetrate",
+      "command_m_s": 0.02114493887859385,
+      "velocity_endpoint_m_s": -0.10958442135655387,
+      "target_error_m": 0.0031740352538958128,
+      "integral_n": 22225.932242763352,
+      "active_n": 7929.968687174486,
+      "previous_external_projected_n": -16269.7372900893,
+      "rock_contact_substeps": 71
+    },
+    {
+      "frame": 959,
+      "phase": "penetrate",
+      "command_m_s": 0.02170373489137888,
+      "velocity_endpoint_m_s": 0.26024412139002395,
+      "target_error_m": 0.0012035850914916546,
+      "integral_n": 22280.833884711807,
+      "active_n": 5703.120183094221,
+      "previous_external_projected_n": -65378.035615407585,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 960,
+      "phase": "curl_load",
+      "command_m_s": 0.023953734891378878,
+      "velocity_endpoint_m_s": -0.22148852555910897,
+      "target_error_m": 0.002496106113343499,
+      "integral_n": 22298.33360431774,
+      "active_n": 953.1201830942209,
+      "previous_external_projected_n": 19595.04802315746,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 961,
+      "phase": "curl_load",
+      "command_m_s": 0.02620373489137888,
+      "velocity_endpoint_m_s": 0.35245923652709726,
+      "target_error_m": 0.000313757348205268,
+      "integral_n": 22340.46802837201,
+      "active_n": 480.0046274040583,
+      "previous_external_projected_n": -81789.94902910509,
+      "rock_contact_substeps": 68
+    },
+    {
+      "frame": 962,
+      "phase": "curl_load",
+      "command_m_s": 0.02845373489137888,
+      "velocity_endpoint_m_s": -0.26078914303363565,
+      "target_error_m": 0.001619839255007749,
+      "integral_n": 22343.77197444213,
+      "active_n": 250,
+      "previous_external_projected_n": 47745.667485825936,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 963,
+      "phase": "curl_load",
+      "command_m_s": 0.030703734891378877,
+      "velocity_endpoint_m_s": 0.38567503094387695,
+      "target_error_m": -0.0006751862836329448,
+      "integral_n": 22367.714122501635,
+      "active_n": 0,
+      "previous_external_projected_n": -94162.2360046866,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 964,
+      "phase": "curl_load",
+      "command_m_s": 0.03295373489137888,
+      "velocity_endpoint_m_s": -0.2963833927291768,
+      "target_error_m": 0.0008938642545344155,
+      "integral_n": 22356.04772850523,
+      "active_n": 0,
+      "previous_external_projected_n": 55211.26912260702,
+      "rock_contact_substeps": 55
+    },
+    {
+      "frame": 965,
+      "phase": "curl_load",
+      "command_m_s": 0.02725642582994863,
+      "velocity_endpoint_m_s": 0.41369496902468056,
+      "target_error_m": -0.0015140091093711616,
+      "integral_n": 22366.224152404593,
+      "active_n": 0,
+      "previous_external_projected_n": -103333.0782878224,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 966,
+      "phase": "curl_load",
+      "command_m_s": 0.02950642582994863,
+      "velocity_endpoint_m_s": -0.32516680701039563,
+      "target_error_m": 6.0230740357991586e-05,
+      "integral_n": 22335.323101707163,
+      "active_n": 0,
+      "previous_external_projected_n": 68514.64402925133,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 967,
+      "phase": "curl_load",
+      "command_m_s": 0.022245085510127587,
+      "velocity_endpoint_m_s": 0.39450973874067785,
+      "target_error_m": -0.0019437553004351127,
+      "integral_n": 22333.34671954954,
+      "active_n": 0,
+      "previous_external_projected_n": -110963.0110613369,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 968,
+      "phase": "curl_load",
+      "command_m_s": 0.024495085510127586,
+      "velocity_endpoint_m_s": -0.3150540427851442,
+      "target_error_m": -0.00046772934191852134,
+      "integral_n": 22292.026274417913,
+      "active_n": 0,
+      "previous_external_projected_n": 71260.39266294472,
+      "rock_contact_substeps": 80
+    },
+    {
+      "frame": 969,
+      "phase": "curl_load",
+      "command_m_s": 0.02650871182368709,
+      "velocity_endpoint_m_s": 0.38321612696240237,
+      "target_error_m": -0.0023602550504036035,
+      "integral_n": 22284.42852196104,
+      "active_n": 0,
+      "previous_external_projected_n": -107447.47367347918,
+      "rock_contact_substeps": 63
+    },
+    {
+      "frame": 970,
+      "phase": "curl_load",
+      "command_m_s": 0.02875871182368709,
+      "velocity_endpoint_m_s": -0.23689422065371,
+      "target_error_m": -0.0016092003251564346,
+      "integral_n": 22226.677441978365,
+      "active_n": 0,
+      "previous_external_projected_n": 70513.78927148345,
+      "rock_contact_substeps": 31
+    },
+    {
+      "frame": 971,
+      "phase": "curl_load",
+      "command_m_s": 0.026819821873188765,
+      "velocity_endpoint_m_s": 0.3099031784987717,
+      "target_error_m": -0.003105255588029099,
+      "integral_n": 22198.838094284434,
+      "active_n": 0,
+      "previous_external_projected_n": -89129.3654896575,
+      "rock_contact_substeps": 72
+    },
+    {
+      "frame": 972,
+      "phase": "curl_load",
+      "command_m_s": 0.029069821873188767,
+      "velocity_endpoint_m_s": -0.3040175109331746,
+      "target_error_m": -0.0011662055780609082,
+      "integral_n": 22137.353241951256,
+      "active_n": 0,
+      "previous_external_projected_n": 53317.499318446076,
+      "rock_contact_substeps": 34
+    }
+  ],
+  "findings": [
+    "Target error near onset is about3mm; not a large accumulated travel backlog",
+    "Integral near onset21-22kN varies slowly; no sudden growth at initial alternation",
+    "MPM equivalent applied load from prior frame alternates along with actual velocity; need same-frame native observation to separate actuator/rock/MPM/sweep roles"
+  ],
+  "bindings": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/actions.ndjson",
+      "sha256": "caeddb348b36adf50c5ae8c85461f1f1e8baa9ffdcde613a5f9d5250e9efb069"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/frames.ndjson",
+      "sha256": "2d1b4712d72c79ee82c1bd3e1925ee7e4807d291846b86d58e75e4201bdc32be"
+    }
+  ]
+}
