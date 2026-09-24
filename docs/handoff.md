@@ -1,37 +1,93 @@
-# 项目交接：按9月25日提交重排，连续作业优先
+# 跨会话交接：v7后段下压改善，接续平顺性和离土
 
-> **历史交接页：** 本页主体是9月14日纯土提交基线。当前任务改为铲斗通规、动态刚体石块和MPM混合耦合资格；请以[文档索引](DOCS_INDEX.md)、[当前状态](CURRENT_STATUS.md)、对应活动小节和最新正式决策为准。下方纯土事实与失败仍保留，不当作碎石验收。
+更新：2026-09-24，用户完成1500帧回放人审后。此页只提供接手步骤和运行入口；唯一当前事实源为[CURRENT_STATUS.md](CURRENT_STATUS.md)，总体路线为[PROJECT_PLAN.md](PROJECT_PLAN.md)。旧9月14日纯土交接在Git `fb126fd:docs/handoff.md`保留，不作为现行任务。
 
-更新：2026-09-14。脱离SSH运行的三铲空载已通过全部24项审计；真实`contact-3cycle-v1`已经结束，前两铲完整通过，第三铲CURL新获取仅10.4114kg、低于20kg开发门槛后超时，整轮独立审计失败。当前GPU空闲。新增两位队友从[团队入门](team-onboarding-2026-09-14.md)只读了解路线和进度；用户明确分工必须先与当前助手讨论，本轮不分配任务。团队/盖章信息也暂不处理。
+## 1. 接手位置与Git
 
-当前技术路线为新观测候选、未知域/全路径几何约束、已有反馈执行和逐铲重感知；连续三铲不再等待CA演化修复。用户已取消提交前的场景/随机种子评价入口，固定当前工况完成三次正式演示和统一指标复算。18日冻结核心方案，19—21日评价，22—24日视频/报告/源码数据与复现，25日缓冲。[提交倒排](competition-plan-2026-09-10.md)维护日期、算力和清单，[D-026](decisions.md)记录本次缩减。
+- 本机唯一仓库 `/home/qunwang/wajueji`，不是ChatGPT项目镜像目录或`codex-work`依赖目录。
+- 分支 `codex/contact-bc-collection-20260924`；实现基线 `fb126fd72303b46d41a3330087d67edcf8494923`（已推送）。后续交接提交不改运行代码，交接完成标签为`handoff/contact-feedback-v7-20260924`。
+- 首先执行下面只读命令，回报位置、分支/HEAD、跟踪改动，再按AGENTS顺序完整阅读核心文档和七份active计划。不要自动切分支、pull、reset、stash或清理文件。
 
-## 已验证事实
+```bash
+cd /home/qunwang/wajueji
+pwd
+git rev-parse --show-toplevel
+git branch --show-current
+git log -3 --oneline
+git status --short --untracked-files=no
+```
 
-- geometry05/empty04/contact03完整单铲开发闭环通过：16190步、134.9167模拟秒、2088.99墙钟秒；20项执行与8项接收/快照审计通过。稳定接收和少量残余的具体值、口径与证据见[验收](acceptance.md)及[单铲证据](../evidence/autonomous-delivery-2026-09-13/README.md)。
-- CA首轮10候选、4个MPM试验，3个通过获取/保持、C02卷斗超时；守恒/确定性与完成样本排序通过，未知区域/挖后地形/失败漏检未通过。[CA证据](../evidence/ca-selection-2026-09-13/README.md)和[判定](../evidence/ca-selection-2026-09-13/adjudication.json)保留。
-- C06后方深挖取得106.175kg、C04基准62.155kg，这是几何内腔质量及获取阶段结果；C06完整装车尚未验收，不称满斗、完整周期最佳或全局最优。
-- 连续候选18项测试、`geometry-v5`和同源`empty-2cycle-v4`通过；空载32936步/274.4667模拟秒/466.17墙钟秒，24项审计通过。两次真实双铲规划失败及一次连接中断均保留。最新`contact-3cycle-v1`已补齐前两铲完整闭环：新获取保持57.3541/45.0378kg，稳定车载净增205.2273/111.1072kg；第三铲获取不足停止，整轮不通过。[当前任务](../.planning/task.md)维护最新状态。
-- 第一铲保持结束内腔57.3541kg；按固定255.1647L分母、默认5cm重建尺度与1cm积分，离线暂估内腔51.872L、随斗堆高191.128L，总满斗率95.2325%。4/6cm重建尺度给出83.18%/100.08%，只作为当前快照工程估计，不能替代三次正式统一测量。证据见[第一铲体积暂估](../evidence/autonomous-multiscoop-2026-09-14-v1/results/contact-3cycle-v1-cycle01-fill-provisional/README.md)。
-- 连续三铲、四指标正式测量和同条件完整人工基准仍未完成。多介质、随机种子评价入口和RL已移出提交前范围；真实液压/实土标定、额外接触修正反力及实机感知未验收。
+本次交接前跟踪工作树干净，但有914个未跟踪文件（含用户PDF和实验生成物）；数量会随新工作变化。它们已保留，不能`git add .`或`git clean`批量处理。新修改用明确白名单提交，阶段成果推送当前分支，不重写旧失败历史。
 
-## 下一项
+## 2. 用户最新反馈与授权边界
 
-两位队友当前只读了解项目，具体分工待与用户讨论。`contact-3cycle-v1`的报告和独立审计已回收；原始大日志与快照留在远端。下一次真实三铲前先修正错误归因并对第三入口策略做有界调整，随后从完整初态和新运行名启动，不能从失败快照续跑。硬件按[吞吐决策](hardware-throughput-decision-2026-09-14.md)评估，暂无采购。
+用户认为整体动作和末态装载外观还行；中间一段回收偏快、有速度突变。因为当前是第三铲，尚看不出对后续可挖土堆的影响。用户提出RL是否适合优化，并要求做好交接；**这是路线讨论，不是立即启动RL或双A30长训练的授权**。
 
-题目原图与用户范围见[要求](requirements.md)，当前工作见[当前状态](CURRENT_STATUS.md)，架构见[总体规划](PROJECT_PLAN.md)。[提交核对](submission-requirements-2026-09-14.md)记录模板及尚未确认的字段；[方案底稿](project-proposal-material-draft-2026-09-14.md)和7页DOCX/PDF草稿已生成，尚非最终提交版。用户已明确团队信息、盖章和成果证明先不管，当前只推进技术任务。
+已确认：优先在既有混合策略上推进、直接恢复预备点；收斗80%以上不能继续下压；保持真实土石、原保护和≥95%目标。80%本版实现为有效油缸行程比例，不是斗角/满斗率比例。接近/切入为反馈控制，收斗/抬升为受约束阶段BC。不要推倒重做纯RL，也不要说完全没有用模仿学习。
 
-## 冻结、范围与恢复
+v7：1500帧正常结束，981帧约束触发，1087帧确认持续抬升；根沿触发后最大下沉0.061mm（旧版31.245cm），但局部斗壁仍向下扫5.661cm；末态lift、未离土，没有有效满斗率。用户视觉认可不是95%验收。57测试及局部物理审核通过，详见[证据](../work/contact-geometric-feedback-20260924-v7/README.md)。
 
-- 原compact物性、390400粒子、有限旋转候选、mechanism-auto8反馈及账本核心保留；原GUI不自动操作，不reset/clean/提交大量用户改动。
-- 同序列不重置/补土/删粒子；独立序列完整恢复MPM材料历史、机构/控制缓存和观测状态，retention快照不是重启点。
-- 少量残余只记录，不恢复8kg卸净门槛；既有车载土流出须扣除，几何内腔与全部装车携带群体分别统计。20kg获取/10kg接收是开发检查，不是官方土方量。
-- 单介质边界继续有效。提交前不开发场景/随机种子评价入口，不安排多介质条件窗口；既有固定seed只保证当前工况可复现。当前不开发散土回收或重写土壤引擎。
-- Windows工作树：C:/Users/14737/.codex/worktrees/55e9/wajueji；远端SSH desktop-tailscale；冻结单铲目录/home/qunwang/codex-work/autonomous-delivery-2026-09-13；沿用high-fidelity-soil-newton-mpm-20260907/.venv/bin/python，不升级依赖。
-- 原实验归档801文件已在本地逐文件校验。昨晚关机授权已履行，本轮不能复用。远端已重新连接并运行无GUI真实MPM；不得关机、改动候选源码或操作原GUI。旧PID均为历史事实，进程状态须现查。
+## 3. 输入、依赖与不可覆盖对象
 
-## GitHub状态
+完整输入SHA和本地可用性见[核对清单](../work/contact-handoff-20260924-v1/verification.json)；运行绑定见[协议](../work/contact-geometric-feedback-20260924-v7/protocol.json)。
 
-用户已创建空仓库`https://github.com/Bibabuuuu/wajueji.git`。本地最新工作树已连接`origin`并建立`codex/submission-baseline`，但尚未推送。共享索引现为153文件/3.47MB；旧实验版本和约3.85GB原始数据仍完整保存在本机但不进入Git。队友AI入口为仓库根部`AGENTS.md`和[文档索引](DOCS_INDEX.md)。截图显示远端仍为Public；首次推送前应由用户在GitHub改为Private。笔记本负责访问GitHub，台式机负责GPU任务；长任务运行时不得在对应候选目录拉取或覆盖源码。协作步骤见[GitHub与两台电脑的协作方式](repository-workflow.md)。
+| 用途 | 路径/身份 |
+| --- | --- |
+| 第三铲开发预备点 | `/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz`；SHA `a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b` |
+| 预备点元数据 | 同名`.npz.json`；SHA `dcd1ed7a975066047336eb93b192b9a521c00a1aa75cc063218c1daafd27dfc8` |
+| 阶段BC模型 | `/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt`；SHA `b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095` |
+| 物理Python | `/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python`（有SciPy） |
+| 推理/训练Python | `/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python` |
+| 几何/场景依赖 | `/home/qunwang/codex-work/small-soil-20260910-v17-performance` |
+| 斗腔标定依赖 | `/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json` |
+| v7大产物 | `/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v7/{zero,startup120,contact900,scoop1500}` |
+| 精选报告/审核入口 | `/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v7/` |
 
-完整文件位置和验证命令见上述证据入口及[环境记录](environment.md)。本轮文档修改不会重写历史归档哈希或将其解释为当前文档哈希。
+`runs/`、模型、显示缓存和外部依赖未上传GitHub；新会话若在另一机器，应先报告缺哪些本地资产，不能仅clone后猜路径或重建示范。原人工数据、源快照、v6/v7协议和运行结果不可覆盖。v6失败快照不能续跑；v7final虽正常，也缺BC短历史/阶段器/反馈锁存的完整恢复合同，不能直接作为精确策略续跑点。
+
+## 4. 第一个工作包：只读定位速度突变
+
+接手后先提交简短诊断，不启动长训练。数据用v7 `scoop1500/actions.ndjson`、`physics/frames.ndjson`、`phase-trace.ndjson`、`report.json`。
+
+1. 定位全程最大原始动作、实际命令与实际速度变化；重点检查423（碰土后）、824（BC接管）、981（80%约束）、1088（lift）附近，不能只看这四个点。
+2. 对齐四轴`[swing,boom,arm,bucket]`，区分BC意图、几何求解、原投影和实际运动。qpos轴地址`[7,9,12,15]`；free-base导致qvel对应`[6,8,11,14]`，别错位。保存约束触发、150ms预览、积分/主动助力、载荷的同帧对比。
+3. 输出新目录（建议`work/contact-speed-audit-20260924-v1/`；存在则用新名）的摘要JSON和说明，包含源SHA、异常帧段、幅度/单位、原因证据与未知项；不修改原动作/原标签。
+4. 若指令突变，提出最小阶段衔接/变化率约束；若指令平滑而机构突变，先查执行器/载荷。不得在最终安全投影之后盲加平滑滤波，从而重新引入向下运动或穿地。
+5. 第一/第二铲余料保护、完整离土和有效满斗是下一验收门；RL仅是后续受限残差或低维参数优化候选，先测恢复/吞吐并讨论预算。双A30分别用于独立环境/评价；远端运行必须先读runbook，本轮未核验远端进程。
+
+建议修改白名单（先读后缩小）：`src/v4/contact_geometric_feedback.py`、必要时`src/v4/run_contact_geometric_probe.py`、对应`tests/v4/`、新工作包及现有状态/S05/验收/决策文档。修改底层物理、积分助力、模型架构或训练路线前先给证据和方案，不把这些混进普通平滑修复。
+
+## 5. 便宜验证、回放与物理门
+
+先用现有环境，不升级依赖：
+
+```bash
+cd /home/qunwang/wajueji
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:tests/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
+ /home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python -m unittest -v \
+ tests.v4.test_contact_geometric_feedback tests.v4.test_contact_cut_reference \
+ tests.v4.test_contact_phase_bc_policy tests.v4.test_contact_phase_bc_inference \
+ tests.v4.test_contact_bc_ground_guard tests.v4.test_contact_phase_candidate \
+ tests.v4.test_contact_phase_completion tests.v4.test_contact_phase_geometry tests.v4.test_contact_phase_data
+python3 scripts/check_docs.py
+git diff --check
+```
+
+本次交接查询时未发现物理、训练及旧回放进程。若用户需要重新看v7，用以下命令打开**只读缓存**（不产生物理步）；空格播放，End末帧，R重置回放，X关闭。先检查是否已有相同窗口，不重复打开。
+
+```bash
+cd /home/qunwang/wajueji
+DISPLAY=:1 XAUTHORITY=/run/user/1000/gdm/Xauthority PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. \
+ /home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python \
+ src/v4/view_contact_bc_probe.py --view-only --output runs/contact-geometric-probe-20260924-v7/scoop1500/display
+```
+
+真实运行模板在v7 `run.sh`，**不要执行它覆盖现有输出**。新控制候选建立新协议/源码SHA和新输出目录，直接恢复原预备点；依次零步→120审核→900审核→显式有界完整候选（运行器最多2400帧/900秒）。120/900前缀须同版精确比较。v7用1500帧预算正常停下，不是窗口崩溃。末端限位、非有限、保护失败须保存报告/故障态后停止，不放宽门。
+
+本地只用RTX4070 cuda:0、同卡一个物理实例；沿用10cm/60Hz/4800Hz。旧1500帧耗时345.95秒，只有约4.34物理帧/墙钟秒，不能用回放窗口60FPS估算RL吞吐。耗时超10分钟的任务先说明设备、命令、预算、日志和中断方式；本交接没有另行授权批量实验或A30长训练。
+
+离土仍使用距连地土≥3mm连续5帧、证据n仅供决策n+1。不得用截图代替。通过后才用既有`measure_off_soil_fill.py`及0.2占据阈值测含石/堆高满斗；不得调阈值凑95%。当前末帧粒子连通定义也需如实核对，不能因画面看着离土而跳过。
+
+## 6. 新会话回报要求
+
+先说明实际仓库/分支/HEAD、要读哪些数据、是否有运行进程，以及第一个只读诊断；不反复询问已确认的参数。完成一个明确阶段后报告修改、验证、未过门和下一步，白名单提交并推送。跨会话以落盘记录为准，不从旧聊天片段猜进度。

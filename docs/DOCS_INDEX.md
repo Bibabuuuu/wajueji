@@ -41,6 +41,7 @@
 
 | 文档 | 当前角色 | 由谁统领 |
 | --- | --- | --- |
+| `docs/handoff.md` | 当前跨会话接手步骤、运行入口及本地资产边界 | `CURRENT_STATUS.md`、S05 |
 | `docs/autonomous-excavation-plan.md` | 详细架构和研究路线来源 | `PROJECT_PLAN.md` |
 | `docs/v4/mixed-material-scene-plan.md` | 混合物理历史设计与R0–R3证据 | S01 |
 | `docs/v4/mixed-material-three-cycle-integration-next-section.md` | 连续三铲详细实施来源 | S02、S03、S06、S07 |
@@ -54,7 +55,9 @@
 
 ## 5. 证据和报告
 
-当前S05数据/模型接线入口：[D-145整理与离线试训](../work/contact-bc-data-preparation-20260924-v1/README.md)。初始地形缺失修正与旧索引适用边界以此证据和S05为准。
+当前S05闭环候选入口：[v7后段下压约束及1500帧结果](../work/contact-geometric-feedback-20260924-v7/README.md)；新会话先读[交接步骤](handoff.md)。
+
+S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contact-bc-data-preparation-20260924-v1/README.md)。初始地形缺失修正与旧索引适用边界以此证据和S05为准。
 
 当前首批接触记录总入口：[10条清单](../work/contact-collection-progress-20260924-v5/README.md)。v5替代v2–v4的当前数量汇总，旧版保留为历史证据；受S04/S05及CURRENT_STATUS统领，不是新权威规划。
 
