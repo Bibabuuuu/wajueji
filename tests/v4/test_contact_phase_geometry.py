@@ -38,6 +38,16 @@ class GeometryTest(unittest.TestCase):
             expected=float(np.linalg.norm(np.maximum(np.abs(point)-1,0)))
             self.assertAlmostEqual(obs.minimum_gap([point],np.eye(4)),expected,11)
 
+    def test_broadphase_keeps_nearest_across_order_and_new_observations(self):
+        obs=self.cube()
+        points=np.array([[50,0,0],[101.004,0,0],[1.002,0,0],[1000,4,2]],float)
+        before=points.copy()
+        for order in ([0,1,2,3],[3,2,1,0],[1,3,0,2]):
+            self.assertAlmostEqual(obs.minimum_gap(points[order],np.eye(4)),.002,12)
+        np.testing.assert_array_equal(points,before)
+        self.assertAlmostEqual(obs.minimum_gap([[1.02,0,0]],np.eye(4)),.02,12)
+        self.assertAlmostEqual(obs.minimum_gap([[101.001,0,0]],np.eye(4)),.001,12)
+
     def test_ground_connectivity_excludes_detached_payload(self):
         q=np.array([[0,0,z] for z in np.arange(.01,.5,.02)]+[[2,0,2]],float)
         mask=ground_connected_mask(q)

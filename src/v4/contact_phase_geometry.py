@@ -54,7 +54,7 @@ def triangle_distances(points, triangle):
 
 class SolidBucketGap:
     def __init__(self, proxy):
-        self.boxes=[];self.sides=[]
+        self.boxes=[];self.sides=[];bounds=[]
         for box in proxy['shell_boxes']+proxy['tooth_boxes']:
             h=np.asarray(box['half_size_m'],dtype=float)
             center=np.asarray(box['position_bucket_m'],dtype=float)
@@ -62,6 +62,8 @@ class SolidBucketGap:
             if h.shape!=(3,) or center.shape!=(3,) or not np.isfinite(h).all() or not (h>0).all() or not np.isfinite(center).all():
                 raise ValueError('invalid_proxy_box')
             self.boxes.append((center,rotation,h))
+            extent=np.abs(rotation)@h
+            bounds.extend((center-extent,center+extent))
         for side in proxy['side_plate_meshes']:
             vertices=np.asarray(side['vertices_bucket_m'],dtype=float)
             faces=np.asarray(side['faces'],dtype=int)
@@ -75,7 +77,9 @@ class SolidBucketGap:
                 if np.max(vertices@n-d)>2e-6:raise ValueError('proxy_side_not_convex')
                 planes.append((n,d))
             self.sides.append((vertices.min(0),vertices.max(0),triangles,planes))
+            bounds.extend((vertices.min(0),vertices.max(0)))
         if not self.boxes or not self.sides:raise ValueError('incomplete_bucket_proxy')
+        self.lower=np.min(bounds,axis=0);self.upper=np.max(bounds,axis=0)
 
     def minimum_gap(self, world_points, pose):
         """Zero for a particle inside a solid; otherwise exact exterior gap.
@@ -89,6 +93,18 @@ No downsampling of ground-connected particles or bucket faces is performed.
             raise ValueError('invalid_bucket_rigid_pose')
         if not len(q):return None
         points=(q-pose[:3,3])@pose[:3,:3]
+        # The enclosing solid AABB gives a lower bound for every point. An
+        # exact query of one real point supplies an upper bound on the global
+        # minimum; only points that cannot improve it are discarded. Refresh
+        # both bounds from this observation (never cache a prior particle set).
+        bounds=np.linalg.norm(np.maximum(np.maximum(self.lower-points,points-self.upper),0),axis=1)
+        first=int(np.argmin(bounds))
+        upper=self._minimum_local(points[first:first+1])
+        if upper==0:return 0.
+        selected=points[bounds<=upper+1e-12]
+        return self._minimum_local(selected)
+
+    def _minimum_local(self, points):
         best=float('inf')
         for center,rotation,h in self.boxes:
             outside=np.maximum(np.abs((points-center)@rotation)-h,0)

@@ -1,0 +1,72 @@
+{
+  "schema": "phase_continuity_independent_audit_v1",
+  "status": "passed",
+  "baseline_git_commit": "145f53e",
+  "baseline_source_sha256": "b994d25bcb7c8ddae0aa81bcbe78f1fe5fb2b6d88b5943d5e0ca9a66de6d75c1",
+  "verifier_sha256": "d3de3be5570b569bb3ea30bb4cfb0ec3e96532f9aa3db01936531eb24568b34d",
+  "successful_observed_frames": 11,
+  "total_physics_frames_including_failed_adapter": 12,
+  "failed_adapter": {
+    "report_path": "/home/qunwang/wajueji/runs/contact-phase-continuity-v1/first-hold/phase-audit.json",
+    "report_sha256": "5a8493c7f2205d2eecc34768d3301b6d9811b9ab113cdc4a23cde8809587eab9",
+    "error": "KeyError('bucket_mpm_force_norm_n')",
+    "saved_failure_path": "/home/qunwang/wajueji/runs/contact-phase-continuity-v1/first-hold/failure.npz",
+    "saved_failure_sha256": "7bcbcd4ed4085a03be9858f4c2ae16b1855bfbf5a0b5f89616e5c1a5b53b6d06",
+    "original_script_sha256": "dd7559cb2e17f1a6534d1ecd360449f317621577a33ae3f6b508471136d39b3f",
+    "first_frame_particles_and_mechanism_equal_retry": true
+  },
+  "episodes": [
+    {
+      "run": "first-hold-v2",
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/contact-phase-continuity-v1/first-hold-v2/phase-audit.json",
+        "sha256": "4c5436879bad881f697077ff30ca6e5e44dc55625e4540652a2a4eda46222b94"
+      },
+      "frames": 5,
+      "zero_step_exact_arrays": 24,
+      "all_hard_guards_passed": true,
+      "source_unchanged": true,
+      "baseline_gaps_m": [
+        1.94713297643756e-05,
+        1.9844942170221813e-05,
+        2.0429072691396932e-05,
+        2.0562750652208805e-05,
+        2.0845619391696157e-05
+      ],
+      "confirmation_frame_end": null,
+      "first_available_decision_frame": null,
+      "final_phase": "lift",
+      "median_observer_including_copy_pose_hash_s": 0.04519248302676715,
+      "median_physics_wall_s": 0.14603339301538654
+    },
+    {
+      "run": "third-hold",
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/contact-phase-continuity-v1/third-hold/phase-audit.json",
+        "sha256": "50702d0df78201fa77a304955dcc928d3b6564e918e484d56494e23379c9a9c9"
+      },
+      "frames": 6,
+      "zero_step_exact_arrays": 24,
+      "all_hard_guards_passed": true,
+      "source_unchanged": true,
+      "baseline_gaps_m": [
+        0.1592261784458053,
+        0.15921806036143635,
+        0.15922954129623126,
+        0.15922145846270078,
+        0.15920142852743097,
+        0.15916603931271361
+      ],
+      "confirmation_frame_end": 1495,
+      "first_available_decision_frame": 1496,
+      "final_phase": "off_soil",
+      "median_observer_including_copy_pose_hash_s": 0.053629015004844405,
+      "median_physics_wall_s": 0.15113408851902932
+    }
+  ],
+  "limitations": [
+    "Short held-state continuation only, not earliest off-soil boundary on the old demonstration.",
+    "4cm ground connectivity and particle-center/proxy gap, not exact material topology or stone clearance.",
+    "Observer timing exceeds a real-time 60Hz frame budget; not a 60Hz end-to-end qualification."
+  ]
+}

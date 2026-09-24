@@ -1,0 +1,236 @@
+{
+  "schema": "phase_gap_broadphase_profile_v1",
+  "physics_advanced": false,
+  "baseline_git_commit": "145f53e",
+  "baseline_source_sha256": "b994d25bcb7c8ddae0aa81bcbe78f1fe5fb2b6d88b5943d5e0ca9a66de6d75c1",
+  "candidate_source_sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656",
+  "script_sha256": "95ff43ea910a8be72d8fc062ae47c00d7a1da8f3a3fb5891d7d3a8fbd49d4ca4",
+  "prior_report_sha256": "fd93b27c7d9375876ad47ad82746ca9364bde19408005c00d92cdf5f08f954ec",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/final-001311.diagnostic.npz",
+        "sha256": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3"
+      },
+      "observation": {
+        "remaining_soil_gap_m": 0.0633940920452164,
+        "ground_connected_particles": 239849,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+      },
+      "timings_s": {
+        "baseline": [
+          0.17440674398676492,
+          0.17292619100771844,
+          0.1706082669843454,
+          0.17254106100881472,
+          0.17223476199433208
+        ],
+        "candidate": [
+          0.0443532660137862,
+          0.04375329500180669,
+          0.04378551500849426,
+          0.043755573977250606,
+          0.04385936600738205
+        ]
+      },
+      "median_s": {
+        "baseline": 0.17254106100881472,
+        "candidate": 0.04378551500849426
+      },
+      "pose_only_comparisons": [
+        {
+          "pose_only_z_shift_m": -0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": -0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz",
+        "sha256": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace"
+      },
+      "observation": {
+        "remaining_soil_gap_m": 9.791503545630853e-06,
+        "ground_connected_particles": 239820,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+      },
+      "timings_s": {
+        "baseline": [
+          0.1741460589983035,
+          0.17283362400485203,
+          0.17365713199251331,
+          0.17563557397807017,
+          0.17420716999913566
+        ],
+        "candidate": [
+          0.04269937798380852,
+          0.043251677008811384,
+          0.04389510001055896,
+          0.04276327000115998,
+          0.04297172898077406
+        ]
+      },
+      "median_s": {
+        "baseline": 0.1741460589983035,
+        "candidate": 0.04297172898077406
+      },
+      "pose_only_comparisons": [
+        {
+          "pose_only_z_shift_m": -0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": -0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz",
+        "sha256": "73aa8f1a4e040c15aa978a22dc946260481f9b1d72f71ce559ddae2eef8c3c5c"
+      },
+      "observation": {
+        "remaining_soil_gap_m": 0.061078021997302834,
+        "ground_connected_particles": 241210,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+      },
+      "timings_s": {
+        "baseline": [
+          0.17643626700737514,
+          0.17784024399588816,
+          0.1774969779944513,
+          0.17758946501999162,
+          0.17766596999717876
+        ],
+        "candidate": [
+          0.043004545994335786,
+          0.043722786009311676,
+          0.043305108993081376,
+          0.04332700700615533,
+          0.04372042801696807
+        ]
+      },
+      "median_s": {
+        "baseline": 0.17758946501999162,
+        "candidate": 0.04332700700615533
+      },
+      "pose_only_comparisons": [
+        {
+          "pose_only_z_shift_m": -0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": -0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "source": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/final-001490.cycle.npz",
+        "sha256": "17aa03b291d4bdaabe41140ffd723a89e175e17715121c2932b847eee0987c3d"
+      },
+      "observation": {
+        "remaining_soil_gap_m": 0.15920484342268376,
+        "ground_connected_particles": 234121,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+      },
+      "timings_s": {
+        "baseline": [
+          0.18076748700696044,
+          0.18075762400985695,
+          0.18222996999975294,
+          0.17980110400822014,
+          0.1812416070024483
+        ],
+        "candidate": [
+          0.05417432598187588,
+          0.05407138599548489,
+          0.05403034499613568,
+          0.05405980898649432,
+          0.053873174998443574
+        ]
+      },
+      "median_s": {
+        "baseline": 0.18076748700696044,
+        "candidate": 0.05405980898649432
+      },
+      "pose_only_comparisons": [
+        {
+          "pose_only_z_shift_m": -0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": -0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.01,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        },
+        {
+          "pose_only_z_shift_m": 0.1,
+          "baseline_m": 0.0,
+          "candidate_m": 0.0
+        }
+      ]
+    }
+  ],
+  "limits": "Single-process CPU timings, not end-to-end 60Hz; pose perturbations are geometry tests, not physical trials"
+}
