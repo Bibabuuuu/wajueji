@@ -1,0 +1,18 @@
+{
+  "label": "FIRST SCOOP | DIG TO TRUCK",
+  "summary": "First scoop: 45.5% working fill; stopped after lift, BEFORE truck swing/unload",
+  "sources": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/display",
+      "label": "D154 cut / curl / lift"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/display",
+      "label": "D155 finish curl and lift"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/display",
+      "label": "D157 fixed truck transport"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "D158_specific_observation_stop_continuation_v1",
+  "status": "source_exception_authorized",
+  "maximum_frames": 4917,
+  "maximum_wall_seconds": 1415,
+  "maximum_runs": 1,
+  "automatic_retry": false,
+  "authorization": {
+    "user_text": "这些问题你先记录一下，暂时先别修复。先看看能不能连续跑3铲",
+    "recorded_at": "2026-09-25T00:22:31.002748+08:00",
+    "prior_instruction": "满足条件继续下一步；直接恢复保存点，不从起点慢慢移动",
+    "interpretation": "继续既有三铲实施范围，暂停本次新提出的取料/振荡/外观修复；仅恢复37项审核、24数组零步和更新观察路线全部通过的特定软件观察误报点，不放宽通用物理故障恢复。"
+  },
+  "inputs": {
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/runtime.py": "c8b29e396e0722e2fa59be349f6bab6e98149b9fdd3700caa3d4ca819d2f8946",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/run.py": "5c3c02cf387487812123b54141d193accf0448da987e9504c05d82534ae1179b",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/check_commands.py": "482fbb326106db1517e7d7d7609e31a3e42aca9f192225f68e5e5ecd90e7b0a3",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/observation.py": "3bd28a1577bb9888bc80185db54b34a0bbcc1016bae20268d71a6b446bdd35cb",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/check_geometry.py": "7fb5adf07f6b77043a11a70a0b45dbd66bc68c007ea22b776fc9b09d4f77978d",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/audit_result.py": "09027ac844cf39bd2128ee80492f7d873fd48cb0ecbc8950cce508e463cccecc",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/controller.py": "8241b82414d9cb045766238375397c67e2b6a30d6bc36b55384733cbc7f3f609",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/preflight.py": "bb6ce3e426bbbe3c9adcf75895d07bcbd5b75e988b2fb80960624af2c6887b23",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/preflight-review.json": "b4bebb8bd392a7f26f85c2a840e3d2500c60f3457b84c6e61f93b5a871aa0bf2",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/control-review.json": "e7a0eba7a1630b40f8965cc14e41680c9cb549f82ebc2030319795c045245c9a",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/geometry-review.json": "dcba7e49c23351d9213e42c891356acb1dcc2535a01f1f80da75e2b3faac16ae",
+    "/home/qunwang/wajueji/work/contact-first-transport-review-20260925-v1/static_rocks.py": "f18086a09ec21a9351ecf53926e762a1b4a6a1e770378e59e950bb61e3af9e1d",
+    "/home/qunwang/wajueji/work/contact-first-transport-review-20260925-v1/terrain-support-review.json": "2d159d0bcbd84f0f5289dc730ebe33e129c317d9e970787861a54ad87af7ebcc",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/audit-review.json": "333ece7c682d7a82604dc6bb19cefe00e7cf8859997b7783194585f792977041",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz.json": "30ed76652a7826e1129a8234a96a58d309cf5f9168bf7133d931e95609f570e5",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/control-state.json": "ccccff63bc14653465485d2f83995870567d9603b8a91b4ba8637a0b008a531d",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/report.json": "0ce5e68a68e7d084b598f15409b2ddc3100a9d12acc25b92767cf29142021655"
+  }
+}

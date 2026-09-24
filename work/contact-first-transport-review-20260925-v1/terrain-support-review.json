@@ -1,0 +1,515 @@
+{
+  "static_support_margin_m": 0.15,
+  "corrected_gap_m": 1.1722246699866332,
+  "detached_kept_rocks": [
+    {
+      "rock_id": "lower-001",
+      "soil_aabb_gap_m": 1.7926670871807049
+    }
+  ],
+  "physics_steps_added": 0,
+  "source": "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz",
+  "source_sha256": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+  "observation": {
+    "detached_payload_particles": 25372,
+    "detached_dynamic_particles": 27508,
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "ground-connected stock surface; detached material remains fully simulated"
+  },
+  "stationary_soil_gap_m": 1.1722246699866332,
+  "full_gap_m": -0.26880472805004185,
+  "kept_rocks": 37,
+  "offending_rocks": [
+    {
+      "rock_id": "lower-001",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": -0.26880472805004185,
+      "nearest_payload_center_m": 0.31769829656688847,
+      "min_z_m": 3.112962068131316,
+      "max_z_m": 3.402347935109902
+    }
+  ],
+  "rocks": [
+    {
+      "rock_id": "lower-000",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.1317579090584964,
+      "nearest_payload_center_m": 2.0348722661755994,
+      "min_z_m": 0.31485259800734045,
+      "max_z_m": 0.7251752721640179
+    },
+    {
+      "rock_id": "lower-001",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": -0.26880472805004185,
+      "nearest_payload_center_m": 0.31769829656688847,
+      "min_z_m": 3.112962068131316,
+      "max_z_m": 3.402347935109902
+    },
+    {
+      "rock_id": "lower-002",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.9476771030564595,
+      "nearest_payload_center_m": 1.9839902985557014,
+      "min_z_m": 0.29405222105473516,
+      "max_z_m": 0.7386428166923706
+    },
+    {
+      "rock_id": "lower-003",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.108188799561637,
+      "min_z_m": 0.3303312133844647,
+      "max_z_m": 0.7092115108981679
+    },
+    {
+      "rock_id": "lower-004",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.50389786539146,
+      "min_z_m": 0.3230384056895206,
+      "max_z_m": 0.6131999567027757
+    },
+    {
+      "rock_id": "lower-005",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.280825874912775,
+      "min_z_m": 0.31075740740374547,
+      "max_z_m": 0.4636860175439328
+    },
+    {
+      "rock_id": "lower-006",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.2861134558743714,
+      "min_z_m": 0.29974035691674833,
+      "max_z_m": 0.6303834886884745
+    },
+    {
+      "rock_id": "lower-007",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.509924038242362,
+      "min_z_m": 0.26488242836979564,
+      "max_z_m": 0.48896658236462703
+    },
+    {
+      "rock_id": "lower-008",
+      "excluded": true,
+      "linked_vertices": 1,
+      "cavity_vertices": 3,
+      "bucket_heightfield_gap_m": -0.4877848002967964,
+      "nearest_payload_center_m": 0.012947509693316117,
+      "min_z_m": 2.9364034290221426,
+      "max_z_m": 3.3593183546649907
+    },
+    {
+      "rock_id": "lower_middle-000",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.370942161897248,
+      "nearest_payload_center_m": 2.0601820842237113,
+      "min_z_m": 0.516225468463431,
+      "max_z_m": 0.7356291113763213
+    },
+    {
+      "rock_id": "lower_middle-001",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.3585854380640576,
+      "min_z_m": 0.5150763223251185,
+      "max_z_m": 0.7134728267084425
+    },
+    {
+      "rock_id": "lower_middle-002",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.9467233638248624,
+      "nearest_payload_center_m": 1.989570222049822,
+      "min_z_m": 0.5213817322630814,
+      "max_z_m": 0.7395966128817226
+    },
+    {
+      "rock_id": "lower_middle-003",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.162765714729686,
+      "min_z_m": 0.5295989228850208,
+      "max_z_m": 0.7425815143780253
+    },
+    {
+      "rock_id": "lower_middle-004",
+      "excluded": true,
+      "linked_vertices": 0,
+      "cavity_vertices": 3,
+      "bucket_heightfield_gap_m": -0.5604361720159989,
+      "nearest_payload_center_m": 0.06590181950077793,
+      "min_z_m": 2.936794071991784,
+      "max_z_m": 3.2978871750809216
+    },
+    {
+      "rock_id": "lower_middle-005",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.9577744518198281,
+      "nearest_payload_center_m": 1.9962756607302374,
+      "min_z_m": 0.5469112854221305,
+      "max_z_m": 0.7285454861554836
+    },
+    {
+      "rock_id": "lower_middle-006",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.7060061539528744,
+      "min_z_m": -0.00016404251336196718,
+      "max_z_m": 0.15351273327281306
+    },
+    {
+      "rock_id": "lower_middle-007",
+      "excluded": true,
+      "linked_vertices": 1,
+      "cavity_vertices": 6,
+      "bucket_heightfield_gap_m": -0.4566660190886682,
+      "nearest_payload_center_m": 0.023048104826897797,
+      "min_z_m": 2.917752828146292,
+      "max_z_m": 3.144177587056254
+    },
+    {
+      "rock_id": "lower_middle-008",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.7914139091548333,
+      "nearest_payload_center_m": 1.7770097215095673,
+      "min_z_m": 0.5969637185906992,
+      "max_z_m": 0.9657037490367559
+    },
+    {
+      "rock_id": "lower_middle-009",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.5457168092739744,
+      "nearest_payload_center_m": 1.5208319338628158,
+      "min_z_m": 0.8256170395990526,
+      "max_z_m": 1.2114008101863416
+    },
+    {
+      "rock_id": "lower_middle-010",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.03372329557659,
+      "min_z_m": 0.5540119349718351,
+      "max_z_m": 0.9191652547456235
+    },
+    {
+      "rock_id": "middle-000",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.2628345997838302,
+      "min_z_m": 1.3221797684435674,
+      "max_z_m": 1.5693298458846892
+    },
+    {
+      "rock_id": "middle-001",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.7423748126708756,
+      "min_z_m": 0.8083504248349946,
+      "max_z_m": 0.9999192404753623
+    },
+    {
+      "rock_id": "middle-002",
+      "excluded": true,
+      "linked_vertices": 0,
+      "cavity_vertices": 2,
+      "bucket_heightfield_gap_m": -0.27386443750403,
+      "nearest_payload_center_m": 0.1955516947108504,
+      "min_z_m": 3.070020088018591,
+      "max_z_m": 3.403747853600896
+    },
+    {
+      "rock_id": "middle-003",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.099413381598739,
+      "min_z_m": 0.7892011109437929,
+      "max_z_m": 1.0125005006699737
+    },
+    {
+      "rock_id": "middle-004",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.1902904729381727,
+      "min_z_m": 0.8088676626602572,
+      "max_z_m": 1.032266191929577
+    },
+    {
+      "rock_id": "middle-005",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.7080494381823748,
+      "nearest_payload_center_m": 1.7252426320644707,
+      "min_z_m": 0.8024231671536104,
+      "max_z_m": 1.000244750883617
+    },
+    {
+      "rock_id": "middle-006",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.4223951699124942,
+      "nearest_payload_center_m": 1.406543621104249,
+      "min_z_m": 1.0287473341918183,
+      "max_z_m": 1.334722467774303
+    },
+    {
+      "rock_id": "middle-007",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.7920622202603096,
+      "min_z_m": 0.7801504691194476,
+      "max_z_m": 1.1182063842139625
+    },
+    {
+      "rock_id": "middle-008",
+      "excluded": true,
+      "linked_vertices": 3,
+      "cavity_vertices": 8,
+      "bucket_heightfield_gap_m": -0.1679159728493529,
+      "nearest_payload_center_m": 0.002723868447340153,
+      "min_z_m": 2.7352716117489675,
+      "max_z_m": 2.8785579676212447
+    },
+    {
+      "rock_id": "middle-009",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.652604546603636,
+      "nearest_payload_center_m": 1.691334143294453,
+      "min_z_m": 0.7952734731233316,
+      "max_z_m": 1.0312284512670653
+    },
+    {
+      "rock_id": "middle-010",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.5969837526340174,
+      "min_z_m": 0.8847817241900349,
+      "max_z_m": 1.1575200497637297
+    },
+    {
+      "rock_id": "middle-011",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.1848212348698048,
+      "nearest_payload_center_m": 1.2261308470462509,
+      "min_z_m": 1.3448565737729088,
+      "max_z_m": 1.4990117812273782
+    },
+    {
+      "rock_id": "middle-012",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.9874590729095705,
+      "min_z_m": 0.8071230603019016,
+      "max_z_m": 1.0875240054327444
+    },
+    {
+      "rock_id": "upper-000",
+      "excluded": true,
+      "linked_vertices": 1,
+      "cavity_vertices": 6,
+      "bucket_heightfield_gap_m": -0.2741547191112028,
+      "nearest_payload_center_m": 0.0026310815610066985,
+      "min_z_m": 2.7625205827728156,
+      "max_z_m": 3.0116056652183705
+    },
+    {
+      "rock_id": "upper-001",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.3285649744587784,
+      "nearest_payload_center_m": 1.3547970019981275,
+      "min_z_m": 1.0699766332750626,
+      "max_z_m": 1.3725797292186181
+    },
+    {
+      "rock_id": "upper-002",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.4081278161764856,
+      "nearest_payload_center_m": 1.4428806620083865,
+      "min_z_m": 1.1436451621919537,
+      "max_z_m": 1.3194650310148877
+    },
+    {
+      "rock_id": "upper-003",
+      "excluded": true,
+      "linked_vertices": 0,
+      "cavity_vertices": 8,
+      "bucket_heightfield_gap_m": -0.2947914941581353,
+      "nearest_payload_center_m": 0.06077690331446811,
+      "min_z_m": 2.833677783654569,
+      "max_z_m": 3.013708298430728
+    },
+    {
+      "rock_id": "upper-004",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 2.980709569506944,
+      "min_z_m": -0.00021561175008555367,
+      "max_z_m": 0.11506373625070337
+    },
+    {
+      "rock_id": "upper-005",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.3013210343490986,
+      "nearest_payload_center_m": 1.320350551305087,
+      "min_z_m": 1.0212317554459944,
+      "max_z_m": 1.4093209421963115
+    },
+    {
+      "rock_id": "upper-006",
+      "excluded": true,
+      "linked_vertices": 0,
+      "cavity_vertices": 1,
+      "bucket_heightfield_gap_m": -0.5419618625224549,
+      "nearest_payload_center_m": 0.23790118499972696,
+      "min_z_m": 3.17609613660047,
+      "max_z_m": 3.4712526304442104
+    },
+    {
+      "rock_id": "upper-007",
+      "excluded": true,
+      "linked_vertices": 1,
+      "cavity_vertices": 6,
+      "bucket_heightfield_gap_m": -0.28531704605470987,
+      "nearest_payload_center_m": 0.0020139048444557653,
+      "min_z_m": 2.78179673269772,
+      "max_z_m": 2.9864617565670373
+    },
+    {
+      "rock_id": "upper-008",
+      "excluded": true,
+      "linked_vertices": 3,
+      "cavity_vertices": 6,
+      "bucket_heightfield_gap_m": -0.2403407611393158,
+      "nearest_payload_center_m": 0.003748531630394246,
+      "min_z_m": 2.7219274877646265,
+      "max_z_m": 2.929066449648006
+    },
+    {
+      "rock_id": "upper-009",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.2243268936691267,
+      "nearest_payload_center_m": 1.2622895355365609,
+      "min_z_m": 1.193546836415876,
+      "max_z_m": 1.4619930648109767
+    },
+    {
+      "rock_id": "upper-010",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.5974804476597093,
+      "min_z_m": 1.063913432394216,
+      "max_z_m": 1.2576786702755645
+    },
+    {
+      "rock_id": "upper-011",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.8268463427658674,
+      "min_z_m": 1.0742736433331284,
+      "max_z_m": 1.376141957167186
+    },
+    {
+      "rock_id": "upper-012",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 2.6838329887574606,
+      "nearest_payload_center_m": 1.673529541545171,
+      "min_z_m": 1.1016532134268666,
+      "max_z_m": 1.2088180652281784
+    },
+    {
+      "rock_id": "upper-013",
+      "excluded": false,
+      "linked_vertices": 0,
+      "cavity_vertices": 0,
+      "bucket_heightfield_gap_m": 1.5177073881866754,
+      "nearest_payload_center_m": 1.4289253540089433,
+      "min_z_m": 1.0745321753704966,
+      "max_z_m": 1.3079223779090392
+    }
+  ],
+  "input_sha256": {
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz.json": "30ed76652a7826e1129a8234a96a58d309cf5f9168bf7133d931e95609f570e5",
+    "/home/qunwang/wajueji/work/contact-first-transport-review-20260925-v1/terrain_review.py": "718256ce441a90f14bc2f9885c8093adc5eac560b452f48e24c361a4915d0d09",
+    "/home/qunwang/wajueji/work/contact-first-transport-review-20260925-v1/static_rocks.py": "f18086a09ec21a9351ecf53926e762a1b4a6a1e770378e59e950bb61e3af9e1d",
+    "/home/qunwang/wajueji/src/v4/layered_47_cycle_geometry.py": "b88ed645ee736a987ecfa4af0fd0591de8bd9f6b383526f135527264ac8e0ae6",
+    "/home/qunwang/wajueji/src/v4/layered_excavation_approach_planner.py": "f0e2cb0762534f3c17017b41eabadec8c69c6e9c8ab7706867132bf993068639"
+  }
+}

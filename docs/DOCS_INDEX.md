@@ -102,3 +102,8 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [D156首铲保斗运输](../work/contact-carry-transport-20260924-v1/README.md)：当前完整末态专属恢复、全路线指令预检、单次运行及回放边界。
 
 - [D157固定车位交接修正](../work/contact-carry-transport-20260924-v2/README.md)：纯土两铲对照、负载偏置、取消新增角度门及剩余有界运输验证。
+
+- [D157首铲高位审核](../work/contact-first-transport-review-20260925-v1/README.md)：首铲45.53%工作估计、悬空石高度图误报定位与观察候选。
+- [D158专属高位续接](../work/contact-fixed-truck-continuation-20260925-v1/README.md)：源例外待确认，直接当前末态的恢复/观察/固定卸料路线准备。
+
+- [用户首铲四图意见](../evidence/user-first-scoop-review-20260925-v1/README.md)：998/2011/2926/3981帧原图，取料/晃动/视觉重叠仅记录，三铲流程优先。
