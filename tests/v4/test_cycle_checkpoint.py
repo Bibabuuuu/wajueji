@@ -72,6 +72,33 @@ class CycleCheckpointTest(unittest.TestCase):
                 data=controller();data[key]=value
                 with self.assertRaises((ValueError,KeyError)):validate_controller(data,47)
 
+    def test_passive_history_policy_requires_matching_implementation(self):
+        policy={'material_history_policy':'zero_hardening_frozen_jp_v1'}
+        name='soil_passive_jp_history.py'
+        bindings={name:checkpoint.checkpoint_identity(Path(checkpoint.__file__).with_name(name))['sha256']}
+        checkpoint.validate_material_history_policy(policy,bindings)
+        checkpoint.validate_material_history_policy({}, {})
+        for bad_policy,bad_bindings in [
+                (policy,{}),(policy,{name:'wrong'}),
+                ({'material_history_policy':'unknown'},bindings)]:
+            with self.assertRaises(ValueError):
+                checkpoint.validate_material_history_policy(bad_policy,bad_bindings)
+
+    def test_passive_history_policy_is_saved_for_continuation(self):
+        name='soil_passive_jp_history.py'
+        bindings={name:checkpoint.checkpoint_identity(Path(checkpoint.__file__).with_name(name))['sha256']}
+        parent=dict(source_identity={'sha256':'source'},lineage_root='root',
+                    material_history_policy='zero_hardening_frozen_jp_v1')
+        with TemporaryDirectory() as directory:
+            path=Path(directory)/'point.npz'
+            with patch.object(checkpoint.sparse,'write_checkpoint_atomic',return_value={'sha256':'result'}):
+                checkpoint.save(path,{'simulation_time_s':np.array([1.])},controller(),sweep(),
+                    parent=parent,stage='prepoint',cycle_index=2,truck_enabled=True,
+                    solver_profile={},runtime_bindings=bindings)
+            saved=json.loads(Path(str(path)+'.json').read_text())
+            self.assertEqual(saved['material_history_policy'],parent['material_history_policy'])
+            self.assertEqual(saved['runtime_bindings'],bindings)
+
     def test_full_controller_and_pending_impulse_are_preserved(self):
         validate_controller(controller(),47)
         data=sweep();original=deepcopy(data)

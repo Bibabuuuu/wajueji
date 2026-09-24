@@ -21,6 +21,18 @@ CONTROLLER_KEYS = ('controller_target', 'controller_target_velocity',
                    'bucket_integral_effort', 'bucket_active_curl_effort')
 
 
+def validate_material_history_policy(metadata, bindings):
+    policy = metadata.get('material_history_policy')
+    if policy is None:
+        return
+    if policy != 'zero_hardening_frozen_jp_v1':
+        raise ValueError('cycle_unknown_material_history_policy')
+    name = 'soil_passive_jp_history.py'
+    normalized = {Path(key).name: value for key, value in bindings.items()}
+    if normalized.get(name) != checkpoint_identity(Path(__file__).with_name(name))['sha256']:
+        raise ValueError('cycle_material_history_version_mismatch')
+
+
 def validate_sweep(state):
     state = deepcopy(state)
     vectors = []
@@ -106,6 +118,7 @@ def load(path):
     else:
         raise ValueError('cycle_checkpoint_schema')
     bindings = {Path(key).name: value for key,value in metadata['runtime_bindings'].items()}
+    validate_material_history_policy(metadata, bindings)
     for name in PHYSICS_FILES:
         if bindings.get(name) != checkpoint_identity(Path(__file__).with_name(name))['sha256']:
             raise ValueError('cycle_physics_version_mismatch:' + name)
@@ -120,6 +133,7 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
          truck_enabled, solver_profile, runtime_bindings, selected_cut=None):
     validate_controller(controller, 47)
     sweep = validate_sweep(sweep)
+    validate_material_history_policy(parent, runtime_bindings)
     if controller['native_state_kind'] != 'full':
         raise ValueError('cycle_save_requires_full_native_state')
     if stage not in ('loaded_manual_endpoint', 'hold', 'transport', 'unloaded',
@@ -136,6 +150,8 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
         selected_cut=selected_cut, training_eligible=False,
         independent_restore_qualified=False,
         simulation_time_s=float(arrays['simulation_time_s'][0]))
+    if parent.get('material_history_policy') is not None:
+        document['material_history_policy'] = parent['material_history_policy']
     # The NPZ is never overwritten. A missing sidecar is an invalid checkpoint.
     with Path(str(path)+'.json').open('x') as out:
         json.dump(document, out, indent=2, allow_nan=False)

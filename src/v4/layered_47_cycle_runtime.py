@@ -37,9 +37,12 @@ def local_arguments():
 
 
 class CycleRuntime:
-    def __init__(self, source, output, *, enable_truck=None):
+    def __init__(self, source, output, *, enable_truck=None, freeze_passive_jp=False):
         self.output=Path(output).resolve(); self.output.mkdir(parents=True, exist_ok=False)
         self.arrays,self.metadata=checkpoint.load(source)
+        if freeze_passive_jp:
+            from soil_passive_jp_history import POLICY
+            self.metadata['material_history_policy'] = POLICY
         self.truck_enabled = self.metadata['truck_enabled'] if enable_truck is None else enable_truck
         if self.metadata['truck_enabled'] and not self.truck_enabled:
             raise ValueError('cycle_cannot_remove_truck')
@@ -62,6 +65,9 @@ class CycleRuntime:
                'bucket_active_curl_candidate.h','bucket_integral_candidate.h','soil_hencky_update_candidate.py',
                'moving_bucket_sweep_candidate.py','moving_bucket_sweep_runtime.py','mpm_static_contact_ownership.py')
         self.bindings={name:motion.probe.bench.sha256(Path(__file__).with_name(name)) for name in names}
+        if self.metadata.get('material_history_policy'):
+            name = 'soil_passive_jp_history.py'
+            self.bindings[name] = motion.probe.bench.sha256(Path(__file__).with_name(name))
 
     def __enter__(self):
         try:
@@ -93,6 +99,9 @@ class CycleRuntime:
             self.fixture.assign(held.bridge.state)
             self.bridge=RigidFrequencyCommandBridge(held.bridge,4800)
             self.guard=enter(installed_material_guard(self.fixture.solver))
+            if self.metadata.get('material_history_policy'):
+                from soil_passive_jp_history import installed_passive_jp
+                self.passive_jp_policy=enter(installed_passive_jp(self.fixture.solver,self.fixture.state))
             self.sweep=MovingBucketSweepRuntime(self.fixture,self.bridge,self.proxy,self.base['mpm']['material']['friction'])
             checkpoint.restore_sweep(self.sweep,self.metadata['moving_bucket_sweep_state'])
             expected=self.metadata['controller_state'];actual=controller_snapshot(self.bridge.state)

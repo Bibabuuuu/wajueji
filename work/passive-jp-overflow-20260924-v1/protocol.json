@@ -1,0 +1,22 @@
+{
+  "schema": "passive_jp_candidate_protocol_v1",
+  "status": "authorized_isolated_fix",
+  "active_manual_run": "manual-contact-20260924-100857-1387193",
+  "production_bindings": {
+    "src/v4/soil_hencky_update_candidate.py": "7b58ede49369e28486b678dc77bd71d0a7b3003ccb9dbb0c3c19277b9944647a",
+    "src/v4/soil_hencky_update_guard.py": "ce475cee4989825dc5cdc353d20474e40d9284c45251cbf92f72f861c853b08e",
+    "src/v4/layered_47_cycle_runtime.py": "f416645a6d474549809b1add2d05e0e8c72b43656027a30e82c3187f420cc17d",
+    "src/v4/run_layered_47_sparse_manual_contact_episode.py": "32c22e875f1bdf5091bd621da12a6d2cba5f903e22a0e86f331a83dbaa5884ab",
+    "configs/v4/layered-47-excavation-preflight-v1.json": "888f99d27c373759c5cbfd6c03bc02fca8109a77345e409d17ba52c99e85f81c"
+  },
+  "physical_scope": "exactly zero hardening only; preserve source Jp instead of accumulating unused history",
+  "candidate_scope": "process-local solver hook; no running collector/source/default modifications",
+  "cpu_tests": [
+    "zero-hardening yield independence",
+    "same-state and different-state restore",
+    "nonzero/mixed hardening rejection",
+    "input history restored on exception",
+    "nonfinite previous history rejected"
+  ],
+  "gpu_protocol": "Only after collector exits and GPU lock is free: same ALIGN checkpoint and logged command prefix, baseline first24 frames versus candidate; candidate extends through failing frame and at most180 zero frames. Preserve failures. No automatic scheduling."
+}

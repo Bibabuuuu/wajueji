@@ -858,6 +858,8 @@ def run(args):
         if cycle_save:
             binding_paths.extend(Path(__file__).with_name(name) for name in (
                 'layered_47_cycle_bridge.py', 'layered_47_cycle_checkpoint.py'))
+        if cycle_metadata and cycle_metadata.get('material_history_policy'):
+            binding_paths.append(Path(__file__).with_name('soil_passive_jp_history.py'))
         bindings = {str(path): motion.probe.bench.sha256(path)
                     for path in binding_paths}
         initial_terrain, initial_observation = build_fused_terrain(
@@ -1034,6 +1036,12 @@ def run(args):
                 from soil_hencky_update_guard import installed_material_guard
                 material_guard = contexts.enter_context(
                     installed_material_guard(fixture.solver))
+            if cycle_metadata and cycle_metadata.get('material_history_policy'):
+                if not hencky_enabled:
+                    raise ValueError('passive_jp_checkpoint_requires_hencky_runtime')
+                from soil_passive_jp_history import installed_passive_jp
+                contexts.enter_context(installed_passive_jp(fixture.solver,fixture.state))
+                report['material_history_policy']=cycle_metadata['material_history_policy']
 
             local_proxy = _proxy_local_vertices(proxy)
             predicted_pose = kinematic_assembly.assemble(

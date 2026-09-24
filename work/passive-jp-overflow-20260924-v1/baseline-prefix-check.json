@@ -1,0 +1,15 @@
+{
+  "baseline_replayed_frames": 24,
+  "exact_all_compared_fields": false,
+  "maximum_absolute_difference": 4.336808689942018e-19,
+  "differences": [
+    {
+      "path": "21/moving_bucket_sweep/mpm_correction/reaction_angular_impulse_nms/2",
+      "a": -0.003570463814005159,
+      "b": -0.0035704638140051596,
+      "absolute_difference": 4.336808689942018e-19
+    }
+  ],
+  "within_1e_12": true,
+  "interpretation": "Tiny angular impulse roundoff retained; not a claim of all-bit replay identity."
+}

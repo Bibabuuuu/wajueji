@@ -1,0 +1,66 @@
+{
+  "schema": "passive_jp_overflow_fix_review_v1",
+  "passed": true,
+  "checks": {
+    "original_align_unchanged": true,
+    "candidate_993_safe": true,
+    "prefix_23_other_arrays_exact": true,
+    "frozen_Jp_exact_source": true,
+    "finite_all_candidate_arrays": true,
+    "deployed_hook_matches_tested_candidate": true,
+    "integrated_six_equals_three_plus_three": true,
+    "integrated_source_restore_exact": true,
+    "integrated_resume_restore_exact": true,
+    "policy_inherited_without_flag": true,
+    "policy_source_bound": true
+  },
+  "physical_window": {
+    "frames": 993,
+    "all_hard_guards": true,
+    "all_material_guards": true,
+    "all_sweep_guards": true,
+    "Jp_max_initial_final": [
+      2.709412437850538e+32,
+      2.709412437850538e+32
+    ],
+    "Jp_min_initial_final": [
+      0.06268393248319626,
+      0.06268393248319626
+    ]
+  },
+  "cpu_tests": {
+    "candidate": 9,
+    "production_hook": 9,
+    "checkpoint": 8,
+    "manual": 23,
+    "material_guard": 3,
+    "production_total": 43
+  },
+  "baseline_original_comparison": {
+    "baseline_replayed_frames": 24,
+    "exact_all_compared_fields": false,
+    "maximum_absolute_difference": 4.336808689942018e-19,
+    "differences": [
+      {
+        "path": "21/moving_bucket_sweep/mpm_correction/reaction_angular_impulse_nms/2",
+        "a": -0.003570463814005159,
+        "b": -0.0035704638140051596,
+        "absolute_difference": 4.336808689942018e-19
+      }
+    ],
+    "within_1e_12": true,
+    "interpretation": "Tiny angular impulse roundoff retained; not a claim of all-bit replay identity."
+  },
+  "integrated_final": {
+    "path": "/home/qunwang/wajueji/runs/passive-jp-overflow-20260924-v1/integrated-six/final.npz",
+    "sha256": "d612bd6f3e0db37112aeac5e51ba16e64e66b590427c54ad017e87a039d5e26a"
+  },
+  "source_bindings": {
+    "src/v4/soil_passive_jp_history.py": "e1227f8843d0f275de057c2a83bbd93597845d93adf9c6d963ba7cb46b78551d",
+    "src/v4/layered_47_cycle_runtime.py": "9c55e0f89d8d01f8d3884013fb7c535d9cdd7d0dcad73c68a7cdd6bb20d6f133",
+    "src/v4/layered_47_cycle_checkpoint.py": "d104e207db79fe33d40f9de0db8412e1c2331ca505fcff816236a9e034d937c0",
+    "src/v4/run_layered_47_sparse_manual_contact_episode.py": "e61d656a799436b52fbfaab24317e22a0eb9f4cbaca94783699f3adedb511175",
+    "src/v4/audit_layered_47_cycle.py": "2e33b100652a4b7efe9fcd0cde056bb1dd34d00bb612f7478b12effc321816e6"
+  },
+  "scope": "Zero-hardening history policy only. No invalid-source repair, no strength or contact change. Original full unload and next prepoint remain separate qualifications."
+}
