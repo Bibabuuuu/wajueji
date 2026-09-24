@@ -81,3 +81,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [D-150交换频率与耗时对照](../work/contact-coupling-120hz-20260924-v1/README.md)：120Hz候选与60Hz比较，输入/预算/护栏/结果边界。
 
 - [D-151机构响应接口核验](../work/contact-effective-response-20260924-v1/README.md)：有效惯性候选前置CPU诊断与有条件场景预算。
+
+- `work/contact-full-response-20260924-v1/README.md`：D-152用户授权的完整闭链响应接口隔离原型、门限与有界预算；非生产基线。
