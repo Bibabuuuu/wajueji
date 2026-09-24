@@ -1,0 +1,119 @@
+{
+  "status": "120Hz_delays_but_does_not_remove_late_oscillation_not_adopted",
+  "physics_steps_added": 0,
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/physics/exchanges.ndjson",
+    "sha256": "85e463aa43b18ed46704801eb45b28ca5c6f8bf82127f2baff9fec712d0b5ec8"
+  },
+  "velocity_mapping": {
+    "mechanism_qpos_indices": [
+      7,
+      9,
+      12,
+      15
+    ],
+    "mechanism_qvel_indices": [
+      6,
+      8,
+      11,
+      14
+    ],
+    "reference": "src/v4/run_layered_47_excavation_approach.py AXES; manual runtime qvel[AXES-1]"
+  },
+  "diagnostic_onset_rule": "First adjacent half-step sign reversal with both |bucket velocity| >0.02m/s; descriptive only, no guard change",
+  "first_significant_reversal": [
+    {
+      "frame": 1117,
+      "half": 2,
+      "bucket_velocity_m_s": -0.017756589219358524,
+      "bucket_command_m_s": -0.0038070223143827865,
+      "hard_guard": true,
+      "minimum_ground_m": 0.14712869085128288
+    },
+    {
+      "frame": 1118,
+      "half": 1,
+      "bucket_velocity_m_s": -0.052261902134115086,
+      "bucket_command_m_s": -0.0060003944818345185,
+      "hard_guard": true,
+      "minimum_ground_m": 0.14673212742623687
+    },
+    {
+      "frame": 1118,
+      "half": 2,
+      "bucket_velocity_m_s": 0.020333510547486416,
+      "bucket_command_m_s": -0.0060003944818345185,
+      "hard_guard": true,
+      "minimum_ground_m": 0.1471131836247851
+    },
+    {
+      "frame": 1119,
+      "half": 1,
+      "bucket_velocity_m_s": -0.0937957382505538,
+      "bucket_command_m_s": -0.006098797148299781,
+      "hard_guard": true,
+      "minimum_ground_m": 0.14665310730957948
+    },
+    {
+      "frame": 1119,
+      "half": 2,
+      "bucket_velocity_m_s": 0.1120498377757024,
+      "bucket_command_m_s": -0.006098797148299781,
+      "hard_guard": true,
+      "minimum_ground_m": 0.14780719141945953
+    }
+  ],
+  "largest_adjacent_change_m_s": 0.38402452725368674,
+  "largest_change_samples": [
+    {
+      "frame": 1144,
+      "half": 1,
+      "bucket_velocity_m_s": -0.1620229404727573,
+      "bucket_command_m_s": -0.005611937120517388,
+      "hard_guard": true,
+      "minimum_ground_m": 0.13758218284746926
+    },
+    {
+      "frame": 1144,
+      "half": 2,
+      "bucket_velocity_m_s": 0.2069762570556716,
+      "bucket_command_m_s": -0.005611937120517388,
+      "hard_guard": true,
+      "minimum_ground_m": 0.13701289515230686
+    },
+    {
+      "frame": 1145,
+      "half": 1,
+      "bucket_velocity_m_s": -0.17704827019801517,
+      "bucket_command_m_s": -0.005591598075890508,
+      "hard_guard": true,
+      "minimum_ground_m": 0.13618793983779864
+    },
+    {
+      "frame": 1145,
+      "half": 2,
+      "bucket_velocity_m_s": 0.2027145807672469,
+      "bucket_command_m_s": -0.005591598075890508,
+      "hard_guard": true,
+      "minimum_ground_m": 0.13551777493711803
+    },
+    {
+      "frame": 1146,
+      "half": 1,
+      "bucket_velocity_m_s": -0.1599407706620707,
+      "bucket_command_m_s": -0.005577736934883532,
+      "hard_guard": true,
+      "minimum_ground_m": 0.13473128357448205
+    }
+  ],
+  "bucket_peak_absolute_m_s": 0.24024325400647564,
+  "all_2320_half_hard_guards": true,
+  "termination": {
+    "reason": "TimeoutError('bc_probe_wall_budget')",
+    "valid_frames": 1160,
+    "wall_seconds": 360.5825605800201,
+    "phase": "curl_load",
+    "budget_issue": "Intermediate old360s cap retained despite outer900s allowance; no rerun to complete missing40frames. This is a budget stop, not a hard-physics guard stop."
+  },
+  "qualification": "No1200-frame admission, no offsoil/fill/three-scoop/RL qualification; original60 also not repaired"
+}
