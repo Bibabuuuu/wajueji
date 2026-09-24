@@ -1,0 +1,149 @@
+{
+  "maximum_cut_depth_undershoot_m": 0.0030316907210449218,
+  "maximum_approach_pitch_error_rad": 0.00034995385853181515,
+  "audit_passed": true,
+  "checks": {
+    "frames": true,
+    "exact_restore": true,
+    "control_recomputed": true,
+    "commands": true,
+    "actual_previous": true,
+    "previous_actions": true,
+    "phase_timing": true,
+    "phase_action": true,
+    "phase_next": true,
+    "finite": true,
+    "final_physical": true,
+    "particles": true,
+    "rocks": true,
+    "source": true,
+    "policy": true,
+    "protocol_hash": true,
+    "protocol_inputs": true,
+    "config_bound": true,
+    "lineage_inventory": true,
+    "prefix_exact": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true,
+    "code_run_contact_geometric_probe.py": true,
+    "code_contact_geometric_feedback.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true
+  },
+  "behavior_gate_passed": true,
+  "behavior": {
+    "no_failure": true,
+    "all_hard": true,
+    "all_material": true,
+    "all_sweep": true,
+    "all_measured_ground": true,
+    "lateral_corridor": true,
+    "entered_curl": true,
+    "bc_controlled_after_curl": true,
+    "cut_depth_respected": true,
+    "approach_pitch_tracking": true
+  },
+  "frames": 900,
+  "status": "bounded_probe_completed",
+  "failure": null,
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 420
+        }
+      ],
+      "confirmation_frame_end": 422,
+      "first_available_decision_frame": 423
+    },
+    {
+      "transition": "penetrate_to_curl_load",
+      "evidence": [
+        {
+          "kind": "frozen_angle_downward_crossing",
+          "onset_frame_end": 633
+        }
+      ],
+      "confirmation_frame_end": 633,
+      "first_available_decision_frame": 634
+    }
+  ],
+  "maximum_lateral_error_m": 0.004170475431337895,
+  "minimum_measured_bucket_z_m": 0.477871107275339,
+  "final_coordinates": [
+    4.625582916875738,
+    0.0038495683429193286,
+    0.6026312164524738,
+    0.8993441940519584
+  ],
+  "maximum_command_recompute_error": 0.0,
+  "phase_counts": {
+    "approach_contact": 422,
+    "penetrate": 211,
+    "curl_load": 267,
+    "lift": 0,
+    "off_soil": 0
+  },
+  "bc_raw_vs_applied_mean_abs_normalized": [
+    0.031192685472465412,
+    0.1612509144349734,
+    0.11263873842335952,
+    0.1338200956108777
+  ],
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+    "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+  },
+  "policy": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+    "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+  },
+  "run": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v5/contact900",
+  "physics_steps_added_by_review": 0,
+  "qualification": "bounded geometry/BC handoff only; no full scoop or fill qualification",
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v5/contact900/report.json",
+      "sha256": "1274676a408a493737c5b6b3b2d11d99037252e4f045f3b66347e4513ef77bfa"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v5/contact900/actions.ndjson",
+      "sha256": "89336c1053c7ea38752a48440eee142ee455615962eed66836a64c11f0ce93a6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v5/contact900/phase-trace.ndjson",
+      "sha256": "c38311c8fd7083c4e4639af5b94c1f055754e08426280be6622d1d6afcfd2335"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v5/contact900/physics/frames.ndjson",
+      "sha256": "5bbd0012858fa4d73c3788b59d0a526b9c311eb48429d908b11d73bd4b76a703"
+    }
+  ],
+  "tip_vertical_motion_m": {
+    "initial_z": 1.7301509002076356,
+    "minimum_z": 0.5796610514432939,
+    "initial_to_minimum": 1.1504898487643418,
+    "contact_confirmation_z": 1.0326927421643388,
+    "contact_to_minimum": 0.4530316907210449,
+    "configured_drop": 0.45
+  }
+}

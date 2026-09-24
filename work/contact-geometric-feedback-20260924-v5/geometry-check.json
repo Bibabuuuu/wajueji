@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "scope": "kinematics only; synthetic contact transition; no physics or soil evidence",
+  "frames": 381,
+  "tangent_maximum_abs_error": 3.26532978434102e-05,
+  "minimum_preview_clearance_m": 0.6272953269213637,
+  "maximum_lateral_error_m": 5.8419312240594205e-08,
+  "final_phase": "curl_load",
+  "source_sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+  "final_coordinates": [
+    5.472319762270398,
+    -4.462353271166449e-09,
+    0.7336061356893113,
+    0.4440440234650664
+  ],
+  "code_sha256": "b0a68e47625be75db6fb8c7736657ade594f6fcba7a7328334f7c9d41d36187d"
+}
