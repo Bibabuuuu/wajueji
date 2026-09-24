@@ -1,0 +1,154 @@
+{
+  "frame": 2824,
+  "sim_time_s": 47.06666666666667,
+  "valid_estimate": true,
+  "fill_percent": 48.8060884731251,
+  "liters": 124.53592385209043,
+  "quality_reasons": [],
+  "capacity_liters": 255.164729950989,
+  "rocks_and_heap_included": true,
+  "occupancy_level": 0.2,
+  "calibration_status": "user_selected_threshold_not_recalibrated",
+  "compute_wall_s": 0.27872054500039667,
+  "display_only": true,
+  "checkpoint_sha256": "5cb69a1fd46cc50d0f7fa7f7990026f37436b4a876967583a619a15d0a074ffe",
+  "final_phase": "off_soil",
+  "formal_fill_qualification": false,
+  "physics_steps_added": 0,
+  "sampled_history": [
+    {
+      "frame": 2400,
+      "sim_time_s": 40.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.37557325200759806,
+      "display_only": true
+    },
+    {
+      "frame": 2460,
+      "sim_time_s": 41.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.34957462799502537,
+      "display_only": true
+    },
+    {
+      "frame": 2520,
+      "sim_time_s": 42.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.3282052720023785,
+      "display_only": true
+    },
+    {
+      "frame": 2640,
+      "sim_time_s": 44.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2911317149992101,
+      "display_only": true
+    },
+    {
+      "frame": 2760,
+      "sim_time_s": 46.0,
+      "valid_estimate": true,
+      "fill_percent": 49.93182178531791,
+      "liters": 127.40839821811552,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.282261913002003,
+      "display_only": true
+    },
+    {
+      "frame": 2820,
+      "sim_time_s": 47.0,
+      "valid_estimate": true,
+      "fill_percent": 48.8060884731251,
+      "liters": 124.53592385209043,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2788482619798742,
+      "display_only": true
+    },
+    {
+      "frame": 2821,
+      "sim_time_s": 47.016666666666666,
+      "valid_estimate": true,
+      "fill_percent": 48.869510068178215,
+      "liters": 124.69775339383833,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2804317690024618,
+      "display_only": true
+    },
+    {
+      "frame": 2822,
+      "sim_time_s": 47.03333333333333,
+      "valid_estimate": true,
+      "fill_percent": 48.80291739337245,
+      "liters": 124.52783237500303,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.27863526600413024,
+      "display_only": true
+    },
+    {
+      "frame": 2823,
+      "sim_time_s": 47.05,
+      "valid_estimate": true,
+      "fill_percent": 48.71729824005074,
+      "liters": 124.30936249364339,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.27806864300509915,
+      "display_only": true
+    }
+  ]
+}

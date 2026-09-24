@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "checks": {
+    "exact_restore": true,
+    "serialized_history_bc_exact": true,
+    "control_recomputed": true,
+    "phase_recomputed": true,
+    "saved_control_recomputed": true,
+    "frames": true,
+    "one_response_per_frame": true,
+    "two_halves_per_frame": true,
+    "one_native_dispatch_per_frame": true,
+    "half_order": true,
+    "native_clock": true,
+    "dispatch_exact": true,
+    "native_guard": true,
+    "physical_guards": true,
+    "ground_guards": true,
+    "operator_once": true,
+    "shadow_no_live_mutation": true,
+    "independent_matrix": true,
+    "source": true,
+    "inputs": true,
+    "candidate_bindings": true,
+    "runtime_bindings": true,
+    "schema": true,
+    "simulation_clock": true,
+    "final_state": true,
+    "finite": true,
+    "lineage": true,
+    "particle_count": true,
+    "rock_ids": true,
+    "frame_budget": true,
+    "ordinary_loader_rejects": true
+  },
+  "command_max_error": 0,
+  "matrix_max_error": 4.0766001685454967e-17,
+  "frames": 424,
+  "final_phase": "off_soil",
+  "stop_reason": "first_causal_off_soil_confirmation",
+  "axis_peak_speed": [
+    0.0001849748308091024,
+    0.012065334675094548,
+    0.01373776188926231,
+    0.0036632567895792867
+  ],
+  "axis_max_half_jump": [
+    4.704053015110635e-05,
+    0.0007428965699253645,
+    0.0013696356122434583,
+    0.0007868051241945939
+  ],
+  "endpoint_sha256": "5cb69a1fd46cc50d0f7fa7f7990026f37436b4a876967583a619a15d0a074ffe",
+  "physics_steps_added": 0,
+  "wall_seconds": 152.75520215800498,
+  "timing": {
+    "loop_wall_seconds": 143.36972306016833,
+    "simulated_seconds": 7.066666666666666
+  }
+}
