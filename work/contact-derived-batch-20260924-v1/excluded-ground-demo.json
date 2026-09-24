@@ -1,0 +1,21 @@
+{
+  "status": "excluded_from_success_demo_replay_and_fit",
+  "evidence": {
+    "path": "/home/qunwang/wajueji/work/contact-bc-contact-window-20260924-v1/demo-ground.json",
+    "sha256": "e3eb071fd601b285541809438976ab433e410dd0a4155003a32928dee99887a2"
+  },
+  "recorded_ground_audit": {
+    "run": "manual-contact-20260924-093202-1362929",
+    "frames": 1264,
+    "minimum_bucket_mesh_z_m": -0.0322624515705352,
+    "minimum_frame": 407,
+    "ground_guard_first_stop_frame": 344,
+    "guard_geometry_error_m": 0.0,
+    "below_zero_frames": 116,
+    "first_below_zero_frame": 348,
+    "below_2cm_frames": 147,
+    "first_below_2cm_frame": 340
+  },
+  "source_records_changed": false,
+  "new_physics_frames": 0
+}

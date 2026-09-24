@@ -1,0 +1,42 @@
+{
+  "status": "input_only_passed",
+  "arrays": 24,
+  "particles": 256441,
+  "rocks": 47,
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+    "size_bytes": 52403258,
+    "mtime_ns": 1790143972849119440,
+    "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4"
+  },
+  "source_schema_changed": false,
+  "physics_advanced": false,
+  "initialization": {
+    "schema": "original_manual_approach_initialization_v1",
+    "source_schema": "excavation_layered_47_sparse_approach_handoff_checkpoint_v1",
+    "source_schema_changed": false,
+    "native_controller_history": "cold initialization as in original manual episode; not restored native history",
+    "inputs": [
+      {
+        "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/approach_runtime.py",
+        "sha256": "123342f72780d4cc7c3c5eda509eac0f2de7f7eda0c992c8c7146240ec524c81"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/report.json",
+        "sha256": "0e1e891e673f321bccbbe765853ff50d5b98753ddb0ae066deeccc4c6577fac5"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json",
+        "sha256": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/independent-restore-audit.json",
+        "sha256": "df548ef743601666a8581c1260a5f792282e6fbb77d515a1e679991011d6a739"
+      },
+      {
+        "path": "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py",
+        "sha256": "f4770663e9eaf5a340eba36e1e5c04dab9dd2d55c8f1f2adc0f5bc1af50b8c4e"
+      }
+    ]
+  }
+}

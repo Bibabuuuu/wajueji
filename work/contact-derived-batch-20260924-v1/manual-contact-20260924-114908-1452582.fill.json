@@ -1,0 +1,56 @@
+{
+  "schema": "derived_fill_comparison_v2",
+  "occupancy_level": 0.2,
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/compare_fill.py",
+      "sha256": "6aedcd37be2b3323275a071d22b7389aa6c0bf94da1f11a908696f726c78445e"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/report.json",
+      "sha256": "d770fe9bd8b43012fd4b794814b00e90c931e2a164ead0f1a6e6611e843c0f09"
+    },
+    {
+      "path": "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/results/layered-mound-physical-preflight-v1/scene-manifest.json",
+      "sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz",
+      "sha256": "73aa8f1a4e040c15aa978a22dc946260481f9b1d72f71ce559ddae2eef8c3c5c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-114908-1452582/final.npz",
+      "sha256": "73aa8f1a4e040c15aa978a22dc946260481f9b1d72f71ce559ddae2eef8c3c5c"
+    }
+  ],
+  "training_eligible": false,
+  "original": {
+    "frame": 1674,
+    "sim_time_s": 27.9,
+    "valid_estimate": true,
+    "fill_percent": 77.78975741239894,
+    "liters": 198.4920244308772,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.2322164039942436,
+    "display_only": true
+  },
+  "derived": {
+    "frame": 1674,
+    "sim_time_s": 27.9,
+    "valid_estimate": true,
+    "fill_percent": 77.78975741239894,
+    "liters": 198.4920244308772,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.22819174997857772,
+    "display_only": true
+  },
+  "fill_difference_percentage_points": 0.0
+}

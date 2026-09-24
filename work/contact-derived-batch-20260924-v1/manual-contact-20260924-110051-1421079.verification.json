@@ -1,0 +1,144 @@
+{
+  "schema": "derived_demo_independent_audit_v1",
+  "passed": true,
+  "data_domain": "replayed_teacher_actual_observations",
+  "teacher_run": "manual-contact-20260924-110051-1421079",
+  "report": {
+    "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-110051-1421079/report.json",
+    "sha256": "14a2a691399c92e70c85f00f93a057d2dfc4cf5eadeb0ff803e975197c7e88c9"
+  },
+  "tensors": {
+    "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-110051-1421079/derived-tensors.npz",
+    "sha256": "569dec4daed2dcf2a6bf16600fedac725a8cae64ca7d9369434ecdc6d642f209",
+    "rows": 1428,
+    "phase_counts": {
+      "approach_contact": 383,
+      "penetrate": 168,
+      "curl_load": 405,
+      "lift": 334,
+      "off_soil": 138
+    }
+  },
+  "frames": 1461,
+  "expert_rows": 1428,
+  "phase_counts": {
+    "approach_contact": 383,
+    "penetrate": 168,
+    "curl_load": 405,
+    "lift": 334,
+    "off_soil": 138
+  },
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 384
+        }
+      ],
+      "confirmation_frame_end": 386,
+      "first_available_decision_frame": 387
+    },
+    {
+      "transition": "penetrate_to_curl_load",
+      "evidence": [
+        {
+          "kind": "frozen_angle_downward_crossing",
+          "onset_frame_end": 554
+        }
+      ],
+      "confirmation_frame_end": 554,
+      "first_available_decision_frame": 555
+    },
+    {
+      "transition": "curl_load_to_lift",
+      "evidence": [
+        {
+          "kind": "sustained_actual_boom_and_bucket_rise",
+          "motion_window_start_frame_end": 918,
+          "first_matching_window_frame_end": 930,
+          "consecutive_matching_windows": 30,
+          "origin_rise_m": 0.0924604045146531
+        }
+      ],
+      "confirmation_frame_end": 959,
+      "first_available_decision_frame": 960
+    },
+    {
+      "transition": "lift_to_off_soil",
+      "evidence": [
+        {
+          "kind": "fresh_ground_connected_particle_to_solid_gap",
+          "onset_frame_end": 1289,
+          "minimum_required_gap_m": 0.003,
+          "consecutive_frames": 5
+        }
+      ],
+      "confirmation_frame_end": 1293,
+      "first_available_decision_frame": 1294
+    }
+  ],
+  "off_soil_confirmation_frame_end": 1293,
+  "post_confirmation_below_gap_frames": [
+    1303,
+    1304,
+    1305,
+    1306,
+    1307,
+    1308,
+    1309,
+    1310,
+    1311,
+    1312,
+    1313,
+    1335
+  ],
+  "maximum_deviations": {
+    "bucket_CAD_point_m": 0.0,
+    "rock_center_m": 0.0,
+    "rock_orientation_rad": 0.0
+  },
+  "endpoint_comparison": {
+    "particle_max_position_error_m": 0.0,
+    "particle_p99_position_error_m": 0.0,
+    "original_cavity_particle_count": 9993,
+    "derived_cavity_particle_count": 9993,
+    "cavity_count_relative_difference": 0.0,
+    "bitwise_arrays": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_ids": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    }
+  },
+  "split": "development_runs",
+  "original_sources_unchanged": true,
+  "original_tensor_unchanged": true,
+  "full_batch_complete": false,
+  "training_eligible": false,
+  "similarity_reference_exceeded_frames": 0,
+  "endpoint_within_previous_reference": true,
+  "qualification": "One complete derived-data sample independently audited for actual causal features, phase timing and measured deviations. Similarity limits diagnostic under user decision; data-quality review still required. Not trained policy or autonomous excavation.",
+  "verifier_sha256": "35bac1216bdbcae1d73d340603351cdf53ddc701ed4d7ce0eca30fd50597f1d8"
+}

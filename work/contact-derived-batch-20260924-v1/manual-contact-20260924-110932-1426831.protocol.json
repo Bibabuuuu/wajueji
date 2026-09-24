@@ -1,0 +1,35 @@
+{
+  "schema": "derived_teacher_demo_protocol_v2",
+  "status": "user_authorized_single_episode_candidate",
+  "teacher_run": "manual-contact-20260924-110932-1426831",
+  "frames": 1408,
+  "wall_budget_seconds": 600,
+  "device": "cuda:0",
+  "actual_state_terrain_phase_required": true,
+  "inherit_teacher_split_and_lineage": true,
+  "maximum_bucket_CAD_point_deviation_m": 0.001,
+  "maximum_rock_center_deviation_m": 0.001,
+  "maximum_rock_orientation_deviation_rad": 0.0001,
+  "maximum_final_particle_position_deviation_m": 0.001,
+  "p99_final_particle_position_deviation_m": 0.0001,
+  "maximum_final_cavity_particle_count_relative_difference": 0.05,
+  "bucket_ground_margin_m": 0.005,
+  "scope": "Similarity limits retained as diagnostic reference only, not abort thresholds. No rounding of states, physical guards or 3mm soil-clearance criterion. No automatic training admission.",
+  "similarity_deviation_action": "record_and_review_after_full_run",
+  "user_decision": "Ignore the reported tiny numerical differences as stop conditions; retain physical safety checks and inspect complete result.",
+  "source": {
+    "mtime_ns": 1790219233846691876,
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-110703-1425126/prepare/prepoint.npz",
+    "sha256": "56b4dd66add78fb41f3f512e144d08ced3b0ddcd152c9a3830dff76e8c0e464e",
+    "size_bytes": 54104642
+  },
+  "endpoint": {
+    "mtime_ns": 1790219652050348170,
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/final-001408.cycle.npz",
+    "sha256": "e0005248c70bc3c45c099f6c1c1764e72866c7bb75149e325d518f91e4b7be52",
+    "size_bytes": 54517250
+  },
+  "source_schema": "layered_47_cycle_checkpoint_v1",
+  "output": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-110932-1426831",
+  "prior_teacher_ground_unsafe": false
+}

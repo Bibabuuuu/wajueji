@@ -1,0 +1,26 @@
+{
+  "schema": "approach_initialization_independent_three_frame_review_v1",
+  "checks": {
+    "three_frames": true,
+    "all_original_actions": true,
+    "all_compact_states_equal": true,
+    "hard_guards": true,
+    "source_unchanged": true
+  },
+  "passed": true,
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/approach-initialization-probe.json",
+      "sha256": "7be45da648eb7f94488b475c499794304f837448cd119ae6d1f886b52ef8d0ff"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/approach-initialization-probe/frames.ndjson",
+      "sha256": "22f25de8d5b3e1a92869588e906d0b57b54f0ac4b830abe563deef2301fb4059"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/physics.ndjson",
+      "sha256": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109"
+    }
+  ],
+  "qualification": "Same original cold manual initialization and three full compact states/actions, not native-history continuation from the legacy approach checkpoint."
+}

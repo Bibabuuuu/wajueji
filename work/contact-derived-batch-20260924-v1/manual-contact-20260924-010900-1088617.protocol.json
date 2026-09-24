@@ -1,0 +1,36 @@
+{
+  "schema": "derived_teacher_demo_protocol_v2",
+  "status": "user_authorized_single_episode_candidate",
+  "teacher_run": "manual-contact-20260924-010900-1088617",
+  "frames": 1311,
+  "wall_budget_seconds": 600,
+  "device": "cuda:0",
+  "actual_state_terrain_phase_required": true,
+  "inherit_teacher_split_and_lineage": true,
+  "maximum_bucket_CAD_point_deviation_m": 0.001,
+  "maximum_rock_center_deviation_m": 0.001,
+  "maximum_rock_orientation_deviation_rad": 0.0001,
+  "maximum_final_particle_position_deviation_m": 0.001,
+  "p99_final_particle_position_deviation_m": 0.0001,
+  "maximum_final_cavity_particle_count_relative_difference": 0.05,
+  "bucket_ground_margin_m": 0.005,
+  "scope": "Similarity limits retained as diagnostic reference only, not abort thresholds. No rounding of states, physical guards or 3mm soil-clearance criterion. No automatic training admission.",
+  "similarity_deviation_action": "record_and_review_after_full_run",
+  "user_decision": "Ignore the reported tiny numerical differences as stop conditions; retain physical safety checks and inspect complete result.",
+  "source": {
+    "mtime_ns": 1790143972849119440,
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+    "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "size_bytes": 52403258
+  },
+  "endpoint": {
+    "metadata_sha256": "4a44a7ef18478824781d8a971b5f048311d1cf3ba57a8398c6562c9b6434db78",
+    "mtime_ns": 1790183583654334481,
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/final-001311.diagnostic.npz",
+    "sha256": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+    "size_bytes": 53233466
+  },
+  "source_schema": "excavation_layered_47_sparse_approach_handoff_checkpoint_v1",
+  "output": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-010900-1088617",
+  "prior_teacher_ground_unsafe": false
+}
