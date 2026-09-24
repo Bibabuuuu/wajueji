@@ -1,0 +1,24 @@
+[
+  {
+    "scoop": "first",
+    "frames": 120,
+    "commands_exact": true,
+    "changed_diagnostic_fields": [
+      "preview_minimum_clearance_m"
+    ],
+    "maximum_preview_clearance_difference_m": 0.0007074249611065397,
+    "source_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+    "physics_steps_added": 0
+  },
+  {
+    "scoop": "second",
+    "frames": 120,
+    "commands_exact": true,
+    "changed_diagnostic_fields": [
+      "preview_minimum_clearance_m"
+    ],
+    "maximum_preview_clearance_difference_m": 0.0007143202709116725,
+    "source_sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
+    "physics_steps_added": 0
+  }
+]
