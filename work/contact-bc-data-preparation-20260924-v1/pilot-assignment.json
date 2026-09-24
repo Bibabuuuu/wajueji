@@ -1,0 +1,50 @@
+{
+  "schema": "contact_bc_pilot_assignment_v1",
+  "scope": "bounded_offline_wiring_pilot_only",
+  "model_route": "user_confirmed_unified_four_axis_short_history",
+  "source_manifest_sha256": "cfbb1264e6b7bfddb2cbe492c1c8598106ea034fe0cac5522ac22bbbd13b25df",
+  "development_runs": [
+    "manual-contact-20260924-005742-1081585",
+    "manual-contact-20260924-010900-1088617",
+    "manual-contact-20260924-083547-1327233",
+    "manual-contact-20260924-093202-1362929",
+    "manual-contact-20260924-100857-1387193",
+    "manual-contact-20260924-110051-1421079",
+    "manual-contact-20260924-110932-1426831"
+  ],
+  "validation_runs": [
+    "manual-contact-20260924-113555-1443279",
+    "manual-contact-20260924-114908-1452582",
+    "manual-contact-20260924-115812-1458627"
+  ],
+  "sealed_test_runs": [],
+  "episode_weights": {
+    "manual-contact-20260924-005742-1081585": 0.25,
+    "manual-contact-20260924-010900-1088617": 1.0,
+    "manual-contact-20260924-083547-1327233": 1.0,
+    "manual-contact-20260924-093202-1362929": 0.25,
+    "manual-contact-20260924-100857-1387193": 1.0,
+    "manual-contact-20260924-110051-1421079": 0.25,
+    "manual-contact-20260924-110932-1426831": 1.0,
+    "manual-contact-20260924-113555-1443279": 1.0,
+    "manual-contact-20260924-114908-1452582": 0.25,
+    "manual-contact-20260924-115812-1458627": 1.0
+  },
+  "mask_original_goal_runs": [
+    "manual-contact-20260924-010900-1088617",
+    "manual-contact-20260924-110932-1426831"
+  ],
+  "sampling": "episode-balanced, high-fill weight 1, lower-fill weight 0.25; diagnostic pilot, not expert-success certification",
+  "target": "applied_normalized_velocity",
+  "target_rationale": "Imitate actual safe execution for first wiring pilot; preserve original requests separately.",
+  "history_offsets_frames": [
+    3,
+    6,
+    9
+  ],
+  "history_span_seconds": 0.15,
+  "steps": 200,
+  "training_wall_budget_seconds": 120,
+  "seed": 20260924,
+  "formal_training_admission": false
+}

@@ -54,6 +54,8 @@
 
 ## 5. 证据和报告
 
+当前S05数据/模型接线入口：[D-145整理与离线试训](../work/contact-bc-data-preparation-20260924-v1/README.md)。初始地形缺失修正与旧索引适用边界以此证据和S05为准。
+
 当前首批接触记录总入口：[10条清单](../work/contact-collection-progress-20260924-v5/README.md)。v5替代v2–v4的当前数量汇总，旧版保留为历史证据；受S04/S05及CURRENT_STATUS统领，不是新权威规划。
 
 - `reports/`：精选、不可覆盖的报告和审计输出。由`acceptance.md`或小节方案定向引用，不要求启动时遍历。

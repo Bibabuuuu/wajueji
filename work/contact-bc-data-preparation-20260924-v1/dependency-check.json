@@ -1,0 +1,8 @@
+{
+  "python": "/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python",
+  "torch_version": "2.11.0+cu128",
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4070",
+  "training_started": false,
+  "physics_venv_unchanged": true
+}

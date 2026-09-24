@@ -1,0 +1,195 @@
+{
+  "schema": "contact_bc_native60_structured_v1",
+  "spec": {
+    "schema": "contact_bc_native60_structured_v1",
+    "action_hz": 60,
+    "action_order": [
+      "swing",
+      "boom",
+      "arm",
+      "bucket"
+    ],
+    "action_units": [
+      "rad/s",
+      "m/s",
+      "m/s",
+      "m/s"
+    ],
+    "limits_si": [
+      0.12,
+      0.0225,
+      0.0225,
+      0.0675
+    ],
+    "feature_keys": [
+      "mechanism_qpos",
+      "mechanism_qvel",
+      "controller_target",
+      "controller_target_velocity",
+      "bucket_integral_effort",
+      "bucket_active_curl_effort",
+      "bucket_origin_world_m",
+      "bucket_linear_velocity_world_m_s",
+      "bucket_angular_velocity_world_rad_s",
+      "terrain_height_m",
+      "terrain_known",
+      "terrain_origin_xy_m",
+      "terrain_resolution_m",
+      "terrain_age_frames",
+      "goal_world_m",
+      "previous_applied_action_si",
+      "previous_drive_load",
+      "previous_drive_load_valid"
+    ],
+    "target_keys": [
+      "requested_action_normalized",
+      "applied_action_normalized"
+    ],
+    "audit_keys": [
+      "frame",
+      "sequence_id",
+      "reset_learning_history",
+      "terrain_anchor_frame"
+    ],
+    "normalization": "none; later fit only on assigned development data",
+    "history": "sequence-local; frame gaps or missing terrain reset; no chosen temporal window",
+    "provenance": "simulator-derived terrain and state; not a real-sensor guarantee",
+    "excluded_features": [
+      "operator_phase",
+      "posthoc_phase",
+      "final_fill",
+      "future_state",
+      "particle_Jp",
+      "scoop_index",
+      "lineage"
+    ]
+  },
+  "spec_sha256": "43decfccf830a841d3a7612d3f3c465d52a40f997b3eb4986c193077cf1c2601",
+  "source_manifest_sha256": "492672ca9ffe6b8aab41d313f9afb69e2e70a91017d7b1a3f5702206ab896e73",
+  "training_eligible": false,
+  "split_assignment": "unassigned",
+  "normalization_fitted": false,
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "lineage": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b",
+      "scoop_index": 1,
+      "rows": 1243,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-005742-1081585.npz",
+      "sha256": "efebc08e71de57b328fe28128ab5e5b0dcb2ad32e6460ab0526dc2bea5d33d08",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "lineage": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "scoop_index": 1,
+      "rows": 1278,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-010900-1088617.npz",
+      "sha256": "863116abf7c727c1cf334caf943ffb25517e9d812e22e197a367a0c4052ddaf0",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp",
+      "operator_retargeting_review": "reported_first_entry_shift"
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "lineage": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "scoop_index": 2,
+      "rows": 1690,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-083547-1327233.npz",
+      "sha256": "2f4344efe0f1e9cc74a136c3ebbf0ab431841d55e5510385d11815899fd9c5a5",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "lineage": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "scoop_index": 3,
+      "rows": 1149,
+      "sequence_count": 2,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-093202-1362929.npz",
+      "sha256": "2ff918dba4360f8cbdc329fa35a408c510df49ea780e939b872fd638e650c6a3",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "scoop_index": 1,
+      "rows": 1099,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-100857-1387193.npz",
+      "sha256": "a530c6cb01225e2118866c9863c340b5b2f49e2eebb4556bab9ca87996c6e59a",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "scoop_index": 2,
+      "rows": 1428,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-110051-1421079.npz",
+      "sha256": "5ad4fece0f302ea97093532c83919d0b428e2acd1438ffe6550901a8c7d2dbc7",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "scoop_index": 3,
+      "rows": 1365,
+      "sequence_count": 3,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-110932-1426831.npz",
+      "sha256": "3e2175e004fec1c5aed89d45432e0a945ad71ab4656c4a1dc77c2772c9a38635",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1",
+      "operator_retargeting_review": "confirmed_separate_annotation"
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+      "scoop_index": 1,
+      "rows": 1378,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-113555-1443279.npz",
+      "sha256": "d99596afad53f29f9edfc7bdae8392e2a8e0ea99e8070f58e7f73eac7107bbe9",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+      "scoop_index": 2,
+      "rows": 1641,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-114908-1452582.npz",
+      "sha256": "ca3a09aa6d2cb22e86380086710beee083efa8d0a9aa2cfca1ea3a5ab0731f0b",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1",
+      "operator_retargeting_review": "pending"
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+      "scoop_index": 3,
+      "rows": 1457,
+      "sequence_count": 1,
+      "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-115812-1458627.npz",
+      "sha256": "c662e65ec8c34093e34915645f5e5b9ae64006dfb5d3e1d4a5b33a4146992e50",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1",
+      "operator_retargeting_review": "pending"
+    }
+  ],
+  "rows": 13728
+}

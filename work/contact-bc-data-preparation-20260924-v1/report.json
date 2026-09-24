@@ -1,0 +1,705 @@
+{
+  "schema": "contact_bc_native_staging_v1",
+  "catalog_sha256": "8f8df0d09050e30d63a9218e8eb01ced36605e92073ef04c04fc590b148d4fb0",
+  "native_action_hz": 60,
+  "limits_si": [
+    0.12,
+    0.0225,
+    0.0225,
+    0.0675
+  ],
+  "training_eligible": false,
+  "model_action_rate_decision": "not_decided_by_this_reference_index",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "lineage": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b",
+      "scoop_index": 1,
+      "candidate_frames": 1246,
+      "tensor_candidate_frames": 1243,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 381,
+      "projected_manual_frames": 565,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 180,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 1,
+          "operator_minus_candidate_frames": 179
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 290,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 192,
+          "operator_minus_candidate_frames": 98
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 642,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 869,
+          "operator_minus_candidate_frames": -227
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1242,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "e77264fca11a97f4adc49cfc8e3a5a4f1da07bd2fe396ca525cc9da403d1b5c0",
+        "input.ndjson": "c60a39e7978cbfbd22605cbc1af689d0ec7c59ef7882f5293a1eec8254e7d054",
+        "physics.ndjson": "c70649de29862ab53d645236496e1fc2ecb7dc9afb026d66bd7f2f59ba866f22",
+        "observation.ndjson": "59c3210482ce957f37685c104a0de5d49514892968e96968bb9f5eec4bf29683"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-005742-1081585.ndjson",
+      "index_sha256": "76f4a32d416b10f131cd2bd06464e446448695dcb9238d69516dfed532aacd1b",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-005742-1081585.phases.json",
+      "phase_sha256": "ad5f4c59e451c2dd9835955fe12cc34e8e4e41aa42cab3549f9ea442dfbf4f0a",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.849992168993126,
+          -0.0517698422034788
+        ],
+        "normalized_height_fraction": 0.40412432824757316,
+        "source": "rear_lower_face_from_observed_profile",
+        "strip_anchor_xy_m": [
+          5.65,
+          -0.04999999999999982
+        ],
+        "surface_z_m": 0.6506800651550293
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp"
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "lineage": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "scoop_index": 1,
+      "candidate_frames": 1281,
+      "tensor_candidate_frames": 1278,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 249,
+      "projected_manual_frames": 406,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 430,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 1,
+          "operator_minus_candidate_frames": 429
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 610,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 492,
+          "operator_minus_candidate_frames": 118
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 784,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 807,
+          "operator_minus_candidate_frames": -23
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1275,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1277,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "ab1872398f133d78662f4e127590dcec3b0111e7d08dae7aad911ce91b12dfff",
+        "input.ndjson": "fbe43e78a77675b804ea799d57e6f02b7e4886420efcd9cd2bca1ca7972fd80f",
+        "physics.ndjson": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109",
+        "observation.ndjson": "adcbcf3c20120a4ea6f84abd3db8b4cb21c250c09164de2509518b7c881e32fb"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-010900-1088617.ndjson",
+      "index_sha256": "af3e92f4fd37905dd453e9bbb072acec9c7552023897b0fd437171711ba5827b",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-010900-1088617.phases.json",
+      "phase_sha256": "5324d0b51445801d0c647650412d2147344f8ba4d1c0e3917228aacfd9551492",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.849992168993126,
+          -0.0517698422034788
+        ],
+        "normalized_height_fraction": 0.40412432824757316,
+        "source": "rear_lower_face_from_observed_profile",
+        "strip_anchor_xy_m": [
+          5.65,
+          -0.04999999999999982
+        ],
+        "surface_z_m": 0.6506800651550293
+      },
+      "operator_retargeting_review": "reported_first_entry_shift",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp"
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "lineage": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "scoop_index": 2,
+      "candidate_frames": 1693,
+      "tensor_candidate_frames": 1690,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 362,
+      "projected_manual_frames": 532,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 440,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 184,
+          "operator_minus_candidate_frames": 256
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 633,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 635,
+          "operator_minus_candidate_frames": -2
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 1228,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 1083,
+          "operator_minus_candidate_frames": 145
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1672,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "d879e2e5c26ceac1d5b9719a438145ee611531f502ae6e6f2c045be763056840",
+        "input.ndjson": "e1118c54076728b9fa2c6d90cbb4bcb2521eb218e5fea67f9362a67ac3dd78b7",
+        "physics.ndjson": "6e312779d615577fff9e7122794da60d861ad39a95808ee7efb305297433b352",
+        "observation.ndjson": "2f0405d4082bca12d93e8c7caf4c67b8972d296e1c85e8be256abc5ce14cac48"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-083547-1327233.ndjson",
+      "index_sha256": "de06ddc6039e54e628f0bca15ac782a01056cd8479f925425cea58720ee7d733",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-083547-1327233.phases.json",
+      "phase_sha256": "ee556c173f6e2d89456424fcfbb23df38d22c0a4bd182c6b20c9ffee5b9d7828",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.649981860644392,
+          0.05380935105375616
+        ],
+        "surface_z_m": 1.2904308438301086
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp"
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "lineage": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "scoop_index": 3,
+      "candidate_frames": 1152,
+      "tensor_candidate_frames": 1149,
+      "sequence_count": 2,
+      "excluded": {
+        "inactive_manual_control": 82,
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 230,
+      "projected_manual_frames": 395,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 237,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 29,
+          "operator_minus_candidate_frames": 208
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 367,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 369,
+          "operator_minus_candidate_frames": -2
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 673,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 725,
+          "operator_minus_candidate_frames": -52
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1198,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "8bbbf4d6f88cb28cd2e11f3b675bc7dc2389fe5d4ac21a1b3dd7ebb1641be3a3",
+        "input.ndjson": "b362f30290db505ae54c74909c2a4765432faa5952d18f205b0fd2d58d093035",
+        "physics.ndjson": "86ac472e165c254cdc5ebe6f7d4d946cf488de4c8460b2ca894b45c38da9cea0",
+        "observation.ndjson": "5dbe3a071aaedb30091c3051fbb590266e6ce52eafa10fe77a18a64d3118fecb"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-093202-1362929.ndjson",
+      "index_sha256": "84626332af948542196194f4c10ae65df3dda8f36dc90e22fbbc1ae4ca56ffa2",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-093202-1362929.phases.json",
+      "phase_sha256": "854ffa3fdc35e47f9ce80acad4d8dab01d0d95716ddf45e695b7dc7ac6c91c0d",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.747902886394236,
+          -0.5909059042087532
+        ],
+        "surface_z_m": 0.8083193898200989
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp"
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "scoop_index": 1,
+      "candidate_frames": 1102,
+      "tensor_candidate_frames": 1099,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 258,
+      "projected_manual_frames": 433,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 160,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 1,
+          "operator_minus_candidate_frames": 159
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 291,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 163,
+          "operator_minus_candidate_frames": 128
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 602,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 660,
+          "operator_minus_candidate_frames": -58
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1085,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "f6b275b74de22e0f263d697e2ffba6ba11057155ed55d7305dbe367f73577e3f",
+        "input.ndjson": "6a1ca7b568161c0ce519f51ac36005c656278ab71fddb299035162a6e77b439a",
+        "physics.ndjson": "356cbbe7ad8d1ec43b9311882bd41854820001819be8f57283e7881c053d387a",
+        "observation.ndjson": "4f5b3d9e174562eb21cca06bb32e2c465665f8bb7099e37ef4b9c3cfa033ebc5"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-100857-1387193.ndjson",
+      "index_sha256": "c1e828941003c677e0f4dad5ff8a93b8af86c5bc3fc5dc174a713d5fd80125aa",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-100857-1387193.phases.json",
+      "phase_sha256": "93e232adcc7a0d72819f3dc3190f225e9745bc235b218b053431a884807a7667",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.849992168993126,
+          -0.0517698422034788
+        ],
+        "normalized_height_fraction": 0.40412432824757316,
+        "source": "rear_lower_face_from_observed_profile",
+        "strip_anchor_xy_m": [
+          5.65,
+          -0.04999999999999982
+        ],
+        "surface_z_m": 0.6506800651550293
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp"
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "scoop_index": 2,
+      "candidate_frames": 1431,
+      "tensor_candidate_frames": 1428,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 311,
+      "projected_manual_frames": 368,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 398,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 175,
+          "operator_minus_candidate_frames": 223
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 501,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 489,
+          "operator_minus_candidate_frames": 12
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 919,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 923,
+          "operator_minus_candidate_frames": -4
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1432,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "860450c62661c2af8a9b74e053869071a27ad9c1f5dff2583e61cf7e99611065",
+        "input.ndjson": "a1ea514824b68cc5c31207397188c27cc1c85f5a666e8d5f1a9c67fc8ff1c5f8",
+        "physics.ndjson": "eb07e497567e5820526870d6387d4e7587433ae3f974404732d4e4b78ec949d3",
+        "observation.ndjson": "11f04c09d897098489f91a012af9aa8790723c32ad6a0c2b23cdb8916dac5e39"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-110051-1421079.ndjson",
+      "index_sha256": "6c51c641fcf00384ceb82e8f284de9f31bbf2f6fa2c6ef2729373ffb8e079c7a",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-110051-1421079.phases.json",
+      "phase_sha256": "b4c62f9145ddfd4055e182b4440a29df2a913ed2760eebcabd89e2334381f86a",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.548367169576101,
+          -0.5812575130032106
+        ],
+        "surface_z_m": 1.1445946097373962
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1"
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "scoop_index": 3,
+      "candidate_frames": 1368,
+      "tensor_candidate_frames": 1365,
+      "sequence_count": 3,
+      "excluded": {
+        "inactive_manual_control": 10,
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 576,
+      "projected_manual_frames": 514,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 354,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 93,
+          "operator_minus_candidate_frames": 261
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 514,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 461,
+          "operator_minus_candidate_frames": 53
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 796,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 801,
+          "operator_minus_candidate_frames": -5
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1348,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "4fd18b4bf1cc6ddd322e2bcee75cd09f4e642b529a48b3f32f8c986b2e38efc5",
+        "input.ndjson": "917b763152fb773a71d38ab6e0502ba454fb351801ed75db77cf4ec00d846392",
+        "physics.ndjson": "0cb4129fbe3f5aad4580edf1ba7247e7e6301218cc46f69af5d094f542dbe849",
+        "observation.ndjson": "c6762ac1d32cc82729b7ac6127ec6f4e7212a8231dc79e3d48b750bb7b8db3ad"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-110932-1426831.ndjson",
+      "index_sha256": "e05c3b4810aef34f93ba8523623164066ff3f53797b1cf6e1e28b9bd7b75dc29",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-110932-1426831.phases.json",
+      "phase_sha256": "9d85a7977ef0cb423e511d2642a044d18554d4f340c0f4c8cfed9b30f7617721",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.549335547356983,
+          0.3699557031571323
+        ],
+        "surface_z_m": 0.9553727209568024
+      },
+      "operator_retargeting_review": "confirmed_separate_annotation",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1"
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+      "scoop_index": 1,
+      "candidate_frames": 1381,
+      "tensor_candidate_frames": 1378,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 191,
+      "projected_manual_frames": 562,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 223,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 1,
+          "operator_minus_candidate_frames": 222
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 342,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 225,
+          "operator_minus_candidate_frames": 117
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 843,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 847,
+          "operator_minus_candidate_frames": -4
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1354,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "01b8f94deb7cf83deb751e0984b8f586507e24bacda6f1d866b5f59b8823fd7c",
+        "input.ndjson": "3aa174fc198f9cf6f519efae6f24f2583e371708bf0de5e6802ec10da6431e49",
+        "physics.ndjson": "e46a76619fbcc45508286b1f49e586fac4fe94813c9d4c0e2911b45a3b5c778f",
+        "observation.ndjson": "c040a6f293e50de067b2faaac68cbaf10d2e99129202d5240d00241a72ad6d57"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-113555-1443279.ndjson",
+      "index_sha256": "48ce2fef88921774bf4ba89f07cfcc5bf4f6d2e199a2baeed5137aa445201f00",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-113555-1443279.phases.json",
+      "phase_sha256": "914cd68be74f0c9f7bbecc606adca2c2dda453cda3d3a1e47e1a70cecd71441f",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.849992168993126,
+          -0.0517698422034788
+        ],
+        "normalized_height_fraction": 0.40412432824757316,
+        "source": "rear_lower_face_from_observed_profile",
+        "strip_anchor_xy_m": [
+          5.65,
+          -0.04999999999999982
+        ],
+        "surface_z_m": 0.6506800651550293
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "continuous_or_original_prepoint",
+      "material_history_policy": "legacy_accumulated_Jp"
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+      "scoop_index": 2,
+      "candidate_frames": 1644,
+      "tensor_candidate_frames": 1641,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 173,
+      "projected_manual_frames": 498,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 401,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 94,
+          "operator_minus_candidate_frames": 307
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 551,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 546,
+          "operator_minus_candidate_frames": 5
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 1133,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 1137,
+          "operator_minus_candidate_frames": -4
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1621,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "d770fe9bd8b43012fd4b794814b00e90c931e2a164ead0f1a6e6611e843c0f09",
+        "input.ndjson": "b6b432b1f1e78241b5a5bb315eaba960d9fcd36a08880da9b3c98df0baa875bb",
+        "physics.ndjson": "fe0717c631ba632a25e7adc55967ec242dee7c475700642cc2b45441296c0714",
+        "observation.ndjson": "3832f01c66f7e1e885e88b9e40a3b178ca75ff519a5143ff5b7373966e5a3dda"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-114908-1452582.ndjson",
+      "index_sha256": "7c56352015b3c15dd11340863830794573dc70ccd52c85283b52e7c5f275e7f0",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-114908-1452582.phases.json",
+      "phase_sha256": "954a83bb7fca4074f1af27b84039e735161b887333081a909bda296f83124b24",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.548367169576101,
+          -0.5812575130032106
+        ],
+        "surface_z_m": 1.2038137912750244
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1"
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+      "scoop_index": 3,
+      "candidate_frames": 1460,
+      "tensor_candidate_frames": 1457,
+      "sequence_count": 1,
+      "excluded": {
+        "system_safety_hold": 30
+      },
+      "nonzero_swing_frames": 669,
+      "projected_manual_frames": 492,
+      "phase_comparison": [
+        {
+          "operator_phase": "penetrate_deepen",
+          "operator_frame": 334,
+          "candidate_kind": "first_five_contact_samples_ge10",
+          "candidate_frame": 211,
+          "operator_minus_candidate_frames": 123
+        },
+        {
+          "operator_phase": "curl_load",
+          "operator_frame": 560,
+          "candidate_kind": "dominant_curl",
+          "candidate_frame": 471,
+          "operator_minus_candidate_frames": 89
+        },
+        {
+          "operator_phase": "lift_clear",
+          "operator_frame": 959,
+          "candidate_kind": "dominant_lift",
+          "candidate_frame": 896,
+          "operator_minus_candidate_frames": 63
+        },
+        {
+          "operator_phase": "off_soil_confirm",
+          "operator_frame": 1408,
+          "candidate_kind": null,
+          "candidate_frame": null,
+          "operator_minus_candidate_frames": null
+        }
+      ],
+      "source_bindings": {
+        "report.json": "24fefd820688feae3acdb2c252ec9606d68c1cae8ac9a82ce99d160b7d99bd5e",
+        "input.ndjson": "004d7477808680d05ba73667e8ae3c8629a37b6f19088e5b6d4e4be4d3c79f80",
+        "physics.ndjson": "1e963007d151251d39ed71e7a2cd4cbf04a54c642298f2e3890fa1faf49776f6",
+        "observation.ndjson": "19b442c67ea790b8017414d779ffef0ac90a2da2094fc412486a11257451d26b"
+      },
+      "index_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-115812-1458627.ndjson",
+      "index_sha256": "612e26d37f2ffa1eca6303083bd6257035839ecfa8398f42e7e5b8fa44df73f1",
+      "phase_path": "/home/qunwang/wajueji/local-data/contact-bc-native-staging-20260924-v2/manual-contact-20260924-115812-1458627.phases.json",
+      "phase_sha256": "bfb71502ae6e5ee868189526eafab9c2c869ef67dc1c417fbd9cdb542265367f",
+      "recorded_goal": {
+        "entry_xy_m": [
+          5.6478228927681355,
+          0.5916766840042811
+        ],
+        "surface_z_m": 1.0307196974754333
+      },
+      "operator_retargeting_review": "pending",
+      "reset_mode": "fast_contact_collection_v1",
+      "material_history_policy": "zero_hardening_frozen_jp_v1"
+    }
+  ],
+  "candidate_frames": 13758,
+  "tensor_candidate_frames": 13728,
+  "action_rate_decision": "user_confirmed_native60Hz_four_axes",
+  "checks": {
+    "source_hashes_match_catalog": true,
+    "action_limits_from_runtime": true,
+    "states_actions_aligned": true,
+    "terrain_strictly_before_action": true,
+    "maximum_terrain_age_frames": 2,
+    "system_tail_excluded": true,
+    "sequence_gaps_reset_history": true,
+    "raw_and_applied_preserved": true,
+    "posthoc_labels_separate": true
+  },
+  "split_proposal": {
+    "status": "draft_not_used_for_training",
+    "development_lineages": [
+      "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b",
+      "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a"
+    ],
+    "validation_lineages": [
+      "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace"
+    ],
+    "sealed_test_lineages": [],
+    "scope": "All outcomes already inspected; validation is development validation, not a sealed or unseen-scene test."
+  }
+}
