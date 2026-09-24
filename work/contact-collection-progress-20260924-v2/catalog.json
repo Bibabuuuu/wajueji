@@ -1,0 +1,256 @@
+{
+  "schema": "contact_collection_catalog_v2",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "scoop_index": 1,
+      "lineage_root": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b",
+      "frames": 1276,
+      "candidate_manual_frames": 1246,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 30,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/final-001276.diagnostic.npz",
+        "sha256": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/report.json": "e77264fca11a97f4adc49cfc8e3a5a4f1da07bd2fe396ca525cc9da403d1b5c0",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/input.ndjson": "c60a39e7978cbfbd22605cbc1af689d0ec7c59ef7882f5293a1eec8254e7d054",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/physics.ndjson": "c70649de29862ab53d645236496e1fc2ecb7dc9afb026d66bd7f2f59ba866f22",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/observation.ndjson": "59c3210482ce957f37685c104a0de5d49514892968e96968bb9f5eec4bf29683"
+      },
+      "material_history_policy": "legacy_accumulated_Jp",
+      "reset_mode": "continuous_or_original_prepoint",
+      "completed_inventory_entries": 0,
+      "operator_retargeting_review": "pending",
+      "recording_review_pass": true,
+      "training_eligible": false
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "scoop_index": 1,
+      "lineage_root": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "frames": 1311,
+      "candidate_manual_frames": 1281,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 30,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/final-001311.diagnostic.npz",
+        "sha256": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/report.json": "ab1872398f133d78662f4e127590dcec3b0111e7d08dae7aad911ce91b12dfff",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/input.ndjson": "fbe43e78a77675b804ea799d57e6f02b7e4886420efcd9cd2bca1ca7972fd80f",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/physics.ndjson": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/observation.ndjson": "adcbcf3c20120a4ea6f84abd3db8b4cb21c250c09164de2509518b7c881e32fb"
+      },
+      "material_history_policy": "legacy_accumulated_Jp",
+      "reset_mode": "continuous_or_original_prepoint",
+      "completed_inventory_entries": 0,
+      "operator_retargeting_review": "reported_first_entry_shift",
+      "recording_review_pass": true,
+      "training_eligible": false
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "scoop_index": 2,
+      "lineage_root": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "frames": 1723,
+      "candidate_manual_frames": 1693,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 30,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/final-001723.cycle.npz",
+        "sha256": "840b7b40ef39825bed64c76f35c602e75ff09a409054ddb2668efc746a0604b1"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790189468657836248,
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-v2/prepoint.npz",
+        "sha256": "5c9b653f826dca92dd65bc50d8b6e03e46208fd8f9b4ee0d5c4a6ace39f23f10",
+        "size_bytes": 53913386
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/report.json": "d879e2e5c26ceac1d5b9719a438145ee611531f502ae6e6f2c045be763056840",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/input.ndjson": "e1118c54076728b9fa2c6d90cbb4bcb2521eb218e5fea67f9362a67ac3dd78b7",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/physics.ndjson": "6e312779d615577fff9e7122794da60d861ad39a95808ee7efb305297433b352",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/observation.ndjson": "2f0405d4082bca12d93e8c7caf4c67b8972d296e1c85e8be256abc5ce14cac48"
+      },
+      "material_history_policy": "legacy_accumulated_Jp",
+      "reset_mode": "continuous_or_original_prepoint",
+      "completed_inventory_entries": 0,
+      "operator_retargeting_review": "pending",
+      "recording_review_pass": true,
+      "training_eligible": false
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "scoop_index": 3,
+      "lineage_root": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+      "frames": 1264,
+      "candidate_manual_frames": 1152,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 112,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/final-001264.cycle.npz",
+        "sha256": "5b9c4e7a5520a0c4beab9cc124e7f4a54e24af4b8953fea6f6bdfb0b1e3077b0"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790213466139968175,
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-scoop-20260924-090702-1347301/qualified-prepoint/prepoint.npz",
+        "sha256": "7fe149dd7351b29f2e4f136e06d5f7641d502aff2cc9b9182487158627bc57e1",
+        "size_bytes": 54658022
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/report.json": "8bbbf4d6f88cb28cd2e11f3b675bc7dc2389fe5d4ac21a1b3dd7ebb1641be3a3",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/input.ndjson": "b362f30290db505ae54c74909c2a4765432faa5952d18f205b0fd2d58d093035",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/physics.ndjson": "86ac472e165c254cdc5ebe6f7d4d946cf488de4c8460b2ca894b45c38da9cea0",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/observation.ndjson": "5dbe3a071aaedb30091c3051fbb590266e6ce52eafa10fe77a18a64d3118fecb"
+      },
+      "material_history_policy": "legacy_accumulated_Jp",
+      "reset_mode": "continuous_or_original_prepoint",
+      "completed_inventory_entries": 0,
+      "operator_retargeting_review": "pending",
+      "recording_review_pass": true,
+      "training_eligible": false
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "scoop_index": 1,
+      "lineage_root": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "frames": 1132,
+      "candidate_manual_frames": 1102,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 30,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/final-001132.cycle.npz",
+        "sha256": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/report.json": "f6b275b74de22e0f263d697e2ffba6ba11057155ed55d7305dbe367f73577e3f",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/input.ndjson": "6a1ca7b568161c0ce519f51ac36005c656278ab71fddb299035162a6e77b439a",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/physics.ndjson": "356cbbe7ad8d1ec43b9311882bd41854820001819be8f57283e7881c053d387a",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/observation.ndjson": "4f5b3d9e174562eb21cca06bb32e2c465665f8bb7099e37ef4b9c3cfa033ebc5"
+      },
+      "material_history_policy": "legacy_accumulated_Jp",
+      "reset_mode": "continuous_or_original_prepoint",
+      "completed_inventory_entries": 0,
+      "operator_retargeting_review": "pending",
+      "recording_review_pass": true,
+      "training_eligible": false
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "scoop_index": 2,
+      "lineage_root": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "frames": 1461,
+      "candidate_manual_frames": 1431,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 30,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz",
+        "sha256": "31a12d6b3e4455d2d5085a8ffe476e1139df6a00c8f711ec70d308334e359261"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790218545042228702,
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection-20260924-v1/prepare-clear/prepoint.npz",
+        "sha256": "b324d7bd3738fd7e6cabd70ce491ab3a82b773ff339d0bf5a99f7a1aeeae366b",
+        "size_bytes": 53198714
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/report.json": "860450c62661c2af8a9b74e053869071a27ad9c1f5dff2583e61cf7e99611065",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/input.ndjson": "a1ea514824b68cc5c31207397188c27cc1c85f5a666e8d5f1a9c67fc8ff1c5f8",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/physics.ndjson": "eb07e497567e5820526870d6387d4e7587433ae3f974404732d4e4b78ec949d3",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/observation.ndjson": "11f04c09d897098489f91a012af9aa8790723c32ad6a0c2b23cdb8916dac5e39"
+      },
+      "material_history_policy": "zero_hardening_frozen_jp_v1",
+      "reset_mode": "fast_contact_collection_v1",
+      "completed_inventory_entries": 1,
+      "operator_retargeting_review": "pending",
+      "recording_review_pass": true,
+      "training_eligible": false
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "scoop_index": 3,
+      "lineage_root": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+      "frames": 1408,
+      "candidate_manual_frames": 1368,
+      "system_hold_frames": 30,
+      "excluded_nonexpert_frames": 40,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/final-001408.cycle.npz",
+        "sha256": "e0005248c70bc3c45c099f6c1c1764e72866c7bb75149e325d518f91e4b7be52"
+      },
+      "input_prepoint": {
+        "mtime_ns": 1790219233846691876,
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-110703-1425126/prepare/prepoint.npz",
+        "sha256": "56b4dd66add78fb41f3f512e144d08ced3b0ddcd152c9a3830dff76e8c0e464e",
+        "size_bytes": 54104642
+      },
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/report.json": "4fd18b4bf1cc6ddd322e2bcee75cd09f4e642b529a48b3f32f8c986b2e38efc5",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/input.ndjson": "917b763152fb773a71d38ab6e0502ba454fb351801ed75db77cf4ec00d846392",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/physics.ndjson": "0cb4129fbe3f5aad4580edf1ba7247e7e6301218cc46f69af5d094f542dbe849",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/observation.ndjson": "c6762ac1d32cc82729b7ac6127ec6f4e7212a8231dc79e3d48b750bb7b8db3ad"
+      },
+      "material_history_policy": "zero_hardening_frozen_jp_v1",
+      "reset_mode": "fast_contact_collection_v1",
+      "completed_inventory_entries": 2,
+      "operator_retargeting_review": "confirmed_separate_annotation",
+      "recording_review_pass": true,
+      "training_eligible": false
+    }
+  ],
+  "total_episodes": 7,
+  "candidate_manual_frames": 9273,
+  "scoop_counts": {
+    "1": 3,
+    "2": 2,
+    "3": 2
+  },
+  "lineage_groups": 3,
+  "completed_three_scoop_recording_groups": 2,
+  "initial_prepoint_by_lineage": {
+    "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4"
+  },
+  "distinct_initial_prepoints": 1,
+  "split_rule": "Keep entire lineage together; roots share the same original scene, so held-out trajectories do not prove unseen-scene generalization.",
+  "training_eligible": false,
+  "remaining_before_training": [
+    "Review phase boundaries and retargeting; never treat a posthoc target as an online observation.",
+    "Agree the native 60 Hz action/training adapter; do not silently average into legacy 20 Hz labels.",
+    "Retain reset/material policy domains and choose whole-lineage holdout before fitting normalization.",
+    "Export and verify causal tensors, then run bounded initial training and independent closed-loop evaluation."
+  ],
+  "current_collection_target": {
+    "before_active_episode": 7,
+    "planned_additional_scoops": 3,
+    "expected_total": 10,
+    "expected_scoop_counts": {
+      "1": 4,
+      "2": 3,
+      "3": 3
+    },
+    "reason": "An additional first scoop provides the real excavated prefix for the missing second/third scoops."
+  }
+}
