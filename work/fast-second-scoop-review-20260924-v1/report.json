@@ -1,0 +1,153 @@
+{
+  "schema": "fast_second_scoop_review_v1",
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079",
+  "checks": {
+    "normal_user_finish": true,
+    "all_runtime_checks": true,
+    "all_hard_safe": true,
+    "all_material_safe": true,
+    "all_sweep_safe": true,
+    "input_frames_complete": true,
+    "observation_anchors_complete": true,
+    "actions_match_physics": true,
+    "observations_match_post_step": true,
+    "final_30_system_zero": true,
+    "fast_second_prepoint": true,
+    "training_reset_preserved": true,
+    "second_scoop": true,
+    "snapshot_identity_matches": true,
+    "finite_final": true,
+    "same_particle_count": true,
+    "same_rock_count": true
+  },
+  "recording_review_pass": true,
+  "frames": 1461,
+  "simulation_seconds": 24.35,
+  "input_frames": 1461,
+  "observation_anchors": 487,
+  "live_off_soil_fill": {
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "capacity_liters": 255.164729950989,
+    "compute_wall_s": 0.2528246440051589,
+    "display_only": true,
+    "fill_percent": 91.33978119549708,
+    "frame": 1431,
+    "liters": 233.06690602531435,
+    "occupancy_level": 0.2,
+    "quality_reasons": [],
+    "rocks_and_heap_included": true,
+    "sim_time_s": 23.85,
+    "valid_estimate": true
+  },
+  "final_mixed_fill": {
+    "frame": 1461,
+    "sim_time_s": 24.35,
+    "valid_estimate": true,
+    "fill_percent": 89.22784208022831,
+    "liters": 227.6779822851095,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.2550234950031154,
+    "display_only": true
+  },
+  "final_soil_only_fill": {
+    "method_version": "bucket-local-density-v2-weighted",
+    "measurement_cell_m": 0.02,
+    "particle_spacing_m": 0.025,
+    "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+    "smoothing_sigma_cells": 0.43749999999999994,
+    "occupancy_level": 0.2,
+    "volume_scale": 1.011434635924326,
+    "capacity_liters": 255.164729950989,
+    "inside_raw_liters": 147.48000000000002,
+    "heap_raw_liters": 58.41600000000001,
+    "inside_liters": 149.16638010611962,
+    "heap_liters": 59.08396569215544,
+    "fill_percent": 81.6140795941018,
+    "cavity_fraction_of_counted_load": 0.7162839491782259,
+    "selected_particles": 52280,
+    "cavity_particles": 9993,
+    "load_region_particles": 12925,
+    "point_support_fraction": 1.0,
+    "load_density_quantiles": [
+      0.5826853871345521,
+      1.2700400352478027,
+      4.298092842102052
+    ],
+    "bulk_touches_roi_boundary": false,
+    "quality_reasons": [],
+    "valid_estimate": true,
+    "compute_wall_s": 0.18768653701408766,
+    "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+  },
+  "cavity_soil_particles": 9993,
+  "cavity_soil_relative_speed_quantiles_m_s": [
+    0.0016585934230593591,
+    0.009290373145720796,
+    0.011334950311165956,
+    0.18309187002989802
+  ],
+  "cavity_soil_vertical_change_from_initial_prepoint_m": [
+    -0.0711667537689209,
+    1.4781030416488647,
+    1.9194132089614868
+  ],
+  "phase_markers": [
+    {
+      "frame": 398,
+      "label": "penetrate_deepen"
+    },
+    {
+      "frame": 501,
+      "label": "curl_load"
+    },
+    {
+      "frame": 919,
+      "label": "lift_clear"
+    },
+    {
+      "frame": 1432,
+      "label": "off_soil_confirm"
+    }
+  ],
+  "final_controller_axis_error_mm": [
+    0.7296804370863219,
+    -2.000385528266646,
+    2.7864116115293713
+  ],
+  "lineage": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+  "snapshot": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz",
+    "sha256": "31a12d6b3e4455d2d5085a8ffe476e1139df6a00c8f711ec70d308334e359261"
+  },
+  "metadata": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz.json",
+    "sha256": "4ea21ece831ec64e44cd5d9b0c445a804fc1afebc358a8caa72ff8bb7daa0eb5"
+  },
+  "scope": "Geometric in-bucket mixed occupancy, including heap; not stable delivered truck volume or automatic training admission.",
+  "bindings": [
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/report.json",
+      "sha256": "860450c62661c2af8a9b74e053869071a27ad9c1f5dff2583e61cf7e99611065"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/physics.ndjson",
+      "sha256": "eb07e497567e5820526870d6387d4e7587433ae3f974404732d4e4b78ec949d3"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/input.ndjson",
+      "sha256": "a1ea514824b68cc5c31207397188c27cc1c85f5a666e8d5f1a9c67fc8ff1c5f8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/observation.ndjson",
+      "sha256": "11f04c09d897098489f91a012af9aa8790723c32ad6a0c2b23cdb8916dac5e39"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/fast-second-scoop-review-20260924-v1/review.py",
+      "sha256": "c8e519685bd755d720c318f337d51b1441c9f5daa7bf8c1734c2ba399803926d"
+    }
+  ]
+}
