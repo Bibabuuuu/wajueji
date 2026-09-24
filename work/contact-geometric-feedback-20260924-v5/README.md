@@ -23,3 +23,9 @@ D-147 v5仅把接触后下降目标由0.30m加深到0.45m，源码、源预备�
 审核证据：startup-review.json、contact900-review.json；实际竖直位移写在tip_vertical_motion_m。
 
 回放命令：`DISPLAY=:1 PYTHONPATH=src/v4:. /home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python src/v4/view_contact_bc_probe.py --view-only --output runs/contact-geometric-probe-20260924-v5/contact900/display`。空格播放/暂停，End看末帧，R重置并暂停，X关闭；新开窗口为v5，原v4窗口未操控。显示标题复用BC CONTACT WINDOW REPLAY，实际混合控制由actions.ndjson记录。
+
+## 用户人审与下一候选（本轮局部门通过不等于用户认可）
+
+用户审核v5仍认为切入偏浅，并指出卷斗过早把土推走；截图明确指向靠斗杆连接处的铲斗上部根沿。实际第423帧（确认碰土后的第一帧）就发送+0.0494m/s铲斗油缸指令，至540帧斗姿从−18.33°转到+4.56°，支持动作时序不符合用户意图；不能仅据此定量证明土被推走的因果。只读粒子/机构核对中，上部斗口根沿代表线距连地土粒中心在422帧约32.95cm、540帧13.22cm、633帧12.69cm、740帧7.06cm；采用既有4cm连通启发式与显示缓存float32粒子，不能当精确实体表面距离。
+
+下一步按用户要求评审“先保持切入姿态回收斗杆，根沿接近剩余连地土面后再逐渐卷斗”，同时重新选取能达到该条件的切深；不再单独盲加下降量。现有整斗最小距离在齿尖碰土后即接近零，不能作为根沿触发。根沿专用观测、阈值/连续确认、回收后的卷斗过渡尚未接入或物理验证；不更改原示范阶段标签。 只读诊断见check_root_gap.py及root-gap-diagnostic.json；初次脚本调用tool_pose签名错误，在任何物理运行之前修正为assembly的铲斗变换，诊断未推进物理。
