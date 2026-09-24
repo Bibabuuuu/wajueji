@@ -5,6 +5,7 @@ from runtime import ROOT,W,SOURCE,PrepointRuntime,read,sha
 sys.path.append(str(ROOT/'work/contact-fixed-truck-continuation-20260925-v2'))
 from observation import stationary_terrain
 import layered_47_cycle_selection as selection
+from run_layered_47_sparse_manual_contact_episode import _clean
 
 def main():
     out=ROOT/'runs/contact-next-prepoint-20260925-v1/prepare'
@@ -36,6 +37,6 @@ def main():
     except BaseException as error:report.update(status='preparation_failed',failure=repr(error));raise
     finally:
         report['wall_seconds']=time.monotonic()-started
-        (W/'preparation-review.json').write_text(json.dumps(report,indent=2,allow_nan=False)+'\n')
-        print(json.dumps(report,indent=2,allow_nan=False),flush=True)
+        (W/'preparation-review.json').write_text(json.dumps(_clean(report),indent=2,allow_nan=False)+'\n')
+        print(json.dumps(_clean(report),indent=2,allow_nan=False),flush=True)
 if __name__=='__main__':main()

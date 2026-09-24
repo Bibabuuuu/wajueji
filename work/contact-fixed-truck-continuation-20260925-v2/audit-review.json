@@ -1,0 +1,104 @@
+{
+  "audit_passed": true,
+  "checks": {
+    "restore": true,
+    "frames": true,
+    "command_recomputed": true,
+    "command_physics": true,
+    "first_command": true,
+    "slew": true,
+    "loaded_no_open": true,
+    "frame_order": true,
+    "physical": true,
+    "halves": true,
+    "half_order": true,
+    "clock": true,
+    "native_guard": true,
+    "dispatch": true,
+    "responses": true,
+    "operator_once": true,
+    "shadow_unchanged": true,
+    "real_step_once": true,
+    "matrix": true,
+    "simulation_clock": true,
+    "final_state": true,
+    "finite": true,
+    "particles": true,
+    "rocks": true,
+    "source": true,
+    "lineage": true,
+    "jp_preserved": true,
+    "jp_policy": true,
+    "truck": true,
+    "schema": true,
+    "bindings": true,
+    "runtime": true,
+    "load_bias_saved": true,
+    "previous_command_saved": true,
+    "inputs": true,
+    "protocol": true,
+    "budget": true
+  },
+  "status": "transport_unload_return_completed",
+  "failure": null,
+  "frames": 4120,
+  "command_max_error": 0.0,
+  "maximum_normalized_command_step": 0.03333333333333337,
+  "matrix_max_error": 4.336808689942018e-17,
+  "wall_seconds": 1273.7916918000265,
+  "stages": [
+    {
+      "name": "ALIGN",
+      "frame": 744,
+      "axis_error": 0.0009538876173810218,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v2/physical/align.npz",
+        "size_bytes": 52848422,
+        "mtime_ns": 1790267830183822300,
+        "sha256": "ae58b2fd7463fee37e3320631beae1d8d68cc99648779b48cc89541254fe1566"
+      }
+    },
+    {
+      "name": "DUMP",
+      "frame": 2156,
+      "axis_error": 1.3648519369580114e-05,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v2/physical/dump.npz",
+        "size_bytes": 52923938,
+        "mtime_ns": 1790268264353886442,
+        "sha256": "660fff4d11fc55d13580c8bf3e808257ebed2d68082ac258abf2e12db1bb872b"
+      }
+    },
+    {
+      "name": "CLEAR_TRUCK",
+      "frame": 3376,
+      "axis_error": 1.0516133720051002e-05,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v2/physical/clear_truck.npz",
+        "size_bytes": 52941902,
+        "mtime_ns": 1790268635264105794,
+        "sha256": "f1fe7c7e35e7e36e23cd68ecad367318534e2b90d177db483ea1fd59a484ac11"
+      }
+    },
+    {
+      "name": "RETURN_HIGH",
+      "frame": 4120,
+      "axis_error": 9.037606415243475e-05,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v2/physical/return_high.npz",
+        "size_bytes": 52966394,
+        "mtime_ns": 1790268863902674940,
+        "sha256": "be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0"
+      }
+    }
+  ],
+  "endpoint_sha256": "be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0",
+  "axis_peak_speed": [
+    0.10189486962085348,
+    0.01655982614706526,
+    0.062385723039052335,
+    0.04885531559710649
+  ],
+  "physics_steps_added": 0,
+  "formal_mixed_delivered_volume_qualified": false
+}

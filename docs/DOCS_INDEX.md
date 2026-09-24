@@ -111,3 +111,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [D159回转预览坐标修复](../work/contact-fixed-truck-continuation-20260925-v2/README.md)：同一高位源、旋转残差/拒绝命令回滚、六项回归和有界续段。
 
 - [真实首铲返回后的第二铲预备入口](../work/contact-next-prepoint-20260925-v1/README.md)：预备代码，未获物理准入；只接审核通过的D159实际返回。
+
+- [三个问题专项讨论交接](../work/user-three-issues-discussion-20260925-v1/README.md)：用户要求的新会话只读调查/讨论范围、原图SHA、证据位置与实施批准暂停点。

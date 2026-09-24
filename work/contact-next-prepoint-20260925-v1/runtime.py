@@ -14,6 +14,8 @@ def load_endpoint(path,*,allow_training_reset=False):
     protocol=read(W/'protocol.json');path=Path(path).resolve()
     if path!=SOURCE or allow_training_reset or sha(path)!=protocol['source_sha256']:
         raise ValueError('next_prepoint_unbound_source')
+    if sha(str(path)+'.json')!=protocol['source_metadata_sha256']:
+        raise ValueError('next_prepoint_source_metadata_changed')
     meta=read(str(path)+'.json')
     audit=read(ROOT/'work/contact-fixed-truck-continuation-20260925-v2/audit-review.json')
     result=read(path.parent/'report.json')
@@ -21,6 +23,7 @@ def load_endpoint(path,*,allow_training_reset=False):
         or result['status']!='transport_unload_return_completed'
         or meta['schema']!='layered_47_full_response_fixed_truck_continuation_v2'
         or meta['stage']!='returned' or meta['cycle_index']!=1
+        or meta['checkpoint_sha256']!=protocol['source_sha256']
         or meta.get('training_reset') is not None or not meta['truck_enabled']
         or meta['controller_state']['native_state_kind']!='full'
         or (meta['coupling_hz'],meta['control_hz'],meta['rigid_hz'])!=(60,60,4800)):
