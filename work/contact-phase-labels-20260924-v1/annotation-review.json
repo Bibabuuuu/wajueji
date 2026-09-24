@@ -24,7 +24,7 @@
   "original_key2_next_frame": 610,
   "thresholds_frozen": false,
   "automatic_labeling_validated": false,
-  "other_trajectory_validation": "114908_curl_boundary_confirmed_624_candidate_638_late_14_frames; 113555_and_115812_pending",
+  "other_trajectory_validation": "114908_curl_boundary_confirmed_624_candidate_638_late_14_frames; 115812_confirmed_568_candidate_579_late_11_frames; 113555_pending",
   "diagnostic_angle_candidate_frozen": true,
   "thresholds_frozen_scope": "Production multi-signal phase thresholds remain uncalibrated; diagnostic angle v1 is frozen separately.",
   "transfer_human_review_ledger": "human-transfer-comparison-v1.json"

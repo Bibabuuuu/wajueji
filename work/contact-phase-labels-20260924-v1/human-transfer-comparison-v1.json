@@ -1,6 +1,6 @@
 {
   "schema": "contact_curl_human_transfer_comparison_v1",
-  "status": "one_transfer_boundary_reviewed_two_pending",
+  "status": "two_transfer_boundaries_reviewed_first_scoop_pending",
   "frozen_candidate_report": {
     "path": "transfer-review.json",
     "sha256": "7c2493e497df92c669cc5eb99f559bc4c97392e8331895a2bed04244e1c4cf3f"
@@ -39,11 +39,14 @@
     {
       "run": "manual-contact-20260924-115812-1458627",
       "candidate_physical_frame_end": 579,
-      "human_reference_frame_end": null,
-      "human_review_status": "pending",
-      "human_annotation": null,
-      "error_vs_human_frames": null,
-      "error_vs_human_seconds": null,
+      "human_reference_frame_end": 568,
+      "human_review_status": "confirmed_this_transition_only",
+      "human_annotation": {
+        "path": "human-curl-boundary-115812-v1.json",
+        "sha256": "9ae428da0e31d0a08e596accaeaa8fd1b85e73acc10ed70f12819cb3466abc0e"
+      },
+      "error_vs_human_frames": 11,
+      "error_vs_human_seconds": 0.18333333333333332,
       "other_phase_boundaries_confirmed": false
     }
   ]
