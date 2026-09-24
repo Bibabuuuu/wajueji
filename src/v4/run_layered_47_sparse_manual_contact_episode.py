@@ -25,6 +25,7 @@ import numpy as np
 import warp as wp
 
 from contracts import ACTION_SPEED_LIMIT_SI
+from planning.contact_footprint import target_mouth_markers
 from layered_47_optimized_bridge import optimized_bridge
 from layered_47_bucket_integral_candidate import bucket_integral_bridge
 from layered_47_active_curl_candidate import active_curl_bridge
@@ -381,7 +382,7 @@ def draw_with_selected_cut(
         viewer, display_state, fixture, bridge_state, records,
         assembly, names, to_pose, device: str, display: dict,
         selected_cut: dict, frame: int, soil_surface: SoilSurface) -> None:
-    """Draw the existing scene plus a bright green selected-entry column."""
+    """Draw the fixed green target center and cyan planned mouth width."""
     poses = assembly.assemble(
         np.asarray(bridge_state["mechanism_qpos"], dtype=np.float64),
         include_meshes=False)[1]
@@ -416,6 +417,17 @@ def draw_with_selected_cut(
             wp.full(
                 len(indices), wp.vec4(0.92, 0.0, 0.0, 1.0),
                 dtype=wp.vec4, device=device))
+    target = target_mouth_markers(selected_cut)
+    # Cyan span is fixed to the target heading, not to the moving bucket.
+    side_points = [side + [0, 0, dz]
+                   for side in (target['side_negative'], target['side_positive'])
+                   for dz in np.linspace(.05, .85, 13)]
+    span_points = [point + [0, 0, .85] for point in np.linspace(
+        target['side_negative'], target['side_positive'], 13)]
+    width_marker = np.asarray(side_points + span_points, dtype=np.float32)
+    viewer.log_points('/manual_contact/planned_mouth_width',
+        wp.array(width_marker, dtype=wp.vec3, device=device), radii=.018,
+        colors=wp.full(len(width_marker), wp.vec3(.05,.85,1.), dtype=wp.vec3, device=device))
     entry_x, entry_y = selected_cut["entry_xy_m"]
     surface_z = float(selected_cut["surface_z_m"])
     marker = np.asarray([
@@ -866,6 +878,7 @@ def run(args):
                 'layered_47_cycle_bridge.py', 'layered_47_cycle_checkpoint.py'))
         if cycle_metadata and cycle_metadata.get('material_history_policy'):
             binding_paths.append(Path(__file__).with_name('soil_passive_jp_history.py'))
+        binding_paths.append(Path(__file__).resolve().parents[2] / "planning/contact_footprint.py")
         bindings = {str(path): motion.probe.bench.sha256(path)
                     for path in binding_paths}
         initial_terrain, initial_observation = build_fused_terrain(
@@ -1391,6 +1404,8 @@ def run(args):
                 if cycle_mode:
                     mode_label = "FAST COLLECTION RESET" if cycle_metadata.get('training_reset') else "continuous terrain"
                     imgui.text(f"SCOOP {cycle_metadata['cycle_index']}/3 | {mode_label}")
+                imgui.text("TARGET: green CENTER")
+                imgui.text("CYAN raised frame: 0.60 m mouth width")
                 if fill_config:
                     from live_bucket_fill import display_lines
                     if phase != "off_soil_confirm":
@@ -1440,10 +1455,11 @@ def run(args):
                         + ", ".join(fault_frozen["failed_checks"]))
                     imgui.text("Use X/Esc/Back only after inspection")
                 imgui.text(
-                    "GREEN MARKER selected entry: "
+                    "GREEN target CENTER: "
                     f"x={selected_cut['entry_xy_m'][0]:.2f}, "
                     f"y={selected_cut['entry_xy_m'][1]:.2f}, "
                     f"z={selected_cut['surface_z_m']:.2f}")
+                imgui.text("Fixed target; not current bucket edges")
                 if rows:
                     last = rows[-1]
                     imgui.text(
@@ -1567,6 +1583,11 @@ def run(args):
                     time.sleep(0.01)
                     continue
                 if (args.ui_smoke or args.zero_probe_frames) and draws >= 3:
+                    if args.ui_smoke:
+                        from PIL import Image
+                        image_path = output / 'ui-smoke.png'
+                        Image.fromarray(viewer.get_frame(render_ui=True).numpy()).save(image_path)
+                        report['ui_smoke_screenshot'] = str(image_path)
                     if args.zero_probe_frames:
                         for probe_index in range(args.zero_probe_frames):
                             projector.reason = None

@@ -6,6 +6,7 @@ No particle, terrain, rock or mechanism state is modified by planning.
 import numpy as np
 from planning.cycle import _cut_inputs, _cut_candidate
 from planning.rear_lower_face import select_rear_lower_face
+from planning.contact_footprint import cut_opportunity, VERSION as CUT_SCORE_VERSION
 from planning.rear_lower_prepoint import plan_rear_lower_prepoint, mechanism_and_truck_clearance
 from layered_47_cycle_runtime import REPO
 from layered_47_cycle_geometry import TransportClearance, stationary_terrain
@@ -23,7 +24,11 @@ def rank_workspace_candidates(terrain, remaining_scoops):
             if candidate is not None:
                 try:face=select_rear_lower_face(terrain,candidate)
                 except ValueError:continue
-                candidate=dict(candidate,contact=face)
+                try: opportunity=cut_opportunity(terrain,face)
+                except ValueError:continue
+                candidate=dict(candidate,contact=face,legacy_height_score=candidate['score'],
+                               score=opportunity['score_m3'],cut_opportunity=opportunity,
+                               selection_version=CUT_SCORE_VERSION)
                 candidates.append(candidate)
     if not candidates:raise ValueError('cycle_no_current_observed_face')
     for first in candidates:

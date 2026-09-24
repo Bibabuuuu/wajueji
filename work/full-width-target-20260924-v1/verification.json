@@ -1,0 +1,50 @@
+{
+  "status": "implemented_locally_verified",
+  "checks": {
+    "tests_passed": 49,
+    "prepare_30_frames_zero_contact": true,
+    "prepare_hold_passed": true,
+    "unwithdrawn_state_preserved": true,
+    "initial_readback_exact": true,
+    "independent_restore_exact": true,
+    "independent_three_frames_no_contact": true,
+    "ui_smoke_passed": true,
+    "source_unchanged": true
+  },
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz",
+    "size_bytes": 53936426,
+    "mtime_ns": 1790219137764920052,
+    "sha256": "31a12d6b3e4455d2d5085a8ffe476e1139df6a00c8f711ec70d308334e359261"
+  },
+  "prepoint": {
+    "path": "/home/qunwang/wajueji/runs/full-width-target-20260924-v1/prepare/prepoint.npz",
+    "size_bytes": 54104642,
+    "mtime_ns": 1790220436356903810,
+    "sha256": "a368b8c95496629638633eaade993f7f36ccad59570e6abe73f68a0397e0aa16"
+  },
+  "new_contact": [
+    5.6478228927681355,
+    0.5916766840042811
+  ],
+  "new_contact_z": 1.0288734436035156,
+  "new_prepoint_tip": [
+    6.145101508728304,
+    0.6437725390096322,
+    1.6288734436035157
+  ],
+  "selection_version": "full_width_cut_opportunity_v1",
+  "rejected_pose_count": 6,
+  "score_sensitivity_all27_toward_operator": true,
+  "ui_run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-112933-1439420",
+  "ui_screenshot": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-112933-1439420/ui-smoke.png",
+  "ui_physics_steps": 0,
+  "physical_steps": 33,
+  "policy": "Local candidate ranking and diagnostic UI; no new manual scoop, training or old-data relabelling",
+  "implementation_sha256": {
+    "planning/contact_footprint.py": "8ea94e9235386b9b539e8623c6f4b7eb4e7b0c98abe6b12bbd53763bc447c66e",
+    "src/v4/layered_47_cycle_selection.py": "84ef4140441f2d01ca8d1ef96656515c280584a35d7e0b967432fbfd3b644ecd",
+    "src/v4/layered_47_training_reset.py": "897b0a9ad08227eeb495c5162008beffbeda8715ea64b360a236f8510f3d31c2",
+    "src/v4/run_layered_47_sparse_manual_contact_episode.py": "f4770663e9eaf5a340eba36e1e5c04dab9dd2d55c8f1f2adc0f5bc1af50b8c4e"
+  }
+}

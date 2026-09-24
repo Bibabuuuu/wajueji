@@ -146,6 +146,8 @@ class TrainingResetRuntime(CycleRuntime):
         self.plan=plan;self.observation=observation;self.withdrawal=entry
         name='layered_47_training_reset.py'
         self.bindings[name]=motion.probe.bench.sha256(REPO/'src/v4'/name)
+        for path in (REPO/'planning/contact_footprint.py', REPO/'src/v4/layered_47_cycle_selection.py'):
+            self.bindings[path.name]=motion.probe.bench.sha256(path)
 
     def _grid_restore_context(self):
         return nullcontext()  # Fresh topology for changed geometry; never restore an old grid under a new scene.
