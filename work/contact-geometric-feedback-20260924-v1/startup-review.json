@@ -1,0 +1,108 @@
+{
+  "run": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120",
+  "frames": 120,
+  "passed": true,
+  "checks": {
+    "completed": true,
+    "zero_step": true,
+    "exact_restore": true,
+    "frames": true,
+    "actions_match": true,
+    "state_chain": true,
+    "startup_identity": true,
+    "causal_terrain": true,
+    "terrain_anchors": true,
+    "previous_action": true,
+    "hard_guards": true,
+    "material": true,
+    "sweep": true,
+    "ground": true,
+    "finite": true,
+    "particles": true,
+    "rocks": true,
+    "final_state": true,
+    "elapsed": true,
+    "source": true,
+    "policy": true,
+    "lineage": true,
+    "inventory": true,
+    "phase_frames": true,
+    "phase_before_matches_action": true,
+    "phase_next_decision": true,
+    "evidence_previous": true,
+    "no_unresolved": true,
+    "phase_protocol": true,
+    "feedback_present": true,
+    "maximum_lateral_error": true,
+    "preview_ground": true,
+    "code_run_contact_geometric_probe.py": true,
+    "code_contact_geometric_feedback.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true
+  },
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/actions.ndjson",
+      "sha256": "0e5c9c4f2b0fbce448da337147d90925edf204d1bd3c75895c46af00e5de137a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/phase-trace.ndjson",
+      "sha256": "f2026f972174a7e0d26be6c40ee20b38f274ba03781931edb2b46d083fd3d99f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/terrain.ndjson",
+      "sha256": "ad1b96dadb321e69c5c8df4cec252c7d8c066704b045abd305e313e1f1e82e44"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/physics/frames.ndjson",
+      "sha256": "cbde0d12f4bb80084fe70388c420d74755bdeabbca5fd598de068024d6711703"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/ground-guard.ndjson",
+      "sha256": "2f1ec3cb676508c829c1c05509c5d1e9533740c4571237e8881ab481d81e85cb"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/final.npz",
+      "sha256": "1f3ec6da07b9442e75e960e6866a7b097e9d70a7442b4bddab8c8ecee19bed3a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/final.npz.json",
+      "sha256": "2fa68557bea1b056127cea8c986b885f57f5f2d41a7e22b28c6085c03f1ab3ad"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/report.json",
+      "sha256": "9bdc79db627d28a1687847f5b6a28c821c85163b68f563dea22351e695f2504d"
+    }
+  ],
+  "qualification": "geometric feedback startup only, not excavation success",
+  "source_unchanged": true
+}

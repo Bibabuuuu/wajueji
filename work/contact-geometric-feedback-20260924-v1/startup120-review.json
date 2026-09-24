@@ -1,0 +1,109 @@
+{
+  "audit_passed": true,
+  "checks": {
+    "frames": true,
+    "exact_restore": true,
+    "control_recomputed": true,
+    "commands": true,
+    "actual_previous": true,
+    "previous_actions": true,
+    "phase_timing": true,
+    "phase_action": true,
+    "phase_next": true,
+    "finite": true,
+    "final_physical": true,
+    "particles": true,
+    "rocks": true,
+    "source": true,
+    "policy": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true,
+    "code_run_contact_geometric_probe.py": true,
+    "code_contact_geometric_feedback.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true
+  },
+  "behavior_gate_passed": false,
+  "behavior": {
+    "no_failure": true,
+    "all_hard": true,
+    "all_material": true,
+    "all_sweep": true,
+    "all_measured_ground": true,
+    "lateral_corridor": true,
+    "entered_curl": false,
+    "bc_controlled_after_curl": false
+  },
+  "frames": 120,
+  "status": "bounded_probe_completed",
+  "failure": null,
+  "events": [],
+  "maximum_lateral_error_m": 1.9924637561503714e-08,
+  "minimum_measured_bucket_z_m": 1.1283148672344958,
+  "final_coordinates": [
+    5.935147807206744,
+    3.563784348166982e-10,
+    1.2979608803808413,
+    -0.10579287999243125
+  ],
+  "maximum_command_recompute_error": 0.0,
+  "phase_counts": {
+    "approach_contact": 120,
+    "penetrate": 0,
+    "curl_load": 0,
+    "lift": 0,
+    "off_soil": 0
+  },
+  "bc_raw_vs_applied_mean_abs_normalized": [
+    0.016206135622843322,
+    0.06037498358868873,
+    0.12819727413977186,
+    0.14916414339563638
+  ],
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+    "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+  },
+  "policy": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+    "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+  },
+  "run": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120",
+  "physics_steps_added_by_review": 0,
+  "qualification": "bounded geometry/BC handoff only; no full scoop or fill qualification",
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/report.json",
+      "sha256": "9bdc79db627d28a1687847f5b6a28c821c85163b68f563dea22351e695f2504d"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/actions.ndjson",
+      "sha256": "0e5c9c4f2b0fbce448da337147d90925edf204d1bd3c75895c46af00e5de137a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/phase-trace.ndjson",
+      "sha256": "f2026f972174a7e0d26be6c40ee20b38f274ba03781931edb2b46d083fd3d99f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v1/startup120/physics/frames.ndjson",
+      "sha256": "cbde0d12f4bb80084fe70388c420d74755bdeabbca5fd598de068024d6711703"
+    }
+  ]
+}
