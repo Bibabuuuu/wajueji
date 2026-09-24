@@ -22,6 +22,12 @@ class FeedbackTest(unittest.TestCase):
         self.assertAlmostEqual(action[0],1.)
         self.assertAlmostEqual(action[1],-1.)
 
+    def test_approach_preserves_pitch_when_translation_saturates(self):
+        jac=np.eye(4);jac[3]=[0.,0.,1.,1.]
+        action=bounded_velocity(jac,[0.,0.,2.,0.],[0.,0.,1.,0.],-10.,exact_pitch=True)
+        self.assertAlmostEqual((jac@action)[3],0.,places=7)
+        self.assertLessEqual((jac@action)[2],1.)
+
     def test_impossible_ground_recovery_rejected(self):
         with self.assertRaisesRegex(ValueError,'infeasible'):
             bounded_velocity(np.eye(4),np.zeros(4),[0.,0.,1.,0.],2.)

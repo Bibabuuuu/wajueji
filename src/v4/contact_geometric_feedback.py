@@ -30,7 +30,7 @@ class FeedbackConfig:
             raise ValueError('invalid_feedback_ground_preview')
 
 
-def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6)):
+def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,4.,3.,.6), exact_pitch=False):
     """Four normalized axes: weighted velocity fit with box and ground constraints."""
     j=np.asarray(jac,float);v=np.asarray(target,float);g=np.asarray(ground_gradient,float)
     if j.shape!=(4,4) or v.shape!=(4,) or g.shape!=(4,) or not np.isfinite(np.r_[j.ravel(),v,g,ground_lower]).all():
@@ -38,11 +38,15 @@ def bounded_velocity(jac, target, ground_gradient, ground_lower, *, weights=(1.,
     w=np.asarray(weights);a=w[:,None]*j;b=w*v
     h=a.T@a+1e-6*np.eye(4);f=a.T@b
     seed=np.clip(np.linalg.solve(h,f),-1,1)
+    constraints=[{'type':'ineq','fun':lambda u:g@u-ground_lower,'jac':lambda u:g}]
+    if exact_pitch:
+        constraints.append({'type':'eq','fun':lambda u:j[3]@u-v[3],'jac':lambda u:j[3]})
     result=minimize(lambda u:.5*u@h@u-f@u,seed,jac=lambda u:h@u-f,
                     bounds=[(-1.,1.)]*4,method='SLSQP',
-                    constraints=[{'type':'ineq','fun':lambda u:g@u-ground_lower,'jac':lambda u:g}],
+                    constraints=constraints,
                     options={'ftol':1e-10,'maxiter':60})
-    if not result.success or g@result.x<ground_lower-1e-7:
+    if (not result.success or g@result.x<ground_lower-1e-7
+            or (exact_pitch and abs(j[3]@result.x-v[3])>1e-7)):
         raise ValueError('feedback_velocity_infeasible:'+result.message)
     return np.clip(result.x,-1,1)
 
@@ -123,7 +127,8 @@ class ContactGeometryFeedback:
         velocity[3]=np.clip(velocity[3],-cfg.pitch_speed_rad_s,cfg.pitch_speed_rad_s)
         clearance=self.ground.measure(q)['clearance_m']
         lower=(cfg.ground_clearance_m-clearance)/cfg.preview_seconds
-        normalized=bounded_velocity(jac,velocity,ground_gradient,lower)
+        normalized=bounded_velocity(jac,velocity,ground_gradient,lower,
+                                    exact_pitch=phase in ('approach_contact','penetrate'))
         requested=normalized*LIMITS
         # Preserve the existing 150ms joint/closure projector, then inspect its
         # actual result; never check a different vector from the one dispatched.
