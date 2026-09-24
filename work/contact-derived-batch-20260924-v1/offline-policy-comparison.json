@@ -1,0 +1,1692 @@
+{
+  "schema": "same_derived_state_phase_bc_comparison_v1",
+  "baseline_checkpoint_sha256": "8ada30e759d52874e5a96eb7aa256ecf0f0f7793182c20508a4a78dbe5ace51b",
+  "candidate_checkpoint_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "split": "development_runs",
+      "groups": {
+        "all": {
+          "rows": 1278,
+          "neutral_boom_rows": 637,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.03981388360261917,
+              "mae_by_axis": [
+                0.02466396614909172,
+                0.03493162617087364,
+                0.045205119997262955,
+                0.05445484071969986
+              ],
+              "neutral_boom_predicted_mean": -0.018378160893917084,
+              "neutral_boom_wrong_down_fraction": 0.004709576138147566
+            },
+            "phase_candidate": {
+              "mae": 0.03760964795947075,
+              "mae_by_axis": [
+                0.017994418740272522,
+                0.04748111218214035,
+                0.0392509326338768,
+                0.04571214318275452
+              ],
+              "neutral_boom_predicted_mean": -0.03705649822950363,
+              "neutral_boom_wrong_down_fraction": 0.004709576138147566
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 124,
+          "neutral_boom_rows": 55,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06986469775438309,
+              "mae_by_axis": [
+                0.034483686089515686,
+                0.061084914952516556,
+                0.048205889761447906,
+                0.1356843262910843
+              ],
+              "neutral_boom_predicted_mean": -0.03779761865735054,
+              "neutral_boom_wrong_down_fraction": 0.01818181818181818
+            },
+            "phase_candidate": {
+              "mae": 0.06707429885864258,
+              "mae_by_axis": [
+                0.023711036890745163,
+                0.075152188539505,
+                0.05569038540124893,
+                0.11374358087778091
+              ],
+              "neutral_boom_predicted_mean": -0.06322500854730606,
+              "neutral_boom_wrong_down_fraction": 0.01818181818181818
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 479,
+          "neutral_boom_rows": 297,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05336027592420578,
+              "mae_by_axis": [
+                0.043578729033470154,
+                0.03757568821310997,
+                0.05539046972990036,
+                0.07689620554447174
+              ],
+              "neutral_boom_predicted_mean": -0.02444533258676529,
+              "neutral_boom_wrong_down_fraction": 0.006734006734006734
+            },
+            "phase_candidate": {
+              "mae": 0.04677566513419151,
+              "mae_by_axis": [
+                0.033084969967603683,
+                0.03721509128808975,
+                0.05393270403146744,
+                0.06286987662315369
+              ],
+              "neutral_boom_predicted_mean": -0.03159153088927269,
+              "neutral_boom_wrong_down_fraction": 0.006734006734006734
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 236,
+          "neutral_boom_rows": 190,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.024969276040792465,
+              "mae_by_axis": [
+                0.016840746626257896,
+                0.023506388068199158,
+                0.026579881086945534,
+                0.03295009583234787
+              ],
+              "neutral_boom_predicted_mean": -0.01279876846820116,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.01964213326573372,
+              "mae_by_axis": [
+                0.005653892178088427,
+                0.020001696422696114,
+                0.024453846737742424,
+                0.02845909632742405
+              ],
+              "neutral_boom_predicted_mean": 0.0030975514091551304,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "lift": {
+          "rows": 347,
+          "neutral_boom_rows": 3,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.02643132209777832,
+              "mae_by_axis": [
+                0.005887186620384455,
+                0.03615308925509453,
+                0.04288940876722336,
+                0.020795606076717377
+              ],
+              "neutral_boom_predicted_mean": 0.1180986762046814,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.02673410438001156,
+              "mae_by_axis": [
+                0.007006232161074877,
+                0.05066313222050667,
+                0.029059801250696182,
+                0.02020726539194584
+              ],
+              "neutral_boom_predicted_mean": -0.03268216922879219,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 92,
+          "neutral_boom_rows": 92,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.017336197197437286,
+              "mae_by_axis": [
+                0.003838328877463937,
+                0.010616346262395382,
+                0.044642236083745956,
+                0.010247872211039066
+              ],
+              "neutral_boom_predicted_mean": -0.003155265236273408,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.03728363662958145,
+              "mae_by_axis": [
+                0.004821066744625568,
+                0.12212413549423218,
+                0.017048049718141556,
+                0.005141315050423145
+              ],
+              "neutral_boom_predicted_mean": -0.12212411314249039,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "split": "development_runs",
+      "groups": {
+        "all": {
+          "rows": 1690,
+          "neutral_boom_rows": 740,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05125297233462334,
+              "mae_by_axis": [
+                0.013097372837364674,
+                0.056759461760520935,
+                0.06741849333047867,
+                0.06773652136325836
+              ],
+              "neutral_boom_predicted_mean": -0.015860728919506073,
+              "neutral_boom_wrong_down_fraction": 0.008108108108108109
+            },
+            "phase_candidate": {
+              "mae": 0.04053831845521927,
+              "mae_by_axis": [
+                0.015795130282640457,
+                0.05550825223326683,
+                0.04491617903113365,
+                0.04593374580144882
+              ],
+              "neutral_boom_predicted_mean": -0.010134064592421055,
+              "neutral_boom_wrong_down_fraction": 0.013513513513513514
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 417,
+          "neutral_boom_rows": 107,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.07533343136310577,
+              "mae_by_axis": [
+                0.019221998751163483,
+                0.12066829949617386,
+                0.05784410983324051,
+                0.10359939932823181
+              ],
+              "neutral_boom_predicted_mean": -0.032238759100437164,
+              "neutral_boom_wrong_down_fraction": 0.04672897196261682
+            },
+            "phase_candidate": {
+              "mae": 0.05636783316731453,
+              "mae_by_axis": [
+                0.021057266741991043,
+                0.1023307740688324,
+                0.03307631239295006,
+                0.06900697201490402
+              ],
+              "neutral_boom_predicted_mean": -0.12117186933755875,
+              "neutral_boom_wrong_down_fraction": 0.08411214953271028
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 254,
+          "neutral_boom_rows": 249,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06565879285335541,
+              "mae_by_axis": [
+                0.0100674107670784,
+                0.03614701330661774,
+                0.1284855753183365,
+                0.08793520927429199
+              ],
+              "neutral_boom_predicted_mean": -0.02527649514377117,
+              "neutral_boom_wrong_down_fraction": 0.004016064257028112
+            },
+            "phase_candidate": {
+              "mae": 0.044680237770080566,
+              "mae_by_axis": [
+                0.011223690584301949,
+                0.04195983335375786,
+                0.07071126997470856,
+                0.05482620373368263
+              ],
+              "neutral_boom_predicted_mean": -0.030464302748441696,
+              "neutral_boom_wrong_down_fraction": 0.004016064257028112
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 446,
+          "neutral_boom_rows": 365,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05120415985584259,
+              "mae_by_axis": [
+                0.010281851515173912,
+                0.04094046726822853,
+                0.09010515362024307,
+                0.0634891539812088
+              ],
+              "neutral_boom_predicted_mean": -0.010645261965692043,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.045257024466991425,
+              "mae_by_axis": [
+                0.018551649525761604,
+                0.05086725950241089,
+                0.060373131185770035,
+                0.051236048340797424
+              ],
+              "neutral_boom_predicted_mean": 0.02827846258878708,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "lift": {
+          "rows": 366,
+          "neutral_boom_rows": 10,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.02918020635843277,
+              "mae_by_axis": [
+                0.0067159258760511875,
+                0.040290672332048416,
+                0.032895900309085846,
+                0.03681834787130356
+              ],
+              "neutral_boom_predicted_mean": 0.10484468936920166,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.025349784642457962,
+              "mae_by_axis": [
+                0.010748996399343014,
+                0.038183391094207764,
+                0.03070446476340294,
+                0.0217623021453619
+              ],
+              "neutral_boom_predicted_mean": 0.1605822592973709,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 207,
+          "neutral_boom_rows": 9,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.024198729544878006,
+              "mae_by_axis": [
+                0.021826770156621933,
+                0.01651023142039776,
+                0.023933669552206993,
+                0.034524254500865936
+              ],
+              "neutral_boom_predicted_mean": 0.09372542053461075,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.02025572769343853,
+              "mae_by_axis": [
+                0.013786962255835533,
+                0.018440598621964455,
+                0.02894037775695324,
+                0.019854985177516937
+              ],
+              "neutral_boom_predicted_mean": 0.12492582201957703,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "split": "development_runs",
+      "groups": {
+        "all": {
+          "rows": 1099,
+          "neutral_boom_rows": 608,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.04244619235396385,
+              "mae_by_axis": [
+                0.020928287878632545,
+                0.05940255522727966,
+                0.039023175835609436,
+                0.05043074116110802
+              ],
+              "neutral_boom_predicted_mean": -0.020138239488005638,
+              "neutral_boom_wrong_down_fraction": 0.008223684210526315
+            },
+            "phase_candidate": {
+              "mae": 0.08973401039838791,
+              "mae_by_axis": [
+                0.03249463811516762,
+                0.09737461060285568,
+                0.09076733142137527,
+                0.13829945027828217
+              ],
+              "neutral_boom_predicted_mean": 0.011458422057330608,
+              "neutral_boom_wrong_down_fraction": 0.014802631578947368
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 100,
+          "neutral_boom_rows": 43,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06892278045415878,
+              "mae_by_axis": [
+                0.0272432342171669,
+                0.135234072804451,
+                0.05090702697634697,
+                0.06230674684047699
+              ],
+              "neutral_boom_predicted_mean": -0.052478861063718796,
+              "neutral_boom_wrong_down_fraction": 0.023255813953488372
+            },
+            "phase_candidate": {
+              "mae": 0.09413192421197891,
+              "mae_by_axis": [
+                0.01970098167657852,
+                0.23012098670005798,
+                0.07498601824045181,
+                0.051719781011343
+              ],
+              "neutral_boom_predicted_mean": -0.07391379028558731,
+              "neutral_boom_wrong_down_fraction": 0.046511627906976744
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 210,
+          "neutral_boom_rows": 179,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.07172925025224686,
+              "mae_by_axis": [
+                0.04581360146403313,
+                0.09076903015375137,
+                0.050205767154693604,
+                0.10012855380773544
+              ],
+              "neutral_boom_predicted_mean": -0.034835830330848694,
+              "neutral_boom_wrong_down_fraction": 0.0223463687150838
+            },
+            "phase_candidate": {
+              "mae": 0.08381196111440659,
+              "mae_by_axis": [
+                0.04891667142510414,
+                0.10628920793533325,
+                0.07454429566860199,
+                0.10549759864807129
+              ],
+              "neutral_boom_predicted_mean": -0.03400959074497223,
+              "neutral_boom_wrong_down_fraction": 0.03910614525139665
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 384,
+          "neutral_boom_rows": 316,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.032766472548246384,
+              "mae_by_axis": [
+                0.011563822627067566,
+                0.034745220094919205,
+                0.024135837331414223,
+                0.060621023178100586
+              ],
+              "neutral_boom_predicted_mean": -0.019619427621364594,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.08882635086774826,
+              "mae_by_axis": [
+                0.021800769492983818,
+                0.05622643604874611,
+                0.076682910323143,
+                0.2005951851606369
+              ],
+              "neutral_boom_predicted_mean": -0.022870691493153572,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "lift": {
+          "rows": 405,
+          "neutral_boom_rows": 70,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.02990277111530304,
+              "mae_by_axis": [
+                0.015344508923590183,
+                0.047793373465538025,
+                0.044405996799468994,
+                0.01206720620393753
+              ],
+              "neutral_boom_predicted_mean": 0.03496992960572243,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.09257938712835312,
+              "mae_by_axis": [
+                0.03727783262729645,
+                0.09898997098207474,
+                0.11642993986606598,
+                0.11761980503797531
+              ],
+              "neutral_boom_predicted_mean": 0.3351409435272217,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "split": "development_runs",
+      "groups": {
+        "all": {
+          "rows": 1428,
+          "neutral_boom_rows": 509,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.04244662821292877,
+              "mae_by_axis": [
+                0.01630493439733982,
+                0.044412266463041306,
+                0.052505411207675934,
+                0.05656387656927109
+              ],
+              "neutral_boom_predicted_mean": -0.016524964943528175,
+              "neutral_boom_wrong_down_fraction": 0.009823182711198428
+            },
+            "phase_candidate": {
+              "mae": 0.039182648062705994,
+              "mae_by_axis": [
+                0.01519677322357893,
+                0.0501052588224411,
+                0.05333837494254112,
+                0.03809016942977905
+              ],
+              "neutral_boom_predicted_mean": -0.021457664668560028,
+              "neutral_boom_wrong_down_fraction": 0.009823182711198428
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 383,
+          "neutral_boom_rows": 53,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.03130195289850235,
+              "mae_by_axis": [
+                0.011555224657058716,
+                0.04301655665040016,
+                0.04559146985411644,
+                0.02504453994333744
+              ],
+              "neutral_boom_predicted_mean": 0.02902083657681942,
+              "neutral_boom_wrong_down_fraction": 0.018867924528301886
+            },
+            "phase_candidate": {
+              "mae": 0.032597608864307404,
+              "mae_by_axis": [
+                0.008658016100525856,
+                0.0563410185277462,
+                0.04820743575692177,
+                0.01718393713235855
+              ],
+              "neutral_boom_predicted_mean": -0.10194321721792221,
+              "neutral_boom_wrong_down_fraction": 0.018867924528301886
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 168,
+          "neutral_boom_rows": 124,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05684990435838699,
+              "mae_by_axis": [
+                0.03269078955054283,
+                0.09784355759620667,
+                0.04484442248940468,
+                0.0520208403468132
+              ],
+              "neutral_boom_predicted_mean": -0.05295484885573387,
+              "neutral_boom_wrong_down_fraction": 0.016129032258064516
+            },
+            "phase_candidate": {
+              "mae": 0.05700542405247688,
+              "mae_by_axis": [
+                0.03209146857261658,
+                0.09652005136013031,
+                0.04488017410039902,
+                0.05452997237443924
+              ],
+              "neutral_boom_predicted_mean": -0.026461834087967873,
+              "neutral_boom_wrong_down_fraction": 0.016129032258064516
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 405,
+          "neutral_boom_rows": 332,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.048136383295059204,
+              "mae_by_axis": [
+                0.013427894562482834,
+                0.05228307843208313,
+                0.07841004431247711,
+                0.04842458292841911
+              ],
+              "neutral_boom_predicted_mean": -0.010189485736191273,
+              "neutral_boom_wrong_down_fraction": 0.006024096385542169
+            },
+            "phase_candidate": {
+              "mae": 0.04283231496810913,
+              "mae_by_axis": [
+                0.01032960880547762,
+                0.05330280214548111,
+                0.06450113654136658,
+                0.04319565370678902
+              ],
+              "neutral_boom_predicted_mean": -0.006740040145814419,
+              "neutral_boom_wrong_down_fraction": 0.006024096385542169
+            }
+          }
+        },
+        "lift": {
+          "rows": 334,
+          "neutral_boom_rows": 0,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.03784696385264397,
+              "mae_by_axis": [
+                0.013701030984520912,
+                0.02262773923575878,
+                0.03142699971795082,
+                0.08363211899995804
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            },
+            "phase_candidate": {
+              "mae": 0.02789081633090973,
+              "mae_by_axis": [
+                0.014314270578324795,
+                0.029385386034846306,
+                0.025863926857709885,
+                0.041999701410532
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 138,
+          "neutral_boom_rows": 0,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.050277020782232285,
+              "mae_by_axis": [
+                0.024284835904836655,
+                0.012864697724580765,
+                0.05601237714290619,
+                0.10794617980718613
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            },
+            "phase_candidate": {
+              "mae": 0.052379775792360306,
+              "mae_by_axis": [
+                0.029196642339229584,
+                0.017057333141565323,
+                0.11161168664693832,
+                0.05165340006351471
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "split": "development_runs",
+      "groups": {
+        "all": {
+          "rows": 1365,
+          "neutral_boom_rows": 475,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.04482506960630417,
+              "mae_by_axis": [
+                0.024488916620612144,
+                0.056963056325912476,
+                0.04175055772066116,
+                0.05609777942299843
+              ],
+              "neutral_boom_predicted_mean": -0.015662137418985367,
+              "neutral_boom_wrong_down_fraction": 0.010526315789473684
+            },
+            "phase_candidate": {
+              "mae": 0.03451512008905411,
+              "mae_by_axis": [
+                0.013607265427708626,
+                0.05528230592608452,
+                0.04270070046186447,
+                0.0264702457934618
+              ],
+              "neutral_boom_predicted_mean": -0.021648457273840904,
+              "neutral_boom_wrong_down_fraction": 0.014736842105263158
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 282,
+          "neutral_boom_rows": 36,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06050414219498634,
+              "mae_by_axis": [
+                0.04566485062241554,
+                0.10299193114042282,
+                0.045058198273181915,
+                0.0483015775680542
+              ],
+              "neutral_boom_predicted_mean": -0.03325580433011055,
+              "neutral_boom_wrong_down_fraction": 0.05555555555555555
+            },
+            "phase_candidate": {
+              "mae": 0.04615906998515129,
+              "mae_by_axis": [
+                0.03066633827984333,
+                0.0929449126124382,
+                0.051197826862335205,
+                0.00982718262821436
+              ],
+              "neutral_boom_predicted_mean": -0.028094572946429253,
+              "neutral_boom_wrong_down_fraction": 0.08333333333333333
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 285,
+          "neutral_boom_rows": 202,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.053508009761571884,
+              "mae_by_axis": [
+                0.019566481932997704,
+                0.07790156453847885,
+                0.06534340232610703,
+                0.051220595836639404
+              ],
+              "neutral_boom_predicted_mean": -0.031230581924319267,
+              "neutral_boom_wrong_down_fraction": 0.01485148514851485
+            },
+            "phase_candidate": {
+              "mae": 0.04746682196855545,
+              "mae_by_axis": [
+                0.010728897526860237,
+                0.07500053197145462,
+                0.06089971959590912,
+                0.04323810711503029
+              ],
+              "neutral_boom_predicted_mean": -0.04135769233107567,
+              "neutral_boom_wrong_down_fraction": 0.019801980198019802
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 253,
+          "neutral_boom_rows": 219,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.036167778074741364,
+              "mae_by_axis": [
+                0.01717197522521019,
+                0.021718770265579224,
+                0.04906294867396355,
+                0.056717418134212494
+              ],
+              "neutral_boom_predicted_mean": -0.005167853552848101,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.029930096119642258,
+              "mae_by_axis": [
+                0.01075044646859169,
+                0.020893720909953117,
+                0.03587310016155243,
+                0.05220312625169754
+              ],
+              "neutral_boom_predicted_mean": -0.006817123852670193,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "lift": {
+          "rows": 440,
+          "neutral_boom_rows": 2,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.03419145196676254,
+              "mae_by_axis": [
+                0.019388902932405472,
+                0.03176300227642059,
+                0.021703504025936127,
+                0.06391042470932007
+              ],
+              "neutral_boom_predicted_mean": 0.36592748761177063,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.021938517689704895,
+              "mae_by_axis": [
+                0.0078782569617033,
+                0.034443821758031845,
+                0.029768971726298332,
+                0.01566302217543125
+              ],
+              "neutral_boom_predicted_mean": 0.39405661821365356,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 105,
+          "neutral_boom_rows": 16,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.044567421078681946,
+              "mae_by_axis": [
+                0.01997920498251915,
+                0.06703156232833862,
+                0.03521651402115822,
+                0.056042399257421494
+              ],
+              "neutral_boom_predicted_mean": 0.02913600578904152,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.03183789178729057,
+              "mae_by_axis": [
+                0.006495052482932806,
+                0.07079372555017471,
+                0.04112335667014122,
+                0.008939430117607117
+              ],
+              "neutral_boom_predicted_mean": -0.013282722793519497,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "split": "validation_runs",
+      "groups": {
+        "all": {
+          "rows": 1378,
+          "neutral_boom_rows": 757,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05676659941673279,
+              "mae_by_axis": [
+                0.0264443289488554,
+                0.05401381105184555,
+                0.07465597987174988,
+                0.07195238023996353
+              ],
+              "neutral_boom_predicted_mean": 0.01419382356107235,
+              "neutral_boom_wrong_down_fraction": 0.0066050198150594455
+            },
+            "phase_candidate": {
+              "mae": 0.09045115858316422,
+              "mae_by_axis": [
+                0.03659512475132942,
+                0.0660904124379158,
+                0.15839147567749023,
+                0.10072754323482513
+              ],
+              "neutral_boom_predicted_mean": 0.011823407374322414,
+              "neutral_boom_wrong_down_fraction": 0.0066050198150594455
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 161,
+          "neutral_boom_rows": 67,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.07371388375759125,
+              "mae_by_axis": [
+                0.10602919012308121,
+                0.11433736234903336,
+                0.041689757257699966,
+                0.03279929608106613
+              ],
+              "neutral_boom_predicted_mean": -0.0522240549325943,
+              "neutral_boom_wrong_down_fraction": 0.05970149253731343
+            },
+            "phase_candidate": {
+              "mae": 0.0872797742486,
+              "mae_by_axis": [
+                0.10831387341022491,
+                0.146656334400177,
+                0.06354223936796188,
+                0.030606625601649284
+              ],
+              "neutral_boom_predicted_mean": -0.06537531316280365,
+              "neutral_boom_wrong_down_fraction": 0.05970149253731343
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 204,
+          "neutral_boom_rows": 191,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05122480168938637,
+              "mae_by_axis": [
+                0.01570470631122589,
+                0.032228127121925354,
+                0.06237121298909187,
+                0.09459514170885086
+              ],
+              "neutral_boom_predicted_mean": -0.02072172425687313,
+              "neutral_boom_wrong_down_fraction": 0.005235602094240838
+            },
+            "phase_candidate": {
+              "mae": 0.0551995187997818,
+              "mae_by_axis": [
+                0.013515275903046131,
+                0.03582735359668732,
+                0.07271412760019302,
+                0.09874137490987778
+              ],
+              "neutral_boom_predicted_mean": -0.005948442965745926,
+              "neutral_boom_wrong_down_fraction": 0.005235602094240838
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 515,
+          "neutral_boom_rows": 442,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.055011946707963943,
+              "mae_by_axis": [
+                0.017110716551542282,
+                0.04108428210020065,
+                0.0501510314643383,
+                0.11170170456171036
+              ],
+              "neutral_boom_predicted_mean": 0.025575943291187286,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.09500741213560104,
+              "mae_by_axis": [
+                0.016022780910134315,
+                0.0561213418841362,
+                0.139887273311615,
+                0.1679980456829071
+              ],
+              "neutral_boom_predicted_mean": 0.013959864154458046,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "lift": {
+          "rows": 437,
+          "neutral_boom_rows": 57,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.05001639947295189,
+              "mae_by_axis": [
+                0.015004020184278488,
+                0.06105785071849823,
+                0.08766795694828033,
+                0.036335770040750504
+              ],
+              "neutral_boom_predicted_mean": 0.12100028991699219,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.09478992968797684,
+              "mae_by_axis": [
+                0.045855507254600525,
+                0.06670789420604706,
+                0.20540449023246765,
+                0.06119184195995331
+              ],
+              "neutral_boom_predicted_mean": 0.14555014669895172,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 61,
+          "neutral_boom_rows": 0,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.09374195337295532,
+              "mae_by_axis": [
+                0.013066025450825691,
+                0.026352662593126297,
+                0.31641682982444763,
+                0.019132262095808983
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            },
+            "phase_candidate": {
+              "mae": 0.1471630185842514,
+              "mae_by_axis": [
+                0.031834572553634644,
+                0.03439689800143242,
+                0.5146860480308533,
+                0.007734453305602074
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "split": "validation_runs",
+      "groups": {
+        "all": {
+          "rows": 1641,
+          "neutral_boom_rows": 707,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06719309836626053,
+              "mae_by_axis": [
+                0.01905115693807602,
+                0.06543000042438507,
+                0.10028766840696335,
+                0.08400361984968185
+              ],
+              "neutral_boom_predicted_mean": -0.020676344633102417,
+              "neutral_boom_wrong_down_fraction": 0.008486562942008486
+            },
+            "phase_candidate": {
+              "mae": 0.07921481877565384,
+              "mae_by_axis": [
+                0.020608898252248764,
+                0.08455795049667358,
+                0.12168773263692856,
+                0.09000465273857117
+              ],
+              "neutral_boom_predicted_mean": 7.718152482993901e-05,
+              "neutral_boom_wrong_down_fraction": 0.01272984441301273
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 359,
+          "neutral_boom_rows": 28,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06665961444377899,
+              "mae_by_axis": [
+                0.01106047723442316,
+                0.06622696667909622,
+                0.13085854053497314,
+                0.05849241465330124
+              ],
+              "neutral_boom_predicted_mean": 0.0011444668052718043,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.07859089970588684,
+              "mae_by_axis": [
+                0.01922198385000229,
+                0.0999663919210434,
+                0.1783946454524994,
+                0.016780544072389603
+              ],
+              "neutral_boom_predicted_mean": -0.13981762528419495,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 276,
+          "neutral_boom_rows": 219,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.0762895792722702,
+              "mae_by_axis": [
+                0.012424987740814686,
+                0.07974672317504883,
+                0.11943148076534271,
+                0.09355510771274567
+              ],
+              "neutral_boom_predicted_mean": -0.03244214132428169,
+              "neutral_boom_wrong_down_fraction": 0.0228310502283105
+            },
+            "phase_candidate": {
+              "mae": 0.09215760231018066,
+              "mae_by_axis": [
+                0.027593599632382393,
+                0.10382839292287827,
+                0.12638086080551147,
+                0.11082752048969269
+              ],
+              "neutral_boom_predicted_mean": -0.05913844704627991,
+              "neutral_boom_wrong_down_fraction": 0.0365296803652968
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 543,
+          "neutral_boom_rows": 460,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.07964371144771576,
+              "mae_by_axis": [
+                0.025290077552199364,
+                0.07180066406726837,
+                0.10496314615011215,
+                0.1165209487080574
+              ],
+              "neutral_boom_predicted_mean": -0.01640302501618862,
+              "neutral_boom_wrong_down_fraction": 0.002173913043478261
+            },
+            "phase_candidate": {
+              "mae": 0.0875830203294754,
+              "mae_by_axis": [
+                0.021552151069045067,
+                0.09152974933385849,
+                0.10126420855522156,
+                0.13598595559597015
+              ],
+              "neutral_boom_predicted_mean": 0.036784302443265915,
+              "neutral_boom_wrong_down_fraction": 0.002173913043478261
+            }
+          }
+        },
+        "lift": {
+          "rows": 368,
+          "neutral_boom_rows": 0,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.050773702561855316,
+              "mae_by_axis": [
+                0.014871662482619286,
+                0.05418596416711807,
+                0.06640680134296417,
+                0.06763029843568802
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            },
+            "phase_candidate": {
+              "mae": 0.055994175374507904,
+              "mae_by_axis": [
+                0.016233818605542183,
+                0.05500207841396332,
+                0.0668867751955986,
+                0.08585403114557266
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 95,
+          "neutral_boom_rows": 0,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.035219956189394,
+              "mae_by_axis": [
+                0.049028076231479645,
+                0.027966348454356194,
+                0.033663585782051086,
+                0.030221857130527496
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            },
+            "phase_candidate": {
+              "mae": 0.08608900010585785,
+              "mae_by_axis": [
+                0.017113737761974335,
+                0.044985927641391754,
+                0.222780242562294,
+                0.0594761036336422
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "split": "validation_runs",
+      "groups": {
+        "all": {
+          "rows": 1457,
+          "neutral_boom_rows": 586,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.09748004376888275,
+              "mae_by_axis": [
+                0.03439611569046974,
+                0.1275964081287384,
+                0.09587923437356949,
+                0.13204850256443024
+              ],
+              "neutral_boom_predicted_mean": -0.18504051864147186,
+              "neutral_boom_wrong_down_fraction": 0.4948805460750853
+            },
+            "phase_candidate": {
+              "mae": 0.09076885133981705,
+              "mae_by_axis": [
+                0.053068071603775024,
+                0.09397606551647186,
+                0.1091233640909195,
+                0.10690795630216599
+              ],
+              "neutral_boom_predicted_mean": -0.12157196551561356,
+              "neutral_boom_wrong_down_fraction": 0.25597269624573377
+            }
+          }
+        },
+        "approach_contact": {
+          "rows": 310,
+          "neutral_boom_rows": 10,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.07361240684986115,
+              "mae_by_axis": [
+                0.014754717238247395,
+                0.04062395170331001,
+                0.09287431836128235,
+                0.1461966186761856
+              ],
+              "neutral_boom_predicted_mean": -0.3636826276779175,
+              "neutral_boom_wrong_down_fraction": 0.7
+            },
+            "phase_candidate": {
+              "mae": 0.08753976970911026,
+              "mae_by_axis": [
+                0.07191518694162369,
+                0.06924010068178177,
+                0.0921880379319191,
+                0.11681582778692245
+              ],
+              "neutral_boom_predicted_mean": -0.23101408779621124,
+              "neutral_boom_wrong_down_fraction": 0.4
+            }
+          }
+        },
+        "penetrate": {
+          "rows": 266,
+          "neutral_boom_rows": 265,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.13900388777256012,
+              "mae_by_axis": [
+                0.016385048627853394,
+                0.25279638171195984,
+                0.09217214584350586,
+                0.1946619302034378
+              ],
+              "neutral_boom_predicted_mean": -0.2510252296924591,
+              "neutral_boom_wrong_down_fraction": 0.9962264150943396
+            },
+            "phase_candidate": {
+              "mae": 0.10914377123117447,
+              "mae_by_axis": [
+                0.026203563436865807,
+                0.1993405669927597,
+                0.08785586804151535,
+                0.12317505478858948
+              ],
+              "neutral_boom_predicted_mean": -0.19713769853115082,
+              "neutral_boom_wrong_down_fraction": 0.5320754716981132
+            }
+          }
+        },
+        "curl_load": {
+          "rows": 357,
+          "neutral_boom_rows": 305,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.12300483882427216,
+              "mae_by_axis": [
+                0.05825704708695412,
+                0.17348365485668182,
+                0.09862051159143448,
+                0.16165821254253387
+              ],
+              "neutral_boom_predicted_mean": -0.12630823254585266,
+              "neutral_boom_wrong_down_fraction": 0.06229508196721312
+            },
+            "phase_candidate": {
+              "mae": 0.1105709969997406,
+              "mae_by_axis": [
+                0.059128277003765106,
+                0.10031399130821228,
+                0.11936365067958832,
+                0.16347810626029968
+              ],
+              "neutral_boom_predicted_mean": -0.05753616616129875,
+              "neutral_boom_wrong_down_fraction": 0.01639344262295082
+            }
+          }
+        },
+        "lift": {
+          "rows": 447,
+          "neutral_boom_rows": 6,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.07428722828626633,
+              "mae_by_axis": [
+                0.038829199969768524,
+                0.08413524925708771,
+                0.10448392480611801,
+                0.06970051676034927
+              ],
+              "neutral_boom_predicted_mean": 0.041464146226644516,
+              "neutral_boom_wrong_down_fraction": 0.0
+            },
+            "phase_candidate": {
+              "mae": 0.07296957820653915,
+              "mae_by_axis": [
+                0.04905948415398598,
+                0.04963333159685135,
+                0.13510943949222565,
+                0.058076124638319016
+              ],
+              "neutral_boom_predicted_mean": 0.14316482841968536,
+              "neutral_boom_wrong_down_fraction": 0.0
+            }
+          }
+        },
+        "off_soil": {
+          "rows": 77,
+          "neutral_boom_rows": 0,
+          "models": {
+            "flat_baseline": {
+              "mae": 0.06642115861177444,
+              "mae_by_axis": [
+                0.039329543709754944,
+                0.08478530496358871,
+                0.05811981111764908,
+                0.08345001190900803
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            },
+            "phase_candidate": {
+              "mae": 0.051810238510370255,
+              "mae_by_axis": [
+                0.06516695767641068,
+                0.05760912597179413,
+                0.05244322121143341,
+                0.032021667808294296
+              ],
+              "neutral_boom_predicted_mean": null,
+              "neutral_boom_wrong_down_fraction": null
+            }
+          }
+        }
+      }
+    }
+  ],
+  "physics_advanced": false,
+  "trained_on_different_data_domains": true,
+  "interpretation": "Both policies evaluated on identical actual derived observations. New policy also gets causal stage. Since training states differ, this is not an isolated phase-only ablation. Offline metrics do not establish autonomous safety.",
+  "aggregate": {
+    "development_runs": {
+      "all": {
+        "rows": 6860,
+        "neutral_boom_rows": 2969,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.044598839210981706,
+            "mae_by_axis": [
+              0.019441124594583022,
+              0.05058670629891119,
+              0.050519403180992635,
+              0.05784811614184442
+            ],
+            "neutral_boom_wrong_down_fraction": 0.008083529808016167
+          },
+          "phase_candidate": {
+            "mae": 0.046393371146422085,
+            "mae_by_axis": [
+              0.018320284852535403,
+              0.05955031514330699,
+              0.05251865703341043,
+              0.05518424091860652
+            ],
+            "neutral_boom_wrong_down_fraction": 0.011451667228022903
+          }
+        }
+      },
+      "approach_contact": {
+        "rows": 1306,
+        "neutral_boom_rows": 294,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.05820854326530401,
+            "mae_by_axis": [
+              0.024746564238305114,
+              0.08953727672524055,
+              0.050043776183521765,
+              0.06850657299885478
+            ],
+            "neutral_boom_wrong_down_fraction": 0.034013605442176874
+          },
+          "phase_candidate": {
+            "mae": 0.05110071503926656,
+            "mae_by_axis": [
+              0.019644008066567947,
+              0.09402142288548385,
+              0.04678274651741178,
+              0.04395467295792028
+            ],
+            "neutral_boom_wrong_down_fraction": 0.05442176870748299
+          }
+        }
+      },
+      "penetrate": {
+        "rows": 1396,
+        "neutral_boom_rows": 1051,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.05881132866738946,
+            "mae_by_axis": [
+              0.03160507868532422,
+              0.06080319193114438,
+              0.06867286165839963,
+              0.07416417829713712
+            ],
+            "neutral_boom_wrong_down_fraction": 0.011417697431018078
+          },
+          "phase_candidate": {
+            "mae": 0.05333795940455444,
+            "mae_by_axis": [
+              0.026805244654385014,
+              0.06332025809859307,
+              0.06041906821544157,
+              0.06280724803268653
+            ],
+            "neutral_boom_wrong_down_fraction": 0.015223596574690771
+          }
+        }
+      },
+      "curl_load": {
+        "rows": 1724,
+        "neutral_boom_rows": 1422,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.04057877783484221,
+            "mae_by_axis": [
+              0.013215450636973375,
+              0.03701775878443104,
+              0.05794484103681939,
+              0.0541370771846922
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0014064697609001407
+          },
+          "phase_candidate": {
+            "mae": 0.04863625114649672,
+            "mae_by_axis": [
+              0.01443341313839702,
+              0.04400922029912299,
+              0.0564632346538131,
+              0.07963909865886389
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0014064697609001407
+          }
+        }
+      },
+      "lift": {
+        "rows": 1892,
+        "neutral_boom_rows": 85,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.03152609481446713,
+            "mae_by_axis": [
+              0.012591263414931584,
+              0.03603658044659562,
+              0.034330397852190456,
+              0.04314615420729363
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0
+          },
+          "phase_candidate": {
+            "mae": 0.03965004631288618,
+            "mae_by_axis": [
+              0.01570307446745112,
+              0.05106562726105116,
+              0.04768108346363644,
+              0.04415040948461686
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0
+          }
+        }
+      },
+      "off_soil": {
+        "rows": 542,
+        "neutral_boom_rows": 117,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.03361969601321704,
+            "mae_by_axis": [
+              0.019041312836124338,
+              0.024368937436587475,
+              0.03780220910508145,
+              0.053266327786929496
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0
+          },
+          "phase_candidate": {
+            "mae": 0.0335690367148976,
+            "mae_by_axis": [
+              0.014775934466762241,
+              0.04583003235520362,
+              0.05033107744907871,
+              0.02333910016143674
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0
+          }
+        }
+      }
+    },
+    "validation_runs": {
+      "all": {
+        "rows": 4476,
+        "neutral_boom_rows": 2050,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.07384197323202714,
+            "mae_by_axis": [
+              0.026322246288632688,
+              0.08215139163749574,
+              0.09096158369110566,
+              0.09593274986156669
+            ],
+            "neutral_boom_wrong_down_fraction": 0.14682926829268292
+          },
+          "phase_candidate": {
+            "mae": 0.08643508278386096,
+            "mae_by_axis": [
+              0.036096395054953614,
+              0.08193818421849616,
+              0.12889762382065484,
+              0.09880810591015196
+            ],
+            "neutral_boom_wrong_down_fraction": 0.08
+          }
+        }
+      },
+      "approach_contact": {
+        "rows": 830,
+        "neutral_boom_rows": 105,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.07062479878764555,
+            "mae_by_axis": [
+              0.03086189551907311,
+              0.0659966522939952,
+              0.09937506706330432,
+              0.08626556062554738
+            ],
+            "neutral_boom_wrong_down_fraction": 0.10476190476190476
+          },
+          "phase_candidate": {
+            "mae": 0.08361868103405079,
+            "mae_by_axis": [
+              0.05618425755795226,
+              0.09754703102341618,
+              0.1239183976079326,
+              0.05682504657566188
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0761904761904762
+          }
+        }
+      },
+      "penetrate": {
+        "rows": 746,
+        "neutral_boom_rows": 675,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.09179734258885039,
+            "mae_by_axis": [
+              0.014733886915501256,
+              0.12845639552891094,
+              0.09410805219220092,
+              0.12989100813865662
+            ],
+            "neutral_boom_wrong_down_fraction": 0.4
+          },
+          "phase_candidate": {
+            "mae": 0.08810783273492998,
+            "mae_by_axis": [
+              0.02324812018359954,
+              0.11928955415618324,
+              0.09796844572627832,
+              0.1119252020248459
+            ],
+            "neutral_boom_wrong_down_fraction": 0.2222222222222222
+          }
+        }
+      },
+      "curl_load": {
+        "rows": 1415,
+        "neutral_boom_rows": 1207,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.08161866807842845,
+            "mae_by_axis": [
+              0.03063059854765452,
+              0.08627549869538197,
+              0.0834136340648673,
+              0.12615493630773186
+            ],
+            "neutral_boom_wrong_down_fraction": 0.016570008285004142
+          },
+          "phase_candidate": {
+            "mae": 0.0960849775389732,
+            "mae_by_axis": [
+              0.029020031865409742,
+              0.08085882675310749,
+              0.11988779808733573,
+              0.15457318116624447
+            ],
+            "neutral_boom_wrong_down_fraction": 0.004971002485501243
+          }
+        }
+      },
+      "lift": {
+        "rows": 1252,
+        "neutral_boom_rows": 63,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.05890437712172826,
+            "mae_by_axis": [
+              0.02347139057557518,
+              0.06727729392603944,
+              0.08742245564612146,
+              0.05744633572205853
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0
+          },
+          "phase_candidate": {
+            "mae": 0.0755962118768273,
+            "mae_by_axis": [
+              0.03829272470761317,
+              0.05717109732282238,
+              0.13959266370334944,
+              0.0673283914627787
+            ],
+            "neutral_boom_wrong_down_fraction": 0.0
+          }
+        }
+      },
+      "off_soil": {
+        "rows": 233,
+        "neutral_boom_rows": 0,
+        "models": {
+          "flat_baseline": {
+            "mae": 0.060852292733258956,
+            "mae_by_axis": [
+              0.03640802429245521,
+              0.04632096138858744,
+              0.11577121341049415,
+              0.04490899284222351
+            ],
+            "neutral_boom_wrong_down_fraction": null
+          },
+          "phase_candidate": {
+            "mae": 0.09075016098280833,
+            "mae_by_axis": [
+              0.03684793885941157,
+              0.04638530731265125,
+              0.2429103004574264,
+              0.03685708119346093
+            ],
+            "neutral_boom_wrong_down_fraction": null
+          }
+        }
+      }
+    }
+  }
+}

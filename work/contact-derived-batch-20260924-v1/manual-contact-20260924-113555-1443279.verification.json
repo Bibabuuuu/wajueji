@@ -1,0 +1,216 @@
+{
+  "schema": "derived_demo_independent_audit_v1",
+  "passed": true,
+  "data_domain": "replayed_teacher_actual_observations",
+  "teacher_run": "manual-contact-20260924-113555-1443279",
+  "report": {
+    "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-113555-1443279/report.json",
+    "sha256": "944db075ba99f5c7a4ac2aa6fc2c9ea1ebca1928dbbf5e1f9cf1efd24d2ec669"
+  },
+  "tensors": {
+    "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-113555-1443279/derived-tensors.npz",
+    "sha256": "b07eb54959d22cead822a80c707e1d544b8c842e74cc6bf8b9b988218698b87e",
+    "rows": 1378,
+    "phase_counts": {
+      "approach_contact": 161,
+      "penetrate": 204,
+      "curl_load": 515,
+      "lift": 437,
+      "off_soil": 61
+    }
+  },
+  "frames": 1411,
+  "expert_rows": 1378,
+  "phase_counts": {
+    "approach_contact": 161,
+    "penetrate": 204,
+    "curl_load": 515,
+    "lift": 437,
+    "off_soil": 61
+  },
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 162
+        }
+      ],
+      "confirmation_frame_end": 164,
+      "first_available_decision_frame": 165
+    },
+    {
+      "transition": "penetrate_to_curl_load",
+      "evidence": [
+        {
+          "kind": "frozen_angle_downward_crossing",
+          "onset_frame_end": 368
+        }
+      ],
+      "confirmation_frame_end": 368,
+      "first_available_decision_frame": 369
+    },
+    {
+      "transition": "curl_load_to_lift",
+      "evidence": [
+        {
+          "kind": "sustained_actual_boom_and_bucket_rise",
+          "motion_window_start_frame_end": 841,
+          "first_matching_window_frame_end": 853,
+          "consecutive_matching_windows": 31,
+          "origin_rise_m": 0.0808332510983163
+        }
+      ],
+      "confirmation_frame_end": 883,
+      "first_available_decision_frame": 884
+    },
+    {
+      "transition": "lift_to_off_soil",
+      "evidence": [
+        {
+          "kind": "fresh_ground_connected_particle_to_solid_gap",
+          "onset_frame_end": 1316,
+          "minimum_required_gap_m": 0.003,
+          "consecutive_frames": 5
+        }
+      ],
+      "confirmation_frame_end": 1320,
+      "first_available_decision_frame": 1321
+    }
+  ],
+  "off_soil_confirmation_frame_end": 1320,
+  "post_confirmation_below_gap_frames": [
+    1321,
+    1322,
+    1323,
+    1326,
+    1327,
+    1328,
+    1329,
+    1330,
+    1331,
+    1332,
+    1333,
+    1334,
+    1335,
+    1336,
+    1337,
+    1338,
+    1339,
+    1340,
+    1341,
+    1342,
+    1343,
+    1344,
+    1345,
+    1348,
+    1349,
+    1350,
+    1351,
+    1352,
+    1353,
+    1356,
+    1357,
+    1358,
+    1359,
+    1360,
+    1361,
+    1362,
+    1364,
+    1365,
+    1366,
+    1367,
+    1368,
+    1369,
+    1370,
+    1371,
+    1372,
+    1373,
+    1374,
+    1375,
+    1376,
+    1377,
+    1378,
+    1379,
+    1380,
+    1381,
+    1382,
+    1383,
+    1384,
+    1385,
+    1386,
+    1387,
+    1388,
+    1389,
+    1390,
+    1391,
+    1392,
+    1393,
+    1394,
+    1395,
+    1396,
+    1397,
+    1398,
+    1399,
+    1400,
+    1401,
+    1402,
+    1403,
+    1404,
+    1405,
+    1406,
+    1407,
+    1408,
+    1409,
+    1410,
+    1411
+  ],
+  "maximum_deviations": {
+    "bucket_CAD_point_m": 0.00014286315852385132,
+    "rock_center_m": 1.4500446882495948,
+    "rock_orientation_rad": 3.0954160524241416
+  },
+  "endpoint_comparison": {
+    "particle_max_position_error_m": 0.9464300870895386,
+    "particle_p99_position_error_m": 0.0014129811897873878,
+    "original_cavity_particle_count": 8145,
+    "derived_cavity_particle_count": 8144,
+    "cavity_count_relative_difference": 0.00012277470841006753,
+    "bitwise_arrays": {
+      "particle_q": false,
+      "particle_qd": false,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": false,
+      "particle_transform": true,
+      "particle_qd_grad": false,
+      "particle_stress": false,
+      "particle_Jp": false,
+      "rigid_ids": true,
+      "rigid_qpos": false,
+      "rigid_qvel": false,
+      "rigid_reported_linear_velocity": false,
+      "rigid_reported_angular_velocity": false,
+      "mechanism_qpos": false,
+      "mechanism_qvel": false,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": false,
+      "solver_grid_node_ijk": false,
+      "solver_ws_impulse": false,
+      "solver_ws_stress": false,
+      "solver_body_q_prev": false
+    }
+  },
+  "split": "validation_runs",
+  "original_sources_unchanged": true,
+  "original_tensor_unchanged": true,
+  "full_batch_complete": false,
+  "training_eligible": false,
+  "similarity_reference_exceeded_frames": 277,
+  "endpoint_within_previous_reference": false,
+  "qualification": "One complete derived-data sample independently audited for actual causal features, phase timing and measured deviations. Similarity limits diagnostic under user decision; data-quality review still required. Not trained policy or autonomous excavation.",
+  "verifier_sha256": "35bac1216bdbcae1d73d340603351cdf53ddc701ed4d7ce0eca30fd50597f1d8"
+}

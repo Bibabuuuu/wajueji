@@ -1,0 +1,62 @@
+{
+  "schema": "contact_bc_pilot_assignment_v1",
+  "scope": "bounded_offline_wiring_pilot_only",
+  "model_route": "causal_five_phase_conditioned_shared_four_axis_short_history",
+  "source_manifest_sha256": "e85d300d57029c9866209ef259c92c74ff47a1756528e2515bd7ffdda0a14c53",
+  "development_runs": [
+    "manual-contact-20260924-010900-1088617",
+    "manual-contact-20260924-083547-1327233",
+    "manual-contact-20260924-100857-1387193",
+    "manual-contact-20260924-110051-1421079",
+    "manual-contact-20260924-110932-1426831"
+  ],
+  "validation_runs": [
+    "manual-contact-20260924-113555-1443279",
+    "manual-contact-20260924-114908-1452582",
+    "manual-contact-20260924-115812-1458627"
+  ],
+  "sealed_test_runs": [],
+  "episode_weights": {
+    "manual-contact-20260924-010900-1088617": 1.0,
+    "manual-contact-20260924-083547-1327233": 1.0,
+    "manual-contact-20260924-100857-1387193": 0.0,
+    "manual-contact-20260924-110051-1421079": 0.25,
+    "manual-contact-20260924-110932-1426831": 1.0,
+    "manual-contact-20260924-113555-1443279": 1.0,
+    "manual-contact-20260924-114908-1452582": 0.25,
+    "manual-contact-20260924-115812-1458627": 1.0
+  },
+  "mask_original_goal_runs": [
+    "manual-contact-20260924-010900-1088617",
+    "manual-contact-20260924-110932-1426831"
+  ],
+  "sampling": "episode-balanced, high-fill weight 1, lower-fill weight 0.25; diagnostic pilot, not expert-success certification",
+  "target": "applied_normalized_velocity",
+  "target_rationale": "Imitate actual safe execution for first wiring pilot; preserve original requests separately.",
+  "history_offsets_frames": [
+    3,
+    6,
+    9
+  ],
+  "history_span_seconds": 0.15,
+  "steps": 1000,
+  "training_wall_budget_seconds": 300,
+  "seed": 20260924,
+  "formal_training_admission": false,
+  "original_assignment": {
+    "path": "/home/qunwang/wajueji/work/contact-bc-data-preparation-20260924-v1/pilot-assignment.json",
+    "sha256": "534be96783f332967868d3aee4c49a7b7bb5b6e4dbf4c7fae27f1ccf008be192"
+  },
+  "excluded_ground_runs": [
+    "manual-contact-20260924-093202-1362929"
+  ],
+  "excluded_incomplete_runs": [
+    "manual-contact-20260924-005742-1081585"
+  ],
+  "diagnostic_only_runs": {
+    "manual-contact-20260924-100857-1387193": "Rock center differs by 0.351m during lift, despite similar fill and bucket geometry; retain audited actual tensors but exclude fitting and normalization in this first pilot."
+  },
+  "validation_domain_caveats": {
+    "manual-contact-20260924-113555-1443279": "Original validation membership retained. A falling outside rock differs by 1.450m while bucket CAD differs by 0.143mm. Treat as actual replay-state action validation, not faithful full-scene reproduction or original-human closed-loop evidence."
+  }
+}

@@ -52,6 +52,9 @@ def main():
     if assignment['scope']!='bounded_offline_wiring_pilot_only':raise ValueError('assignment_scope')
     if sha(args.manifest)!=assignment['source_manifest_sha256']:raise ValueError('manifest_binding')
     if manifest['schema']!='contact_bc_derived_causal_phase_structured_v1':raise ValueError('tensor_schema')
+    review_path=Path(args.manifest).parent/'batch-quality-review.json';review=read(review_path)
+    if not review['passed'] or not review['limited_offline_pilot_admitted'] or review['manifest_sha256']!=sha(args.manifest):raise ValueError('batch_review_binding')
+    if args.steps!=assignment['steps'] or args.max_training_seconds!=assignment['training_wall_budget_seconds']:raise ValueError('fixed_assignment_budget')
     out=Path(args.output);out.mkdir(parents=True,exist_ok=False)
     torch.manual_seed(20260924);np.random.seed(20260924);torch.set_num_threads(2)
     splits={k:set(assignment[k]) for k in ('development_runs','validation_runs')}
@@ -119,6 +122,7 @@ def main():
                 development_rows=len(train_x),validation_rows=sum(len(e['x']) for e in val),normalization_fit_runs=[e['meta']['run'] for e in dev],
                 loss_initial=losses[0],loss_final=losses[-1],checkpoint=str(path.resolve()),checkpoint_sha256=sha(path),reload_max_abs_error=error,
                 evaluation=evaluation,manifest_sha256=sha(args.manifest),assignment_sha256=sha(args.assignment),
+                batch_review=dict(path=str(review_path.resolve()),sha256=sha(review_path)),
                 code_sha256={str(Path(__file__).resolve()):sha(__file__),str(Path(__file__).resolve().parents[2]/'src/v4/contact_phase_bc_policy.py'):sha(Path(__file__).resolve().parents[2]/'src/v4/contact_phase_bc_policy.py'),str(Path(__file__).resolve().parents[2]/'src/v4/contact_bc_policy.py'):sha(Path(__file__).resolve().parents[2]/'src/v4/contact_bc_policy.py')},
                 physics_rollout_qualified=False,formal_training_admission=False,command_dropout=args.command_dropout,
                 terrain_scale_floor_m=args.terrain_scale_floor_m,

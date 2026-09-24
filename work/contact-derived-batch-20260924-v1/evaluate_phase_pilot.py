@@ -39,7 +39,22 @@ def main():
      neutral_boom_predicted_mean=None if not neutral.any() else float(p[neutral,1].mean()),
      neutral_boom_wrong_down_fraction=None if not neutral.any() else float((p[neutral,1]<-.2).mean()))
   output['episodes'].append(dict(run=e['run'],split=e['split'],groups=groups))
+ aggregate={}
+ for split in ('development_runs','validation_runs'):
+  selected=[e for e in output['episodes'] if e['split']==split];aggregate[split]={}
+  for group in ('all','approach_contact','penetrate','curl_load','lift','off_soil'):
+   parts=[e['groups'][group] for e in selected if group in e['groups']]
+   if not parts:continue
+   count=sum(p['rows'] for p in parts);neutral=sum(p['neutral_boom_rows'] for p in parts)
+   metrics={}
+   for model in ('flat_baseline','phase_candidate'):
+    metrics[model]=dict(mae=sum(p['rows']*p['models'][model]['mae'] for p in parts)/count,
+     mae_by_axis=(sum(p['rows']*np.asarray(p['models'][model]['mae_by_axis']) for p in parts)/count).tolist(),
+     neutral_boom_wrong_down_fraction=None if not neutral else sum(p['neutral_boom_rows']*p['models'][model]['neutral_boom_wrong_down_fraction'] for p in parts if p['neutral_boom_rows'])/neutral)
+   aggregate[split][group]=dict(rows=count,neutral_boom_rows=neutral,models=metrics)
+ output['aggregate']=aggregate
  (W/'offline-policy-comparison.json').write_text(json.dumps(output,indent=2)+'\n')
+ print('AGGREGATE',json.dumps(aggregate['validation_runs']))
  for e in output['episodes']:
   if e['split']=='validation_runs':print(e['run'],json.dumps(e['groups'].get('curl_load')))
 if __name__=='__main__':main()
