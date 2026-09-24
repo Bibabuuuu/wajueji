@@ -1,0 +1,14 @@
+{
+  "run": "manual-contact-20260924-115812-1458627",
+  "transition": "penetrate_to_curl_load",
+  "physical_frame_end": 560,
+  "simulation_time_s": 9.333333333333334,
+  "first_causally_available_decision_frame": 561,
+  "source": "user_confirmed_visual_review",
+  "reference": "Latest user submission revises this third-scoop boundary from frame 568 to 560; only this transition is confirmed.",
+  "mouth_chord_from_down_deg": -1.982553354977877,
+  "supersedes": {
+    "path": "human-curl-boundary-115812-v1.json",
+    "sha256": "9ae428da0e31d0a08e596accaeaa8fd1b85e73acc10ed70f12819cb3466abc0e"
+  }
+}

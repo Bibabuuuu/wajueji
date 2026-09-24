@@ -39,15 +39,22 @@
     {
       "run": "manual-contact-20260924-115812-1458627",
       "candidate_physical_frame_end": 579,
-      "human_reference_frame_end": 568,
+      "human_reference_frame_end": 560,
       "human_review_status": "confirmed_this_transition_only",
       "human_annotation": {
-        "path": "human-curl-boundary-115812-v1.json",
-        "sha256": "9ae428da0e31d0a08e596accaeaa8fd1b85e73acc10ed70f12819cb3466abc0e"
+        "path": "human-curl-boundary-115812-v2.json",
+        "sha256": "5019305768c4ed7f23a09df1ef349c4f101b9ddaf17e4947fa754f9a19bb91f8"
       },
-      "error_vs_human_frames": 11,
-      "error_vs_human_seconds": 0.18333333333333332,
-      "other_phase_boundaries_confirmed": false
+      "error_vs_human_frames": 19,
+      "error_vs_human_seconds": 0.31666666666666665,
+      "other_phase_boundaries_confirmed": false,
+      "superseded_human_annotations": [
+        {
+          "path": "human-curl-boundary-115812-v1.json",
+          "sha256": "9ae428da0e31d0a08e596accaeaa8fd1b85e73acc10ed70f12819cb3466abc0e",
+          "physical_frame_end": 568
+        }
+      ]
     }
   ]
 }
