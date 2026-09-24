@@ -39,6 +39,29 @@ class FeedbackTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'infeasible'):
             bounded_velocity(np.eye(4),np.zeros(4),[0.,0.,1.,0.],2.)
 
+    def test_late_curl_cancels_body_descent_without_disabling_curl(self):
+        # Boom up offsets body descent from curling; the tip alone rises.
+        jac=np.eye(4);jac[2]=[0.,1.,0.,1.]
+        body=np.array([[0.,1.,0.,-1.],[0.,1.,0.,1.]])
+        action=bounded_velocity(jac,[0.,-.5,1.,.5],[0.,1.,0.,1.],-10.,
+            no_down_gradient=body,axis_bounds=[(-1.,1.),(0.,1.),(-1.,1.),(-1.,1.)])
+        self.assertGreater(action[3],.1)
+        self.assertGreaterEqual(action[1],action[3]-1e-7)
+        self.assertGreaterEqual(np.min(body@action),-1e-7)
+
+    def test_late_curl_endpoint_cap_is_part_of_coupled_solution(self):
+        body=np.array([[0.,1.,0.,-1.],[0.,1.,0.,1.]])
+        action=bounded_velocity(np.eye(4),[0.,-.5,0.,1.],[0.,1.,0.,0.],-10.,
+            no_down_gradient=body,axis_bounds=[(-1.,1.),(0.,1.),(-1.,1.),(-1.,.05)])
+        self.assertLessEqual(action[3],.05+1e-10)
+        self.assertGreaterEqual(np.min(body@action),-1e-7)
+
+    def test_late_curl_invalid_configuration_rejected(self):
+        for change in ({'late_curl_fraction':1.1},{'late_curl_fraction':0.},{'late_curl_no_down':1}):
+            with self.assertRaises(ValueError):FeedbackConfig(**change)
+        with self.assertRaisesRegex(ValueError,'axis_bounds'):
+            bounded_velocity(np.eye(4),np.zeros(4),np.ones(4),-10.,axis_bounds=[(1.,0.)]*4)
+
     def test_nonfinite_problem_rejected(self):
         with self.assertRaisesRegex(ValueError,'invalid'):
             bounded_velocity(np.eye(4),[0.,0.,np.nan,0.],np.ones(4),0.)
