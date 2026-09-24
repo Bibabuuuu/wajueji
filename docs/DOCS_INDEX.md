@@ -91,3 +91,5 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - `work/contact-combined-replay-20260924-v1/README.md`：D152/D153精确衔接的第三铲缓存回放，0新物理，用户查看装载不足。
 
 - `work/contact-first-lift-review-20260924-v1/README.md`：D154第一铲2327帧未离土、独立几何/量测及后续恢复限制。
+
+- [D-155保斗交接与手动按4行程](../work/contact-carry-handoff-20260924-v1/README.md)：原始10条按键实际行程只读证据；新交接尚未接线，百分比阈值待讨论。

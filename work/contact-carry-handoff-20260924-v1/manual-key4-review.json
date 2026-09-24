@@ -1,0 +1,272 @@
+{
+  "schema": "manual_key4_stroke_review_v1",
+  "physics_steps_added": 0,
+  "inputs": {
+    "/home/qunwang/wajueji/work/contact-collection-progress-20260924-v5/catalog.json": "8f8df0d09050e30d63a9218e8eb01ced36605e92073ef04c04fc590b148d4fb0",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/model/A.xml": "959098bed4286ae5909858acb02a22eb8b9050ef2029ebe7d2c6a5f3d4d5e320",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/manual_key4_review.py": "6b48cc2d2cb3bf21f9b0e76c81f22e48dcd7036e126db3f080f5a28cf2d7c94b"
+  },
+  "event_semantics": "key 4 occurs after next_frame-1, before next_frame command; use actual after_state qpos[15]",
+  "effective_range_m": [
+    0.37,
+    0.852
+  ],
+  "physical_range_m": [
+    0.37,
+    0.86
+  ],
+  "calculation": "100*(actual_position-lower)/(upper-lower); no clipping; not bucket angle or fill",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "scoop_index": 1,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/report.json": "e77264fca11a97f4adc49cfc8e3a5a4f1da07bd2fe396ca525cc9da403d1b5c0",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/physics.ndjson": "c70649de29862ab53d645236496e1fc2ecb7dc9afb026d66bd7f2f59ba866f22",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/annotations.ndjson": "cca5e0b38e792565c524ee7f2058c4f2038fbdf1ca7206df66102534fdb553c2"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1241,
+          "simulation_seconds": 20.683333333333334,
+          "actual_bucket_cylinder_m": 0.8554391187724006,
+          "effective_stroke_percent": 100.71351011875534,
+          "physical_stroke_percent": 99.06920791273483,
+          "below_internal_upper_mm": -3.439118772400662,
+          "consecutive_at_least_95_percent_seconds": 11.3,
+          "last_3s_minimum_effective_percent": 100.39467757244552,
+          "last_3s_origin_rise_m": 0.4195899282238864
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "scoop_index": 1,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/report.json": "ab1872398f133d78662f4e127590dcec3b0111e7d08dae7aad911ce91b12dfff",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/physics.ndjson": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/annotations.ndjson": "eb42b40964377fb86215818b7230c06b62fa48598e218a716fa918bf0aff315d"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1274,
+          "simulation_seconds": 21.233333333333334,
+          "actual_bucket_cylinder_m": 0.8529619564650881,
+          "effective_stroke_percent": 100.19957603010128,
+          "physical_stroke_percent": 98.56366458471187,
+          "below_internal_upper_mm": -0.9619564650881207,
+          "consecutive_at_least_95_percent_seconds": 8.95,
+          "last_3s_minimum_effective_percent": 99.79937962112749,
+          "last_3s_origin_rise_m": 0.3410438793179331
+        },
+        {
+          "event_number": 2,
+          "frame_end": 1276,
+          "simulation_seconds": 21.266666666666666,
+          "actual_bucket_cylinder_m": 0.8529516017338409,
+          "effective_stroke_percent": 100.19742774561013,
+          "physical_stroke_percent": 98.56155137425324,
+          "below_internal_upper_mm": -0.9516017338409011,
+          "consecutive_at_least_95_percent_seconds": 8.983333333333333,
+          "last_3s_minimum_effective_percent": 99.81305248847998,
+          "last_3s_origin_rise_m": 0.33368438751328133
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "scoop_index": 2,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/report.json": "d879e2e5c26ceac1d5b9719a438145ee611531f502ae6e6f2c045be763056840",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/physics.ndjson": "6e312779d615577fff9e7122794da60d861ad39a95808ee7efb305297433b352",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/annotations.ndjson": "0f0e153c559b5020bbd583d9d99ae2d0b7ed5cd225fbac7b2ded377a77b3ea6a"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1671,
+          "simulation_seconds": 27.85,
+          "actual_bucket_cylinder_m": 0.8544871305447435,
+          "effective_stroke_percent": 100.5160021877061,
+          "physical_stroke_percent": 98.87492460096806,
+          "below_internal_upper_mm": -2.4871305447434766,
+          "consecutive_at_least_95_percent_seconds": 13.5,
+          "last_3s_minimum_effective_percent": 100.47242977634379,
+          "last_3s_origin_rise_m": 0.5496515930529862
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "scoop_index": 3,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/report.json": "8bbbf4d6f88cb28cd2e11f3b675bc7dc2389fe5d4ac21a1b3dd7ebb1641be3a3",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/physics.ndjson": "86ac472e165c254cdc5ebe6f7d4d946cf488de4c8460b2ca894b45c38da9cea0",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/annotations.ndjson": "6fc474af73c738c017ca74e19a10abad90331e00e0112c19605a32e558d2bf2d"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1197,
+          "simulation_seconds": 19.95,
+          "actual_bucket_cylinder_m": 0.8528548963156379,
+          "effective_stroke_percent": 100.17736438083776,
+          "physical_stroke_percent": 98.54181557461999,
+          "below_internal_upper_mm": -0.8548963156379541,
+          "consecutive_at_least_95_percent_seconds": 9.15,
+          "last_3s_minimum_effective_percent": 99.78193884367165,
+          "last_3s_origin_rise_m": 0.5041074747211867
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "scoop_index": 1,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/report.json": "f6b275b74de22e0f263d697e2ffba6ba11057155ed55d7305dbe367f73577e3f",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/physics.ndjson": "356cbbe7ad8d1ec43b9311882bd41854820001819be8f57283e7881c053d387a",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/annotations.ndjson": "1168e1476421dfc1c2cb043c8e2acfd8cf80c98ef3c35784788d00409b2b780c"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1084,
+          "simulation_seconds": 18.066666666666666,
+          "actual_bucket_cylinder_m": 0.8550336948472215,
+          "effective_stroke_percent": 100.6293972712078,
+          "physical_stroke_percent": 98.98646833616766,
+          "below_internal_upper_mm": -3.033694847221491,
+          "consecutive_at_least_95_percent_seconds": 9.233333333333333,
+          "last_3s_minimum_effective_percent": 99.82084644015377,
+          "last_3s_origin_rise_m": 0.6237853916998943
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "scoop_index": 2,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/report.json": "860450c62661c2af8a9b74e053869071a27ad9c1f5dff2583e61cf7e99611065",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/physics.ndjson": "eb07e497567e5820526870d6387d4e7587433ae3f974404732d4e4b78ec949d3",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/annotations.ndjson": "ecf022ad85bfcb6fc4ec12e99605de128478b447b68a813460e3cf401620a882"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1431,
+          "simulation_seconds": 23.85,
+          "actual_bucket_cylinder_m": 0.8509559242262904,
+          "effective_stroke_percent": 99.78338676893992,
+          "physical_stroke_percent": 98.15427025026335,
+          "below_internal_upper_mm": 1.044075773709574,
+          "consecutive_at_least_95_percent_seconds": 10.333333333333334,
+          "last_3s_minimum_effective_percent": 99.11561500085261,
+          "last_3s_origin_rise_m": 0.5566153980300568
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "scoop_index": 3,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/report.json": "4fd18b4bf1cc6ddd322e2bcee75cd09f4e642b529a48b3f32f8c986b2e38efc5",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/physics.ndjson": "0cb4129fbe3f5aad4580edf1ba7247e7e6301218cc46f69af5d094f542dbe849",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/annotations.ndjson": "b83a52f55c321fe12206f2e1ffc6c8dc2c5e5d614636c893f438a9ea8830c9b6"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1347,
+          "simulation_seconds": 22.45,
+          "actual_bucket_cylinder_m": 0.8528886395812184,
+          "effective_stroke_percent": 100.18436505834407,
+          "physical_stroke_percent": 98.54870195535071,
+          "below_internal_upper_mm": -0.8886395812184311,
+          "consecutive_at_least_95_percent_seconds": 9.9,
+          "last_3s_minimum_effective_percent": 99.93832719356477,
+          "last_3s_origin_rise_m": 0.5005292467838829
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "scoop_index": 1,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/report.json": "01b8f94deb7cf83deb751e0984b8f586507e24bacda6f1d866b5f59b8823fd7c",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/physics.ndjson": "e46a76619fbcc45508286b1f49e586fac4fe94813c9d4c0e2911b45a3b5c778f",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/annotations.ndjson": "a078fd16216b10448e94ee7d91e18bf74e1f638d6dc4fc1ae1a426666db77a0d"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1353,
+          "simulation_seconds": 22.55,
+          "actual_bucket_cylinder_m": 0.8545943820431704,
+          "effective_stroke_percent": 100.53825353592747,
+          "physical_stroke_percent": 98.89681266187151,
+          "below_internal_upper_mm": -2.594382043170418,
+          "consecutive_at_least_95_percent_seconds": 12.316666666666666,
+          "last_3s_minimum_effective_percent": 100.1817801363155,
+          "last_3s_origin_rise_m": 0.48044323047483006
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "scoop_index": 2,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/report.json": "d770fe9bd8b43012fd4b794814b00e90c931e2a164ead0f1a6e6611e843c0f09",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/physics.ndjson": "fe0717c631ba632a25e7adc55967ec242dee7c475700642cc2b45441296c0714",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/annotations.ndjson": "af8b4aa83f88dcf646f9c1a1065522cce21240446afdacad79f289a80397b9f1"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1620,
+          "simulation_seconds": 27.0,
+          "actual_bucket_cylinder_m": 0.8539874833452167,
+          "effective_stroke_percent": 100.41234094299101,
+          "physical_stroke_percent": 98.7729557847381,
+          "below_internal_upper_mm": -1.9874833452167007,
+          "consecutive_at_least_95_percent_seconds": 11.466666666666667,
+          "last_3s_minimum_effective_percent": 100.2266217416538,
+          "last_3s_origin_rise_m": 0.496119948830398
+        }
+      ]
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "scoop_index": 3,
+      "source_bindings": {
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/report.json": "24fefd820688feae3acdb2c252ec9606d68c1cae8ac9a82ce99d160b7d99bd5e",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/physics.ndjson": "1e963007d151251d39ed71e7a2cd4cbf04a54c642298f2e3890fa1faf49776f6",
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/annotations.ndjson": "a4f10b08e9cd10fcf43c5d5365201b6695e63d329008bbfd55a633624df5834f"
+      },
+      "key4_events": [
+        {
+          "event_number": 1,
+          "frame_end": 1407,
+          "simulation_seconds": 23.45,
+          "actual_bucket_cylinder_m": 0.8536862770268014,
+          "effective_stroke_percent": 100.34985000556047,
+          "physical_stroke_percent": 98.7114851075105,
+          "below_internal_upper_mm": -1.6862770268014637,
+          "consecutive_at_least_95_percent_seconds": 9.883333333333333,
+          "last_3s_minimum_effective_percent": 100.0952969852255,
+          "last_3s_origin_rise_m": 0.5124909537914009
+        }
+      ]
+    }
+  ],
+  "first_key4_effective_percent_min": 99.78338676893992,
+  "first_key4_effective_percent_max": 100.71351011875534,
+  "first_key4_mean_effective_percent": 100.35040463003712,
+  "limitations": [
+    "Original manual physics domain, not the new full-response interface.",
+    "User key 4 is an annotation, not proof of detachment, retention or successful unloading.",
+    "Net 3-second rise alone is not a sustained-rise test.",
+    "95 percent remains a proposed threshold, not validated by this read-only review."
+  ]
+}
