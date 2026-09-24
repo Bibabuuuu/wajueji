@@ -24,7 +24,7 @@
     "command_rate_per_s": 2.0
   },
   "schema": "contact_multisource_lift_protocol_v1",
-  "status": "zero_step_preparation_only_physical_budget_pending",
+  "status": "authorized_single_run_3000_frames_900_seconds",
   "source_sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
   "source_path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
   "source_scoop": "second",
@@ -211,5 +211,6 @@
       "path": "/home/qunwang/wajueji/work/contact-preview-lift-20260924-v1/continuous_preview.py",
       "sha256": "63256636a342b5fe5f2bb310aef1a5e99c6c72b41afe27aacd73b01dc9fe15e3"
     }
-  ]
+  ],
+  "authorization": "2026-09-24 user approved sequential first then second; first off-soil and audit required before second; no automatic reruns"
 }
