@@ -1,0 +1,43 @@
+{
+  "lineage_root": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a",
+  "scope": "Three completed manual contact episodes; explicit fast resets between scoops, not continuous three-scoop delivery or training admission.",
+  "episodes": [
+    {
+      "scoop": 1,
+      "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193",
+      "frames": 1132,
+      "recording_review_pass": true,
+      "final_fill_percent": 96.54352306960521,
+      "final_liters": 246.3450199257289,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/final-001132.cycle.npz",
+        "sha256": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a"
+      }
+    },
+    {
+      "scoop": 2,
+      "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079",
+      "frames": 1461,
+      "recording_review_pass": true,
+      "final_fill_percent": 89.22784208022831,
+      "final_liters": 227.6779822851095,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz",
+        "sha256": "31a12d6b3e4455d2d5085a8ffe476e1139df6a00c8f711ec70d308334e359261"
+      }
+    },
+    {
+      "scoop": 3,
+      "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831",
+      "frames": 1408,
+      "recording_review_pass": true,
+      "final_fill_percent": 108.77120659584591,
+      "final_liters": 277.54575557472253,
+      "snapshot": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/final-001408.cycle.npz",
+        "sha256": "e0005248c70bc3c45c099f6c1c1764e72866c7bb75149e325d518f91e4b7be52"
+      }
+    }
+  ],
+  "operator_retargeting_third_scoop": true
+}
