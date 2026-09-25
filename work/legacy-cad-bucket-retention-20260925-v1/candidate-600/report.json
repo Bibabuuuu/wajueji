@@ -1,0 +1,703 @@
+{
+  "schema": "legacy_cad_bucket_retention_report_v1",
+  "status": "candidate_rejected",
+  "protocol": {
+    "schema": "legacy_cad_bucket_retention_protocol_v1",
+    "frames": 600,
+    "simulation_seconds": 10.0,
+    "wall_limit_seconds": 420.0,
+    "source_checkpoint": {
+      "path": "/home/qunwang/wajueji/runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz",
+      "size_bytes": 53337302,
+      "mtime_ns": 1790170320704874244,
+      "sha256": "95808442d5f3d9c502e1d4cf24fc39276994afb53141becbf46b261bfbbf2e89"
+    },
+    "source_trace": "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/physics.ndjson",
+    "collision_candidate": {
+      "schema": "legacy_cad_bucket_collision_candidate_v1",
+      "is_solid": false,
+      "source_mesh_path": "/home/qunwang/codex-work/small-soil-20260910-v13-boundary/candidate06/scene/input/mesh/bucket.obj",
+      "source_mesh_sha256": "e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b",
+      "vertices": 3017,
+      "faces_count": 5922,
+      "boundary_edges": 80,
+      "nonmanifold_edges": 0,
+      "qualification": "isolated collision candidate; default proxy unchanged"
+    },
+    "moving_bucket_sweep_enabled": false,
+    "soil_material_changed": false,
+    "rocks_changed": false,
+    "commands_changed": false,
+    "truck_changed": false,
+    "default_runtime_changed": false,
+    "resume_qualified": false,
+    "training_eligible": false,
+    "bindings": {
+      "/home/qunwang/wajueji/runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz": "95808442d5f3d9c502e1d4cf24fc39276994afb53141becbf46b261bfbbf2e89",
+      "/home/qunwang/wajueji/runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz.json": "29a6d7247cd9ffa26ea9c12df3db8e903462494e04aaad4d50801cafe12d2f05",
+      "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/configs/v4/layered-47-excavation-preflight-v1.json": "888f99d27c373759c5cbfd6c03bc02fca8109a77345e409d17ba52c99e85f81c",
+      "/home/qunwang/wajueji/configs/v4/layered-47-truck-physics-v1.json": "5b8298a96e98284e203514b81e6bba760450f773050efd68d3df0359844b9fac",
+      "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/physics.ndjson": "c78f787581f946351430db19099e671f4567dd232b23d61fef2d99d20b7bfc3e",
+      "/home/qunwang/wajueji/work/legacy-cad-bucket-retention-20260925-v1/run_candidate.py": "0b6f80af47322d89ad24e89957d21e5f603610efcf477c4ab95b5cf38cb90949",
+      "/home/qunwang/wajueji/src/v4/run_layered_47_excavation_preflight.py": "122a81a4ed8e78c1c5c2395fd4a8272ebb943cd3af5fd4739790cac28d22359c",
+      "/home/qunwang/wajueji/src/v4/run_layered_sparse_resume_audit.py": "b8aa97c004f7a0fdb8ee48a53f479fa8b06b3dcd9893ce1d7bcc9790715fb958",
+      "/home/qunwang/wajueji/src/v4/legacy_cad_bucket_collision_candidate.py": "0897afc1542e954ae4aea32cd8e93d092510645d6b82898a8ab57315912369a3",
+      "/home/qunwang/wajueji/src/v4/soil_hencky_update_candidate.py": "7b58ede49369e28486b678dc77bd71d0a7b3003ccb9dbb0c3c19277b9944647a",
+      "/home/qunwang/codex-work/small-soil-20260910-v13-boundary/candidate06/scene/input/mesh/bucket.obj": "e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b"
+    },
+    "acceptance": {
+      "minimum_strict_volume_retention_fraction": 0.95,
+      "maximum_fill_loss_percentage_points": 5.0,
+      "all_hard_guards": true
+    }
+  },
+  "restore": {
+    "particles": {
+      "prefix_particle_count": 256441,
+      "fixture_particle_count": 256441,
+      "appended_particle_count": 0,
+      "field_readback_exact": {
+        "particle_q": true,
+        "particle_qd": true,
+        "particle_f": true,
+        "particle_elastic_strain": true,
+        "particle_transform": true,
+        "particle_qd_grad": true,
+        "particle_stress": true,
+        "particle_Jp": true,
+        "particle_flags": true
+      }
+    },
+    "solver": {
+      "grid_readback_exact": {
+        "solver_grid_transform": true,
+        "solver_grid_cell_ijk": true,
+        "solver_grid_node_ijk": true
+      },
+      "solver_field_readback_exact": {
+        "solver_ws_impulse": true,
+        "solver_ws_stress": true,
+        "solver_body_q_prev": true
+      }
+    },
+    "errors": {
+      "rigid_qpos": 0.0,
+      "rigid_qvel": 0.0,
+      "mechanism_qpos": 0.0,
+      "mechanism_qvel": 0.0,
+      "controller_target": 0.0,
+      "controller_target_velocity": 0.0,
+      "bucket_integral_effort": 0.0
+    },
+    "exact": true,
+    "runtime_build": {
+      "model": {
+        "base_capacity_model_manifest": {
+          "schema": "excavation_mixed_material_capacity_model_manifest_v1",
+          "status": "capacity_model_generated",
+          "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+          "source_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+          "model_sha256": "d99e38c19a34c3002ce0202ace81773c83b5be737f41a641d234e56a00e6f0fe",
+          "rock_count": 47,
+          "expected_nq": 348,
+          "expected_nv": 300,
+          "expected_nu": 12,
+          "stable_rock_ids": [
+            "r1-rock-000",
+            "r1-rock-001",
+            "r1-rock-002",
+            "r1-rock-003",
+            "r1-rock-004",
+            "r1-rock-005",
+            "r1-rock-006",
+            "r1-rock-007",
+            "r1-rock-008",
+            "r1-rock-009",
+            "r1-rock-010",
+            "r1-rock-011",
+            "r1-rock-012",
+            "r1-rock-013",
+            "r1-rock-014",
+            "r1-rock-015",
+            "r1-rock-016",
+            "r1-rock-017",
+            "r1-rock-018",
+            "r1-rock-019",
+            "r1-rock-020",
+            "r1-rock-021",
+            "r1-rock-022",
+            "r1-rock-023",
+            "r1-rock-024",
+            "r1-rock-025",
+            "r1-rock-026",
+            "r1-rock-027",
+            "r1-rock-028",
+            "r1-rock-029",
+            "r1-rock-030",
+            "r1-rock-031",
+            "r1-rock-032",
+            "r1-rock-033",
+            "r1-rock-034",
+            "r1-rock-035",
+            "r1-rock-036",
+            "r1-rock-037",
+            "r1-rock-038",
+            "r1-rock-039",
+            "r1-rock-040",
+            "r1-rock-041",
+            "r1-rock-042",
+            "r1-rock-043",
+            "r1-rock-044",
+            "r1-rock-045",
+            "r1-rock-046"
+          ],
+          "synthetic_positions_world_m": [
+            [
+              3.8875,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.0625,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.2375,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.4125,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.5875,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.7625,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.9375,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.1125,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.2875,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.4625,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.6375,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.8125,
+              -1.0125,
+              0.0875
+            ],
+            [
+              3.8875,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.0625,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.2375,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.4125,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.5875,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.7625,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.9375,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.1125,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.2875,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.4625,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.6375,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.8125,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              3.8875,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.0625,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.2375,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.4125,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.5875,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.7625,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.9375,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.1125,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.2875,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.4625,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.6375,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.8125,
+              -0.6625,
+              0.0875
+            ],
+            [
+              3.8875,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.0625,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.2375,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.4125,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.5875,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.7625,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.9375,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.1125,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.2875,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.4625,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.6375,
+              -0.48750000000000004,
+              0.0875
+            ]
+          ],
+          "geometry_only_capacity_fixture": true,
+          "formal_scene_qualified": false,
+          "physics_qualified": false
+        },
+        "model_sha256": "bf648a921a071be38235ae610a56f53e6b45096c7e53bf027921be158bc84201",
+        "rock_count": 47,
+        "model_resources": {
+          "offline_override_applied": false,
+          "absolute_repository_paths_rewritten": 2,
+          "external_files_checked": 76
+        },
+        "provisional_geometry_only_input": true,
+        "stable_scene_claimed": false,
+        "truck_physics_candidate": {
+          "fixture_count": 5,
+          "fixture_names": [
+            "r1_truck_floor",
+            "r1_truck_wall_x_positive",
+            "r1_truck_wall_x_negative",
+            "r1_truck_wall_y_negative",
+            "r1_truck_wall_y_positive"
+          ],
+          "rock_contact_bit": 256,
+          "truck_contact_bit": 2048,
+          "model_sha256": "bf648a921a071be38235ae610a56f53e6b45096c7e53bf027921be158bc84201",
+          "config_path": "/home/qunwang/wajueji/configs/v4/layered-47-truck-physics-v1.json",
+          "config_sha256": "5b8298a96e98284e203514b81e6bba760450f773050efd68d3df0359844b9fac",
+          "soil_owner": "newton",
+          "rock_owner": "mujoco",
+          "inventory_observer": "TruckReceiver"
+        }
+      },
+      "bridge": {
+        "schema": "excavation_mixed_material_capacity_bridge_manifest_v1",
+        "status": "capacity_bridge_source_generated",
+        "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+        "source_bridge_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+        "generated_source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684",
+        "minimum_rock_count": 1,
+        "maximum_rock_count": 1024,
+        "runtime_rock_count": true,
+        "maximum_external_wrench_count": "rock_count_plus_bucket",
+        "stable_named_wrench_routing": true,
+        "physics_qualified": false,
+        "formal_scene_qualified": false,
+        "optimized_inertia": {
+          "experiment": "exact_zero_tangent_projection_v1",
+          "baseline_header_sha256": "6c0f9e33faa839c38e1c026d63e052d3f6aed8bd517899a3997279ddad52fb11",
+          "candidate_header_sha256": "f3faf5fcc3416666faef0c8a084d1d9a2cd264806a0594dcd508a4f3d3c63b64",
+          "generator_sha256": "db350842f4ff81732d28acd300f3bfb4ad76ae0fde76dceb89987d3f0e0244cf",
+          "physics_frequency_changed": false,
+          "thresholds_changed": false,
+          "default_configuration_changed": false,
+          "training_eligible": false,
+          "drive_load_observation_only": true,
+          "external_load_compensation_applied": false,
+          "generated_bridge_sha256": "bf6f7665abdb27d98517c8c0d8baf066e6a79c38730b79411bedbcad499b1e83"
+        },
+        "bucket_integral_candidate": {
+          "enabled": true,
+          "default_enabled": false,
+          "version": "D120_conditional_integral_manual_pilot_v1",
+          "ki_N_per_m_s": 1500000,
+          "cap_N": 120000,
+          "slew_N_per_s": 30000,
+          "deadband_m": 0.0005,
+          "initial_effort_N": 0,
+          "activation": "from_first_step; growth_requires_active_bucket_command",
+          "neutral": "preserve_support; opposite_error_may_unwind",
+          "reverse": "D120_original; no_D121_forced_release",
+          "physical_hydraulic_limit": false,
+          "stopped_qualified": false,
+          "reverse_qualified": false,
+          "training_eligible": false,
+          "loaded_state_restore": true,
+          "loaded_state_restore_fields": [
+            "controller_target",
+            "controller_target_velocity",
+            "bucket_integral_effort[3]"
+          ],
+          "header_sha256": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+          "generated_bridge_sha256": "24526d47da033d27965aa63dd6576456d33f679bd997ac6618e219bfe4d4d465"
+        }
+      },
+      "command": [
+        "g++",
+        "-O2",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+        "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+        "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/include",
+        "/home/qunwang/wajueji/work/legacy-cad-bucket-retention-20260925-v1/candidate-600/runtime-build/capacity-bridge.cc",
+        "-L/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib",
+        "-Wl,-rpath,/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib",
+        "-l:libmujoco.so.2.3.8",
+        "-o",
+        "/home/qunwang/wajueji/work/legacy-cad-bucket-retention-20260925-v1/candidate-600/runtime-build/capacity-bridge"
+      ]
+    }
+  },
+  "collision_runtime": {
+    "mode": "legacy_cad_mesh_native_contact",
+    "geom_count": 1,
+    "solver_bucket_collider_count": 1,
+    "moving_bucket_sweep_enabled": false
+  },
+  "fill_samples": [
+    {
+      "frame": 0,
+      "sim_time_s": 0.0,
+      "valid_estimate": true,
+      "fill_percent": 103.16473759315046,
+      "liters": 263.2400240842088,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2793858429940883,
+      "display_only": true,
+      "initial_cavity_particles_retained": 6494,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 60,
+      "sim_time_s": 1.0,
+      "valid_estimate": true,
+      "fill_percent": 98.8330426510227,
+      "liters": 252.18706638282782,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.24024645698955283,
+      "display_only": true,
+      "initial_cavity_particles_retained": 6153,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 120,
+      "sim_time_s": 2.0,
+      "valid_estimate": true,
+      "fill_percent": 91.88203583320121,
+      "liters": 234.4505486072588,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.20153885299805552,
+      "display_only": true,
+      "initial_cavity_particles_retained": 5675,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 180,
+      "sim_time_s": 3.0,
+      "valid_estimate": true,
+      "fill_percent": 83.25669890597749,
+      "liters": 212.44173092954549,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.18471489401417784,
+      "display_only": true,
+      "initial_cavity_particles_retained": 4955,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 240,
+      "sim_time_s": 4.0,
+      "valid_estimate": true,
+      "fill_percent": 75.39242111939114,
+      "liters": 192.37486775280684,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17449841799680144,
+      "display_only": true,
+      "initial_cavity_particles_retained": 4279,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 300,
+      "sim_time_s": 5.0,
+      "valid_estimate": true,
+      "fill_percent": 68.02600285397178,
+      "liters": 173.57836647878915,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17477962697739713,
+      "display_only": true,
+      "initial_cavity_particles_retained": 3704,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 360,
+      "sim_time_s": 6.0,
+      "valid_estimate": true,
+      "fill_percent": 62.85714285714286,
+      "liters": 160.38925882633595,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17460104599012993,
+      "display_only": true,
+      "initial_cavity_particles_retained": 3162,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 420,
+      "sim_time_s": 7.0,
+      "valid_estimate": true,
+      "fill_percent": 58.50959251625179,
+      "liters": 149.29584373951795,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.16786064000916667,
+      "display_only": true,
+      "initial_cavity_particles_retained": 2651,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 480,
+      "sim_time_s": 8.0,
+      "valid_estimate": true,
+      "fill_percent": 53.283653083875066,
+      "liters": 135.96108949949164,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.1729414809960872,
+      "display_only": true,
+      "initial_cavity_particles_retained": 2120,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 540,
+      "sim_time_s": 9.0,
+      "valid_estimate": true,
+      "fill_percent": 50.79118439828762,
+      "liters": 129.60118850879945,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.16733393000322394,
+      "display_only": true,
+      "initial_cavity_particles_retained": 3750,
+      "initial_cavity_particle_count": 6494
+    },
+    {
+      "frame": 600,
+      "sim_time_s": 10.0,
+      "valid_estimate": true,
+      "fill_percent": 48.00380529570319,
+      "liters": 122.4887801489796,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17243475900613703,
+      "display_only": true,
+      "initial_cavity_particles_retained": 4481,
+      "initial_cavity_particle_count": 6494
+    }
+  ],
+  "terminal": {
+    "path": "/home/qunwang/wajueji/work/legacy-cad-bucket-retention-20260925-v1/candidate-600/terminal-000600.npz",
+    "size_bytes": 27206566,
+    "mtime_ns": 1790322210690526251,
+    "sha256": "6b4de95d7ef4ae3c16194417e497eba6104d4771b4e490cee4a204985d67e7f1",
+    "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+    "status": "rejected_raw_diagnostic_only",
+    "rejection": "legacy CAD collision candidate only; not a qualified resume point",
+    "resume_qualified": false,
+    "training_eligible": false,
+    "nonfinite_fields": {}
+  },
+  "strict_volume_retention_fraction": 0.46531214459164544,
+  "fill_loss_percentage_points": 55.160932297447275,
+  "checks": {
+    "all_requested_frames_executed": true,
+    "all_hard_guards_passed": true,
+    "all_material_guards_passed": true,
+    "all_fill_samples_valid": true,
+    "strict_volume_retention_at_least_95_percent": false,
+    "fill_loss_no_more_than_5_percentage_points": false,
+    "source_checkpoint_unchanged": true,
+    "bindings_unchanged": true
+  },
+  "frames": 600,
+  "wall_seconds": 101.81345090002287
+}

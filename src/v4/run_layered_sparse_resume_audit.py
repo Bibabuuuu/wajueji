@@ -44,7 +44,8 @@ def validate_seed_audit(audit, report_path, source, before, rocks, hz,
 
 def restore_candidate_runtime(args, base, root, records, arrays, proxy,
                               solver_profile, work, controller_state=None,
-                              static_fixtures=None):
+                              static_fixtures=None,
+                              bucket_collision_geometry=None):
     model, binary, mm, bm, command = probe.bench.build_model_and_bridge(args, root,
         root / base['capacity_bridge']['config_path'],
         probe.bench.records_at_qpos(records, arrays['rigid_qpos']), work, 'audit')
@@ -54,7 +55,8 @@ def restore_candidate_runtime(args, base, root, records, arrays, proxy,
     try:
         fixture = probe.p47.ExcavationFixture(base, root, records, arrays['grid_reference_particle_q'],
             proxy, bridge.state, args.device, solver_profile=solver_profile,
-            static_fixtures=static_fixtures)
+            static_fixtures=static_fixtures,
+            bucket_collision_geometry=bucket_collision_geometry)
         fields = probe.bench.restore_fixture_prefix(fixture, arrays)
         fixture.solver.notify_model_changed(newton.ModelFlags.MODEL_PROPERTIES)
         fixture.assign(bridge.state)

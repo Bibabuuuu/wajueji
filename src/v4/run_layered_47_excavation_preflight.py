@@ -378,7 +378,8 @@ class ExcavationFixture:
     def __init__(self, config: dict, repository: Path, records: list[dict],
                  particle_q: np.ndarray, proxy: dict, initial_state: dict,
                  device: str, solver_profile: dict | None = None,
-                 static_fixtures: list[dict] | None = None):
+                 static_fixtures: list[dict] | None = None,
+                 bucket_collision_geometry: dict | None = None):
         self.records = records
         self.ids = [f"r1-rock-{index:03d}" for index in range(len(records))]
         self.device = device
@@ -419,30 +420,63 @@ class ExcavationFixture:
         bucket_cfg = newton.ModelBuilder.ShapeConfig(
             density=0.0, mu=float(material["friction"]),
             has_particle_collision=True)
-        for box in proxy["shell_boxes"] + proxy["tooth_boxes"]:
-            quaternion = box["quaternion_wxyz"]
-            collider.add_shape_box(
-                self.bucket_body_index,
-                xform=wp.transform(
-                    wp.vec3(*[float(value) for value in box["position_bucket_m"]]),
-                    wp.quat(float(quaternion[1]), float(quaternion[2]),
-                            float(quaternion[3]), float(quaternion[0]))),
-                hx=float(box["half_size_m"][0]),
-                hy=float(box["half_size_m"][1]),
-                hz=float(box["half_size_m"][2]), cfg=bucket_cfg,
-                label="excavation_" + box["name"])
         self.bucket_side_winding_audit = []
-        for side in proxy["side_plate_meshes"]:
-            faces, winding_audit = outward_side_plate_faces(side)
-            self.bucket_side_winding_audit.append(winding_audit)
+        if bucket_collision_geometry is None:
+            self.bucket_collision_mode = "open_proxy_18_part"
+            self.bucket_collision_geom_count = int(proxy["geom_count"])
+            for box in proxy["shell_boxes"] + proxy["tooth_boxes"]:
+                quaternion = box["quaternion_wxyz"]
+                collider.add_shape_box(
+                    self.bucket_body_index,
+                    xform=wp.transform(
+                        wp.vec3(*[float(value) for value in box["position_bucket_m"]]),
+                        wp.quat(float(quaternion[1]), float(quaternion[2]),
+                                float(quaternion[3]), float(quaternion[0]))),
+                    hx=float(box["half_size_m"][0]),
+                    hy=float(box["half_size_m"][1]),
+                    hz=float(box["half_size_m"][2]), cfg=bucket_cfg,
+                    label="excavation_" + box["name"])
+            for side in proxy["side_plate_meshes"]:
+                faces, winding_audit = outward_side_plate_faces(side)
+                self.bucket_side_winding_audit.append(winding_audit)
+                collider.add_shape_mesh(
+                    self.bucket_body_index,
+                    mesh=newton.Mesh(
+                        np.asarray(side["vertices_bucket_m"], dtype=np.float32),
+                        faces.reshape(-1),
+                        compute_inertia=False, is_solid=True),
+                    scale=wp.vec3(1.0), cfg=bucket_cfg,
+                    label="excavation_" + side["name"])
+        else:
+            geometry = bucket_collision_geometry
+            vertices = np.asarray(geometry.get("vertices_bucket_m"), dtype=np.float64)
+            raw_faces = np.asarray(geometry.get("faces"))
+            if (geometry.get("schema") != "legacy_cad_bucket_collision_candidate_v1"
+                    or geometry.get("is_solid") is not False
+                    or vertices.ndim != 2 or vertices.shape[1] != 3
+                    or not np.isfinite(vertices).all()
+                    or raw_faces.ndim != 2 or raw_faces.shape[1] != 3
+                    or raw_faces.dtype.kind not in "iu" or not raw_faces.size
+                    or raw_faces.min() < 0 or raw_faces.max() >= len(vertices)):
+                raise ValueError("invalid_legacy_cad_bucket_collision_geometry")
+            faces = raw_faces.astype(np.int32, copy=False)
+            self.bucket_collision_mode = "legacy_cad_mesh_native_contact"
+            self.bucket_collision_geom_count = 1
             collider.add_shape_mesh(
                 self.bucket_body_index,
                 mesh=newton.Mesh(
-                    np.asarray(side["vertices_bucket_m"], dtype=np.float32),
+                    vertices.astype(np.float32),
                     faces.reshape(-1),
-                    compute_inertia=False, is_solid=True),
+                    compute_inertia=False, is_solid=False),
                 scale=wp.vec3(1.0), cfg=bucket_cfg,
-                label="excavation_" + side["name"])
+                label="excavation_bucket_legacy_cad")
+            self.bucket_side_winding_audit.append({
+                "policy": "legacy_open_cad_mesh_preserve_source_winding",
+                "source_mesh_path": str(geometry.get("source_mesh_path", "")),
+                "source_mesh_sha256": str(geometry.get("source_mesh_sha256", "")),
+                "vertices": int(len(vertices)), "faces": int(len(faces)),
+                "boundary_edges": int(geometry.get("boundary_edges", -1)),
+            })
         self.truck_shape_indices = {}
         for fixture in static_fixtures or []:
             if (fixture.get("contact_role") != "truck_receiver"

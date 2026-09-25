@@ -1,50 +1,44 @@
-# 跨会话交接：第二铲检查完成，夜间双起点挖掘优化
+# 跨会话交接：手动三铲保载异常与旧CAD候选拒绝
 
 ## 开始顺序
 
-先读AGENTS.md、总体规划、当前状态、要求、七个活动小节，再读本文件。核对实际分支/HEAD/进程；唯一仓库`/home/qunwang/wajueji`，分支`codex/contact-bc-collection-20260924`。本轮开始HEAD为`86367e4`，不能据此猜下一次实际HEAD。不要覆盖无关未跟踪产物。
+先读`AGENTS.md`、总体规划、当前状态、要求、七个活动小节，再读本文件。核对实际分支、HEAD和进程；唯一仓库为`/home/qunwang/wajueji`，目标分支`codex/contact-bc-collection-20260924`。本交接写入时起始HEAD为`bdf293d0bf84547cc8785fea6b00bd35f5ad6978`，不能据此猜下一次实际HEAD。工作树存在大量历史运行产物及用户并行修改，不得重置、清理或覆盖。
 
-动态事实以[CURRENT_STATUS](CURRENT_STATUS.md)为准。第二铲卸料/127项审核和入口短检均已完成，原结果冻结。D-163新双源参数搜索代码/16项CPU检查已完成，03:58:18已由systemd后台启动，最迟11:56:16截止（Asia/Shanghai）；实际启动/退出时间看`runs/night-dual-search-20260925-v1/{launch,batch}.json`。用户要求不盯跑；automation-2保持暂停。
+## 当前结论
 
-## 用户已确认的范围
+用户手动三铲运行已正常结束并保存：`runs/layered-47-sparse-manual-contact-v1/manual-contact-20260925-143841-2474275`，8122帧、135.37仿真秒、`user_finished`，完整显示缓存约24GB。录屏为`/home/qunwang/Videos/Screencasts/Screencast from 2026-09-25 15-12-40.webm`。当前没有物理、训练或回放进程。
 
-今晚完成第二铲卸料，不回位、不第三铲；持续运行自动保存，完成或保护退出后统一检查，不自动重跑。直接恢复保存点。10mm累计回落仅限FINISH_CURL，其他阶段不受此新增门限制。原物理保护、原始示范和冻结证据不改。
+录屏及严格量测均显示闭斗运输时土体有效体积异常下降：第一铲1080→1680帧103.16%→29.91%，第二铲4200→4800帧58.9%→15.3%，第三铲6840→7560帧74.1%→39.4%。这不是简单的斗壳漏土：第一铲1080帧宽松斗腔内8879个原粒子，到1680帧仍全部留在宽松斗腔，另有3064个进入；原粒子斗局部位移中位数0.310m、P99 0.558m。D133满斗点600帧对照也保留全部6494个原粒子，但2cm占据格5156→2225、单格最大粒子数8→71。当前可靠结论是粒子在斗内异常聚团/重排，使严格占据体积塌缩。
 
-夜间本机约8h，优先满斗率改善：继续参数优化，不更新神经网络权重；当前D152物理，不合入多接触点候选。第一/第二固定预备点成对试验。已知动作保护失败淘汰候选后继续；未知/数值/恢复/保存/基线异常停整批。原失败物理立即结束，下一候选恢复原预备点，不改阈值、不自动重试。普通候选到CLEAR_PILE，最佳双源独立复验接固定卸料；六组候选池按剩余预算截断，预留7200秒复验。详见[S05](plans/S05-imitation-and-rl.md)和[运行包](../work/night-dual-search-20260925-v1/README.md)。
+D-164按用户授权完成一次旧纯土同源开放CAD碰撞候选。零步6项检查通过；唯一600帧/10秒候选用时101.813秒并正常结束，硬门、材料门、来源和绑定全过，严格满斗率103.1647%→48.0038%。同一指令的现有代理无D133为51.0607%，代理＋D133为52.3482%；旧CAD没有改善且略差，候选已拒绝，默认18件代理＋D133保持不变，不自动重跑。证据在`work/legacy-cad-bucket-retention-20260925-v1/`。
 
-专项任务`01a0d459-acca-70d3-b21f-a69d646ddece`讨论满斗、晃动、视觉穿模；交接`work/user-three-issues-discussion-20260925-v1/README.md`，未经充分讨论不扩大修复。
+旧纯土`contact-3cycle-v1`报告中的99.64%/100%只证明静止HOLD质量保持，不能证明TURN/ALIGN时严格体积保持。先前“旧纯土运输没有问题”的概括过强，现已在状态、验收和决策中纠正。
 
-## 正确输入与结果
+## 实现与证据
 
-| 用途 | 仓库相对路径 | SHA256 |
-| --- | --- | --- |
-| 真实第二铲预备点 | runs/contact-next-prepoint-20260925-v1/physical/prepoint.npz | ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e |
-| 第二铲2725帧正常接触末态 | runs/contact-next-scoop-20260925-v1/candidate/final.npz | a006213a953947eabd73f975af29dc388fa4ed9dbd3307dc66abf491eec86c1f |
-| v4补收439帧正常交接点 | runs/contact-second-finish-unload-20260925-v4/physical/handoff.npz | f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d |
-| 阶段BC权重 | runs/contact-phase-bc-pilot-v1/pilot.pt | b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095 |
+本轮新增隔离接口，不改变默认调用行为：
 
-旧v4交接后规划报cycle_observation_grid_budget，正常handoff已由D162恢复并完成卸料；127项完整审核已通过，不需重做前缀或恢复。原failure仍保留。最终固定路线快照SHA `620b50d6d69fa2d6c036c8f500284265ffab1978cc4506df655fe7c69179f7a9`。
+- `src/v4/legacy_cad_bucket_collision_candidate.py`：从原CAD提取3017顶点、5922面的开放斗网格；80条边界边、0非流形边，网格SHA256 `e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b`。
+- `src/v4/run_layered_47_excavation_preflight.py`：`ExcavationFixture`增加显式可选碰撞几何参数；缺省路径逐字保持现有18件代理。
+- `src/v4/run_layered_sparse_resume_audit.py`：仅向隔离候选转交上述可选参数。
+- `tests/test_legacy_cad_bucket_collision_candidate.py`：候选几何及默认路径不变检查。
+- `work/legacy-cad-bucket-retention-20260925-v1/{README.md,comparison.json,analysis.json}`：结论、逐秒三路对照及粒子身份/聚团摘要。
 
-远土粒使原密集观察网格超预算的[诊断](../work/night-parameter-search-20260925-v1/baseline-observation-review.json)冻结。用户不再调查飞散、不删物料；D162固定运输已去掉全场土粒地图依赖，静态车体/地面/限位/保斗及物理碰撞保留。下一铲选点仍观察余土。
+候选终点诊断本机路径为`work/legacy-cad-bucket-retention-20260925-v1/candidate-600/terminal-000600.npz`，SHA256 `6b4de95d7ef4ae3c16194417e497eba6104d4771b4e490cee4a204985d67e7f1`；它是被拒诊断，不可恢复或训练。大体积NPZ、trace、编译目录不入Git。
 
-## 已完成审核与下一道门
+CAD候选累计2,415,749次投影粒子校正，单帧最多6459次，单次最大位置校正0.174289m、速度校正6.139m/s，粒子峰速7.238m/s。最大位置校正接近10cm稀疏网格的`sqrt(3)*0.1m`查询尺度。这是后续数值链线索，不是已证明的唯一根因。
 
-当前v2及尾段代码已冻结，12项CPU检查通过。统一contact/carry/tail审核均通过，127项；三段6562帧缓存SHA和边界通过。审核在`work/contact-second-fixed-route-review-20260925-v1/`，无需重做。原v4规划失败标签仍保留。
+## 下一道门
 
-`batch.py --check-only`已运行一次：基线工作满斗率30.21405%；全1倍率120帧、24数组及末态NPZ SHA与原gate-120完全一致。证据`work/night-parameter-search-20260925-v2/short-check-review.json`、`runs/night-parameter-search-20260925-v2/precheck.json`。没有batch.json或任何候选。不要重新prepare或重跑短检；当前同版本--run具备SHA验证后复用能力，扣除66.631579秒。
+不要继续改斗壳、重跑CAD或删除粒子。新的物理路线属于关键选择，需先与用户讨论：
 
-用户最新双起点方向：第一源`runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz`，SHA `700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545`，schema为layered_47_cycle_checkpoint_v1、cycle1、truck_enabled=false；120帧参考`runs/contact-multisource-lift-20260924-v1/first-candidate/gate-120.npz`，SHA `b05c0ecd5fb38ee3e65e154057d093568874ee02dedc54fa80af71e5b042ed09`。第二源见上表。
+1. 优先做逐碰撞体`project_outside`归属/校正隔离，直接回答大幅投影是否促成聚团，改动面较大但因果更清楚；或
+2. 先做同满斗点的5cm网格、250迭代短对照，接近早期纯土数值配置，成本显著更高且同时改变两个因素。
 
-双源入口准备位于`work/night-dual-start-preparation-20260925-v2/`（注意区别于night-parameter-search-v2）。10项CPU通过；第一源零步复用已通过的v1，120帧37.547386秒、24数组/末态SHA与旧参考完全一致。第二源通过sources.second_evidence复核完整v2 manifest/precheck绑定，执行链未改，不重新跑120。结果见result-review.json。v1参数门拒绝发生在任何物理之前，保留日志；v2只将独立循环帧允许值改0/120、墙时收紧180秒，其余逐字一致。不要重跑两个短检，不改绑定*.py。
+无论选择哪条，先冻结单次帧数、墙钟、严格体积/身份/占据格指标及失败停止条件；不得用宽松斗腔身份数冒充满斗率。当前未授权这两条中的任何物理运行。
 
-D-163已收口当前物理：不合入专项新接口。新双源代码16项CPU检查及两源/尾段加载检查通过，实际完整基线先跑，前120帧嵌入旧参考数组一致性门；没有额外独立短检。第一源仍保留cycle1/无truck接触历史，尾段按既有流程加入truck；第二源保留真实cycle2控制/材料历史，不通过改标签统一状态。
+用户另外指出的三个动作问题继续保留：收斗阶段铲斗过早上移、铲根未贴住土堆；图三机构/铲斗振荡；图四视觉上疑似穿模。此前已交专项任务讨论，D-164只处理闭斗保载异常，没有修改这三项控制问题。
 
-不要重复启动；下一步只在用户请求时查看`wajueji-dual-search-20260925-v1.service`及batch.json。运行中严禁编辑绑定代码或重新prepare；结束只读统一比较baseline、trials、rejections、confirmation和best。不自动恢复停止的批次。候选池六组不保证全部执行；8h含既有检查121.096636秒，留最佳双源复验。没有实证改善就明确保留基线。
+## 检查与提交边界
 
-## 环境与便宜检查
-
-物理Python `/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python`；策略Python `/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python`。`PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src/v4:. OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1`，仓库根目录运行。本机RTX4070，策略/MPM60Hz、刚体4800Hz，未改变。
-
-可以只读核对`preflight.py`；不要重绑已完成短检的manifest。preflight是只读准备检查；实际物理资格看short-check-review.json。文档检查`python3 scripts/check_docs.py`及`git diff --check`。禁止执行旧冻结run覆盖结果，禁止用旧审核替代新候选。
-
-完整第二铲回放manifest为`work/contact-second-fixed-route-review-20260925-v1/second-replay.json`，6562帧。可以使用原view.py另建输出目录观看，播放零物理；旧失败段缓存不能替代完整结果，不控制或关闭用户原窗口。
+提交前运行候选单测、相关恢复/默认接口测试、`python3 scripts/check_docs.py`和`git diff --check`。只暂存本轮明确文件；不要把既存的`audit_layered_47_cycle.py`、人工采集器、`soil_surface.py`、viewer修改或大量未跟踪运行产物混入提交。阶段结果按用户要求提交并推送到当前分支。

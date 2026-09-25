@@ -1,0 +1,42 @@
+{
+  "schema": "legacy_cad_bucket_retention_artifact_manifest_v1",
+  "status": "candidate_rejected",
+  "artifacts": [
+    {
+      "path": "work/legacy-cad-bucket-retention-20260925-v1/preflight/report.json",
+      "bytes": 17501,
+      "sha256": "c1602f3ae31c1d357569889b9843866386f9079af3194a069d0c0021a606bbdf",
+      "git_policy": "committed_summary"
+    },
+    {
+      "path": "work/legacy-cad-bucket-retention-20260925-v1/candidate-600/report.json",
+      "bytes": 23744,
+      "sha256": "37cf45be99206d6843a98090e34bb583f23b2011aeff7180d9a6ab57947f1a09",
+      "git_policy": "committed_summary"
+    },
+    {
+      "path": "work/legacy-cad-bucket-retention-20260925-v1/candidate-600/trace.ndjson",
+      "bytes": 825541,
+      "sha256": "4fea9107f992e5158c4515677bfc1425b38b98edfe07f11118b441ad060a4dbc",
+      "git_policy": "local_frozen_output"
+    },
+    {
+      "path": "work/legacy-cad-bucket-retention-20260925-v1/candidate-600/terminal-000600.npz",
+      "bytes": 27206566,
+      "sha256": "6b4de95d7ef4ae3c16194417e497eba6104d4771b4e490cee4a204985d67e7f1",
+      "git_policy": "local_frozen_output"
+    },
+    {
+      "path": "work/legacy-cad-bucket-retention-20260925-v1/comparison.json",
+      "bytes": 2643,
+      "sha256": "82498e4203bb8bfcbfaa38dd799fb67280bea41333077fd4882632689a78cfba",
+      "git_policy": "small_summary"
+    },
+    {
+      "path": "work/legacy-cad-bucket-retention-20260925-v1/analysis.json",
+      "bytes": 2331,
+      "sha256": "4b67f862dd17bba2c45c9b988f005c54051edd14355d30f640ad1150cc494e9c",
+      "git_policy": "small_summary"
+    }
+  ]
+}

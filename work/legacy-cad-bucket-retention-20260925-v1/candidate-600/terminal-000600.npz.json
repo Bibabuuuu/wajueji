@@ -1,0 +1,12 @@
+{
+  "path": "/home/qunwang/wajueji/work/legacy-cad-bucket-retention-20260925-v1/candidate-600/terminal-000600.npz",
+  "size_bytes": 27206566,
+  "mtime_ns": 1790322210690526251,
+  "sha256": "6b4de95d7ef4ae3c16194417e497eba6104d4771b4e490cee4a204985d67e7f1",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "legacy CAD collision candidate only; not a qualified resume point",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {}
+}
