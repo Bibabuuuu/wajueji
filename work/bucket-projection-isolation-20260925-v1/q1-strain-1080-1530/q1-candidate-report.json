@@ -1,0 +1,615 @@
+{
+  "status": "bounded_q1_candidate_passed",
+  "candidate": "Q1_strain_basis_only",
+  "source": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-continuation-1620/state-001080.npz",
+  "source_sha256": "c2c03dfc67e5b9edd9e835d66c4109a6f25d3b50df9e141f5e7f56d8760a113f",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "start_frame": 1080,
+  "end_frame_limit": 1530,
+  "wall_limit_seconds": 180,
+  "baseline": "P0_origin_and_timing_fixed",
+  "numerical_warmstart_rebuilt": true,
+  "default_profile_changed": false,
+  "training_eligible": false,
+  "rows": [
+    {
+      "frame": 1081,
+      "occupied_2cm_cells": 9339,
+      "maximum_particles_per_cell": 18,
+      "negative_side_2cm_count": 418,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 0.004675030708312988,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 2513,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1200,
+      "occupied_2cm_cells": 8354,
+      "maximum_particles_per_cell": 26,
+      "negative_side_2cm_count": 516,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 2.0142409801483154,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 2407,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1400,
+      "occupied_2cm_cells": 7100,
+      "maximum_particles_per_cell": 24,
+      "negative_side_2cm_count": 568,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.142892837524414,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 1767,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1490,
+      "occupied_2cm_cells": 6670,
+      "maximum_particles_per_cell": 22,
+      "negative_side_2cm_count": 565,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.157893657684326,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 2128,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1500,
+      "occupied_2cm_cells": 6605,
+      "maximum_particles_per_cell": 22,
+      "negative_side_2cm_count": 568,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.166541814804077,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 1976,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1510,
+      "occupied_2cm_cells": 6411,
+      "maximum_particles_per_cell": 34,
+      "negative_side_2cm_count": 605,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.1630327701568604,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 2327,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1520,
+      "occupied_2cm_cells": 6157,
+      "maximum_particles_per_cell": 41,
+      "negative_side_2cm_count": 647,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.1495015621185303,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 2455,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1530,
+      "occupied_2cm_cells": 5909,
+      "maximum_particles_per_cell": 49,
+      "negative_side_2cm_count": 742,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.143678665161133,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "native_projection_corrected": 2155,
+      "sweep_safe": true
+    }
+  ],
+  "command_changes": [],
+  "restore": {
+    "physical_arrays_exact": true,
+    "native_errors": {
+      "mechanism_qpos": 0.0,
+      "mechanism_qvel": 0.0,
+      "rigid_qpos": 0.0,
+      "rigid_qvel": 0.0
+    },
+    "solver_profile": {
+      "collider_basis": "S2",
+      "collider_velocity_mode": "forward",
+      "critical_fraction": 0.0,
+      "grid_padding": 2,
+      "grid_type": "sparse",
+      "integration_scheme": "pic",
+      "max_active_cell_count": 262144,
+      "max_iterations": 50,
+      "strain_basis": "Q1",
+      "tolerance": 0.0001,
+      "transfer_scheme": "pic",
+      "velocity_basis": "Q1",
+      "voxel_size_m": 0.1
+    },
+    "solver_warmstart": "rebuilt_for_Q1",
+    "exact_old_solver_continuation": false,
+    "particle_material_history_preserved": true,
+    "runtime_build": {
+      "model": {
+        "base_capacity_model_manifest": {
+          "schema": "excavation_mixed_material_capacity_model_manifest_v1",
+          "status": "capacity_model_generated",
+          "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+          "source_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+          "model_sha256": "d99e38c19a34c3002ce0202ace81773c83b5be737f41a641d234e56a00e6f0fe",
+          "rock_count": 47,
+          "expected_nq": 348,
+          "expected_nv": 300,
+          "expected_nu": 12,
+          "stable_rock_ids": [
+            "r1-rock-000",
+            "r1-rock-001",
+            "r1-rock-002",
+            "r1-rock-003",
+            "r1-rock-004",
+            "r1-rock-005",
+            "r1-rock-006",
+            "r1-rock-007",
+            "r1-rock-008",
+            "r1-rock-009",
+            "r1-rock-010",
+            "r1-rock-011",
+            "r1-rock-012",
+            "r1-rock-013",
+            "r1-rock-014",
+            "r1-rock-015",
+            "r1-rock-016",
+            "r1-rock-017",
+            "r1-rock-018",
+            "r1-rock-019",
+            "r1-rock-020",
+            "r1-rock-021",
+            "r1-rock-022",
+            "r1-rock-023",
+            "r1-rock-024",
+            "r1-rock-025",
+            "r1-rock-026",
+            "r1-rock-027",
+            "r1-rock-028",
+            "r1-rock-029",
+            "r1-rock-030",
+            "r1-rock-031",
+            "r1-rock-032",
+            "r1-rock-033",
+            "r1-rock-034",
+            "r1-rock-035",
+            "r1-rock-036",
+            "r1-rock-037",
+            "r1-rock-038",
+            "r1-rock-039",
+            "r1-rock-040",
+            "r1-rock-041",
+            "r1-rock-042",
+            "r1-rock-043",
+            "r1-rock-044",
+            "r1-rock-045",
+            "r1-rock-046"
+          ],
+          "synthetic_positions_world_m": [
+            [
+              3.8875,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.0625,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.2375,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.4125,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.5875,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.7625,
+              -1.0125,
+              0.0875
+            ],
+            [
+              4.9375,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.1125,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.2875,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.4625,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.6375,
+              -1.0125,
+              0.0875
+            ],
+            [
+              5.8125,
+              -1.0125,
+              0.0875
+            ],
+            [
+              3.8875,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.0625,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.2375,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.4125,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.5875,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.7625,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              4.9375,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.1125,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.2875,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.4625,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.6375,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              5.8125,
+              -0.8374999999999999,
+              0.0875
+            ],
+            [
+              3.8875,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.0625,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.2375,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.4125,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.5875,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.7625,
+              -0.6625,
+              0.0875
+            ],
+            [
+              4.9375,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.1125,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.2875,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.4625,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.6375,
+              -0.6625,
+              0.0875
+            ],
+            [
+              5.8125,
+              -0.6625,
+              0.0875
+            ],
+            [
+              3.8875,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.0625,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.2375,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.4125,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.5875,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.7625,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              4.9375,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.1125,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.2875,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.4625,
+              -0.48750000000000004,
+              0.0875
+            ],
+            [
+              5.6375,
+              -0.48750000000000004,
+              0.0875
+            ]
+          ],
+          "geometry_only_capacity_fixture": true,
+          "formal_scene_qualified": false,
+          "physics_qualified": false
+        },
+        "model_sha256": "c98a0ecb47416cd8f32d25a82f6f62b849b6b31da707cc7ce9c3f1969d241233",
+        "rock_count": 47,
+        "model_resources": {
+          "offline_override_applied": true,
+          "absolute_repository_paths_rewritten": 2,
+          "external_files_checked": 76
+        },
+        "provisional_geometry_only_input": true,
+        "stable_scene_claimed": false,
+        "legacy_push_shelf_cleanup": {
+          "enabled": true,
+          "removed_geoms": [
+            {
+              "name": "r1_ground_push_shelf",
+              "type": "box",
+              "pos": "5.1299999999999999 0.65000000000000002 2.8599999999999999",
+              "quat": "1 0 0 0",
+              "size": "0.59999999999999998 0.55000000000000004 0.029999999999999999",
+              "friction": "0.80000000000000004 0.0050000000000000001 0.0001",
+              "rgba": "0.35 0.35 0.35 1",
+              "contype": "1024",
+              "conaffinity": "256"
+            }
+          ],
+          "removed_count": 1,
+          "geometry_name": "r1_ground_push_shelf",
+          "generated_model_before_sha256": "9aa5f9bf7eb3ec042f844e010e8d3cf1ecec64ae743f320137616702d707b8be",
+          "generated_model_after_sha256": "fb4824211676daaa6d2eb15b1a80e7f75cefbf5653656e8824f75a175132c432",
+          "collision_guards_changed": false
+        },
+        "truck_physics_candidate": {
+          "fixture_count": 5,
+          "fixture_names": [
+            "r1_truck_floor",
+            "r1_truck_wall_x_positive",
+            "r1_truck_wall_x_negative",
+            "r1_truck_wall_y_negative",
+            "r1_truck_wall_y_positive"
+          ],
+          "rock_contact_bit": 256,
+          "truck_contact_bit": 2048,
+          "model_sha256": "c98a0ecb47416cd8f32d25a82f6f62b849b6b31da707cc7ce9c3f1969d241233",
+          "config_path": "/home/qunwang/wajueji/configs/v4/layered-47-truck-physics-v1.json",
+          "config_sha256": "5b8298a96e98284e203514b81e6bba760450f773050efd68d3df0359844b9fac",
+          "soil_owner": "newton",
+          "rock_owner": "mujoco",
+          "inventory_observer": "TruckReceiver"
+        }
+      },
+      "bridge": {
+        "schema": "excavation_mixed_material_capacity_bridge_manifest_v1",
+        "status": "capacity_bridge_source_generated",
+        "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+        "source_bridge_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+        "generated_source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684",
+        "minimum_rock_count": 1,
+        "maximum_rock_count": 1024,
+        "runtime_rock_count": true,
+        "maximum_external_wrench_count": "rock_count_plus_bucket",
+        "stable_named_wrench_routing": true,
+        "physics_qualified": false,
+        "formal_scene_qualified": false,
+        "bucket_velocity_origin_fix": {
+          "linear_velocity_reference": "bucket_regular_body_origin",
+          "previous_reference": "bucket_inertial_origin_COM",
+          "mujoco_object_type": "mjOBJ_XBODY",
+          "physical_state_modified": false,
+          "generated_source_sha256": "9c63050dc6e71cfd53003087c2bb18bb5d344f0d605de5c246f8f1506ec3ad37"
+        },
+        "optimized_inertia": {
+          "experiment": "exact_zero_tangent_projection_v1",
+          "baseline_header_sha256": "6c0f9e33faa839c38e1c026d63e052d3f6aed8bd517899a3997279ddad52fb11",
+          "candidate_header_sha256": "f3faf5fcc3416666faef0c8a084d1d9a2cd264806a0594dcd508a4f3d3c63b64",
+          "generator_sha256": "db350842f4ff81732d28acd300f3bfb4ad76ae0fde76dceb89987d3f0e0244cf",
+          "physics_frequency_changed": false,
+          "thresholds_changed": false,
+          "default_configuration_changed": false,
+          "training_eligible": false,
+          "drive_load_observation_only": true,
+          "external_load_compensation_applied": false,
+          "generated_bridge_sha256": "c4ee18970ebd25d1f0450269f2389e9633d801e6881181642d73726b3a396400"
+        },
+        "bucket_integral_candidate": {
+          "enabled": true,
+          "default_enabled": false,
+          "version": "D120_conditional_integral_manual_pilot_v1",
+          "ki_N_per_m_s": 1500000,
+          "cap_N": 120000,
+          "slew_N_per_s": 30000,
+          "deadband_m": 0.0005,
+          "initial_effort_N": 0,
+          "activation": "from_first_step; growth_requires_active_bucket_command",
+          "neutral": "preserve_support; opposite_error_may_unwind",
+          "reverse": "D120_original; no_D121_forced_release",
+          "physical_hydraulic_limit": false,
+          "stopped_qualified": false,
+          "reverse_qualified": false,
+          "training_eligible": false,
+          "loaded_state_restore": true,
+          "loaded_state_restore_fields": [
+            "controller_target",
+            "controller_target_velocity",
+            "bucket_integral_effort[3]"
+          ],
+          "header_sha256": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+          "generated_bridge_sha256": "6fc2290d76ddb5d6f8738c91dfc4abe1c431041abb442f1e02294ba30dc6c532"
+        },
+        "active_curl_candidate": {
+          "enabled": true,
+          "default_enabled": false,
+          "version": "D136_active_curl_v1",
+          "gain_N_per_m": 6000000,
+          "cap_N": 60000,
+          "deadband_m": 0.001,
+          "rise_N_per_s": 120000,
+          "release_N_per_s": 600000,
+          "activation_time_s": 0.0,
+          "activation": "positive_applied_bucket_command_and_positive_tracking_error",
+          "neutral_reverse": "release_supplement_within_0.1s; D120_support_unchanged",
+          "physical_hydraulic_limit": false,
+          "training_eligible": false,
+          "loaded_restore_qualified": false,
+          "initialize_from_d120_with_zero_new_effort": true,
+          "header_sha256": "f9637ff978dd667a176410d220a672b3ef73f1e07ba8d745a917650312a67bcb",
+          "generated_bridge_sha256": "a0d67105407a8849aec758146913ca28c6fc64d3ef8fc1738871e8f10eff3d9e"
+        },
+        "cycle_continuation_protocol": {
+          "schema": "cycle_native_restore_v1",
+          "source_sha256": "9f1e0190e2d6bee70b8c41f21ff5808b02b876d985756b1d191b5fb7f68912ca",
+          "full_native_state_saved": true
+        }
+      },
+      "command": [
+        "g++",
+        "-O2",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+        "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+        "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/include",
+        "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/q1-strain-1080-1530/runtime/capacity-bridge.cc",
+        "-L/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib",
+        "-Wl,-rpath,/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib",
+        "-l:libmujoco.so.2.3.8",
+        "-o",
+        "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/q1-strain-1080-1530/runtime/capacity-bridge"
+      ]
+    },
+    "bucket_motion_policy_upgrade": {
+      "from": "bucket_origin_predicted_endpoint_v1",
+      "to": "bucket_origin_predicted_endpoint_v1",
+      "physical_arrays_modified": false,
+      "derived_velocity_reference_converted": false,
+      "old_physics_continuation_claimed": false
+    },
+    "cycle_errors": {
+      "controller_target": 0.0,
+      "controller_target_velocity": 0.0,
+      "bucket_integral_effort": 0.0,
+      "bucket_active_curl_effort": 0.0,
+      "bucket_linear_velocity_world_m_s": 0.0,
+      "bucket_angular_velocity_world_rad_s": 0.0,
+      "native_time_s": 0.0,
+      "native_last_time_s": 0.0,
+      "native_timestep_s": 0.0,
+      "native_warmstart": 0.0,
+      "native_qacc": 0.0,
+      "native_ctrl": 0.0
+    }
+  },
+  "tracked_particle_count": 12086,
+  "frames_completed": 450,
+  "wall_seconds": 132.27540219100774
+}
