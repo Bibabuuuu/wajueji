@@ -1,0 +1,99 @@
+{
+  "schema": "pure_mixed_same_joystick_three_scoop_diagnostic_v1",
+  "status": "locally_verified_diagnostic_only",
+  "date": "2026-09-25",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "frames": 8122,
+  "hard_guard_frames_pure": 8242,
+  "hold_frames_pure": 120,
+  "material_rejections_pure": 0,
+  "maximum_sweep_balance_error_ns_pure": 4.277467269275803e-12,
+  "pure_particle_count": 290468,
+  "mixed_particle_count": 256441,
+  "pure_rock_count": 0,
+  "mixed_rock_count": 47,
+  "pure_projection_frames": 159,
+  "mixed_projection_frames": 150,
+  "pure_full_report_sha256": "b977d9eda8aeffda44b78f3d989347d47aaf44b8a7549408eb3b6b8a68ab4a81",
+  "pure_final_checkpoint_sha256": "c1166dafae7d2cf73f2a44c60a991b12398ab282765aca8b9cda88db439551df",
+  "pure_final_cache_exact_checkpoint": true,
+  "pure_runner_sha256": "b3fd6fd13572e28029a5e527f533705dd1bd704416fcc1686f005f588071d520",
+  "pure_runtime_sha256": "3f7548aec7b8bf9754c22a22f055fa25251b44b1195267eea60f2f2ffa683c26",
+  "pure_source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+  "first_carry_pure_retention": [
+    {
+      "frame": 1080,
+      "initial_cavity_particles": 12727,
+      "initial_retained": 12727,
+      "total_cavity_particles": 12727,
+      "occupied_2cm_cells": 11447,
+      "maximum_particles_per_cell": 12
+    },
+    {
+      "frame": 1680,
+      "initial_cavity_particles": 12727,
+      "initial_retained": 12727,
+      "total_cavity_particles": 14637,
+      "occupied_2cm_cells": 9087,
+      "maximum_particles_per_cell": 133
+    }
+  ],
+  "fill_display_percent": {
+    "1080": {
+      "pure": 196.20738861582367,
+      "mixed": 148.49532265736485
+    },
+    "1920": {
+      "pure": 151.63469161249404,
+      "mixed": 97.91342952275251
+    },
+    "4200": {
+      "pure": 110.54701125733314,
+      "mixed": 137.9134295227525
+    },
+    "4860": {
+      "pure": null,
+      "mixed": 118.7886475344855
+    },
+    "6900": {
+      "pure": 97.01601395275092,
+      "mixed": 93.96543523069604
+    },
+    "7620": {
+      "pure": null,
+      "mixed": 81.91216109085144
+    },
+    "8122": {
+      "pure": 0.04122403678452513,
+      "mixed": 0.022197558268590455
+    }
+  },
+  "truck_core_soil_liters": {
+    "2760": {
+      "pure": 306.87500000000006,
+      "mixed": 262.26562500000006
+    },
+    "5700": {
+      "pure": 373.9531250000001,
+      "mixed": 410.1562500000001
+    },
+    "8122": {
+      "pure": 625.6093750000001,
+      "mixed": 572.1718750000001
+    }
+  },
+  "qualifications": {
+    "same_saved_manual_input_complete_both": true,
+    "autonomous_adaptation": false,
+    "stable_95_percent_fill": false,
+    "stable_truck_delivery": false
+  },
+  "limitations": [
+    "pure start presettled 120 frames and native controller cold started; mixed restored settled checkpoint",
+    "safety projector changes commands in both scenes",
+    "truck core excludes mixed rocks and support/above-rim validation",
+    "pure and mixed transport clumping persists"
+  ],
+  "local_full_evidence_dir": "/home/qunwang/Documents/Codex/2026-09-25/wajueji-soil-retention-restart/work/pure-replay-full-8122",
+  "local_user_report": "/home/qunwang/Documents/Codex/2026-09-25/wajueji-soil-retention-restart/outputs/纯土与混合介质同轨迹三铲回放.md"
+}
