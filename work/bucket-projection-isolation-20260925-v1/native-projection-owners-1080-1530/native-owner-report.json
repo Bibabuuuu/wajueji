@@ -1,0 +1,227 @@
+{
+  "status": "bounded_attribution_passed",
+  "source_sha256": "c2c03dfc67e5b9edd9e835d66c4109a6f25d3b50df9e141f5e7f56d8760a113f",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "sample_frames": [
+    1490,
+    1510,
+    1530
+  ],
+  "rows": [
+    {
+      "frame": 1490,
+      "owners": {
+        "bucket": {
+          "penetrating": 9,
+          "position_corrected": 9,
+          "newly_close": 0,
+          "no_longer_close": 0
+        },
+        "static": {
+          "penetrating": 9,
+          "position_corrected": 9,
+          "newly_close": 0,
+          "no_longer_close": 0
+        },
+        "rock": {
+          "penetrating": 624,
+          "position_corrected": 624,
+          "newly_close": 0,
+          "no_longer_close": 0
+        },
+        "no_penetrating_collider": {
+          "penetrating": 11444,
+          "position_corrected": 0,
+          "newly_close": 0,
+          "no_longer_close": 0
+        },
+        "other": {
+          "penetrating": 0,
+          "position_corrected": 0,
+          "newly_close": 0,
+          "no_longer_close": 0
+        }
+      },
+      "corrected_cohort": 642,
+      "newly_close": 0,
+      "no_longer_close": 0,
+      "nearest_below_8mm_before": 3596,
+      "nearest_below_8mm_after": 3596
+    },
+    {
+      "frame": 1510,
+      "owners": {
+        "bucket": {
+          "penetrating": 191,
+          "position_corrected": 191,
+          "newly_close": 3,
+          "no_longer_close": 3
+        },
+        "static": {
+          "penetrating": 171,
+          "position_corrected": 171,
+          "newly_close": 1,
+          "no_longer_close": 0
+        },
+        "rock": {
+          "penetrating": 713,
+          "position_corrected": 713,
+          "newly_close": 9,
+          "no_longer_close": 3
+        },
+        "no_penetrating_collider": {
+          "penetrating": 11011,
+          "position_corrected": 0,
+          "newly_close": 10,
+          "no_longer_close": 4
+        },
+        "other": {
+          "penetrating": 0,
+          "position_corrected": 0,
+          "newly_close": 0,
+          "no_longer_close": 0
+        }
+      },
+      "corrected_cohort": 1075,
+      "newly_close": 23,
+      "no_longer_close": 10,
+      "nearest_below_8mm_before": 3785,
+      "nearest_below_8mm_after": 3798
+    },
+    {
+      "frame": 1530,
+      "owners": {
+        "bucket": {
+          "penetrating": 227,
+          "position_corrected": 227,
+          "newly_close": 5,
+          "no_longer_close": 1
+        },
+        "static": {
+          "penetrating": 465,
+          "position_corrected": 465,
+          "newly_close": 1,
+          "no_longer_close": 0
+        },
+        "rock": {
+          "penetrating": 992,
+          "position_corrected": 992,
+          "newly_close": 7,
+          "no_longer_close": 6
+        },
+        "no_penetrating_collider": {
+          "penetrating": 10402,
+          "position_corrected": 0,
+          "newly_close": 17,
+          "no_longer_close": 4
+        },
+        "other": {
+          "penetrating": 0,
+          "position_corrected": 0,
+          "newly_close": 0,
+          "no_longer_close": 0
+        }
+      },
+      "corrected_cohort": 1684,
+      "newly_close": 30,
+      "no_longer_close": 11,
+      "nearest_below_8mm_before": 4370,
+      "nearest_below_8mm_after": 4389
+    }
+  ],
+  "anchors": [
+    {
+      "frame": 1081,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1200,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1400,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1490,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1500,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1510,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1520,
+      "max_abs_vs_prior_m": 0.0
+    },
+    {
+      "frame": 1530,
+      "max_abs_vs_prior_m": 0.0
+    }
+  ],
+  "guards_failed": [],
+  "changed_commands": [],
+  "collider_groups": {
+    "bucket": [
+      48
+    ],
+    "static": [
+      0
+    ],
+    "rock": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "frames_completed": 450,
+  "wall_seconds": 77.14485164699727
+}
