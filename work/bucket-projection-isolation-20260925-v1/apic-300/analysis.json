@@ -1,0 +1,76 @@
+{
+  "schema": "bucket_projection_isolation_audit_v1",
+  "status": "diagnostic_recorded",
+  "frames": 300,
+  "wall_seconds": 53.49841408798238,
+  "measurements": [
+    {
+      "frame": 0,
+      "fill_percent": 103.16473759315046,
+      "liters": 263.2400240842088,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 5156,
+      "max_particles_per_cell": 8
+    },
+    {
+      "frame": 60,
+      "fill_percent": 101.06231171713969,
+      "liters": 257.8753747752662,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 5107,
+      "max_particles_per_cell": 9
+    },
+    {
+      "frame": 120,
+      "fill_percent": 98.39543364515617,
+      "liters": 251.07044254476733,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 5026,
+      "max_particles_per_cell": 10
+    },
+    {
+      "frame": 180,
+      "fill_percent": 96.54669414935786,
+      "liters": 246.35311140281627,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4939,
+      "max_particles_per_cell": 9
+    },
+    {
+      "frame": 240,
+      "fill_percent": 94.05422546377041,
+      "liters": 239.9932104121241,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4836,
+      "max_particles_per_cell": 9
+    },
+    {
+      "frame": 300,
+      "fill_percent": 92.56698905977487,
+      "liters": 236.19830765813606,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4736,
+      "max_particles_per_cell": 9
+    }
+  ],
+  "terminal_full_particle_fill": {
+    "frame": 300,
+    "sim_time_s": 5.0,
+    "valid_estimate": true,
+    "fill_percent": 92.56698905977487,
+    "liters": 236.19830765813606,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.17347757500829175,
+    "display_only": true
+  },
+  "terminal_solid_penetration_count_above_0_1mm": 0,
+  "initial_cavity_particle_count": 6494,
+  "retained_initial_cavity": 6494,
+  "all_hard_guards": true,
+  "all_material_guards": true,
+  "bindings_unchanged": true
+}

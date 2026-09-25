@@ -1,0 +1,468 @@
+{
+  "status": "bounded_manual_prefix_passed",
+  "source_global_frame": 180,
+  "frames": 1620,
+  "wall_seconds": 283.6520955429878,
+  "all_hard_guards": true,
+  "all_material_guards": true,
+  "projection_change_count": 123,
+  "projection_reasons": [
+    "bucket_internal_upper_target"
+  ],
+  "measurements": [
+    {
+      "frame": 240,
+      "sim_time_s": 4.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.4607256310118828,
+      "display_only": true
+    },
+    {
+      "frame": 300,
+      "sim_time_s": 5.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5286856289894786,
+      "display_only": true
+    },
+    {
+      "frame": 360,
+      "sim_time_s": 6.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5505435160011984,
+      "display_only": true
+    },
+    {
+      "frame": 420,
+      "sim_time_s": 7.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.559423798986245,
+      "display_only": true
+    },
+    {
+      "frame": 480,
+      "sim_time_s": 8.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5815420330036432,
+      "display_only": true
+    },
+    {
+      "frame": 540,
+      "sim_time_s": 9.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5958648799860384,
+      "display_only": true
+    },
+    {
+      "frame": 600,
+      "sim_time_s": 10.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.6104685400205199,
+      "display_only": true
+    },
+    {
+      "frame": 660,
+      "sim_time_s": 11.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.615788953989977,
+      "display_only": true
+    },
+    {
+      "frame": 720,
+      "sim_time_s": 12.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5865853799914476,
+      "display_only": true
+    },
+    {
+      "frame": 780,
+      "sim_time_s": 13.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5983846879971679,
+      "display_only": true
+    },
+    {
+      "frame": 840,
+      "sim_time_s": 14.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5303893790114671,
+      "display_only": true
+    },
+    {
+      "frame": 900,
+      "sim_time_s": 15.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.44946386700030416,
+      "display_only": true
+    },
+    {
+      "frame": 960,
+      "sim_time_s": 16.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.38090768799884245,
+      "display_only": true
+    },
+    {
+      "frame": 1020,
+      "sim_time_s": 17.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.34381114202551544,
+      "display_only": true
+    },
+    {
+      "frame": 1080,
+      "sim_time_s": 18.0,
+      "valid_estimate": true,
+      "fill_percent": 148.49532265736485,
+      "liters": 378.9076890485148,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2901254720054567,
+      "display_only": true
+    },
+    {
+      "frame": 1140,
+      "sim_time_s": 19.0,
+      "valid_estimate": true,
+      "fill_percent": 145.67306167750118,
+      "liters": 371.7062744407335,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2335924810031429,
+      "display_only": true
+    },
+    {
+      "frame": 1200,
+      "sim_time_s": 20.0,
+      "valid_estimate": true,
+      "fill_percent": 144.3316949421278,
+      "liters": 368.2835796327656,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.2050914150022436,
+      "display_only": true
+    },
+    {
+      "frame": 1260,
+      "sim_time_s": 21.0,
+      "valid_estimate": true,
+      "fill_percent": 142.22609798636435,
+      "liters": 362.9108388467356,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.19568949501262978,
+      "display_only": true
+    },
+    {
+      "frame": 1320,
+      "sim_time_s": 22.0,
+      "valid_estimate": true,
+      "fill_percent": 140.03171079752656,
+      "liters": 357.31153670225854,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.18570305200410075,
+      "display_only": true
+    },
+    {
+      "frame": 1380,
+      "sim_time_s": 23.0,
+      "valid_estimate": true,
+      "fill_percent": 136.94307911843984,
+      "liters": 349.4304380191362,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.1851149540161714,
+      "display_only": true
+    },
+    {
+      "frame": 1440,
+      "sim_time_s": 24.0,
+      "valid_estimate": true,
+      "fill_percent": 132.54479150150627,
+      "liters": 338.2075592989199,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.1814248049922753,
+      "display_only": true
+    },
+    {
+      "frame": 1500,
+      "sim_time_s": 25.0,
+      "valid_estimate": true,
+      "fill_percent": 130.4487077850008,
+      "liters": 332.85909294415205,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.1807341100065969,
+      "display_only": true
+    },
+    {
+      "frame": 1560,
+      "sim_time_s": 26.0,
+      "valid_estimate": true,
+      "fill_percent": 119.32456001268433,
+      "liters": 304.47419132157177,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.18107214599149302,
+      "display_only": true
+    },
+    {
+      "frame": 1620,
+      "sim_time_s": 27.0,
+      "valid_estimate": true,
+      "fill_percent": 113.12192801648962,
+      "liters": 288.6472621386279,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.16742420400260016,
+      "display_only": true
+    },
+    {
+      "frame": 1680,
+      "sim_time_s": 28.0,
+      "valid_estimate": true,
+      "fill_percent": 111.51736166164581,
+      "liters": 284.55297473240626,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17646862799301744,
+      "display_only": true
+    },
+    {
+      "frame": 1740,
+      "sim_time_s": 29.0,
+      "valid_estimate": true,
+      "fill_percent": 111.14634533058509,
+      "liters": 283.6062719131811,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17596976799541153,
+      "display_only": true
+    },
+    {
+      "frame": 1800,
+      "sim_time_s": 30.0,
+      "valid_estimate": true,
+      "fill_percent": 106.25336927223722,
+      "liters": 271.1211227673312,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.17587721499148756,
+      "display_only": true
+    }
+  ],
+  "original_frames_not_repeated": 180,
+  "recovery_boundary": {
+    "from": "bucket_origin_predicted_endpoint_v1",
+    "to": "bucket_origin_predicted_endpoint_v1",
+    "physical_arrays_modified": false,
+    "derived_velocity_reference_converted": false,
+    "old_physics_continuation_claimed": false
+  },
+  "display_cache": {
+    "status": "captured_probe",
+    "capture_origin": "live_policy_rollout",
+    "probe_status": "bounded_manual_prefix_passed",
+    "frames": 1620,
+    "playback_physics_steps": 0,
+    "live_inference": false,
+    "label": "BC CONTACT WINDOW REPLAY",
+    "cache_sha256": {
+      "particles.npy": "272fbeb62c8d90168bbf200e82d7bf2398bf9921b0f13b031b0a63d1ad5f8512",
+      "states.json": "510819d000545cc7970b9197ea79ec3336f5a52bdd47b341291add3009789a64",
+      "scene.json": "61649e82bfd955cd9f4947a6a1c2432d31dcbdfb8979b8971c3e1bd2fb585e9c"
+    }
+  },
+  "retention_audit": [
+    {
+      "frame": 1080,
+      "initial_cavity_particles": 12086,
+      "initial_retained": 12086,
+      "total_in_cavity": 12086,
+      "occupied_2cm_cells": 9381,
+      "maximum_particles_per_cell": 17
+    },
+    {
+      "frame": 1680,
+      "initial_cavity_particles": 12086,
+      "initial_retained": 12086,
+      "total_in_cavity": 14332,
+      "occupied_2cm_cells": 5859,
+      "maximum_particles_per_cell": 131
+    },
+    {
+      "frame": 1800,
+      "initial_cavity_particles": 12086,
+      "initial_retained": 12086,
+      "total_in_cavity": 14690,
+      "occupied_2cm_cells": 5560,
+      "maximum_particles_per_cell": 204
+    }
+  ]
+}

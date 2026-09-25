@@ -37,9 +37,12 @@ def local_arguments():
 
 
 class CycleRuntime:
-    def __init__(self, source, output, *, enable_truck=None, freeze_passive_jp=False, allow_training_reset=False):
+    def __init__(self, source, output, *, enable_truck=None, freeze_passive_jp=False, allow_training_reset=False,
+                 bucket_motion_consistency=False):
         self.output=Path(output).resolve(); self.output.mkdir(parents=True, exist_ok=False)
-        self.arrays,self.metadata=checkpoint.load(source,allow_training_reset=allow_training_reset)
+        self.motion_consistency = bool(bucket_motion_consistency)
+        self.arrays,self.metadata=checkpoint.load(source,allow_training_reset=allow_training_reset,
+            allow_bucket_motion_consistency=self.motion_consistency)
         if freeze_passive_jp:
             from soil_passive_jp_history import POLICY
             self.metadata['material_history_policy'] = POLICY
@@ -65,6 +68,9 @@ class CycleRuntime:
                'bucket_active_curl_candidate.h','bucket_integral_candidate.h','soil_hencky_update_candidate.py',
                'moving_bucket_sweep_candidate.py','moving_bucket_sweep_runtime.py','mpm_static_contact_ownership.py')
         self.bindings={name:motion.probe.bench.sha256(Path(__file__).with_name(name)) for name in names}
+        if self.motion_consistency:
+            for name in ('bucket_velocity_origin_candidate.py', 'bucket_motion_consistency.py'):
+                self.bindings[name] = motion.probe.bench.sha256(Path(__file__).with_name(name))
         if self.metadata.get('material_history_policy'):
             name = 'soil_passive_jp_history.py'
             self.bindings[name] = motion.probe.bench.sha256(Path(__file__).with_name(name))
@@ -73,6 +79,9 @@ class CycleRuntime:
         try:
             newton.use_coord_layout_targets=True;wp.init();wp.set_device(self.args.device)
             enter=self.contexts.enter_context
+            if self.motion_consistency:
+                from bucket_velocity_origin_candidate import installed_candidate
+                enter(installed_candidate())
             enter(cleaned_manual_model())
             enter(optimized_bridge(self.args.mechanism_header_dir,self.output/'optimized'))
             enter(bucket_integral_bridge(True,self.output/'integral'))
@@ -92,6 +101,17 @@ class CycleRuntime:
             for i,rock in enumerate(held.bridge.state['rocks']):
                 rock['linear_velocity_world_m_s']=self.arrays['rigid_reported_linear_velocity'][i].tolist()
                 rock['angular_velocity_world_rad_s']=self.arrays['rigid_reported_angular_velocity'][i].tolist()
+            if self.motion_consistency:
+                from bucket_motion_consistency import POLICY, restored_controller
+                previous_policy = self.metadata.get('bucket_motion_policy')
+                self.metadata['controller_state'] = restored_controller(
+                    self.metadata['controller_state'], held.bridge.state, previous_policy)
+                self.metadata['bucket_motion_policy'] = POLICY
+                self.restored['bucket_motion_policy_upgrade'] = {
+                    'from': previous_policy, 'to': POLICY,
+                    'physical_arrays_modified': False,
+                    'derived_velocity_reference_converted': previous_policy is None,
+                    'old_physics_continuation_claimed': False}
             for key in ('bucket_linear_velocity_world_m_s','bucket_angular_velocity_world_rad_s'):
                 held.bridge.state[key]=list(self.metadata['controller_state'][key])
             self.fixture.assign(held.bridge.state)
@@ -100,7 +120,11 @@ class CycleRuntime:
             if self.metadata.get('material_history_policy'):
                 from soil_passive_jp_history import installed_passive_jp
                 self.passive_jp_policy=enter(installed_passive_jp(self.fixture.solver,self.fixture.state))
-            self.sweep=MovingBucketSweepRuntime(self.fixture,self.bridge,self.proxy,self.base['mpm']['material']['friction'])
+            sweep_class = MovingBucketSweepRuntime
+            if self.motion_consistency:
+                from bucket_motion_consistency import ConsistentBucketSweepRuntime
+                sweep_class = ConsistentBucketSweepRuntime
+            self.sweep=sweep_class(self.fixture,self.bridge,self.proxy,self.base['mpm']['material']['friction'])
             checkpoint.restore_sweep(self.sweep,self.metadata['moving_bucket_sweep_state'])
             expected=self.metadata['controller_state'];actual=controller_snapshot(self.bridge.state)
             errors={}

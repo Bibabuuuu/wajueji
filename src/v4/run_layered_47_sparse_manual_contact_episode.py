@@ -528,6 +528,9 @@ def run(args):
     root = Path(args.repository_root).resolve()
     transport_mode = bool(getattr(args, "loaded_transport", False))
     cycle_mode = bool(getattr(args, "cycle_checkpoint", False))
+    motion_consistency = bool(getattr(args, "bucket_motion_consistency", False))
+    if motion_consistency and (not cycle_mode or not getattr(args, "moving_bucket_sweep_candidate", False)):
+        raise ValueError("bucket_motion_consistency_requires_cycle_and_sweep")
     if getattr(args, "training_reset_checkpoint", False) and not cycle_mode:
         raise ValueError("training_reset_requires_cycle_checkpoint")
     cycle_save = bool(getattr(args, "cycle_save", False) or cycle_mode)
@@ -657,7 +660,8 @@ def run(args):
         if cycle_mode:
             import layered_47_cycle_checkpoint as cycle_checkpoint
             arrays, cycle_metadata = cycle_checkpoint.load(checkpoint_path,
-                allow_training_reset=getattr(args,'training_reset_checkpoint',False))
+                allow_training_reset=getattr(args,'training_reset_checkpoint',False),
+                allow_bucket_motion_consistency=motion_consistency)
             checkpoint_before = cycle_metadata['source_identity']
             metadata_before = cycle_metadata['source_metadata_identity']
             audit_document = json.loads(audit_path.read_text())
@@ -834,6 +838,9 @@ def run(args):
             Path(motion.probe.p47.__file__),
             Path(motion.probe.snapshots.__file__),
         ]
+        if motion_consistency:
+            binding_paths.extend(Path(__file__).with_name(name) for name in (
+                'bucket_velocity_origin_candidate.py', 'bucket_motion_consistency.py'))
         if fill_config:
             binding_paths.extend([
                 Path(args.live_fill_config).resolve(),
@@ -972,6 +979,9 @@ def run(args):
         wp.init()
         wp.set_device(args.device)
         with ExitStack() as contexts:
+            if motion_consistency:
+                from bucket_velocity_origin_candidate import installed_candidate
+                contexts.enter_context(installed_candidate())
             contexts.enter_context(cleaned_manual_model())
             optimization = contexts.enter_context(optimized_bridge(
                 args.mechanism_header_dir, output / "build"))
@@ -1019,6 +1029,17 @@ def run(args):
                         cycle_metadata['solver_profile'], Path(raw),
                         cycle_metadata['controller_state'], truck_fixtures)
                 from layered_47_cycle_bridge import restore_frame_interface, controller_snapshot
+                if motion_consistency:
+                    from bucket_motion_consistency import POLICY, restored_controller
+                    previous_policy = cycle_metadata.get('bucket_motion_policy')
+                    cycle_metadata['controller_state'] = restored_controller(
+                        cycle_metadata['controller_state'], held.bridge.state, previous_policy)
+                    cycle_metadata['bucket_motion_policy'] = POLICY
+                    report['bucket_motion_policy_upgrade'] = {
+                        'from': previous_policy, 'to': POLICY,
+                        'physical_arrays_modified': False,
+                        'derived_velocity_reference_converted': previous_policy is None,
+                        'old_physics_continuation_claimed': False}
                 restore_frame_interface(held.bridge.state, arrays, cycle_metadata['controller_state'])
                 fixture.assign(held.bridge.state)
                 actual = controller_snapshot(held.bridge.state)
@@ -1088,7 +1109,11 @@ def run(args):
             }
             if sweep_policy["enabled"]:
                 from moving_bucket_sweep_runtime import MovingBucketSweepRuntime
-                sweep_runtime = MovingBucketSweepRuntime(
+                sweep_class = MovingBucketSweepRuntime
+                if motion_consistency:
+                    from bucket_motion_consistency import ConsistentBucketSweepRuntime
+                    sweep_class = ConsistentBucketSweepRuntime
+                sweep_runtime = sweep_class(
                     fixture, bridge, proxy, base["mpm"]["material"]["friction"])
                 if cycle_mode:
                     cycle_checkpoint.restore_sweep(sweep_runtime, cycle_metadata["moving_bucket_sweep_state"])
@@ -1839,6 +1864,8 @@ def main():
     parser.add_argument(
         "--live-fill-config", help="Display-only mixed fill measurement on off-soil key 4")
     parser.add_argument('--cycle-checkpoint', action='store_true', help='Audited continuous second/third scoop prepoint')
+    parser.add_argument('--bucket-motion-consistency', action='store_true',
+        help='Use corrected bucket origin velocities and coherent predicted sweep endpoints; marks new checkpoints')
     parser.add_argument('--cycle-save', action='store_true', help='Also save full native/controller/sweep frame state')
     parser.add_argument('--training-reset-checkpoint', action='store_true', help='Explicitly load a marked fast contact-collection prepoint')
     parser.add_argument("--loaded-transport", action="store_true")

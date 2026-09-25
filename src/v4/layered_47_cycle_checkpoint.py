@@ -102,11 +102,25 @@ def validate_controller(state, count):
     native_restore_tokens(state, count)
 
 
-def load(path, *, allow_training_reset=False):
+def validate_bucket_motion_policy(metadata, bindings, *, allowed=False):
+    policy = metadata.get('bucket_motion_policy')
+    if policy is None:
+        return
+    if policy != 'bucket_origin_predicted_endpoint_v1' or not allowed:
+        raise ValueError('cycle_requires_explicit_bucket_motion_consistency')
+    normalized = {Path(key).name: value for key, value in bindings.items()}
+    for name in ('bucket_velocity_origin_candidate.py', 'bucket_motion_consistency.py'):
+        if normalized.get(name) != checkpoint_identity(Path(__file__).with_name(name))['sha256']:
+            raise ValueError('cycle_bucket_motion_version_mismatch:' + name)
+
+
+def load(path, *, allow_training_reset=False, allow_bucket_motion_consistency=False):
     path = Path(path).resolve()
     identity = checkpoint_identity(path)
     sidecar = Path(str(path) + '.json')
     metadata = json.loads(sidecar.read_text())
+    validate_bucket_motion_policy(metadata, metadata.get('runtime_bindings', {}),
+                                  allowed=allow_bucket_motion_consistency)
     if metadata.get('training_reset') is not None:
         if not allow_training_reset:
             raise ValueError('training_reset_not_continuous_physics')
@@ -165,6 +179,7 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
     sweep = validate_sweep(sweep)
     validate_material_history_policy(parent, runtime_bindings)
     validate_training_reset(parent)
+    validate_bucket_motion_policy(parent, runtime_bindings, allowed=True)
     if controller['native_state_kind'] != 'full':
         raise ValueError('cycle_save_requires_full_native_state')
     if stage not in ('loaded_manual_endpoint', 'hold', 'transport', 'unloaded',
@@ -185,6 +200,8 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
         document['material_history_policy'] = parent['material_history_policy']
     if parent.get('training_reset') is not None:
         document['training_reset'] = deepcopy(parent['training_reset'])
+    if parent.get('bucket_motion_policy') is not None:
+        document['bucket_motion_policy'] = parent['bucket_motion_policy']
     # The NPZ is never overwritten. A missing sidecar is an invalid checkpoint.
     with Path(str(path)+'.json').open('x') as out:
         json.dump(document, out, indent=2, allow_nan=False)

@@ -1,44 +1,32 @@
-# 跨会话交接：手动三铲保载异常与旧CAD候选拒绝
+# 跨会话交接：D-165保载修复与残余聚团
 
-## 开始顺序
+先完整阅读AGENTS、总体规划、当前状态、要求及七个活动小节。核对实际Git分支/HEAD和进程；唯一仓库`/home/qunwang/wajueji`，分支`codex/contact-bc-collection-20260924`，本轮起始HEAD `38bc708ef24ffbfe3427c5e84ae76af04a2da181`，不得当作下一次当前HEAD。
 
-先读`AGENTS.md`、总体规划、当前状态、要求、七个活动小节，再读本文件。核对实际分支、HEAD和进程；唯一仓库为`/home/qunwang/wajueji`，目标分支`codex/contact-bc-collection-20260924`。本交接写入时起始HEAD为`bdf293d0bf84547cc8785fea6b00bd35f5ad6978`，不能据此猜下一次实际HEAD。工作树存在大量历史运行产物及用户并行修改，不得重置、清理或覆盖。
+## 结论
 
-## 当前结论
+D-165本轮已结束，当前无新增物理或训练任务。主要接口修正已通过45项相关测试、固定轨迹及用户首铲1–1800帧短段验证；新第一铲1080/1680帧满斗148.4953%/111.5174%，原同帧103.16%/29.91%，但2cm占据格9381→5859、峰值17→131仍提示聚团，未根治。新进程3步续算的23个非派生时钟字段、原生控制及扫掠状态逐位一致，派生仿真时钟仅7.105e-15秒浮点差，独立列出容差；没有重复物理前缀。5cm、APIC、法向位置修正及速度外延均未改善，不部署。原示范、保护与旧默认路径保持；新接口需显式选项，不授予稳定保载、完整卸料、三铲或重新录最终视频资格。
 
-用户手动三铲运行已正常结束并保存：`runs/layered-47-sparse-manual-contact-v1/manual-contact-20260925-143841-2474275`，8122帧、135.37仿真秒、`user_finished`，完整显示缓存约24GB。录屏为`/home/qunwang/Videos/Screencasts/Screencast from 2026-09-25 15-12-40.webm`。当前没有物理、训练或回放进程。
+## 已实现
 
-录屏及严格量测均显示闭斗运输时土体有效体积异常下降：第一铲1080→1680帧103.16%→29.91%，第二铲4200→4800帧58.9%→15.3%，第三铲6840→7560帧74.1%→39.4%。这不是简单的斗壳漏土：第一铲1080帧宽松斗腔内8879个原粒子，到1680帧仍全部留在宽松斗腔，另有3064个进入；原粒子斗局部位移中位数0.310m、P99 0.558m。D133满斗点600帧对照也保留全部6494个原粒子，但2cm占据格5156→2225、单格最大粒子数8→71。当前可靠结论是粒子在斗内异常聚团/重排，使严格占据体积塌缩。
+- `src/v4/bucket_velocity_origin_candidate.py`：显式修正MuJoCo COM速度→普通body原点速度，输出COM与惯性偏移诊断；40姿态Jacobian核验误差1.11e-16m/s。
+- `src/v4/bucket_motion_consistency.py`：D133开始→预测末端→实际末端一致性；旧保存COM速度仅转换一次，不重置物理数组。
+- cycle runtime和人工入口支持显式`bucket_motion_consistency`/`--bucket-motion-consistency`；人工模式还要求cycle和原扫掠。
+- cycle checkpoint记录policy和两个源码绑定，旧入口拒绝误读修正后的检查点；旧无policy状态与所有旧默认运行不变。
 
-D-164按用户授权完成一次旧纯土同源开放CAD碰撞候选。零步6项检查通过；唯一600帧/10秒候选用时101.813秒并正常结束，硬门、材料门、来源和绑定全过，严格满斗率103.1647%→48.0038%。同一指令的现有代理无D133为51.0607%，代理＋D133为52.3482%；旧CAD没有改善且略差，候选已拒绝，默认18件代理＋D133保持不变，不自动重跑。证据在`work/legacy-cad-bucket-retention-20260925-v1/`。
+## 数据与验证
 
-旧纯土`contact-3cycle-v1`报告中的99.64%/100%只证明静止HOLD质量保持，不能证明TURN/ALIGN时严格体积保持。先前“旧纯土运输没有问题”的概括过强，现已在状态、验收和决策中纠正。
+权威实验入口`work/bucket-projection-isolation-20260925-v1/README.md`，含全部对照及边界。固定D129满斗源，旧600帧52.3482%，速度原点修正84.2810%，加时序85.2640%；HOLD600帧102.4988%，因此残余不是普通静置沉降。原887帧状态运输后段已张斗，比较闭斗严格取600帧，不能把887末态下降都归为漏土。
 
-## 实现与证据
+原手动8122帧与完整缓存仍在`runs/layered-47-sparse-manual-contact-v1/manual-contact-20260925-143841-2474275`。新的首铲输入重算保存于work目录：`manual-prefix-1800/display`实际0–180，`manual-prefix-continuation-1620/display`实际180–1800；两段边界物理同一状态，不是两次挖掘。第180帧只是round(None)报告错误，全硬门通过。`recording-fault-recovery-audit.json`逐项核验来源、全部180帧保护和末态后生成诊断hold副本；原failure不改，通用failure门不放宽，后续从180续算。
 
-本轮新增隔离接口，不改变默认调用行为：
+新1680/1800完整点在`manual-prefix-continuation-1620/state-001680.npz`与`state-001800.npz`，完整policy与元数据同目录；不是最终保载合格或人工prepoint。123帧被原斗缸端限位预览重新裁剪，记录了原因，不能声称新物理路径与旧路径完全相同。独立3步恢复见`independent-continuation-3/independent-array-audit.json`；首版报告把字符串rigid_ids转float失败，直接审计已保存末态，没有重跑物理。
 
-- `src/v4/legacy_cad_bucket_collision_candidate.py`：从原CAD提取3017顶点、5922面的开放斗网格；80条边界边、0非流形边，网格SHA256 `e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b`。
-- `src/v4/run_layered_47_excavation_preflight.py`：`ExcavationFixture`增加显式可选碰撞几何参数；缺省路径逐字保持现有18件代理。
-- `src/v4/run_layered_sparse_resume_audit.py`：仅向隔离候选转交上述可选参数。
-- `tests/test_legacy_cad_bucket_collision_candidate.py`：候选几何及默认路径不变检查。
-- `work/legacy-cad-bucket-retention-20260925-v1/{README.md,comparison.json,analysis.json}`：结论、逐秒三路对照及粒子身份/聚团摘要。
-
-候选终点诊断本机路径为`work/legacy-cad-bucket-retention-20260925-v1/candidate-600/terminal-000600.npz`，SHA256 `6b4de95d7ef4ae3c16194417e497eba6104d4771b4e490cee4a204985d67e7f1`；它是被拒诊断，不可恢复或训练。大体积NPZ、trace、编译目录不入Git。
-
-CAD候选累计2,415,749次投影粒子校正，单帧最多6459次，单次最大位置校正0.174289m、速度校正6.139m/s，粒子峰速7.238m/s。最大位置校正接近10cm稀疏网格的`sqrt(3)*0.1m`查询尺度。这是后续数值链线索，不是已证明的唯一根因。
+45项相关测试、暂存版本的CLI help、文档检查和diff检查通过。较细网格/250迭代/APIC/速度外延/法向位置修正均未消除残余，不作为正式修复部署；各失败/无收益报告保留。
 
 ## 下一道门
 
-不要继续改斗壳、重跑CAD或删除粒子。新的物理路线属于关键选择，需先与用户讨论：
+先只读审核接触位置修正与材料体积响应的一致性，带着已保存的前后状态找因果；不要再次泛化扫参或要求用户重录。当前仍存在粒子聚团，即使满斗率超过95%也不能授予根治。重大接触求解/材料路线变更按AGENTS先讨论；已有明确修正不重复索取许可。修复完成后优先重算保存的手柄输入生成新物理缓存，再让用户录屏；全三铲新版本仍未验证。
 
-1. 优先做逐碰撞体`project_outside`归属/校正隔离，直接回答大幅投影是否促成聚团，改动面较大但因果更清楚；或
-2. 先做同满斗点的5cm网格、250迭代短对照，接近早期纯土数值配置，成本显著更高且同时改变两个因素。
+## 保留边界
 
-无论选择哪条，先冻结单次帧数、墙钟、严格体积/身份/占据格指标及失败停止条件；不得用宽松斗腔身份数冒充满斗率。当前未授权这两条中的任何物理运行。
-
-用户另外指出的三个动作问题继续保留：收斗阶段铲斗过早上移、铲根未贴住土堆；图三机构/铲斗振荡；图四视觉上疑似穿模。此前已交专项任务讨论，D-164只处理闭斗保载异常，没有修改这三项控制问题。
-
-## 检查与提交边界
-
-提交前运行候选单测、相关恢复/默认接口测试、`python3 scripts/check_docs.py`和`git diff --check`。只暂存本轮明确文件；不要把既存的`audit_layered_47_cycle.py`、人工采集器、`soil_surface.py`、viewer修改或大量未跟踪运行产物混入提交。阶段结果按用户要求提交并推送到当前分支。
+不启动RL，不修改原示范、原录像、冻结结果和保护。工作树既存的`audit_layered_47_cycle.py`、`soil_surface.py`、`view_contact_bc_probe.py`及人工采集器原241行workflow差异保留未提交；本轮人工入口只提交motion-consistency增量，切勿整文件覆盖或误收既存变化。大型NPZ/粒子缓存/trace只留本地，不入Git。
