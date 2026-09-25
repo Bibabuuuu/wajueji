@@ -45,17 +45,32 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def material(name: str, rgb, roughness: float = 0.68):
+def material(
+    name: str,
+    rgb,
+    roughness: float = 0.68,
+    metallic: float = 0.0,
+    double_sided: bool = False,
+):
     rgba = [int(np.clip(float(c), 0.0, 1.0) * 255 + 0.5) for c in rgb] + [255]
     return trimesh.visual.material.PBRMaterial(
         name=name,
         baseColorFactor=rgba,
-        metallicFactor=0.0,
+        metallicFactor=metallic,
         roughnessFactor=roughness,
+        doubleSided=double_sided,
     )
 
 
-def make_mesh(name: str, vertices, faces, rgb, roughness: float = 0.68):
+def make_mesh(
+    name: str,
+    vertices,
+    faces,
+    rgb,
+    roughness: float = 0.68,
+    metallic: float = 0.0,
+    double_sided: bool = False,
+):
     vertices = np.asarray(vertices, dtype=np.float32)
     faces = np.asarray(faces, dtype=np.int32)
     source_triangle = vertices[faces].astype(np.float64)
@@ -88,7 +103,9 @@ def make_mesh(name: str, vertices, faces, rgb, roughness: float = 0.68):
     vertex_normal[good] /= length[good, None]
     vertex_normal[~good] = (0.0, 0.0, 1.0)
     mesh.vertex_normals = vertex_normal
-    mesh.visual = trimesh.visual.TextureVisuals(material=material(name, rgb, roughness))
+    mesh.visual = trimesh.visual.TextureVisuals(
+        material=material(name, rgb, roughness, metallic, double_sided)
+    )
     return mesh
 
 
@@ -130,12 +147,26 @@ def excavator_parts(mechanism_qpos):
         body = str(geom["body"])
         mesh_name = str(geom["mesh"])
         name = f"挖掘机/{index:02d}-{body}/{mesh_name}"
-        rgb = np.asarray(geom["rgba"], dtype=float)[:3]
-        parts.append((name, make_mesh(name, geom["vertices"], geom["faces"], rgb, 0.55)))
+        if mesh_name == "caterpillar":
+            style = ((0.045, 0.055, 0.060), 0.88, 0.04)
+        elif mesh_name.endswith("_rod"):
+            style = ((0.72, 0.78, 0.82), 0.12, 0.92)
+        elif mesh_name == "bucket":
+            style = ((0.16, 0.18, 0.20), 0.42, 0.68)
+        elif mesh_name.endswith("_tube"):
+            style = ((0.94, 0.48, 0.015), 0.25, 0.22)
+        else:
+            style = ((1.0, 0.56, 0.018), 0.27, 0.18)
+        parts.append(
+            (
+                name,
+                make_mesh(name, geom["vertices"], geom["faces"], *style),
+            )
+        )
     return parts
 
 
-def soil_surface(points, step_m: float = 0.04):
+def soil_surface_parts(points, step_m: float = 0.025):
     points = np.asarray(points, dtype=float)
     low = points[:, :2].min(axis=0)
     high = points[:, :2].max(axis=0)
@@ -145,27 +176,95 @@ def soil_surface(points, step_m: float = 0.04):
     height = np.full(tuple(shape), -np.inf, dtype=float)
     np.maximum.at(height, (ij[:, 0], ij[:, 1]), points[:, 2])
 
-    # The particle lattice leaves only a one-cell numerical rim empty.  Keep
-    # the measured cells and triangulate quads whose four corners are present.
+    # Crop the one-cell numerical rim and fill only rare internal sampling
+    # holes from immediate neighbours.  The actual cell maxima remain intact.
     valid = np.isfinite(height)
-    index = np.full(tuple(shape), -1, dtype=np.int32)
-    cells = np.argwhere(valid)
-    index[valid] = np.arange(len(cells), dtype=np.int32)
+    occupied_i = np.flatnonzero(valid.any(axis=1))
+    occupied_j = np.flatnonzero(valid.any(axis=0))
+    height = height[
+        occupied_i[0] : occupied_i[-1] + 1,
+        occupied_j[0] : occupied_j[-1] + 1,
+    ]
+    x0 = low[0] + occupied_i[0] * step_m
+    y0 = low[1] + occupied_j[0] * step_m
+    for _ in range(4):
+        missing = ~np.isfinite(height)
+        if not missing.any():
+            break
+        total = np.zeros_like(height)
+        count = np.zeros_like(height, dtype=np.int16)
+        for di, dj in ((-1, 0), (1, 0), (0, -1), (0, 1)):
+            shifted = np.roll(height, (di, dj), axis=(0, 1))
+            good = np.isfinite(shifted)
+            total[good] += shifted[good]
+            count[good] += 1
+        fill = missing & (count >= 2)
+        height[fill] = total[fill] / count[fill]
+    if not np.isfinite(height).all():
+        raise RuntimeError("soil surface contains unresolved sampling holes")
+
+    ni, nj = height.shape
+    ii, jj = np.meshgrid(np.arange(ni), np.arange(nj), indexing="ij")
     vertices = np.column_stack(
         (
-            low[0] + cells[:, 0] * step_m,
-            low[1] + cells[:, 1] * step_m,
-            height[valid],
+            x0 + ii.ravel() * step_m,
+            y0 + jj.ravel() * step_m,
+            height.ravel(),
         )
     )
+    index = np.arange(ni * nj, dtype=np.int32).reshape(ni, nj)
     faces = []
-    for i in range(shape[0] - 1):
-        for j in range(shape[1] - 1):
-            ids = [index[i, j], index[i + 1, j], index[i + 1, j + 1], index[i, j + 1]]
-            if min(ids) >= 0:
-                a, b, c, d = ids
-                faces.extend(((a, b, c), (a, c, d)))
-    return make_mesh("土体表面", vertices, faces, (0.42, 0.245, 0.105), 0.92)
+    for i in range(ni - 1):
+        for j in range(nj - 1):
+            a, b, c, d = index[i, j], index[i + 1, j], index[i + 1, j + 1], index[i, j + 1]
+            faces.extend(((a, b, c), (a, c, d)))
+    faces = np.asarray(faces, dtype=np.int32)
+
+    centroids = vertices[faces].mean(axis=1)
+    tone = (
+        np.sin(centroids[:, 0] * 8.7)
+        + np.cos(centroids[:, 1] * 10.3)
+        + np.sin((centroids[:, 0] + centroids[:, 1]) * 5.1)
+    ) / 3.0
+    bands = np.digitize(tone, (-0.24, 0.22))
+    styles = [
+        ((0.285, 0.125, 0.045), 0.98),
+        ((0.390, 0.190, 0.070), 0.96),
+        ((0.515, 0.285, 0.120), 0.94),
+    ]
+    result = []
+    for band, (rgb, roughness) in enumerate(styles):
+        name = f"混合料堆/土体表面-{band + 1}"
+        result.append((name, make_mesh(name, vertices, faces[bands == band], rgb, roughness)))
+
+    perimeter = []
+    perimeter.extend(index[:, 0].tolist())
+    perimeter.extend(index[-1, 1:].tolist())
+    perimeter.extend(index[-2::-1, -1].tolist())
+    perimeter.extend(index[0, -2:0:-1].tolist())
+    perimeter = np.asarray(perimeter, dtype=np.int32)
+    top = vertices[perimeter]
+    bottom = top.copy()
+    bottom[:, 2] = 0.0
+    side_vertices = np.vstack((top, bottom))
+    count = len(perimeter)
+    side_faces = []
+    for i in range(count):
+        j = (i + 1) % count
+        side_faces.extend(((i, count + i, count + j), (i, count + j, j)))
+    result.append(
+        (
+            "混合料堆/土体侧壁",
+            make_mesh(
+                "混合料堆/土体侧壁",
+                side_vertices,
+                side_faces,
+                (0.245, 0.105, 0.035),
+                0.99,
+            ),
+        )
+    )
+    return result
 
 
 def quaternion_matrix_wxyz(q):
@@ -210,7 +309,7 @@ def rock_parts(rigid_ids, rigid_qpos):
         parts.append(
             (
                 name,
-                make_mesh(name, vertices, faces, record["color_rgb"], 0.88),
+                make_mesh(name, vertices, faces, record["color_rgb"], 0.97, 0.02),
             )
         )
     return parts
@@ -223,23 +322,23 @@ def truck_parts():
     part_ids = frozen["part_ids"]
     # Insertion order and face counts are frozen by the original OBJ/MTL parser.
     names = ["YellowShine", "tyre", "GreyShine", "yaller", "pearl", "onyx", "ecru"]
-    colors = [
-        (0.972549, 0.639216, 0.0),
-        (0.188235, 0.188235, 0.188235),
-        (0.584314, 0.584314, 0.584314),
-        (0.972549, 0.639216, 0.0),
-        (0.584314, 0.584314, 0.584314),
-        (0.0, 0.0, 0.0),
-        (0.996078, 0.929412, 0.796078),
+    styles = [
+        ((1.0, 0.56, 0.015), 0.25, 0.18),
+        ((0.035, 0.042, 0.048), 0.9, 0.02),
+        ((0.58, 0.61, 0.64), 0.23, 0.82),
+        ((1.0, 0.54, 0.01), 0.3, 0.14),
+        ((0.69, 0.71, 0.73), 0.32, 0.72),
+        ((0.018, 0.022, 0.026), 0.2, 0.35),
+        ((0.86, 0.88, 0.9), 0.22, 0.62),
     ]
     result = []
-    for part_id, (part_name, rgb) in enumerate(zip(names, colors)):
+    for part_id, (part_name, style) in enumerate(zip(names, styles)):
         selected = faces[part_ids == part_id]
         used = np.unique(selected)
         remap = np.full(len(vertices), -1, dtype=np.int32)
         remap[used] = np.arange(len(used), dtype=np.int32)
         name = f"固定装载车/{part_id:02d}-{part_name}"
-        result.append((name, make_mesh(name, vertices[used], remap[selected], rgb, 0.55)))
+        result.append((name, make_mesh(name, vertices[used], remap[selected], *style)))
     return result
 
 
@@ -247,7 +346,7 @@ def ground_mesh():
     mesh = trimesh.creation.box(extents=(11.0, 10.0, 0.06))
     mesh.apply_translation((2.3, 2.0, -0.04))
     mesh.visual = trimesh.visual.TextureVisuals(
-        material=material("作业地面", (0.19, 0.22, 0.25), 0.96)
+        material=material("作业地面", (0.115, 0.135, 0.155), 0.86, 0.02)
     )
     return mesh
 
@@ -307,14 +406,14 @@ def main():
     checkpoint = np.load(CHECKPOINT, allow_pickle=False)
     meta = json.loads(CHECKPOINT_META.read_text())
     excavator = excavator_parts(checkpoint["mechanism_qpos"])
-    surface = ("混合料堆/土体表面", soil_surface(checkpoint["particle_q"]))
+    surface = soil_surface_parts(checkpoint["particle_q"])
     rocks = rock_parts(checkpoint["rigid_ids"], checkpoint["rigid_qpos"])
     truck = truck_parts()
     ground = ("环境/作业地面", ground_mesh())
 
     provenance = {
         "title": PROJECT_NAME,
-        "deliverable": "static_visual_glb",
+        "deliverable": "enhanced_static_visual_glb",
         "units": "metre",
         "up_axis": "Y",
         "source_checkpoint_sha256": sha256(CHECKPOINT),
@@ -322,15 +421,16 @@ def main():
         "checkpoint_stage": meta["stage"],
         "source_truck_mesh_sha256": sha256(TRUCK_MESH),
         "source_truck_contract_sha256": sha256(TRUCK_CONTRACT),
-        "soil_surface_note": "40 mm cell-max visual surface reconstructed from frozen MPM particles",
+        "soil_surface_note": "25 mm cell-max surface reconstructed from frozen MPM particles; three PBR earth tones plus closed side wall",
+        "material_upgrade": "PBR differentiation for painted metal, chrome rods, rubber tracks and tyres, steel bucket, truck metal, soil, and rock",
         "rock_count": len(rocks),
         "truck_note": "fixed project receiver pose; checkpoint itself has truck_enabled=false",
     }
 
     scenes = {
-        "complete": scene_from([ground, surface, *rocks, *truck, *excavator], provenance),
+        "complete": scene_from([ground, *surface, *rocks, *truck, *excavator], provenance),
         "excavator": scene_from(excavator, provenance),
-        "workface": scene_from([surface, *rocks], provenance),
+        "workface": scene_from([*surface, *rocks], provenance),
     }
     reports = []
     for key, scene in scenes.items():
@@ -339,7 +439,7 @@ def main():
         reports.append(validate_glb(target))
 
     build_report = {
-        "schema": "submission_glb_build_report_v1",
+        "schema": "submission_glb_build_report_v2",
         "status": "validated",
         "source": provenance,
         "models": reports,
