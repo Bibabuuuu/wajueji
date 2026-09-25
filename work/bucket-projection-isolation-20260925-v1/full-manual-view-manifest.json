@@ -1,0 +1,18 @@
+{
+  "label": "CORRECTED MANUAL REPLAY | 8122 FRAMES",
+  "summary": "Saved joystick input replay; soil clumping remains; retention not qualified",
+  "sources": [
+    {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-1800/display",
+      "label": "Frames 0-180: independently audited physical prefix"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-continuation-1620/display",
+      "label": "Frames 180-1800: corrected motion continuation"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-full-tail-1800-8122/display",
+      "label": "Frames 1800-8122: corrected motion continuation"
+    }
+  ]
+}
