@@ -6,6 +6,7 @@
 
 - 唯一开发仓库：台式机 Linux `/home/qunwang/wajueji`，SSH 别名 `desktop-tailscale`。本次没有新建 worktree；不使用 A30。
 - GitHub：`git@github.com:Bibabuuuu/wajueji.git`；当前分支 `codex/roadshow-metrics-20261011`。整理前 HEAD 为 `867bb5460e94dd4fe0566cc53e83b7a6eecfd5c7`；接手时必须查询实际 HEAD 和远端分支，不能把该基线当成上传后的提交。
+- Git推送环境：SSH默认PATH不含已有的`/home/qunwang/.local/bin/git-lfs`（3.4.1）。获准推送时使用`PATH=/home/qunwang/.local/bin:$PATH git push`，正常保留LFS钩子；无需安装或删除钩子。
 - CPU Python：`/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python`；SB3 隔离依赖：仓库内 `local-data/runtime/sb3-2.9.0-py312`。不联网重装或更换物理依赖。
 - Windows 媒体交付根目录：`C:\Users\14737\Desktop\wajueji\deliverables`。源模型、原生检查点、视频与粒子缓存没有纳入 Git；克隆仓库不能独立重跑物理。
 - 源码提交：`8305e63b323ae15d5dd064b532a11a87ce7c2769`；交接文档属于其后的记录提交，实际最终HEAD请用下文命令查询。
