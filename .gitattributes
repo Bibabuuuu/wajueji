@@ -16,3 +16,60 @@
 *.docx binary
 *.npz binary
 *.npy binary
+
+# Frozen experimental source bytes: preserve original SHA and harmless EOF spacing.
+work/continuous-single-scoop-20261014-v1/audit_launcher_v2.py -text whitespace=cr-at-eol
+work/continuous-single-scoop-20261014-v1/audit_v2.py -text whitespace=cr-at-eol
+work/continuous-single-scoop-20261014-v1/finish.py -text whitespace=cr-at-eol
+work/edge-adjacent-59um-20261015-v1/audit_second.py whitespace=-blank-at-eof
+work/edge-adjacent-59um-20261015-v1/export_second.py whitespace=-blank-at-eof
+work/edge-adjacent-59um-20261015-v1/minimum_guard.py -text whitespace=cr-at-eol
+work/edge-adjacent-59um-20261015-v1/render_second.py whitespace=-blank-at-eof
+work/edge-adjacent-59um-20261015-v1/rise_hold_guard.py -text whitespace=cr-at-eol
+work/edge-adjacent-59um-20261015-v1/run_second.py whitespace=-blank-at-eof
+work/edge-first-strips-20261015-v1/check_edge_reference.py -text whitespace=cr-at-eol
+work/edge-first-strips-20261015-v1/check_edge_reference_v2.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/audit_attempt2_software_stop.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/audit_edge_pair_attempt2.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/audit_prepoint_continuation.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/export_edge_packet_attempt2.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/export_prepoint_packet.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/finalize_night_records.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/probe_short_after_rise.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/render_edge_pair_attempt2.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/render_prepoint_continuation.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/render_prepoint_continuation_v2.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/run_edge_pair_attempt2.py -text whitespace=cr-at-eol,-blank-at-eof
+work/edge-first-two-scoop-20261015-v1/run_prepoint_continuation.py -text whitespace=cr-at-eol,-blank-at-eof
+work/roadshow-residual-stage02-20261014/render_frozen_media.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/audit_endpoint_final.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/diagnose_boundary_v2.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/transport_cpu_candidate_v2.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/transport_cpu_candidate_v3.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/transport_endpoint_candidate_v2.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/transport_endpoint_preflight_v2.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/transport_endpoint_preflight_v3.py -text whitespace=cr-at-eol
+work/roadshow-three-way-20261014-v1/transport_full_pair.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-dig-20261014-v1/audit_qerror_second.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-dig-20261014-v1/export_qerror_second.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-dig-20261014-v1/prepare_qerror_second.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-dig-20261014-v1/run_qerror_second.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/audit_long_qerror.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/close_long_qerror_budget.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/diagnose_long_qerror.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/finish_long_qerror_records.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/monitor_long_qerror.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/prepare_long_qerror.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/run_long_qerror.py -text whitespace=cr-at-eol
+work/second-scoop-qerror-long-20261014-v1/start_long_qerror_budget.py -text whitespace=cr-at-eol
+work/second-scoop-rise-hold-20261014-v1/start_phased_budget.py -text whitespace=cr-at-eol
+work/second-scoop-rise-tolerance-59um-20261015-v1/minimum_guard.py -text whitespace=cr-at-eol
+work/second-scoop-rise-tolerance-59um-20261015-v1/rise_hold_guard.py -text whitespace=cr-at-eol
+work/second-scoop-short-minimum-20261014-v1/audit_minimum_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-minimum-20261014-v1/diagnose_minimum_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-minimum-20261014-v1/monitor_minimum_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-minimum-20261014-v1/run_minimum_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-phased-20261014-v1/audit_phased_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-phased-20261014-v1/monitor_phased_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-phased-20261014-v1/prepare_phased_short.py -text whitespace=cr-at-eol
+work/second-scoop-short-phased-20261014-v1/run_phased_short.py -text whitespace=cr-at-eol
