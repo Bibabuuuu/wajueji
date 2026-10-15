@@ -55,6 +55,9 @@
 
 ## 5. 证据和报告
 
+2026-10-15当前交接见[handoff](handoff.md)：D192连续两铲、D193图表视频和D196两组短检。精选原报告与源码SHA见`reports/github-handoff-20261015/`，原始缓存和模型仍留台式机；下列较早入口只作历史追溯。
+
+
 当前S05已完成[D-149响应诊断](../work/contact-response-diagnosis-20260924-v1/README.md)，正在优先推进今晚三铲基线；旧候选证据入口：[v9-handoff保护停止](../work/contact-geometric-feedback-20260924-v9-handoff/README.md)、[速度与离土只读诊断](../work/contact-speed-audit-20260924-v1/README.md)、[第一/第二铲初态及短程资格](../work/contact-multisource-validation-20260924-v1/README.md)。原[v7后段约束及1500帧结果](../work/contact-geometric-feedback-20260924-v7/README.md)冻结保留；新会话先读[交接及暂停边界](handoff.md)。
 
 S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contact-bc-data-preparation-20260924-v1/README.md)。初始地形缺失修正与旧索引适用边界以此证据和S05为准。
@@ -115,3 +118,7 @@ S05较早数据/模型接线入口：[D-145整理与离线试训](../work/contac
 - [三个问题专项讨论交接](../work/user-three-issues-discussion-20260925-v1/README.md)：用户要求的新会话只读调查/讨论范围、原图SHA、证据位置与实施批准暂停点。
 
 - [真实第二铲接触入口准备](../work/contact-next-scoop-20260925-v1/README.md)：原取料策略的状态接线、源尾保持/零步及CPU回归；实际第二铲未验证。
+
+## 2026-10-12 PPT与台式技术会话分工
+
+- [路演PPT数据请求与阶段交付接口](roadshow/PPT_DATA_REQUEST.md)：当前用户确认的跨会话分工、具体数据用途、现有工具/证据、停止门和每阶段交付字段；不替代总体或小节计划。

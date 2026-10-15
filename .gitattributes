@@ -73,3 +73,6 @@ work/second-scoop-short-phased-20261014-v1/audit_phased_short.py -text whitespac
 work/second-scoop-short-phased-20261014-v1/monitor_phased_short.py -text whitespace=cr-at-eol
 work/second-scoop-short-phased-20261014-v1/prepare_phased_short.py -text whitespace=cr-at-eol
 work/second-scoop-short-phased-20261014-v1/run_phased_short.py -text whitespace=cr-at-eol
+
+# Patch context deliberately contains a single-space blank line.
+reports/github-handoff-20261015/preexisting-uncommitted.patch -text whitespace=-blank-at-eol

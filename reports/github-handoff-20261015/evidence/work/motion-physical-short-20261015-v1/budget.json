@@ -1,0 +1,13 @@
+{
+  "purpose": "D195_motion_short_pair",
+  "seconds": 1800,
+  "epoch_start": 1792035732.3899071,
+  "epoch_deadline": 1792037532.3899071,
+  "monotonic_deadline": 265359.814441972,
+  "reserve_seconds": 300,
+  "max_loaded_frames": 1000,
+  "max_return_frames": 3300,
+  "boot_id": "39cfd6c4-9db0-4c2a-88f7-72eef8c78fda",
+  "training_updates_allowed": 0,
+  "authorized": "新增30分钟，完成两组短段对照"
+}

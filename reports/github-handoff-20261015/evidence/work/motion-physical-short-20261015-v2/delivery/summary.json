@@ -1,0 +1,149 @@
+{
+  "closure": {
+    "status": "closed",
+    "physical_status": "both_short_cases_completed",
+    "failure": null,
+    "physics_steps": 3639,
+    "native_initializations": 2,
+    "inference_calls": 0,
+    "training_updates": 0,
+    "started_at": "2026-10-15T13:04:23.904046+08:00",
+    "deadline_at": "2026-10-15T13:34:23.904046+08:00",
+    "closed_at": "2026-10-15T13:26:48.506435+08:00",
+    "unused_seconds_sealed": 455.3976092338562,
+    "budget_reopened": false,
+    "automatic_retry": false,
+    "record_audit_passed": true,
+    "report_sha256": "e84c3d9c32fe304f0f92185cb8b7bbfba5ea4485d0e03efc69e96b15a12ceef3",
+    "audit_sha256": "e01fc338d1ec5444dc09f0167375210474109ddadfd37d6d9378327926ea3ac3"
+  },
+  "cases": [
+    {
+      "name": "loaded",
+      "status": "completed",
+      "failure": null,
+      "frames": 887,
+      "phases": [
+        {
+          "name": "CLEAR_PILE",
+          "start_frame": 3,
+          "end_frame": 767,
+          "reference_frames": 734,
+          "hold_frames": 30,
+          "endpoint_axis_error": 0.0007465746202564016
+        },
+        {
+          "name": "ALIGN",
+          "start_frame": 767,
+          "end_frame": 887,
+          "reference_frames": 120,
+          "hold_frames": 0,
+          "endpoint_axis_error": 0.0011663085807870344
+        }
+      ],
+      "final_alignment": null,
+      "full_roi_admission": null,
+      "initial_cavity_particles": 12056,
+      "final_cavity_particles": 12955,
+      "initial_cohort_still_in_cavity": 12037,
+      "particle_measurement_scope": "Cavity particle cohort diagnostic only; not calibrated retained fill or proof of no spill."
+    },
+    {
+      "name": "return",
+      "status": "completed",
+      "failure": null,
+      "frames": 2752,
+      "phases": [
+        {
+          "name": "RETURN_EXIT",
+          "start_frame": 3,
+          "end_frame": 615,
+          "reference_frames": 582,
+          "hold_frames": 30,
+          "endpoint_axis_error": 1.146045310723709e-05
+        },
+        {
+          "name": "RETURN_COORDINATED",
+          "start_frame": 615,
+          "end_frame": 2001,
+          "reference_frames": 1356,
+          "hold_frames": 30,
+          "endpoint_axis_error": 1.001572302442022e-05
+        },
+        {
+          "name": "RETURN_REFERENCE",
+          "start_frame": 2001,
+          "end_frame": 2752,
+          "reference_frames": 721,
+          "hold_frames": 30,
+          "endpoint_axis_error": 8.315956363691424e-06
+        }
+      ],
+      "final_alignment": {
+        "trusted": true,
+        "matched_frame": 3,
+        "actual_progress": 3.0,
+        "reference_limit": 9.0,
+        "position_error_m": 0.010176418174879845,
+        "angle_error_rad": 0.0019123291786283252,
+        "joint_error_si": [
+          1.4579205648290738e-08,
+          0.0010082638521762277,
+          -7.527964145936927e-07,
+          -1.977453879087321e-06
+        ],
+        "mode": "follow"
+      },
+      "full_roi_admission": {
+        "clearance_m": 0.3437354099503851,
+        "proxy_point_world_m": [
+          5.699611723155401,
+          0.1849421446865715,
+          1.7039039861909246
+        ],
+        "cell_surface_z_m": 1.3601685762405396
+      },
+      "initial_cavity_particles": null,
+      "final_cavity_particles": null,
+      "initial_cohort_still_in_cavity": null,
+      "particle_measurement_scope": null
+    }
+  ],
+  "metrics": {
+    "loaded": {
+      "command_max_error": 0.0,
+      "load_bias_max_error": 0.0,
+      "phase_max_pitch_error_deg": {
+        "CLEAR_PILE": 4.00078526761825,
+        "ALIGN": 1.4383400104547381
+      },
+      "phase_samples": {
+        "CLEAR_PILE": 764,
+        "ALIGN": 120
+      }
+    },
+    "return": {
+      "command_max_error": 0.0,
+      "load_bias_max_error": 0.0,
+      "phase_max_pitch_error_deg": {
+        "RETURN_EXIT": 0.01744280562491638,
+        "RETURN_COORDINATED": 0.03544522623670783,
+        "RETURN_REFERENCE": 0.009783527170723757
+      },
+      "phase_samples": {
+        "RETURN_EXIT": 612,
+        "RETURN_COORDINATED": 1386,
+        "RETURN_REFERENCE": 751
+      }
+    }
+  },
+  "old_loaded_max_pitch_error_deg": 4.110049735068719,
+  "scope": "Independent loaded transfer and post-unload approach diagnostics; no new digging or full two-scoop sequence.",
+  "limitations": "Cavity counts do not prove calibrated fill/no spill. Peak pitch-to-reference error is a short-run comparison, not statistical damping validation.",
+  "actual_return_seconds": 45.86666666666667,
+  "old_actual_return_seconds": 147.08333333333334,
+  "return_seconds_reduction": 101.21666666666667,
+  "return_time_reduction_fraction": 0.6881586402266289,
+  "return_time_scope": "Same qualified dump snapshot and original prefix gate, through reference-prepoint hold, physical simulation time; one case, not real-machine wall-clock throughput.",
+  "damping_conclusion": "Loaded lift peak pitch-to-reference error4.11005deg to4.00079deg; small improvement only, damping problem not resolved. ALIGN is only a120-frame entry test."
+}

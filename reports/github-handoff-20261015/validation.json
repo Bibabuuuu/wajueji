@@ -1,0 +1,91 @@
+{
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "checks": [
+    {
+      "name": "all candidate Python sources parse",
+      "passed": true
+    },
+    {
+      "name": "no private key signatures",
+      "passed": true
+    },
+    {
+      "name": "source hashes still match",
+      "passed": true
+    },
+    {
+      "name": "original evidence copies unchanged",
+      "passed": true
+    },
+    {
+      "name": "command test_manual_*.py",
+      "passed": true
+    },
+    {
+      "name": "command test_roadshow_*.py",
+      "passed": true
+    },
+    {
+      "name": "tests use HEAD variants of all four preexisting dirty files",
+      "passed": true
+    },
+    {
+      "name": "command --check",
+      "passed": true
+    },
+    {
+      "name": "staged source bytes equal frozen working SHA",
+      "passed": true
+    },
+    {
+      "name": "git diff --cached --check with exact per-path attributes",
+      "passed": true
+    },
+    {
+      "name": "documentation and evidence cached diff check; patch context spacing preserved",
+      "passed": true
+    }
+  ],
+  "commands": [
+    {
+      "args": [
+        "/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v4",
+        "-p",
+        "test_manual_*.py"
+      ],
+      "returncode": 0,
+      "output": "......................................................\n----------------------------------------------------------------------\nRan 54 tests in 1.245s\n\nOK\n"
+    },
+    {
+      "args": [
+        "/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests/v4",
+        "-p",
+        "test_roadshow_*.py"
+      ],
+      "returncode": 0,
+      "output": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.001s\n\nOK\n"
+    },
+    {
+      "args": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "output": ""
+    }
+  ],
+  "created_epoch": 1792042901.9542305,
+  "status": "cpu_candidate_passed"
+}

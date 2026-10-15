@@ -1,0 +1,250 @@
+{
+  "status": "media_audit_passed",
+  "checks": [
+    {
+      "check": "render completed",
+      "passed": true
+    },
+    {
+      "check": "master sha",
+      "passed": true
+    },
+    {
+      "check": "prepared data unchanged",
+      "passed": true
+    },
+    {
+      "check": "renderer unchanged",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/report.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/read-only-audit.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/reconstruction.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/states.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/phases.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/scene.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/report.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/read-only-audit.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/reconstruction.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/states.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/phases.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/scene.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/report.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/actions.ndjson",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/policy-2/episode-0001/report.json",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/policy-2/episode-0001/actions.ndjson",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/scoop-1-plan/terrain.npz",
+      "passed": true
+    },
+    {
+      "check": "source sha /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/scoop-2-plan/terrain.npz",
+      "passed": true
+    },
+    {
+      "check": "cache identity /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/particles.npy",
+      "passed": true
+    },
+    {
+      "check": "cache identity /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/states.json",
+      "passed": true
+    },
+    {
+      "check": "cache identity /home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/scene.json",
+      "passed": true
+    },
+    {
+      "check": "cache identity /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/particles.npy",
+      "passed": true
+    },
+    {
+      "check": "cache identity /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/states.json",
+      "passed": true
+    },
+    {
+      "check": "cache identity /home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/scene.json",
+      "passed": true
+    },
+    {
+      "check": "full encoded schedule",
+      "passed": true
+    },
+    {
+      "check": "every frame map exact",
+      "passed": true
+    },
+    {
+      "check": "all workflow phases visible",
+      "passed": true
+    },
+    {
+      "check": "keyframe sha video/keyframes/01-first-cut.png",
+      "passed": true
+    },
+    {
+      "check": "keyframe sha video/keyframes/02-first-hold.png",
+      "passed": true
+    },
+    {
+      "check": "keyframe sha video/keyframes/03-unloaded.png",
+      "passed": true
+    },
+    {
+      "check": "keyframe sha video/keyframes/04-returned.png",
+      "passed": true
+    },
+    {
+      "check": "keyframe sha video/keyframes/05-second-cut.png",
+      "passed": true
+    },
+    {
+      "check": "keyframe sha video/keyframes/06-second-hold.png",
+      "passed": true
+    },
+    {
+      "check": "no simulation or learning calls",
+      "passed": true
+    },
+    {
+      "check": "zero render physics inference training",
+      "passed": true
+    },
+    {
+      "check": "two-scoop-full-1x.mp41080p30H264",
+      "passed": true
+    },
+    {
+      "check": "two-scoop-full-1x.mp4frames duration",
+      "passed": true
+    },
+    {
+      "check": "two-scoop-full-1x.mp4entire decode",
+      "passed": true
+    },
+    {
+      "check": "two-scoop-presentation-2x.mp41080p30H264",
+      "passed": true
+    },
+    {
+      "check": "two-scoop-presentation-2x.mp4frames duration",
+      "passed": true
+    },
+    {
+      "check": "two-scoop-presentation-2x.mp4entire decode",
+      "passed": true
+    },
+    {
+      "check": "master schedule equals decoder",
+      "passed": true
+    },
+    {
+      "check": "2x duration",
+      "passed": true
+    }
+  ],
+  "checks_passed": 47,
+  "movies": {
+    "two-scoop-full-1x.mp4": {
+      "file": "video/two-scoop-full-1x.mp4",
+      "sha256": "4142762f53b84a6cab09d9b13506b52c29c36aebaa56d7b5cbaf5c094f4b450c",
+      "bytes": 29541456,
+      "frames": 9539,
+      "duration_s": 317.966667,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "9539"
+          }
+        ],
+        "format": {
+          "duration": "317.966667"
+        }
+      }
+    },
+    "two-scoop-presentation-2x.mp4": {
+      "file": "video/two-scoop-presentation-2x.mp4",
+      "sha256": "65da8cc584d152ffc4598d3373bcab89f5bdc7348ef4b77164abc2593b391d73",
+      "bytes": 17195251,
+      "frames": 4770,
+      "duration_s": 159.0,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1",
+            "nb_read_frames": "4770"
+          }
+        ],
+        "format": {
+          "duration": "159.000000"
+        }
+      }
+    }
+  },
+  "derivative_filter": "setpts=0.5*PTS,fps=30,drawbox=x=1710:y=124:w=170:h=55:color=0x101e2c:t=fill,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='2x':x=1756:y=131:fontsize=36:fontcolor=white",
+  "derivative_semantics": "Entire master timeline at2x, resampled30fps, explicit2x label; no stage removed. Final result-freeze also plays at2x.",
+  "physics_steps": 0,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "source_boundary_frame": 10504,
+  "workflow_last_frame": 18895,
+  "continuity": "First valid returned prefix plus strictly verified restored59um branch; seam explicitly labelled; abandoned1um rise excluded and preserved in source."
+}

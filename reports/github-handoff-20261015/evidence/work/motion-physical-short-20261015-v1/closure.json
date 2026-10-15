@@ -1,0 +1,16 @@
+{
+  "status": "expired_before_native_execution",
+  "budget_seconds": 1800,
+  "started_at": "2026-10-15T11:42:12.389907+08:00",
+  "deadline_at": "2026-10-15T12:12:12.389907+08:00",
+  "observed_at": "2026-10-15T13:01:05.561188+08:00",
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "physical_results_available": false,
+  "physical_runner_created": false,
+  "budget_reopened": false,
+  "reason": "Turn resumed after original deadline; only budget registration and read-only source/resource inspection had completed.",
+  "budget_sha256": "d1fa148d39dc1045057ccc539acda43e2a5f17902730c94f4eecce09507a4a2e"
+}

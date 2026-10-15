@@ -1,0 +1,288 @@
+{
+  "status": "cpu_return_geometry_passed",
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "physical_admission": false,
+  "attempts": [],
+  "source": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/dump.npz",
+  "source_sha256": "26d3928d2e41fc1f5bce5020160be6faddcdca7a936dcaddd7eb65a49e1f94b3",
+  "outward_to_reference_geometry_passed": true,
+  "accepted_route": "exit_rise0.25_retreat0.0_curl0.15_coordinated_outward",
+  "selected": {
+    "entry_xy_m": [
+      5.75,
+      0.15000000000000013
+    ],
+    "surface_z_m": 1.3618692755699158,
+    "score": 0.29791572937369337,
+    "corridor_cell_count": 157,
+    "contact": {
+      "source": "rear_lower_face_from_observed_profile",
+      "contact_xy_m": [
+        5.849965990892134,
+        0.1526078084580558
+      ],
+      "contact_surface_z_m": 0.6995177268981934,
+      "outward_offset_m": 0.1,
+      "normalized_height_fraction": 0.48895886741489936,
+      "target_height_fraction": 0.4,
+      "height_fraction_band": [
+        0.3,
+        0.5
+      ],
+      "crest_surface_z_m": 1.1716879606246948,
+      "base_surface_z_m": 0.24775013327598572,
+      "face_drop_m": 0.9239378273487091,
+      "bucket_width_m": 0.6,
+      "strip_anchor_xy_m": [
+        5.75,
+        0.15000000000000013
+      ],
+      "profile": [
+        {
+          "outward_offset_m": 0.0,
+          "center_xy_m": [
+            5.75,
+            0.15000000000000013
+          ],
+          "surface_z_m": 1.1716879606246948,
+          "minimum_surface_z_m": 0.47961241006851196,
+          "maximum_surface_z_m": 1.1910966634750366,
+          "cell_count": 7
+        },
+        {
+          "outward_offset_m": 0.1,
+          "center_xy_m": [
+            5.849965990892134,
+            0.1526078084580558
+          ],
+          "surface_z_m": 0.6995177268981934,
+          "minimum_surface_z_m": 0.498354434967041,
+          "maximum_surface_z_m": 0.758743166923523,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.2,
+          "center_xy_m": [
+            5.949931981784267,
+            0.15521561691611144
+          ],
+          "surface_z_m": 0.24775013327598572,
+          "minimum_surface_z_m": 0.15415014326572418,
+          "maximum_surface_z_m": 0.5296928286552429,
+          "cell_count": 6
+        }
+      ],
+      "prepoint_status": "not_selected_requires_separate_clearance_plan"
+    },
+    "legacy_height_score": 0.3514337613582612,
+    "cut_opportunity": {
+      "version": "full_width_cut_opportunity_v1",
+      "score_m3": 0.29791572937369337,
+      "observed_cut_band_volume_m3": 0.3327443631589412,
+      "weakest_third_equivalent_volume_m3": 0.26308709558844556,
+      "width_band_mean_thickness_m": [
+        0.677634212705824,
+        0.6774309277534484,
+        0.6774309277534484,
+        0.6838458577791848,
+        0.6838458577791848,
+        0.6838178568416171,
+        0.6838178568416171,
+        0.677566655476888,
+        0.677566655476888,
+        0.5308914840221404,
+        0.5308914840221404,
+        0.20957940485742357
+      ],
+      "material_coverage_fraction": 0.9490740740740741,
+      "width_m": 0.6,
+      "inward_length_m": 0.9,
+      "bottom_z_m": 0.3495177268981934,
+      "below_entry_m": 0.35,
+      "vertical_band_height_m": 0.7,
+      "sample_spacing_max_m": 0.05,
+      "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+    },
+    "selection_version": "full_width_cut_opportunity_v1",
+    "future_strip_count": 0,
+    "future_entry_xy_m": [],
+    "workspace_score": 0.29791572937369337,
+    "remaining_scoops_considered": 1,
+    "adjacency": {
+      "version": "edge_inward_adjacent_entry_v1_cpu",
+      "previous_entry_xy_m": [
+        5.712791979327416,
+        0.7137969793724978
+      ],
+      "inward_sign": -1,
+      "entry_station_radius_m": 5.757212722040845,
+      "heading_delta_rad": -0.09822189927824815,
+      "nominal_entry_boundary_gap_m": -0.034019498199642784,
+      "radial_contact_difference_m": 0.09474346694390778,
+      "scope": "Entry station only; actual sweep overlap/gaps and fresh full-width material require separate audit"
+    }
+  },
+  "fresh_observation": {
+    "detached_payload_particles": 0,
+    "detached_dynamic_particles": 23269,
+    "detached_rock_ids": [
+      "lower_middle-001",
+      "lower_middle-010",
+      "middle-004",
+      "middle-012",
+      "upper-010",
+      "upper-011"
+    ],
+    "support_margin_m": 0.15,
+    "rock_to_stationary_soil_aabb_gap_m": {
+      "lower-000": 0.0,
+      "lower-001": 0.0,
+      "lower-002": 0.0,
+      "lower-003": 0.0,
+      "lower-004": 0.0,
+      "lower-005": 0.0,
+      "lower-006": 0.0,
+      "lower-007": 0.0,
+      "lower-008": 0.0,
+      "lower_middle-000": 0.0,
+      "lower_middle-001": 2.2904762024424614,
+      "lower_middle-002": 0.0,
+      "lower_middle-003": 0.0,
+      "lower_middle-004": 0.0,
+      "lower_middle-005": 0.0,
+      "lower_middle-006": 0.0,
+      "lower_middle-007": 0.0,
+      "lower_middle-008": 0.0,
+      "lower_middle-009": 0.0,
+      "lower_middle-010": 2.099810952143273,
+      "middle-000": 0.0,
+      "middle-001": 0.0,
+      "middle-002": 0.0,
+      "middle-003": 0.0,
+      "middle-004": 2.4209314431493287,
+      "middle-005": 0.0,
+      "middle-006": 0.0,
+      "middle-007": 0.0,
+      "middle-008": 0.0,
+      "middle-009": 0.0,
+      "middle-010": 0.0,
+      "middle-011": 0.0,
+      "middle-012": 1.9670011086097552,
+      "upper-000": 0.0,
+      "upper-001": 0.0,
+      "upper-002": 0.0,
+      "upper-003": 0.0,
+      "upper-004": 0.0,
+      "upper-005": 0.0,
+      "upper-006": 0.0,
+      "upper-007": 0.0,
+      "upper-008": 0.0,
+      "upper-009": 0.0,
+      "upper-010": 2.0021533402665495,
+      "upper-011": 2.1033315193511255,
+      "upper-012": 0.0,
+      "upper-013": 0.0
+    },
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "Ground-connected stock; all detached soil/rocks remain in physical collision solving"
+  },
+  "reference_alignment": {
+    "trusted": true,
+    "matched_frame": 3,
+    "actual_progress": 3.0,
+    "reference_limit": 9.0,
+    "position_error_m": 0.010730248966656817,
+    "angle_error_rad": 0.002036039280168659,
+    "joint_error_si": [
+      1.0842293996643493e-08,
+      0.0009999478958125363,
+      1.7159957033108242e-07,
+      3.7240254657788796e-08
+    ],
+    "mode": "follow"
+  },
+  "full_roi_reference_admission": {
+    "clearance_m": 0.3442981987166389,
+    "proxy_point_world_m": [
+      5.699589461831082,
+      0.18494154263232976,
+      1.7044665365385994
+    ],
+    "cell_surface_z_m": 1.3601683378219604
+  },
+  "reference_frames": 2660,
+  "nominal_reference_seconds": 44.333333333333336,
+  "intermediate_waypoints": 2,
+  "segments": [
+    {
+      "steps": 583,
+      "seconds": 9.716666666666667,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.7671926234209793,
+        "bucket_terrain_m": 3.047898625128913,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9136339505673241,
+        "closure_m": 8.881784197001252e-16,
+        "mechanism_terrain_clearance_m": 0.9150997844540291
+      },
+      "geometry_samples": 1167,
+      "endpoint_velocity": 0.0,
+      "endpoint_acceleration": 0.0,
+      "polynomial": "10s^3-15s^4+6s^5",
+      "continuous_collision_proven": false,
+      "physical_admission": false
+    },
+    {
+      "steps": 1356,
+      "seconds": 22.6,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.2870173064117818,
+        "bucket_terrain_m": 1.4081784178519965,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9034354014589693,
+        "closure_m": 4.440892098500626e-15,
+        "mechanism_terrain_clearance_m": 0.9151000508906219
+      },
+      "geometry_samples": 2713,
+      "endpoint_velocity": 0.0,
+      "endpoint_acceleration": 0.0,
+      "polynomial": "10s^3-15s^4+6s^5",
+      "continuous_collision_proven": false,
+      "physical_admission": false
+    },
+    {
+      "steps": 721,
+      "seconds": 12.016666666666667,
+      "minimum_clearance": {
+        "bucket_truck_m": 2.5121222422013973,
+        "bucket_terrain_m": 0.3442987914456359,
+        "mechanism_truck_m": 0.8161521264162185,
+        "mechanism_ground_m": 0.8936343589296305,
+        "closure_m": 8.881784197001252e-16,
+        "mechanism_terrain_clearance_m": 0.02050813184863154
+      },
+      "geometry_samples": 1443,
+      "endpoint_velocity": 0.0,
+      "endpoint_acceleration": 0.0,
+      "polynomial": "10s^3-15s^4+6s^5",
+      "continuous_collision_proven": false,
+      "physical_admission": false
+    }
+  ],
+  "segment_labels": [
+    "unloaded_exit",
+    "coordinated_outward",
+    "reference_entry"
+  ],
+  "bucket_cylinder_travel_m": 0.338371742953383,
+  "original_after_unload_to_next_dig_s": 147.08333333333334,
+  "guards": "Whole route static CAD4cm/2cm, bounds, closure, stock32cm and mechanism2cm. Outside stock ROI uses existing transport known-ground semantics. Terminal full ROI unchanged. No claim of full dynamic avoidance.",
+  "original_lower_reference_unchanged": true,
+  "physical_or_fill_improvement_verified": false,
+  "limitations": "Nominal geometry only; no physical speed, damping or fill improvement proven. Outward waypoint retained to respect the original32cm margin. No extra per-waypoint hold inserted by this CPU planner.",
+  "wall_seconds": 72.22319622599753
+}

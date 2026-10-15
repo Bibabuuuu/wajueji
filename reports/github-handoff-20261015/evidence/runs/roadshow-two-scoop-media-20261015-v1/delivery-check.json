@@ -1,0 +1,15 @@
+{
+  "status": "local_delivery_passed",
+  "figures_visual_review": "All six complete PNGs reviewed; no cropping, font loss or text collision found.",
+  "video_visual_review": "Original smoke frames plus encoded seam, final result card and2x speed label reviewed.",
+  "qa_warnings_accepted": [
+    "300dpi intentional for PPT",
+    "13.33-inch wide layouts intentional for PPT"
+  ],
+  "data_rows": 7378,
+  "hold_samples": 6,
+  "raw_frame_cache_copied": false,
+  "new_physics": 0,
+  "inference": 0,
+  "training": 0
+}

@@ -1,0 +1,20 @@
+{
+  "objective_complete": true,
+  "requirements": {
+    "first_full_reference_and_half_second_hold": "prior first audit complete, hold30, immutable source result",
+    "actual_transport_unload_return": "47-check audit prior_actual_unload_return_preserved",
+    "evolved_stock_and_adjacent_selection": "native zero24 and original3 prefix; fresh map and actual first entry independently reconstructed",
+    "second_full_reference_and_half_second_hold": "completed status and47-check audit, cursor1170, hold30",
+    "frozen_model_and_physics_no_training": "all code/model/input bindings unchanged, zero updates; user-authorized59um rule only",
+    "within_authorized_scope_and_time": "8391 new frames, one restored instance, closed3600-second budget; no second transport",
+    "reviewable_artifacts": "47-check audit, source CSV/JSON, actual frames, editable SVG/PDF, 300dpi PNG, all links present",
+    "negative_and_unverified_boundaries": "old failed run preserved; no uninterrupted-from-initial or matched-central/statistical/calibrated-volume claim"
+  },
+  "uninterrupted_from_initial_state": false,
+  "first_retained_display_percent": 149.95719042333914,
+  "second_retained_display_percent": 109.94133502457586,
+  "second_delta_vs_historical_percentage_points": 41.76629142222925,
+  "audit_sha256": "fc1c008ce1ec57c74a5a88b3f0f2d29c512c931d8d192de15be7732761302c13",
+  "report_sha256": "dc987c943fa8d1a21caf27b99df3e352b0ee783109b3857cf6d389f61c434325",
+  "closure_sha256": "16cc3a8acacc6d75c04c28985774881762857af49ef0938ebdd5506ba3ae4fd4"
+}

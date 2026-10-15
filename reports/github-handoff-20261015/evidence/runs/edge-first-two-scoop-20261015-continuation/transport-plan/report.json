@@ -1,0 +1,53 @@
+{
+  "status": "kinematic_transport_plan_passed",
+  "physics_steps_added": 0,
+  "source": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/endpoint.npz",
+  "observation": {
+    "mode": "fixed_route_static_geometry",
+    "particle_terrain_check_enabled": false,
+    "physical_particles_modified": false,
+    "scope": "transport only; next-scoop observation unchanged"
+  },
+  "carry_pitch": 1.4680376311597214,
+  "carry_cylinder_m": 0.8493786920221913,
+  "initial_clearance": {
+    "bucket_truck_m": 0.9314411354014295,
+    "bucket_terrain_m": null,
+    "mechanism_truck_m": 0.06659181472883424,
+    "mechanism_ground_m": 0.9065744588612683,
+    "closure_m": 7.04547204817274e-05
+  },
+  "stages": [
+    {
+      "name": "CLEAR_PILE",
+      "frames": 588,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.8202878536559977,
+        "mechanism_truck_m": 0.06668608106808005,
+        "mechanism_ground_m": 0.9065816399294798,
+        "closure_m": 4.440892098500626e-15
+      }
+    },
+    {
+      "name": "ALIGN",
+      "frames": 550,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.12472417076116848,
+        "mechanism_truck_m": 0.05144257579011852,
+        "mechanism_ground_m": 0.9106808737874825,
+        "closure_m": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "DUMP",
+      "frames": 1191,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.6033824895301756,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9106809155721624,
+        "closure_m": 8.881784197001252e-16
+      }
+    }
+  ],
+  "scope": "Fixed CLEAR_PILE/ALIGN/DUMP goals. Static truck, ground, closure and retention checks; particle terrain map disabled by user. No physical state reset."
+}

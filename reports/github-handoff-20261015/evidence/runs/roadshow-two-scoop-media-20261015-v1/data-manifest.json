@@ -1,0 +1,285 @@
+{
+  "status": "source_data_prepared",
+  "sources_sha256": {
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/report.json": "3bbd311f74f536dd541d5fff6df5b3908907acad1448c5ae16a42a176f288e77",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/read-only-audit.json": "8cb8a2842cbd0356671befb1ce6621b13ddf827eeb181b1ae6bb74a157ccb8c9",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/reconstruction.json": "e38aa548ac0da61a4289252c3d0c04ff673ea54cec20e5904748073888f80cf6",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/states.json": "0d14cf3b7ae989887ecf8d3406e703c03ef16ad7d8cb89face820d7528c2d602",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/phases.json": "d1279c5ea748c0ab801b3f62f2de9e8cec5043fecf53cf3a96404216306a673c",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/display/scene.json": "72b6ef99394d7890a1d8a826e4d50df86ad9c44d90d6bbfe97d559a98a81ee9c",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/report.json": "dc987c943fa8d1a21caf27b99df3e352b0ee783109b3857cf6d389f61c434325",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/read-only-audit.json": "fc1c008ce1ec57c74a5a88b3f0f2d29c512c931d8d192de15be7732761302c13",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/reconstruction.json": "3b26becdb262be4d871dcaee46e2ba7ece8e1f1e53535b040d887ff32036a326",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/states.json": "39ed522421eb05775ca5d5973ae91d5488a981dbab8762c3467dbebf13eeeb63",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/phases.json": "84abdf149d20488ed5d65c32b993486d06d4513a15ce934015a90a922e362465",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/display/scene.json": "ee332a623f434a07af5806a7a3b951fce10d9715e07e6f56190d3d73448fcfc8",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/report.json": "6a68bf01620f846b2712090a28e5b1a16655737713aa344f39d4d5c4b56e782f",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/actions.ndjson": "29bb69da3ee338b292d5eb7c9062e88041b27b4ebeaaa6b9a425a99c4f1d30ae",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/policy-2/episode-0001/report.json": "4c919ac4eaf074d5f36426127f56b68bbcaebb4f23bb5cf76ed25a6da0188bb3",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/policy-2/episode-0001/actions.ndjson": "a16db78477f8502824d08e697bfedf158a4ad4f960861b5d3f823ccba659f80a",
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/scoop-1-plan/terrain.npz": "04a05427556e181a46ab7a6f63aaa70584b356cbee1344bc5a09df48f94db250",
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/scoop-2-plan/terrain.npz": "14a08c0af47ab98189c1c09f35040bac45a693bf9c70b582009490cd74089b99"
+  },
+  "cache_identities": {
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation": {
+      "particles.npy": {
+        "sha256": "4b0c5e9a245582f8116316e1af1b70ae5e4e13e8138f8d9f05d2f2d347c30e04",
+        "bytes": 38946207680,
+        "mtime_ns": 1792001971718172262
+      },
+      "states.json": {
+        "sha256": "0d14cf3b7ae989887ecf8d3406e703c03ef16ad7d8cb89face820d7528c2d602",
+        "bytes": 218001196,
+        "mtime_ns": 1792001975712188209
+      },
+      "scene.json": {
+        "sha256": "72b6ef99394d7890a1d8a826e4d50df86ad9c44d90d6bbfe97d559a98a81ee9c",
+        "bytes": 38969,
+        "mtime_ns": 1791999510581725213
+      }
+    },
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1": {
+      "particles.npy": {
+        "sha256": "aa819846bee84bb907e7d241c195ca3272e857401e8f2895afb3c92286e85733",
+        "bytes": 25824634592,
+        "mtime_ns": 1792028428044899821
+      },
+      "states.json": {
+        "sha256": "39ed522421eb05775ca5d5973ae91d5488a981dbab8762c3467dbebf13eeeb63",
+        "bytes": 144437582,
+        "mtime_ns": 1792028430680956175
+      },
+      "scene.json": {
+        "sha256": "ee332a623f434a07af5806a7a3b951fce10d9715e07e6f56190d3d73448fcfc8",
+        "bytes": 38971,
+        "mtime_ns": 1792026828081166073
+      }
+    }
+  },
+  "first_run": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation",
+  "second_run": "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1",
+  "first_return_frame": 10504,
+  "second_last_frame": 8391,
+  "workflow_last_frame": 18895,
+  "workflow_seconds": 314.9166666666667,
+  "boundary": {
+    "particles_exact": true,
+    "compact_state_exact": true,
+    "new_native_zero24_and_original3_verified": true
+  },
+  "first_scoop": {
+    "scoop": 1,
+    "status": "completed",
+    "complete": true,
+    "frames": 3857,
+    "wait_frames": 2612,
+    "wait_fraction": 0.6772102670469277,
+    "hold_frames": 30,
+    "retained_fill_fraction": 1.4995719042333915,
+    "policy_decisions": 1286
+  },
+  "second_scoop": {
+    "scoop": 2,
+    "status": "completed",
+    "complete": true,
+    "frames": 3521,
+    "wait_frames": 2247,
+    "wait_fraction": 0.6381709741550696,
+    "hold_frames": 30,
+    "retained_fill_fraction": 1.0994133502457586,
+    "policy_decisions": 1174
+  },
+  "modes": {
+    "1": {
+      "follow": 1215,
+      "wait": 2612,
+      "hold": 30
+    },
+    "2": {
+      "follow": 1244,
+      "wait": 2247,
+      "hold": 30
+    }
+  },
+  "rows": 7378,
+  "hold_sample_count": 6,
+  "phase_segments": [
+    {
+      "phase": "RESTORE_PREFIX3",
+      "start_frame": 0,
+      "end_frame": 3,
+      "start_s": 0.0,
+      "end_s": 0.05,
+      "duration_s": 0.05,
+      "source_run": "first"
+    },
+    {
+      "phase": "SCOOP1_RESIDUAL",
+      "start_frame": 3,
+      "end_frame": 3830,
+      "start_s": 0.05,
+      "end_s": 63.833333333333336,
+      "duration_s": 63.78333333333333,
+      "source_run": "first"
+    },
+    {
+      "phase": "SCOOP1_RESIDUAL_HOLD",
+      "start_frame": 3830,
+      "end_frame": 3860,
+      "start_s": 63.833333333333336,
+      "end_s": 64.33333333333333,
+      "duration_s": 0.5,
+      "source_run": "first"
+    },
+    {
+      "phase": "CLEAR_PILE",
+      "start_frame": 3860,
+      "end_frame": 4508,
+      "start_s": 64.33333333333333,
+      "end_s": 75.13333333333334,
+      "duration_s": 10.8,
+      "source_run": "first"
+    },
+    {
+      "phase": "ALIGN",
+      "start_frame": 4508,
+      "end_frame": 5118,
+      "start_s": 75.13333333333334,
+      "end_s": 85.3,
+      "duration_s": 10.166666666666666,
+      "source_run": "first"
+    },
+    {
+      "phase": "DUMP",
+      "start_frame": 5118,
+      "end_frame": 6549,
+      "start_s": 85.3,
+      "end_s": 109.15,
+      "duration_s": 23.85,
+      "source_run": "first"
+    },
+    {
+      "phase": "CLEAR_TRUCK",
+      "start_frame": 6549,
+      "end_frame": 7799,
+      "start_s": 109.15,
+      "end_s": 129.98333333333332,
+      "duration_s": 20.833333333333332,
+      "source_run": "first"
+    },
+    {
+      "phase": "WITHDRAW_SWING",
+      "start_frame": 7799,
+      "end_frame": 8569,
+      "start_s": 129.98333333333332,
+      "end_s": 142.81666666666666,
+      "duration_s": 12.833333333333334,
+      "source_run": "first"
+    },
+    {
+      "phase": "RETURN_SAFE",
+      "start_frame": 8569,
+      "end_frame": 10504,
+      "start_s": 142.81666666666666,
+      "end_s": 175.06666666666666,
+      "duration_s": 32.25,
+      "source_run": "first"
+    },
+    {
+      "phase": "SCOOP2_RETURN_RISE_0",
+      "start_frame": 10504,
+      "end_frame": 12715,
+      "start_s": 175.06666666666666,
+      "end_s": 211.91666666666666,
+      "duration_s": 36.85,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_RETURN_ALIGN_HIGH",
+      "start_frame": 12715,
+      "end_frame": 12799,
+      "start_s": 211.91666666666666,
+      "end_s": 213.31666666666666,
+      "duration_s": 1.4,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_RETURN_EXTEND_HIGH",
+      "start_frame": 12799,
+      "end_frame": 12860,
+      "start_s": 213.31666666666666,
+      "end_s": 214.33333333333334,
+      "duration_s": 1.0166666666666666,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_RETURN_OPEN_HIGH",
+      "start_frame": 12860,
+      "end_frame": 13796,
+      "start_s": 214.33333333333334,
+      "end_s": 229.93333333333334,
+      "duration_s": 15.6,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_HIGH_CLEAR",
+      "start_frame": 13796,
+      "end_frame": 14136,
+      "start_s": 229.93333333333334,
+      "end_s": 235.6,
+      "duration_s": 5.666666666666667,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_OUTWARD_HIGH",
+      "start_frame": 14136,
+      "end_frame": 14676,
+      "start_s": 235.6,
+      "end_s": 244.6,
+      "duration_s": 9.0,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_REAR_LOWER_PREPOINT",
+      "start_frame": 14676,
+      "end_frame": 15313,
+      "start_s": 244.6,
+      "end_s": 255.21666666666667,
+      "duration_s": 10.616666666666667,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_REFERENCE_ALIGN",
+      "start_frame": 15313,
+      "end_frame": 15374,
+      "start_s": 255.21666666666667,
+      "end_s": 256.23333333333335,
+      "duration_s": 1.0166666666666666,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_RESIDUAL",
+      "start_frame": 15374,
+      "end_frame": 18865,
+      "start_s": 256.23333333333335,
+      "end_s": 314.4166666666667,
+      "duration_s": 58.18333333333333,
+      "source_run": "second"
+    },
+    {
+      "phase": "SCOOP2_RESIDUAL_HOLD",
+      "start_frame": 18865,
+      "end_frame": 18895,
+      "start_s": 314.4166666666667,
+      "end_s": 314.9166666666667,
+      "duration_s": 0.5,
+      "source_run": "second"
+    }
+  ],
+  "final_terrain": "ground_connected_observation_passed",
+  "scope": "Validated first dig/unload/return up to completed phase; then verified restored59um branch. Prior failed1um rise branch is excluded from the main workflow and preserved in original records.",
+  "physics_steps": 0,
+  "policy_predictions": 0,
+  "training_updates": 0,
+  "wall_seconds": 68.83153186700656
+}

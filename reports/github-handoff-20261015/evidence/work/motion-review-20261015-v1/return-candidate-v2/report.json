@@ -1,0 +1,26 @@
+{
+  "status": "cpu_return_rejected",
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "physical_admission": false,
+  "source": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/dump.npz",
+  "source_sha256": "26d3928d2e41fc1f5bce5020160be6faddcdca7a936dcaddd7eb65a49e1f94b3",
+  "prior_failed_candidate_sha256": "1c4053014d41aef3a4ab128e4dac4fbf378d87f2eb43cf6d3e9371d07b221991",
+  "attempts": [
+    {
+      "route": "rise0.25_retreat0.0_curl0.15_direct_entry",
+      "status": "rejected",
+      "failure": "fixed_route_static_clearance:{'bucket_truck_m': 0.039678854874866, 'bucket_terrain_m': 2.679678825915265, 'mechanism_truck_m': 0.02, 'mechanism_ground_m': 0.9089683015444219, 'closure_m': 8.881784197001252e-15}:mesh=boom"
+    },
+    {
+      "route": "rise0.25_retreat0.0_curl0.15_high_entry",
+      "status": "rejected",
+      "failure": "original_bucket_stock32cm:0.31951561876657997"
+    }
+  ],
+  "scope": "Unloaded truck exit may curl modestly; the loaded cylinder remains locked. No protection changes.",
+  "fallback": "Existing verified route unchanged. Do not admit a rejected shortcut.",
+  "wall_seconds": 82.79111546598142
+}

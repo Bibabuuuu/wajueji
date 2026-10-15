@@ -1,0 +1,21 @@
+{
+  "status": "closed",
+  "authorization_seconds": 3600,
+  "epoch_start": 1792026586.0,
+  "epoch_deadline": 1792030186.0,
+  "closed_epoch": 1792028921.8050923,
+  "closed_local": "2026-10-15T09:48:41.805092+08:00",
+  "remaining_seconds_sealed": 1264.1949076652527,
+  "closure_after_deadline_seconds": 0,
+  "physical_runtime_finished_epoch": 1792028448.1651142,
+  "new_physical_frames": 8391,
+  "native_instances": 1,
+  "training_updates": 0,
+  "old_budgets_reopened": false,
+  "two_scoop_goal_complete": true,
+  "uninterrupted_from_initial_state": false,
+  "continuity": "Strict full native checkpoint and original first3 prefix; physical soil evolution retained across restored phase",
+  "no_more_physics_or_training": true,
+  "audit_sha256": "fc1c008ce1ec57c74a5a88b3f0f2d29c512c931d8d192de15be7732761302c13",
+  "source_sha256": "5b5aba7bb5bfe157cc846a973a34d66fadc99c58c311ab71e21ea84b023f0392"
+}

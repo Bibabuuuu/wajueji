@@ -1,0 +1,154 @@
+{
+  "status": "audit_passed",
+  "record_integrity_passed": true,
+  "checks": [
+    {
+      "check": "budget identity",
+      "passed": true
+    },
+    {
+      "check": "finished before original deadline",
+      "passed": true
+    },
+    {
+      "check": "all input and controller bindings unchanged",
+      "passed": true
+    },
+    {
+      "check": "no inference or training",
+      "passed": true
+    },
+    {
+      "check": "loadedframe ceiling",
+      "passed": true
+    },
+    {
+      "check": "loadednative zero",
+      "passed": true
+    },
+    {
+      "check": "loadedprefix gate",
+      "passed": true
+    },
+    {
+      "check": "loadedsource prefix independently exact",
+      "passed": true
+    },
+    {
+      "check": "loadedall executed physical frames logged",
+      "passed": true
+    },
+    {
+      "check": "loadedhard material and sweep guards",
+      "passed": true
+    },
+    {
+      "check": "loadedphysical clock continuous",
+      "passed": true
+    },
+    {
+      "check": "loadeddispatch matches actual physical commands",
+      "passed": true
+    },
+    {
+      "check": "loadedall controller commands recomputed",
+      "passed": true
+    },
+    {
+      "check": "loadedload bias continuity recomputed",
+      "passed": true
+    },
+    {
+      "check": "loaded bucket commands strictly zero",
+      "passed": true
+    },
+    {
+      "check": "loadedcheckpoint identity",
+      "passed": true
+    },
+    {
+      "check": "returnframe ceiling",
+      "passed": true
+    },
+    {
+      "check": "returnnative zero",
+      "passed": true
+    },
+    {
+      "check": "returnprefix gate",
+      "passed": true
+    },
+    {
+      "check": "returnsource prefix independently exact",
+      "passed": true
+    },
+    {
+      "check": "returnall executed physical frames logged",
+      "passed": true
+    },
+    {
+      "check": "returnhard material and sweep guards",
+      "passed": true
+    },
+    {
+      "check": "returnphysical clock continuous",
+      "passed": true
+    },
+    {
+      "check": "returndispatch matches actual physical commands",
+      "passed": true
+    },
+    {
+      "check": "returnall controller commands recomputed",
+      "passed": true
+    },
+    {
+      "check": "returnload bias continuity recomputed",
+      "passed": true
+    },
+    {
+      "check": "returncheckpoint identity",
+      "passed": true
+    }
+  ],
+  "checks_passed": 27,
+  "metrics": {
+    "loaded": {
+      "command_max_error": 0.0,
+      "load_bias_max_error": 0.0,
+      "phase_max_pitch_error_deg": {
+        "CLEAR_PILE": 4.00078526761825,
+        "ALIGN": 1.4383400104547381
+      },
+      "phase_samples": {
+        "CLEAR_PILE": 764,
+        "ALIGN": 120
+      }
+    },
+    "return": {
+      "command_max_error": 0.0,
+      "load_bias_max_error": 0.0,
+      "phase_max_pitch_error_deg": {
+        "RETURN_EXIT": 0.01744280562491638,
+        "RETURN_COORDINATED": 0.03544522623670783,
+        "RETURN_REFERENCE": 0.009783527170723757
+      },
+      "phase_samples": {
+        "RETURN_EXIT": 612,
+        "RETURN_COORDINATED": 1386,
+        "RETURN_REFERENCE": 751
+      }
+    }
+  },
+  "physical_status": "both_short_cases_completed",
+  "failure": null,
+  "cases_completed": [
+    "loaded",
+    "return"
+  ],
+  "physical_frames": 3639,
+  "native_initializations": 2,
+  "new_audit_physics_steps": 0,
+  "wall_seconds": 99.8505145740346,
+  "limitation": "Record audit and task completion are separate. Cavity particle diagnostics are not calibrated fill or a no-spill certificate."
+}
