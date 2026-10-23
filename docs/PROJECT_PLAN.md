@@ -1,5 +1,12 @@
 # 复杂介质工况自主挖掘项目总体规划
 
+## 2026-10-23 竞赛工作收尾归档已完成
+
+用户已结束本轮竞赛工作。最终材料、源码、模型和关键输入已归档至现有私有GitHub仓库：[https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023](https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023)。按清单删除50个旧实验逐帧土粒回放缓存，实际释放216.26 GiB，可用空间增至245.68 GiB。最终回放缓存、原始状态与命令记录、模型、初态和终态、成功及失败报告均保留。见[归档入口](FINAL_ARCHIVE.md)及reports/final-archive-20261023/。
+
+本次为收尾归档，不提升历史技术验收结论。下文为归档前记录；不再默认继续训练或物理运行。
+
+
 路演展示更新（2026-10-15答辩精修）：最新展示交付为Windows deliverables/roadshow-defense-ready-20261015/，25页（17主讲＋8隐藏备用），已删除页脚来源/证据及内部备用页提示；第6页加强真实终态、60Hz轨迹和三次保载量测，第8页嵌入12.733秒上下减振对照，第13页为61.5秒两次实际挖掘精剪。新增767物理帧已独立核验，完整修复后两铲链路未重跑，S05/实机/泛化资格不升级；详情统一见[S07](plans/S07-truck-reproduction-submission.md)顶部。
 
 ## 2026-10-15 D-200：带载举升/回转抖动修复，单来源完整运输验证通过

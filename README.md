@@ -1,3 +1,9 @@
+# Final competition archive 2026-10-23
+
+[下载最终PPT、视频、图片、源码和关键输入](https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023) · [归档与恢复说明](docs/FINAL_ARCHIVE.md)
+
+源码归档分支：`archive/final-20261023`。竞赛工作已结束；历史技术验收范围保持原记录。
+
 # 复杂介质工况自主挖掘
 
 > **当前权威入口（2026-09-22）：** 总体路线见[`docs/PROJECT_PLAN.md`](docs/PROJECT_PLAN.md)，动态进度见[`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md)，七个必读小节见[`docs/plans/INDEX.md`](docs/plans/INDEX.md)。本README只介绍仓库，不再保存实时状态。

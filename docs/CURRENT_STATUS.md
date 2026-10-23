@@ -1,5 +1,12 @@
 # 当前状态
 
+## 2026-10-23 竞赛工作收尾归档已完成
+
+用户已结束本轮竞赛工作。最终材料、源码、模型和关键输入已归档至现有私有GitHub仓库：[https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023](https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023)。按清单删除50个旧实验逐帧土粒回放缓存，实际释放216.26 GiB，可用空间增至245.68 GiB。最终回放缓存、原始状态与命令记录、模型、初态和终态、成功及失败报告均保留。见[归档入口](FINAL_ARCHIVE.md)及reports/final-archive-20261023/。
+
+本次为收尾归档，不提升历史技术验收结论。下文为归档前记录；不再默认继续训练或物理运行。
+
+
 ## 2026-10-23 Project archival and cleanup in progress
 
 Competition work ended at user request. Source and final materials are being archived; obsolete replay caches are inventoried before deletion. See [FINAL_ARCHIVE.md](FINAL_ARCHIVE.md). Existing technical validation claims are unchanged.
