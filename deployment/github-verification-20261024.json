@@ -1,0 +1,44 @@
+{
+  "url": "https://github.com/Bibabuuuu/wajueji/releases/tag/portable-restore-20261024",
+  "tag": "portable-restore-20261024",
+  "tool_commit": "6de81d0dce4ac2fa11cf2578888b058bb76b1f6e",
+  "repository_private": true,
+  "assets": [
+    {
+      "name": "restore-verification-20261024.json",
+      "bytes": 2135,
+      "sha256": "c6f4eb2055e33661f84de674e36b0a7db9247d563360034cf82cfc74b4472540",
+      "asset_id": 669675089,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/portable-restore-20261024/restore-verification-20261024.json"
+    },
+    {
+      "name": "RESTORE.md",
+      "bytes": 2283,
+      "sha256": "fecc035cfeee02f7deaa841677bbc7a78f06948534f787365e32393db5d60118",
+      "asset_id": 669675182,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/portable-restore-20261024/RESTORE.md"
+    },
+    {
+      "name": "wajueji-portable-restore-20261024.tar.gz",
+      "bytes": 300189971,
+      "sha256": "400a129ecb4ba06660455b1e33586e198640b65e736303d69fb1552fe4b54564",
+      "asset_id": 669670908,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/portable-restore-20261024/wajueji-portable-restore-20261024.tar.gz"
+    },
+    {
+      "name": "wajueji-portable-restore-20261024.tar.gz.sha256",
+      "bytes": 107,
+      "sha256": "315d95a3641d01b7a2ea8e1ad0449af0a3e3a46fd54a7af4fc96184cc77a7813",
+      "asset_id": 669675021,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/portable-restore-20261024/wajueji-portable-restore-20261024.tar.gz.sha256"
+    }
+  ],
+  "status": "published_and_download_verified",
+  "downloaded_bytes": 300189971,
+  "downloaded_sha256": "400a129ecb4ba06660455b1e33586e198640b65e736303d69fb1552fe4b54564",
+  "host": "desktop",
+  "parts": 128,
+  "published": true,
+  "tag_commit_verified": true,
+  "latest_release_verified": true
+}

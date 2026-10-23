@@ -49,6 +49,6 @@ The user authorized completing non-environment runtime dependencies and dropping
 
 The standalone archive contains 7941 manifest-verified files. Extraction to a new directory, frozen-policy inference, exact 24-array zero-step restoration, native controller error 0, 3 physical frames, visual-model loading and soil-surface generation passed. All 7 original project resource roots were actively blocked; a full-process syscall file trace recorded 0 accesses to them. The Python/CUDA and package environment remains an external prerequisite; no full excavation rerun or training was performed.
 
-Target release: https://github.com/Bibabuuuu/wajueji/releases/tag/portable-restore-20261024
+Published release: https://github.com/Bibabuuuu/wajueji/releases/tag/portable-restore-20261024
 
-The original source snapshot and original final-media release remain unchanged. Upload/download verification is recorded separately after publication.
+The original source snapshot and original final-media release remain unchanged. All 4 assets match server SHA256 digests. The complete 300189971-byte package was independently downloaded from GitHub and matches SHA256 400a129ecb4ba06660455b1e33586e198640b65e736303d69fb1552fe4b54564. See [cloud receipt](../deployment/github-verification-20261024.json). Five extra final/transport checkpoints passed schema and binding validation; an attempted old-project read was rejected. See [state validation](../deployment/extra-state-validation.json).

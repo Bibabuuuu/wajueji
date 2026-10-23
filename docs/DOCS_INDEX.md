@@ -1,5 +1,7 @@
 # 项目文档索引
 
+- 独立恢复与归档：[`FINAL_ARCHIVE.md`](FINAL_ARCHIVE.md)、[`deployment/README.zh-CN.md`](../deployment/README.zh-CN.md)。2026-10-24完整包已发布并通过GitHub下载校验；环境另行准备，恢复启动短检与完整作业验收分开。
+
 - 状态：`active`
 - 权威范围：文档角色、阅读条件、状态和替代关系
 - 最后复核：2026-09-24（Asia/Shanghai）
