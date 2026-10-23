@@ -7,9 +7,9 @@
 本次为收尾归档，不提升历史技术验收结论。下文为归档前记录；不再默认继续训练或物理运行。
 
 
-## 2026-10-23 Project archival and cleanup in progress
+## 2026-10-24 独立恢复包短检通过，准备发布
 
-Competition work ended at user request. Source and final materials are being archived; obsolete replay caches are inventoried before deletion. See [FINAL_ARCHIVE.md](FINAL_ARCHIVE.md). Existing technical validation claims are unchanged.
+原最终成果归档和旧缓存清理已完成。本次经用户授权补齐非环境运行依赖；从正式压缩包在独立目录恢复，7个旧资源目录访问0，24类初态数组一致、原生恢复误差0、冻结SAC 3帧执行及显示模型/土壤表面生成通过。见[归档入口](FINAL_ARCHIVE.md)及[恢复说明](../deployment/README.zh-CN.md)。只验证恢复启动，不升级完整作业/实机/泛化资格；无训练，原实验预算保持关闭。
 
 
 ## 2026-10-15 路演答辩精修与减振同步视频：已实现、已验证（所列范围）

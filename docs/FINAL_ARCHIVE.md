@@ -42,3 +42,13 @@ Release: https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-2026102
   ],
   "scope": "Only the 50 explicitly inventoried superseded runs/**/display/particles.npy files."
 }
+
+## Portable restoration supplement 2026-10-24
+
+The user authorized completing non-environment runtime dependencies and dropping historical PPTs as a retention requirement. See [recovery commands](../deployment/README.zh-CN.md) and [exact verification](../deployment/restore-verification-20261024.json).
+
+The standalone archive contains 7941 manifest-verified files. Extraction to a new directory, frozen-policy inference, exact 24-array zero-step restoration, native controller error 0, 3 physical frames, visual-model loading and soil-surface generation passed. All 7 original project resource roots were actively blocked; a full-process syscall file trace recorded 0 accesses to them. The Python/CUDA and package environment remains an external prerequisite; no full excavation rerun or training was performed.
+
+Target release: https://github.com/Bibabuuuu/wajueji/releases/tag/portable-restore-20261024
+
+The original source snapshot and original final-media release remain unchanged. Upload/download verification is recorded separately after publication.
