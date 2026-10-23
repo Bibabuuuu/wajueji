@@ -88,9 +88,9 @@ S05：`进行中`。人工保载145.3813%和新速度重定时接口已验证，
 | S02 | [感知、选点与工作面管理](S02-observation-target-selection.md) | active | 每铲真实新观测、最佳铲点和后续可挖空间 |
 | S03 | [非接触APPROACH与控制交接](S03-approach-control-handoff.md) | active | 当前下一门：程序选点到无接触预备点 |
 | S04 | [单铲接触挖掘与人工演示](S04-contact-excavation-demonstrations.md) | active | 一次连续接触episode、手柄示范和带载脱土 |
-| S05 | [模仿学习与强化学习](S05-imitation-and-rl.md) | active | D192两铲149.96%/109.94%完成；D196返回短检45.87秒通过，减振未解决；预算已关闭，见handoff |
+| S05 | [模仿学习与强化学习](S05-imitation-and-rl.md) | active | D192两铲完成；D200单来源减振通过，新767帧回放补采通过；完整修复后两铲未重跑，见S07/handoff |
 | S06 | [三铲目标、奖励与评价](S06-three-scoop-objective-evaluation.md) | active | 三铲公平、平均满斗率、稳定入车体积和软惩罚 |
-| S07 | [装车、复现与提交](S07-truck-reproduction-submission.md) | active | 车斗物理、完整链、独立复现和9月25日交付 |
+| S07 | [装车、复现与提交](S07-truck-reproduction-submission.md) | active | 车斗物理、完整链、独立复现；当前路演PPT与减振同步短片交付，见S07顶部 |
 
 ## 依赖顺序
 

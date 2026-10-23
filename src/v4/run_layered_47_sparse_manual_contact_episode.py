@@ -26,6 +26,7 @@ import warp as wp
 
 from contracts import ACTION_SPEED_LIMIT_SI
 from planning.contact_footprint import target_mouth_markers
+from planning.cycle import select_cut
 from layered_47_optimized_bridge import optimized_bridge
 from layered_47_bucket_integral_candidate import bucket_integral_bridge
 from layered_47_active_curl_candidate import active_curl_bridge
@@ -378,10 +379,42 @@ def terrain_observation(
     }
 
 
+def next_showcase_target(
+        particle_q: np.ndarray, cached_rock_vertices: list[np.ndarray],
+        rocks: list[dict], excluded_entry_xy: list[list[float]]) -> tuple[dict, dict]:
+    """Select the next display-only cut from the current preserved scene."""
+    particles = np.asarray(particle_q, dtype=np.float64)
+    if particles.ndim != 2 or particles.shape[1] != 3:
+        raise ValueError("showcase_target_particle_shape")
+    if len(cached_rock_vertices) != len(rocks):
+        raise ValueError("showcase_target_rock_count")
+    rock_points = []
+    for local, rock in zip(cached_rock_vertices, rocks, strict=True):
+        pose = np.asarray(rock["qpos"], dtype=np.float64)
+        if pose.shape != (7,) or not np.isfinite(pose).all():
+            raise ValueError("showcase_target_rock_pose")
+        rock_points.append(
+            np.asarray(local, dtype=np.float64)
+            @ quaternion_matrix_wxyz(pose[3:7]).T + pose[:3])
+    terrain = terrain_from_points(np.concatenate([particles, *rock_points]))
+    selection = select_cut(
+        terrain, bucket_width=0.60,
+        excluded_entry_xy=excluded_entry_xy)
+    summary = {
+        "origin_xy_m": list(terrain["origin_xy_m"]),
+        "resolution_m": float(terrain["resolution_m"]),
+        "shape_yx": list(np.asarray(terrain["height_m"]).shape),
+        "known_cell_count": int(np.count_nonzero(terrain["point_count"])),
+        "maximum_fused_height_m": float(np.nanmax(terrain["height_m"])),
+    }
+    return selection, summary
+
+
 def draw_with_selected_cut(
         viewer, display_state, fixture, bridge_state, records,
         assembly, names, to_pose, device: str, display: dict,
-        selected_cut: dict, frame: int, soil_surface: SoilSurface) -> None:
+        selected_cut: dict, frame: int, soil_surface: SoilSurface,
+        *, show_target: bool = True) -> None:
     """Draw the fixed green target center and cyan planned mouth width."""
     poses = assembly.assemble(
         np.asarray(bridge_state["mechanism_qpos"], dtype=np.float64),
@@ -427,7 +460,10 @@ def draw_with_selected_cut(
     width_marker = np.asarray(side_points + span_points, dtype=np.float32)
     viewer.log_points('/manual_contact/planned_mouth_width',
         wp.array(width_marker, dtype=wp.vec3, device=device), radii=.018,
-        colors=wp.full(len(width_marker), wp.vec3(.05,.85,1.), dtype=wp.vec3, device=device))
+        colors=wp.full(len(width_marker), wp.vec3(.05,.85,1.), dtype=wp.vec3, device=device)
+        if show_target else wp.full(
+            len(width_marker), wp.vec3(0.,0.,0.), dtype=wp.vec3, device=device),
+        hidden=not show_target)
     entry_x, entry_y = selected_cut["entry_xy_m"]
     surface_z = float(selected_cut["surface_z_m"])
     marker = np.asarray([
@@ -439,7 +475,10 @@ def draw_with_selected_cut(
         radii=0.035,
         colors=wp.full(
             len(marker), wp.vec3(0.10, 1.0, 0.10),
-            dtype=wp.vec3, device=device))
+            dtype=wp.vec3, device=device)
+        if show_target else wp.full(
+            len(marker), wp.vec3(0.,0.,0.), dtype=wp.vec3, device=device),
+        hidden=not show_target)
     viewer.end_frame()
 
 
@@ -531,6 +570,9 @@ def run(args):
     motion_consistency = bool(getattr(args, "bucket_motion_consistency", False))
     if motion_consistency and (not cycle_mode or not getattr(args, "moving_bucket_sweep_candidate", False)):
         raise ValueError("bucket_motion_consistency_requires_cycle_and_sweep")
+    showcase_mode = bool(getattr(args, "showcase_continuous", False))
+    if showcase_mode and not cycle_mode:
+        raise ValueError("showcase_continuous_requires_cycle_checkpoint")
     if getattr(args, "training_reset_checkpoint", False) and not cycle_mode:
         raise ValueError("training_reset_requires_cycle_checkpoint")
     cycle_save = bool(getattr(args, "cycle_save", False) or cycle_mode)
@@ -554,6 +596,8 @@ def run(args):
         "snapshot": None,
     }
     fixture = bridge = viewer = controller = None
+    display_cache = None
+    display_cache_finished = False
     sweep_runtime = None
     live_fill = None
     fill_requested = False
@@ -635,7 +679,7 @@ def run(args):
                     fault_frozen=fault_frozen['active'], zero_probe_frames=args.zero_probe_frames),
                 cycle_index=parent.get('cycle_index', 1), truck_enabled=physics_truck,
                 solver_profile=approach_report['solver_profile'], runtime_bindings=bindings,
-                selected_cut=parent.get('selected_cut'))
+                selected_cut=selected_cut)
             report.setdefault('cycle_checkpoints', []).append(saved)
         return info
 
@@ -665,19 +709,33 @@ def run(args):
             checkpoint_before = cycle_metadata['source_identity']
             metadata_before = cycle_metadata['source_metadata_identity']
             audit_document = json.loads(audit_path.read_text())
+            allowed_cycle_indices = ((1, 2, 3) if showcase_mode else (2, 3))
+            source_truck_eligible = bool(
+                cycle_metadata['truck_enabled']
+                or (showcase_mode and cycle_metadata['cycle_index'] == 1))
+            zero_contact_required = not (
+                showcase_mode and cycle_metadata['cycle_index'] == 1)
             if (cycle_metadata['stage'] != 'prepoint'
-                    or cycle_metadata['cycle_index'] not in (2, 3)
-                    or not cycle_metadata['truck_enabled']
+                    or cycle_metadata['cycle_index'] not in allowed_cycle_indices
+                    or not source_truck_eligible
                     or audit_document.get('status') != 'hold_passed'
                     or audit_document.get('source') != checkpoint_before
                     or audit_document.get('source_metadata') != metadata_before
                     or audit_document.get('frames_completed', 0) < 3
-                    or not audit_document.get('all_hold_frames_zero_bucket_contact', False)
+                    or not audit_document.get('all_hold_frames_hard_safe', False)
+                    or (zero_contact_required and not audit_document.get(
+                        'all_hold_frames_zero_bucket_contact', False))
                     or not audit_document.get('zero_step', {}).get('exact')
                     or max(audit_document['zero_step']['cycle_errors'].values()) > 1e-12):
                 raise ValueError('cycle_manual_requires_audited_prepoint')
-            face = cycle_metadata['selected_cut']['contact']
-            selected_cut = dict(entry_xy_m=face['contact_xy_m'], surface_z_m=face['contact_surface_z_m'])
+            face = cycle_metadata['selected_cut'].get(
+                'contact', cycle_metadata['selected_cut'])
+            selected_cut = dict(
+                entry_xy_m=(face['contact_xy_m']
+                            if 'contact_xy_m' in face else face['entry_xy_m']),
+                surface_z_m=(face['contact_surface_z_m']
+                             if 'contact_surface_z_m' in face
+                             else face['surface_z_m']))
             approach_report = {'solver_profile': cycle_metadata['solver_profile']}
             report['cycle_lineage'] = {key: cycle_metadata[key] for key in (
                 'cycle_index', 'lineage_root', 'parent_checkpoint', 'historical_native_history_missing')}
@@ -754,6 +812,15 @@ def run(args):
                 candidate_report, source, source_before, 47, HZ,
                 auditor_source_path=getattr(args, "seed_auditor_source", None))
             del source_arrays
+
+        if getattr(args, 'freeze_passive_jp', False):
+            if not cycle_mode:
+                raise ValueError('passive_jp_manual_policy_requires_cycle_checkpoint')
+            from soil_passive_jp_history import POLICY
+            existing_policy = cycle_metadata.get('material_history_policy')
+            if existing_policy not in (None, POLICY):
+                raise ValueError('passive_jp_manual_policy_conflict')
+            cycle_metadata['material_history_policy'] = POLICY
         if (not transport_mode and not cycle_mode and (source_before["sha256"] !=
                 provenance["source_checkpoint_sha256"]
                 or motion.probe.bench.sha256(
@@ -966,6 +1033,9 @@ def run(args):
                 "hard_fault_behavior": "freeze_viewer_until_operator_exit",
                 "hencky_update_candidate_requested": bool(
                     getattr(args, "hencky_update_candidate", False)),
+                "material_history_policy_requested": (
+                    cycle_metadata.get('material_history_policy')
+                    if cycle_metadata else None),
                 "loaded_transport_mode": transport_mode,
                 "truck_contact_ownership": (
                     truck_document["contact_ownership"]
@@ -1071,6 +1141,28 @@ def run(args):
             report["bucket_integral_candidate"] = integral_policy.copy()
             report["active_curl_candidate"] = active_curl_policy.copy()
             report["hencky_update_candidate"] = hencky_policy.copy()
+            if args.display_cache_frames:
+                if args.display_cache_frames < 1:
+                    raise ValueError("display_cache_frames_positive")
+                from view_contact_bc_probe import ProbeDisplayCache
+                display_cache = ProbeDisplayCache(
+                    output / "display", args.display_cache_frames,
+                    arrays["particle_q"].shape,
+                    dict(
+                        records=records,
+                        root=str(root),
+                        selected_cut=selected_cut,
+                        particle_spacing_m=float(
+                            base["mpm"]["particle_spacing_m"]),
+                        showcase_continuous=showcase_mode,
+                    ))
+                initial_display_state = compact_state(bridge.state)
+                display_cache.capture(
+                    0, initial_display_state,
+                    fixture.state.particle_q.numpy())
+                append_json(
+                    display_cache.output / "states.ndjson",
+                    {"frame": 0, "state": initial_display_state})
             material_guard = None
             if hencky_enabled:
                 from soil_hencky_update_guard import installed_material_guard
@@ -1237,6 +1329,16 @@ def run(args):
                 row["advisory_active"] = any(
                     row["advisory_checks"].values())
                 rows.append(row)
+                if display_cache is not None:
+                    display_state_record = compact_state(bridge.state)
+                    display_cache.capture(
+                        len(rows), display_state_record,
+                        fixture.state.particle_q.numpy())
+                    append_json(
+                        display_cache.output / "states.ndjson",
+                        {"frame": len(rows), "state": display_state_record})
+                    if len(rows) % HZ == 0:
+                        display_cache.positions.flush()
                 append_json(output / "input.ndjson", {
                     **input_record,
                     "schema": "layered_47_manual_contact_input_v1",
@@ -1320,11 +1422,20 @@ def run(args):
                 viewer, records, root, args.device)
 
             gate = InputGate("normal")
-            session_budget = ManualSessionBudget(time.perf_counter())
+            session_budget = (
+                None if showcase_mode
+                else ManualSessionBudget(time.perf_counter()))
             budget_notice = {"reason": None}
             keyboard = KeyboardFourAxisState()
             manual = keyboard
             focus = {"active": True}
+            target_state = {
+                "visible": True,
+                "approach_seen": True,
+                "scoop_number": 1,
+                "notice": "initial target",
+                "history": [list(selected_cut["entry_xy_m"])],
+            }
             if args.manual_input == "gamepad":
                 manager = pyglet.input.ControllerManager()
                 controller = display_helpers._select_controller(
@@ -1390,7 +1501,7 @@ def run(args):
             }
 
             def press(symbol, modifiers):
-                nonlocal stop_reason
+                nonlocal stop_reason, selected_cut
                 names_by_key = {
                     key.J: "J", key.L: "L", key.I: "I", key.K: "K",
                     key.U: "U", key.O: "O", key.N: "N", key.M: "M",
@@ -1401,6 +1512,44 @@ def run(args):
                     marker_event("phase", phase_symbols[symbol])
                 if symbol in event_symbols:
                     marker_event("event", event_symbols[symbol])
+                if symbol == key.T:
+                    gate.armed = False
+                    keyboard.clear()
+                    try:
+                        candidate, terrain_summary = next_showcase_target(
+                            fixture.state.particle_q.numpy(),
+                            cached_rock_vertices, bridge.state["rocks"],
+                            target_state["history"])
+                        selected_cut = candidate
+                        target_state.update(
+                            visible=True,
+                            approach_seen=False,
+                            scoop_number=target_state["scoop_number"] + 1,
+                            notice="next target selected",
+                        )
+                        target_state["history"].append(
+                            list(candidate["entry_xy_m"]))
+                        event = {
+                            "schema": "manual_showcase_target_update_v1",
+                            "frame": len(rows),
+                            "sim_time_s": len(rows) / HZ,
+                            "scoop_number": target_state["scoop_number"],
+                            "selection": candidate,
+                            "terrain": terrain_summary,
+                            "excluded_entry_xy_m": target_state["history"][:-1],
+                            "physics_steps_added": 0,
+                        }
+                        report.setdefault(
+                            "showcase_target_updates", []).append(event)
+                        append_json(output / "target-updates.ndjson", event)
+                        progress("showcase_target_updated", **event)
+                    except Exception as error:
+                        target_state["notice"] = (
+                            "target unavailable: " + str(error))
+                        progress(
+                            "showcase_target_update_failed",
+                            frame=len(rows), error=repr(error),
+                            physics_steps_added=0)
                 if symbol in (key.X, key.ESCAPE):
                     stop_reason = "user_finished"
                 if symbol == key.SPACE:
@@ -1427,10 +1576,17 @@ def run(args):
                     if transport_mode else
                     "MANUAL CONTACT PILOT / NOT TRAINING DATA")
                 if cycle_mode:
-                    mode_label = "FAST COLLECTION RESET" if cycle_metadata.get('training_reset') else "continuous terrain"
-                    imgui.text(f"SCOOP {cycle_metadata['cycle_index']}/3 | {mode_label}")
-                imgui.text("TARGET: green CENTER")
-                imgui.text("CYAN raised frame: 0.60 m mouth width")
+                    if showcase_mode:
+                        imgui.text(
+                            "CONTINUOUS MANUAL SHOWCASE | one preserved scene")
+                    else:
+                        mode_label = "FAST COLLECTION RESET" if cycle_metadata.get('training_reset') else "continuous terrain"
+                        imgui.text(f"SCOOP {cycle_metadata['cycle_index']}/3 | {mode_label}")
+                imgui.text(
+                    f"TARGET {target_state['scoop_number']}: "
+                    + ("visible" if target_state["visible"] else "hidden"))
+                imgui.text("After unloading: press T for next observed target")
+                imgui.text("Green center | cyan 0.60 m mouth width")
                 if fill_config:
                     from live_bucket_fill import display_lines
                     if phase != "off_soil_confirm":
@@ -1479,12 +1635,13 @@ def run(args):
                         "Failed hard checks: "
                         + ", ".join(fault_frozen["failed_checks"]))
                     imgui.text("Use X/Esc/Back only after inspection")
-                imgui.text(
-                    "GREEN target CENTER: "
-                    f"x={selected_cut['entry_xy_m'][0]:.2f}, "
-                    f"y={selected_cut['entry_xy_m'][1]:.2f}, "
-                    f"z={selected_cut['surface_z_m']:.2f}")
-                imgui.text("Fixed target; not current bucket edges")
+                if target_state["visible"]:
+                    imgui.text(
+                        "GREEN target CENTER: "
+                        f"x={selected_cut['entry_xy_m'][0]:.2f}, "
+                        f"y={selected_cut['entry_xy_m'][1]:.2f}, "
+                        f"z={selected_cut['surface_z_m']:.2f}")
+                imgui.text(target_state["notice"])
                 if rows:
                     last = rows[-1]
                     imgui.text(
@@ -1563,8 +1720,11 @@ def run(args):
                             [rock["qpos"] for rock in bridge.state["rocks"]])
                         fill_requested = False
                 if not fault_frozen["active"]:
-                    budget_reason = session_budget.poll(
-                        time.perf_counter(), len(rows), viewer.is_paused())
+                    budget_reason = (
+                        None if session_budget is None else
+                        session_budget.poll(
+                            time.perf_counter(), len(rows),
+                            viewer.is_paused()))
                     if budget_reason:
                         viewer._paused = True  # Same flag as Newton's Pause UI.
                         gate.armed = False
@@ -1579,10 +1739,26 @@ def run(args):
                         motion.probe.bench._write_json(report_path, _clean(report))
                     elif not viewer.is_paused():
                         budget_notice["reason"] = None
+                bucket_y = float(bridge.state["bucket_origin"][1])
+                if (target_state["visible"]
+                        and not target_state["approach_seen"]
+                        and bucket_y < 1.0):
+                    target_state["approach_seen"] = True
+                if (target_state["visible"]
+                        and target_state["approach_seen"]
+                        and bucket_y > 1.5):
+                    target_state["visible"] = False
+                    target_state["notice"] = (
+                        "outbound target hidden; press T after unloading")
+                    progress(
+                        "showcase_target_hidden", frame=len(rows),
+                        scoop_number=target_state["scoop_number"],
+                        physics_steps_added=0)
                 draw_with_selected_cut(
                     viewer, display_state, fixture, bridge.state, records,
                     display_assembly, display_names, to_pose, args.device,
-                    display, selected_cut, len(rows), soil_surface)
+                    display, selected_cut, len(rows), soil_surface,
+                    show_target=target_state["visible"])
                 draws += 1
                 if draws == 3:
                     ready = {
@@ -1787,6 +1963,14 @@ def run(args):
                 "traceback": traceback.format_exc(),
             })
     finally:
+        if display_cache is not None and not display_cache_finished:
+            try:
+                report["display_cache"] = display_cache.finish(
+                    report.get("status", "partial_manual_showcase"))
+                display_cache_finished = True
+            except Exception as error:
+                report.setdefault("cleanup_errors", {})[
+                    "display_cache"] = str(error)
         if prior_sigterm is not None:
             signal.signal(signal.SIGTERM, prior_sigterm)
         if (report.get("status") in {
@@ -1857,6 +2041,9 @@ def main():
         "--hencky-update-candidate", action="store_true",
         help="Opt-in D-128 Hencky soil update; guarded manual pilot only")
     parser.add_argument(
+        "--freeze-passive-jp", action="store_true",
+        help="Opt-in D-142 finite Jp preservation for exactly zero hardening")
+    parser.add_argument(
         "--moving-bucket-sweep-candidate", action="store_true",
         help="Opt-in D-133 bucket path guard for candidate demonstrations")
     parser.add_argument(
@@ -1867,6 +2054,12 @@ def main():
     parser.add_argument('--bucket-motion-consistency', action='store_true',
         help='Use corrected bucket origin velocities and coherent predicted sweep endpoints; marks new checkpoints')
     parser.add_argument('--cycle-save', action='store_true', help='Also save full native/controller/sweep frame state')
+    parser.add_argument(
+        '--showcase-continuous', action='store_true',
+        help='Allow an audited first-scoop cycle prepoint with the static truck for one protected continuous manual showcase')
+    parser.add_argument(
+        '--display-cache-frames', type=int, default=0,
+        help='Capture every live frame for physics-free replay; zero disables')
     parser.add_argument('--training-reset-checkpoint', action='store_true', help='Explicitly load a marked fast contact-collection prepoint')
     parser.add_argument("--loaded-transport", action="store_true")
     parser.add_argument("--truck-config")

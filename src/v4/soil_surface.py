@@ -95,8 +95,12 @@ class SoilSurface:
                  voxel_size_m: float):
         self.voxel_size_m = float(voxel_size_m)
         self.origin = wp.vec3(2.8, -2.0, -0.12)
-        self.upper = wp.vec3(7.8, 2.0, 3.6)
-        extent = np.asarray([5.0, 4.0, 3.72], dtype=np.float64)
+        # The first excavation face is near y=0, while the fixed truck and
+        # unload path reach y~=3.2.  The old y=2 ceiling clipped carried soil
+        # out of the continuous surface during swing even though the physical
+        # particles remained in the bucket.
+        self.upper = wp.vec3(7.8, 4.5, 3.6)
+        extent = np.asarray([5.0, 6.5, 3.72], dtype=np.float64)
         self.shape = tuple(
             int(np.ceil(value / self.voxel_size_m)) + 1 for value in extent)
         self.particle_spacing_m = float(particle_spacing_m)

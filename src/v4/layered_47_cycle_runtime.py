@@ -43,6 +43,10 @@ class CycleRuntime:
         self.motion_consistency = bool(bucket_motion_consistency)
         self.arrays,self.metadata=checkpoint.load(source,allow_training_reset=allow_training_reset,
             allow_bucket_motion_consistency=self.motion_consistency)
+        policy=self.metadata.get('loaded_transport_support')
+        if (policy is not None and float(self.metadata['controller_state']['native_time_s']) < policy['end_s']-1e-9
+                and not getattr(self,'supports_loaded_transport_policy',False)):
+            raise ValueError('active_loaded_support_requires_LoadedTransportRuntime')
         if freeze_passive_jp:
             from soil_passive_jp_history import POLICY
             self.metadata['material_history_policy'] = POLICY
@@ -68,6 +72,8 @@ class CycleRuntime:
                'bucket_active_curl_candidate.h','bucket_integral_candidate.h','soil_hencky_update_candidate.py',
                'moving_bucket_sweep_candidate.py','moving_bucket_sweep_runtime.py','mpm_static_contact_ownership.py')
         self.bindings={name:motion.probe.bench.sha256(Path(__file__).with_name(name)) for name in names}
+        if policy is not None:
+            self.bindings.update(policy['bindings'])
         if self.motion_consistency:
             for name in ('bucket_velocity_origin_candidate.py', 'bucket_motion_consistency.py'):
                 self.bindings[name] = motion.probe.bench.sha256(Path(__file__).with_name(name))

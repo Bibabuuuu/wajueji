@@ -1,0 +1,281 @@
+diff --git a/src/v4/layered_47_cycle_checkpoint.py b/src/v4/layered_47_cycle_checkpoint.py
+index 866db08..99e3d6b 100644
+--- a/src/v4/layered_47_cycle_checkpoint.py
++++ b/src/v4/layered_47_cycle_checkpoint.py
+@@ -33,6 +33,22 @@ def validate_material_history_policy(metadata, bindings):
+         raise ValueError('cycle_material_history_version_mismatch')
+ 
+ 
++
++def validate_loaded_transport_support(metadata, bindings):
++    policy=metadata.get('loaded_transport_support')
++    if policy is None:
++        return
++    if (policy.get('policy')!='measured_loaded_support_v1' or policy.get('ramp_s')!=.05 or policy.get('clock')!='native_time_s'
++            or not np.isfinite([policy.get('start_s',np.nan),policy.get('end_s',np.nan)]).all()
++            or policy['start_s']<0 or policy['end_s']-policy['start_s']<=.1):
++        raise ValueError('cycle_loaded_support_policy')
++    normalized={Path(key).name:value for key,value in bindings.items()}
++    for name in ('layered_47_loaded_transport_support.py','loaded_transport_support.h'):
++        actual=checkpoint_identity(Path(__file__).with_name(name))['sha256']
++        if policy.get('bindings',{}).get(name)!=actual or normalized.get(name)!=actual:
++            raise ValueError('cycle_loaded_support_binding:'+name)
++
++
+ def validate_training_reset(metadata):
+     reset = metadata.get('training_reset')
+     if reset is None:
+@@ -121,6 +137,7 @@ def load(path, *, allow_training_reset=False, allow_bucket_motion_consistency=Fa
+     metadata = json.loads(sidecar.read_text())
+     validate_bucket_motion_policy(metadata, metadata.get('runtime_bindings', {}),
+                                   allowed=allow_bucket_motion_consistency)
++    validate_loaded_transport_support(metadata,metadata.get('runtime_bindings',{}))
+     if metadata.get('training_reset') is not None:
+         if not allow_training_reset:
+             raise ValueError('training_reset_not_continuous_physics')
+@@ -180,6 +197,7 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
+     validate_material_history_policy(parent, runtime_bindings)
+     validate_training_reset(parent)
+     validate_bucket_motion_policy(parent, runtime_bindings, allowed=True)
++    validate_loaded_transport_support(parent,runtime_bindings)
+     if controller['native_state_kind'] != 'full':
+         raise ValueError('cycle_save_requires_full_native_state')
+     if stage not in ('loaded_manual_endpoint', 'hold', 'transport', 'unloaded',
+@@ -196,6 +214,8 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
+         selected_cut=selected_cut, training_eligible=False,
+         independent_restore_qualified=False,
+         simulation_time_s=float(arrays['simulation_time_s'][0]))
++    if parent.get('loaded_transport_support') is not None:
++        document['loaded_transport_support'] = deepcopy(parent['loaded_transport_support'])
+     if parent.get('material_history_policy') is not None:
+         document['material_history_policy'] = parent['material_history_policy']
+     if parent.get('training_reset') is not None:
+diff --git a/src/v4/layered_47_cycle_runtime.py b/src/v4/layered_47_cycle_runtime.py
+index 861b1da..b63175c 100644
+--- a/src/v4/layered_47_cycle_runtime.py
++++ b/src/v4/layered_47_cycle_runtime.py
+@@ -43,6 +43,10 @@ class CycleRuntime:
+         self.motion_consistency = bool(bucket_motion_consistency)
+         self.arrays,self.metadata=checkpoint.load(source,allow_training_reset=allow_training_reset,
+             allow_bucket_motion_consistency=self.motion_consistency)
++        policy=self.metadata.get('loaded_transport_support')
++        if (policy is not None and float(self.metadata['controller_state']['native_time_s']) < policy['end_s']-1e-9
++                and not getattr(self,'supports_loaded_transport_policy',False)):
++            raise ValueError('active_loaded_support_requires_LoadedTransportRuntime')
+         if freeze_passive_jp:
+             from soil_passive_jp_history import POLICY
+             self.metadata['material_history_policy'] = POLICY
+@@ -68,6 +72,8 @@ class CycleRuntime:
+                'bucket_active_curl_candidate.h','bucket_integral_candidate.h','soil_hencky_update_candidate.py',
+                'moving_bucket_sweep_candidate.py','moving_bucket_sweep_runtime.py','mpm_static_contact_ownership.py')
+         self.bindings={name:motion.probe.bench.sha256(Path(__file__).with_name(name)) for name in names}
++        if policy is not None:
++            self.bindings.update(policy['bindings'])
+         if self.motion_consistency:
+             for name in ('bucket_velocity_origin_candidate.py', 'bucket_motion_consistency.py'):
+                 self.bindings[name] = motion.probe.bench.sha256(Path(__file__).with_name(name))
+diff --git a/src/v4/layered_47_loaded_transport_support.py b/src/v4/layered_47_loaded_transport_support.py
+new file mode 100644
+index 0000000..a8a8761
+--- /dev/null
++++ b/src/v4/layered_47_loaded_transport_support.py
+@@ -0,0 +1,107 @@
++"""Opt-in, finite-window neutral bucket support for loaded transport.
++
++Original commands and native states are retained.  The existing accumulator
++tracks the projected external load, while reflected inertia sets dissipation.
++Outside the explicit window the original controller is used without changes.
++"""
++import hashlib
++import json
++import math
++from pathlib import Path
++
++import layered_mound_checkpoint_runtime as generator
++from layered_47_cycle_runtime import CycleRuntime
++
++POLICY='measured_loaded_support_v1'
++RAMP_SECONDS=.05
++
++
++def validate_window(start_s,end_s):
++    if not (math.isfinite(start_s) and math.isfinite(end_s) and start_s>=0 and end_s-start_s>2*RAMP_SECONDS):
++        raise ValueError('loaded_support_invalid_window')
++
++
++def validate_activation_clock(native_time_s,start_s):
++    if not math.isfinite(native_time_s) or not -1e-8<=start_s-native_time_s<=.1:
++        raise ValueError('loaded_support_start_must_use_current_native_time')
++
++
++def instrument(source, start_s, end_s):
++    validate_window(start_s,end_s)
++    header=json.dumps(str(Path(__file__).with_name('loaded_transport_support.h').resolve()))
++    anchor='#include <mujoco/mujoco.h>'
++    assert source.count(anchor)==1
++    source=source.replace(anchor,anchor+'\n#include '+header)
++    anchor='''        bucket_integral_effort[3] = bucket_integrator.Step(
++            command[3], bucket_error, model->opt.timestep);'''
++    assert source.count(anchor)==1
++    block='''        const auto support_smooth=[](double x) {
++          const double s=std::clamp(x,0.0,1.0); return s*s*(3.0-2.0*s);
++        };
++        const double loaded_blend=support_smooth((double(data->time)-START)/0.05)*
++            support_smooth((END-double(data->time))/0.05);
++        if (loaded_blend>0 && command[3]!=0.0)
++          throw std::runtime_error("loaded_support_requires_neutral_bucket");
++        if (loaded_blend>0) {
++          const double previous_effort=bucket_integrator.effort;
++          bucket_integrator.effort=LoadedSupportStep(previous_effort,equivalent_drive_load[3],
++              loaded_blend,model->opt.timestep,BucketIntegral::cap,BucketIntegral::slew);
++          bucket_integrator.last_rate=(bucket_integrator.effort-previous_effort)/model->opt.timestep;
++          bucket_integrator.limited=std::abs(bucket_integrator.last_rate)>=BucketIntegral::slew-1e-6;
++          bucket_integral_effort[3]=bucket_integrator.effort;
++        } else {
++          bucket_integral_effort[3] = bucket_integrator.Step(
++              command[3], bucket_error, model->opt.timestep);
++        }'''.replace('START',format(start_s,'.17g')).replace('END',format(end_s,'.17g'))
++    source=source.replace(anchor,block)
++    anchor='        const double before = data->time;\n        mj_step(model.get(), data.get());'
++    assert source.count(anchor)==1
++    block='''        const double damper_kp=model->actuator_gainprm[mjNGAIN*bucket_hold];
++        const double damper_kv=model->actuator_gainprm[mjNGAIN*controller.drive_actuator[3]];
++        const double damper_mass=result.mass[15];
++        if (!(damper_mass>0 && damper_kp>0 && damper_kv>=0))
++          throw std::runtime_error("loaded_support_invalid_coefficients");
++        const double extra_damping=loaded_blend*std::max(0.0,2.0*std::sqrt(damper_mass*damper_kp)-damper_kv);
++        const double bucket_speed=data->qvel[controller.dof_address[3]];
++        const double damping_effort=std::clamp(-extra_damping*bucket_speed,-BucketIntegral::cap,BucketIntegral::cap);
++        if (!std::isfinite(damping_effort) || damping_effort*bucket_speed>1e-9)
++          throw std::runtime_error("loaded_support_not_dissipative");
++        data->ctrl[bucket_hold] += damping_effort/damper_kp;
++'''
++    return source.replace(anchor,block+anchor)
++
++
++class LoadedTransportRuntime(CycleRuntime):
++    supports_loaded_transport_policy=True
++
++    def __init__(self, source, output, *, support_start_s=None, support_end_s=None, **kwargs):
++        super().__init__(source,output,**kwargs)
++        previous=self.metadata.get('loaded_transport_support')
++        if previous is not None:
++            if previous['policy']!=POLICY:
++                raise ValueError('loaded_support_unknown_policy')
++            if support_start_s is None: support_start_s=previous['start_s']
++            if support_end_s is None: support_end_s=previous['end_s']
++            if support_start_s!=previous['start_s'] or support_end_s!=previous['end_s']:
++                raise ValueError('loaded_support_restore_window_changed')
++        if support_start_s is None or support_end_s is None:
++            raise ValueError('loaded_support_requires_explicit_window')
++        validate_window(support_start_s,support_end_s)
++        if previous is None:
++            validate_activation_clock(self.metadata['controller_state']['native_time_s'],support_start_s)
++        self.support_policy=dict(policy=POLICY,clock='native_time_s',start_s=float(support_start_s),end_s=float(support_end_s),ramp_s=RAMP_SECONDS)
++        if previous is not None:
++            if previous.get('bindings')!={name:hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest() for name in ('layered_47_loaded_transport_support.py','loaded_transport_support.h')}:
++                raise ValueError('loaded_support_restore_binding_changed')
++        self.support_policy['bindings']={name:hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest() for name in ('layered_47_loaded_transport_support.py','loaded_transport_support.h')}
++        self.metadata['loaded_transport_support']=self.support_policy
++        self.bindings.update(self.support_policy['bindings'])
++
++    def _initialize_fixture(self,*args):
++        original=generator.render_capacity_bridge
++        def render(*a):
++            source,manifest=original(*a)
++            return instrument(source,self.support_policy['start_s'],self.support_policy['end_s']),manifest
++        generator.render_capacity_bridge=render
++        try:return super()._initialize_fixture(*args)
++        finally:generator.render_capacity_bridge=original
+diff --git a/src/v4/loaded_transport_support.h b/src/v4/loaded_transport_support.h
+new file mode 100644
+index 0000000..f100a04
+--- /dev/null
++++ b/src/v4/loaded_transport_support.h
+@@ -0,0 +1,16 @@
++#pragma once
++#include <algorithm>
++#include <cmath>
++#include <stdexcept>
++// Neutral loaded transport: support the measured generalized external load.
++// The accumulator remains the saved controller state; no state reset occurs.
++inline double LoadedSupportStep(double effort, double external, double blend,
++                                double dt, double cap, double slew) {
++  if (!std::isfinite(effort) || !std::isfinite(external) ||
++      !std::isfinite(blend) || !std::isfinite(dt) || dt < 0 ||
++      blend < 0 || blend > 1 || cap <= 0 || slew <= 0)
++    throw std::runtime_error("invalid loaded support input");
++  const double target = std::clamp(-external, -cap, cap);
++  const double rate = blend * std::clamp((target-effort)/0.25, -slew, slew);
++  return std::clamp(effort + rate*dt, -cap, cap);
++}
+diff --git a/tests/v4/test_loaded_transport_support.py b/tests/v4/test_loaded_transport_support.py
+new file mode 100644
+index 0000000..c2c65ba
+--- /dev/null
++++ b/tests/v4/test_loaded_transport_support.py
+@@ -0,0 +1,64 @@
++"""CPU-only policy binding and checkpoint metadata regressions."""
++from copy import deepcopy
++import json
++from pathlib import Path
++from tempfile import TemporaryDirectory
++import unittest
++from unittest.mock import patch
++import numpy as np
++
++import layered_47_cycle_checkpoint as checkpoint
++from layered_47_loaded_transport_support import validate_window,validate_activation_clock,POLICY
++
++
++def policy():
++    names=('layered_47_loaded_transport_support.py','loaded_transport_support.h')
++    return dict(policy=POLICY,clock='native_time_s',start_s=1.,end_s=5.,ramp_s=.05,
++                bindings={n:checkpoint.checkpoint_identity(Path(checkpoint.__file__).with_name(n))['sha256'] for n in names})
++
++
++class LoadedTransportSupportTest(unittest.TestCase):
++    def test_wrong_accumulated_clock_is_rejected_before_native_entry(self):
++        validate_activation_clock(191.0666667,191.1166667)
++        for start in [239.7166667,190.,192.,float('nan')]:
++            with self.subTest(start=start),self.assertRaises(ValueError):validate_activation_clock(191.0666667,start)
++
++    def test_finite_positive_window_required(self):
++        validate_window(1,2)
++        for start,end in [(0,float('nan')),(0,float('inf')),(1,1),(2,1),(1,1.05)]:
++            with self.subTest(start=start,end=end),self.assertRaises(ValueError):validate_window(start,end)
++
++    def test_legacy_metadata_remains_valid(self):
++        checkpoint.validate_loaded_transport_support({}, {})
++
++    def test_valid_policy_and_each_corrupt_binding(self):
++        p=policy();checkpoint.validate_loaded_transport_support({'loaded_transport_support':p},p['bindings'])
++        for name in p['bindings']:
++            q=deepcopy(p);q['bindings'][name]='old'
++            with self.assertRaises(ValueError):checkpoint.validate_loaded_transport_support({'loaded_transport_support':q},p['bindings'])
++            b=dict(p['bindings']);b[name]='old'
++            with self.assertRaises(ValueError):checkpoint.validate_loaded_transport_support({'loaded_transport_support':p},b)
++
++    def test_invalid_policy_rejected_even_if_feedback_has_expired(self):
++        p=policy()
++        for k,v in [('policy','unknown'),('ramp_s',1),('start_s',-1),('end_s',float('nan')),('end_s',1.05)]:
++            q=deepcopy(p);q[k]=v
++            with self.subTest(field=k),self.assertRaises(ValueError):checkpoint.validate_loaded_transport_support({'loaded_transport_support':q},p['bindings'])
++
++    def test_save_preserves_policy_without_mutating_parent(self):
++        p=policy();parent=dict(source_identity={'sha256':'source'},lineage_root='root',loaded_transport_support=p)
++        saved_parent=deepcopy(parent)
++        with TemporaryDirectory() as directory:
++            target=Path(directory)/'state.npz'
++            def save_arrays(path,arrays):
++                np.savez(path,**arrays)
++                return {'sha256':checkpoint.checkpoint_identity(path)['sha256']}
++            with patch.object(checkpoint,'validate_controller'),patch.object(checkpoint,'validate_sweep',return_value={}),patch.object(checkpoint.sparse,'write_checkpoint_atomic',side_effect=save_arrays):
++                checkpoint.save(target,{'simulation_time_s':np.array([3.])},{'native_state_kind':'full'}, {},parent=parent,stage='transport',cycle_index=1,truck_enabled=True,solver_profile={},runtime_bindings=p['bindings'])
++            actual=json.loads(Path(str(target)+'.json').read_text())
++            self.assertEqual(actual['loaded_transport_support'],p)
++            self.assertFalse(actual['independent_restore_qualified'])
++            self.assertEqual(parent,saved_parent)
++
++
++if __name__=='__main__':unittest.main()

@@ -35,7 +35,21 @@ class ProbeDisplayCache:
         copied=json.loads(json.dumps(state,allow_nan=False))
         self.positions[frame]=particles;self.states.append(copied)
     def finish(self,probe_status):
-        self.positions.flush();del self.positions
+        self.positions.flush()
+        used_frames=len(self.states)
+        if used_frames < len(self.positions):
+            source=self.positions
+            trimmed_path=self.output/'particles.trim.npy'
+            trimmed=np.lib.format.open_memmap(
+                trimmed_path,mode='w+',dtype=source.dtype,
+                shape=(used_frames,*source.shape[1:]))
+            for start in range(0,used_frames,16):
+                stop=min(start+16,used_frames)
+                trimmed[start:stop]=source[start:stop]
+            trimmed.flush();del trimmed;del self.positions
+            trimmed_path.replace(self.output/'particles.npy')
+        else:
+            del self.positions
         (self.output/'states.json').write_text(json.dumps(self.states,allow_nan=False))
         report=dict(status='captured_probe',capture_origin='live_policy_rollout',probe_status=probe_status,
             frames=len(self.states)-1,playback_physics_steps=0,live_inference=False,label='BC CONTACT WINDOW REPLAY',

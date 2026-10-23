@@ -1,5 +1,20 @@
 # 复杂介质工况自主挖掘项目总体规划
 
+路演展示更新（2026-10-15答辩精修）：最新展示交付为Windows deliverables/roadshow-defense-ready-20261015/，25页（17主讲＋8隐藏备用），已删除页脚来源/证据及内部备用页提示；第6页加强真实终态、60Hz轨迹和三次保载量测，第8页嵌入12.733秒上下减振对照，第13页为61.5秒两次实际挖掘精剪。新增767物理帧已独立核验，完整修复后两铲链路未重跑，S05/实机/泛化资格不升级；详情统一见[S07](plans/S07-truck-reproduction-submission.md)顶部。
+
+## 2026-10-15 D-200：带载举升/回转抖动修复，单来源完整运输验证通过
+
+状态：已实现、已验证（单来源运输范围）；所有本轮物理预算已关闭。正式opt-in模块为src/v4/layered_47_loaded_transport_support.py及loaded_transport_support.h；默认CycleRuntime保持原控制。以原生native_time_s启止，现有积分支撑按实测投影外载平滑跟踪，配合反射惯量推导的耗散阻尼；原模型、零主动斗缸命令、4cm/2cm、闭链、材料、扫掠、速度/slew、25mm跟踪和15mm端点保护保留。快照记录策略/时钟/窗口/绑定，活动快照使用普通运行器会拒绝。
+
+同命令v3：887帧、29项独立审计通过。最终真实原TransportController闭环v5：同一实例1634帧（原前缀3+举升734参考/30保持+完整回转687参考/60保持+反馈停用后120帧）。举升峰值4.000785°→1.913036°（下降52.18%），RMS1.518199°→0.572984°（下降62.26%）；前120帧后最大0.558376°。完整回转747帧含保持，峰值0.632674°；旧D196仅120帧入口，不把两者当整段成对因果比较。停用反馈后2秒峰值0.524106°，变化范围0.036122°，没有重新出现大幅往复振荡。
+
+40项独立审计通过、522880条有限子步记录；逐帧原LoadAwareReference请求与偏置复算误差均0，参考逐项一致，保护/前3帧状态粒子严格连续；附加阻尼力最大11.224kN，支撑变化率≤30kN/s，原Kp/Kv不变。8个原快照测试+6个新增策略测试通过。另用两个独立原生实例各3帧：活动策略快照由LoadedTransportRuntime恢复、停用快照由原CycleRuntime恢复，零步24数组及6帧全部状态/粒子严格相同、保护通过；普通运行器错误恢复活动策略被CPU拒绝。恢复验证新增6物理帧，不训练、不推理。
+
+前期未达门槛的v1/v2、v4时钟误接与中断退出错误、审计序列化错误均原样保留；只授予v3及v5实际完成范围的资格。初始斗腔队列12056、最终仍在腔内12024（99.7346%）仅为队列诊断，不是标定满斗率或无撒料证明。未新跑完整挖掘—卸料两铲/第三铲、泛化、视频或PPT；S05总体仍进行中，不能把本问题完成升级为项目完成。
+
+证据：runs/loaded-closedloop-20261015-v5/{report.json,independent-audit.json,states.json,substeps.csv}；runs/loaded-restore-20261015-v1/report.json；work/motion-review-20261015-v1/loaded-closedloop-20261015-v5/{protocol.json,closure.json,*tests.log}。Windows交付deliverables/loaded-transport-fix-20261015/。远程HEAD 8ea6cd8f55c3c35c4be73054ce28ed1f815f21a0，当前修复/测试/记录尚未提交；历史4个脏源码保持原样。
+
+
 ## 2026-10-15 D-196短段物理已关闭
 
 **本轮物理已结束、预算关闭。** 状态both_short_cases_completed；loaded=completed、887帧；return=completed、2752帧。总物理3639帧，原生实例2个，推理/训练均0。停止原因None。记录审计True，27/27项；记录完整与两组完成分别判断。卸料后到原参考预备点实际45.8667仿真秒，旧147.0833秒；这是同合格卸料快照及原连续首3帧门后的单例动作时间，不是实机或GPU墙钟吞吐。 举升最大斗姿对参考误差4.11005度→4.00079度，仅小幅改善，减振未解决；回转仅120帧入口，不能外推整段回转。实际指标：{"loaded": {"command_max_error": 0.0, "load_bias_max_error": 0.0, "phase_max_pitch_error_deg": {"CLEAR_PILE": 4.00078526761825, "ALIGN": 1.4383400104547381}, "phase_samples": {"CLEAR_PILE": 764, "ALIGN": 120}}, "return": {"command_max_error": 0.0, "load_bias_max_error": 0.0, "phase_max_pitch_error_deg": {"RETURN_EXIT": 0.01744280562491638, "RETURN_COORDINATED": 0.03544522623670783, "RETURN_REFERENCE": 0.009783527170723757}, "phase_samples": {"RETURN_EXIT": 612, "RETURN_COORDINATED": 1386, "RETURN_REFERENCE": 751}}}。

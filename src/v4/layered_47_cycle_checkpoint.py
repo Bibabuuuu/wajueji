@@ -33,6 +33,22 @@ def validate_material_history_policy(metadata, bindings):
         raise ValueError('cycle_material_history_version_mismatch')
 
 
+
+def validate_loaded_transport_support(metadata, bindings):
+    policy=metadata.get('loaded_transport_support')
+    if policy is None:
+        return
+    if (policy.get('policy')!='measured_loaded_support_v1' or policy.get('ramp_s')!=.05 or policy.get('clock')!='native_time_s'
+            or not np.isfinite([policy.get('start_s',np.nan),policy.get('end_s',np.nan)]).all()
+            or policy['start_s']<0 or policy['end_s']-policy['start_s']<=.1):
+        raise ValueError('cycle_loaded_support_policy')
+    normalized={Path(key).name:value for key,value in bindings.items()}
+    for name in ('layered_47_loaded_transport_support.py','loaded_transport_support.h'):
+        actual=checkpoint_identity(Path(__file__).with_name(name))['sha256']
+        if policy.get('bindings',{}).get(name)!=actual or normalized.get(name)!=actual:
+            raise ValueError('cycle_loaded_support_binding:'+name)
+
+
 def validate_training_reset(metadata):
     reset = metadata.get('training_reset')
     if reset is None:
@@ -121,6 +137,7 @@ def load(path, *, allow_training_reset=False, allow_bucket_motion_consistency=Fa
     metadata = json.loads(sidecar.read_text())
     validate_bucket_motion_policy(metadata, metadata.get('runtime_bindings', {}),
                                   allowed=allow_bucket_motion_consistency)
+    validate_loaded_transport_support(metadata,metadata.get('runtime_bindings',{}))
     if metadata.get('training_reset') is not None:
         if not allow_training_reset:
             raise ValueError('training_reset_not_continuous_physics')
@@ -180,6 +197,7 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
     validate_material_history_policy(parent, runtime_bindings)
     validate_training_reset(parent)
     validate_bucket_motion_policy(parent, runtime_bindings, allowed=True)
+    validate_loaded_transport_support(parent,runtime_bindings)
     if controller['native_state_kind'] != 'full':
         raise ValueError('cycle_save_requires_full_native_state')
     if stage not in ('loaded_manual_endpoint', 'hold', 'transport', 'unloaded',
@@ -196,6 +214,8 @@ def save(path, arrays, controller, sweep, *, parent, stage, cycle_index,
         selected_cut=selected_cut, training_eligible=False,
         independent_restore_qualified=False,
         simulation_time_s=float(arrays['simulation_time_s'][0]))
+    if parent.get('loaded_transport_support') is not None:
+        document['loaded_transport_support'] = deepcopy(parent['loaded_transport_support'])
     if parent.get('material_history_policy') is not None:
         document['material_history_policy'] = parent['material_history_policy']
     if parent.get('training_reset') is not None:

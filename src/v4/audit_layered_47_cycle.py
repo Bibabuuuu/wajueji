@@ -20,7 +20,8 @@ def main():
                     historical_native_history_missing=r.metadata.get('historical_native_history_missing',False),
                     source_metadata=r.metadata['source_metadata_identity'],
                     zero_step=r.restored, frames_requested=args.frames,training_eligible=False,
-                    all_hold_frames_zero_bucket_contact=True)
+                    all_hold_frames_zero_bucket_contact=True,
+                    all_hold_frames_hard_safe=True)
         report['material_history_policy']=r.metadata.get('material_history_policy')
         report['training_reset']=r.metadata.get('training_reset')
         try:
@@ -28,6 +29,7 @@ def main():
                 row=r.step([0]*4)
                 no_contact=row['bucket_mpm_contact_samples']==0 and row['rock_bucket_contact_substeps']==0
                 report['all_hold_frames_zero_bucket_contact'] &= no_contact
+                report['all_hold_frames_hard_safe'] &= bool(row['hard_guard'])
                 if args.require_no_bucket_contact and not no_contact:
                     raise RuntimeError('cycle_audit_nonzero_bucket_contact')
                 if frame+1==args.split:report['split_checkpoint']=r.save(out/'split.npz')
