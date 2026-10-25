@@ -1,0 +1,197 @@
+{
+  "boundaries": [
+    "no MJCF was generated",
+    "no MuJoCo, Newton or Warp run was performed",
+    "no R1 bridge or report was modified",
+    "unit batches do not qualify a complete scene"
+  ],
+  "contact_pair_upper_bounds": {
+    "13": {
+      "rock_bucket_proxy_geom_pairs": 234,
+      "rock_ground_geom_pairs": 13,
+      "rock_rock_body_pairs": 78,
+      "rock_truck_receiver_geom_pairs": 65,
+      "scope": "combinatorial candidate geom/body pairs, not simultaneous contacts or manifolds",
+      "total_body_or_environment_role_pairs": 117,
+      "total_candidate_geom_pairs": 390
+    },
+    "2": {
+      "rock_bucket_proxy_geom_pairs": 36,
+      "rock_ground_geom_pairs": 2,
+      "rock_rock_body_pairs": 1,
+      "rock_truck_receiver_geom_pairs": 10,
+      "scope": "combinatorial candidate geom/body pairs, not simultaneous contacts or manifolds",
+      "total_body_or_environment_role_pairs": 7,
+      "total_candidate_geom_pairs": 49
+    },
+    "20": {
+      "rock_bucket_proxy_geom_pairs": 360,
+      "rock_ground_geom_pairs": 20,
+      "rock_rock_body_pairs": 190,
+      "rock_truck_receiver_geom_pairs": 100,
+      "scope": "combinatorial candidate geom/body pairs, not simultaneous contacts or manifolds",
+      "total_body_or_environment_role_pairs": 250,
+      "total_candidate_geom_pairs": 670
+    }
+  },
+  "current_bridge": {
+    "contract": {
+      "estimated_state_named_fields_including_rock_records": 27,
+      "legacy_first_rock_alias_numeric_values": 16,
+      "nplugin": 0,
+      "nq": 33,
+      "nu": 12,
+      "nv": 30,
+      "per_rock_state_named_fields": 4,
+      "ready_top_level_fields": 5,
+      "rock_capacity": 2,
+      "state_numeric_values": 123,
+      "state_top_level_fields": 19
+    },
+    "qualified_capacity": 2,
+    "scope_limit": "one/two-rock regression only; not a full-scene bridge",
+    "two_rock_status": "passed"
+  },
+  "deferred_boundary_diagnostics": {
+    "rock_count": 13,
+    "runtime_contract": {
+      "estimated_state_named_fields_including_rock_records": 71,
+      "legacy_first_rock_alias_numeric_values": 16,
+      "nplugin": 0,
+      "nq": 110,
+      "nu": 12,
+      "nv": 96,
+      "per_rock_state_named_fields": 4,
+      "ready_top_level_fields": 5,
+      "rock_capacity": 13,
+      "state_numeric_values": 299,
+      "state_top_level_fields": 19
+    },
+    "scene_classes": [
+      "jam-boundary"
+    ],
+    "scene_count": 3,
+    "scene_ids": [
+      "jam-boundary-seed-26091931",
+      "jam-boundary-seed-26091932",
+      "jam-boundary-seed-26091933"
+    ],
+    "scope": "retained as diagnostics; not eligible for first-round success"
+  },
+  "first_round_admission": {
+    "required_rock_count": 20,
+    "scene_classes": [
+      "ordinary-small-rock-dominant",
+      "sparse-large-rock"
+    ],
+    "scene_count": 6,
+    "scene_ids": [
+      "ordinary-small-rock-dominant-seed-26091911",
+      "ordinary-small-rock-dominant-seed-26091912",
+      "ordinary-small-rock-dominant-seed-26091913",
+      "sparse-large-rock-seed-26091921",
+      "sparse-large-rock-seed-26091922",
+      "sparse-large-rock-seed-26091923"
+    ],
+    "scope": "only these six 20-rock ordinary/sparse scenes are first-round candidates"
+  },
+  "input_tree_sha256": "2c5a9b8a307ada770e878cc8876d3e3c852e27afbb01d2597adc9316e380e0ba",
+  "maximum_capacity_decision": {
+    "bridge_program_rule": "one bridge implementation reads the loaded model rock_count at startup; each run has a fixed actual count not greater than 20",
+    "decision_status": "user_confirmed_unique_maximum_not_implemented",
+    "evidence": "maximum actual count across nine admitted manifests is 20; successful ordinary/sparse scenes use 20 and jam scenes use 13",
+    "maximum_capacity": 20,
+    "maximum_capacity_contract": {
+      "estimated_state_named_fields_including_rock_records": 99,
+      "legacy_first_rock_alias_numeric_values": 16,
+      "nplugin": 0,
+      "nq": 159,
+      "nu": 12,
+      "nv": 138,
+      "per_rock_state_named_fields": 4,
+      "ready_top_level_fields": 5,
+      "rock_capacity": 20,
+      "state_numeric_values": 411,
+      "state_top_level_fields": 19
+    },
+    "padding_forbidden": true,
+    "selection_rule": "maximum_observed_scene_rock_count"
+  },
+  "maximum_observed_rock_count": 20,
+  "minimum_observed_rock_count": 13,
+  "observed_runtime_contracts": {
+    "13": {
+      "estimated_state_named_fields_including_rock_records": 71,
+      "legacy_first_rock_alias_numeric_values": 16,
+      "nplugin": 0,
+      "nq": 110,
+      "nu": 12,
+      "nv": 96,
+      "per_rock_state_named_fields": 4,
+      "ready_top_level_fields": 5,
+      "rock_capacity": 13,
+      "state_numeric_values": 299,
+      "state_top_level_fields": 19
+    },
+    "20": {
+      "estimated_state_named_fields_including_rock_records": 99,
+      "legacy_first_rock_alias_numeric_values": 16,
+      "nplugin": 0,
+      "nq": 159,
+      "nu": 12,
+      "nv": 138,
+      "per_rock_state_named_fields": 4,
+      "ready_top_level_fields": 5,
+      "rock_capacity": 20,
+      "state_numeric_values": 411,
+      "state_top_level_fields": 19
+    }
+  },
+  "observed_scene_rock_counts": {
+    "13": 3,
+    "20": 6
+  },
+  "rejected_designs": [
+    {
+      "option": "separate_bridge_or_message_implementations_for_13_and_20",
+      "reason": "one bridge program must handle the loaded model count up to 20",
+      "status": "rejected_by_user_decision"
+    },
+    {
+      "option": "pad_13_rock_models_to_20_runtime_slots",
+      "reason": "13-rock diagnostics must naturally use nq=110 and nv=96",
+      "status": "rejected_by_user_decision"
+    },
+    {
+      "option": "admit_13_rock_jam_scenes_in_first_round",
+      "reason": "the first round is limited to six 20-rock ordinary/sparse scenes",
+      "status": "deferred_by_user_decision"
+    }
+  ],
+  "scene_count": 9,
+  "schema": "excavation_scene_assembly_compatibility_v1",
+  "state_message_formula": {
+    "legacy_first_rock_alias_numeric_values_in_fixed_term": 16,
+    "named_fields_including_rock_records": "19 + 4 * rock_capacity",
+    "nq": "19 + 7 * rock_capacity",
+    "nu": "12",
+    "numeric_values": "91 + 16 * rock_capacity",
+    "nv": "18 + 6 * rock_capacity",
+    "per_rock_named_fields": 4,
+    "top_level_fields": 19
+  },
+  "status": "scene_assembly_preflight_candidate",
+  "unit_regression": {
+    "all_members_exactly_once": true,
+    "batch_capacity": 2,
+    "batch_count": 81,
+    "member_count": 159,
+    "scope_limit": "does not replace simultaneous full-scene physics"
+  },
+  "unresolved_before_r2_bridge": [
+    "implement startup validation for the loaded model rock_count in the range 1 through 20",
+    "decide whether legacy first-rock aliases remain in the multirock state schema",
+    "implement and load a multirock model before claiming address or contact runtime qualification",
+    "repeat whole-rock envelope, contact, settling, transport and dump checks in actual physics"
+  ]
+}

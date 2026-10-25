@@ -1,0 +1,568 @@
+{
+  "source": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/new-chain-second-20260924-v1/contact-exit-physical/cleared.npz",
+  "source_sha256": "1bf4e9ca796bd36a9d8c22b145e03eb06776b6c222d5f9b0858dc23d7c9f1102",
+  "source_stage": "after_actual_contact_exit_before_any_transport",
+  "observation": {
+    "detached_payload_particles": 12024,
+    "detached_dynamic_particles": 14841,
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "ground-connected stock surface; detached material remains fully simulated"
+  },
+  "candidate_count": 11,
+  "top_candidates": [
+    {
+      "entry_xy_m": [
+        5.25,
+        -0.5499999999999999
+      ],
+      "surface_z_m": 1.7141814231872559,
+      "score": 0.3607090711593629,
+      "corridor_cell_count": 158,
+      "contact": {
+        "source": "rear_lower_face_from_observed_profile",
+        "contact_xy_m": [
+          5.548367169576101,
+          -0.5812575130032106
+        ],
+        "contact_surface_z_m": 1.1445946097373962,
+        "outward_offset_m": 0.30000000000000004,
+        "normalized_height_fraction": 0.4095023287723576,
+        "target_height_fraction": 0.4,
+        "height_fraction_band": [
+          0.3,
+          0.5
+        ],
+        "crest_surface_z_m": 1.6116008758544922,
+        "base_surface_z_m": 0.8207319378852844,
+        "face_drop_m": 0.7908689379692078,
+        "bucket_width_m": 0.6,
+        "strip_anchor_xy_m": [
+          5.25,
+          -0.5499999999999999
+        ],
+        "profile": [
+          {
+            "outward_offset_m": 0.0,
+            "center_xy_m": [
+              5.25,
+              -0.5499999999999999
+            ],
+            "surface_z_m": 1.6116008758544922,
+            "minimum_surface_z_m": 0.5268683433532715,
+            "maximum_surface_z_m": 1.712172508239746,
+            "cell_count": 7
+          },
+          {
+            "outward_offset_m": 0.1,
+            "center_xy_m": [
+              5.349455723192034,
+              -0.5604191710010702
+            ],
+            "surface_z_m": 1.4161436557769775,
+            "minimum_surface_z_m": 0.6409513354301453,
+            "maximum_surface_z_m": 1.6757134199142456,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.2,
+            "center_xy_m": [
+              5.448911446384067,
+              -0.5708383420021403
+            ],
+            "surface_z_m": 1.2868449687957764,
+            "minimum_surface_z_m": 0.6235215067863464,
+            "maximum_surface_z_m": 1.3992422819137573,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.30000000000000004,
+            "center_xy_m": [
+              5.548367169576101,
+              -0.5812575130032106
+            ],
+            "surface_z_m": 1.1445946097373962,
+            "minimum_surface_z_m": 0.5929825901985168,
+            "maximum_surface_z_m": 1.2619447708129883,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.4,
+            "center_xy_m": [
+              5.6478228927681355,
+              -0.5916766840042808
+            ],
+            "surface_z_m": 0.9900098145008087,
+            "minimum_surface_z_m": 0.5765870809555054,
+            "maximum_surface_z_m": 1.0685412883758545,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.5,
+            "center_xy_m": [
+              5.74727861596017,
+              -0.602095855005351
+            ],
+            "surface_z_m": 0.8207319378852844,
+            "minimum_surface_z_m": 0.5685184001922607,
+            "maximum_surface_z_m": 1.0105013847351074,
+            "cell_count": 6
+          }
+        ],
+        "prepoint_status": "not_selected_requires_separate_clearance_plan"
+      },
+      "future_strip_count": 1,
+      "future_entry_xy_m": [
+        [
+          5.25,
+          0.6499999999999999
+        ]
+      ],
+      "workspace_score": 0.6447455029487612,
+      "remaining_scoops_considered": 2
+    },
+    {
+      "entry_xy_m": [
+        5.25,
+        0.6499999999999999
+      ],
+      "surface_z_m": 1.6417604088783264,
+      "score": 0.35504553973674785,
+      "corridor_cell_count": 159,
+      "contact": {
+        "source": "rear_lower_face_from_observed_profile",
+        "contact_xy_m": [
+          5.646969041897628,
+          0.6991485480444681
+        ],
+        "contact_surface_z_m": 1.05861496925354,
+        "outward_offset_m": 0.4,
+        "normalized_height_fraction": 0.4061683967507027,
+        "target_height_fraction": 0.4,
+        "height_fraction_band": [
+          0.3,
+          0.5
+        ],
+        "crest_surface_z_m": 1.3848804235458374,
+        "base_surface_z_m": 0.8354562222957611,
+        "face_drop_m": 0.5494242012500763,
+        "bucket_width_m": 0.6,
+        "strip_anchor_xy_m": [
+          5.25,
+          0.6499999999999999
+        ],
+        "profile": [
+          {
+            "outward_offset_m": 0.0,
+            "center_xy_m": [
+              5.25,
+              0.6499999999999999
+            ],
+            "surface_z_m": 1.3848804235458374,
+            "minimum_surface_z_m": 0.7957519292831421,
+            "maximum_surface_z_m": 1.6755173206329346,
+            "cell_count": 7
+          },
+          {
+            "outward_offset_m": 0.1,
+            "center_xy_m": [
+              5.349242260474407,
+              0.662287137011117
+            ],
+            "surface_z_m": 1.389598548412323,
+            "minimum_surface_z_m": 0.8887852430343628,
+            "maximum_surface_z_m": 1.478618860244751,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.2,
+            "center_xy_m": [
+              5.4484845209488135,
+              0.674574274022234
+            ],
+            "surface_z_m": 1.3032369017601013,
+            "minimum_surface_z_m": 0.6421812176704407,
+            "maximum_surface_z_m": 1.329108476638794,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.30000000000000004,
+            "center_xy_m": [
+              5.547726781423221,
+              0.6868614110333511
+            ],
+            "surface_z_m": 1.213000237941742,
+            "minimum_surface_z_m": 0.5550936460494995,
+            "maximum_surface_z_m": 1.2762755155563354,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.4,
+            "center_xy_m": [
+              5.646969041897628,
+              0.6991485480444681
+            ],
+            "surface_z_m": 1.05861496925354,
+            "minimum_surface_z_m": 0.47165772318840027,
+            "maximum_surface_z_m": 1.1471316814422607,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.5,
+            "center_xy_m": [
+              5.746211302372035,
+              0.7114356850555852
+            ],
+            "surface_z_m": 0.8354562222957611,
+            "minimum_surface_z_m": 0.47504425048828125,
+            "maximum_surface_z_m": 0.9830241203308105,
+            "cell_count": 6
+          }
+        ],
+        "prepoint_status": "not_selected_requires_separate_clearance_plan"
+      },
+      "future_strip_count": 1,
+      "future_entry_xy_m": [
+        [
+          5.25,
+          -0.5499999999999999
+        ]
+      ],
+      "workspace_score": 0.6436127966642382,
+      "remaining_scoops_considered": 2
+    },
+    {
+      "entry_xy_m": [
+        5.25,
+        -0.6499999999999999
+      ],
+      "surface_z_m": 1.6241248846054077,
+      "score": 0.3542062442302705,
+      "corridor_cell_count": 159,
+      "contact": {
+        "source": "rear_lower_face_from_observed_profile",
+        "contact_xy_m": [
+          5.547726781423221,
+          -0.6868614110333511
+        ],
+        "contact_surface_z_m": 1.1445946097373962,
+        "outward_offset_m": 0.30000000000000004,
+        "normalized_height_fraction": 0.4095023287723576,
+        "target_height_fraction": 0.4,
+        "height_fraction_band": [
+          0.3,
+          0.5
+        ],
+        "crest_surface_z_m": 1.6116008758544922,
+        "base_surface_z_m": 0.8207319378852844,
+        "face_drop_m": 0.7908689379692078,
+        "bucket_width_m": 0.6,
+        "strip_anchor_xy_m": [
+          5.25,
+          -0.6499999999999999
+        ],
+        "profile": [
+          {
+            "outward_offset_m": 0.0,
+            "center_xy_m": [
+              5.25,
+              -0.6499999999999999
+            ],
+            "surface_z_m": 1.6116008758544922,
+            "minimum_surface_z_m": 1.3496421575546265,
+            "maximum_surface_z_m": 1.712172508239746,
+            "cell_count": 7
+          },
+          {
+            "outward_offset_m": 0.1,
+            "center_xy_m": [
+              5.349242260474407,
+              -0.662287137011117
+            ],
+            "surface_z_m": 1.4161436557769775,
+            "minimum_surface_z_m": 0.6441878080368042,
+            "maximum_surface_z_m": 1.6757134199142456,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.2,
+            "center_xy_m": [
+              5.4484845209488135,
+              -0.674574274022234
+            ],
+            "surface_z_m": 1.2868449687957764,
+            "minimum_surface_z_m": 0.5578352212905884,
+            "maximum_surface_z_m": 1.3992422819137573,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.30000000000000004,
+            "center_xy_m": [
+              5.547726781423221,
+              -0.6868614110333511
+            ],
+            "surface_z_m": 1.1445946097373962,
+            "minimum_surface_z_m": 0.5610204339027405,
+            "maximum_surface_z_m": 1.2619447708129883,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.4,
+            "center_xy_m": [
+              5.646969041897628,
+              -0.6991485480444681
+            ],
+            "surface_z_m": 0.9900098145008087,
+            "minimum_surface_z_m": 0.47489050030708313,
+            "maximum_surface_z_m": 1.0685412883758545,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.5,
+            "center_xy_m": [
+              5.746211302372035,
+              -0.7114356850555852
+            ],
+            "surface_z_m": 0.8207319378852844,
+            "minimum_surface_z_m": 0.47858765721321106,
+            "maximum_surface_z_m": 1.0105013847351074,
+            "cell_count": 6
+          }
+        ],
+        "prepoint_status": "not_selected_requires_separate_clearance_plan"
+      },
+      "future_strip_count": 1,
+      "future_entry_xy_m": [
+        [
+          5.25,
+          0.6499999999999999
+        ]
+      ],
+      "workspace_score": 0.6382426760196688,
+      "remaining_scoops_considered": 2
+    },
+    {
+      "entry_xy_m": [
+        5.25,
+        -0.44999999999999996
+      ],
+      "surface_z_m": 1.7141814231872559,
+      "score": 0.3540123428106309,
+      "corridor_cell_count": 157,
+      "contact": {
+        "source": "rear_lower_face_from_observed_profile",
+        "contact_xy_m": [
+          5.548903994712525,
+          -0.4756203424039307
+        ],
+        "contact_surface_z_m": 1.1445946097373962,
+        "outward_offset_m": 0.30000000000000004,
+        "normalized_height_fraction": 0.4095023287723576,
+        "target_height_fraction": 0.4,
+        "height_fraction_band": [
+          0.3,
+          0.5
+        ],
+        "crest_surface_z_m": 1.6116008758544922,
+        "base_surface_z_m": 0.8207319378852844,
+        "face_drop_m": 0.7908689379692078,
+        "bucket_width_m": 0.6,
+        "strip_anchor_xy_m": [
+          5.25,
+          -0.44999999999999996
+        ],
+        "profile": [
+          {
+            "outward_offset_m": 0.0,
+            "center_xy_m": [
+              5.25,
+              -0.44999999999999996
+            ],
+            "surface_z_m": 1.6116008758544922,
+            "minimum_surface_z_m": 0.5268683433532715,
+            "maximum_surface_z_m": 1.712172508239746,
+            "cell_count": 7
+          },
+          {
+            "outward_offset_m": 0.1,
+            "center_xy_m": [
+              5.349634664904175,
+              -0.4585401141346435
+            ],
+            "surface_z_m": 1.4150862097740173,
+            "minimum_surface_z_m": 0.4858987331390381,
+            "maximum_surface_z_m": 1.6757134199142456,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.2,
+            "center_xy_m": [
+              5.4492693298083505,
+              -0.46708022826928713
+            ],
+            "surface_z_m": 1.2654522061347961,
+            "minimum_surface_z_m": 0.4719619154930115,
+            "maximum_surface_z_m": 1.3992422819137573,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.30000000000000004,
+            "center_xy_m": [
+              5.548903994712525,
+              -0.4756203424039307
+            ],
+            "surface_z_m": 1.1445946097373962,
+            "minimum_surface_z_m": 0.4673035144805908,
+            "maximum_surface_z_m": 1.2619447708129883,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.4,
+            "center_xy_m": [
+              5.6485386596167,
+              -0.48416045653857426
+            ],
+            "surface_z_m": 0.9894507229328156,
+            "minimum_surface_z_m": 0.46802347898483276,
+            "maximum_surface_z_m": 1.0685412883758545,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.5,
+            "center_xy_m": [
+              5.7481733245208755,
+              -0.4927005706732178
+            ],
+            "surface_z_m": 0.8207319378852844,
+            "minimum_surface_z_m": 0.48461270332336426,
+            "maximum_surface_z_m": 1.0105013847351074,
+            "cell_count": 6
+          }
+        ],
+        "prepoint_status": "not_selected_requires_separate_clearance_plan"
+      },
+      "future_strip_count": 1,
+      "future_entry_xy_m": [
+        [
+          5.25,
+          0.6499999999999999
+        ]
+      ],
+      "workspace_score": 0.6380487746000292,
+      "remaining_scoops_considered": 2
+    },
+    {
+      "entry_xy_m": [
+        5.25,
+        0.5500000000000003
+      ],
+      "surface_z_m": 1.6417604088783264,
+      "score": 0.34759608232975014,
+      "corridor_cell_count": 158,
+      "contact": {
+        "source": "rear_lower_face_from_observed_profile",
+        "contact_xy_m": [
+          5.6478228927681355,
+          0.5916766840042811
+        ],
+        "contact_surface_z_m": 1.05861496925354,
+        "outward_offset_m": 0.4,
+        "normalized_height_fraction": 0.4061683967507027,
+        "target_height_fraction": 0.4,
+        "height_fraction_band": [
+          0.3,
+          0.5
+        ],
+        "crest_surface_z_m": 1.3848804235458374,
+        "base_surface_z_m": 0.8354562222957611,
+        "face_drop_m": 0.5494242012500763,
+        "bucket_width_m": 0.6,
+        "strip_anchor_xy_m": [
+          5.25,
+          0.5500000000000003
+        ],
+        "profile": [
+          {
+            "outward_offset_m": 0.0,
+            "center_xy_m": [
+              5.25,
+              0.5500000000000003
+            ],
+            "surface_z_m": 1.3848804235458374,
+            "minimum_surface_z_m": 0.5149182677268982,
+            "maximum_surface_z_m": 1.6755173206329346,
+            "cell_count": 7
+          },
+          {
+            "outward_offset_m": 0.1,
+            "center_xy_m": [
+              5.349455723192034,
+              0.5604191710010705
+            ],
+            "surface_z_m": 1.389598548412323,
+            "minimum_surface_z_m": 0.7509626150131226,
+            "maximum_surface_z_m": 1.478618860244751,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.2,
+            "center_xy_m": [
+              5.448911446384067,
+              0.5708383420021407
+            ],
+            "surface_z_m": 1.3032369017601013,
+            "minimum_surface_z_m": 0.7428816556930542,
+            "maximum_surface_z_m": 1.329108476638794,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.30000000000000004,
+            "center_xy_m": [
+              5.548367169576101,
+              0.5812575130032109
+            ],
+            "surface_z_m": 1.213000237941742,
+            "minimum_surface_z_m": 0.7333239316940308,
+            "maximum_surface_z_m": 1.2762755155563354,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.4,
+            "center_xy_m": [
+              5.6478228927681355,
+              0.5916766840042811
+            ],
+            "surface_z_m": 1.05861496925354,
+            "minimum_surface_z_m": 0.5143179297447205,
+            "maximum_surface_z_m": 1.1471316814422607,
+            "cell_count": 6
+          },
+          {
+            "outward_offset_m": 0.5,
+            "center_xy_m": [
+              5.747278615960169,
+              0.6020958550053513
+            ],
+            "surface_z_m": 0.8354562222957611,
+            "minimum_surface_z_m": 0.5874316692352295,
+            "maximum_surface_z_m": 0.9830241203308105,
+            "cell_count": 6
+          }
+        ],
+        "prepoint_status": "not_selected_requires_separate_clearance_plan"
+      },
+      "future_strip_count": 1,
+      "future_entry_xy_m": [
+        [
+          5.25,
+          -0.5499999999999999
+        ]
+      ],
+      "workspace_score": 0.6361633392572406,
+      "remaining_scoops_considered": 2
+    }
+  ],
+  "wall_seconds": 0.2894733810098842,
+  "physical_steps": 0,
+  "does_not_clear_bucket_or_grant_prepoint": true
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "derived_endpoint_particle_tail_v2",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/final-001490.cycle.npz",
+      "sha256": "17aa03b291d4bdaabe41140ffd723a89e175e17715121c2932b847eee0987c3d"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-derived-demonstration-v1/third-scoop-observe-v2/final.npz",
+      "sha256": "b77d2742d19ae3cd1b433c890d61e829092060a90f902314438d8f83e088d352"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-demonstration-20260924-v1/audit_particle_tail_v2.py",
+      "sha256": "840e70a57f96e352f258b5019469e7f5e44abe3d44cfb9588dd04bdb4de9a50f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_geometry.py",
+      "sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656"
+    }
+  ],
+  "particle_count": 256441,
+  "quantiles_m": {
+    "0.5": 5.52308680219683e-06,
+    "0.9": 9.358726455357295e-05,
+    "0.99": 0.0007692840951167512,
+    "0.999": 0.011405099095554745,
+    "1.0": 0.28465226426342527
+  },
+  "thresholds": [
+    {
+      "threshold_m": 0.001,
+      "count": 2115,
+      "fraction": 0.008247511123416302,
+      "original_cavity": 31,
+      "derived_cavity": 32,
+      "original_ground_connected": 556,
+      "derived_ground_connected": 509
+    },
+    {
+      "threshold_m": 0.01,
+      "count": 288,
+      "fraction": 0.0011230653444651987,
+      "original_cavity": 1,
+      "derived_cavity": 2,
+      "original_ground_connected": 8,
+      "derived_ground_connected": 1
+    },
+    {
+      "threshold_m": 0.1,
+      "count": 9,
+      "fraction": 3.509579201453746e-05,
+      "original_cavity": 0,
+      "derived_cavity": 0,
+      "original_ground_connected": 0,
+      "derived_ground_connected": 0
+    }
+  ],
+  "worst": {
+    "index": 110055,
+    "error_m": 0.28465226426342527,
+    "original_world_m": [
+      3.7308764457702637,
+      0.09072640538215637,
+      1.82980477809906
+    ],
+    "derived_world_m": [
+      3.7247023582458496,
+      0.10065572708845139,
+      2.1142168045043945
+    ],
+    "original_cavity": false,
+    "derived_cavity": false,
+    "original_ground_connected": false,
+    "derived_ground_connected": false
+  },
+  "cavity_membership_changed": 4,
+  "ground_connectivity_membership_changed": 97,
+  "training_eligible": false,
+  "interpretation": "Per-particle trajectory identity is not established. Cavity and connectivity are endpoint geometric diagnostics, not path or material-failure explanations. Actual replay observations must remain paired with actual replay actions."
+}

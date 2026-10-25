@@ -1,0 +1,48 @@
+{
+  "baseline": {
+    "frames": 120,
+    "all_hard_guards": true,
+    "mean_abs_error_mm": 35.696016310928734,
+    "tail_mean_abs_error_mm": 35.488598048238586,
+    "final_error_mm": 34.23115110195063,
+    "max_abs_bucket_velocity_m_s": 0.05888099515987419,
+    "tail_bucket_velocity_std_m_s": 0.004430647750357234,
+    "max_cohort_projection_m": 0.015229539014399052,
+    "max_cohort_p99_step_m": 0.013070693239569664,
+    "max_cohort_p99_rigid_carry_error_m": 0.00942937718219198,
+    "max_abs_bucket_hold_force_N": 125310.87440236844,
+    "max_abs_mpm_bucket_load_N": 181171.33986564653,
+    "peak_compensation_N": 0
+  },
+  "candidate": {
+    "frames": 120,
+    "all_hard_guards": true,
+    "mean_abs_error_mm": 26.475113373176516,
+    "tail_mean_abs_error_mm": 21.64862640327443,
+    "final_error_mm": 20.508091055907563,
+    "max_abs_bucket_velocity_m_s": 0.04789734453907487,
+    "tail_bucket_velocity_std_m_s": 0.0027810267172630747,
+    "max_cohort_projection_m": 0.013449534773826599,
+    "max_cohort_p99_step_m": 0.01125230174511671,
+    "max_cohort_p99_rigid_carry_error_m": 0.006644502295059005,
+    "max_abs_bucket_hold_force_N": 162972.01005069772,
+    "max_abs_mpm_bucket_load_N": 158076.90184183195,
+    "peak_compensation_N": 59980.19758642002
+  },
+  "prefix_exact": true,
+  "source_unchanged": true,
+  "candidate_only": true,
+  "default_enabled": false,
+  "formal_payload_or_spill_audited": false,
+  "mean_error_reduction_percent": 25.831742280241887,
+  "tail_error_reduction_percent": 38.99836118110921,
+  "artifacts": {
+    "/home/qunwang/wajueji/work/curl-compensation-short-ab-20260923-v1/candidate-policy.json": "815e4ca0c5f170e455846a9c2d77eef4ca5e188ac05f86049c086db5ecd51e1c",
+    "/home/qunwang/wajueji/work/curl-compensation-short-ab-20260923-v1/candidate-bridge.cc": "c2c67e6296c496949812a9405c00399a891d2c1384de5c4830230f2bd3934c43",
+    "/home/qunwang/wajueji/work/curl-compensation-short-ab-20260923-v1/report.json": "72b871d093ffc9178c842eb7134e2156d598a4f7a33c9de07967870a3a669294",
+    "/home/qunwang/wajueji/work/curl-compensation-short-ab-20260923-v1/trace.ndjson": "29415a3f5a16c844d3a7f6c5beb790c7c2bc3a9893c832a0b0b301bb84ffada4",
+    "/home/qunwang/wajueji/work/curl-compensation-short-ab-20260923-v1/final-000600.diagnostic.npz": "e5281583b8d8d7f0ebc363c6b7ce4f15999ee0bc05fd49545711b8e82b7736de",
+    "/home/qunwang/wajueji/work/carry-sync-curl-audit-20260923-v1/report.json": "49a675cac509dfe51014f647fb8409299d5a3720b337b431d021fec141c7c872",
+    "/home/qunwang/wajueji/work/carry-sync-curl-audit-20260923-v1/trace.ndjson": "7dab31abbc62e2433588fe550c340b0f7ad81c2c844e27b2e353dae4028b2eff"
+  }
+}

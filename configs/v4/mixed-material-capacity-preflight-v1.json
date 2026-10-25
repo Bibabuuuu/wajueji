@@ -1,0 +1,55 @@
+{
+  "schema": "excavation_mixed_material_capacity_preflight_config_v1",
+  "status": "capacity_protocol_preflight_only",
+  "frozen_inputs": {
+    "two_rock_model": {
+      "path": "reports/v4/mixed-material-r3-c-bridge-preflight-2026-09-20-v1/generated-model.xml",
+      "sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771"
+    },
+    "two_rock_bridge": {
+      "path": "reports/v4/mixed-material-r3-c-bridge-preflight-2026-09-20-v1/generated-bridge.cc",
+      "sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52"
+    },
+    "three_cycle_config": {
+      "path": "configs/v4/mixed-material-three-cycle-v1.json",
+      "sha256": "dfe3e21a43a33e64090e24acca570e7ad9106d5413cf795d9737d548fe18c558"
+    }
+  },
+  "capacity": {
+    "preflight_rock_counts": [64, 256, 512],
+    "maximum_formal_rock_count": 1024,
+    "runtime_count_source": "loaded_model_contiguous_named_freejoints",
+    "fixed_after_startup": true,
+    "maximum_external_wrench_count": "rock_count_plus_bucket"
+  },
+  "synthetic_layout": {
+    "equivalent_diameter_m": 0.16,
+    "origin_world_m": [3.8875, -1.0125, 0.0875],
+    "spacing_m": 0.175,
+    "columns_x": 12,
+    "columns_y": 12,
+    "maximum_layers_z": 8,
+    "purpose": "time_zero_capacity_only_not_formal_scene_geometry"
+  },
+  "protocol": {
+    "ready_schema": "excavation_mixed_coupled_bridge_capacity_v1",
+    "state_schema": "excavation_mixed_coupled_bridge_capacity_state_v1",
+    "rock_id_format": "r1-rock-%03d",
+    "rock_joint_format": "r1_rock_free_%03d",
+    "external_wrench_frame": "world",
+    "named_wrench_duplicate_unknown_or_absent_id_rejected": true
+  },
+  "scope": {
+    "model_generation": true,
+    "bridge_generation": true,
+    "bridge_compile": true,
+    "time_zero_protocol": true,
+    "one_clear_step": false,
+    "mpm_or_gpu_run": false,
+    "settling": false,
+    "physics_qualified": false,
+    "formal_scene_qualified": false,
+    "training": false,
+    "frozen_inputs_modified": false
+  }
+}

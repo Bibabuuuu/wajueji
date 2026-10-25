@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "all_six_activation_stages_nonempty": true,
+    "approved_visual_config_hash_bound": true,
+    "carve_removed_particles": true,
+    "maximum_target_shift_bounded": true,
+    "mean_target_shift_bounded": true,
+    "particle_partition_closed": true,
+    "physics_steps_zero": true,
+    "retained_particle_center_inside_rock_zero": true,
+    "rock_count_and_layers_preserved": true,
+    "rock_identity_preserved": true,
+    "rock_rock_sat_gap_passed": true,
+    "rocks_within_mound_outer_xy": true
+  },
+  "config_sha256": "c16cb7dd56bf8e63864fa610249410e66a41382f708d20c2846b16198c1fab74",
+  "mpm_or_gpu_run_executed": false,
+  "next_gate": "actual_65_rock_time_zero_and_single_press_smoke",
+  "outputs": {
+    "layered-mound-bank.npz": "08bb8aab7a5433fb353fe62917f525bdbad5c543f680477470a6527a51899a16",
+    "metrics.json": "a26b1593d172788c3b28c05b39c17447666ba08b29c713e63865ed48f5f3005b",
+    "scene-manifest.json": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+  },
+  "physics_steps_executed": 0,
+  "schema": "excavation_layered_mound_physical_preflight_report_v1",
+  "stable_scene_claimed": false,
+  "status": "nonintersecting_geometry_preflight_passed",
+  "visual_config_sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32"
+}

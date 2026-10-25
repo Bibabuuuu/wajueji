@@ -1,0 +1,52 @@
+{
+  "count": 4007,
+  "unique_particles": 4007,
+  "initial_cavity_count": 6494,
+  "share": 0.6170311056359716,
+  "example": {
+    "particle_id": 221261,
+    "tracked_index": 9881,
+    "frame": 551,
+    "first_crossing_frame": 548,
+    "face": "bucket_shell_04",
+    "first_crossing_phase": "mpm_before_projection",
+    "pre_local": [
+      0.677626410882281,
+      -0.26456782933678535,
+      -0.1421764046616191
+    ],
+    "post_local_same_collider_pose": [
+      0.6895830529206922,
+      -0.2645677680785545,
+      -0.13067387061348287
+    ],
+    "slab_outward_z_pre_m": 0.002095999090580284,
+    "slab_outward_z_post_m": 0.018687249144726713,
+    "slab_half_thickness_m": 0.018,
+    "query_sdf_m": -0.015903890132904053,
+    "query_owner": 48,
+    "query_material": 58,
+    "bucket_sdf_m": -0.015903890132904053,
+    "bucket_material": 58,
+    "query_gradient_world": [
+      0.6714445352554321,
+      0.4579596519470215,
+      -0.5826107263565063
+    ],
+    "query_velocity_world": [
+      -0.061874303966760635,
+      0.2706669867038727,
+      -0.032311394810676575
+    ],
+    "bucket_gradient_local": [
+      0.7206612825393677,
+      1.873901396720612e-06,
+      0.6932873129844666
+    ],
+    "projection_displacement_world_m": [
+      0.011140108108520508,
+      0.007598161697387695,
+      -0.009666204452514648
+    ]
+  }
+}

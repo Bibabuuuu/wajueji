@@ -1,0 +1,139 @@
+{
+  "schema": "contact_bc_bounded_probe_readonly_review_v1",
+  "run": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2",
+  "checks": {
+    "frames_complete": true,
+    "actions_complete": true,
+    "actions_match": true,
+    "state_chain": true,
+    "initial_state_matches_zero_step": true,
+    "first_action_matches_zero_step": true,
+    "terrain_causal": true,
+    "terrain_anchors": true,
+    "previous_action_causal": true,
+    "safe": true,
+    "materials": true,
+    "sweep": true,
+    "finite_final": true,
+    "particle_count_preserved": true,
+    "rock_ids_preserved": true,
+    "final_mechanism_matches_log": true,
+    "simulation_advance_2_seconds": true,
+    "source_unchanged": true,
+    "policy_unchanged": true,
+    "lineage_preserved": true,
+    "inventory_preserved": true
+  },
+  "passed": true,
+  "frames": 120,
+  "original_process_status": "physical_120_frames_and_final_snapshot_completed_then_report_serialization_failed",
+  "original_report_failure": "TypeError: Object of type int64 is not JSON serializable; command_nonzero_frames was a NumPy scalar",
+  "repair": "Boolean conversion before sum; regression test passes. This independent report is reconstructed from original saved logs, not a rerun.",
+  "all_executed_frames_safe": true,
+  "projection_frames": 0,
+  "command_nonzero_frames": 120,
+  "inference_roundtrip_seconds_quantiles": [
+    0.001159940002253279,
+    0.001267960004042834,
+    0.001402837102068588,
+    0.0015109659871086478
+  ],
+  "tip_initial_m": [
+    6.145151077506686,
+    0.6437777312835598,
+    1.7301509002076356
+  ],
+  "tip_final_m": [
+    6.185218519118391,
+    0.6925934859123328,
+    1.183072754062148
+  ],
+  "tip_displacement_m": [
+    0.04006744161170506,
+    0.04881575462877308,
+    -0.5470781461454877
+  ],
+  "human_same_source_first120_tip_m": [
+    6.171347959021738,
+    0.6213107692033509,
+    1.2733010085035723
+  ],
+  "human_same_source_first120_tip_displacement_m": [
+    0.026196881515052617,
+    -0.02246696208020882,
+    -0.4568498917040633
+  ],
+  "bucket_origin_displacement_m": [
+    0.03851188831717334,
+    0.04487610711004175,
+    -0.5482255739634327
+  ],
+  "normalized_command_mean": [
+    0.030158244812628254,
+    -0.8716129245546956,
+    0.6238344404220697,
+    -0.37746645347991337
+  ],
+  "normalized_command_first": [
+    0.02110396884381771,
+    -0.051222022622823715,
+    0.0005142166628502309,
+    0.1096891462802887
+  ],
+  "normalized_command_last": [
+    -0.022352254018187523,
+    -0.9192628264427185,
+    0.7039815783500671,
+    -0.4593888521194458
+  ],
+  "normalized_command_min": [
+    -0.04140758141875267,
+    -0.9230697154998779,
+    -0.0001366063952445984,
+    -0.4697193503379822
+  ],
+  "normalized_command_max": [
+    0.4798315465450287,
+    -0.051222022622823715,
+    0.7227722406387329,
+    0.17598572373390198
+  ],
+  "total_soil_contact_samples": 10,
+  "total_rock_contact_substeps": 0,
+  "physics_wall_seconds": 15.472432614158606,
+  "formal_training_admission": false,
+  "full_excavation_qualified": false,
+  "policy_resume_qualified": false,
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-native60-pilot-20260924-v1/pilot.pt",
+      "sha256": "4bd50c9f2bd9d5d31b0adee2335f2320b19056b518a097a23a11d2373bcf371c"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2/actions.ndjson",
+      "sha256": "97f2e304f30758ebc625e766b53328056a4af75bae263d8a88dff882564eb6ae"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2/terrain.ndjson",
+      "sha256": "a3431ee52c0df0c48f0ae7b49f17157453f4f6213f5a2f9543fd74f325d5b2f2"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2/physics/frames.ndjson",
+      "sha256": "d307bc4f519bda0f3aa5fd6a7755aa64ec83e2babbfe8cc600a19e265fdb7ab5"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2/final.npz",
+      "sha256": "5333f2a4c7d4ee4e8f2e733c9c2ab5433d72724f307c58129c41e8c811601693"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2/final.npz.json",
+      "sha256": "ea52a00c559f8aead84df64a026fda7fefebfa3fca8ba62b3a5a881750bfee17"
+    }
+  ]
+}

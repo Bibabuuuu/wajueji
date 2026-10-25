@@ -1,0 +1,111 @@
+{
+  "schema": "excavation_layered_mound_thirtythree_rock_three_layer_config_v1",
+  "status": "thirtythree_rocks_three_sequential_soil_covers_then_free_release",
+  "predecessor": {
+    "config_path": "configs/v4/layered-mound-twenty-rock-two-layer-v1.json",
+    "config_sha256": "f4c7f94cd214284db278ee4928b0ed85ea01ba1abb03cee75208623fb3036543",
+    "runner_path": "src/v4/run_layered_mound_twenty_rock_two_layer.py",
+    "runner_sha256": "fb01da7b69a9823edeca5c2f6be7cac73e09b13b31386273b07464cb298179fe",
+    "report_path": "results/layered-mound-twenty-rock-two-layer-v1.json",
+    "report_sha256": "612ad1b76be9a218cb4c865598014d45c58633a1bbbde6ba374e6a9f605286a7"
+  },
+  "runtime_dependencies": {
+    "fixture_path": "src/v4/run_layered_mound_three_rock_adaptive_press.py",
+    "fixture_sha256": "d9b66d937fe4e116952f0f0069e20774f40d7a27d21b9e7c6248381bd4b98e6e",
+    "activation_path": "src/v4/run_layered_mound_three_rock_cover_release.py",
+    "activation_sha256": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26",
+    "predictor_path": "src/v4/mpm_rigid_free_velocity.py",
+    "predictor_sha256": "9505ab0ff0448fd46ecd1d3f9b414975d28734203bc79e719f7daa0f9f81d333"
+  },
+  "physical_geometry": {
+    "manifest_path": "results/layered-mound-physical-preflight-v1/scene-manifest.json",
+    "manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706",
+    "required_minimum_pressed_sat_gap_m": 0.001,
+    "precomputed_minimum_pressed_sat_gap_m": 0.0010775018164504713
+  },
+  "capacity_bridge": {
+    "config_path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "source": {
+    "visual_config_path": "configs/v4/layered-mound-viewer-preview-v1.json",
+    "visual_config_sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32",
+    "source_bank_path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b"
+  },
+  "particle_bands": [
+    {"stage": "foundation", "maximum_center_height_m": 0.32, "raw_count": 85620, "removed_count": 0, "active_count": 85620},
+    {"stage": "lower_cover", "maximum_center_height_m": 0.56, "raw_count": 49704, "removed_count": 6443, "active_count": 43261},
+    {"stage": "lower_middle_cover", "maximum_center_height_m": 0.84, "raw_count": 58320, "removed_count": 6647, "active_count": 51673},
+    {"stage": "middle_cover", "maximum_center_height_m": 1.12, "raw_count": 46220, "removed_count": 4892, "active_count": 41328}
+  ],
+  "combined_particle_count": 221882,
+  "targets": [
+    {"manifest_rock_id":"lower-000","stage":"lower","press_distance_m":0.012,"press_frames":18,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-001","stage":"lower","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-002","stage":"lower","press_distance_m":0.016,"press_frames":24,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-003","stage":"lower","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-004","stage":"lower","press_distance_m":0.014,"press_frames":21,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-005","stage":"lower","press_distance_m":0.007,"press_frames":11,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-006","stage":"lower","press_distance_m":0.011,"press_frames":17,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-007","stage":"lower","press_distance_m":0.009,"press_frames":14,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower-008","stage":"lower","press_distance_m":0.013,"press_frames":20,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower_middle-000","stage":"lower_middle","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower_middle-001","stage":"lower_middle","press_distance_m":0.012,"press_frames":18,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower_middle-002","stage":"lower_middle","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower_middle-003","stage":"lower_middle","press_distance_m":0.006,"press_frames":9,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower_middle-004","stage":"lower_middle","press_distance_m":0.012,"press_frames":18,"vertical_clearance_lift_m":0.004},
+    {"manifest_rock_id":"lower_middle-005","stage":"lower_middle","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.026},
+    {"manifest_rock_id":"lower_middle-006","stage":"lower_middle","press_distance_m":0.011,"press_frames":17,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"lower_middle-007","stage":"lower_middle","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.047},
+    {"manifest_rock_id":"lower_middle-008","stage":"lower_middle","press_distance_m":0.012,"press_frames":18,"vertical_clearance_lift_m":0.053},
+    {"manifest_rock_id":"lower_middle-009","stage":"lower_middle","press_distance_m":0.007,"press_frames":11,"vertical_clearance_lift_m":0.082},
+    {"manifest_rock_id":"lower_middle-010","stage":"lower_middle","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.034},
+    {"manifest_rock_id":"middle-000","stage":"middle","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-001","stage":"middle","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-002","stage":"middle","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-003","stage":"middle","press_distance_m":0.006,"press_frames":9,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-004","stage":"middle","press_distance_m":0.005,"press_frames":8,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-005","stage":"middle","press_distance_m":0.006,"press_frames":9,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-006","stage":"middle","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-007","stage":"middle","press_distance_m":0.007,"press_frames":11,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-008","stage":"middle","press_distance_m":0.006,"press_frames":9,"vertical_clearance_lift_m":0.067},
+    {"manifest_rock_id":"middle-009","stage":"middle","press_distance_m":0.008,"press_frames":12,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-010","stage":"middle","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.035},
+    {"manifest_rock_id":"middle-011","stage":"middle","press_distance_m":0.005,"press_frames":8,"vertical_clearance_lift_m":0.0},
+    {"manifest_rock_id":"middle-012","stage":"middle","press_distance_m":0.010,"press_frames":15,"vertical_clearance_lift_m":0.004}
+  ],
+  "construction": {
+    "start_surface_clearance_m": 0.005,
+    "park_later_stage_position_world_m": [0.0, 0.0, 5.0],
+    "foundation_presettle_frames": 24,
+    "cover_maximum_settle_frames": 240,
+    "cover_stable_window_frames": 60,
+    "temporary_mpm_damping": 0.0,
+    "temporary_rigid_damping": 0.0,
+    "free_fall_from_height": false
+  },
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {"friction":0.68,"young_modulus":2000000.0,"poisson_ratio":0.3,"yield_pressure":100000.0,"yield_stress":12000.0,"tensile_yield_ratio":0.0025,"hardening":0.0,"hardening_rate":1.0,"softening_rate":1.0,"dilatancy":0.0,"viscosity":0.0,"damping":0.0}
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "maximum_release_frames": 360,
+    "release_stable_window_frames": 120,
+    "additional_uncontrolled_hold_frames": 240,
+    "maximum_stable_rock_linear_speed_m_s": 0.01,
+    "maximum_stable_rock_angular_speed_rad_s": 0.15,
+    "maximum_stable_particle_speed_m_s": 0.05,
+    "maximum_stable_particle_p99_speed_m_s": 0.01,
+    "maximum_particle_speed_m_s": 5.0,
+    "maximum_rock_linear_speed_m_s": 5.0,
+    "maximum_rock_angular_speed_rad_s": 25.0,
+    "minimum_world_z_m": -0.05
+  },
+  "scope": {"active_rock_count":33,"other_32_rocks_active":false,"completed_layers":3,"full_scene":false,"stable_scene_claimed":false,"fullscale_qualified":false,"training":false}
+}

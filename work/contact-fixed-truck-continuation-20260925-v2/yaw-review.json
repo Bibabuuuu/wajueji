@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": {
+    "three_issued_commands_unchanged": true,
+    "old_fourth_failure_reproduced": true,
+    "new_fourth_command_passed": true,
+    "closure_offsets_rotate_with_chassis": true,
+    "zero_command_exact": true,
+    "rejected_command_transactional": true
+  },
+  "physics_steps_added": 0,
+  "old_failure": "closure_unresolved",
+  "command_error": 0.0,
+  "fourth_command": [
+    0.0021012849192704373,
+    0.00014482157008818318,
+    -0.000900530000688976,
+    0.0
+  ],
+  "rotation_identity_error": 1.241299679146865e-15,
+  "inputs": {
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+    "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v1/physical/recovery.npz": "11fcece334f36d6cf1ef1b941bde4b23577f85421792fd9fa78b2852905be971",
+    "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v1/physical/actions.ndjson": "549dc4f9eef8319e09b1baa34391a187de38d62df9775f74564d27315d94429c",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/controller.py": "c4905b252fd0b593e318a0d887d5e8f1dfc8d1d8e950370079216e631e39e3e4",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/yaw_preview.py": "4cb930a02ae30d74addf974959326f0022bfb5f166f77dcef245ff521302faec",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v2/review_yaw.py": "b011f660eb089555e92f080c5d92f0c93e47e93266661ec10f014b5a9a050e90"
+  }
+}

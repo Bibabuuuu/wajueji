@@ -1,0 +1,1734 @@
+{
+  "backend": {
+    "device_requested": "cuda:0",
+    "device_resolved": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "checks": {
+    "all_mpm_states_finite": true,
+    "closure_within_one_mm": true,
+    "forbidden_contacts_zero": true,
+    "frozen_scope_preserved": true,
+    "matrix_mass_matched": true,
+    "mpm_history_reset_complete": true,
+    "no_unmapped_or_nonfinite_collider_samples": true,
+    "per_id_reference_point_exact": true,
+    "per_id_wrench_echo_exact": true,
+    "rock_000_route_isolated": true,
+    "rock_001_route_isolated": true,
+    "stable_body_index_mapping": true,
+    "target_collider_only_per_round": true
+  },
+  "contact_ownership": {
+    "bucket_mpm_disabled_for_this_gate": true,
+    "duplicate_contact_class_count": 0,
+    "mujoco": [
+      "rigid-rock-bucket",
+      "rigid-rock-rock",
+      "rigid-rock-support"
+    ],
+    "newton_mpm": [
+      "target-rigid-rock-matrix",
+      "matrix-support"
+    ]
+  },
+  "episodes": {
+    "r1-rock-000": {
+      "accumulated_direct_mpm_impulse_ns": {
+        "r1-rock-000": 0.9934312208860256,
+        "r1-rock-001": 0.0
+      },
+      "collider_body_map": [
+        -1,
+        0
+      ],
+      "collider_ownership": {
+        "active_sample_count": 5056,
+        "nonfinite_sample_count": 0,
+        "sample_count": 1385328,
+        "unmapped_active_sample_count": 0
+      },
+      "contact_frames": {
+        "r1-rock-000": 12,
+        "r1-rock-001": 0
+      },
+      "contact_samples": {
+        "r1-rock-000": 578,
+        "r1-rock-001": 0
+      },
+      "frames": 12,
+      "matrix": {
+        "finite": true,
+        "particle_count": 1071,
+        "particle_q_sha256": "637184ee3e39c388a6c327bc3cfc99414954948a5746eaf065a8b0feb32c6992",
+        "particle_qd_sha256": "bab5bc84306ac028e2334d32788a786df6c6b988a96c320ca2c8d3574e053530",
+        "target_mass_error_kg": 4.0143727986219346e-07,
+        "target_mass_kg": 20.040000000000003,
+        "total_mass_kg": 20.040000401437283
+      },
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.685846070625193e-05,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_wrench_echo_residual": 0.0,
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_id_to_collider_ids": {
+        "r1-rock-000": [
+          1
+        ],
+        "r1-rock-001": []
+      },
+      "rock_id_to_newton_body_index": {
+        "r1-rock-000": 0,
+        "r1-rock-001": 1
+      },
+      "round": "rock_000_mpm_only",
+      "simulated_time_s": 0.1,
+      "static_collider_ids": [
+        0
+      ],
+      "target_rock_id": "r1-rock-000",
+      "trace": [
+        {
+          "frame": 1,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -0.0736134067255989,
+                1.1901960799339648,
+                8.24925710320053
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.008605348257507509,
+                -0.00023965476135099975,
+                0.0045964492924527225
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 378,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133735402304274,
+            0.46,
+            2.955
+          ],
+          "sent_force_world_n": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.008333333333333326
+        },
+        {
+          "frame": 2,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -0.03448147353870383,
+                2.2573832202638484,
+                27.678296946958582
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.02758161871351259,
+                0.015575041062592098,
+                0.011356985552056388
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 396,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133739027195549,
+            0.4599566966296515,
+            2.9546538857930065
+          ],
+          "sent_force_world_n": [
+            -0.0736134067255989,
+            1.1901960799339648,
+            8.24925710320053
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.008605348257507509,
+            -0.00023965476135099975,
+            0.0045964492924527225
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.016666666666666653
+        },
+        {
+          "frame": 3,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -1.348057788428377,
+                3.338311021564841,
+                30.32104926543496
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.06628957949403677,
+                -0.048586420924731914,
+                0.10046033889510292
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 392,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133747223261891,
+            0.45987661538394425,
+            2.953744401274975
+          ],
+          "sent_force_world_n": [
+            -0.03448147353870383,
+            2.2573832202638484,
+            27.678296946958582
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.02758161871351259,
+            0.015575041062592098,
+            0.011356985552056388
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.02500000000000004
+        },
+        {
+          "frame": 4,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -3.93304736259779,
+                4.219645672724255,
+                14.333795528291375
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.014227734683890296,
+                -0.1602193201332922,
+                0.24036950521252098
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 437,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133805362461165,
+            0.4597726776056047,
+            2.952819852970299
+          ],
+          "sent_force_world_n": [
+            -1.348057788428377,
+            3.338311021564841,
+            30.32104926543496
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.06628957949403677,
+            -0.048586420924731914,
+            0.10046033889510292
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.03333333333333339
+        },
+        {
+          "frame": 5,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -4.075783179535503,
+                2.2197530428059684,
+                3.8244626736050105
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.007081174138672141,
+                -0.13351878843329262,
+                0.09390196094263781
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 432,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133952371159211,
+            0.4596491713823428,
+            2.952434855740177
+          ],
+          "sent_force_world_n": [
+            -3.93304736259779,
+            4.219645672724255,
+            14.333795528291375
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.014227734683890296,
+            -0.1602193201332922,
+            0.24036950521252098
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.04166666666666664
+        },
+        {
+          "frame": 6,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -3.335427612048731,
+                0.15720752228016943,
+                -1.1626252229225278
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.00425803356611829,
+                -0.10244149934915246,
+                -0.07472271421589843
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 432,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134079864397756,
+            0.4595947579563107,
+            2.952358317524221
+          ],
+          "sent_force_world_n": [
+            -4.075783179535503,
+            2.2197530428059684,
+            3.8244626736050105
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.007081174138672141,
+            -0.13351878843329262,
+            0.09390196094263781
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.049999999999999885
+        },
+        {
+          "frame": 7,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -3.638535432122803,
+                -0.06823706982674413,
+                -2.6817907993062544
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.003306191102782151,
+                -0.11239188448905418,
+                -0.09293937217340752
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 430,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134178575974701,
+            0.45960189623711806,
+            2.9524133625772593
+          ],
+          "sent_force_world_n": [
+            -3.335427612048731,
+            0.15720752228016943,
+            -1.1626252229225278
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.00425803356611829,
+            -0.10244149934915246,
+            -0.07472271421589843
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.05833333333333313
+        },
+        {
+          "frame": 8,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -4.299573391973607,
+                0.8236004984068424,
+                -2.416988136356349
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.011558728269837318,
+                -0.14161963351470175,
+                -0.019048499758706997
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 427,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134284829391963,
+            0.4596099881799502,
+            2.952500749752504
+          ],
+          "sent_force_world_n": [
+            -3.638535432122803,
+            -0.06823706982674413,
+            -2.6817907993062544
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.003306191102782151,
+            -0.11239188448905418,
+            -0.09293937217340752
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.06666666666666651
+        },
+        {
+          "frame": 9,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -4.578315399477642,
+                1.4358610025577219,
+                -1.6546099814530815
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.015839636232254668,
+                -0.1573906910434583,
+                0.031585092529948684
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 429,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134414641343523,
+            0.459587382867629,
+            2.952575610298084
+          ],
+          "sent_force_world_n": [
+            -4.299573391973607,
+            0.8236004984068424,
+            -2.416988136356349
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.011558728269837318,
+            -0.14161963351470175,
+            -0.019048499758706997
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.07500000000000004
+        },
+        {
+          "frame": 10,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -4.412452751669189,
+                1.3328770259137241,
+                -0.9291327333706432
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.016156242016240795,
+                -0.15395326135532564,
+                0.0239140961315319
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 430,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134554884213887,
+            0.4595455082018622,
+            2.952626320281838
+          ],
+          "sent_force_world_n": [
+            -4.578315399477642,
+            1.4358610025577219,
+            -1.6546099814530815
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.015839636232254668,
+            -0.1573906910434583,
+            0.031585092529948684
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.08333333333333356
+        },
+        {
+          "frame": 11,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -4.100886794630392,
+                0.9139683010442865,
+                -0.34670140462721183
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.015612683565700612,
+                -0.14236319883999113,
+                -0.004730281402954817
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 432,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134689052336913,
+            0.4595070637556458,
+            2.952654700207969
+          ],
+          "sent_force_world_n": [
+            -4.412452751669189,
+            1.3328770259137241,
+            -0.9291327333706432
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.016156242016240795,
+            -0.15395326135532564,
+            0.0239140961315319
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.09166666666666709
+        },
+        {
+          "frame": 12,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                -3.9744014251107274,
+                0.8150131126535598,
+                -0.05100975309687783
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.015344009172968296,
+                -0.13979136165176875,
+                -0.013366949247286975
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 441,
+            "nonfinite_sample_count": 0,
+            "sample_count": 115444,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.134812588689568,
+            0.4594798996836079,
+            2.9526644945192855
+          ],
+          "sent_force_world_n": [
+            -4.100886794630392,
+            0.9139683010442865,
+            -0.34670140462721183
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.015612683565700612,
+            -0.14236319883999113,
+            -0.004730281402954817
+          ],
+          "target_rock_id": "r1-rock-000",
+          "time_s": 0.10000000000000062
+        }
+      ],
+      "trace_sha256": "88d78fd54d583f603f6b7dc0f4ab99f651bf73a70ab23d525fc3538564654506"
+    },
+    "r1-rock-001": {
+      "accumulated_direct_mpm_impulse_ns": {
+        "r1-rock-000": 0.0,
+        "r1-rock-001": 2.308221198279976
+      },
+      "collider_body_map": [
+        -1,
+        1
+      ],
+      "collider_ownership": {
+        "active_sample_count": 5671,
+        "nonfinite_sample_count": 0,
+        "sample_count": 1338756,
+        "unmapped_active_sample_count": 0
+      },
+      "contact_frames": {
+        "r1-rock-000": 0,
+        "r1-rock-001": 12
+      },
+      "contact_samples": {
+        "r1-rock-000": 0,
+        "r1-rock-001": 687
+      },
+      "frames": 12,
+      "matrix": {
+        "finite": true,
+        "particle_count": 1071,
+        "particle_q_sha256": "97eb69c1be3843c21e245566e84a5be396d451fd6dedd5d8de0c372b9910d408",
+        "particle_qd_sha256": "a4a6970c7f022c3c3515ba0a9413d8a2aaa7b08ba3a62ea7a1983102a1df7b18",
+        "target_mass_error_kg": 4.0143727986219346e-07,
+        "target_mass_kg": 20.040000000000003,
+        "total_mass_kg": 20.040000401437283
+      },
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.685841344093059e-05,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_wrench_echo_residual": 0.0,
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_id_to_collider_ids": {
+        "r1-rock-000": [],
+        "r1-rock-001": [
+          1
+        ]
+      },
+      "rock_id_to_newton_body_index": {
+        "r1-rock-000": 0,
+        "r1-rock-001": 1
+      },
+      "round": "rock_001_mpm_only",
+      "simulated_time_s": 0.1,
+      "static_collider_ids": [
+        0
+      ],
+      "target_rock_id": "r1-rock-001",
+      "trace": [
+        {
+          "frame": 1,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.4298169191000128,
+                -1.373577352455608,
+                7.327000033275497
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.016082448498184257,
+                0.006625127538213974,
+                0.004753053396485437
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 358,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133735402304274,
+            0.6,
+            2.955
+          ],
+          "sent_force_world_n": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.008333333333333326
+        },
+        {
+          "frame": 2,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.5390757011339345,
+                -2.4956847529286907,
+                26.76765690688714
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.02389498872388415,
+                0.002973866553107022,
+                0.018720253420804203
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 429,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133731777412999,
+            0.6000433033703484,
+            2.9546478329569954
+          ],
+          "sent_force_world_n": [
+            0.4298169191000128,
+            -1.373577352455608,
+            7.327000033275497
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.016082448498184257,
+            0.006625127538213974,
+            0.004753053396485437
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.016666666666666653
+        },
+        {
+          "frame": 3,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.31374734758245276,
+                -2.673504116637755,
+                35.09622800122172
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.009588754172525632,
+                0.0050376047931696664,
+                0.03784239786459665
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 431,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133729987496607,
+            0.6001203568475421,
+            2.9537110603450234
+          ],
+          "sent_force_world_n": [
+            0.5390757011339345,
+            -2.4956847529286907,
+            26.76765690688714
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.02389498872388415,
+            0.002973866553107022,
+            0.018720253420804203
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.02500000000000004
+        },
+        {
+          "frame": 4,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.10030330486188177,
+                -1.9267243992499061,
+                29.06653458652727
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.05045082244503907,
+                -0.00704256489593241,
+                0.0376301525280024
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 466,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133730305211343,
+            0.6002036483785195,
+            2.952598643713483
+          ],
+          "sent_force_world_n": [
+            0.31374734758245276,
+            -2.673504116637755,
+            35.09622800122172
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.009588754172525632,
+            0.0050376047931696664,
+            0.03784239786459665
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.03333333333333339
+        },
+        {
+          "frame": 5,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                -0.14435051448344893,
+                0.061535922841358115,
+                20.81468973141682
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.03559512286882622,
+                -0.008212530308656828,
+                0.003975113751959908
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 504,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.13372930633237,
+            0.6002643314188081,
+            2.95174575645547
+          ],
+          "sent_force_world_n": [
+            0.10030330486188177,
+            -1.9267243992499061,
+            29.06653458652727
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.05045082244503907,
+            -0.00704256489593241,
+            0.0376301525280024
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.04166666666666664
+        },
+        {
+          "frame": 6,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                -0.1725054666894721,
+                0.8925034767889883,
+                18.585897591729008
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.0042504059789828,
+                -0.0015445619560601161,
+                -0.01571046097764791
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 499,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133733987554643,
+            0.6002587526233932,
+            2.9511571034692095
+          ],
+          "sent_force_world_n": [
+            -0.14435051448344893,
+            0.061535922841358115,
+            20.81468973141682
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.03559512286882622,
+            -0.008212530308656828,
+            0.003975113751959908
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.049999999999999885
+        },
+        {
+          "frame": 7,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.047693440174043644,
+                0.48855034604457614,
+                21.371427003014105
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.016763235852810327,
+                0.0026353080657735904,
+                -0.009268585299095512
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 497,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133737928353554,
+            0.6002263769780779,
+            2.950620411618007
+          ],
+          "sent_force_world_n": [
+            -0.1725054666894721,
+            0.8925034767889883,
+            18.585897591729008
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.0042504059789828,
+            -0.0015445619560601161,
+            -0.01571046097764791
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.05833333333333313
+        },
+        {
+          "frame": 8,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.10841482963087401,
+                -0.1304785155934951,
+                24.333331491252466
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.0077419410851574015,
+                0.0016908672190081,
+                0.0018331787389246387
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 498,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133737181910227,
+            0.6002083897617674,
+            2.9499832072941676
+          ],
+          "sent_force_world_n": [
+            0.047693440174043644,
+            0.48855034604457614,
+            21.371427003014105
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.016763235852810327,
+            0.0026353080657735904,
+            -0.009268585299095512
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.06666666666666651
+        },
+        {
+          "frame": 9,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                0.01629168525141722,
+                -0.2362388374240254,
+                24.73871445918121
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.002202714237831704,
+                -0.0010757684726621657,
+                0.0055285419285355745
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 496,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133734674472703,
+            0.6002106380949418,
+            2.9492555583507287
+          ],
+          "sent_force_world_n": [
+            0.10841482963087401,
+            -0.1304785155934951,
+            24.333331491252466
+          ],
+          "sent_torque_about_reference_world_nm": [
+            -0.0077419410851574015,
+            0.0016908672190081,
+            0.0018331787389246387
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.07500000000000004
+        },
+        {
+          "frame": 10,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                -0.040925085777416825,
+                -0.06435801081693171,
+                23.467850290544447
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.00451693072157329,
+                -0.0005080160486938256,
+                0.0012603327285407903
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 502,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.13373449362861,
+            0.6002179432100986,
+            2.948522363059123
+          ],
+          "sent_force_world_n": [
+            0.01629168525141722,
+            -0.2362388374240254,
+            24.73871445918121
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.002202714237831704,
+            -0.0010757684726621657,
+            0.0055285419285355745
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.08333333333333356
+        },
+        {
+          "frame": 11,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                -0.04155606475251261,
+                0.09269598615901486,
+                22.46408796750984
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0013589114871053122,
+                0.0001628923271624461,
+                -0.001069384825052541
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 495,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.133736119481894,
+            0.600219796483198,
+            2.9478323798372195
+          ],
+          "sent_force_world_n": [
+            -0.040925085777416825,
+            -0.06435801081693171,
+            23.467850290544447
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.00451693072157329,
+            -0.0005080160486938256,
+            0.0012603327285407903
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.09166666666666709
+        },
+        {
+          "frame": 12,
+          "measured": {
+            "r1-rock-000": {
+              "force_world_n": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "torque_about_current_origin_world_nm": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "r1-rock-001": {
+              "force_world_n": [
+                -0.006982695267652161,
+                0.07537654462794308,
+                22.493919652297336
+              ],
+              "torque_about_current_origin_world_nm": [
+                -0.0014764127537211648,
+                0.0008208205540767564,
+                -0.0015576747921184184
+              ]
+            }
+          },
+          "ownership": {
+            "active_sample_count": 496,
+            "nonfinite_sample_count": 0,
+            "sample_count": 111563,
+            "unmapped_active_sample_count": 0
+          },
+          "reference_point_world_m": [
+            5.1337373606283725,
+            0.600217276315996,
+            2.9471722154793443
+          ],
+          "sent_force_world_n": [
+            -0.04155606475251261,
+            0.09269598615901486,
+            22.46408796750984
+          ],
+          "sent_torque_about_reference_world_nm": [
+            0.0013589114871053122,
+            0.0001628923271624461,
+            -0.001069384825052541
+          ],
+          "target_rock_id": "r1-rock-001",
+          "time_s": 0.10000000000000062
+        }
+      ],
+      "trace_sha256": "dfa7961b66c996e46fca78be826191f56fcf69486ae0e34f3da1f17e7b422a95"
+    }
+  },
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/mixed-material-r3-c-routing-mh6lz2cw/bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/mixed-material-r3-c-routing-mh6lz2cw/bridge"
+    ],
+    "runner_sha256": "891cbb2833d197a0c3ad70c6b35f47be2bbf9ee38e1ada33a8d0e011a8a8fe68",
+    "total_wall_seconds": 4.614984519997961
+  },
+  "inputs": {
+    "bridge_source_manifest": {
+      "allowed_external_wrench_bodies": [
+        "bucket",
+        "r1-rock-000",
+        "r1-rock-001"
+      ],
+      "frozen_r1_r2_r3_a_r3_b_modified": false,
+      "generated_source_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+      "maximum_external_wrench_count": 3,
+      "physics_qualified": false,
+      "r3_b_config_path": "configs/v4/mixed-material-r3-b.json",
+      "r3_b_config_sha256": "2e8b3296a5574a5a1156dee3871ad293b80b16e119492d4eb0c6e2d25c8eb944",
+      "r3_b_generated_source_sha256": "8e6e4e34a827c7b6a5f1c9cdf225be4777e19849c89e73252e033d124379f7d8",
+      "r3_b_manifest": {
+        "force_application": "bucket_origin_at_mujoco_interval_start_fixed_for_interval",
+        "frozen_r1_r2_or_r3_a_modified": false,
+        "r3_a_config_path": "configs/v4/mixed-material-r3-a.json",
+        "r3_a_config_sha256": "cbcdf89e0ffbfc3d222188684b2cc39e4e75b3e8a82889d3e44ac400af8fbbf9",
+        "r3_a_generated_source_sha256": "9c7f30be4c6dd3aa46dfa3cd7376840f5391c00f8fb91fc27b2fe59bc5d64f90",
+        "r3_a_manifest": {
+          "allowed_external_wrench_bodies": [
+            "bucket",
+            "r1-rock-000"
+          ],
+          "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+          "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+          "frozen_r1_source_modified": false,
+          "maximum_external_wrench_count": 2,
+          "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+          "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_a_v1",
+          "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+          "status": "r3_a_bridge_source_generated"
+        },
+        "ready_schema": "excavation_mixed_coupled_bridge_r3_b_v1",
+        "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_b_v1",
+        "state_schema": "excavation_mixed_coupled_bridge_r3_b_state_v1",
+        "status": "r3_b_bridge_source_generated",
+        "torque_reference": "bucket_origin_at_mujoco_interval_start_fixed_for_interval"
+      },
+      "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+      "ready_schema": "excavation_mixed_coupled_bridge_r3_c_v1",
+      "required_rock_count": 2,
+      "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_c_v1",
+      "state_schema": "excavation_mixed_coupled_bridge_r3_c_state_v1",
+      "status": "r3_c_two_rock_bridge_source_generated",
+      "training_qualified": false
+    },
+    "bridge_source_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+    "config_sha256": "dd56ba42e008258183c0265c2cd132d766101161fcb0d08e78e8746aaa6f7eea",
+    "derived_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+    "model_manifest": {
+      "bucket_proxy_geom_count": 18,
+      "candidate_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+      "contact_bits": {
+        "bucket_proxy": 512,
+        "rock": 256,
+        "rock_ground": 1024,
+        "truck_receiver_reserved": 2048
+      },
+      "derived_r1_config_sha256": "94c5053eb4eaae725ad152e6f24bb69f5f7080af876b90a2019b23463f89f033",
+      "expected_candidate_contract": {
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "rock_count": 2
+      },
+      "frozen_r1_r2_r3_a_r3_b_modified": false,
+      "frozen_source_modified": false,
+      "mouth_center_bucket_m": [
+        0.117559,
+        0.0,
+        -0.590555
+      ],
+      "mouth_inward_direction_bucket": [
+        0.9762252567359343,
+        0.0,
+        0.21675850181909675
+      ],
+      "physics_qualified": false,
+      "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+      "rock": {
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "density_kg_m3": 2600.0,
+        "equivalent_diameter_m": 0.12,
+        "inertia_about_com_kg_m2": [
+          [
+            0.002730036731269096,
+            -0.00013544030291822907,
+            -1.5999552127237756e-05
+          ],
+          [
+            -0.00013544030291822907,
+            0.004496298940992804,
+            -1.4905357373961838e-05
+          ],
+          [
+            -1.5999552127237756e-05,
+            -1.4905357373961838e-05,
+            0.0051410048828723345
+          ]
+        ],
+        "initial_orientation_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_position_world_m": [
+          5.133735402304274,
+          0.46,
+          2.955
+        ],
+        "mass_kg": 2.3524245790080363,
+        "prototype_id": "angular_octa",
+        "rock_id": "r1-rock-000"
+      },
+      "rock_inertia_about_com_kg_m2": [
+        [
+          0.002730036731269096,
+          -0.00013544030291822907,
+          -1.5999552127237756e-05
+        ],
+        [
+          -0.00013544030291822907,
+          0.004496298940992804,
+          -1.4905357373961838e-05
+        ],
+        [
+          -1.5999552127237756e-05,
+          -1.4905357373961838e-05,
+          0.0051410048828723345
+        ]
+      ],
+      "rock_mass_kg": 2.3524245790080363,
+      "rocks": [
+        {
+          "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "initial_orientation_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "initial_position_world_m": [
+            5.133735402304274,
+            0.46,
+            2.955
+          ],
+          "mass_kg": 2.3524245790080363,
+          "prototype_id": "angular_octa",
+          "rock_id": "r1-rock-000"
+        },
+        {
+          "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "initial_orientation_quaternion_wxyz": [
+            0.9238795325112867,
+            0.22094238269039457,
+            0.22094238269039457,
+            0.22094238269039457
+          ],
+          "initial_position_world_m": [
+            5.133735402304274,
+            0.6,
+            2.955
+          ],
+          "mass_kg": 2.3524245790080363,
+          "prototype_id": "angular_octa",
+          "rock_id": "r1-rock-001"
+        }
+      ],
+      "schema": "excavation_mixed_multirock_candidate_r3_c_manifest_v1",
+      "scope_limit": "model assembly candidate only until a separate bridge loads and steps it with classified contacts and state logging",
+      "source_bucket_visual_collision_disabled": true,
+      "source_model_contract": {
+        "actuator_count": 12,
+        "mechanism_nq": 19,
+        "mechanism_nv": 18,
+        "plugin_count": 0
+      },
+      "source_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+      "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+      "status": "r3_c_two_rock_model_generated",
+      "total_rock_mass_kg": 4.7048491580160725,
+      "training_qualified": false,
+      "unit_fixture": {
+        "friction": [
+          0.8,
+          0.005,
+          0.0001
+        ],
+        "half_size_m": [
+          0.6,
+          0.55,
+          0.03
+        ],
+        "name": "r1_ground_push_shelf",
+        "position_world_m": [
+          5.13,
+          0.65,
+          2.86
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 0.0,
+        "type": "box"
+      },
+      "unit_fixtures": [
+        {
+          "friction": [
+            0.8,
+            0.005,
+            0.0001
+          ],
+          "half_size_m": [
+            0.6,
+            0.55,
+            0.03
+          ],
+          "name": "r1_ground_push_shelf",
+          "position_world_m": [
+            5.13,
+            0.65,
+            2.86
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "slope_degrees": 0.0,
+          "type": "box"
+        }
+      ],
+      "unit_scenario": "r3_c_two_rock_bucket_push"
+    },
+    "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12"
+  },
+  "r3_c_physics_qualified": false,
+  "routing_physics_qualified": true,
+  "schema": "excavation_mixed_material_r3_c_routing_report_v1",
+  "scope_limit": "two isolated single-rock MPM routing rounds in the exact-two-rock R3-C fixture; not the four-round force partition, not feedback or repeat/dt qualification, not a complete in-process mixed reset, not the official envelope, and not training-qualified",
+  "status": "r3_c_per_rock_routing_probe_passed",
+  "training_qualified": false
+}

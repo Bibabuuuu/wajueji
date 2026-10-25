@@ -1,0 +1,17 @@
+{
+  "cases": {
+    "one": "configs/v4/layered-mound-one-rock-free-deposition-v2.json",
+    "three": "configs/v4/layered-mound-three-rock-cover-release-v1.json"
+  },
+  "frozen_files": {
+    "configs/v4/layered-mound-one-rock-free-deposition-v2.json": "d4c7500287283836b00cbb04fa06f305779a0dc626170ff4b83fcfeb4071e271",
+    "src/v4/run_layered_mound_one_rock_free_deposition_v2.py": "ed801ce2f28306bc49472a546af0cb9d8b88011a9eda697fb4ab3d55afb6ab24",
+    "src/v4/run_layered_mound_one_rock_free_deposition.py": "4ced938d2fc17491c50983a54c6471508cb341ab870f9e1a7b61be509bcd2fc9",
+    "src/v4/run_layered_mound_three_rock_adaptive_press.py": "ebee5a4f7d14dbfcf1ffa1edc9b8a3544576b445938ff8af356029f4e8d4ea07",
+    "configs/v4/layered-mound-three-rock-cover-release-v1.json": "86281ccab383da8278512336066ade2643e479713553c506467bfc7a9d472a14",
+    "src/v4/run_layered_mound_three_rock_cover_release.py": "146d6889eb889539d69806a239924f90c506901f4f18379690f1d550e34fcf26"
+  },
+  "scope": "free rigid rocks on deformable MPM soil; no articulated-body coupling qualification",
+  "change": "MPM proxy linear velocity includes this step gravity; original MuJoCo state unchanged",
+  "no_material_or_damping_or_stability_threshold_change": true
+}

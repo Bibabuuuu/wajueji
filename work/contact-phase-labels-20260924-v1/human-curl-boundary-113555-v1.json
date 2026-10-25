@@ -1,0 +1,10 @@
+{
+  "run": "manual-contact-20260924-113555-1443279",
+  "transition": "penetrate_to_curl_load",
+  "physical_frame_end": 359,
+  "simulation_time_s": 5.983333333333333,
+  "first_causally_available_decision_frame": 360,
+  "source": "user_confirmed_visual_review",
+  "reference": "User selected first-scoop recorded CAD pose; only this transition is confirmed.",
+  "mouth_chord_from_down_deg": -3.2503640664206546
+}

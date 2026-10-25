@@ -1,0 +1,60 @@
+{
+  "all_six_scene_qualification": false,
+  "baseline_carried_rock_count": 2,
+  "baseline_preliminary_solid_volume_fill_rate": 0.009260214333124538,
+  "candidate_carried_mass_kg": 6.924439993,
+  "candidate_carried_rock_count": 2,
+  "candidate_carried_rock_ids": [
+    "r2-rock-007",
+    "r2-rock-011"
+  ],
+  "candidate_carried_solid_volume_m3": 0.002663246151,
+  "candidate_preliminary_solid_volume_fill_rate": 0.010437360020374075,
+  "development_checks": {
+    "carried_count_improved_to_three": false,
+    "closure_within_limit": true,
+    "effective_load_contract_passed": true,
+    "fill_rate_above_baseline": true,
+    "no_forbidden_contacts": true
+  },
+  "dump_qualified": false,
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/reports/v4/mixed-material-r2-single-scene-load-development-2026-09-20-v1/generated-bridge-r2-per-rock-contacts.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-rigid-bridge-r2"
+    ],
+    "runner_sha256": "49784afebe087144d41a386b51854e9fecf552125e0f5038bd2b30c1934463d0"
+  },
+  "inputs": {
+    "assembly_plan_sha256": "ae98f71011256c2f7f52b0483a46b7fb1322d13489249539adf44e9527cdc362",
+    "config_sha256": "df2fa09f78ff9a056ea24f901fac6c62021a03e7ee9a681dbd90315ff0796dd5",
+    "frozen_bridge_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57",
+    "instrumented_bridge_sha256": "fae4d52e32b73e6ca8b7c2cadf617439e15f6c2bd9467d09ad4d5b5d91ce631d",
+    "model_sha256": "43ce8449a8fa13bab917c294fe730bfe2507220a8370903dcd0d53f41e612d32",
+    "source_effective_load_config_sha256": "0e432a8c35724755783bc309de10a8a46f7df06ed81511263b3ba82ca3ce507d",
+    "source_effective_load_report_sha256": "6588f2748632dae285dcc7fd409ef1e72de0d65f7d39419ccc80c1d48cc34b57"
+  },
+  "mpm_coupling_qualified": false,
+  "physics_qualified": false,
+  "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+  "scene_report_sha256": "2e558bfaa8535f7dd952bce15132d7d61a6be2ce7fdc0f20089a6e3f985fa5e0",
+  "schema": "excavation_mixed_material_r2_single_scene_load_development_report_v1",
+  "scope_limit": "one ordinary scene and one geometry-selected pre-alignment change; no grid search, second-scene confirmation, six-scene qualification, dump, truck, MPM, hydraulic capacity or training qualification",
+  "second_scene_confirmation": false,
+  "status": "single_scene_load_development_needs_review",
+  "training_qualified": false,
+  "trajectory_grid_search": false,
+  "truck_cad_qualified": false
+}

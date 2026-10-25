@@ -1,0 +1,534 @@
+{
+  "pre_settling_elapsed_s": 1.4416666666666886,
+  "rock_count": 20,
+  "rocks": [
+    {
+      "body_name": "r2-rock-000",
+      "equivalent_diameter_m": 0.200625,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 10.99327569,
+      "orientation_quaternion_wxyz": [
+        0.9093344126898818,
+        -0.02730826207139758,
+        -0.005606605674260721,
+        -0.4151310042545619
+      ],
+      "position_world_m": [
+        4.335273950670063,
+        -0.1584446394685516,
+        0.1167228790671097
+      ],
+      "slot": 0,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-000"
+    },
+    {
+      "body_name": "r2-rock-001",
+      "equivalent_diameter_m": 0.191875,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 9.616723929,
+      "orientation_quaternion_wxyz": [
+        0.2964048989772532,
+        -0.22331541115897266,
+        0.5870847654824088,
+        -0.7194482894132479
+      ],
+      "position_world_m": [
+        4.286957282114694,
+        1.2886280689242888,
+        0.08375406341113363
+      ],
+      "slot": 1,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-001"
+    },
+    {
+      "body_name": "r2-rock-002",
+      "equivalent_diameter_m": 0.183125,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 8.360165663,
+      "orientation_quaternion_wxyz": [
+        0.3780137069745173,
+        0.8571100126277466,
+        0.2575369518600282,
+        0.23694468134839677
+      ],
+      "position_world_m": [
+        4.248639453927439,
+        0.35229679927774626,
+        0.10465142807688295
+      ],
+      "slot": 2,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-002"
+    },
+    {
+      "body_name": "r2-rock-003",
+      "equivalent_diameter_m": 0.174375,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 7.21812888,
+      "orientation_quaternion_wxyz": [
+        0.6347617478563733,
+        -0.5253169617561048,
+        0.354081358860301,
+        -0.4424319207034007
+      ],
+      "position_world_m": [
+        5.2157568115246695,
+        0.9968176737651474,
+        0.11485600204491964
+      ],
+      "slot": 3,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-003"
+    },
+    {
+      "body_name": "r2-rock-004",
+      "equivalent_diameter_m": 0.1578125,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 5.350522192,
+      "orientation_quaternion_wxyz": [
+        0.2909231972794806,
+        -0.8151906908043663,
+        -0.061381171743960204,
+        -0.4970514889485021
+      ],
+      "position_world_m": [
+        4.946192621750113,
+        -0.7752183839505986,
+        0.14835318381985627
+      ],
+      "slot": 4,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-004"
+    },
+    {
+      "body_name": "r2-rock-005",
+      "equivalent_diameter_m": 0.1534375,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 4.917750732,
+      "orientation_quaternion_wxyz": [
+        0.6462244960196967,
+        -0.3487562081251901,
+        -0.1138460653438761,
+        0.6691801561940897
+      ],
+      "position_world_m": [
+        4.482512835765165,
+        -0.6158970398607274,
+        0.12537523048694207
+      ],
+      "slot": 5,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-005"
+    },
+    {
+      "body_name": "r2-rock-006",
+      "equivalent_diameter_m": 0.1490625,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 4.5089682,
+      "orientation_quaternion_wxyz": [
+        0.2689601696833579,
+        -0.9340339328196253,
+        -0.08258720240952966,
+        -0.22004634389957575
+      ],
+      "position_world_m": [
+        4.416669446986594,
+        0.055058236456822375,
+        0.1036570730855689
+      ],
+      "slot": 6,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-006"
+    },
+    {
+      "body_name": "r2-rock-007",
+      "equivalent_diameter_m": 0.1446875,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 4.123490595,
+      "orientation_quaternion_wxyz": [
+        0.9557777596946496,
+        -0.07313033827861698,
+        0.0030743005413768386,
+        0.284835700663581
+      ],
+      "position_world_m": [
+        5.330229626295571,
+        0.04262725487832668,
+        0.1386387232055264
+      ],
+      "slot": 7,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-007"
+    },
+    {
+      "body_name": "r2-rock-008",
+      "equivalent_diameter_m": 0.1403125,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 3.760633915,
+      "orientation_quaternion_wxyz": [
+        0.7155314723306114,
+        -0.40248534999841035,
+        -0.03162972897319321,
+        -0.5701050915279803
+      ],
+      "position_world_m": [
+        4.782535474624402,
+        -1.277021102693951,
+        0.13670846655143676
+      ],
+      "slot": 8,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-008"
+    },
+    {
+      "body_name": "r2-rock-009",
+      "equivalent_diameter_m": 0.1359375,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 3.419714156,
+      "orientation_quaternion_wxyz": [
+        0.052281979331669566,
+        0.06675850457656951,
+        -0.7661275565576309,
+        -0.6370702188824219
+      ],
+      "position_world_m": [
+        5.441505308567669,
+        -0.507267201938706,
+        0.16641898362134155
+      ],
+      "slot": 9,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-009"
+    },
+    {
+      "body_name": "r2-rock-010",
+      "equivalent_diameter_m": 0.1315625,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 3.100047318,
+      "orientation_quaternion_wxyz": [
+        0.9988221857858919,
+        -0.032333980277100285,
+        -0.009886260627766685,
+        0.034799665977325804
+      ],
+      "position_world_m": [
+        5.031240859000451,
+        -0.6200216706127226,
+        0.14742700882440343
+      ],
+      "slot": 10,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-010"
+    },
+    {
+      "body_name": "r2-rock-011",
+      "equivalent_diameter_m": 0.1271875,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 2.800949398,
+      "orientation_quaternion_wxyz": [
+        0.7338534317940609,
+        -0.0038979628748589913,
+        0.3249746171297108,
+        0.5965194420560858
+      ],
+      "position_world_m": [
+        4.232513310036296,
+        -0.8641996966351755,
+        0.09994123288244834
+      ],
+      "slot": 11,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-011"
+    },
+    {
+      "body_name": "r2-rock-012",
+      "equivalent_diameter_m": 0.1228125,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 2.521736395,
+      "orientation_quaternion_wxyz": [
+        0.726614246541966,
+        -0.6248525213743752,
+        -0.19463872346673158,
+        0.20906178651675772
+      ],
+      "position_world_m": [
+        4.509279698766285,
+        -1.6244522088024522,
+        0.11170522417273
+      ],
+      "slot": 12,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-012"
+    },
+    {
+      "body_name": "r2-rock-013",
+      "equivalent_diameter_m": 0.1184375,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 2.261724306,
+      "orientation_quaternion_wxyz": [
+        0.3447984979926433,
+        0.5560953753604928,
+        -0.5915655653866327,
+        -0.47108609736807505
+      ],
+      "position_world_m": [
+        4.939487580648736,
+        -0.9920489495377148,
+        0.12667399253731204
+      ],
+      "slot": 13,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-013"
+    },
+    {
+      "body_name": "r2-rock-014",
+      "equivalent_diameter_m": 0.1140625,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 2.020229129,
+      "orientation_quaternion_wxyz": [
+        0.8680319176059653,
+        0.2742003575055327,
+        -0.2302506692243641,
+        -0.34397584694696387
+      ],
+      "position_world_m": [
+        6.146731238580465,
+        0.42121414660860046,
+        0.13091481306692154
+      ],
+      "slot": 14,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-014"
+    },
+    {
+      "body_name": "r2-rock-015",
+      "equivalent_diameter_m": 0.1096875,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 1.796566862,
+      "orientation_quaternion_wxyz": [
+        0.27227143899950507,
+        -0.18022392763963635,
+        0.6059284717862817,
+        -0.7254228328981817
+      ],
+      "position_world_m": [
+        4.711918489407531,
+        -0.7631969782737241,
+        0.12294894794108582
+      ],
+      "slot": 15,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-015"
+    },
+    {
+      "body_name": "r2-rock-016",
+      "equivalent_diameter_m": 0.1053125,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 1.590053503,
+      "orientation_quaternion_wxyz": [
+        0.2655844215539823,
+        -0.2714178674646915,
+        -0.9040913395954284,
+        0.19600027019700672
+      ],
+      "position_world_m": [
+        5.031882168910072,
+        -1.5352006440711259,
+        0.12788909290867037
+      ],
+      "slot": 16,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-016"
+    },
+    {
+      "body_name": "r2-rock-017",
+      "equivalent_diameter_m": 0.1009375,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 1.40000505,
+      "orientation_quaternion_wxyz": [
+        0.3244169086859513,
+        -0.7715126331511208,
+        -0.49888328430078277,
+        -0.22502754251899856
+      ],
+      "position_world_m": [
+        5.204844397846783,
+        -0.38963387942455147,
+        0.14695646993490827
+      ],
+      "slot": 17,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-017"
+    },
+    {
+      "body_name": "r2-rock-018",
+      "equivalent_diameter_m": 0.0965625,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 1.225737502,
+      "orientation_quaternion_wxyz": [
+        0.0029805999092940077,
+        0.46147787614467556,
+        0.7639549497616918,
+        -0.4510012423350863
+      ],
+      "position_world_m": [
+        4.945084863182357,
+        0.3232083505534266,
+        0.09933708001304282
+      ],
+      "slot": 18,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-018"
+    },
+    {
+      "body_name": "r2-rock-019",
+      "equivalent_diameter_m": 0.0921875,
+      "initial_qvel": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mass_kg": 1.066566855,
+      "orientation_quaternion_wxyz": [
+        0.011324059733418318,
+        -0.4157572000816203,
+        -0.8194094320110248,
+        -0.39444378431256233
+      ],
+      "position_world_m": [
+        5.697383869285691,
+        0.6926910639014523,
+        0.1041467343896141
+      ],
+      "slot": 19,
+      "source_rock_id": "ordinary-small-rock-dominant-26091913-rock-019"
+    }
+  ],
+  "scene_class": "ordinary-small-rock-dominant",
+  "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+  "schema": "excavation_mixed_material_r2_stable_initial_state_v1",
+  "scope_limit": "candidate initial poses baked from gravity-only rigid settling; rocks remain dynamic and require independent rebaked stability and spatial review",
+  "source_assembly_plan_sha256": "7a05c84cf886bfcbc9d6c779de0cd455885f7e5e4d72b0bdde0ec8c65a90f0f8",
+  "source_model_sha256": "ef6b3ad94e6896cb9e9c8d5b3a41d7f4c3782e2ab22859f5ccc04d766f5823d4",
+  "status": "stable_initial_state_candidate",
+  "velocity_policy": "zero_all_freejoint_velocities_after_pose_bake"
+}

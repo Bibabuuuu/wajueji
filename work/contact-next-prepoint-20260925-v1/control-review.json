@@ -1,0 +1,10 @@
+{
+  "status": "reference_commands_passed",
+  "frames": 2619,
+  "physics_steps_added": 0,
+  "maximum_normalized_command_step": 0.03333333333333337,
+  "first_command_exact": true,
+  "source_sha256": "be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0",
+  "plan_sha256": "81bec41eca25b8409ca77f558ab76067acb6ccb25b8b1a6c769895c1e34c03aa",
+  "wall_seconds": 72.64178044899018
+}

@@ -1,0 +1,42 @@
+{
+  "ground_reference_z_m": 0.0,
+  "geometry": "existing display assembly bucket vertices",
+  "samples": [
+    {
+      "frame": 300,
+      "bucket_mesh_minimum_world_z_m": 0.16997743211708838,
+      "bucket_mesh_maximum_world_z_m": 1.563825450834659,
+      "vertices_below_ground_z0": 0
+    },
+    {
+      "frame": 360,
+      "bucket_mesh_minimum_world_z_m": -0.07269322086202767,
+      "bucket_mesh_maximum_world_z_m": 1.321536917294439,
+      "vertices_below_ground_z0": 120
+    },
+    {
+      "frame": 420,
+      "bucket_mesh_minimum_world_z_m": -0.31267802726081273,
+      "bucket_mesh_maximum_world_z_m": 1.0866331013889132,
+      "vertices_below_ground_z0": 601
+    },
+    {
+      "frame": 480,
+      "bucket_mesh_minimum_world_z_m": -0.57533978060062,
+      "bucket_mesh_maximum_world_z_m": 0.8225016095452015,
+      "vertices_below_ground_z0": 931
+    },
+    {
+      "frame": 540,
+      "bucket_mesh_minimum_world_z_m": -0.774903750850144,
+      "bucket_mesh_maximum_world_z_m": 0.5695196159320154,
+      "vertices_below_ground_z0": 1207
+    },
+    {
+      "frame": 600,
+      "bucket_mesh_minimum_world_z_m": -0.8461770837268414,
+      "bucket_mesh_maximum_world_z_m": 0.4120626905062521,
+      "vertices_below_ground_z0": 1431
+    }
+  ]
+}

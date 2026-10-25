@@ -1,0 +1,106 @@
+{
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/reports/v4/mixed-material-r2-stabilization-2026-09-20-v2/generated-bridge-r2.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-rigid-bridge-r2"
+    ],
+    "generated_bridge_source_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57",
+    "runner_sha256": "9bd87f4dee4026a3206037df4c66712aa9e4e641cee28e45260b8f2e3bb9093f"
+  },
+  "inputs": {
+    "baseline_bridge_init_report_sha256": "26b7cfb0ba24ee3c8fcd6bf68be0136583b7a013a950648c32d662bc8a057c62",
+    "baseline_load_report_sha256": "8ab90732ba0977520a7ce94c4cbf5f562330316e95940f01e73d15eaafcaca31",
+    "baseline_settling_report_sha256": "c08c931e8f97f95e2d024b30cc845086c38e60933c25978ddb632793636d34f5",
+    "source_r2_config_sha256": "ae048505dc5c3509cb1ba3b729e680938ab5039a00c30eca08d03c58a213f5bc",
+    "stabilization_config_sha256": "59a7af80caab29a639d4b7d52ac8f8af2ff637292539aec9388c160fbd8637ed"
+  },
+  "physics_qualified": false,
+  "rock_count_or_size_modified": false,
+  "rock_count_per_scene": 20,
+  "scene_count": 6,
+  "scenes": [
+    {
+      "minimum_boundary_clearance_m": 0.09487749903037379,
+      "model_sha256": "283d7d6b8968a9f4dd722f8170e3bcfc0f9496976677cbd8b5226af5a4879af2",
+      "pre_settling_elapsed_s": 1.40833333333335,
+      "rebaked_maximum_displacement_m": 0.00015210840496992364,
+      "report_sha256": "9d6926eb8e09b316a843706abb813e7816b87dc197fbb5e23792d96ff76bc84f",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091911",
+      "source_maximum_horizontal_shift_m": 0.10896907390767882,
+      "stable_initial_state_sha256": "1bec6286d82d28f3afefca7673c94f30277736a4b187400dc181d1eddb928dc3",
+      "status": "stable_initial_state_verified"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.13392648212094738,
+      "model_sha256": "43ce8449a8fa13bab917c294fe730bfe2507220a8370903dcd0d53f41e612d32",
+      "pre_settling_elapsed_s": 1.2083333333333188,
+      "rebaked_maximum_displacement_m": 0.00018799408694478503,
+      "report_sha256": "1466089d4f254e28eb71fa9f0a60014efe9dc22ac7166aa21ed7d32937916eb6",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+      "source_maximum_horizontal_shift_m": 0.0936107511867467,
+      "stable_initial_state_sha256": "677ba5b978370811ed20ebcc43aee974253deb3e367cad7126400c8b53d65318",
+      "status": "stable_initial_state_verified"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.09439525007623373,
+      "model_sha256": "0b4c70d5385ab34dcd2ba641b447c13e3f135c1b2b8e9bef1afa84cbf67c3b11",
+      "pre_settling_elapsed_s": 1.4416666666666886,
+      "rebaked_maximum_displacement_m": 0.00015316415237883913,
+      "report_sha256": "8d6233076ccc46c91591be7fee785e63d0e18ecc3ac647576ea45b60801c7369",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+      "source_maximum_horizontal_shift_m": 0.09634843157934399,
+      "stable_initial_state_sha256": "17bb88ae38f5adcf1864c5be902d59426c07dc9aaddfbe96856c62f7a035950c",
+      "status": "stable_initial_state_verified"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.09091457116347623,
+      "model_sha256": "0f047c91d706b2948cbbe05a94dc07255d59de60883bcf1ee90c87a4eaea5473",
+      "pre_settling_elapsed_s": 1.458333333333358,
+      "rebaked_maximum_displacement_m": 0.00021560861089492712,
+      "report_sha256": "063c6f7a17dd21f2e1f979d8be4893525b5aa05d018b7ae6f271ac976dff39bc",
+      "scene_id": "sparse-large-rock-seed-26091922",
+      "source_maximum_horizontal_shift_m": 0.14909000189264718,
+      "stable_initial_state_sha256": "091a138102ea8dd09d46674967ca20cbde44a68689104400b594e5d6723148f2",
+      "status": "stable_initial_state_verified"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.11183300965205767,
+      "model_sha256": "cc7c3c98155e09f7203e597b8a8570b426e9019d1a82e441557f70fcc77f38a8",
+      "pre_settling_elapsed_s": 1.341666666666673,
+      "rebaked_maximum_displacement_m": 0.00015468723434010687,
+      "report_sha256": "1b3ac2a0d2d77d00f3118da71401acbfed39d9661b09070efebf012219cbddbd",
+      "scene_id": "sparse-large-rock-seed-26091925",
+      "source_maximum_horizontal_shift_m": 0.17321935394204818,
+      "stable_initial_state_sha256": "8eeeb45ee6ecdcef7421967668ffcb8f5fbf14f04f5a17f79bbfc301ffca5f70",
+      "status": "stable_initial_state_verified"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.09426602859408106,
+      "model_sha256": "0a01f9ad430171af06fbba4ec037d40faa829e697013668b4480141b3f838e45",
+      "pre_settling_elapsed_s": 1.316666666666669,
+      "rebaked_maximum_displacement_m": 0.00016325016394347485,
+      "report_sha256": "3a4b25320d4e5c95a9fb59eef91ea1078c78d4c49514e182ef4d07f5fa534905",
+      "scene_id": "sparse-large-rock-seed-26091926",
+      "source_maximum_horizontal_shift_m": 0.07576327986729073,
+      "stable_initial_state_sha256": "a3696590d879e2e6fd494d66149239c4ecc8511c2f5d086d757e93d3ce8f8bd7",
+      "status": "stable_initial_state_verified"
+    }
+  ],
+  "schema": "excavation_mixed_material_r2_stabilization_report_v1",
+  "scope_limit": "gravity-only stable-pose candidates and one-second rebaked stability verification; no controlled excavation, carrying, dump, MPM or fill-rate qualification",
+  "source_assembly_plans_modified": false,
+  "source_scene_manifests_modified": false,
+  "status": "r2_six_scene_stable_initial_states_verified"
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "excavation_mixed_material_r2_manual_session_config_v1",
+  "source_effective_load_config": {
+    "path": "configs/v4/mixed-material-r2-effective-load-v1.json",
+    "sha256": "0e432a8c35724755783bc309de10a8a46f7df06ed81511263b3ba82ca3ce507d"
+  },
+  "source_scripted_baseline_report": {
+    "path": "reports/v4/mixed-material-r2-single-scene-load-development-2026-09-20-v2/report.json",
+    "sha256": "d37898eacddf600e116f49ab0776fdd4218478689048ef98e1acf2c8cca47f6d",
+    "required_status": "single_scene_load_development_candidate"
+  },
+  "selected_scene": "ordinary-small-rock-dominant-seed-26091912",
+  "runtime": {
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "maximum_simulated_duration_s": 120.0,
+    "maximum_wall_duration_s": 1800.0,
+    "full_state_log_hz": 20
+  },
+  "manual_control": {
+    "axis_order": ["rotation", "boom", "arm", "bucket"],
+    "positive_keys": ["J", "I", "U", "M"],
+    "negative_keys": ["L", "K", "O", "N"],
+    "maximum_command": [0.12, 0.0225, 0.0225, 0.0675],
+    "default_speed_scale": 0.5,
+    "speed_scales": [0.25, 0.5, 1.0],
+    "release_means_zero_hold": true,
+    "focus_loss_pauses": true
+  },
+  "markers": {
+    "F1": "approach_start",
+    "F2": "curl_start",
+    "F3": "lift_start",
+    "F4": "evaluation_hold_start",
+    "required_for_scoring": ["lift_start", "evaluation_hold_start"]
+  },
+  "viewer_dependency": {
+    "glfw_header": {
+      "path": "/home/qunwang/codex-work/excavator-live-view-20260907/deps/glfw3.h",
+      "sha256": "c0e1bee7f3ae5bb5e5b52e9ace4a53d23cce9e8548386b0acca58f1db8fb057b"
+    },
+    "glfw_library": {
+      "path": "/home/qunwang/codex-work/excavator-live-view-20260907/deps/libglfw.so.3.3",
+      "sha256": "5a1d473585ee6293c5ed94b84961e0c4c5670c6a6e198f3f2be6beb339b04cea"
+    }
+  },
+  "acceptance": {
+    "minimum_carried_rock_count": 3,
+    "minimum_vertical_lift_from_lift_start_m": 0.03,
+    "minimum_evaluation_hold_duration_s": 1.0,
+    "relaxed_bucket_neighborhood_margin_m": 0.3,
+    "maximum_relative_center_drift_during_final_window_m": 0.05,
+    "maximum_final_carried_rock_speed_m_s": 0.05,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "require_zero_command_during_final_window": true,
+    "require_fill_rate_above_scripted_baseline": true,
+    "scripted_baseline_fill_rate": 0.01204501959455893
+  },
+  "scope": {
+    "one_scene_manual_feasibility_and_demonstration_capture": true,
+    "scripted_trajectory_optimization": false,
+    "second_scene_confirmation": false,
+    "all_six_scene_qualification": false,
+    "dump": false,
+    "truck_cad": false,
+    "mpm_coupling": false,
+    "training": false,
+    "physics_qualified": false
+  }
+}

@@ -26,10 +26,11 @@ def boxes_overlap(a,b,margin_m=.01):
     return bool(np.all(a.max(axis=0)+margin_m>=b.min(axis=0)) and np.all(b.max(axis=0)+margin_m>=a.min(axis=0)))
 
 
-def sampled_approach(start_q,end_q,*,axes,speed_limits,advance,check_pose,dt=1/120,max_steps=14400):
+def sampled_approach(start_q,end_q,*,axes,speed_limits,advance,check_pose,
+                     dt=1/120,max_steps=14400,validation_substeps=1):
     """advance(q,velocity,dt) must solve closure privately and return accepted q."""
     start=np.asarray(start_q,float);end=np.asarray(end_q,float);axes=np.asarray(axes,int);limit=np.asarray(speed_limits,float)
-    if start.ndim!=1 or end.shape!=start.shape or not np.isfinite(start).all() or not np.isfinite(end).all() or limit.shape!=axes.shape or not np.isfinite(limit).all() or (limit<=0).any() or not 0<dt<=.05:raise ValueError('invalid_path_input')
+    if start.ndim!=1 or end.shape!=start.shape or not np.isfinite(start).all() or not np.isfinite(end).all() or limit.shape!=axes.shape or not np.isfinite(limit).all() or (limit<=0).any() or not 0<dt<=.05 or not isinstance(validation_substeps,int) or isinstance(validation_substeps,bool) or validation_substeps<1:raise ValueError('invalid_path_input')
     delta=end[axes]-start[axes];duration=max(dt,float(np.max(1.5*np.abs(delta)/limit)))
     steps=max(1,math.ceil(duration/dt))
     if steps>max_steps:raise ValueError('path_step_budget')
@@ -38,12 +39,17 @@ def sampled_approach(start_q,end_q,*,axes,speed_limits,advance,check_pose,dt=1/1
         s=i/steps;desired=start[axes]+(3*s*s-2*s*s*s)*delta
         velocity=(desired-q[axes])/dt
         if np.any(np.abs(velocity)>limit+1e-10):raise ValueError('path_speed_budget')
-        proposed=np.asarray(advance(q.copy(),velocity.copy(),dt),float)
-        if proposed.shape!=q.shape or not np.isfinite(proposed).all() or np.max(np.abs(proposed[axes]-desired))>1e-8:raise ValueError('path_advance_mismatch')
-        diagnostics.append(check_pose(proposed.copy(),q.copy()));q=proposed
+        interval_start=q.copy()
+        for substep in range(1,validation_substeps+1):
+            previous=q.copy()
+            proposed=np.asarray(advance(previous,velocity.copy(),dt/validation_substeps),float)
+            expected=interval_start[axes]+velocity*dt*substep/validation_substeps
+            if proposed.shape!=q.shape or not np.isfinite(proposed).all() or np.max(np.abs(proposed[axes]-expected))>1e-8:raise ValueError('path_advance_mismatch')
+            diagnostics.append(check_pose(proposed.copy(),previous));q=proposed
         path.append(q.copy());velocities.append(velocity)
     # Same actuator endpoint can have another passive branch. Do not accept that silently.
     if np.max(np.abs(q-end))>1e-5:raise ValueError('endpoint_branch_mismatch')
     return {'qpos':np.array(path),'velocity':np.array(velocities),'diagnostics':diagnostics,'dt_s':dt,
+            'validation_substeps':validation_substeps,'validation_dt_s':dt/validation_substeps,
             'duration_sim_s':steps*dt,'steps':steps,'validation_kind':'sampled_kinematic_path',
             'continuous_collision_proven':False,'physical_stop_validated':False,'execution_approved':False}

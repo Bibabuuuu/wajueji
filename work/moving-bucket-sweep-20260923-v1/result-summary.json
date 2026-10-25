@@ -1,0 +1,226 @@
+{
+  "status": "independent_candidate_leak_regression_and_mouth_exit_verified",
+  "default_deployed": false,
+  "g4_qualified": false,
+  "training_eligible": false,
+  "full_replay": {
+    "frames": 887,
+    "status": "candidate_recorded",
+    "particle_centers_inside_bucket_solid_deeper_than_0_1mm": 0,
+    "pieces": [
+      {
+        "piece": "bucket_shell_00",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_01",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_02",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_03",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_04",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_05",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_06",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_07",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_08",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_09",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_10",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_00",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_01",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_02",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_03",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_04",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_side_negative",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_side_positive",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      }
+    ],
+    "all_hard_safe": true,
+    "retained_initial_cavity": 6494,
+    "maximum_additional_current_correction_m": 0.027485039085149765,
+    "maximum_additional_motion_correction_m": 0.0156994815915823,
+    "physics_frames_wall_seconds": 146.01242800429463,
+    "max_particle_speed_m_s": 7.094939708709717,
+    "min_particle_z_m": -0.0018186471424996853,
+    "maximum_routed_bucket_force_n": 7525.626873502769,
+    "maximum_incremental_impulse_balance_error_ns": 2.8421709430404007e-13
+  },
+  "bounded_unload": {
+    "frames": 180,
+    "status": "candidate_recorded",
+    "particle_centers_inside_bucket_solid_deeper_than_0_1mm": 0,
+    "pieces": [
+      {
+        "piece": "bucket_shell_00",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_01",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_02",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_03",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_04",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_05",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_06",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_07",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_08",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_09",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_shell_10",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_00",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_01",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_02",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_03",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_tooth_04",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_side_negative",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      },
+      {
+        "piece": "bucket_side_positive",
+        "particles_deeper_than_0_1mm": 0,
+        "maximum_inside_depth_m": 0.0
+      }
+    ],
+    "all_hard_safe": true,
+    "retained_initial_cavity": 0,
+    "maximum_additional_current_correction_m": 0.10038980096578598,
+    "maximum_additional_motion_correction_m": 0.014455494470894337,
+    "physics_frames_wall_seconds": 32.40981856397411,
+    "max_particle_speed_m_s": 17.554601669311523,
+    "min_particle_z_m": -0.0009994396241381764,
+    "maximum_routed_bucket_force_n": 4876.530208719882,
+    "maximum_incremental_impulse_balance_error_ns": 1.4210854715202004e-13
+  },
+  "unload_first_exit_initial_cavity": {
+    "mouth": 6494
+  },
+  "diagnostic_seed_restore_exact": true,
+  "pending_reaction_restored": true,
+  "unload_inputs_unchanged": true,
+  "unresolved": "frame 20 pre-projection speed 40.958 m/s, protected speed 17.555 m/s, max additional position correction 100.390 mm; affected particles and stable truck inventory not yet classified",
+  "scope": "initial 6494 CAD cavity soil particles; not rocks or geometric fill rate; endpoint chords are not exact rotational CCD"
+}

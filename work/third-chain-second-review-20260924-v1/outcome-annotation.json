@@ -1,0 +1,9 @@
+{
+  "user_report": "采集好了，不过这次满斗率比较低。",
+  "recording_complete": true,
+  "final_fill_percent": 77.78975741239894,
+  "working_occupancy_threshold": 0.2,
+  "working_fill_meets_95": false,
+  "automatic_success_label": null,
+  "training_decision": "Retain raw recording with low-fill outcome; expert-success admission pending review, not an automatic positive demonstration."
+}

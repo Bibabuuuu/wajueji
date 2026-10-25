@@ -1,0 +1,107 @@
+{
+  "schema": "cycle_second_scoop_readiness_v1",
+  "status": "local_manual_second_scoop_prepoint_ready",
+  "checks": {
+    "physical_prepoint_saved": true,
+    "qualifier_30_zero_contact": true,
+    "independent_30_zero_contact": true,
+    "independent_exact": true,
+    "manual_10_checks": true,
+    "manual_3_zero_contact": true,
+    "manual_vs_headless_3_frames_all_24_arrays_identical": true
+  },
+  "final_prepoint": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-v2/prepoint.npz",
+    "sha256": "5c9b653f826dca92dd65bc50d8b6e03e46208fd8f9b4ee0d5c4a6ace39f23f10"
+  },
+  "final_metadata": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-v2/prepoint.npz.json",
+    "sha256": "3f326ba051c9f5619b8def19d48b1ea89d394feb0068ba7e89d7eff0dab8d9a8"
+  },
+  "physical_report": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-physical-v1/report.json",
+    "sha256": "bcf006e5d9e5bae7a0f7b87f8e49bd582459d3de7b5564b1b15462151eab2357"
+  },
+  "qualification_report": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-v2/report.json",
+    "sha256": "9dbff57af10974af263d7fdf803adf13073c4c60c7ef428e2623df25712c426d"
+  },
+  "restore_audit": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-audit-v1/audit.json",
+    "sha256": "249980cdcf654f8ebd84a43e27a68a2af55209f5a3920f8b19ae8c53fc911889"
+  },
+  "manual_probe": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-025221-1158283/report.json",
+    "sha256": "7496523848863f6646c12b932317533aad881c10d698b617103b9c74f08e3d06"
+  },
+  "qualifier_source": {
+    "path": "/home/qunwang/wajueji/src/v4/qualify_layered_47_cycle_prepoint.py",
+    "sha256": "5ca773b91983cb9c9d3bd999d05d01a1c0aaf0b1f8085ec00c75bb197763b4c6"
+  },
+  "actual_prepoint_tip_world_m": [
+    6.102754657261305,
+    0.05812148466549078,
+    1.8403436070564319
+  ],
+  "selected_contact_world_m": [
+    5.649981860644392,
+    0.05380935105375616,
+    1.2904308438301086
+  ],
+  "lineage_root": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3",
+  "particle_and_rock_count": [
+    256441,
+    47
+  ],
+  "physical_approach_frames": 2628,
+  "physical_approach_wall_seconds": 449.28134156500164,
+  "qualification_frames": 336,
+  "qualification_wall_seconds": 56.97899401199538,
+  "qualification_maximum_force_n": 3.601400918988062e-05,
+  "independent_zero_step": {
+    "controller_target": 0.0,
+    "controller_target_velocity": 0.0,
+    "bucket_integral_effort": 0.0,
+    "bucket_active_curl_effort": 0.0,
+    "bucket_linear_velocity_world_m_s": 0.0,
+    "bucket_angular_velocity_world_rad_s": 0.0,
+    "native_time_s": 0.0,
+    "native_last_time_s": 0.0,
+    "native_timestep_s": 0.0,
+    "native_warmstart": 0.0,
+    "native_qacc": 0.0,
+    "native_ctrl": 0.0
+  },
+  "array_equality": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "limitations": [
+    "Actual third-scoop prepoint requires the user second scoop and fresh terrain.",
+    "Development continuation is not formal all-path-zero-contact G2/G4/G5 or training qualification.",
+    "Earlier candidate had tiny nonzero MPM sample counts; original diagnostic and rejected qualification-v1 retained.",
+    "The first historical diagnostic omitted native acceleration history; descendants retain this flag."
+  ]
+}

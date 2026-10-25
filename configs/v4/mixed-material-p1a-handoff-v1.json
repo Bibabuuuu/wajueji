@@ -1,0 +1,90 @@
+{
+  "schema": "excavation_mixed_material_p1a_handoff_config_v1",
+  "status": "pre_registered_offline_handoff_only",
+  "frozen_inputs": {
+    "scaled_settling_audit_config": {
+      "path": "configs/v4/layered-mixed-scene-staged-settling-audit-v1.json",
+      "sha256": "a13ebf0c8a10f12d3c16c2105b60a69b099b8cddb0d3af213f4d01cb09192dc3"
+    },
+    "formal_geometry_preparation_config": {
+      "path": "configs/v4/formal-scene-geometry-preparation-v1.json",
+      "sha256": "db2293abf9efbc6ad3a9aa0f7ffdf064cfb31ee6c0058dcd67ffac4d3b39961c"
+    },
+    "fullscale_qualification_audit_config": {
+      "path": "configs/v4/fullscale-layered-mixed-scene-qualification-audit-v1.json",
+      "sha256": "2ed64f2e92af80f0bd88d55a8cd0d009bf76a41971dec52048bfe91682af70cc"
+    },
+    "three_cycle_config": {
+      "path": "configs/v4/mixed-material-three-cycle-v1.json",
+      "sha256": "dfe3e21a43a33e64090e24acca570e7ad9106d5413cf795d9737d548fe18c558"
+    },
+    "state_adapter": {
+      "path": "src/v4/mixed_three_cycle_state.py",
+      "sha256": "1b7e299d3f584ad298dfda7ffed4abd76078bb09036ade28c4f179932cf87a7b"
+    },
+    "terrain_observation_adapter": {
+      "path": "src/v4/mixed_terrain_observation.py",
+      "sha256": "e7417de78dc01a2b4a9aa83bb157ac76d995a2039288adf6c9db74cfb88a51f0"
+    },
+    "three_cycle_contract": {
+      "path": "src/v4/mixed_material_three_cycle_contract.py",
+      "sha256": "7fba4d3789e94560be429a48a137ea85560e3881c075ffcf04e715bd12dbcfc6"
+    },
+    "existing_cycle_selector": {
+      "path": "planning/cycle.py",
+      "sha256": "a993fe0cc0a57cc27a73b62897e9ce8dd1297b25fa066e355a17b03bcbf689e6"
+    },
+    "existing_cycle_geometry": {
+      "path": "planning/cycle_geometry.py",
+      "sha256": "4514292bd8e0d222fba5283e63ee2746b51d29602d9afb39b4cf845479eb8ad1"
+    }
+  },
+  "required_scaled_audit": {
+    "schema": "excavation_layered_mixed_scene_staged_settling_audit_report_v1",
+    "status": "admitted_for_fullscale_scaleup"
+  },
+  "required_fullscale_qualification": {
+    "schema": "excavation_fullscale_layered_mixed_scene_qualification_audit_report_v1",
+    "passing_status": "fullscale_scene_admitted_for_p1a",
+    "failure_status": "fullscale_scene_failure_preserved",
+    "required_true_audit_checks": [
+      "input_bindings_exact",
+      "scaled_scaleup_gate_admitted",
+      "scene_manifest_well_formed",
+      "geometry_bundle_well_formed",
+      "time_zero_report_well_formed",
+      "settling_report_well_formed",
+      "candidate_declaration_consistent"
+    ],
+    "required_true_checks": [
+      "stable_scene_manifest_valid",
+      "geometry_bundle_cross_bound",
+      "actual_n_time_zero_passed",
+      "fullscale_staged_settling_passed",
+      "nominal_hold_passed",
+      "visual_review_passed",
+      "mpm_connectivity_passed",
+      "identity_and_mass_closed"
+    ]
+  },
+  "adapter_chain": [
+    "fullscale_scene_manifest",
+    "formal_geometry_bundle",
+    "actual_n_time_zero_and_settling",
+    "mixed_three_cycle_state",
+    "mixed_terrain_observation",
+    "existing_cycle_selector",
+    "dispatch_geometry_revalidation",
+    "existing_same_instance_three_cycle_loop"
+  ],
+  "scope": {
+    "offline_contract_only": true,
+    "physics_execution": false,
+    "gpu_run": false,
+    "scaled_pass_only_authorizes_fullscale_scaleup": true,
+    "fullscale_qualification_required_for_p1a": true,
+    "may_authorize_p1a_after_fullscale_qualification": true,
+    "three_cycle_qualification": false,
+    "training": false
+  }
+}

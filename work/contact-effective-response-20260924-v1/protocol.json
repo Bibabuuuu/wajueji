@@ -1,0 +1,118 @@
+{
+  "status": "authorized",
+  "decision": "D151",
+  "source_git_head": "682301a",
+  "scope": "CPU-only native response copies first; no MPM scenario until interface fits and small checks pass",
+  "dt_s": 0.016666666666666666,
+  "native_hz": 4800,
+  "characteristic_length_m": 0.6,
+  "world_force_amplitudes_n": [
+    100,
+    200
+  ],
+  "world_torque_amplitudes_nm": [
+    60,
+    120
+  ],
+  "contexts": [
+    "972 zero external",
+    "972 held previous recorded MPM wrenches",
+    "1160 zero external only: previous MPM wrench unavailable"
+  ],
+  "maximum_probes": 78,
+  "maximum_CPU_run_seconds": 180,
+  "plan_review_checkpoint_minutes": 20,
+  "admission": {
+    "restore_and_baseline_repeat": "exact native qpos/qvel/controller/history checks; deterministic repeat",
+    "response_linearity_relative_frobenius": 0.05,
+    "free_body_fit_relative_frobenius": 0.2,
+    "free_body_fit_each_excited_column_relative": 0.3,
+    "weak_column_floor_fraction": 0.01,
+    "physical_parameters": "positive mass; symmetric nonnegative inverse inertia; no arbitrary geometry/force changes"
+  },
+  "later_scene_candidate": {
+    "conditional": true,
+    "control_hz": 60,
+    "coupling_hz": 60,
+    "rigid_hz": 4800,
+    "max_frames": 2400,
+    "max_total_wall_seconds": 900,
+    "no_hidden_360s_intermediate_limit": true,
+    "same_instance_gates": [
+      0,
+      120,
+      1200
+    ],
+    "target_full_loop_cost_ratio": 1.2
+  },
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-effective-response-20260924-v1/diagnose.py",
+      "sha256": "bc17ad155fad3874eaa01a4fe0c4f849933b3433aa46ee94b219743ac40a5bc2"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/layered_47_cycle_bridge.py",
+      "sha256": "9ed9a8aa328cdd7b4199652a2b2bc4ee631dbd8d765ba4ee1cd332f78fa613a6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/runtime/capacity-bridge",
+      "sha256": "535311ffb6161109ee4af2b9132428f2624ce2aca293516ec05d367c650a8078"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/runtime/audit.xml",
+      "sha256": "025dfaf973307a6d4aa0273af3ad67d2cbb670e39e9f8c500b17d00e64818a76"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/cycle/capacity-bridge.cc",
+      "sha256": "123d3ebeb7f018f587b3e47f548cb66bf0025b072c19240a31e3b6a0fb7468c4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-response-diagnosis-20260924-v2/observed1200/wrench-split.ndjson",
+      "sha256": "7f6e165e8cdfbe48928d91a52a1a31b52f3ec4fe9438d8b4d1b97a03a911d2dc"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/failure.npz",
+      "sha256": "54ef3a70042909f81357565c33591e642583e222ed036a82362457d5a6f92ce1"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/failure.npz.json",
+      "sha256": "7ec93eb1ff88e215f1eee3e65ac233b16aab8fec0b05b7d67c25bbc2c5885a0b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/frames.ndjson",
+      "sha256": "2d1b4712d72c79ee82c1bd3e1925ee7e4807d291846b86d58e75e4201bdc32be"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/actions.ndjson",
+      "sha256": "caeddb348b36adf50c5ae8c85461f1f1e8baa9ffdcde613a5f9d5250e9efb069"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/physics/failure.npz",
+      "sha256": "574873b5896bda71709d1796cfb9fe2736d67eba751bc73686edc7b6e5572e88"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/physics/failure.npz.json",
+      "sha256": "1a1f5057f1b3049fa765bd33bd28db8833f39873eb6da637948fab512c138019"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/physics/frames.ndjson",
+      "sha256": "93f00ee8eb6bbeaeaff5294388a60ec0467ffd57c55cdfd1ab731774a5cba5ec"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/actions.ndjson",
+      "sha256": "105188e6a2be9dfff6797506eb468bd230eec0cdce6805fde0b3c71c60370c29"
+    },
+    {
+      "path": "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/solver_implicit_mpm.py",
+      "sha256": "215aac53fb8427ed56ee7d15492ecbee78cfb2f8c298a84b41f395199ca952aa"
+    },
+    {
+      "path": "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/implicit_mpm_model.py",
+      "sha256": "7dc1eacf89707b3eee7961c560026b91be1c38cc2c69e9abfa119cc6d6676465"
+    },
+    {
+      "path": "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/rasterized_collisions.py",
+      "sha256": "206424600b9956f48bc97aad17177b44892099a4d20e0602e4466bd9a36c8b73"
+    }
+  ]
+}

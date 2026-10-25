@@ -1,0 +1,35 @@
+{
+  "stages": [
+    {
+      "name": "CLEAR_TRUCK",
+      "frames": 1190,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.6622825411845802,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9129194898155042,
+        "closure_m": 8.881784197001252e-16
+      }
+    },
+    {
+      "name": "WITHDRAW_SWING",
+      "frames": 710,
+      "minimum_clearance": {
+        "bucket_truck_m": 0.378583853274829,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9129194085837853,
+        "closure_m": 2.490452288839151e-12
+      }
+    },
+    {
+      "name": "RETURN_SAFE",
+      "frames": 1875,
+      "minimum_clearance": {
+        "bucket_truck_m": 1.6839699667596641,
+        "mechanism_truck_m": 0.8872658539090647,
+        "mechanism_ground_m": 0.9105619785497158,
+        "closure_m": 3.552713678800501e-15
+      }
+    }
+  ],
+  "physics_frames": 0
+}

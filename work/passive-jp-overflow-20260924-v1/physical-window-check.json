@@ -1,0 +1,14 @@
+{
+  "frames": 993,
+  "all_hard_guards": true,
+  "all_material_guards": true,
+  "all_sweep_guards": true,
+  "Jp_max_initial_final": [
+    2.709412437850538e+32,
+    2.709412437850538e+32
+  ],
+  "Jp_min_initial_final": [
+    0.06268393248319626,
+    0.06268393248319626
+  ]
+}

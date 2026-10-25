@@ -1,0 +1,75 @@
+{
+  "schema": "cycle_transport_evidence_v1",
+  "status": "transport_unload_return_passed",
+  "checks": {
+    "all_4688_frames_hard_safe": true,
+    "all_five_stages_saved": true,
+    "particle_and_rock_counts_preserved": true,
+    "returned_snapshot_exists": true
+  },
+  "unload_inventory": {
+    "source_cavity_particles": 7267,
+    "source_particles_in_truck_core": 7252,
+    "received_source_fraction": 0.9979358745011697,
+    "source_particles_remaining_in_bucket": 0,
+    "total_particles_in_bucket": 0,
+    "total_particles_in_truck_core": 11609,
+    "scope": "soil point occupancy, not stable delivered mixed volume; rock poses preserved and logged"
+  },
+  "later_inventory": {
+    "dump": {
+      "soil_core_count": 11609,
+      "original_cavity_in_core": 7252,
+      "max_core_soil_speed": 0.18066857755184174,
+      "rocks_center_in_core": [
+        10,
+        19,
+        20,
+        24,
+        32,
+        44
+      ],
+      "particle_count": 256441,
+      "rock_count": 47
+    },
+    "clear_truck": {
+      "soil_core_count": 11671,
+      "original_cavity_in_core": 7266,
+      "max_core_soil_speed": 0.16964951157569885,
+      "rocks_center_in_core": [
+        10,
+        19,
+        20,
+        24,
+        32,
+        44
+      ],
+      "particle_count": 256441,
+      "rock_count": 47
+    },
+    "return_high": {
+      "soil_core_count": 11673,
+      "original_cavity_in_core": 7266,
+      "max_core_soil_speed": 0.0745009183883667,
+      "rocks_center_in_core": [
+        10,
+        19,
+        20,
+        24,
+        32,
+        44
+      ],
+      "particle_count": 256441,
+      "rock_count": 47
+    }
+  },
+  "scope": "development continuity and transport; not stable delivered mixed volume or three-scoop certification",
+  "report_sha256": "b79d7000df11dd2f9ee9459e3e3190b4b136beb80c0de495240f98187bda7f9b",
+  "final_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/transport-return-v1/return_high.npz",
+    "size_bytes": 53871590,
+    "mtime_ns": 1790187095465379943,
+    "sha256": "d53cde8e853d756c432897ebbd317de11ecbe060f81782ee4472ca55033622f8"
+  },
+  "wall_seconds": 866.5345708490058
+}

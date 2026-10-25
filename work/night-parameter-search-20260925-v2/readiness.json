@@ -1,0 +1,41 @@
+{
+  "status": "ready_for_smoke_and_bounded_search",
+  "blockers": [],
+  "bindings_match": true,
+  "free_bytes": 453746487296,
+  "source_sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
+  "policy_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+  "maximum_wall_seconds": 28800,
+  "maximum_candidates": 6,
+  "physical_steps_added": 0,
+  "neural_training_started": false,
+  "batch_started": false,
+  "baseline_status": "second_scoop_unload_completed",
+  "baseline_frames": 3398,
+  "baseline_handoff": {
+    "ready": true,
+    "frame_end": 3164,
+    "first_available_decision_frame": 3165,
+    "closure_held": true,
+    "contact_history_complete": true,
+    "sustained_actual_rise": true,
+    "height_is_diagnostic_only": true,
+    "observed_span_seconds": 3.0,
+    "bucket_above_initial_soil_m": -0.1982763846756943,
+    "maximum_drawdown_m": {
+      "origin_z_m": 0.0,
+      "minimum_bucket_z_m": 0.0
+    },
+    "initial_soil_top_m": 1.346285343170166,
+    "source_sha256": "a006213a953947eabd73f975af29dc388fa4ed9dbd3307dc66abf491eec86c1f"
+  },
+  "baseline_handoff_checkpoint": null,
+  "pending_checks": [
+    "completed_baseline_reviews_and_final_binding",
+    "physical120_frame_identity_smoke",
+    "candidate_and_tail_physical_validation",
+    "valid_retained_volume_scoring",
+    "selected_candidate_fixed_unload_confirmation"
+  ],
+  "scope": "Only curl_load below95pct adjusted. Same saved prepoint per trial; not continuous scoops."
+}

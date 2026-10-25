@@ -1,0 +1,38 @@
+{
+  "repo": "Bibabuuuu/wajueji",
+  "private": true,
+  "release_id": 421962312,
+  "release_url": "https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023",
+  "draft": false,
+  "source_commit": "de813c431a42e4977c9238327decec3ee842a168",
+  "assets": [
+    {
+      "name": "wajueji-final-materials-20261023.zip",
+      "bytes": 318827738,
+      "sha256": "a2f344e1f873ae2863aa37a7d1a91511629c189e5116d10a6069c7348c15162b",
+      "asset_id": 669430337,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/untagged-69a6f8c95537fc173051/wajueji-final-materials-20261023.zip"
+    },
+    {
+      "name": "wajueji-source-final-20261023.tar.gz",
+      "bytes": 18604153,
+      "sha256": "42a9ecb08a2df99d0544b9c9a53bc7e6a1c7c0bcbe942983e98fece1acedebd4",
+      "asset_id": 669434566,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/untagged-69a6f8c95537fc173051/wajueji-source-final-20261023.tar.gz"
+    },
+    {
+      "name": "run-summaries-before-cleanup.tar.gz",
+      "bytes": 18293356,
+      "sha256": "1a8e71c6ac42d65c9918f4209482ae8796200dfce12e91449f64301f6b313d76",
+      "asset_id": 669434945,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/untagged-69a6f8c95537fc173051/run-summaries-before-cleanup.tar.gz"
+    },
+    {
+      "name": "wajueji-model-and-inputs-20261023.tar.gz",
+      "bytes": 96426456,
+      "sha256": "eef311b354cc1c584d89b26621b16aaadc63dac11fb5f6e5d87d461188b05ba5",
+      "asset_id": 669435498,
+      "url": "https://github.com/Bibabuuuu/wajueji/releases/download/untagged-69a6f8c95537fc173051/wajueji-model-and-inputs-20261023.tar.gz"
+    }
+  ]
+}

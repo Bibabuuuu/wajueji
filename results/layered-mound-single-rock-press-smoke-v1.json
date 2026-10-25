@@ -1,0 +1,198 @@
+{
+  "checks": {
+    "all_particle_and_contact_values_finite": true,
+    "controlled_path_no_free_fall": true,
+    "exact_newton_step_scope": true,
+    "nonzero_rock_soil_contact_during_press": true,
+    "particle_drop_bounded": true,
+    "particle_speed_bounded": true,
+    "press_reaction_strengthened_over_clearance_state": true,
+    "single_target_rock_identity": true,
+    "smoke_stops_above_final_construction_pose": true,
+    "unexcavated_foundation_particle_count": true,
+    "upstream_65_rock_time_zero_bound_and_passed": true
+  },
+  "environment": {
+    "device": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "execution": {
+    "controlled_press_frames": 36,
+    "foundation_presettle_frames": 24,
+    "mj_step_calls": 0,
+    "newton_solver_step_calls": 60,
+    "wall_seconds": 3.8548520269978326
+  },
+  "inputs": {
+    "config_sha256": "8d3f8a568ded0a59ade823c9e6ca92747e431ffb99ac42129adb81167b09f682",
+    "foundation_q_sha256": "0787b3ccb9a882b97f6f47a6090d0f8b09673ceb5f5a737ede7e60395a911ba5",
+    "physical_manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706",
+    "runner_sha256": "8f9927a3681b2fb89e09c11804c7e802aad9ae2cec119151fc7dc1c0fac1847f",
+    "source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b"
+  },
+  "metrics": {
+    "first_contact_frame": 4,
+    "first_press_contact_frame": 24,
+    "foundation_mass_kg": 2234.1468750000004,
+    "foundation_particle_count": 85620,
+    "peak_particle_drop_from_initial_m": 0.00532492995262146,
+    "peak_particle_speed_m_s": 0.05913328006863594,
+    "peak_presettle_reaction_force_n": 8.884276818062526,
+    "peak_press_reaction_force_n": 225.51898569620784,
+    "peak_reaction_force_n": 225.51898569620784,
+    "presettle_nonzero_contact_samples": 200,
+    "press_nonzero_contact_samples": 486,
+    "total_nonzero_contact_samples": 686,
+    "trace": [
+      {
+        "contact_samples": 10,
+        "finite": true,
+        "force_world_n": [
+          0.07138788743759505,
+          0.022019168827682734,
+          3.512508070562035
+        ],
+        "frame": 4,
+        "maximum_particle_drop_from_initial_m": 0.0011674165725708008,
+        "maximum_particle_speed_m_s": 0.01392802782356739,
+        "minimum_particle_z_m": 0.012405890971422195,
+        "phase": "foundation_presettle",
+        "rock_position_world_m": [
+          4.67693670532854,
+          0.05392623766533931,
+          0.5290249926624505
+        ],
+        "torque_world_nm": [
+          0.011984184899651066,
+          -0.03625642825242435,
+          0.0019277768311901325
+        ]
+      },
+      {
+        "contact_samples": 10,
+        "finite": true,
+        "force_world_n": [
+          0.1493263666634448,
+          0.009908431966323406,
+          3.5633159667486325
+        ],
+        "frame": 23,
+        "maximum_particle_drop_from_initial_m": 0.000994354486465454,
+        "maximum_particle_speed_m_s": 0.00027546167257241905,
+        "minimum_particle_z_m": 0.012418439611792564,
+        "phase": "foundation_presettle",
+        "rock_position_world_m": [
+          4.67693670532854,
+          0.05392623766533931,
+          0.5290249926624505
+        ],
+        "torque_world_nm": [
+          0.008326841213328775,
+          -0.043762731532155756,
+          0.0022254568163900196
+        ]
+      },
+      {
+        "contact_samples": 10,
+        "finite": true,
+        "force_world_n": [
+          0.872749665286392,
+          0.003440786967985332,
+          21.147557515650988
+        ],
+        "frame": 24,
+        "maximum_particle_drop_from_initial_m": 0.0011802315711975098,
+        "maximum_particle_speed_m_s": 0.022314690053462982,
+        "minimum_particle_z_m": 0.012417308986186981,
+        "phase": "controlled_press",
+        "rock_position_world_m": [
+          4.67693670532854,
+          0.05392623766533931,
+          0.528469437106895
+        ],
+        "torque_world_nm": [
+          0.047205770004061315,
+          -0.2683974332924379,
+          0.005564227475634186
+        ]
+      },
+      {
+        "contact_samples": 18,
+        "finite": true,
+        "force_world_n": [
+          -1.3582400496670743,
+          3.2063715113326907,
+          225.49210024997592
+        ],
+        "frame": 59,
+        "maximum_particle_drop_from_initial_m": 0.00532492995262146,
+        "maximum_particle_speed_m_s": 0.016062427312135696,
+        "minimum_particle_z_m": 0.012378541752696037,
+        "phase": "controlled_press",
+        "rock_position_world_m": [
+          4.67693670532854,
+          0.05392623766533931,
+          0.5090249926624505
+        ],
+        "torque_world_nm": [
+          0.9964613473750382,
+          -3.176240003543148,
+          0.24699129642000386
+        ]
+      }
+    ]
+  },
+  "next_gate": "review_smoke_before_any_multirock_or_full_depth_press",
+  "schema": "excavation_layered_mound_single_rock_press_smoke_report_v1",
+  "scope": {
+    "active_rock_count": 1,
+    "active_soil": "unexcavated_foundation_stage_only",
+    "free_fall": false,
+    "full_65_rock_identity_bound_by_time_zero": true,
+    "fullscale_qualified": false,
+    "kinematic_controlled_press": true,
+    "mj_step_calls": 0,
+    "newton_solver_step_calls": 60,
+    "other_64_rocks_active": false,
+    "settling_qualified": false,
+    "stable_scene_claimed": false,
+    "training": false
+  },
+  "settling_qualified": false,
+  "stable_scene_claimed": false,
+  "status": "single_lower_rock_controlled_press_smoke_passed",
+  "target": {
+    "actual_end_position_world_m": [
+      4.676936626434326,
+      0.05392623692750931,
+      0.509024977684021
+    ],
+    "commanded_end_position_world_m": [
+      4.67693670532854,
+      0.05392623766533931,
+      0.5090249926624505
+    ],
+    "controlled_displacement_m": 0.020000014978429514,
+    "diameter_m": 0.34,
+    "full_construction_target_position_world_m": [
+      4.67693670532854,
+      0.05392623766533931,
+      0.2715175156416184
+    ],
+    "local_mesh_min_z_m": -0.20027499266245055,
+    "manifest_rock_id": "lower-000",
+    "mass_kg": 53.50676831790039,
+    "prescribed_press_speed_m_s": 0.06666666666666667,
+    "prototype_id": "angular_bipyramid",
+    "remaining_to_full_construction_target_z_m": 0.23750747702083208,
+    "runtime_rock_id": "r1-rock-000",
+    "start_position_world_m": [
+      4.67693670532854,
+      0.05392623766533931,
+      0.5290249926624505
+    ]
+  }
+}

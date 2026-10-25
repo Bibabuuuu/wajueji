@@ -1,0 +1,135 @@
+{
+  "bucket_proxy_geom_count": 18,
+  "candidate_model_sha256": "81c4f8064b45ca50875a80fe717cf38b9986ede7f3083482cbbad66f45fa31d4",
+  "contact_bits": {
+    "bucket_proxy": 512,
+    "rock": 256,
+    "rock_ground": 1024,
+    "truck_receiver_reserved": 2048
+  },
+  "expected_candidate_contract": {
+    "nplugin": 0,
+    "nq": 26,
+    "nu": 12,
+    "nv": 24,
+    "rock_count": 1
+  },
+  "frozen_source_modified": false,
+  "mouth_center_bucket_m": [
+    0.117559,
+    0.0,
+    -0.590555
+  ],
+  "mouth_inward_direction_bucket": [
+    0.9762252567359343,
+    0.0,
+    0.21675850181909675
+  ],
+  "rock": {
+    "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+    "density_kg_m3": 2600.0,
+    "equivalent_diameter_m": 0.12,
+    "inertia_about_com_kg_m2": [
+      [
+        0.002730036731269096,
+        -0.00013544030291822907,
+        -1.5999552127237756e-05
+      ],
+      [
+        -0.00013544030291822907,
+        0.004496298940992804,
+        -1.4905357373961838e-05
+      ],
+      [
+        -1.5999552127237756e-05,
+        -1.4905357373961838e-05,
+        0.0051410048828723345
+      ]
+    ],
+    "initial_orientation_quaternion_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_position_world_m": [
+      4.2,
+      0.0,
+      0.35
+    ],
+    "mass_kg": 2.3524245790080363,
+    "prototype_id": "angular_octa",
+    "rock_id": "r1-rock-000"
+  },
+  "rock_inertia_about_com_kg_m2": [
+    [
+      0.002730036731269096,
+      -0.00013544030291822907,
+      -1.5999552127237756e-05
+    ],
+    [
+      -0.00013544030291822907,
+      0.004496298940992804,
+      -1.4905357373961838e-05
+    ],
+    [
+      -1.5999552127237756e-05,
+      -1.4905357373961838e-05,
+      0.0051410048828723345
+    ]
+  ],
+  "rock_mass_kg": 2.3524245790080363,
+  "rocks": [
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.12,
+      "inertia_about_com_kg_m2": [
+        [
+          0.002730036731269096,
+          -0.00013544030291822907,
+          -1.5999552127237756e-05
+        ],
+        [
+          -0.00013544030291822907,
+          0.004496298940992804,
+          -1.4905357373961838e-05
+        ],
+        [
+          -1.5999552127237756e-05,
+          -1.4905357373961838e-05,
+          0.0051410048828723345
+        ]
+      ],
+      "initial_orientation_quaternion_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "initial_position_world_m": [
+        4.2,
+        0.0,
+        0.35
+      ],
+      "mass_kg": 2.3524245790080363,
+      "prototype_id": "angular_octa",
+      "rock_id": "r1-rock-000"
+    }
+  ],
+  "schema": "excavation_mixed_rigid_mechanism_candidate_v1",
+  "scope_limit": "model assembly candidate only until a separate bridge loads and steps it with classified contacts and state logging",
+  "source_bucket_visual_collision_disabled": true,
+  "source_model_contract": {
+    "actuator_count": 12,
+    "mechanism_nq": 19,
+    "mechanism_nv": 18,
+    "plugin_count": 0
+  },
+  "source_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+  "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+  "total_rock_mass_kg": 2.3524245790080363,
+  "unit_fixture": null,
+  "unit_fixtures": [],
+  "unit_scenario": "freefall"
+}

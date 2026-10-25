@@ -1,0 +1,96 @@
+{
+  "schema": "operator_entry_adjustment_review_v1",
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831",
+  "planned_target": {
+    "entry_xy_m": [
+      5.549335547356983,
+      0.3699557031571323
+    ],
+    "surface_z_m": 0.9553727209568024
+  },
+  "marker_semantics": "Fixed target for bucket width-center reference; visible points are a vertical column 0.05..0.65 m above target.",
+  "local_reference_m": [
+    0.214,
+    0.0,
+    -1.023
+  ],
+  "reference_is_exact_outer_tooth": false,
+  "user_annotation": "User reports shifting toward more intact stock before excavation because the nominal center target was too close to the remaining stock edge.",
+  "observations": [
+    {
+      "label": "first_nonzero_sample",
+      "frame": 38,
+      "center_reference_world_m": [
+        6.042156511682225,
+        0.5415869967060593,
+        1.468547489947802
+      ],
+      "lateral_from_planned_center_m": 0.13846919441456293,
+      "bucket_contact_samples": 1,
+      "pitch_rad": -0.3048459653201991
+    },
+    {
+      "label": "first_five_frames_at_least_ten_samples",
+      "frame": 93,
+      "center_reference_world_m": [
+        6.043306346586602,
+        0.5952497944584858,
+        1.2558535814058263
+      ],
+      "lateral_from_planned_center_m": 0.19193665166089025,
+      "bucket_contact_samples": 10,
+      "pitch_rad": -0.26782402931418353
+    },
+    {
+      "label": "penetrate_deepen",
+      "frame": 354,
+      "center_reference_world_m": [
+        5.997553625345998,
+        0.8331083255715211,
+        0.47551796031498483
+      ],
+      "lateral_from_planned_center_m": 0.4323117894207464,
+      "bucket_contact_samples": 147,
+      "pitch_rad": -0.13905771264506755
+    },
+    {
+      "label": "curl_load",
+      "frame": 514,
+      "center_reference_world_m": [
+        5.671348744651964,
+        0.7984170699415895,
+        0.20380334174740056
+      ],
+      "lateral_from_planned_center_m": 0.41939619533758393,
+      "bucket_contact_samples": 388,
+      "pitch_rad": 0.08553659502886754
+    },
+    {
+      "label": "lift_clear",
+      "frame": 796,
+      "center_reference_world_m": [
+        4.451547429674482,
+        0.6393189561733845,
+        0.9027283036762928
+      ],
+      "lateral_from_planned_center_m": 0.34179043528458725,
+      "bucket_contact_samples": 671,
+      "pitch_rad": 1.5674459435158081
+    },
+    {
+      "label": "off_soil_confirm",
+      "frame": 1348,
+      "center_reference_world_m": [
+        3.873417854367252,
+        0.5002030158388551,
+        2.432951207550805
+      ],
+      "lateral_from_planned_center_m": 0.24143922210149477,
+      "bucket_contact_samples": 731,
+      "pitch_rad": 1.60079987733128
+    }
+  ],
+  "automatic_actual_target_relabelled": false,
+  "training_note": "Keep original selected target and operator adjustment separately; review task conditioning before training.",
+  "scope": "Reference poses from recorded kinematics; contact-count heuristic is not an exact tooth-surface first intersection."
+}

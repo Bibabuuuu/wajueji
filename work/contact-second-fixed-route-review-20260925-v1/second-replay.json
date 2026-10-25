@@ -1,0 +1,18 @@
+{
+  "label": "SECOND SCOOP | COMPLETE CONTINUOUS CACHE",
+  "summary": "second_scoop_unload_completed; development result; formal fill not qualified",
+  "sources": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-next-scoop-20260925-v1/candidate/display",
+      "label": "Dig / curl"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-finish-unload-20260925-v4/physical/display",
+      "label": "Finish curl / handoff"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-second-fixed-route-20260925-v1/physical/display",
+      "label": "Fixed lift / swing / dump"
+    }
+  ]
+}

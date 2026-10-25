@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "real_observations": 11,
+  "restored_frames": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "feature_exact": true,
+  "zero_history_empty": true,
+  "physics_steps_added": 0,
+  "inputs": {
+    "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/report.json": "4260b88ccc602700484ee2cfec9b258aede4f8c49ffa7cbadf2e4ff988fa12ff",
+    "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/actions.ndjson": "7de035794a1677b855023e5868031d4c32d11cf55b2af5a9e522288aef7c26f0",
+    "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/terrain.ndjson": "75bb70ee234330caa6c7664e31ab2cf6004dc753651d6dd692934d5c9263c595",
+    "/home/qunwang/wajueji/work/contact-next-scoop-20260925-v1/features.py": "241f26ca910f38f2770d685153a91ba199d1ae1fd4f6a2d37dc1d6c97817639b"
+  }
+}

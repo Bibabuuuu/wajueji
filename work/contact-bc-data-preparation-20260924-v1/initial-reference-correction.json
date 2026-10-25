@@ -1,0 +1,6 @@
+{
+  "rejected_path": "local-data/contact-bc-native-staging-20260924-v1",
+  "reason": "Initial report terrain is a summary, not a full height grid. Existing older three-scoop index has the same limitation.",
+  "affected_rows": 30,
+  "resolution": "v2 retains source rows, sets missing initial terrain reference to null, and excludes them from tensor candidates. No future terrain substituted."
+}

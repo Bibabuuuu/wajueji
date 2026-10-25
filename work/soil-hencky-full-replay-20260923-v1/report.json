@@ -1,0 +1,72 @@
+{
+  "status": "candidate_full_replay_passed",
+  "frames": 1329,
+  "rejection_reason": null,
+  "restore_exact": true,
+  "initial_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": false,
+    "rigid_reported_angular_velocity": false,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "material_peaks": {
+    "max_F_frobenius": 1.914616584777832,
+    "max_Jp": 461.65966796875,
+    "rejected_particles": 0
+  },
+  "last_material_audit": {
+    "nonfinite_fields": {},
+    "rejection_count": 0,
+    "rejection_codes": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "max_F_frobenius": 1.914616584777832,
+    "F_frobenius_over1000": 0,
+    "Jp_nonpositive": 0,
+    "max_Jp": 461.65966796875,
+    "min_Jp": 0.49321281909942627
+  },
+  "last_guards": {
+    "all_arrays_finite": true,
+    "no_candidate_update_rejection": true,
+    "no_extreme_elastic_F": true,
+    "Jp_positive": true,
+    "position_velocity_and_bridge_finite": true,
+    "mechanism_hard_bounds": true,
+    "closure": true,
+    "no_forbidden_contacts": true,
+    "no_unmapped_colliders": true,
+    "finite_colliders": true,
+    "particle_flags_unchanged": true
+  },
+  "source_commands": "original actual commands; full coupled mechanics feedback; no original-state equality expected after frame1",
+  "wall_seconds": 312.80408048199024,
+  "physics_and_audit_wall_seconds": 309.8051578290033,
+  "soil_loss_fixed": false,
+  "manual_deployed": false,
+  "training_eligible": false,
+  "resume_qualified": false,
+  "bindings_unchanged": true
+}

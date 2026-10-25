@@ -1,0 +1,30 @@
+{
+  "valid_estimate": true,
+  "fill_percent": 45.52719200887902,
+  "liters": 116.1693365437244,
+  "quality_reasons": [],
+  "capacity_liters": 255.164729950989,
+  "rocks_and_heap_included": true,
+  "occupancy_level": 0.2,
+  "calibration_status": "user_selected_threshold_not_recalibrated",
+  "compute_wall_s": 0.20097825000993907,
+  "display_only": true,
+  "source": "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz",
+  "checkpoint_sha256": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+  "physics_steps_added": 0,
+  "formal_fill_qualification": false,
+  "stable_delivered_volume_qualification": false,
+  "scope": "Single snapshot working cavity plus heap estimate; not spill attribution",
+  "inputs": {
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz.json": "30ed76652a7826e1129a8234a96a58d309cf5f9168bf7133d931e95609f570e5",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/display/scene.json": "8bc1fc7001687d1c9c7c5e9058eaff424aaa5f99e11ebd43c3c7907948c24b74",
+    "/home/qunwang/wajueji/configs/v4/live-bucket-fill-local-v1.json": "cceb61068ce2d26f142bc73f0b30f056aadc7955bcfd6a796d83a84369e61f56",
+    "/home/qunwang/wajueji/work/contact-first-transport-review-20260925-v1/measure.py": "03a6a72af90e5bb68baf9d849c4a83d7c11eeaa70704b30b2f6988d4f19110c5",
+    "/home/qunwang/wajueji/src/v4/live_bucket_fill.py": "404ef215edcd4aa5fb3112bc17f1fd5f385602bb71f35861ccabc878b05e9219",
+    "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+    "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+    "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b"
+  }
+}

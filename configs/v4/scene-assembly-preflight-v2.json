@@ -1,0 +1,89 @@
+{
+  "schema": "excavation_scene_assembly_preflight_config_v1",
+  "input": {
+    "scene_root": "reports/v4/scene-reconstruction-2026-09-20-v2",
+    "root_report_sha256": "b84563f3b723d3ba311361cedca2727208f1336b0e293e0cb0cec8df5d3865d3",
+    "expected_root_schema": "excavation_scene_reconstruction_index_v1",
+    "expected_scene_report_schema": "excavation_scene_reconstruction_report_v1",
+    "expected_manifest_schema": "excavation_scene_reconstruction_manifest_v1",
+    "expected_metrics_schema": "excavation_scene_reconstruction_metrics_v1",
+    "expected_status": "geometry_reconstruction_candidate",
+    "expected_scene_count": 9,
+    "reconstruction_config_path": "configs/v4/scene-reconstruction-v2.json",
+    "reconstruction_config_sha256": "e2f317ea1550547c34d17792cc858ed3a2224f9aef10e0323752b74893ade755"
+  },
+  "r0_assets": {
+    "asset_root": "assets/v4/mixed-material-r0",
+    "assets": {
+      "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43"
+    }
+  },
+  "r1_evidence": {
+    "config_path": "configs/v4/mixed-material-r1.json",
+    "config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+    "assembler_path": "src/v4/mixed_material_r1_mechanism.py",
+    "assembler_sha256": "dfe540b5f503bb35a306bda99229e5de4937342361c7cdd89acccfb53f67ca41",
+    "bridge_path": "src/v4/mixed_rigid_bridge.cc",
+    "bridge_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+    "two_rock_report_path": "reports/v4/mixed-material-r1-2026-09-19-v1/mechanism-rock-collision-report.json",
+    "two_rock_report_sha256": "1709285209d9207daafc45e143fa18a51526e88ad63733852fefb8042c5c5be2",
+    "required_two_rock_status": "passed"
+  },
+  "current_bridge": {
+    "maximum_rock_count": 2,
+    "mechanism_nq": 19,
+    "mechanism_nv": 18,
+    "actuator_count": 12,
+    "plugin_count": 0,
+    "qpos_per_rock": 7,
+    "qvel_per_rock": 6,
+    "state_schema": "excavation_mixed_rigid_bridge_state_v1",
+    "ready_schema": "excavation_mixed_rigid_bridge_v1",
+    "body_name_template": "r1-rock-{slot:03d}",
+    "mesh_name_template": "r1_rock_mesh_{slot:03d}",
+    "geom_name_template": "r1_rock_geom_{slot:03d}",
+    "freejoint_name_template": "r1_rock_free_{slot:03d}",
+    "bucket_proxy_geom_count": 18,
+    "ground_geom_count": 1,
+    "truck_receiver_geom_count": 5,
+    "contact_bits": {
+      "rock": 256,
+      "bucket_proxy": 512,
+      "rock_ground": 1024,
+      "truck_receiver_reserved": 2048
+    },
+    "legacy_first_rock_alias_numeric_values": 16,
+    "fixed_state_numeric_values_excluding_rocks": 91,
+    "per_rock_state_numeric_values": 16,
+    "per_rock_state_named_fields": 4,
+    "state_top_level_fields": 19,
+    "ready_top_level_fields": 5
+  },
+  "future_candidate": {
+    "capacity_policy": "maximum_observed_scene_rock_count",
+    "maximum_capacity": 20,
+    "capacity_decision_status": "user_confirmed_unique_maximum_capacity",
+    "runtime_count_policy": "loaded_model_rock_count_at_startup",
+    "first_round_admission_scene_classes": [
+      "ordinary-small-rock-dominant",
+      "sparse-large-rock"
+    ],
+    "deferred_boundary_scene_classes": ["jam-boundary"],
+    "body_name_template": "r2-rock-{slot:03d}",
+    "mesh_name_template": "r2_rock_mesh_{slot:03d}",
+    "geom_name_template": "r2_rock_geom_{slot:03d}",
+    "freejoint_name_template": "r2_rock_free_{slot:03d}",
+    "unit_regression_batch_capacity": 2,
+    "preserve_input_order": true
+  },
+  "scope": {
+    "status": "scene_assembly_preflight_candidate",
+    "physics_run": false,
+    "mjcf_generation": false,
+    "bridge_modification": false,
+    "training": false
+  }
+}

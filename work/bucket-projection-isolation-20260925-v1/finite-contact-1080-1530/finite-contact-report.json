@@ -1,0 +1,140 @@
+{
+  "status": "bounded_finite_contact_candidate_passed",
+  "candidate": "finite_radius_rigid_contact",
+  "source": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-continuation-1620/state-001080.npz",
+  "source_sha256": "c2c03dfc67e5b9edd9e835d66c4109a6f25d3b50df9e141f5e7f56d8760a113f",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "start_frame": 1080,
+  "end_frame_limit": 1530,
+  "wall_limit_seconds": 180,
+  "old_default_unchanged": true,
+  "training_eligible": false,
+  "rows": [
+    {
+      "frame": 1081,
+      "occupied_2cm_cells": 9226,
+      "maximum_particles_per_cell": 16,
+      "negative_side_2cm_count": 423,
+      "source_particles_still_in_cavity": 12074,
+      "max_abs_particle_difference_from_P0_m": 0.011177152395248413,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1200,
+      "occupied_2cm_cells": 8967,
+      "maximum_particles_per_cell": 17,
+      "negative_side_2cm_count": 466,
+      "source_particles_still_in_cavity": 12081,
+      "max_abs_particle_difference_from_P0_m": 1.4820473194122314,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1400,
+      "occupied_2cm_cells": 8726,
+      "maximum_particles_per_cell": 29,
+      "negative_side_2cm_count": 515,
+      "source_particles_still_in_cavity": 12083,
+      "max_abs_particle_difference_from_P0_m": 2.8246243000030518,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1490,
+      "occupied_2cm_cells": 8577,
+      "maximum_particles_per_cell": 28,
+      "negative_side_2cm_count": 488,
+      "source_particles_still_in_cavity": 12083,
+      "max_abs_particle_difference_from_P0_m": 2.8210597038269043,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1500,
+      "occupied_2cm_cells": 8520,
+      "maximum_particles_per_cell": 27,
+      "negative_side_2cm_count": 491,
+      "source_particles_still_in_cavity": 12083,
+      "max_abs_particle_difference_from_P0_m": 2.8255019187927246,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1510,
+      "occupied_2cm_cells": 8355,
+      "maximum_particles_per_cell": 27,
+      "negative_side_2cm_count": 494,
+      "source_particles_still_in_cavity": 12083,
+      "max_abs_particle_difference_from_P0_m": 2.8692548274993896,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1520,
+      "occupied_2cm_cells": 8021,
+      "maximum_particles_per_cell": 52,
+      "negative_side_2cm_count": 515,
+      "source_particles_still_in_cavity": 12083,
+      "max_abs_particle_difference_from_P0_m": 2.8329591751098633,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1530,
+      "occupied_2cm_cells": 7702,
+      "maximum_particles_per_cell": 49,
+      "negative_side_2cm_count": 545,
+      "source_particles_still_in_cavity": 12083,
+      "max_abs_particle_difference_from_P0_m": 2.837362289428711,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    }
+  ],
+  "command_changes": [],
+  "zero_step": {
+    "physical_arrays_unchanged": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_elastic_strain": true,
+      "particle_Jp": true,
+      "particle_stress": true,
+      "particle_qd_grad": true,
+      "particle_transform": true
+    },
+    "particle_radius_m": 0.011250000447034836,
+    "new_contact_thickness_m": 0.011250000447034836,
+    "old_material_thickness_m": [
+      0.0,
+      0.0010000000474974513
+    ],
+    "old_collider_max_thickness_m": [
+      0.0
+    ],
+    "projection_threshold_unchanged": true,
+    "particle_mass_volume_density_unchanged": true,
+    "solver_warmstart": "cleared_after_contact_geometry_change",
+    "exact_old_solver_continuation": false
+  },
+  "tracked_particle_count": 12086,
+  "frames_completed": 450,
+  "wall_seconds": 73.75515656199423,
+  "full_run_audit": {
+    "all_450_hard_guard_safe": true,
+    "all_450_material_guard_safe": true,
+    "all_450_sweep_safe": true,
+    "all_450_applied_commands_match_saved": true,
+    "source_hash_unchanged": true,
+    "input_hash_unchanged": true,
+    "maximum_material_rejections": 0
+  }
+}

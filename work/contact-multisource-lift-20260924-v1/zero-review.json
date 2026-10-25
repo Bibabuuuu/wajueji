@@ -1,0 +1,34 @@
+{
+  "status": "D154_both_source_zero_step_passed",
+  "physics_steps_added": 0,
+  "sources": [
+    {
+      "scoop": "first",
+      "checks": {
+        "status": true,
+        "zero_frames": true,
+        "arrays": true,
+        "controller": true,
+        "source": true,
+        "all_protocol_inputs": true
+      },
+      "report": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-zero/report.json",
+      "report_sha256": "f503d827c5b9897b741428ad874e927ca73bc8eb811b4d99777ed73a28b8cce5",
+      "wall_seconds": 6.842271647008602
+    },
+    {
+      "scoop": "second",
+      "checks": {
+        "status": true,
+        "zero_frames": true,
+        "arrays": true,
+        "controller": true,
+        "source": true,
+        "all_protocol_inputs": true
+      },
+      "report": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/second-zero/report.json",
+      "report_sha256": "f1f4556907c256933a0e714b0f24f4cf0594b100482bc6a5480abbcfd250994c",
+      "wall_seconds": 6.764133960008621
+    }
+  ]
+}

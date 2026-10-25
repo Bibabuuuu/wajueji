@@ -1,0 +1,119 @@
+{
+  "definitions": {
+    "bottom_cohort": "same IDs initially z<0.2m",
+    "outside_footprint": "initial XY AABB expanded by0.1m",
+    "depleted_cells": "fixed0.1m cells belowz0.2,initial>=32particles,current<25%initial"
+  },
+  "count": 256441,
+  "bottom_count": 55520,
+  "snapshots": {
+    "baseline": {
+      "1193": {
+        "particle_count": 256441,
+        "bottom_moved_over20cm": 3752,
+        "bottom_outside_footprint": 432,
+        "all_outside_footprint": 1760,
+        "bottom_displacement_median_p99_max_m": [
+          0.015781957656145096,
+          0.4818956771492951,
+          1.6199052333831787
+        ],
+        "bottom_depleted_cells": 44,
+        "minimum_z_m": -1.078945729204861e-06,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.39787364006042564,
+          9.87004566192627
+        ],
+        "nonfinite_fields": {
+          "particle_Jp": 11502
+        },
+        "flags_unchanged": true
+      },
+      "1329": {
+        "particle_count": 256441,
+        "bottom_moved_over20cm": 12839,
+        "bottom_outside_footprint": 2128,
+        "all_outside_footprint": 4540,
+        "bottom_displacement_median_p99_max_m": [
+          0.032393960282206535,
+          1.1854133594036096,
+          7.822686195373535
+        ],
+        "bottom_depleted_cells": 120,
+        "minimum_z_m": -0.0005398668581619859,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          1.1140078306198122,
+          7.1700944900512695
+        ],
+        "nonfinite_fields": {
+          "particle_Jp": 22646
+        },
+        "flags_unchanged": true,
+        "last136_bottom_moved_over20cm": 12055
+      }
+    },
+    "no_late_projection": {
+      "1193": {
+        "particle_count": 256441,
+        "bottom_moved_over20cm": 2465,
+        "bottom_outside_footprint": 0,
+        "all_outside_footprint": 1237,
+        "bottom_displacement_median_p99_max_m": [
+          0.01574579533189535,
+          0.29814298003911954,
+          0.4698738157749176
+        ],
+        "bottom_depleted_cells": 44,
+        "minimum_z_m": -0.00436946377158165,
+        "particles_below_minus5mm": 0,
+        "particle_speed_p99_max_m_s": [
+          0.39449687004089556,
+          9.746100425720215
+        ],
+        "nonfinite_fields": {
+          "particle_Jp": 11578
+        },
+        "flags_unchanged": true
+      },
+      "1329": {
+        "particle_count": 256441,
+        "bottom_moved_over20cm": 7909,
+        "bottom_outside_footprint": 1555,
+        "all_outside_footprint": 3355,
+        "bottom_displacement_median_p99_max_m": [
+          0.020000345073640347,
+          1.2555253124237038,
+          5.134413719177246
+        ],
+        "bottom_depleted_cells": 108,
+        "minimum_z_m": -0.04659700021147728,
+        "particles_below_minus5mm": 6,
+        "particle_speed_p99_max_m_s": [
+          0.5144723653793338,
+          9.083974838256836
+        ],
+        "nonfinite_fields": {
+          "particle_Jp": 22112
+        },
+        "flags_unchanged": true,
+        "last136_bottom_moved_over20cm": 5054
+      }
+    }
+  },
+  "final_ratio_candidate_over_baseline": {
+    "bottom_moved_over20cm": 0.6160137082327284,
+    "bottom_outside_footprint": 0.730733082706767,
+    "bottom_depleted_cells": 0.9,
+    "last136_bottom_moved_over20cm": 0.4192451265035255
+  },
+  "limits": [
+    "No physical validity granted: existing invalid Jp retained in both branches.",
+    "Disabling final329frames does not isolate earlier projection effects.",
+    "New soft-limit fix not exercised; original applied commands used.",
+    "Counts are not calibrated volume or mass loss.",
+    "No screenshot ROI registration.",
+    "No deployment of disabled projection."
+  ]
+}

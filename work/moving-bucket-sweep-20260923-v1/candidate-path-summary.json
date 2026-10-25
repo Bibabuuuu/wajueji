@@ -1,0 +1,16 @@
+{
+  "tracked": 16544,
+  "initial_cavity": 6494,
+  "initial_cavity_also_inside_proxy_mid_surface": 6494,
+  "initial_cavity_outside_proxy_mid_surface": 0,
+  "first_exit_all_tracked_initially_inside": {},
+  "first_exit_initial_cavity": {},
+  "first_exit_phase_initial_cavity": {},
+  "shell_first_exit_phase_initial_cavity": {},
+  "shell_first_exits_reaching_outer_face_within_5_frames": 0,
+  "full_wall_single_chord_initial_cavity_count": 0,
+  "full_wall_single_chord_initial_cavity_by_phase": {},
+  "earliest_initial_cavity_shell_exits": [],
+  "local_chord_not_exact_rotational_ccd": true,
+  "final_cavity_proportion_not_delivery_measure": true
+}

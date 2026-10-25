@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "frames": 1378,
+      "maximum_feature_error": 0.0,
+      "maximum_action_error": 0.0,
+      "worker_calls": 7
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "frames": 1641,
+      "maximum_feature_error": 0.0,
+      "maximum_action_error": 0.0,
+      "worker_calls": 7
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "frames": 1457,
+      "maximum_feature_error": 0.0,
+      "maximum_action_error": 0.0,
+      "worker_calls": 7
+    }
+  ],
+  "frames": 4476,
+  "policy_sha256": "4bd50c9f2bd9d5d31b0adee2335f2320b19056b518a097a23a11d2373bcf371c",
+  "physics_steps": 0,
+  "scope": "Streaming versus batch feature identity and worker versus direct actor output; no autonomous rollout."
+}

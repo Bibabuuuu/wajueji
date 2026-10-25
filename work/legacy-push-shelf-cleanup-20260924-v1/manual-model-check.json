@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "checks": {
+    "manual_pre_cleanup_sha_exact": true,
+    "manual_post_cleanup_sha_exact": true,
+    "original_failure_reproduced": true,
+    "shelf_absent": true,
+    "other_contact_pairs_exact": true
+  },
+  "cleanup": {
+    "enabled": true,
+    "removed_geoms": [
+      {
+        "name": "r1_ground_push_shelf",
+        "type": "box",
+        "pos": "5.1299999999999999 0.65000000000000002 2.8599999999999999",
+        "quat": "1 0 0 0",
+        "size": "0.59999999999999998 0.55000000000000004 0.029999999999999999",
+        "friction": "0.80000000000000004 0.0050000000000000001 0.0001",
+        "rgba": "0.35 0.35 0.35 1",
+        "contype": "1024",
+        "conaffinity": "256"
+      }
+    ],
+    "removed_count": 1,
+    "geometry_name": "r1_ground_push_shelf",
+    "generated_model_before_sha256": "fa35538711fc785cf0b8c214f70bac44c8a0e294d5061b1f78ea1ccb7d2212d9",
+    "generated_model_after_sha256": "20cd8ec2e8367ab6dc1a53d1ef5306b6c54e34e7a05df03aa8bdf2e0ef89bf79",
+    "collision_guards_changed": false
+  },
+  "resource_rebinding": {
+    "offline_override_applied": true,
+    "absolute_repository_paths_rewritten": 0,
+    "external_files_checked": 76
+  },
+  "original": {
+    "version": "2.3.8",
+    "nq": 348,
+    "nv": 300,
+    "nbody": 62,
+    "ngeom": 228,
+    "ncon": 8,
+    "shelf_geom_id": 0,
+    "pairs": {
+      "ground_plane | r1_rock_geom_036": 3,
+      "r1_bucket_shell_10 | r1_rock_geom_008": 1,
+      "r1_bucket_side_positive | r1_rock_geom_020": 1,
+      "r1_bucket_tooth_01 | r1_rock_geom_008": 1,
+      "r1_bucket_tooth_03 | r1_rock_geom_016": 1,
+      "r1_ground_push_shelf | r1_rock_geom_020": 1
+    },
+    "physics_steps": 0
+  },
+  "clean": {
+    "version": "2.3.8",
+    "nq": 348,
+    "nv": 300,
+    "nbody": 62,
+    "ngeom": 227,
+    "ncon": 7,
+    "shelf_geom_id": -1,
+    "pairs": {
+      "ground_plane | r1_rock_geom_036": 3,
+      "r1_bucket_shell_10 | r1_rock_geom_008": 1,
+      "r1_bucket_side_positive | r1_rock_geom_020": 1,
+      "r1_bucket_tooth_01 | r1_rock_geom_008": 1,
+      "r1_bucket_tooth_03 | r1_rock_geom_016": 1
+    },
+    "physics_steps": 0
+  },
+  "physics_steps": 0,
+  "manual_report": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005017-1076447/report.json",
+  "manual_report_sha256": "ceb143dfc045c61cac08e222035075dbb6164d0969845f0b2f39b995d49ddf58"
+}

@@ -1,0 +1,1057 @@
+{
+  "protocol": {
+    "status": "frozen_before_physics",
+    "kind": "bucket_conditional_integral_isolated_candidate",
+    "initial": "D115 saved complete rear-lower handoff, no APPROACH rerun",
+    "matched_prefix": "recorded600frames plus60zero-commandframes; integral exactly0 through660; both branches must match23 full numeric arrays at600 and660",
+    "integral": {
+      "ki_N_per_m_s": 1500000,
+      "cap_N": 120000,
+      "slew_N_per_s": 30000,
+      "error_deadband_m": 0.0005,
+      "nominal_kp_over_ki_s": 2,
+      "activation_s": 11,
+      "neutral": "no growth; supporting effort kept; opposing error may unwind",
+      "reverse": "no growth in old direction; opposing error unwinds",
+      "antiwindup": "bounded accumulator itself; no hidden sum",
+      "real_hydraulic_limit": false,
+      "reason_for_cap": "initial ~35mm P error corresponds~105kN;120kN gives a finite diagnostic envelope, not a physical force cap"
+    },
+    "phases": [
+      {
+        "name": "curl",
+        "frames": [
+          661,
+          1020
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          0.02
+        ]
+      },
+      {
+        "name": "hold",
+        "frames": [
+          1021,
+          1140
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "reverse",
+        "frames": [
+          1141,
+          1170
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          -0.02
+        ]
+      },
+      {
+        "name": "stop",
+        "frames": [
+          1171,
+          1290
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "guards": "all original manual hard guards; first failure save and stop; original upper-target projection preserved",
+    "acceptance": {
+      "curl_end_last30_mean_error_m": 0.005,
+      "curl_last30_mean_error_relative_baseline_max": 0.5,
+      "actual_bucket_soft_upper_m": 0.852,
+      "stop": "both neutral phases last15 frames original motion.stopped",
+      "reverse": "negative net actual bucket displacement and <=0.2s latency to velocity below -1mm/s",
+      "qualification": "all criteria together; otherwise report partial improvement or reject, never relax after run"
+    },
+    "scope": "no lift/truck or payload-success qualification; diagnostics not training; per-rock contact decomposition observational only",
+    "runtime": "serial local RTX4070 cuda:0,1290frames each, about4-6min per process",
+    "runner_sha256": "ee39ad1ea59403459eb7fe7abce1d1dc37913927b1a7cc41a37027fde49a6e48",
+    "header_sha256": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc"
+  },
+  "modes": {
+    "baseline": {
+      "frames": 1290,
+      "hard_guards_all": true,
+      "phases": {
+        "matched_hold": {
+          "frames": [
+            601,
+            660
+          ],
+          "end_bucket_q_m": 0.8259093153548815,
+          "bucket_displacement_from_previous_frame_m": 0.008140466456832196,
+          "last30_mean_abs_bucket_error_m": 0.028517541174501556,
+          "end_error_m": 0.026090684645118434,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.001087856511979932,
+            0.0029188564674794706,
+            0.01817915681780025,
+            0.06256248683478634
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.6633189946597614,
+          "tail15_max_bucket_linear_speed_m_s": 0.3524675203356597,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 617,
+          "mpm_bucket_load_N_mean_min_max": [
+            -83195.27613082998,
+            -238914.591158875,
+            70865.8958221608
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -25785.50814657102,
+            -105691.9356830172,
+            900.7800046843104
+          ],
+          "integral_N_end_peak": [
+            0.0,
+            0.0
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 111818.89327021598,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            130653.65394742541
+          ],
+          "last30_bucket_velocity_mean": 0.007348061961148317,
+          "tail15_bucket_position_range_m": 0.0021120341498437334,
+          "phase_bucket_position_range_m": 0.007948628100251653,
+          "tail30_bucket_velocity_std_m_s": 0.04876927300645718,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8259093153548815,
+          "min_actual_bucket_m": 0.8179606872546299,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 3948.0,
+              "max_normal_force_N": 4341.997299030168
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 1396.0,
+              "max_normal_force_N": 4547.750445480702
+            },
+            {
+              "index": 15,
+              "last_half_contact_samples_total": 2811.0,
+              "max_normal_force_N": 2899.3278459437547
+            },
+            {
+              "index": 18,
+              "last_half_contact_samples_total": 755.0,
+              "max_normal_force_N": 234.6079705510297
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 172.0,
+              "max_normal_force_N": 644.8861792135133
+            },
+            {
+              "index": 22,
+              "last_half_contact_samples_total": 779.0,
+              "max_normal_force_N": 564.6589253589163
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 567.0,
+              "max_normal_force_N": 264.76444096788924
+            }
+          ],
+          "peak_projection_m": 0.022459303960204124
+        },
+        "curl": {
+          "frames": [
+            661,
+            1020
+          ],
+          "end_bucket_q_m": 0.8308977124153905,
+          "bucket_displacement_from_previous_frame_m": 0.004988397060508909,
+          "last30_mean_abs_bucket_error_m": 0.021169195806471513,
+          "end_error_m": 0.021102287584609525,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.00020769690626769863,
+            0.0011277605334410327,
+            0.008538401108316683,
+            0.023640210502334145
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.26969894706112296,
+          "tail15_max_bucket_linear_speed_m_s": 0.1433935849634155,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 661,
+          "mpm_bucket_load_N_mean_min_max": [
+            -67279.3727963578,
+            -222576.88300087108,
+            76045.7767402816
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -6608.313168257677,
+            -61637.59444151975,
+            1139.2048007003223
+          ],
+          "integral_N_end_peak": [
+            0.0,
+            0.0
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 94774.28660340716,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            130653.65394742541
+          ],
+          "last30_bucket_velocity_mean": 0.0003647707175393905,
+          "tail15_bucket_position_range_m": 4.797454323790529e-05,
+          "phase_bucket_position_range_m": 0.004666226206127666,
+          "tail30_bucket_velocity_std_m_s": 0.0224156296454104,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8308977124153905,
+          "min_actual_bucket_m": 0.8262314862092628,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 10339.0,
+              "max_normal_force_N": 3016.6123547828265
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 5691.0,
+              "max_normal_force_N": 3650.994323226879
+            },
+            {
+              "index": 15,
+              "last_half_contact_samples_total": 1103.0,
+              "max_normal_force_N": 696.8390127511957
+            },
+            {
+              "index": 18,
+              "last_half_contact_samples_total": 63.0,
+              "max_normal_force_N": 188.65759374256052
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 5481.0,
+              "max_normal_force_N": 494.944566353087
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 5502.0,
+              "max_normal_force_N": 306.99167241792225
+            }
+          ],
+          "peak_projection_m": 0.02009088546037674
+        },
+        "hold": {
+          "frames": [
+            1021,
+            1140
+          ],
+          "end_bucket_q_m": 0.8310758145971348,
+          "bucket_displacement_from_previous_frame_m": 0.0001781021817442996,
+          "last30_mean_abs_bucket_error_m": 0.02094157543231173,
+          "end_error_m": 0.020924185402865225,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.0001281218801087648,
+            0.0008644054299197047,
+            0.006755386981333224,
+            0.0199389962403354
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.22962681736490434,
+          "tail15_max_bucket_linear_speed_m_s": 0.12190311466906827,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 1021,
+          "mpm_bucket_load_N_mean_min_max": [
+            -63011.734472972355,
+            -139442.09080092004,
+            13483.41042032234
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -2062.8194267998974,
+            -18959.724433603587,
+            0.0
+          ],
+          "integral_N_end_peak": [
+            0.0,
+            0.0
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 83190.51920722245,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            130653.65394742541
+          ],
+          "last30_bucket_velocity_mean": 3.17689235210272e-05,
+          "tail15_bucket_position_range_m": 1.966893309923723e-05,
+          "phase_bucket_position_range_m": 0.00019667712609183763,
+          "tail30_bucket_velocity_std_m_s": 0.01962165749291778,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8310758145971348,
+          "min_actual_bucket_m": 0.8308791374710429,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 738.0,
+              "max_normal_force_N": 15.047058453953683
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 2307.0,
+              "max_normal_force_N": 1972.4649952015975
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 2277.0,
+              "max_normal_force_N": 223.88519063807934
+            }
+          ],
+          "peak_projection_m": 0.007380190771073103
+        },
+        "reverse": {
+          "frames": [
+            1141,
+            1170
+          ],
+          "end_bucket_q_m": 0.8296465214826048,
+          "bucket_displacement_from_previous_frame_m": -0.0014292931145299947,
+          "last30_mean_abs_bucket_error_m": 0.016662812475517704,
+          "end_error_m": 0.012551395183999281,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.0004925969051928952,
+            0.001990057206115168,
+            0.010002387769106825,
+            0.030559391162214376
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.3473195919087206,
+          "tail15_max_bucket_linear_speed_m_s": 0.17865983548303102,
+          "tail15_reference_velocity_max": [
+            0.0,
+            0.0,
+            0.0,
+            0.02
+          ],
+          "first_negative_bucket_velocity_frame": 1141,
+          "mpm_bucket_load_N_mean_min_max": [
+            -47774.656216758005,
+            -126234.86232590595,
+            41258.430325372115
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -276.9207039343504,
+            -2469.3889676902245,
+            0.0
+          ],
+          "integral_N_end_peak": [
+            0.0,
+            0.0
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 78557.25036014206,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            130653.65394742541
+          ],
+          "last30_bucket_velocity_mean": -0.002855947856122974,
+          "tail15_bucket_position_range_m": 0.00082333783206745,
+          "phase_bucket_position_range_m": 0.0012706209461494922,
+          "tail30_bucket_velocity_std_m_s": 0.022697793542634993,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8309171424287543,
+          "min_actual_bucket_m": 0.8296465214826048,
+          "contacts": [
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 310.0,
+              "max_normal_force_N": 0.0
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 296.0,
+              "max_normal_force_N": 197.34447435094341
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 528.0,
+              "max_normal_force_N": 151.55287376731513
+            }
+          ],
+          "peak_projection_m": 0.005721365101635456
+        },
+        "stop": {
+          "frames": [
+            1171,
+            1290
+          ],
+          "end_bucket_q_m": 0.8288749612710657,
+          "bucket_displacement_from_previous_frame_m": -0.000771560211539013,
+          "last30_mean_abs_bucket_error_m": 0.01312039397927797,
+          "end_error_m": 0.013125038728871607,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.0001236786691509176,
+            0.0009891580457571485,
+            0.007695699972978934,
+            0.022683022259528396
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.24943208712277415,
+          "tail15_max_bucket_linear_speed_m_s": 0.13165653111191972,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 1171,
+          "mpm_bucket_load_N_mean_min_max": [
+            -38914.137425211644,
+            -117699.79402293311,
+            40785.66071652853
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -23.824259041797642,
+            -1732.632696361617,
+            0.0
+          ],
+          "integral_N_end_peak": [
+            0.0,
+            0.0
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 82026.02524697696,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            130653.65394742541
+          ],
+          "last30_bucket_velocity_mean": -7.522084926199409e-05,
+          "tail15_bucket_position_range_m": 1.9777807872989328e-05,
+          "phase_bucket_position_range_m": 0.0008711703112547209,
+          "tail30_bucket_velocity_std_m_s": 0.02215962031705286,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.829735073160654,
+          "min_actual_bucket_m": 0.8288639028493993,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 387.0,
+              "max_normal_force_N": 28.07067625863904
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 80.0,
+              "max_normal_force_N": 166.00582920677846
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 54.0,
+              "max_normal_force_N": 1.6695166552279581
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 1072.0,
+              "max_normal_force_N": 71.16685172330122
+            }
+          ],
+          "peak_projection_m": 0.007587801199406385
+        }
+      },
+      "physics_wall_seconds": 258.6191147577774,
+      "source_bindings_unchanged": true
+    },
+    "candidate": {
+      "frames": 1290,
+      "hard_guards_all": true,
+      "phases": {
+        "matched_hold": {
+          "frames": [
+            601,
+            660
+          ],
+          "end_bucket_q_m": 0.8259093153548815,
+          "bucket_displacement_from_previous_frame_m": 0.008140466456832196,
+          "last30_mean_abs_bucket_error_m": 0.028517541174501556,
+          "end_error_m": 0.026090684645118434,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.001087856511979932,
+            0.0029188564674794706,
+            0.01817915681780025,
+            0.06256248683478634
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.6633189946597614,
+          "tail15_max_bucket_linear_speed_m_s": 0.3524675203356597,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 617,
+          "mpm_bucket_load_N_mean_min_max": [
+            -83195.27613082998,
+            -238914.591158875,
+            70865.8958221608
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -25785.50814657102,
+            -105691.9356830172,
+            900.7800046843104
+          ],
+          "integral_N_end_peak": [
+            0.0,
+            0.0
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 111818.89327021598,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            130653.65394742541
+          ],
+          "last30_bucket_velocity_mean": 0.007348061961148317,
+          "tail15_bucket_position_range_m": 0.0021120341498437334,
+          "phase_bucket_position_range_m": 0.007948628100251653,
+          "tail30_bucket_velocity_std_m_s": 0.04876927300645718,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8259093153548815,
+          "min_actual_bucket_m": 0.8179606872546299,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 3948.0,
+              "max_normal_force_N": 4341.997299030168
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 1396.0,
+              "max_normal_force_N": 4547.750445480702
+            },
+            {
+              "index": 15,
+              "last_half_contact_samples_total": 2811.0,
+              "max_normal_force_N": 2899.3278459437547
+            },
+            {
+              "index": 18,
+              "last_half_contact_samples_total": 755.0,
+              "max_normal_force_N": 234.6079705510297
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 172.0,
+              "max_normal_force_N": 644.8861792135133
+            },
+            {
+              "index": 22,
+              "last_half_contact_samples_total": 779.0,
+              "max_normal_force_N": 564.6589253589163
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 567.0,
+              "max_normal_force_N": 264.76444096788924
+            }
+          ],
+          "peak_projection_m": 0.022459303960204124
+        },
+        "curl": {
+          "frames": [
+            661,
+            1020
+          ],
+          "end_bucket_q_m": 0.8477507630035694,
+          "bucket_displacement_from_previous_frame_m": 0.021841447648687895,
+          "last30_mean_abs_bucket_error_m": 0.004534948185325801,
+          "end_error_m": 0.004249236996430539,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            0.0004419757399242,
+            0.0009235623926238686,
+            0.005315976894067385,
+            0.011895587701910468
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.22258899872038382,
+          "tail15_max_bucket_linear_speed_m_s": 0.12203502288846173,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 661,
+          "mpm_bucket_load_N_mean_min_max": [
+            -102268.49591640868,
+            -267300.35402398795,
+            77864.97638623367
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -15167.99922941711,
+            -77207.74718269653,
+            3559.411278101986
+          ],
+          "integral_N_end_peak": [
+            104971.19548867966,
+            104971.19548867966
+          ],
+          "integral_change_neutral_N": 104971.19548867966,
+          "total_bucket_effort_N_sample_peak": 155180.28058642393,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            155207.19167234673
+          ],
+          "last30_bucket_velocity_mean": 0.001316992300375166,
+          "tail15_bucket_position_range_m": 0.0002476836938358762,
+          "phase_bucket_position_range_m": 0.021517929889380394,
+          "tail30_bucket_velocity_std_m_s": 0.010660618869235314,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8477507630035694,
+          "min_actual_bucket_m": 0.826232833114189,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 12387.0,
+              "max_normal_force_N": 4288.709503103165
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 6698.0,
+              "max_normal_force_N": 4064.1296219402443
+            },
+            {
+              "index": 15,
+              "last_half_contact_samples_total": 1376.0,
+              "max_normal_force_N": 1355.654510149539
+            },
+            {
+              "index": 16,
+              "last_half_contact_samples_total": 898.0,
+              "max_normal_force_N": 582.8845860417342
+            },
+            {
+              "index": 18,
+              "last_half_contact_samples_total": 64.0,
+              "max_normal_force_N": 174.99484437229665
+            },
+            {
+              "index": 20,
+              "last_half_contact_samples_total": 2123.0,
+              "max_normal_force_N": 627.2418549731703
+            },
+            {
+              "index": 37,
+              "last_half_contact_samples_total": 1268.0,
+              "max_normal_force_N": 295.4005450884295
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 5105.0,
+              "max_normal_force_N": 351.2176857583368
+            }
+          ],
+          "peak_projection_m": 0.020407449454069138
+        },
+        "hold": {
+          "frames": [
+            1021,
+            1140
+          ],
+          "end_bucket_q_m": 0.8483801191230077,
+          "bucket_displacement_from_previous_frame_m": 0.0006293561194382624,
+          "last30_mean_abs_bucket_error_m": 0.0036548586292478517,
+          "end_error_m": 0.0036198808769922763,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            6.985522072331987e-05,
+            0.0006630527676128137,
+            0.00421192399464951,
+            0.010311812800501708
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.19787504950284573,
+          "tail15_max_bucket_linear_speed_m_s": 0.10698338283748716,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 1021,
+          "mpm_bucket_load_N_mean_min_max": [
+            -116070.65753617881,
+            -229392.1603943395,
+            -1761.7521575615226
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -8889.926365815738,
+            -54506.58196899875,
+            0.0
+          ],
+          "integral_N_end_peak": [
+            104971.19548867966,
+            104971.19548867966
+          ],
+          "integral_change_neutral_N": 0.0,
+          "total_bucket_effort_N_sample_peak": 155554.83806154036,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            155587.6777771014
+          ],
+          "last30_bucket_velocity_mean": 0.00011082640973438719,
+          "tail15_bucket_position_range_m": 3.3590015605655665e-05,
+          "phase_bucket_position_range_m": 0.0006268229270339765,
+          "tail30_bucket_velocity_std_m_s": 0.009561649499448904,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8483801191230077,
+          "min_actual_bucket_m": 0.8477532961959737,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 2668.0,
+              "max_normal_force_N": 1309.5417262631618
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 2340.0,
+              "max_normal_force_N": 1871.1785838073633
+            },
+            {
+              "index": 16,
+              "last_half_contact_samples_total": 2307.0,
+              "max_normal_force_N": 588.5431982051442
+            },
+            {
+              "index": 37,
+              "last_half_contact_samples_total": 823.0,
+              "max_normal_force_N": 164.3188748817506
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 2590.0,
+              "max_normal_force_N": 96.65444726256024
+            }
+          ],
+          "peak_projection_m": 0.007348695769906044
+        },
+        "reverse": {
+          "frames": [
+            1141,
+            1170
+          ],
+          "end_bucket_q_m": 0.8478591773246383,
+          "bucket_displacement_from_previous_frame_m": -0.0005209417983693676,
+          "last30_mean_abs_bucket_error_m": 0.0025700775700438308,
+          "end_error_m": -0.005661260658034295,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            9.989315872371585e-05,
+            0.0015201549709032468,
+            0.005472419698660468,
+            0.012405970240917589
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.23470220581524606,
+          "tail15_max_bucket_linear_speed_m_s": 0.12753229128668805,
+          "tail15_reference_velocity_max": [
+            0.0,
+            0.0,
+            0.0,
+            0.02
+          ],
+          "first_negative_bucket_velocity_frame": 1141,
+          "mpm_bucket_load_N_mean_min_max": [
+            -98255.24270110912,
+            -206351.01270169232,
+            54953.72478343807
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -2309.721943536705,
+            -22972.389865726796,
+            0.0
+          ],
+          "integral_N_end_peak": [
+            103915.22788844572,
+            104971.19548867966
+          ],
+          "integral_change_neutral_N": -1055.9676002339402,
+          "total_bucket_effort_N_sample_peak": 151439.55068039565,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            155587.6777771014
+          ],
+          "last30_bucket_velocity_mean": -0.0010162543464380684,
+          "tail15_bucket_position_range_m": 0.00024551777428427624,
+          "phase_bucket_position_range_m": 0.00033423722994152527,
+          "tail30_bucket_velocity_std_m_s": 0.010434339894234132,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8481934145545799,
+          "min_actual_bucket_m": 0.8478591773246383,
+          "contacts": [
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 335.0,
+              "max_normal_force_N": 1363.5683250394784
+            },
+            {
+              "index": 16,
+              "last_half_contact_samples_total": 1.0,
+              "max_normal_force_N": 0.0
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 553.0,
+              "max_normal_force_N": 75.3271326514485
+            }
+          ],
+          "peak_projection_m": 0.010724673047661781
+        },
+        "stop": {
+          "frames": [
+            1171,
+            1290
+          ],
+          "end_bucket_q_m": 0.8474704911978617,
+          "bucket_displacement_from_previous_frame_m": -0.0003886861267766717,
+          "last30_mean_abs_bucket_error_m": 0.005509284920776329,
+          "end_error_m": -0.00547049119792431,
+          "tail15_stopped": false,
+          "tail15_max_abs_axis_velocity": [
+            1.246162598519042e-05,
+            0.0007758893176890552,
+            0.004447660729801175,
+            0.010351096568924556
+          ],
+          "tail15_max_bucket_angular_speed_rad_s": 0.19169292778304994,
+          "tail15_max_bucket_linear_speed_m_s": 0.10274409814024328,
+          "tail15_reference_velocity_max": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "first_negative_bucket_velocity_frame": 1172,
+          "mpm_bucket_load_N_mean_min_max": [
+            -80557.24248042211,
+            -192873.11278202073,
+            29400.45358226271
+          ],
+          "rock_bucket_load_N_mean_min_max": [
+            -3440.7368938709697,
+            -30730.38902952243,
+            0.1820066083722647
+          ],
+          "integral_N_end_peak": [
+            88488.36790164016,
+            103780.90286444646
+          ],
+          "integral_change_neutral_N": -15426.85998680556,
+          "total_bucket_effort_N_sample_peak": 198929.1345428266,
+          "native_run_total_peak": [
+            119803.4709271816,
+            410402.4884567312,
+            75823.7016975363,
+            199230.66417252427
+          ],
+          "last30_bucket_velocity_mean": -0.00016597985635522864,
+          "tail15_bucket_position_range_m": 3.6364374286668166e-05,
+          "phase_bucket_position_range_m": 0.000529417794097875,
+          "tail30_bucket_velocity_std_m_s": 0.010163424000658587,
+          "tail30_bucket_velocity_sign_changes": 29,
+          "max_actual_bucket_m": 0.8479999089919595,
+          "min_actual_bucket_m": 0.8474704911978617,
+          "contacts": [
+            {
+              "index": 8,
+              "last_half_contact_samples_total": 1153.0,
+              "max_normal_force_N": 31.978228380294336
+            },
+            {
+              "index": 13,
+              "last_half_contact_samples_total": 2106.0,
+              "max_normal_force_N": 1905.812717397463
+            },
+            {
+              "index": 40,
+              "last_half_contact_samples_total": 2252.0,
+              "max_normal_force_N": 85.00188277231656
+            }
+          ],
+          "peak_projection_m": 0.008314832113683224
+        }
+      },
+      "physics_wall_seconds": 261.16777930338867,
+      "source_bindings_unchanged": true
+    }
+  },
+  "exact_checks": {
+    "baseline_600_vs_prior_baseline": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "candidate_600_vs_prior_baseline": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "matched660": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    }
+  },
+  "training_eligible": false,
+  "default_enabled": false,
+  "prefix660_trace_exact": {
+    "controller_target": true,
+    "controller_target_velocity": true,
+    "axis_positions": true,
+    "axis_velocity": true,
+    "actuator_force": true,
+    "equivalent_drive_load": true,
+    "rock_equivalent_drive_load": true,
+    "rock_qpos": true,
+    "bucket_pose": true
+  },
+  "gates": {
+    "matched_full_state": true,
+    "all_hard_guards": true,
+    "curl_error_le5mm": true,
+    "curl_error_at_least_halved": true,
+    "hold_stopped": false,
+    "post_reverse_stopped": false,
+    "reverse_negative_net": true,
+    "reverse_response_within_0p2s": true,
+    "actual_bucket_soft_upper": true
+  },
+  "all_protocol_gates_pass": false,
+  "reverse_latency_s": 0.0,
+  "interpretation": {
+    "curl_error_reduction_fraction": 0.7857760763902307,
+    "reverse_velocity_latency_is_not_valid_response_evidence": true,
+    "reverse_latency_caveat": "Frozen gate retained without relaxation, but both branches already alternate velocity signs every frame before reverse. First negative velocity cannot establish command response latency.",
+    "candidate_reverse_net_displacement_m": -0.0005209417983693676,
+    "baseline_reverse_net_displacement_m": -0.0014292931145299947,
+    "candidate_reverse_reference_displacement_m": -0.009802083333395939,
+    "candidate_stop_actual_above_reference_m": 0.00547049119792431,
+    "conclusion": "Curl position criterion passed; both neutral stopped gates failed. Reverse tracking remains poor; candidate is not admitted to default manual control.",
+    "causal_boundary": "Integral supports more curl under load. Changed soil/rock contact and retained integral both remain relevant to reverse behavior; no single-cause attribution. Alternating sampled velocity is a diagnostic pattern, not a proven physical oscillation frequency."
+  },
+  "observation_scope": "MPM/rock equivalent efforts are last native substep samples; per-rock max/count cover the final120Hz half of each60Hz frame; native_run_total_peak tracks all4800Hz substeps cumulatively. Contact force is not a static geometric jam proof.",
+  "bindings": {
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/analyze.py": "4bd4c2bb1f6ac8da1d494a487707043d627fda4215f3bcac37b0f610fdcbb57c",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/protocol.json": "2d9ff9a3e13490a1d9969a69810567f0a1db6044981d63298fff065e20874f30",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/bucket_integral.h": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/baseline/report.json": "68c706ff8435490319f1501b5ba6ae34fc8c15974983d00e46cb139ba150a4e3",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/baseline/trace.ndjson": "b6310eb293b4d188ba6d05ac23503c05d45998a9d229eefb823d4df08f3b29bd",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/baseline/final-001290.diagnostic.npz": "46e3acf38738d004fbfc187f569a0371755316a3dac0cd98b8e4d95aca09ad6a",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/report.json": "b9de485af2eb53ab27ac577715ca8fa31d786dc5dbf70698254bdadf11f6f218",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/trace.ndjson": "ebf217febb7195453c47e8abaaf91e359a7d87baf84bf25efc67139b3afd8ba7",
+    "/home/qunwang/wajueji/work/bucket-integral-matched-load-20260923-v1/candidate/final-001290.diagnostic.npz": "c6bc368e12b800eac555e32ce66037a3f7fb394e73aae1ac7e83a0aa51f6ade4"
+  }
+}

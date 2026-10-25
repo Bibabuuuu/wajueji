@@ -1,0 +1,64 @@
+{
+  "pure_fast": {
+    "particles": 48800,
+    "particle_spacing_m": 0.05,
+    "voxel_m": 0.1,
+    "soil_hz": 60,
+    "sim_s": 42.42499999996548,
+    "wall_s": 122.2325338350056,
+    "numerics": {
+      "collider_basis": "S2",
+      "velocity_basis": "Q1",
+      "strain_basis": "P0",
+      "max_iterations": 80,
+      "tolerance": 0.0005,
+      "solver": "auto"
+    },
+    "qualification": "acquisition low fidelity; not complete two scoop run"
+  },
+  "mixed_current": {
+    "particles": 256441,
+    "particle_spacing_m": 0.025,
+    "solver_profile": {
+      "collider_basis": "S2",
+      "collider_velocity_mode": "forward",
+      "critical_fraction": 0.0,
+      "grid_padding": 2,
+      "grid_type": "sparse",
+      "integration_scheme": "pic",
+      "max_active_cell_count": 262144,
+      "max_iterations": 50,
+      "strain_basis": "P0",
+      "tolerance": 0.0001,
+      "transfer_scheme": "pic",
+      "velocity_basis": "Q1",
+      "voxel_size_m": 0.1
+    },
+    "soil_hz": 60,
+    "rigid_hz": 4800,
+    "timing": {
+      "frames": 887,
+      "physics_wall_seconds": 256.482755270059,
+      "simulation_seconds": 14.783333333333333,
+      "total_wall_seconds": 911.0235370959999
+    }
+  },
+  "particle_count_ratio": 5.254938524590164,
+  "code_differences": [
+    "Old pure-soil uses CAD bucket mesh; mixed uses 18-part open-bucket proxy.",
+    "Old pure-soil run explicitly enables static triangle sweep for truck/ground; current mixed fixture only performs endpoint project_outside.",
+    "Old fast path uses GPU force reduction and cached host snapshots; current mixed fixture copies arrays and loops over rock/bucket contact groups on CPU.",
+    "Old sources contain optional MovingSweep but these inspected automatic runs do not attach it; do not claim it protected these two-scoop runs."
+  ],
+  "limits": [
+    "Different scenes, phases, numerical settings and timing coverage; not a controlled speed ratio.",
+    "Current MPM timing includes projection, transfers and diagnostic aggregation, not only the solver kernel.",
+    "No measured causal attribution for particle count, rocks or missing optimizations yet."
+  ],
+  "bindings": {
+    "/home/qunwang/codex-work/autonomous-multiscoop-speed-opt-2026-09-14-v1/soil-speed-train-p2-g100-hz60-acq-fast-v2/report.json": "6c25f3c2239a74b27e1f57278dc9596d3f952ef04c2b1a5f08fcbed4bf89b7f3",
+    "/home/qunwang/codex-work/autonomous-multiscoop-speed-opt-2026-09-14-v1/soil-speed-train-p2-g100-hz60-acq-fast-v2/soil-config.json": "3a706cf42442d8f3788cd9b45a2735890189461cf709e2f55088c765687f57bc",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/report.json": "4ed25de43c52a235bd76c60e15a35060e4dea8140de941453bad55478434e048",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/report.json": "0e1e891e673f321bccbbe765853ff50d5b98753ddb0ae066deeccc4c6577fac5"
+  }
+}

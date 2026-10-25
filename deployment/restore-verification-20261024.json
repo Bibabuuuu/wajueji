@@ -1,0 +1,60 @@
+{
+  "status": "locally_verified",
+  "archive": "wajueji-portable-restore-20261024.tar.gz",
+  "bytes": 300189971,
+  "sha256": "400a129ecb4ba06660455b1e33586e198640b65e736303d69fb1552fe4b54564",
+  "manifest_files": 7941,
+  "source_commit": "de813c431a42e4977c9238327decec3ee842a168",
+  "extracted_from_archive": true,
+  "original_project_resources_accesses": 0,
+  "syscall_file_trace_lines": 167507,
+  "smoke": {
+    "status": "passed",
+    "mode": "smoke",
+    "original_paths_blocked": true,
+    "policy_loaded": true,
+    "training_updates": 0,
+    "physical_frames": 3,
+    "zero_step_exact": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_ids": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "native_restore_max_error": 0.0,
+    "finite_observation": true,
+    "visual_model_loaded": true,
+    "soil_surface_generated": true
+  },
+  "environment_source_roots": [
+    "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907",
+    "/home/qunwang/codex-work/rl-four",
+    "/home/qunwang/codex-work/rl-four-axis-training-2026-09-16",
+    "/home/qunwang/codex-work/soil-separation-2026-09-11"
+  ],
+  "environment_integrity": {
+    "newton": "1.5.1, 715 source files match installed distribution RECORD",
+    "warp-lang": "1.17.0, 544 source files match installed distribution RECORD"
+  },
+  "scope": "Frozen final runtime restoration and 3-frame inference, visual model and soil surface; no complete excavation rerun or training."
+}

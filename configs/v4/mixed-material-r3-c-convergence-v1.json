@@ -1,0 +1,44 @@
+{
+  "schema": "excavation_mixed_material_r3_c_convergence_config_v1",
+  "status": "r3_c_convergence_candidate",
+  "frozen_inputs": {
+    "shared_config_path": "configs/v4/mixed-material-r3-c-shared-four-round-v1.json",
+    "shared_config_sha256": "87cf8a3b8eeb04fb7cfde0b1ef6c25d977e689efff4a3031fae1d4acc629c917",
+    "shared_report_path": "reports/v4/mixed-material-r3-c-shared-four-round-2026-09-20-v1/report.json",
+    "shared_report_sha256": "550f72c9c84b108db51aa215365ea3290be0720d367332802e26489ed3c2c35e",
+    "shared_runner_path": "src/v4/run_mixed_material_r3_c_shared_probe.py",
+    "shared_runner_sha256": "d740df857cc992d7d28c7678cf933ad24ee27405ddfde3583d8e698593a12369"
+  },
+  "probe": {
+    "coarse_output_dt_s": 0.008333333333333333,
+    "coarse_mujoco_internal_substeps": 40,
+    "refined_output_dt_s": 0.004166666666666667,
+    "refined_mujoco_internal_substeps": 20,
+    "duration_s": 1.0,
+    "qualification_mode": "combined",
+    "minimum_feedback_mechanism_qpos_difference_m": 0.000001,
+    "maximum_feedback_mechanism_qpos_difference_m": 0.01,
+    "maximum_repeat_state_difference": 0.0001,
+    "maximum_repeat_impulse_relative_difference": 0.1,
+    "maximum_dt_state_difference": 0.005,
+    "maximum_dt_impulse_relative_difference": 0.2,
+    "dt_acceptance_impulses": [
+      "bucket_mpm_ns",
+      "bucket_total_ns",
+      "rock_mpm_ns.r1-rock-000",
+      "rock_mpm_ns.r1-rock-001"
+    ]
+  },
+  "scope": {
+    "exactly_two_rocks": true,
+    "one_shared_mpm_matrix": true,
+    "reconstructed_repeat_qualification": true,
+    "dt_refinement_qualification": true,
+    "feedback_causality_qualification": true,
+    "complete_in_process_reset": false,
+    "r3_c_physics_qualification_candidate": true,
+    "official_envelope": false,
+    "training": false,
+    "frozen_prior_gates_modified": false
+  }
+}

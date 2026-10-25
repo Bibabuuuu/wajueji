@@ -1,0 +1,19 @@
+{
+  "deleted_files": 50,
+  "deleted_logical_GiB": 355.04,
+  "reclaimed_GiB": 216.26,
+  "free_before_GiB": 29.42,
+  "free_after_GiB": 245.68,
+  "used_percent_after": 60.7,
+  "retained_final_cache_files_verified": 10,
+  "source_commit": "de813c431a42e4977c9238327decec3ee842a168",
+  "retained_model_and_input_files_sha256_verified": 76,
+  "preserved": [
+    "All sources and environments",
+    "All model weights",
+    "All input and endpoint NPZ files",
+    "All states, command traces, reports and failed-run summaries",
+    "All declared final replay roots"
+  ],
+  "scope": "Only the 50 explicitly inventoried superseded runs/**/display/particles.npy files."
+}

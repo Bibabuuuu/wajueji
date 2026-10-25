@@ -1,0 +1,84 @@
+{
+  "decision": "D-136",
+  "status": "authorized_bounded_candidate",
+  "device": "local RTX4070 cuda:0; serial pair",
+  "candidate": {
+    "supplemental_gain_N_per_m": 6000000,
+    "error_deadband_m": 0.001,
+    "extra_cap_N": 60000,
+    "rise_N_per_s": 120000,
+    "release_N_per_s": 600000,
+    "integral": "unchanged D120"
+  },
+  "source_episode": "manual-contact-20260923-235749-1040071",
+  "source_start": "original complete D115 prepoint; no approach replay",
+  "prefix_frames": 600,
+  "activation_frame": 601,
+  "original_input_through_frame": 1100,
+  "tail": [
+    {
+      "frames": 60,
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": "hold"
+    },
+    {
+      "frames": 30,
+      "command": [
+        0,
+        0,
+        0,
+        -0.02
+      ],
+      "phase": "reverse"
+    },
+    {
+      "frames": 60,
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "phase": "stop"
+    }
+  ],
+  "maximum_frames": 1250,
+  "wall_limit_per_group_s": 600,
+  "gates": {
+    "prefix": "exact original compact state through 600 and all A/B snapshot arrays at 600",
+    "loaded_error": "701..900 mean positive error at least 40% lower",
+    "geometry": "all original hard guards; no reference beyond .852; max bucket q <= .857",
+    "release": "extra effort zero within .1s neutral or reverse",
+    "stop_nonregression": "last15 peak bucket speed <= max(.001,1.1*baseline); last30 range <= baseline + .0002",
+    "reverse_nonregression": "net reverse over .5s positive and no worse than baseline minus .0002",
+    "absolute_stop": "original stopped(row) separately recorded, never waived",
+    "inventory": "paired geometry only; no automatic full scoop or training admission"
+  },
+  "unchanged": [
+    "soil material",
+    "10cm/60Hz/4800Hz",
+    "bucket geometry",
+    "source snapshots",
+    "original commands for boom/arm/swing",
+    "hard guards",
+    "legacy shelf retained for same-model comparison"
+  ],
+  "failure_policy": "save recovery, stop group and report; no parameter sweep or manual deployment on failure",
+  "training_eligible": false,
+  "higher_inventory_addendum": {
+    "user_requirement": "cover higher inventory; not only latest low fill episode",
+    "source": "runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz",
+    "source_geometric_fill_percent": 76.639,
+    "frames_per_group": 270,
+    "commands": "120 frames curl +.02;60 neutral;30 reverse -.02;60 neutral",
+    "controller_initialization": "restore D120 target/velocity/integral; initialize new correction at zero deliberately, no candidate resume claim",
+    "sweep_initialization": "new paired experiment both initialize pending reaction zero; source has no D133 history",
+    "qualification_limit": "already detached carry posture; does not establish full-bucket cutting force or 95 percent fill",
+    "gates": "same hard/release/endstop/stop/reverse checks; active tracking improvement separately reported"
+  }
+}

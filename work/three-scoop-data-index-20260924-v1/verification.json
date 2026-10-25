@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "total_candidate_frames": 4126,
+  "episodes": {
+    "manual-contact-20260924-010900-1088617": {
+      "passed": true,
+      "candidate_frames": 1281,
+      "sequences": 1
+    },
+    "manual-contact-20260924-083547-1327233": {
+      "passed": true,
+      "candidate_frames": 1693,
+      "sequences": 1
+    },
+    "manual-contact-20260924-093202-1362929": {
+      "passed": true,
+      "candidate_frames": 1152,
+      "sequences": 2
+    }
+  },
+  "scope": "reference audit only; not training qualification or phase ground truth"
+}

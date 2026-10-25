@@ -1,0 +1,20 @@
+{
+  "commit": "de813c431a42e4977c9238327decec3ee842a168",
+  "branch": "archive/final-20261023",
+  "selected_files": 868,
+  "syntax_checked": 270,
+  "cleanup_files": 50,
+  "cleanup_allocated_GiB": 216.26,
+  "source_asset": {
+    "path": "/home/qunwang/wajueji/reports/final-archive-20261023/wajueji-source-final-20261023.tar.gz",
+    "bytes": 18604153,
+    "sha256": "42a9ecb08a2df99d0544b9c9a53bc7e6a1c7c0bcbe942983e98fece1acedebd4"
+  },
+  "reports_asset": {
+    "path": "/home/qunwang/wajueji/reports/final-archive-20261023/run-summaries-before-cleanup.tar.gz",
+    "bytes": 18293356,
+    "sha256": "1a8e71c6ac42d65c9918f4209482ae8796200dfce12e91449f64301f6b313d76"
+  },
+  "byte_preserved_files": 868,
+  "normalized_files_fixed": 74
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "excavation_mixed_material_r2_single_scene_load_development_config_v1",
+  "source_effective_load_config": {
+    "path": "configs/v4/mixed-material-r2-effective-load-v1.json",
+    "sha256": "0e432a8c35724755783bc309de10a8a46f7df06ed81511263b3ba82ca3ce507d"
+  },
+  "source_effective_load_report": {
+    "path": "reports/v4/mixed-material-r2-effective-load-2026-09-20-v1/report.json",
+    "sha256": "6588f2748632dae285dcc7fd409ef1e72de0d65f7d39419ccc80c1d48cc34b57",
+    "required_status": "two_scene_effective_carried_load_candidate"
+  },
+  "selected_scene": "ordinary-small-rock-dominant-seed-26091912",
+  "baseline": {
+    "carried_rock_count": 2,
+    "preliminary_solid_volume_fill_rate": 0.009260214333124538
+  },
+  "trajectory_change": {
+    "insert_after_phase": "settle",
+    "phase": {
+      "name": "pre_align_rotation",
+      "duration_s": 1.5,
+      "command": [-0.06, 0.0, 0.0, 0.0]
+    },
+    "rationale": "move the high bucket toward the denser negative-y rock corridor before descending; all other intake, lift and hold phases remain byte-for-byte value equivalent"
+  },
+  "acceptance": {
+    "minimum_carried_rock_count": 3,
+    "require_fill_rate_above_baseline": true,
+    "required_forbidden_contact_count": 0,
+    "maximum_closure_m": 0.001
+  },
+  "scope": {
+    "one_scene_trajectory_development": true,
+    "trajectory_grid_search": false,
+    "second_scene_confirmation": false,
+    "all_six_scene_qualification": false,
+    "dump": false,
+    "truck_cad": false,
+    "mpm_coupling": false,
+    "training": false,
+    "physics_qualified": false
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "passed": true,
+  "checks": {
+    "frames": true,
+    "prefix": true,
+    "restored": true,
+    "commands": true,
+    "state_chain": true,
+    "previous_action": true,
+    "previous_load_initialized_and_finite": true,
+    "causal_terrain": true,
+    "phase_timing": true,
+    "phase_recomputed": true,
+    "ground_recomputed": true,
+    "phase_coverage": true,
+    "legacy_hard_guards": true,
+    "material": true,
+    "sweep": true,
+    "ground_stop": true,
+    "endpoint_matches": true,
+    "finite": true,
+    "particles": true,
+    "rocks": true,
+    "lineage": true,
+    "inventory": true,
+    "elapsed": true,
+    "source": true,
+    "policy": true,
+    "display": true,
+    "code_run_contact_phase_bc_probe.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true
+  },
+  "frames": 378,
+  "process_status": "failed",
+  "failure": "RuntimeError(\"bc_bucket_ground_clearance:{'frame': 378, 'stage': 'after_step', 'minimum_bucket_z_m': 0.0011212068958987853, 'ground_z_m': 0.0, 'margin_m': 0.005, 'clearance_m': 0.0011212068958987853, 'safe': False}\")",
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 278
+        }
+      ],
+      "confirmation_frame_end": 280,
+      "first_available_decision_frame": 281
+    }
+  ],
+  "last_phase": "penetrate",
+  "phase_action_counts": {
+    "approach_contact": 280,
+    "penetrate": 98,
+    "curl_load": 0,
+    "lift": 0,
+    "off_soil": 0
+  },
+  "sampled_minimum_bucket_z_m": 0.0011212068958987853,
+  "sampled_no_ground_penetration": true,
+  "final_tip_m": [
+    5.913466502980396,
+    0.9991981233271542,
+    0.17399983692993504
+  ],
+  "initial_tip_m": [
+    6.145151077506686,
+    0.6437777312835598,
+    1.7301509002076356
+  ],
+  "tip_displacement_m": [
+    -0.2316845745262901,
+    0.35542039204359444,
+    -1.5561510632777007
+  ],
+  "human_same_elapsed_tip_m": [
+    6.010252747808345,
+    0.5912174822197422,
+    0.3507075970399165
+  ],
+  "selected_goal": {
+    "entry_xy_m": [
+      5.6478228927681355,
+      0.5916766840042811
+    ],
+    "surface_z_m": 1.0307196974754333
+  },
+  "command_windows": [
+    {
+      "frames": [
+        1,
+        60
+      ],
+      "candidate": [
+        0.19707126406719908,
+        -0.803991277795285,
+        0.1215213763838013,
+        -0.11099451755483945
+      ],
+      "human": [
+        -0.014081996434937617,
+        -0.8342543077837191,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        61,
+        120
+      ],
+      "candidate": [
+        0.1516859658062458,
+        -0.916968293984731,
+        0.28180842399597167,
+        -0.15961860766013464
+      ],
+      "human": [
+        -0.0196078431372549,
+        -0.9999999999999992,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        121,
+        180
+      ],
+      "candidate": [
+        0.09992304400851329,
+        -0.8605650464693705,
+        0.5641960402329763,
+        -0.18444401423136395
+      ],
+      "human": [
+        -0.01797385620915033,
+        -0.9999999999999992,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        181,
+        240
+      ],
+      "candidate": [
+        0.04724180077513059,
+        -0.7897013028462728,
+        0.7124374190966288,
+        -0.1815119390686353
+      ],
+      "human": [
+        0.0,
+        -0.9999999999999992,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        241,
+        300
+      ],
+      "candidate": [
+        0.024114688885553428,
+        -0.7342124621073405,
+        0.7615064392487209,
+        -0.18944691543777784
+      ],
+      "human": [
+        0.0,
+        -0.9999999999999992,
+        0.056714200831847895,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        301,
+        360
+      ],
+      "candidate": [
+        0.002327013339284652,
+        -0.6202863643566767,
+        0.8414544612169266,
+        -0.21772571032245955
+      ],
+      "human": [
+        0.0,
+        -0.16666666666666663,
+        0.7653594771241825,
+        0.04191919191919192
+      ]
+    },
+    {
+      "frames": [
+        361,
+        378
+      ],
+      "candidate": [
+        0.023199025088817708,
+        -0.6618382533391317,
+        0.8413483334912194,
+        -0.1481600428620974
+      ],
+      "human": [
+        0.0,
+        0.0,
+        0.9841552782729256,
+        -0.05614973262032085
+      ]
+    }
+  ],
+  "last_action": [
+    -0.006821236107498407,
+    -0.5704613327980042,
+    0.8957391381263733,
+    -0.10587187111377716
+  ],
+  "physics_wall_seconds": 48.514661420485936,
+  "wall_seconds": 71.00313164500403,
+  "soil_contact_frames": 257,
+  "rock_contact_frames": 0,
+  "source_unchanged": true,
+  "autonomous_excavation_qualified": false,
+  "qualification": "Evidence/interface/protection audit only; passed does not mean successful excavation.",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-bc-closed-loop-20260924-v1/protocol.json",
+      "sha256": "54cd694a5e09811ab7b9e34c5f2e51051c2653de38b737092dfc40af0b99565b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/actions.ndjson",
+      "sha256": "9b5662ba79078d144c7f3501876de7a449bc5322a0fd7c57a2facb93caeeb070"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/phase-trace.ndjson",
+      "sha256": "f9ca2983aac1467011e541681e48faf27b84cb7a6cc9abd853598b947efc46a2"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/terrain.ndjson",
+      "sha256": "e115812360876267083aa011a414397219ae2471bb5cc7e57aae9454665fc68e"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/physics/frames.ndjson",
+      "sha256": "c11ba70bdd409735aa337aa1c86193e26de727795efa253eb083109be9fd4cf1"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/ground-guard.ndjson",
+      "sha256": "2f4666252be9b98592d69f9575f024f1c11015efd0a794aa0e8f833de02e2149"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/report.json",
+      "sha256": "5278ec4c0d6d0bd73d22723d769de93c8118c461572022a6666fc717c50848c8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/physics/failure.npz",
+      "sha256": "f242299b57d9e858946f03a5983da7ff2359c258ac32671f90c12eeb0d43ccfb"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/contact600/physics/failure.npz.json",
+      "sha256": "2d0929f9ec22bdbb94ea438f1d2fe43baaa1bbbdd5e5f4db1fc953d9cfd821be"
+    }
+  ],
+  "reviewer": {
+    "path": "/home/qunwang/wajueji/work/contact-phase-bc-closed-loop-20260924-v1/review_contact.py",
+    "sha256": "fa13ad56964a71cee816a0b2f185ce1311bca4bfa612f838f43582622469390f"
+  }
+}

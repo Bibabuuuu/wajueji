@@ -1,0 +1,113 @@
+{
+  "schema": "cycle_resume_continuity_evidence_v1",
+  "status": "exact_60_vs_30_save_restore_30",
+  "full_chain_qualified": false,
+  "training_eligible": false,
+  "legacy_source_native_history_missing": true,
+  "arrays": {
+    "particle_q": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_qd": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_f": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_flags": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_elastic_strain": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_transform": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_qd_grad": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_stress": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "particle_Jp": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "rigid_ids": {
+      "exact": true,
+      "max_abs": null
+    },
+    "rigid_qpos": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "rigid_qvel": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "rigid_reported_linear_velocity": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "rigid_reported_angular_velocity": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "mechanism_qpos": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "mechanism_qvel": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "simulation_time_s": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "grid_reference_particle_q": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "solver_grid_transform": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "solver_grid_cell_ijk": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "solver_grid_node_ijk": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "solver_ws_impulse": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "solver_ws_stress": {
+      "exact": true,
+      "max_abs": 0.0
+    },
+    "solver_body_q_prev": {
+      "exact": true,
+      "max_abs": 0.0
+    }
+  },
+  "controller_exact": true,
+  "sweep_exact": true,
+  "artifacts": {
+    "runs/layered-47-cycle-v1/continuous-60-v2/final.npz": "608eb2aaa6fb544858a84b878a088a1e2dd913be3f141ce3f0fec3f6f1625a93",
+    "runs/layered-47-cycle-v1/split-resumed-v2/final.npz": "608eb2aaa6fb544858a84b878a088a1e2dd913be3f141ce3f0fec3f6f1625a93",
+    "runs/layered-47-cycle-v1/continuous-60-v2/audit.json": "0458fd1ce22a4914a028c41b90468d12209ecdfbe23225d2c14df1bf042381fc",
+    "runs/layered-47-cycle-v1/split-resumed-v2/audit.json": "1c4a894308030a0c88c0e720ac6e1b91529f1ef19447b69854ed4422859d79d7"
+  }
+}

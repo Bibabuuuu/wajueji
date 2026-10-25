@@ -1,0 +1,14 @@
+{
+  "schema": "contact_curl_angle_candidate_v1",
+  "status": "frozen_for_transfer_review_not_deployed",
+  "calibration_run": "manual-contact-20260924-010900-1088617",
+  "calibration_annotation_sha256": "08a837773eab0422f402df64f03567ee38c1db7eb4ed6a633d1a1a40f85c20f4",
+  "physical_reference_frame_end": 610,
+  "angle_threshold_deg": -5.881154296396837,
+  "rule": "first downward crossing of signed mouth chord angle <= threshold; latch after crossing; offline angle boundary only, contact gating not yet calibrated",
+  "confirmation_frames": 1,
+  "available_from": "following decision frame",
+  "other_stages_calibrated": false,
+  "production_threshold_approved": false,
+  "calibration_annotation": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/human-curl-boundary-010900-v1.json"
+}

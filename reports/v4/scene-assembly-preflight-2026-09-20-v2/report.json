@@ -1,0 +1,160 @@
+{
+  "boundaries": [
+    "no MJCF was generated",
+    "no MuJoCo, Newton or Warp run was performed",
+    "no R1 bridge or report was modified",
+    "unit batches do not qualify a complete scene"
+  ],
+  "checks": {
+    "all_assets_mapped": true,
+    "all_hash_chains_validated": true,
+    "all_input_statuses_geometry_candidate": true,
+    "all_mass_inertia_pose_source_records_validated": true,
+    "all_rocks_partitioned_exactly_once": true,
+    "current_two_rock_evidence_validated": true,
+    "first_round_limited_to_six_20_rock_scenes": true,
+    "input_tree_unchanged": true,
+    "nine_input_scenes_validated": true,
+    "no_physics_or_mjcf_generation": true,
+    "thirteen_rock_scenes_deferred_without_padding": true,
+    "unique_maximum_capacity_20_confirmed": true
+  },
+  "compatibility_report_sha256": "4fd1e21013294d2a5eef4eaa1bdec03594b07b985a7a07275ba641a8bd419487",
+  "config_sha256": "03d1495e0d27ec2dc87de1cf43a2bbc70453d1781d2534514c9dbea1693fed7d",
+  "deferred_boundary_scene_count": 3,
+  "first_round_admission_scene_count": 6,
+  "generator_sha256": "10ce8510e5a80aa38acb5495fa049aceb5980400667fab221676616a77831c82",
+  "input_reconstruction_status": "geometry_reconstruction_candidate",
+  "input_root_report_sha256": "b84563f3b723d3ba311361cedca2727208f1336b0e293e0cb0cec8df5d3865d3",
+  "input_tree_sha256_after": "5fc6aae2c4916df9eb09c5f39ecdb7fb2f312d2c3b8cbfb9fc45ad88fc72373a",
+  "input_tree_sha256_before": "5fc6aae2c4916df9eb09c5f39ecdb7fb2f312d2c3b8cbfb9fc45ad88fc72373a",
+  "input_tree_unchanged": true,
+  "maximum_capacity": 20,
+  "r0_asset_sha256": {
+    "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+    "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+    "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7"
+  },
+  "r1_evidence": {
+    "assembler_sha256": "dfe540b5f503bb35a306bda99229e5de4937342361c7cdd89acccfb53f67ca41",
+    "bridge_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+    "config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+    "two_rock_contract": {
+      "nplugin": 0,
+      "nq": 33,
+      "nu": 12,
+      "nv": 30,
+      "rock_count": 2
+    },
+    "two_rock_report_sha256": "1709285209d9207daafc45e143fa18a51526e88ad63733852fefb8042c5c5be2",
+    "two_rock_status": "passed"
+  },
+  "rock_count": 159,
+  "scene_count": 9,
+  "scenes": [
+    {
+      "assembly_plan_sha256": "cd31fc7664462a576dfa1889ddbf71a2c2dbeef1d8bacb2cebbb2fa2d7264a31",
+      "first_round_admission": true,
+      "qualification": "first_round_admission_candidate",
+      "rock_count": 20,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091911",
+      "seed": 26091911,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 10
+    },
+    {
+      "assembly_plan_sha256": "ae98f71011256c2f7f52b0483a46b7fb1322d13489249539adf44e9527cdc362",
+      "first_round_admission": true,
+      "qualification": "first_round_admission_candidate",
+      "rock_count": 20,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+      "seed": 26091912,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 10
+    },
+    {
+      "assembly_plan_sha256": "7a05c84cf886bfcbc9d6c779de0cd455885f7e5e4d72b0bdde0ec8c65a90f0f8",
+      "first_round_admission": true,
+      "qualification": "first_round_admission_candidate",
+      "rock_count": 20,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+      "seed": 26091913,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 10
+    },
+    {
+      "assembly_plan_sha256": "62ad0b09fce63636783486fc52a4152a3ea06069ac87b58af1adeb76238eae78",
+      "first_round_admission": true,
+      "qualification": "first_round_admission_candidate",
+      "rock_count": 20,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091922",
+      "seed": 26091922,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 10
+    },
+    {
+      "assembly_plan_sha256": "907dbb7df165c2612051cf3554e162e05d4fe90c03367bf61ed79db476c52b5d",
+      "first_round_admission": true,
+      "qualification": "first_round_admission_candidate",
+      "rock_count": 20,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091925",
+      "seed": 26091925,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 10
+    },
+    {
+      "assembly_plan_sha256": "9adf432c7ab787d5b1733ce3ad1d5a7e6dfa40bc4786eebc39d1bd650dbf30ad",
+      "first_round_admission": true,
+      "qualification": "first_round_admission_candidate",
+      "rock_count": 20,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091926",
+      "seed": 26091926,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 10
+    },
+    {
+      "assembly_plan_sha256": "a8f216f600168ea101d61d7ce6ec6af3e05de9b1547933cf4d8262284fe0d993",
+      "first_round_admission": false,
+      "qualification": "deferred_boundary_diagnostic",
+      "rock_count": 13,
+      "scene_class": "jam-boundary",
+      "scene_id": "jam-boundary-seed-26091931",
+      "seed": 26091931,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 7
+    },
+    {
+      "assembly_plan_sha256": "2e3c26384e39558775e1fa6330d9e8d3a59d232bc07252caceacb65a240fdeac",
+      "first_round_admission": false,
+      "qualification": "deferred_boundary_diagnostic",
+      "rock_count": 13,
+      "scene_class": "jam-boundary",
+      "scene_id": "jam-boundary-seed-26091932",
+      "seed": 26091932,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 7
+    },
+    {
+      "assembly_plan_sha256": "d7f304bd360cc14ee088d66e73e19cda0e5b15c2b6dc7597a92f1b1ae708c8dc",
+      "first_round_admission": false,
+      "qualification": "deferred_boundary_diagnostic",
+      "rock_count": 13,
+      "scene_class": "jam-boundary",
+      "scene_id": "jam-boundary-seed-26091933",
+      "seed": 26091933,
+      "status": "scene_assembly_preflight_candidate",
+      "unit_regression_batch_count": 7
+    }
+  ],
+  "schema": "excavation_scene_assembly_preflight_report_v1",
+  "scope": "offline assembly preflight only; no MJCF, physics, bridge changes or training",
+  "status": "scene_assembly_preflight_candidate",
+  "unit_regression_batch_count": 81
+}

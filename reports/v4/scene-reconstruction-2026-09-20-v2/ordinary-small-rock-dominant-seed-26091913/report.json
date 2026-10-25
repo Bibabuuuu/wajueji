@@ -1,0 +1,26 @@
+{
+  "all_admission_checks_passed": true,
+  "asset_sha256": {
+    "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+    "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+    "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7"
+  },
+  "boundaries": [
+    "synthetic parameters do not reproduce an official scene",
+    "no underground material or mechanical properties inferred",
+    "R1/R2 collision, settling and dynamics must be requalified"
+  ],
+  "config_sha256": "e2f317ea1550547c34d17792cc858ed3a2224f9aef10e0323752b74893ade755",
+  "generator_sha256": "3cc4fb2bf182e30f571a58f720dac9019cab137d581c8c17653f2be282580bba",
+  "input_sha256": "496271c6d6220fd2a3d2241855e25e6127116d4ee19d2cbbc06acf674430cbc0",
+  "preview_sha256": "5d2db2f1b09a4b0e0f119a95852f81468ee334c5a371e2bca2bf312278e80aee",
+  "scene_class": "ordinary-small-rock-dominant",
+  "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+  "scene_manifest_sha256": "50db9d3b1ee2c35410eba329c2660f950f0cfa70a3d8faaeccf78e5605568c49",
+  "scene_metrics_sha256": "49eb313d5b6036484adad63ec9d3f507dd1003527f418001fb0eaac776f60859",
+  "schema": "excavation_scene_reconstruction_report_v1",
+  "scope": "geometry only; not official reconstruction, physics or training",
+  "seed": 26091913,
+  "status": "geometry_reconstruction_candidate"
+}

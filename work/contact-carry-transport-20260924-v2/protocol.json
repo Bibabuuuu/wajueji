@@ -1,0 +1,35 @@
+{
+  "schema": "D157_fixed_truck_loaded_handoff_v1",
+  "status": "authorized_followup",
+  "maximum_frames": 5971,
+  "maximum_wall_seconds": 1770,
+  "maximum_runs": 1,
+  "automatic_retry": false,
+  "authorization": {
+    "user_text": "卸料为什么要规定斗口角度？反正咱们的车位置不会动，你直接硬编码都行。这段你可以参考纯土那边，那边不是之前跑通了连续两铲吗。",
+    "prior_user_text": "目前没看出来，你继续你的，现在满足条件了就下一步呀。然后你这个整个过程我一会我也要看画面看整个流程",
+    "recorded_at": "2026-09-24T23:57:49.201627+08:00",
+    "scope": "固定车位方案最小修正，正常2927末态恢复；沿用原6000帧/1800秒预算剩余量，原29帧失败冻结，不重挖"
+  },
+  "inputs": {
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/runtime.py": "a1afaf556aaade87d7e9f9c7636b67160409800fd12492f1b481cf8955d2e7a0",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/run.py": "4794599eb2e5efb8924795f107823a79eb10ecc0a2b1d7fc9f8dc8ad971f4a6d",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/load_tracking.py": "172d22e5a86dcdea4912e9a6b024cbcf2260ea266e06ccad6c5faaedd144fae1",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/check_commands.py": "32030be90a51bfad39deade3fd818c0b40fbb445271866040dd12c566b9ad1f6",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/test_tracking.py": "135e474573e43ef17de3630ffddeadfdd8ff9a5e1ca7e70f37c39f1494d10eaa",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/audit_result.py": "116b6d6a9f3c9611e1bb5fbd86539d065b0cd247225bf87bf1f09c69a53b5b5c",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/controller.py": "88a220625360504ad29dfa791280c2f393a3b008c762068e1b5f3e617ed01bf0",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/preflight.py": "d1e68b2ebc4d013a9c5b12e8ccd91ba3e25f7e59e12a4599056f1e81f15e8047",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/preflight-review.json": "43899014c5c3d3ed262195f64604cf3ce05e466089f9dc39fe50b76cfdbe9798",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/control-review.json": "d085ecb8a97cf593ba1ae1eff587da1ca492c156b394890d68bf9ff428c797c8",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/handoff-review.json": "2b249b14f109ebe20f8d3e9f5eaa0449eed166593c3fe15ba915436276c57e92",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/report.json": "0ce5e68a68e7d084b598f15409b2ddc3100a9d12acc25b92767cf29142021655",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/final.npz": "dc7378f44d2b8204186354d0c58fd72993d3abb8ebfe29e8e84a31b9b868ae06",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/final.npz.json": "4d994034ca98732c1f6d7a9e6be94fd97222437c30d5a7391bf7ad8355a2130a",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/control-state.json": "5fba71c03a570100b19adfa6678b416645b043393effdf57fd19a0cc6bc63dde",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-tolerant-20260924-v1/review.json": "02dd604583bd64f189f7cdd3dfb993826c6af8f24880324bdaa3ae0b78a9c99b",
+    "/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/reference_tracking.py": "8ad3facf7cf9e9e176f636eb4390afd8bdf0d789154c6b1f247d5c8421e01588",
+    "/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/pose_goals.py": "08cc2fbff925983845b81c393a4f8e9d6c3a648f436a5781778bed600cbcef4e"
+  }
+}

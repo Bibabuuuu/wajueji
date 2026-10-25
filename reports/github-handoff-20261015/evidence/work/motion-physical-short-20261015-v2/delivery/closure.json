@@ -1,0 +1,18 @@
+{
+  "status": "closed",
+  "physical_status": "both_short_cases_completed",
+  "failure": null,
+  "physics_steps": 3639,
+  "native_initializations": 2,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "started_at": "2026-10-15T13:04:23.904046+08:00",
+  "deadline_at": "2026-10-15T13:34:23.904046+08:00",
+  "closed_at": "2026-10-15T13:26:48.506435+08:00",
+  "unused_seconds_sealed": 455.3976092338562,
+  "budget_reopened": false,
+  "automatic_retry": false,
+  "record_audit_passed": true,
+  "report_sha256": "e84c3d9c32fe304f0f92185cb8b7bbfba5ea4485d0e03efc69e96b15a12ceef3",
+  "audit_sha256": "e01fc338d1ec5444dc09f0167375210474109ddadfd37d6d9378327926ea3ac3"
+}

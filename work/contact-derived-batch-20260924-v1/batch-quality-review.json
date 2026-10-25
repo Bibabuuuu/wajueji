@@ -1,0 +1,224 @@
+{
+  "schema": "derived_batch_limited_pilot_review_v1",
+  "passed": true,
+  "manifest_sha256": "e85d300d57029c9866209ef259c92c74ff47a1756528e2515bd7ffdda0a14c53",
+  "reviewer_sha256": "4cf0f400f8db8512dcba96fd49a26a81e858f5b8f19b8bba0e42af2a579e8edc",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "split": "development_runs",
+      "expert_rows": 1278,
+      "phase_counts": {
+        "approach_contact": 124,
+        "penetrate": 479,
+        "curl_load": 236,
+        "lift": 347,
+        "off_soil": 92
+      },
+      "actual_fill_percent": 110.5501823370858,
+      "fit_weight": 1.0,
+      "fill_difference_percentage_points": 0.0,
+      "off_soil_confirmation_frame_end": 1189,
+      "subsequent_below_3mm_frames": 38,
+      "minimum_bucket_z_m": 0.25810583845790025,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "38e355bd14a4efd41c1431929bdd3c8b3f92b041258a2d78c3d241a38d777943",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.0,
+        "rock_center_m": 0.0,
+        "rock_orientation_rad": 0.0
+      }
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "split": "development_runs",
+      "expert_rows": 1690,
+      "phase_counts": {
+        "approach_contact": 417,
+        "penetrate": 254,
+        "curl_load": 446,
+        "lift": 366,
+        "off_soil": 207
+      },
+      "actual_fill_percent": 108.99001109877915,
+      "fit_weight": 1.0,
+      "fill_difference_percentage_points": 0.0,
+      "off_soil_confirmation_frame_end": 1486,
+      "subsequent_below_3mm_frames": 24,
+      "minimum_bucket_z_m": 0.17436651007486614,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "5661066bf824c58112d4841cc75be35d7f72ca6f7b598213d1525707e812c976",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.0,
+        "rock_center_m": 0.0,
+        "rock_orientation_rad": 0.0
+      }
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "split": "development_runs",
+      "expert_rows": 1099,
+      "phase_counts": {
+        "approach_contact": 100,
+        "penetrate": 210,
+        "curl_load": 384,
+        "lift": 405,
+        "off_soil": 0
+      },
+      "actual_fill_percent": 96.28983668939273,
+      "fit_weight": 0.0,
+      "fill_difference_percentage_points": -0.2536863802124856,
+      "off_soil_confirmation_frame_end": 1120,
+      "subsequent_below_3mm_frames": 2,
+      "minimum_bucket_z_m": 0.360039001033686,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "73534d21033e3e050ca5ccc2384ceb3180560b946a59027017284c8ff354d18e",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.00782884117730977,
+        "rock_center_m": 0.3510468674529269,
+        "rock_orientation_rad": 1.8607300631219263
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "split": "development_runs",
+      "expert_rows": 1428,
+      "phase_counts": {
+        "approach_contact": 383,
+        "penetrate": 168,
+        "curl_load": 405,
+        "lift": 334,
+        "off_soil": 138
+      },
+      "actual_fill_percent": 89.22784208022831,
+      "fit_weight": 0.25,
+      "fill_difference_percentage_points": 0.0,
+      "off_soil_confirmation_frame_end": 1293,
+      "subsequent_below_3mm_frames": 12,
+      "minimum_bucket_z_m": 0.017233087420988724,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "0ee19367c3dce791b338f01273a352522ded265ee98144e97cf5357fd22c77c5",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.0,
+        "rock_center_m": 0.0,
+        "rock_orientation_rad": 0.0
+      }
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "split": "development_runs",
+      "expert_rows": 1365,
+      "phase_counts": {
+        "approach_contact": 282,
+        "penetrate": 285,
+        "curl_load": 253,
+        "lift": 440,
+        "off_soil": 105
+      },
+      "actual_fill_percent": 108.72364039955606,
+      "fit_weight": 1.0,
+      "fill_difference_percentage_points": -0.04756619628984993,
+      "off_soil_confirmation_frame_end": 1273,
+      "subsequent_below_3mm_frames": 29,
+      "minimum_bucket_z_m": 0.05342695428139099,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "113c8a9d089cde36de19b2d4c70722ce0a1e3df91a726fe256e7619dccbe6c25",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.00010351122185436946,
+        "rock_center_m": 0.0009635699656112041,
+        "rock_orientation_rad": 0.0056512308676690635
+      }
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "split": "validation_runs",
+      "expert_rows": 1378,
+      "phase_counts": {
+        "approach_contact": 161,
+        "penetrate": 204,
+        "curl_load": 515,
+        "lift": 437,
+        "off_soil": 61
+      },
+      "actual_fill_percent": 102.34977009671795,
+      "fit_weight": 1.0,
+      "fill_difference_percentage_points": -0.03488187727920433,
+      "off_soil_confirmation_frame_end": 1320,
+      "subsequent_below_3mm_frames": 84,
+      "minimum_bucket_z_m": 0.357834841606983,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "1ac79d12ac5c5d424b63ad447d7d333ce99f698a71f853241e21172030dc28e8",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.00014286315852385132,
+        "rock_center_m": 1.4500446882495948,
+        "rock_orientation_rad": 3.0954160524241416
+      }
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "split": "validation_runs",
+      "expert_rows": 1641,
+      "phase_counts": {
+        "approach_contact": 359,
+        "penetrate": 276,
+        "curl_load": 543,
+        "lift": 368,
+        "off_soil": 95
+      },
+      "actual_fill_percent": 77.78975741239894,
+      "fit_weight": 0.25,
+      "fill_difference_percentage_points": 0.0,
+      "off_soil_confirmation_frame_end": 1549,
+      "subsequent_below_3mm_frames": 0,
+      "minimum_bucket_z_m": 0.014875687187611453,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "05888aae98edb3cbfab4609c2fae10f940a9eefdfd1fa1c9339955a294ffbac2",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.0,
+        "rock_center_m": 0.0,
+        "rock_orientation_rad": 0.0
+      }
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "split": "validation_runs",
+      "expert_rows": 1457,
+      "phase_counts": {
+        "approach_contact": 310,
+        "penetrate": 266,
+        "curl_load": 357,
+        "lift": 447,
+        "off_soil": 77
+      },
+      "actual_fill_percent": 109.58617409227843,
+      "fit_weight": 1.0,
+      "fill_difference_percentage_points": 0.031710797526571355,
+      "off_soil_confirmation_frame_end": 1383,
+      "subsequent_below_3mm_frames": 0,
+      "minimum_bucket_z_m": 0.011542813884418468,
+      "unresolved_curl_frames": [],
+      "trace_sha256": "8cd9397f34f2a51a399eb90c1ce94fcefc3c6966bd37d5bc314894127f2dc15f",
+      "maximum_rigid_deviations": {
+        "bucket_CAD_point_m": 0.00048176375992152486,
+        "rock_center_m": 0.0009408681163264893,
+        "rock_orientation_rad": 0.004436215537345631
+      }
+    }
+  ],
+  "episode_count": 8,
+  "expert_rows": 11336,
+  "limited_offline_pilot_admitted": true,
+  "formal_training_admission": false,
+  "physics_rollout_qualified": false,
+  "phase_rules_changed": false,
+  "validation_domain_caveats": {
+    "manual-contact-20260924-113555-1443279": "Original validation membership retained. A falling outside rock differs by 1.450m while bucket CAD differs by 0.143mm. Treat as actual replay-state action validation, not faithful full-scene reproduction or original-human closed-loop evidence."
+  },
+  "qualifications": [
+    "Original applied actions, lineage split and goal masks retained. Original episode weights retained except diagnostic-only 100857 is zero for fitting and normalization.",
+    "Micro replay differences are recorded under the user decision, not abort thresholds.",
+    "First causal clearance is latched; subsequent recontacts remain and do not certify stable transport.",
+    "Shared original terrain and previously inspected validation trajectories are not a sealed generalization test.",
+    "Only a fixed 1000-update / 300-second offline phase-conditioned pilot is admitted."
+  ]
+}

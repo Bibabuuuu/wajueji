@@ -1,0 +1,32 @@
+{
+  "status": "D153_bounded_endpoint_continuation_verified",
+  "frames": 424,
+  "global_end_frame": 2824,
+  "wall_seconds": 152.75520215800498,
+  "simulated_seconds": 7.066666666666666,
+  "loop_wall_seconds_per_simulated_second": 20.28816835757099,
+  "origin_rise_m": 0.34454002255298577,
+  "off_soil_last_five_gaps_m": [
+    0.011161898359510314,
+    0.011189557489691193,
+    0.011221406355377439,
+    0.01125829161966263,
+    0.01128442328314011
+  ],
+  "zero_commands": 0,
+  "full_preview_scale_frames": 424,
+  "working_fill_percent": 48.8060884731251,
+  "working_liters": 124.53592385209043,
+  "source_sha256": "37cb63c32f9070bcf119fac3a729be64ad6cde31593fa9f5ac8a17a6b5c6a0f2",
+  "final_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-preview-lift-20260924-v1/continuation/final.npz",
+    "size_bytes": 54198182,
+    "mtime_ns": 1790258999614350565,
+    "sha256": "5cb69a1fd46cc50d0f7fa7f7990026f37436b4a876967583a619a15d0a074ffe"
+  },
+  "no_prefix_physics_rerun": true,
+  "formal_95_percent_fill_passed": false,
+  "first_second_sources_validated_under_new_interface": false,
+  "continuous_three_scoop_passed": false,
+  "training_started": false
+}

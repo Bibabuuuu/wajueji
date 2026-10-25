@@ -1,0 +1,102 @@
+{
+  "status": "cpu_geometry_probe",
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "inference_calls": 0,
+  "source": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/dump.npz",
+  "source_sha256": "26d3928d2e41fc1f5bce5020160be6faddcdca7a936dcaddd7eb65a49e1f94b3",
+  "pitch": {
+    "CLEAR_PILE": {
+      "max_abs_pitch_tracking_error_deg": 4.110049735068719,
+      "actual_pitch_total_travel_deg": 28.24328950232929,
+      "reference_pitch_total_travel_deg": 8.96769753440974,
+      "tracking_error_peak_to_peak_deg": 4.166496213963834
+    },
+    "ALIGN": {
+      "max_abs_pitch_tracking_error_deg": 1.8017388463028332,
+      "actual_pitch_total_travel_deg": 4.898639092340663,
+      "reference_pitch_total_travel_deg": 3.188541079713109e-06,
+      "tracking_error_peak_to_peak_deg": 1.0653183866383111
+    }
+  },
+  "attempts": [
+    {
+      "route": "single_joint_space_segment_to_existing_entry",
+      "status": "rejected",
+      "failure": "rear_prepoint_proxy_outside_observed_roi"
+    }
+  ],
+  "scope": "Geometry only. Existing qualified next entry is used as a fixed diagnostic target; not a new selected-point or direct-path physical qualification.",
+  "dump_end_observation": {
+    "detached_payload_particles": 0,
+    "detached_dynamic_particles": 23269,
+    "detached_rock_ids": [
+      "lower_middle-001",
+      "lower_middle-010",
+      "middle-004",
+      "middle-012",
+      "upper-010",
+      "upper-011"
+    ],
+    "support_margin_m": 0.15,
+    "rock_to_stationary_soil_aabb_gap_m": {
+      "lower-000": 0.0,
+      "lower-001": 0.0,
+      "lower-002": 0.0,
+      "lower-003": 0.0,
+      "lower-004": 0.0,
+      "lower-005": 0.0,
+      "lower-006": 0.0,
+      "lower-007": 0.0,
+      "lower-008": 0.0,
+      "lower_middle-000": 0.0,
+      "lower_middle-001": 2.2904762024424614,
+      "lower_middle-002": 0.0,
+      "lower_middle-003": 0.0,
+      "lower_middle-004": 0.0,
+      "lower_middle-005": 0.0,
+      "lower_middle-006": 0.0,
+      "lower_middle-007": 0.0,
+      "lower_middle-008": 0.0,
+      "lower_middle-009": 0.0,
+      "lower_middle-010": 2.099810952143273,
+      "middle-000": 0.0,
+      "middle-001": 0.0,
+      "middle-002": 0.0,
+      "middle-003": 0.0,
+      "middle-004": 2.4209314431493287,
+      "middle-005": 0.0,
+      "middle-006": 0.0,
+      "middle-007": 0.0,
+      "middle-008": 0.0,
+      "middle-009": 0.0,
+      "middle-010": 0.0,
+      "middle-011": 0.0,
+      "middle-012": 1.9670011086097552,
+      "upper-000": 0.0,
+      "upper-001": 0.0,
+      "upper-002": 0.0,
+      "upper-003": 0.0,
+      "upper-004": 0.0,
+      "upper-005": 0.0,
+      "upper-006": 0.0,
+      "upper-007": 0.0,
+      "upper-008": 0.0,
+      "upper-009": 0.0,
+      "upper-010": 2.0021533402665495,
+      "upper-011": 2.1033315193511255,
+      "upper-012": 0.0,
+      "upper-013": 0.0
+    },
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "Ground-connected stock; all detached soil/rocks remain in physical collision solving"
+  },
+  "fixed_diagnostic_goal_axes": [
+    0.026081055197024593,
+    0.28449664245172746,
+    0.357589651263552,
+    0.5159226952935192
+  ],
+  "wall_seconds": 2.578248948964756
+}

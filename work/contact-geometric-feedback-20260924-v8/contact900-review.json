@@ -1,0 +1,199 @@
+{
+  "maximum_cut_depth_undershoot_m": 0.05092232154256984,
+  "maximum_approach_pitch_error_rad": 0.00018338512184873368,
+  "audit_passed": true,
+  "checks": {
+    "frames": true,
+    "exact_restore": true,
+    "control_recomputed": true,
+    "commands": true,
+    "actual_previous": true,
+    "previous_actions": true,
+    "phase_timing": true,
+    "phase_action": true,
+    "phase_next": true,
+    "finite": true,
+    "final_physical": true,
+    "particles": true,
+    "rocks": true,
+    "source": true,
+    "policy": true,
+    "protocol_hash": true,
+    "protocol_inputs": true,
+    "config_bound": true,
+    "lineage_inventory": true,
+    "prefix_exact": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true,
+    "code_run_contact_geometric_probe.py": true,
+    "code_contact_geometric_feedback.py": true,
+    "code_contact_cut_reference.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true
+  },
+  "behavior_gate_passed": false,
+  "behavior": {
+    "no_failure": true,
+    "all_hard": true,
+    "all_material": true,
+    "all_sweep": true,
+    "all_measured_ground": true,
+    "lateral_corridor": true,
+    "entered_curl": true,
+    "bc_controlled_after_curl": true,
+    "cut_depth_respected": false,
+    "root_reached_soil_before_bc": true,
+    "root_at_vertical": true,
+    "approach_pitch_tracking": true
+  },
+  "frames": 900,
+  "status": "bounded_probe_completed",
+  "failure": null,
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 434
+        }
+      ],
+      "confirmation_frame_end": 436,
+      "first_available_decision_frame": 437
+    },
+    {
+      "transition": "penetrate_to_curl_load",
+      "evidence": [
+        {
+          "kind": "frozen_angle_downward_crossing",
+          "onset_frame_end": 854
+        }
+      ],
+      "confirmation_frame_end": 854,
+      "first_available_decision_frame": 855
+    }
+  ],
+  "maximum_lateral_error_m": 0.01376548195648649,
+  "minimum_measured_bucket_z_m": 0.0353297015107088,
+  "final_coordinates": [
+    5.179381179110943,
+    -0.004839282067551929,
+    0.15806974724713374,
+    0.42641152468187926
+  ],
+  "maximum_command_recompute_error": 0.0,
+  "phase_counts": {
+    "approach_contact": 436,
+    "penetrate": 418,
+    "curl_load": 46,
+    "lift": 0,
+    "off_soil": 0
+  },
+  "bc_raw_vs_applied_mean_abs_normalized": [
+    0.03709581531731058,
+    0.16995265925114852,
+    0.20513525393094392,
+    0.12120695716418695
+  ],
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+    "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+  },
+  "policy": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+    "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+  },
+  "run": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v8/contact900",
+  "physics_steps_added_by_review": 0,
+  "qualification": "bounded geometry/BC handoff only; no full scoop or fill qualification",
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v8/contact900/report.json",
+      "sha256": "4f2869e34884e8e9c3f9b58d2d8d04e6f3b6b56d0a9cdb620937bbf7da08d4a4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v8/contact900/actions.ndjson",
+      "sha256": "ec288b0aa52a50ff868af986ed55b7c5e19cc1c41c1581a3bcd3a99ddc506eed"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v8/contact900/phase-trace.ndjson",
+      "sha256": "f3a689c598eaf0e3a41c13018031b93d3ebcbbc6423b51dc2cc4727c9b326631"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v8/contact900/physics/frames.ndjson",
+      "sha256": "1003f8987ac1ae53681044120c47affafd4075172d60f2a8450e04a228ad4ded"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v8/contact900/final.npz",
+      "sha256": "7c754e5cc281fd5f35273f7bc73a1f1b6965354deea6ed2f5a734a0e6a854555"
+    }
+  ],
+  "soil_plan": {
+    "surface_z_m": 1.1043568730354307,
+    "tip_target_z_m": 0.1879381898196331,
+    "root_target_xy_m": [
+      5.300381930303976,
+      0.5552829318019323
+    ],
+    "root_local_m": [
+      0.021459,
+      0.0,
+      -0.157745
+    ],
+    "vertical_pitch_rad": 0.2184927986558317,
+    "strip_heights_m": [
+      0.5135850489139557,
+      1.1802775621414183,
+      1.1272870302200315,
+      1.0568621456623077,
+      1.1043568730354307,
+      1.225940603017807,
+      0.972684895992279
+    ],
+    "strip_counts": [
+      375,
+      615,
+      832,
+      918,
+      770,
+      764,
+      735
+    ],
+    "ground_connected_particles": 250625,
+    "observation_frame": 0,
+    "reference": "frozen_current_scoop_ground_soil",
+    "surface_estimator": "median_of_seven_strip_z95",
+    "root_embed_m": 0.03
+  },
+  "first_vertical": {
+    "frame": 776,
+    "root_above_surface_m": -0.01583158575454502
+  },
+  "complete_scoop": false,
+  "pending_failed_step_commands": 0,
+  "tip_vertical_motion_m": {
+    "initial_z": 1.7301509002076356,
+    "minimum_z": 0.13701586827706325,
+    "initial_to_minimum": 1.5931350319305724,
+    "contact_confirmation_z": 1.0326697532845937,
+    "contact_to_minimum": 0.8956538850075304,
+    "derived_contact_to_target": 0.8447315634649606
+  }
+}

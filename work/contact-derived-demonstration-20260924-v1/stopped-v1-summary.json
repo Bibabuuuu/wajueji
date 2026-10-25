@@ -1,0 +1,72 @@
+{
+  "status": "failed",
+  "frames_completed": 1187,
+  "maximum_deviations": {
+    "bucket_CAD_point_m": 2.5595607965994204e-07,
+    "rock_center_m": 6.1732234194877275e-06,
+    "rock_orientation_rad": 0.00011357182979057669
+  },
+  "events": [
+    {
+      "transition": "approach_contact_to_penetrate",
+      "evidence": [
+        {
+          "kind": "soil_resultant_force",
+          "onset_frame_end": 311
+        }
+      ],
+      "confirmation_frame_end": 313,
+      "first_available_decision_frame": 314
+    },
+    {
+      "transition": "penetrate_to_curl_load",
+      "evidence": [
+        {
+          "kind": "frozen_angle_downward_crossing",
+          "onset_frame_end": 579
+        }
+      ],
+      "confirmation_frame_end": 579,
+      "first_available_decision_frame": 580
+    },
+    {
+      "transition": "curl_load_to_lift",
+      "evidence": [
+        {
+          "kind": "sustained_actual_boom_and_bucket_rise",
+          "motion_window_start_frame_end": 887,
+          "first_matching_window_frame_end": 899,
+          "consecutive_matching_windows": 38,
+          "origin_rise_m": 0.08121718258454802
+        }
+      ],
+      "confirmation_frame_end": 936,
+      "first_available_decision_frame": 937
+    }
+  ],
+  "error": "AssertionError('derived_trajectory_deviation')",
+  "wall_s": 206.80296900201938,
+  "source_unchanged": true,
+  "teacher_tensor_unchanged": true,
+  "bindings": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-derived-demonstration-v1/third-scoop/report.json",
+      "sha256": "9d63a425482955e6380adc84d7b0bbd5432f94132241efa980682fb7a9911a94"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-derived-demonstration-v1/third-scoop/failure.npz",
+      "sha256": "84dbe27b00d10ae23468571ed558be949e6d19b9f0ac3675b00950050e2fb214"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-demonstration-20260924-v1/run_derived.py",
+      "sha256": "568b1c358d3699e0868fb2c5afe16d998e3ce6897aeac9168f73c0e8fdc47329"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-demonstration-20260924-v1/protocol.json",
+      "sha256": "c10ecceba31b71d367ed0a3c8a1b720d02b575778d1e9350126d5c616204d500"
+    }
+  ],
+  "all_executed_physical_hard_guards_passed": true,
+  "complete_demonstration": false,
+  "training_eligible": false
+}

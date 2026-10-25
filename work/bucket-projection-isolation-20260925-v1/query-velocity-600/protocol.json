@@ -1,0 +1,28 @@
+{
+  "frames_limit": 600,
+  "wall_limit_seconds": 600,
+  "source_run": "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382",
+  "particle_count": 256441,
+  "tracked_particle_count": 16544,
+  "tracked_initial_cavity_count": 6494,
+  "tracks_include_all_initial_cavity_particles": true,
+  "selection": "initial proxy AABB plus 0.30m, union final proxy AABB plus 0.15m, union initial cavity",
+  "bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz": "95808442d5f3d9c502e1d4cf24fc39276994afb53141becbf46b261bfbbf2e89",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz.json": "29a6d7247cd9ffa26ea9c12df3db8e903462494e04aaad4d50801cafe12d2f05",
+    "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/configs/v4/layered-47-excavation-preflight-v1.json": "888f99d27c373759c5cbfd6c03bc02fca8109a77345e409d17ba52c99e85f81c",
+    "/home/qunwang/wajueji/configs/v4/layered-47-truck-physics-v1.json": "5b8298a96e98284e203514b81e6bba760450f773050efd68d3df0359844b9fac",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/physics.ndjson": "c78f787581f946351430db19099e671f4567dd232b23d61fef2d99d20b7bfc3e",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/final-000887.diagnostic.npz": "552c5972fad63038f389342e453fe701ea0805bbddcd5bd0fd0d977a7f70be2f",
+    "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/run_query_velocity.py": "3e9c6a08c03c8ef2d5eed36e0116a55edbe4d6399ef0160285086e4aca2c2f73",
+    "/home/qunwang/wajueji/src/v4/run_layered_47_excavation_preflight.py": "122a81a4ed8e78c1c5c2395fd4a8272ebb943cd3af5fd4739790cac28d22359c",
+    "/home/qunwang/wajueji/src/v4/mpm_static_contact_ownership.py": "08556fe8f30458dec691c4176e06241bf23c63df6aa5806ff8db6f7d1df2d1a4",
+    "/home/qunwang/wajueji/src/v4/soil_hencky_update_candidate.py": "7b58ede49369e28486b678dc77bd71d0a7b3003ccb9dbb0c3c19277b9944647a",
+    "/home/qunwang/wajueji/src/v4/moving_bucket_sweep_candidate.py": "eb69f49e4895db70724ad0f6a15e4c6261b501ee4d12dd92ecccd9c62bc11524",
+    "/home/qunwang/wajueji/src/v4/bucket_velocity_origin_candidate.py": "9d5b5ea165b227d680d65ece949c85e4f3c08c8440a35f29c22392a8f5b7382b",
+    "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/query_point_velocity.py": "c2e0ca2c513f9bc058c84b2642db3f052afe6e1da6e0343aa6e670ca4289d2ea"
+  },
+  "physics_changes": "Origin and timing fixes plus bucket-only rigid velocity extension at query point; native SDF, protection and rock velocities unchanged",
+  "resume_qualified": false,
+  "training_eligible": false
+}

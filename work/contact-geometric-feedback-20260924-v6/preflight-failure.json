@@ -1,0 +1,9 @@
+{
+  "stage": "kinematic_preflight_only",
+  "physics_steps": 0,
+  "failure": "feedback_velocity_infeasible:Positive directional derivative for linesearch",
+  "cause": "Initial high root made the angle ceiling lower than contact pitch, demanding an infeasible reverse opening rate.",
+  "fix": "Do not lower the pitch ceiling below the contact pitch; allow holding before overlapping curl.",
+  "raw_log_sha256": "245141c276c425023e8da246f7a098ca30b06deb57fccb7e42ff024d374df627",
+  "resolved_by": "geometry-check.json"
+}

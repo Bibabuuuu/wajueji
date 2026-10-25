@@ -1,0 +1,180 @@
+{
+  "status": "candidate_short_prefix_passed",
+  "checks": {
+    "sources_unchanged": true,
+    "restore_exact": true,
+    "600frames_completed": true,
+    "all_executed_frame_guards_passed": true,
+    "candidate_gpu_preflight_passed": true,
+    "original_actual_commands_replayed": true,
+    "full_scoop_qualified": false,
+    "late_soil_loss_fix_verified": false
+  },
+  "comparisons": [
+    {
+      "frame": 277,
+      "baseline": {
+        "snapshot": "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-000277.npz",
+        "sha256": "c038f5466aa5f347c545d743d1ef8e4f4032de13934af1f17cbe2bfa7e8f6c14",
+        "particles": 256441,
+        "nonfinite_fields": {},
+        "F_singular_min": 0.8919707141478597,
+        "F_max_singular_p50_p99_max": [
+          1.0067294639657927,
+          1.0249282551891545,
+          1.1433348012290716
+        ],
+        "F_max_singular_over2": 0,
+        "F_frobenius_over1000": 0,
+        "Jp_nonfinite": 0,
+        "finite_Jp_min_p50_p99_max": [
+          0.5520212650299072,
+          1.0,
+          1.136770486831665,
+          2.208897590637207
+        ],
+        "particle_speed_p99_max": [
+          0.14552761907143788,
+          0.7432814881546613
+        ]
+      },
+      "candidate": {
+        "snapshot": "/home/qunwang/wajueji/work/soil-hencky-candidate-20260923-v2/candidate-000277.npz",
+        "sha256": "fc10a197de76590a6fc4e52032eab3b1c4dae46f13e9462eb66886c7ee8c93c8",
+        "particles": 256441,
+        "nonfinite_fields": {},
+        "F_singular_min": 0.8953211829544366,
+        "F_max_singular_p50_p99_max": [
+          1.0067392328052964,
+          1.0242776797817883,
+          1.138796820403663
+        ],
+        "F_max_singular_over2": 0,
+        "F_frobenius_over1000": 0,
+        "Jp_nonfinite": 0,
+        "finite_Jp_min_p50_p99_max": [
+          0.5288637280464172,
+          1.0,
+          1.1357184648513794,
+          2.1305251121520996
+        ],
+        "particle_speed_p99_max": [
+          0.13988519479411698,
+          0.7338696907132878
+        ]
+      }
+    },
+    {
+      "frame": 540,
+      "baseline": {
+        "snapshot": "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/first-nonfinite-diagnostic-000540.npz",
+        "sha256": "8134c65365d54462e851a0ea7a57c29bec39525e82311178356438f19f2be6d9",
+        "particles": 256441,
+        "nonfinite_fields": {
+          "particle_Jp": 28
+        },
+        "F_singular_min": 0.002695011018531909,
+        "F_max_singular_p50_p99_max": [
+          1.0085171103637878,
+          1.0554627089987672,
+          962766.8147321843
+        ],
+        "F_max_singular_over2": 145,
+        "F_frobenius_over1000": 110,
+        "Jp_nonfinite": 28,
+        "finite_Jp_min_p50_p99_max": [
+          0.3591051995754242,
+          1.0,
+          2.134258613586428,
+          2.824381313934905e+38
+        ],
+        "particle_speed_p99_max": [
+          0.24269371756062516,
+          2.0193357376267795
+        ]
+      },
+      "candidate": {
+        "snapshot": "/home/qunwang/wajueji/work/soil-hencky-candidate-20260923-v2/candidate-000540.npz",
+        "sha256": "916be5e6ae947dd0a8dd039f88782d1beda7de9313d26cfbfe9b97f13c1b6bed",
+        "particles": 256441,
+        "nonfinite_fields": {},
+        "F_singular_min": 0.8494251806680622,
+        "F_max_singular_p50_p99_max": [
+          1.0085824192332933,
+          1.0493985886777988,
+          1.1989546855686863
+        ],
+        "F_max_singular_over2": 0,
+        "F_frobenius_over1000": 0,
+        "Jp_nonfinite": 0,
+        "finite_Jp_min_p50_p99_max": [
+          0.4762154519557953,
+          1.0,
+          1.9458627700805664,
+          27.68878173828125
+        ],
+        "particle_speed_p99_max": [
+          0.23550635305739295,
+          0.3950063835742222
+        ]
+      }
+    },
+    {
+      "frame": 600,
+      "baseline": {
+        "snapshot": "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-000600.npz",
+        "sha256": "b78a608657da091ea8d935733465841afc5a587fc02fa6b3a358e067d91922bc",
+        "particles": 256441,
+        "nonfinite_fields": {
+          "particle_Jp": 222
+        },
+        "F_singular_min": 0.007238417561018278,
+        "F_max_singular_p50_p99_max": [
+          1.0084084001752998,
+          1.0599897077256497,
+          994632.4041902149
+        ],
+        "F_max_singular_over2": 353,
+        "F_frobenius_over1000": 340,
+        "Jp_nonfinite": 222,
+        "finite_Jp_min_p50_p99_max": [
+          0.5395665168762207,
+          1.0,
+          2.9088527584075976,
+          3.3512345490861125e+38
+        ],
+        "particle_speed_p99_max": [
+          0.01833850636335264,
+          4.456080149881506
+        ]
+      },
+      "candidate": {
+        "snapshot": "/home/qunwang/wajueji/work/soil-hencky-candidate-20260923-v2/candidate-000600.npz",
+        "sha256": "925b2aee6b3e0f90b63fd065acb9c2cd506cb727dfda3b70fbcceb7a2d5c4338",
+        "particles": 256441,
+        "nonfinite_fields": {},
+        "F_singular_min": 0.8527605081751246,
+        "F_max_singular_p50_p99_max": [
+          1.0084490390523757,
+          1.0503966677244696,
+          1.2061054671432698
+        ],
+        "F_max_singular_over2": 0,
+        "F_frobenius_over1000": 0,
+        "Jp_nonfinite": 0,
+        "finite_Jp_min_p50_p99_max": [
+          0.4762154519557953,
+          1.0,
+          2.58946270942688,
+          39.28108596801758
+        ],
+        "particle_speed_p99_max": [
+          0.01896194259153758,
+          0.6184533481278874
+        ]
+      }
+    }
+  ],
+  "rejected_snapshots": [],
+  "meaning": "Same complete initial state, original applied commands and frozen controller bridge; coupled mechanics and soil are allowed to differ after candidate starts. Original600frame baseline already has invalid material history. This is not a later soil-loss or full-scoop acceptance."
+}

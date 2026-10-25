@@ -1,0 +1,453 @@
+{
+  "admission": {
+    "all_prototypes_closed_convex": true,
+    "appearance_collision_dimensions_consistent": true,
+    "bucket_rigid_contact_open_cavity_qualified": false,
+    "deterministic_scene_manifests": true,
+    "initial_overlap_checks_passed": true,
+    "mass_and_inertia_recomputable": true,
+    "mechanism_load_note": "scene masses are reported but no official rock density or qualified mechanism rock-load envelope exists; R1 must not infer capacity",
+    "mechanism_rock_load_envelope_qualified": false,
+    "r0_complete": true,
+    "r1_physics_started": false,
+    "training_started": false
+  },
+  "asset_manifest": {
+    "assets": [
+      {
+        "bounds_max_m": [
+          0.8817889794134092,
+          0.8817889794134092,
+          1.024936541006495
+        ],
+        "bounds_min_m": [
+          -0.8588853695585154,
+          -0.5153312217351093,
+          -0.4065390749243639
+        ],
+        "closed_two_manifold": true,
+        "collision_proxy": "assets/v4/mixed-material-r0/angular_tetra.obj",
+        "convex": true,
+        "maximum_face_plane_violation_m": 5.551115123125783e-17,
+        "prototype_id": "angular_tetra",
+        "sha256": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+        "triangle_count": 4,
+        "unit_bounding_radius_m": 1.080983055175716,
+        "unit_equivalent_diameter_m": 1.0,
+        "unit_inertia_kg_m2_at_configured_density": [
+          [
+            174.95395743680072,
+            -3.900958181533852,
+            -10.033585803304453
+          ],
+          [
+            -3.900958181533852,
+            199.91294845640857,
+            -3.7224246263149103
+          ],
+          [
+            -10.033585803304453,
+            -3.7224246263149103,
+            183.10401423254535
+          ]
+        ],
+        "unit_mass_kg_at_configured_density": 1361.3568165555769,
+        "unit_volume_m3": 0.5235987755982988,
+        "vertex_count": 4,
+        "visual_collision_mesh_identical": true,
+        "visual_mesh": "assets/v4/mixed-material-r0/angular_tetra.obj"
+      },
+      {
+        "bounds_max_m": [
+          0.8820397403877038,
+          0.7394502822679002,
+          0.6514220222312465
+        ],
+        "bounds_min_m": [
+          -0.7893378784048167,
+          -0.6412529680389646,
+          -0.5839440438327905
+        ],
+        "closed_two_manifold": true,
+        "collision_proxy": "assets/v4/mixed-material-r0/angular_bipyramid.obj",
+        "convex": true,
+        "maximum_face_plane_violation_m": 5.551115123125783e-17,
+        "prototype_id": "angular_bipyramid",
+        "sha256": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+        "triangle_count": 8,
+        "unit_bounding_radius_m": 0.8949601752711108,
+        "unit_equivalent_diameter_m": 0.9999999999999999,
+        "unit_inertia_kg_m2_at_configured_density": [
+          [
+            128.4102566264153,
+            -9.007508089718552,
+            -5.234314363241767
+          ],
+          [
+            -9.007508089718552,
+            154.83399314469446,
+            2.890366466753471
+          ],
+          [
+            -5.234314363241767,
+            2.890366466753471,
+            178.74405878093452
+          ]
+        ],
+        "unit_mass_kg_at_configured_density": 1361.3568165555766,
+        "unit_volume_m3": 0.5235987755982987,
+        "vertex_count": 6,
+        "visual_collision_mesh_identical": true,
+        "visual_mesh": "assets/v4/mixed-material-r0/angular_bipyramid.obj"
+      },
+      {
+        "bounds_max_m": [
+          1.0522276893726559,
+          0.7238509000292395,
+          0.5725594599972311
+        ],
+        "bounds_min_m": [
+          -0.9542142772012001,
+          -0.6831053570195009,
+          -0.5285367411713483
+        ],
+        "closed_two_manifold": true,
+        "collision_proxy": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "convex": true,
+        "maximum_face_plane_violation_m": 5.551115123125783e-17,
+        "prototype_id": "angular_octa",
+        "sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+        "triangle_count": 8,
+        "unit_bounding_radius_m": 1.0534840516014967,
+        "unit_equivalent_diameter_m": 1.0,
+        "unit_inertia_kg_m2_at_configured_density": [
+          [
+            109.71405330781799,
+            -5.443042008995189,
+            -0.6429861162245113
+          ],
+          [
+            -5.443042008995189,
+            180.69617014663726,
+            -0.5990128831485436
+          ],
+          [
+            -0.6429861162245113,
+            -0.5990128831485436,
+            206.60545600535042
+          ]
+        ],
+        "unit_mass_kg_at_configured_density": 1361.3568165555769,
+        "unit_volume_m3": 0.5235987755982988,
+        "vertex_count": 6,
+        "visual_collision_mesh_identical": true,
+        "visual_mesh": "assets/v4/mixed-material-r0/angular_octa.obj"
+      },
+      {
+        "bounds_max_m": [
+          0.7468086696794514,
+          0.42362830970120924,
+          0.318813057816374
+        ],
+        "bounds_min_m": [
+          -0.7468086696794514,
+          -0.42362830970120924,
+          -0.318813057816374
+        ],
+        "closed_two_manifold": true,
+        "collision_proxy": "assets/v4/mixed-material-r0/angular_block.obj",
+        "convex": true,
+        "maximum_face_plane_violation_m": 3.2959746043559335e-17,
+        "prototype_id": "angular_block",
+        "sha256": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+        "triangle_count": 12,
+        "unit_bounding_radius_m": 0.8552221439206652,
+        "unit_equivalent_diameter_m": 1.0,
+        "unit_inertia_kg_m2_at_configured_density": [
+          [
+            98.89433547274878,
+            -12.636594590426498,
+            -3.868875193096331
+          ],
+          [
+            -12.636594590426498,
+            219.16701932793143,
+            -2.925458199701474
+          ],
+          [
+            -3.868875193096331,
+            -2.925458199701474,
+            250.39498732947854
+          ]
+        ],
+        "unit_mass_kg_at_configured_density": 1361.356816555577,
+        "unit_volume_m3": 0.5235987755982989,
+        "vertex_count": 8,
+        "visual_collision_mesh_identical": true,
+        "visual_mesh": "assets/v4/mixed-material-r0/angular_block.obj"
+      }
+    ],
+    "density_kg_m3": 2600.0,
+    "density_status": "explicit_simulation_assumption_not_official_material_truth",
+    "fracture_enabled": false,
+    "schema": "excavation_rigid_rock_asset_manifest_v1",
+    "visual_collision_policy": "same_normalized_closed_convex_mesh"
+  },
+  "bucket": {
+    "connected_component_count": 12,
+    "coordinate_frame": "bucket_body",
+    "corrected_bounds_max_m": [
+      0.7758022573588672,
+      0.350362,
+      0.19531898441135623
+    ],
+    "corrected_bounds_min_m": [
+      -0.06763865273820245,
+      -0.350361,
+      -1.1806770021755741
+    ],
+    "inner_clear_width_m": 0.5994900000000001,
+    "inner_side_plate_y_limits_m": [
+      -0.29974,
+      0.29975
+    ],
+    "inventory_contract_path_anchor": "codex-work/compact-bank-2026-09-11/inventory-contract.json",
+    "inventory_contract_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "limiting_dimension": "inner_clear_width_m",
+    "limiting_spherical_gauge_m": 0.5994900000000001,
+    "mesh_refquat_wxyz": [
+      0.984807753012208,
+      0.0,
+      0.17364817766693033,
+      0.0
+    ],
+    "mouth_chord_m": 0.8867010907853897,
+    "mouth_endpoints_xz_m": [
+      [
+        0.021459,
+        -0.157745
+      ],
+      [
+        0.213659,
+        -1.023365
+      ]
+    ],
+    "reference_prism_volume_m3": 0.2777620975255621,
+    "rigid_contact_constraint": {
+      "current_geom_source": "bucket.obj",
+      "current_mjcf_bucket_geom_count": 1,
+      "mujoco_mesh_collision_semantics": "convex_hull",
+      "open_cavity_rigid_contact_qualified": false,
+      "r1_requirement": "build and validate an open-cavity convex decomposition or an equivalent non-convex rigid-contact representation; the current single mesh must not be used for rock-in-bucket qualification"
+    },
+    "side_plate_thickness_m": {
+      "negative_y": 0.050615999999999994,
+      "positive_y": 0.05061500000000002
+    },
+    "source_path_anchor": "codex-work/small-soil-20260910-v17-performance/scene/input/mesh/bucket.obj",
+    "source_sha256": "e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b",
+    "tooth_tip_band_m": 0.001,
+    "tooth_tip_gaps_m": [
+      0.10279800000000003,
+      0.104001,
+      0.10519200000000001,
+      0.10330199999999998
+    ],
+    "tooth_tip_spans_y_m": [
+      [
+        -0.299675,
+        -0.261207
+      ],
+      [
+        -0.158409,
+        -0.12203
+      ],
+      [
+        -0.018029,
+        0.018031
+      ],
+      [
+        0.123223,
+        0.15722
+      ],
+      [
+        0.260522,
+        0.300363
+      ]
+    ],
+    "tooth_tip_widths_m": [
+      0.038468,
+      0.036378999999999995,
+      0.036059999999999995,
+      0.033997,
+      0.039841000000000015
+    ],
+    "triangle_count": 5922,
+    "vertex_count": 3017
+  },
+  "config_sha256": "16cb9634939c780e1b6f9388543a81e1dfe01827169fb25b2d397a2aa8a500c8",
+  "gauge_summary": {
+    "inner_clear_width_m": 0.5994900000000001,
+    "limiting_spherical_gauge_m": 0.5994900000000001,
+    "method": "zero-thickness rectangular mouth aperture in the qualified bucket-body frame; convex prototype projection over 24 proper signed-axis poses",
+    "mouth_chord_m": 0.8867010907853897,
+    "prototype_pose_summaries": [
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.27,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_tetra",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.27,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_bipyramid",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.27,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_octa",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.27,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_block",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.33,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_tetra",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.33,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_bipyramid",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": false,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.33,
+        "passing_pose_count": 16,
+        "prototype_id": "angular_octa",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": true,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.33,
+        "passing_pose_count": 24,
+        "prototype_id": "angular_block",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": false,
+        "any_tested_pose_passes": false,
+        "equivalent_diameter_m": 0.59949,
+        "passing_pose_count": 0,
+        "prototype_id": "angular_tetra",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": false,
+        "any_tested_pose_passes": false,
+        "equivalent_diameter_m": 0.59949,
+        "passing_pose_count": 0,
+        "prototype_id": "angular_bipyramid",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": false,
+        "any_tested_pose_passes": false,
+        "equivalent_diameter_m": 0.59949,
+        "passing_pose_count": 0,
+        "prototype_id": "angular_octa",
+        "tested_pose_count": 24
+      },
+      {
+        "all_tested_poses_pass": false,
+        "any_tested_pose_passes": true,
+        "equivalent_diameter_m": 0.59949,
+        "passing_pose_count": 12,
+        "prototype_id": "angular_block",
+        "tested_pose_count": 24
+      }
+    ],
+    "schema": "excavation_bucket_aperture_gauge_v1",
+    "scope_limit": "geometric preflight only; it does not prove swept passage through a validated open-cavity rigid collision decomposition",
+    "sphere_gauges": [
+      {
+        "diameter_m": 0.27,
+        "mouth_chord_clearance_m": 0.6167010907853897,
+        "passes": true,
+        "width_clearance_m": 0.32949000000000006
+      },
+      {
+        "diameter_m": 0.33,
+        "mouth_chord_clearance_m": 0.5567010907853898,
+        "passes": true,
+        "width_clearance_m": 0.26949000000000006
+      },
+      {
+        "diameter_m": 0.59949,
+        "mouth_chord_clearance_m": 0.28721109078538976,
+        "passes": true,
+        "width_clearance_m": 1.1102230246251565e-16
+      }
+    ]
+  },
+  "scene_summary": [
+    {
+      "equivalent_diameter_d95_m": 0.20150000000000004,
+      "initial_overlap_check": "passed_conservative_bounding_spheres",
+      "minimum_bounding_sphere_pair_clearance_m": 0.39272451227473426,
+      "minimum_ground_clearance_m": 0.01999999999999999,
+      "rock_count": 20,
+      "scene_id": "r0-main-training-staging-v1",
+      "seed": 26091901,
+      "size_bucket": "main_training",
+      "total_rock_mass_kg": 91.52401877703144
+    },
+    {
+      "equivalent_diameter_d95_m": 0.3269,
+      "initial_overlap_check": "passed_conservative_bounding_spheres",
+      "minimum_bounding_sphere_pair_clearance_m": 0.2881989761672906,
+      "minimum_ground_clearance_m": 0.020000000000000018,
+      "rock_count": 4,
+      "scene_id": "r0-jam-boundary-staging-v1",
+      "seed": 26091902,
+      "size_bucket": "jam_boundary",
+      "total_rock_mass_kg": 159.30092267818736
+    },
+    {
+      "equivalent_diameter_d95_m": 0.416,
+      "initial_overlap_check": "passed_conservative_bounding_spheres",
+      "minimum_bounding_sphere_pair_clearance_m": 0.2226788428851626,
+      "minimum_ground_clearance_m": 0.020000000000000018,
+      "rock_count": 3,
+      "scene_id": "r0-reject-reselect-staging-v1",
+      "seed": 26091903,
+      "size_bucket": "reject_reselect",
+      "total_rock_mass_kg": 233.92874857282752
+    }
+  ],
+  "schema": "excavation_mixed_material_r0_report_v1",
+  "scope": "R0 geometry and asset contract only; no physics and no training",
+  "status": "passed"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "verified_cache_composition",
+  "label": "CORRECTED MANUAL REPLAY | 8122 FRAMES",
+  "probe_status": "Saved joystick input replay; soil clumping remains; retention not qualified",
+  "sources": [
+    {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-1800/display",
+      "label": "Frames 0-180: independently audited physical prefix",
+      "start": 0,
+      "end": 180,
+      "cache_sha256": {
+        "particles.npy": "ed4bed702d0a8283c5f82183017018351d4ff85890ee6aafd39c2113fe2b3753",
+        "states.json": "0c0e0bc4ce93a0c36790b4bb652bd8ff48f44b0ac319853710ceef33bc29b3b6",
+        "scene.json": "61649e82bfd955cd9f4947a6a1c2432d31dcbdfb8979b8971c3e1bd2fb585e9c"
+      }
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-continuation-1620/display",
+      "label": "Frames 180-1800: corrected motion continuation",
+      "start": 180,
+      "end": 1800,
+      "cache_sha256": {
+        "particles.npy": "272fbeb62c8d90168bbf200e82d7bf2398bf9921b0f13b031b0a63d1ad5f8512",
+        "states.json": "510819d000545cc7970b9197ea79ec3336f5a52bdd47b341291add3009789a64",
+        "scene.json": "61649e82bfd955cd9f4947a6a1c2432d31dcbdfb8979b8971c3e1bd2fb585e9c"
+      }
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-full-tail-1800-8122/display",
+      "label": "Frames 1800-8122: corrected motion continuation",
+      "start": 1800,
+      "end": 8122,
+      "cache_sha256": {
+        "particles.npy": "492996adc71354422bb6914878aa0350eee013f44665056ebaef3c91a9f7b992",
+        "states.json": "c648d3631662836603b97388eff57cc8c9f5366ee81ffe5e67600453c856af00",
+        "scene.json": "61649e82bfd955cd9f4947a6a1c2432d31dcbdfb8979b8971c3e1bd2fb585e9c"
+      }
+    }
+  ],
+  "frames": 8122
+}

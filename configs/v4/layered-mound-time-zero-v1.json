@@ -1,0 +1,57 @@
+{
+  "schema": "excavation_layered_mound_time_zero_config_v1",
+  "status": "actual_65_rock_and_mpm_time_zero_only",
+  "geometry": {
+    "config_path": "configs/v4/layered-mound-physical-preflight-v1.json",
+    "config_sha256": "c16cb7dd56bf8e63864fa610249410e66a41382f708d20c2846b16198c1fab74",
+    "report_path": "results/layered-mound-physical-preflight-v1/report.json",
+    "report_sha256": "109301904cf058c2de6fece30255813d39a51012c8e2a450f89fcf618e4ac685",
+    "manifest_path": "results/layered-mound-physical-preflight-v1/scene-manifest.json",
+    "manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706",
+    "bank_path": "results/layered-mound-physical-preflight-v1/layered-mound-bank.npz",
+    "bank_sha256": "08bb8aab7a5433fb353fe62917f525bdbad5c543f680477470a6527a51899a16"
+  },
+  "capacity_bridge": {
+    "config_path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    }
+  },
+  "expected": {
+    "rock_count": 65,
+    "particle_count": 263673,
+    "activation_stage_count": 6,
+    "nq": 474,
+    "nv": 408,
+    "nu": 12
+  },
+  "scope": {
+    "mujoco_ready_and_init_default": true,
+    "newton_model_and_collider_setup": true,
+    "mpm_initial_state_load": true,
+    "mj_step_calls": 0,
+    "newton_solver_step_calls": 0,
+    "settling": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

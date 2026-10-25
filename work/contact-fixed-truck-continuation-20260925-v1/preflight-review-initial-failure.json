@@ -1,0 +1,8 @@
+{
+  "status": "preflight_failed",
+  "physics_steps_added": 0,
+  "source_sha256": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+  "failure": "TypeError('super(type, obj): obj must be an instance or subtype of type')",
+  "wall_seconds": 5.634587672015186,
+  "source_unchanged": true
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "derived_fill_comparison_v2",
+  "occupancy_level": 0.2,
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/compare_fill.py",
+      "sha256": "6aedcd37be2b3323275a071d22b7389aa6c0bf94da1f11a908696f726c78445e"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/report.json",
+      "sha256": "f6b275b74de22e0f263d697e2ffba6ba11057155ed55d7305dbe367f73577e3f"
+    },
+    {
+      "path": "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/results/layered-mound-physical-preflight-v1/scene-manifest.json",
+      "sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/final-001132.cycle.npz",
+      "sha256": "3a259cfa195cc06ce587174308de621716a68cad0f8be81c05c68a5e4bd53d9a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-100857-1387193/final.npz",
+      "sha256": "0eaac112e3521fefd6a500726c2c4ce318212e47bc5424cc3f225d03cdd90077"
+    }
+  ],
+  "training_eligible": false,
+  "original": {
+    "frame": 1132,
+    "sim_time_s": 18.866666666666667,
+    "valid_estimate": true,
+    "fill_percent": 96.54352306960521,
+    "liters": 246.3450199257289,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.28699155399226584,
+    "display_only": true
+  },
+  "derived": {
+    "frame": 1132,
+    "sim_time_s": 18.866666666666667,
+    "valid_estimate": true,
+    "fill_percent": 96.28983668939273,
+    "liters": 245.69770175873728,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.2781019349931739,
+    "display_only": true
+  },
+  "fill_difference_percentage_points": -0.2536863802124856
+}

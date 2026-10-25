@@ -1,0 +1,83 @@
+{
+  "status": "passed_with_derived_clock_roundoff",
+  "frames": 3,
+  "all_hard_guards": true,
+  "arrays_equal": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": false,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "maximum_numeric_errors": {
+    "particle_q": 0.0,
+    "particle_qd": 0.0,
+    "particle_f": 0.0,
+    "particle_flags": 0.0,
+    "particle_elastic_strain": 0.0,
+    "particle_transform": 0.0,
+    "particle_qd_grad": 0.0,
+    "particle_stress": 0.0,
+    "particle_Jp": 0.0,
+    "rigid_qpos": 0.0,
+    "rigid_qvel": 0.0,
+    "rigid_reported_linear_velocity": 0.0,
+    "rigid_reported_angular_velocity": 0.0,
+    "mechanism_qpos": 0.0,
+    "mechanism_qvel": 0.0,
+    "simulation_time_s": 7.105427357601002e-15,
+    "grid_reference_particle_q": 0.0,
+    "solver_grid_transform": 0.0,
+    "solver_grid_cell_ijk": 0.0,
+    "solver_grid_node_ijk": 0.0,
+    "solver_ws_impulse": 0.0,
+    "solver_ws_stress": 0.0,
+    "solver_body_q_prev": 0.0
+  },
+  "controller_equal": true,
+  "sweep_state_equal": true,
+  "actual": {
+    "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/independent-continuation-3/failure.npz",
+    "size_bytes": 52403258,
+    "mtime_ns": 1790324877090936449,
+    "sha256": "53874f6abd271cca950da730d3a31c55ed80197545a45be10fcc879dae080b3d"
+  },
+  "expected": {
+    "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-1800/state-000006.npz",
+    "size_bytes": 52403258,
+    "mtime_ns": 1790324479089080277,
+    "sha256": "9c7416feba8919cd53aadd338eeda9fc51366158138146d3e62001995abe6f2b"
+  },
+  "reporting_error_preserved": {
+    "error": "could not convert string to float: np.str_('r1-rock-000')",
+    "checkpoint": {
+      "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/independent-continuation-3/failure.npz",
+      "size_bytes": 52403258,
+      "mtime_ns": 1790324877090936449,
+      "sha256": "53874f6abd271cca950da730d3a31c55ed80197545a45be10fcc879dae080b3d"
+    }
+  },
+  "physical_steps_repeated": false,
+  "all_physical_arrays_exact": true,
+  "derived_simulation_clock_roundoff_seconds": 7.105427357601002e-15,
+  "derived_clock_tolerance_seconds": 1e-12
+}

@@ -1,0 +1,11 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-012247-1097001",
+  "checks": {
+    "three_frames_completed": true,
+    "runtime_checks": true,
+    "first_three_states_exact": true,
+    "measurement_not_started_before_key4": true
+  },
+  "passed": true,
+  "scope": "3 zero-command frames; does not exercise a real operator key-4 event"
+}

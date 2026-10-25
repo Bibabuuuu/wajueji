@@ -1,0 +1,21 @@
+{
+  "model_path": "/home/qunwang/wajueji/runs/contact-bc-contact-window-20260924-v1/physics/runtime/audit.xml",
+  "model_sha256": "025dfaf973307a6d4aa0273af3ad67d2cbb670e39e9f8c500b17d00e64818a76",
+  "ground": {
+    "name": "ground_plane",
+    "type": "plane",
+    "size": "20 20 .1",
+    "contype": "1025",
+    "conaffinity": "257"
+  },
+  "bucket_collision_geometry_count": 18,
+  "bucket_mask_values": [
+    [
+      512,
+      256
+    ]
+  ],
+  "any_bucket_proxy_ground_mask_pair": false,
+  "explicit_bucket_ground_pairs": [],
+  "conclusion": "Bucket proxies and ground have disjoint contact masks; no explicit ground pair enables them. Visible bucket mesh has masks 0/0. Physics configuration was not changed."
+}

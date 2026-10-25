@@ -1,0 +1,41 @@
+{
+  "status": "observer_comparison_rejected_roundoff",
+  "frames": 696,
+  "wall_seconds": 139.52688335700077,
+  "all_after_states_exact": true,
+  "all_commands_exact": true,
+  "all_hard_guards": true,
+  "all_material_exact": true,
+  "difference": {
+    "frame": 696,
+    "field": "moving_bucket_sweep.actual_motion_pending_next_frame.reaction_angular_impulse_nms[2]",
+    "baseline": -0.0077859920750720174,
+    "observed": -0.007785992075072017,
+    "absolute_delta_nms": 8.673617379884035e-19
+  },
+  "native_window_reached": false,
+  "additional_run_authorized": false,
+  "source_unchanged": true,
+  "bindings": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-response-diagnosis-20260924-v1/contact1200/report.json",
+      "sha256": "a46654297f7ae4d745191faefcdcf4f0f03b0293b6b9b0f17aa0b281fc9e4ede"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-response-diagnosis-20260924-v1/contact1200/actions.ndjson",
+      "sha256": "2dc60db2c2d7871adf4d1b8e0a311196936a7e1a61de241a40e6b7390195be27"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-response-diagnosis-20260924-v1/contact1200/physics/frames.ndjson",
+      "sha256": "5de98f3aab6f2a895fc3ba84c871224a210a055a587d982836cbb5fc88860b79"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-response-diagnosis-20260924-v1/contact1200/physics/failure.npz",
+      "sha256": "2bba7161cca88427d94f24e160c61d99cfda0eeb395a455cdb15b945dfefba9c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-response-diagnosis-20260924-v1/contact1200/observer-manifest.json",
+      "sha256": "e63753ff07569aa501f44c679d512219be6e4115c2da957dd925322439d40ef4"
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+{
+  "assembly_plan_sha256": "c42b3b8b10817f56de440b1949ee63535dd495a069176de4b58dd90037d9325f",
+  "bucket_proxy_geom_count": 18,
+  "candidate_model_sha256": "670a4fb03eab97dd789d8ffe9cd4309f3440292b8216ed802c5aff09dae3bc73",
+  "contact_bits": {
+    "bucket_proxy": 512,
+    "rock": 256,
+    "rock_ground": 1024,
+    "truck_receiver_reserved": 2048
+  },
+  "expected_candidate_contract": {
+    "nplugin": 0,
+    "nq": 159,
+    "nu": 12,
+    "nv": 138,
+    "rock_count": 20
+  },
+  "frozen_source_modified": false,
+  "initial_pose_override_sha256": "17d406ae5f794236b747e74f903b8e0c9dbbd7aa64ef6b79bf7d999d59735e8b",
+  "initial_pose_source": "stable_initial_state_candidate",
+  "inventory_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+  "maximum_rock_capacity": 20,
+  "physics_qualified": false,
+  "placeholder_rock_count": 0,
+  "r1_config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+  "rock_count": 20,
+  "rocks": [
+    {
+      "body_name": "r2-rock-000",
+      "freejoint_name": "r2_rock_free_000",
+      "geom_name": "r2_rock_geom_000",
+      "initial_orientation_quaternion_wxyz": [
+        0.6113217769008915,
+        0.0016883843862911224,
+        0.014459793718622153,
+        -0.7912482219951688
+      ],
+      "initial_position_world_m": [
+        6.722487128394938,
+        0.5641885892750959,
+        0.18045427488893662
+      ],
+      "mass_kg": 16.56362839,
+      "prototype_id": "angular_tetra",
+      "qpos_address": 19,
+      "qvel_address": 18,
+      "slot": 0,
+      "source_rock_id": "sparse-large-rock-26091926-rock-000"
+    },
+    {
+      "body_name": "r2-rock-001",
+      "freejoint_name": "r2_rock_free_001",
+      "geom_name": "r2_rock_geom_001",
+      "initial_orientation_quaternion_wxyz": [
+        0.7540029023072237,
+        -0.6383773893971861,
+        0.08742924749220694,
+        -0.1277108401885408
+      ],
+      "initial_position_world_m": [
+        4.741750901771082,
+        0.9884512539751855,
+        0.10532470826359348
+      ],
+      "mass_kg": 9.460948516,
+      "prototype_id": "angular_block",
+      "qpos_address": 26,
+      "qvel_address": 24,
+      "slot": 1,
+      "source_rock_id": "sparse-large-rock-26091926-rock-001"
+    },
+    {
+      "body_name": "r2-rock-002",
+      "freejoint_name": "r2_rock_free_002",
+      "geom_name": "r2_rock_geom_002",
+      "initial_orientation_quaternion_wxyz": [
+        0.3303816912261766,
+        0.08201668487971335,
+        -0.9132024435868922,
+        0.2240145051794687
+      ],
+      "initial_position_world_m": [
+        4.43014648307128,
+        0.41287949296966964,
+        0.10493930681155152
+      ],
+      "mass_kg": 8.274858511,
+      "prototype_id": "angular_bipyramid",
+      "qpos_address": 33,
+      "qvel_address": 30,
+      "slot": 2,
+      "source_rock_id": "sparse-large-rock-26091926-rock-002"
+    },
+    {
+      "body_name": "r2-rock-003",
+      "freejoint_name": "r2_rock_free_003",
+      "geom_name": "r2_rock_geom_003",
+      "initial_orientation_quaternion_wxyz": [
+        0.08697291578391275,
+        0.6884565845137337,
+        -0.5879622794963897,
+        0.41564841037725403
+      ],
+      "initial_position_world_m": [
+        4.208924037804449,
+        -0.803051796215821,
+        0.11635864173847016
+      ],
+      "mass_kg": 7.192288348,
+      "prototype_id": "angular_bipyramid",
+      "qpos_address": 40,
+      "qvel_address": 36,
+      "slot": 3,
+      "source_rock_id": "sparse-large-rock-26091926-rock-003"
+    },
+    {
+      "body_name": "r2-rock-004",
+      "freejoint_name": "r2_rock_free_004",
+      "geom_name": "r2_rock_geom_004",
+      "initial_orientation_quaternion_wxyz": [
+        0.1499916668886643,
+        -0.035491773788001245,
+        -0.027238170267945457,
+        0.9876744989812158
+      ],
+      "initial_position_world_m": [
+        5.328819883516132,
+        0.9009495529809629,
+        0.10795324454973286
+      ],
+      "mass_kg": 5.350522192,
+      "prototype_id": "angular_tetra",
+      "qpos_address": 47,
+      "qvel_address": 42,
+      "slot": 4,
+      "source_rock_id": "sparse-large-rock-26091926-rock-004"
+    },
+    {
+      "body_name": "r2-rock-005",
+      "freejoint_name": "r2_rock_free_005",
+      "geom_name": "r2_rock_geom_005",
+      "initial_orientation_quaternion_wxyz": [
+        0.29842476319255773,
+        -0.9134714814373919,
+        -0.21322425448262297,
+        -0.1762042298424535
+      ],
+      "initial_position_world_m": [
+        4.914581978371706,
+        -0.4142221829772358,
+        0.15458621441752923
+      ],
+      "mass_kg": 4.917750732,
+      "prototype_id": "angular_octa",
+      "qpos_address": 54,
+      "qvel_address": 48,
+      "slot": 5,
+      "source_rock_id": "sparse-large-rock-26091926-rock-005"
+    },
+    {
+      "body_name": "r2-rock-006",
+      "freejoint_name": "r2_rock_free_006",
+      "geom_name": "r2_rock_geom_006",
+      "initial_orientation_quaternion_wxyz": [
+        0.1324273058799622,
+        -0.034345371396041734,
+        -0.007704574966127623,
+        0.9905675361355399
+      ],
+      "initial_position_world_m": [
+        5.44834276138592,
+        0.30037230171498996,
+        0.12740596746513008
+      ],
+      "mass_kg": 4.5089682,
+      "prototype_id": "angular_tetra",
+      "qpos_address": 61,
+      "qvel_address": 54,
+      "slot": 6,
+      "source_rock_id": "sparse-large-rock-26091926-rock-006"
+    },
+    {
+      "body_name": "r2-rock-007",
+      "freejoint_name": "r2_rock_free_007",
+      "geom_name": "r2_rock_geom_007",
+      "initial_orientation_quaternion_wxyz": [
+        0.35171199413113025,
+        -0.010456555235144297,
+        0.8925031915292254,
+        0.28218325029502556
+      ],
+      "initial_position_world_m": [
+        6.423806409251134,
+        0.08870950325397504,
+        0.1690305502981654
+      ],
+      "mass_kg": 4.123490595,
+      "prototype_id": "angular_bipyramid",
+      "qpos_address": 68,
+      "qvel_address": 60,
+      "slot": 7,
+      "source_rock_id": "sparse-large-rock-26091926-rock-007"
+    },
+    {
+      "body_name": "r2-rock-008",
+      "freejoint_name": "r2_rock_free_008",
+      "geom_name": "r2_rock_geom_008",
+      "initial_orientation_quaternion_wxyz": [
+        0.4000275361724318,
+        0.4058455095863883,
+        0.7822974880514965,
+        0.25155125291021174
+      ],
+      "initial_position_world_m": [
+        6.722801600795762,
+        0.972444282248648,
+        0.15154439017727447
+      ],
+      "mass_kg": 3.760633915,
+      "prototype_id": "angular_octa",
+      "qpos_address": 75,
+      "qvel_address": 66,
+      "slot": 8,
+      "source_rock_id": "sparse-large-rock-26091926-rock-008"
+    },
+    {
+      "body_name": "r2-rock-009",
+      "freejoint_name": "r2_rock_free_009",
+      "geom_name": "r2_rock_geom_009",
+      "initial_orientation_quaternion_wxyz": [
+        0.005363937051987093,
+        -0.5877470658355318,
+        0.8074670515911343,
+        -0.05021529025850501
+      ],
+      "initial_position_world_m": [
+        6.192332776830977,
+        0.7901296296337197,
+        0.11330729222394827
+      ],
+      "mass_kg": 3.419714156,
+      "prototype_id": "angular_block",
+      "qpos_address": 82,
+      "qvel_address": 72,
+      "slot": 9,
+      "source_rock_id": "sparse-large-rock-26091926-rock-009"
+    },
+    {
+      "body_name": "r2-rock-010",
+      "freejoint_name": "r2_rock_free_010",
+      "geom_name": "r2_rock_geom_010",
+      "initial_orientation_quaternion_wxyz": [
+        0.7378330480025227,
+        0.331928000676013,
+        -0.03773234818810053,
+        0.586517233798585
+      ],
+      "initial_position_world_m": [
+        4.429381958077682,
+        0.05338690696497242,
+        0.10399288559116862
+      ],
+      "mass_kg": 3.100047318,
+      "prototype_id": "angular_octa",
+      "qpos_address": 89,
+      "qvel_address": 78,
+      "slot": 10,
+      "source_rock_id": "sparse-large-rock-26091926-rock-010"
+    },
+    {
+      "body_name": "r2-rock-011",
+      "freejoint_name": "r2_rock_free_011",
+      "geom_name": "r2_rock_geom_011",
+      "initial_orientation_quaternion_wxyz": [
+        0.34706928294000317,
+        -0.7591365311181716,
+        -0.4989739201297237,
+        -0.232979971224476
+      ],
+      "initial_position_world_m": [
+        5.4535199589137475,
+        -1.0566491447000248,
+        0.15712135133963998
+      ],
+      "mass_kg": 2.800949398,
+      "prototype_id": "angular_bipyramid",
+      "qpos_address": 96,
+      "qvel_address": 84,
+      "slot": 11,
+      "source_rock_id": "sparse-large-rock-26091926-rock-011"
+    },
+    {
+      "body_name": "r2-rock-012",
+      "freejoint_name": "r2_rock_free_012",
+      "geom_name": "r2_rock_geom_012",
+      "initial_orientation_quaternion_wxyz": [
+        0.01784252173163139,
+        -0.7325098666128407,
+        0.6783214087334135,
+        -0.05469009221981623
+      ],
+      "initial_position_world_m": [
+        4.370906501148394,
+        -1.3695079599696536,
+        0.09175146016912022
+      ],
+      "mass_kg": 2.521736395,
+      "prototype_id": "angular_block",
+      "qpos_address": 103,
+      "qvel_address": 90,
+      "slot": 12,
+      "source_rock_id": "sparse-large-rock-26091926-rock-012"
+    },
+    {
+      "body_name": "r2-rock-013",
+      "freejoint_name": "r2_rock_free_013",
+      "geom_name": "r2_rock_geom_013",
+      "initial_orientation_quaternion_wxyz": [
+        0.13033524419147074,
+        -0.241813331688689,
+        0.8610885251973772,
+        0.4278616464612968
+      ],
+      "initial_position_world_m": [
+        5.251576045613371,
+        1.3400090161402567,
+        0.09389490478068076
+      ],
+      "mass_kg": 2.261724306,
+      "prototype_id": "angular_octa",
+      "qpos_address": 110,
+      "qvel_address": 96,
+      "slot": 13,
+      "source_rock_id": "sparse-large-rock-26091926-rock-013"
+    },
+    {
+      "body_name": "r2-rock-014",
+      "freejoint_name": "r2_rock_free_014",
+      "geom_name": "r2_rock_geom_014",
+      "initial_orientation_quaternion_wxyz": [
+        0.5831302043422241,
+        -0.3515590406798971,
+        0.7153285999276247,
+        -0.15706813752512339
+      ],
+      "initial_position_world_m": [
+        4.676276128926993,
+        0.10438935869212296,
+        0.09924320739198055
+      ],
+      "mass_kg": 2.020229129,
+      "prototype_id": "angular_tetra",
+      "qpos_address": 117,
+      "qvel_address": 102,
+      "slot": 14,
+      "source_rock_id": "sparse-large-rock-26091926-rock-014"
+    },
+    {
+      "body_name": "r2-rock-015",
+      "freejoint_name": "r2_rock_free_015",
+      "geom_name": "r2_rock_geom_015",
+      "initial_orientation_quaternion_wxyz": [
+        0.3726277104188332,
+        0.8758671922182004,
+        0.19824218455938314,
+        -0.233891614396386
+      ],
+      "initial_position_world_m": [
+        4.967108190626187,
+        -0.6678966614991241,
+        0.14613074436263976
+      ],
+      "mass_kg": 1.796566862,
+      "prototype_id": "angular_bipyramid",
+      "qpos_address": 124,
+      "qvel_address": 108,
+      "slot": 15,
+      "source_rock_id": "sparse-large-rock-26091926-rock-015"
+    },
+    {
+      "body_name": "r2-rock-016",
+      "freejoint_name": "r2_rock_free_016",
+      "geom_name": "r2_rock_geom_016",
+      "initial_orientation_quaternion_wxyz": [
+        0.08017463395313172,
+        0.4251119897912319,
+        0.8294402144388437,
+        -0.3533847122865757
+      ],
+      "initial_position_world_m": [
+        6.537513364367532,
+        1.1055597844839034,
+        0.12971511964417823
+      ],
+      "mass_kg": 1.590053503,
+      "prototype_id": "angular_octa",
+      "qpos_address": 131,
+      "qvel_address": 114,
+      "slot": 16,
+      "source_rock_id": "sparse-large-rock-26091926-rock-016"
+    },
+    {
+      "body_name": "r2-rock-017",
+      "freejoint_name": "r2_rock_free_017",
+      "geom_name": "r2_rock_geom_017",
+      "initial_orientation_quaternion_wxyz": [
+        0.01429235706168709,
+        -0.5930341712986638,
+        0.8033860868298536,
+        -0.051739691629768846
+      ],
+      "initial_position_world_m": [
+        5.084817664143282,
+        -0.5240218817091921,
+        0.13297827983748498
+      ],
+      "mass_kg": 1.40000505,
+      "prototype_id": "angular_block",
+      "qpos_address": 138,
+      "qvel_address": 120,
+      "slot": 17,
+      "source_rock_id": "sparse-large-rock-26091926-rock-017"
+    },
+    {
+      "body_name": "r2-rock-018",
+      "freejoint_name": "r2_rock_free_018",
+      "geom_name": "r2_rock_geom_018",
+      "initial_orientation_quaternion_wxyz": [
+        0.029661888819947756,
+        -0.6586112355543088,
+        0.7499319862368428,
+        -0.05434545769541023
+      ],
+      "initial_position_world_m": [
+        4.683824749833546,
+        -0.7386987205577171,
+        0.10691442718185937
+      ],
+      "mass_kg": 1.225737502,
+      "prototype_id": "angular_block",
+      "qpos_address": 145,
+      "qvel_address": 126,
+      "slot": 18,
+      "source_rock_id": "sparse-large-rock-26091926-rock-018"
+    },
+    {
+      "body_name": "r2-rock-019",
+      "freejoint_name": "r2_rock_free_019",
+      "geom_name": "r2_rock_geom_019",
+      "initial_orientation_quaternion_wxyz": [
+        0.19002981519744727,
+        0.04021915860320681,
+        0.042845296070750105,
+        -0.9800180453552292
+      ],
+      "initial_position_world_m": [
+        4.816654758989666,
+        -0.8140340549893893,
+        0.11895395569503316
+      ],
+      "mass_kg": 1.066566855,
+      "prototype_id": "angular_tetra",
+      "qpos_address": 152,
+      "qvel_address": 132,
+      "slot": 19,
+      "source_rock_id": "sparse-large-rock-26091926-rock-019"
+    }
+  ],
+  "scene_class": "sparse-large-rock",
+  "scene_id": "sparse-large-rock-seed-26091926",
+  "schema": "excavation_mixed_material_r2_model_candidate_v1",
+  "scope_limit": "MJCF generation only; requires a separate load-only inspection and does not qualify settling, excavation, retention, dump or fill rate",
+  "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+  "status": "r2_model_candidate_generated",
+  "surface_support": {
+    "asset_file_name": "surface-heightfield.hfield",
+    "asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+    "base_depth_m": 0.1,
+    "center_xyz_m": [
+      5.7,
+      0.0,
+      -0.007009684573858976
+    ],
+    "elevation_range_m": 0.19001035345718265,
+    "interpolation_error_sample_count": 102400,
+    "maximum_interpolation_error_m": 9.814442024148884e-05,
+    "maximum_sampled_height_m": 0.18300066888332367,
+    "minimum_sampled_height_m": -0.007009684573858976,
+    "ncol": 65,
+    "nrow": 65,
+    "radius_xy_m": [
+      1.7000000000000002,
+      1.8
+    ],
+    "rms_interpolation_error_m": 1.47188878349263e-05,
+    "scene_manifest_path": "reports/v4/sparse-large-stable-admission-2026-09-20-v1/sparse-large-rock-seed-26091926/scene-manifest.json",
+    "scene_manifest_sha256": "151f82ae68694b874c4e52cc73482f52ca3a279c3861a310e042586739a91beb",
+    "source_region_polygon_xy_m": [
+      [
+        4.0,
+        -1.8
+      ],
+      [
+        7.4,
+        -1.8
+      ],
+      [
+        7.4,
+        1.8
+      ],
+      [
+        4.0,
+        1.8
+      ],
+      [
+        4.0,
+        -1.8
+      ]
+    ],
+    "source_surface_model": {
+      "base_height_m": 0.02,
+      "bumps": [
+        {
+          "amplitude_m": 0.035,
+          "center_xy_m": [
+            5.15,
+            -0.45
+          ],
+          "sigma_xy_m": [
+            0.62,
+            0.48
+          ]
+        },
+        {
+          "amplitude_m": -0.022,
+          "center_xy_m": [
+            6.45,
+            0.72
+          ],
+          "sigma_xy_m": [
+            0.72,
+            0.55
+          ]
+        }
+      ],
+      "origin_xy_m": [
+        4.0,
+        0.0
+      ],
+      "slope_dz_dx": 0.04,
+      "slope_dz_dy": -0.015
+    },
+    "x_max_m": 7.4,
+    "x_min_m": 4.0,
+    "y_max_m": 1.8,
+    "y_min_m": -1.8
+  },
+  "total_rock_mass_kg": 87.35641987300001
+}

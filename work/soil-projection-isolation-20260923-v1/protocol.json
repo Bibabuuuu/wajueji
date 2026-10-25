@@ -1,0 +1,45 @@
+{
+  "status": "frozen_before_physics",
+  "purpose": "isolate incremental effect of postsolve projection on late bottom particle migration",
+  "input": "original D115 full prepoint; never resume invalid raw state",
+  "prefix": {
+    "frames": 1000,
+    "applied_commands": "original run",
+    "native_bridge": "original generated C++ byte identical",
+    "checks": "all recorded states/metrics and every snapshot array at 1000 exact, including same Inf values"
+  },
+  "intervention": {
+    "frames": [
+      1001,
+      1329
+    ],
+    "change": "skip project_outside only; main MPM contact solver retained",
+    "commands": "same original actually applied commands; not new soft-limit projection",
+    "material_control_frequency": "unchanged"
+  },
+  "outcomes": [
+    "initial bottom z<0.2m cohort displacement/count beyond footprint at 1193/1329",
+    "bottom fixed 0.1m cells occupancy",
+    "particle/rock velocities and minimum z",
+    "nonfinite fields and negative-ground particles"
+  ],
+  "interpretation": "Continued flow cannot exclude earlier projection effects; improvement does not qualify disabling penetration correction. Known Jp Inf retained in both paths; diagnostic only.",
+  "abort": "prefix mismatch; position/velocity nonfinite; forbidden contact; hard joint bound or closure >1mm; save raw failure",
+  "budget": "one local RTX4070 cuda:0 run up to1329frames about4-6min; no sweep",
+  "bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279/physics.ndjson": "d0b5946573e310483efb330203d64bd20ba0c04407ae1e82158195503f5e0836",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279/report.json": "12d41684cc76adc0f8ac201d8c18420bfb7ae58bc5baa3d4d05412661e7b4588",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279/bucket-integral-build/capacity-bridge.cc": "e8e3f4b22c3f4878204a3ac1242d1b880f6f659bbe3f73e7f12041a1ec14af6e",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476",
+    "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py": "9c404fa93635109fe14f5af10b592101d730996ba255c6885d8be839655f75a7",
+    "/home/qunwang/wajueji/src/v4/layered_47_interactive_proxy_checkpoint.py": "1b3066cec2b418c8cc2eded1e8b42395d612eaec971c75056334d19c894a5dd6",
+    "/home/qunwang/wajueji/src/v4/run_layered_47_excavation_preflight.py": "b24e871c90d10d5bea4ddb6b9b713c09379c120f7c8e3b65b5cacd4a2b860e11",
+    "/home/qunwang/wajueji/src/v4/mixed_material_r1.py": "ba97805d8643c910cedfd46fa71b7a172361e9008e847d42fd5fe326eb2cce59",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279/bucket-integral-build/bucket_integral_candidate.h": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279/build/inertia_candidate.h": "f3faf5fcc3416666faef0c8a084d1d9a2cd264806a0594dcd508a4f3d3c63b64",
+    "/home/qunwang/wajueji/work/soil-projection-isolation-20260923-v1/probe.py": "b7cadbbd67eebafc66428893e433e5cf0d4703d2bf4b2a73bec6e23ac7d491a1",
+    "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-001000.npz": "eae6f44c8685123a8a5acedb1df8b1833de2692e62adfbe306c596261ce3ef7c",
+    "/home/qunwang/wajueji/work/manual-soil-loss-replay-20260923-v1/diagnostic-001329.npz": "398cfdb4924ec402d6b60fd53fdc580b82b5e8a4b73076281a866c0d74fbbfd1"
+  }
+}

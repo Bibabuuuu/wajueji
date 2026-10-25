@@ -1,0 +1,99 @@
+{
+  "schema": "excavation_layered_mound_three_rock_adaptive_press_config_v1",
+  "status": "three_lower_rocks_variable_short_press_then_free_settle",
+  "physical_geometry": {
+    "config_path": "configs/v4/layered-mound-physical-preflight-v1.json",
+    "config_sha256": "c16cb7dd56bf8e63864fa610249410e66a41382f708d20c2846b16198c1fab74",
+    "report_path": "results/layered-mound-physical-preflight-v1/report.json",
+    "report_sha256": "109301904cf058c2de6fece30255813d39a51012c8e2a450f89fcf618e4ac685",
+    "manifest_path": "results/layered-mound-physical-preflight-v1/scene-manifest.json",
+    "manifest_sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+  },
+  "single_press_gate": {
+    "config_path": "configs/v4/layered-mound-single-rock-press-smoke-v1.json",
+    "config_sha256": "8d3f8a568ded0a59ade823c9e6ca92747e431ffb99ac42129adb81167b09f682",
+    "runner_path": "src/v4/run_layered_mound_single_rock_press_smoke.py",
+    "runner_sha256": "8f9927a3681b2fb89e09c11804c7e802aad9ae2cec119151fc7dc1c0fac1847f",
+    "report_path": "results/layered-mound-single-rock-press-smoke-v1.json",
+    "report_sha256": "bf4df087fa521f2db099442d78edd96cd6f7d6a6873a69f5090880f9b5040ebf"
+  },
+  "capacity_bridge": {
+    "config_path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "unexcavated_soil": {
+    "visual_config_path": "configs/v4/layered-mound-viewer-preview-v1.json",
+    "visual_config_sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32",
+    "source_bank_path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+    "maximum_center_height_m": 0.32,
+    "expected_particle_count": 85620,
+    "precarved": false
+  },
+  "targets": [
+    {"manifest_rock_id": "lower-000", "press_distance_m": 0.012, "press_frames": 18},
+    {"manifest_rock_id": "lower-001", "press_distance_m": 0.008, "press_frames": 12},
+    {"manifest_rock_id": "lower-002", "press_distance_m": 0.016, "press_frames": 24}
+  ],
+  "construction": {
+    "start_surface_clearance_m": 0.005,
+    "foundation_presettle_frames": 24,
+    "press_sequence": "one_at_a_time_other_rocks_held",
+    "orientation_locked_during_press": true,
+    "simultaneous_free_release_after_press": true,
+    "free_fall_from_height": false
+  },
+  "mpm": {
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "voxel_size_m": 0.05,
+    "gravity_m_s2": [0.0, 0.0, -9.81],
+    "material": {
+      "friction": 0.68,
+      "young_modulus": 2000000.0,
+      "poisson_ratio": 0.3,
+      "yield_pressure": 100000.0,
+      "yield_stress": 12000.0,
+      "tensile_yield_ratio": 0.0025,
+      "hardening": 0.0,
+      "hardening_rate": 1.0,
+      "softening_rate": 1.0,
+      "dilatancy": 0.0,
+      "viscosity": 0.0,
+      "damping": 0.0
+    }
+  },
+  "probe": {
+    "output_dt_s": 0.008333333333333333,
+    "mujoco_internal_substeps": 40,
+    "maximum_release_frames": 240,
+    "stable_window_frames": 60,
+    "maximum_stable_rock_linear_speed_m_s": 0.01,
+    "maximum_stable_rock_angular_speed_rad_s": 0.15,
+    "maximum_stable_particle_speed_m_s": 0.05,
+    "maximum_stable_particle_p99_speed_m_s": 0.01,
+    "maximum_particle_speed_m_s": 5.0,
+    "maximum_rock_linear_speed_m_s": 5.0,
+    "maximum_rock_angular_speed_rad_s": 25.0,
+    "maximum_forbidden_contact_count": 0,
+    "minimum_world_z_m": -0.05
+  },
+  "acceptance": {
+    "press_distances_may_differ": true,
+    "rock_translation_during_release_allowed": true,
+    "rock_rotation_during_release_allowed": true,
+    "rock_rock_contact_allowed": true,
+    "final_manifest_pose_required": false,
+    "continuous_stable_window_required": true
+  },
+  "scope": {
+    "active_soil": "unexcavated_foundation_stage_only",
+    "active_rock_count": 3,
+    "other_62_rocks_active": false,
+    "full_depth_press": false,
+    "full_lower_layer": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

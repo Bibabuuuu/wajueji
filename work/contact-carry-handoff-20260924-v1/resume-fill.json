@@ -1,0 +1,110 @@
+{
+  "physics_steps_added": 0,
+  "formal_fill_qualification": false,
+  "checkpoint_sha256": "dc7378f44d2b8204186354d0c58fd72993d3abb8ebfe29e8e84a31b9b868ae06",
+  "measurements": [
+    {
+      "frame": 0,
+      "sim_time_s": 0.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.5009881169826258,
+      "display_only": true,
+      "global_frame": 2327
+    },
+    {
+      "frame": 596,
+      "sim_time_s": 9.933333333333334,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.3861615210189484,
+      "display_only": true,
+      "global_frame": 2923
+    },
+    {
+      "frame": 597,
+      "sim_time_s": 9.95,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.35963299000286497,
+      "display_only": true,
+      "global_frame": 2924
+    },
+    {
+      "frame": 598,
+      "sim_time_s": 9.966666666666667,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.35824147099629045,
+      "display_only": true,
+      "global_frame": 2925
+    },
+    {
+      "frame": 599,
+      "sim_time_s": 9.983333333333333,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.3610716770053841,
+      "display_only": true,
+      "global_frame": 2926
+    },
+    {
+      "frame": 600,
+      "sim_time_s": 10.0,
+      "valid_estimate": false,
+      "fill_percent": null,
+      "liters": null,
+      "quality_reasons": [
+        "cavity-connected material touches measurement boundary"
+      ],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.35625336700468324,
+      "display_only": true,
+      "global_frame": 2927
+    }
+  ],
+  "limitation": "Working bucket cavity plus heap occupancy only; no stable unloaded volume or causal spill estimate."
+}

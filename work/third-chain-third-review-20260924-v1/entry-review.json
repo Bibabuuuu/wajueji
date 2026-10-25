@@ -1,0 +1,96 @@
+{
+  "schema": "operator_entry_adjustment_review_v1",
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627",
+  "planned_target": {
+    "entry_xy_m": [
+      5.6478228927681355,
+      0.5916766840042811
+    ],
+    "surface_z_m": 1.0307196974754333
+  },
+  "marker_semantics": "Fixed target for bucket width-center reference; visible points are a vertical column 0.05..0.65 m above target.",
+  "local_reference_m": [
+    0.214,
+    0.0,
+    -1.023
+  ],
+  "reference_is_exact_outer_tooth": false,
+  "user_annotation": "User reports the scoop completed well with high fill; no asserted manual retargeting.",
+  "observations": [
+    {
+      "label": "first_nonzero_sample",
+      "frame": 125,
+      "center_reference_world_m": [
+        6.171639485668308,
+        0.6203622278404277,
+        1.2566390140576562
+      ],
+      "lateral_from_planned_center_m": -0.026047931472441277,
+      "bucket_contact_samples": 1,
+      "pitch_rad": -0.23918440469025873
+    },
+    {
+      "label": "first_five_frames_at_least_ten_samples",
+      "frame": 211,
+      "center_reference_world_m": [
+        6.16567661147321,
+        0.6073027387934183,
+        0.8989020504512457
+      ],
+      "lateral_from_planned_center_m": -0.03841505869036296,
+      "bucket_contact_samples": 10,
+      "pitch_rad": -0.1782806272581931
+    },
+    {
+      "label": "penetrate_deepen",
+      "frame": 334,
+      "center_reference_world_m": [
+        6.078402196572271,
+        0.598336648816044,
+        0.43192301684478096
+      ],
+      "lateral_from_planned_center_m": -0.038239077790696734,
+      "bucket_contact_samples": 92,
+      "pitch_rad": -0.07577488581506804
+    },
+    {
+      "label": "curl_load",
+      "frame": 560,
+      "center_reference_world_m": [
+        5.597395195380915,
+        0.5722058133904544,
+        0.13706165969559492
+      ],
+      "lateral_from_planned_center_m": -0.014110747158089769,
+      "bucket_contact_samples": 469,
+      "pitch_rad": 0.24986306689887208
+    },
+    {
+      "label": "lift_clear",
+      "frame": 959,
+      "center_reference_world_m": [
+        4.400291610867568,
+        0.30191018657950836,
+        0.961919613851967
+      ],
+      "lateral_from_planned_center_m": -0.15820694802897037,
+      "bucket_contact_samples": 696,
+      "pitch_rad": 1.634692010095491
+    },
+    {
+      "label": "off_soil_confirm",
+      "frame": 1408,
+      "center_reference_world_m": [
+        3.9950867754028945,
+        -0.011981133733516853,
+        2.244491896885887
+      ],
+      "lateral_from_planned_center_m": -0.42817084597164334,
+      "bucket_contact_samples": 740,
+      "pitch_rad": 1.6638839952879347
+    }
+  ],
+  "automatic_actual_target_relabelled": false,
+  "training_note": "Keep original selected target and operator adjustment separately; review task conditioning before training.",
+  "scope": "Reference poses from recorded kinematics; contact-count heuristic is not an exact tooth-surface first intersection."
+}

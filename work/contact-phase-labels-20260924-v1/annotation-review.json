@@ -1,0 +1,31 @@
+{
+  "schema": "contact_phase_human_review_v1",
+  "run": "manual-contact-20260924-010900-1088617",
+  "status": "curl_boundary_human_confirmed_other_boundaries_pending",
+  "phases": [
+    "approach_contact",
+    "penetrate",
+    "curl_load",
+    "lift",
+    "off_soil"
+  ],
+  "human_boundaries": {
+    "penetrate_to_curl_load": {
+      "physical_frame_end": 610,
+      "simulation_time_s": 10.166666666666666,
+      "first_causally_available_decision_frame": 611,
+      "source": "user_confirmed_visual_review",
+      "reference": "Selected recorded CAD pose review; not a claim that all other stages are labeled",
+      "mouth_chord_from_down_deg": -5.881154296396837
+    }
+  },
+  "candidate_vertical_reference": "CAD cavity upper rim to cutting rim chord",
+  "candidate_vertical_frame": 581,
+  "original_key2_next_frame": 610,
+  "thresholds_frozen": false,
+  "automatic_labeling_validated": false,
+  "other_trajectory_validation": "113555_confirmed_359_candidate_368_late_9_frames; 114908_confirmed_624_candidate_638_late_14_frames; 115812_confirmed_560_candidate_579_late_19_frames_revision_v2; other_boundaries_pending",
+  "diagnostic_angle_candidate_frozen": true,
+  "thresholds_frozen_scope": "Production multi-signal phase thresholds remain uncalibrated; diagnostic angle v1 is frozen separately.",
+  "transfer_human_review_ledger": "human-transfer-comparison-v1.json"
+}

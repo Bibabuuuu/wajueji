@@ -1,0 +1,22 @@
+{
+  "label": "FIRST SCOOP | DIG - DUMP - RETURN",
+  "summary": "45.5% working fill; dump/return completed; soil receipt 25371/25372 (not formal mixed volume)",
+  "sources": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/display",
+      "label": "D154 cut / curl / lift"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/display",
+      "label": "D155 finish curl and lift"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/display",
+      "label": "D157 fixed truck transport"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-fixed-truck-continuation-20260925-v2/physical/display",
+      "label": "D159 swing / dump / return"
+    }
+  ]
+}

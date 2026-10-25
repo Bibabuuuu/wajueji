@@ -1,0 +1,389 @@
+{
+  "files": [
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed44-weight100.zip",
+      "bytes": 876132,
+      "sha256": "84aade9a3d8819368afb72223b8452ebfbc5e9ac9ad190818207d1142692aab1"
+    },
+    {
+      "path": "runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz",
+      "bytes": 52403258,
+      "sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545"
+    },
+    {
+      "path": "runs/layered-47-sparse-manual-contact-v1/manual-contact-20260925-143841-2474275/input.ndjson",
+      "bytes": 5544145,
+      "sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6"
+    },
+    {
+      "path": "runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/endpoint.npz",
+      "bytes": 53196950,
+      "sha256": "46d3f04fa2dfc18082c17f7496e4c146f2491fdb8e08ccd0339cc6169203947a"
+    },
+    {
+      "path": "runs/edge-first-two-scoop-20261015-continuation/dump.npz",
+      "bytes": 53944382,
+      "sha256": "26d3928d2e41fc1f5bce5020160be6faddcdca7a936dcaddd7eb65a49e1f94b3"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed43-weight100.zip",
+      "bytes": 876132,
+      "sha256": "ee6563cca91e51b9737858e030ba68fd070d60f8d26c694c169a9037f6bb9b2b"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed42-weight300.zip",
+      "bytes": 876132,
+      "sha256": "3195a0bb4d517aed4f0aa7dc05e2ff0c2d38dd22ca5672d99d8e175597541aa1"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed43-weight300.zip",
+      "bytes": 876132,
+      "sha256": "3050863df021ed776c5803e429d9bbf92fb4f8c49cf223db2c313d4ffb63d6c3"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed42-weight10.zip",
+      "bytes": 876131,
+      "sha256": "76444d22edd6d960fd10818ada711de01b87431b661a55df69f5fb8659a55d12"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed42-weight50.zip",
+      "bytes": 876131,
+      "sha256": "90c4541f6446749a04dd9f561f6ac5d80b93aefc93cab4ed72fedb35f1398ba2"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed43-weight50.zip",
+      "bytes": 876131,
+      "sha256": "e913bb23767d78a02b922403af2af71252723136fc12e5524da618fea8607227"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed42-weight30.zip",
+      "bytes": 876131,
+      "sha256": "910668fba2f22e1ff66cb8d933fdb940f3b32334185c78a0d6b4b222c01d9f57"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/review.json",
+      "bytes": 6149,
+      "sha256": "86a33c5b51c18d13d4033312f8fae5e13bf99c1e5f062d78bf312c92fd4219d2"
+    },
+    {
+      "path": "work/manual-strength-overnight-20261013-v1/anchor-grid-v1/seed44-weight50.zip",
+      "bytes": 876131,
+      "sha256": "a194edbbe2a1eab54fab2f6ea8eca8dd939034431ca9ccbb6280921f46e52d87"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-01200.control.json",
+      "bytes": 315,
+      "sha256": "25c640775853c4d00fb5940290b9670b9dee367a6bd49f9766de11b744fea002"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/prefix3.npz.json",
+      "bytes": 23940,
+      "sha256": "94ca2fa61c2767834d401e05b383270f8642ecc6eb2d2442898e14c63206ee5f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-06600.npz.json",
+      "bytes": 23089,
+      "sha256": "28a9426d68ea8576066195b15fef9b7a29d192bf5716a1d09546bf4b4232d9fa"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/closure.json",
+      "bytes": 898,
+      "sha256": "16cc3a8acacc6d75c04c28985774881762857af49ef0938ebdd5506ba3ae4fd4"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-05400.npz.json",
+      "bytes": 23796,
+      "sha256": "70833f82cdc242f746365a666a4d3da824427552e02db71312e68e85e6994ad4"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-01800.npz.json",
+      "bytes": 23927,
+      "sha256": "0e50dbd35d14727857b47c582abc67087dc341f918d009d586d311840d901b57"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-01800.control.json",
+      "bytes": 319,
+      "sha256": "e5b9f9e1759e76029edd7cc4095c0ee46c3aa6d49431d01364c93f8eb8e7481b"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-06000.npz.json",
+      "bytes": 23366,
+      "sha256": "326df7c43ce9380b5777f13ff0cdf3c402aa8e9133d52e453e4183ee0388a6ea"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/completion-evidence.json",
+      "bytes": 1564,
+      "sha256": "d985209aabacd864cceb05c82d9e440bcf13bbdee79a5622fd7195aa1f40a4d5"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_rear_lower_prepoint.control.json",
+      "bytes": 251,
+      "sha256": "f60603d5ad751509def3faada72837a2ecb112291e472ae6e7e64e73bce1809b"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/report.json",
+      "bytes": 116525,
+      "sha256": "dc987c943fa8d1a21caf27b99df3e352b0ee783109b3857cf6d389f61c434325"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_align_high.control.json",
+      "bytes": 249,
+      "sha256": "a8b5f472867e0f4263f1bf973b99247cd339c0a856b5e736652595c50109f766"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-03000.control.json",
+      "bytes": 318,
+      "sha256": "9ebc67619162170e83fc21d0bceb8f8493f4ea5caf58d3c485bfeac56ba2f916"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/final.control.json",
+      "bytes": 235,
+      "sha256": "53c209056e6c5a6a8c791be05b61c04a8e2ecc19aadbab281587093b161d6a4f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-04200.control.json",
+      "bytes": 323,
+      "sha256": "94cdc56a9a2a19dbc37fc8464046a13d115dc151dba76a405c1a98e48f3377ce"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_reference_align.npz.json",
+      "bytes": 23682,
+      "sha256": "6418ac7992939356a0b629648d191d73c739eeabc25d04ffa0fc23222f5af53f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-06000.control.json",
+      "bytes": 313,
+      "sha256": "cce7927acc354669c8d06280951fbc7041353cc113fd729fdcf0823e59faee27"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-07200.control.json",
+      "bytes": 313,
+      "sha256": "707d98c85eb40eb7ee750fa16f6315b0a98309de2260d31d0b00ffd762020efc"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-05400.control.json",
+      "bytes": 316,
+      "sha256": "a0e7dc6a9145990ec63592221578f5fa7395267e1ab6b0d01ea35d5bc90c577b"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/final.npz.json",
+      "bytes": 23443,
+      "sha256": "14e5b806b2dcccd108e1f4670b58736102e738d774f25195ebe34386e56af642"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-04800.npz.json",
+      "bytes": 23704,
+      "sha256": "f88245fbd7ae069ba61cf0271fdd16c37f8a88ae8841ea6782aa591e6101ce9e"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-01200.npz.json",
+      "bytes": 23949,
+      "sha256": "b014c546f98a027ba2509aa800b2b92d4c1641b94152aa9b8ae34a267eae7239"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-04200.npz.json",
+      "bytes": 24025,
+      "sha256": "e73f7615f53ad4dcc0d7899f20c99a3f86a6437a3866c9df19d64856ca913470"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_extend_high.control.json",
+      "bytes": 250,
+      "sha256": "0848e3af41610607abec981c0370491f7b62e3ef955fc1cc8aa9a37232ff782b"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-03600.control.json",
+      "bytes": 318,
+      "sha256": "d34df10a41d27efb2c4300b14df3558fe843933ea4d916502b08ab8cafb83134"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-02400.npz.json",
+      "bytes": 23894,
+      "sha256": "5a0a4d4bf1a917fc60d6e285f84555450a563e921ca3d7a5ec53b539fc215288"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-07800.npz.json",
+      "bytes": 23285,
+      "sha256": "3eebae0cb39d3332a674b2f93ea70cba186f365295959f63e7adc2656b229348"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_rear_lower_prepoint.npz.json",
+      "bytes": 23720,
+      "sha256": "f24c0c9890380c996bfe532e9cd1c58e436500e64ee840480287a0b6895899f8"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_high_clear.npz.json",
+      "bytes": 23734,
+      "sha256": "2761c126855b85b46402e01719f97a62daddf67381ee4b21d7db45701954527f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/prefix3.control.json",
+      "bytes": 318,
+      "sha256": "7c0c32dca5fdac68cbcab45fb1f82dc025089f35888f68dcd85740feefe3237a"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_high_clear.control.json",
+      "bytes": 242,
+      "sha256": "86fd983302d87e0308329bfcecdc0f3ff2d517aebd394b05765a5c85f80c1640"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/read-only-audit.json",
+      "bytes": 3103,
+      "sha256": "fc1c008ce1ec57c74a5a88b3f0f2d29c512c931d8d192de15be7732761302c13"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_open_high.npz.json",
+      "bytes": 23742,
+      "sha256": "21b843ac299f5f443c46797245c56a4b5cdbe3f5a6bcf15cf1c3b356c11336d8"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_outward_high.npz.json",
+      "bytes": 23723,
+      "sha256": "2c6e71afcc214d0bc179ff6928427cf81b3995d1d128d2d2906e5e900e6d3ad9"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-04800.control.json",
+      "bytes": 251,
+      "sha256": "fc54813f81b49febe55da5eb0a3969af028d8147dc0a277394efdb5de2a6bd94"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_open_high.control.json",
+      "bytes": 248,
+      "sha256": "a340478b146de84c77a221901bb9e62c141cdf7301c6c61aa9c47704880360f5"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-06600.control.json",
+      "bytes": 314,
+      "sha256": "af74ac176e2230854b4c167ed4f29e4b1406d0f072995d19dc0192be0cbf708f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_outward_high.control.json",
+      "bytes": 244,
+      "sha256": "07e51a72e2980793515fa99a7733e8d9fdfebf29a9bc905c7878ce284956a459"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-00600.control.json",
+      "bytes": 314,
+      "sha256": "ed29d140b5c78956b1627a0487453c4a4ecab73f7e45986e1eaf41a6ca936536"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-03600.npz.json",
+      "bytes": 24016,
+      "sha256": "9c334b554a336e7c516785d9281580e62b4be7ca8b617a779e7bc713316190de"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_reference_align.control.json",
+      "bytes": 247,
+      "sha256": "a11224d86ca3ac490e06d01e3a18024d1efeef9de0d0da17b8960673441d84c0"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-02400.control.json",
+      "bytes": 322,
+      "sha256": "e53ebaec9cb7c7bd1a74b6e74818e9ddf37884b518aa4e1da01a07380eac0a1f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-07200.npz.json",
+      "bytes": 22682,
+      "sha256": "7132015c847a18f0e4d5fc6aeafbab6f7b1fec337f3876c2781ea9f7d2db4ff7"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-07800.control.json",
+      "bytes": 309,
+      "sha256": "dd85ad9189fa66d7f6c0852b6d0b9555f4320d45e3d190fcd01b87089961c517"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_align_high.npz.json",
+      "bytes": 23716,
+      "sha256": "96a2b9f1fc5ed3207ee25a66ed811d276e162d1c930ae4cb54cd4e1c177e9bed"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/zero.control.json",
+      "bytes": 232,
+      "sha256": "b203172c2c36eb34560ed12fe79838ef117d1f8761300f3dcfd689c5e68e7cfb"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/zero.npz.json",
+      "bytes": 23672,
+      "sha256": "eb146a686ae70fdf5f2fb064bce99fcc97a6ece13889eb4e7c290ed4a743cd8f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_extend_high.npz.json",
+      "bytes": 23631,
+      "sha256": "42baec7aa89d837ec575634459f1a37a847e4a673993ba1a1eecbc558210a3d8"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_rise_0.control.json",
+      "bytes": 245,
+      "sha256": "6358ca4bef853062e5f14757803f8ed0010a81c21cfcda485d0f50db0841d25f"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-00600.npz.json",
+      "bytes": 24025,
+      "sha256": "9283f5cf235b149ce89279f9084a8bac4193ce9290fe42ea6664c292b42a8aa9"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/periodic-03000.npz.json",
+      "bytes": 23937,
+      "sha256": "541c541af1a0ae26a4e19ec7df95735667d7eff4ba98ce2da0759e70cd6c26f4"
+    },
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/scoop2_return_rise_0.npz.json",
+      "bytes": 23694,
+      "sha256": "3e51986a0b48e70534200dcfbf04e6a8bed3a75d5126ce9f4ff4cffce8b86786"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/actions.json",
+      "bytes": 2151686,
+      "sha256": "0351d4da1ed4b7596d1206ae2b5f05eeb0c08ca2ae5707a2f3211c1e71638b9f"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/independent-audit.json",
+      "bytes": 3242,
+      "sha256": "2b6f408d25ce47f9738f16087ee188debee1133b4bb20128f1d5a128d15543af"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/report.json",
+      "bytes": 2478,
+      "sha256": "ba5c0955d90a6a1162979ce00bf7705bb00efbb3e44d5df4fcdb062d42ae3367"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/pitch-errors.json",
+      "bytes": 155032,
+      "sha256": "33b00e1c3651a03db20d4b2701880281a67c8f5d7eb3520375abc7c18b10f89e"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/final.npz.json",
+      "bytes": 24312,
+      "sha256": "879b79026d12439f399781a19608c6a7a61b5dbb12d15815c975f4133ef8666c"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/restore-cache.json",
+      "bytes": 368464,
+      "sha256": "00066fae2bbd5f2f0dd6106a0cd7c915447b5b6f2f895d23da037c2ce597e2d3"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/dispatch.json",
+      "bytes": 272642,
+      "sha256": "8212bba1f1f825cbe9de1b56f8c052b4b6bb8ea8eefe54fd49bb2bb31c56d827"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/inactive.npz.json",
+      "bytes": 24270,
+      "sha256": "107dd53fbbf25ab01303ad089bf729c4bde26d2b5ff4af64259010d4f3349734"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/active120.npz.json",
+      "bytes": 24377,
+      "sha256": "22473693602ea9568506e45c6ceb4e5facef91b22c7805760d191db1f377b1d9"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/states.json",
+      "bytes": 43378373,
+      "sha256": "1378a55b617c9a01e1797d62f58eb7d3efdde6c2faa838da5048f471d7dc7771"
+    }
+  ],
+  "retained_runtime_roots": [
+    "/home/qunwang/codex-work",
+    "/home/qunwang/wajueji/local-data/runtime"
+  ],
+  "note": "Selected frozen models and key inputs/endpoints. Full runtime and remaining run data are retained on the desktop; this bundle is not a complete operating-system image."
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "excavation_mixed_material_r2_config_v1",
+  "source_model": {
+    "path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+    "sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "mechanism_nq": 19,
+    "mechanism_nv": 18,
+    "actuator_count": 12,
+    "plugin_count": 0
+  },
+  "bucket_proxy": {
+    "r1_config_path": "configs/v4/mixed-material-r1.json",
+    "r1_config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+    "inventory_path": "/home/qunwang/codex-work/compact-bank-2026-09-11/inventory-contract.json",
+    "inventory_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "expected_geom_count": 18
+  },
+  "assembly_preflight": {
+    "root": "reports/v4/scene-assembly-preflight-2026-09-20-v2",
+    "root_report_sha256": "5758b35edd6341b6f02114b8859453d00a55724c8782aa89e99c67860978fe8b"
+  },
+  "surface_support": {
+    "policy": "deterministic_static_heightfield_from_reviewed_scene_manifest",
+    "scene_reconstruction_root": "reports/v4/scene-reconstruction-2026-09-20-v2",
+    "scene_reconstruction_root_report_sha256": "b84563f3b723d3ba311361cedca2727208f1336b0e293e0cb0cec8df5d3865d3",
+    "grid_nrow": 65,
+    "grid_ncol": 65,
+    "base_depth_m": 0.1,
+    "interpolation_subsamples_per_cell": 4,
+    "maximum_interpolation_error_m": 0.00015,
+    "heightfield_asset_name": "r2_surface_heightfield",
+    "heightfield_geom_name": "r2_surface_terrain",
+    "heightfield_file_name": "surface-heightfield.hfield",
+    "source_ground_plane_rock_collision_enabled": false
+  },
+  "capacity": {
+    "policy": "single_bridge_maximum_capacity_actual_count_fixed_at_model_load",
+    "maximum_rock_count": 20,
+    "placeholder_rocks_allowed": false,
+    "runtime_add_remove_allowed": false,
+    "qpos_per_rock": 7,
+    "qvel_per_rock": 6
+  },
+  "contact_bits": {
+    "rock": 256,
+    "bucket_proxy": 512,
+    "rock_ground": 1024,
+    "truck_receiver_reserved": 2048
+  },
+  "bridge_candidate": {
+    "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+    "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+    "ready_schema": "excavation_mixed_rigid_bridge_v2",
+    "state_schema": "excavation_mixed_rigid_bridge_state_v2",
+    "actual_rock_count_source": "loaded_model_dimensions_and_contiguous_named_freejoints",
+    "maximum_rock_count": 20,
+    "legacy_first_rock_aliases": true,
+    "external_wrench_input": "reserved_zero_only"
+  },
+  "first_admission": {
+    "required_rock_count": 20,
+    "admitted_scene_classes": [
+      "ordinary-small-rock-dominant",
+      "sparse-large-rock"
+    ],
+    "scene_ids": [
+      "ordinary-small-rock-dominant-seed-26091911",
+      "ordinary-small-rock-dominant-seed-26091912",
+      "ordinary-small-rock-dominant-seed-26091913",
+      "sparse-large-rock-seed-26091922",
+      "sparse-large-rock-seed-26091925",
+      "sparse-large-rock-seed-26091926"
+    ],
+    "deferred_scene_class": "jam-boundary",
+    "deferred_scene_count": 3
+  },
+  "settling_probe": {
+    "duration_s": 1.0,
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "command": [0.0, 0.0, 0.0, 0.0],
+    "external_wrench_count": 0,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0
+  },
+  "scope": {
+    "status": "r2_load_only_candidate",
+    "model_generation": true,
+    "model_load": true,
+    "r2_bridge_source_generation": true,
+    "r2_bridge_initialization": true,
+    "settling_probe_enabled": true,
+    "forward_dynamics": false,
+    "time_stepping": false,
+    "bridge_modification": false,
+    "r1_bridge_modification": false,
+    "physics_qualification": false,
+    "training": false
+  }
+}

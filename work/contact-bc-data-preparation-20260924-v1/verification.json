@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "passed": true,
+      "index_frames": 1246,
+      "tensor_frames": 1243,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "passed": true,
+      "index_frames": 1281,
+      "tensor_frames": 1278,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "passed": true,
+      "index_frames": 1693,
+      "tensor_frames": 1690,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "passed": true,
+      "index_frames": 1152,
+      "tensor_frames": 1149,
+      "sequences": 2
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "passed": true,
+      "index_frames": 1102,
+      "tensor_frames": 1099,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "passed": true,
+      "index_frames": 1431,
+      "tensor_frames": 1428,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "passed": true,
+      "index_frames": 1368,
+      "tensor_frames": 1365,
+      "sequences": 3
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "passed": true,
+      "index_frames": 1381,
+      "tensor_frames": 1378,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "passed": true,
+      "index_frames": 1644,
+      "tensor_frames": 1641,
+      "sequences": 1
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "passed": true,
+      "index_frames": 1460,
+      "tensor_frames": 1457,
+      "sequences": 1
+    }
+  ],
+  "tensor_rows": 13728,
+  "excluded_missing_initial_terrain": 30,
+  "normalized": false,
+  "training_eligible": false,
+  "spec_sha256": "43decfccf830a841d3a7612d3f3c465d52a40f997b3eb4986c193077cf1c2601",
+  "manifest_sha256": "cfbb1264e6b7bfddb2cbe492c1c8598106ea034fe0cac5522ac22bbbd13b25df",
+  "scope": "Source-to-tensor integrity and causality; not expert selection, fitted normalization, model or closed-loop qualification."
+}

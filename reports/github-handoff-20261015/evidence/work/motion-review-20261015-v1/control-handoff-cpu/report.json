@@ -1,0 +1,46 @@
+{
+  "status": "cpu_control_handoff_passed",
+  "checks": {
+    "original_snapshot_command_reproduced": true,
+    "original_load_bias_reproduced": true,
+    "recorded_bias_inherited": true,
+    "original_loaded_bucket_command_zero": true,
+    "original_speed_bound": true,
+    "original_slew_bound": true,
+    "previous_command_not_replaced_by_zero": true,
+    "input_physical_arrays_unchanged": true,
+    "no_physical_entry": true
+  },
+  "old_command": [
+    0.00039018849900900797,
+    2.2463115767744625e-05,
+    -7.081918707154283e-05,
+    0.0
+  ],
+  "continued_command": [
+    0.0003872298284303997,
+    0.0,
+    -2.05442906321713e-05,
+    0.0
+  ],
+  "before_bias": [
+    7.958677511049507e-08,
+    0.0010814634069448142,
+    -0.004179230682739681,
+    -0.00017476060559562523
+  ],
+  "after_bias": [
+    1.9270293547118845e-07,
+    0.001081555468900436,
+    -0.004179520925341896,
+    -0.00017476060559562523
+  ],
+  "original_snapshot_stage": "ALIGN",
+  "original_snapshot_frame": 4509,
+  "maximum_normalized_command_change": 0.0032269152369199974,
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "inference_calls": 0,
+  "implementation": "Reuse exit_common.controller with saved previous_command and load_bias; no new controller class or native-state reset.",
+  "limitation": "One same-state CPU handoff check; does not reproduce later dynamics or prove damping/retention improvement."
+}

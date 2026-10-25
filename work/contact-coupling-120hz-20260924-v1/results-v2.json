@@ -1,0 +1,871 @@
+{
+  "baseline60": {
+    "run": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/baseline60",
+    "status": "bounded_probe_completed",
+    "failure": null,
+    "frames": 120,
+    "phase": "approach_contact",
+    "startup_wall_seconds": 4.860358432983048,
+    "total_wall_seconds": 28.646693402988603,
+    "zero_exact": true,
+    "gates": {
+      "120": {
+        "passed": true,
+        "checks": {
+          "all_hard": true,
+          "material": true,
+          "sweep": true,
+          "ground": true,
+          "lateral_corridor": true,
+          "cut_depth_respected": true,
+          "approach_pitch_tracking": true,
+          "action_matches_physics": true,
+          "state_chain": true,
+          "causal_terrain": true,
+          "causal_phase": true
+        },
+        "frames": 120,
+        "maximum_cut_depth_undershoot_m": 0.0,
+        "maximum_approach_pitch_error_rad": 0.0002017821035628642,
+        "checkpoint": {
+          "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/baseline60/gate-120.npz",
+          "size_bytes": 54098390,
+          "mtime_ns": 1790255092487203530,
+          "sha256": "d6e07f7195b37c9851a76dcf291357b392f0d59e4002e0108e5d76dc641baa81"
+        }
+      }
+    },
+    "all_hard": true,
+    "source_unchanged": true,
+    "windows": {
+      "1-120": {
+        "physics": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 15.468599564075703,
+          "wall_seconds_per_simulated_second": 7.734299782037851,
+          "frame_wall_quantiles": [
+            0.11984940501861274,
+            0.12352826401183847,
+            0.12934523468720727,
+            0.5561004629998934
+          ]
+        },
+        "mpm": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 10.2689840029052,
+          "wall_seconds_per_simulated_second": 5.1344920014526,
+          "frame_wall_quantiles": [
+            0.07847274298546836,
+            0.08116442849859595,
+            0.08573164975532563,
+            0.5131234219879843
+          ]
+        },
+        "rigid": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 5.027569032099564,
+          "wall_seconds_per_simulated_second": 2.513784516049782,
+          "frame_wall_quantiles": [
+            0.03981984200072475,
+            0.040685386513359845,
+            0.04261060711432947,
+            0.1557181340176612
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 18.142995266098296,
+          "wall_seconds_per_simulated_second": 9.071497633049148,
+          "frame_wall_quantiles": [
+            0.1412918349960819,
+            0.14571683750546072,
+            0.1524252648028778,
+            0.5804684400209226
+          ]
+        },
+        "full_loop": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 23.271950069145532,
+          "wall_seconds_per_simulated_second": 11.635975034572766,
+          "frame_wall_quantiles": [
+            0.17757115300628357,
+            0.18678818849730305,
+            0.20349475860712118,
+            0.6191121140145697
+          ]
+        }
+      },
+      "61-120": {
+        "physics": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 7.41202916399925,
+          "wall_seconds_per_simulated_second": 7.41202916399925,
+          "frame_wall_quantiles": [
+            0.12054456298938021,
+            0.1232008524966659,
+            0.1269315138531965,
+            0.12934186498750933
+          ]
+        },
+        "mpm": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 4.885596634936519,
+          "wall_seconds_per_simulated_second": 4.885596634936519,
+          "frame_wall_quantiles": [
+            0.07880670498707332,
+            0.08107634697807953,
+            0.08450105264346348,
+            0.08694137202110142
+          ]
+        },
+        "rigid": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 2.4406556070025545,
+          "wall_seconds_per_simulated_second": 2.4406556070025545,
+          "frame_wall_quantiles": [
+            0.03981984200072475,
+            0.040506013014237396,
+            0.04166867886524415,
+            0.042249507998349145
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 8.71826356704696,
+          "wall_seconds_per_simulated_second": 8.71826356704696,
+          "frame_wall_quantiles": [
+            0.14200825299485587,
+            0.144731246487936,
+            0.1499800893565407,
+            0.15241113200318068
+          ]
+        },
+        "full_loop": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 11.289061317016603,
+          "wall_seconds_per_simulated_second": 11.289061317016603,
+          "frame_wall_quantiles": [
+            0.1803725470090285,
+            0.18409743400115985,
+            0.19842334273853338,
+            0.20433085897821002
+          ]
+        }
+      },
+      "121-432": {
+        "physics": null,
+        "mpm": null,
+        "rigid": null,
+        "runtime_with_guards": null,
+        "full_loop": null
+      },
+      "433-900": {
+        "physics": null,
+        "mpm": null,
+        "rigid": null,
+        "runtime_with_guards": null,
+        "full_loop": null
+      },
+      "901-972": {
+        "physics": null,
+        "mpm": null,
+        "rigid": null,
+        "runtime_with_guards": null,
+        "full_loop": null
+      }
+    },
+    "velocity": {
+      "bucket_peak_absolute_m_s": 0.02208908623850031,
+      "bucket_max_adjacent_change_m_s": 0.0011471894477432121,
+      "by_window": {
+        "1-120": {
+          "peak_absolute_m_s": 0.02208908623850031,
+          "max_adjacent_change_m_s": 0.0011471894477432121,
+          "sign_reversals": 0
+        }
+      }
+    },
+    "outputs": [
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/baseline60/report.json",
+        "sha256": "c7d71b6626037bc0c365d77a6ac8466009462dfbff7c4b88473f0032a8bb6c44"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/baseline60/physics/frames.ndjson",
+        "sha256": "41cd67005590df81f33e0becaa7fe590e3991c461cb62ef7e17d851ff939ca95"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/baseline60/frame-timing.ndjson",
+        "sha256": "35a00961a9f9d17365c751343337b54c09cc1a355de4bc0e63de8d0ef9eec1e0"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/baseline60/physics/timing.ndjson",
+        "sha256": "a396c154d99220bc1d923e3b440f5250d24ff60a8b7176e2cd2396cab51dbf87"
+      }
+    ]
+  },
+  "candidate120": {
+    "run": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120",
+    "status": "failed",
+    "failure": "TimeoutError('bc_probe_wall_budget')",
+    "frames": 1160,
+    "phase": "curl_load",
+    "startup_wall_seconds": 4.835131566011114,
+    "total_wall_seconds": 360.5825605800201,
+    "zero_exact": true,
+    "gates": {
+      "120": {
+        "passed": true,
+        "checks": {
+          "all_hard": true,
+          "material": true,
+          "sweep": true,
+          "ground": true,
+          "lateral_corridor": true,
+          "cut_depth_respected": true,
+          "approach_pitch_tracking": true,
+          "action_matches_physics": true,
+          "state_chain": true,
+          "causal_terrain": true,
+          "causal_phase": true
+        },
+        "frames": 120,
+        "maximum_cut_depth_undershoot_m": 0.0,
+        "maximum_approach_pitch_error_rad": 0.00020178100783962982,
+        "checkpoint": {
+          "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/gate-120.npz",
+          "size_bytes": 54098402,
+          "mtime_ns": 1790255155799665771,
+          "sha256": "9273bcfa48b455693dc02d9ce60fcf4f4db9f74428f2510309a6c7769f119335"
+        }
+      }
+    },
+    "all_hard": true,
+    "source_unchanged": true,
+    "windows": {
+      "1-120": {
+        "physics": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 24.982760890037753,
+          "wall_seconds_per_simulated_second": 12.491380445018876,
+          "frame_wall_quantiles": [
+            0.19622043997514993,
+            0.20288953598355874,
+            0.21113331806263885,
+            0.6341789919824805
+          ]
+        },
+        "mpm": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 19.76315684587462,
+          "wall_seconds_per_simulated_second": 9.88157842293731,
+          "frame_wall_quantiles": [
+            0.15280192898353562,
+            0.15952216400182806,
+            0.16742608543572715,
+            0.5882232839940116
+          ]
+        },
+        "rigid": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 4.877786195051158,
+          "wall_seconds_per_simulated_second": 2.438893097525579,
+          "frame_wall_quantiles": [
+            0.03954867902211845,
+            0.04048603048431687,
+            0.041610899035003965,
+            0.043032796995248646
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 30.929536131967325,
+          "wall_seconds_per_simulated_second": 15.464768065983662,
+          "frame_wall_quantiles": [
+            0.2445543590001762,
+            0.2520663220057031,
+            0.2629649834983866,
+            0.6855213670060039
+          ]
+        },
+        "full_loop": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 36.03955955672427,
+          "wall_seconds_per_simulated_second": 18.019779778362135,
+          "frame_wall_quantiles": [
+            0.2827449250034988,
+            0.2960310364869656,
+            0.3114772139291745,
+            0.7242340089869685
+          ]
+        }
+      },
+      "61-120": {
+        "physics": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 12.092218919977313,
+          "wall_seconds_per_simulated_second": 12.092218919977313,
+          "frame_wall_quantiles": [
+            0.19622043997514993,
+            0.2013397385017015,
+            0.20700156695238547,
+            0.21027041401248425
+          ]
+        },
+        "mpm": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 9.497981972963316,
+          "wall_seconds_per_simulated_second": 9.497981972963316,
+          "frame_wall_quantiles": [
+            0.15280192898353562,
+            0.15817650202370714,
+            0.16273678284633206,
+            0.1660776810022071
+          ]
+        },
+        "rigid": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 2.4233281120250467,
+          "wall_seconds_per_simulated_second": 2.4233281120250467,
+          "frame_wall_quantiles": [
+            0.03954867902211845,
+            0.040205673998571,
+            0.04154226493410533,
+            0.04168326599756256
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 14.99748966214247,
+          "wall_seconds_per_simulated_second": 14.99748966214247,
+          "frame_wall_quantiles": [
+            0.2445543590001762,
+            0.24894240200228523,
+            0.25784138870803874,
+            0.26177609199658036
+          ]
+        },
+        "full_loop": {
+          "frames": 60,
+          "simulated_seconds": 1.0,
+          "wall_seconds": 17.57734123393311,
+          "wall_seconds_per_simulated_second": 17.57734123393311,
+          "frame_wall_quantiles": [
+            0.2827449250034988,
+            0.2910842359997332,
+            0.3056501373037463,
+            0.31126110200420953
+          ]
+        }
+      },
+      "121-432": {
+        "physics": {
+          "frames": 312,
+          "simulated_seconds": 5.2,
+          "wall_seconds": 64.19857367817895,
+          "wall_seconds_per_simulated_second": 12.345879553495951,
+          "frame_wall_quantiles": [
+            0.19604466800228693,
+            0.20521890751842875,
+            0.21212440105300628,
+            0.3468695300107356
+          ]
+        },
+        "mpm": {
+          "frames": 312,
+          "simulated_seconds": 5.2,
+          "wall_seconds": 50.4863016011077,
+          "wall_seconds_per_simulated_second": 9.708904154059173,
+          "frame_wall_quantiles": [
+            0.1529701590188779,
+            0.16131498098548036,
+            0.16776191134849797,
+            0.3020474820223171
+          ]
+        },
+        "rigid": {
+          "frames": 312,
+          "simulated_seconds": 5.2,
+          "wall_seconds": 12.824374945805175,
+          "wall_seconds_per_simulated_second": 2.46622595111638,
+          "frame_wall_quantiles": [
+            0.03984643300645985,
+            0.04127065099601168,
+            0.04201384605112253,
+            0.04508363700006157
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 312,
+          "simulated_seconds": 5.2,
+          "wall_seconds": 79.84141680892208,
+          "wall_seconds_per_simulated_second": 15.354118617100399,
+          "frame_wall_quantiles": [
+            0.24308351799845695,
+            0.2558965934877051,
+            0.26420733660634144,
+            0.3991300330089871
+          ]
+        },
+        "full_loop": {
+          "frames": 312,
+          "simulated_seconds": 5.2,
+          "wall_seconds": 93.45469754221267,
+          "wall_seconds_per_simulated_second": 17.972057219656282,
+          "frame_wall_quantiles": [
+            0.2809883670124691,
+            0.29832929449912626,
+            0.3140574990102323,
+            0.4378413829836063
+          ]
+        }
+      },
+      "433-900": {
+        "physics": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 99.22260168194771,
+          "wall_seconds_per_simulated_second": 12.720846369480475,
+          "frame_wall_quantiles": [
+            0.19990984900505282,
+            0.2115464995149523,
+            0.21846797296748263,
+            0.35337615499156527
+          ]
+        },
+        "mpm": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 77.77431341086049,
+          "wall_seconds_per_simulated_second": 9.97106582190519,
+          "frame_wall_quantiles": [
+            0.15606671999557875,
+            0.16545686301833484,
+            0.17184223266813206,
+            0.30807699798606336
+          ]
+        },
+        "rigid": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 20.113566025858745,
+          "wall_seconds_per_simulated_second": 2.5786623110075313,
+          "frame_wall_quantiles": [
+            0.04050981500768103,
+            0.04301766402204521,
+            0.044926391243643594,
+            0.047659723000833765
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 122.64414902694989,
+          "wall_seconds_per_simulated_second": 15.72360884960896,
+          "frame_wall_quantiles": [
+            0.24791210601688363,
+            0.26140235048660543,
+            0.2705606847521267,
+            0.40172403599717654
+          ]
+        },
+        "full_loop": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 144.15063317478052,
+          "wall_seconds_per_simulated_second": 18.480850407023144,
+          "frame_wall_quantiles": [
+            0.2885878289816901,
+            0.30739421150065027,
+            0.3245553140513948,
+            0.44048786198254675
+          ]
+        }
+      },
+      "901-972": {
+        "physics": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 15.419850648147985,
+          "wall_seconds_per_simulated_second": 12.849875540123321,
+          "frame_wall_quantiles": [
+            0.20489414501935244,
+            0.211724190012319,
+            0.2182822384434985,
+            0.38384640798904
+          ]
+        },
+        "mpm": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 12.107893598877126,
+          "wall_seconds_per_simulated_second": 10.089911332397605,
+          "frame_wall_quantiles": [
+            0.15964802802773193,
+            0.16548038049950264,
+            0.17221452355006478,
+            0.3380874919821508
+          ]
+        },
+        "rigid": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 3.1065326291136444,
+          "wall_seconds_per_simulated_second": 2.588777190928037,
+          "frame_wall_quantiles": [
+            0.04147931499755941,
+            0.04316569051297847,
+            0.04390716940833954,
+            0.045720554975559935
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 19.153139978065155,
+          "wall_seconds_per_simulated_second": 15.960949981720963,
+          "frame_wall_quantiles": [
+            0.25045172998216003,
+            0.26386497799830977,
+            0.2743526138976449,
+            0.4292713520117104
+          ]
+        },
+        "full_loop": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 22.438027848867932,
+          "wall_seconds_per_simulated_second": 18.698356540723278,
+          "frame_wall_quantiles": [
+            0.2901033149973955,
+            0.3095886384980986,
+            0.3262263502445421,
+            0.4818799050117377
+          ]
+        }
+      },
+      "1-1160": {
+        "physics": {
+          "frames": 1160,
+          "simulated_seconds": 19.333333333333332,
+          "wall_seconds": 243.8792671925621,
+          "wall_seconds_per_simulated_second": 12.614444854787696,
+          "frame_wall_quantiles": [
+            0.19604466800228693,
+            0.20952103099261876,
+            0.21820214442414,
+            0.6341789919824805
+          ]
+        },
+        "mpm": {
+          "frames": 1160,
+          "simulated_seconds": 19.333333333333332,
+          "wall_seconds": 191.08520523653715,
+          "wall_seconds_per_simulated_second": 9.88371751223468,
+          "frame_wall_quantiles": [
+            0.15280192898353562,
+            0.16391030850354582,
+            0.17116579437424662,
+            0.5882232839940116
+          ]
+        },
+        "rigid": {
+          "frames": 1160,
+          "simulated_seconds": 19.333333333333332,
+          "wall_seconds": 49.48668206346338,
+          "wall_seconds_per_simulated_second": 2.55965596879983,
+          "frame_wall_quantiles": [
+            0.03954867902211845,
+            0.04222524052602239,
+            0.04612654405209469,
+            0.05097278696484864
+          ]
+        },
+        "runtime_with_guards": {
+          "frames": 1160,
+          "simulated_seconds": 19.333333333333332,
+          "wall_seconds": 302.03818818571744,
+          "wall_seconds_per_simulated_second": 15.622664906157798,
+          "frame_wall_quantiles": [
+            0.24308351799845695,
+            0.2591956135001965,
+            0.2708171447404311,
+            0.6855213670060039
+          ]
+        },
+        "full_loop": {
+          "frames": 1160,
+          "simulated_seconds": 19.333333333333332,
+          "wall_seconds": 355.1947069654416,
+          "wall_seconds_per_simulated_second": 18.372140015453876,
+          "frame_wall_quantiles": [
+            0.2809883670124691,
+            0.30501659848960117,
+            0.32529220552387417,
+            0.7242340089869685
+          ]
+        }
+      }
+    },
+    "velocity": {
+      "bucket_peak_absolute_m_s": 0.24024325400647564,
+      "bucket_max_adjacent_change_m_s": 0.13712695804184455,
+      "by_window": {
+        "901-972": {
+          "peak_absolute_m_s": 0.0317874967713905,
+          "max_adjacent_change_m_s": 0.0013313226765476194,
+          "sign_reversals": 0
+        },
+        "940-972": {
+          "peak_absolute_m_s": 0.025327752389248608,
+          "max_adjacent_change_m_s": 0.0010427310089092777,
+          "sign_reversals": 0
+        },
+        "1-1160": {
+          "peak_absolute_m_s": 0.24024325400647564,
+          "max_adjacent_change_m_s": 0.13712695804184455,
+          "sign_reversals": 3
+        }
+      }
+    },
+    "half_step_velocity": {
+      "1-1160": {
+        "samples": 2320,
+        "peak_absolute_m_s": 0.24024325400647564,
+        "max_adjacent_change_m_s": 0.38402452725368674,
+        "sign_reversals": 87
+      },
+      "901-972": {
+        "samples": 144,
+        "peak_absolute_m_s": 0.0317874967713905,
+        "max_adjacent_change_m_s": 0.002509076384094873,
+        "sign_reversals": 0
+      },
+      "940-972": {
+        "samples": 66,
+        "peak_absolute_m_s": 0.026049726124884254,
+        "max_adjacent_change_m_s": 0.002509076384094873,
+        "sign_reversals": 0
+      }
+    },
+    "outputs": [
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/report.json",
+        "sha256": "e08d155b30063b638762f643409740a75883f45257f36978960a706a2050db4a"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/physics/frames.ndjson",
+        "sha256": "93f00ee8eb6bbeaeaff5294388a60ec0467ffd57c55cdfd1ab731774a5cba5ec"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/frame-timing.ndjson",
+        "sha256": "772fe5d4fcde44006fe1ea178c21cb3ccc0119ceb434211b829ec3f89d70cbec"
+      },
+      {
+        "path": "/home/qunwang/wajueji/runs/contact-coupling-120hz-20260924-v1/candidate120/physics/timing.ndjson",
+        "sha256": "0448dbfa95787accf2b02a5ad53f069bb797e600a357d8ffc3feed4202a5615a"
+      }
+    ]
+  },
+  "baseline_120_actual_states_equal_frozen60": true,
+  "historical60": {
+    "run": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200",
+    "windows": {
+      "1-120": {
+        "wall_seconds": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 15.621550438954728,
+          "wall_seconds_per_simulated_second": 7.810775219477364,
+          "frame_wall_quantiles": [
+            0.12207548102014698,
+            0.12528326200845186,
+            0.13104772266815418,
+            0.6677988760056905
+          ]
+        },
+        "mpm_wall_seconds": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 10.516671114135534,
+          "wall_seconds_per_simulated_second": 5.258335557067767,
+          "frame_wall_quantiles": [
+            0.0801155130029656,
+            0.08265791900339536,
+            0.08716774416679982,
+            0.626056762994267
+          ]
+        },
+        "mujoco_wall_seconds": {
+          "frames": 120,
+          "simulated_seconds": 2.0,
+          "wall_seconds": 4.934767638827907,
+          "wall_seconds_per_simulated_second": 2.4673838194139535,
+          "frame_wall_quantiles": [
+            0.039844720013206825,
+            0.04090875449765008,
+            0.042680636746808887,
+            0.046930548996897414
+          ]
+        }
+      },
+      "433-900": {
+        "wall_seconds": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 60.750866170739755,
+          "wall_seconds_per_simulated_second": 7.788572585992276,
+          "frame_wall_quantiles": [
+            0.12294478999683633,
+            0.1291477754857624,
+            0.1339855563463061,
+            0.32177554999361746
+          ]
+        },
+        "mpm_wall_seconds": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 39.54912825420615,
+          "wall_seconds_per_simulated_second": 5.070401058231558,
+          "frame_wall_quantiles": [
+            0.08016607700847089,
+            0.08365334550035186,
+            0.08794149495370221,
+            0.27614177600480616
+          ]
+        },
+        "mujoco_wall_seconds": {
+          "frames": 468,
+          "simulated_seconds": 7.8,
+          "wall_seconds": 20.535078607936157,
+          "wall_seconds_per_simulated_second": 2.6327023856328404,
+          "frame_wall_quantiles": [
+            0.04054673499194905,
+            0.0437048434978351,
+            0.04562985335214762,
+            0.18687224501627497
+          ]
+        }
+      },
+      "901-972": {
+        "wall_seconds": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 9.420389303966658,
+          "wall_seconds_per_simulated_second": 7.850324419972215,
+          "frame_wall_quantiles": [
+            0.1264739870093763,
+            0.13092367800709326,
+            0.13414171999902463,
+            0.13698483401094563
+          ]
+        },
+        "mpm_wall_seconds": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 6.107531361019937,
+          "wall_seconds_per_simulated_second": 5.089609467516614,
+          "frame_wall_quantiles": [
+            0.08186979198944755,
+            0.08454809300019406,
+            0.08771234706364339,
+            0.08900362098938785
+          ]
+        },
+        "mujoco_wall_seconds": {
+          "frames": 72,
+          "simulated_seconds": 1.2,
+          "wall_seconds": 3.210670255939476,
+          "wall_seconds_per_simulated_second": 2.67555854661623,
+          "frame_wall_quantiles": [
+            0.04251613200176507,
+            0.044273870007600635,
+            0.0472040684937383,
+            0.05090499500511214
+          ]
+        }
+      },
+      "1-972": {
+        "wall_seconds": {
+          "frames": 972,
+          "simulated_seconds": 16.2,
+          "wall_seconds": 125.39433901151642,
+          "wall_seconds_per_simulated_second": 7.740391297007187,
+          "frame_wall_quantiles": [
+            0.12207548102014698,
+            0.12756925348367076,
+            0.1334541627962608,
+            0.6677988760056905
+          ]
+        },
+        "mpm_wall_seconds": {
+          "frames": 972,
+          "simulated_seconds": 16.2,
+          "wall_seconds": 82.5149144664756,
+          "wall_seconds_per_simulated_second": 5.093513238671333,
+          "frame_wall_quantiles": [
+            0.0801155130029656,
+            0.08358525749645196,
+            0.08769873859855579,
+            0.626056762994267
+          ]
+        },
+        "mujoco_wall_seconds": {
+          "frames": 972,
+          "simulated_seconds": 16.2,
+          "wall_seconds": 41.494691293366486,
+          "wall_seconds_per_simulated_second": 2.561400697121388,
+          "frame_wall_quantiles": [
+            0.039844720013206825,
+            0.04216712000197731,
+            0.04550169874564745,
+            0.18687224501627497
+          ]
+        }
+      }
+    },
+    "velocity": {
+      "1-972": {
+        "peak_absolute_m_s": 0.41369496902468056,
+        "max_adjacent_change_m_s": 0.7388617760350762,
+        "sign_reversals": 18
+      },
+      "901-972": {
+        "peak_absolute_m_s": 0.41369496902468056,
+        "max_adjacent_change_m_s": 0.7388617760350762,
+        "sign_reversals": 17
+      },
+      "940-972": {
+        "peak_absolute_m_s": 0.41369496902468056,
+        "max_adjacent_change_m_s": 0.7388617760350762,
+        "sign_reversals": 17
+      }
+    }
+  },
+  "matched_startup_ratios": {
+    "physics": 1.6150628753786962,
+    "mpm": 1.9245484110485926,
+    "rigid": 0.9702077015567393,
+    "runtime_with_guards": 1.7047646035471193,
+    "full_loop": 1.5486265418086436
+  }
+}

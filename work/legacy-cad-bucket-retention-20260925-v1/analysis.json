@@ -1,0 +1,52 @@
+{
+  "schema": "legacy_cad_bucket_retention_analysis_v1",
+  "status": "candidate_rejected_common_numerical_volume_collapse_observed",
+  "manual_run": {
+    "path": "runs/layered-47-sparse-manual-contact-v1/manual-contact-20260925-143841-2474275",
+    "first_scoop_frames": [1080, 1680],
+    "strict_fill_percent": [103.16473759315046, 29.91],
+    "broad_cavity_particles": [8879, 11943],
+    "original_particles_still_in_broad_cavity": 8879,
+    "original_particles_left_broad_cavity": 0,
+    "new_particles_entered_broad_cavity": 3064,
+    "original_particle_local_displacement_m": {
+      "median": 0.310,
+      "p90": 0.411,
+      "p99": 0.558,
+      "maximum": 0.642
+    }
+  },
+  "d133_loaded_replay_frame_600": {
+    "initial_cavity_particles": 6494,
+    "initial_particles_still_in_broad_cavity": 6494,
+    "strict_soil_volume_liters": 60.78,
+    "strict_fill_percent": 52.3481845568416,
+    "occupied_2cm_cells": [5156, 2225],
+    "maximum_particles_per_2cm_cell": [8, 71]
+  },
+  "legacy_cad_candidate": {
+    "frames": 600,
+    "sim_seconds": 10.0,
+    "wall_seconds": 101.81345090002287,
+    "initial_fill_percent": 103.16473759315046,
+    "final_fill_percent": 48.00380529570319,
+    "strict_volume_retention": 0.465312,
+    "cumulative_projection_corrected_particle_events": 2415749,
+    "maximum_projection_corrections_in_one_frame": 6459,
+    "maximum_single_position_correction_m": 0.174289,
+    "maximum_single_velocity_correction_m_s": 6.139,
+    "maximum_particle_speed_m_s": 7.238,
+    "terminal_diagnostic_sha256": "6b4de95d7ef4ae3c16194417e497eba6104d4771b4e490cee4a204985d67e7f1"
+  },
+  "interpretation": {
+    "supported": [
+      "The visible and strict-volume loss is dominated by in-cavity redistribution and clustering rather than particles disappearing through the bucket shell.",
+      "Replacing the 18-part proxy and D133 sweep with the legacy open CAD contact mesh does not recover retention.",
+      "The default bucket collision representation must remain unchanged."
+    ],
+    "not_yet_proven": [
+      "The unique causal contribution of the 10 cm sparse grid, 50 solver iterations, Hencky update, or project_outside correction.",
+      "That the old pure-soil path preserved occupied volume during swing and alignment; its accepted report only proves stationary HOLD mass retention."
+    ]
+  }
+}

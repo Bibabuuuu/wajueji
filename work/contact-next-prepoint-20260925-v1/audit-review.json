@@ -1,0 +1,199 @@
+{
+  "audit_passed": true,
+  "checks": {
+    "restore": true,
+    "frames": true,
+    "command_recomputed": true,
+    "command_physics": true,
+    "first_command": true,
+    "slew": true,
+    "clearance": true,
+    "frame_order": true,
+    "physical": true,
+    "halves": true,
+    "half_order": true,
+    "clock": true,
+    "native_guard": true,
+    "dispatch": true,
+    "responses": true,
+    "operator_once": true,
+    "shadow_unchanged": true,
+    "real_step_once": true,
+    "matrix": true,
+    "simulation_clock": true,
+    "final_state": true,
+    "finite": true,
+    "particles": true,
+    "rocks": true,
+    "source": true,
+    "lineage": true,
+    "jp_preserved": true,
+    "jp_policy": true,
+    "truck": true,
+    "schema": true,
+    "cycle": true,
+    "bindings": true,
+    "runtime": true,
+    "load_bias_saved": true,
+    "previous_command_saved": true,
+    "inputs": true,
+    "protocol": true,
+    "budget": true
+  },
+  "status": "prepoint_saved_requires_independent_audit",
+  "failure": null,
+  "frames": 2619,
+  "command_max_error": 0.0,
+  "maximum_normalized_command_step": 0.03333333333333337,
+  "matrix_max_error": 5.2475385148298415e-17,
+  "wall_seconds": 816.8810312739806,
+  "selected": {
+    "entry_xy_m": [
+      5.45,
+      0.5500000000000003
+    ],
+    "surface_z_m": 1.345562994480133,
+    "score": 0.34325654226037117,
+    "corridor_cell_count": 159,
+    "contact": {
+      "source": "rear_lower_face_from_observed_profile",
+      "contact_xy_m": [
+        5.847978561622041,
+        0.5901629741086466
+      ],
+      "contact_surface_z_m": 0.7458544373512268,
+      "outward_offset_m": 0.4,
+      "normalized_height_fraction": 0.4947032972736679,
+      "target_height_fraction": 0.4,
+      "height_fraction_band": [
+        0.3,
+        0.5
+      ],
+      "crest_surface_z_m": 1.346285343170166,
+      "base_surface_z_m": 0.15801139920949936,
+      "face_drop_m": 1.1882739439606667,
+      "bucket_width_m": 0.6,
+      "strip_anchor_xy_m": [
+        5.45,
+        0.5500000000000003
+      ],
+      "profile": [
+        {
+          "outward_offset_m": 0.0,
+          "center_xy_m": [
+            5.45,
+            0.5500000000000003
+          ],
+          "surface_z_m": 1.346285343170166,
+          "minimum_surface_z_m": 0.856553316116333,
+          "maximum_surface_z_m": 1.3667689561843872,
+          "cell_count": 7
+        },
+        {
+          "outward_offset_m": 0.1,
+          "center_xy_m": [
+            5.54949464040551,
+            0.5600407435271618
+          ],
+          "surface_z_m": 1.3441151976585388,
+          "minimum_surface_z_m": 0.8550552129745483,
+          "maximum_surface_z_m": 1.3760261894990755,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.2,
+          "center_xy_m": [
+            5.64898928081102,
+            0.5700814870543234
+          ],
+          "surface_z_m": 1.3458604216575623,
+          "minimum_surface_z_m": 0.8567618131637573,
+          "maximum_surface_z_m": 1.3512495756149292,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.30000000000000004,
+          "center_xy_m": [
+            5.748483921216531,
+            0.580122230581485
+          ],
+          "surface_z_m": 1.2241138219833374,
+          "minimum_surface_z_m": 0.8580549359321594,
+          "maximum_surface_z_m": 1.3316571712493896,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.4,
+          "center_xy_m": [
+            5.847978561622041,
+            0.5901629741086466
+          ],
+          "surface_z_m": 0.7458544373512268,
+          "minimum_surface_z_m": 0.6369072794914246,
+          "maximum_surface_z_m": 0.7520098090171814,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.5,
+          "center_xy_m": [
+            5.947473202027551,
+            0.6002037176358082
+          ],
+          "surface_z_m": 0.15801139920949936,
+          "minimum_surface_z_m": 0.15721769630908966,
+          "maximum_surface_z_m": 0.1592182219028473,
+          "cell_count": 6
+        }
+      ],
+      "prepoint_status": "not_selected_requires_separate_clearance_plan"
+    },
+    "legacy_height_score": 0.3432781497240067,
+    "cut_opportunity": {
+      "version": "full_width_cut_opportunity_v1",
+      "score_m3": 0.34325654226037117,
+      "observed_cut_band_volume_m3": 0.3551872687910609,
+      "weakest_third_equivalent_volume_m3": 0.3313258157296814,
+      "width_band_mean_thickness_m": [
+        0.5983620597256553,
+        0.6757715702056883,
+        0.6806972622871398,
+        0.6806972622871398,
+        0.6807213260067833,
+        0.6807213260067833,
+        0.6808975206481085,
+        0.6808975206481085,
+        0.6770764489968617,
+        0.6770764489968617,
+        0.6480807688501145,
+        0.5320509029198854
+      ],
+      "material_coverage_fraction": 0.9953703703703703,
+      "width_m": 0.6,
+      "inward_length_m": 0.9,
+      "bottom_z_m": 0.39585443735122683,
+      "below_entry_m": 0.35,
+      "vertical_band_height_m": 0.7,
+      "sample_spacing_max_m": 0.05,
+      "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+    },
+    "selection_version": "full_width_cut_opportunity_v1",
+    "future_strip_count": 1,
+    "future_entry_xy_m": [
+      [
+        5.550000000000001,
+        -0.5499999999999999
+      ]
+    ],
+    "workspace_score": 0.5689218327829465,
+    "remaining_scoops_considered": 2
+  },
+  "endpoint_sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
+  "axis_peak_speed": [
+    0.12005405572088758,
+    0.022460339421904275,
+    0.022490421413603804,
+    0.022501199522326744
+  ],
+  "physics_steps_added": 0,
+  "formal_mixed_delivered_volume_qualified": false
+}

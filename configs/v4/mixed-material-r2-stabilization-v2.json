@@ -1,0 +1,53 @@
+{
+  "schema": "excavation_mixed_material_r2_stabilization_config_v1",
+  "source_r2_config": {
+    "path": "configs/v4/mixed-material-r2-v2.json",
+    "sha256": "ae048505dc5c3509cb1ba3b729e680938ab5039a00c30eca08d03c58a213f5bc"
+  },
+  "baseline_model_root": {
+    "path": "reports/v4/mixed-material-r2-2026-09-20-v2",
+    "load_report_sha256": "8ab90732ba0977520a7ce94c4cbf5f562330316e95940f01e73d15eaafcaca31",
+    "bridge_init_report_sha256": "26b7cfb0ba24ee3c8fcd6bf68be0136583b7a013a950648c32d662bc8a057c62",
+    "settling_report_sha256": "c08c931e8f97f95e2d024b30cc845086c38e60933c25978ddb632793636d34f5"
+  },
+  "pre_settling": {
+    "maximum_duration_s": 6.0,
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "continuous_stability_window_s": 0.5,
+    "maximum_linear_speed_m_s": 0.002,
+    "maximum_angular_speed_rad_s": 0.03,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "command": [0.0, 0.0, 0.0, 0.0],
+    "external_wrench_count": 0
+  },
+  "rebaked_verification": {
+    "duration_s": 1.0,
+    "output_dt_s": 0.008333333333333333,
+    "internal_substeps_per_output": 20,
+    "maximum_rock_displacement_m": 0.005,
+    "maximum_final_linear_speed_m_s": 0.002,
+    "maximum_final_angular_speed_rad_s": 0.03,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "command": [0.0, 0.0, 0.0, 0.0],
+    "external_wrench_count": 0
+  },
+  "spatial_review": {
+    "require_all_vertices_inside_source_region": true,
+    "require_original_boundary_safety_retention": true,
+    "maximum_surface_penetration_m": 0.002,
+    "maximum_center_horizontal_shift_m": 0.25
+  },
+  "scope": {
+    "source_scene_manifests_modified": false,
+    "source_assembly_plans_modified": false,
+    "rock_count_or_size_modified": false,
+    "stable_pose_candidates_generated": true,
+    "rebaked_models_generated": true,
+    "controlled_excavation": false,
+    "physics_qualification": false,
+    "training": false
+  }
+}

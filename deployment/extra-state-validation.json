@@ -1,0 +1,35 @@
+{
+  "checkpoints": [
+    {
+      "path": "runs/edge-adjacent-59um-20261015-v1/final.npz",
+      "arrays": 24,
+      "stage": "hold",
+      "status": "validated"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/active120.npz",
+      "arrays": 24,
+      "stage": "transport",
+      "status": "validated"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/inactive.npz",
+      "arrays": 24,
+      "stage": "transport",
+      "status": "validated"
+    },
+    {
+      "path": "runs/loaded-closedloop-20261015-v5/final.npz",
+      "arrays": 24,
+      "stage": "transport",
+      "status": "validated"
+    },
+    {
+      "path": "runs/continuous-single-scoop-20261014-v1/final.npz",
+      "arrays": 24,
+      "stage": "returned",
+      "status": "validated"
+    }
+  ],
+  "negative_old_path_access_rejected": true
+}

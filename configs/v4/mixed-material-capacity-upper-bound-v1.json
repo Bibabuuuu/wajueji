@@ -1,0 +1,22 @@
+{
+  "schema": "excavation_mixed_material_capacity_upper_bound_config_v1",
+  "status": "d063_advisory_capacity_upper_bound_only",
+  "frozen_capacity_config": {
+    "path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "reference_rock_count": 887,
+  "reference_role": "old_exact_recipe_count_retained_only_as_capacity_upper_bound_candidate",
+  "scope": {
+    "synthetic_geometry_only": true,
+    "bridge_compile": true,
+    "time_zero_protocol": true,
+    "one_clear_step": false,
+    "mpm_or_gpu_run": false,
+    "settling": false,
+    "formal_scene_count_claim": false,
+    "formal_scene_qualified": false,
+    "physics_qualified": false,
+    "training": false
+  }
+}

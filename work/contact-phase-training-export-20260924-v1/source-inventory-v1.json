@@ -1,0 +1,284 @@
+{
+  "schema": "phase_replay_source_inventory_v1",
+  "physics_advanced": false,
+  "tensor_manifest_sha256": "cfbb1264e6b7bfddb2cbe492c1c8598106ea034fe0cac5522ac22bbbd13b25df",
+  "assignment_sha256": "534be96783f332967868d3aee4c49a7b7bb5b6e4dbf4c7fae27f1ccf008be192",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "split": "development_runs",
+      "tensor_rows": 1243,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/report.json",
+        "sha256": "e77264fca11a97f4adc49cfc8e3a5a4f1da07bd2fe396ca525cc9da403d1b5c0"
+      },
+      "initial_source": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json",
+        "sha256": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476"
+      },
+      "schema": "excavation_layered_47_sparse_approach_handoff_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": false,
+      "endpoint_paths": [],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "split": "development_runs",
+      "tensor_rows": 1278,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/report.json",
+        "sha256": "ab1872398f133d78662f4e127590dcec3b0111e7d08dae7aad911ce91b12dfff"
+      },
+      "initial_source": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json",
+        "sha256": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476"
+      },
+      "schema": "excavation_layered_47_sparse_approach_handoff_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": false,
+      "endpoint_paths": [],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "split": "development_runs",
+      "tensor_rows": 1690,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/report.json",
+        "sha256": "d879e2e5c26ceac1d5b9719a438145ee611531f502ae6e6f2c045be763056840"
+      },
+      "initial_source": {
+        "mtime_ns": 1790189468657836248,
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-v2/prepoint.npz",
+        "sha256": "5c9b653f826dca92dd65bc50d8b6e03e46208fd8f9b4ee0d5c4a6ace39f23f10",
+        "size_bytes": 53913386
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-prepoint-qualified-v2/prepoint.npz.json",
+        "sha256": "3f326ba051c9f5619b8def19d48b1ea89d394feb0068ba7e89d7eff0dab8d9a8"
+      },
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": true,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-083547-1327233/final-001723.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "split": "development_runs",
+      "tensor_rows": 1149,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/report.json",
+        "sha256": "8bbbf4d6f88cb28cd2e11f3b675bc7dc2389fe5d4ac21a1b3dd7ebb1641be3a3"
+      },
+      "initial_source": {
+        "mtime_ns": 1790213466139968175,
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-scoop-20260924-090702-1347301/qualified-prepoint/prepoint.npz",
+        "sha256": "7fe149dd7351b29f2e4f136e06d5f7641d502aff2cc9b9182487158627bc57e1",
+        "size_bytes": 54658022
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/next-scoop-20260924-090702-1347301/qualified-prepoint/prepoint.npz.json",
+        "sha256": "6fa27928f4497a60837a191e4213d0e0f03c60f54f082e27012e0895afdb1f48"
+      },
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": true,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/final-001264.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "split": "development_runs",
+      "tensor_rows": 1099,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/report.json",
+        "sha256": "f6b275b74de22e0f263d697e2ffba6ba11057155ed55d7305dbe367f73577e3f"
+      },
+      "initial_source": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json",
+        "sha256": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476"
+      },
+      "schema": "excavation_layered_47_sparse_approach_handoff_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": false,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-100857-1387193/final-001132.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "split": "development_runs",
+      "tensor_rows": 1428,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/report.json",
+        "sha256": "860450c62661c2af8a9b74e053869071a27ad9c1f5dff2583e61cf7e99611065"
+      },
+      "initial_source": {
+        "mtime_ns": 1790218545042228702,
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection-20260924-v1/prepare-clear/prepoint.npz",
+        "sha256": "b324d7bd3738fd7e6cabd70ce491ab3a82b773ff339d0bf5a99f7a1aeeae366b",
+        "size_bytes": 53198714
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection-20260924-v1/prepare-clear/prepoint.npz.json",
+        "sha256": "1e86ff7afbe95444a742ff657d299a44710a8cd87ab7ce7ae700282689a3e789"
+      },
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": true,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "split": "development_runs",
+      "tensor_rows": 1365,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/report.json",
+        "sha256": "4fd18b4bf1cc6ddd322e2bcee75cd09f4e642b529a48b3f32f8c986b2e38efc5"
+      },
+      "initial_source": {
+        "mtime_ns": 1790219233846691876,
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-110703-1425126/prepare/prepoint.npz",
+        "sha256": "56b4dd66add78fb41f3f512e144d08ced3b0ddcd152c9a3830dff76e8c0e464e",
+        "size_bytes": 54104642
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-110703-1425126/prepare/prepoint.npz.json",
+        "sha256": "02aaa96553b6ff432c7793707e48fb9db2fdd06828ac4bac5db3da2ae61d14b8"
+      },
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": true,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110932-1426831/final-001408.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "split": "validation_runs",
+      "tensor_rows": 1378,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/report.json",
+        "sha256": "01b8f94deb7cf83deb751e0984b8f586507e24bacda6f1d866b5f59b8823fd7c"
+      },
+      "initial_source": {
+        "mtime_ns": 1790143972849119440,
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+        "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+        "size_bytes": 52403258
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz.json",
+        "sha256": "86f858beac932342b56f744d3216a4e8a0f4b9adcc041142c37abbce64f8c476"
+      },
+      "schema": "excavation_layered_47_sparse_approach_handoff_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": false,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "split": "validation_runs",
+      "tensor_rows": 1641,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/report.json",
+        "sha256": "d770fe9bd8b43012fd4b794814b00e90c931e2a164ead0f1a6e6611e843c0f09"
+      },
+      "initial_source": {
+        "mtime_ns": 1790221682224849579,
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
+        "sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
+        "size_bytes": 53300762
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz.json",
+        "sha256": "3ee4fe592f42074cc66c06cb8d62394a3e599347a17d65a45148b278f87d6c11"
+      },
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": true,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "split": "validation_runs",
+      "tensor_rows": 1457,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/report.json",
+        "sha256": "24fefd820688feae3acdb2c252ec9606d68c1cae8ac9a82ce99d160b7d99bd5e"
+      },
+      "initial_source": {
+        "mtime_ns": 1790222204410667525,
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+        "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+        "size_bytes": 54109394
+      },
+      "metadata": {
+        "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz.json",
+        "sha256": "dcd1ed7a975066047336eb93b192b9a521c00a1aa75cc063218c1daafd27dfc8"
+      },
+      "schema": "layered_47_cycle_checkpoint_v1",
+      "initial_mechanism_position_equal": true,
+      "initial_mechanism_velocity_equal": true,
+      "compatible_cycle_envelope": true,
+      "endpoint_paths": [
+        "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/final-001490.cycle.npz"
+      ],
+      "phase_export_completed": false,
+      "note": "Header/pose inspection only; no restore qualification, no automatic source conversion"
+    }
+  ]
+}

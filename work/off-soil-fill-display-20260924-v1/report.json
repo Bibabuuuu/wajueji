@@ -1,0 +1,63 @@
+{
+  "checks": {
+    "active-curl-manual-review-20260924-v1_exact_fill": true,
+    "active-curl-manual-review-20260924-v1_source_arrays_unchanged": true,
+    "active-curl-manual-review-20260924-v1_worker_stopped": true,
+    "active-curl-left-review-20260924-v1_exact_fill": true,
+    "active-curl-left-review-20260924-v1_source_arrays_unchanged": true,
+    "active-curl-left-review-20260924-v1_worker_stopped": true,
+    "invalid_estimate_hides_number": true,
+    "worker_error_hides_number": true
+  },
+  "passed": true,
+  "results": [
+    {
+      "case": "active-curl-manual-review-20260924-v1",
+      "result": {
+        "frame": 1276,
+        "sim_time_s": 21.266666666666666,
+        "valid_estimate": true,
+        "fill_percent": 72.722371967655,
+        "liters": 185.5618440452206,
+        "quality_reasons": [],
+        "capacity_liters": 255.164729950989,
+        "rocks_and_heap_included": true,
+        "compute_wall_s": 0.24363496298610698,
+        "display_only": true
+      },
+      "submit_wall_s": 0.0014489259920082986,
+      "startup_and_measure_wall_s": 0.5447111299872631,
+      "display_lines": [
+        "FILL ~72.7% | 185.6 L",
+        "Soil + rocks + heap | age 0.0s sim"
+      ]
+    },
+    {
+      "case": "active-curl-left-review-20260924-v1",
+      "result": {
+        "frame": 1311,
+        "sim_time_s": 21.85,
+        "valid_estimate": true,
+        "fill_percent": 85.19105755509752,
+        "liters": 217.37753195285617,
+        "quality_reasons": [],
+        "capacity_liters": 255.164729950989,
+        "rocks_and_heap_included": true,
+        "compute_wall_s": 0.2767747799953213,
+        "display_only": true
+      },
+      "submit_wall_s": 0.0006198299961397424,
+      "startup_and_measure_wall_s": 0.563213667992386,
+      "display_lines": [
+        "FILL ~85.2% | 217.4 L",
+        "Soil + rocks + heap | age 0.0s sim"
+      ]
+    }
+  ],
+  "physics_steps": 0,
+  "source_bindings": {
+    "/home/qunwang/wajueji/src/v4/live_bucket_fill.py": "e9d44c5fc3f2d9d34deb3655bb85d931b89cda70be3d3e0512c6feb25cbb8dd9",
+    "/home/qunwang/wajueji/work/off-soil-fill-display-20260924-v1/verify.py": "680961835baf763967ca2e0d4b906d75d7ef123a727e6b6770fcec4e62ea2751",
+    "/home/qunwang/wajueji/configs/v4/live-bucket-fill-local-v1.json": "dfb233377d0009b06ea0de4c65c7f58b04eb19f7372faf8f2c5c05b6274b776e"
+  }
+}

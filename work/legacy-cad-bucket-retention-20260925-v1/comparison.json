@@ -1,0 +1,83 @@
+{
+  "schema": "legacy_cad_bucket_retention_comparison_v1",
+  "qualification": "proxy paths reconstructed from complete tracked near-bucket union; zero untracked particles in broad bucket box at frame 600",
+  "rows": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "proxy_no_d133_fill_percent": 103.16473759315046,
+      "proxy_d133_fill_percent": 103.16473759315046,
+      "legacy_cad_native_fill_percent": 103.16473759315046
+    },
+    {
+      "frame": 60,
+      "seconds": 1.0,
+      "proxy_no_d133_fill_percent": 100.91644204851754,
+      "proxy_d133_fill_percent": 100.79911209766925,
+      "legacy_cad_native_fill_percent": 98.8330426510227
+    },
+    {
+      "frame": 120,
+      "seconds": 2.0,
+      "proxy_no_d133_fill_percent": 95.37973680038054,
+      "proxy_d133_fill_percent": 95.39242111939116,
+      "legacy_cad_native_fill_percent": 91.88203583320121
+    },
+    {
+      "frame": 180,
+      "seconds": 3.0,
+      "proxy_no_d133_fill_percent": 88.9773267797685,
+      "proxy_d133_fill_percent": 89.26272395750753,
+      "legacy_cad_native_fill_percent": 83.25669890597749
+    },
+    {
+      "frame": 240,
+      "seconds": 4.0,
+      "proxy_no_d133_fill_percent": 81.3191691771048,
+      "proxy_d133_fill_percent": 82.53686380212463,
+      "legacy_cad_native_fill_percent": 75.39242111939114
+    },
+    {
+      "frame": 300,
+      "seconds": 5.0,
+      "proxy_no_d133_fill_percent": 73.30585064214367,
+      "proxy_d133_fill_percent": 74.56794038370066,
+      "legacy_cad_native_fill_percent": 68.02600285397178
+    },
+    {
+      "frame": 360,
+      "seconds": 6.0,
+      "proxy_no_d133_fill_percent": 67.99112097669256,
+      "proxy_d133_fill_percent": 68.47312509909625,
+      "legacy_cad_native_fill_percent": 62.85714285714286
+    },
+    {
+      "frame": 420,
+      "seconds": 7.0,
+      "proxy_no_d133_fill_percent": 62.78737910258443,
+      "proxy_d133_fill_percent": 63.98604724908831,
+      "legacy_cad_native_fill_percent": 58.50959251625179
+    },
+    {
+      "frame": 480,
+      "seconds": 8.0,
+      "proxy_no_d133_fill_percent": 58.1068653876645,
+      "proxy_d133_fill_percent": 59.86364357063581,
+      "legacy_cad_native_fill_percent": 53.283653083875066
+    },
+    {
+      "frame": 540,
+      "seconds": 9.0,
+      "proxy_no_d133_fill_percent": 54.577453622958615,
+      "proxy_d133_fill_percent": 56.35960044395116,
+      "legacy_cad_native_fill_percent": 50.79118439828762
+    },
+    {
+      "frame": 600,
+      "seconds": 10.0,
+      "proxy_no_d133_fill_percent": 51.06072617726336,
+      "proxy_d133_fill_percent": 52.3481845568416,
+      "legacy_cad_native_fill_percent": 48.00380529570319
+    }
+  ]
+}

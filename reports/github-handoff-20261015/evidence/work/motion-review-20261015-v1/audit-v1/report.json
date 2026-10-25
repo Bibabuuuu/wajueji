@@ -1,0 +1,154 @@
+{
+  "status": "cpu_candidate_audit_passed",
+  "checks": [
+    {
+      "check": "candidate geometry only",
+      "passed": true
+    },
+    {
+      "check": "source checkpoint unchanged",
+      "passed": true
+    },
+    {
+      "check": "all original data identities preserved",
+      "passed": true
+    },
+    {
+      "check": "original physics policy controller bindings unchanged",
+      "passed": true
+    },
+    {
+      "check": "fresh post-unload candidate recomputed",
+      "passed": true
+    },
+    {
+      "check": "fresh ground-connected observation exact",
+      "passed": true
+    },
+    {
+      "check": "complete saved path",
+      "passed": true
+    },
+    {
+      "check": "unchanged actual driven start",
+      "passed": true
+    },
+    {
+      "check": "position integrates recorded reference velocities",
+      "passed": true
+    },
+    {
+      "check": "original speed ceilings",
+      "passed": true
+    },
+    {
+      "check": "reference slew within original command limit",
+      "passed": true
+    },
+    {
+      "check": "all stored poses original CAD bounds closure terrain gates",
+      "passed": true
+    },
+    {
+      "check": "full ROI original32cm final approach",
+      "passed": true
+    },
+    {
+      "check": "terminal original positive margin",
+      "passed": true
+    },
+    {
+      "check": "frozen policy original reference corridor",
+      "passed": true
+    },
+    {
+      "check": "only two intermediate waypoints",
+      "passed": true
+    },
+    {
+      "check": "no old fixed safe-return loop",
+      "passed": true
+    },
+    {
+      "check": "time derives from saved reference frames",
+      "passed": true
+    },
+    {
+      "check": "carry held cylinder and zero active command",
+      "passed": true
+    },
+    {
+      "check": "carry speed and acceleration bounded",
+      "passed": true
+    },
+    {
+      "check": "nine handoff checks passed",
+      "passed": true
+    },
+    {
+      "check": "motion_candidate.pyno native or learning calls",
+      "passed": true
+    },
+    {
+      "check": "return_candidate_v3.pyno native or learning calls",
+      "passed": true
+    },
+    {
+      "check": "control_handoff_cpu.pyno native or learning calls",
+      "passed": true
+    },
+    {
+      "check": "no native entry",
+      "passed": true
+    },
+    {
+      "check": "source unchanged after audit",
+      "passed": true
+    }
+  ],
+  "checks_passed": 26,
+  "saved_return_poses": 2661,
+  "final_full_roi_poses": 722,
+  "minimum_clearance": {
+    "bucket_truck_m": 0.28703026764120504,
+    "bucket_terrain_m": 0.3442987914456359,
+    "mechanism_truck_m": 0.02,
+    "mechanism_ground_m": 0.8936343589296305,
+    "closure_m": 8.881784197001252e-16,
+    "mechanism_terrain_clearance_m": 0.021120230038731425
+  },
+  "nominal_return_s": 44.333333333333336,
+  "old_actual_after_unload_to_next_dig_s": 147.08333333333334,
+  "time_comparison": "Reference duration versus old physical duration, not a measured speedup.",
+  "carry_old_reference_s": 9.8,
+  "carry_new_reference_s": 12.25,
+  "carry_old_max_discrete_acceleration_si": [
+    1.608413402465203e-09,
+    0.007320045947389886,
+    0.0030076149075242142,
+    0.0
+  ],
+  "carry_new_max_discrete_acceleration_si": [
+    9.941047984796114e-10,
+    0.0045233238270991905,
+    0.0018585151341898865,
+    0.0
+  ],
+  "handoff_checks": {
+    "original_snapshot_command_reproduced": true,
+    "original_load_bias_reproduced": true,
+    "recorded_bias_inherited": true,
+    "original_loaded_bucket_command_zero": true,
+    "original_speed_bound": true,
+    "original_slew_bound": true,
+    "previous_command_not_replaced_by_zero": true,
+    "input_physical_arrays_unchanged": true,
+    "no_physical_entry": true
+  },
+  "physics_steps": 0,
+  "native_initializations": 0,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "physical_admission": false,
+  "wall_seconds": 33.387778547999915
+}

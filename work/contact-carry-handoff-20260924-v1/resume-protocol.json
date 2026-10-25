@@ -1,0 +1,65 @@
+{
+  "schema": "D155_handoff_resume_protocol_v1",
+  "status": "authorized_single_continuation",
+  "source_sha256": "3e95b08e05d6fe4eddac7fdbc7f1d459954e83becf328678997313b18b7f5eb9",
+  "maximum_frames": 600,
+  "maximum_wall_seconds": 240,
+  "maximum_runs": 1,
+  "automatic_retry": false,
+  "output": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume",
+  "control_hz": 60,
+  "mpm_hz": 60,
+  "rigid_hz": 4800,
+  "gate": {
+    "closure_fraction": 0.99,
+    "hold_seconds": 3.0,
+    "height_hard_gate": false,
+    "particle_gap_hard_gate": false
+  },
+  "stop_after_handoff_frames": 60,
+  "scope": "Saved first endpoint only: finish curl, sustained rise, retain on handoff; no swing/unload/second source/RL",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_transport_handoff.py",
+      "sha256": "424a5bc7a46fa4e07368b64f09521e5ac8ea9f460782112a2deb6d3f90839dd4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/carry_feedback.py",
+      "sha256": "b4a486d11835affdcea5cbe164b83d8a7d6d57a9d5b8cd7d709503d8c0a050d8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/restore_runtime.py",
+      "sha256": "889faea0f60bcc2583d0730bf05784e2d7157641fa78bd9867f9426ab60b546b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/run_resume.py",
+      "sha256": "91459b995c5a79122be2d61b8baed2ef2a32b9ea238742fe65f2a18ca7a26592"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/cache-review.json",
+      "sha256": "fc18259a0a88122f7b0fc3b07475b23e54b14af864dcd08fe9131ecf12a89b51"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-carry-handoff-20260924-v1/preflight-review.json",
+      "sha256": "a909de81567b7f185b2425396a56793d7ea4c910747162edb6ac5e8aa7043aa9"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/verified-preflight/repaired-control-state.json",
+      "sha256": "13039aa0f1bcb37b27249f0262626377c02e4a4586c2735ec967cdc36b003994"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/final.npz",
+      "sha256": "3e95b08e05d6fe4eddac7fdbc7f1d459954e83becf328678997313b18b7f5eb9"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/final.npz.json",
+      "sha256": "9452d8e018e3e1b5703d3f084a807aaabde669219503b464f077c70f58c1ade7"
+    }
+  ],
+  "authorization": {
+    "user_reply": "可以",
+    "scope": "确认从第一铲2327帧保存点单次600帧/240秒续段，新交接后60帧停止，不重跑前缀或自动重试",
+    "recorded_at": "2026-09-24T23:12:47.822068+08:00",
+    "baseline_commit": "9263781"
+  }
+}

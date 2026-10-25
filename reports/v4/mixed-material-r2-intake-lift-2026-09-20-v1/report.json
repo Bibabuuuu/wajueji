@@ -1,0 +1,65 @@
+{
+  "all_six_scene_qualification": false,
+  "dump_qualified": false,
+  "fill_rate_qualified": false,
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/reports/v4/mixed-material-r2-stabilization-2026-09-20-v2/generated-bridge-r2.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-rigid-bridge-r2"
+    ],
+    "runner_sha256": "f5eefc8a9e93e21ec2e85bb993b72800af0f133341e1a392c0b86c1912784fdb"
+  },
+  "inputs": {
+    "bridge_source_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57",
+    "config_sha256": "4093765f2d01ca3578376481659e38e245f308ec7e53485b538230ca6858bef3",
+    "source_intake_config_sha256": "8b9786fd9fa31e8d7347bb31f3138d7e4fe70cb67b12a67fce59fe8d6bcef75b",
+    "source_intake_report_sha256": "3a7b5939b2c80bb131d97a7693840f0b35fcd03339280ba28e49bb0029a076b6"
+  },
+  "mpm_coupling_qualified": false,
+  "physics_qualified": false,
+  "scene_count": 2,
+  "scenes": [
+    {
+      "final_retained_full_rock_count": 2,
+      "final_retained_mass_kg": 4.986371417,
+      "intake_end_full_rock_count": 1,
+      "lifted_retained_full_rock_count": 1,
+      "maximum_bucket_rock_force_n": 18000.68577381057,
+      "maximum_bucket_rock_torque_nm": 6577.016639584426,
+      "report_sha256": "a122b370e81b8cfcbd3d085b8f5eed8f79523aff2094ba9a9f363d3cc99fb6cf",
+      "runtime_error": null,
+      "scene_class": "ordinary-small-rock-dominant",
+      "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+      "status": "short_lift_hold_scene_candidate"
+    },
+    {
+      "final_retained_full_rock_count": 2,
+      "final_retained_mass_kg": 4.166614173,
+      "intake_end_full_rock_count": 1,
+      "lifted_retained_full_rock_count": 1,
+      "maximum_bucket_rock_force_n": 27581.275747936284,
+      "maximum_bucket_rock_torque_nm": 5407.054058917622,
+      "report_sha256": "b7649f19069a412d2f9ae9256487f6f774d8ff3b4cec9b7a95d297513a0d0f47",
+      "runtime_error": null,
+      "scene_class": "sparse-large-rock",
+      "scene_id": "sparse-large-rock-seed-26091925",
+      "status": "short_lift_hold_scene_candidate"
+    }
+  ],
+  "schema": "excavation_mixed_material_r2_intake_lift_report_v1",
+  "scope_limit": "two selected scenes, one fixed intake path, 1.5-second lift and 2-second hold only; no six-scene, ten-second hold, dump, fill-rate, MPM, hydraulic capacity or training qualification",
+  "status": "two_scene_short_lift_hold_candidate",
+  "ten_second_hold_qualified": false
+}

@@ -1,0 +1,200 @@
+{
+  "code_baseline": "fb126fd72303b46d41a3330087d67edcf8494923",
+  "branch": "codex/contact-bc-collection-20260924",
+  "protocol_inputs_passed": true,
+  "checks": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "expected_sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+      "actual_sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz.json",
+      "expected_sha256": "dcd1ed7a975066047336eb93b192b9a521c00a1aa75cc063218c1daafd27dfc8",
+      "actual_sha256": "dcd1ed7a975066047336eb93b192b9a521c00a1aa75cc063218c1daafd27dfc8",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "expected_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+      "actual_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/training-report.json",
+      "expected_sha256": "2771c3492e9078e303a8008ab231c0ba7d99c0ad37ae0bb0f6b9d0720c67996f",
+      "actual_sha256": "2771c3492e9078e303a8008ab231c0ba7d99c0ad37ae0bb0f6b9d0720c67996f",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-v1.json",
+      "expected_sha256": "19b9d5c403bda9de1eca7ae67aa7b4c639c1389097af15405851f4d8e63c4db8",
+      "actual_sha256": "19b9d5c403bda9de1eca7ae67aa7b4c639c1389097af15405851f4d8e63c4db8",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+      "expected_sha256": "79b1150d043b03b45d3fd844f3e6186642962739dc795536b0a79ba383ac2bdf",
+      "actual_sha256": "79b1150d043b03b45d3fd844f3e6186642962739dc795536b0a79ba383ac2bdf",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+      "expected_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+      "actual_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+      "expected_sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7",
+      "actual_sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_contact_phase_bc_probe.py",
+      "expected_sha256": "095105f50979eaccbf2064d2bccbdff6b1dbc127191b31822202dc184b43cfb4",
+      "actual_sha256": "095105f50979eaccbf2064d2bccbdff6b1dbc127191b31822202dc184b43cfb4",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_bc_inference.py",
+      "expected_sha256": "bfc173a346e4647288753d46a36e264b1fe0827b618d386c38d73f60efd90195",
+      "actual_sha256": "bfc173a346e4647288753d46a36e264b1fe0827b618d386c38d73f60efd90195",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_live.py",
+      "expected_sha256": "2a8f29abfb171f17640102b4380b93cb78a95ee8a41bb9ec0cc1e70dde02a432",
+      "actual_sha256": "2a8f29abfb171f17640102b4380b93cb78a95ee8a41bb9ec0cc1e70dde02a432",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_bc_policy.py",
+      "expected_sha256": "b610e60774b02afe5f9a5c220819ce82f4b1a8c446a4fd8e30b31ab688114789",
+      "actual_sha256": "b610e60774b02afe5f9a5c220819ce82f4b1a8c446a4fd8e30b31ab688114789",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_inference.py",
+      "expected_sha256": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+      "actual_sha256": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_data.py",
+      "expected_sha256": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34",
+      "actual_sha256": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_policy.py",
+      "expected_sha256": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+      "actual_sha256": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_ground_guard.py",
+      "expected_sha256": "fc2da166651feab62f7948e1c11ecbcc7321e79e62483f2e5463f0b567471758",
+      "actual_sha256": "fc2da166651feab62f7948e1c11ecbcc7321e79e62483f2e5463f0b567471758",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_candidate.py",
+      "expected_sha256": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431",
+      "actual_sha256": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_completion.py",
+      "expected_sha256": "c3fa5093e88b19fa27cf41ddce1b15e171fef4b06d76339eabefc806d9ae4b43",
+      "actual_sha256": "c3fa5093e88b19fa27cf41ddce1b15e171fef4b06d76339eabefc806d9ae4b43",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_geometry.py",
+      "expected_sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656",
+      "actual_sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_geometric_feedback.py",
+      "expected_sha256": "c85dce9ee3b83fe52f7e61b763f4f3e835d1c5db41c8f100f2f20b25dfd86ce6",
+      "actual_sha256": "c85dce9ee3b83fe52f7e61b763f4f3e835d1c5db41c8f100f2f20b25dfd86ce6",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_contact_geometric_probe.py",
+      "expected_sha256": "c541c92e6a3d8623df3ce19b97d206cd8dfcf4394518e6cc16e0c33285a65f94",
+      "actual_sha256": "c541c92e6a3d8623df3ce19b97d206cd8dfcf4394518e6cc16e0c33285a65f94",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v1/development-geometry.json",
+      "expected_sha256": "f745d1189c434e5632cf70ef87191a25480518cfdad8624433827e078174f61a",
+      "actual_sha256": "f745d1189c434e5632cf70ef87191a25480518cfdad8624433827e078174f61a",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v7/recorded-state-check.json",
+      "expected_sha256": "b940c3cd23dfc2c953e08a37df7634b003fc6ff1361cba94d97e176f05c31a52",
+      "actual_sha256": "b940c3cd23dfc2c953e08a37df7634b003fc6ff1361cba94d97e176f05c31a52",
+      "matched": true
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_cut_reference.py",
+      "expected_sha256": "20af1cc2424cbb76ab3fd3a3e5e4c34796e5513ddb16d8505980cd8392bc6f3c",
+      "actual_sha256": "20af1cc2424cbb76ab3fd3a3e5e4c34796e5513ddb16d8505980cd8392bc6f3c",
+      "matched": true
+    }
+  ],
+  "additional_assets": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v7/protocol.json",
+      "sha256": "5fa80eedf1751077d9eda0e58e1e536212321366f9f96deee428e2f5fd2eda7a",
+      "bytes": 6629
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v7/scoop1500-review.json",
+      "sha256": "8fcd4bb660f7a54498fe22acbc751c50c13de072c0fb4058a3f4ad27c6607824",
+      "bytes": 6758
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v7/scoop1500-late-curl-review.json",
+      "sha256": "e0f4bfee547813785c4fd4d7a50b5b1af8f63aae6b72ae78ff2f3ade34a833f8",
+      "bytes": 3751
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v7/scoop1500/final.npz",
+      "sha256": "82e3a9f819694cba98b6c03fd7a2a48a932306145bfc52953d2ac6a059e90187",
+      "bytes": 54487778
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v7/scoop1500/final.npz.json",
+      "sha256": "987732454d34aa211095ecda658975740af43c26153ef243bcb628213ebb3c97",
+      "bytes": 456377
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v7/scoop1500/display/reconstruction.json",
+      "sha256": "78ca45afde74f5e7e49066c70460fa27bcb0e0bfc11b483fb1f6d6e02dd30987",
+      "bytes": 522
+    }
+  ],
+  "untracked_files_count": 914,
+  "untracked_by_top_directory": {
+    "docs": 1,
+    "reports": 83,
+    "results": 5,
+    "work": 825
+  },
+  "untracked_disposition": "Preserved; not bulk staged or deleted. Full inventory can be obtained by git ls-files --others --exclude-standard.",
+  "processes_at_handoff": [],
+  "scope": "Local handoff availability/hash audit. GitHub alone does not include runs, model or external runtime dependencies; no physics or training started.",
+  "verified_at": "2026-09-24T19:41:46.875026+08:00",
+  "runtime_paths_exist": {
+    "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python": true,
+    "/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python": true,
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/model/A.xml": true,
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/mesh": true
+  }
+}

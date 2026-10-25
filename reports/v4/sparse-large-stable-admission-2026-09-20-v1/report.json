@@ -1,0 +1,88 @@
+{
+  "candidates": [
+    {
+      "minimum_boundary_clearance_m": 0.0017084926362214148,
+      "pre_settling_elapsed_s": 1.2166666666666535,
+      "rebaked_maximum_displacement_m": 0.00019561115219718223,
+      "report_sha256": "203d2d493bbe6e8e272ed9184876d104804e56ea3047c55ae772c0fde0713d15",
+      "scene_id": "sparse-large-rock-seed-26091924",
+      "seed": 26091924,
+      "sequence_index": 0,
+      "status": "rejected"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.11183300214293901,
+      "pre_settling_elapsed_s": 1.341666666666673,
+      "rebaked_maximum_displacement_m": 0.00015450209972659083,
+      "report_sha256": "edaca2ddc7bc202bd54123f7b811b5f199a32239cdad8cc59068e96b98bfa52d",
+      "scene_id": "sparse-large-rock-seed-26091925",
+      "seed": 26091925,
+      "sequence_index": 1,
+      "status": "selected"
+    },
+    {
+      "minimum_boundary_clearance_m": 0.09425913738642411,
+      "pre_settling_elapsed_s": 1.316666666666669,
+      "rebaked_maximum_displacement_m": 0.00016324340652262026,
+      "report_sha256": "05a53bc7a59a86ac63b65928d69b7354b764e4ccd4697be5d3a98c68be4e1525",
+      "scene_id": "sparse-large-rock-seed-26091926",
+      "seed": 26091926,
+      "sequence_index": 2,
+      "status": "selected"
+    }
+  ],
+  "controlled_excavation": false,
+  "evaluated_candidate_count": 3,
+  "existing_retained_scene_id": "sparse-large-rock-seed-26091922",
+  "final_sparse_large_scene_count": 3,
+  "final_total_first_round_scene_count": 6,
+  "fixed_seed_sequence": [
+    26091924,
+    26091925,
+    26091926,
+    26091927,
+    26091928,
+    26091929,
+    26091930,
+    26091934,
+    26091935,
+    26091936
+  ],
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/home/qunwang/wajueji/reports/v4/sparse-large-stable-admission-2026-09-20-v1/generated-bridge-r2.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "<temporary>/mixed-rigid-bridge-r2"
+    ],
+    "generated_bridge_source_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57",
+    "selector_sha256": "ddd8fdf17136706f2bae8308c3fe08ba3ac92d262172d698f68b9ef8e35b02bd"
+  },
+  "inputs": {
+    "mixed_material_r2_sha256": "ba91377ec15e896a0b8cfbe949a153d6c50c388410f0a2c8eabeb030bee24f6e",
+    "scene_assembly_preflight_sha256": "c259d468f1b91b9bdbf741887595b1e319b9ae1d35b8c3c47b220dc4fd5dffcc",
+    "scene_reconstruction_sha256": "04ac310a1ac472f298ba4c1a5987f16ca99939ef118e8e24d379b0d6914edc75",
+    "stabilization_sha256": "e3533c5c0f56fe88c3b96acda4a3c0b12cf7bd101548f671eed96ec8a640b36f"
+  },
+  "physics_qualified": false,
+  "rejected_candidates_preserved": true,
+  "required_selected_count": 2,
+  "schema": "excavation_sparse_large_stable_admission_report_v1",
+  "scope_limit": "fixed-sequence candidate selection through geometry, settling, rebake and boundary checks; selected scenes still require final v2 reconstruction and assembly hash-chain regeneration before R2 admission",
+  "selected_scene_ids": [
+    "sparse-large-rock-seed-26091925",
+    "sparse-large-rock-seed-26091926"
+  ],
+  "source_configs_modified": false,
+  "status": "sparse_large_replacements_selected"
+}

@@ -1,0 +1,11 @@
+{
+  "three_predictions_exact": true,
+  "source_object_unchanged": true,
+  "MPM_steps": 0,
+  "native_steps": 240,
+  "wall_seconds": [
+    1.0246260419953614,
+    0.05255230300826952,
+    0.053831800003536046
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "force_application": "bucket_origin_at_mujoco_interval_start_fixed_for_interval",
+  "frozen_r1_r2_or_r3_a_modified": false,
+  "generated_source_sha256": "8e6e4e34a827c7b6a5f1c9cdf225be4777e19849c89e73252e033d124379f7d8",
+  "r3_a_config_path": "configs/v4/mixed-material-r3-a.json",
+  "r3_a_config_sha256": "cbcdf89e0ffbfc3d222188684b2cc39e4e75b3e8a82889d3e44ac400af8fbbf9",
+  "r3_a_generated_source_sha256": "9c7f30be4c6dd3aa46dfa3cd7376840f5391c00f8fb91fc27b2fe59bc5d64f90",
+  "r3_a_manifest": {
+    "allowed_external_wrench_bodies": [
+      "bucket",
+      "r1-rock-000"
+    ],
+    "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+    "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+    "frozen_r1_source_modified": false,
+    "maximum_external_wrench_count": 2,
+    "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+    "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_a_v1",
+    "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+    "status": "r3_a_bridge_source_generated"
+  },
+  "ready_schema": "excavation_mixed_coupled_bridge_r3_b_v1",
+  "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_b_v1",
+  "state_schema": "excavation_mixed_coupled_bridge_r3_b_state_v1",
+  "status": "r3_b_bridge_source_generated",
+  "torque_reference": "bucket_origin_at_mujoco_interval_start_fixed_for_interval"
+}

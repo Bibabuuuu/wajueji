@@ -1,0 +1,97 @@
+{
+  "status": "rendered",
+  "renderer_sha256": "4908350f4b1b9ba44c37c693114c435320f90f498eb95d91184959b619d77174",
+  "data_manifest_sha256": "33e26e255ed27bec198bb5e17918b65d7c6c79e7716975239e9d7290cfa7d24d",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "cache_identities": {
+    "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation": {
+      "particles.npy": {
+        "sha256": "4b0c5e9a245582f8116316e1af1b70ae5e4e13e8138f8d9f05d2f2d347c30e04",
+        "bytes": 38946207680,
+        "mtime_ns": 1792001971718172262
+      },
+      "states.json": {
+        "sha256": "0d14cf3b7ae989887ecf8d3406e703c03ef16ad7d8cb89face820d7528c2d602",
+        "bytes": 218001196,
+        "mtime_ns": 1792001975712188209
+      },
+      "scene.json": {
+        "sha256": "72b6ef99394d7890a1d8a826e4d50df86ad9c44d90d6bbfe97d559a98a81ee9c",
+        "bytes": 38969,
+        "mtime_ns": 1791999510581725213
+      }
+    },
+    "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1": {
+      "particles.npy": {
+        "sha256": "aa819846bee84bb907e7d241c195ca3272e857401e8f2895afb3c92286e85733",
+        "bytes": 25824634592,
+        "mtime_ns": 1792028428044899821
+      },
+      "states.json": {
+        "sha256": "39ed522421eb05775ca5d5973ae91d5488a981dbab8762c3467dbebf13eeeb63",
+        "bytes": 144437582,
+        "mtime_ns": 1792028430680956175
+      },
+      "scene.json": {
+        "sha256": "ee332a623f434a07af5806a7a3b951fce10d9715e07e6f56190d3d73448fcfc8",
+        "bytes": 38971,
+        "mtime_ns": 1792026828081166073
+      }
+    }
+  },
+  "workflow_last_frame": 18895,
+  "workflow_seconds": 314.9166666666667,
+  "cutoff": 10504,
+  "continuity": "First valid returned prefix plus strictly verified restored59um branch; seam explicitly labelled; abandoned1um rise excluded and preserved in source.",
+  "playback_physics_steps": 0,
+  "policy_inference_calls": 0,
+  "training_updates": 0,
+  "keyframes": [
+    {
+      "workflow_frame": 2994,
+      "label": "首铲挖掘",
+      "file": "video/keyframes/01-first-cut.png",
+      "sha256": "622237acfb364c8d0821b6f4a3b7c5829d73b9cbd4cba074bb998cf50fef390d"
+    },
+    {
+      "workflow_frame": 3860,
+      "label": "首铲保载",
+      "file": "video/keyframes/02-first-hold.png",
+      "sha256": "8260039170a19fcdcabc2084dd71db8e8b6aceb6495de644b26401802c8f1913"
+    },
+    {
+      "workflow_frame": 6549,
+      "label": "首铲卸料结束",
+      "file": "video/keyframes/03-unloaded.png",
+      "sha256": "8331f9aee140093343ea3444aea751d9cf0fccbbc9581d0616e3e99ece5f5158"
+    },
+    {
+      "workflow_frame": 10504,
+      "label": "已验证快照续接点",
+      "file": "video/keyframes/04-returned.png",
+      "sha256": "c95f9adfacb3e47fd83ea903e9dc2381dfafbcbccdac71b3f91b32be62495238"
+    },
+    {
+      "workflow_frame": 18156,
+      "label": "第二铲挖掘",
+      "file": "video/keyframes/05-second-cut.png",
+      "sha256": "e42cf676e198063b193844cd33cae5d0448746da4c6e621e8cc0d25160c0a83f"
+    },
+    {
+      "workflow_frame": 18895,
+      "label": "第二铲保载",
+      "file": "video/keyframes/06-second-hold.png",
+      "sha256": "2d9e7217bc8bdb72a1415d17d3d1c32e19585781ecbabc3210a6c724a0ca7ada"
+    }
+  ],
+  "frames_rendered": 9539,
+  "movie": "video/two-scoop-full-1x.mp4",
+  "movie_sha256": "4142762f53b84a6cab09d9b13506b52c29c36aebaa56d7b5cbaf5c094f4b450c",
+  "encoded_frames": 9539,
+  "duration_s": 317.96666666666664,
+  "nominal_stride": 2,
+  "result_freeze_frames": 90,
+  "wall_seconds": 302.947427178995
+}

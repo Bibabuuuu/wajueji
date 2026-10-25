@@ -1,0 +1,13 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582",
+  "paused": true,
+  "physics_frames": 0,
+  "restore_exact": true,
+  "gamepad_name": "Microsoft X-Box 360 pad",
+  "source_handoff": {
+    "mtime_ns": 1790221682224849579,
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-114750-1451324/prepare/prepoint.npz",
+    "sha256": "a88efb6fce3ac9e4cba54593c41f09c99eb1061aa3d16730ea1ba4ba2cc2ec46",
+    "size_bytes": 53300762
+  }
+}

@@ -1,0 +1,1 @@
+<mujoco><worldbody><body pos="1 0 0"><joint type="hinge" axis="0 0 1"/><inertial pos="0 0 0" mass="10" diaginertia="1 1 1"/><body name="bucket" pos="2 0 0"><joint type="hinge" axis="0 1 0"/><inertial pos="0.231 0 -0.468" mass="450" diaginertia="77 65 55"/></body></body></worldbody></mujoco>

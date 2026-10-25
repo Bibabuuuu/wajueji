@@ -1,0 +1,491 @@
+{
+  "status": "bounded_probe_completed",
+  "failure": null,
+  "frames": 600,
+  "simulation_seconds": 10.0,
+  "checks": {
+    "prefix_120_exact": true,
+    "source_unchanged": true,
+    "frames_sequential": true,
+    "commands_match": true,
+    "before_after_chain": true,
+    "cache_states_match": true,
+    "all_hard_safe": true,
+    "all_material_safe": true,
+    "all_sweep_safe": true
+  },
+  "hard_failures": [],
+  "first_pose": {
+    "frame": 0,
+    "tip_world_m": [
+      6.145151077506686,
+      0.6437777312835598,
+      1.7301509002076356
+    ],
+    "bucket_pitch_deg": -18.32883223488479,
+    "lateral_error_to_target_m": -6.421978643311732e-10,
+    "cylinder_axis_position_m": [
+      0.10438117769498935,
+      0.3277560767957176,
+      0.28926423952881425,
+      0.6042242087080469
+    ],
+    "controller_axis_error_si": [
+      -2.1860901977532876e-11,
+      -6.216982677220706e-06,
+      1.6568269271266534e-05,
+      1.066108640146446e-06
+    ]
+  },
+  "last_pose": {
+    "frame": 600,
+    "tip_world_m": [
+      5.406657752963383,
+      0.23692889683916668,
+      -0.7276504347750685
+    ],
+    "bucket_pitch_deg": 15.8206574527179,
+    "lateral_error_to_target_m": -0.3276895689215743,
+    "cylinder_axis_position_m": [
+      0.043793482617749284,
+      0.14403938910218056,
+      0.39898687775387426,
+      0.5974756227558637
+    ],
+    "controller_axis_error_si": [
+      -0.041686302664473304,
+      -0.010504098062206008,
+      0.04819040748692488,
+      0.003703595262508519
+    ]
+  },
+  "per_second": [
+    {
+      "first_frame": 1,
+      "last_frame": 60,
+      "mean_action_normalized": [
+        0.08706002741819248,
+        -0.8225993985310197,
+        0.5391136185566817,
+        -0.2925023001773904
+      ],
+      "requested_curl_positive_frames": 10,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 0,
+      "rock_contact_max": 0,
+      "tip_vertical_delta_m": -0.2604773774674469,
+      "end_pose": {
+        "frame": 60,
+        "tip_world_m": [
+          6.159463720225868,
+          0.7097363833757313,
+          1.4696735227401887
+        ],
+        "bucket_pitch_deg": -17.82879974639656,
+        "lateral_error_to_target_m": 0.0641083950841051,
+        "cylinder_axis_position_m": [
+          0.11472105613106952,
+          0.3092586289158911,
+          0.30142310302146075,
+          0.5844962109665575
+        ],
+        "controller_axis_error_si": [
+          -3.681904039432027e-07,
+          7.193608162703313e-06,
+          -1.924749653486879e-05,
+          3.0302387427072475e-06
+        ]
+      }
+    },
+    {
+      "first_frame": 61,
+      "last_frame": 120,
+      "mean_action_normalized": [
+        -0.026743537792935968,
+        -0.9206264505783717,
+        0.7085552622874578,
+        -0.46243060678243636
+      ],
+      "requested_curl_positive_frames": 0,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 2,
+      "rock_contact_max": 0,
+      "tip_vertical_delta_m": -0.28660076867804074,
+      "end_pose": {
+        "frame": 120,
+        "tip_world_m": [
+          6.185218519118391,
+          0.6925934859123328,
+          1.183072754062148
+        ],
+        "bucket_pitch_deg": -18.453858448635113,
+        "lateral_error_to_target_m": 0.04437536589821961,
+        "cylinder_axis_position_m": [
+          0.11151109193043204,
+          0.2885480131461331,
+          0.31734560310710525,
+          0.5532775127111086
+        ],
+        "controller_axis_error_si": [
+          6.694319018285544e-07,
+          3.714239897145699e-06,
+          7.458192824438825e-07,
+          7.542205881283515e-06
+        ]
+      }
+    },
+    {
+      "first_frame": 121,
+      "last_frame": 180,
+      "mean_action_normalized": [
+        -0.036543103369573754,
+        -0.9153040488560994,
+        0.7096973200639088,
+        -0.4487391566236814
+      ],
+      "requested_curl_positive_frames": 0,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 24,
+      "rock_contact_max": 0,
+      "tip_vertical_delta_m": -0.2803005426911199,
+      "end_pose": {
+        "frame": 180,
+        "tip_world_m": [
+          6.191971435587238,
+          0.6658665902300638,
+          0.902772211371028
+        ],
+        "bucket_pitch_deg": -18.850043842925096,
+        "lateral_error_to_target_m": 0.017090340596189857,
+        "cylinder_axis_position_m": [
+          0.10712542761416517,
+          0.2679533272586869,
+          0.3333167866996842,
+          0.5229887047630027
+        ],
+        "controller_axis_error_si": [
+          1.1233799509513531e-06,
+          4.0590280895869135e-06,
+          -2.248071871269186e-06,
+          6.431178550037053e-06
+        ]
+      }
+    },
+    {
+      "first_frame": 181,
+      "last_frame": 240,
+      "mean_action_normalized": [
+        -0.05768552167961995,
+        -0.90433575908343,
+        0.7250931163628896,
+        -0.42304855982462564
+      ],
+      "requested_curl_positive_frames": 0,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 81,
+      "rock_contact_max": 0,
+      "tip_vertical_delta_m": -0.27558591978848346,
+      "end_pose": {
+        "frame": 240,
+        "tip_world_m": [
+          6.178993670922563,
+          0.6212310547177231,
+          0.6271862915825446
+        ],
+        "bucket_pitch_deg": -18.896963315400896,
+        "lateral_error_to_target_m": -0.025950078555716693,
+        "cylinder_axis_position_m": [
+          0.1002024897866734,
+          0.24760563750498113,
+          0.3496325268934005,
+          0.49443352343332175
+        ],
+        "controller_axis_error_si": [
+          1.812368140952092e-06,
+          4.194202441271111e-06,
+          -3.3931474378023907e-06,
+          5.814639189860582e-06
+        ]
+      }
+    },
+    {
+      "first_frame": 241,
+      "last_frame": 300,
+      "mean_action_normalized": [
+        -0.07702502670387427,
+        -0.8892870247364044,
+        0.7480735063552857,
+        -0.41204946438471474
+      ],
+      "requested_curl_positive_frames": 0,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 137,
+      "rock_contact_max": 0,
+      "tip_vertical_delta_m": -0.26875284453256665,
+      "end_pose": {
+        "frame": 300,
+        "tip_world_m": [
+          6.1492191526065785,
+          0.5608857542203631,
+          0.3584334470499779
+        ],
+        "bucket_pitch_deg": -18.775841223534346,
+        "lateral_error_to_target_m": -0.08286467559968465,
+        "cylinder_axis_position_m": [
+          0.09096082224841825,
+          0.2276030472030222,
+          0.36643291667300437,
+          0.4666139436985952
+        ],
+        "controller_axis_error_si": [
+          4.884162401325165e-07,
+          -2.173552149709046e-06,
+          2.787096592637983e-05,
+          1.2072143030839033e-05
+        ]
+      }
+    },
+    {
+      "first_frame": 301,
+      "last_frame": 360,
+      "mean_action_normalized": [
+        -0.0839202381670475,
+        -0.8762245426575342,
+        0.7321031679709752,
+        -0.35376350780328114
+      ],
+      "requested_curl_positive_frames": 0,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 249,
+      "rock_contact_max": 80,
+      "tip_vertical_delta_m": -0.24283271304334952,
+      "end_pose": {
+        "frame": 360,
+        "tip_world_m": [
+          6.114301817351739,
+          0.5023750505780558,
+          0.1156007340066284
+        ],
+        "bucket_pitch_deg": -18.632337326510278,
+        "lateral_error_to_target_m": -0.13741882218267046,
+        "cylinder_axis_position_m": [
+          0.08197977150460752,
+          0.20840336595933537,
+          0.3799945378469557,
+          0.44217204062562326
+        ],
+        "controller_axis_error_si": [
+          -0.001089037248376945,
+          -0.0005175445182461769,
+          0.0029384062102035813,
+          0.0005740569161074016
+        ]
+      }
+    },
+    {
+      "first_frame": 361,
+      "last_frame": 420,
+      "mean_action_normalized": [
+        -0.08391173146665096,
+        -0.8861201991637547,
+        0.7364403039216996,
+        -0.07220673138896624
+      ],
+      "requested_curl_positive_frames": 16,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 354,
+      "rock_contact_max": 80,
+      "tip_vertical_delta_m": -0.24286016370180485,
+      "end_pose": {
+        "frame": 420,
+        "tip_world_m": [
+          6.041754416718424,
+          0.4639957028395291,
+          -0.12725942969517645
+        ],
+        "bucket_pitch_deg": -16.239609269820548,
+        "lateral_error_to_target_m": -0.168030442303591,
+        "cylinder_axis_position_m": [
+          0.07664768431727782,
+          0.18948554375476317,
+          0.38971812774454156,
+          0.436268288072961
+        ],
+        "controller_axis_error_si": [
+          -0.005826570237878442,
+          -0.0015374267948417009,
+          0.0097846140900405,
+          0.001557999695868284
+        ]
+      }
+    },
+    {
+      "first_frame": 421,
+      "last_frame": 480,
+      "mean_action_normalized": [
+        -0.14663539938628672,
+        -0.8418543090422949,
+        0.7487992326418559,
+        0.6872783094644547
+      ],
+      "requested_curl_positive_frames": 60,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 455,
+      "rock_contact_max": 80,
+      "tip_vertical_delta_m": -0.27823879824966513,
+      "end_pose": {
+        "frame": 480,
+        "tip_world_m": [
+          5.832031675690027,
+          0.397391964241415,
+          -0.4054982279448416
+        ],
+        "bucket_pitch_deg": -6.168999196887017,
+        "lateral_error_to_target_m": -0.2124203011833969,
+        "cylinder_axis_position_m": [
+          0.06803430650938411,
+          0.1718014833849957,
+          0.39944903955337946,
+          0.48227836724680034
+        ],
+        "controller_axis_error_si": [
+          -0.014809788886225951,
+          -0.0027950883785124725,
+          0.016901265860762293,
+          0.0019222184878224802
+        ]
+      }
+    },
+    {
+      "first_frame": 481,
+      "last_frame": 540,
+      "mean_action_normalized": [
+        -0.18882248649994532,
+        -0.8057217756907146,
+        0.6769153902928035,
+        0.8424164732297261
+      ],
+      "requested_curl_positive_frames": 60,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 441,
+      "rock_contact_max": 80,
+      "tip_vertical_delta_m": -0.2236649610668906,
+      "end_pose": {
+        "frame": 540,
+        "tip_world_m": [
+          5.592055792758858,
+          0.3176337190373022,
+          -0.6291631890117322
+        ],
+        "bucket_pitch_deg": 5.308969649708242,
+        "lateral_error_to_target_m": -0.2667409431524963,
+        "cylinder_axis_position_m": [
+          0.0567398112459804,
+          0.1555522789043343,
+          0.40562859570264304,
+          0.5387289645029042
+        ],
+        "controller_axis_error_si": [
+          -0.02616853648490224,
+          -0.004674682772362493,
+          0.025952802715281664,
+          0.00233376354672421
+        ]
+      }
+    },
+    {
+      "first_frame": 541,
+      "last_frame": 600,
+      "mean_action_normalized": [
+        -0.23719338004787763,
+        -0.770766693353653,
+        0.6931341936190923,
+        0.8906003216902415
+      ],
+      "requested_curl_positive_frames": 60,
+      "requested_boom_lift_frames": 0,
+      "applied_nonzero_frames": 60,
+      "projection_reason_frames": 0,
+      "soil_contact_max": 337,
+      "rock_contact_max": 80,
+      "tip_vertical_delta_m": -0.09848724576333634,
+      "end_pose": {
+        "frame": 600,
+        "tip_world_m": [
+          5.406657752963383,
+          0.23692889683916668,
+          -0.7276504347750685
+        ],
+        "bucket_pitch_deg": 15.8206574527179,
+        "lateral_error_to_target_m": -0.3276895689215743,
+        "cylinder_axis_position_m": [
+          0.043793482617749284,
+          0.14403938910218056,
+          0.39898687775387426,
+          0.5974756227558637
+        ],
+        "controller_axis_error_si": [
+          -0.041686302664473304,
+          -0.010504098062206008,
+          0.04819040748692488,
+          0.003703595262508519
+        ]
+      }
+    }
+  ],
+  "max_absolute_lateral_error_m": 0.3276895689215743,
+  "tip_height_min_m": -0.7287849958688355,
+  "tip_height_max_m": 1.7301509002076356,
+  "contact_frames": 444,
+  "inference_median_seconds": 0.0012942419853061438,
+  "physics_wall_seconds": 77.34432874395861,
+  "run_wall_seconds": 110.71276774202124,
+  "cache": {
+    "status": "captured_probe",
+    "capture_origin": "live_policy_rollout",
+    "probe_status": "bounded_probe_completed",
+    "frames": 600,
+    "playback_physics_steps": 0,
+    "live_inference": false,
+    "label": "BC CONTACT WINDOW REPLAY",
+    "cache_sha256": {
+      "particles.npy": "f461cf2493431026659a45e3985fbe2ed3d92ca0ad2b617faae77d8fb5bdf6ef",
+      "states.json": "ac61e4da0301e221475b9ac8b2ee5315f5823ec40510b0275572db4275da25dd",
+      "scene.json": "e811e51b06dedb61c7322474250b8820f749d2a6c365cf0e04015bac229c05b8"
+    }
+  },
+  "full_excavation_qualified": false,
+  "fill_estimated": false,
+  "identities": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-contact-window-20260924-v1/report.json",
+      "sha256": "3370dac396e96b6423f492c1f1709d4f38a64a270c68660041598d76b7e49e4a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-contact-window-20260924-v1/actions.ndjson",
+      "sha256": "39ee1c22c53abe1c35d6cee3d1728f0fee6d1154169a41cebbc220c05b94b7a6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-contact-window-20260924-v1/physics/frames.ndjson",
+      "sha256": "681891306e19c35c70910b692d86ea16b869655abff0c89ade3c34c7a4a6d0e7"
+    }
+  ]
+}

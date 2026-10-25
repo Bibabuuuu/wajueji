@@ -1,0 +1,35 @@
+{
+  "schema": "excavation_mixed_material_r2_intake_lift_config_v1",
+  "source_intake_config": {
+    "path": "configs/v4/mixed-material-r2-controlled-intake-v1.json",
+    "sha256": "8b9786fd9fa31e8d7347bb31f3138d7e4fe70cb67b12a67fce59fe8d6bcef75b"
+  },
+  "source_intake_report": {
+    "path": "reports/v4/mixed-material-r2-controlled-intake-2026-09-20-v1/report.json",
+    "sha256": "3a7b5939b2c80bb131d97a7693840f0b35fcd03339280ba28e49bb0029a076b6",
+    "required_status": "two_scene_controlled_intake_candidate"
+  },
+  "additional_phases": [
+    {"name": "short_lift", "duration_s": 1.5, "command": [0.0, 0.02, 0.0, 0.0]},
+    {"name": "hold_after_lift", "duration_s": 2.0, "command": [0.0, 0.0, 0.0, 0.0]}
+  ],
+  "acceptance": {
+    "minimum_final_retained_full_rock_count": 1,
+    "minimum_vertical_lift_from_intake_end_m": 0.03,
+    "minimum_final_continuous_full_inside_duration_s": 1.0,
+    "maximum_final_retained_rock_speed_m_s": 0.05,
+    "maximum_closure_m": 0.001,
+    "required_forbidden_contact_count": 0,
+    "force_and_torque_are_diagnostic_not_capacity_thresholds": true
+  },
+  "scope": {
+    "two_scene_short_lift_hold_diagnostic": true,
+    "ten_second_hold_qualification": false,
+    "all_six_scene_qualification": false,
+    "dump": false,
+    "mpm_coupling": false,
+    "fill_rate": false,
+    "training": false,
+    "physics_qualified": false
+  }
+}

@@ -1,0 +1,677 @@
+{
+  "assembly_plan_sha256": "ae98f71011256c2f7f52b0483a46b7fb1322d13489249539adf44e9527cdc362",
+  "metrics": {
+    "checks": {
+      "bucket_contact_observed": true,
+      "closure_within_one_mm": true,
+      "completed_full_schedule": true,
+      "final_retained_full_rock_count": true,
+      "finite_state": true,
+      "no_forbidden_contacts": true,
+      "retained_rocks_final_speed_within_limit": true,
+      "twenty_rock_identities_preserved": true
+    },
+    "contact_substeps": {
+      "rock_bucket": 5881,
+      "rock_ground": 56400,
+      "rock_ramp": 0,
+      "rock_rock": 0,
+      "rock_truck": 0
+    },
+    "dropped_after_full_entry_rock_ids": [],
+    "expected_output_steps": 2820,
+    "final_observation": {
+      "center_inside_count": 2,
+      "full_envelope_inside_count": 1,
+      "full_envelope_inside_mass_kg": 3.760633915,
+      "full_envelope_inside_rock_ids": [
+        "r2-rock-008"
+      ],
+      "mouth_straddling_proxy_count": 2
+    },
+    "final_retained_full_rock_count": 1,
+    "final_retained_full_rock_ids": [
+      "r2-rock-008"
+    ],
+    "final_retained_mass_kg": 3.760633915,
+    "final_retained_maximum_speed_m_s": 0.00013559859014425544,
+    "maximum_bucket_rock_force_n": 18000.68577381057,
+    "maximum_bucket_rock_torque_nm": 6577.016639584426,
+    "maximum_closure_m": 0.00034337487874765697,
+    "maximum_concurrent_center_inside_count": 2,
+    "maximum_concurrent_full_envelope_inside_count": 1,
+    "maximum_forbidden_contact_count": 0,
+    "maximum_rock_displacement_m": 0.2213703745079863,
+    "output_steps_completed": 2820,
+    "per_rock": [
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.3974029498949883,
+          -0.6238231203935235,
+          -0.11965670742580883
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.37526194023978526,
+        "equivalent_diameter_m": 0.200625,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 10.99327569,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.5097781489404366,
+        "minimum_vertex_mouth_depth_m": 0.21852038953767766,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_tetra",
+        "rock_id": "r2-rock-000",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-000",
+        "speed_m_s": 6.390473672356838e-05,
+        "vertex_count": 4
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.1405546446478709,
+          1.2564964376758072,
+          -0.9980953841846495
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": -0.06588891400646762,
+        "equivalent_diameter_m": 0.191875,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 9.616723929,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.06644467896397951,
+        "minimum_vertex_mouth_depth_m": -0.165587254568494,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_bipyramid",
+        "rock_id": "r2-rock-001",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-001",
+        "speed_m_s": 3.8191045000619104e-05,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.6084106537424225,
+          0.1164225249256946,
+          0.3293235424705966
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.6785732764154153,
+        "equivalent_diameter_m": 0.183125,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 8.360165663,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.7697526619079743,
+        "minimum_vertex_mouth_depth_m": 0.5873938909228562,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_block",
+        "rock_id": "r2-rock-002",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-002",
+        "speed_m_s": 0.00011261001821004177,
+        "vertex_count": 8
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.11730272656338749,
+          -0.8173288869666859,
+          -0.9616906984035917
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": -0.08069699855899831,
+        "equivalent_diameter_m": 0.174375,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 7.21812888,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.05154151563627293,
+        "minimum_vertex_mouth_depth_m": -0.20047610701610036,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_octa",
+        "rock_id": "r2-rock-003",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-003",
+        "speed_m_s": 0.00011994161316015222,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.13940248695025934,
+          -1.548102630058538,
+          -0.8933146754089518
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": -0.04430156999685546,
+        "equivalent_diameter_m": 0.1578125,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 5.350522192,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.04919853711271334,
+        "minimum_vertex_mouth_depth_m": -0.12631101614704765,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_octa",
+        "rock_id": "r2-rock-004",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-004",
+        "speed_m_s": 7.130798551644283e-05,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.16187632799213586,
+          0.15603307284968793,
+          -0.886697300185896
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": -0.02092766641658258,
+        "equivalent_diameter_m": 0.1534375,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 3,
+        "mass_kg": 4.917750732,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.07873123655255453,
+        "minimum_vertex_mouth_depth_m": -0.11783399130538388,
+        "mouth_straddling_proxy": true,
+        "prototype_id": "angular_octa",
+        "rock_id": "r2-rock-005",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-005",
+        "speed_m_s": 0.0001512735761370542,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.7027387003905323,
+          0.8134178767663284,
+          0.5495512078137412
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.8183949167707629,
+        "equivalent_diameter_m": 0.1490625,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 4.5089682,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.8985131902183335,
+        "minimum_vertex_mouth_depth_m": 0.7287286836197946,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_bipyramid",
+        "rock_id": "r2-rock-006",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-006",
+        "speed_m_s": 6.245806619866983e-05,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.14744390072520414,
+          -0.5603424655646971,
+          -0.9162833339302855
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": -0.04142999077976881,
+        "equivalent_diameter_m": 0.1446875,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 4.123490595,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.06114019611188356,
+        "minimum_vertex_mouth_depth_m": -0.17612501602603117,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_tetra",
+        "rock_id": "r2-rock-007",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-007",
+        "speed_m_s": 3.5919946937095806e-05,
+        "vertex_count": 4
+      },
+      {
+        "all_vertices_inside_bucket_prism": true,
+        "center_bucket_m": [
+          0.33965452893379033,
+          -0.022651391065629866,
+          -0.37350228918508205
+        ],
+        "center_inside_bucket_prism": true,
+        "center_mouth_depth_m": 0.2638632851653079,
+        "equivalent_diameter_m": 0.1403125,
+        "ever_full_envelope_inside": true,
+        "final_continuous_full_inside_duration_s": 2.5833333333333335,
+        "inside_vertex_count": 8,
+        "mass_kg": 3.760633915,
+        "maximum_continuous_full_inside_duration_s": 4.266666666666667,
+        "maximum_vertex_mouth_depth_m": 0.357007358386982,
+        "minimum_vertex_mouth_depth_m": 0.1707192119436338,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_block",
+        "rock_id": "r2-rock-008",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-008",
+        "speed_m_s": 0.00013559859014425544,
+        "vertex_count": 8
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.5551520975323623,
+          0.8627723661636826,
+          0.11337549890872492
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.5797723543126276,
+        "equivalent_diameter_m": 0.1359375,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 3.419714156,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.6625742456272328,
+        "minimum_vertex_mouth_depth_m": 0.48343228447757136,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_bipyramid",
+        "rock_id": "r2-rock-009",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-009",
+        "speed_m_s": 4.552026273979911e-05,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.7464094371357807,
+          1.0851626769069678,
+          0.5796054647883184
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.8675419086768359,
+        "equivalent_diameter_m": 0.1315625,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 3.100047318,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.9459828914746773,
+        "minimum_vertex_mouth_depth_m": 0.7891009258789944,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_block",
+        "rock_id": "r2-rock-010",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-010",
+        "speed_m_s": 2.7160272072376192e-05,
+        "vertex_count": 8
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.11078316269655039,
+          -0.4694609620558179,
+          -1.0758144409593182
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": -0.11179885292707525,
+        "equivalent_diameter_m": 0.1271875,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 2.800949398,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": -0.01795238441314613,
+        "minimum_vertex_mouth_depth_m": -0.2158208731044079,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_tetra",
+        "rock_id": "r2-rock-011",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-011",
+        "speed_m_s": 0.00010265129778474715,
+        "vertex_count": 4
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.2971176385374643,
+          -1.4356659485921575,
+          -0.5414892093171502
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.18592510528437486,
+        "equivalent_diameter_m": 0.1228125,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 2.521736395,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.26444998107871337,
+        "minimum_vertex_mouth_depth_m": 0.1074002294900364,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_block",
+        "rock_id": "r2-rock-012",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-012",
+        "speed_m_s": 8.971344280049335e-05,
+        "vertex_count": 8
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.1979756767002096,
+          -0.7462300244479337,
+          -0.7666198774692451
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.04034123179431635,
+        "equivalent_diameter_m": 0.1184375,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 2.261724306,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.11307543539391088,
+        "minimum_vertex_mouth_depth_m": -0.03855267851137645,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_octa",
+        "rock_id": "r2-rock-013",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-013",
+        "speed_m_s": 0.00014253552786891191,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.4180492614977252,
+          -1.1999527499581855,
+          -0.19360069314745726
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.37938940352126,
+        "equivalent_diameter_m": 0.1140625,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 2.020229129,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.4416026700754946,
+        "minimum_vertex_mouth_depth_m": 0.3171761369670255,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_block",
+        "rock_id": "r2-rock-014",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-014",
+        "speed_m_s": 8.908026950032395e-05,
+        "vertex_count": 8
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.8556095590353069,
+          1.046784763788254,
+          0.9182539920352318
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 1.0475507731230806,
+        "equivalent_diameter_m": 0.1096875,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 1.796566862,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 1.109429693724772,
+        "minimum_vertex_mouth_depth_m": 0.9927822894981151,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_bipyramid",
+        "rock_id": "r2-rock-015",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-015",
+        "speed_m_s": 7.635397340387563e-05,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.9177473697579217,
+          0.3364971334644073,
+          1.0868447002394395
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 1.1447547426797389,
+        "equivalent_diameter_m": 0.1053125,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 1.590053503,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 1.2165174293478285,
+        "minimum_vertex_mouth_depth_m": 1.062553681343388,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_tetra",
+        "rock_id": "r2-rock-016",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-016",
+        "speed_m_s": 0.0001622912765924622,
+        "vertex_count": 4
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          1.0993208892645057,
+          0.9040920289216813,
+          1.5810235063141225
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 1.429128856011999,
+        "equivalent_diameter_m": 0.1009375,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 1.40000505,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 1.5062817747091453,
+        "minimum_vertex_mouth_depth_m": 1.347354164793602,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_tetra",
+        "rock_id": "r2-rock-017",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-017",
+        "speed_m_s": 9.944971879159327e-05,
+        "vertex_count": 4
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.20551029347104688,
+          -0.21474447850072845,
+          -0.8076566299039595
+        ],
+        "center_inside_bucket_prism": true,
+        "center_mouth_depth_m": 0.038801650008563976,
+        "equivalent_diameter_m": 0.0965625,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 4,
+        "mass_kg": 1.225737502,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.09074368627117951,
+        "minimum_vertex_mouth_depth_m": -0.016554678158525814,
+        "mouth_straddling_proxy": true,
+        "prototype_id": "angular_octa",
+        "rock_id": "r2-rock-018",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-018",
+        "speed_m_s": 0.0001713024495465453,
+        "vertex_count": 6
+      },
+      {
+        "all_vertices_inside_bucket_prism": false,
+        "center_bucket_m": [
+          0.2876556390547219,
+          -0.5745481436340734,
+          -0.5197806477510895
+        ],
+        "center_inside_bucket_prism": false,
+        "center_mouth_depth_m": 0.18139357769180633,
+        "equivalent_diameter_m": 0.0921875,
+        "ever_full_envelope_inside": false,
+        "final_continuous_full_inside_duration_s": 0.0,
+        "inside_vertex_count": 0,
+        "mass_kg": 1.066566855,
+        "maximum_continuous_full_inside_duration_s": 0.0,
+        "maximum_vertex_mouth_depth_m": 0.2350839120407754,
+        "minimum_vertex_mouth_depth_m": 0.12258602736841098,
+        "mouth_straddling_proxy": false,
+        "prototype_id": "angular_bipyramid",
+        "rock_id": "r2-rock-019",
+        "source_rock_id": "ordinary-small-rock-dominant-26091912-rock-019",
+        "speed_m_s": 0.00012211156504080334,
+        "vertex_count": 6
+      }
+    ],
+    "phase_end_observations": {
+      "coarse_vertical_approach": {
+        "bucket_origin_world_m": [
+          5.21712439284488,
+          0.0027930650409264497,
+          0.8804747371534143
+        ],
+        "cumulative_contact_substeps": {
+          "rock_bucket": 3092,
+          "rock_ground": 34800,
+          "rock_ramp": 0,
+          "rock_rock": 0,
+          "rock_truck": 0
+        },
+        "maximum_bucket_rock_force_n": 18000.68577381057,
+        "maximum_bucket_rock_torque_nm": 6577.016639584426,
+        "observation": {
+          "center_inside_count": 1,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 3.760633915,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-008"
+          ],
+          "mouth_straddling_proxy_count": 0
+        },
+        "time_s": 14.499999999990873
+      },
+      "curl_intake": {
+        "bucket_origin_world_m": [
+          5.188672221937958,
+          5.388503551062618e-05,
+          0.5862532419675086
+        ],
+        "cumulative_contact_substeps": {
+          "rock_bucket": 5881,
+          "rock_ground": 54000,
+          "rock_ramp": 0,
+          "rock_rock": 0,
+          "rock_truck": 0
+        },
+        "maximum_bucket_rock_force_n": 18000.68577381057,
+        "maximum_bucket_rock_torque_nm": 6577.016639584426,
+        "observation": {
+          "center_inside_count": 2,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 3.760633915,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-008"
+          ],
+          "mouth_straddling_proxy_count": 2
+        },
+        "time_s": 22.499999999983597
+      },
+      "fine_vertical_approach": {
+        "bucket_origin_world_m": [
+          5.188665699535213,
+          4.964807038406042e-09,
+          0.5863185188222537
+        ],
+        "cumulative_contact_substeps": {
+          "rock_bucket": 5040,
+          "rock_ground": 49200,
+          "rock_ramp": 0,
+          "rock_rock": 0,
+          "rock_truck": 0
+        },
+        "maximum_bucket_rock_force_n": 18000.68577381057,
+        "maximum_bucket_rock_torque_nm": 6577.016639584426,
+        "observation": {
+          "center_inside_count": 1,
+          "full_envelope_inside_count": 0,
+          "full_envelope_inside_mass_kg": 0,
+          "full_envelope_inside_rock_ids": [],
+          "mouth_straddling_proxy_count": 1
+        },
+        "time_s": 20.499999999985416
+      },
+      "settle": {
+        "bucket_origin_world_m": [
+          4.6740008126115224,
+          -1.3208547177693868e-06,
+          3.457369965042618
+        ],
+        "cumulative_contact_substeps": {
+          "rock_bucket": 0,
+          "rock_ground": 1200,
+          "rock_ramp": 0,
+          "rock_rock": 0,
+          "rock_truck": 0
+        },
+        "maximum_bucket_rock_force_n": 0.0,
+        "maximum_bucket_rock_torque_nm": 0.0,
+        "observation": {
+          "center_inside_count": 0,
+          "full_envelope_inside_count": 0,
+          "full_envelope_inside_mass_kg": 0,
+          "full_envelope_inside_rock_ids": [],
+          "mouth_straddling_proxy_count": 1
+        },
+        "time_s": 0.5000000000000081
+      },
+      "settle_after_intake": {
+        "bucket_origin_world_m": [
+          5.188662810771028,
+          1.0809203221227148e-05,
+          0.5862529505411087
+        ],
+        "cumulative_contact_substeps": {
+          "rock_bucket": 5881,
+          "rock_ground": 56400,
+          "rock_ramp": 0,
+          "rock_rock": 0,
+          "rock_truck": 0
+        },
+        "maximum_bucket_rock_force_n": 18000.68577381057,
+        "maximum_bucket_rock_torque_nm": 6577.016639584426,
+        "observation": {
+          "center_inside_count": 2,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 3.760633915,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-008"
+          ],
+          "mouth_straddling_proxy_count": 2
+        },
+        "time_s": 23.499999999982688
+      }
+    },
+    "runtime_error": null,
+    "simulated_duration_s": 23.499999999982688,
+    "status": "controlled_intake_scene_candidate",
+    "total_bucket_rock_angular_impulse_world_nms": [
+      620.3981265803887,
+      1769.212959792024,
+      -156.3838180488694
+    ],
+    "total_bucket_rock_impulse_world_ns": [
+      -1849.022227444016,
+      384.4474152639451,
+      9468.052582440698
+    ]
+  },
+  "model_sha256": "43ce8449a8fa13bab917c294fe730bfe2507220a8370903dcd0d53f41e612d32",
+  "physics_qualified": false,
+  "scene_class": "ordinary-small-rock-dominant",
+  "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+  "schema": "excavation_mixed_material_r2_controlled_intake_scene_report_v1",
+  "scope_limit": "bounded low-speed approach, curl and one-second settle only; no lift/hold, dump, fill-rate, MPM or all-six-scene qualification",
+  "status": "controlled_intake_scene_candidate"
+}

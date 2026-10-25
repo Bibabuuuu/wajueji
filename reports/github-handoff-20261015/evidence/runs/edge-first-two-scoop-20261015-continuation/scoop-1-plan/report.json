@@ -1,0 +1,172 @@
+{
+  "selected": {
+    "entry_xy_m": [
+      5.75,
+      0.6499999999999999
+    ],
+    "surface_z_m": 1.3730881214141846,
+    "score": 0.3139494785336605,
+    "corridor_cell_count": 159,
+    "contact": {
+      "source": "rear_lower_face_from_observed_profile",
+      "contact_xy_m": [
+        5.849367117802337,
+        0.6612328046211337
+      ],
+      "contact_surface_z_m": 0.6534153521060944,
+      "outward_offset_m": 0.1,
+      "normalized_height_fraction": 0.4745156886517548,
+      "target_height_fraction": 0.4,
+      "height_fraction_band": [
+        0.3,
+        0.5
+      ],
+      "crest_surface_z_m": 1.2001583576202393,
+      "base_surface_z_m": 0.15970292687416077,
+      "face_drop_m": 1.0404554307460785,
+      "bucket_width_m": 0.6,
+      "strip_anchor_xy_m": [
+        5.75,
+        0.6499999999999999
+      ],
+      "profile": [
+        {
+          "outward_offset_m": 0.0,
+          "center_xy_m": [
+            5.75,
+            0.6499999999999999
+          ],
+          "surface_z_m": 1.2001583576202393,
+          "minimum_surface_z_m": 0.38180750608444214,
+          "maximum_surface_z_m": 1.2809443136051653,
+          "cell_count": 7
+        },
+        {
+          "outward_offset_m": 0.1,
+          "center_xy_m": [
+            5.849367117802337,
+            0.6612328046211337
+          ],
+          "surface_z_m": 0.6534153521060944,
+          "minimum_surface_z_m": 0.3821527361869812,
+          "maximum_surface_z_m": 0.729334934272448,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.2,
+          "center_xy_m": [
+            5.9487342356046735,
+            0.6724656092422673
+          ],
+          "surface_z_m": 0.15970292687416077,
+          "minimum_surface_z_m": 0.15871761739253998,
+          "maximum_surface_z_m": 0.16056513786315918,
+          "cell_count": 6
+        }
+      ],
+      "prepoint_status": "not_selected_requires_separate_clearance_plan"
+    },
+    "legacy_height_score": 0.34172523224353796,
+    "cut_opportunity": {
+      "version": "full_width_cut_opportunity_v1",
+      "score_m3": 0.3139494785336605,
+      "observed_cut_band_volume_m3": 0.34034438396353556,
+      "weakest_third_equivalent_volume_m3": 0.2875545731037854,
+      "width_band_mean_thickness_m": [
+        0.6608956237634023,
+        0.6609169754717085,
+        0.6804584877358542,
+        0.6847733101203528,
+        0.6847733101203528,
+        0.6805425667100482,
+        0.6805425667100482,
+        0.6805837204058964,
+        0.6805837204058964,
+        0.6176533997058866,
+        0.510595530602667,
+        0.3408893207708994
+      ],
+      "material_coverage_fraction": 0.9722222222222222,
+      "width_m": 0.6,
+      "inward_length_m": 0.9,
+      "bottom_z_m": 0.3034153521060944,
+      "below_entry_m": 0.35,
+      "vertical_band_height_m": 0.7,
+      "sample_spacing_max_m": 0.05,
+      "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+    },
+    "selection_version": "full_width_cut_opportunity_v1",
+    "future_strip_count": 1,
+    "future_entry_xy_m": [
+      [
+        5.45,
+        -0.1499999999999999
+      ]
+    ],
+    "workspace_score": 0.6079671044757164,
+    "remaining_scoops_considered": 3
+  },
+  "observation": {
+    "detached_payload_particles": 0,
+    "detached_dynamic_particles": 0,
+    "detached_rock_ids": [],
+    "support_margin_m": 0.15,
+    "rock_to_stationary_soil_aabb_gap_m": {
+      "lower-000": 0.0,
+      "lower-001": 0.0,
+      "lower-002": 0.0,
+      "lower-003": 0.0,
+      "lower-004": 0.0,
+      "lower-005": 0.0,
+      "lower-006": 0.0,
+      "lower-007": 0.0,
+      "lower-008": 0.0,
+      "lower_middle-000": 0.0,
+      "lower_middle-001": 0.0,
+      "lower_middle-002": 0.0,
+      "lower_middle-003": 0.0,
+      "lower_middle-004": 0.0,
+      "lower_middle-005": 0.0,
+      "lower_middle-006": 0.0,
+      "lower_middle-007": 0.0,
+      "lower_middle-008": 0.0,
+      "lower_middle-009": 0.0,
+      "lower_middle-010": 0.0,
+      "middle-000": 0.0,
+      "middle-001": 0.0,
+      "middle-002": 0.0,
+      "middle-003": 0.0,
+      "middle-004": 0.0,
+      "middle-005": 0.0,
+      "middle-006": 0.0,
+      "middle-007": 0.0,
+      "middle-008": 0.0,
+      "middle-009": 0.0,
+      "middle-010": 0.0,
+      "middle-011": 0.0,
+      "middle-012": 0.0,
+      "upper-000": 0.0,
+      "upper-001": 0.0,
+      "upper-002": 0.0,
+      "upper-003": 0.0,
+      "upper-004": 0.0,
+      "upper-005": 0.0,
+      "upper-006": 0.0,
+      "upper-007": 0.0,
+      "upper-008": 0.0,
+      "upper-009": 0.0,
+      "upper-010": 0.0,
+      "upper-011": 0.0,
+      "upper-012": 0.0,
+      "upper-013": 0.0
+    },
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "Ground-connected stock; all detached soil/rocks remain in physical collision solving"
+  },
+  "cycle_index": 1,
+  "segments": [],
+  "total_frames": 0,
+  "approach_inherited_from_completed_phase": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-attempt2/scoop1_rear_lower_prepoint.npz",
+  "source_prior_frame": 4790
+}

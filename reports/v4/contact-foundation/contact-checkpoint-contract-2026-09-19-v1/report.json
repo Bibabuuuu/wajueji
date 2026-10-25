@@ -1,0 +1,96 @@
+{
+  "schema": "excavation_contact_checkpoint_contract_audit_v1",
+  "status": "contract_frozen_manual_visual_review_blocked",
+  "checks": {
+    "config_matches_code_contract": true,
+    "six_label_phases_separate_from_three_actor_heads": true,
+    "current_candidates_rejected_pending_review": true,
+    "current_candidate_training_rows_zero": true,
+    "legacy_four_head_checkpoint_rejected_by_contact_contract": true,
+    "contact_checkpoint_rejected_by_legacy_loader": true,
+    "continuous_visual_evidence_absent": true,
+    "holdout_roots_scanned_zero": true,
+    "checkpoint_files_loaded_zero": true,
+    "physics_steps_zero": true,
+    "parameter_updates_zero": true
+  },
+  "contract_spec_sha256": "eff2d619a859b6a10cab6715b5d40705ed9788033e8c2e414d1a41367929b943",
+  "candidate_labels": {
+    "segment_records": 34,
+    "training_eligible_rows_now": 0,
+    "admission_rejection": "contact_label_schema_not_reviewed",
+    "source_sha256": "5440b3bf897c6aa696c490e1dbaf6d80ca36b6f6b50d573aca3614fbc030f17c"
+  },
+  "legacy_checkpoint": {
+    "schema": "excavation_phase_head_actor_bc_checkpoint_v4",
+    "phase_names": [
+      "approach",
+      "penetrate_deepen",
+      "curl_load",
+      "lift_carry"
+    ],
+    "new_contract_rejection": "contact_checkpoint_schema_mismatch",
+    "legacy_loader_rejection": "v4_actor_checkpoint_contract_mismatch"
+  },
+  "visual_evidence": {
+    "media_files": [
+      {
+        "role": "training",
+        "relative_path": "human-demo-20260917-091339/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      },
+      {
+        "role": "training",
+        "relative_path": "human-demo-20260917-101448/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      },
+      {
+        "role": "training",
+        "relative_path": "v4-demo-attempt-20260917-231940/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      },
+      {
+        "role": "training",
+        "relative_path": "v4-demo-attempt-20260918-102031/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      },
+      {
+        "role": "training",
+        "relative_path": "v4-demo-attempt-20260918-102212/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      },
+      {
+        "role": "training",
+        "relative_path": "v4-demo-attempt-20260918-102352/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      },
+      {
+        "role": "corrections",
+        "relative_path": "v4-handshake-20260918-161214/ready-with-ui.ppm",
+        "bytes": 3888016,
+        "kind": "initial_ready_frame"
+      }
+    ],
+    "initial_ready_frames": 7,
+    "continuous_video_files": 0,
+    "noninitial_image_files": 0
+  },
+  "source_sha256": {
+    "contract_config": "13c098e50d7115d76501f2317638e9d48397a72ee702e686d20b77b48a60d156",
+    "generator": "c95c75773259c6c110caa544a8fce14b523f301e14226f9efeed61bbeb4489a9"
+  },
+  "scope": {
+    "holdout_paths_supported": false,
+    "holdout_roots_scanned": 0,
+    "checkpoint_files_loaded": 0,
+    "physics_steps": 0,
+    "parameter_updates": 0,
+    "claim": "metadata isolation and evidence-availability audit only; not label approval, training, or runtime admission"
+  }
+}

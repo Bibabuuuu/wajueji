@@ -1,0 +1,25 @@
+{
+  "status": "reporting_fault_only_recovery_audited",
+  "frames_audited": 180,
+  "all_physical_guards_passed": true,
+  "source_failure_preserved": true,
+  "source": {
+    "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-1800/failure.npz",
+    "size_bytes": 52408394,
+    "mtime_ns": 1790324510019963091,
+    "sha256": "812f03addc29acd8ef12eac40d71f7ef95382ff0c2c2ebd5047c23b9eaceb6ee"
+  },
+  "report": {
+    "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-1800/report.json",
+    "size_bytes": 21041,
+    "mtime_ns": 1790324509977456656,
+    "sha256": "db73f523d770e91568296b0d6538ac7170c840b497eff1302b2b69004ff9dfc3"
+  },
+  "recovery": {
+    "path": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/recording-fault-recovery-180.npz",
+    "size_bytes": 52408394,
+    "mtime_ns": 1790324568269604044,
+    "sha256": "812f03addc29acd8ef12eac40d71f7ef95382ff0c2c2ebd5047c23b9eaceb6ee"
+  },
+  "qualification": "diagnostic continuation only; not a manual prepoint or training result"
+}

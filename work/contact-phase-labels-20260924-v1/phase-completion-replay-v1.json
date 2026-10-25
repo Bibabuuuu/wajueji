@@ -1,0 +1,382 @@
+{
+  "schema": "phase_completion_replay_v1",
+  "status": "candidate_only_no_training_export",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-replay-v1.json",
+      "sha256": "ecb53560283b1ec937691b6375afc28d78a72798a26bb28757f947ea0edbad2a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/lift-endpoint-audit-v1.json",
+      "sha256": "c4aba82cbbe4eb58333553b5b7afd4b0299d8c0d3e8d462172f3478fc67b6110"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+      "sha256": "79b1150d043b03b45d3fd844f3e6186642962739dc795536b0a79ba383ac2bdf"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_candidate.py",
+      "sha256": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_completion.py",
+      "sha256": "c3fa5093e88b19fa27cf41ddce1b15e171fef4b06d76339eabefc806d9ae4b43"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_geometry.py",
+      "sha256": "b994d25bcb7c8ddae0aa81bcbe78f1fe5fb2b6d88b5943d5e0ca9a66de6d75c1"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/replay_phase_completion.py",
+      "sha256": "0302203342515eb23ebe2edc82d811ee8219f82ec498ecdd7a6840d94e4446a9"
+    }
+  ],
+  "geometry_inputs": [
+    {
+      "path": "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/results/layered-mound-physical-preflight-v1/scene-manifest.json",
+      "sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+    },
+    {
+      "path": "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+      "sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+    },
+    {
+      "path": "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/model/A.xml",
+      "sha256": "959098bed4286ae5909858acb02a22eb8b9050ef2029ebe7d2c6a5f3d4d5e320"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/layered_47_cycle_geometry.py",
+      "sha256": "b88ed645ee736a987ecfa4af0fd0591de8bd9f6b383526f135527264ac8e0ae6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/layered_excavation_approach_planner.py",
+      "sha256": "f0e2cb0762534f3c17017b41eabadec8c69c6e9c8ab7706867132bf993068639"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+      "sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz",
+      "sha256": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1"
+    }
+  ],
+  "physics_advanced": false,
+  "live_policy_connected": false,
+  "original_annotations_changed": false,
+  "qualification": "Causal replay and endpoint-only distance, not continuous off-soil or controller qualification",
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/physics.ndjson",
+          "sha256": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/observation.ndjson",
+          "sha256": "adcbcf3c20120a4ea6f84abd3db8b4cb21c250c09164de2509518b7c881e32fb"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/annotations.ndjson",
+          "sha256": "eb42b40964377fb86215818b7230c06b62fa48598e218a716fa918bf0aff315d"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/010900-1088617-features.json",
+        "sha256": "fe1ca3062a8e63e4f4ec2883533593678d310cdabbbfdc6358c77e2d965bc03c"
+      },
+      "observed_frames": 1311,
+      "events": [
+        {
+          "transition": "approach_contact_to_penetrate",
+          "evidence": [
+            {
+              "kind": "soil_resultant_force",
+              "onset_frame_end": 125
+            }
+          ],
+          "confirmation_frame_end": 127,
+          "first_available_decision_frame": 128
+        },
+        {
+          "transition": "penetrate_to_curl_load",
+          "evidence": [
+            {
+              "kind": "frozen_angle_downward_crossing",
+              "onset_frame_end": 606
+            }
+          ],
+          "confirmation_frame_end": 606,
+          "first_available_decision_frame": 607
+        },
+        {
+          "transition": "curl_load_to_lift",
+          "evidence": [
+            {
+              "kind": "sustained_actual_boom_and_bucket_rise",
+              "motion_window_start_frame_end": 796,
+              "first_matching_window_frame_end": 808,
+              "consecutive_matching_windows": 35,
+              "origin_rise_m": 0.08053322216230496
+            }
+          ],
+          "confirmation_frame_end": 842,
+          "first_available_decision_frame": 843
+        }
+      ],
+      "endpoint": {
+        "remaining_soil_gap_m": 0.0633940920452164,
+        "ground_connected_particles": 239849,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance",
+        "cpu_seconds": 0.17290210298961028,
+        "frame_end": 1311,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/final-001311.diagnostic.npz",
+          "sha256": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3"
+        },
+        "five_frame_confirmation_available": false
+      },
+      "final_candidate_phase": "lift",
+      "off_soil_consecutive_fresh_frames": 1,
+      "human_lift_boundary_confirmed": false,
+      "off_soil_boundary_confirmed": false
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/physics.ndjson",
+          "sha256": "e46a76619fbcc45508286b1f49e586fac4fe94813c9d4c0e2911b45a3b5c778f"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/observation.ndjson",
+          "sha256": "c040a6f293e50de067b2faaac68cbaf10d2e99129202d5240d00241a72ad6d57"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/annotations.ndjson",
+          "sha256": "a078fd16216b10448e94ee7d91e18bf74e1f638d6dc4fc1ae1a426666db77a0d"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/113555-1443279-features.json",
+        "sha256": "f8d19e25b849765c51a9cdb2e3d7089e1449122d294802ae7dddeba27cd54fd6"
+      },
+      "observed_frames": 1411,
+      "events": [
+        {
+          "transition": "approach_contact_to_penetrate",
+          "evidence": [
+            {
+              "kind": "soil_resultant_force",
+              "onset_frame_end": 162
+            }
+          ],
+          "confirmation_frame_end": 164,
+          "first_available_decision_frame": 165
+        },
+        {
+          "transition": "penetrate_to_curl_load",
+          "evidence": [
+            {
+              "kind": "frozen_angle_downward_crossing",
+              "onset_frame_end": 368
+            }
+          ],
+          "confirmation_frame_end": 368,
+          "first_available_decision_frame": 369
+        },
+        {
+          "transition": "curl_load_to_lift",
+          "evidence": [
+            {
+              "kind": "sustained_actual_boom_and_bucket_rise",
+              "motion_window_start_frame_end": 841,
+              "first_matching_window_frame_end": 853,
+              "consecutive_matching_windows": 31,
+              "origin_rise_m": 0.0808332510983163
+            }
+          ],
+          "confirmation_frame_end": 883,
+          "first_available_decision_frame": 884
+        }
+      ],
+      "endpoint": {
+        "remaining_soil_gap_m": 9.791503545630853e-06,
+        "ground_connected_particles": 239820,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance",
+        "cpu_seconds": 0.17142466502264142,
+        "frame_end": 1411,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz",
+          "sha256": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace"
+        },
+        "five_frame_confirmation_available": false
+      },
+      "final_candidate_phase": "lift",
+      "off_soil_consecutive_fresh_frames": 0,
+      "human_lift_boundary_confirmed": false,
+      "off_soil_boundary_confirmed": false
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/physics.ndjson",
+          "sha256": "fe0717c631ba632a25e7adc55967ec242dee7c475700642cc2b45441296c0714"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/observation.ndjson",
+          "sha256": "3832f01c66f7e1e885e88b9e40a3b178ca75ff519a5143ff5b7373966e5a3dda"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/annotations.ndjson",
+          "sha256": "af8b4aa83f88dcf646f9c1a1065522cce21240446afdacad79f289a80397b9f1"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/114908-1452582-features.json",
+        "sha256": "f8e15af3771494c91371241ea1b4b24f83cee4297b009bcb5e7f7ed25bc5d93b"
+      },
+      "observed_frames": 1674,
+      "events": [
+        {
+          "transition": "approach_contact_to_penetrate",
+          "evidence": [
+            {
+              "kind": "soil_resultant_force",
+              "onset_frame_end": 360
+            }
+          ],
+          "confirmation_frame_end": 362,
+          "first_available_decision_frame": 363
+        },
+        {
+          "transition": "penetrate_to_curl_load",
+          "evidence": [
+            {
+              "kind": "frozen_angle_downward_crossing",
+              "onset_frame_end": 638
+            }
+          ],
+          "confirmation_frame_end": 638,
+          "first_available_decision_frame": 639
+        },
+        {
+          "transition": "curl_load_to_lift",
+          "evidence": [
+            {
+              "kind": "sustained_actual_boom_and_bucket_rise",
+              "motion_window_start_frame_end": 1132,
+              "first_matching_window_frame_end": 1144,
+              "consecutive_matching_windows": 38,
+              "origin_rise_m": 0.08031080199226204
+            }
+          ],
+          "confirmation_frame_end": 1181,
+          "first_available_decision_frame": 1182
+        }
+      ],
+      "endpoint": {
+        "remaining_soil_gap_m": 0.061078021997302834,
+        "ground_connected_particles": 241210,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance",
+        "cpu_seconds": 0.17589974700240418,
+        "frame_end": 1674,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz",
+          "sha256": "73aa8f1a4e040c15aa978a22dc946260481f9b1d72f71ce559ddae2eef8c3c5c"
+        },
+        "five_frame_confirmation_available": false
+      },
+      "final_candidate_phase": "lift",
+      "off_soil_consecutive_fresh_frames": 1,
+      "human_lift_boundary_confirmed": false,
+      "off_soil_boundary_confirmed": false
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/physics.ndjson",
+          "sha256": "1e963007d151251d39ed71e7a2cd4cbf04a54c642298f2e3890fa1faf49776f6"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/observation.ndjson",
+          "sha256": "19b442c67ea790b8017414d779ffef0ac90a2da2094fc412486a11257451d26b"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/annotations.ndjson",
+          "sha256": "a4f10b08e9cd10fcf43c5d5365201b6695e63d329008bbfd55a633624df5834f"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/115812-1458627-features.json",
+        "sha256": "e691a888d400bb79d1a0ed280f3b314a8494a4b11d7dcb1a7dea63fb00298a42"
+      },
+      "observed_frames": 1490,
+      "events": [
+        {
+          "transition": "approach_contact_to_penetrate",
+          "evidence": [
+            {
+              "kind": "soil_resultant_force",
+              "onset_frame_end": 311
+            }
+          ],
+          "confirmation_frame_end": 313,
+          "first_available_decision_frame": 314
+        },
+        {
+          "transition": "penetrate_to_curl_load",
+          "evidence": [
+            {
+              "kind": "frozen_angle_downward_crossing",
+              "onset_frame_end": 579
+            }
+          ],
+          "confirmation_frame_end": 579,
+          "first_available_decision_frame": 580
+        },
+        {
+          "transition": "curl_load_to_lift",
+          "evidence": [
+            {
+              "kind": "sustained_actual_boom_and_bucket_rise",
+              "motion_window_start_frame_end": 887,
+              "first_matching_window_frame_end": 899,
+              "consecutive_matching_windows": 38,
+              "origin_rise_m": 0.08121718258454802
+            }
+          ],
+          "confirmation_frame_end": 936,
+          "first_available_decision_frame": 937
+        }
+      ],
+      "endpoint": {
+        "remaining_soil_gap_m": 0.15920484342268376,
+        "ground_connected_particles": 234121,
+        "connectivity_cell_m": 0.04,
+        "ground_anchor_below_z_m": 0.06,
+        "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance",
+        "cpu_seconds": 0.1743290779995732,
+        "frame_end": 1490,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/final-001490.cycle.npz",
+          "sha256": "17aa03b291d4bdaabe41140ffd723a89e175e17715121c2932b847eee0987c3d"
+        },
+        "five_frame_confirmation_available": false
+      },
+      "final_candidate_phase": "lift",
+      "off_soil_consecutive_fresh_frames": 1,
+      "human_lift_boundary_confirmed": false,
+      "off_soil_boundary_confirmed": false
+    }
+  ]
+}

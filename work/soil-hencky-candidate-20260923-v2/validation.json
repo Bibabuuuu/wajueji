@@ -1,0 +1,32 @@
+{
+  "status": "candidate600frameprefix_verified_not_full_scoop",
+  "checks": {
+    "sources_unchanged": true,
+    "restore_exact": true,
+    "600frames_completed": true,
+    "all_executed_frame_guards_passed": true,
+    "candidate_gpu_preflight_passed": true,
+    "original_actual_commands_replayed": true,
+    "all_bound_sources_unchanged": true,
+    "native_bridge_byte_identical": true,
+    "22_checkpoint_state_fields_exact": true,
+    "original_before_state_exact": true,
+    "derived_velocity_independent_check": true,
+    "snapshot_277_exists": true,
+    "snapshot_540_exists": true,
+    "snapshot_600_exists": true,
+    "syntax_pass": true,
+    "v1_failure_evidence_unchanged": true
+  },
+  "candidate_implemented": true,
+  "gpu_tested": true,
+  "prefix600_tested": true,
+  "later1329_tested": false,
+  "soil_loss_fixed": false,
+  "default_manual_deployed": false,
+  "training_eligible": false,
+  "resume_qualified": false,
+  "source_bindings": 23,
+  "zero_frame_preflight_failure_preserved": "/home/qunwang/wajueji/work/soil-hencky-candidate-20260923-v1",
+  "actual_run_wall_seconds": 151.55300514599367
+}

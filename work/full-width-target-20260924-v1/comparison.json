@@ -1,0 +1,751 @@
+{
+  "schema": "full_width_target_comparison_v1",
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-110051-1421079/final-001461.cycle.npz",
+    "size_bytes": 53936426,
+    "mtime_ns": 1790219137764920052,
+    "sha256": "31a12d6b3e4455d2d5085a8ffe476e1139df6a00c8f711ec70d308334e359261"
+  },
+  "physics_steps": 0,
+  "old_target": [
+    5.549335547356983,
+    0.3699557031571323
+  ],
+  "new_feasible_target": [
+    5.6478228927681355,
+    0.5916766840042811
+  ],
+  "old_opportunity": {
+    "version": "full_width_cut_opportunity_v1",
+    "score_m3": 0.26535298416691516,
+    "observed_cut_band_volume_m3": 0.3096257371675347,
+    "weakest_third_equivalent_volume_m3": 0.2210802311662956,
+    "width_band_mean_thickness_m": [
+      0.3170883771446016,
+      0.4214107467068565,
+      0.45067308652331955,
+      0.44845913159778245,
+      0.5087657690048216,
+      0.6373033467266294,
+      0.6373033467266294,
+      0.6906558516952725,
+      0.6906558516952725,
+      0.6949484000603356,
+      0.6949484000603356,
+      0.6883596291144687
+    ],
+    "material_coverage_fraction": 0.9212962962962963,
+    "width_m": 0.6,
+    "inward_length_m": 0.9,
+    "bottom_z_m": 0.6053727209568024,
+    "below_entry_m": 0.35,
+    "vertical_band_height_m": 0.7,
+    "sample_spacing_max_m": 0.05,
+    "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+  },
+  "new_opportunity": {
+    "version": "full_width_cut_opportunity_v1",
+    "score_m3": 0.3062172602862119,
+    "observed_cut_band_volume_m3": 0.32712778180837626,
+    "weakest_third_equivalent_volume_m3": 0.28530673876404755,
+    "width_band_mean_thickness_m": [
+      0.38389631708463035,
+      0.5522351609336004,
+      0.6204880820380315,
+      0.6502249651485017,
+      0.6500050902366636,
+      0.6574052982860139,
+      0.6403010567029316,
+      0.6345746053589714,
+      0.6501150197452968,
+      0.6516936394903393,
+      0.6218033373355865,
+      0.5567636900477938
+    ],
+    "material_coverage_fraction": 0.9583333333333334,
+    "width_m": 0.6,
+    "inward_length_m": 0.9,
+    "bottom_z_m": 0.6788734436035156,
+    "below_entry_m": 0.35,
+    "vertical_band_height_m": 0.7,
+    "sample_spacing_max_m": 0.05,
+    "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+  },
+  "candidates": [
+    {
+      "anchor": [
+        5.45,
+        0.6499999999999999
+      ],
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ],
+      "old_score": 0.3430333098173142,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.3184159920662641,
+        "observed_cut_band_volume_m3": 0.336859961181879,
+        "weakest_third_equivalent_volume_m3": 0.2999720229506492,
+        "width_band_mean_thickness_m": [
+          0.5912526104185315,
+          0.6735800445079803,
+          0.65651675330268,
+          0.65651675330268,
+          0.6544650435447692,
+          0.6528317948182423,
+          0.6566578520668876,
+          0.6582911007934145,
+          0.6549025879965886,
+          0.647933895058102,
+          0.5719466805458068,
+          0.41088179879718356
+        ],
+        "material_coverage_fraction": 0.9537037037037037,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.32847567796707156,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    },
+    {
+      "anchor": [
+        5.45,
+        0.5500000000000003
+      ],
+      "contact": [
+        5.847978561622041,
+        0.5901629741086466
+      ],
+      "old_score": 0.34389081704616553,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.3177897723168135,
+        "observed_cut_band_volume_m3": 0.33721504004299646,
+        "weakest_third_equivalent_volume_m3": 0.29836450459063046,
+        "width_band_mean_thickness_m": [
+          0.39311415519979265,
+          0.5545709239112004,
+          0.6095905674828422,
+          0.6762740439838831,
+          0.65651675330268,
+          0.65651675330268,
+          0.656098292271296,
+          0.6528317948182423,
+          0.6550246033403607,
+          0.6582911007934145,
+          0.6570482611656188,
+          0.6677903069390189
+        ],
+        "material_coverage_fraction": 0.9861111111111112,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.32847567796707156,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    },
+    {
+      "anchor": [
+        5.25,
+        0.5500000000000003
+      ],
+      "contact": [
+        5.6478228927681355,
+        0.5916766840042811
+      ],
+      "old_score": 0.3474140107631684,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.3062172602862119,
+        "observed_cut_band_volume_m3": 0.32712778180837626,
+        "weakest_third_equivalent_volume_m3": 0.28530673876404755,
+        "width_band_mean_thickness_m": [
+          0.38389631708463035,
+          0.5522351609336004,
+          0.6204880820380315,
+          0.6502249651485017,
+          0.6500050902366636,
+          0.6574052982860139,
+          0.6403010567029316,
+          0.6345746053589714,
+          0.6501150197452968,
+          0.6516936394903393,
+          0.6218033373355865,
+          0.5567636900477938
+        ],
+        "material_coverage_fraction": 0.9583333333333334,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.6788734436035156,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": true
+    },
+    {
+      "anchor": [
+        5.25,
+        0.6499999999999999
+      ],
+      "contact": [
+        5.646969041897628,
+        0.6991485480444681
+      ],
+      "old_score": 0.344990391612053,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.2904495239406824,
+        "observed_cut_band_volume_m3": 0.3183754917383194,
+        "weakest_third_equivalent_volume_m3": 0.2625235561430454,
+        "width_band_mean_thickness_m": [
+          0.604346642229292,
+          0.6340835253397622,
+          0.6539387914869519,
+          0.6574052982860139,
+          0.6383106854226852,
+          0.6345746053589714,
+          0.6495941281318663,
+          0.6516936394903393,
+          0.6107913196086883,
+          0.5447270188066694,
+          0.4773599836561415,
+          0.318185289700826
+        ],
+        "material_coverage_fraction": 0.9537037037037037,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.6788734436035156,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    },
+    {
+      "anchor": [
+        5.45,
+        0.4500000000000002
+      ],
+      "contact": [
+        5.848643411002359,
+        0.48291551100019503
+      ],
+      "old_score": 0.34318691265583046,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.2805107518136501,
+        "observed_cut_band_volume_m3": 0.31601105779409405,
+        "weakest_third_equivalent_volume_m3": 0.24501044583320616,
+        "width_band_mean_thickness_m": [
+          0.42438253528541986,
+          0.4135028547710842,
+          0.422435877389378,
+          0.5545709239112004,
+          0.5875726282596587,
+          0.6762740439838831,
+          0.6661569734414416,
+          0.65651675330268,
+          0.6559811426533592,
+          0.6528317948182423,
+          0.6539513223701052,
+          0.6582911007934145
+        ],
+        "material_coverage_fraction": 0.9537037037037037,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.32847567796707156,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    },
+    {
+      "anchor": [
+        5.25,
+        0.4500000000000002
+      ],
+      "contact": [
+        5.6485386596167,
+        0.48416045653857454
+      ],
+      "old_score": 0.3502848286628724,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.2748115458041429,
+        "observed_cut_band_volume_m3": 0.3106047565937042,
+        "weakest_third_equivalent_volume_m3": 0.23901833501458164,
+        "width_band_mean_thickness_m": [
+          0.4128092408180236,
+          0.383279185824924,
+          0.4221825977166494,
+          0.5522351609336004,
+          0.5974340418974556,
+          0.6502249651485017,
+          0.6502307070626151,
+          0.6574052982860139,
+          0.6462583223978676,
+          0.6345746053589714,
+          0.6440001593695746,
+          0.6516936394903393
+        ],
+        "material_coverage_fraction": 0.9120370370370371,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.6788734436035156,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    },
+    {
+      "anchor": [
+        5.35,
+        0.3500000000000001
+      ],
+      "contact": [
+        5.649360075887982,
+        0.369584304030055
+      ],
+      "old_score": 0.3517998946905137,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.26560019384324546,
+        "observed_cut_band_volume_m3": 0.30580608552694316,
+        "weakest_third_equivalent_volume_m3": 0.22539430215954778,
+        "width_band_mean_thickness_m": [
+          0.3731986674997541,
+          0.4124202456739213,
+          0.44473156531651814,
+          0.43923694491386406,
+          0.4576575239499409,
+          0.6060465064313676,
+          0.6060465064313676,
+          0.6941071516937679,
+          0.6941071516937679,
+          0.6943385104338327,
+          0.6943385104338327,
+          0.6794615050156909
+        ],
+        "material_coverage_fraction": 0.8842592592592593,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.49439879655838015,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    },
+    {
+      "anchor": [
+        5.25,
+        0.3500000000000001
+      ],
+      "contact": [
+        5.549335547356983,
+        0.3699557031571323
+      ],
+      "old_score": 0.3522848286628724,
+      "opportunity": {
+        "version": "full_width_cut_opportunity_v1",
+        "score_m3": 0.26535298416691516,
+        "observed_cut_band_volume_m3": 0.3096257371675347,
+        "weakest_third_equivalent_volume_m3": 0.2210802311662956,
+        "width_band_mean_thickness_m": [
+          0.3170883771446016,
+          0.4214107467068565,
+          0.45067308652331955,
+          0.44845913159778245,
+          0.5087657690048216,
+          0.6373033467266294,
+          0.6373033467266294,
+          0.6906558516952725,
+          0.6906558516952725,
+          0.6949484000603356,
+          0.6949484000603356,
+          0.6883596291144687
+        ],
+        "material_coverage_fraction": 0.9212962962962963,
+        "width_m": 0.6,
+        "inward_length_m": 0.9,
+        "bottom_z_m": 0.6053727209568024,
+        "below_entry_m": 0.35,
+        "vertical_band_height_m": 0.7,
+        "sample_spacing_max_m": 0.05,
+        "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+      },
+      "feasible_chosen": false
+    }
+  ],
+  "prepoint_rejections": [
+    {
+      "entry_xy_m": [
+        5.45,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00362233345, position_error_m=0.114203785, pitch_error_rad=-0.00546745341, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00580713038, position_error_m=0.1361151, pitch_error_rad=-0.0105069962, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.6499999999999999
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00598463196, position_error_m=0.214605746, pitch_error_rad=-0.00337401888, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.5500000000000003
+      ],
+      "offset": [
+        0.5,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00414962528, position_error_m=0.0951928301, pitch_error_rad=-0.00759004741, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.5500000000000003
+      ],
+      "offset": [
+        0.5,
+        0.7
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00496615937, position_error_m=0.127666236, pitch_error_rad=-0.0097833412, active_bounds=[12]"
+    },
+    {
+      "entry_xy_m": [
+        5.45,
+        0.5500000000000003
+      ],
+      "offset": [
+        0.6,
+        0.6
+      ],
+      "failure": "cycle_pose_unresolved: closure_m=0.00559093682, position_error_m=0.205286664, pitch_error_rad=-0.00322335706, active_bounds=[12]"
+    }
+  ],
+  "projected_operator_heading": {
+    "contact": [
+      5.507345803270839,
+      0.7753286030151288
+    ],
+    "opportunity": {
+      "version": "full_width_cut_opportunity_v1",
+      "score_m3": 0.2791662475764751,
+      "observed_cut_band_volume_m3": 0.3257315165102481,
+      "weakest_third_equivalent_volume_m3": 0.23260097864270207,
+      "width_band_mean_thickness_m": [
+        0.6906558516952725,
+        0.6949484000603356,
+        0.6949484000603356,
+        0.6883596291144687,
+        0.6993684947490691,
+        0.6983267115222083,
+        0.6983267115222083,
+        0.650573733780119,
+        0.6395893918143377,
+        0.48353651662667585,
+        0.39941379096772933,
+        0.20043051275942061
+      ],
+      "material_coverage_fraction": 0.9120370370370371,
+      "width_m": 0.6,
+      "inward_length_m": 0.9,
+      "bottom_z_m": 0.6053727209568024,
+      "below_entry_m": 0.35,
+      "vertical_band_height_m": 0.7,
+      "sample_spacing_max_m": 0.05,
+      "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+    },
+    "scope": "Retrospective heading projection at old radius/height, not actual entry and never an online feature."
+  },
+  "sensitivity": [
+    {
+      "length": 0.75,
+      "below_entry": 0.25,
+      "band_height": 0.6,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.25,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.25,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.35,
+      "band_height": 0.6,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.35,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.35,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.45,
+      "band_height": 0.6,
+      "contact": [
+        5.847978561622041,
+        0.5901629741086466
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.45,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.75,
+      "below_entry": 0.45,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.25,
+      "band_height": 0.6,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.25,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.25,
+      "band_height": 0.8,
+      "contact": [
+        5.847978561622041,
+        0.5901629741086466
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.35,
+      "band_height": 0.6,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.35,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.35,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.45,
+      "band_height": 0.6,
+      "contact": [
+        5.847978561622041,
+        0.5901629741086466
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.45,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 0.9,
+      "below_entry": 0.45,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.25,
+      "band_height": 0.6,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.25,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.25,
+      "band_height": 0.8,
+      "contact": [
+        5.847978561622041,
+        0.5901629741086466
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.35,
+      "band_height": 0.6,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.35,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.35,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.45,
+      "band_height": 0.6,
+      "contact": [
+        5.847978561622041,
+        0.5901629741086466
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.45,
+      "band_height": 0.7,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    },
+    {
+      "length": 1.05,
+      "below_entry": 0.45,
+      "band_height": 0.8,
+      "contact": [
+        5.84718511628397,
+        0.6973707019421247
+      ]
+    }
+  ],
+  "all_27_rank_winners_toward_operator": true,
+  "limits": [
+    "heightfield geometry is not mass or guaranteed fill",
+    "manual relocation is retained separately; no label rewriting",
+    "existing face admission/search envelope retained",
+    "sensitivity compares score ranking; each winner still needs safe prepoint"
+  ]
+}

@@ -1,0 +1,2158 @@
+{
+  "candidate_contact_pair_upper_bounds": {
+    "rock_bucket_proxy_geom_pairs": 360,
+    "rock_ground_geom_pairs": 20,
+    "rock_rock_body_pairs": 190,
+    "rock_truck_receiver_geom_pairs": 100,
+    "scope": "combinatorial candidate geom/body pairs, not simultaneous contacts or manifolds",
+    "total_body_or_environment_role_pairs": 250,
+    "total_candidate_geom_pairs": 670
+  },
+  "first_round_admission": true,
+  "loaded_model_rock_count": 20,
+  "maximum_capacity": 20,
+  "padding_forbidden": true,
+  "qualification": "first_round_admission_candidate",
+  "rock_count": 20,
+  "rocks": [
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_tetra.obj",
+      "asset_sha256": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.23,
+      "full_scene_binding": {
+        "body_name": "r2-rock-000",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_000",
+        "geom_name": "r2_rock_geom_000",
+        "mesh_name": "r2_rock_mesh_000",
+        "qpos_address": 19,
+        "qpos_width": 7,
+        "qvel_address": 18,
+        "qvel_width": 6,
+        "slot": 0
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.1126063679,
+          -0.002510790489,
+          -0.006457959975
+        ],
+        [
+          -0.002510790489,
+          0.1286708306,
+          -0.002395880169
+        ],
+        [
+          -0.006457959975,
+          -0.002395880169,
+          0.117852024
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.1277577498,
+          0.0009596204437,
+          -0.002888630441
+        ],
+        [
+          0.0009596204437,
+          0.1077477602,
+          1.651226179e-05
+        ],
+        [
+          -0.002888630441,
+          1.651226179e-05,
+          0.1236237127
+        ]
+      ],
+      "mass_kg": 16.56362839,
+      "orientation_quaternion_wxyz": [
+        0.5886922168,
+        0.06857165163,
+        0.3058347343,
+        -0.745120472
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        6.747738037,
+        0.5062192421,
+        0.236449699
+      ],
+      "prototype_id": "angular_tetra",
+      "rock_id": "sparse-large-rock-26091926-rock-000",
+      "uniform_linear_scale_from_unit_asset": 0.23,
+      "volume_m3": 0.006370626303
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_block.obj",
+      "asset_sha256": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1908333333,
+      "full_scene_binding": {
+        "body_name": "r2-rock-001",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_001",
+        "geom_name": "r2_rock_geom_001",
+        "mesh_name": "r2_rock_mesh_001",
+        "qpos_address": 26,
+        "qpos_width": 7,
+        "qvel_address": 24,
+        "qvel_width": 6,
+        "slot": 1
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.02502894809,
+          -0.003198167707,
+          -0.0009791650444
+        ],
+        [
+          -0.003198167707,
+          0.05546849498,
+          -0.0007403977293
+        ],
+        [
+          -0.0009791650444,
+          -0.0007403977293,
+          0.06337191216
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.03455719583,
+          0.005451036086,
+          -0.0135856569
+        ],
+        [
+          0.005451036086,
+          0.06225701977,
+          0.003858865901
+        ],
+        [
+          -0.0135856569,
+          0.003858865901,
+          0.04705513964
+        ]
+      ],
+      "mass_kg": 9.460948511,
+      "orientation_quaternion_wxyz": [
+        0.6655333577,
+        -0.6623187402,
+        -0.1588587444,
+        -0.3052263676
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.675054705,
+        1.024281177,
+        0.1646746039
+      ],
+      "prototype_id": "angular_block",
+      "rock_id": "sparse-large-rock-26091926-rock-001",
+      "uniform_linear_scale_from_unit_asset": 0.1908333333,
+      "volume_m3": 0.00363882635
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_bipyramid.obj",
+      "asset_sha256": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1825,
+      "full_scene_binding": {
+        "body_name": "r2-rock-002",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_002",
+        "geom_name": "r2_rock_geom_002",
+        "mesh_name": "r2_rock_mesh_002",
+        "qpos_address": 33,
+        "qpos_width": 7,
+        "qvel_address": 30,
+        "qvel_width": 6,
+        "slot": 2
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.02599645071,
+          -0.001823555581,
+          -0.001059678556
+        ],
+        [
+          -0.001823555581,
+          0.03134589383,
+          0.0005851500601
+        ],
+        [
+          -0.001059678556,
+          0.0005851500601,
+          0.03618644831
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.0257727859,
+          0.0002948155908,
+          0.002032403515
+        ],
+        [
+          0.0002948155908,
+          0.03172876473,
+          -0.0001904631196
+        ],
+        [
+          0.002032403515,
+          -0.0001904631196,
+          0.03602724221
+        ]
+      ],
+      "mass_kg": 8.274858511,
+      "orientation_quaternion_wxyz": [
+        0.1453543339,
+        0.1212850516,
+        -0.9799856789,
+        0.06156397462
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.396036234,
+        0.3790652116,
+        0.1476465059
+      ],
+      "prototype_id": "angular_bipyramid",
+      "rock_id": "sparse-large-rock-26091926-rock-002",
+      "uniform_linear_scale_from_unit_asset": 0.1825,
+      "volume_m3": 0.003182637889
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_bipyramid.obj",
+      "asset_sha256": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1741666667,
+      "full_scene_binding": {
+        "body_name": "r2-rock-003",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_003",
+        "geom_name": "r2_rock_geom_003",
+        "mesh_name": "r2_rock_mesh_003",
+        "qpos_address": 40,
+        "qpos_width": 7,
+        "qvel_address": 36,
+        "qvel_width": 6,
+        "slot": 3
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.02057903068,
+          -0.001443543454,
+          -0.0008388513402
+        ],
+        [
+          -0.001443543454,
+          0.0248136993,
+          0.0004632101964
+        ],
+        [
+          -0.0008388513402,
+          0.0004632101964,
+          0.02864552697
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.02519454818,
+          0.0001202287846,
+          0.0004955167151
+        ],
+        [
+          0.0001202287846,
+          0.02152530507,
+          0.003230117445
+        ],
+        [
+          0.0004955167151,
+          0.003230117445,
+          0.0273184037
+        ]
+      ],
+      "mass_kg": 7.192288352,
+      "orientation_quaternion_wxyz": [
+        0.1817697459,
+        0.773616513,
+        -0.5828101698,
+        0.1697337805
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.243158818,
+        -0.8139637861,
+        0.1522259618
+      ],
+      "prototype_id": "angular_bipyramid",
+      "rock_id": "sparse-large-rock-26091926-rock-003",
+      "uniform_linear_scale_from_unit_asset": 0.1741666667,
+      "volume_m3": 0.002766264751
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_tetra.obj",
+      "asset_sha256": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1578125,
+      "full_scene_binding": {
+        "body_name": "r2-rock-004",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_004",
+        "geom_name": "r2_rock_geom_004",
+        "mesh_name": "r2_rock_mesh_004",
+        "qpos_address": 47,
+        "qpos_width": 7,
+        "qvel_address": 42,
+        "qvel_width": 6,
+        "slot": 4
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.01712500747,
+          -0.0003818372501,
+          -0.0009821168629
+        ],
+        [
+          -0.0003818372501,
+          0.01956806686,
+          -0.0003643618611
+        ],
+        [
+          -0.0009821168629,
+          -0.0003643618611,
+          0.01792275898
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.01761710736,
+          0.0001909391903,
+          0.001315774847
+        ],
+        [
+          0.0001909391903,
+          0.01917652672,
+          0.0005562193279
+        ],
+        [
+          0.001315774847,
+          0.0005562193279,
+          0.01782219923
+        ]
+      ],
+      "mass_kg": 5.350522192,
+      "orientation_quaternion_wxyz": [
+        0.2212154809,
+        0.1169647075,
+        -0.2169574365,
+        0.943563691
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        5.317332867,
+        0.86999949,
+        0.1537967396
+      ],
+      "prototype_id": "angular_tetra",
+      "rock_id": "sparse-large-rock-26091926-rock-004",
+      "uniform_linear_scale_from_unit_asset": 0.1578125,
+      "volume_m3": 0.002057893151
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1534375,
+      "full_scene_binding": {
+        "body_name": "r2-rock-005",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_005",
+        "geom_name": "r2_rock_geom_005",
+        "mesh_name": "r2_rock_mesh_005",
+        "qpos_address": 54,
+        "qpos_width": 7,
+        "qvel_address": 48,
+        "qvel_width": 6,
+        "slot": 5
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.009330820376,
+          -0.0004629128699,
+          -5.468386022e-05
+        ],
+        [
+          -0.0004629128699,
+          0.01536761659,
+          -5.094408097e-05
+        ],
+        [
+          -5.468386022e-05,
+          -5.094408097e-05,
+          0.01757111638
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.01035888602,
+          -0.001233998163,
+          -0.002022889627
+        ],
+        [
+          -0.001233998163,
+          0.01581168391,
+          -0.001531163741
+        ],
+        [
+          -0.002022889627,
+          -0.001531163741,
+          0.01609898341
+        ]
+      ],
+      "mass_kg": 4.917750732,
+      "orientation_quaternion_wxyz": [
+        0.2877441541,
+        -0.9253464472,
+        -0.2060874511,
+        -0.1358867799
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.919582827,
+        -0.4117762017,
+        0.1640627189
+      ],
+      "prototype_id": "angular_octa",
+      "rock_id": "sparse-large-rock-26091926-rock-005",
+      "uniform_linear_scale_from_unit_asset": 0.1534375,
+      "volume_m3": 0.001891442589
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_tetra.obj",
+      "asset_sha256": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1490625,
+      "full_scene_binding": {
+        "body_name": "r2-rock-006",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_006",
+        "geom_name": "r2_rock_geom_006",
+        "mesh_name": "r2_rock_mesh_006",
+        "qpos_address": 61,
+        "qpos_width": 7,
+        "qvel_address": 54,
+        "qvel_width": 6,
+        "slot": 6
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.01287554954,
+          -0.0002870868488,
+          -0.0007384110253
+        ],
+        [
+          -0.0002870868488,
+          0.01471237981,
+          -0.0002739478626
+        ],
+        [
+          -0.0007384110253,
+          -0.0002739478626,
+          0.01347534426
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.01263476351,
+          0.0007197998691,
+          0.0001163923394
+        ],
+        [
+          0.0007197998691,
+          0.01421812812,
+          -0.0004655870223
+        ],
+        [
+          0.0001163923394,
+          -0.0004655870223,
+          0.01421038198
+        ]
+      ],
+      "mass_kg": 4.5089682,
+      "orientation_quaternion_wxyz": [
+        0.1217203755,
+        -0.1613816985,
+        0.3919886716,
+        0.8974881497
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        5.433037036,
+        0.3450208592,
+        0.1940399714
+      ],
+      "prototype_id": "angular_tetra",
+      "rock_id": "sparse-large-rock-26091926-rock-006",
+      "uniform_linear_scale_from_unit_asset": 0.1490625,
+      "volume_m3": 0.001734218539
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_bipyramid.obj",
+      "asset_sha256": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1446875,
+      "full_scene_binding": {
+        "body_name": "r2-rock-007",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_007",
+        "geom_name": "r2_rock_geom_007",
+        "mesh_name": "r2_rock_mesh_007",
+        "qpos_address": 68,
+        "qpos_width": 7,
+        "qvel_address": 60,
+        "qvel_width": 6,
+        "slot": 7
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.008142443944,
+          -0.0005711625506,
+          -0.0003319058182
+        ],
+        [
+          -0.0005711625506,
+          0.0098179627,
+          0.0001832770026
+        ],
+        [
+          -0.0003319058182,
+          0.0001832770026,
+          0.01133409057
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.01085345752,
+          0.0006011689959,
+          -0.00101407861
+        ],
+        [
+          0.0006011689959,
+          0.01005718926,
+          0.0002003596341
+        ],
+        [
+          -0.00101407861,
+          0.0002003596341,
+          0.008383850434
+        ]
+      ],
+      "mass_kg": 4.123490595,
+      "orientation_quaternion_wxyz": [
+        0.5466517948,
+        -0.09855047718,
+        0.8299864074,
+        0.05081517597
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        6.378213588,
+        0.1239569213,
+        0.2231674416
+      ],
+      "prototype_id": "angular_bipyramid",
+      "rock_id": "sparse-large-rock-26091926-rock-007",
+      "uniform_linear_scale_from_unit_asset": 0.1446875,
+      "volume_m3": 0.001585957921
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1403125,
+      "full_scene_binding": {
+        "body_name": "r2-rock-008",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_008",
+        "geom_name": "r2_rock_geom_008",
+        "mesh_name": "r2_rock_mesh_008",
+        "qpos_address": 75,
+        "qpos_width": 7,
+        "qvel_address": 66,
+        "qvel_width": 6,
+        "slot": 8
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.005966835617,
+          -0.0002960216668,
+          -3.496901577e-05
+        ],
+        [
+          -0.0002960216668,
+          0.009827221869,
+          -3.257751672e-05
+        ],
+        [
+          -3.496901577e-05,
+          -3.257751672e-05,
+          0.01123630708
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.009808045409,
+          0.001080497868,
+          0.0003386282226
+        ],
+        [
+          0.001080497868,
+          0.008607973002,
+          -0.002402668992
+        ],
+        [
+          0.0003386282226,
+          -0.002402668992,
+          0.008614346152
+        ]
+      ],
+      "mass_kg": 3.760633915,
+      "orientation_quaternion_wxyz": [
+        0.0823769205,
+        -0.575747356,
+        -0.6768228554,
+        -0.4512647199
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        6.761903829,
+        0.9101640541,
+        0.1972697079
+      ],
+      "prototype_id": "angular_octa",
+      "rock_id": "sparse-large-rock-26091926-rock-008",
+      "uniform_linear_scale_from_unit_asset": 0.1403125,
+      "volume_m3": 0.001446397659
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_block.obj",
+      "asset_sha256": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1359375,
+      "full_scene_binding": {
+        "body_name": "r2-rock-009",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_009",
+        "geom_name": "r2_rock_geom_009",
+        "mesh_name": "r2_rock_mesh_009",
+        "qpos_address": 82,
+        "qpos_width": 7,
+        "qvel_address": 72,
+        "qvel_width": 6,
+        "slot": 9
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.004590582637,
+          -0.0005865789121,
+          -0.000179589571
+        ],
+        [
+          -0.0005865789121,
+          0.01017352823,
+          -0.0001357970358
+        ],
+        [
+          -0.000179589571,
+          -0.0001357970358,
+          0.01162310132
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.01009587468,
+          -0.0006058866803,
+          -0.001064889641
+        ],
+        [
+          -0.0006058866803,
+          0.007760151147,
+          -0.003356351942
+        ],
+        [
+          -0.001064889641,
+          -0.003356351942,
+          0.008531186363
+        ]
+      ],
+      "mass_kg": 3.419714156,
+      "orientation_quaternion_wxyz": [
+        0.2870118979,
+        -0.6024281209,
+        0.7221272791,
+        0.1823094141
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        6.170095719,
+        0.7343738215,
+        0.173655146
+      ],
+      "prototype_id": "angular_block",
+      "rock_id": "sparse-large-rock-26091926-rock-009",
+      "uniform_linear_scale_from_unit_asset": 0.1359375,
+      "volume_m3": 0.001315274675
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1315625,
+      "full_scene_binding": {
+        "body_name": "r2-rock-010",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_010",
+        "geom_name": "r2_rock_geom_010",
+        "mesh_name": "r2_rock_mesh_010",
+        "qpos_address": 89,
+        "qpos_width": 7,
+        "qvel_address": 78,
+        "qvel_width": 6,
+        "slot": 10
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.004324370018,
+          -0.0002145370348,
+          -2.534324272e-05
+        ],
+        [
+          -0.0002145370348,
+          0.007122124077,
+          -2.361004151e-05
+        ],
+        [
+          -2.534324272e-05,
+          -2.361004151e-05,
+          0.00814333636
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.007107070693,
+          -0.000214026967,
+          -0.0002200770051
+        ],
+        [
+          -0.000214026967,
+          0.005740538296,
+          -0.001833431111
+        ],
+        [
+          -0.0002200770051,
+          -0.001833431111,
+          0.006742221466
+        ]
+      ],
+      "mass_kg": 3.100047318,
+      "orientation_quaternion_wxyz": [
+        0.7365567978,
+        0.2218600097,
+        -0.2243388055,
+        0.5982761236
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.40065165,
+        0.04820771621,
+        0.1251652693
+      ],
+      "prototype_id": "angular_octa",
+      "rock_id": "sparse-large-rock-26091926-rock-010",
+      "uniform_linear_scale_from_unit_asset": 0.1315625,
+      "volume_m3": 0.001192325892
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_bipyramid.obj",
+      "asset_sha256": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1271875,
+      "full_scene_binding": {
+        "body_name": "r2-rock-011",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_011",
+        "geom_name": "r2_rock_geom_011",
+        "mesh_name": "r2_rock_mesh_011",
+        "qpos_address": 96,
+        "qpos_width": 7,
+        "qvel_address": 84,
+        "qvel_width": 6,
+        "slot": 11
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.004273875516,
+          -0.0002997966774,
+          -0.0001742135604
+        ],
+        [
+          -0.0002997966774,
+          0.00515333611,
+          9.619999834e-05
+        ],
+        [
+          -0.0001742135604,
+          9.619999834e-05,
+          0.005949134255
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.004659176628,
+          -0.000594930308,
+          0.0001639225645
+        ],
+        [
+          -0.000594930308,
+          0.004898612489,
+          -0.000276124734
+        ],
+        [
+          0.0001639225645,
+          -0.000276124734,
+          0.005818556764
+        ]
+      ],
+      "mass_kg": 2.800949398,
+      "orientation_quaternion_wxyz": [
+        0.3344767741,
+        -0.8344411353,
+        -0.4376866854,
+        0.01623714228
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        5.479197012,
+        -1.03948487,
+        0.1763702404
+      ],
+      "prototype_id": "angular_bipyramid",
+      "rock_id": "sparse-large-rock-26091926-rock-011",
+      "uniform_linear_scale_from_unit_asset": 0.1271875,
+      "volume_m3": 0.00107728823
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_block.obj",
+      "asset_sha256": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1228125,
+      "full_scene_binding": {
+        "body_name": "r2-rock-012",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_012",
+        "geom_name": "r2_rock_geom_012",
+        "mesh_name": "r2_rock_mesh_012",
+        "qpos_address": 103,
+        "qpos_width": 7,
+        "qvel_address": 90,
+        "qvel_width": 6,
+        "slot": 12
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.002763021579,
+          -0.0003530554443,
+          -0.0001080930025
+        ],
+        [
+          -0.0003530554443,
+          0.006123335589,
+          -8.173475353e-05
+        ],
+        [
+          -0.0001080930025,
+          -8.173475353e-05,
+          0.00699581781
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.006619824836,
+          0.0001870703587,
+          -0.0003797988087
+        ],
+        [
+          0.0001870703587,
+          0.003457677872,
+          -0.00150444296
+        ],
+        [
+          -0.0003797988087,
+          -0.00150444296,
+          0.00580467227
+        ]
+      ],
+      "mass_kg": 2.521736395,
+      "orientation_quaternion_wxyz": [
+        0.3846854726,
+        -0.6172713758,
+        0.673409371,
+        -0.1323365213
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.333374043,
+        -1.395754313,
+        0.1491694369
+      ],
+      "prototype_id": "angular_block",
+      "rock_id": "sparse-large-rock-26091926-rock-012",
+      "uniform_linear_scale_from_unit_asset": 0.1228125,
+      "volume_m3": 0.0009698986135
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1184375,
+      "full_scene_binding": {
+        "body_name": "r2-rock-013",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_013",
+        "geom_name": "r2_rock_geom_013",
+        "mesh_name": "r2_rock_mesh_013",
+        "qpos_address": 110,
+        "qpos_width": 7,
+        "qvel_address": 96,
+        "qvel_width": 6,
+        "slot": 13
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.00255686865,
+          -0.0001268492327,
+          -1.498468969e-05
+        ],
+        [
+          -0.0001268492327,
+          0.00421109565,
+          -1.395990045e-05
+        ],
+        [
+          -1.498468969e-05,
+          -1.395990045e-05,
+          0.004814907457
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.003097547901,
+          -0.000124322203,
+          -0.000801710022
+        ],
+        [
+          -0.000124322203,
+          0.004609367732,
+          -0.0003916364884
+        ],
+        [
+          -0.000801710022,
+          -0.0003916364884,
+          0.003875956124
+        ]
+      ],
+      "mass_kg": 2.261724306,
+      "orientation_quaternion_wxyz": [
+        0.2247302449,
+        -0.2406505507,
+        0.8288933965,
+        0.4522381748
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        5.249256132,
+        1.336918578,
+        0.1204329528
+      ],
+      "prototype_id": "angular_octa",
+      "rock_id": "sparse-large-rock-26091926-rock-013",
+      "uniform_linear_scale_from_unit_asset": 0.1184375,
+      "volume_m3": 0.0008698939637
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_tetra.obj",
+      "asset_sha256": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1140625,
+      "full_scene_binding": {
+        "body_name": "r2-rock-014",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_014",
+        "geom_name": "r2_rock_geom_014",
+        "mesh_name": "r2_rock_mesh_014",
+        "qpos_address": 117,
+        "qpos_width": 7,
+        "qvel_address": 102,
+        "qvel_width": 6,
+        "slot": 14
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.00337783321,
+          -7.531573616e-05,
+          -0.0001937182779
+        ],
+        [
+          -7.531573616e-05,
+          0.003859716044,
+          -7.186879171e-05
+        ],
+        [
+          -0.0001937182779,
+          -7.186879171e-05,
+          0.003535186224
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.003510993907,
+          -1.190022648e-06,
+          0.0002382530621
+        ],
+        [
+          -1.190022648e-06,
+          0.00379004619,
+          -0.0001478283647
+        ],
+        [
+          0.0002382530621,
+          -0.0001478283647,
+          0.003471695382
+        ]
+      ],
+      "mass_kg": 2.020229129,
+      "orientation_quaternion_wxyz": [
+        0.7049159643,
+        -0.2711266124,
+        0.6407215067,
+        -0.1380572137
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.6649427,
+        0.0969633412,
+        0.1302466067
+      ],
+      "prototype_id": "angular_tetra",
+      "rock_id": "sparse-large-rock-26091926-rock-014",
+      "uniform_linear_scale_from_unit_asset": 0.1140625,
+      "volume_m3": 0.0007770112033
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_bipyramid.obj",
+      "asset_sha256": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1096875,
+      "full_scene_binding": {
+        "body_name": "r2-rock-015",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_015",
+        "geom_name": "r2_rock_geom_015",
+        "mesh_name": "r2_rock_mesh_015",
+        "qpos_address": 124,
+        "qpos_width": 7,
+        "qvel_address": 108,
+        "qvel_width": 6,
+        "slot": 15
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.002038850606,
+          -0.0001430178851,
+          -8.310850934e-05
+        ],
+        [
+          -0.0001430178851,
+          0.002458396931,
+          4.589217075e-05
+        ],
+        [
+          -8.310850934e-05,
+          4.589217075e-05,
+          0.002838032118
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.002026743726,
+          0.0001654032451,
+          4.02421437e-05
+        ],
+        [
+          0.0001654032451,
+          0.002821956668,
+          -3.022179688e-05
+        ],
+        [
+          4.02421437e-05,
+          -3.022179688e-05,
+          0.002486579261
+        ]
+      ],
+      "mass_kg": 1.796566862,
+      "orientation_quaternion_wxyz": [
+        0.6366357692,
+        0.7483171418,
+        0.08933513936,
+        -0.1635102002
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.952732119,
+        -0.6304548816,
+        0.1756302545
+      ],
+      "prototype_id": "angular_bipyramid",
+      "rock_id": "sparse-large-rock-26091926-rock-015",
+      "uniform_linear_scale_from_unit_asset": 0.1096875,
+      "volume_m3": 0.0006909872545
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+      "asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1053125,
+      "full_scene_binding": {
+        "body_name": "r2-rock-016",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_016",
+        "geom_name": "r2_rock_geom_016",
+        "mesh_name": "r2_rock_mesh_016",
+        "qpos_address": 131,
+        "qpos_width": 7,
+        "qvel_address": 114,
+        "qvel_width": 6,
+        "slot": 16
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.00142122184,
+          -7.050847132e-05,
+          -8.329160066e-06
+        ],
+        [
+          -7.050847132e-05,
+          0.00234071512,
+          -7.759536418e-06
+        ],
+        [
+          -8.329160066e-06,
+          -7.759536418e-06,
+          0.002676340702
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.001977124841,
+          0.0004611477551,
+          -5.079285439e-06
+        ],
+        [
+          0.0004611477551,
+          0.001805557628,
+          0.0001122663941
+        ],
+        [
+          -5.079285439e-06,
+          0.0001122663941,
+          0.002655595194
+        ]
+      ],
+      "mass_kg": 1.590053503,
+      "orientation_quaternion_wxyz": [
+        0.01462885582,
+        -0.3938641982,
+        -0.9137402079,
+        0.09867027082
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        6.532779475,
+        1.077716676,
+        0.1509389095
+      ],
+      "prototype_id": "angular_octa",
+      "rock_id": "sparse-large-rock-26091926-rock-016",
+      "uniform_linear_scale_from_unit_asset": 0.1053125,
+      "volume_m3": 0.0006115590396
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_block.obj",
+      "asset_sha256": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.1009375,
+      "full_scene_binding": {
+        "body_name": "r2-rock-017",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_017",
+        "geom_name": "r2_rock_geom_017",
+        "mesh_name": "r2_rock_mesh_017",
+        "qpos_address": 138,
+        "qpos_width": 7,
+        "qvel_address": 120,
+        "qvel_width": 6,
+        "slot": 17
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.00103617745,
+          -0.0001324014596,
+          -4.053661125e-05
+        ],
+        [
+          -0.0001324014596,
+          0.00229634915,
+          -3.065184475e-05
+        ],
+        [
+          -4.053661125e-05,
+          -3.065184475e-05,
+          0.00262354399
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.00225037732,
+          -0.0004695898575,
+          0.0001372500427
+        ],
+        [
+          -0.0004695898575,
+          0.00120099109,
+          -7.508955778e-05
+        ],
+        [
+          0.0001372500427,
+          -7.508955778e-05,
+          0.002504702179
+        ]
+      ],
+      "mass_kg": 1.40000505,
+      "orientation_quaternion_wxyz": [
+        0.196758065,
+        0.5734778919,
+        -0.7329829232,
+        -0.3084564891
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        5.115529506,
+        -0.5378290334,
+        0.1616885751
+      ],
+      "prototype_id": "angular_block",
+      "rock_id": "sparse-large-rock-26091926-rock-017",
+      "uniform_linear_scale_from_unit_asset": 0.1009375,
+      "volume_m3": 0.0005384634809
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_block.obj",
+      "asset_sha256": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.0965625,
+      "full_scene_binding": {
+        "body_name": "r2-rock-018",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_018",
+        "geom_name": "r2_rock_geom_018",
+        "mesh_name": "r2_rock_mesh_018",
+        "qpos_address": 145,
+        "qpos_width": 7,
+        "qvel_address": 126,
+        "qvel_width": 6,
+        "slot": 18
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.0008302596309,
+          -0.000106089538,
+          -3.2480838e-05
+        ],
+        [
+          -0.000106089538,
+          0.001839999508,
+          -2.456045469e-05
+        ],
+        [
+          -3.2480838e-05,
+          -2.456045469e-05,
+          0.002102171462
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.001793477419,
+          -0.0003679096228,
+          0.0001445598035
+        ],
+        [
+          -0.0003679096228,
+          0.001409777311,
+          0.0005201077934
+        ],
+        [
+          0.0001445598035,
+          0.0005201077934,
+          0.001569175871
+        ]
+      ],
+      "mass_kg": 1.225737502,
+      "orientation_quaternion_wxyz": [
+        0.06531893284,
+        0.5919049364,
+        -0.644953411,
+        0.4789750316
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.667016715,
+        -0.6927298171,
+        0.1560919682
+      ],
+      "prototype_id": "angular_block",
+      "rock_id": "sparse-large-rock-26091926-rock-018",
+      "uniform_linear_scale_from_unit_asset": 0.0965625,
+      "volume_m3": 0.0004714375006
+    },
+    {
+      "asset_path": "assets/v4/mixed-material-r0/angular_tetra.obj",
+      "asset_sha256": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "asset_source": {
+        "source_id": "r0_frozen_assets",
+        "status": "measured"
+      },
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.0921875,
+      "full_scene_binding": {
+        "body_name": "r2-rock-019",
+        "contact_bits": {
+          "bucket_proxy": 512,
+          "rock": 256,
+          "rock_ground": 1024,
+          "truck_receiver_reserved": 2048
+        },
+        "contact_role": "rock",
+        "freejoint_name": "r2_rock_free_019",
+        "geom_name": "r2_rock_geom_019",
+        "mesh_name": "r2_rock_mesh_019",
+        "qpos_address": 152,
+        "qpos_width": 7,
+        "qvel_address": 132,
+        "qvel_width": 6,
+        "slot": 19
+      },
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.00116488743,
+          -2.597356023e-05,
+          -6.68061366e-05
+        ],
+        [
+          -2.597356023e-05,
+          0.001331070667,
+          -2.478483893e-05
+        ],
+        [
+          -6.68061366e-05,
+          -2.478483893e-05,
+          0.001219152557
+        ]
+      ],
+      "inertia_about_com_world_kg_m2": [
+        [
+          0.001263375334,
+          -9.748248172e-06,
+          1.382541256e-06
+        ],
+        [
+          -9.748248172e-06,
+          0.001184886758,
+          0.0001033821258
+        ],
+        [
+          1.382541256e-06,
+          0.0001033821258,
+          0.001266848561
+        ]
+      ],
+      "mass_kg": 1.066566855,
+      "orientation_quaternion_wxyz": [
+        0.2210891676,
+        -0.3728999707,
+        0.327166043,
+        -0.8396592
+      ],
+      "parameter_source": {
+        "source_id": "synthetic_baseline",
+        "status": "synthetic_assumption"
+      },
+      "position_world_m": [
+        4.86263966,
+        -0.843031361,
+        0.1696573252
+      ],
+      "prototype_id": "angular_tetra",
+      "rock_id": "sparse-large-rock-26091926-rock-019",
+      "uniform_linear_scale_from_unit_asset": 0.0921875,
+      "volume_m3": 0.0004102180211
+    }
+  ],
+  "runtime_contract": {
+    "estimated_state_named_fields_including_rock_records": 99,
+    "legacy_first_rock_alias_numeric_values": 16,
+    "nplugin": 0,
+    "nq": 159,
+    "nu": 12,
+    "nv": 138,
+    "per_rock_state_named_fields": 4,
+    "ready_top_level_fields": 5,
+    "rock_capacity": 20,
+    "state_numeric_values": 411,
+    "state_top_level_fields": 19
+  },
+  "runtime_count_policy": "loaded_model_rock_count_at_startup",
+  "scene_class": "sparse-large-rock",
+  "scene_id": "sparse-large-rock-seed-26091926",
+  "schema": "excavation_scene_assembly_plan_v1",
+  "scope": "offline assembly plan only; no MJCF, physics or bridge modification",
+  "seed": 26091926,
+  "source_input_hashes": {
+    "preview_sha256": "3ae5022065a578b7f4309560c8ac2df3ff316a775e8f5fd688823a18ee46702c",
+    "scene_manifest_sha256": "5542ac3a0d9c891466e91cdf33dfe397d9d338b9af12a62844883b034b622eee",
+    "scene_metrics_sha256": "c3beb6d375fab9963cae18038d36ebc2a38449441b68aefb259cdd58a31f2a31",
+    "scene_report_sha256": "3022a902b2daa5381d77be1e53b3cb7175eb91c0a12b08ae5bb159c25ce5e195"
+  },
+  "status": "scene_assembly_preflight_candidate",
+  "unit_regression_batches": [
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-000",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 0,
+          "source_rock_id": "sparse-large-rock-26091926-rock-000"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 1,
+          "source_rock_id": "sparse-large-rock-26091926-rock-001"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-001",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 2,
+          "source_rock_id": "sparse-large-rock-26091926-rock-002"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 3,
+          "source_rock_id": "sparse-large-rock-26091926-rock-003"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-002",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 4,
+          "source_rock_id": "sparse-large-rock-26091926-rock-004"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 5,
+          "source_rock_id": "sparse-large-rock-26091926-rock-005"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-003",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 6,
+          "source_rock_id": "sparse-large-rock-26091926-rock-006"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 7,
+          "source_rock_id": "sparse-large-rock-26091926-rock-007"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-004",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 8,
+          "source_rock_id": "sparse-large-rock-26091926-rock-008"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 9,
+          "source_rock_id": "sparse-large-rock-26091926-rock-009"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-005",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 10,
+          "source_rock_id": "sparse-large-rock-26091926-rock-010"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 11,
+          "source_rock_id": "sparse-large-rock-26091926-rock-011"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-006",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 12,
+          "source_rock_id": "sparse-large-rock-26091926-rock-012"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 13,
+          "source_rock_id": "sparse-large-rock-26091926-rock-013"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-007",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 14,
+          "source_rock_id": "sparse-large-rock-26091926-rock-014"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 15,
+          "source_rock_id": "sparse-large-rock-26091926-rock-015"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-008",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 16,
+          "source_rock_id": "sparse-large-rock-26091926-rock-016"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 17,
+          "source_rock_id": "sparse-large-rock-26091926-rock-017"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    },
+    {
+      "batch_id": "sparse-large-rock-seed-26091926-unit-batch-009",
+      "does_not_qualify_full_scene_physics": true,
+      "expected_current_bridge_contract": {
+        "estimated_state_named_fields_including_rock_records": 27,
+        "legacy_first_rock_alias_numeric_values": 16,
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "per_rock_state_named_fields": 4,
+        "ready_top_level_fields": 5,
+        "rock_capacity": 2,
+        "state_numeric_values": 123,
+        "state_top_level_fields": 19
+      },
+      "members": [
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-000",
+            "freejoint_name": "r1_rock_free_000",
+            "geom_name": "r1_rock_geom_000",
+            "mesh_name": "r1_rock_mesh_000",
+            "qpos_address": 19,
+            "qvel_address": 18,
+            "unit_slot": 0
+          },
+          "full_scene_slot": 18,
+          "source_rock_id": "sparse-large-rock-26091926-rock-018"
+        },
+        {
+          "current_bridge_binding": {
+            "body_name": "r1-rock-001",
+            "freejoint_name": "r1_rock_free_001",
+            "geom_name": "r1_rock_geom_001",
+            "mesh_name": "r1_rock_mesh_001",
+            "qpos_address": 26,
+            "qvel_address": 24,
+            "unit_slot": 1
+          },
+          "full_scene_slot": 19,
+          "source_rock_id": "sparse-large-rock-26091926-rock-019"
+        }
+      ],
+      "purpose": "asset_and_one_or_two_rock_regression_only",
+      "rock_count": 2
+    }
+  ],
+  "unit_regression_scope_limit": "each batch is independently compatible with the current one/two-rock contract and cannot qualify simultaneous full-scene physics"
+}

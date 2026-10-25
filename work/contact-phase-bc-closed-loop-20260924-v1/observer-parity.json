@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "physics_steps": 0,
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "physical_frames": 1411,
+      "phase_results_exact": true,
+      "confirmation_snapshots": 5,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-113555-1443279/report.json",
+        "sha256": "944db075ba99f5c7a4ac2aa6fc2c9ea1ebca1928dbbf5e1f9cf1efd24d2ec669"
+      }
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "physical_frames": 1674,
+      "phase_results_exact": true,
+      "confirmation_snapshots": 5,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-114908-1452582/report.json",
+        "sha256": "45bf50f2a041d87515c3789069a371c5a8c4fd41fba2e0915bf05f9def974fa8"
+      }
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "physical_frames": 1490,
+      "phase_results_exact": true,
+      "confirmation_snapshots": 5,
+      "report": {
+        "path": "/home/qunwang/wajueji/runs/contact-derived-demonstration-v1/third-scoop-observe-v2/report.json",
+        "sha256": "10b3a381794f026729d9edaca21706406af050209ef890ef6bea386542dbcf7c"
+      }
+    }
+  ],
+  "frames": 4575,
+  "scope": "All recorded signals through live causal adapter; stored per-frame distances used for routing, five real confirmation geometries per episode recomputed.",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/manifest.json",
+      "sha256": "e85d300d57029c9866209ef259c92c74ff47a1756528e2515bd7ffdda0a14c53"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-v1.json",
+      "sha256": "19b9d5c403bda9de1eca7ae67aa7b4c639c1389097af15405851f4d8e63c4db8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+      "sha256": "79b1150d043b03b45d3fd844f3e6186642962739dc795536b0a79ba383ac2bdf"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+      "sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+      "sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+    }
+  ],
+  "code": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-bc-closed-loop-20260924-v1/check_observer.py",
+      "sha256": "490011fe256811610b472e699df715a9aa131244155480af60a2c9111702f184"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_live.py",
+      "sha256": "2a8f29abfb171f17640102b4380b93cb78a95ee8a41bb9ec0cc1e70dde02a432"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_geometry.py",
+      "sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_candidate.py",
+      "sha256": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_completion.py",
+      "sha256": "c3fa5093e88b19fa27cf41ddce1b15e171fef4b06d76339eabefc806d9ae4b43"
+    }
+  ]
+}

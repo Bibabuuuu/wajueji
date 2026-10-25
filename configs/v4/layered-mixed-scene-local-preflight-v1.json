@@ -1,0 +1,98 @@
+{
+  "schema": "excavation_layered_mixed_scene_local_preflight_config_v1",
+  "status": "reduced_three_layer_geometry_preflight_only",
+  "seed": 260920681,
+  "frozen_bank": {
+    "path": "/home/qunwang/codex-work/compact-bank-2026-09-11/manual-20260911-090834/initial-bank.npz",
+    "sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+    "q_array_sha256": "5c4cd8f0a12885f0d78bb4157dc1706d7e363c2c7564c1415093b89cfba6dba8",
+    "q_count": 390400,
+    "q_dtype": "float32",
+    "particle_spacing_m": 0.025,
+    "particle_density_kg_m3": 1670.0,
+    "material_id": 0
+  },
+  "asset_root": "assets/v4/mixed-material-r0",
+  "assets": {
+    "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+    "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+    "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43"
+  },
+  "density_kg_m3": 2600.0,
+  "local_patch": {
+    "xy_bounds_m": [[3.9, -0.55], [5.3, 0.55]],
+    "surface_center_xy_m": [4.6, 0.0],
+    "surface_wave_period_xy_m": [1.2, 1.0],
+    "surface_wave_amplitude_m": 0.008,
+    "surfaces": {
+      "foundation": {"base_height_m": 0.18, "slope_xy": [0.015, -0.01]},
+      "lower_fill": {"base_height_m": 0.34, "slope_xy": [0.02, -0.012]},
+      "middle_fill": {"base_height_m": 0.56, "slope_xy": [0.025, -0.015]},
+      "top_fill": {"base_height_m": 0.80, "slope_xy": [0.03, -0.018]}
+    }
+  },
+  "layers": [
+    {
+      "layer_id": "lower_skeleton",
+      "fill_surface": "lower_fill",
+      "embed_ratio_range": [0.45, 0.60],
+      "rocks": [
+        {"rock_id": "local-lower-large-000", "prototype_id": "angular_block", "size_class": "large_0p32_0p40", "equivalent_diameter_m": 0.34, "xy_m": [4.25, -0.25], "embed_ratio": 0.55, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-lower-large-001", "prototype_id": "angular_block", "size_class": "large_0p32_0p40", "equivalent_diameter_m": 0.36, "xy_m": [4.95, 0.25], "embed_ratio": 0.55, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-lower-medium-000", "prototype_id": "angular_block", "size_class": "medium_0p24_0p32", "equivalent_diameter_m": 0.28, "xy_m": [4.95, -0.25], "embed_ratio": 0.50, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-lower-medium-001", "prototype_id": "angular_block", "size_class": "medium_0p24_0p32", "equivalent_diameter_m": 0.30, "xy_m": [4.25, 0.25], "embed_ratio": 0.50, "orientation_quaternion_wxyz": [1, 0, 0, 0]}
+      ]
+    },
+    {
+      "layer_id": "middle_small_dominant",
+      "fill_surface": "middle_fill",
+      "embed_ratio_range": [0.35, 0.50],
+      "rocks": [
+        {"rock_id": "local-middle-small-000", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.20, "xy_m": [4.15, -0.25], "embed_ratio": 0.42, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-middle-small-001", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [4.60, -0.25], "embed_ratio": 0.42, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-middle-small-002", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.21, "xy_m": [5.05, -0.25], "embed_ratio": 0.42, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-middle-small-003", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.19, "xy_m": [4.15, 0.25], "embed_ratio": 0.42, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-middle-small-004", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.20, "xy_m": [4.60, 0.25], "embed_ratio": 0.42, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-middle-small-005", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [5.05, 0.25], "embed_ratio": 0.42, "orientation_quaternion_wxyz": [1, 0, 0, 0]}
+      ]
+    },
+    {
+      "layer_id": "top_exposed_small",
+      "fill_surface": "top_fill",
+      "embed_ratio_range": [0.20, 0.35],
+      "rocks": [
+        {"rock_id": "local-top-small-000", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [4.10, -0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-001", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.17, "xy_m": [4.43, -0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-002", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.19, "xy_m": [4.77, -0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-003", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [5.10, -0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-004", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [4.10, 0.00], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-005", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.17, "xy_m": [4.43, 0.00], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-006", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.19, "xy_m": [4.77, 0.00], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-007", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [5.10, 0.00], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-008", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [4.10, 0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-009", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.17, "xy_m": [4.43, 0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-010", "prototype_id": "angular_block", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.19, "xy_m": [4.77, 0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]},
+        {"rock_id": "local-top-small-011", "prototype_id": "angular_bipyramid", "size_class": "small_0p16_0p24", "equivalent_diameter_m": 0.18, "xy_m": [5.10, 0.34], "embed_ratio": 0.27, "orientation_quaternion_wxyz": [1, 0, 0, 0]}
+      ]
+    }
+  ],
+  "construction": {
+    "sequence": ["foundation", "lower_skeleton", "lower_fill", "joint_settle", "middle_small_dominant", "middle_fill", "joint_settle", "top_exposed_small", "top_fill", "joint_settle", "remove_walls", "zero_velocities", "nominal_hold"],
+    "carve_policy": "remove_particle_center_inside_closed_convex_rock_only",
+    "embed_measure": "true_transformed_mesh_vertical_span_at_stage_fill_surface",
+    "minimum_rock_sat_gap_m": 0.0,
+    "embed_ratio_tolerance": 1e-9
+  },
+  "scope": {
+    "geometry_only": true,
+    "reduced_local_patch": true,
+    "staged_particle_activation_labels": true,
+    "physics_step": false,
+    "mpm_or_gpu_run": false,
+    "wall_free_hold_executed": false,
+    "stable_scene_claimed": false,
+    "formal_scene_qualified": false,
+    "training": false
+  }
+}

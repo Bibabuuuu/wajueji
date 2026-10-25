@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "original_frames_and_replay_1329": true,
+    "recorded_states_and_metrics_exact": true,
+    "source_bindings_still_unchanged": true,
+    "final_metadata_rejected": true,
+    "material_hardening_zero": true,
+    "particles_and_flags_preserved": true,
+    "final_only_Jp_nonfinite": true
+  },
+  "additional_evidence_bindings": {
+    "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/lib/python3.12/site-packages/newton/_src/solvers/implicit_mpm/implicit_mpm_solver_kernels.py": "f2fab9e1a3cf27bdf68adc71c32a101d10cdc43e1433ceda0aeb19161c72a150",
+    "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/configs/v4/layered-47-excavation-preflight-v1.json": "888f99d27c373759c5cbfd6c03bc02fca8109a77345e409d17ba52c99e85f81c",
+    "/home/qunwang/wajueji/tests/v4/test_rejected_raw_diagnostic.py": "ebe7d7c14689123f53bd5b9539f58a7fcc1f3745a2936e8dab7732c1352469b6",
+    "/home/qunwang/wajueji/work/manual-lift-block-20260923-182307-v1/snapshot-tests.log": "4a830739dbabe7e2377b32df56304fd6b4435900eb5d768f345a6028e733a194",
+    "/home/qunwang/wajueji/work/manual-lift-block-20260923-182307-v1/diagnosis.json": "01280f4c529ca3212a22ce9867c22415009266cf8964107f5169c0957318c687",
+    "/home/qunwang/wajueji/work/manual-lift-block-20260923-182307-v1/stop-request.json": "661b9d7801600e805ebfa377be06ee1334be9b244bd2a1cde1b6c01d76660d61"
+  },
+  "physical_fix_verified": false,
+  "training_eligible": false,
+  "resume_qualified": false
+}

@@ -1,0 +1,130 @@
+{
+  "bridge": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I",
+      "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I",
+      "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I",
+      "/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/mixed-capacity-preflight-zfn3wyls/capacity-bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/mixed-capacity-preflight-zfn3wyls/capacity-bridge"
+    ],
+    "compile_wall_seconds": 1.3695213060127571,
+    "manifest": {
+      "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+      "formal_scene_qualified": false,
+      "generated_source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684",
+      "maximum_external_wrench_count": "rock_count_plus_bucket",
+      "maximum_rock_count": 1024,
+      "minimum_rock_count": 1,
+      "physics_qualified": false,
+      "runtime_rock_count": true,
+      "schema": "excavation_mixed_material_capacity_bridge_manifest_v1",
+      "source_bridge_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+      "stable_named_wrench_routing": true,
+      "status": "capacity_bridge_source_generated"
+    },
+    "source_sha256": "e8819dfac8b3e409d13d2a7e5dcbf5fcaa1f2817d67fea200257c026ef0f3684"
+  },
+  "capacity_preflight_qualified": true,
+  "config_sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f",
+  "environment": {
+    "python": "3.12.3"
+  },
+  "formal_scene_qualified": false,
+  "physics_qualified": false,
+  "schema": "excavation_mixed_material_capacity_preflight_report_v1",
+  "scope_limit": "synthetic 64/256/512-rock model generation, bridge compile, READY and time-zero STATE only; zero mj_step, zero MPM/GPU, no settling, no formal scene or physics qualification",
+  "status": "capacity_time_zero_preflight_passed",
+  "tiers": [
+    {
+      "build_wall_seconds": 0.007959723006933928,
+      "checks": {
+        "model_dimensions": true,
+        "model_generation_deterministic": true,
+        "no_physics_step": true,
+        "ready_rock_count": true,
+        "ready_schema": true,
+        "ready_stable_id_order": true,
+        "ready_wrench_capacity": true,
+        "state_per_rock_applied_zero": true,
+        "state_schema": true,
+        "state_stable_id_order": true,
+        "state_time_zero": true
+      },
+      "expected_nq": 467,
+      "expected_nv": 402,
+      "init_default_wall_seconds": 0.012135172000853345,
+      "model_bytes": 367841,
+      "model_sha256": "d82a91064609444079ce3a36c9d04116fbecadc8cbf0dbdc41d5f53a333faab2",
+      "qualified": true,
+      "ready_message_bytes": 1168,
+      "ready_wall_seconds": 0.9230751200084342,
+      "rock_count": 64,
+      "state_message_bytes": 22941
+    },
+    {
+      "build_wall_seconds": 0.010546613993938081,
+      "checks": {
+        "model_dimensions": true,
+        "model_generation_deterministic": true,
+        "no_physics_step": true,
+        "ready_rock_count": true,
+        "ready_schema": true,
+        "ready_stable_id_order": true,
+        "ready_wrench_capacity": true,
+        "state_per_rock_applied_zero": true,
+        "state_schema": true,
+        "state_stable_id_order": true,
+        "state_time_zero": true
+      },
+      "expected_nq": 1811,
+      "expected_nv": 1554,
+      "init_default_wall_seconds": 0.10735582100460306,
+      "model_bytes": 466001,
+      "model_sha256": "2e143f80202a3668cd9a68520a192de271436623a0d51580a2b6c1c332840e42",
+      "qualified": true,
+      "ready_message_bytes": 3858,
+      "ready_wall_seconds": 0.9549740469956305,
+      "rock_count": 256,
+      "state_message_bytes": 87549
+    },
+    {
+      "build_wall_seconds": 0.017217371001606807,
+      "checks": {
+        "model_dimensions": true,
+        "model_generation_deterministic": true,
+        "no_physics_step": true,
+        "ready_rock_count": true,
+        "ready_schema": true,
+        "ready_stable_id_order": true,
+        "ready_wrench_capacity": true,
+        "state_per_rock_applied_zero": true,
+        "state_schema": true,
+        "state_stable_id_order": true,
+        "state_time_zero": true
+      },
+      "expected_nq": 3603,
+      "expected_nv": 3090,
+      "init_default_wall_seconds": 0.31415915398974903,
+      "model_bytes": 594737,
+      "model_sha256": "97c2c9f3a22da379403f7ba4165bfe95286a036b1b716f5a591433818d627e79",
+      "qualified": true,
+      "ready_message_bytes": 7442,
+      "ready_wall_seconds": 1.0372452349984087,
+      "rock_count": 512,
+      "state_message_bytes": 169405
+    }
+  ],
+  "wall_seconds": 4.854563004002557
+}

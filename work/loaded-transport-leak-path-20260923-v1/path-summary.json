@@ -1,0 +1,732 @@
+{
+  "tracked": 16544,
+  "initial_cavity": 6494,
+  "initial_cavity_also_inside_proxy_mid_surface": 6494,
+  "initial_cavity_outside_proxy_mid_surface": 0,
+  "first_exit_all_tracked_initially_inside": {
+    "side_negative": 4,
+    "mouth": 29,
+    "bucket_shell_06": 1331,
+    "bucket_shell_07": 1054,
+    "bucket_shell_05": 849,
+    "bucket_shell_09": 148,
+    "bucket_shell_04": 503,
+    "bucket_shell_10": 11,
+    "bucket_shell_08": 2708,
+    "bucket_shell_03": 439,
+    "bucket_shell_02": 5
+  },
+  "first_exit_initial_cavity": {
+    "bucket_shell_06": 1223,
+    "bucket_shell_07": 922,
+    "bucket_shell_05": 783,
+    "bucket_shell_09": 148,
+    "bucket_shell_04": 455,
+    "bucket_shell_10": 11,
+    "bucket_shell_08": 2539,
+    "bucket_shell_03": 408,
+    "bucket_shell_02": 3,
+    "side_negative": 2
+  },
+  "first_exit_phase_initial_cavity": {
+    "rigid_pose_advance": 533,
+    "mpm_before_projection": 5313,
+    "project_outside": 648
+  },
+  "shell_first_exit_phase_initial_cavity": {
+    "rigid_pose_advance": 532,
+    "mpm_before_projection": 5313,
+    "project_outside": 647
+  },
+  "shell_first_exits_reaching_outer_face_within_5_frames": 4528,
+  "full_wall_single_chord_initial_cavity_count": 0,
+  "full_wall_single_chord_initial_cavity_by_phase": {},
+  "earliest_initial_cavity_shell_exits": [
+    {
+      "particle_id": 178954,
+      "tracked_index": 3892,
+      "initial_cavity": true,
+      "frame": 43,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_06",
+      "t": 0.22198633125730519,
+      "point_local": [
+        0.7580313323186146,
+        -0.08714472277097471,
+        -0.3162370119684375
+      ],
+      "before_local": [
+        0.7574080503662272,
+        -0.08620218458164662,
+        -0.31637834408209214
+      ],
+      "after_local": [
+        0.7602157996040173,
+        -0.0904481135268644,
+        -0.3157416737391294
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 43,
+          "outside_normal_distance_m": -0.01576367871227536,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 44,
+          "outside_normal_distance_m": -0.015559478503546165,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 45,
+          "outside_normal_distance_m": -0.01548681713840893,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 46,
+          "outside_normal_distance_m": -0.01534610697669685,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 47,
+          "outside_normal_distance_m": -0.015151819669147328,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 48,
+          "outside_normal_distance_m": -0.015094544130611346,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 179252,
+      "tracked_index": 4189,
+      "initial_cavity": true,
+      "frame": 43,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_06",
+      "t": 0.18569451878734933,
+      "point_local": [
+        0.7583566809987761,
+        0.11613422502287087,
+        -0.3181757753395904
+      ],
+      "before_local": [
+        0.7578359939550692,
+        0.11692235177206238,
+        -0.3183287357296233
+      ],
+      "after_local": [
+        0.7606399918711473,
+        0.11267814061096691,
+        -0.31750501518562574
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 43,
+          "outside_normal_distance_m": -0.015637166132296838,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 44,
+          "outside_normal_distance_m": -0.014840148365120666,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 45,
+          "outside_normal_distance_m": -0.014788982292276261,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 46,
+          "outside_normal_distance_m": -0.014677940659191263,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 47,
+          "outside_normal_distance_m": -0.014599467276085833,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 48,
+          "outside_normal_distance_m": -0.014451402867029858,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 179056,
+      "tracked_index": 3994,
+      "initial_cavity": true,
+      "frame": 49,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_07",
+      "t": 0.9229402406449803,
+      "point_local": [
+        0.7509804616053417,
+        0.07194083803212985,
+        -0.4001874572531433
+      ],
+      "before_local": [
+        0.7485729763112648,
+        0.07579768693014176,
+        -0.4008494957882149
+      ],
+      "after_local": [
+        0.7511814716266219,
+        0.0716188151807459,
+        -0.40013218116055393
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 49,
+          "outside_normal_distance_m": -0.017807641872693448,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 50,
+          "outside_normal_distance_m": -0.017612757431969227,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 51,
+          "outside_normal_distance_m": -0.01745933094661579,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 52,
+          "outside_normal_distance_m": -0.017251919864192056,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 53,
+          "outside_normal_distance_m": -0.01702343284563711,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 54,
+          "outside_normal_distance_m": -0.01665983763749763,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 179180,
+      "tracked_index": 4118,
+      "initial_cavity": true,
+      "frame": 59,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_07",
+      "t": 0.9050667509795777,
+      "point_local": [
+        0.7510622730095509,
+        0.12590813947032017,
+        -0.39954875379654425
+      ],
+      "before_local": [
+        0.7485897872920747,
+        0.12954543093292697,
+        -0.4000519853616735
+      ],
+      "after_local": [
+        0.7513216142151167,
+        0.12552662076376533,
+        -0.3994959693942495
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 59,
+          "outside_normal_distance_m": -0.017749466825632432,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 60,
+          "outside_normal_distance_m": -0.01690667844186674,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 61,
+          "outside_normal_distance_m": -0.016493645315323425,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 62,
+          "outside_normal_distance_m": -0.016158505982905434,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 63,
+          "outside_normal_distance_m": -0.015968285046463658,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 64,
+          "outside_normal_distance_m": -0.01579564516591115,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 178987,
+      "tracked_index": 3925,
+      "initial_cavity": true,
+      "frame": 74,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_06",
+      "t": 0.9845284055355201,
+      "point_local": [
+        0.7492532660233767,
+        -0.10032404514289404,
+        -0.26392822929773624
+      ],
+      "before_local": [
+        0.7473217371456966,
+        -0.09720329036645681,
+        -0.2647353812550944
+      ],
+      "after_local": [
+        0.7492836194711024,
+        -0.10037308695017218,
+        -0.2639155451256136
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 74,
+          "outside_normal_distance_m": -0.017967965914711188,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 75,
+          "outside_normal_distance_m": -0.018504376533818097,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 76,
+          "outside_normal_distance_m": -0.018273349635845537,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 77,
+          "outside_normal_distance_m": -0.01816184485547986,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 78,
+          "outside_normal_distance_m": -0.017905544607287452,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 79,
+          "outside_normal_distance_m": -0.017793838581784863,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 178963,
+      "tracked_index": 3901,
+      "initial_cavity": true,
+      "frame": 81,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_05",
+      "t": 0.9486036922208079,
+      "point_local": [
+        0.7428661453869457,
+        -0.1733235180273323,
+        -0.24324165471965653
+      ],
+      "before_local": [
+        0.7404057799776906,
+        -0.16870079611450345,
+        -0.2435408969942833
+      ],
+      "after_local": [
+        0.7429994504740547,
+        -0.1735739817775346,
+        -0.24322544147046365
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 81,
+          "outside_normal_distance_m": -0.017872227827327773,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 82,
+          "outside_normal_distance_m": -0.017552411168126253,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 83,
+          "outside_normal_distance_m": -0.017325561258668798,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 84,
+          "outside_normal_distance_m": -0.017065360687633504,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 85,
+          "outside_normal_distance_m": -0.016798405589500524,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 86,
+          "outside_normal_distance_m": -0.016555273268071893,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 180403,
+      "tracked_index": 4578,
+      "initial_cavity": true,
+      "frame": 81,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_06",
+      "t": 0.8176301188128585,
+      "point_local": [
+        0.7577985593307746,
+        -0.06031505681275292,
+        -0.3148499101600195
+      ],
+      "before_local": [
+        0.7556997793934163,
+        -0.05639187269818727,
+        -0.3151993149918052
+      ],
+      "after_local": [
+        0.7582666857353764,
+        -0.061190110953233255,
+        -0.31477197648782124
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 81,
+          "outside_normal_distance_m": -0.017525431133021244,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 82,
+          "outside_normal_distance_m": -0.016928290065026847,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 83,
+          "outside_normal_distance_m": -0.0164333880501037,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 84,
+          "outside_normal_distance_m": -0.01605039364823904,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 85,
+          "outside_normal_distance_m": -0.01565675486330046,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 86,
+          "outside_normal_distance_m": -0.015286720244072629,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 178961,
+      "tracked_index": 3899,
+      "initial_cavity": true,
+      "frame": 84,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_07",
+      "t": 0.9461733873892912,
+      "point_local": [
+        0.7512538761956138,
+        -0.20216752114629252,
+        -0.39805290345126637
+      ],
+      "before_local": [
+        0.7488943184490527,
+        -0.19767238410495863,
+        -0.39828851108748853
+      ],
+      "after_local": [
+        0.7513881084647196,
+        -0.20242324383240987,
+        -0.39803950002951294
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 84,
+          "outside_normal_distance_m": -0.017868558466292657,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 85,
+          "outside_normal_distance_m": -0.017646138867835358,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 86,
+          "outside_normal_distance_m": -0.017399921451249547,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 87,
+          "outside_normal_distance_m": -0.01718042317858291,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 88,
+          "outside_normal_distance_m": -0.016797549087088734,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 89,
+          "outside_normal_distance_m": -0.01654776487706101,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 180394,
+      "tracked_index": 4569,
+      "initial_cavity": true,
+      "frame": 85,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_07",
+      "t": 0.9628030851253099,
+      "point_local": [
+        0.7514784565367576,
+        -0.19418255641101667,
+        -0.39629959972106643
+      ],
+      "before_local": [
+        0.7490763299092382,
+        -0.18960194615721054,
+        -0.3965520716814905
+      ],
+      "after_local": [
+        0.751571260248194,
+        -0.19435952361471315,
+        -0.396289845724465
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 85,
+          "outside_normal_distance_m": -0.017909187624519523,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 86,
+          "outside_normal_distance_m": -0.017669208771031893,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 87,
+          "outside_normal_distance_m": -0.017454000662740665,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 88,
+          "outside_normal_distance_m": -0.01718196843756868,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 89,
+          "outside_normal_distance_m": -0.016996746001410407,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 90,
+          "outside_normal_distance_m": -0.015509949198609384,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 180388,
+      "tracked_index": 4563,
+      "initial_cavity": true,
+      "frame": 136,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_09",
+      "t": 0.97456959439801,
+      "point_local": [
+        0.44482559414943607,
+        -0.16870306300241553,
+        -0.820992895370225
+      ],
+      "before_local": [
+        0.4430357074712347,
+        -0.16331483428071708,
+        -0.8212385497703465
+      ],
+      "after_local": [
+        0.4448722994278173,
+        -0.1688436633686251,
+        -0.8209864852676845
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 136,
+          "outside_normal_distance_m": -0.01797139994802639,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 137,
+          "outside_normal_distance_m": -0.017772456538705152,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 138,
+          "outside_normal_distance_m": -0.017426625168250855,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 139,
+          "outside_normal_distance_m": -0.017202671425931484,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 140,
+          "outside_normal_distance_m": -0.01716174021588727,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 141,
+          "outside_normal_distance_m": -0.01698395796602521,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 179225,
+      "tracked_index": 4162,
+      "initial_cavity": true,
+      "frame": 148,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_06",
+      "t": 0.7219186966700606,
+      "point_local": [
+        0.7581335790824539,
+        0.06939213664459416,
+        -0.3168463037610217
+      ],
+      "before_local": [
+        0.7565868399580927,
+        0.07387553612534496,
+        -0.31721229181364935
+      ],
+      "after_local": [
+        0.7587293791823789,
+        0.06766514221058553,
+        -0.31670532606485263
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 148,
+          "outside_normal_distance_m": -0.017389084367367105,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 149,
+          "outside_normal_distance_m": -0.016479860509712167,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 150,
+          "outside_normal_distance_m": -0.01597870010353768,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 151,
+          "outside_normal_distance_m": -0.01569020417679731,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 152,
+          "outside_normal_distance_m": -0.015468646010541263,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 153,
+          "outside_normal_distance_m": -0.015269299441615359,
+          "tangentially_on_wall": true
+        }
+      ]
+    },
+    {
+      "particle_id": 179255,
+      "tracked_index": 4192,
+      "initial_cavity": true,
+      "frame": 148,
+      "phase": "rigid_pose_advance",
+      "face": "bucket_shell_06",
+      "t": 0.7221425274763881,
+      "point_local": [
+        0.7581556570850955,
+        0.08985612470760973,
+        -0.31697786729712807
+      ],
+      "before_local": [
+        0.7566080566829837,
+        0.09434077918883521,
+        -0.3173640799878009
+      ],
+      "after_local": [
+        0.7587511244891687,
+        0.08813057232441243,
+        -0.3168292649395548
+      ],
+      "outer_face_within_5_frames": null,
+      "outer_followup": [
+        {
+          "frame": 148,
+          "outside_normal_distance_m": -0.01738815060646548,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 149,
+          "outside_normal_distance_m": -0.01664704683934365,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 150,
+          "outside_normal_distance_m": -0.016213597160367434,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 151,
+          "outside_normal_distance_m": -0.015950201287177883,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 152,
+          "outside_normal_distance_m": -0.015750889390499866,
+          "tangentially_on_wall": true
+        },
+        {
+          "frame": 153,
+          "outside_normal_distance_m": -0.015581990198060449,
+          "tangentially_on_wall": true
+        }
+      ]
+    }
+  ],
+  "local_chord_not_exact_rotational_ccd": true,
+  "final_cavity_proportion_not_delivery_measure": true
+}

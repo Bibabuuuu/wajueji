@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "scope": "v2 failed state control only; BC irrelevant during penetrate; no physical advance",
+  "v2_requested_pitch_rate": 0.2809630895888726,
+  "axis_box_maximum_pitch_rate": 0.2807783272961578,
+  "v3_control": {
+    "mode": "geometric_penetrate",
+    "coordinates": [
+      5.63100265032028,
+      0.0004707868347977051,
+      0.7662482037234173,
+      -0.06879014855011811
+    ],
+    "target": [
+      5.329948147477293,
+      0.0,
+      0.7326927421643388,
+      0.11851857784246361
+    ],
+    "cut_target": [
+      5.329948147477293,
+      0.0,
+      0.7326927421643388,
+      0.38
+    ],
+    "contact": [
+      5.904948147477294,
+      4.333503863148431e-06,
+      1.0326927421643388,
+      -0.3199472345814125
+    ],
+    "progress": 0.4764269515774151,
+    "desired_task_velocity": [
+      -0.22,
+      -0.0007061802521965576,
+      -0.05033319233861777,
+      0.2809630895888726
+    ],
+    "predicted_task_velocity": [
+      -0.11436187319112383,
+      -0.0003531128757996315,
+      -0.02516659616930889,
+      0.10207813533702711
+    ],
+    "normalized_requested": [
+      -0.001016848085691558,
+      0.15818554934280893,
+      0.37660740081279315,
+      1.0
+    ],
+    "preview_minimum_clearance_m": 0.5991482899241487,
+    "preview_scale": 0.5,
+    "original_projection_reason": null,
+    "ground_linear_lower": -3.8038615739276844,
+    "depth_velocity_lower": -0.05033319233861777
+  },
+  "applied_command_si": [
+    -6.1010885141493474e-05,
+    0.0017795874301066003,
+    0.004236833259143923,
+    0.03375
+  ],
+  "source_failure_sha256": "aa2e0235cde8f5465a8e349a0132125cbf6674111631edd3007d84b53844aea3",
+  "code_sha256": "5bc5a8e04b3ab5b709a9e4adbe37a64947315e02e53c6cd40478cbaeb5aee435"
+}

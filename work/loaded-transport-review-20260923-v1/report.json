@@ -1,0 +1,165 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382",
+  "exit_reason": "wall_time_budget",
+  "failure": null,
+  "timing": {
+    "frames": 887,
+    "physics_wall_seconds": 256.482755270059,
+    "simulation_seconds": 14.783333333333333,
+    "total_wall_seconds": 911.0235370959999
+  },
+  "timing_component_seconds": {
+    "mpm_wall_seconds": 212.82297990572988,
+    "mujoco_wall_seconds": 42.44655039130885,
+    "assignment_wall_seconds": 1.2132249730202602
+  },
+  "physics_compute_slowdown": 17.349453569564307,
+  "all_frames_hard_safe": true,
+  "initial_cavity_soil_particles": 6494,
+  "final_cavity_soil_particles": 549,
+  "initial_cavity_particles_still_in_final_cavity": 0,
+  "final_shell_box_penetrations": [
+    {
+      "name": "bucket_shell_00",
+      "particle_centers_inside": 0,
+      "maximum_depth_m": 0.0
+    },
+    {
+      "name": "bucket_shell_01",
+      "particle_centers_inside": 0,
+      "maximum_depth_m": 0.0
+    },
+    {
+      "name": "bucket_shell_02",
+      "particle_centers_inside": 0,
+      "maximum_depth_m": 0.0
+    },
+    {
+      "name": "bucket_shell_03",
+      "particle_centers_inside": 0,
+      "maximum_depth_m": 0.0
+    },
+    {
+      "name": "bucket_shell_04",
+      "particle_centers_inside": 0,
+      "maximum_depth_m": 0.0
+    },
+    {
+      "name": "bucket_shell_05",
+      "particle_centers_inside": 2,
+      "maximum_depth_m": 0.008390249574429234
+    },
+    {
+      "name": "bucket_shell_06",
+      "particle_centers_inside": 2,
+      "maximum_depth_m": 0.0009301752870289337
+    },
+    {
+      "name": "bucket_shell_07",
+      "particle_centers_inside": 0,
+      "maximum_depth_m": 0.0
+    },
+    {
+      "name": "bucket_shell_08",
+      "particle_centers_inside": 98,
+      "maximum_depth_m": 0.013851460435222725
+    },
+    {
+      "name": "bucket_shell_09",
+      "particle_centers_inside": 221,
+      "maximum_depth_m": 0.011716480809149471
+    },
+    {
+      "name": "bucket_shell_10",
+      "particle_centers_inside": 93,
+      "maximum_depth_m": 0.0014201599721097129
+    }
+  ],
+  "merged_bucket_sign_audit": {
+    "distinct_particle_centers_inside_shell_boxes": 408,
+    "merged_proxy_positive_sdf_despite_box_interior": 4,
+    "merged_proxy_negative_sdf": 404,
+    "query_only_no_physics": true,
+    "uses_final_actual_bucket_pose": true
+  },
+  "maximum_postsolve_position_correction_m": 0.17201233120015702,
+  "reported_truck_mpm_contact_frames": 0,
+  "rock_truck_contact_frames": 97,
+  "collider_index_reproduction": {
+    "physics_steps": 0,
+    "shape_count": 71,
+    "collider_count": 49,
+    "truck_shape_ids": [
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "body_map": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "truck_ids_out_of_collider_range": true
+  },
+  "limits": [
+    "Final snapshot cannot establish the exit path of each particle.",
+    "Zero truck MPM count is invalid because shape indices were used as collider indices.",
+    "Hard guards do not prove absence of tunneling or stable truck receipt.",
+    "No replay or new physics was run."
+  ],
+  "bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-loaded-handoff-v1/d129-loaded-handoff-20260923-v2/loaded-handoff.npz": "95808442d5f3d9c502e1d4cf24fc39276994afb53141becbf46b261bfbbf2e89",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/final-000887.diagnostic.npz": "552c5972fad63038f389342e453fe701ea0805bbddcd5bd0fd0d977a7f70be2f",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/report.json": "4ed25de43c52a235bd76c60e15a35060e4dea8140de941453bad55478434e048",
+    "/home/qunwang/wajueji/runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/physics.ndjson": "c78f787581f946351430db19099e671f4567dd232b23d61fef2d99d20b7bfc3e",
+    "/home/qunwang/wajueji/work/loaded-transport-review-20260923-v1/analyze.py": "676a47c815487c68eef59ea000c218f41cc1949f30cc835d89a384a227610e0d"
+  }
+}

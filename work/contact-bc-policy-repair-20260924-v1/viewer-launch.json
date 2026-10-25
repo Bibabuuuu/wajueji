@@ -1,0 +1,15 @@
+{
+  "pid": 1522790,
+  "command": [
+    "flock",
+    "-n",
+    "/tmp/wajueji-local-47-sparse-manual-contact.lock",
+    "/home/qunwang/codex-work/high-fidelity-soil-newton-mpm-20260907/.venv/bin/python",
+    "-u",
+    "/home/qunwang/wajueji/src/v4/view_contact_bc_probe.py",
+    "--view-only",
+    "--output",
+    "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/display"
+  ],
+  "physics_steps": 0
+}

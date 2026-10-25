@@ -1,0 +1,126 @@
+{
+  "physical_steps_added": 0,
+  "snapshots": {
+    "second_prepoint": {
+      "path": "/home/qunwang/wajueji/runs/contact-next-prepoint-20260925-v1/physical/prepoint.npz",
+      "sha256": "ab4f529501c3991022f6e72a276d4d7b48def9a888fcd85db3148356c73e420e",
+      "particle_count": 256441,
+      "minimum_m": [
+        1.0695147514343262,
+        -1.5500048398971558,
+        -0.0009826695313677192
+      ],
+      "maximum_m": [
+        5.992777347564697,
+        4.366489410400391,
+        2.031071901321411
+      ],
+      "dense_grid_shape": [
+        128,
+        152,
+        55
+      ],
+      "dense_grid_cells": 1070080,
+      "exceeds_original_12000000_cell_budget": false,
+      "far_particle_indices": [],
+      "far_particle_positions": [],
+      "far_particle_speed_m_s": []
+    },
+    "contact_endpoint": {
+      "path": "/home/qunwang/wajueji/runs/contact-next-scoop-20260925-v1/candidate/final.npz",
+      "sha256": "a006213a953947eabd73f975af29dc388fa4ed9dbd3307dc66abf491eec86c1f",
+      "particle_count": 256441,
+      "minimum_m": [
+        -35.280948638916016,
+        -1.5500119924545288,
+        -0.0009739928646013141
+      ],
+      "maximum_m": [
+        5.994725227355957,
+        13.589578628540039,
+        2.0310871601104736
+      ],
+      "dense_grid_shape": [
+        1036,
+        383,
+        55
+      ],
+      "dense_grid_cells": 21823340,
+      "exceeds_original_12000000_cell_budget": true,
+      "far_particle_indices": [
+        235557
+      ],
+      "far_particle_positions": [
+        [
+          -35.280948638916016,
+          13.589578628540039,
+          0.03446732461452484
+        ]
+      ],
+      "far_particle_speed_m_s": [
+        1.0148731917070108e-06
+      ]
+    },
+    "curl_handoff": {
+      "path": "/home/qunwang/wajueji/runs/contact-second-finish-unload-20260925-v4/physical/handoff.npz",
+      "sha256": "f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d",
+      "particle_count": 256441,
+      "minimum_m": [
+        -35.280948638916016,
+        -1.5500150918960571,
+        -0.0009739924571476877
+      ],
+      "maximum_m": [
+        5.994811534881592,
+        13.589578628540039,
+        2.0310933589935303
+      ],
+      "dense_grid_shape": [
+        1036,
+        383,
+        55
+      ],
+      "dense_grid_cells": 21823340,
+      "exceeds_original_12000000_cell_budget": true,
+      "far_particle_indices": [
+        235557
+      ],
+      "far_particle_positions": [
+        [
+          -35.280948638916016,
+          13.589578628540039,
+          0.034467585384845734
+        ]
+      ],
+      "far_particle_speed_m_s": [
+        2.1442059505716315e-07
+      ]
+    }
+  },
+  "independent_control_audit_completed": false,
+  "baseline_report_sha256": "b26961e4f5a1985f2b8c8fc93be6d6b531ae81039006e50cf3c0b0a1db0e9bb6",
+  "status": "failed",
+  "failure": "ValueError('cycle_observation_grid_budget')",
+  "frames": 439,
+  "wall_seconds": 161.04353966499912,
+  "returned_frame_hard_guards": true,
+  "logged_frames_match": true,
+  "handoff": {
+    "ready": true,
+    "frame_end": 3164,
+    "first_available_decision_frame": 3165,
+    "closure_held": true,
+    "contact_history_complete": true,
+    "sustained_actual_rise": true,
+    "height_is_diagnostic_only": true,
+    "observed_span_seconds": 3.0,
+    "bucket_above_initial_soil_m": -0.1982763846756943,
+    "maximum_drawdown_m": {
+      "origin_z_m": 0.0,
+      "minimum_bucket_z_m": 0.0
+    },
+    "initial_soil_top_m": 1.346285343170166,
+    "source_sha256": "a006213a953947eabd73f975af29dc388fa4ed9dbd3307dc66abf491eec86c1f"
+  },
+  "limitation": "Read-only failure triage, not full physical/control qualification. Far particle origin/cause not established; no particle removed or ignored."
+}

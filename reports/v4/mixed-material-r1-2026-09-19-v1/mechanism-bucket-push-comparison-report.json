@@ -1,0 +1,48 @@
+{
+  "bucket_reaction_impulse_world_ns": [
+    -0.543468873076828,
+    -29.19636902650466,
+    14.09179986134724
+  ],
+  "checks": {
+    "all_differences_finite": true,
+    "both_component_reports_passed": true,
+    "command_and_timing_identical": true,
+    "contact_changes_mechanism_trajectory": true,
+    "contact_only_in_push_case": true,
+    "contact_perturbation_remains_bounded": true,
+    "initial_mechanism_state_identical": true,
+    "reaction_impulse_only_in_push_case": true,
+    "same_frozen_source_model": true,
+    "upstream_rigid_units_passed": true
+  },
+  "clear_report_sha256": "a72511d9c20f04dacf7f8e27ceddfdb31d2b4ddffaf13ffbc448031f9576a598",
+  "config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+  "contact_report_sha256": "498c279df06d6d87d07cf3bcf834f9f66111f3287c06255aeba480d443cc55a7",
+  "final_mechanism_qpos_difference": [
+    9.630133766875232e-12,
+    -2.119752840133492e-10,
+    5.571506450641195e-11,
+    -1.1102230246251565e-16,
+    1.0019451914984895e-09,
+    -7.324061709896145e-10,
+    -1.2711127978037342e-09,
+    -0.00012994287792685022,
+    -1.0895794594349597e-05,
+    5.600530381122404e-06,
+    -1.252422495749304e-05,
+    3.979601083260317e-06,
+    -2.028097465023304e-05,
+    -3.7587552272026604e-05,
+    -5.954019468207955e-06,
+    -1.0830524832861066e-05,
+    -2.5551796731178987e-05,
+    -4.537864322227268e-05,
+    3.406147043466804e-05
+  ],
+  "maximum_final_mechanism_qpos_difference": 0.00012994287792685022,
+  "maximum_final_mechanism_qvel_difference": 0.00017317783792985771,
+  "schema": "excavation_mixed_rigid_bucket_push_comparison_v1",
+  "scope_limit": "qualifies reaction sign, torque accounting and a bounded mechanism trajectory difference for one shelf-supported side push only",
+  "status": "passed"
+}

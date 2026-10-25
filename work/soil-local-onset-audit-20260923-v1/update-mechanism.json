@@ -1,0 +1,273 @@
+{
+  "sample_particle": 53753,
+  "sample_rows": [
+    {
+      "frame": 1038,
+      "particle_id": 53753,
+      "previous_max_singular": 1.012961047487896,
+      "actual_max_singular": 1.0149794267092425,
+      "elastic_increment_eigenvalues": [
+        -0.012484907646815828,
+        0.0014373823660332062,
+        0.006386191766405147
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        0.9875150923531841,
+        1.0014373823660332,
+        1.0063861917664052
+      ],
+      "rotation_increment_norm": 0.03723942781300487,
+      "relative_error_of_recorded_linear_update": 2.6302370248777655e-08,
+      "position": [
+        5.152980804443359,
+        0.30294474959373474,
+        0.18213030695915222
+      ],
+      "speed": 0.12572109699249268,
+      "mean_normal_stress": 7187.10791015625,
+      "weight": 1.0
+    },
+    {
+      "frame": 1039,
+      "particle_id": 53753,
+      "previous_max_singular": 1.0149794267092425,
+      "actual_max_singular": 1.0168819361007642,
+      "elastic_increment_eigenvalues": [
+        -0.004911577417828283,
+        0.0012979139633386091,
+        0.006381635636972154
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        0.9950884225821717,
+        1.0012979139633387,
+        1.0063816356369721
+      ],
+      "rotation_increment_norm": 0.05523402896852327,
+      "relative_error_of_recorded_linear_update": 2.2316458627670187e-08,
+      "position": [
+        5.149590492248535,
+        0.30468982458114624,
+        0.180318683385849
+      ],
+      "speed": 0.25328999757766724,
+      "mean_normal_stress": 2984.470703125,
+      "weight": 1.0
+    },
+    {
+      "frame": 1040,
+      "particle_id": 53753,
+      "previous_max_singular": 1.0168819361007642,
+      "actual_max_singular": 0.9952027800816993,
+      "elastic_increment_eigenvalues": [
+        -1.6970023631875921,
+        -1.679161903488042,
+        -0.004336765199976015
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -0.6970023631875921,
+        -0.6791619034880421,
+        0.9956632348000239
+      ],
+      "rotation_increment_norm": 0.05459480149937652,
+      "relative_error_of_recorded_linear_update": 2.627242132780553e-08,
+      "position": [
+        5.147031784057617,
+        0.3055638074874878,
+        0.17850913107395172
+      ],
+      "speed": 0.19520588219165802,
+      "mean_normal_stress": -250.0,
+      "weight": 1.0
+    },
+    {
+      "frame": 1041,
+      "particle_id": 53753,
+      "previous_max_singular": 0.9952027800816993,
+      "actual_max_singular": 0.9937234072875761,
+      "elastic_increment_eigenvalues": [
+        -1.8603334645521423,
+        -1.8196719460533979,
+        -0.002071073359379814
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -0.8603334645521423,
+        -0.8196719460533979,
+        0.9979289266406202
+      ],
+      "rotation_increment_norm": 0.06813551892705967,
+      "relative_error_of_recorded_linear_update": 5.4515396363742036e-08,
+      "position": [
+        5.143792629241943,
+        0.30748221278190613,
+        0.17552953958511353
+      ],
+      "speed": 0.2880619764328003,
+      "mean_normal_stress": -250.0001678466797,
+      "weight": 1.0
+    },
+    {
+      "frame": 1042,
+      "particle_id": 53753,
+      "previous_max_singular": 0.9937234072875761,
+      "actual_max_singular": 1.4595331011684651,
+      "elastic_increment_eigenvalues": [
+        -3.381605237047742,
+        -3.2791697377118183,
+        0.018978803094368956
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -2.381605237047742,
+        -2.2791697377118183,
+        1.018978803094369
+      ],
+      "rotation_increment_norm": 0.06751698119803559,
+      "relative_error_of_recorded_linear_update": 7.019348799345579e-08,
+      "position": [
+        5.141302108764648,
+        0.3089112639427185,
+        0.1726999133825302
+      ],
+      "speed": 0.24187512695789337,
+      "mean_normal_stress": -249.9998321533203,
+      "weight": 1.0
+    },
+    {
+      "frame": 1043,
+      "particle_id": 53753,
+      "previous_max_singular": 1.4595331011684651,
+      "actual_max_singular": 14.275174755325066,
+      "elastic_increment_eigenvalues": [
+        -10.793756481441338,
+        -10.422769806043755,
+        -0.007902127813366506
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -9.793756481441338,
+        -9.422769806043755,
+        0.9920978721866335
+      ],
+      "rotation_increment_norm": 0.06700274386968412,
+      "relative_error_of_recorded_linear_update": 4.753714360290764e-08,
+      "position": [
+        5.1382575035095215,
+        0.31109854578971863,
+        0.17152738571166992
+      ],
+      "speed": 0.23566986620426178,
+      "mean_normal_stress": -250.0,
+      "weight": 1.0
+    },
+    {
+      "frame": 1044,
+      "particle_id": 53753,
+      "previous_max_singular": 14.275174755325066,
+      "actual_max_singular": 144.0488896829605,
+      "elastic_increment_eigenvalues": [
+        -11.09259752754928,
+        -10.718205397514218,
+        0.03440843863619105
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -10.09259752754928,
+        -9.718205397514218,
+        1.0344084386361911
+      ],
+      "rotation_increment_norm": 0.037662179066975096,
+      "relative_error_of_recorded_linear_update": 1.0690728838739494e-08,
+      "position": [
+        5.132260322570801,
+        0.31299397349357605,
+        0.1676202118396759
+      ],
+      "speed": 0.44427406787872314,
+      "mean_normal_stress": -249.9998321533203,
+      "weight": 1.0
+    },
+    {
+      "frame": 1045,
+      "particle_id": 53753,
+      "previous_max_singular": 144.0488896829605,
+      "actual_max_singular": 1485.8746701335851,
+      "elastic_increment_eigenvalues": [
+        -11.315687557852591,
+        -10.955232965180008,
+        0.04978574119513691
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -10.315687557852591,
+        -9.955232965180008,
+        1.049785741195137
+      ],
+      "rotation_increment_norm": 0.05169966916434793,
+      "relative_error_of_recorded_linear_update": 5.2414574772485e-08,
+      "position": [
+        5.128238677978516,
+        0.3129570782184601,
+        0.1665150374174118
+      ],
+      "speed": 0.250241219997406,
+      "mean_normal_stress": -250.0001678466797,
+      "weight": 1.0
+    },
+    {
+      "frame": 1046,
+      "particle_id": 53753,
+      "previous_max_singular": 1485.8746701335851,
+      "actual_max_singular": 15732.570148558163,
+      "elastic_increment_eigenvalues": [
+        -11.588374545939201,
+        -11.234665050424628,
+        0.06480020789795002
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -10.588374545939201,
+        -10.234665050424628,
+        1.06480020789795
+      ],
+      "rotation_increment_norm": 0.04961337972708306,
+      "relative_error_of_recorded_linear_update": 2.3746142584634212e-08,
+      "position": [
+        5.1266255378723145,
+        0.3128303289413452,
+        0.16431525349617004
+      ],
+      "speed": 0.1638435572385788,
+      "mean_normal_stress": -249.9998321533203,
+      "weight": 1.0
+    },
+    {
+      "frame": 1047,
+      "particle_id": 53753,
+      "previous_max_singular": 15732.570148558163,
+      "actual_max_singular": 170310.82721992847,
+      "elastic_increment_eigenvalues": [
+        -11.825454993280157,
+        -11.481900871635771,
+        0.04715071526535552
+      ],
+      "linear_principal_factors_ignoring_rotation": [
+        -10.825454993280157,
+        -10.481900871635771,
+        1.0471507152653554
+      ],
+      "rotation_increment_norm": 0.038744986889020436,
+      "relative_error_of_recorded_linear_update": 9.788640573368311e-08,
+      "position": [
+        5.125121593475342,
+        0.3120095133781433,
+        0.16171933710575104
+      ],
+      "speed": 0.18661633133888245,
+      "mean_normal_stress": -249.9619140625,
+      "weight": 1.0
+    }
+  ],
+  "upward_crossing_events": 2895,
+  "transition_elastic_min_eigen_below_minus2": 2700,
+  "transition_linear_reconstruction_error_max": 1.5306387224054398e-07,
+  "transition_linear_reconstruction_error_p99": 1.0194299579880403e-07,
+  "transition_elastic_increment_norm_median": 13.24188080340711,
+  "transition_rotation_increment_norm_median": 0.07712393963967404,
+  "interpretation": "In recorded events, a sufficiently negative compressive increment in Fnew=(I+E+W)Fprev yields factors below -1: sign reversal and magnitude growth. This is local update mechanism evidence, not a repaired full trajectory or proof of the upstream trigger of large grid strain increments.",
+  "physics_changed": false
+}

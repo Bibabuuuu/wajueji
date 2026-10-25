@@ -1,0 +1,26 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582",
+  "curl_window_frames": [
+    551,
+    1132
+  ],
+  "active_curl_frames": 351,
+  "pitch_change_degrees": 90.29688102063012,
+  "bucket_axis_net_travel_mm": 236.874429351713,
+  "active_bucket_tracking_error_mm_quantiles": [
+    2.7294739282154312,
+    6.2164755230335045,
+    9.637790104207511,
+    12.99513319289225
+  ],
+  "frames_with_projected_command": 20,
+  "planned_center_lateral_error_at_curl_m": 0.019039408112025855,
+  "tool_reference_z_at_curl_m": 0.17405360160438765,
+  "measured_fill_change_after_off_soil_confirmation_percentage_points": -0.8339939749484557,
+  "limitations": [
+    "Phase key timing is an operator annotation, not independently validated contact onset.",
+    "No full particle snapshots during cutting or lifting: cannot distinguish initial capture from earlier spillage.",
+    "Net curl proves overall motion, not absence of transient stall; no causal claim about low fill from this single run.",
+    "Full-width geometric stock score is not a validated retained-payload prediction."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "path": "/home/qunwang/wajueji/work/soil-local-onset-audit-20260923-v1/observed-original-001193.npz",
+  "size_bytes": 26251003,
+  "mtime_ns": 1790163047868781757,
+  "sha256": "6945f984ee4b94845e82169b6a3067cdf68db835cdd204356ed66ff28799ae4c",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "read-only observer replay; retains invalid Jp; never resume/train",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {
+    "particle_Jp": {
+      "count": 11502,
+      "first_indices": [
+        [
+          44098
+        ],
+        [
+          44102
+        ],
+        [
+          44106
+        ],
+        [
+          44110
+        ],
+        [
+          44114
+        ],
+        [
+          44115
+        ],
+        [
+          44118
+        ],
+        [
+          44119
+        ],
+        [
+          44298
+        ],
+        [
+          44299
+        ],
+        [
+          44302
+        ],
+        [
+          44303
+        ],
+        [
+          44306
+        ],
+        [
+          44307
+        ],
+        [
+          44308
+        ],
+        [
+          44310
+        ]
+      ],
+      "shape": [
+        256441
+      ]
+    }
+  }
+}

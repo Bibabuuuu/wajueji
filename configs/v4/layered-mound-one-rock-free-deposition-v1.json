@@ -1,0 +1,60 @@
+{
+  "schema": "excavation_layered_mound_one_rock_free_deposition_config_v1",
+  "status": "settled_active_foundation_then_one_rock_dynamic_from_first_contact",
+  "source_candidate": {
+    "config_path": "configs/v4/layered-mound-three-rock-adaptive-press-v1.json",
+    "config_sha256": "f04b2f254cba67118b8252b1677751667bc66a2f4a5f27e1b633f99b7c51071a"
+  },
+  "failed_hold_release_gate": {
+    "config_path": "configs/v4/layered-mound-three-rock-arrest-release-v1.json",
+    "config_sha256": "c278aca67dc6d46977b098e9ca2ecd756ec53478c66c748e925b00b413d8c35c",
+    "runner_path": "src/v4/run_layered_mound_three_rock_arrest_release.py",
+    "runner_sha256": "10b0e208cda0b38e21307f009024e2c598920d7a2508ef16f0cb1b54fbc81687",
+    "report_path": "results/layered-mound-three-rock-arrest-release-v1.json",
+    "report_sha256": "8db8d1323015bcf5bf18b2ba908a8d52ed356f6fb208fc180af2ed45460c38cc"
+  },
+  "deposition": {
+    "manifest_rock_id": "lower-000",
+    "runtime_rock_id": "r1-rock-000",
+    "foundation_presettle_frames": 60,
+    "foundation_required_stable_frames": 30,
+    "surface_clearance_m": 0.005,
+    "initial_linear_velocity_m_s": [0.0, 0.0, 0.0],
+    "initial_angular_velocity_rad_s": [0.0, 0.0, 0.0],
+    "rock_dynamic_from_first_mujoco_step": true,
+    "kinematic_press": false,
+    "held_contact_phase": false,
+    "construction_support_force": false,
+    "gravity_ramp": false,
+    "maximum_settle_frames": 360,
+    "required_continuous_stable_frames": 120
+  },
+  "thresholds": {
+    "maximum_stable_rock_linear_speed_m_s": 0.01,
+    "maximum_stable_rock_angular_speed_rad_s": 0.15,
+    "maximum_stable_particle_speed_m_s": 0.05,
+    "maximum_stable_particle_p99_speed_m_s": 0.01,
+    "maximum_particle_speed_m_s": 5.0,
+    "maximum_rock_linear_speed_m_s": 5.0,
+    "maximum_rock_angular_speed_rad_s": 25.0,
+    "maximum_forbidden_contact_count": 0,
+    "minimum_world_z_m": -0.05
+  },
+  "acceptance": {
+    "natural_fall_and_contact_allowed": true,
+    "translation_and_rotation_allowed": true,
+    "final_manifest_pose_required": false,
+    "contact_required_before_qualification": true,
+    "one_second_uncontrolled_stable_window_required": true
+  },
+  "scope": {
+    "active_soil": "unexcavated_foundation_stage_only",
+    "active_rock_count": 1,
+    "other_64_rocks_active": false,
+    "cover_soil_active": false,
+    "full_lower_layer": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

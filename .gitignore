@@ -17,6 +17,13 @@ venv/
 # The shared repo exposes only the current runtime, decisive results and submission inputs.
 evidence/**
 !evidence/README.md
+!evidence/user-first-scoop-review-20260925-v1/
+!evidence/user-first-scoop-review-20260925-v1/README.md
+!evidence/user-first-scoop-review-20260925-v1/manifest.json
+!evidence/user-first-scoop-review-20260925-v1/frame-0998.png
+!evidence/user-first-scoop-review-20260925-v1/frame-2011.png
+!evidence/user-first-scoop-review-20260925-v1/frame-2926.png
+!evidence/user-first-scoop-review-20260925-v1/frame-3981.png
 
 !evidence/competition-requirements-2026-09-10/
 !evidence/competition-requirements-2026-09-10/requirements.png
@@ -112,6 +119,11 @@ build*/
 !evidence/autonomous-multiscoop-2026-09-14-v1/receiver-mesh.npz
 !evidence/autonomous-multiscoop-2026-09-14-v1/retention-front-rim.npz
 
+# Small, source-like R0 rock meshes are deterministic runtime assets, not
+# compiler object files.
+!assets/v4/mixed-material-r0/*.obj
+!assets/v4/mixed-material-r1/*.obj
+
 # Independently versioned upstream simulator checkout
 excavator_simulator_mujoco/
 
@@ -122,3 +134,10 @@ excavator_simulator_mujoco/
 /runs/
 /offline-bundles/
 /configs/v4/local-paths.env
+
+# Local UI state, scratch exports and raw per-frame experiment recordings.
+/tmp/
+/imgui.ini
+/operator-start.json
+/work/**/*.ndjson
+/reports/**/*.ndjson

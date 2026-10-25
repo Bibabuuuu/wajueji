@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "sampled_same_bucket_vertex_max_pair_distance_mm": 3.9660288294966213,
+    "frames": [
+      1221,
+      1250
+    ],
+    "sampling": "60Hz frame end; not substep peak"
+  },
+  "candidate": {
+    "sampled_same_bucket_vertex_max_pair_distance_mm": 4.2515150176324035,
+    "frames": [
+      1221,
+      1250
+    ],
+    "sampling": "60Hz frame end; not substep peak"
+  }
+}

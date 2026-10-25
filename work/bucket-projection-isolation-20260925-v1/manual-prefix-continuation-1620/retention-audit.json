@@ -1,0 +1,26 @@
+[
+  {
+    "frame": 1080,
+    "initial_cavity_particles": 12086,
+    "initial_retained": 12086,
+    "total_in_cavity": 12086,
+    "occupied_2cm_cells": 9381,
+    "maximum_particles_per_cell": 17
+  },
+  {
+    "frame": 1680,
+    "initial_cavity_particles": 12086,
+    "initial_retained": 12086,
+    "total_in_cavity": 14332,
+    "occupied_2cm_cells": 5859,
+    "maximum_particles_per_cell": 131
+  },
+  {
+    "frame": 1800,
+    "initial_cavity_particles": 12086,
+    "initial_retained": 12086,
+    "total_in_cavity": 14690,
+    "occupied_2cm_cells": 5560,
+    "maximum_particles_per_cell": 204
+  }
+]

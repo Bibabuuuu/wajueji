@@ -1,0 +1,76 @@
+{
+  "physics_steps_added": 0,
+  "source_sha256": "a006213a953947eabd73f975af29dc388fa4ed9dbd3307dc66abf491eec86c1f",
+  "previous_command": [
+    -2.5023990429953723e-05,
+    0.00024999999999999995,
+    -0.0002499999999999999,
+    0.0006811267685822817
+  ],
+  "requested": [
+    -2.9759445298441603e-10,
+    0.0009999999999999998,
+    -0.0009999999999999998,
+    0.0029311267685822816
+  ],
+  "applied": [
+    -2.9759445298441603e-10,
+    0.0009999999999999998,
+    -0.0009999999999999998,
+    0.0029311267685822816
+  ],
+  "projection_reason": null,
+  "entry_passed": true,
+  "entry_detail": {
+    "stage": "FINISH_CURL",
+    "requested_command_si": [
+      -2.9759445298441603e-10,
+      0.0009999999999999998,
+      -0.0009999999999999998,
+      0.0029311267685822816
+    ],
+    "carry_pitch_rad": 1.1443822420129213,
+    "carry_cylinder_m": 0.8293489655031593,
+    "minimum_bucket_z_m": 0.7320128958857837,
+    "minimum_preview_body_delta_m": -0.00019118154509634167,
+    "desired_task_velocity": [
+      0.0,
+      0.0,
+      0.08,
+      0.05996650997484196
+    ],
+    "projection_reason": null,
+    "slew_safety_override": null
+  },
+  "corner_vertical_velocity_m_s": [
+    0.04827423708669247,
+    0.009542316359063958,
+    0.048274237086741806,
+    0.00954231635906395,
+    0.03748879940440693,
+    -0.001243121323196916,
+    0.037488799404456256,
+    -0.0012431213231969248
+  ],
+  "minimum_corner_vertical_velocity_m_s": -0.0012431213231969248,
+  "opening_command_rejected": false,
+  "boom_down_command_rejected": false,
+  "old_corner_rule_would_reject": true,
+  "pitch_velocity_rad_s": 0.03091672579280666,
+  "closure_fraction": 0.9530061524961811,
+  "preview_150ms_corner_delta_m": [
+    0.007272064464242112,
+    0.0014265258612990994,
+    0.00727206446424189,
+    0.0014265258612988774,
+    0.005654357057846671,
+    -0.00019118154509634167,
+    0.005654357057846449,
+    -0.00019118154509634167
+  ],
+  "preview_cylinder_delta_m": 0.00043966901528724733,
+  "preview_pitch_delta_rad": 0.004661127675534393,
+  "previous_frame_minimum_velocity_m_s": 1.3010426069826053e-17,
+  "normalized_entry_change": 0.03333333333333333,
+  "cumulative_drawdown_rejected_and_state_rolled_back": true
+}

@@ -1,0 +1,1170 @@
+{
+  "schema": "lift_and_endpoint_readonly_audit_v1",
+  "status": "candidates_only_no_labels",
+  "physics_advanced": false,
+  "parameter_grid_is_not_confidence_interval": true,
+  "script_sha256": "999c9f8f00bc7528e9a8f7edd9de2012401f5884830862b2c8f3f004638f9a3f",
+  "geometry_inputs": [
+    {
+      "path": "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/results/layered-mound-physical-preflight-v1/scene-manifest.json",
+      "sha256": "b3dc52601127dab9cb026f98d556b276adecfc3025f05d387ae6e85cc9d9d706"
+    },
+    {
+      "path": "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+      "sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+    },
+    {
+      "path": "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/model/A.xml",
+      "sha256": "959098bed4286ae5909858acb02a22eb8b9050ef2029ebe7d2c6a5f3d4d5e320"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/layered_47_cycle_geometry.py",
+      "sha256": "b88ed645ee736a987ecfa4af0fd0591de8bd9f6b383526f135527264ac8e0ae6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/layered_excavation_approach_planner.py",
+      "sha256": "f0e2cb0762534f3c17017b41eabadec8c69c6e9c8ab7706867132bf993068639"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+      "sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz",
+      "sha256": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1"
+    }
+  ],
+  "limitations": [
+    "Unsegmented per-frame terrain contains carried soil/rocks; it is not remaining-stock geometry.",
+    "Only endpoint full particles inspected; exact off-soil onset and persistence cannot be recovered from endpoint.",
+    "Lift signals show actual boom extension and bucket origin translation; no accepted semantic boundary yet."
+  ],
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/physics.ndjson",
+          "sha256": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/observation.ndjson",
+          "sha256": "adcbcf3c20120a4ea6f84abd3db8b4cb21c250c09164de2509518b7c881e32fb"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/annotations.ndjson",
+          "sha256": "eb42b40964377fb86215818b7230c06b62fa48598e218a716fa918bf0aff315d"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/010900-1088617-features.json",
+        "sha256": "fe1ca3062a8e63e4f4ec2883533593678d310cdabbbfdc6358c77e2d965bc03c"
+      },
+      "curl_confirmation_frame_end": 606,
+      "lift_parameter_sensitivity": [
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 813,
+          "first_available_decision_frame": 814
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 808,
+          "first_available_decision_frame": 809
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 877,
+          "first_available_decision_frame": 878
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 808,
+          "first_available_decision_frame": 809
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 819,
+          "first_available_decision_frame": 820
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 828,
+          "first_available_decision_frame": 829
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 889,
+          "first_available_decision_frame": 890
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 900,
+          "first_available_decision_frame": 901
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 806,
+          "first_available_decision_frame": 807
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 817,
+          "first_available_decision_frame": 818
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 827,
+          "first_available_decision_frame": 828
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 842,
+          "first_available_decision_frame": 843
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 864,
+          "first_available_decision_frame": 865
+        }
+      ],
+      "actual_rise_segments": [
+        {
+          "first_confirmation_frame_end": 808,
+          "last_matching_frame_end": 1195,
+          "origin_rise_since_window_start_m": 1.2466572996963556,
+          "minimum_following_120_frame_origin_change_m": -0.0025898599195777194,
+          "actual_bucket_cylinder_m": 0.8424063359068575
+        }
+      ],
+      "original_keys": [
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            13401.647648922342,
+            -74329.49016788595,
+            9932.000118375889,
+            -127398.37186669407
+          ],
+          "kind": "phase",
+          "label": "lift_clear",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 784,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 13.05,
+          "training_eligible": false,
+          "wall_monotonic_s": 108261.896080135
+        },
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -63.43319736476992,
+            -40970.35961808982,
+            13303.104305528206,
+            -77511.10222016645
+          ],
+          "kind": "phase",
+          "label": "off_soil_confirm",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 1275,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 21.233333333333334,
+          "training_eligible": false,
+          "wall_monotonic_s": 108350.633091505
+        },
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -47.07932404141682,
+            -41033.05552601893,
+            13332.46824527605,
+            -77474.88868157084
+          ],
+          "kind": "phase",
+          "label": "off_soil_confirm",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 1277,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 21.266666666666666,
+          "training_eligible": false,
+          "wall_monotonic_s": 108350.969814989
+        }
+      ],
+      "lift_boundary_confirmed": false,
+      "endpoint": {
+        "frame_end": 1311,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/final-001311.diagnostic.npz",
+          "sha256": "48b1f3785beec8b0062f8b18f36ff756852708d9df305cc24eb375e4837011b3"
+        },
+        "metadata": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/final-001311.diagnostic.npz.json",
+          "sha256": "4a44a7ef18478824781d8a971b5f048311d1cf3ba57a8398c6562c9b6434db78"
+        },
+        "continuous_off_soil_confirmation": false,
+        "earliest_off_soil_frame": null,
+        "status": "existing_detached_component_gate_passed",
+        "observation": {
+          "detached_payload_particles": 13695,
+          "detached_dynamic_particles": 16592,
+          "observation_only": true,
+          "cell_m": 0.04,
+          "scope": "ground-connected stock surface; detached material remains fully simulated"
+        },
+        "known_surface_sample_count": 29956,
+        "unknown_or_outside_sample_count": 0,
+        "minimum_known_stock_vertical_offset_m": 0.05798355690114687,
+        "scope": "Existing 4cm connectivity heuristic plus remaining-stock sampled height grid; final snapshot only, not exact collision or full transport qualification"
+      }
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/physics.ndjson",
+          "sha256": "e46a76619fbcc45508286b1f49e586fac4fe94813c9d4c0e2911b45a3b5c778f"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/observation.ndjson",
+          "sha256": "c040a6f293e50de067b2faaac68cbaf10d2e99129202d5240d00241a72ad6d57"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/annotations.ndjson",
+          "sha256": "a078fd16216b10448e94ee7d91e18bf74e1f638d6dc4fc1ae1a426666db77a0d"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/113555-1443279-features.json",
+        "sha256": "f8d19e25b849765c51a9cdb2e3d7089e1449122d294802ae7dddeba27cd54fd6"
+      },
+      "curl_confirmation_frame_end": 368,
+      "lift_parameter_sensitivity": [
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 852,
+          "first_available_decision_frame": 853
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 673,
+          "first_available_decision_frame": 674
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 883,
+          "first_available_decision_frame": 884
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 675,
+          "first_available_decision_frame": 676
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 689,
+          "first_available_decision_frame": 690
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 871,
+          "first_available_decision_frame": 872
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 914,
+          "first_available_decision_frame": 915
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 674,
+          "first_available_decision_frame": 675
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 688,
+          "first_available_decision_frame": 689
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 719,
+          "first_available_decision_frame": 720
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 887,
+          "first_available_decision_frame": 888
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 893,
+          "first_available_decision_frame": 894
+        }
+      ],
+      "actual_rise_segments": [
+        {
+          "first_confirmation_frame_end": 673,
+          "last_matching_frame_end": 705,
+          "origin_rise_since_window_start_m": 0.04695709353354194,
+          "minimum_following_120_frame_origin_change_m": -0.10109639058401343,
+          "actual_bucket_cylinder_m": 0.8424902126142086
+        },
+        {
+          "first_confirmation_frame_end": 853,
+          "last_matching_frame_end": 938,
+          "origin_rise_since_window_start_m": 0.2109575247819424,
+          "minimum_following_120_frame_origin_change_m": -0.004500050274953482,
+          "actual_bucket_cylinder_m": 0.8494486150840942
+        },
+        {
+          "first_confirmation_frame_end": 992,
+          "last_matching_frame_end": 1389,
+          "origin_rise_since_window_start_m": 1.01233263260943,
+          "minimum_following_120_frame_origin_change_m": 0.0,
+          "actual_bucket_cylinder_m": 0.8482789899549499
+        }
+      ],
+      "original_keys": [
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -555.4452110489545,
+            44870.57080543496,
+            -13930.096024887178,
+            95728.04345637752
+          ],
+          "kind": "phase",
+          "label": "lift_clear",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 843,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 14.033333333333333,
+          "training_eligible": false,
+          "wall_monotonic_s": 145903.059331406
+        },
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -2532.051881723004,
+            -40425.40043699621,
+            9691.44112044496,
+            -91638.60679562492
+          ],
+          "kind": "phase",
+          "label": "off_soil_confirm",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 1354,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 22.55,
+          "training_eligible": false,
+          "wall_monotonic_s": 145994.665318183
+        }
+      ],
+      "lift_boundary_confirmed": false,
+      "endpoint": {
+        "frame_end": 1411,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz",
+          "sha256": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace"
+        },
+        "metadata": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz.json",
+          "sha256": "dadbf2e1b3ae89664cb14482b6244709483a8f8bd9e00fda987cfe5aa106badf"
+        },
+        "continuous_off_soil_confirmation": false,
+        "earliest_off_soil_frame": null,
+        "status": "existing_detached_component_gate_passed",
+        "observation": {
+          "detached_payload_particles": 14529,
+          "detached_dynamic_particles": 16621,
+          "observation_only": true,
+          "cell_m": 0.04,
+          "scope": "ground-connected stock surface; detached material remains fully simulated"
+        },
+        "known_surface_sample_count": 29956,
+        "unknown_or_outside_sample_count": 0,
+        "minimum_known_stock_vertical_offset_m": -0.25742708140547177,
+        "scope": "Existing 4cm connectivity heuristic plus remaining-stock sampled height grid; final snapshot only, not exact collision or full transport qualification",
+        "negative_grid_offset_audit": {
+          "reconstructed_grid_equal": true,
+          "worst_bucket_sample_m": [
+            4.703499747669537,
+            -0.4205995837568535,
+            1.8721469790345917
+          ],
+          "worst_cell_xy": [
+            12,
+            10
+          ],
+          "cell_contributors": [
+            {
+              "source": "ground_connected_soil",
+              "point_count": 765,
+              "highest_point_m": [
+                4.788013935089111,
+                -0.45265769958496094,
+                2.1295740604400635
+              ],
+              "offset_to_cell_top_m": -0.25742708140547177
+            },
+            {
+              "source": "lower_middle-000",
+              "point_count": 1,
+              "highest_point_m": [
+                4.723399051840788,
+                -0.4766620071905697,
+                0.7230298198607545
+              ],
+              "offset_to_cell_top_m": 1.1491171591738372
+            }
+          ],
+          "minimum_sample_to_stock_point_distance_m": 0.001238627057138178,
+          "nearest_pair": {
+            "source": "ground_connected_soil",
+            "bucket_sample_m": [
+              4.642227514375389,
+              -0.41968511425539945,
+              1.8841188307896801
+            ],
+            "stock_point_m": [
+              4.642590522766113,
+              -0.4197003245353699,
+              1.8829346895217896
+            ]
+          },
+          "scope": "Unsigned distances between sampled points only; not triangle distance, particle support, or collision clearance"
+        }
+      }
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/physics.ndjson",
+          "sha256": "fe0717c631ba632a25e7adc55967ec242dee7c475700642cc2b45441296c0714"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/observation.ndjson",
+          "sha256": "3832f01c66f7e1e885e88b9e40a3b178ca75ff519a5143ff5b7373966e5a3dda"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/annotations.ndjson",
+          "sha256": "af8b4aa83f88dcf646f9c1a1065522cce21240446afdacad79f289a80397b9f1"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/114908-1452582-features.json",
+        "sha256": "f8e15af3771494c91371241ea1b4b24f83cee4297b009bcb5e7f7ed25bc5d93b"
+      },
+      "curl_confirmation_frame_end": 638,
+      "lift_parameter_sensitivity": [
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1151,
+          "first_available_decision_frame": 1152
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1144,
+          "first_available_decision_frame": 1145
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1209,
+          "first_available_decision_frame": 1210
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1146,
+          "first_available_decision_frame": 1147
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1156,
+          "first_available_decision_frame": 1157
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1170,
+          "first_available_decision_frame": 1171
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1227,
+          "first_available_decision_frame": 1228
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1154,
+          "first_available_decision_frame": 1155
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1160,
+          "first_available_decision_frame": 1161
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1170,
+          "first_available_decision_frame": 1171
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1183,
+          "first_available_decision_frame": 1184
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 1191,
+          "first_available_decision_frame": 1192
+        }
+      ],
+      "actual_rise_segments": [
+        {
+          "first_confirmation_frame_end": 1144,
+          "last_matching_frame_end": 1653,
+          "origin_rise_since_window_start_m": 1.3552721811605752,
+          "minimum_following_120_frame_origin_change_m": -0.0002561843928514662,
+          "actual_bucket_cylinder_m": 0.8490371614215473
+        }
+      ],
+      "original_keys": [
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -6852.920936097308,
+            -17304.473005392934,
+            -30821.042260297305,
+            -177289.31993353216
+          ],
+          "kind": "phase",
+          "label": "lift_clear",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 1133,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 18.866666666666667,
+          "training_eligible": false,
+          "wall_monotonic_s": 146796.834465986
+        },
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -113.0626446348193,
+            -25847.717218863756,
+            5733.599873139265,
+            -55190.6577513036
+          ],
+          "kind": "phase",
+          "label": "off_soil_confirm",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 1621,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 27.0,
+          "training_eligible": false,
+          "wall_monotonic_s": 146885.443558887
+        }
+      ],
+      "lift_boundary_confirmed": false,
+      "endpoint": {
+        "frame_end": 1674,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz",
+          "sha256": "73aa8f1a4e040c15aa978a22dc946260481f9b1d72f71ce559ddae2eef8c3c5c"
+        },
+        "metadata": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz.json",
+          "sha256": "a7fbc37a31824ca0e2abb42e7969a3d8c178cc458a25fd0f71f3ee50aa8b579d"
+        },
+        "continuous_off_soil_confirmation": false,
+        "earliest_off_soil_frame": null,
+        "status": "existing_detached_component_gate_passed",
+        "observation": {
+          "detached_payload_particles": 9426,
+          "detached_dynamic_particles": 15231,
+          "observation_only": true,
+          "cell_m": 0.04,
+          "scope": "ground-connected stock surface; detached material remains fully simulated"
+        },
+        "known_surface_sample_count": 29956,
+        "unknown_or_outside_sample_count": 0,
+        "minimum_known_stock_vertical_offset_m": 0.06397480001441336,
+        "scope": "Existing 4cm connectivity heuristic plus remaining-stock sampled height grid; final snapshot only, not exact collision or full transport qualification"
+      }
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/physics.ndjson",
+          "sha256": "1e963007d151251d39ed71e7a2cd4cbf04a54c642298f2e3890fa1faf49776f6"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/observation.ndjson",
+          "sha256": "19b442c67ea790b8017414d779ffef0ac90a2da2094fc412486a11257451d26b"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/annotations.ndjson",
+          "sha256": "a4f10b08e9cd10fcf43c5d5365201b6695e63d329008bbfd55a633624df5834f"
+        }
+      ],
+      "feature_file": {
+        "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/115812-1458627-features.json",
+        "sha256": "e691a888d400bb79d1a0ed280f3b314a8494a4b11d7dcb1a7dea63fb00298a42"
+      },
+      "curl_confirmation_frame_end": 579,
+      "lift_parameter_sensitivity": [
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 870,
+          "first_available_decision_frame": 871
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 6,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 870,
+          "first_available_decision_frame": 871
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 942,
+          "first_available_decision_frame": 943
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 12,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 892,
+          "first_available_decision_frame": 893
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 912,
+          "first_available_decision_frame": 913
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 927,
+          "first_available_decision_frame": 928
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 993,
+          "first_available_decision_frame": 994
+        },
+        {
+          "window_frames": 30,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": null,
+          "first_available_decision_frame": null
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.01,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 904,
+          "first_available_decision_frame": 905
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.03,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 911,
+          "first_available_decision_frame": 912
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.05,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 919,
+          "first_available_decision_frame": 920
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.08,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 936,
+          "first_available_decision_frame": 937
+        },
+        {
+          "window_frames": 60,
+          "minimum_origin_rise_m": 0.1,
+          "minimum_actual_boom_cylinder_extension_m": 0.0005,
+          "first_confirmation_frame_end": 944,
+          "first_available_decision_frame": 945
+        }
+      ],
+      "actual_rise_segments": [
+        {
+          "first_confirmation_frame_end": 870,
+          "last_matching_frame_end": 871,
+          "origin_rise_since_window_start_m": 0.010351347387577148,
+          "minimum_following_120_frame_origin_change_m": -0.004821544209355544,
+          "actual_bucket_cylinder_m": 0.8429548516758822
+        },
+        {
+          "first_confirmation_frame_end": 899,
+          "last_matching_frame_end": 1470,
+          "origin_rise_since_window_start_m": 1.5417646574223922,
+          "minimum_following_120_frame_origin_change_m": -0.0009822179875103032,
+          "actual_bucket_cylinder_m": 0.843350351556173
+        }
+      ],
+      "original_keys": [
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            2624.943591671513,
+            -50450.564271338524,
+            6795.387842258585,
+            -86837.75758977108
+          ],
+          "kind": "phase",
+          "label": "lift_clear",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 959,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 15.966666666666667,
+          "training_eligible": false,
+          "wall_monotonic_s": 147337.097754225
+        },
+        {
+          "drive_load_axis_labels": [
+            "swing",
+            "boom",
+            "arm",
+            "bucket"
+          ],
+          "drive_load_axis_units": [
+            "N*m",
+            "N",
+            "N",
+            "N"
+          ],
+          "equivalent_drive_load_baseline": [
+            -205.28160592834584,
+            -34972.636188012664,
+            8178.882969831974,
+            -67864.14984191829
+          ],
+          "kind": "phase",
+          "label": "off_soil_confirm",
+          "load_contact_thresholds_applied": false,
+          "next_frame": 1408,
+          "schema": "layered_47_manual_contact_annotation_v1",
+          "sim_time_s": 23.45,
+          "training_eligible": false,
+          "wall_monotonic_s": 147419.600375397
+        }
+      ],
+      "lift_boundary_confirmed": false,
+      "endpoint": {
+        "frame_end": 1490,
+        "snapshot": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/final-001490.cycle.npz",
+          "sha256": "17aa03b291d4bdaabe41140ffd723a89e175e17715121c2932b847eee0987c3d"
+        },
+        "metadata": {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/final-001490.cycle.npz.json",
+          "sha256": "8ba4907e97fd5d568a48cb8f85c9d064a5f2e2f45d48855bb57d504dc89e43c2"
+        },
+        "continuous_off_soil_confirmation": false,
+        "earliest_off_soil_frame": null,
+        "status": "existing_detached_component_gate_passed",
+        "observation": {
+          "detached_payload_particles": 14017,
+          "detached_dynamic_particles": 22315,
+          "observation_only": true,
+          "cell_m": 0.04,
+          "scope": "ground-connected stock surface; detached material remains fully simulated"
+        },
+        "known_surface_sample_count": 29956,
+        "unknown_or_outside_sample_count": 0,
+        "minimum_known_stock_vertical_offset_m": 0.1775850487828725,
+        "scope": "Existing 4cm connectivity heuristic plus remaining-stock sampled height grid; final snapshot only, not exact collision or full transport qualification"
+      }
+    }
+  ]
+}

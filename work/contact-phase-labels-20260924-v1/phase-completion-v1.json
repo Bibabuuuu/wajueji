@@ -1,0 +1,25 @@
+{
+  "schema": "contact_phase_completion_candidate_v1",
+  "parameters": {
+    "lift_motion_window_frames": 12,
+    "lift_confirmation_frames": 30,
+    "lift_window_origin_rise_m": 0.01,
+    "lift_window_boom_extension_m": 0.0005,
+    "lift_total_origin_rise_m": 0.08,
+    "off_soil_gap_m": 0.003,
+    "off_soil_confirmation_frames": 5
+  },
+  "original_contact_config_sha256": "19b9d5c403bda9de1eca7ae67aa7b4c639c1389097af15405851f4d8e63c4db8",
+  "approved_semantics": "Lift follows curl_load and requires sustained actual rise; off-soil gap >=3mm for consecutive fresh frames.",
+  "engineering_candidate_parameters": "5 off-soil frames; 12-frame actual motion test sustained 30 frames plus 8cm total rise; not human boundary calibration.",
+  "phase_order": [
+    "approach_contact",
+    "penetrate",
+    "curl_load",
+    "lift",
+    "off_soil"
+  ],
+  "distance_scope": "All ground-connected particle centers to existing open solid proxy; 4cm connectivity; no rock clearance",
+  "live_policy_connected": false,
+  "production_qualified": false
+}

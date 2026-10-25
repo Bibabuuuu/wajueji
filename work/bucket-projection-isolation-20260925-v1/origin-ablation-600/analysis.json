@@ -1,0 +1,116 @@
+{
+  "schema": "bucket_projection_isolation_audit_v1",
+  "status": "diagnostic_recorded",
+  "frames": 600,
+  "wall_seconds": 100.9672120079922,
+  "measurements": [
+    {
+      "frame": 0,
+      "fill_percent": 103.16473759315046,
+      "liters": 263.2400240842088,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 5156,
+      "max_particles_per_cell": 8
+    },
+    {
+      "frame": 60,
+      "fill_percent": 101.21135246551451,
+      "liters": 258.25567419837375,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 5106,
+      "max_particles_per_cell": 11
+    },
+    {
+      "frame": 120,
+      "fill_percent": 98.48422387823054,
+      "liters": 251.29700390321437,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 5018,
+      "max_particles_per_cell": 10
+    },
+    {
+      "frame": 180,
+      "fill_percent": 96.72744569525925,
+      "liters": 246.8143255967978,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4952,
+      "max_particles_per_cell": 10
+    },
+    {
+      "frame": 240,
+      "fill_percent": 94.4506104328524,
+      "liters": 241.00464504804847,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4830,
+      "max_particles_per_cell": 9
+    },
+    {
+      "frame": 300,
+      "fill_percent": 92.59235769779609,
+      "liters": 236.26303947483518,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4736,
+      "max_particles_per_cell": 10
+    },
+    {
+      "frame": 360,
+      "fill_percent": 90.70556524496592,
+      "liters": 231.44861060783543,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4611,
+      "max_particles_per_cell": 11
+    },
+    {
+      "frame": 420,
+      "fill_percent": 88.87268114793088,
+      "liters": 226.77173685132132,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4558,
+      "max_particles_per_cell": 11
+    },
+    {
+      "frame": 480,
+      "fill_percent": 86.95417789757411,
+      "liters": 221.87639321344756,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4393,
+      "max_particles_per_cell": 15
+    },
+    {
+      "frame": 540,
+      "fill_percent": 85.3844934200095,
+      "liters": 217.87111205518724,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4339,
+      "max_particles_per_cell": 21
+    },
+    {
+      "frame": 600,
+      "fill_percent": 84.21119391152689,
+      "liters": 214.87726553285128,
+      "valid_estimate": true,
+      "occupied_2cm_cells": 4268,
+      "max_particles_per_cell": 18
+    }
+  ],
+  "terminal_full_particle_fill": {
+    "frame": 600,
+    "sim_time_s": 10.0,
+    "valid_estimate": true,
+    "fill_percent": 84.21119391152689,
+    "liters": 214.87726553285128,
+    "quality_reasons": [],
+    "capacity_liters": 255.164729950989,
+    "rocks_and_heap_included": true,
+    "occupancy_level": 0.2,
+    "calibration_status": "user_selected_threshold_not_recalibrated",
+    "compute_wall_s": 0.17657810598029755,
+    "display_only": true
+  },
+  "terminal_solid_penetration_count_above_0_1mm": 0,
+  "initial_cavity_particle_count": 6494,
+  "retained_initial_cavity": 6494,
+  "all_hard_guards": true,
+  "all_material_guards": true,
+  "bindings_unchanged": true
+}

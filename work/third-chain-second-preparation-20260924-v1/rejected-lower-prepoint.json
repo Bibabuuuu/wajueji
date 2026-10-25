@@ -1,0 +1,44 @@
+{
+  "status": "failed",
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/final-001411.cycle.npz",
+    "size_bytes": 53145698,
+    "mtime_ns": 1790221227913964855,
+    "sha256": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace"
+  },
+  "failure": "ValueError('training_prepoint_bucket_contact')",
+  "frames": 6,
+  "wall_seconds": 4.97319582599448,
+  "unexpected_contact": {
+    "positions": [
+      [
+        6.050000190734863,
+        -0.75,
+        1.5
+      ]
+    ],
+    "impulses": [
+      [
+        2.482154037863893e-08,
+        -3.0729485622771335e-09,
+        4.589057311932265e-08
+      ]
+    ],
+    "nearest_distance": [
+      0.3942933888433778
+    ],
+    "nearest_ids": [
+      256245
+    ]
+  },
+  "plan": {
+    "tip_world_m": [
+      6.143180344269663,
+      -0.7605842331000534,
+      1.6922052264213563
+    ],
+    "bucket_surface_clearance_m": 0.970999648674947
+  },
+  "report_sha256": "d0b47be87faf9e4503876821cf6204ca3c617f37ac4aea00e8ecf5da13346bb1",
+  "response": "Prefer existing upward=0.7 m candidate; retain strict zero-contact hold and failed evidence."
+}

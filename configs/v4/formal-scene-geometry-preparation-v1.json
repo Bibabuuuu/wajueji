@@ -1,0 +1,27 @@
+{
+  "schema": "excavation_formal_scene_geometry_preparation_config_v1",
+  "status": "validated_manifest_to_atomic_geometry_bundle_only",
+  "frozen_model_adapter_config": {
+    "path": "configs/v4/formal-scene-model-adapter-v1.json",
+    "sha256": "9fed6466adbcde775cbec9c061e04f6c8b475d20756d9b63342971c586490179"
+  },
+  "frozen_mpm_fill_config": {
+    "path": "configs/v4/formal-scene-mpm-fill-v1.json",
+    "sha256": "4abd45d7022089fec635d6448a1b32c67fc38dbf6db5a5d60b783b46bf728f15"
+  },
+  "output_layout": {
+    "model": "actual-n-scene.xml",
+    "model_manifest": "actual-n-model-manifest.json",
+    "mpm_fill_directory": "mpm-fill",
+    "bundle_report": "geometry-bundle-report.json"
+  },
+  "scope": {
+    "atomic_geometry_bundle": true,
+    "physics_step": false,
+    "mpm_or_gpu_run": false,
+    "settling": false,
+    "formal_scene_qualified": false,
+    "physics_qualified": false,
+    "training": false
+  }
+}

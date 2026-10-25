@@ -1,0 +1,85 @@
+{
+  "schema": "excavation_mixed_material_r3_c_config_v1",
+  "status": "r3_c_two_rock_small_fixture_bridge_candidate",
+  "frozen_inputs": {
+    "r3_b_config_path": "configs/v4/mixed-material-r3-b.json",
+    "r3_b_config_sha256": "2e8b3296a5574a5a1156dee3871ad293b80b16e119492d4eb0c6e2d25c8eb944",
+    "r3_b_bridge_generator_path": "src/v4/build_mixed_coupled_bridge_r3_b.py",
+    "r3_b_bridge_generator_sha256": "dd497ce74467a95f109a1549dbc568703328d6b6490771771c50cf338ff7a635",
+    "r3_b_report_path": "reports/v4/mixed-material-r3-b-2026-09-20-v1/report.json",
+    "r3_b_report_sha256": "d40c31f994f89311b5555e46f8a13481feda49286df826391d0a0ffc0e424ee2",
+    "r1_config_path": "configs/v4/mixed-material-r1.json",
+    "r1_config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+    "mechanism_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+    "mechanism_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+    "rock_asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+    "rock_asset_sha256": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+    "rock_equivalent_diameter_m": 0.12,
+    "rock_density_kg_m3": 2600.0
+  },
+  "bridge": {
+    "ready_schema": "excavation_mixed_coupled_bridge_r3_c_v1",
+    "state_schema": "excavation_mixed_coupled_bridge_r3_c_state_v1",
+    "required_rock_count": 2,
+    "allowed_external_wrench_bodies": [
+      "bucket",
+      "r1-rock-000",
+      "r1-rock-001"
+    ],
+    "external_wrench_frame": "world",
+    "bucket_torque_reference": "bucket_origin_at_mujoco_interval_start_fixed_for_interval",
+    "rock_torque_reference": "corresponding_rock_origin_at_previous_mpm_interval_end",
+    "coupling_schedule": "previous_mpm_interval_per_body_wrenches_applied_to_next_mujoco_interval"
+  },
+  "two_rock_fixture": {
+    "scenario_name": "r3_c_two_rock_bucket_push",
+    "duration_s": 1.0,
+    "command": [0.06, 0.0, 0.0, 0.0],
+    "rocks": [
+      {
+        "rock_id": "r1-rock-000",
+        "prototype_id": "angular_octa",
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "equivalent_diameter_m": 0.12,
+        "density_kg_m3": 2600.0,
+        "initial_position_world_m": [5.133735402304274, 0.46, 2.955],
+        "initial_orientation_quaternion_wxyz": [1.0, 0.0, 0.0, 0.0]
+      },
+      {
+        "rock_id": "r1-rock-001",
+        "prototype_id": "angular_octa",
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "equivalent_diameter_m": 0.12,
+        "density_kg_m3": 2600.0,
+        "initial_position_world_m": [5.133735402304274, 0.60, 2.955],
+        "initial_orientation_quaternion_wxyz": [
+          0.9238795325112867,
+          0.22094238269039457,
+          0.22094238269039457,
+          0.22094238269039457
+        ]
+      }
+    ],
+    "fixture_source": "frozen_r1_bucket_push_support_fixture",
+    "minimum_initial_center_separation_m": 0.14
+  },
+  "first_gate": {
+    "model_generation": true,
+    "bridge_generation": true,
+    "bridge_compile": true,
+    "time_zero_protocol": true,
+    "gpu_mpm_step": false,
+    "physics_qualified": false,
+    "training_qualified": false
+  },
+  "scope": {
+    "exactly_two_rocks": true,
+    "small_fixture_only": true,
+    "multi_rock_mpm_physics": false,
+    "official_envelope": false,
+    "material_calibration": false,
+    "complete_in_process_reset": false,
+    "training": false,
+    "frozen_r1_r2_r3_a_r3_b_modified": false
+  }
+}

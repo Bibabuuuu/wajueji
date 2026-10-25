@@ -1,0 +1,736 @@
+{
+  "backend": {
+    "device_requested": "cuda:0",
+    "device_resolved": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "checks": {
+    "bucket_mpm_contact_nonzero": false,
+    "bucket_mpm_wrench_nonzero": false,
+    "bucket_rigid_contact_nonzero": false,
+    "bucket_rigid_wrench_nonzero": false,
+    "bucket_total_wrench_nonzero": false,
+    "complete_reset": true,
+    "control_finite": true,
+    "coupled_finite": true,
+    "deterministic_repeat": true,
+    "feedback_changes_mechanism": false,
+    "force_partition_closed": true,
+    "matrix_target_mass_matched": true,
+    "repeat_finite": true,
+    "torque_partition_closed": true
+  },
+  "comparison": {
+    "deterministic_repeat": true,
+    "maximum_final_mechanism_qpos_feedback_difference_m": 0.0
+  },
+  "contact_ownership": {
+    "duplicate_contact_class_count": 0,
+    "mujoco": [
+      "bucket-rigid-rock",
+      "rigid-rock-support-fixture"
+    ],
+    "newton_mpm": [
+      "bucket-matrix",
+      "rigid-rock-matrix",
+      "matrix-support-fixture"
+    ]
+  },
+  "episodes": {
+    "coupled_first": {
+      "bucket_mpm_contact_frames": 0,
+      "bucket_mpm_contact_samples": 0,
+      "bucket_rigid_contact_substeps": 0,
+      "feedback_enabled": true,
+      "final_mechanism_qpos": [
+        -1.6224015521828456e-08,
+        1.2222710692979516e-08,
+        0.03999891040558375,
+        0.9999999999998188,
+        3.1802003375453123e-07,
+        -2.6448104509281086e-07,
+        -4.3834959202363837e-07,
+        0.00020518282748806566,
+        3.76100163281314e-05,
+        0.5151854017912939,
+        4.324065400319125e-05,
+        7.953511185388444e-06,
+        0.5250664316576354,
+        -7.250486953071242e-05,
+        1.923516278903224e-05,
+        0.7032047923511072,
+        7.318684284216089e-05,
+        0.00015038255400186235,
+        -0.00011653266137880926
+      ],
+      "frames": 2,
+      "matrix": {
+        "finite": true,
+        "maximum_particle_speed_m_s": 0.01748528704047203,
+        "minimum_particle_z_m": 2.8899941444396973,
+        "particle_count": 1071,
+        "particle_q_sha256": "ee51c0c347ee029330dd6c2f63c4331b187450c499b75c5494671131bf6061d2",
+        "particle_qd_sha256": "17a97d6be808eaa9394d45761fefee4647980ae905bc653d85e961605df2ef71",
+        "target_mass_error_kg": 4.0143727986219346e-07,
+        "target_mass_kg": 20.040000000000003,
+        "total_mass_kg": 20.040000401437283
+      },
+      "maximum_force_partition_residual_n": 0.0,
+      "maximum_torque_partition_residual_nm": 0.0,
+      "peaks": {
+        "bucket_mpm_force_n": 0.0,
+        "bucket_rigid_force_n": 0.0,
+        "bucket_total_force_n": 0.0,
+        "bucket_total_torque_nm": 0.0
+      },
+      "reset_audit": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_mpm_contact_frames": 1,
+      "simulated_time_s": 0.016666666666666666,
+      "trace": [
+        [
+          1,
+          0.008333333333333333,
+          -1.7968373837567925e-08,
+          1.143792248076669e-08,
+          0.03999891544462485,
+          0.9999999999998144,
+          3.1928803676043925e-07,
+          -2.811974740055151e-07,
+          -4.36424707394288e-07,
+          5.078007881247053e-05,
+          1.4210055300614542e-05,
+          0.5151923987652797,
+          1.6344219293929923e-05,
+          3.4768139843561475e-06,
+          0.5250893814842934,
+          -3.034807297528623e-05,
+          8.894155607663736e-06,
+          0.7031859459140424,
+          2.8757401389562697e-05,
+          7.160571021351056e-05,
+          -5.7430412690801784e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0,
+          0
+        ],
+        [
+          2,
+          0.016666666666666653,
+          -1.6224015521828456e-08,
+          1.2222710692979516e-08,
+          0.03999891040558375,
+          0.9999999999998188,
+          3.1802003375453123e-07,
+          -2.6448104509281086e-07,
+          -4.3834959202363837e-07,
+          0.00020518282748806566,
+          3.76100163281314e-05,
+          0.5151854017912939,
+          4.324065400319125e-05,
+          7.953511185388444e-06,
+          0.5250664316576354,
+          -7.250486953071242e-05,
+          1.923516278903224e-05,
+          0.7032047923511072,
+          7.318684284216089e-05,
+          0.00015038255400186235,
+          -0.00011653266137880926,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0,
+          1
+        ]
+      ],
+      "trace_sha256": "93021e9d90758b5f5d742cac082277b0041247502f976435ca71826a33248ed1"
+    },
+    "coupled_repeat": {
+      "bucket_mpm_contact_frames": 0,
+      "bucket_mpm_contact_samples": 0,
+      "bucket_rigid_contact_substeps": 0,
+      "feedback_enabled": true,
+      "final_mechanism_qpos": [
+        -1.6224015521828456e-08,
+        1.2222710692979516e-08,
+        0.03999891040558375,
+        0.9999999999998188,
+        3.1802003375453123e-07,
+        -2.6448104509281086e-07,
+        -4.3834959202363837e-07,
+        0.00020518282748806566,
+        3.76100163281314e-05,
+        0.5151854017912939,
+        4.324065400319125e-05,
+        7.953511185388444e-06,
+        0.5250664316576354,
+        -7.250486953071242e-05,
+        1.923516278903224e-05,
+        0.7032047923511072,
+        7.318684284216089e-05,
+        0.00015038255400186235,
+        -0.00011653266137880926
+      ],
+      "frames": 2,
+      "matrix": {
+        "finite": true,
+        "maximum_particle_speed_m_s": 0.01748528704047203,
+        "minimum_particle_z_m": 2.8899941444396973,
+        "particle_count": 1071,
+        "particle_q_sha256": "ee51c0c347ee029330dd6c2f63c4331b187450c499b75c5494671131bf6061d2",
+        "particle_qd_sha256": "17a97d6be808eaa9394d45761fefee4647980ae905bc653d85e961605df2ef71",
+        "target_mass_error_kg": 4.0143727986219346e-07,
+        "target_mass_kg": 20.040000000000003,
+        "total_mass_kg": 20.040000401437283
+      },
+      "maximum_force_partition_residual_n": 0.0,
+      "maximum_torque_partition_residual_nm": 0.0,
+      "peaks": {
+        "bucket_mpm_force_n": 0.0,
+        "bucket_rigid_force_n": 0.0,
+        "bucket_total_force_n": 0.0,
+        "bucket_total_torque_nm": 0.0
+      },
+      "reset_audit": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_mpm_contact_frames": 1,
+      "simulated_time_s": 0.016666666666666666,
+      "trace": [
+        [
+          1,
+          0.008333333333333333,
+          -1.7968373837567925e-08,
+          1.143792248076669e-08,
+          0.03999891544462485,
+          0.9999999999998144,
+          3.1928803676043925e-07,
+          -2.811974740055151e-07,
+          -4.36424707394288e-07,
+          5.078007881247053e-05,
+          1.4210055300614542e-05,
+          0.5151923987652797,
+          1.6344219293929923e-05,
+          3.4768139843561475e-06,
+          0.5250893814842934,
+          -3.034807297528623e-05,
+          8.894155607663736e-06,
+          0.7031859459140424,
+          2.8757401389562697e-05,
+          7.160571021351056e-05,
+          -5.7430412690801784e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0,
+          0
+        ],
+        [
+          2,
+          0.016666666666666653,
+          -1.6224015521828456e-08,
+          1.2222710692979516e-08,
+          0.03999891040558375,
+          0.9999999999998188,
+          3.1802003375453123e-07,
+          -2.6448104509281086e-07,
+          -4.3834959202363837e-07,
+          0.00020518282748806566,
+          3.76100163281314e-05,
+          0.5151854017912939,
+          4.324065400319125e-05,
+          7.953511185388444e-06,
+          0.5250664316576354,
+          -7.250486953071242e-05,
+          1.923516278903224e-05,
+          0.7032047923511072,
+          7.318684284216089e-05,
+          0.00015038255400186235,
+          -0.00011653266137880926,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0,
+          1
+        ]
+      ],
+      "trace_sha256": "93021e9d90758b5f5d742cac082277b0041247502f976435ca71826a33248ed1"
+    },
+    "no_mpm_feedback": {
+      "bucket_mpm_contact_frames": 0,
+      "bucket_mpm_contact_samples": 0,
+      "bucket_rigid_contact_substeps": 0,
+      "feedback_enabled": false,
+      "final_mechanism_qpos": [
+        -1.6224015521828456e-08,
+        1.2222710692979516e-08,
+        0.03999891040558375,
+        0.9999999999998188,
+        3.1802003375453123e-07,
+        -2.6448104509281086e-07,
+        -4.3834959202363837e-07,
+        0.00020518282748806566,
+        3.76100163281314e-05,
+        0.5151854017912939,
+        4.324065400319125e-05,
+        7.953511185388444e-06,
+        0.5250664316576354,
+        -7.250486953071242e-05,
+        1.923516278903224e-05,
+        0.7032047923511072,
+        7.318684284216089e-05,
+        0.00015038255400186235,
+        -0.00011653266137880926
+      ],
+      "frames": 2,
+      "matrix": {
+        "finite": true,
+        "maximum_particle_speed_m_s": 0.01748528704047203,
+        "minimum_particle_z_m": 2.8899941444396973,
+        "particle_count": 1071,
+        "particle_q_sha256": "ee51c0c347ee029330dd6c2f63c4331b187450c499b75c5494671131bf6061d2",
+        "particle_qd_sha256": "17a97d6be808eaa9394d45761fefee4647980ae905bc653d85e961605df2ef71",
+        "target_mass_error_kg": 4.0143727986219346e-07,
+        "target_mass_kg": 20.040000000000003,
+        "total_mass_kg": 20.040000401437283
+      },
+      "maximum_force_partition_residual_n": 0.0,
+      "maximum_torque_partition_residual_nm": 0.0,
+      "peaks": {
+        "bucket_mpm_force_n": 0.0,
+        "bucket_rigid_force_n": 0.0,
+        "bucket_total_force_n": 0.0,
+        "bucket_total_torque_nm": 0.0
+      },
+      "reset_audit": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "rock_mpm_contact_frames": 1,
+      "simulated_time_s": 0.016666666666666666,
+      "trace": [
+        [
+          1,
+          0.008333333333333333,
+          -1.7968373837567925e-08,
+          1.143792248076669e-08,
+          0.03999891544462485,
+          0.9999999999998144,
+          3.1928803676043925e-07,
+          -2.811974740055151e-07,
+          -4.36424707394288e-07,
+          5.078007881247053e-05,
+          1.4210055300614542e-05,
+          0.5151923987652797,
+          1.6344219293929923e-05,
+          3.4768139843561475e-06,
+          0.5250893814842934,
+          -3.034807297528623e-05,
+          8.894155607663736e-06,
+          0.7031859459140424,
+          2.8757401389562697e-05,
+          7.160571021351056e-05,
+          -5.7430412690801784e-05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0,
+          0
+        ],
+        [
+          2,
+          0.016666666666666653,
+          -1.6224015521828456e-08,
+          1.2222710692979516e-08,
+          0.03999891040558375,
+          0.9999999999998188,
+          3.1802003375453123e-07,
+          -2.6448104509281086e-07,
+          -4.3834959202363837e-07,
+          0.00020518282748806566,
+          3.76100163281314e-05,
+          0.5151854017912939,
+          4.324065400319125e-05,
+          7.953511185388444e-06,
+          0.5250664316576354,
+          -7.250486953071242e-05,
+          1.923516278903224e-05,
+          0.7032047923511072,
+          7.318684284216089e-05,
+          0.00015038255400186235,
+          -0.00011653266137880926,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0,
+          1
+        ]
+      ],
+      "trace_sha256": "93021e9d90758b5f5d742cac082277b0041247502f976435ca71826a33248ed1"
+    }
+  },
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/mixed-material-r3-b-il5q72k_/bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/mixed-material-r3-b-il5q72k_/bridge"
+    ],
+    "runner_sha256": "7658037af0fb91df4cd4cac164b3eb16c757c4c91cbc8f0dd191c58e5b541494",
+    "total_wall_seconds": 4.93140632500581
+  },
+  "inputs": {
+    "bridge_source_manifest": {
+      "force_application": "bucket_origin_at_mujoco_interval_start_fixed_for_interval",
+      "frozen_r1_r2_or_r3_a_modified": false,
+      "generated_source_sha256": "8e6e4e34a827c7b6a5f1c9cdf225be4777e19849c89e73252e033d124379f7d8",
+      "r3_a_config_path": "configs/v4/mixed-material-r3-a.json",
+      "r3_a_config_sha256": "cbcdf89e0ffbfc3d222188684b2cc39e4e75b3e8a82889d3e44ac400af8fbbf9",
+      "r3_a_generated_source_sha256": "9c7f30be4c6dd3aa46dfa3cd7376840f5391c00f8fb91fc27b2fe59bc5d64f90",
+      "r3_a_manifest": {
+        "allowed_external_wrench_bodies": [
+          "bucket",
+          "r1-rock-000"
+        ],
+        "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+        "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+        "frozen_r1_source_modified": false,
+        "maximum_external_wrench_count": 2,
+        "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+        "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_a_v1",
+        "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+        "status": "r3_a_bridge_source_generated"
+      },
+      "ready_schema": "excavation_mixed_coupled_bridge_r3_b_v1",
+      "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_b_v1",
+      "state_schema": "excavation_mixed_coupled_bridge_r3_b_state_v1",
+      "status": "r3_b_bridge_source_generated",
+      "torque_reference": "bucket_origin_at_mujoco_interval_start_fixed_for_interval"
+    },
+    "config_sha256": "5e787c0a487d20ce0b1bd150925a5cb8cc0db17ecf25d93426caa7a47c718652",
+    "derived_model_sha256": "fc493f522cc36f6e2f66784aba531043b478a825eaad9567a70aadf2b1832bf9",
+    "model_manifest": {
+      "bucket_proxy_geom_count": 18,
+      "candidate_model_sha256": "fc493f522cc36f6e2f66784aba531043b478a825eaad9567a70aadf2b1832bf9",
+      "contact_bits": {
+        "bucket_proxy": 512,
+        "rock": 256,
+        "rock_ground": 1024,
+        "truck_receiver_reserved": 2048
+      },
+      "expected_candidate_contract": {
+        "nplugin": 0,
+        "nq": 26,
+        "nu": 12,
+        "nv": 24,
+        "rock_count": 1
+      },
+      "frozen_source_modified": false,
+      "mouth_center_bucket_m": [
+        0.117559,
+        0.0,
+        -0.590555
+      ],
+      "mouth_inward_direction_bucket": [
+        0.9762252567359343,
+        0.0,
+        0.21675850181909675
+      ],
+      "rock": {
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "density_kg_m3": 2600.0,
+        "equivalent_diameter_m": 0.12,
+        "inertia_about_com_kg_m2": [
+          [
+            0.002730036731269096,
+            -0.00013544030291822907,
+            -1.5999552127237756e-05
+          ],
+          [
+            -0.00013544030291822907,
+            0.004496298940992804,
+            -1.4905357373961838e-05
+          ],
+          [
+            -1.5999552127237756e-05,
+            -1.4905357373961838e-05,
+            0.0051410048828723345
+          ]
+        ],
+        "initial_orientation_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_position_world_m": [
+          5.133735402304274,
+          0.46,
+          2.955
+        ],
+        "mass_kg": 2.3524245790080363,
+        "prototype_id": "angular_octa",
+        "rock_id": "r1-rock-000"
+      },
+      "rock_inertia_about_com_kg_m2": [
+        [
+          0.002730036731269096,
+          -0.00013544030291822907,
+          -1.5999552127237756e-05
+        ],
+        [
+          -0.00013544030291822907,
+          0.004496298940992804,
+          -1.4905357373961838e-05
+        ],
+        [
+          -1.5999552127237756e-05,
+          -1.4905357373961838e-05,
+          0.0051410048828723345
+        ]
+      ],
+      "rock_mass_kg": 2.3524245790080363,
+      "rocks": [
+        {
+          "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "initial_orientation_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "initial_position_world_m": [
+            5.133735402304274,
+            0.46,
+            2.955
+          ],
+          "mass_kg": 2.3524245790080363,
+          "prototype_id": "angular_octa",
+          "rock_id": "r1-rock-000"
+        }
+      ],
+      "schema": "excavation_mixed_rigid_mechanism_candidate_v1",
+      "scope_limit": "model assembly candidate only until a separate bridge loads and steps it with classified contacts and state logging",
+      "source_bucket_visual_collision_disabled": true,
+      "source_model_contract": {
+        "actuator_count": 12,
+        "mechanism_nq": 19,
+        "mechanism_nv": 18,
+        "plugin_count": 0
+      },
+      "source_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+      "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+      "total_rock_mass_kg": 2.3524245790080363,
+      "unit_fixture": {
+        "friction": [
+          0.8,
+          0.005,
+          0.0001
+        ],
+        "half_size_m": [
+          0.6,
+          0.55,
+          0.03
+        ],
+        "name": "r1_ground_push_shelf",
+        "position_world_m": [
+          5.13,
+          0.65,
+          2.86
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 0.0,
+        "type": "box"
+      },
+      "unit_fixtures": [
+        {
+          "friction": [
+            0.8,
+            0.005,
+            0.0001
+          ],
+          "half_size_m": [
+            0.6,
+            0.55,
+            0.03
+          ],
+          "name": "r1_ground_push_shelf",
+          "position_world_m": [
+            5.13,
+            0.65,
+            2.86
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "slope_degrees": 0.0,
+          "type": "box"
+        }
+      ],
+      "unit_scenario": "bucket_push"
+    }
+  },
+  "physics_qualified": false,
+  "schema": "excavation_mixed_material_r3_b_probe_report_v1",
+  "scope_limit": "one rock and a small elevated MPM patch in the frozen R1 bucket-push fixture; not multi-rock, not the official envelope, not a calibrated material, not complete excavation, and not training-qualified",
+  "status": "r3_b_bucket_force_partition_probe_failed"
+}

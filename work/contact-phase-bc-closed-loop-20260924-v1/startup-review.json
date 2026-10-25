@@ -1,0 +1,104 @@
+{
+  "run": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120",
+  "frames": 120,
+  "passed": true,
+  "checks": {
+    "completed": true,
+    "zero_step": true,
+    "exact_restore": true,
+    "frames": true,
+    "actions_match": true,
+    "state_chain": true,
+    "startup_identity": true,
+    "causal_terrain": true,
+    "terrain_anchors": true,
+    "previous_action": true,
+    "hard_guards": true,
+    "material": true,
+    "sweep": true,
+    "ground": true,
+    "finite": true,
+    "particles": true,
+    "rocks": true,
+    "final_state": true,
+    "elapsed": true,
+    "source": true,
+    "policy": true,
+    "lineage": true,
+    "inventory": true,
+    "phase_frames": true,
+    "phase_before_matches_action": true,
+    "phase_next_decision": true,
+    "evidence_previous": true,
+    "no_unresolved": true,
+    "phase_protocol": true,
+    "code_run_contact_phase_bc_probe.py": true,
+    "code_contact_phase_bc_inference.py": true,
+    "code_contact_phase_live.py": true,
+    "code_contact_phase_bc_policy.py": true,
+    "code_contact_bc_inference.py": true,
+    "code_contact_bc_policy.py": true,
+    "code_contact_bc_data.py": true,
+    "code_view_contact_bc_probe.py": true,
+    "code_contact_bc_ground_guard.py": true,
+    "code_contact_phase_candidate.py": true,
+    "code_contact_phase_completion.py": true,
+    "code_contact_phase_geometry.py": true,
+    "runtime_layered_47_cycle_bridge.py": true,
+    "runtime_layered_47_cycle_runtime.py": true,
+    "runtime_layered_47_cycle_checkpoint.py": true,
+    "runtime_bucket_active_curl_candidate.h": true,
+    "runtime_bucket_integral_candidate.h": true,
+    "runtime_soil_hencky_update_candidate.py": true,
+    "runtime_moving_bucket_sweep_candidate.py": true,
+    "runtime_moving_bucket_sweep_runtime.py": true,
+    "runtime_mpm_static_contact_ownership.py": true,
+    "runtime_soil_passive_jp_history.py": true
+  },
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/actions.ndjson",
+      "sha256": "7d4a37d33bc210be99fdacb157c6a2f67c42f76a5d7227ca0438d040b0569c74"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/phase-trace.ndjson",
+      "sha256": "9df5f989bcf8412e3e5444d4ad8a76ed7770458f05cb65a7076664823e0611f0"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/terrain.ndjson",
+      "sha256": "62c78b0fe48bf4cc8275f64b6a0c112174b21e41b280109fbf55ec27d871c535"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/physics/frames.ndjson",
+      "sha256": "2c5988333cc6a98d4d84ef3a99c993a34d39b6ed5e508905ff5db25e901d8f25"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/ground-guard.ndjson",
+      "sha256": "509640bdf15ef0ceaca3e92dd8b39d64360a13d9452f9c1c030b73752a8f6b4b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/final.npz",
+      "sha256": "202c606898f125cb6f2c9c1c545b0ba7d4616d1cc92a3f7fbd8f448186015171"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/final.npz.json",
+      "sha256": "3c176254ffca157f56141d32fe9632ab055cb194fe4e66a608f80d4d4790c749"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-probe-20260924-v1/startup120/report.json",
+      "sha256": "932aa2c21006c590fc78cc03265f12b7b7703a3887d632186e20c464d5836ef5"
+    }
+  ],
+  "qualification": "phase-conditioned startup only, not excavation success",
+  "source_unchanged": true
+}

@@ -1,0 +1,229 @@
+{
+  "status": "behavior_failed",
+  "evidence_checks": {
+    "frame_count": true,
+    "frames": true,
+    "prefix": true,
+    "exact_restore": true,
+    "actions_match": true,
+    "state_chain": true,
+    "legacy_hard_guards": true,
+    "material": true,
+    "sweep": true,
+    "ground_stopped_at_first_violation": true,
+    "sampled_no_ground_penetration": true,
+    "failure_saved": true,
+    "finite_numeric_snapshot": true,
+    "source": true,
+    "policy": true,
+    "display": true
+  },
+  "evidence_checks_passed": true,
+  "frames": 330,
+  "minimum_bucket_z_m": 0.0014182709446755037,
+  "last_command": [
+    0.09854275733232498,
+    -0.8847691416740417,
+    0.8829602599143982,
+    -0.2713302671909332
+  ],
+  "command_windows": [
+    {
+      "frames": [
+        1,
+        60
+      ],
+      "candidate": [
+        0.08765775083253781,
+        -0.8767211820930243,
+        0.4928141822902641,
+        -0.2283287818233172
+      ],
+      "old": [
+        0.08706002741819248,
+        -0.8225993985310197,
+        0.5391136185566817,
+        -0.2925023001773904
+      ],
+      "human": [
+        -0.014081996434937617,
+        -0.8342543077837191,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        61,
+        120
+      ],
+      "candidate": [
+        0.026661834151794513,
+        -0.923610175649325,
+        0.7022191514571507,
+        -0.2845631202061971
+      ],
+      "old": [
+        -0.026743537792935968,
+        -0.9206264505783717,
+        0.7085552622874578,
+        -0.46243060678243636
+      ],
+      "human": [
+        -0.0196078431372549,
+        -0.9999999999999992,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        121,
+        180
+      ],
+      "candidate": [
+        0.007331871213682462,
+        -0.9150690078735352,
+        0.7287024656931559,
+        -0.29259049942096077
+      ],
+      "old": [
+        -0.036543103369573754,
+        -0.9153040488560994,
+        0.7096973200639088,
+        -0.4487391566236814
+      ],
+      "human": [
+        -0.01797385620915033,
+        -0.9999999999999992,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        181,
+        240
+      ],
+      "candidate": [
+        0.006946997572473871,
+        -0.8964466532071431,
+        0.7537075132131577,
+        -0.3045547778407733
+      ],
+      "old": [
+        -0.05768552167961995,
+        -0.90433575908343,
+        0.7250931163628896,
+        -0.42304855982462564
+      ],
+      "human": [
+        0.0,
+        -0.9999999999999992,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        241,
+        300
+      ],
+      "candidate": [
+        -0.021000404811153808,
+        -0.879064358274142,
+        0.7589758515357972,
+        -0.30551225890715916
+      ],
+      "old": [
+        -0.07702502670387427,
+        -0.8892870247364044,
+        0.7480735063552857,
+        -0.41204946438471474
+      ],
+      "human": [
+        0.0,
+        -0.9999999999999992,
+        0.056714200831847895,
+        0.0
+      ]
+    },
+    {
+      "frames": [
+        311,
+        330
+      ],
+      "candidate": [
+        -0.011698606132995337,
+        -0.8446692228317261,
+        0.775777718424797,
+        -0.2888466790318489
+      ],
+      "old": [
+        -0.08834410384297371,
+        -0.8747210472822189,
+        0.7263787269592286,
+        -0.3718495279550552
+      ],
+      "human": [
+        0.0,
+        0.0,
+        0.9210338680926918,
+        0.08190730837789661
+      ]
+    }
+  ],
+  "wall_seconds": 62.219934421998914,
+  "simulation_seconds": 5.5,
+  "old_validation_mae": 0.10583787404564214,
+  "candidate_validation_mae": 0.07364413482794527,
+  "old_teacher_forced_release_mean": -0.36820805072784424,
+  "candidate_teacher_forced_release_mean": -0.24644233286380768,
+  "failure": "RuntimeError(\"bc_bucket_ground_clearance:{'frame': 330, 'stage': 'after_step', 'minimum_bucket_z_m': 0.0014182709446755037, 'ground_z_m': 0.0, 'margin_m': 0.005, 'clearance_m': 0.0014182709446755037, 'safe': False}\")",
+  "scope": "Actual policy behavior failed; checks qualify evidence and safety stop only. No autonomous scoop, fill, lift, or G7 qualification.",
+  "model_selection": "Adaptive development comparison of five valid fixed-budget candidates; selected using already-viewed validation errors, not a sealed evaluation. One additional full-command-mask prototype rejected before evaluation for train/inference mismatch.",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+      "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-neutral-20260924-v1/pilot.pt",
+      "sha256": "8ada30e759d52874e5a96eb7aa256ecf0f0f7793182c20508a4a78dbe5ace51b"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/actions.ndjson",
+      "sha256": "826382947f40803348a671eba6d40421f4841347ec048a09a823e7e82947da76"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/terrain.ndjson",
+      "sha256": "55085f35984c288b0eb20750de10f5bc636e4d2a50b4231b3b264c09e114fc21"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/physics/frames.ndjson",
+      "sha256": "fbaa99ac0eefe768d8da0a468c980e9eaa563bb0e53d8270944f88c7fe307bfa"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/ground-guard.ndjson",
+      "sha256": "99df99097f1b489c0786860c71d3440b8b4dcc939ab2c4158f3b2c4e2f693e71"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/physics/failure.npz",
+      "sha256": "c4c804ec05e4aa5b387d8c7a882aa13861f000f14491419a5cd55391d3ad6ef4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/physics/failure.npz.json",
+      "sha256": "36db09fbd01f7db26804a6d50f825fae5cfbb15807ce23e35d90b984fee55e23"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/report.json",
+      "sha256": "e4a10146c4806569f5a2cbd1299ca346bf59912d95c74eff19b9ca131a3f0e30"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-bc-repair-probe-20260924-v1/contact600/display/reconstruction.json",
+      "sha256": "18efea1dc2db37b0fc3a429166fb9c8eeadee3a7a05eef817e09e5fdcf3b0007"
+    }
+  ]
+}

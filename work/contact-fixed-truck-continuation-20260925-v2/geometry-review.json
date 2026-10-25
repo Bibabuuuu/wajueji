@@ -1,0 +1,138 @@
+{
+  "status": "updated_scene_route_geometry_passed",
+  "physics_steps_added": 0,
+  "sample_count": 7640,
+  "samples_per_policy_frame": 2,
+  "initial": {
+    "bucket_truck_m": 1.269551027544106,
+    "bucket_terrain_m": 1.1722246699866332,
+    "mechanism_truck_m": 0.8962622387241728,
+    "mechanism_ground_m": 0.9114560073614978,
+    "closure_m": 7.178836317622839e-05
+  },
+  "observation": {
+    "detached_payload_particles": 25372,
+    "detached_dynamic_particles": 27508,
+    "detached_rock_ids": [
+      "lower-001",
+      "lower-008",
+      "lower_middle-004",
+      "lower_middle-007",
+      "middle-002",
+      "middle-008",
+      "upper-000",
+      "upper-003",
+      "upper-006",
+      "upper-007",
+      "upper-008"
+    ],
+    "support_margin_m": 0.15,
+    "rock_to_stationary_soil_aabb_gap_m": {
+      "lower-000": 0.0,
+      "lower-001": 1.7926670871807049,
+      "lower-002": 0.0,
+      "lower-003": 0.0,
+      "lower-004": 0.0,
+      "lower-005": 0.0,
+      "lower-006": 0.0,
+      "lower-007": 0.0,
+      "lower-008": 1.461372378075802,
+      "lower_middle-000": 0.0,
+      "lower_middle-001": 0.0,
+      "lower_middle-002": 0.0,
+      "lower_middle-003": 0.0,
+      "lower_middle-004": 1.4054773911038292,
+      "lower_middle-005": 0.0,
+      "lower_middle-006": 0.0,
+      "lower_middle-007": 1.3679799765404554,
+      "lower_middle-008": 0.0,
+      "lower_middle-009": 0.0,
+      "lower_middle-010": 0.0,
+      "middle-000": 0.0,
+      "middle-001": 0.0,
+      "middle-002": 1.6970400306449809,
+      "middle-003": 0.0,
+      "middle-004": 0.0,
+      "middle-005": 0.0,
+      "middle-006": 0.0,
+      "middle-007": 0.0,
+      "middle-008": 1.1717524124745466,
+      "middle-009": 0.0,
+      "middle-010": 0.0,
+      "middle-011": 0.0,
+      "middle-012": 0.0,
+      "upper-000": 1.251369613692958,
+      "upper-001": 0.0,
+      "upper-002": 0.0,
+      "upper-003": 1.2604151102752308,
+      "upper-004": 0.22320791482977603,
+      "upper-005": 0.0,
+      "upper-006": 1.7350789979439216,
+      "upper-007": 1.1994750044890639,
+      "upper-008": 1.1739486460277753,
+      "upper-009": 0.0,
+      "upper-010": 0.0,
+      "upper-011": 0.0,
+      "upper-012": 0.0,
+      "upper-013": 0.0
+    },
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "Ground-connected stock; all detached soil/rocks remain in physical collision solving"
+  },
+  "stages": [
+    {
+      "name": "ALIGN",
+      "minimum": {
+        "bucket_truck_m": 0.051580909985209034,
+        "bucket_terrain_m": 1.1747893474455644,
+        "mechanism_truck_m": 0.026042183498745763,
+        "mechanism_ground_m": 0.9113976985929183,
+        "closure_m": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "DUMP",
+      "minimum": {
+        "bucket_truck_m": 0.5993174951503936,
+        "bucket_terrain_m": 2.560598401021676,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9113977600917971,
+        "closure_m": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "CLEAR_TRUCK",
+      "minimum": {
+        "bucket_truck_m": 0.6536203956718492,
+        "bucket_terrain_m": 2.779258568707534,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9129198403174394,
+        "closure_m": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "RETURN_HIGH",
+      "minimum": {
+        "bucket_truck_m": 0.2945895177706614,
+        "bucket_terrain_m": 1.2252623319168672,
+        "mechanism_truck_m": 0.02,
+        "mechanism_ground_m": 0.9129198487098985,
+        "closure_m": 4.440892098500626e-15
+      }
+    }
+  ],
+  "wall_seconds": 84.10131866499432,
+  "scope": "Frozen reference endpoints and midpoints; no new physical outcome",
+  "inputs": {
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz": "09e4bcb46872fd10d47d0cbb92d0d2b4cbdb7eb5b83191374266675a1397946a",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v2/physical/recovery.npz.json": "30ed76652a7826e1129a8234a96a58d309cf5f9168bf7133d931e95609f570e5",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/observation.py": "3bd28a1577bb9888bc80185db54b34a0bbcc1016bae20268d71a6b446bdd35cb",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/runtime.py": "c8b29e396e0722e2fa59be349f6bab6e98149b9fdd3700caa3d4ca819d2f8946",
+    "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/check_geometry.py": "7fb5adf07f6b77043a11a70a0b45dbd66bc68c007ea22b776fc9b09d4f77978d",
+    "/home/qunwang/wajueji/work/contact-first-transport-review-20260925-v1/static_rocks.py": "f18086a09ec21a9351ecf53926e762a1b4a6a1e770378e59e950bb61e3af9e1d"
+  },
+  "reuse_scope": "Same source SHA, route and byte-identical observation; control preview changes only rotating closure residual.",
+  "reused_report": "/home/qunwang/wajueji/work/contact-fixed-truck-continuation-20260925-v1/geometry-review.json"
+}

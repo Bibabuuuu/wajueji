@@ -1,0 +1,4573 @@
+{
+  "backend": {
+    "device_requested": "cuda:0",
+    "device_resolved": "cuda:0",
+    "newton": "1.5.1",
+    "numpy": "2.5.3",
+    "python": "3.12.3",
+    "warp": "1.17.0"
+  },
+  "checks": {
+    "all_episode_health_checks_pass": true,
+    "coarse_reconstructed_repeat_bounded": true,
+    "coarse_repeat_is_byte_exact": true,
+    "dt_refinement_bounded": false,
+    "feedback_changes_mechanism": true,
+    "refined_reconstructed_repeat_bounded": true,
+    "refined_repeat_is_byte_exact": true,
+    "scope_not_overclaimed": true
+  },
+  "comparison": {
+    "coarse_repeat": {
+      "impulse_relative_differences": {
+        "bucket_mpm_ns": 0.0,
+        "bucket_rigid_by_rock_ns.r1-rock-000": 0.0,
+        "bucket_rigid_by_rock_ns.r1-rock-001": 0.0,
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 0.0,
+        "rock_mpm_ns.r1-rock-000": 0.0,
+        "rock_mpm_ns.r1-rock-001": 0.0
+      },
+      "maximum_final_state_difference": 0.0
+    },
+    "dt_refinement": {
+      "acceptance_impulses": [
+        "bucket_mpm_ns",
+        "bucket_total_ns",
+        "rock_mpm_ns.r1-rock-000",
+        "rock_mpm_ns.r1-rock-001"
+      ],
+      "coarse_output_dt_s": 0.008333333333333333,
+      "comparison_basis": "mean_of_two_reconstructed_episodes_per_dt",
+      "impulse_relative_differences": {
+        "bucket_mpm_ns": 0.031598740106454956,
+        "bucket_rigid_by_rock_ns.r1-rock-000": 0.0,
+        "bucket_rigid_by_rock_ns.r1-rock-001": 0.0,
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 0.031598740106454956,
+        "rock_mpm_ns.r1-rock-000": 0.08130847121884535,
+        "rock_mpm_ns.r1-rock-001": 0.062484164074449275
+      },
+      "maximum_final_state_difference": 0.03638036979447731,
+      "mujoco_internal_dt_preserved": true,
+      "refined_output_dt_s": 0.004166666666666667,
+      "rigid_components_are_diagnostic": true
+    },
+    "feedback": {
+      "maximum_final_mechanism_qpos_difference_m": 0.00016811759395565356
+    },
+    "refined_repeat": {
+      "impulse_relative_differences": {
+        "bucket_mpm_ns": 0.0,
+        "bucket_rigid_by_rock_ns.r1-rock-000": 0.0,
+        "bucket_rigid_by_rock_ns.r1-rock-001": 0.0,
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 0.0,
+        "rock_mpm_ns.r1-rock-000": 0.0,
+        "rock_mpm_ns.r1-rock-001": 0.0
+      },
+      "maximum_final_state_difference": 0.0
+    }
+  },
+  "convergence_qualified": false,
+  "episodes": {
+    "coarse_first": {
+      "accumulated_impulse_magnitudes": {
+        "bucket_mpm_ns": 49.40831445289584,
+        "bucket_rigid_by_rock_ns": {
+          "r1-rock-000": 0.0,
+          "r1-rock-001": 0.0
+        },
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 49.40831445289584,
+        "rock_mpm_ns": {
+          "r1-rock-000": 2.252556505488713,
+          "r1-rock-001": 2.3686444989270843
+        }
+      },
+      "collider_ownership": {
+        "active_sample_count": 7589,
+        "bucket_collider_ids": [
+          3
+        ],
+        "bucket_newton_body_index": 2,
+        "collider_body_map": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "mapping_disjoint": true,
+        "nonfinite_sample_count": 0,
+        "rock_id_to_collider_ids": {
+          "r1-rock-000": [
+            1
+          ],
+          "r1-rock-001": [
+            2
+          ]
+        },
+        "rock_id_to_newton_body_index": {
+          "r1-rock-000": 0,
+          "r1-rock-001": 1
+        },
+        "sample_count": 1309680,
+        "static_collider_ids": [
+          0
+        ],
+        "unmapped_active_sample_count": 0
+      },
+      "feedback_enabled": true,
+      "final_mechanism_qpos": [
+        1.0471869930516411e-10,
+        -3.906882854171753e-10,
+        0.039999727212347805,
+        0.9999999999999974,
+        4.906346954734738e-08,
+        -5.2244947457133685e-08,
+        -3.4945330496243906e-09,
+        0.003676649186648235,
+        7.544697083615867e-05,
+        0.5150401812258204,
+        8.672987283094598e-05,
+        1.4380091118500142e-05,
+        0.5250587963812772,
+        -0.00013508614282345483,
+        -2.654743845983389e-05,
+        0.7031255517470406,
+        -0.00011631705754108722,
+        -0.00020138378925387148,
+        0.00015023238370013957
+      ],
+      "final_rock_qpos": {
+        "r1-rock-000": [
+          5.133876905803514,
+          0.47141983080008976,
+          2.9528622185664943,
+          0.9976458298022345,
+          -0.06725524963990381,
+          0.007939356043382861,
+          0.010793345158090172
+        ],
+        "r1-rock-001": [
+          5.133395753517285,
+          0.6152290438575155,
+          2.9473497235801105,
+          0.9235086099634648,
+          0.22659695750154063,
+          0.21959637267101975,
+          0.21808965881977146
+        ]
+      },
+      "frames": 10,
+      "matrix": {
+        "finite": true,
+        "particle_count": 2023,
+        "particle_q_sha256": "c43d4159d45e415cce9deb0b2b5e11dd8d09044a2dbd576ccb2cc5fc799d66cb",
+        "particle_qd_sha256": "8ea8a16c50e253914a4a1b966ee2074eefb8a2b589f2ed20961657fdd303e143",
+        "target_mass_error_kg": -1.8569827133774197e-06,
+        "target_mass_kg": 40.080000000000005,
+        "total_mass_kg": 40.07999814301729
+      },
+      "maximum_applied_wrench_echo_residual": 0.0,
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.664204293067356e-05,
+      "maximum_per_rock_rigid_force_partition_residual_n": 0.0,
+      "maximum_per_rock_rigid_torque_partition_residual_nm": 0.0,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_total_force_partition_residual_n": 0.0,
+      "maximum_total_torque_partition_residual_nm": 0.0,
+      "mpm_contact_frames": {
+        "bucket": 10,
+        "r1-rock-000": 10,
+        "r1-rock-001": 10
+      },
+      "mpm_contact_samples": {
+        "bucket": 1133,
+        "r1-rock-000": 503,
+        "r1-rock-001": 497
+      },
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "qualification_mode": "combined",
+      "simulated_time_s": 0.08333333333333333,
+      "trace": [
+        {
+          "bucket_mpm_force_world_n": [
+            2.0840826774656307,
+            -110.82815510686487,
+            -18.689624893013388
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            2.0840826774656307,
+            -110.82815510686487,
+            -18.689624893013388
+          ],
+          "frame": 1,
+          "ownership": {
+            "active_sample_count": 701,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.16232122929750403,
+              3.9794107634952525,
+              8.616857806036933
+            ],
+            "r1-rock-001": [
+              0.28552643887537077,
+              -0.4449543485997356,
+              7.62965825589739
+            ]
+          },
+          "time_s": 0.008333333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            7.9781755356816575,
+            -339.76534895104123,
+            19.383804500248516
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            7.9781755356816575,
+            -339.76534895104123,
+            19.383804500248516
+          ],
+          "frame": 2,
+          "ownership": {
+            "active_sample_count": 678,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.40886779244986954,
+              12.24437721336232,
+              28.08051786317551
+            ],
+            "r1-rock-001": [
+              0.4362665267166692,
+              -0.15856290194708628,
+              26.72932784908972
+            ]
+          },
+          "time_s": 0.016666666666666653
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.475246212554339,
+            -582.8381944337707,
+            69.32725660848519
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.475246212554339,
+            -582.8381944337707,
+            69.32725660848519
+          ],
+          "frame": 3,
+          "ownership": {
+            "active_sample_count": 661,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.4332561495645288,
+              22.71109676813002,
+              30.24447133204129
+            ],
+            "r1-rock-001": [
+              -0.040481603337338135,
+              2.5905363136446073,
+              35.396111171361106
+            ]
+          },
+          "time_s": 0.02500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            20.209415854849556,
+            -793.2238995328747,
+            108.40505200545886
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            20.209415854849556,
+            -793.2238995328747,
+            108.40505200545886
+          ],
+          "frame": 4,
+          "ownership": {
+            "active_sample_count": 701,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.389360468215164,
+              35.059006862725944,
+              13.461653264551277
+            ],
+            "r1-rock-001": [
+              -0.6264215097805516,
+              11.172726754318237,
+              30.44656823593509
+            ]
+          },
+          "time_s": 0.03333333333333339
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            12.850529948609118,
+            -926.86595853716,
+            138.20621786235733
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            12.850529948609118,
+            -926.86595853716,
+            138.20621786235733
+          ],
+          "frame": 5,
+          "ownership": {
+            "active_sample_count": 709,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.939594576205026,
+              43.069589249768335,
+              0.5237224531300722
+            ],
+            "r1-rock-001": [
+              0.2582151779587403,
+              23.702076451678874,
+              24.562895562879273
+            ]
+          },
+          "time_s": 0.04166666666666664
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.009155867154115,
+            -905.908291053982,
+            150.1459694220149
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.009155867154115,
+            -905.908291053982,
+            150.1459694220149
+          ],
+          "frame": 6,
+          "ownership": {
+            "active_sample_count": 813,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.9427389447375334,
+              39.76409507019077,
+              -7.383619092153904
+            ],
+            "r1-rock-001": [
+              0.9549317292876989,
+              28.247890210596434,
+              23.365306433945022
+            ]
+          },
+          "time_s": 0.049999999999999885
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            18.339272565208375,
+            -775.7381063414505,
+            144.62884708722413
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            18.339272565208375,
+            -775.7381063414505,
+            144.62884708722413
+          ],
+          "frame": 7,
+          "ownership": {
+            "active_sample_count": 822,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.199574407422615,
+              30.798195047810022,
+              -10.043175119240358
+            ],
+            "r1-rock-001": [
+              0.8641228505529812,
+              19.393884760790975,
+              26.700986088401066
+            ]
+          },
+          "time_s": 0.05833333333333313
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            23.00553424740749,
+            -621.0703607503375,
+            132.54970489146467
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            23.00553424740749,
+            -621.0703607503375,
+            132.54970489146467
+          ],
+          "frame": 8,
+          "ownership": {
+            "active_sample_count": 843,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.9617173481284103,
+              19.73097811105416,
+              -5.289452286886541
+            ],
+            "r1-rock-001": [
+              -0.08359649767173151,
+              4.105272425594064,
+              27.024538982805364
+            ]
+          },
+          "time_s": 0.06666666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            28.05874848385784,
+            -482.70408351214036,
+            111.8996521721632
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            28.05874848385784,
+            -482.70408351214036,
+            111.8996521721632
+          ],
+          "frame": 9,
+          "ownership": {
+            "active_sample_count": 830,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.0323471316520485,
+              8.2362295013944,
+              5.83380265111014
+            ],
+            "r1-rock-001": [
+              -0.8990850463813691,
+              -7.693803500160242,
+              23.925327583018326
+            ]
+          },
+          "time_s": 0.07500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            26.473194789616244,
+            -307.0956750637152,
+            44.913778319629515
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            26.473194789616244,
+            -307.0956750637152,
+            44.913778319629515
+          ],
+          "frame": 10,
+          "ownership": {
+            "active_sample_count": 831,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.476407546057502,
+              1.462165488170197,
+              6.199027735366707
+            ],
+            "r1-rock-001": [
+              -1.0911441202787386,
+              -13.632574264950694,
+              21.671491407332724
+            ]
+          },
+          "time_s": 0.08333333333333356
+        }
+      ],
+      "trace_sha256": "319afbacc019a557809ea8df749202050761bc68a530b0799a81494c8a820440"
+    },
+    "coarse_no_feedback": {
+      "accumulated_impulse_magnitudes": {
+        "bucket_mpm_ns": 62.86424386769824,
+        "bucket_rigid_by_rock_ns": {
+          "r1-rock-000": 0.0,
+          "r1-rock-001": 0.0
+        },
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 62.86424386769824,
+        "rock_mpm_ns": {
+          "r1-rock-000": 6.231507165760704,
+          "r1-rock-001": 8.49095547551966
+        }
+      },
+      "collider_ownership": {
+        "active_sample_count": 7370,
+        "bucket_collider_ids": [
+          3
+        ],
+        "bucket_newton_body_index": 2,
+        "collider_body_map": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "mapping_disjoint": true,
+        "nonfinite_sample_count": 0,
+        "rock_id_to_collider_ids": {
+          "r1-rock-000": [
+            1
+          ],
+          "r1-rock-001": [
+            2
+          ]
+        },
+        "rock_id_to_newton_body_index": {
+          "r1-rock-000": 0,
+          "r1-rock-001": 1
+        },
+        "sample_count": 1309680,
+        "static_collider_ids": [
+          0
+        ],
+        "unmapped_active_sample_count": 0
+      },
+      "feedback_enabled": false,
+      "final_mechanism_qpos": [
+        5.537351747656563e-11,
+        -1.1455745238824563e-11,
+        0.03999972718072867,
+        0.9999999999999972,
+        4.691301791608959e-08,
+        -5.2072586731841886e-08,
+        7.821487151790516e-11,
+        0.0038014499480935804,
+        8.491051536044914e-05,
+        0.5150351737194353,
+        9.760852181656007e-05,
+        5.131929565970729e-06,
+        0.5251060094984494,
+        -4.778543827006424e-05,
+        -4.471755878349494e-06,
+        0.7031657963036603,
+        -2.143296296075384e-05,
+        -3.326619529821793e-05,
+        2.4081694600841487e-05
+      ],
+      "final_rock_qpos": {
+        "r1-rock-000": [
+          5.139614432388432,
+          0.4570591524953954,
+          2.950843225413169,
+          0.9985150963366134,
+          0.018444034330461677,
+          0.04933341790127859,
+          -0.013915238541952379
+        ],
+        "r1-rock-001": [
+          5.1338075095299125,
+          0.6023220276873805,
+          2.9266414991798047,
+          0.9271349472126204,
+          0.21553025245135465,
+          0.21884015092971076,
+          0.21465434604584088
+        ]
+      },
+      "frames": 10,
+      "matrix": {
+        "finite": true,
+        "particle_count": 2023,
+        "particle_q_sha256": "809615294b61a4ee737f0fcb126c7c48251f8789d0ca8453b2c55ec2875669b4",
+        "particle_qd_sha256": "2ecc0d6f3228a01f1a64ce4366913f040576c53b866c8d298f5b09ee49d86ee7",
+        "target_mass_error_kg": -1.8569827133774197e-06,
+        "target_mass_kg": 40.080000000000005,
+        "total_mass_kg": 40.07999814301729
+      },
+      "maximum_applied_wrench_echo_residual": 0.0,
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.677030165052099e-05,
+      "maximum_per_rock_rigid_force_partition_residual_n": 0.0,
+      "maximum_per_rock_rigid_torque_partition_residual_nm": 0.0,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_total_force_partition_residual_n": 0.0,
+      "maximum_total_torque_partition_residual_nm": 0.0,
+      "mpm_contact_frames": {
+        "bucket": 10,
+        "r1-rock-000": 10,
+        "r1-rock-001": 10
+      },
+      "mpm_contact_samples": {
+        "bucket": 1154,
+        "r1-rock-000": 514,
+        "r1-rock-001": 470
+      },
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "qualification_mode": "combined",
+      "simulated_time_s": 0.08333333333333333,
+      "trace": [
+        {
+          "bucket_mpm_force_world_n": [
+            2.0840826774656307,
+            -110.82815510686487,
+            -18.689624893013388
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            2.0840826774656307,
+            -110.82815510686487,
+            -18.689624893013388
+          ],
+          "frame": 1,
+          "ownership": {
+            "active_sample_count": 701,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.16232122929750403,
+              3.9794107634952525,
+              8.616857806036933
+            ],
+            "r1-rock-001": [
+              0.28552643887537077,
+              -0.4449543485997356,
+              7.62965825589739
+            ]
+          },
+          "time_s": 0.008333333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            7.871692905609962,
+            -341.19713621985284,
+            19.094645895602298
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            7.871692905609962,
+            -341.19713621985284,
+            19.094645895602298
+          ],
+          "frame": 2,
+          "ownership": {
+            "active_sample_count": 680,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.39435846708428995,
+              12.793807436337271,
+              32.04373700257981
+            ],
+            "r1-rock-001": [
+              0.535972871495181,
+              0.4906827660191327,
+              30.038654842742414
+            ]
+          },
+          "time_s": 0.016666666666666653
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            16.225295952586457,
+            -593.3922750144499,
+            70.69762013725006
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            16.225295952586457,
+            -593.3922750144499,
+            70.69762013725006
+          ],
+          "frame": 3,
+          "ownership": {
+            "active_sample_count": 665,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.772585322320573,
+              28.237452871489165,
+              38.174298009814855
+            ],
+            "r1-rock-001": [
+              0.9357693107677771,
+              3.1128686359453037,
+              52.69848352421257
+            ]
+          },
+          "time_s": 0.02500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            24.033911574482914,
+            -828.3473708390258,
+            116.18724068515934
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            24.033911574482914,
+            -828.3473708390258,
+            116.18724068515934
+          ],
+          "frame": 4,
+          "ownership": {
+            "active_sample_count": 693,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -11.726271845787416,
+              50.994821738837274,
+              20.017376038196996
+            ],
+            "r1-rock-001": [
+              1.7654195175522605,
+              11.37502336235724,
+              74.14629078594649
+            ]
+          },
+          "time_s": 0.03333333333333339
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            20.113809470502254,
+            -1006.7075478063308,
+            157.12399534923856
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            20.113809470502254,
+            -1006.7075478063308,
+            157.12399534923856
+          ],
+          "frame": 5,
+          "ownership": {
+            "active_sample_count": 683,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -18.48691228560838,
+              72.89346345634509,
+              9.271962008420658
+            ],
+            "r1-rock-001": [
+              1.770259807866298,
+              32.18022051180563,
+              96.71885717479937
+            ]
+          },
+          "time_s": 0.04166666666666664
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            24.896848954968867,
+            -1053.0473302806622,
+            186.68248885936404
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            24.896848954968867,
+            -1053.0473302806622,
+            186.68248885936404
+          ],
+          "frame": 6,
+          "ownership": {
+            "active_sample_count": 717,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -24.75150788929075,
+              88.5996373470061,
+              4.135170663852115
+            ],
+            "r1-rock-001": [
+              2.058489880545613,
+              55.36791634900911,
+              117.32458934231099
+            ]
+          },
+          "time_s": 0.049999999999999885
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            35.07281017606078,
+            -1008.0358084994627,
+            205.0302324157348
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            35.07281017606078,
+            -1008.0358084994627,
+            205.0302324157348
+          ],
+          "frame": 7,
+          "ownership": {
+            "active_sample_count": 798,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -30.2757302650488,
+              98.47755531877519,
+              2.682355316946439
+            ],
+            "r1-rock-001": [
+              1.4432771448869435,
+              70.73557307941861,
+              134.32909417198638
+            ]
+          },
+          "time_s": 0.05833333333333313
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            43.30652683713824,
+            -933.9047201556339,
+            212.0200929483834
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            43.30652683713824,
+            -933.9047201556339,
+            212.0200929483834
+          ],
+          "frame": 8,
+          "ownership": {
+            "active_sample_count": 816,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -35.11283468581795,
+              103.86702370818827,
+              3.8493337187703784
+            ],
+            "r1-rock-001": [
+              2.1120414221822035,
+              77.87367589503886,
+              152.02385223831268
+            ]
+          },
+          "time_s": 0.06666666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            53.46994261161912,
+            -858.6388302100448,
+            206.3145648515143
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            53.46994261161912,
+            -858.6388302100448,
+            206.3145648515143
+          ],
+          "frame": 9,
+          "ownership": {
+            "active_sample_count": 798,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -39.12796958558197,
+              105.73449957841959,
+              6.620833623455387
+            ],
+            "r1-rock-001": [
+              -10.305152615751084,
+              93.61519292116725,
+              134.29344528497475
+            ]
+          },
+          "time_s": 0.07500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            62.77531023297425,
+            -677.5566572828626,
+            133.32975162910307
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            62.77531023297425,
+            -677.5566572828626,
+            133.32975162910307
+          ],
+          "frame": 10,
+          "ownership": {
+            "active_sample_count": 819,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -43.07982228832811,
+              96.91414994690408,
+              10.37257980735067
+            ],
+            "r1-rock-001": [
+              -8.955138912654622,
+              87.26652084978925,
+              102.6380523469282
+            ]
+          },
+          "time_s": 0.08333333333333356
+        }
+      ],
+      "trace_sha256": "c1fc454bbea846786a60e6934ec82dded8610151a9318aee8105251787c3cf18"
+    },
+    "coarse_repeat": {
+      "accumulated_impulse_magnitudes": {
+        "bucket_mpm_ns": 49.40831445289584,
+        "bucket_rigid_by_rock_ns": {
+          "r1-rock-000": 0.0,
+          "r1-rock-001": 0.0
+        },
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 49.40831445289584,
+        "rock_mpm_ns": {
+          "r1-rock-000": 2.252556505488713,
+          "r1-rock-001": 2.3686444989270843
+        }
+      },
+      "collider_ownership": {
+        "active_sample_count": 7589,
+        "bucket_collider_ids": [
+          3
+        ],
+        "bucket_newton_body_index": 2,
+        "collider_body_map": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "mapping_disjoint": true,
+        "nonfinite_sample_count": 0,
+        "rock_id_to_collider_ids": {
+          "r1-rock-000": [
+            1
+          ],
+          "r1-rock-001": [
+            2
+          ]
+        },
+        "rock_id_to_newton_body_index": {
+          "r1-rock-000": 0,
+          "r1-rock-001": 1
+        },
+        "sample_count": 1309680,
+        "static_collider_ids": [
+          0
+        ],
+        "unmapped_active_sample_count": 0
+      },
+      "feedback_enabled": true,
+      "final_mechanism_qpos": [
+        1.0471869930516411e-10,
+        -3.906882854171753e-10,
+        0.039999727212347805,
+        0.9999999999999974,
+        4.906346954734738e-08,
+        -5.2244947457133685e-08,
+        -3.4945330496243906e-09,
+        0.003676649186648235,
+        7.544697083615867e-05,
+        0.5150401812258204,
+        8.672987283094598e-05,
+        1.4380091118500142e-05,
+        0.5250587963812772,
+        -0.00013508614282345483,
+        -2.654743845983389e-05,
+        0.7031255517470406,
+        -0.00011631705754108722,
+        -0.00020138378925387148,
+        0.00015023238370013957
+      ],
+      "final_rock_qpos": {
+        "r1-rock-000": [
+          5.133876905803514,
+          0.47141983080008976,
+          2.9528622185664943,
+          0.9976458298022345,
+          -0.06725524963990381,
+          0.007939356043382861,
+          0.010793345158090172
+        ],
+        "r1-rock-001": [
+          5.133395753517285,
+          0.6152290438575155,
+          2.9473497235801105,
+          0.9235086099634648,
+          0.22659695750154063,
+          0.21959637267101975,
+          0.21808965881977146
+        ]
+      },
+      "frames": 10,
+      "matrix": {
+        "finite": true,
+        "particle_count": 2023,
+        "particle_q_sha256": "c43d4159d45e415cce9deb0b2b5e11dd8d09044a2dbd576ccb2cc5fc799d66cb",
+        "particle_qd_sha256": "8ea8a16c50e253914a4a1b966ee2074eefb8a2b589f2ed20961657fdd303e143",
+        "target_mass_error_kg": -1.8569827133774197e-06,
+        "target_mass_kg": 40.080000000000005,
+        "total_mass_kg": 40.07999814301729
+      },
+      "maximum_applied_wrench_echo_residual": 0.0,
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.664204293067356e-05,
+      "maximum_per_rock_rigid_force_partition_residual_n": 0.0,
+      "maximum_per_rock_rigid_torque_partition_residual_nm": 0.0,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_total_force_partition_residual_n": 0.0,
+      "maximum_total_torque_partition_residual_nm": 0.0,
+      "mpm_contact_frames": {
+        "bucket": 10,
+        "r1-rock-000": 10,
+        "r1-rock-001": 10
+      },
+      "mpm_contact_samples": {
+        "bucket": 1133,
+        "r1-rock-000": 503,
+        "r1-rock-001": 497
+      },
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "qualification_mode": "combined",
+      "simulated_time_s": 0.08333333333333333,
+      "trace": [
+        {
+          "bucket_mpm_force_world_n": [
+            2.0840826774656307,
+            -110.82815510686487,
+            -18.689624893013388
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            2.0840826774656307,
+            -110.82815510686487,
+            -18.689624893013388
+          ],
+          "frame": 1,
+          "ownership": {
+            "active_sample_count": 701,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.16232122929750403,
+              3.9794107634952525,
+              8.616857806036933
+            ],
+            "r1-rock-001": [
+              0.28552643887537077,
+              -0.4449543485997356,
+              7.62965825589739
+            ]
+          },
+          "time_s": 0.008333333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            7.9781755356816575,
+            -339.76534895104123,
+            19.383804500248516
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            7.9781755356816575,
+            -339.76534895104123,
+            19.383804500248516
+          ],
+          "frame": 2,
+          "ownership": {
+            "active_sample_count": 678,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.40886779244986954,
+              12.24437721336232,
+              28.08051786317551
+            ],
+            "r1-rock-001": [
+              0.4362665267166692,
+              -0.15856290194708628,
+              26.72932784908972
+            ]
+          },
+          "time_s": 0.016666666666666653
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.475246212554339,
+            -582.8381944337707,
+            69.32725660848519
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.475246212554339,
+            -582.8381944337707,
+            69.32725660848519
+          ],
+          "frame": 3,
+          "ownership": {
+            "active_sample_count": 661,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.4332561495645288,
+              22.71109676813002,
+              30.24447133204129
+            ],
+            "r1-rock-001": [
+              -0.040481603337338135,
+              2.5905363136446073,
+              35.396111171361106
+            ]
+          },
+          "time_s": 0.02500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            20.209415854849556,
+            -793.2238995328747,
+            108.40505200545886
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            20.209415854849556,
+            -793.2238995328747,
+            108.40505200545886
+          ],
+          "frame": 4,
+          "ownership": {
+            "active_sample_count": 701,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.389360468215164,
+              35.059006862725944,
+              13.461653264551277
+            ],
+            "r1-rock-001": [
+              -0.6264215097805516,
+              11.172726754318237,
+              30.44656823593509
+            ]
+          },
+          "time_s": 0.03333333333333339
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            12.850529948609118,
+            -926.86595853716,
+            138.20621786235733
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            12.850529948609118,
+            -926.86595853716,
+            138.20621786235733
+          ],
+          "frame": 5,
+          "ownership": {
+            "active_sample_count": 709,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.939594576205026,
+              43.069589249768335,
+              0.5237224531300722
+            ],
+            "r1-rock-001": [
+              0.2582151779587403,
+              23.702076451678874,
+              24.562895562879273
+            ]
+          },
+          "time_s": 0.04166666666666664
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.009155867154115,
+            -905.908291053982,
+            150.1459694220149
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.009155867154115,
+            -905.908291053982,
+            150.1459694220149
+          ],
+          "frame": 6,
+          "ownership": {
+            "active_sample_count": 813,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.9427389447375334,
+              39.76409507019077,
+              -7.383619092153904
+            ],
+            "r1-rock-001": [
+              0.9549317292876989,
+              28.247890210596434,
+              23.365306433945022
+            ]
+          },
+          "time_s": 0.049999999999999885
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            18.339272565208375,
+            -775.7381063414505,
+            144.62884708722413
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            18.339272565208375,
+            -775.7381063414505,
+            144.62884708722413
+          ],
+          "frame": 7,
+          "ownership": {
+            "active_sample_count": 822,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.199574407422615,
+              30.798195047810022,
+              -10.043175119240358
+            ],
+            "r1-rock-001": [
+              0.8641228505529812,
+              19.393884760790975,
+              26.700986088401066
+            ]
+          },
+          "time_s": 0.05833333333333313
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            23.00553424740749,
+            -621.0703607503375,
+            132.54970489146467
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            23.00553424740749,
+            -621.0703607503375,
+            132.54970489146467
+          ],
+          "frame": 8,
+          "ownership": {
+            "active_sample_count": 843,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.9617173481284103,
+              19.73097811105416,
+              -5.289452286886541
+            ],
+            "r1-rock-001": [
+              -0.08359649767173151,
+              4.105272425594064,
+              27.024538982805364
+            ]
+          },
+          "time_s": 0.06666666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            28.05874848385784,
+            -482.70408351214036,
+            111.8996521721632
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            28.05874848385784,
+            -482.70408351214036,
+            111.8996521721632
+          ],
+          "frame": 9,
+          "ownership": {
+            "active_sample_count": 830,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.0323471316520485,
+              8.2362295013944,
+              5.83380265111014
+            ],
+            "r1-rock-001": [
+              -0.8990850463813691,
+              -7.693803500160242,
+              23.925327583018326
+            ]
+          },
+          "time_s": 0.07500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            26.473194789616244,
+            -307.0956750637152,
+            44.913778319629515
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            26.473194789616244,
+            -307.0956750637152,
+            44.913778319629515
+          ],
+          "frame": 10,
+          "ownership": {
+            "active_sample_count": 831,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.476407546057502,
+              1.462165488170197,
+              6.199027735366707
+            ],
+            "r1-rock-001": [
+              -1.0911441202787386,
+              -13.632574264950694,
+              21.671491407332724
+            ]
+          },
+          "time_s": 0.08333333333333356
+        }
+      ],
+      "trace_sha256": "319afbacc019a557809ea8df749202050761bc68a530b0799a81494c8a820440"
+    },
+    "refined_first": {
+      "accumulated_impulse_magnitudes": {
+        "bucket_mpm_ns": 51.02049790634021,
+        "bucket_rigid_by_rock_ns": {
+          "r1-rock-000": 0.0,
+          "r1-rock-001": 0.0
+        },
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 51.02049790634021,
+        "rock_mpm_ns": {
+          "r1-rock-000": 2.4519182281752636,
+          "r1-rock-001": 2.2206417274220827
+        }
+      },
+      "collider_ownership": {
+        "active_sample_count": 15328,
+        "bucket_collider_ids": [
+          3
+        ],
+        "bucket_newton_body_index": 2,
+        "collider_body_map": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "mapping_disjoint": true,
+        "nonfinite_sample_count": 0,
+        "rock_id_to_collider_ids": {
+          "r1-rock-000": [
+            1
+          ],
+          "r1-rock-001": [
+            2
+          ]
+        },
+        "rock_id_to_newton_body_index": {
+          "r1-rock-000": 0,
+          "r1-rock-001": 1
+        },
+        "sample_count": 2619360,
+        "static_collider_ids": [
+          0
+        ],
+        "unmapped_active_sample_count": 0
+      },
+      "feedback_enabled": true,
+      "final_mechanism_qpos": [
+        7.931263778516835e-11,
+        -2.366823390968606e-10,
+        0.03999972723927901,
+        0.9999999999999976,
+        4.8686111194804656e-08,
+        -5.242934562890543e-08,
+        -3.4752745893583574e-09,
+        0.003655920230764871,
+        7.024479100017038e-05,
+        0.5150429471142676,
+        8.074985891951488e-05,
+        1.9007367854925634e-05,
+        0.525035162393743,
+        -0.0001787575147588385,
+        -3.536148027212123e-05,
+        0.7031094717422691,
+        -0.00015421933382319216,
+        -0.00026847347041004466,
+        0.0002005743882508788
+      ],
+      "final_rock_qpos": {
+        "r1-rock-000": [
+          5.13327197548148,
+          0.47423747370586405,
+          2.953344225229008,
+          0.9994984453932392,
+          -0.030874879845426497,
+          0.004351759151902222,
+          0.005537295667682655
+        ],
+        "r1-rock-001": [
+          5.133216505132834,
+          0.617265533051038,
+          2.9511631546909873,
+          0.9241802270177795,
+          0.2230874274479023,
+          0.21997249130762192,
+          0.21848343363276232
+        ]
+      },
+      "frames": 20,
+      "matrix": {
+        "finite": true,
+        "particle_count": 2023,
+        "particle_q_sha256": "77580ffa3eb2b71537d3e87724e340d0324cf9f4525a3bf65e5eecba80f5d438",
+        "particle_qd_sha256": "97c3ebe6dfbdbadfec7ff63ca45532711c40a75df55262581512aabc184739cd",
+        "target_mass_error_kg": -1.8569827133774197e-06,
+        "target_mass_kg": 40.080000000000005,
+        "total_mass_kg": 40.07999814301729
+      },
+      "maximum_applied_wrench_echo_residual": 0.0,
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.658480215259118e-05,
+      "maximum_per_rock_rigid_force_partition_residual_n": 0.0,
+      "maximum_per_rock_rigid_torque_partition_residual_nm": 0.0,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_total_force_partition_residual_n": 0.0,
+      "maximum_total_torque_partition_residual_nm": 0.0,
+      "mpm_contact_frames": {
+        "bucket": 20,
+        "r1-rock-000": 20,
+        "r1-rock-001": 20
+      },
+      "mpm_contact_samples": {
+        "bucket": 2264,
+        "r1-rock-000": 1015,
+        "r1-rock-001": 972
+      },
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "qualification_mode": "combined",
+      "simulated_time_s": 0.08333333333333333,
+      "trace": [
+        {
+          "bucket_mpm_force_world_n": [
+            0.5410817783558741,
+            -61.09941042261198,
+            -22.661567199393176
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            0.5410817783558741,
+            -61.09941042261198,
+            -22.661567199393176
+          ],
+          "frame": 1,
+          "ownership": {
+            "active_sample_count": 661,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.14791776023685088,
+              3.089133795874659,
+              4.89818623273095
+            ],
+            "r1-rock-001": [
+              0.31175469765912567,
+              -1.0978198000884731,
+              3.9963913802057505
+            ]
+          },
+          "time_s": 0.004166666666666667
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            3.8615536479846924,
+            -187.1062519401312,
+            -9.06417883143149
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            3.8615536479846924,
+            -187.1062519401312,
+            -9.06417883143149
+          ],
+          "frame": 2,
+          "ownership": {
+            "active_sample_count": 764,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.484614130177074,
+              10.098924303633375,
+              24.439929511994492
+            ],
+            "r1-rock-001": [
+              0.724068096921958,
+              -2.027271847408387,
+              22.024296645635008
+            ]
+          },
+          "time_s": 0.008333333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            8.124210480018519,
+            -330.06468570325524,
+            25.182852569450915
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            8.124210480018519,
+            -330.06468570325524,
+            25.182852569450915
+          ],
+          "frame": 3,
+          "ownership": {
+            "active_sample_count": 729,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.5710009495331906,
+              17.36144708805252,
+              35.79598160045338
+            ],
+            "r1-rock-001": [
+              0.6096246079829831,
+              -2.434079830525322,
+              34.13060066250574
+            ]
+          },
+          "time_s": 0.012499999999999985
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            11.505964468324237,
+            -469.941800628081,
+            63.399585164125625
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            11.505964468324237,
+            -469.941800628081,
+            63.399585164125625
+          ],
+          "frame": 4,
+          "ownership": {
+            "active_sample_count": 734,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.6258548263181001,
+              24.879819769079376,
+              34.614424124266954
+            ],
+            "r1-rock-001": [
+              0.043465925745488285,
+              -3.9226118927991207,
+              36.10960049052661
+            ]
+          },
+          "time_s": 0.016666666666666653
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.732681310416663,
+            -602.2301572472602,
+            97.30112888402097
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.732681310416663,
+            -602.2301572472602,
+            97.30112888402097
+          ],
+          "frame": 5,
+          "ownership": {
+            "active_sample_count": 707,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.6595285119910842,
+              33.44083895791322,
+              25.06342921787873
+            ],
+            "r1-rock-001": [
+              -0.05213730973299693,
+              -3.7530425305412787,
+              30.74583628690627
+            ]
+          },
+          "time_s": 0.020833333333333346
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            20.005443379185163,
+            -721.4939795257158,
+            123.41325738938517
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            20.005443379185163,
+            -721.4939795257158,
+            123.41325738938517
+          ],
+          "frame": 6,
+          "ownership": {
+            "active_sample_count": 676,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.5890383654873765,
+              41.344862188124445,
+              17.85616674891999
+            ],
+            "r1-rock-001": [
+              -0.48642507328247453,
+              -1.7688055642868616,
+              24.919601267827012
+            ]
+          },
+          "time_s": 0.02500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            23.995119792649056,
+            -827.4051510456763,
+            142.22975098969815
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            23.995119792649056,
+            -827.4051510456763,
+            142.22975098969815
+          ],
+          "frame": 7,
+          "ownership": {
+            "active_sample_count": 653,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.2692927223225285,
+              45.13158231567168,
+              16.916643040825676
+            ],
+            "r1-rock-001": [
+              -0.5044857143238288,
+              1.3528103653834345,
+              21.04251061173623
+            ]
+          },
+          "time_s": 0.029166666666666733
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            26.592791621844018,
+            -916.3713483194076,
+            156.18485543411128
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            26.592791621844018,
+            -916.3713483194076,
+            156.18485543411128
+          ],
+          "frame": 8,
+          "ownership": {
+            "active_sample_count": 645,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.0563890633794926,
+              44.56488444117583,
+              19.736937718154557
+            ],
+            "r1-rock-001": [
+              -0.39616784048453285,
+              5.727984558224981,
+              20.125817889051117
+            ]
+          },
+          "time_s": 0.03333333333333339
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            29.711476068813358,
+            -986.8074915448157,
+            167.83553406885176
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            29.711476068813358,
+            -986.8074915448157,
+            167.83553406885176
+          ],
+          "frame": 9,
+          "ownership": {
+            "active_sample_count": 647,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.091974808179855,
+              40.98356943237447,
+              22.21292958765916
+            ],
+            "r1-rock-001": [
+              -0.4404693746174811,
+              11.27590997277496,
+              19.957825067258533
+            ]
+          },
+          "time_s": 0.03750000000000001
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.185219519953534,
+            -986.8980978733453,
+            177.76498170031118
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.185219519953534,
+            -986.8980978733453,
+            177.76498170031118
+          ],
+          "frame": 10,
+          "ownership": {
+            "active_sample_count": 791,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.05421742209871072,
+              34.48935185786271,
+              22.29473924466395
+            ],
+            "r1-rock-001": [
+              -0.6398447598966185,
+              15.684915076419443,
+              20.340815981508094
+            ]
+          },
+          "time_s": 0.04166666666666664
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            13.37045580308768,
+            -953.7974076904356,
+            182.57283682760317
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            13.37045580308768,
+            -953.7974076904356,
+            182.57283682760317
+          ],
+          "frame": 11,
+          "ownership": {
+            "active_sample_count": 822,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.9189031953419772,
+              36.00842383735234,
+              8.084189194401278
+            ],
+            "r1-rock-001": [
+              0.9719236093274305,
+              23.051659342511915,
+              25.100323081431394
+            ]
+          },
+          "time_s": 0.04583333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.645267029176466,
+            -872.6659073814517,
+            179.1065409220755
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.645267029176466,
+            -872.6659073814517,
+            179.1065409220755
+          ],
+          "frame": 12,
+          "ownership": {
+            "active_sample_count": 828,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.9860525714433634,
+              33.90003777119444,
+              -8.345425187079128
+            ],
+            "r1-rock-001": [
+              1.9978357703293583,
+              19.44010319498628,
+              30.90845721191132
+            ]
+          },
+          "time_s": 0.049999999999999885
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            19.56511700351257,
+            -775.8055951644201,
+            168.94611746887676
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            19.56511700351257,
+            -775.8055951644201,
+            168.94611746887676
+          ],
+          "frame": 13,
+          "ownership": {
+            "active_sample_count": 824,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.7806819656623152,
+              18.97517456589827,
+              -0.07552212624653998
+            ],
+            "r1-rock-001": [
+              1.2607190849842396,
+              12.971068573405919,
+              29.427536546726852
+            ]
+          },
+          "time_s": 0.05416666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            22.796504131983966,
+            -676.1137043475173,
+            155.27385014283936
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            22.796504131983966,
+            -676.1137043475173,
+            155.27385014283936
+          ],
+          "frame": 14,
+          "ownership": {
+            "active_sample_count": 820,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.695115376789342,
+              11.393196155131285,
+              7.727829374777795
+            ],
+            "r1-rock-001": [
+              -0.10997202637651733,
+              2.818206221195564,
+              26.444427862882797
+            ]
+          },
+          "time_s": 0.05833333333333313
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            26.149586567241535,
+            -585.6069637122868,
+            142.3557115103309
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            26.149586567241535,
+            -585.6069637122868,
+            142.3557115103309
+          ],
+          "frame": 15,
+          "ownership": {
+            "active_sample_count": 842,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.398125209532219,
+              19.638897547543262,
+              -2.064310461708514
+            ],
+            "r1-rock-001": [
+              -0.6991517044150923,
+              -6.965259504958939,
+              27.581498863416748
+            ]
+          },
+          "time_s": 0.06249999999999976
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            29.904474363002826,
+            -509.53541738786924,
+            131.41191465604416
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            29.904474363002826,
+            -509.53541738786924,
+            131.41191465604416
+          ],
+          "frame": 16,
+          "ownership": {
+            "active_sample_count": 835,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.9194677867486587,
+              21.057741518632653,
+              -5.153468837817365
+            ],
+            "r1-rock-001": [
+              -0.6944985700695477,
+              -11.106558942647988,
+              25.297917546189986
+            ]
+          },
+          "time_s": 0.06666666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            33.994800695248465,
+            -453.72794609640835,
+            122.42630737890026
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            33.994800695248465,
+            -453.72794609640835,
+            122.42630737890026
+          ],
+          "frame": 17,
+          "ownership": {
+            "active_sample_count": 836,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.4557369809791534,
+              19.65138565240042,
+              -4.150491602542843
+            ],
+            "r1-rock-001": [
+              -0.6639282089925204,
+              -12.458811917188287,
+              22.684320792171288
+            ]
+          },
+          "time_s": 0.07083333333333328
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            34.05440141601731,
+            -401.2758848150001,
+            103.90258122953729
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            34.05440141601731,
+            -401.2758848150001,
+            103.90258122953729
+          ],
+          "frame": 18,
+          "ownership": {
+            "active_sample_count": 837,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.343665744910369,
+              15.786060970297111,
+              -1.4756973724903946
+            ],
+            "r1-rock-001": [
+              -0.7220925536520019,
+              -13.069876638562127,
+              21.68710917459362
+            ]
+          },
+          "time_s": 0.07500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            35.38057779319018,
+            -326.81214048796727,
+            49.99589520330716
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            35.38057779319018,
+            -326.81214048796727,
+            49.99589520330716
+          ],
+          "frame": 19,
+          "ownership": {
+            "active_sample_count": 840,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.7262184361399044,
+              6.602824143752922,
+              1.7824232318187982
+            ],
+            "r1-rock-001": [
+              -0.4292796772938609,
+              -11.128045154800638,
+              23.026286976841508
+            ]
+          },
+          "time_s": 0.0791666666666668
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            40.906063436486875,
+            -364.62719745324927,
+            46.70709956815699
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            40.906063436486875,
+            -364.62719745324927,
+            46.70709956815699
+          ],
+          "frame": 20,
+          "ownership": {
+            "active_sample_count": 837,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.3064929959810336,
+              11.771877277684716,
+              2.0190897011314517
+            ],
+            "r1-rock-001": [
+              0.12956240880157566,
+              -11.951702636652044,
+              24.421261088500614
+            ]
+          },
+          "time_s": 0.08333333333333356
+        }
+      ],
+      "trace_sha256": "50377dd4f7e4a8cd08fc391164823dd56277781f582d5334feaa4566c71e39ed"
+    },
+    "refined_repeat": {
+      "accumulated_impulse_magnitudes": {
+        "bucket_mpm_ns": 51.02049790634021,
+        "bucket_rigid_by_rock_ns": {
+          "r1-rock-000": 0.0,
+          "r1-rock-001": 0.0
+        },
+        "bucket_rigid_ns": 0.0,
+        "bucket_total_ns": 51.02049790634021,
+        "rock_mpm_ns": {
+          "r1-rock-000": 2.4519182281752636,
+          "r1-rock-001": 2.2206417274220827
+        }
+      },
+      "collider_ownership": {
+        "active_sample_count": 15328,
+        "bucket_collider_ids": [
+          3
+        ],
+        "bucket_newton_body_index": 2,
+        "collider_body_map": [
+          -1,
+          0,
+          1,
+          2
+        ],
+        "mapping_disjoint": true,
+        "nonfinite_sample_count": 0,
+        "rock_id_to_collider_ids": {
+          "r1-rock-000": [
+            1
+          ],
+          "r1-rock-001": [
+            2
+          ]
+        },
+        "rock_id_to_newton_body_index": {
+          "r1-rock-000": 0,
+          "r1-rock-001": 1
+        },
+        "sample_count": 2619360,
+        "static_collider_ids": [
+          0
+        ],
+        "unmapped_active_sample_count": 0
+      },
+      "feedback_enabled": true,
+      "final_mechanism_qpos": [
+        7.931263778516835e-11,
+        -2.366823390968606e-10,
+        0.03999972723927901,
+        0.9999999999999976,
+        4.8686111194804656e-08,
+        -5.242934562890543e-08,
+        -3.4752745893583574e-09,
+        0.003655920230764871,
+        7.024479100017038e-05,
+        0.5150429471142676,
+        8.074985891951488e-05,
+        1.9007367854925634e-05,
+        0.525035162393743,
+        -0.0001787575147588385,
+        -3.536148027212123e-05,
+        0.7031094717422691,
+        -0.00015421933382319216,
+        -0.00026847347041004466,
+        0.0002005743882508788
+      ],
+      "final_rock_qpos": {
+        "r1-rock-000": [
+          5.13327197548148,
+          0.47423747370586405,
+          2.953344225229008,
+          0.9994984453932392,
+          -0.030874879845426497,
+          0.004351759151902222,
+          0.005537295667682655
+        ],
+        "r1-rock-001": [
+          5.133216505132834,
+          0.617265533051038,
+          2.9511631546909873,
+          0.9241802270177795,
+          0.2230874274479023,
+          0.21997249130762192,
+          0.21848343363276232
+        ]
+      },
+      "frames": 20,
+      "matrix": {
+        "finite": true,
+        "particle_count": 2023,
+        "particle_q_sha256": "77580ffa3eb2b71537d3e87724e340d0324cf9f4525a3bf65e5eecba80f5d438",
+        "particle_qd_sha256": "97c3ebe6dfbdbadfec7ff63ca45532711c40a75df55262581512aabc184739cd",
+        "target_mass_error_kg": -1.8569827133774197e-06,
+        "target_mass_kg": 40.080000000000005,
+        "total_mass_kg": 40.07999814301729
+      },
+      "maximum_applied_wrench_echo_residual": 0.0,
+      "maximum_forbidden_contact_count": 0,
+      "maximum_mechanism_closure_m": 4.658480215259118e-05,
+      "maximum_per_rock_rigid_force_partition_residual_n": 0.0,
+      "maximum_per_rock_rigid_torque_partition_residual_nm": 0.0,
+      "maximum_reference_point_residual_m": 0.0,
+      "maximum_total_force_partition_residual_n": 0.0,
+      "maximum_total_torque_partition_residual_nm": 0.0,
+      "mpm_contact_frames": {
+        "bucket": 20,
+        "r1-rock-000": 20,
+        "r1-rock-001": 20
+      },
+      "mpm_contact_samples": {
+        "bucket": 2264,
+        "r1-rock-000": 1015,
+        "r1-rock-001": 972
+      },
+      "mpm_history_reset": {
+        "checks": {
+          "particle_Jp_one": true,
+          "particle_elastic_strain_identity": true,
+          "particle_q_exact": true,
+          "particle_qd_exact": true,
+          "particle_qd_grad_zero": true,
+          "particle_stress_zero": true,
+          "particle_transform_identity": true
+        },
+        "passed": true
+      },
+      "qualification_mode": "combined",
+      "simulated_time_s": 0.08333333333333333,
+      "trace": [
+        {
+          "bucket_mpm_force_world_n": [
+            0.5410817783558741,
+            -61.09941042261198,
+            -22.661567199393176
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            0.5410817783558741,
+            -61.09941042261198,
+            -22.661567199393176
+          ],
+          "frame": 1,
+          "ownership": {
+            "active_sample_count": 661,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.14791776023685088,
+              3.089133795874659,
+              4.89818623273095
+            ],
+            "r1-rock-001": [
+              0.31175469765912567,
+              -1.0978198000884731,
+              3.9963913802057505
+            ]
+          },
+          "time_s": 0.004166666666666667
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            3.8615536479846924,
+            -187.1062519401312,
+            -9.06417883143149
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            3.8615536479846924,
+            -187.1062519401312,
+            -9.06417883143149
+          ],
+          "frame": 2,
+          "ownership": {
+            "active_sample_count": 764,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.484614130177074,
+              10.098924303633375,
+              24.439929511994492
+            ],
+            "r1-rock-001": [
+              0.724068096921958,
+              -2.027271847408387,
+              22.024296645635008
+            ]
+          },
+          "time_s": 0.008333333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            8.124210480018519,
+            -330.06468570325524,
+            25.182852569450915
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            8.124210480018519,
+            -330.06468570325524,
+            25.182852569450915
+          ],
+          "frame": 3,
+          "ownership": {
+            "active_sample_count": 729,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.5710009495331906,
+              17.36144708805252,
+              35.79598160045338
+            ],
+            "r1-rock-001": [
+              0.6096246079829831,
+              -2.434079830525322,
+              34.13060066250574
+            ]
+          },
+          "time_s": 0.012499999999999985
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            11.505964468324237,
+            -469.941800628081,
+            63.399585164125625
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            11.505964468324237,
+            -469.941800628081,
+            63.399585164125625
+          ],
+          "frame": 4,
+          "ownership": {
+            "active_sample_count": 734,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.6258548263181001,
+              24.879819769079376,
+              34.614424124266954
+            ],
+            "r1-rock-001": [
+              0.043465925745488285,
+              -3.9226118927991207,
+              36.10960049052661
+            ]
+          },
+          "time_s": 0.016666666666666653
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.732681310416663,
+            -602.2301572472602,
+            97.30112888402097
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.732681310416663,
+            -602.2301572472602,
+            97.30112888402097
+          ],
+          "frame": 5,
+          "ownership": {
+            "active_sample_count": 707,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.6595285119910842,
+              33.44083895791322,
+              25.06342921787873
+            ],
+            "r1-rock-001": [
+              -0.05213730973299693,
+              -3.7530425305412787,
+              30.74583628690627
+            ]
+          },
+          "time_s": 0.020833333333333346
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            20.005443379185163,
+            -721.4939795257158,
+            123.41325738938517
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            20.005443379185163,
+            -721.4939795257158,
+            123.41325738938517
+          ],
+          "frame": 6,
+          "ownership": {
+            "active_sample_count": 676,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.5890383654873765,
+              41.344862188124445,
+              17.85616674891999
+            ],
+            "r1-rock-001": [
+              -0.48642507328247453,
+              -1.7688055642868616,
+              24.919601267827012
+            ]
+          },
+          "time_s": 0.02500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            23.995119792649056,
+            -827.4051510456763,
+            142.22975098969815
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            23.995119792649056,
+            -827.4051510456763,
+            142.22975098969815
+          ],
+          "frame": 7,
+          "ownership": {
+            "active_sample_count": 653,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.2692927223225285,
+              45.13158231567168,
+              16.916643040825676
+            ],
+            "r1-rock-001": [
+              -0.5044857143238288,
+              1.3528103653834345,
+              21.04251061173623
+            ]
+          },
+          "time_s": 0.029166666666666733
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            26.592791621844018,
+            -916.3713483194076,
+            156.18485543411128
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            26.592791621844018,
+            -916.3713483194076,
+            156.18485543411128
+          ],
+          "frame": 8,
+          "ownership": {
+            "active_sample_count": 645,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.0563890633794926,
+              44.56488444117583,
+              19.736937718154557
+            ],
+            "r1-rock-001": [
+              -0.39616784048453285,
+              5.727984558224981,
+              20.125817889051117
+            ]
+          },
+          "time_s": 0.03333333333333339
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            29.711476068813358,
+            -986.8074915448157,
+            167.83553406885176
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            29.711476068813358,
+            -986.8074915448157,
+            167.83553406885176
+          ],
+          "frame": 9,
+          "ownership": {
+            "active_sample_count": 647,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.091974808179855,
+              40.98356943237447,
+              22.21292958765916
+            ],
+            "r1-rock-001": [
+              -0.4404693746174811,
+              11.27590997277496,
+              19.957825067258533
+            ]
+          },
+          "time_s": 0.03750000000000001
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.185219519953534,
+            -986.8980978733453,
+            177.76498170031118
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.185219519953534,
+            -986.8980978733453,
+            177.76498170031118
+          ],
+          "frame": 10,
+          "ownership": {
+            "active_sample_count": 791,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.05421742209871072,
+              34.48935185786271,
+              22.29473924466395
+            ],
+            "r1-rock-001": [
+              -0.6398447598966185,
+              15.684915076419443,
+              20.340815981508094
+            ]
+          },
+          "time_s": 0.04166666666666664
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            13.37045580308768,
+            -953.7974076904356,
+            182.57283682760317
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            13.37045580308768,
+            -953.7974076904356,
+            182.57283682760317
+          ],
+          "frame": 11,
+          "ownership": {
+            "active_sample_count": 822,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -0.9189031953419772,
+              36.00842383735234,
+              8.084189194401278
+            ],
+            "r1-rock-001": [
+              0.9719236093274305,
+              23.051659342511915,
+              25.100323081431394
+            ]
+          },
+          "time_s": 0.04583333333333326
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            15.645267029176466,
+            -872.6659073814517,
+            179.1065409220755
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            15.645267029176466,
+            -872.6659073814517,
+            179.1065409220755
+          ],
+          "frame": 12,
+          "ownership": {
+            "active_sample_count": 828,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.9860525714433634,
+              33.90003777119444,
+              -8.345425187079128
+            ],
+            "r1-rock-001": [
+              1.9978357703293583,
+              19.44010319498628,
+              30.90845721191132
+            ]
+          },
+          "time_s": 0.049999999999999885
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            19.56511700351257,
+            -775.8055951644201,
+            168.94611746887676
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            19.56511700351257,
+            -775.8055951644201,
+            168.94611746887676
+          ],
+          "frame": 13,
+          "ownership": {
+            "active_sample_count": 824,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.7806819656623152,
+              18.97517456589827,
+              -0.07552212624653998
+            ],
+            "r1-rock-001": [
+              1.2607190849842396,
+              12.971068573405919,
+              29.427536546726852
+            ]
+          },
+          "time_s": 0.05416666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            22.796504131983966,
+            -676.1137043475173,
+            155.27385014283936
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            22.796504131983966,
+            -676.1137043475173,
+            155.27385014283936
+          ],
+          "frame": 14,
+          "ownership": {
+            "active_sample_count": 820,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.695115376789342,
+              11.393196155131285,
+              7.727829374777795
+            ],
+            "r1-rock-001": [
+              -0.10997202637651733,
+              2.818206221195564,
+              26.444427862882797
+            ]
+          },
+          "time_s": 0.05833333333333313
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            26.149586567241535,
+            -585.6069637122868,
+            142.3557115103309
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            26.149586567241535,
+            -585.6069637122868,
+            142.3557115103309
+          ],
+          "frame": 15,
+          "ownership": {
+            "active_sample_count": 842,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.398125209532219,
+              19.638897547543262,
+              -2.064310461708514
+            ],
+            "r1-rock-001": [
+              -0.6991517044150923,
+              -6.965259504958939,
+              27.581498863416748
+            ]
+          },
+          "time_s": 0.06249999999999976
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            29.904474363002826,
+            -509.53541738786924,
+            131.41191465604416
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            29.904474363002826,
+            -509.53541738786924,
+            131.41191465604416
+          ],
+          "frame": 16,
+          "ownership": {
+            "active_sample_count": 835,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.9194677867486587,
+              21.057741518632653,
+              -5.153468837817365
+            ],
+            "r1-rock-001": [
+              -0.6944985700695477,
+              -11.106558942647988,
+              25.297917546189986
+            ]
+          },
+          "time_s": 0.06666666666666651
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            33.994800695248465,
+            -453.72794609640835,
+            122.42630737890026
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            33.994800695248465,
+            -453.72794609640835,
+            122.42630737890026
+          ],
+          "frame": 17,
+          "ownership": {
+            "active_sample_count": 836,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -3.4557369809791534,
+              19.65138565240042,
+              -4.150491602542843
+            ],
+            "r1-rock-001": [
+              -0.6639282089925204,
+              -12.458811917188287,
+              22.684320792171288
+            ]
+          },
+          "time_s": 0.07083333333333328
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            34.05440141601731,
+            -401.2758848150001,
+            103.90258122953729
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            34.05440141601731,
+            -401.2758848150001,
+            103.90258122953729
+          ],
+          "frame": 18,
+          "ownership": {
+            "active_sample_count": 837,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.343665744910369,
+              15.786060970297111,
+              -1.4756973724903946
+            ],
+            "r1-rock-001": [
+              -0.7220925536520019,
+              -13.069876638562127,
+              21.68710917459362
+            ]
+          },
+          "time_s": 0.07500000000000004
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            35.38057779319018,
+            -326.81214048796727,
+            49.99589520330716
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            35.38057779319018,
+            -326.81214048796727,
+            49.99589520330716
+          ],
+          "frame": 19,
+          "ownership": {
+            "active_sample_count": 840,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -1.7262184361399044,
+              6.602824143752922,
+              1.7824232318187982
+            ],
+            "r1-rock-001": [
+              -0.4292796772938609,
+              -11.128045154800638,
+              23.026286976841508
+            ]
+          },
+          "time_s": 0.0791666666666668
+        },
+        {
+          "bucket_mpm_force_world_n": [
+            40.906063436486875,
+            -364.62719745324927,
+            46.70709956815699
+          ],
+          "bucket_rigid_impulse_by_rock_world_ns": {
+            "r1-rock-000": [
+              0,
+              0,
+              0
+            ],
+            "r1-rock-001": [
+              0,
+              0,
+              0
+            ]
+          },
+          "bucket_rigid_impulse_world_ns": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "bucket_total_force_world_n": [
+            40.906063436486875,
+            -364.62719745324927,
+            46.70709956815699
+          ],
+          "frame": 20,
+          "ownership": {
+            "active_sample_count": 837,
+            "mapping_disjoint": true,
+            "nonfinite_sample_count": 0,
+            "sample_count": 130968,
+            "unmapped_active_sample_count": 0
+          },
+          "rock_mpm_force_world_n": {
+            "r1-rock-000": [
+              -2.3064929959810336,
+              11.771877277684716,
+              2.0190897011314517
+            ],
+            "r1-rock-001": [
+              0.12956240880157566,
+              -11.951702636652044,
+              24.421261088500614
+            ]
+          },
+          "time_s": 0.08333333333333356
+        }
+      ],
+      "trace_sha256": "50377dd4f7e4a8cd08fc391164823dd56277781f582d5334feaa4566c71e39ed"
+    }
+  },
+  "implementation": {
+    "compile_command": [
+      "g++",
+      "-O2",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+      "-I/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+      "-I/home/qunwang/codex-work/excavator-workspace-20260907/bundle/mujoco-custom/include",
+      "/tmp/mixed-material-r3-c-convergence-zswwrm_6/bridge.cc",
+      "-L/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-Wl,-rpath,/home/qunwang/codex-work/excavator-workspace-20260907/bundle/lib",
+      "-l:libmujoco.so.2.3.8",
+      "-o",
+      "/tmp/mixed-material-r3-c-convergence-zswwrm_6/bridge"
+    ],
+    "runner_sha256": "8a5d9d123e1a82fa08de585ea8a51d2b907af2ac98248b79166ea0685a774831",
+    "total_wall_seconds": 9.628357420006068
+  },
+  "inputs": {
+    "bridge_source_manifest": {
+      "frozen_r1_r2_r3_a_r3_b_r3_c_base_modified": false,
+      "generated_source_sha256": "7638e8e98fbfaaf146ef13d155862fe5c23b8c140f4cf129688aa01f5496b3c3",
+      "per_rock_applied_mpm_reference_point": true,
+      "per_rock_bucket_rigid_impulse": true,
+      "physics_qualified": false,
+      "r3_c_base_generated_source_sha256": "c10cc9f0f2d5dc2a2b505daf1d2461c275290875ffa291aea458f9c2bce88d52",
+      "r3_c_base_manifest": {
+        "allowed_external_wrench_bodies": [
+          "bucket",
+          "r1-rock-000",
+          "r1-rock-001"
+        ],
+        "frozen_r1_r2_r3_a_r3_b_modified": false,
+        "maximum_external_wrench_count": 3,
+        "physics_qualified": false,
+        "r3_b_config_path": "configs/v4/mixed-material-r3-b.json",
+        "r3_b_config_sha256": "2e8b3296a5574a5a1156dee3871ad293b80b16e119492d4eb0c6e2d25c8eb944",
+        "r3_b_generated_source_sha256": "8e6e4e34a827c7b6a5f1c9cdf225be4777e19849c89e73252e033d124379f7d8",
+        "r3_b_manifest": {
+          "force_application": "bucket_origin_at_mujoco_interval_start_fixed_for_interval",
+          "frozen_r1_r2_or_r3_a_modified": false,
+          "r3_a_config_path": "configs/v4/mixed-material-r3-a.json",
+          "r3_a_config_sha256": "cbcdf89e0ffbfc3d222188684b2cc39e4e75b3e8a82889d3e44ac400af8fbbf9",
+          "r3_a_generated_source_sha256": "9c7f30be4c6dd3aa46dfa3cd7376840f5391c00f8fb91fc27b2fe59bc5d64f90",
+          "r3_a_manifest": {
+            "allowed_external_wrench_bodies": [
+              "bucket",
+              "r1-rock-000"
+            ],
+            "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+            "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+            "frozen_r1_source_modified": false,
+            "maximum_external_wrench_count": 2,
+            "ready_schema": "excavation_mixed_coupled_bridge_r3_a_v1",
+            "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_a_v1",
+            "state_schema": "excavation_mixed_coupled_bridge_r3_a_state_v1",
+            "status": "r3_a_bridge_source_generated"
+          },
+          "ready_schema": "excavation_mixed_coupled_bridge_r3_b_v1",
+          "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_b_v1",
+          "state_schema": "excavation_mixed_coupled_bridge_r3_b_state_v1",
+          "status": "r3_b_bridge_source_generated",
+          "torque_reference": "bucket_origin_at_mujoco_interval_start_fixed_for_interval"
+        },
+        "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+        "ready_schema": "excavation_mixed_coupled_bridge_r3_c_v1",
+        "required_rock_count": 2,
+        "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_c_v1",
+        "state_schema": "excavation_mixed_coupled_bridge_r3_c_state_v1",
+        "status": "r3_c_two_rock_bridge_source_generated",
+        "training_qualified": false
+      },
+      "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+      "ready_schema": "excavation_mixed_coupled_bridge_r3_c_dynamics_v1",
+      "required_rock_count": 2,
+      "schema": "excavation_mixed_coupled_bridge_source_manifest_r3_c_dynamics_v1",
+      "state_schema": "excavation_mixed_coupled_bridge_r3_c_dynamics_state_v1",
+      "status": "r3_c_dynamics_observability_bridge_generated",
+      "training_qualified": false
+    },
+    "bridge_source_sha256": "7638e8e98fbfaaf146ef13d155862fe5c23b8c140f4cf129688aa01f5496b3c3",
+    "config_sha256": "e96b47ef669ef724a7297ad75a687d91365829aff2e1827e1ed0c5ba5e222f41",
+    "derived_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+    "model_manifest": {
+      "bucket_proxy_geom_count": 18,
+      "candidate_model_sha256": "b9fef327baa6b5f3134a39f90a7949e06cbb869a6872a9171f659ced2d0ba771",
+      "contact_bits": {
+        "bucket_proxy": 512,
+        "rock": 256,
+        "rock_ground": 1024,
+        "truck_receiver_reserved": 2048
+      },
+      "derived_r1_config_sha256": "94c5053eb4eaae725ad152e6f24bb69f5f7080af876b90a2019b23463f89f033",
+      "expected_candidate_contract": {
+        "nplugin": 0,
+        "nq": 33,
+        "nu": 12,
+        "nv": 30,
+        "rock_count": 2
+      },
+      "frozen_r1_r2_r3_a_r3_b_modified": false,
+      "frozen_source_modified": false,
+      "mouth_center_bucket_m": [
+        0.117559,
+        0.0,
+        -0.590555
+      ],
+      "mouth_inward_direction_bucket": [
+        0.9762252567359343,
+        0.0,
+        0.21675850181909675
+      ],
+      "physics_qualified": false,
+      "r3_c_config_sha256": "35e6432e3974a069869643b92feeecf653de12c2d5dc61cc60cc3cb483625e12",
+      "rock": {
+        "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+        "density_kg_m3": 2600.0,
+        "equivalent_diameter_m": 0.12,
+        "inertia_about_com_kg_m2": [
+          [
+            0.002730036731269096,
+            -0.00013544030291822907,
+            -1.5999552127237756e-05
+          ],
+          [
+            -0.00013544030291822907,
+            0.004496298940992804,
+            -1.4905357373961838e-05
+          ],
+          [
+            -1.5999552127237756e-05,
+            -1.4905357373961838e-05,
+            0.0051410048828723345
+          ]
+        ],
+        "initial_orientation_quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_position_world_m": [
+          5.133735402304274,
+          0.46,
+          2.955
+        ],
+        "mass_kg": 2.3524245790080363,
+        "prototype_id": "angular_octa",
+        "rock_id": "r1-rock-000"
+      },
+      "rock_inertia_about_com_kg_m2": [
+        [
+          0.002730036731269096,
+          -0.00013544030291822907,
+          -1.5999552127237756e-05
+        ],
+        [
+          -0.00013544030291822907,
+          0.004496298940992804,
+          -1.4905357373961838e-05
+        ],
+        [
+          -1.5999552127237756e-05,
+          -1.4905357373961838e-05,
+          0.0051410048828723345
+        ]
+      ],
+      "rock_mass_kg": 2.3524245790080363,
+      "rocks": [
+        {
+          "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "initial_orientation_quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "initial_position_world_m": [
+            5.133735402304274,
+            0.46,
+            2.955
+          ],
+          "mass_kg": 2.3524245790080363,
+          "prototype_id": "angular_octa",
+          "rock_id": "r1-rock-000"
+        },
+        {
+          "asset_path": "assets/v4/mixed-material-r0/angular_octa.obj",
+          "density_kg_m3": 2600.0,
+          "equivalent_diameter_m": 0.12,
+          "inertia_about_com_kg_m2": [
+            [
+              0.002730036731269096,
+              -0.00013544030291822907,
+              -1.5999552127237756e-05
+            ],
+            [
+              -0.00013544030291822907,
+              0.004496298940992804,
+              -1.4905357373961838e-05
+            ],
+            [
+              -1.5999552127237756e-05,
+              -1.4905357373961838e-05,
+              0.0051410048828723345
+            ]
+          ],
+          "initial_orientation_quaternion_wxyz": [
+            0.9238795325112867,
+            0.22094238269039457,
+            0.22094238269039457,
+            0.22094238269039457
+          ],
+          "initial_position_world_m": [
+            5.133735402304274,
+            0.6,
+            2.955
+          ],
+          "mass_kg": 2.3524245790080363,
+          "prototype_id": "angular_octa",
+          "rock_id": "r1-rock-001"
+        }
+      ],
+      "schema": "excavation_mixed_multirock_candidate_r3_c_manifest_v1",
+      "scope_limit": "model assembly candidate only until a separate bridge loads and steps it with classified contacts and state logging",
+      "source_bucket_visual_collision_disabled": true,
+      "source_model_contract": {
+        "actuator_count": 12,
+        "mechanism_nq": 19,
+        "mechanism_nv": 18,
+        "plugin_count": 0
+      },
+      "source_model_path": "evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/mechanism.xml",
+      "source_model_sha256": "9bae28faba170167497f75d95bc852210b0cd097ddf2649af66ad2fe3711257a",
+      "status": "r3_c_two_rock_model_generated",
+      "total_rock_mass_kg": 4.7048491580160725,
+      "training_qualified": false,
+      "unit_fixture": {
+        "friction": [
+          0.8,
+          0.005,
+          0.0001
+        ],
+        "half_size_m": [
+          0.6,
+          0.55,
+          0.03
+        ],
+        "name": "r1_ground_push_shelf",
+        "position_world_m": [
+          5.13,
+          0.65,
+          2.86
+        ],
+        "quaternion_wxyz": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "slope_degrees": 0.0,
+        "type": "box"
+      },
+      "unit_fixtures": [
+        {
+          "friction": [
+            0.8,
+            0.005,
+            0.0001
+          ],
+          "half_size_m": [
+            0.6,
+            0.55,
+            0.03
+          ],
+          "name": "r1_ground_push_shelf",
+          "position_world_m": [
+            5.13,
+            0.65,
+            2.86
+          ],
+          "quaternion_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "slope_degrees": 0.0,
+          "type": "box"
+        }
+      ],
+      "unit_scenario": "r3_c_two_rock_bucket_push"
+    },
+    "persisted_generated_artifacts": [],
+    "shared_config_sha256": "87cf8a3b8eeb04fb7cfde0b1ef6c25d977e689efff4a3031fae1d4acc629c917",
+    "shared_report_sha256": "550f72c9c84b108db51aa215365ea3290be0720d367332802e26489ed3c2c35e"
+  },
+  "r3_c_physics_qualified": false,
+  "reset_claims": {
+    "complete_in_process_mixed_reset": false,
+    "mpm_history_reset_audited_after_each_episode": true,
+    "reconstructed_episode_reset": true
+  },
+  "schema": "excavation_mixed_material_r3_c_convergence_report_v1",
+  "scope_limit": "exactly two rocks in one shared small MPM matrix; reconstructed repeat, 1/120-to-1/240 outer-step refinement, and feedback causality only; no complete in-process mixed reset, official envelope, calibrated material, complete excavation, or training",
+  "status": "r3_c_convergence_probe_failed",
+  "training_qualified": false
+}

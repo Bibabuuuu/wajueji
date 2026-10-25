@@ -1,0 +1,5091 @@
+{
+  "schema": "contact_onset_diagnostic_v1",
+  "status": "offline_candidates_not_labels",
+  "script_sha256": "cca39bdb0e5e97b14243a77f1846d898346837578731bb61109989a6cebeecd2",
+  "physics_advanced": false,
+  "production_parameters_changed": false,
+  "geometry_model": {
+    "path": "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/model/A.xml",
+    "sha256": "959098bed4286ae5909858acb02a22eb8b9050ef2029ebe7d2c6a5f3d4d5e320"
+  },
+  "implementation_inputs": [
+    {
+      "path": "/home/qunwang/wajueji/src/v4/layered_excavation_approach_planner.py",
+      "sha256": "f0e2cb0762534f3c17017b41eabadec8c69c6e9c8ab7706867132bf993068639"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_layered_47_excavation_preflight.py",
+      "sha256": "b1f2b396b5e7fcf217ca875d9870fa21fed4f08804f43ee2752ee8e31a262ca6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_layered_47_sparse_manual_contact_episode.py",
+      "sha256": "f4770663e9eaf5a340eba36e1e5c04dab9dd2d55c8f1f2adc0f5bc1af50b8c4e"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/moving_bucket_sweep_runtime.py",
+      "sha256": "7191e04804077fc1cef8786bc6d313af1d43c0ad96b620b9d22f70d868beebfa"
+    }
+  ],
+  "frequency_hz": 60,
+  "threshold_grid_n": [
+    0.001,
+    1.0,
+    10.0,
+    25.0,
+    50.0,
+    100.0,
+    500.0
+  ],
+  "persistence_frames": [
+    1,
+    3,
+    6
+  ],
+  "geometry_scope": "CAD vertex vertical offset against fused sampled 10cm soil/rock height grid; not particle distance, no exact touch certification; unknown cells remain unknown.",
+  "force_scope": "Logged resultant soil wrench includes routed moving-bucket corrections; net cancellation and absent native projection reactions limit interpretation.",
+  "online_scope": "Confirm after dwell; onset is retrospective. End-of-frame evidence only usable at following decision.",
+  "deployment_qualified": false,
+  "episodes": [
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/physics.ndjson",
+          "sha256": "ec718b2d60cf601617d4d3f1a58bbf6729d0f902f2d2e38af07f47006f3eb109"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/observation.ndjson",
+          "sha256": "adcbcf3c20120a4ea6f84abd3db8b4cb21c250c09164de2509518b7c881e32fb"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-010900-1088617/annotations.ndjson",
+          "sha256": "eb42b40964377fb86215818b7230c06b62fa48598e218a716fa918bf0aff315d"
+        }
+      ],
+      "baseline": {
+        "zero_command_prefix_frames": 29,
+        "prefix_cap_frames": 30,
+        "maximum_force_n": 1.0507778845761637e-06,
+        "qualified_no_contact_baseline": false,
+        "note": "Zero command alone does not establish absence of contact."
+      },
+      "first_frame_force_n": 7.024915745055826e-08,
+      "first_frame_samples": 22,
+      "force_sensitivity": [
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 32,
+            "confirmation_frame_end": 32,
+            "first_available_decision_frame": 33
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 32,
+            "confirmation_frame_end": 34,
+            "first_available_decision_frame": 35
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 32,
+            "confirmation_frame_end": 37,
+            "first_available_decision_frame": 38
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 98,
+            "confirmation_frame_end": 98,
+            "first_available_decision_frame": 99
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 98,
+            "confirmation_frame_end": 100,
+            "first_available_decision_frame": 101
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 98,
+            "confirmation_frame_end": 103,
+            "first_available_decision_frame": 104
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 121,
+            "confirmation_frame_end": 121,
+            "first_available_decision_frame": 122
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 125,
+            "confirmation_frame_end": 127,
+            "first_available_decision_frame": 128
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 140,
+            "confirmation_frame_end": 145,
+            "first_available_decision_frame": 146
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 146,
+            "confirmation_frame_end": 146,
+            "first_available_decision_frame": 147
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 146,
+            "confirmation_frame_end": 148,
+            "first_available_decision_frame": 149
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 146,
+            "confirmation_frame_end": 151,
+            "first_available_decision_frame": 152
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 147,
+            "confirmation_frame_end": 147,
+            "first_available_decision_frame": 148
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 147,
+            "confirmation_frame_end": 149,
+            "first_available_decision_frame": 150
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 147,
+            "confirmation_frame_end": 152,
+            "first_available_decision_frame": 153
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 154,
+            "confirmation_frame_end": 154,
+            "first_available_decision_frame": 155
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 158,
+            "confirmation_frame_end": 160,
+            "first_available_decision_frame": 161
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 165,
+            "confirmation_frame_end": 170,
+            "first_available_decision_frame": 171
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 355,
+            "confirmation_frame_end": 355,
+            "first_available_decision_frame": 356
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 363,
+            "confirmation_frame_end": 365,
+            "first_available_decision_frame": 366
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 470,
+            "confirmation_frame_end": 475,
+            "first_available_decision_frame": 476
+          }
+        }
+      ],
+      "illustrative_10_to_100n_3_to_6frame_onset_range": [
+        125,
+        165
+      ],
+      "interval_is_confidence_interval": false,
+      "independent_recorded_events": {
+        "raw_soil_sample": {
+          "frame_end": 1,
+          "force_n": 7.024915745055826e-08,
+          "available_from_decision_frame": 2
+        },
+        "rock_bucket": {
+          "frame_end": 564,
+          "force_n": 11575.907505160767,
+          "available_from_decision_frame": 565
+        },
+        "bucket_motion_sweep": {
+          "frame_end": 187,
+          "force_n": 326.3268033998139,
+          "available_from_decision_frame": 188
+        },
+        "mpm_motion_sweep": {
+          "frame_end": 195,
+          "force_n": 196.3927126769642,
+          "available_from_decision_frame": 196
+        }
+      },
+      "first_sampled_fused_grid_overlap": {
+        "frame_end": 174,
+        "observation_frame": 174,
+        "first_available_decision_frame": 175,
+        "minimum_vertex_vertical_offset_m": -0.2371573775615674,
+        "known_vertex_count": 1789,
+        "unknown_or_outside_vertex_count": 1228,
+        "force_n": 305.36506892227607
+      },
+      "cad_vertex_count": 3017,
+      "cad_vertices_sha256": "12b96bb6b509fd8c306c78bb74b351c1301a2aca87351bedc4ef117e3c484c68",
+      "geometry_samples": [
+        {
+          "frame_end": 3,
+          "observation_frame": 3,
+          "first_available_decision_frame": 4,
+          "minimum_vertex_vertical_offset_m": 0.3305465566211996,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 4.853550857641766e-08
+        },
+        {
+          "frame_end": 6,
+          "observation_frame": 6,
+          "first_available_decision_frame": 7,
+          "minimum_vertex_vertical_offset_m": 0.33058105673371796,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 2.637910159349839e-08
+        },
+        {
+          "frame_end": 9,
+          "observation_frame": 9,
+          "first_available_decision_frame": 10,
+          "minimum_vertex_vertical_offset_m": 0.33059180613090433,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 7.26805600963917e-08
+        },
+        {
+          "frame_end": 12,
+          "observation_frame": 12,
+          "first_available_decision_frame": 13,
+          "minimum_vertex_vertical_offset_m": 0.3305889914835789,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 7.555750544075544e-07
+        },
+        {
+          "frame_end": 15,
+          "observation_frame": 15,
+          "first_available_decision_frame": 16,
+          "minimum_vertex_vertical_offset_m": 0.33058216712336286,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 1.0507778845761637e-06
+        },
+        {
+          "frame_end": 18,
+          "observation_frame": 18,
+          "first_available_decision_frame": 19,
+          "minimum_vertex_vertical_offset_m": 0.3305785390059699,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 9.125793054628198e-07
+        },
+        {
+          "frame_end": 21,
+          "observation_frame": 21,
+          "first_available_decision_frame": 22,
+          "minimum_vertex_vertical_offset_m": 0.3305812809854687,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 4.826888422754877e-07
+        },
+        {
+          "frame_end": 24,
+          "observation_frame": 24,
+          "first_available_decision_frame": 25,
+          "minimum_vertex_vertical_offset_m": 0.3305869514717088,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 5.701135461278726e-09
+        },
+        {
+          "frame_end": 27,
+          "observation_frame": 27,
+          "first_available_decision_frame": 28,
+          "minimum_vertex_vertical_offset_m": 0.33059191238261176,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 5.996602971480971e-09
+        },
+        {
+          "frame_end": 30,
+          "observation_frame": 30,
+          "first_available_decision_frame": 31,
+          "minimum_vertex_vertical_offset_m": 0.3304868801786369,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 5.9729439184079205e-09
+        },
+        {
+          "frame_end": 33,
+          "observation_frame": 33,
+          "first_available_decision_frame": 34,
+          "minimum_vertex_vertical_offset_m": 0.32332379181203086,
+          "known_vertex_count": 1405,
+          "unknown_or_outside_vertex_count": 1612,
+          "force_n": 0.00384288443725804
+        },
+        {
+          "frame_end": 36,
+          "observation_frame": 36,
+          "first_available_decision_frame": 37,
+          "minimum_vertex_vertical_offset_m": 0.31431813102145933,
+          "known_vertex_count": 1401,
+          "unknown_or_outside_vertex_count": 1616,
+          "force_n": 0.006325629571450958
+        },
+        {
+          "frame_end": 39,
+          "observation_frame": 39,
+          "first_available_decision_frame": 40,
+          "minimum_vertex_vertical_offset_m": 0.3086732071852043,
+          "known_vertex_count": 1400,
+          "unknown_or_outside_vertex_count": 1617,
+          "force_n": 0.0033687895965510218
+        },
+        {
+          "frame_end": 42,
+          "observation_frame": 42,
+          "first_available_decision_frame": 43,
+          "minimum_vertex_vertical_offset_m": 0.3085753984849975,
+          "known_vertex_count": 1401,
+          "unknown_or_outside_vertex_count": 1616,
+          "force_n": 0.00017289040941893745
+        },
+        {
+          "frame_end": 45,
+          "observation_frame": 45,
+          "first_available_decision_frame": 46,
+          "minimum_vertex_vertical_offset_m": 0.30845153943611314,
+          "known_vertex_count": 1401,
+          "unknown_or_outside_vertex_count": 1616,
+          "force_n": 0.0001632614357693763
+        },
+        {
+          "frame_end": 48,
+          "observation_frame": 48,
+          "first_available_decision_frame": 49,
+          "minimum_vertex_vertical_offset_m": 0.30464935533082516,
+          "known_vertex_count": 1402,
+          "unknown_or_outside_vertex_count": 1615,
+          "force_n": 0.0055074815841728445
+        },
+        {
+          "frame_end": 51,
+          "observation_frame": 51,
+          "first_available_decision_frame": 52,
+          "minimum_vertex_vertical_offset_m": 0.3006360869899678,
+          "known_vertex_count": 1414,
+          "unknown_or_outside_vertex_count": 1603,
+          "force_n": 0.005233068470312783
+        },
+        {
+          "frame_end": 54,
+          "observation_frame": 54,
+          "first_available_decision_frame": 55,
+          "minimum_vertex_vertical_offset_m": 0.3006064949360123,
+          "known_vertex_count": 1414,
+          "unknown_or_outside_vertex_count": 1603,
+          "force_n": 6.501001837753455e-07
+        },
+        {
+          "frame_end": 57,
+          "observation_frame": 57,
+          "first_available_decision_frame": 58,
+          "minimum_vertex_vertical_offset_m": 0.3004672753922739,
+          "known_vertex_count": 1413,
+          "unknown_or_outside_vertex_count": 1604,
+          "force_n": 0.0035415502023058865
+        },
+        {
+          "frame_end": 60,
+          "observation_frame": 60,
+          "first_available_decision_frame": 61,
+          "minimum_vertex_vertical_offset_m": 0.3000354822594502,
+          "known_vertex_count": 1418,
+          "unknown_or_outside_vertex_count": 1599,
+          "force_n": 0.008681273126179018
+        },
+        {
+          "frame_end": 63,
+          "observation_frame": 63,
+          "first_available_decision_frame": 64,
+          "minimum_vertex_vertical_offset_m": 0.2996292713148514,
+          "known_vertex_count": 1419,
+          "unknown_or_outside_vertex_count": 1598,
+          "force_n": 0.007161133915522094
+        },
+        {
+          "frame_end": 66,
+          "observation_frame": 66,
+          "first_available_decision_frame": 67,
+          "minimum_vertex_vertical_offset_m": 0.29626318800760054,
+          "known_vertex_count": 1419,
+          "unknown_or_outside_vertex_count": 1598,
+          "force_n": 0.011437697107835154
+        },
+        {
+          "frame_end": 69,
+          "observation_frame": 69,
+          "first_available_decision_frame": 70,
+          "minimum_vertex_vertical_offset_m": 0.2960517251540451,
+          "known_vertex_count": 1418,
+          "unknown_or_outside_vertex_count": 1599,
+          "force_n": 0.0002342052199393455
+        },
+        {
+          "frame_end": 72,
+          "observation_frame": 72,
+          "first_available_decision_frame": 73,
+          "minimum_vertex_vertical_offset_m": 0.2921807286280622,
+          "known_vertex_count": 1412,
+          "unknown_or_outside_vertex_count": 1605,
+          "force_n": 0.010290283807527023
+        },
+        {
+          "frame_end": 75,
+          "observation_frame": 75,
+          "first_available_decision_frame": 76,
+          "minimum_vertex_vertical_offset_m": 0.2866756504556949,
+          "known_vertex_count": 1408,
+          "unknown_or_outside_vertex_count": 1609,
+          "force_n": 0.016129201727704066
+        },
+        {
+          "frame_end": 78,
+          "observation_frame": 78,
+          "first_available_decision_frame": 79,
+          "minimum_vertex_vertical_offset_m": 0.2810047837929912,
+          "known_vertex_count": 1411,
+          "unknown_or_outside_vertex_count": 1606,
+          "force_n": 0.015966104638996358
+        },
+        {
+          "frame_end": 81,
+          "observation_frame": 81,
+          "first_available_decision_frame": 82,
+          "minimum_vertex_vertical_offset_m": 0.2754600664292941,
+          "known_vertex_count": 1404,
+          "unknown_or_outside_vertex_count": 1613,
+          "force_n": 0.0158859499084425
+        },
+        {
+          "frame_end": 84,
+          "observation_frame": 84,
+          "first_available_decision_frame": 85,
+          "minimum_vertex_vertical_offset_m": 0.26808161989534707,
+          "known_vertex_count": 1401,
+          "unknown_or_outside_vertex_count": 1616,
+          "force_n": 0.024049304958881298
+        },
+        {
+          "frame_end": 87,
+          "observation_frame": 87,
+          "first_available_decision_frame": 88,
+          "minimum_vertex_vertical_offset_m": 0.2596388486542154,
+          "known_vertex_count": 1401,
+          "unknown_or_outside_vertex_count": 1616,
+          "force_n": 0.018911682572241198
+        },
+        {
+          "frame_end": 90,
+          "observation_frame": 90,
+          "first_available_decision_frame": 91,
+          "minimum_vertex_vertical_offset_m": 0.25045417934636593,
+          "known_vertex_count": 1399,
+          "unknown_or_outside_vertex_count": 1618,
+          "force_n": 0.027975886292443082
+        },
+        {
+          "frame_end": 93,
+          "observation_frame": 93,
+          "first_available_decision_frame": 94,
+          "minimum_vertex_vertical_offset_m": 0.241515535882582,
+          "known_vertex_count": 1402,
+          "unknown_or_outside_vertex_count": 1615,
+          "force_n": 0.03182048911630082
+        },
+        {
+          "frame_end": 96,
+          "observation_frame": 96,
+          "first_available_decision_frame": 97,
+          "minimum_vertex_vertical_offset_m": 0.23257123817119973,
+          "known_vertex_count": 1404,
+          "unknown_or_outside_vertex_count": 1613,
+          "force_n": 0.03516012529169836
+        },
+        {
+          "frame_end": 99,
+          "observation_frame": 99,
+          "first_available_decision_frame": 100,
+          "minimum_vertex_vertical_offset_m": 0.21604285780625854,
+          "known_vertex_count": 1404,
+          "unknown_or_outside_vertex_count": 1613,
+          "force_n": 1.6944814614918606
+        },
+        {
+          "frame_end": 102,
+          "observation_frame": 102,
+          "first_available_decision_frame": 103,
+          "minimum_vertex_vertical_offset_m": 0.20627803884901286,
+          "known_vertex_count": 1418,
+          "unknown_or_outside_vertex_count": 1599,
+          "force_n": 2.1198697205756822
+        },
+        {
+          "frame_end": 105,
+          "observation_frame": 105,
+          "first_available_decision_frame": 106,
+          "minimum_vertex_vertical_offset_m": 0.19768728816793324,
+          "known_vertex_count": 1414,
+          "unknown_or_outside_vertex_count": 1603,
+          "force_n": 2.465886653036325
+        },
+        {
+          "frame_end": 108,
+          "observation_frame": 108,
+          "first_available_decision_frame": 109,
+          "minimum_vertex_vertical_offset_m": 0.1892427761492541,
+          "known_vertex_count": 1417,
+          "unknown_or_outside_vertex_count": 1600,
+          "force_n": 2.1215463864971196
+        },
+        {
+          "frame_end": 111,
+          "observation_frame": 111,
+          "first_available_decision_frame": 112,
+          "minimum_vertex_vertical_offset_m": 0.18081125181505353,
+          "known_vertex_count": 1419,
+          "unknown_or_outside_vertex_count": 1598,
+          "force_n": 3.040398321442552
+        },
+        {
+          "frame_end": 114,
+          "observation_frame": 114,
+          "first_available_decision_frame": 115,
+          "minimum_vertex_vertical_offset_m": 0.1723212879608731,
+          "known_vertex_count": 1420,
+          "unknown_or_outside_vertex_count": 1597,
+          "force_n": 4.694646902419323
+        },
+        {
+          "frame_end": 117,
+          "observation_frame": 117,
+          "first_available_decision_frame": 118,
+          "minimum_vertex_vertical_offset_m": 0.16349758726996977,
+          "known_vertex_count": 1425,
+          "unknown_or_outside_vertex_count": 1592,
+          "force_n": 1.4241768769398901
+        },
+        {
+          "frame_end": 120,
+          "observation_frame": 120,
+          "first_available_decision_frame": 121,
+          "minimum_vertex_vertical_offset_m": 0.1555975335542661,
+          "known_vertex_count": 1431,
+          "unknown_or_outside_vertex_count": 1586,
+          "force_n": 9.234440281063044
+        },
+        {
+          "frame_end": 123,
+          "observation_frame": 123,
+          "first_available_decision_frame": 124,
+          "minimum_vertex_vertical_offset_m": 0.14776775811708776,
+          "known_vertex_count": 1438,
+          "unknown_or_outside_vertex_count": 1579,
+          "force_n": 7.5120218910682945
+        },
+        {
+          "frame_end": 126,
+          "observation_frame": 126,
+          "first_available_decision_frame": 127,
+          "minimum_vertex_vertical_offset_m": 0.13974166428985968,
+          "known_vertex_count": 1447,
+          "unknown_or_outside_vertex_count": 1570,
+          "force_n": 12.145101990092845
+        },
+        {
+          "frame_end": 129,
+          "observation_frame": 129,
+          "first_available_decision_frame": 130,
+          "minimum_vertex_vertical_offset_m": 0.13161397453238388,
+          "known_vertex_count": 1467,
+          "unknown_or_outside_vertex_count": 1550,
+          "force_n": 2.121653961878656
+        },
+        {
+          "frame_end": 132,
+          "observation_frame": 132,
+          "first_available_decision_frame": 133,
+          "minimum_vertex_vertical_offset_m": 0.12331837136047263,
+          "known_vertex_count": 1494,
+          "unknown_or_outside_vertex_count": 1523,
+          "force_n": 4.1275115807206495
+        },
+        {
+          "frame_end": 135,
+          "observation_frame": 135,
+          "first_available_decision_frame": 136,
+          "minimum_vertex_vertical_offset_m": 0.12352195788239162,
+          "known_vertex_count": 1507,
+          "unknown_or_outside_vertex_count": 1510,
+          "force_n": 4.287753403570633
+        },
+        {
+          "frame_end": 138,
+          "observation_frame": 138,
+          "first_available_decision_frame": 139,
+          "minimum_vertex_vertical_offset_m": 0.11565538685106347,
+          "known_vertex_count": 1520,
+          "unknown_or_outside_vertex_count": 1497,
+          "force_n": 3.7584474612474983
+        },
+        {
+          "frame_end": 141,
+          "observation_frame": 141,
+          "first_available_decision_frame": 142,
+          "minimum_vertex_vertical_offset_m": 0.107789740041766,
+          "known_vertex_count": 1528,
+          "unknown_or_outside_vertex_count": 1489,
+          "force_n": 13.368591030444977
+        },
+        {
+          "frame_end": 144,
+          "observation_frame": 144,
+          "first_available_decision_frame": 145,
+          "minimum_vertex_vertical_offset_m": 0.1000326886037477,
+          "known_vertex_count": 1542,
+          "unknown_or_outside_vertex_count": 1475,
+          "force_n": 18.09699526592843
+        },
+        {
+          "frame_end": 147,
+          "observation_frame": 147,
+          "first_available_decision_frame": 148,
+          "minimum_vertex_vertical_offset_m": 0.0920250601729018,
+          "known_vertex_count": 1553,
+          "unknown_or_outside_vertex_count": 1464,
+          "force_n": 65.07136897306371
+        },
+        {
+          "frame_end": 150,
+          "observation_frame": 150,
+          "first_available_decision_frame": 151,
+          "minimum_vertex_vertical_offset_m": 0.08472213257248118,
+          "known_vertex_count": 1568,
+          "unknown_or_outside_vertex_count": 1449,
+          "force_n": 71.59648585874143
+        },
+        {
+          "frame_end": 153,
+          "observation_frame": 153,
+          "first_available_decision_frame": 154,
+          "minimum_vertex_vertical_offset_m": 0.07750719633456082,
+          "known_vertex_count": 1587,
+          "unknown_or_outside_vertex_count": 1430,
+          "force_n": 97.42080564694821
+        },
+        {
+          "frame_end": 156,
+          "observation_frame": 156,
+          "first_available_decision_frame": 157,
+          "minimum_vertex_vertical_offset_m": 0.07028015001526255,
+          "known_vertex_count": 1596,
+          "unknown_or_outside_vertex_count": 1421,
+          "force_n": 82.83905296502485
+        },
+        {
+          "frame_end": 159,
+          "observation_frame": 159,
+          "first_available_decision_frame": 160,
+          "minimum_vertex_vertical_offset_m": 0.06202280257646908,
+          "known_vertex_count": 1608,
+          "unknown_or_outside_vertex_count": 1409,
+          "force_n": 122.10162548682791
+        },
+        {
+          "frame_end": 162,
+          "observation_frame": 162,
+          "first_available_decision_frame": 163,
+          "minimum_vertex_vertical_offset_m": 0.053615377975537504,
+          "known_vertex_count": 1623,
+          "unknown_or_outside_vertex_count": 1394,
+          "force_n": 66.70662875668954
+        },
+        {
+          "frame_end": 165,
+          "observation_frame": 165,
+          "first_available_decision_frame": 166,
+          "minimum_vertex_vertical_offset_m": 0.04500692081267088,
+          "known_vertex_count": 1654,
+          "unknown_or_outside_vertex_count": 1363,
+          "force_n": 121.22880196424077
+        },
+        {
+          "frame_end": 168,
+          "observation_frame": 168,
+          "first_available_decision_frame": 169,
+          "minimum_vertex_vertical_offset_m": 0.03213451508608589,
+          "known_vertex_count": 1713,
+          "unknown_or_outside_vertex_count": 1304,
+          "force_n": 113.58383491314227
+        },
+        {
+          "frame_end": 171,
+          "observation_frame": 171,
+          "first_available_decision_frame": 172,
+          "minimum_vertex_vertical_offset_m": 0.02403726548989904,
+          "known_vertex_count": 1763,
+          "unknown_or_outside_vertex_count": 1254,
+          "force_n": 182.44525260315712
+        },
+        {
+          "frame_end": 174,
+          "observation_frame": 174,
+          "first_available_decision_frame": 175,
+          "minimum_vertex_vertical_offset_m": -0.2371573775615674,
+          "known_vertex_count": 1789,
+          "unknown_or_outside_vertex_count": 1228,
+          "force_n": 305.36506892227607
+        },
+        {
+          "frame_end": 177,
+          "observation_frame": 177,
+          "first_available_decision_frame": 178,
+          "minimum_vertex_vertical_offset_m": -0.2449228513248809,
+          "known_vertex_count": 1793,
+          "unknown_or_outside_vertex_count": 1224,
+          "force_n": 265.9248457566383
+        },
+        {
+          "frame_end": 180,
+          "observation_frame": 180,
+          "first_available_decision_frame": 181,
+          "minimum_vertex_vertical_offset_m": -0.2559108129361378,
+          "known_vertex_count": 1737,
+          "unknown_or_outside_vertex_count": 1280,
+          "force_n": 239.88599411929692
+        },
+        {
+          "frame_end": 183,
+          "observation_frame": 183,
+          "first_available_decision_frame": 184,
+          "minimum_vertex_vertical_offset_m": -0.006071542551683962,
+          "known_vertex_count": 1624,
+          "unknown_or_outside_vertex_count": 1393,
+          "force_n": 154.36659965410692
+        },
+        {
+          "frame_end": 186,
+          "observation_frame": 186,
+          "first_available_decision_frame": 187,
+          "minimum_vertex_vertical_offset_m": -0.26764423747461485,
+          "known_vertex_count": 1544,
+          "unknown_or_outside_vertex_count": 1473,
+          "force_n": 320.3955084750838
+        },
+        {
+          "frame_end": 189,
+          "observation_frame": 189,
+          "first_available_decision_frame": 190,
+          "minimum_vertex_vertical_offset_m": -0.2789318745998257,
+          "known_vertex_count": 1481,
+          "unknown_or_outside_vertex_count": 1536,
+          "force_n": 333.50060119751845
+        },
+        {
+          "frame_end": 192,
+          "observation_frame": 192,
+          "first_available_decision_frame": 193,
+          "minimum_vertex_vertical_offset_m": -0.2843284033490303,
+          "known_vertex_count": 1460,
+          "unknown_or_outside_vertex_count": 1557,
+          "force_n": 267.38258519838513
+        },
+        {
+          "frame_end": 195,
+          "observation_frame": 195,
+          "first_available_decision_frame": 196,
+          "minimum_vertex_vertical_offset_m": -0.283534975150473,
+          "known_vertex_count": 1453,
+          "unknown_or_outside_vertex_count": 1564,
+          "force_n": 196.3927126769642
+        },
+        {
+          "frame_end": 198,
+          "observation_frame": 198,
+          "first_available_decision_frame": 199,
+          "minimum_vertex_vertical_offset_m": -0.03585300566387106,
+          "known_vertex_count": 1440,
+          "unknown_or_outside_vertex_count": 1577,
+          "force_n": 72.50266046620247
+        },
+        {
+          "frame_end": 201,
+          "observation_frame": 201,
+          "first_available_decision_frame": 202,
+          "minimum_vertex_vertical_offset_m": -0.027161146939002956,
+          "known_vertex_count": 1425,
+          "unknown_or_outside_vertex_count": 1592,
+          "force_n": 63.286237326004496
+        },
+        {
+          "frame_end": 204,
+          "observation_frame": 204,
+          "first_available_decision_frame": 205,
+          "minimum_vertex_vertical_offset_m": -0.02604499667510196,
+          "known_vertex_count": 1423,
+          "unknown_or_outside_vertex_count": 1594,
+          "force_n": 58.80604300921113
+        },
+        {
+          "frame_end": 207,
+          "observation_frame": 207,
+          "first_available_decision_frame": 208,
+          "minimum_vertex_vertical_offset_m": -0.02285696777370294,
+          "known_vertex_count": 1419,
+          "unknown_or_outside_vertex_count": 1598,
+          "force_n": 36.842581958998785
+        },
+        {
+          "frame_end": 210,
+          "observation_frame": 210,
+          "first_available_decision_frame": 211,
+          "minimum_vertex_vertical_offset_m": -0.019103287935710478,
+          "known_vertex_count": 1413,
+          "unknown_or_outside_vertex_count": 1604,
+          "force_n": 31.1142376169517
+        },
+        {
+          "frame_end": 213,
+          "observation_frame": 213,
+          "first_available_decision_frame": 214,
+          "minimum_vertex_vertical_offset_m": -0.02167848173765985,
+          "known_vertex_count": 1412,
+          "unknown_or_outside_vertex_count": 1605,
+          "force_n": 133.59872046934493
+        },
+        {
+          "frame_end": 216,
+          "observation_frame": 216,
+          "first_available_decision_frame": 217,
+          "minimum_vertex_vertical_offset_m": -0.02302552829406057,
+          "known_vertex_count": 1411,
+          "unknown_or_outside_vertex_count": 1606,
+          "force_n": 130.09873325341178
+        }
+      ],
+      "original_phase_events": [
+        {
+          "label": "penetrate_deepen",
+          "next_frame": 430
+        },
+        {
+          "label": "curl_load",
+          "next_frame": 610
+        },
+        {
+          "label": "lift_clear",
+          "next_frame": 784
+        },
+        {
+          "label": "off_soil_confirm",
+          "next_frame": 1275
+        },
+        {
+          "label": "off_soil_confirm",
+          "next_frame": 1277
+        }
+      ],
+      "confirmed_contact_label": null
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/physics.ndjson",
+          "sha256": "e46a76619fbcc45508286b1f49e586fac4fe94813c9d4c0e2911b45a3b5c778f"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/observation.ndjson",
+          "sha256": "c040a6f293e50de067b2faaac68cbaf10d2e99129202d5240d00241a72ad6d57"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279/annotations.ndjson",
+          "sha256": "a078fd16216b10448e94ee7d91e18bf74e1f638d6dc4fc1ae1a426666db77a0d"
+        }
+      ],
+      "baseline": {
+        "zero_command_prefix_frames": 18,
+        "prefix_cap_frames": 30,
+        "maximum_force_n": 1.0507778845761637e-06,
+        "qualified_no_contact_baseline": false,
+        "note": "Zero command alone does not establish absence of contact."
+      },
+      "first_frame_force_n": 7.024915745055826e-08,
+      "first_frame_samples": 22,
+      "force_sensitivity": [
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 20,
+            "confirmation_frame_end": 20,
+            "first_available_decision_frame": 21
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 20,
+            "confirmation_frame_end": 22,
+            "first_available_decision_frame": 23
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 20,
+            "confirmation_frame_end": 25,
+            "first_available_decision_frame": 26
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 82,
+            "confirmation_frame_end": 82,
+            "first_available_decision_frame": 83
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 82,
+            "confirmation_frame_end": 84,
+            "first_available_decision_frame": 85
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 82,
+            "confirmation_frame_end": 87,
+            "first_available_decision_frame": 88
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 162,
+            "confirmation_frame_end": 162,
+            "first_available_decision_frame": 163
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 162,
+            "confirmation_frame_end": 164,
+            "first_available_decision_frame": 165
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 162,
+            "confirmation_frame_end": 167,
+            "first_available_decision_frame": 168
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 170,
+            "confirmation_frame_end": 170,
+            "first_available_decision_frame": 171
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 170,
+            "confirmation_frame_end": 172,
+            "first_available_decision_frame": 173
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 170,
+            "confirmation_frame_end": 175,
+            "first_available_decision_frame": 176
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 172,
+            "confirmation_frame_end": 172,
+            "first_available_decision_frame": 173
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 172,
+            "confirmation_frame_end": 174,
+            "first_available_decision_frame": 175
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 172,
+            "confirmation_frame_end": 177,
+            "first_available_decision_frame": 178
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 175,
+            "confirmation_frame_end": 175,
+            "first_available_decision_frame": 176
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 175,
+            "confirmation_frame_end": 177,
+            "first_available_decision_frame": 178
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 175,
+            "confirmation_frame_end": 180,
+            "first_available_decision_frame": 181
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 207,
+            "confirmation_frame_end": 207,
+            "first_available_decision_frame": 208
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 212,
+            "confirmation_frame_end": 214,
+            "first_available_decision_frame": 215
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 212,
+            "confirmation_frame_end": 217,
+            "first_available_decision_frame": 218
+          }
+        }
+      ],
+      "illustrative_10_to_100n_3_to_6frame_onset_range": [
+        162,
+        175
+      ],
+      "interval_is_confidence_interval": false,
+      "independent_recorded_events": {
+        "raw_soil_sample": {
+          "frame_end": 1,
+          "force_n": 7.024915745055826e-08,
+          "available_from_decision_frame": 2
+        },
+        "rock_bucket": {
+          "frame_end": 263,
+          "force_n": 6567.302018259317,
+          "available_from_decision_frame": 264
+        },
+        "bucket_motion_sweep": {
+          "frame_end": 234,
+          "force_n": 1368.6511511007334,
+          "available_from_decision_frame": 235
+        },
+        "mpm_motion_sweep": {
+          "frame_end": 287,
+          "force_n": 6911.070816183594,
+          "available_from_decision_frame": 288
+        }
+      },
+      "first_sampled_fused_grid_overlap": {
+        "frame_end": 228,
+        "observation_frame": 228,
+        "first_available_decision_frame": 229,
+        "minimum_vertex_vertical_offset_m": -0.2630794442510884,
+        "known_vertex_count": 1683,
+        "unknown_or_outside_vertex_count": 1334,
+        "force_n": 1116.1730003988184
+      },
+      "cad_vertex_count": 3017,
+      "cad_vertices_sha256": "12b96bb6b509fd8c306c78bb74b351c1301a2aca87351bedc4ef117e3c484c68",
+      "geometry_samples": [
+        {
+          "frame_end": 3,
+          "observation_frame": 3,
+          "first_available_decision_frame": 4,
+          "minimum_vertex_vertical_offset_m": 0.3305465566211996,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 4.853550857641766e-08
+        },
+        {
+          "frame_end": 6,
+          "observation_frame": 6,
+          "first_available_decision_frame": 7,
+          "minimum_vertex_vertical_offset_m": 0.33058105673371796,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 2.637910159349839e-08
+        },
+        {
+          "frame_end": 9,
+          "observation_frame": 9,
+          "first_available_decision_frame": 10,
+          "minimum_vertex_vertical_offset_m": 0.33059180613090433,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 7.26805600963917e-08
+        },
+        {
+          "frame_end": 12,
+          "observation_frame": 12,
+          "first_available_decision_frame": 13,
+          "minimum_vertex_vertical_offset_m": 0.3305889914835789,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 7.555750544075544e-07
+        },
+        {
+          "frame_end": 15,
+          "observation_frame": 15,
+          "first_available_decision_frame": 16,
+          "minimum_vertex_vertical_offset_m": 0.33058216712336286,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 1.0507778845761637e-06
+        },
+        {
+          "frame_end": 18,
+          "observation_frame": 18,
+          "first_available_decision_frame": 19,
+          "minimum_vertex_vertical_offset_m": 0.3305785390059699,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 9.125793054628198e-07
+        },
+        {
+          "frame_end": 21,
+          "observation_frame": 21,
+          "first_available_decision_frame": 22,
+          "minimum_vertex_vertical_offset_m": 0.3218304954643858,
+          "known_vertex_count": 1405,
+          "unknown_or_outside_vertex_count": 1612,
+          "force_n": 0.004527294826290701
+        },
+        {
+          "frame_end": 24,
+          "observation_frame": 24,
+          "first_available_decision_frame": 25,
+          "minimum_vertex_vertical_offset_m": 0.31046813745441715,
+          "known_vertex_count": 1401,
+          "unknown_or_outside_vertex_count": 1616,
+          "force_n": 0.00333438828573117
+        },
+        {
+          "frame_end": 27,
+          "observation_frame": 27,
+          "first_available_decision_frame": 28,
+          "minimum_vertex_vertical_offset_m": 0.29910255047766454,
+          "known_vertex_count": 1400,
+          "unknown_or_outside_vertex_count": 1617,
+          "force_n": 0.006030758172368228
+        },
+        {
+          "frame_end": 30,
+          "observation_frame": 30,
+          "first_available_decision_frame": 31,
+          "minimum_vertex_vertical_offset_m": 0.28863454099323005,
+          "known_vertex_count": 1396,
+          "unknown_or_outside_vertex_count": 1621,
+          "force_n": 0.006641081536766738
+        },
+        {
+          "frame_end": 33,
+          "observation_frame": 33,
+          "first_available_decision_frame": 34,
+          "minimum_vertex_vertical_offset_m": 0.2798456662927604,
+          "known_vertex_count": 1389,
+          "unknown_or_outside_vertex_count": 1628,
+          "force_n": 0.006477410077962955
+        },
+        {
+          "frame_end": 36,
+          "observation_frame": 36,
+          "first_available_decision_frame": 37,
+          "minimum_vertex_vertical_offset_m": 0.278825986107901,
+          "known_vertex_count": 1389,
+          "unknown_or_outside_vertex_count": 1628,
+          "force_n": 0.00012560967108913996
+        },
+        {
+          "frame_end": 39,
+          "observation_frame": 39,
+          "first_available_decision_frame": 40,
+          "minimum_vertex_vertical_offset_m": 0.270529298556327,
+          "known_vertex_count": 1387,
+          "unknown_or_outside_vertex_count": 1630,
+          "force_n": 0.01381919712358762
+        },
+        {
+          "frame_end": 42,
+          "observation_frame": 42,
+          "first_available_decision_frame": 43,
+          "minimum_vertex_vertical_offset_m": 0.2601800474315745,
+          "known_vertex_count": 1384,
+          "unknown_or_outside_vertex_count": 1633,
+          "force_n": 0.013610836785834869
+        },
+        {
+          "frame_end": 45,
+          "observation_frame": 45,
+          "first_available_decision_frame": 46,
+          "minimum_vertex_vertical_offset_m": 0.2499688212444009,
+          "known_vertex_count": 1384,
+          "unknown_or_outside_vertex_count": 1633,
+          "force_n": 0.01572092461674541
+        },
+        {
+          "frame_end": 48,
+          "observation_frame": 48,
+          "first_available_decision_frame": 49,
+          "minimum_vertex_vertical_offset_m": 0.24184781652951148,
+          "known_vertex_count": 1376,
+          "unknown_or_outside_vertex_count": 1641,
+          "force_n": 0.018774906235631033
+        },
+        {
+          "frame_end": 51,
+          "observation_frame": 51,
+          "first_available_decision_frame": 52,
+          "minimum_vertex_vertical_offset_m": 0.23675950006143065,
+          "known_vertex_count": 1346,
+          "unknown_or_outside_vertex_count": 1671,
+          "force_n": 0.015184018891900878
+        },
+        {
+          "frame_end": 54,
+          "observation_frame": 54,
+          "first_available_decision_frame": 55,
+          "minimum_vertex_vertical_offset_m": 0.23214467445437648,
+          "known_vertex_count": 1346,
+          "unknown_or_outside_vertex_count": 1671,
+          "force_n": 0.013849366313840936
+        },
+        {
+          "frame_end": 57,
+          "observation_frame": 57,
+          "first_available_decision_frame": 58,
+          "minimum_vertex_vertical_offset_m": 0.22688211245945156,
+          "known_vertex_count": 1344,
+          "unknown_or_outside_vertex_count": 1673,
+          "force_n": 0.01895709529247116
+        },
+        {
+          "frame_end": 60,
+          "observation_frame": 60,
+          "first_available_decision_frame": 61,
+          "minimum_vertex_vertical_offset_m": 0.22926372157051977,
+          "known_vertex_count": 1339,
+          "unknown_or_outside_vertex_count": 1678,
+          "force_n": 0.017408796172075136
+        },
+        {
+          "frame_end": 63,
+          "observation_frame": 63,
+          "first_available_decision_frame": 64,
+          "minimum_vertex_vertical_offset_m": 0.2225645033113981,
+          "known_vertex_count": 1334,
+          "unknown_or_outside_vertex_count": 1683,
+          "force_n": 0.014853412160404804
+        },
+        {
+          "frame_end": 66,
+          "observation_frame": 66,
+          "first_available_decision_frame": 67,
+          "minimum_vertex_vertical_offset_m": 0.21217919984898437,
+          "known_vertex_count": 1333,
+          "unknown_or_outside_vertex_count": 1684,
+          "force_n": 0.020008283268471976
+        },
+        {
+          "frame_end": 69,
+          "observation_frame": 69,
+          "first_available_decision_frame": 70,
+          "minimum_vertex_vertical_offset_m": 0.2022673749491224,
+          "known_vertex_count": 1331,
+          "unknown_or_outside_vertex_count": 1686,
+          "force_n": 0.02343222803363963
+        },
+        {
+          "frame_end": 72,
+          "observation_frame": 72,
+          "first_available_decision_frame": 73,
+          "minimum_vertex_vertical_offset_m": 0.19184697682366303,
+          "known_vertex_count": 1330,
+          "unknown_or_outside_vertex_count": 1687,
+          "force_n": 0.01750794809074228
+        },
+        {
+          "frame_end": 75,
+          "observation_frame": 75,
+          "first_available_decision_frame": 76,
+          "minimum_vertex_vertical_offset_m": 0.1813494948160952,
+          "known_vertex_count": 1325,
+          "unknown_or_outside_vertex_count": 1692,
+          "force_n": 0.14720746393794776
+        },
+        {
+          "frame_end": 78,
+          "observation_frame": 78,
+          "first_available_decision_frame": 79,
+          "minimum_vertex_vertical_offset_m": 0.17075166758984084,
+          "known_vertex_count": 1323,
+          "unknown_or_outside_vertex_count": 1694,
+          "force_n": 0.22306213953441997
+        },
+        {
+          "frame_end": 81,
+          "observation_frame": 81,
+          "first_available_decision_frame": 82,
+          "minimum_vertex_vertical_offset_m": 0.160153369725889,
+          "known_vertex_count": 1321,
+          "unknown_or_outside_vertex_count": 1696,
+          "force_n": 0.8131858954159084
+        },
+        {
+          "frame_end": 84,
+          "observation_frame": 84,
+          "first_available_decision_frame": 85,
+          "minimum_vertex_vertical_offset_m": 0.14952229048194932,
+          "known_vertex_count": 1316,
+          "unknown_or_outside_vertex_count": 1701,
+          "force_n": 2.8316810347506927
+        },
+        {
+          "frame_end": 87,
+          "observation_frame": 87,
+          "first_available_decision_frame": 88,
+          "minimum_vertex_vertical_offset_m": 0.13885600699305378,
+          "known_vertex_count": 1312,
+          "unknown_or_outside_vertex_count": 1705,
+          "force_n": 3.6961006237263585
+        },
+        {
+          "frame_end": 90,
+          "observation_frame": 90,
+          "first_available_decision_frame": 91,
+          "minimum_vertex_vertical_offset_m": 0.12813187829430306,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 3.331670087249136
+        },
+        {
+          "frame_end": 93,
+          "observation_frame": 93,
+          "first_available_decision_frame": 94,
+          "minimum_vertex_vertical_offset_m": 0.12481306702453754,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 2.7212366110432864
+        },
+        {
+          "frame_end": 96,
+          "observation_frame": 96,
+          "first_available_decision_frame": 97,
+          "minimum_vertex_vertical_offset_m": 0.12479004160542284,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 2.590269830805749
+        },
+        {
+          "frame_end": 99,
+          "observation_frame": 99,
+          "first_available_decision_frame": 100,
+          "minimum_vertex_vertical_offset_m": 0.12483405324724761,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 2.486546991102864
+        },
+        {
+          "frame_end": 102,
+          "observation_frame": 102,
+          "first_available_decision_frame": 103,
+          "minimum_vertex_vertical_offset_m": 0.12489558343249607,
+          "known_vertex_count": 1312,
+          "unknown_or_outside_vertex_count": 1705,
+          "force_n": 2.0314818357550415
+        },
+        {
+          "frame_end": 105,
+          "observation_frame": 105,
+          "first_available_decision_frame": 106,
+          "minimum_vertex_vertical_offset_m": 0.16272980029480766,
+          "known_vertex_count": 1318,
+          "unknown_or_outside_vertex_count": 1699,
+          "force_n": 3.348424230217367
+        },
+        {
+          "frame_end": 108,
+          "observation_frame": 108,
+          "first_available_decision_frame": 109,
+          "minimum_vertex_vertical_offset_m": 0.16341107883528982,
+          "known_vertex_count": 1319,
+          "unknown_or_outside_vertex_count": 1698,
+          "force_n": 0.24716554738599342
+        },
+        {
+          "frame_end": 111,
+          "observation_frame": 111,
+          "first_available_decision_frame": 112,
+          "minimum_vertex_vertical_offset_m": 0.1634124348889412,
+          "known_vertex_count": 1318,
+          "unknown_or_outside_vertex_count": 1699,
+          "force_n": 0.5950989984720887
+        },
+        {
+          "frame_end": 114,
+          "observation_frame": 114,
+          "first_available_decision_frame": 115,
+          "minimum_vertex_vertical_offset_m": 0.163204238808055,
+          "known_vertex_count": 1317,
+          "unknown_or_outside_vertex_count": 1700,
+          "force_n": 0.5870253385508417
+        },
+        {
+          "frame_end": 117,
+          "observation_frame": 117,
+          "first_available_decision_frame": 118,
+          "minimum_vertex_vertical_offset_m": 0.1625485728389977,
+          "known_vertex_count": 1318,
+          "unknown_or_outside_vertex_count": 1699,
+          "force_n": 0.7767067555408375
+        },
+        {
+          "frame_end": 120,
+          "observation_frame": 120,
+          "first_available_decision_frame": 121,
+          "minimum_vertex_vertical_offset_m": 0.1617646606496912,
+          "known_vertex_count": 1318,
+          "unknown_or_outside_vertex_count": 1699,
+          "force_n": 0.2265191349117326
+        },
+        {
+          "frame_end": 123,
+          "observation_frame": 123,
+          "first_available_decision_frame": 124,
+          "minimum_vertex_vertical_offset_m": 0.16173153336453816,
+          "known_vertex_count": 1317,
+          "unknown_or_outside_vertex_count": 1700,
+          "force_n": 0.16366606950272944
+        },
+        {
+          "frame_end": 126,
+          "observation_frame": 126,
+          "first_available_decision_frame": 127,
+          "minimum_vertex_vertical_offset_m": 0.1615533365095676,
+          "known_vertex_count": 1317,
+          "unknown_or_outside_vertex_count": 1700,
+          "force_n": 0.16039954546003696
+        },
+        {
+          "frame_end": 129,
+          "observation_frame": 129,
+          "first_available_decision_frame": 130,
+          "minimum_vertex_vertical_offset_m": 0.1615687996481745,
+          "known_vertex_count": 1317,
+          "unknown_or_outside_vertex_count": 1700,
+          "force_n": 0.14202461491790108
+        },
+        {
+          "frame_end": 132,
+          "observation_frame": 132,
+          "first_available_decision_frame": 133,
+          "minimum_vertex_vertical_offset_m": 0.16159601536313883,
+          "known_vertex_count": 1317,
+          "unknown_or_outside_vertex_count": 1700,
+          "force_n": 0.1369227446821484
+        },
+        {
+          "frame_end": 135,
+          "observation_frame": 135,
+          "first_available_decision_frame": 136,
+          "minimum_vertex_vertical_offset_m": 0.15665184314708824,
+          "known_vertex_count": 1315,
+          "unknown_or_outside_vertex_count": 1702,
+          "force_n": 0.7941024061705185
+        },
+        {
+          "frame_end": 138,
+          "observation_frame": 138,
+          "first_available_decision_frame": 139,
+          "minimum_vertex_vertical_offset_m": 0.15028012148649839,
+          "known_vertex_count": 1314,
+          "unknown_or_outside_vertex_count": 1703,
+          "force_n": 3.213260085743774
+        },
+        {
+          "frame_end": 141,
+          "observation_frame": 141,
+          "first_available_decision_frame": 142,
+          "minimum_vertex_vertical_offset_m": 0.14930320058753765,
+          "known_vertex_count": 1314,
+          "unknown_or_outside_vertex_count": 1703,
+          "force_n": 2.9439583493096446
+        },
+        {
+          "frame_end": 144,
+          "observation_frame": 144,
+          "first_available_decision_frame": 145,
+          "minimum_vertex_vertical_offset_m": 0.14048735549459512,
+          "known_vertex_count": 1314,
+          "unknown_or_outside_vertex_count": 1703,
+          "force_n": 6.53100534664468
+        },
+        {
+          "frame_end": 147,
+          "observation_frame": 147,
+          "first_available_decision_frame": 148,
+          "minimum_vertex_vertical_offset_m": 0.13773869841240227,
+          "known_vertex_count": 1313,
+          "unknown_or_outside_vertex_count": 1704,
+          "force_n": 7.3058761651641575
+        },
+        {
+          "frame_end": 150,
+          "observation_frame": 150,
+          "first_available_decision_frame": 151,
+          "minimum_vertex_vertical_offset_m": 0.13739232600764884,
+          "known_vertex_count": 1313,
+          "unknown_or_outside_vertex_count": 1704,
+          "force_n": 7.254492948785713
+        },
+        {
+          "frame_end": 153,
+          "observation_frame": 153,
+          "first_available_decision_frame": 154,
+          "minimum_vertex_vertical_offset_m": 0.13738790635472875,
+          "known_vertex_count": 1313,
+          "unknown_or_outside_vertex_count": 1704,
+          "force_n": 7.196742605270604
+        },
+        {
+          "frame_end": 156,
+          "observation_frame": 156,
+          "first_available_decision_frame": 157,
+          "minimum_vertex_vertical_offset_m": 0.13741942000683838,
+          "known_vertex_count": 1313,
+          "unknown_or_outside_vertex_count": 1704,
+          "force_n": 7.155657824074145
+        },
+        {
+          "frame_end": 159,
+          "observation_frame": 159,
+          "first_available_decision_frame": 160,
+          "minimum_vertex_vertical_offset_m": 0.13385340498086795,
+          "known_vertex_count": 1312,
+          "unknown_or_outside_vertex_count": 1705,
+          "force_n": 7.911579894168513
+        },
+        {
+          "frame_end": 162,
+          "observation_frame": 162,
+          "first_available_decision_frame": 163,
+          "minimum_vertex_vertical_offset_m": 0.1276907272562735,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 10.518497984192788
+        },
+        {
+          "frame_end": 165,
+          "observation_frame": 165,
+          "first_available_decision_frame": 166,
+          "minimum_vertex_vertical_offset_m": 0.12151860690325123,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 16.299753252847523
+        },
+        {
+          "frame_end": 168,
+          "observation_frame": 168,
+          "first_available_decision_frame": 169,
+          "minimum_vertex_vertical_offset_m": 0.11458366779058649,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 21.32961422464517
+        },
+        {
+          "frame_end": 171,
+          "observation_frame": 171,
+          "first_available_decision_frame": 172,
+          "minimum_vertex_vertical_offset_m": 0.10570965391563458,
+          "known_vertex_count": 1312,
+          "unknown_or_outside_vertex_count": 1705,
+          "force_n": 32.34747658539648
+        },
+        {
+          "frame_end": 174,
+          "observation_frame": 174,
+          "first_available_decision_frame": 175,
+          "minimum_vertex_vertical_offset_m": 0.09607257393107549,
+          "known_vertex_count": 1312,
+          "unknown_or_outside_vertex_count": 1705,
+          "force_n": 95.90262598108583
+        },
+        {
+          "frame_end": 177,
+          "observation_frame": 177,
+          "first_available_decision_frame": 178,
+          "minimum_vertex_vertical_offset_m": 0.085943577450591,
+          "known_vertex_count": 1298,
+          "unknown_or_outside_vertex_count": 1719,
+          "force_n": 136.1849048420025
+        },
+        {
+          "frame_end": 180,
+          "observation_frame": 180,
+          "first_available_decision_frame": 181,
+          "minimum_vertex_vertical_offset_m": 0.08377268499284107,
+          "known_vertex_count": 1294,
+          "unknown_or_outside_vertex_count": 1723,
+          "force_n": 143.92242453803286
+        },
+        {
+          "frame_end": 183,
+          "observation_frame": 183,
+          "first_available_decision_frame": 184,
+          "minimum_vertex_vertical_offset_m": 0.08353608087570286,
+          "known_vertex_count": 1298,
+          "unknown_or_outside_vertex_count": 1719,
+          "force_n": 154.72735535736206
+        },
+        {
+          "frame_end": 186,
+          "observation_frame": 186,
+          "first_available_decision_frame": 187,
+          "minimum_vertex_vertical_offset_m": 0.08333929850388722,
+          "known_vertex_count": 1303,
+          "unknown_or_outside_vertex_count": 1714,
+          "force_n": 158.01667521953462
+        },
+        {
+          "frame_end": 189,
+          "observation_frame": 189,
+          "first_available_decision_frame": 190,
+          "minimum_vertex_vertical_offset_m": 0.04348903329073606,
+          "known_vertex_count": 1312,
+          "unknown_or_outside_vertex_count": 1705,
+          "force_n": 155.12497082191567
+        },
+        {
+          "frame_end": 192,
+          "observation_frame": 192,
+          "first_available_decision_frame": 193,
+          "minimum_vertex_vertical_offset_m": 0.03987905678407122,
+          "known_vertex_count": 1328,
+          "unknown_or_outside_vertex_count": 1689,
+          "force_n": 173.13940900052654
+        },
+        {
+          "frame_end": 195,
+          "observation_frame": 195,
+          "first_available_decision_frame": 196,
+          "minimum_vertex_vertical_offset_m": 0.036484627097848055,
+          "known_vertex_count": 1404,
+          "unknown_or_outside_vertex_count": 1613,
+          "force_n": 187.38844223424528
+        },
+        {
+          "frame_end": 198,
+          "observation_frame": 198,
+          "first_available_decision_frame": 199,
+          "minimum_vertex_vertical_offset_m": 0.024369831052641455,
+          "known_vertex_count": 1420,
+          "unknown_or_outside_vertex_count": 1597,
+          "force_n": 201.73399458477098
+        },
+        {
+          "frame_end": 201,
+          "observation_frame": 201,
+          "first_available_decision_frame": 202,
+          "minimum_vertex_vertical_offset_m": 0.021102859897977888,
+          "known_vertex_count": 1456,
+          "unknown_or_outside_vertex_count": 1561,
+          "force_n": 229.95442579364533
+        },
+        {
+          "frame_end": 204,
+          "observation_frame": 204,
+          "first_available_decision_frame": 205,
+          "minimum_vertex_vertical_offset_m": 0.018130802430754267,
+          "known_vertex_count": 1466,
+          "unknown_or_outside_vertex_count": 1551,
+          "force_n": 370.4223649968198
+        },
+        {
+          "frame_end": 207,
+          "observation_frame": 207,
+          "first_available_decision_frame": 208,
+          "minimum_vertex_vertical_offset_m": 0.01566207532493813,
+          "known_vertex_count": 1520,
+          "unknown_or_outside_vertex_count": 1497,
+          "force_n": 501.47317956706513
+        },
+        {
+          "frame_end": 210,
+          "observation_frame": 210,
+          "first_available_decision_frame": 211,
+          "minimum_vertex_vertical_offset_m": 0.013173904841910833,
+          "known_vertex_count": 1560,
+          "unknown_or_outside_vertex_count": 1457,
+          "force_n": 413.47942937421936
+        },
+        {
+          "frame_end": 213,
+          "observation_frame": 213,
+          "first_available_decision_frame": 214,
+          "minimum_vertex_vertical_offset_m": 0.011761569719304976,
+          "known_vertex_count": 1592,
+          "unknown_or_outside_vertex_count": 1425,
+          "force_n": 801.2527823423267
+        },
+        {
+          "frame_end": 216,
+          "observation_frame": 216,
+          "first_available_decision_frame": 217,
+          "minimum_vertex_vertical_offset_m": 0.009062049473300693,
+          "known_vertex_count": 1601,
+          "unknown_or_outside_vertex_count": 1416,
+          "force_n": 1045.5328239881962
+        },
+        {
+          "frame_end": 219,
+          "observation_frame": 219,
+          "first_available_decision_frame": 220,
+          "minimum_vertex_vertical_offset_m": 0.009875051188994455,
+          "known_vertex_count": 1611,
+          "unknown_or_outside_vertex_count": 1406,
+          "force_n": 1015.3847622809822
+        },
+        {
+          "frame_end": 222,
+          "observation_frame": 222,
+          "first_available_decision_frame": 223,
+          "minimum_vertex_vertical_offset_m": 0.01098403921167157,
+          "known_vertex_count": 1611,
+          "unknown_or_outside_vertex_count": 1406,
+          "force_n": 829.3065363850866
+        },
+        {
+          "frame_end": 225,
+          "observation_frame": 225,
+          "first_available_decision_frame": 226,
+          "minimum_vertex_vertical_offset_m": 0.010555258519021171,
+          "known_vertex_count": 1611,
+          "unknown_or_outside_vertex_count": 1406,
+          "force_n": 791.2783081820767
+        },
+        {
+          "frame_end": 228,
+          "observation_frame": 228,
+          "first_available_decision_frame": 229,
+          "minimum_vertex_vertical_offset_m": -0.2630794442510884,
+          "known_vertex_count": 1683,
+          "unknown_or_outside_vertex_count": 1334,
+          "force_n": 1116.1730003988184
+        },
+        {
+          "frame_end": 231,
+          "observation_frame": 231,
+          "first_available_decision_frame": 232,
+          "minimum_vertex_vertical_offset_m": -0.27353921316560936,
+          "known_vertex_count": 1723,
+          "unknown_or_outside_vertex_count": 1294,
+          "force_n": 1321.0317985218444
+        },
+        {
+          "frame_end": 234,
+          "observation_frame": 234,
+          "first_available_decision_frame": 235,
+          "minimum_vertex_vertical_offset_m": -0.2774703982585931,
+          "known_vertex_count": 1774,
+          "unknown_or_outside_vertex_count": 1243,
+          "force_n": 1368.6511511007334
+        },
+        {
+          "frame_end": 237,
+          "observation_frame": 237,
+          "first_available_decision_frame": 238,
+          "minimum_vertex_vertical_offset_m": -0.2806003159454604,
+          "known_vertex_count": 1814,
+          "unknown_or_outside_vertex_count": 1203,
+          "force_n": 2205.837398321624
+        },
+        {
+          "frame_end": 240,
+          "observation_frame": 240,
+          "first_available_decision_frame": 241,
+          "minimum_vertex_vertical_offset_m": -0.2803464320956044,
+          "known_vertex_count": 1824,
+          "unknown_or_outside_vertex_count": 1193,
+          "force_n": 3514.726624218568
+        },
+        {
+          "frame_end": 243,
+          "observation_frame": 243,
+          "first_available_decision_frame": 244,
+          "minimum_vertex_vertical_offset_m": -0.2777552552138203,
+          "known_vertex_count": 1814,
+          "unknown_or_outside_vertex_count": 1203,
+          "force_n": 3633.811650844601
+        },
+        {
+          "frame_end": 246,
+          "observation_frame": 246,
+          "first_available_decision_frame": 247,
+          "minimum_vertex_vertical_offset_m": -0.27542799289385256,
+          "known_vertex_count": 1825,
+          "unknown_or_outside_vertex_count": 1192,
+          "force_n": 3940.6367742845023
+        },
+        {
+          "frame_end": 249,
+          "observation_frame": 249,
+          "first_available_decision_frame": 250,
+          "minimum_vertex_vertical_offset_m": -0.28550963852627687,
+          "known_vertex_count": 1827,
+          "unknown_or_outside_vertex_count": 1190,
+          "force_n": 4415.008147979998
+        },
+        {
+          "frame_end": 252,
+          "observation_frame": 252,
+          "first_available_decision_frame": 253,
+          "minimum_vertex_vertical_offset_m": -0.28487845493381325,
+          "known_vertex_count": 1831,
+          "unknown_or_outside_vertex_count": 1186,
+          "force_n": 5631.8019588609595
+        },
+        {
+          "frame_end": 255,
+          "observation_frame": 255,
+          "first_available_decision_frame": 256,
+          "minimum_vertex_vertical_offset_m": -0.36968487391899796,
+          "known_vertex_count": 1832,
+          "unknown_or_outside_vertex_count": 1185,
+          "force_n": 5803.146386032993
+        },
+        {
+          "frame_end": 258,
+          "observation_frame": 258,
+          "first_available_decision_frame": 259,
+          "minimum_vertex_vertical_offset_m": -0.370438153463182,
+          "known_vertex_count": 1856,
+          "unknown_or_outside_vertex_count": 1161,
+          "force_n": 4008.492436881136
+        },
+        {
+          "frame_end": 261,
+          "observation_frame": 261,
+          "first_available_decision_frame": 262,
+          "minimum_vertex_vertical_offset_m": -0.37418497681539176,
+          "known_vertex_count": 1901,
+          "unknown_or_outside_vertex_count": 1116,
+          "force_n": 5356.715999358167
+        },
+        {
+          "frame_end": 264,
+          "observation_frame": 264,
+          "first_available_decision_frame": 265,
+          "minimum_vertex_vertical_offset_m": -0.9646826500798891,
+          "known_vertex_count": 1913,
+          "unknown_or_outside_vertex_count": 1104,
+          "force_n": 6343.163981195335
+        }
+      ],
+      "original_phase_events": [
+        {
+          "label": "penetrate_deepen",
+          "next_frame": 223
+        },
+        {
+          "label": "curl_load",
+          "next_frame": 342
+        },
+        {
+          "label": "lift_clear",
+          "next_frame": 843
+        },
+        {
+          "label": "off_soil_confirm",
+          "next_frame": 1354
+        }
+      ],
+      "confirmed_contact_label": null
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/physics.ndjson",
+          "sha256": "fe0717c631ba632a25e7adc55967ec242dee7c475700642cc2b45441296c0714"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/observation.ndjson",
+          "sha256": "3832f01c66f7e1e885e88b9e40a3b178ca75ff519a5143ff5b7373966e5a3dda"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/annotations.ndjson",
+          "sha256": "af8b4aa83f88dcf646f9c1a1065522cce21240446afdacad79f289a80397b9f1"
+        }
+      ],
+      "baseline": {
+        "zero_command_prefix_frames": 30,
+        "prefix_cap_frames": 30,
+        "maximum_force_n": 0.0,
+        "qualified_no_contact_baseline": false,
+        "note": "Zero command alone does not establish absence of contact."
+      },
+      "first_frame_force_n": 0.0,
+      "first_frame_samples": 0,
+      "force_sensitivity": [
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 65,
+            "confirmation_frame_end": 65,
+            "first_available_decision_frame": 66
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 65,
+            "confirmation_frame_end": 67,
+            "first_available_decision_frame": 68
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 65,
+            "confirmation_frame_end": 70,
+            "first_available_decision_frame": 71
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 351,
+            "confirmation_frame_end": 351,
+            "first_available_decision_frame": 352
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 351,
+            "confirmation_frame_end": 353,
+            "first_available_decision_frame": 354
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 351,
+            "confirmation_frame_end": 356,
+            "first_available_decision_frame": 357
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 354,
+            "confirmation_frame_end": 354,
+            "first_available_decision_frame": 355
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 360,
+            "confirmation_frame_end": 362,
+            "first_available_decision_frame": 363
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 360,
+            "confirmation_frame_end": 365,
+            "first_available_decision_frame": 366
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 361,
+            "confirmation_frame_end": 361,
+            "first_available_decision_frame": 362
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 361,
+            "confirmation_frame_end": 363,
+            "first_available_decision_frame": 364
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 361,
+            "confirmation_frame_end": 366,
+            "first_available_decision_frame": 367
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 363,
+            "confirmation_frame_end": 363,
+            "first_available_decision_frame": 364
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 363,
+            "confirmation_frame_end": 365,
+            "first_available_decision_frame": 366
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 371,
+            "confirmation_frame_end": 376,
+            "first_available_decision_frame": 377
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 373,
+            "confirmation_frame_end": 373,
+            "first_available_decision_frame": 374
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 373,
+            "confirmation_frame_end": 375,
+            "first_available_decision_frame": 376
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 373,
+            "confirmation_frame_end": 378,
+            "first_available_decision_frame": 379
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 407,
+            "confirmation_frame_end": 407,
+            "first_available_decision_frame": 408
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 407,
+            "confirmation_frame_end": 409,
+            "first_available_decision_frame": 410
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 407,
+            "confirmation_frame_end": 412,
+            "first_available_decision_frame": 413
+          }
+        }
+      ],
+      "illustrative_10_to_100n_3_to_6frame_onset_range": [
+        360,
+        373
+      ],
+      "interval_is_confidence_interval": false,
+      "independent_recorded_events": {
+        "raw_soil_sample": {
+          "frame_end": 65,
+          "force_n": 0.0010338466443336103,
+          "available_from_decision_frame": 66
+        },
+        "rock_bucket": {
+          "frame_end": 537,
+          "force_n": 5634.278729524509,
+          "available_from_decision_frame": 538
+        },
+        "bucket_motion_sweep": {
+          "frame_end": 412,
+          "force_n": 564.8249572790485,
+          "available_from_decision_frame": 413
+        },
+        "mpm_motion_sweep": {
+          "frame_end": 426,
+          "force_n": 1200.0566645321474,
+          "available_from_decision_frame": 427
+        }
+      },
+      "first_sampled_fused_grid_overlap": {
+        "frame_end": 351,
+        "observation_frame": 351,
+        "first_available_decision_frame": 352,
+        "minimum_vertex_vertical_offset_m": -0.2765153028260101,
+        "known_vertex_count": 1155,
+        "unknown_or_outside_vertex_count": 1862,
+        "force_n": 1.8425358184148677
+      },
+      "cad_vertex_count": 3017,
+      "cad_vertices_sha256": "70eaacc93d8fd1f5ad9b410f859c37f0bc5db9e317349f9cfd1c9930ee942ba9",
+      "geometry_samples": [
+        {
+          "frame_end": 3,
+          "observation_frame": 3,
+          "first_available_decision_frame": 4,
+          "minimum_vertex_vertical_offset_m": 0.9710220656414845,
+          "known_vertex_count": 1833,
+          "unknown_or_outside_vertex_count": 1184,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 6,
+          "observation_frame": 6,
+          "first_available_decision_frame": 7,
+          "minimum_vertex_vertical_offset_m": 0.9708338258932263,
+          "known_vertex_count": 1833,
+          "unknown_or_outside_vertex_count": 1184,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 9,
+          "observation_frame": 9,
+          "first_available_decision_frame": 10,
+          "minimum_vertex_vertical_offset_m": 0.9705080245711051,
+          "known_vertex_count": 1833,
+          "unknown_or_outside_vertex_count": 1184,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 12,
+          "observation_frame": 12,
+          "first_available_decision_frame": 13,
+          "minimum_vertex_vertical_offset_m": 0.9701517398948858,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 15,
+          "observation_frame": 15,
+          "first_available_decision_frame": 16,
+          "minimum_vertex_vertical_offset_m": 0.969833154825364,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 18,
+          "observation_frame": 18,
+          "first_available_decision_frame": 19,
+          "minimum_vertex_vertical_offset_m": 0.969672311459935,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 21,
+          "observation_frame": 21,
+          "first_available_decision_frame": 22,
+          "minimum_vertex_vertical_offset_m": 0.9696797034022255,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 24,
+          "observation_frame": 24,
+          "first_available_decision_frame": 25,
+          "minimum_vertex_vertical_offset_m": 0.9697968307308338,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 27,
+          "observation_frame": 27,
+          "first_available_decision_frame": 28,
+          "minimum_vertex_vertical_offset_m": 0.9699685455942024,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 30,
+          "observation_frame": 30,
+          "first_available_decision_frame": 31,
+          "minimum_vertex_vertical_offset_m": 0.9700985107914237,
+          "known_vertex_count": 1834,
+          "unknown_or_outside_vertex_count": 1183,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 33,
+          "observation_frame": 33,
+          "first_available_decision_frame": 34,
+          "minimum_vertex_vertical_offset_m": 0.9647439098189183,
+          "known_vertex_count": 1833,
+          "unknown_or_outside_vertex_count": 1184,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 36,
+          "observation_frame": 36,
+          "first_available_decision_frame": 37,
+          "minimum_vertex_vertical_offset_m": 0.9526421808139798,
+          "known_vertex_count": 1820,
+          "unknown_or_outside_vertex_count": 1197,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 39,
+          "observation_frame": 39,
+          "first_available_decision_frame": 40,
+          "minimum_vertex_vertical_offset_m": 0.9404096341069856,
+          "known_vertex_count": 1810,
+          "unknown_or_outside_vertex_count": 1207,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 42,
+          "observation_frame": 42,
+          "first_available_decision_frame": 43,
+          "minimum_vertex_vertical_offset_m": 0.9280132793959983,
+          "known_vertex_count": 1802,
+          "unknown_or_outside_vertex_count": 1215,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 45,
+          "observation_frame": 45,
+          "first_available_decision_frame": 46,
+          "minimum_vertex_vertical_offset_m": 0.9155426917321285,
+          "known_vertex_count": 1800,
+          "unknown_or_outside_vertex_count": 1217,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 48,
+          "observation_frame": 48,
+          "first_available_decision_frame": 49,
+          "minimum_vertex_vertical_offset_m": 0.9031568947363195,
+          "known_vertex_count": 1798,
+          "unknown_or_outside_vertex_count": 1219,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 51,
+          "observation_frame": 51,
+          "first_available_decision_frame": 52,
+          "minimum_vertex_vertical_offset_m": 0.8907748190764866,
+          "known_vertex_count": 1793,
+          "unknown_or_outside_vertex_count": 1224,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 54,
+          "observation_frame": 54,
+          "first_available_decision_frame": 55,
+          "minimum_vertex_vertical_offset_m": 0.8788381661396389,
+          "known_vertex_count": 1783,
+          "unknown_or_outside_vertex_count": 1234,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 57,
+          "observation_frame": 57,
+          "first_available_decision_frame": 58,
+          "minimum_vertex_vertical_offset_m": 0.8676312432094748,
+          "known_vertex_count": 1771,
+          "unknown_or_outside_vertex_count": 1246,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 60,
+          "observation_frame": 60,
+          "first_available_decision_frame": 61,
+          "minimum_vertex_vertical_offset_m": 0.8554484656334238,
+          "known_vertex_count": 1760,
+          "unknown_or_outside_vertex_count": 1257,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 63,
+          "observation_frame": 63,
+          "first_available_decision_frame": 64,
+          "minimum_vertex_vertical_offset_m": 0.8448917748120426,
+          "known_vertex_count": 1749,
+          "unknown_or_outside_vertex_count": 1268,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 66,
+          "observation_frame": 66,
+          "first_available_decision_frame": 67,
+          "minimum_vertex_vertical_offset_m": 0.8328331379137823,
+          "known_vertex_count": 1739,
+          "unknown_or_outside_vertex_count": 1278,
+          "force_n": 0.0012632360538846837
+        },
+        {
+          "frame_end": 69,
+          "observation_frame": 69,
+          "first_available_decision_frame": 70,
+          "minimum_vertex_vertical_offset_m": 0.820459490502081,
+          "known_vertex_count": 1723,
+          "unknown_or_outside_vertex_count": 1294,
+          "force_n": 0.0017473824798472548
+        },
+        {
+          "frame_end": 72,
+          "observation_frame": 72,
+          "first_available_decision_frame": 73,
+          "minimum_vertex_vertical_offset_m": 0.8083147360364342,
+          "known_vertex_count": 1710,
+          "unknown_or_outside_vertex_count": 1307,
+          "force_n": 0.0009542402146932728
+        },
+        {
+          "frame_end": 75,
+          "observation_frame": 75,
+          "first_available_decision_frame": 76,
+          "minimum_vertex_vertical_offset_m": 0.7972990722546598,
+          "known_vertex_count": 1694,
+          "unknown_or_outside_vertex_count": 1323,
+          "force_n": 0.0003386997054006055
+        },
+        {
+          "frame_end": 78,
+          "observation_frame": 78,
+          "first_available_decision_frame": 79,
+          "minimum_vertex_vertical_offset_m": 0.7850782331941832,
+          "known_vertex_count": 1685,
+          "unknown_or_outside_vertex_count": 1332,
+          "force_n": 0.000714178059942487
+        },
+        {
+          "frame_end": 81,
+          "observation_frame": 81,
+          "first_available_decision_frame": 82,
+          "minimum_vertex_vertical_offset_m": 0.7728415556265047,
+          "known_vertex_count": 1679,
+          "unknown_or_outside_vertex_count": 1338,
+          "force_n": 0.0010809907573869433
+        },
+        {
+          "frame_end": 84,
+          "observation_frame": 84,
+          "first_available_decision_frame": 85,
+          "minimum_vertex_vertical_offset_m": 0.7611102441765139,
+          "known_vertex_count": 1672,
+          "unknown_or_outside_vertex_count": 1345,
+          "force_n": 0.0007510666731429367
+        },
+        {
+          "frame_end": 87,
+          "observation_frame": 87,
+          "first_available_decision_frame": 88,
+          "minimum_vertex_vertical_offset_m": 1.0913647276889367,
+          "known_vertex_count": 1662,
+          "unknown_or_outside_vertex_count": 1355,
+          "force_n": 0.0006801970011175899
+        },
+        {
+          "frame_end": 90,
+          "observation_frame": 90,
+          "first_available_decision_frame": 91,
+          "minimum_vertex_vertical_offset_m": 1.0814558656332953,
+          "known_vertex_count": 1655,
+          "unknown_or_outside_vertex_count": 1362,
+          "force_n": 0.0017590567731517281
+        },
+        {
+          "frame_end": 93,
+          "observation_frame": 93,
+          "first_available_decision_frame": 94,
+          "minimum_vertex_vertical_offset_m": 1.071515883210191,
+          "known_vertex_count": 1645,
+          "unknown_or_outside_vertex_count": 1372,
+          "force_n": 0.0018061547130451827
+        },
+        {
+          "frame_end": 96,
+          "observation_frame": 96,
+          "first_available_decision_frame": 97,
+          "minimum_vertex_vertical_offset_m": 1.060764421071576,
+          "known_vertex_count": 1631,
+          "unknown_or_outside_vertex_count": 1386,
+          "force_n": 0.0014082415911515842
+        },
+        {
+          "frame_end": 99,
+          "observation_frame": 99,
+          "first_available_decision_frame": 100,
+          "minimum_vertex_vertical_offset_m": 1.0489040608689373,
+          "known_vertex_count": 1620,
+          "unknown_or_outside_vertex_count": 1397,
+          "force_n": 0.0009067018184077726
+        },
+        {
+          "frame_end": 102,
+          "observation_frame": 102,
+          "first_available_decision_frame": 103,
+          "minimum_vertex_vertical_offset_m": 1.036961265517653,
+          "known_vertex_count": 1614,
+          "unknown_or_outside_vertex_count": 1403,
+          "force_n": 0.0011343721018017934
+        },
+        {
+          "frame_end": 105,
+          "observation_frame": 105,
+          "first_available_decision_frame": 106,
+          "minimum_vertex_vertical_offset_m": 1.028558046824617,
+          "known_vertex_count": 1606,
+          "unknown_or_outside_vertex_count": 1411,
+          "force_n": 0.0010644754674973727
+        },
+        {
+          "frame_end": 108,
+          "observation_frame": 108,
+          "first_available_decision_frame": 109,
+          "minimum_vertex_vertical_offset_m": 1.0170180961737691,
+          "known_vertex_count": 1598,
+          "unknown_or_outside_vertex_count": 1419,
+          "force_n": 0.0009065034030224829
+        },
+        {
+          "frame_end": 111,
+          "observation_frame": 111,
+          "first_available_decision_frame": 112,
+          "minimum_vertex_vertical_offset_m": 1.006110787611,
+          "known_vertex_count": 1588,
+          "unknown_or_outside_vertex_count": 1429,
+          "force_n": 0.0008017469583443589
+        },
+        {
+          "frame_end": 114,
+          "observation_frame": 114,
+          "first_available_decision_frame": 115,
+          "minimum_vertex_vertical_offset_m": 0.9945478892777211,
+          "known_vertex_count": 1582,
+          "unknown_or_outside_vertex_count": 1435,
+          "force_n": 0.0024207908751083147
+        },
+        {
+          "frame_end": 117,
+          "observation_frame": 117,
+          "first_available_decision_frame": 118,
+          "minimum_vertex_vertical_offset_m": 0.9830161028378317,
+          "known_vertex_count": 1578,
+          "unknown_or_outside_vertex_count": 1439,
+          "force_n": 0.0026451199754609902
+        },
+        {
+          "frame_end": 120,
+          "observation_frame": 120,
+          "first_available_decision_frame": 121,
+          "minimum_vertex_vertical_offset_m": 0.9714995844436416,
+          "known_vertex_count": 1574,
+          "unknown_or_outside_vertex_count": 1443,
+          "force_n": 0.0019985183886642604
+        },
+        {
+          "frame_end": 123,
+          "observation_frame": 123,
+          "first_available_decision_frame": 124,
+          "minimum_vertex_vertical_offset_m": 0.9599829322175939,
+          "known_vertex_count": 1568,
+          "unknown_or_outside_vertex_count": 1449,
+          "force_n": 0.0010687524390382576
+        },
+        {
+          "frame_end": 126,
+          "observation_frame": 126,
+          "first_available_decision_frame": 127,
+          "minimum_vertex_vertical_offset_m": 0.9484763908965794,
+          "known_vertex_count": 1556,
+          "unknown_or_outside_vertex_count": 1461,
+          "force_n": 0.0013808649560530521
+        },
+        {
+          "frame_end": 129,
+          "observation_frame": 129,
+          "first_available_decision_frame": 130,
+          "minimum_vertex_vertical_offset_m": 0.9369599707123779,
+          "known_vertex_count": 1547,
+          "unknown_or_outside_vertex_count": 1470,
+          "force_n": 0.0016573057821585772
+        },
+        {
+          "frame_end": 132,
+          "observation_frame": 132,
+          "first_available_decision_frame": 133,
+          "minimum_vertex_vertical_offset_m": 0.9254698527797789,
+          "known_vertex_count": 1539,
+          "unknown_or_outside_vertex_count": 1478,
+          "force_n": 0.001371625417405444
+        },
+        {
+          "frame_end": 135,
+          "observation_frame": 135,
+          "first_available_decision_frame": 136,
+          "minimum_vertex_vertical_offset_m": 0.9139839628519928,
+          "known_vertex_count": 1531,
+          "unknown_or_outside_vertex_count": 1486,
+          "force_n": 0.002487521623785055
+        },
+        {
+          "frame_end": 138,
+          "observation_frame": 138,
+          "first_available_decision_frame": 139,
+          "minimum_vertex_vertical_offset_m": 0.9024940618342052,
+          "known_vertex_count": 1525,
+          "unknown_or_outside_vertex_count": 1492,
+          "force_n": 0.003993772439692928
+        },
+        {
+          "frame_end": 141,
+          "observation_frame": 141,
+          "first_available_decision_frame": 142,
+          "minimum_vertex_vertical_offset_m": 0.8910036300967041,
+          "known_vertex_count": 1515,
+          "unknown_or_outside_vertex_count": 1502,
+          "force_n": 0.004914705368992318
+        },
+        {
+          "frame_end": 144,
+          "observation_frame": 144,
+          "first_available_decision_frame": 145,
+          "minimum_vertex_vertical_offset_m": 0.8795095880901549,
+          "known_vertex_count": 1507,
+          "unknown_or_outside_vertex_count": 1510,
+          "force_n": 0.005211993423568186
+        },
+        {
+          "frame_end": 147,
+          "observation_frame": 147,
+          "first_available_decision_frame": 148,
+          "minimum_vertex_vertical_offset_m": 0.8680136905401952,
+          "known_vertex_count": 1501,
+          "unknown_or_outside_vertex_count": 1516,
+          "force_n": 0.0027075383744720643
+        },
+        {
+          "frame_end": 150,
+          "observation_frame": 150,
+          "first_available_decision_frame": 151,
+          "minimum_vertex_vertical_offset_m": 0.8565001051970338,
+          "known_vertex_count": 1499,
+          "unknown_or_outside_vertex_count": 1518,
+          "force_n": 0.0029640973258150253
+        },
+        {
+          "frame_end": 153,
+          "observation_frame": 153,
+          "first_available_decision_frame": 154,
+          "minimum_vertex_vertical_offset_m": 0.8449982418553823,
+          "known_vertex_count": 1490,
+          "unknown_or_outside_vertex_count": 1527,
+          "force_n": 0.0032535193310437747
+        },
+        {
+          "frame_end": 156,
+          "observation_frame": 156,
+          "first_available_decision_frame": 157,
+          "minimum_vertex_vertical_offset_m": 0.8334770932700759,
+          "known_vertex_count": 1485,
+          "unknown_or_outside_vertex_count": 1532,
+          "force_n": 0.002354468484633752
+        },
+        {
+          "frame_end": 159,
+          "observation_frame": 159,
+          "first_available_decision_frame": 160,
+          "minimum_vertex_vertical_offset_m": 0.8219677900751066,
+          "known_vertex_count": 1477,
+          "unknown_or_outside_vertex_count": 1540,
+          "force_n": 0.003501205597375779
+        },
+        {
+          "frame_end": 162,
+          "observation_frame": 162,
+          "first_available_decision_frame": 163,
+          "minimum_vertex_vertical_offset_m": 0.8192093654435033,
+          "known_vertex_count": 1466,
+          "unknown_or_outside_vertex_count": 1551,
+          "force_n": 0.00355451998992199
+        },
+        {
+          "frame_end": 165,
+          "observation_frame": 165,
+          "first_available_decision_frame": 166,
+          "minimum_vertex_vertical_offset_m": 0.8077247501715621,
+          "known_vertex_count": 1460,
+          "unknown_or_outside_vertex_count": 1557,
+          "force_n": 0.005112562501703793
+        },
+        {
+          "frame_end": 168,
+          "observation_frame": 168,
+          "first_available_decision_frame": 169,
+          "minimum_vertex_vertical_offset_m": 0.7962285206512223,
+          "known_vertex_count": 1453,
+          "unknown_or_outside_vertex_count": 1564,
+          "force_n": 0.005639167152019261
+        },
+        {
+          "frame_end": 171,
+          "observation_frame": 171,
+          "first_available_decision_frame": 172,
+          "minimum_vertex_vertical_offset_m": 0.7847395180173158,
+          "known_vertex_count": 1443,
+          "unknown_or_outside_vertex_count": 1574,
+          "force_n": 0.0036076083763756568
+        },
+        {
+          "frame_end": 174,
+          "observation_frame": 174,
+          "first_available_decision_frame": 175,
+          "minimum_vertex_vertical_offset_m": 0.7796841373616914,
+          "known_vertex_count": 1438,
+          "unknown_or_outside_vertex_count": 1579,
+          "force_n": 0.0029347880563190755
+        },
+        {
+          "frame_end": 177,
+          "observation_frame": 177,
+          "first_available_decision_frame": 178,
+          "minimum_vertex_vertical_offset_m": 0.7681755158201473,
+          "known_vertex_count": 1436,
+          "unknown_or_outside_vertex_count": 1581,
+          "force_n": 0.003305656760701072
+        },
+        {
+          "frame_end": 180,
+          "observation_frame": 180,
+          "first_available_decision_frame": 181,
+          "minimum_vertex_vertical_offset_m": 0.7583348233564822,
+          "known_vertex_count": 1430,
+          "unknown_or_outside_vertex_count": 1587,
+          "force_n": 0.002917048695019981
+        },
+        {
+          "frame_end": 183,
+          "observation_frame": 183,
+          "first_available_decision_frame": 184,
+          "minimum_vertex_vertical_offset_m": 0.7527731129646975,
+          "known_vertex_count": 1415,
+          "unknown_or_outside_vertex_count": 1602,
+          "force_n": 0.0024614261215372907
+        },
+        {
+          "frame_end": 186,
+          "observation_frame": 186,
+          "first_available_decision_frame": 187,
+          "minimum_vertex_vertical_offset_m": 0.7472601259290528,
+          "known_vertex_count": 1381,
+          "unknown_or_outside_vertex_count": 1636,
+          "force_n": 0.0023831230374688375
+        },
+        {
+          "frame_end": 189,
+          "observation_frame": 189,
+          "first_available_decision_frame": 190,
+          "minimum_vertex_vertical_offset_m": 0.7415588618988895,
+          "known_vertex_count": 1353,
+          "unknown_or_outside_vertex_count": 1664,
+          "force_n": 0.00222103904098774
+        },
+        {
+          "frame_end": 192,
+          "observation_frame": 192,
+          "first_available_decision_frame": 193,
+          "minimum_vertex_vertical_offset_m": 0.7310978386634952,
+          "known_vertex_count": 1342,
+          "unknown_or_outside_vertex_count": 1675,
+          "force_n": 0.0030807188820794642
+        },
+        {
+          "frame_end": 195,
+          "observation_frame": 195,
+          "first_available_decision_frame": 196,
+          "minimum_vertex_vertical_offset_m": 0.7195826504770508,
+          "known_vertex_count": 1337,
+          "unknown_or_outside_vertex_count": 1680,
+          "force_n": 0.004637601140124542
+        },
+        {
+          "frame_end": 198,
+          "observation_frame": 198,
+          "first_available_decision_frame": 199,
+          "minimum_vertex_vertical_offset_m": 0.7080399774531134,
+          "known_vertex_count": 1335,
+          "unknown_or_outside_vertex_count": 1682,
+          "force_n": 0.004037290537820758
+        },
+        {
+          "frame_end": 201,
+          "observation_frame": 201,
+          "first_available_decision_frame": 202,
+          "minimum_vertex_vertical_offset_m": 0.6966087859649881,
+          "known_vertex_count": 1336,
+          "unknown_or_outside_vertex_count": 1681,
+          "force_n": 0.0035202386373819525
+        },
+        {
+          "frame_end": 204,
+          "observation_frame": 204,
+          "first_available_decision_frame": 205,
+          "minimum_vertex_vertical_offset_m": 0.6850374565348556,
+          "known_vertex_count": 1334,
+          "unknown_or_outside_vertex_count": 1683,
+          "force_n": 0.0025976512573725186
+        },
+        {
+          "frame_end": 207,
+          "observation_frame": 207,
+          "first_available_decision_frame": 208,
+          "minimum_vertex_vertical_offset_m": 0.6734566717488004,
+          "known_vertex_count": 1329,
+          "unknown_or_outside_vertex_count": 1688,
+          "force_n": 0.004130241976542041
+        },
+        {
+          "frame_end": 210,
+          "observation_frame": 210,
+          "first_available_decision_frame": 211,
+          "minimum_vertex_vertical_offset_m": 0.6618776474962653,
+          "known_vertex_count": 1325,
+          "unknown_or_outside_vertex_count": 1692,
+          "force_n": 0.0035689759968903813
+        },
+        {
+          "frame_end": 213,
+          "observation_frame": 213,
+          "first_available_decision_frame": 214,
+          "minimum_vertex_vertical_offset_m": 0.6503050844141205,
+          "known_vertex_count": 1320,
+          "unknown_or_outside_vertex_count": 1697,
+          "force_n": 0.004272536396268455
+        },
+        {
+          "frame_end": 216,
+          "observation_frame": 216,
+          "first_available_decision_frame": 217,
+          "minimum_vertex_vertical_offset_m": 0.6387431589785733,
+          "known_vertex_count": 1316,
+          "unknown_or_outside_vertex_count": 1701,
+          "force_n": 0.004227844064299657
+        },
+        {
+          "frame_end": 219,
+          "observation_frame": 219,
+          "first_available_decision_frame": 220,
+          "minimum_vertex_vertical_offset_m": 0.6271884511957173,
+          "known_vertex_count": 1311,
+          "unknown_or_outside_vertex_count": 1706,
+          "force_n": 0.00574562544983547
+        },
+        {
+          "frame_end": 222,
+          "observation_frame": 222,
+          "first_available_decision_frame": 223,
+          "minimum_vertex_vertical_offset_m": 0.6156355344784017,
+          "known_vertex_count": 1311,
+          "unknown_or_outside_vertex_count": 1706,
+          "force_n": 0.005511984302393855
+        },
+        {
+          "frame_end": 225,
+          "observation_frame": 225,
+          "first_available_decision_frame": 226,
+          "minimum_vertex_vertical_offset_m": 0.6040852160079853,
+          "known_vertex_count": 1308,
+          "unknown_or_outside_vertex_count": 1709,
+          "force_n": 0.00495341938719023
+        },
+        {
+          "frame_end": 228,
+          "observation_frame": 228,
+          "first_available_decision_frame": 229,
+          "minimum_vertex_vertical_offset_m": 0.5971811927917772,
+          "known_vertex_count": 1291,
+          "unknown_or_outside_vertex_count": 1726,
+          "force_n": 0.002808612760445478
+        },
+        {
+          "frame_end": 231,
+          "observation_frame": 231,
+          "first_available_decision_frame": 232,
+          "minimum_vertex_vertical_offset_m": 0.5916559630017613,
+          "known_vertex_count": 1281,
+          "unknown_or_outside_vertex_count": 1736,
+          "force_n": 0.0029471523616239354
+        },
+        {
+          "frame_end": 234,
+          "observation_frame": 234,
+          "first_available_decision_frame": 235,
+          "minimum_vertex_vertical_offset_m": 0.586170809507953,
+          "known_vertex_count": 1266,
+          "unknown_or_outside_vertex_count": 1751,
+          "force_n": 0.0027531104766190468
+        },
+        {
+          "frame_end": 237,
+          "observation_frame": 237,
+          "first_available_decision_frame": 238,
+          "minimum_vertex_vertical_offset_m": 0.5799536217330841,
+          "known_vertex_count": 1243,
+          "unknown_or_outside_vertex_count": 1774,
+          "force_n": 0.002605092324705816
+        },
+        {
+          "frame_end": 240,
+          "observation_frame": 240,
+          "first_available_decision_frame": 241,
+          "minimum_vertex_vertical_offset_m": 0.5684812399514376,
+          "known_vertex_count": 1238,
+          "unknown_or_outside_vertex_count": 1779,
+          "force_n": 0.004738539808303457
+        },
+        {
+          "frame_end": 243,
+          "observation_frame": 243,
+          "first_available_decision_frame": 244,
+          "minimum_vertex_vertical_offset_m": 0.5568832858609589,
+          "known_vertex_count": 1233,
+          "unknown_or_outside_vertex_count": 1784,
+          "force_n": 0.004352975399322356
+        },
+        {
+          "frame_end": 246,
+          "observation_frame": 246,
+          "first_available_decision_frame": 247,
+          "minimum_vertex_vertical_offset_m": 0.5452626634235433,
+          "known_vertex_count": 1229,
+          "unknown_or_outside_vertex_count": 1788,
+          "force_n": 0.003935689653114265
+        },
+        {
+          "frame_end": 249,
+          "observation_frame": 249,
+          "first_available_decision_frame": 250,
+          "minimum_vertex_vertical_offset_m": 0.5336324352984134,
+          "known_vertex_count": 1223,
+          "unknown_or_outside_vertex_count": 1794,
+          "force_n": 0.004968497585919572
+        },
+        {
+          "frame_end": 252,
+          "observation_frame": 252,
+          "first_available_decision_frame": 253,
+          "minimum_vertex_vertical_offset_m": 0.5219963679186586,
+          "known_vertex_count": 1217,
+          "unknown_or_outside_vertex_count": 1800,
+          "force_n": 0.005708247665696099
+        },
+        {
+          "frame_end": 255,
+          "observation_frame": 255,
+          "first_available_decision_frame": 256,
+          "minimum_vertex_vertical_offset_m": 0.5103591064509139,
+          "known_vertex_count": 1217,
+          "unknown_or_outside_vertex_count": 1800,
+          "force_n": 0.005800460914422964
+        },
+        {
+          "frame_end": 258,
+          "observation_frame": 258,
+          "first_available_decision_frame": 259,
+          "minimum_vertex_vertical_offset_m": 0.4987274041434817,
+          "known_vertex_count": 1216,
+          "unknown_or_outside_vertex_count": 1801,
+          "force_n": 0.004717864837149474
+        },
+        {
+          "frame_end": 261,
+          "observation_frame": 261,
+          "first_available_decision_frame": 262,
+          "minimum_vertex_vertical_offset_m": 0.48710827082308517,
+          "known_vertex_count": 1210,
+          "unknown_or_outside_vertex_count": 1807,
+          "force_n": 0.00451662727757188
+        },
+        {
+          "frame_end": 264,
+          "observation_frame": 264,
+          "first_available_decision_frame": 265,
+          "minimum_vertex_vertical_offset_m": 0.47550096998659974,
+          "known_vertex_count": 1206,
+          "unknown_or_outside_vertex_count": 1811,
+          "force_n": 0.005080639451180879
+        },
+        {
+          "frame_end": 267,
+          "observation_frame": 267,
+          "first_available_decision_frame": 268,
+          "minimum_vertex_vertical_offset_m": 0.4639001870167567,
+          "known_vertex_count": 1203,
+          "unknown_or_outside_vertex_count": 1814,
+          "force_n": 0.005375649400829644
+        },
+        {
+          "frame_end": 270,
+          "observation_frame": 270,
+          "first_available_decision_frame": 271,
+          "minimum_vertex_vertical_offset_m": 0.45230004794688927,
+          "known_vertex_count": 1195,
+          "unknown_or_outside_vertex_count": 1822,
+          "force_n": 0.005798745193663644
+        },
+        {
+          "frame_end": 273,
+          "observation_frame": 273,
+          "first_available_decision_frame": 274,
+          "minimum_vertex_vertical_offset_m": 0.4406967857386537,
+          "known_vertex_count": 1189,
+          "unknown_or_outside_vertex_count": 1828,
+          "force_n": 0.005665664192923819
+        },
+        {
+          "frame_end": 276,
+          "observation_frame": 276,
+          "first_available_decision_frame": 277,
+          "minimum_vertex_vertical_offset_m": 0.42899393686745313,
+          "known_vertex_count": 1182,
+          "unknown_or_outside_vertex_count": 1835,
+          "force_n": 0.006901974608592126
+        },
+        {
+          "frame_end": 279,
+          "observation_frame": 279,
+          "first_available_decision_frame": 280,
+          "minimum_vertex_vertical_offset_m": 0.4173078643982824,
+          "known_vertex_count": 1172,
+          "unknown_or_outside_vertex_count": 1845,
+          "force_n": 0.006565481580983675
+        },
+        {
+          "frame_end": 282,
+          "observation_frame": 282,
+          "first_available_decision_frame": 283,
+          "minimum_vertex_vertical_offset_m": 0.40558052330028715,
+          "known_vertex_count": 1170,
+          "unknown_or_outside_vertex_count": 1847,
+          "force_n": 0.005959524310778945
+        },
+        {
+          "frame_end": 285,
+          "observation_frame": 285,
+          "first_available_decision_frame": 286,
+          "minimum_vertex_vertical_offset_m": 0.3938961086042727,
+          "known_vertex_count": 1170,
+          "unknown_or_outside_vertex_count": 1847,
+          "force_n": 0.0051105986106113254
+        },
+        {
+          "frame_end": 288,
+          "observation_frame": 288,
+          "first_available_decision_frame": 289,
+          "minimum_vertex_vertical_offset_m": 0.382200202932961,
+          "known_vertex_count": 1168,
+          "unknown_or_outside_vertex_count": 1849,
+          "force_n": 0.005712734905912949
+        },
+        {
+          "frame_end": 291,
+          "observation_frame": 291,
+          "first_available_decision_frame": 292,
+          "minimum_vertex_vertical_offset_m": 0.3705195407277819,
+          "known_vertex_count": 1163,
+          "unknown_or_outside_vertex_count": 1854,
+          "force_n": 0.006598169635582533
+        },
+        {
+          "frame_end": 294,
+          "observation_frame": 294,
+          "first_available_decision_frame": 295,
+          "minimum_vertex_vertical_offset_m": 0.35885535762665643,
+          "known_vertex_count": 1162,
+          "unknown_or_outside_vertex_count": 1855,
+          "force_n": 0.006835059349317445
+        },
+        {
+          "frame_end": 297,
+          "observation_frame": 297,
+          "first_available_decision_frame": 298,
+          "minimum_vertex_vertical_offset_m": 0.34720250974435873,
+          "known_vertex_count": 1161,
+          "unknown_or_outside_vertex_count": 1856,
+          "force_n": 0.0075511652775634925
+        },
+        {
+          "frame_end": 300,
+          "observation_frame": 300,
+          "first_available_decision_frame": 301,
+          "minimum_vertex_vertical_offset_m": 0.33555560176211663,
+          "known_vertex_count": 1159,
+          "unknown_or_outside_vertex_count": 1858,
+          "force_n": 0.0095003304626168
+        },
+        {
+          "frame_end": 303,
+          "observation_frame": 303,
+          "first_available_decision_frame": 304,
+          "minimum_vertex_vertical_offset_m": 0.32391898774380334,
+          "known_vertex_count": 1154,
+          "unknown_or_outside_vertex_count": 1863,
+          "force_n": 0.00871736033821073
+        },
+        {
+          "frame_end": 306,
+          "observation_frame": 306,
+          "first_available_decision_frame": 307,
+          "minimum_vertex_vertical_offset_m": 0.31229162553912193,
+          "known_vertex_count": 1153,
+          "unknown_or_outside_vertex_count": 1864,
+          "force_n": 0.009114672585628963
+        },
+        {
+          "frame_end": 309,
+          "observation_frame": 309,
+          "first_available_decision_frame": 310,
+          "minimum_vertex_vertical_offset_m": 0.30065274688593013,
+          "known_vertex_count": 1152,
+          "unknown_or_outside_vertex_count": 1865,
+          "force_n": 0.007015776297988958
+        },
+        {
+          "frame_end": 312,
+          "observation_frame": 312,
+          "first_available_decision_frame": 313,
+          "minimum_vertex_vertical_offset_m": 0.28902723358621074,
+          "known_vertex_count": 1150,
+          "unknown_or_outside_vertex_count": 1867,
+          "force_n": 0.008174154364383126
+        },
+        {
+          "frame_end": 315,
+          "observation_frame": 315,
+          "first_available_decision_frame": 316,
+          "minimum_vertex_vertical_offset_m": 0.2773655429784041,
+          "known_vertex_count": 1153,
+          "unknown_or_outside_vertex_count": 1864,
+          "force_n": 0.008935500790730596
+        },
+        {
+          "frame_end": 318,
+          "observation_frame": 318,
+          "first_available_decision_frame": 319,
+          "minimum_vertex_vertical_offset_m": 0.2656998648313782,
+          "known_vertex_count": 1152,
+          "unknown_or_outside_vertex_count": 1865,
+          "force_n": 0.009178932632976412
+        },
+        {
+          "frame_end": 321,
+          "observation_frame": 321,
+          "first_available_decision_frame": 322,
+          "minimum_vertex_vertical_offset_m": 0.25403102471332173,
+          "known_vertex_count": 1151,
+          "unknown_or_outside_vertex_count": 1866,
+          "force_n": 0.010359509414301998
+        },
+        {
+          "frame_end": 324,
+          "observation_frame": 324,
+          "first_available_decision_frame": 325,
+          "minimum_vertex_vertical_offset_m": 0.24235929410881485,
+          "known_vertex_count": 1153,
+          "unknown_or_outside_vertex_count": 1864,
+          "force_n": 0.011023686108616263
+        },
+        {
+          "frame_end": 327,
+          "observation_frame": 327,
+          "first_available_decision_frame": 328,
+          "minimum_vertex_vertical_offset_m": 0.23068734797976154,
+          "known_vertex_count": 1153,
+          "unknown_or_outside_vertex_count": 1864,
+          "force_n": 0.010819697335014115
+        },
+        {
+          "frame_end": 330,
+          "observation_frame": 330,
+          "first_available_decision_frame": 331,
+          "minimum_vertex_vertical_offset_m": 0.21901720068271224,
+          "known_vertex_count": 1153,
+          "unknown_or_outside_vertex_count": 1864,
+          "force_n": 0.010584927387184128
+        },
+        {
+          "frame_end": 333,
+          "observation_frame": 333,
+          "first_available_decision_frame": 334,
+          "minimum_vertex_vertical_offset_m": 0.20734730434881055,
+          "known_vertex_count": 1151,
+          "unknown_or_outside_vertex_count": 1866,
+          "force_n": 0.0091667081068743
+        },
+        {
+          "frame_end": 336,
+          "observation_frame": 336,
+          "first_available_decision_frame": 337,
+          "minimum_vertex_vertical_offset_m": 0.20523718285890014,
+          "known_vertex_count": 1149,
+          "unknown_or_outside_vertex_count": 1868,
+          "force_n": 0.009160494636369068
+        },
+        {
+          "frame_end": 339,
+          "observation_frame": 339,
+          "first_available_decision_frame": 340,
+          "minimum_vertex_vertical_offset_m": 0.19358362150616704,
+          "known_vertex_count": 1149,
+          "unknown_or_outside_vertex_count": 1868,
+          "force_n": 0.00972007549521411
+        },
+        {
+          "frame_end": 342,
+          "observation_frame": 342,
+          "first_available_decision_frame": 343,
+          "minimum_vertex_vertical_offset_m": 0.1819294538234011,
+          "known_vertex_count": 1148,
+          "unknown_or_outside_vertex_count": 1869,
+          "force_n": 0.012122910577507365
+        },
+        {
+          "frame_end": 345,
+          "observation_frame": 345,
+          "first_available_decision_frame": 346,
+          "minimum_vertex_vertical_offset_m": 0.17026970340710212,
+          "known_vertex_count": 1148,
+          "unknown_or_outside_vertex_count": 1869,
+          "force_n": 0.012285599295917273
+        },
+        {
+          "frame_end": 348,
+          "observation_frame": 348,
+          "first_available_decision_frame": 349,
+          "minimum_vertex_vertical_offset_m": 0.15860706390857415,
+          "known_vertex_count": 1146,
+          "unknown_or_outside_vertex_count": 1871,
+          "force_n": 0.014484301398397693
+        },
+        {
+          "frame_end": 351,
+          "observation_frame": 351,
+          "first_available_decision_frame": 352,
+          "minimum_vertex_vertical_offset_m": -0.2765153028260101,
+          "known_vertex_count": 1155,
+          "unknown_or_outside_vertex_count": 1862,
+          "force_n": 1.8425358184148677
+        },
+        {
+          "frame_end": 354,
+          "observation_frame": 354,
+          "first_available_decision_frame": 355,
+          "minimum_vertex_vertical_offset_m": -0.2946038954926673,
+          "known_vertex_count": 1175,
+          "unknown_or_outside_vertex_count": 1842,
+          "force_n": 10.968200501264837
+        },
+        {
+          "frame_end": 357,
+          "observation_frame": 357,
+          "first_available_decision_frame": 358,
+          "minimum_vertex_vertical_offset_m": -0.31503380670756687,
+          "known_vertex_count": 1195,
+          "unknown_or_outside_vertex_count": 1822,
+          "force_n": 1.5811945681895188
+        },
+        {
+          "frame_end": 360,
+          "observation_frame": 360,
+          "first_available_decision_frame": 361,
+          "minimum_vertex_vertical_offset_m": -0.3349707695404667,
+          "known_vertex_count": 1223,
+          "unknown_or_outside_vertex_count": 1794,
+          "force_n": 16.90223784997867
+        },
+        {
+          "frame_end": 363,
+          "observation_frame": 363,
+          "first_available_decision_frame": 364,
+          "minimum_vertex_vertical_offset_m": -0.3492294318299569,
+          "known_vertex_count": 1240,
+          "unknown_or_outside_vertex_count": 1777,
+          "force_n": 70.5182680824744
+        },
+        {
+          "frame_end": 366,
+          "observation_frame": 366,
+          "first_available_decision_frame": 367,
+          "minimum_vertex_vertical_offset_m": -0.357268353939197,
+          "known_vertex_count": 1255,
+          "unknown_or_outside_vertex_count": 1762,
+          "force_n": 47.12580880666612
+        },
+        {
+          "frame_end": 369,
+          "observation_frame": 369,
+          "first_available_decision_frame": 370,
+          "minimum_vertex_vertical_offset_m": -0.36401677190073256,
+          "known_vertex_count": 1260,
+          "unknown_or_outside_vertex_count": 1757,
+          "force_n": 39.53752867574898
+        },
+        {
+          "frame_end": 372,
+          "observation_frame": 372,
+          "first_available_decision_frame": 373,
+          "minimum_vertex_vertical_offset_m": -0.37724500621025703,
+          "known_vertex_count": 1265,
+          "unknown_or_outside_vertex_count": 1752,
+          "force_n": 83.34412489933565
+        },
+        {
+          "frame_end": 375,
+          "observation_frame": 375,
+          "first_available_decision_frame": 376,
+          "minimum_vertex_vertical_offset_m": -0.3918270872318901,
+          "known_vertex_count": 1260,
+          "unknown_or_outside_vertex_count": 1757,
+          "force_n": 198.6484721157254
+        },
+        {
+          "frame_end": 378,
+          "observation_frame": 378,
+          "first_available_decision_frame": 379,
+          "minimum_vertex_vertical_offset_m": -0.40353857760317213,
+          "known_vertex_count": 1260,
+          "unknown_or_outside_vertex_count": 1757,
+          "force_n": 217.52446619524184
+        },
+        {
+          "frame_end": 381,
+          "observation_frame": 381,
+          "first_available_decision_frame": 382,
+          "minimum_vertex_vertical_offset_m": -0.4126862531016384,
+          "known_vertex_count": 1259,
+          "unknown_or_outside_vertex_count": 1758,
+          "force_n": 100.90074385354144
+        },
+        {
+          "frame_end": 384,
+          "observation_frame": 384,
+          "first_available_decision_frame": 385,
+          "minimum_vertex_vertical_offset_m": -0.4250937229616729,
+          "known_vertex_count": 1261,
+          "unknown_or_outside_vertex_count": 1756,
+          "force_n": 120.63464850544403
+        },
+        {
+          "frame_end": 387,
+          "observation_frame": 387,
+          "first_available_decision_frame": 388,
+          "minimum_vertex_vertical_offset_m": -0.43578833536072326,
+          "known_vertex_count": 1266,
+          "unknown_or_outside_vertex_count": 1751,
+          "force_n": 210.73590989649423
+        },
+        {
+          "frame_end": 390,
+          "observation_frame": 390,
+          "first_available_decision_frame": 391,
+          "minimum_vertex_vertical_offset_m": -0.4466661586786793,
+          "known_vertex_count": 1271,
+          "unknown_or_outside_vertex_count": 1746,
+          "force_n": 287.3377423206157
+        },
+        {
+          "frame_end": 393,
+          "observation_frame": 393,
+          "first_available_decision_frame": 394,
+          "minimum_vertex_vertical_offset_m": -0.4594622532592523,
+          "known_vertex_count": 1274,
+          "unknown_or_outside_vertex_count": 1743,
+          "force_n": 72.22015695327819
+        },
+        {
+          "frame_end": 396,
+          "observation_frame": 396,
+          "first_available_decision_frame": 397,
+          "minimum_vertex_vertical_offset_m": -0.47161487884347153,
+          "known_vertex_count": 1276,
+          "unknown_or_outside_vertex_count": 1741,
+          "force_n": 227.0469137611853
+        },
+        {
+          "frame_end": 399,
+          "observation_frame": 399,
+          "first_available_decision_frame": 400,
+          "minimum_vertex_vertical_offset_m": -0.4722092470626149,
+          "known_vertex_count": 1276,
+          "unknown_or_outside_vertex_count": 1741,
+          "force_n": 227.75145379306366
+        },
+        {
+          "frame_end": 402,
+          "observation_frame": 402,
+          "first_available_decision_frame": 403,
+          "minimum_vertex_vertical_offset_m": -0.4700411868083161,
+          "known_vertex_count": 1276,
+          "unknown_or_outside_vertex_count": 1741,
+          "force_n": 225.86008691662968
+        },
+        {
+          "frame_end": 405,
+          "observation_frame": 405,
+          "first_available_decision_frame": 406,
+          "minimum_vertex_vertical_offset_m": -0.4709857114488869,
+          "known_vertex_count": 1287,
+          "unknown_or_outside_vertex_count": 1730,
+          "force_n": 377.09842332735366
+        },
+        {
+          "frame_end": 408,
+          "observation_frame": 408,
+          "first_available_decision_frame": 409,
+          "minimum_vertex_vertical_offset_m": -0.47221743166357677,
+          "known_vertex_count": 1306,
+          "unknown_or_outside_vertex_count": 1711,
+          "force_n": 587.1848693055315
+        },
+        {
+          "frame_end": 411,
+          "observation_frame": 411,
+          "first_available_decision_frame": 412,
+          "minimum_vertex_vertical_offset_m": -0.47475629380756423,
+          "known_vertex_count": 1325,
+          "unknown_or_outside_vertex_count": 1692,
+          "force_n": 678.4549860079137
+        },
+        {
+          "frame_end": 414,
+          "observation_frame": 414,
+          "first_available_decision_frame": 415,
+          "minimum_vertex_vertical_offset_m": -0.4783359251066006,
+          "known_vertex_count": 1360,
+          "unknown_or_outside_vertex_count": 1657,
+          "force_n": 594.9259935911947
+        },
+        {
+          "frame_end": 417,
+          "observation_frame": 417,
+          "first_available_decision_frame": 418,
+          "minimum_vertex_vertical_offset_m": -0.48215284232580613,
+          "known_vertex_count": 1391,
+          "unknown_or_outside_vertex_count": 1626,
+          "force_n": 726.6900758879816
+        },
+        {
+          "frame_end": 420,
+          "observation_frame": 420,
+          "first_available_decision_frame": 421,
+          "minimum_vertex_vertical_offset_m": -0.4841634370436614,
+          "known_vertex_count": 1424,
+          "unknown_or_outside_vertex_count": 1593,
+          "force_n": 1082.4704039416965
+        },
+        {
+          "frame_end": 423,
+          "observation_frame": 423,
+          "first_available_decision_frame": 424,
+          "minimum_vertex_vertical_offset_m": -0.4857623951504313,
+          "known_vertex_count": 1449,
+          "unknown_or_outside_vertex_count": 1568,
+          "force_n": 1253.4957290559144
+        },
+        {
+          "frame_end": 426,
+          "observation_frame": 426,
+          "first_available_decision_frame": 427,
+          "minimum_vertex_vertical_offset_m": -0.8749217384824661,
+          "known_vertex_count": 1473,
+          "unknown_or_outside_vertex_count": 1544,
+          "force_n": 1200.0566645321474
+        },
+        {
+          "frame_end": 429,
+          "observation_frame": 429,
+          "first_available_decision_frame": 430,
+          "minimum_vertex_vertical_offset_m": -0.8845613549367677,
+          "known_vertex_count": 1502,
+          "unknown_or_outside_vertex_count": 1515,
+          "force_n": 951.6561698673904
+        },
+        {
+          "frame_end": 432,
+          "observation_frame": 432,
+          "first_available_decision_frame": 433,
+          "minimum_vertex_vertical_offset_m": -0.9086809950545238,
+          "known_vertex_count": 1533,
+          "unknown_or_outside_vertex_count": 1484,
+          "force_n": 1104.8081295028082
+        },
+        {
+          "frame_end": 435,
+          "observation_frame": 435,
+          "first_available_decision_frame": 436,
+          "minimum_vertex_vertical_offset_m": -0.9195715468595345,
+          "known_vertex_count": 1554,
+          "unknown_or_outside_vertex_count": 1463,
+          "force_n": 1340.7961267229157
+        },
+        {
+          "frame_end": 438,
+          "observation_frame": 438,
+          "first_available_decision_frame": 439,
+          "minimum_vertex_vertical_offset_m": -0.9427280861919465,
+          "known_vertex_count": 1574,
+          "unknown_or_outside_vertex_count": 1443,
+          "force_n": 1699.1787040030401
+        },
+        {
+          "frame_end": 441,
+          "observation_frame": 441,
+          "first_available_decision_frame": 442,
+          "minimum_vertex_vertical_offset_m": -0.9523111779835676,
+          "known_vertex_count": 1591,
+          "unknown_or_outside_vertex_count": 1426,
+          "force_n": 1625.2128228835452
+        }
+      ],
+      "original_phase_events": [
+        {
+          "label": "penetrate_deepen",
+          "next_frame": 401
+        },
+        {
+          "label": "curl_load",
+          "next_frame": 551
+        },
+        {
+          "label": "lift_clear",
+          "next_frame": 1133
+        },
+        {
+          "label": "off_soil_confirm",
+          "next_frame": 1621
+        }
+      ],
+      "confirmed_contact_label": null
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "source_inputs": [
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/physics.ndjson",
+          "sha256": "1e963007d151251d39ed71e7a2cd4cbf04a54c642298f2e3890fa1faf49776f6"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/observation.ndjson",
+          "sha256": "19b442c67ea790b8017414d779ffef0ac90a2da2094fc412486a11257451d26b"
+        },
+        {
+          "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/annotations.ndjson",
+          "sha256": "a4f10b08e9cd10fcf43c5d5365201b6695e63d329008bbfd55a633624df5834f"
+        }
+      ],
+      "baseline": {
+        "zero_command_prefix_frames": 9,
+        "prefix_cap_frames": 30,
+        "maximum_force_n": 0.0,
+        "qualified_no_contact_baseline": false,
+        "note": "Zero command alone does not establish absence of contact."
+      },
+      "first_frame_force_n": 0.0,
+      "first_frame_samples": 0,
+      "force_sensitivity": [
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 129,
+            "confirmation_frame_end": 129,
+            "first_available_decision_frame": 130
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 176,
+            "confirmation_frame_end": 178,
+            "first_available_decision_frame": 179
+          }
+        },
+        {
+          "threshold_n": 0.001,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 196,
+            "confirmation_frame_end": 201,
+            "first_available_decision_frame": 202
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 311,
+            "confirmation_frame_end": 311,
+            "first_available_decision_frame": 312
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 311,
+            "confirmation_frame_end": 313,
+            "first_available_decision_frame": 314
+          }
+        },
+        {
+          "threshold_n": 1.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 311,
+            "confirmation_frame_end": 316,
+            "first_available_decision_frame": 317
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 311,
+            "confirmation_frame_end": 311,
+            "first_available_decision_frame": 312
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 311,
+            "confirmation_frame_end": 313,
+            "first_available_decision_frame": 314
+          }
+        },
+        {
+          "threshold_n": 10.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 311,
+            "confirmation_frame_end": 316,
+            "first_available_decision_frame": 317
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 312,
+            "confirmation_frame_end": 312,
+            "first_available_decision_frame": 313
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 312,
+            "confirmation_frame_end": 314,
+            "first_available_decision_frame": 315
+          }
+        },
+        {
+          "threshold_n": 25.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 312,
+            "confirmation_frame_end": 317,
+            "first_available_decision_frame": 318
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 313,
+            "confirmation_frame_end": 313,
+            "first_available_decision_frame": 314
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 313,
+            "confirmation_frame_end": 315,
+            "first_available_decision_frame": 316
+          }
+        },
+        {
+          "threshold_n": 50.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 313,
+            "confirmation_frame_end": 318,
+            "first_available_decision_frame": 319
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 313,
+            "confirmation_frame_end": 313,
+            "first_available_decision_frame": 314
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 313,
+            "confirmation_frame_end": 315,
+            "first_available_decision_frame": 316
+          }
+        },
+        {
+          "threshold_n": 100.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 319,
+            "confirmation_frame_end": 324,
+            "first_available_decision_frame": 325
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 1,
+          "event": {
+            "onset_frame_end": 340,
+            "confirmation_frame_end": 340,
+            "first_available_decision_frame": 341
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 3,
+          "event": {
+            "onset_frame_end": 340,
+            "confirmation_frame_end": 342,
+            "first_available_decision_frame": 343
+          }
+        },
+        {
+          "threshold_n": 500.0,
+          "dwell_frames": 6,
+          "event": {
+            "onset_frame_end": 340,
+            "confirmation_frame_end": 345,
+            "first_available_decision_frame": 346
+          }
+        }
+      ],
+      "illustrative_10_to_100n_3_to_6frame_onset_range": [
+        311,
+        319
+      ],
+      "interval_is_confidence_interval": false,
+      "independent_recorded_events": {
+        "raw_soil_sample": {
+          "frame_end": 125,
+          "force_n": 0.0005241747922702935,
+          "available_from_decision_frame": 126
+        },
+        "rock_bucket": {
+          "frame_end": 696,
+          "force_n": 14990.493453276966,
+          "available_from_decision_frame": 697
+        },
+        "bucket_motion_sweep": {
+          "frame_end": 361,
+          "force_n": 706.2559084706509,
+          "available_from_decision_frame": 362
+        },
+        "mpm_motion_sweep": {
+          "frame_end": 374,
+          "force_n": 1236.2494883281834,
+          "available_from_decision_frame": 375
+        }
+      },
+      "first_sampled_fused_grid_overlap": {
+        "frame_end": 324,
+        "observation_frame": 324,
+        "first_available_decision_frame": 325,
+        "minimum_vertex_vertical_offset_m": -0.23053809899338584,
+        "known_vertex_count": 1074,
+        "unknown_or_outside_vertex_count": 1943,
+        "force_n": 169.85215443649773
+      },
+      "cad_vertex_count": 3017,
+      "cad_vertices_sha256": "e4198ed2edd7d9640d9680e87b6a70eafde76d2a2bc2878effb1afb58ce3e04a",
+      "geometry_samples": [
+        {
+          "frame_end": 3,
+          "observation_frame": 3,
+          "first_available_decision_frame": 4,
+          "minimum_vertex_vertical_offset_m": 1.3110523501526483,
+          "known_vertex_count": 1428,
+          "unknown_or_outside_vertex_count": 1589,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 6,
+          "observation_frame": 6,
+          "first_available_decision_frame": 7,
+          "minimum_vertex_vertical_offset_m": 1.3111414582598466,
+          "known_vertex_count": 1428,
+          "unknown_or_outside_vertex_count": 1589,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 9,
+          "observation_frame": 9,
+          "first_available_decision_frame": 10,
+          "minimum_vertex_vertical_offset_m": 1.3113128275537291,
+          "known_vertex_count": 1428,
+          "unknown_or_outside_vertex_count": 1589,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 12,
+          "observation_frame": 12,
+          "first_available_decision_frame": 13,
+          "minimum_vertex_vertical_offset_m": 1.3111055986851228,
+          "known_vertex_count": 1426,
+          "unknown_or_outside_vertex_count": 1591,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 15,
+          "observation_frame": 15,
+          "first_available_decision_frame": 16,
+          "minimum_vertex_vertical_offset_m": 1.299849732085184,
+          "known_vertex_count": 1421,
+          "unknown_or_outside_vertex_count": 1596,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 18,
+          "observation_frame": 18,
+          "first_available_decision_frame": 19,
+          "minimum_vertex_vertical_offset_m": 1.288373706739101,
+          "known_vertex_count": 1410,
+          "unknown_or_outside_vertex_count": 1607,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 21,
+          "observation_frame": 21,
+          "first_available_decision_frame": 22,
+          "minimum_vertex_vertical_offset_m": 1.2767376607660097,
+          "known_vertex_count": 1398,
+          "unknown_or_outside_vertex_count": 1619,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 24,
+          "observation_frame": 24,
+          "first_available_decision_frame": 25,
+          "minimum_vertex_vertical_offset_m": 1.269112597815154,
+          "known_vertex_count": 1389,
+          "unknown_or_outside_vertex_count": 1628,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 27,
+          "observation_frame": 27,
+          "first_available_decision_frame": 28,
+          "minimum_vertex_vertical_offset_m": 1.2575879598983537,
+          "known_vertex_count": 1384,
+          "unknown_or_outside_vertex_count": 1633,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 30,
+          "observation_frame": 30,
+          "first_available_decision_frame": 31,
+          "minimum_vertex_vertical_offset_m": 1.246219080665786,
+          "known_vertex_count": 1380,
+          "unknown_or_outside_vertex_count": 1637,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 33,
+          "observation_frame": 33,
+          "first_available_decision_frame": 34,
+          "minimum_vertex_vertical_offset_m": 1.2414399212835012,
+          "known_vertex_count": 1375,
+          "unknown_or_outside_vertex_count": 1642,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 36,
+          "observation_frame": 36,
+          "first_available_decision_frame": 37,
+          "minimum_vertex_vertical_offset_m": 1.2303742230061694,
+          "known_vertex_count": 1366,
+          "unknown_or_outside_vertex_count": 1651,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 39,
+          "observation_frame": 39,
+          "first_available_decision_frame": 40,
+          "minimum_vertex_vertical_offset_m": 1.2316762360134481,
+          "known_vertex_count": 1355,
+          "unknown_or_outside_vertex_count": 1662,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 42,
+          "observation_frame": 42,
+          "first_available_decision_frame": 43,
+          "minimum_vertex_vertical_offset_m": 1.220528107241277,
+          "known_vertex_count": 1347,
+          "unknown_or_outside_vertex_count": 1670,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 45,
+          "observation_frame": 45,
+          "first_available_decision_frame": 46,
+          "minimum_vertex_vertical_offset_m": 1.2369973545623512,
+          "known_vertex_count": 1340,
+          "unknown_or_outside_vertex_count": 1677,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 48,
+          "observation_frame": 48,
+          "first_available_decision_frame": 49,
+          "minimum_vertex_vertical_offset_m": 1.229826081801106,
+          "known_vertex_count": 1326,
+          "unknown_or_outside_vertex_count": 1691,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 51,
+          "observation_frame": 51,
+          "first_available_decision_frame": 52,
+          "minimum_vertex_vertical_offset_m": 1.2184939760223923,
+          "known_vertex_count": 1319,
+          "unknown_or_outside_vertex_count": 1698,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 54,
+          "observation_frame": 54,
+          "first_available_decision_frame": 55,
+          "minimum_vertex_vertical_offset_m": 1.2071176940195114,
+          "known_vertex_count": 1310,
+          "unknown_or_outside_vertex_count": 1707,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 57,
+          "observation_frame": 57,
+          "first_available_decision_frame": 58,
+          "minimum_vertex_vertical_offset_m": 1.2022139671687992,
+          "known_vertex_count": 1296,
+          "unknown_or_outside_vertex_count": 1721,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 60,
+          "observation_frame": 60,
+          "first_available_decision_frame": 61,
+          "minimum_vertex_vertical_offset_m": 1.1908078133562001,
+          "known_vertex_count": 1288,
+          "unknown_or_outside_vertex_count": 1729,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 63,
+          "observation_frame": 63,
+          "first_available_decision_frame": 64,
+          "minimum_vertex_vertical_offset_m": 1.179412729094437,
+          "known_vertex_count": 1278,
+          "unknown_or_outside_vertex_count": 1739,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 66,
+          "observation_frame": 66,
+          "first_available_decision_frame": 67,
+          "minimum_vertex_vertical_offset_m": 1.1804489016657174,
+          "known_vertex_count": 1271,
+          "unknown_or_outside_vertex_count": 1746,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 69,
+          "observation_frame": 69,
+          "first_available_decision_frame": 70,
+          "minimum_vertex_vertical_offset_m": 1.19827933296305,
+          "known_vertex_count": 1260,
+          "unknown_or_outside_vertex_count": 1757,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 72,
+          "observation_frame": 72,
+          "first_available_decision_frame": 73,
+          "minimum_vertex_vertical_offset_m": 1.1867959616081873,
+          "known_vertex_count": 1256,
+          "unknown_or_outside_vertex_count": 1761,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 75,
+          "observation_frame": 75,
+          "first_available_decision_frame": 76,
+          "minimum_vertex_vertical_offset_m": 1.175331036383001,
+          "known_vertex_count": 1247,
+          "unknown_or_outside_vertex_count": 1770,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 78,
+          "observation_frame": 78,
+          "first_available_decision_frame": 79,
+          "minimum_vertex_vertical_offset_m": 1.1638623204274197,
+          "known_vertex_count": 1242,
+          "unknown_or_outside_vertex_count": 1775,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 81,
+          "observation_frame": 81,
+          "first_available_decision_frame": 82,
+          "minimum_vertex_vertical_offset_m": 1.1523772134024242,
+          "known_vertex_count": 1235,
+          "unknown_or_outside_vertex_count": 1782,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 84,
+          "observation_frame": 84,
+          "first_available_decision_frame": 85,
+          "minimum_vertex_vertical_offset_m": 1.1408573171021361,
+          "known_vertex_count": 1230,
+          "unknown_or_outside_vertex_count": 1787,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 87,
+          "observation_frame": 87,
+          "first_available_decision_frame": 88,
+          "minimum_vertex_vertical_offset_m": 1.173180463066359,
+          "known_vertex_count": 1228,
+          "unknown_or_outside_vertex_count": 1789,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 90,
+          "observation_frame": 90,
+          "first_available_decision_frame": 91,
+          "minimum_vertex_vertical_offset_m": 1.1616619446150231,
+          "known_vertex_count": 1219,
+          "unknown_or_outside_vertex_count": 1798,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 93,
+          "observation_frame": 93,
+          "first_available_decision_frame": 94,
+          "minimum_vertex_vertical_offset_m": 1.1501309710469716,
+          "known_vertex_count": 1213,
+          "unknown_or_outside_vertex_count": 1804,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 96,
+          "observation_frame": 96,
+          "first_available_decision_frame": 97,
+          "minimum_vertex_vertical_offset_m": 1.1385986080057409,
+          "known_vertex_count": 1205,
+          "unknown_or_outside_vertex_count": 1812,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 99,
+          "observation_frame": 99,
+          "first_available_decision_frame": 100,
+          "minimum_vertex_vertical_offset_m": 1.1270761210451408,
+          "known_vertex_count": 1197,
+          "unknown_or_outside_vertex_count": 1820,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 102,
+          "observation_frame": 102,
+          "first_available_decision_frame": 103,
+          "minimum_vertex_vertical_offset_m": 1.1155675238909835,
+          "known_vertex_count": 1192,
+          "unknown_or_outside_vertex_count": 1825,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 105,
+          "observation_frame": 105,
+          "first_available_decision_frame": 106,
+          "minimum_vertex_vertical_offset_m": 1.1040742909095553,
+          "known_vertex_count": 1188,
+          "unknown_or_outside_vertex_count": 1829,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 108,
+          "observation_frame": 108,
+          "first_available_decision_frame": 109,
+          "minimum_vertex_vertical_offset_m": 1.0925906030350871,
+          "known_vertex_count": 1181,
+          "unknown_or_outside_vertex_count": 1836,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 111,
+          "observation_frame": 111,
+          "first_available_decision_frame": 112,
+          "minimum_vertex_vertical_offset_m": 1.0811094962629797,
+          "known_vertex_count": 1174,
+          "unknown_or_outside_vertex_count": 1843,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 114,
+          "observation_frame": 114,
+          "first_available_decision_frame": 115,
+          "minimum_vertex_vertical_offset_m": 1.0718245216500115,
+          "known_vertex_count": 1172,
+          "unknown_or_outside_vertex_count": 1845,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 117,
+          "observation_frame": 117,
+          "first_available_decision_frame": 118,
+          "minimum_vertex_vertical_offset_m": 1.0694633838528111,
+          "known_vertex_count": 1168,
+          "unknown_or_outside_vertex_count": 1849,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 120,
+          "observation_frame": 120,
+          "first_available_decision_frame": 121,
+          "minimum_vertex_vertical_offset_m": 1.0579857239071315,
+          "known_vertex_count": 1164,
+          "unknown_or_outside_vertex_count": 1853,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 123,
+          "observation_frame": 123,
+          "first_available_decision_frame": 124,
+          "minimum_vertex_vertical_offset_m": 1.0464952802779055,
+          "known_vertex_count": 1157,
+          "unknown_or_outside_vertex_count": 1860,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 126,
+          "observation_frame": 126,
+          "first_available_decision_frame": 127,
+          "minimum_vertex_vertical_offset_m": 1.0349947398263022,
+          "known_vertex_count": 1147,
+          "unknown_or_outside_vertex_count": 1870,
+          "force_n": 0.0007857396439064284
+        },
+        {
+          "frame_end": 129,
+          "observation_frame": 129,
+          "first_available_decision_frame": 130,
+          "minimum_vertex_vertical_offset_m": 1.0234860417271259,
+          "known_vertex_count": 1141,
+          "unknown_or_outside_vertex_count": 1876,
+          "force_n": 0.0010760153863570308
+        },
+        {
+          "frame_end": 132,
+          "observation_frame": 132,
+          "first_available_decision_frame": 133,
+          "minimum_vertex_vertical_offset_m": 1.0192530889252125,
+          "known_vertex_count": 1132,
+          "unknown_or_outside_vertex_count": 1885,
+          "force_n": 0.0005248886633029599
+        },
+        {
+          "frame_end": 135,
+          "observation_frame": 135,
+          "first_available_decision_frame": 136,
+          "minimum_vertex_vertical_offset_m": 1.0077352755929732,
+          "known_vertex_count": 1126,
+          "unknown_or_outside_vertex_count": 1891,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 138,
+          "observation_frame": 138,
+          "first_available_decision_frame": 139,
+          "minimum_vertex_vertical_offset_m": 1.0156444485822367,
+          "known_vertex_count": 1120,
+          "unknown_or_outside_vertex_count": 1897,
+          "force_n": 0.0005229244989399735
+        },
+        {
+          "frame_end": 141,
+          "observation_frame": 141,
+          "first_available_decision_frame": 142,
+          "minimum_vertex_vertical_offset_m": 1.004162768144905,
+          "known_vertex_count": 1112,
+          "unknown_or_outside_vertex_count": 1905,
+          "force_n": 0.0008160520986607085
+        },
+        {
+          "frame_end": 144,
+          "observation_frame": 144,
+          "first_available_decision_frame": 145,
+          "minimum_vertex_vertical_offset_m": 0.9926815422813218,
+          "known_vertex_count": 1103,
+          "unknown_or_outside_vertex_count": 1914,
+          "force_n": 3.6609567847015165e-05
+        },
+        {
+          "frame_end": 147,
+          "observation_frame": 147,
+          "first_available_decision_frame": 148,
+          "minimum_vertex_vertical_offset_m": 0.9811991769809016,
+          "known_vertex_count": 1095,
+          "unknown_or_outside_vertex_count": 1922,
+          "force_n": 1.426011665747787e-05
+        },
+        {
+          "frame_end": 150,
+          "observation_frame": 150,
+          "first_available_decision_frame": 151,
+          "minimum_vertex_vertical_offset_m": 0.9697157446823073,
+          "known_vertex_count": 1090,
+          "unknown_or_outside_vertex_count": 1927,
+          "force_n": 0.0007837579060662314
+        },
+        {
+          "frame_end": 153,
+          "observation_frame": 153,
+          "first_available_decision_frame": 154,
+          "minimum_vertex_vertical_offset_m": 0.9582273646552664,
+          "known_vertex_count": 1082,
+          "unknown_or_outside_vertex_count": 1935,
+          "force_n": 0.0011591446145068859
+        },
+        {
+          "frame_end": 156,
+          "observation_frame": 156,
+          "first_available_decision_frame": 157,
+          "minimum_vertex_vertical_offset_m": 0.9467334099199531,
+          "known_vertex_count": 1079,
+          "unknown_or_outside_vertex_count": 1938,
+          "force_n": 9.880277657784667e-05
+        },
+        {
+          "frame_end": 159,
+          "observation_frame": 159,
+          "first_available_decision_frame": 160,
+          "minimum_vertex_vertical_offset_m": 0.9352147856237634,
+          "known_vertex_count": 1075,
+          "unknown_or_outside_vertex_count": 1942,
+          "force_n": 1.8295172865023403e-05
+        },
+        {
+          "frame_end": 162,
+          "observation_frame": 162,
+          "first_available_decision_frame": 163,
+          "minimum_vertex_vertical_offset_m": 0.9235539005258135,
+          "known_vertex_count": 1069,
+          "unknown_or_outside_vertex_count": 1948,
+          "force_n": 0.0010460036812869322
+        },
+        {
+          "frame_end": 165,
+          "observation_frame": 165,
+          "first_available_decision_frame": 166,
+          "minimum_vertex_vertical_offset_m": 0.9118854146171134,
+          "known_vertex_count": 1062,
+          "unknown_or_outside_vertex_count": 1955,
+          "force_n": 0.0009247342382129574
+        },
+        {
+          "frame_end": 168,
+          "observation_frame": 168,
+          "first_available_decision_frame": 169,
+          "minimum_vertex_vertical_offset_m": 0.9002120697859859,
+          "known_vertex_count": 1060,
+          "unknown_or_outside_vertex_count": 1957,
+          "force_n": 0.00035958534509591294
+        },
+        {
+          "frame_end": 171,
+          "observation_frame": 171,
+          "first_available_decision_frame": 172,
+          "minimum_vertex_vertical_offset_m": 0.8974660206952649,
+          "known_vertex_count": 1052,
+          "unknown_or_outside_vertex_count": 1965,
+          "force_n": 3.656882257571493e-05
+        },
+        {
+          "frame_end": 174,
+          "observation_frame": 174,
+          "first_available_decision_frame": 175,
+          "minimum_vertex_vertical_offset_m": 0.8858072804102679,
+          "known_vertex_count": 1049,
+          "unknown_or_outside_vertex_count": 1968,
+          "force_n": 0.0007853549468627341
+        },
+        {
+          "frame_end": 177,
+          "observation_frame": 177,
+          "first_available_decision_frame": 178,
+          "minimum_vertex_vertical_offset_m": 0.8741503658841119,
+          "known_vertex_count": 1045,
+          "unknown_or_outside_vertex_count": 1972,
+          "force_n": 0.0012754921237053505
+        },
+        {
+          "frame_end": 180,
+          "observation_frame": 180,
+          "first_available_decision_frame": 181,
+          "minimum_vertex_vertical_offset_m": 0.8624947473626599,
+          "known_vertex_count": 1038,
+          "unknown_or_outside_vertex_count": 1979,
+          "force_n": 0.00040371335156632167
+        },
+        {
+          "frame_end": 183,
+          "observation_frame": 183,
+          "first_available_decision_frame": 184,
+          "minimum_vertex_vertical_offset_m": 0.850838995496259,
+          "known_vertex_count": 1030,
+          "unknown_or_outside_vertex_count": 1987,
+          "force_n": 2.6918231745017676e-08
+        },
+        {
+          "frame_end": 186,
+          "observation_frame": 186,
+          "first_available_decision_frame": 187,
+          "minimum_vertex_vertical_offset_m": 0.8391854125307139,
+          "known_vertex_count": 1028,
+          "unknown_or_outside_vertex_count": 1989,
+          "force_n": 0.0010441800324086706
+        },
+        {
+          "frame_end": 189,
+          "observation_frame": 189,
+          "first_available_decision_frame": 190,
+          "minimum_vertex_vertical_offset_m": 0.8426628213632612,
+          "known_vertex_count": 1028,
+          "unknown_or_outside_vertex_count": 1989,
+          "force_n": 0.0009746908678368217
+        },
+        {
+          "frame_end": 192,
+          "observation_frame": 192,
+          "first_available_decision_frame": 193,
+          "minimum_vertex_vertical_offset_m": 0.8311837746005613,
+          "known_vertex_count": 1024,
+          "unknown_or_outside_vertex_count": 1993,
+          "force_n": 0.0005210234787115767
+        },
+        {
+          "frame_end": 195,
+          "observation_frame": 195,
+          "first_available_decision_frame": 196,
+          "minimum_vertex_vertical_offset_m": 0.8196985825200818,
+          "known_vertex_count": 1022,
+          "unknown_or_outside_vertex_count": 1995,
+          "force_n": 0.0
+        },
+        {
+          "frame_end": 198,
+          "observation_frame": 198,
+          "first_available_decision_frame": 199,
+          "minimum_vertex_vertical_offset_m": 0.8082092196086177,
+          "known_vertex_count": 1021,
+          "unknown_or_outside_vertex_count": 1996,
+          "force_n": 0.0018096952004018308
+        },
+        {
+          "frame_end": 201,
+          "observation_frame": 201,
+          "first_available_decision_frame": 202,
+          "minimum_vertex_vertical_offset_m": 0.8038062924207634,
+          "known_vertex_count": 1017,
+          "unknown_or_outside_vertex_count": 2000,
+          "force_n": 0.0020939361410541066
+        },
+        {
+          "frame_end": 204,
+          "observation_frame": 204,
+          "first_available_decision_frame": 205,
+          "minimum_vertex_vertical_offset_m": 0.7923190225426604,
+          "known_vertex_count": 1016,
+          "unknown_or_outside_vertex_count": 2001,
+          "force_n": 0.0008808960017366358
+        },
+        {
+          "frame_end": 207,
+          "observation_frame": 207,
+          "first_available_decision_frame": 208,
+          "minimum_vertex_vertical_offset_m": 0.7808296480070194,
+          "known_vertex_count": 1013,
+          "unknown_or_outside_vertex_count": 2004,
+          "force_n": 0.00031380446028393336
+        },
+        {
+          "frame_end": 210,
+          "observation_frame": 210,
+          "first_available_decision_frame": 211,
+          "minimum_vertex_vertical_offset_m": 0.7693375782172835,
+          "known_vertex_count": 1008,
+          "unknown_or_outside_vertex_count": 2009,
+          "force_n": 0.001488930744202254
+        },
+        {
+          "frame_end": 213,
+          "observation_frame": 213,
+          "first_available_decision_frame": 214,
+          "minimum_vertex_vertical_offset_m": 0.7705158634466682,
+          "known_vertex_count": 1002,
+          "unknown_or_outside_vertex_count": 2015,
+          "force_n": 0.001448390042037942
+        },
+        {
+          "frame_end": 216,
+          "observation_frame": 216,
+          "first_available_decision_frame": 217,
+          "minimum_vertex_vertical_offset_m": 0.7590233645167948,
+          "known_vertex_count": 999,
+          "unknown_or_outside_vertex_count": 2018,
+          "force_n": 0.001248263880932671
+        },
+        {
+          "frame_end": 219,
+          "observation_frame": 219,
+          "first_available_decision_frame": 220,
+          "minimum_vertex_vertical_offset_m": 0.7505246525163813,
+          "known_vertex_count": 996,
+          "unknown_or_outside_vertex_count": 2021,
+          "force_n": 0.0009174017028136753
+        },
+        {
+          "frame_end": 222,
+          "observation_frame": 222,
+          "first_available_decision_frame": 223,
+          "minimum_vertex_vertical_offset_m": 0.738866391405326,
+          "known_vertex_count": 992,
+          "unknown_or_outside_vertex_count": 2025,
+          "force_n": 0.0027227833548801087
+        },
+        {
+          "frame_end": 225,
+          "observation_frame": 225,
+          "first_available_decision_frame": 226,
+          "minimum_vertex_vertical_offset_m": 0.7272063743742914,
+          "known_vertex_count": 990,
+          "unknown_or_outside_vertex_count": 2027,
+          "force_n": 0.0027375073491698793
+        },
+        {
+          "frame_end": 228,
+          "observation_frame": 228,
+          "first_available_decision_frame": 229,
+          "minimum_vertex_vertical_offset_m": 0.7471732294617051,
+          "known_vertex_count": 989,
+          "unknown_or_outside_vertex_count": 2028,
+          "force_n": 0.0021320195115858286
+        },
+        {
+          "frame_end": 231,
+          "observation_frame": 231,
+          "first_available_decision_frame": 232,
+          "minimum_vertex_vertical_offset_m": 0.7414861495345539,
+          "known_vertex_count": 987,
+          "unknown_or_outside_vertex_count": 2030,
+          "force_n": 0.0012927048539156162
+        },
+        {
+          "frame_end": 234,
+          "observation_frame": 234,
+          "first_available_decision_frame": 235,
+          "minimum_vertex_vertical_offset_m": 0.7297406392411319,
+          "known_vertex_count": 986,
+          "unknown_or_outside_vertex_count": 2031,
+          "force_n": 0.002231133055636328
+        },
+        {
+          "frame_end": 237,
+          "observation_frame": 237,
+          "first_available_decision_frame": 238,
+          "minimum_vertex_vertical_offset_m": 0.7179932457718718,
+          "known_vertex_count": 983,
+          "unknown_or_outside_vertex_count": 2034,
+          "force_n": 0.002837106113143297
+        },
+        {
+          "frame_end": 240,
+          "observation_frame": 240,
+          "first_available_decision_frame": 241,
+          "minimum_vertex_vertical_offset_m": 0.7152018167958818,
+          "known_vertex_count": 980,
+          "unknown_or_outside_vertex_count": 2037,
+          "force_n": 0.0030103417006509914
+        },
+        {
+          "frame_end": 243,
+          "observation_frame": 243,
+          "first_available_decision_frame": 244,
+          "minimum_vertex_vertical_offset_m": 0.7035629349709291,
+          "known_vertex_count": 977,
+          "unknown_or_outside_vertex_count": 2040,
+          "force_n": 0.0036752763888624374
+        },
+        {
+          "frame_end": 246,
+          "observation_frame": 246,
+          "first_available_decision_frame": 247,
+          "minimum_vertex_vertical_offset_m": 0.6919210083458209,
+          "known_vertex_count": 975,
+          "unknown_or_outside_vertex_count": 2042,
+          "force_n": 0.00592543509967446
+        },
+        {
+          "frame_end": 249,
+          "observation_frame": 249,
+          "first_available_decision_frame": 250,
+          "minimum_vertex_vertical_offset_m": 0.6802774192877763,
+          "known_vertex_count": 971,
+          "unknown_or_outside_vertex_count": 2046,
+          "force_n": 0.0036733005439141494
+        },
+        {
+          "frame_end": 252,
+          "observation_frame": 252,
+          "first_available_decision_frame": 253,
+          "minimum_vertex_vertical_offset_m": 0.6686316724538179,
+          "known_vertex_count": 969,
+          "unknown_or_outside_vertex_count": 2048,
+          "force_n": 0.005147672188814015
+        },
+        {
+          "frame_end": 255,
+          "observation_frame": 255,
+          "first_available_decision_frame": 256,
+          "minimum_vertex_vertical_offset_m": 0.656983337296887,
+          "known_vertex_count": 967,
+          "unknown_or_outside_vertex_count": 2050,
+          "force_n": 0.003897921189503931
+        },
+        {
+          "frame_end": 258,
+          "observation_frame": 258,
+          "first_available_decision_frame": 259,
+          "minimum_vertex_vertical_offset_m": 0.6453337181031409,
+          "known_vertex_count": 966,
+          "unknown_or_outside_vertex_count": 2051,
+          "force_n": 0.006346536809354912
+        },
+        {
+          "frame_end": 261,
+          "observation_frame": 261,
+          "first_available_decision_frame": 262,
+          "minimum_vertex_vertical_offset_m": 0.6336801265172511,
+          "known_vertex_count": 963,
+          "unknown_or_outside_vertex_count": 2054,
+          "force_n": 0.006200980889367095
+        },
+        {
+          "frame_end": 264,
+          "observation_frame": 264,
+          "first_available_decision_frame": 265,
+          "minimum_vertex_vertical_offset_m": 0.6220239927764697,
+          "known_vertex_count": 960,
+          "unknown_or_outside_vertex_count": 2057,
+          "force_n": 0.006370634038885315
+        },
+        {
+          "frame_end": 267,
+          "observation_frame": 267,
+          "first_available_decision_frame": 268,
+          "minimum_vertex_vertical_offset_m": 0.6103649238119122,
+          "known_vertex_count": 958,
+          "unknown_or_outside_vertex_count": 2059,
+          "force_n": 0.006569118661740904
+        },
+        {
+          "frame_end": 270,
+          "observation_frame": 270,
+          "first_available_decision_frame": 271,
+          "minimum_vertex_vertical_offset_m": 0.5987020759778794,
+          "known_vertex_count": 957,
+          "unknown_or_outside_vertex_count": 2060,
+          "force_n": 0.006691195949633597
+        },
+        {
+          "frame_end": 273,
+          "observation_frame": 273,
+          "first_available_decision_frame": 274,
+          "minimum_vertex_vertical_offset_m": 0.5864348122070084,
+          "known_vertex_count": 954,
+          "unknown_or_outside_vertex_count": 2063,
+          "force_n": 0.007116760379637867
+        },
+        {
+          "frame_end": 276,
+          "observation_frame": 276,
+          "first_available_decision_frame": 277,
+          "minimum_vertex_vertical_offset_m": 0.5691633447867841,
+          "known_vertex_count": 959,
+          "unknown_or_outside_vertex_count": 2058,
+          "force_n": 0.01788798684647315
+        },
+        {
+          "frame_end": 279,
+          "observation_frame": 279,
+          "first_available_decision_frame": 280,
+          "minimum_vertex_vertical_offset_m": 0.2774343586259964,
+          "known_vertex_count": 960,
+          "unknown_or_outside_vertex_count": 2057,
+          "force_n": 0.008057286524053733
+        },
+        {
+          "frame_end": 282,
+          "observation_frame": 282,
+          "first_available_decision_frame": 283,
+          "minimum_vertex_vertical_offset_m": 0.26522367015029524,
+          "known_vertex_count": 958,
+          "unknown_or_outside_vertex_count": 2059,
+          "force_n": 0.008369210400484287
+        },
+        {
+          "frame_end": 285,
+          "observation_frame": 285,
+          "first_available_decision_frame": 286,
+          "minimum_vertex_vertical_offset_m": 0.25154833379297714,
+          "known_vertex_count": 958,
+          "unknown_or_outside_vertex_count": 2059,
+          "force_n": 0.00861382758596449
+        },
+        {
+          "frame_end": 288,
+          "observation_frame": 288,
+          "first_available_decision_frame": 289,
+          "minimum_vertex_vertical_offset_m": 0.23729748040927512,
+          "known_vertex_count": 958,
+          "unknown_or_outside_vertex_count": 2059,
+          "force_n": 0.008026941620424412
+        },
+        {
+          "frame_end": 291,
+          "observation_frame": 291,
+          "first_available_decision_frame": 292,
+          "minimum_vertex_vertical_offset_m": 0.22364783964116475,
+          "known_vertex_count": 959,
+          "unknown_or_outside_vertex_count": 2058,
+          "force_n": 0.008778332459348085
+        },
+        {
+          "frame_end": 294,
+          "observation_frame": 294,
+          "first_available_decision_frame": 295,
+          "minimum_vertex_vertical_offset_m": 0.2108568306515759,
+          "known_vertex_count": 958,
+          "unknown_or_outside_vertex_count": 2059,
+          "force_n": 0.010393260889941396
+        },
+        {
+          "frame_end": 297,
+          "observation_frame": 297,
+          "first_available_decision_frame": 298,
+          "minimum_vertex_vertical_offset_m": 0.19867663341796216,
+          "known_vertex_count": 958,
+          "unknown_or_outside_vertex_count": 2059,
+          "force_n": 0.009646262854808324
+        },
+        {
+          "frame_end": 300,
+          "observation_frame": 300,
+          "first_available_decision_frame": 301,
+          "minimum_vertex_vertical_offset_m": 0.18649831346317458,
+          "known_vertex_count": 956,
+          "unknown_or_outside_vertex_count": 2061,
+          "force_n": 0.008505264601762373
+        },
+        {
+          "frame_end": 303,
+          "observation_frame": 303,
+          "first_available_decision_frame": 304,
+          "minimum_vertex_vertical_offset_m": 0.17431924944745747,
+          "known_vertex_count": 956,
+          "unknown_or_outside_vertex_count": 2061,
+          "force_n": 0.008522843455809809
+        },
+        {
+          "frame_end": 306,
+          "observation_frame": 306,
+          "first_available_decision_frame": 307,
+          "minimum_vertex_vertical_offset_m": 0.16213679175620666,
+          "known_vertex_count": 955,
+          "unknown_or_outside_vertex_count": 2062,
+          "force_n": 0.008200864622201666
+        },
+        {
+          "frame_end": 309,
+          "observation_frame": 309,
+          "first_available_decision_frame": 310,
+          "minimum_vertex_vertical_offset_m": 0.14903264590739074,
+          "known_vertex_count": 959,
+          "unknown_or_outside_vertex_count": 2058,
+          "force_n": 0.008692097814650454
+        },
+        {
+          "frame_end": 312,
+          "observation_frame": 312,
+          "first_available_decision_frame": 313,
+          "minimum_vertex_vertical_offset_m": 0.1395622456666923,
+          "known_vertex_count": 975,
+          "unknown_or_outside_vertex_count": 2042,
+          "force_n": 28.238605529344216
+        },
+        {
+          "frame_end": 315,
+          "observation_frame": 315,
+          "first_available_decision_frame": 316,
+          "minimum_vertex_vertical_offset_m": 0.13197966563927288,
+          "known_vertex_count": 1008,
+          "unknown_or_outside_vertex_count": 2009,
+          "force_n": 147.2943505358666
+        },
+        {
+          "frame_end": 318,
+          "observation_frame": 318,
+          "first_available_decision_frame": 319,
+          "minimum_vertex_vertical_offset_m": 0.12574782702844312,
+          "known_vertex_count": 1031,
+          "unknown_or_outside_vertex_count": 1986,
+          "force_n": 97.59585545693777
+        },
+        {
+          "frame_end": 321,
+          "observation_frame": 321,
+          "first_available_decision_frame": 322,
+          "minimum_vertex_vertical_offset_m": 0.1197380939056234,
+          "known_vertex_count": 1052,
+          "unknown_or_outside_vertex_count": 1965,
+          "force_n": 108.89810623919271
+        },
+        {
+          "frame_end": 324,
+          "observation_frame": 324,
+          "first_available_decision_frame": 325,
+          "minimum_vertex_vertical_offset_m": -0.23053809899338584,
+          "known_vertex_count": 1074,
+          "unknown_or_outside_vertex_count": 1943,
+          "force_n": 169.85215443649773
+        },
+        {
+          "frame_end": 327,
+          "observation_frame": 327,
+          "first_available_decision_frame": 328,
+          "minimum_vertex_vertical_offset_m": -0.24059928593934266,
+          "known_vertex_count": 1095,
+          "unknown_or_outside_vertex_count": 1922,
+          "force_n": 297.86173050247174
+        },
+        {
+          "frame_end": 330,
+          "observation_frame": 330,
+          "first_available_decision_frame": 331,
+          "minimum_vertex_vertical_offset_m": -0.2450589868360029,
+          "known_vertex_count": 1111,
+          "unknown_or_outside_vertex_count": 1906,
+          "force_n": 357.1988726931021
+        },
+        {
+          "frame_end": 333,
+          "observation_frame": 333,
+          "first_available_decision_frame": 334,
+          "minimum_vertex_vertical_offset_m": -0.24392488038055338,
+          "known_vertex_count": 1106,
+          "unknown_or_outside_vertex_count": 1911,
+          "force_n": 275.7073798917068
+        },
+        {
+          "frame_end": 336,
+          "observation_frame": 336,
+          "first_available_decision_frame": 337,
+          "minimum_vertex_vertical_offset_m": -0.24580509256122185,
+          "known_vertex_count": 1115,
+          "unknown_or_outside_vertex_count": 1902,
+          "force_n": 347.37353685653693
+        },
+        {
+          "frame_end": 339,
+          "observation_frame": 339,
+          "first_available_decision_frame": 340,
+          "minimum_vertex_vertical_offset_m": -0.2511334550855484,
+          "known_vertex_count": 1134,
+          "unknown_or_outside_vertex_count": 1883,
+          "force_n": 483.18596476486266
+        },
+        {
+          "frame_end": 342,
+          "observation_frame": 342,
+          "first_available_decision_frame": 343,
+          "minimum_vertex_vertical_offset_m": -0.25558216213117446,
+          "known_vertex_count": 1144,
+          "unknown_or_outside_vertex_count": 1873,
+          "force_n": 618.3763619743902
+        },
+        {
+          "frame_end": 345,
+          "observation_frame": 345,
+          "first_available_decision_frame": 346,
+          "minimum_vertex_vertical_offset_m": -0.2596290966460868,
+          "known_vertex_count": 1156,
+          "unknown_or_outside_vertex_count": 1861,
+          "force_n": 708.3072890936478
+        },
+        {
+          "frame_end": 348,
+          "observation_frame": 348,
+          "first_available_decision_frame": 349,
+          "minimum_vertex_vertical_offset_m": -0.26366936280579556,
+          "known_vertex_count": 1174,
+          "unknown_or_outside_vertex_count": 1843,
+          "force_n": 749.1965471950615
+        },
+        {
+          "frame_end": 351,
+          "observation_frame": 351,
+          "first_available_decision_frame": 352,
+          "minimum_vertex_vertical_offset_m": -0.26997463767658125,
+          "known_vertex_count": 1190,
+          "unknown_or_outside_vertex_count": 1827,
+          "force_n": 521.031787289762
+        },
+        {
+          "frame_end": 354,
+          "observation_frame": 354,
+          "first_available_decision_frame": 355,
+          "minimum_vertex_vertical_offset_m": -0.4292916833724125,
+          "known_vertex_count": 1205,
+          "unknown_or_outside_vertex_count": 1812,
+          "force_n": 687.277222024317
+        },
+        {
+          "frame_end": 357,
+          "observation_frame": 357,
+          "first_available_decision_frame": 358,
+          "minimum_vertex_vertical_offset_m": -0.4418789867884274,
+          "known_vertex_count": 1235,
+          "unknown_or_outside_vertex_count": 1782,
+          "force_n": 831.0123240702736
+        },
+        {
+          "frame_end": 360,
+          "observation_frame": 360,
+          "first_available_decision_frame": 361,
+          "minimum_vertex_vertical_offset_m": -0.4512700938308847,
+          "known_vertex_count": 1272,
+          "unknown_or_outside_vertex_count": 1745,
+          "force_n": 696.9574675921757
+        },
+        {
+          "frame_end": 363,
+          "observation_frame": 363,
+          "first_available_decision_frame": 364,
+          "minimum_vertex_vertical_offset_m": -0.4597960370081091,
+          "known_vertex_count": 1311,
+          "unknown_or_outside_vertex_count": 1706,
+          "force_n": 691.300971012707
+        },
+        {
+          "frame_end": 366,
+          "observation_frame": 366,
+          "first_available_decision_frame": 367,
+          "minimum_vertex_vertical_offset_m": -0.4676178711684422,
+          "known_vertex_count": 1348,
+          "unknown_or_outside_vertex_count": 1669,
+          "force_n": 1007.3764258936833
+        },
+        {
+          "frame_end": 369,
+          "observation_frame": 369,
+          "first_available_decision_frame": 370,
+          "minimum_vertex_vertical_offset_m": -0.4762603237557237,
+          "known_vertex_count": 1378,
+          "unknown_or_outside_vertex_count": 1639,
+          "force_n": 1095.6608120864155
+        },
+        {
+          "frame_end": 372,
+          "observation_frame": 372,
+          "first_available_decision_frame": 373,
+          "minimum_vertex_vertical_offset_m": -0.4819503950090811,
+          "known_vertex_count": 1397,
+          "unknown_or_outside_vertex_count": 1620,
+          "force_n": 1246.9472024283075
+        },
+        {
+          "frame_end": 375,
+          "observation_frame": 375,
+          "first_available_decision_frame": 376,
+          "minimum_vertex_vertical_offset_m": -0.4847009868666774,
+          "known_vertex_count": 1416,
+          "unknown_or_outside_vertex_count": 1601,
+          "force_n": 1161.8091400901044
+        },
+        {
+          "frame_end": 378,
+          "observation_frame": 378,
+          "first_available_decision_frame": 379,
+          "minimum_vertex_vertical_offset_m": -0.4882533996852785,
+          "known_vertex_count": 1443,
+          "unknown_or_outside_vertex_count": 1574,
+          "force_n": 1104.568063378294
+        },
+        {
+          "frame_end": 381,
+          "observation_frame": 381,
+          "first_available_decision_frame": 382,
+          "minimum_vertex_vertical_offset_m": -0.5642087080217499,
+          "known_vertex_count": 1465,
+          "unknown_or_outside_vertex_count": 1552,
+          "force_n": 1229.2273755674717
+        },
+        {
+          "frame_end": 384,
+          "observation_frame": 384,
+          "first_available_decision_frame": 385,
+          "minimum_vertex_vertical_offset_m": -0.5739777413634091,
+          "known_vertex_count": 1494,
+          "unknown_or_outside_vertex_count": 1523,
+          "force_n": 1688.130837066866
+        },
+        {
+          "frame_end": 387,
+          "observation_frame": 387,
+          "first_available_decision_frame": 388,
+          "minimum_vertex_vertical_offset_m": -0.5786419033554753,
+          "known_vertex_count": 1516,
+          "unknown_or_outside_vertex_count": 1501,
+          "force_n": 1723.5639775556326
+        },
+        {
+          "frame_end": 390,
+          "observation_frame": 390,
+          "first_available_decision_frame": 391,
+          "minimum_vertex_vertical_offset_m": -0.5825711373215163,
+          "known_vertex_count": 1525,
+          "unknown_or_outside_vertex_count": 1492,
+          "force_n": 1965.0193892394002
+        }
+      ],
+      "original_phase_events": [
+        {
+          "label": "penetrate_deepen",
+          "next_frame": 334
+        },
+        {
+          "label": "curl_load",
+          "next_frame": 560
+        },
+        {
+          "label": "lift_clear",
+          "next_frame": 959
+        },
+        {
+          "label": "off_soil_confirm",
+          "next_frame": 1408
+        }
+      ],
+      "confirmed_contact_label": null
+    }
+  ]
+}

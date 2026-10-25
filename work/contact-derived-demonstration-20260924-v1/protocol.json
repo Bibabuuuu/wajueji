@@ -1,0 +1,18 @@
+{
+  "schema": "derived_teacher_demo_protocol_v1",
+  "status": "user_authorized_single_episode_candidate",
+  "teacher_run": "manual-contact-20260924-115812-1458627",
+  "frames": 1490,
+  "wall_budget_seconds": 480,
+  "device": "cuda:0",
+  "actual_state_terrain_phase_required": true,
+  "inherit_teacher_split_and_lineage": true,
+  "maximum_bucket_CAD_point_deviation_m": 0.001,
+  "maximum_rock_center_deviation_m": 0.001,
+  "maximum_rock_orientation_deviation_rad": 0.0001,
+  "maximum_final_particle_position_deviation_m": 0.001,
+  "p99_final_particle_position_deviation_m": 0.0001,
+  "maximum_final_cavity_particle_count_relative_difference": 0.05,
+  "bucket_ground_margin_m": 0.005,
+  "scope": "Engineering review limits, not user-supplied tolerances or expert-success certification. Keep original physics guards. No training or policy takeover."
+}

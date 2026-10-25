@@ -1,0 +1,43 @@
+{
+  "frame_end": 1327,
+  "rows": [
+    {
+      "name": "chassis piston rod",
+      "qpos_address": 9,
+      "qvel_address": 8,
+      "position": 0.20617906388406057,
+      "speed": -0.011636025586914475,
+      "lower": 0.06,
+      "upper": 0.56,
+      "margin": 0.14617906388406057,
+      "linear_one_step_prediction": 0.20598513012427866
+    },
+    {
+      "name": "boom piston rod",
+      "qpos_address": 12,
+      "qvel_address": 11,
+      "position": 0.5488288853438062,
+      "speed": -0.01883554849190608,
+      "lower": 0.28,
+      "upper": 1.1,
+      "margin": 0.2688288853438062,
+      "linear_one_step_prediction": 0.5485149595356078
+    },
+    {
+      "name": "arm piston rod",
+      "qpos_address": 15,
+      "qvel_address": 14,
+      "position": 0.8599533753637439,
+      "speed": 0.01707826266985504,
+      "lower": 0.37,
+      "upper": 0.86,
+      "margin": 4.662463625604296e-05,
+      "linear_one_step_prediction": 0.8602380130749082
+    }
+  ],
+  "bucket_controller_target": 0.852,
+  "bucket_integral_effort_n": 69206.76514617803,
+  "bucket_active_curl_effort_n": 0,
+  "scope": "last returned valid state only; XML qpos/dof order and constant-velocity extrapolation; no physics step",
+  "failure_joint_id_unreported": true
+}

@@ -1,0 +1,15 @@
+{
+  "actual_count_from_loaded_model": true,
+  "base_r1_source_path": "src/v4/mixed_rigid_bridge.cc",
+  "base_r1_source_sha256": "d8713523ab3e0fa49ea32752dda76bf72cb0a548e646f4e2ff4ac57a8c943f9d",
+  "generated_source_sha256": "937013c3ef1c3c8200dfe99f82683ac65178055ab9c158a3819e35afe7949a57",
+  "maximum_rock_count": 20,
+  "minimum_rock_count": 1,
+  "placeholder_rocks_allowed": false,
+  "ready_schema": "excavation_mixed_rigid_bridge_v2",
+  "replacement_anchor_count": 17,
+  "runtime_add_remove_allowed": false,
+  "schema": "excavation_mixed_rigid_bridge_source_manifest_v2",
+  "state_schema": "excavation_mixed_rigid_bridge_state_v2",
+  "status": "r2_bridge_source_generated"
+}

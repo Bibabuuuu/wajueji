@@ -1,0 +1,264 @@
+{
+  "schema": "third_scoop_finish_stopped_review_v1",
+  "investigation_checks_passed": true,
+  "unload_return_passed": false,
+  "checks": {
+    "source_unchanged": true,
+    "source_exact_hold": true,
+    "retreat_passed": true,
+    "free_space_gate_preserved": true,
+    "transport_stopped": true,
+    "earlier_transport_frames_safe": true,
+    "sole_last_guard_failure": true,
+    "material_nonfinite_Jp_one": true,
+    "transport_binds_retreat": true,
+    "retreat_binds_audit": true,
+    "saved_stage_hashes_match": true
+  },
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-093202-1362929/final-001264.cycle.npz",
+    "sha256": "5b9c4e7a5520a0c4beab9cc124e7f4a54e24af4b8953fea6f6bdfb0b1e3077b0"
+  },
+  "stages": {
+    "source-audit": {
+      "frames": 30,
+      "all_hard_guards": true,
+      "all_material_guards": true,
+      "all_sweep_guards": true
+    },
+    "retreat-boom-physical-v3": {
+      "frames": 180,
+      "all_hard_guards": true,
+      "all_material_guards": true,
+      "all_sweep_guards": true
+    },
+    "transport-after-retreat": {
+      "frames": 2297,
+      "all_hard_guards": false,
+      "all_material_guards": false,
+      "all_sweep_guards": true
+    }
+  },
+  "retreat": {
+    "schema": "bounded_loaded_clearance_retreat_v1",
+    "status": "retreat_passed",
+    "source": {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/source-audit/final.npz",
+      "size_bytes": 55199642,
+      "mtime_ns": 1790214105894670781,
+      "sha256": "c8e7601fab749d6e8b6bde5bfd23139a84589c7e654d94012145f65c1c59229e"
+    },
+    "initial_clearance": {
+      "bucket_truck_m": 1.877998176458783,
+      "bucket_terrain_m": -0.06435560578860078,
+      "mechanism_truck_m": 0.9795616391756738,
+      "mechanism_ground_m": 0.9001229509628657,
+      "closure_m": 6.006817242698581e-05
+    },
+    "protocol": {
+      "boom_extension_m": 0.025,
+      "boom_command_m_s": 0.01,
+      "profile": "constant_command_native_controller_limits",
+      "maximum_frames": 600,
+      "maximum_wall_seconds": 180,
+      "xy_drift_m": 0.2,
+      "minimum_sample_rise_m": -0.002,
+      "minimum_endpoint_rise_m": 0.15,
+      "maximum_tracking_error_m": 0.015,
+      "minimum_endpoint_terrain_clearance_m": 0.15,
+      "preserve_initial_controller_target_offset": true,
+      "free_space_gate_unchanged": true,
+      "training_eligible": false
+    },
+    "planned_frames": 150,
+    "minimum_clearance": {
+      "bucket_truck_m": 1.8629257629874634,
+      "bucket_terrain_m": -0.06435560578860078,
+      "mechanism_truck_m": 0.9795616391756738,
+      "mechanism_ground_m": 0.9001229509628657,
+      "closure_m": 1.163513729807164e-13
+    },
+    "final_clearance": {
+      "bucket_truck_m": 1.8621090291998215,
+      "bucket_terrain_m": 0.15468363236935634,
+      "mechanism_truck_m": 0.9794457358877324,
+      "mechanism_ground_m": 0.9024193750362393,
+      "closure_m": 5.982890154010434e-05
+    },
+    "actual_rise_m": 0.2110350641039318,
+    "frames": 180,
+    "checkpoint": {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/retreat-boom-physical-v3/cleared.npz",
+      "size_bytes": 55270274,
+      "mtime_ns": 1790214653575149476,
+      "sha256": "2b6b4597b1f2ac6541be6efacb53613849794698ab22add6c37043964ca84840"
+    },
+    "wall_seconds": 40.639904187002685
+  },
+  "transport_status": "failed",
+  "transport_failure_frame": 2297,
+  "transport_completed_stages": [
+    {
+      "name": "LIFT",
+      "frame": 670,
+      "endpoint_axis_error": 0.0026724975811219243,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport-after-retreat/lift.npz",
+        "size_bytes": 55398734,
+        "mtime_ns": 1790214895374574614,
+        "sha256": "354f1791936195849b1dad6475dd22758a946cd128cb34e6681d6ceb3398e3bc"
+      }
+    },
+    {
+      "name": "ALIGN",
+      "frame": 1484,
+      "endpoint_axis_error": 0.003005058825070961,
+      "checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport-after-retreat/align.npz",
+        "size_bytes": 55322582,
+        "mtime_ns": 1790215039523564533,
+        "sha256": "1f5796ab9d13c5320f2ffb19c3bd46f2d143486284354328d060486621df9a2e"
+      }
+    }
+  ],
+  "last_safe_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport-after-retreat/align.npz",
+    "size_bytes": 55322582,
+    "mtime_ns": 1790215039523564533,
+    "sha256": "1f5796ab9d13c5320f2ffb19c3bd46f2d143486284354328d060486621df9a2e"
+  },
+  "last_guard": {
+    "applied_command_bounded": true,
+    "bucket_wrench_finite": true,
+    "finite": true,
+    "forbidden_contact_zero": true,
+    "hencky_material_state_safe": false,
+    "joint_bounds": true,
+    "moving_bucket_sweep_safe": true,
+    "nonfinite_collider_sample_zero": true,
+    "physical_closure": true,
+    "rigid_contact_breakdown_present": true,
+    "rock_ramp_truck_contact_zero": true,
+    "unmapped_active_collider_zero": true
+  },
+  "last_material_guard": {
+    "F_frobenius_over_1000": 0,
+    "Jp_nonpositive": 0,
+    "checks": {
+      "Jp_positive": false,
+      "all_material_arrays_finite": false,
+      "candidate_update_rejection_zero": true,
+      "elastic_F_frobenius_bounded": true
+    },
+    "enabled": true,
+    "maximum_F_frobenius": 1.8772259523138686,
+    "maximum_Jp": null,
+    "minimum_Jp": null,
+    "nonfinite_values": {
+      "particle_Jp": 1,
+      "particle_elastic_strain": 0,
+      "particle_stress": 0
+    },
+    "rejection_codes": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "rejection_count": 0,
+    "safe": false
+  },
+  "Jp_tail": [
+    {
+      "frame": 2292,
+      "maximum_Jp": 1.0953252902777837e+37,
+      "particle_max_speed_m_s": 0.6001112461090088
+    },
+    {
+      "frame": 2293,
+      "maximum_Jp": 2.310447618759056e+37,
+      "particle_max_speed_m_s": 0.6901444792747498
+    },
+    {
+      "frame": 2294,
+      "maximum_Jp": 3.8765297909436153e+37,
+      "particle_max_speed_m_s": 0.774674117565155
+    },
+    {
+      "frame": 2295,
+      "maximum_Jp": 6.9154457571599455e+37,
+      "particle_max_speed_m_s": 0.875725507736206
+    },
+    {
+      "frame": 2296,
+      "maximum_Jp": 1.5878933177060623e+38,
+      "particle_max_speed_m_s": 0.9308875799179077
+    },
+    {
+      "frame": 2297,
+      "maximum_Jp": null,
+      "particle_max_speed_m_s": 0.9878771901130676
+    }
+  ],
+  "failure_snapshot_error": "ValueError('interactive_proxy_checkpoint_nonfinite')",
+  "preserved_failures": {
+    "transport": {
+      "identity": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport/report.json",
+        "sha256": "a32a13f4a4603b795358c9edec134c366efea99889b857dd016ec40ea27fcfe2"
+      },
+      "status": "failed",
+      "frames": 0,
+      "failure": "ValueError(\"cycle_transport_clearance:{'bucket_truck_m': 1.877998176458783, 'bucket_terrain_m': -0.06435560578860078, 'mechanism_truck_m': 0.9795616391756738, 'mechanism_ground_m': 0.9001229509628657, 'closure_m': 6.006817242698581e-05}:mesh=chassis_boom_tube\")"
+    },
+    "retreat-plan": {
+      "identity": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/retreat-plan/report.json",
+        "sha256": "22e6e424c2b97f214c26822d2f747107975dee47ba6a488e9cee8c6c3791e80f"
+      },
+      "status": "failed",
+      "frames": 0,
+      "failure": "ValueError('cycle_pose_unresolved: closure_m=0.00294509197, position_error_m=0.00776219429, pitch_error_rad=2.43169225e-08, active_bounds=[15]')"
+    },
+    "retreat-boom-physical": {
+      "identity": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/retreat-boom-physical/report.json",
+        "sha256": "ce6bdf4970f0e86fbc1c2d4ae2d599ea4c925a2ce87bb1cb03fd99b738b2b847"
+      },
+      "status": "failed",
+      "frames": 3,
+      "failure": "ValueError('retreat_not_upward')"
+    },
+    "retreat-boom-physical-v2": {
+      "identity": {
+        "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/retreat-boom-physical-v2/report.json",
+        "sha256": "7f59954a28de82f0e1dfd4512e4ca9d051e1b8e318b29c60059d5957b9ef3b46"
+      },
+      "status": "failed",
+      "frames": 5,
+      "failure": "ValueError('retreat_not_upward')"
+    }
+  },
+  "evidence_bindings": [
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/source-audit/audit.json",
+      "sha256": "f5353c39795fab94238b16da56427047adc67b281b8a3c5166a43fba86f25be6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/retreat-boom-physical-v3/report.json",
+      "sha256": "a7dca445dd3b5df43d21764d719543e21252edf8b7f374a5e1ca8bf0575d0700"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport-after-retreat/report.json",
+      "sha256": "a56f12415f3669495c5d0bacabc38c3fc309611a1c361ef1e68e7aa62fa4c1a6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport-after-retreat/frames.ndjson",
+      "sha256": "a5662f82bea0469eac54a5e73a63a7e97404c040705f0b581fd2e51dfba4f69a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/layered-47-cycle-v1/third-scoop-finish-20260924-094135-1368892/transport-after-retreat/failure-save-error.txt",
+      "sha256": "ff225f63920de2e724ff49796667a7c97f62d2673ca781ad4933f6909fc8bbe3"
+    }
+  ],
+  "scope": "Stopped local development continuation. Contact data remains separately preserved. No G4/G5, successful unload/return, training qualification or failure-state resume claim."
+}

@@ -1,0 +1,61 @@
+{
+  "previous": {
+    "hold": {
+      "mpm_load_mean_N": -116080.77232554648,
+      "rock_load_mean_N": -5278.7559565260635,
+      "drive_mean_N": 154001.13229232683,
+      "sampled_drive_plus_mpm_rock_N": 32641.60401025427,
+      "lagged_velocity_mpm_coefficient_Ns_per_m": -9180368.527044967,
+      "linear_time_velocity_fit_R2": 0.9998637165603415,
+      "q_range_m": 0.00018168582937161393
+    },
+    "reverse": {
+      "mpm_load_mean_N": -98255.24270110912,
+      "rock_load_mean_N": -2309.721943536705,
+      "drive_mean_N": 135870.76371538782,
+      "sampled_drive_plus_mpm_rock_N": 35305.79907074198,
+      "lagged_velocity_mpm_coefficient_Ns_per_m": -8410829.011171851,
+      "linear_time_velocity_fit_R2": 0.9757618768978749,
+      "q_range_m": 0.00033423722994152527
+    },
+    "stop": {
+      "mpm_load_mean_N": -75357.9662115466,
+      "rock_load_mean_N": -3677.9827324674284,
+      "drive_mean_N": 112008.06774778626,
+      "sampled_drive_plus_mpm_rock_N": 32972.11880377225,
+      "lagged_velocity_mpm_coefficient_Ns_per_m": -8642519.722697899,
+      "linear_time_velocity_fit_R2": 0.9996551167742657,
+      "q_range_m": 0.0001313248705635539
+    }
+  },
+  "release": {
+    "hold": {
+      "mpm_load_mean_N": -116080.77232554648,
+      "rock_load_mean_N": -5278.7559565260635,
+      "drive_mean_N": 154001.13229232683,
+      "sampled_drive_plus_mpm_rock_N": 32641.60401025427,
+      "lagged_velocity_mpm_coefficient_Ns_per_m": -9180368.527044967,
+      "linear_time_velocity_fit_R2": 0.9998637165603415,
+      "q_range_m": 0.00018168582937161393
+    },
+    "reverse": {
+      "mpm_load_mean_N": -91114.24203975846,
+      "rock_load_mean_N": -3068.9078967188634,
+      "drive_mean_N": 128455.6037123926,
+      "sampled_drive_plus_mpm_rock_N": 34272.45377591529,
+      "lagged_velocity_mpm_coefficient_Ns_per_m": -8378310.81159203,
+      "linear_time_velocity_fit_R2": 0.9777353538631948,
+      "q_range_m": 0.00054198747224532
+    },
+    "stop": {
+      "mpm_load_mean_N": -63450.34467124052,
+      "rock_load_mean_N": -2300.7425753866423,
+      "drive_mean_N": 99100.17022134969,
+      "sampled_drive_plus_mpm_rock_N": 33349.082974722514,
+      "lagged_velocity_mpm_coefficient_Ns_per_m": -8392412.230572093,
+      "linear_time_velocity_fit_R2": 0.9983200772769291,
+      "q_range_m": 0.00043746450568482587
+    }
+  },
+  "boundary": "Equivalent force samples do not include all gravity, inertial, constraint terms and are not frame integrals. Regression is observational and strongly collinear with alternating frame phase; it does not prove physical damping or numerical instability. No force cap added and no coupling change tested."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "mechanism_localized_observation_not_intervention",
+  "trace_equivalence": "972 actions, physical records, and final24 arrays exact in authorized retry",
+  "key_evidence": [
+    "940-972 each MPM average wrench is held for80 rigid substeps; equivalent projection varies slightly with geometry but load is not recomputed within60Hz interval",
+    "Before frame965 bucket velocity -0.2964m/s; new projected MPM+sweep load +68.45kN; first native substep accelerates positive, then velocity crosses zero while same load persists",
+    "At frame965 last substep velocity +0.4137m/s: MPM+sweep +68.51kN, actuator already braking -21.60kN, direct rock contact -4.15kN; net projected forcing remains positive",
+    "Next frame966 applies about-112kN MPM+sweep and reverses actual velocity to-0.3252m/s; repeating frame-rate load/velocity alternation",
+    "Direct rock contact is small relative to projected MPM+sweep in onset window; integral changes slowly; active assist mostly decays, with small substep transients even when frame endpoint is zero",
+    "Raw MPM bucket wrench dominates Cartesian norm; sweep correction is separately logged and preserves impulse bookkeeping"
+  ],
+  "limits": [
+    "Does not establish the exact MPM contact constitutive trigger",
+    "No counterfactual reduction of coupling interval has run",
+    "Not permission to remove MPM load, clip velocity, tune away protection or declare scoop success"
+  ],
+  "recommended_candidate": {
+    "control_hz": 60,
+    "rigid_hz": 4800,
+    "coupling_hz": 120,
+    "change": "Two MPM-rigid exchanges per60Hz action; recompute soil force after first actual rigid movement",
+    "unchanged": "Material, particle resolution, controller gains/assist, model and safety gates",
+    "cost": "Approximately up to2x MPM work, same rigid substep count; wall time must be measured",
+    "validation": "single continuous candidate with zero/120 gate and checkpoint then contact/lift if original gates pass; no restarting merely for successful prefix checks",
+    "status": "proposal awaiting new physical-frequency authorization"
+  }
+}

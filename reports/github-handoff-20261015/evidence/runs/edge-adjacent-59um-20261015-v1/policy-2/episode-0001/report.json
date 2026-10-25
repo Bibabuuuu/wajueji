@@ -1,0 +1,192 @@
+{
+  "status": "completed",
+  "episode": 1,
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "source_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+  "actual_entry_global_frame": 4870,
+  "actual_entry_simulation_time_s": 431.5666666666655,
+  "source_scope": "Reference/model provenance; actual entry is live approach endpoint, not restored reference state",
+  "cap_fraction": 0.1,
+  "alignment_checks": 7043,
+  "alignment_wait_frames": 2247,
+  "maximum_reference_lead_frames": 6.0,
+  "maximum_alignment_error_m": 0.07732534737321983,
+  "waiting_action_mode": "error_strength_v1",
+  "action_handoff_version": "invalidate_on_mode_change_v1",
+  "terminal_score_version": "manual_endpoint_hold_no_gap_v1",
+  "scores": [
+    {
+      "frame": 3491,
+      "sim_time_s": 58.18333333333333,
+      "valid_estimate": true,
+      "fill_percent": 109.94133502457586,
+      "liters": 280.5315106199711,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.19843263598158956,
+      "display_only": true
+    },
+    {
+      "frame": 3506,
+      "sim_time_s": 58.43333333333333,
+      "valid_estimate": true,
+      "fill_percent": 110.36943079118443,
+      "liters": 281.6238600267694,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.20017525300499983,
+      "display_only": true
+    },
+    {
+      "frame": 3521,
+      "sim_time_s": 58.68333333333333,
+      "valid_estimate": true,
+      "fill_percent": 110.24575868083083,
+      "liters": 281.308292420361,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.20463697501691058,
+      "display_only": true
+    }
+  ],
+  "gap_checks": [
+    {
+      "frame": 3491,
+      "remaining_soil_gap_m": 0.37242302729105004,
+      "ground_connected_particles": 215808,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3506,
+      "remaining_soil_gap_m": 0.36169833705483617,
+      "ground_connected_particles": 215810,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3517,
+      "remaining_soil_gap_m": 0.3609419374550633,
+      "ground_connected_particles": 215815,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3518,
+      "remaining_soil_gap_m": 0.36085842325609857,
+      "ground_connected_particles": 215815,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3519,
+      "remaining_soil_gap_m": 0.36080197471119496,
+      "ground_connected_particles": 215815,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3520,
+      "remaining_soil_gap_m": 0.3607864690974874,
+      "ground_connected_particles": 215822,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3521,
+      "remaining_soil_gap_m": 0.3608135721016159,
+      "ground_connected_particles": 215822,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 3521,
+      "remaining_soil_gap_m": 0.3608135721016159,
+      "ground_connected_particles": 215822,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    }
+  ],
+  "success": true,
+  "runtime_bindings": {
+    "layered_47_cycle_bridge.py": "9ed9a8aa328cdd7b4199652a2b2bc4ee631dbd8d765ba4ee1cd332f78fa613a6",
+    "layered_47_cycle_runtime.py": "0a6e1dc1672298fd2a4f996cc154676cfa812bcf0bc56300a15837eda368a9fb",
+    "layered_47_cycle_checkpoint.py": "6c9c83007cb9d37098d628341c5e06918dbc86c603f7d09709025d9cc75103b4",
+    "bucket_active_curl_candidate.h": "f9637ff978dd667a176410d220a672b3ef73f1e07ba8d745a917650312a67bcb",
+    "bucket_integral_candidate.h": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc",
+    "soil_hencky_update_candidate.py": "7b58ede49369e28486b678dc77bd71d0a7b3003ccb9dbb0c3c19277b9944647a",
+    "moving_bucket_sweep_candidate.py": "eb69f49e4895db70724ad0f6a15e4c6261b501ee4d12dd92ecccd9c62bc11524",
+    "moving_bucket_sweep_runtime.py": "7191e04804077fc1cef8786bc6d313af1d43c0ad96b620b9d22f70d868beebfa",
+    "mpm_static_contact_ownership.py": "08556fe8f30458dec691c4176e06241bf23c63df6aa5806ff8db6f7d1df2d1a4",
+    "bucket_velocity_origin_candidate.py": "9d5b5ea165b227d680d65ece949c85e4f3c08c8440a35f29c22392a8f5b7382b",
+    "bucket_motion_consistency.py": "7f7461308e67e510e3070ef498aa44a50a4e7f9ac7875be9477d5a7e688362ed",
+    "soil_passive_jp_history.py": "e1227f8843d0f275de057c2a83bbd93597845d93adf9c6d963ba7cb46b78551d"
+  },
+  "control_hz": 20,
+  "mpm_hz": 60,
+  "rigid_hz": 4800,
+  "fresh_policy_history": "zero previous policy action and no within-phase force observation until first phase step; physical force/history unchanged",
+  "training_updates": 0,
+  "last_alignment": {
+    "trusted": true,
+    "matched_frame": 1168,
+    "actual_progress": 1170.0,
+    "reference_limit": 1170.0,
+    "position_error_m": 0.012437823729928838,
+    "angle_error_rad": 0.07158662327197281,
+    "joint_error_si": [
+      -0.0024508376995460712,
+      -0.00023478049982084137,
+      -3.186382501374485e-05,
+      -0.0032206699381139847
+    ],
+    "mode": "follow",
+    "wait_target_error_si": [
+      0.0018179097671529865,
+      0.00047052324619972774,
+      -0.0008248083666922978,
+      0.0036355380931759607
+    ],
+    "endpoint_ready": false
+  },
+  "reference_transfer_version": "yaw_reference_and_observation_v1_cpu",
+  "yaw_offset_rad": 0.03493047908505631,
+  "policy_observation_frame": "canonical_training_yaw",
+  "physical_logging_frame": "original_world",
+  "physical_admission": true,
+  "reference_geometry": "heading rotation only, original cylinders/commands/timebase",
+  "action_mapping_version": "wait_actual_joint_error_strength_v2_cpu",
+  "observation_contract": "unchanged_221_legacy_target_error",
+  "replay_compatible_with_old_mapping": false,
+  "physical_scope": "D192_new60min_adjacent_second_59um",
+  "budget_sha256": "79798d22c1f643c686852670109c2c881cb765e8ac59adb5badb62379cfb31a0",
+  "physical_frames": 3521,
+  "retained_fill_fraction": 1.0994133502457586,
+  "cursor": 1170.0,
+  "simulation_seconds": 58.68333333333333,
+  "wall_seconds": 574.9751563470054,
+  "checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/edge-adjacent-59um-20261015-v1/policy-2/episode-0001/endpoint.npz",
+    "size_bytes": 54280958,
+    "mtime_ns": 1792028427566889601,
+    "sha256": "01cde82e39721c66a657b65ec8a24134bd00f9c70a60079e417fac3fec0ef6f1"
+  },
+  "source_unchanged": true
+}

@@ -1,0 +1,210 @@
+{
+  "scope": "Actual installed float32 CUDA postprocess kernel with prescribed exact homogeneous hydrostatic return; not global stress/velocity solver convergence",
+  "rows": [
+    {
+      "name": "elastic_compression",
+      "elastic_max_abs_error": 1.5087425709811586e-09,
+      "plastic_max_abs_error": 0.0,
+      "strain_split_max_abs_error": 1.5087425709811586e-09,
+      "elastic_increment": [
+        [
+          -0.004999998491257429,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.004999998491257429,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          -0.004999998956918716
+        ]
+      ],
+      "plastic_increment": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "compressive_yield",
+      "elastic_max_abs_error": 6.0349702839246344e-09,
+      "plastic_max_abs_error": 7.748603841895019e-09,
+      "strain_split_max_abs_error": 1.3783574115411312e-08,
+      "elastic_increment": [
+        [
+          -0.019999993965029716,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.019999993965029716,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          -0.019999995827674866
+        ]
+      ],
+      "plastic_increment": [
+        [
+          -0.17999999225139618,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.17999999225139618,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -0.17999999225139618
+        ]
+      ]
+    },
+    {
+      "name": "elastic_unload_from_yield",
+      "elastic_max_abs_error": 4.470348362317633e-10,
+      "plastic_max_abs_error": 0.0,
+      "strain_split_max_abs_error": 4.470348362317633e-10,
+      "elastic_increment": [
+        [
+          0.019999999552965164,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          0.019999999552965164,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          0.019999999552965164
+        ]
+      ],
+      "plastic_increment": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "tensile_yield",
+      "elastic_max_abs_error": 1.9453000279676894e-11,
+      "plastic_max_abs_error": 6.351619946144693e-11,
+      "strain_split_max_abs_error": 5.133915688404489e-11,
+      "elastic_increment": [
+        [
+          4.999998054699972e-05,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          4.999998054699972e-05,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          4.999998782295734e-05
+        ]
+      ],
+      "plastic_increment": [
+        [
+          0.0019500000635161996,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0019500000635161996,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0019500000635161996
+        ]
+      ]
+    },
+    {
+      "name": "large_state_zero_total_increment",
+      "elastic_max_abs_error": 4.4881245919725643e-07,
+      "plastic_max_abs_error": 4.4881245919725643e-07,
+      "strain_split_max_abs_error": 0.0,
+      "elastic_increment": [
+        [
+          -6.907704830169678,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -6.907704830169678,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0,
+          -6.907704830169678
+        ]
+      ],
+      "plastic_increment": [
+        [
+          6.907704830169678,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.907704830169678,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.907704830169678
+        ]
+      ]
+    }
+  ],
+  "checks": {
+    "elastic_kernel_matches_oracle": true,
+    "plastic_kernel_matches_oracle": true,
+    "strain_split_matches_prescribed_total": true
+  }
+}

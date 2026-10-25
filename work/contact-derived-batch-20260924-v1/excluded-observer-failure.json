@@ -1,0 +1,95 @@
+{
+  "schema": "derived_observer_failure_review_v1",
+  "run": "manual-contact-20260924-005742-1081585",
+  "excluded_from_current_pilot": true,
+  "reason": "Full causal stage export incomplete: soil_connectivity_grid_budget at physical frame 703, three active particles at 32.55/58.02/99.59m.",
+  "report": {
+    "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-005742-1081585/report.json",
+    "sha256": "58742c292067178f0d9ef7e2914f66587f82a4b25efdfc92ca06a74432c9af64"
+  },
+  "failure_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-derived-batch-v1/manual-contact-20260924-005742-1081585/failure.npz",
+    "sha256": "9826784adc0b8d45d38a3593bee527ea95d2a7f5ffe6ccb9b721a3e10c6ae74a"
+  },
+  "log": {
+    "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/manual-contact-20260924-005742-1081585.log",
+    "sha256": "4549dfee891334c02707c41e02467f67195065db381b521858630f4c059222c1"
+  },
+  "frames_completed": 703,
+  "compact_states_equal_original": true,
+  "commands_equal_original": true,
+  "all_recorded_hard_guards_passed": true,
+  "outlier_particle_ids": [
+    179267,
+    179278,
+    180399
+  ],
+  "outlier_positions_m": [
+    [
+      -4.036291122436523,
+      -3.43283748626709,
+      32.55233383178711
+    ],
+    [
+      -8.23909854888916,
+      -5.47211217880249,
+      58.02345657348633
+    ],
+    [
+      -19.435165405273438,
+      1.190822720527649,
+      99.5928955078125
+    ]
+  ],
+  "outlier_velocity_m_s": [
+    [
+      -2.928847312927246,
+      -1.1571274995803833,
+      0.1949947625398636
+    ],
+    [
+      -4.276933193206787,
+      -1.8118451833724976,
+      8.30889892578125
+    ],
+    [
+      -7.603604793548584,
+      0.36360296607017517,
+      20.459238052368164
+    ]
+  ],
+  "outlier_flags": [
+    1,
+    1,
+    1
+  ],
+  "same_particles_original_endpoint_positions_m": [
+    [
+      -9.806512832641602,
+      -5.711857318878174,
+      0.003027611644938588
+    ],
+    [
+      -19.33633041381836,
+      -10.170507431030273,
+      0.0412369929254055
+    ],
+    [
+      -42.496978759765625,
+      2.2901813983917236,
+      0.017549581825733185
+    ]
+  ],
+  "dense_grid_shape": [
+    641,
+    171,
+    2494
+  ],
+  "dense_grid_cells": 273369834,
+  "grid_budget_cells": 12000000,
+  "source_unchanged": true,
+  "teacher_tensor_unchanged": true,
+  "interpretation": "Mechanism/rocks match all 703 original compact states. Original particle coordinates are not logged per frame, so transient original particle equality is unverified. Do not label this as a mere decimal error or delete outliers. Preserve failure, defer this early lower-fill episode from bounded fitting; remaining eight candidates retain original split.",
+  "physics_changed": false,
+  "phase_rule_changed": false
+}

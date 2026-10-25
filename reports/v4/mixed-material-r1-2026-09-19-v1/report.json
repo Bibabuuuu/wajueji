@@ -1,0 +1,71 @@
+{
+  "admission": {
+    "geometry_candidate": true,
+    "mechanism_attached_entry_hold_dump_passed": true,
+    "mechanism_model_load_passed": true,
+    "r1_complete": true,
+    "rigid_bridge_bucket_push_clear_passed": true,
+    "rigid_bridge_bucket_push_comparison_passed": true,
+    "rigid_bridge_bucket_push_passed": true,
+    "rigid_bridge_freefall_passed": true,
+    "rigid_bridge_mechanism_dump_passed": true,
+    "rigid_bridge_mechanism_entry_passed": true,
+    "rigid_bridge_mechanism_hold_passed": true,
+    "rigid_bridge_rock_collision_passed": true,
+    "rigid_bridge_slope_roll_passed": true,
+    "standalone_mujoco_probe_passed": true
+  },
+  "config_sha256": "17816ca91e76a0d83b50e5d879493e786fe262f73d5151a68d4741e0a8fadd74",
+  "main_scene_distribution": {
+    "jam_boundary_is_separate_from_success_demonstrations": true,
+    "jam_boundary_min_equivalent_diameter_m": 0.285,
+    "large_equivalent_diameter_range_m": [
+      0.22,
+      0.27
+    ],
+    "large_rock_count_max_per_scene": 1,
+    "large_rock_rigid_solid_volume_fraction_max": 0.2,
+    "ordinary_count_fraction_at_or_below_0_16_m_min": 0.8,
+    "ordinary_equivalent_diameter_range_m": [
+      0.08,
+      0.22
+    ],
+    "reason": "avoid large-rock voids dominating bucket fill while retaining occasional rigid-contact disturbances",
+    "scenes_with_0_27_m_rock_fraction_max": 0.25
+  },
+  "mechanism_bucket_push_clear_report_sha256": "a72511d9c20f04dacf7f8e27ceddfdb31d2b4ddffaf13ffbc448031f9576a598",
+  "mechanism_bucket_push_comparison_report_sha256": "27e7b8a71b246c7db254c472b32be10daf9048d8f4e56c3a3b05aa9ca1076832",
+  "mechanism_bucket_push_report_sha256": "498c279df06d6d87d07cf3bcf834f9f66111f3287c06255aeba480d443cc55a7",
+  "mechanism_dump_report_sha256": "e9bf00b78ae183ba9cb260632c3f6bc0a418b24279847671c7aa840ceeb73391",
+  "mechanism_entry_report_sha256": "cf83c34dfaa20c749f4281d906bc0a4c3a940e5b6fcfbcac2fd8ea77ec787fc0",
+  "mechanism_freefall_report_sha256": "eb6fe331b3f530bd9d29bf2ef7683ad70c470234aa21731135ebc9a7672996c2",
+  "mechanism_hold_report_sha256": "5089b83117bc9913f3c88acfd98ba82c3535c51b79e027fe91822237c9440823",
+  "mechanism_rock_collision_report_sha256": "1709285209d9207daafc45e143fa18a51526e88ad63733852fefb8042c5c5be2",
+  "mechanism_slope_roll_report_sha256": "4272af4e7c03cef8905a76f339cec695847dcf996e5ec076a4d0e27805e99d1e",
+  "probe_fixtures": [
+    {
+      "equivalent_diameter_m": 0.12,
+      "path": "reports/v4/mixed-material-r1-2026-09-19-v1/open-bucket-probe-0.12m.xml",
+      "sha256": "7189730e6651c8ae3e2bf646f18f1b1f2a8549ac243e37a5352bae2921380c0f"
+    },
+    {
+      "equivalent_diameter_m": 0.27,
+      "path": "reports/v4/mixed-material-r1-2026-09-19-v1/open-bucket-probe-0.27m.xml",
+      "sha256": "ba6c28d23b87edc7a5aafb00b00203f1a432e130219ed82d8b305d65906c7cff"
+    }
+  ],
+  "probe_results_sha256": "8baf2ebf7e99d7753c8e8fa05dbab0c3c9ce525930a4a03f44ab843d6d11531c",
+  "proxy_manifest_sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7",
+  "proxy_summary": {
+    "central_mouth_point_proxy_clearance_m": 0.29974,
+    "geom_count": 18,
+    "has_mouth_cap": false,
+    "shell_segment_count": 11,
+    "side_plate_count": 2,
+    "tooth_count": 5
+  },
+  "schema": "excavation_mixed_material_r1_proxy_report_v1",
+  "source_bucket_sha256": "e24093436a3eef4e8f4fba21152e6f15ac349a837df8d13ebcdb23df860ca79b",
+  "source_inventory_sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+  "status": "r1_full_rock_single_chain_passed_r2_pending"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "user_visual_review_only",
+  "replay": "runs/contact-first-combined-replay-20260925-v1",
+  "physics_steps_added": 0,
+  "images": [
+    {
+      "source": "/tmp/codex-clipboard-d1439e34-e779-4858-bfbe-a63635f0e34f.png",
+      "file": "frame-0998.png",
+      "frame": 998,
+      "sha256": "7943948cbe72ebab4a9875e6e1f3b16bd28da31c61b817207d778e29259dca76",
+      "user_observation": "入土位置和姿态挺好"
+    },
+    {
+      "source": "/tmp/codex-clipboard-b9418ca7-6137-421e-b503-f7f2c1b25f82.png",
+      "file": "frame-2011.png",
+      "frame": 2011,
+      "sha256": "e8b06b6c0bff1be46287371a06337f2bbefe500bdd3796d03cbb57c8a4ed7b91",
+      "user_observation": "收斗中上移与位移过多，用户判断铲根没有被填满"
+    },
+    {
+      "source": "/tmp/codex-clipboard-089896c3-20b9-43d5-8ecd-865da2c8b01b.png",
+      "file": "frame-2926.png",
+      "frame": 2926,
+      "sha256": "b61fddba85db4927033a88e2066df84bd4fe4584f1fc852faeef3926a66effc9",
+      "user_observation": "用户观察到晃动，疑似振荡，未做因果确认"
+    },
+    {
+      "source": "/tmp/codex-clipboard-2884cce0-5d07-4145-a3c1-75b99aac5698.png",
+      "file": "frame-3981.png",
+      "frame": 3981,
+      "sha256": "6fbf20edd0f55a66acc7c5a7a84a13724827a42cf18c406875ebaffc51cf284d",
+      "user_observation": "斗尾土体视觉上疑似穿模，用户未观察到洒落"
+    }
+  ]
+}

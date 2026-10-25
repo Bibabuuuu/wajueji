@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "134_spectral_oracles": true,
+    "out_of_range_and_invalid_rejected": true,
+    "100_step_rotation": true,
+    "active_plastic_and_stress_unchanged": true,
+    "fem_unload_matches_identity": true,
+    "inactive_plastic_and_stress_unchanged": true,
+    "inactive_F_unchanged": true,
+    "kinematic_plastic_and_stress_unchanged": true,
+    "kinematic_F_unchanged": true,
+    "stiff_plastic_and_stress_unchanged": true,
+    "stiff_F_unchanged": true,
+    "explicit_override_installed": true,
+    "override_restored_on_exception": true
+  },
+  "matrix_cases": 134,
+  "max_relative_error": 1.16855838433526e-05,
+  "worst_case": "random_43",
+  "rotation_100_step_F_error": 6.705501112214525e-06,
+  "candidate_sha256": "7b58ede49369e28486b678dc77bd71d0a7b3003ccb9dbb0c3c19277b9944647a",
+  "scene_steps": 0
+}

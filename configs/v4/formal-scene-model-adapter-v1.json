@@ -1,0 +1,57 @@
+{
+  "schema": "excavation_formal_scene_model_adapter_config_v1",
+  "status": "visual_stable_manifest_to_time_zero_model_only",
+  "frozen_capacity_config": {
+    "path": "configs/v4/mixed-material-capacity-preflight-v1.json",
+    "sha256": "b966439c62f83e6fae369c7e6f095f7f14e83fd9466cf3ac359b8f6a6d72cb0f"
+  },
+  "scene_contract": {
+    "schema": "excavation_fullscale_visual_stable_scene_manifest_v1",
+    "status": "visual_stable_geometry_candidate",
+    "scenario_name": "mixed-autonomous-fullscale-graded-gravel-slope-truck-v1",
+    "coordinate_frame": "world",
+    "minimum_rock_count": 1,
+    "maximum_rock_count": 1024,
+    "required_true_checks": [
+      "finite_state",
+      "stable_id_count",
+      "rock_rock_no_intersection",
+      "stable_rigid_skeleton",
+      "small_surface_dominant",
+      "medium_large_lower_bias"
+    ]
+  },
+  "rocks": {
+    "density_kg_m3": 2600.0,
+    "asset_root": "assets/v4/mixed-material-r0",
+    "assets": {
+      "angular_tetra": "6934783ff5fc95e68cfddfb30f5630ff19be7633c6679d5f1d8f2a3ab0d2afb7",
+      "angular_bipyramid": "e9e432a263512a21232a6b590a51ca923a7b2432c8458312b5fbd76a3d2d55cd",
+      "angular_octa": "6279098235a6dd22ef97ffd2c2d2d2ff028580e26c3110040cb08264faea1fd8",
+      "angular_block": "963182f35d733b763f9d829f2a5cae71ba03c8123a889a75bc19997cf6142b43"
+    },
+    "size_classes": {
+      "small_0p16_0p24": [0.16, 0.24],
+      "medium_0p24_0p32": [0.24, 0.32],
+      "large_0p32_0p40": [0.32, 0.4]
+    }
+  },
+  "runtime_mapping": {
+    "body_id_format": "r1-rock-%03d",
+    "joint_id_format": "r1_rock_free_%03d",
+    "geom_id_format": "r1_rock_geom_%03d",
+    "mesh_id_format": "formal_rock_mesh_%03d",
+    "preserve_source_rock_id_in_model_manifest": true
+  },
+  "scope": {
+    "manifest_validation": true,
+    "model_generation": true,
+    "time_zero_ready_for_separate_runner": true,
+    "physics_step": false,
+    "mpm_or_gpu_run": false,
+    "settling": false,
+    "formal_scene_qualified": false,
+    "physics_qualified": false,
+    "training": false
+  }
+}

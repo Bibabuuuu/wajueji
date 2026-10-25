@@ -1,0 +1,443 @@
+{
+  "status": "zero_and_geometry_passed",
+  "physics_steps_added": 0,
+  "source_sha256": "be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0",
+  "zero_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "native_exact": true,
+  "pending_exact": true,
+  "zero_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-next-prepoint-20260925-v1/prepare/zero.npz",
+    "size_bytes": 52966394,
+    "mtime_ns": 1790269077000169711,
+    "sha256": "be05b2ef64e1f2fd877368883866b93d639ef4b5ecef745974019b1fc8dd31f0"
+  },
+  "selected": {
+    "entry_xy_m": [
+      5.45,
+      0.5500000000000003
+    ],
+    "surface_z_m": 1.345562994480133,
+    "score": 0.34325654226037117,
+    "corridor_cell_count": 159,
+    "contact": {
+      "source": "rear_lower_face_from_observed_profile",
+      "contact_xy_m": [
+        5.847978561622041,
+        0.5901629741086466
+      ],
+      "contact_surface_z_m": 0.7458544373512268,
+      "outward_offset_m": 0.4,
+      "normalized_height_fraction": 0.4947032972736679,
+      "target_height_fraction": 0.4,
+      "height_fraction_band": [
+        0.3,
+        0.5
+      ],
+      "crest_surface_z_m": 1.346285343170166,
+      "base_surface_z_m": 0.15801139920949936,
+      "face_drop_m": 1.1882739439606667,
+      "bucket_width_m": 0.6,
+      "strip_anchor_xy_m": [
+        5.45,
+        0.5500000000000003
+      ],
+      "profile": [
+        {
+          "outward_offset_m": 0.0,
+          "center_xy_m": [
+            5.45,
+            0.5500000000000003
+          ],
+          "surface_z_m": 1.346285343170166,
+          "minimum_surface_z_m": 0.856553316116333,
+          "maximum_surface_z_m": 1.3667689561843872,
+          "cell_count": 7
+        },
+        {
+          "outward_offset_m": 0.1,
+          "center_xy_m": [
+            5.54949464040551,
+            0.5600407435271618
+          ],
+          "surface_z_m": 1.3441151976585388,
+          "minimum_surface_z_m": 0.8550552129745483,
+          "maximum_surface_z_m": 1.3760261894990755,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.2,
+          "center_xy_m": [
+            5.64898928081102,
+            0.5700814870543234
+          ],
+          "surface_z_m": 1.3458604216575623,
+          "minimum_surface_z_m": 0.8567618131637573,
+          "maximum_surface_z_m": 1.3512495756149292,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.30000000000000004,
+          "center_xy_m": [
+            5.748483921216531,
+            0.580122230581485
+          ],
+          "surface_z_m": 1.2241138219833374,
+          "minimum_surface_z_m": 0.8580549359321594,
+          "maximum_surface_z_m": 1.3316571712493896,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.4,
+          "center_xy_m": [
+            5.847978561622041,
+            0.5901629741086466
+          ],
+          "surface_z_m": 0.7458544373512268,
+          "minimum_surface_z_m": 0.6369072794914246,
+          "maximum_surface_z_m": 0.7520098090171814,
+          "cell_count": 6
+        },
+        {
+          "outward_offset_m": 0.5,
+          "center_xy_m": [
+            5.947473202027551,
+            0.6002037176358082
+          ],
+          "surface_z_m": 0.15801139920949936,
+          "minimum_surface_z_m": 0.15721769630908966,
+          "maximum_surface_z_m": 0.1592182219028473,
+          "cell_count": 6
+        }
+      ],
+      "prepoint_status": "not_selected_requires_separate_clearance_plan"
+    },
+    "legacy_height_score": 0.3432781497240067,
+    "cut_opportunity": {
+      "version": "full_width_cut_opportunity_v1",
+      "score_m3": 0.34325654226037117,
+      "observed_cut_band_volume_m3": 0.3551872687910609,
+      "weakest_third_equivalent_volume_m3": 0.3313258157296814,
+      "width_band_mean_thickness_m": [
+        0.5983620597256553,
+        0.6757715702056883,
+        0.6806972622871398,
+        0.6806972622871398,
+        0.6807213260067833,
+        0.6807213260067833,
+        0.6808975206481085,
+        0.6808975206481085,
+        0.6770764489968617,
+        0.6770764489968617,
+        0.6480807688501145,
+        0.5320509029198854
+      ],
+      "material_coverage_fraction": 0.9953703703703703,
+      "width_m": 0.6,
+      "inward_length_m": 0.9,
+      "bottom_z_m": 0.39585443735122683,
+      "below_entry_m": 0.35,
+      "vertical_band_height_m": 0.7,
+      "sample_spacing_max_m": 0.05,
+      "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+    },
+    "selection_version": "full_width_cut_opportunity_v1",
+    "future_strip_count": 1,
+    "future_entry_xy_m": [
+      [
+        5.550000000000001,
+        -0.5499999999999999
+      ]
+    ],
+    "workspace_score": 0.5689218327829465,
+    "remaining_scoops_considered": 2
+  },
+  "observation": {
+    "detached_payload_particles": 0,
+    "detached_dynamic_particles": 27399,
+    "detached_rock_ids": [
+      "lower-001",
+      "lower-008",
+      "lower_middle-004",
+      "lower_middle-007",
+      "middle-002",
+      "middle-008",
+      "upper-000",
+      "upper-003",
+      "upper-006",
+      "upper-007",
+      "upper-008"
+    ],
+    "support_margin_m": 0.15,
+    "rock_to_stationary_soil_aabb_gap_m": {
+      "lower-000": 0.0,
+      "lower-001": 1.6272375698949018,
+      "lower-002": 0.0,
+      "lower-003": 0.0,
+      "lower-004": 0.0,
+      "lower-005": 0.0,
+      "lower-006": 0.0,
+      "lower-007": 0.0,
+      "lower-008": 1.5601715262232037,
+      "lower_middle-000": 0.0,
+      "lower_middle-001": 0.0,
+      "lower_middle-002": 0.0,
+      "lower_middle-003": 0.0,
+      "lower_middle-004": 1.9906379406193881,
+      "lower_middle-005": 0.0,
+      "lower_middle-006": 0.0,
+      "lower_middle-007": 1.8343847877861439,
+      "lower_middle-008": 0.0,
+      "lower_middle-009": 0.0,
+      "lower_middle-010": 0.0,
+      "middle-000": 0.0,
+      "middle-001": 0.0,
+      "middle-002": 1.7359861121786302,
+      "middle-003": 0.0,
+      "middle-004": 0.0,
+      "middle-005": 0.0,
+      "middle-006": 0.0,
+      "middle-007": 0.0,
+      "middle-008": 1.760253934973479,
+      "middle-009": 0.0,
+      "middle-010": 0.0,
+      "middle-011": 0.0,
+      "middle-012": 0.0,
+      "upper-000": 1.6910221952171443,
+      "upper-001": 0.0,
+      "upper-002": 0.0,
+      "upper-003": 1.8921875806641062,
+      "upper-004": 0.18227488877298004,
+      "upper-005": 0.0,
+      "upper-006": 1.9164167665657847,
+      "upper-007": 1.7190928367601146,
+      "upper-008": 1.8246003118492944,
+      "upper-009": 0.0,
+      "upper-010": 0.0,
+      "upper-011": 0.0,
+      "upper-012": 0.0,
+      "upper-013": 0.0
+    },
+    "observation_only": true,
+    "cell_m": 0.04,
+    "scope": "Ground-connected stock; all detached soil/rocks remain in physical collision solving"
+  },
+  "rejected_pairs": [],
+  "candidate_count": 7,
+  "cycle_index": 2,
+  "selection_scope": "observed spatial candidates; future room heuristic; no fixed left/center/right sequence",
+  "planned_frames": 2589,
+  "segments": [
+    {
+      "name": "RETURN_ALIGN_HIGH",
+      "frames": 82,
+      "goal_qpos": [
+        1.1789772071642632e-15,
+        4.56278790717818e-15,
+        0.03999972719024372,
+        0.9999999999999974,
+        4.6431384469145196e-08,
+        -5.5807716558026326e-08,
+        -1.4845377247108518e-13,
+        0.10057691745484802,
+        -0.0036448579001955523,
+        0.5170115130997027,
+        -0.004191848322597543,
+        0.01644524086020204,
+        0.45893022265677963,
+        -0.12541839413651382,
+        0.10545088224200481,
+        0.8398027107681235,
+        0.38402300137616674,
+        0.949682957738555,
+        -0.5830056044001136
+      ],
+      "minimum_bucket_terrain_clearance_m": 1.218914859512224
+    },
+    {
+      "name": "RETURN_EXTEND_HIGH",
+      "frames": 643,
+      "goal_qpos": [
+        1.1789772071642632e-15,
+        4.56278790717818e-15,
+        0.03999972719024372,
+        0.9999999999999974,
+        4.6431384469145196e-08,
+        -5.5807716558026326e-08,
+        -1.4845377247108518e-13,
+        0.10057695898513704,
+        0.12836102710893774,
+        0.4444787503639685,
+        0.14513477766159638,
+        0.10204833001836792,
+        0.2982465217316545,
+        -0.4902399615237039,
+        0.047066911252544606,
+        0.7762463274317514,
+        0.18496228127651332,
+        0.3651789378802685,
+        -0.2568680652657421
+      ],
+      "minimum_bucket_terrain_clearance_m": 0.9626031401451982
+    },
+    {
+      "name": "RETURN_OPEN_HIGH",
+      "frames": 809,
+      "goal_qpos": [
+        1.1789772071642632e-15,
+        4.56278790717818e-15,
+        0.03999972719024372,
+        0.9999999999999974,
+        4.6431384469145196e-08,
+        -5.5807716558026326e-08,
+        -1.4845377247108518e-13,
+        0.10057695444008359,
+        0.051753315763502346,
+        0.48677740096570393,
+        0.05910500070839177,
+        0.014061442286674867,
+        0.4669033409455048,
+        -0.10990365621163595,
+        -0.05472626253721241,
+        0.5740554120604123,
+        -0.2841050125170537,
+        -0.44912759047847356,
+        0.3563307237142718
+      ],
+      "minimum_bucket_terrain_clearance_m": 0.9553116013970984
+    },
+    {
+      "name": "HIGH_CLEAR",
+      "target_tip_world_m": [
+        5.45,
+        0.5500000000000003,
+        2.1552782535552977
+      ],
+      "target_pitch_rad": -0.32,
+      "frames": 143,
+      "duration_sim_s": 2.3833333333333333,
+      "minimum_bucket_terrain_clearance_m": 0.5891234461547692,
+      "endpoint_bucket_terrain_clearance_m": 0.5891234461547692,
+      "goal_qpos": [
+        1.1789772071642632e-15,
+        4.56278790717818e-15,
+        0.03999972719024372,
+        0.9999999999999974,
+        4.6431384469145196e-08,
+        -5.5807716558026326e-08,
+        -1.4845377247108518e-13,
+        0.10057694880635039,
+        0.10041696411554075,
+        0.4599559758975346,
+        0.11395946473321515,
+        0.0071100491959608225,
+        0.4928251085735849,
+        -0.060312487592860044,
+        -0.06497592420452696,
+        0.5384375606308993,
+        -0.3586496391598248,
+        -0.5535732231221026,
+        0.4436278800319564
+      ]
+    },
+    {
+      "name": "OUTWARD_HIGH",
+      "target_tip_world_m": [
+        6.146462482838571,
+        0.6202852046901313,
+        2.1552782535552977
+      ],
+      "target_pitch_rad": -0.65,
+      "frames": 514,
+      "duration_sim_s": 8.566666666666666,
+      "minimum_bucket_terrain_clearance_m": 0.5595739377001374,
+      "endpoint_bucket_terrain_clearance_m": 1.261453892022684,
+      "goal_qpos": [
+        1.1789772071642632e-15,
+        4.56278790717818e-15,
+        0.03999972719024372,
+        0.9999999999999974,
+        4.6431384469145196e-08,
+        -5.5807716558026326e-08,
+        -1.4845377247108518e-13,
+        0.10057694525391007,
+        0.23407462732333278,
+        0.3857440864195468,
+        0.260875033485293,
+        0.05585646299963434,
+        0.364385621217573,
+        -0.3233953095308657,
+        -0.08079718822723336,
+        0.460296626809717,
+        -0.521633505078639,
+        -0.7674059699361522,
+        0.6259858948544816
+      ]
+    },
+    {
+      "name": "REAR_LOWER_PREPOINT",
+      "target_tip_world_m": [
+        6.146462482838571,
+        0.6202852046901313,
+        1.0458544373512269
+      ],
+      "target_pitch_rad": -0.32,
+      "frames": 398,
+      "duration_sim_s": 6.633333333333333,
+      "minimum_bucket_terrain_clearance_m": 0.4382355912257978,
+      "endpoint_bucket_terrain_clearance_m": 0.4382355912257978,
+      "goal_qpos": [
+        1.1789772071642632e-15,
+        4.56278790717818e-15,
+        0.03999972719024372,
+        0.9999999999999974,
+        4.6431384469145196e-08,
+        -5.5807716558026326e-08,
+        -1.4845377247108518e-13,
+        0.10057693067397777,
+        0.41500943994130485,
+        0.2864271631588531,
+        0.4506141033544249,
+        0.06903883256996257,
+        0.3421788484441148,
+        -0.375538894198896,
+        -0.06689836311157023,
+        0.5309059870185269,
+        -0.37434516133846135,
+        -0.5750014551412295,
+        0.46169558888952145
+      ]
+    }
+  ],
+  "prepoint_tip_world_m": [
+    6.146462482838571,
+    0.6202852046901313,
+    1.0458544373512269
+  ],
+  "plan_sha256": "81bec41eca25b8409ca77f558ab76067acb6ccb25b8b1a6c769895c1e34c03aa",
+  "wall_seconds": 56.82022236401099
+}

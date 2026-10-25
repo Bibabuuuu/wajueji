@@ -1,0 +1,4586 @@
+{
+  "modes": {
+    "baseline": {
+      "frames": 1580,
+      "all_hard_guards": true,
+      "bindings_unchanged": true,
+      "physics_wall_seconds": 333.9169840131799,
+      "phases": {
+        "short_curl": {
+          "frames": [
+            481,
+            600
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            0.008121776065889602,
+            0.02521452055811621,
+            0.007073063533008965,
+            0.011369891583646858
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.2544905877385066,
+          "last15_max_bucket_angular_speed_rad_s": 0.07420686621352823,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 484,
+          "axis_start": [
+            -0.0020005675216290277,
+            0.24420202620705958,
+            0.3529694333967494,
+            0.8136165757559262
+          ],
+          "axis_end": [
+            -0.001503619272049809,
+            0.25665763411266085,
+            0.36014579028473115,
+            0.8177688488980493
+          ],
+          "axis_range": [
+            0.000535829673571652,
+            0.012455607905601268,
+            0.007784006558507528,
+            0.004193889827452946
+          ],
+          "axis_last15_range": [
+            0.00021665123828612607,
+            0.003766919038054095,
+            0.0006589228487290377,
+            0.0016885614077742916
+          ],
+          "bucket_mean_abs_tracking_error_mm": 35.696016310928734,
+          "bucket_last15_mean_abs_tracking_error_mm": 35.06429386990149,
+          "bucket_max_abs_speed_m_s": 0.05888099515987419,
+          "bucket_max_actual_position_m": 0.8177688488980493,
+          "bucket_max_actual_minus_reference_mm": -34.23115110195063,
+          "max_abs_total_actuator_force_by_axis": [
+            5505.6781375413775,
+            397982.8740533481,
+            52477.17806083837,
+            126245.9953513655
+          ],
+          "max_abs_bucket_hold_force_N": 125310.87440236844,
+          "max_abs_bucket_drive_force_N": 5849.453475960886,
+          "max_abs_bucket_compensation_N": 0.0,
+          "final_bucket_compensation_N": 0.0,
+          "max_abs_bucket_mpm_equivalent_load_N": 181171.33986564653,
+          "max_cohort_projection_m": 0.015229539014399052,
+          "max_global_projection_m": 0.015229539014399052,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "remaining_manual": {
+          "frames": [
+            601,
+            1370
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            4.220839298378875e-05,
+            0.00027338123648506976,
+            0.0006077525001221281,
+            0.0015349860865598868
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.011942303617044708,
+          "last15_max_bucket_angular_speed_rad_s": 0.024339593989764836,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 656,
+          "axis_start": [
+            -0.0014851656783344107,
+            0.25700013115353854,
+            0.3601140200467903,
+            0.8179238010004761
+          ],
+          "axis_end": [
+            0.001634973949941111,
+            0.42459855147140796,
+            0.4788434117270653,
+            0.8395106364881821
+          ],
+          "axis_range": [
+            0.003198639191666356,
+            0.16764003613756817,
+            0.11972267948535281,
+            0.022051500722678807
+          ],
+          "axis_last15_range": [
+            1.4614482966536155e-06,
+            9.470778216613684e-06,
+            5.7640129648095506e-05,
+            0.0003185836411860876
+          ],
+          "bucket_mean_abs_tracking_error_mm": 18.7744819072038,
+          "bucket_last15_mean_abs_tracking_error_mm": 12.656657573342763,
+          "bucket_max_abs_speed_m_s": 0.040816500965240574,
+          "bucket_max_actual_position_m": 0.8399753017231549,
+          "bucket_max_actual_minus_reference_mm": -12.024698276845047,
+          "max_abs_total_actuator_force_by_axis": [
+            86897.99230082426,
+            351636.0772196647,
+            62968.858410482826,
+            112634.94196357614
+          ],
+          "max_abs_bucket_hold_force_N": 113640.85714498162,
+          "max_abs_bucket_drive_force_N": 4050.6129715653283,
+          "max_abs_bucket_compensation_N": 0.0,
+          "final_bucket_compensation_N": 0.0,
+          "max_abs_bucket_mpm_equivalent_load_N": 171159.3886277502,
+          "max_cohort_projection_m": 0.01937675289809704,
+          "max_global_projection_m": 0.09776479750871658,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "hold": {
+          "frames": [
+            1371,
+            1490
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": true,
+          "last15_max_abs_axis_speed": [
+            3.52825214464555e-05,
+            2.0192661764620433e-05,
+            4.441121806910064e-05,
+            0.0002801887153785107
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.0023922644151031566,
+          "last15_max_bucket_angular_speed_rad_s": 0.004151427460072355,
+          "first_frame_stopped_through_end": 1373,
+          "first_negative_bucket_velocity_frame": null,
+          "axis_start": [
+            0.0016340283101720662,
+            0.4245994145931843,
+            0.47884503823902386,
+            0.8395317436967001
+          ],
+          "axis_end": [
+            0.0016166897105327899,
+            0.4246028225862699,
+            0.4788274624381242,
+            0.8394958391534711
+          ],
+          "axis_range": [
+            1.7338599639276373e-05,
+            2.149752857266707e-05,
+            2.4802099675425016e-05,
+            0.00026333872725825547
+          ],
+          "axis_last15_range": [
+            2.2114174872260063e-06,
+            2.014664692684409e-06,
+            2.1611655032227617e-06,
+            2.30694570194645e-05
+          ],
+          "bucket_mean_abs_tracking_error_mm": 12.531620443316479,
+          "bucket_last15_mean_abs_tracking_error_mm": 12.50793445542362,
+          "bucket_max_abs_speed_m_s": 0.0011809921582104678,
+          "bucket_max_actual_position_m": 0.8396092998822082,
+          "bucket_max_actual_minus_reference_mm": -12.390700117791752,
+          "max_abs_total_actuator_force_by_axis": [
+            46.301101148565635,
+            170410.5654104095,
+            29872.797104153648,
+            60945.77994447797
+          ],
+          "max_abs_bucket_hold_force_N": 60932.81144842133,
+          "max_abs_bucket_drive_force_N": 118.34119699238,
+          "max_abs_bucket_compensation_N": 0.0,
+          "final_bucket_compensation_N": 0.0,
+          "max_abs_bucket_mpm_equivalent_load_N": 37101.615466865806,
+          "max_cohort_projection_m": 0.004196149297058582,
+          "max_global_projection_m": 0.08241760730743408,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "reverse": {
+          "frames": [
+            1491,
+            1520
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            0.0001486444855265428,
+            0.0002643861779195734,
+            0.0009930940956282166,
+            0.016939669182897323
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.11933902035137414,
+          "last15_max_bucket_angular_speed_rad_s": 0.22485270723904996,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 1491,
+          "axis_start": [
+            0.0016165287345181907,
+            0.4245947804039873,
+            0.4788253410152896,
+            0.8393385412855006
+          ],
+          "axis_end": [
+            0.0016333333882652466,
+            0.4246534596932726,
+            0.4789223176860507,
+            0.8338902598293113
+          ],
+          "axis_range": [
+            1.7829837093239582e-05,
+            8.727169334760143e-05,
+            0.00021164826988101515,
+            0.005448281456189252
+          ],
+          "axis_last15_range": [
+            1.3560119860643247e-05,
+            2.147260983881294e-05,
+            8.172637986059161e-05,
+            0.003409278996792664
+          ],
+          "bucket_mean_abs_tracking_error_mm": 9.934216903739053,
+          "bucket_last15_mean_abs_tracking_error_mm": 8.826638342589076,
+          "bucket_max_abs_speed_m_s": 0.016939669182897323,
+          "bucket_max_actual_position_m": 0.8393385412855006,
+          "bucket_max_actual_minus_reference_mm": -8.307656837292733,
+          "max_abs_total_actuator_force_by_axis": [
+            93.90712863261938,
+            171070.19447202818,
+            31575.31124421952,
+            58304.17916476554
+          ],
+          "max_abs_bucket_hold_force_N": 60285.41376309469,
+          "max_abs_bucket_drive_force_N": 1981.2345983291527,
+          "max_abs_bucket_compensation_N": 0.0,
+          "final_bucket_compensation_N": 0.0,
+          "max_abs_bucket_mpm_equivalent_load_N": 55135.771066111905,
+          "max_cohort_projection_m": 0.01742996834218502,
+          "max_global_projection_m": 0.01742996834218502,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "stop": {
+          "frames": [
+            1521,
+            1580
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            5.7266398091339126e-05,
+            0.00020308619238171172,
+            0.0005415327494529593,
+            0.002576675584807489
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.01894984409263429,
+          "last15_max_bucket_angular_speed_rad_s": 0.03398298585467637,
+          "first_frame_stopped_through_end": 1576,
+          "first_negative_bucket_velocity_frame": 1521,
+          "axis_start": [
+            0.0016341217245895848,
+            0.42465745419675777,
+            0.47894199367579193,
+            0.8337257031107098
+          ],
+          "axis_end": [
+            0.0016178257186142912,
+            0.42459151730259864,
+            0.4789096514755642,
+            0.832832964922303
+          ],
+          "axis_range": [
+            2.138087972285694e-05,
+            0.0001126656989033914,
+            0.00014521871994199742,
+            0.0014954823477185686
+          ],
+          "axis_last15_range": [
+            6.277780251251475e-06,
+            2.6520620494130398e-05,
+            5.8345074002819075e-05,
+            0.0003568931040029977
+          ],
+          "bucket_mean_abs_tracking_error_mm": 9.079957552466771,
+          "bucket_last15_mean_abs_tracking_error_mm": 9.04171248063342,
+          "bucket_max_abs_speed_m_s": 0.0130648676512312,
+          "bucket_max_actual_position_m": 0.8337257031107098,
+          "bucket_max_actual_minus_reference_mm": -8.279505222561045,
+          "max_abs_total_actuator_force_by_axis": [
+            57.76789185856089,
+            187725.76687716713,
+            30796.109021748627,
+            76059.00674247029
+          ],
+          "max_abs_bucket_hold_force_N": 75891.73343940312,
+          "max_abs_bucket_drive_force_N": 1294.0360185654702,
+          "max_abs_bucket_compensation_N": 0.0,
+          "final_bucket_compensation_N": 0.0,
+          "max_abs_bucket_mpm_equivalent_load_N": 45678.82504523413,
+          "max_cohort_projection_m": 0.009027626365423203,
+          "max_global_projection_m": 0.009027626365423203,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        }
+      },
+      "reverse_net_bucket_displacement_m": -0.005605579324159837,
+      "retention": {
+        "mode": "baseline",
+        "endpoints": {
+          "1370": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 71.92000000000002,
+              "heap_raw_liters": 72.26400000000001,
+              "inside_liters": 72.74237901567754,
+              "heap_liters": 73.09031253043551,
+              "fill_percent": 57.15237038211511,
+              "cavity_fraction_of_counted_load": 0.4988070798424236,
+              "selected_particles": 130639,
+              "cavity_particles": 7886,
+              "load_region_particles": 26654,
+              "point_support_fraction": 0.9974863059953478,
+              "load_density_quantiles": [
+                0.6439654886722564,
+                0.9953925311565399,
+                2.7979114055633554
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.2665383129933616,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5609,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0020466776510091027,
+              0.005153475028379745,
+              0.16467158849498564
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.01225071225071225
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "5924ad6bc48bdc196969e39a44f536083ecc3d8e6ed9e07a455a1a3cb6ad08c0"
+          },
+          "1490": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 71.89600000000002,
+              "heap_raw_liters": 72.376,
+              "inside_liters": 72.71810458441536,
+              "heap_liters": 73.20359320965902,
+              "fill_percent": 57.18725225939431,
+              "cavity_fraction_of_counted_load": 0.49833647554619065,
+              "selected_particles": 130637,
+              "cavity_particles": 7846,
+              "load_region_particles": 26577,
+              "point_support_fraction": 0.9974790232155624,
+              "load_density_quantiles": [
+                0.6402501225471496,
+                0.9933599829673767,
+                2.61381220817566
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.2610509039950557,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5619,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0005043815818222544,
+              0.0009460912291304483,
+              0.006094544881473649
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.007502374169040836
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "19bfc574e8cd166d9c8ad144dc684b9e8ecfb07d8b31087772441ab603624e7e"
+          },
+          "1520": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 79.64800000000001,
+              "heap_raw_liters": 62.256000000000014,
+              "inside_liters": 80.55874588210072,
+              "heap_liters": 62.96787469410486,
+              "fill_percent": 56.24861265260821,
+              "cavity_fraction_of_counted_load": 0.5612808659375352,
+              "selected_particles": 141388,
+              "cavity_particles": 8680,
+              "load_region_particles": 26361,
+              "point_support_fraction": 0.9969652137627556,
+              "load_density_quantiles": [
+                0.6392935514450073,
+                0.9918581247329712,
+                2.460925340652466
+              ],
+              "bulk_touches_roi_boundary": true,
+              "quality_reasons": [
+                "cavity-connected material touches measurement boundary"
+              ],
+              "valid_estimate": false,
+              "compute_wall_s": 0.2672604440012947,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 6340,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.005630180349871234,
+              0.009462439335423012,
+              0.09492869753563203
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.018233618233618232
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-012",
+                "index": 32,
+                "volume_liters": 9.2027720799157,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "94156ac6998a1a052993956e71e9b580ced08ea81e47be7bcff6144e5969cc40"
+          },
+          "1580": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 81.64800000000001,
+              "heap_raw_liters": 57.84800000000001,
+              "inside_liters": 82.58161515394939,
+              "heap_liters": 58.509470818950426,
+              "fill_percent": 55.294117647058826,
+              "cavity_fraction_of_counted_load": 0.5853071055800884,
+              "selected_particles": 142275,
+              "cavity_particles": 8835,
+              "load_region_particles": 26129,
+              "point_support_fraction": 0.9971296260859581,
+              "load_density_quantiles": [
+                0.6328544139862061,
+                0.9901867508888245,
+                2.449890470504761
+              ],
+              "bulk_touches_roi_boundary": true,
+              "quality_reasons": [
+                "cavity-connected material touches measurement boundary"
+              ],
+              "valid_estimate": false,
+              "compute_wall_s": 0.2734449130075518,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 6527,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.00439153459238634,
+              0.004880302868788963,
+              0.007683074176600483
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.015194681861348529
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-012",
+                "index": 32,
+                "volume_liters": 9.2027720799157,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "1b5604a3964f82950c07ace2aeedf7beb1114731dfb80552f1e67537d97ae4d5"
+          }
+        },
+        "retention": {
+          "1370-1490": {
+            "initial_cavity_soil_count": 5609,
+            "same_soil_ids_still_in_cavity": 5606,
+            "same_soil_retained_fraction": 0.9994651453021929,
+            "new_soil_ids_in_cavity": 13,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_cavity_liters": 0.25211385466466324,
+                "same_sample_retained_fraction": 0.6124031007751938,
+                "relative_center_max_drift_m": 0.005657856742301151
+              },
+              {
+                "id": "middle-008",
+                "initial_in_cavity_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.0012096374460712322
+              }
+            ],
+            "scope": "cavity identities only; outside-rim heap not included in this identity metric; geometric retention is not a proven detached/stable payload"
+          },
+          "1520-1580": {
+            "initial_cavity_soil_count": 6340,
+            "same_soil_ids_still_in_cavity": 6336,
+            "same_soil_retained_fraction": 0.9993690851735015,
+            "new_soil_ids_in_cavity": 191,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_cavity_liters": 0.37523922554740574,
+                "same_sample_retained_fraction": 0.8229166666666666,
+                "relative_center_max_drift_m": 0.00474413086813252
+              },
+              {
+                "id": "middle-008",
+                "initial_in_cavity_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.017492328832703234
+              }
+            ],
+            "scope": "cavity identities only; outside-rim heap not included in this identity metric; geometric retention is not a proven detached/stable payload"
+          }
+        },
+        "training_eligible": false,
+        "off_soil_proven": false,
+        "physical_force_qualified": false,
+        "source_bindings": {
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001370.npz": "5924ad6bc48bdc196969e39a44f536083ecc3d8e6ed9e07a455a1a3cb6ad08c0",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001490.npz": "19bfc574e8cd166d9c8ad144dc684b9e8ecfb07d8b31087772441ab603624e7e",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001520.npz": "94156ac6998a1a052993956e71e9b580ced08ea81e47be7bcff6144e5969cc40",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001580.npz": "1b5604a3964f82950c07ace2aeedf7beb1114731dfb80552f1e67537d97ae4d5"
+        },
+        "analysis_bindings": {
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/measure_retention.py": "ed50e5c63947a8b127d56b6e37cb793a0ed46b9573b8464d55431c6975170e32",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d"
+        }
+      },
+      "load_region_identity": {
+        "mode": "baseline",
+        "endpoints": {
+          "1370": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 71.92000000000002,
+              "heap_raw_liters": 72.26400000000001,
+              "inside_liters": 72.74237901567754,
+              "heap_liters": 73.09031253043551,
+              "fill_percent": 57.15237038211511,
+              "cavity_fraction_of_counted_load": 0.4988070798424236,
+              "selected_particles": 130639,
+              "cavity_particles": 7886,
+              "load_region_particles": 26654,
+              "point_support_fraction": 0.9974863059953478,
+              "load_density_quantiles": [
+                0.6439654886722564,
+                0.9953925311565399,
+                2.7979114055633554
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.27375332498922944,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5609,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0020466776510091027,
+              0.005153475028379745,
+              0.16467158849498564
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.01225071225071225
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "5924ad6bc48bdc196969e39a44f536083ecc3d8e6ed9e07a455a1a3cb6ad08c0"
+          },
+          "1490": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 71.89600000000002,
+              "heap_raw_liters": 72.376,
+              "inside_liters": 72.71810458441536,
+              "heap_liters": 73.20359320965902,
+              "fill_percent": 57.18725225939431,
+              "cavity_fraction_of_counted_load": 0.49833647554619065,
+              "selected_particles": 130637,
+              "cavity_particles": 7846,
+              "load_region_particles": 26577,
+              "point_support_fraction": 0.9974790232155624,
+              "load_density_quantiles": [
+                0.6402501225471496,
+                0.9933599829673767,
+                2.61381220817566
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.2627197870024247,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5619,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0005043815818222544,
+              0.0009460912291304483,
+              0.006094544881473649
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.007502374169040836
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "19bfc574e8cd166d9c8ad144dc684b9e8ecfb07d8b31087772441ab603624e7e"
+          }
+        },
+        "retention": {
+          "1370-1490": {
+            "initial_load_region_soil_count": 9391,
+            "same_soil_ids_still_in_load_region": 9258,
+            "same_soil_retained_fraction": 0.9858375039931849,
+            "new_soil_ids_in_load_region": 56,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_load_region_liters": 20.579526276115534,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.005657856742301151
+              },
+              {
+                "id": "middle-008",
+                "initial_in_load_region_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.0012096374460712322
+              },
+              {
+                "id": "upper-007",
+                "initial_in_load_region_liters": 2.5724407845144426,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.003975484692105141
+              },
+              {
+                "id": "upper-008",
+                "initial_in_load_region_liters": 6.370626302704502,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.008548963751486453
+              }
+            ],
+            "scope": "cavity plus connected above-rim load-region identities using canonical fill_volume quality region; matches its particle count; this is geometric retention, not proven detached payload"
+          }
+        },
+        "training_eligible": false,
+        "off_soil_proven": false,
+        "physical_force_qualified": false,
+        "source_bindings": {
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001370.npz": "5924ad6bc48bdc196969e39a44f536083ecc3d8e6ed9e07a455a1a3cb6ad08c0",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001490.npz": "19bfc574e8cd166d9c8ad144dc684b9e8ecfb07d8b31087772441ab603624e7e"
+        },
+        "analysis_bindings": {
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/measure_load_identity.py": "aa8eedf9021cc31ba9e75b856cfcd17c15e181cfb77275149429a138f49054e9",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d"
+        }
+      },
+      "roi_sensitivity": {
+        "measurement_padding_m": 1.2,
+        "sensitivity_only": true,
+        "mode": "baseline",
+        "endpoints": {
+          "1520": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 79.64800000000001,
+              "heap_raw_liters": 62.256000000000014,
+              "inside_liters": 80.55874588210072,
+              "heap_liters": 62.96787469410486,
+              "fill_percent": 56.24861265260821,
+              "cavity_fraction_of_counted_load": 0.5612808659375352,
+              "selected_particles": 233016,
+              "cavity_particles": 8680,
+              "load_region_particles": 26361,
+              "point_support_fraction": 0.9969652137627556,
+              "load_density_quantiles": [
+                0.6392935514450073,
+                0.9918581247329712,
+                2.460925340652466
+              ],
+              "bulk_touches_roi_boundary": true,
+              "quality_reasons": [
+                "cavity-connected material touches measurement boundary"
+              ],
+              "valid_estimate": false,
+              "compute_wall_s": 0.518355331994826,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 6340,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.005630180349871234,
+              0.009462439335423012,
+              0.09492869753563203
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.018233618233618232
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-012",
+                "index": 32,
+                "volume_liters": 9.2027720799157,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "94156ac6998a1a052993956e71e9b580ced08ea81e47be7bcff6144e5969cc40"
+          },
+          "1580": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 81.64800000000001,
+              "heap_raw_liters": 57.84800000000001,
+              "inside_liters": 82.58161515394939,
+              "heap_liters": 58.509470818950426,
+              "fill_percent": 55.294117647058826,
+              "cavity_fraction_of_counted_load": 0.5853071055800884,
+              "selected_particles": 235838,
+              "cavity_particles": 8835,
+              "load_region_particles": 26129,
+              "point_support_fraction": 0.9971296260859581,
+              "load_density_quantiles": [
+                0.6328544139862061,
+                0.9901867508888245,
+                2.449890470504761
+              ],
+              "bulk_touches_roi_boundary": true,
+              "quality_reasons": [
+                "cavity-connected material touches measurement boundary"
+              ],
+              "valid_estimate": false,
+              "compute_wall_s": 0.5269853759964462,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 6527,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.00439153459238634,
+              0.004880302868788963,
+              0.007683074176600483
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.015194681861348529
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-012",
+                "index": 32,
+                "volume_liters": 9.2027720799157,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-003",
+                "index": 36,
+                "volume_liters": 8.181230868723421,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "1b5604a3964f82950c07ace2aeedf7beb1114731dfb80552f1e67537d97ae4d5"
+          }
+        },
+        "retention": {
+          "1520-1580": {
+            "initial_cavity_soil_count": 6340,
+            "same_soil_ids_still_in_cavity": 6336,
+            "same_soil_retained_fraction": 0.9993690851735015,
+            "new_soil_ids_in_cavity": 191,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_cavity_liters": 0.37523922554740574,
+                "same_sample_retained_fraction": 0.8229166666666666,
+                "relative_center_max_drift_m": 0.00474413086813252
+              },
+              {
+                "id": "middle-008",
+                "initial_in_cavity_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.017492328832703234
+              }
+            ],
+            "scope": "cavity identities only; outside-rim heap not included in this identity metric; geometric retention is not a proven detached/stable payload"
+          }
+        },
+        "training_eligible": false,
+        "off_soil_proven": false,
+        "physical_force_qualified": false,
+        "source_bindings": {
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001520.npz": "94156ac6998a1a052993956e71e9b580ced08ea81e47be7bcff6144e5969cc40",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/diagnostic-001580.npz": "1b5604a3964f82950c07ace2aeedf7beb1114731dfb80552f1e67537d97ae4d5"
+        },
+        "analysis_bindings": {
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/measure_roi_sensitivity.py": "6eb0b6f1ebc2e143b95db0bdd05b070a95829ae3b32a58ecb36799b9bd6da503",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d"
+        }
+      }
+    },
+    "candidate": {
+      "frames": 1580,
+      "all_hard_guards": true,
+      "bindings_unchanged": true,
+      "physics_wall_seconds": 338.01996100481483,
+      "phases": {
+        "short_curl": {
+          "frames": [
+            481,
+            600
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            0.008873412794906783,
+            0.02216623984960509,
+            0.007837491426327153,
+            0.007726651859983114
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.20034492327635206,
+          "last15_max_bucket_angular_speed_rad_s": 0.06831485097371486,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 538,
+          "axis_start": [
+            -0.00200059694307655,
+            0.2442006896353876,
+            0.3529652376507192,
+            0.8136252256561328
+          ],
+          "axis_end": [
+            -0.0007661886286423107,
+            0.25689324984042944,
+            0.35975848974929253,
+            0.8314919089440924
+          ],
+          "axis_range": [
+            0.0012344083144342393,
+            0.013058381314254963,
+            0.007366167436512416,
+            0.017866683287959595
+          ],
+          "axis_last15_range": [
+            0.0003026808675716696,
+            0.003505106606289665,
+            0.000600378067688645,
+            0.0008778358354366578
+          ],
+          "bucket_mean_abs_tracking_error_mm": 26.475113373176516,
+          "bucket_last15_mean_abs_tracking_error_mm": 20.822307422205235,
+          "bucket_max_abs_speed_m_s": 0.04789734453907487,
+          "bucket_max_actual_position_m": 0.8314919089440924,
+          "bucket_max_actual_minus_reference_mm": -20.508091055907563,
+          "max_abs_total_actuator_force_by_axis": [
+            5308.36721303987,
+            402899.69577898487,
+            58343.590148803734,
+            162894.0885620512
+          ],
+          "max_abs_bucket_hold_force_N": 162972.01005069772,
+          "max_abs_bucket_drive_force_N": 4785.235387111312,
+          "max_abs_bucket_compensation_N": 59980.19758642002,
+          "final_bucket_compensation_N": 55992.62126537135,
+          "max_abs_bucket_mpm_equivalent_load_N": 158076.90184183195,
+          "max_cohort_projection_m": 0.013449534773826599,
+          "max_global_projection_m": 0.013449534773826599,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "remaining_manual": {
+          "frames": [
+            601,
+            1370
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            4.891809781824662e-05,
+            0.00021697618489088642,
+            0.0005433849366712423,
+            0.0022450508190412434
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.021271251469563608,
+          "last15_max_bucket_angular_speed_rad_s": 0.039097945313880486,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 631,
+          "axis_start": [
+            -0.0007509738758362826,
+            0.2572337814193352,
+            0.3598465223810447,
+            0.8315175364382724
+          ],
+          "axis_end": [
+            0.0016340192508902214,
+            0.4245192030742081,
+            0.4790353547291856,
+            0.8437152280875791
+          ],
+          "axis_range": [
+            0.003052121575643568,
+            0.16738238709220182,
+            0.1199998583341556,
+            0.012774247570620512
+          ],
+          "axis_last15_range": [
+            4.9442124745642e-06,
+            1.1554249507605974e-05,
+            5.587613616647724e-05,
+            0.0003276398507928713
+          ],
+          "bucket_mean_abs_tracking_error_mm": 11.577853824168571,
+          "bucket_last15_mean_abs_tracking_error_mm": 8.489874950528902,
+          "bucket_max_abs_speed_m_s": 0.0227690295502931,
+          "bucket_max_actual_position_m": 0.8442917840088929,
+          "bucket_max_actual_minus_reference_mm": -7.708215991107048,
+          "max_abs_total_actuator_force_by_axis": [
+            86906.78259810567,
+            346049.5054625894,
+            63463.0012091416,
+            135023.4271434569
+          ],
+          "max_abs_bucket_hold_force_N": 135259.32782902196,
+          "max_abs_bucket_drive_force_N": 3667.0228169897796,
+          "max_abs_bucket_compensation_N": 55731.3775704042,
+          "final_bucket_compensation_N": 23859.228637057004,
+          "max_abs_bucket_mpm_equivalent_load_N": 176197.94259224707,
+          "max_cohort_projection_m": 0.07613760232925415,
+          "max_global_projection_m": 0.07613760232925415,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "hold": {
+          "frames": [
+            1371,
+            1490
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            2.8767149989440844e-05,
+            0.0001145651127112287,
+            8.531780917207847e-05,
+            0.0015512493956282016
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.01507811648293066,
+          "last15_max_bucket_angular_speed_rad_s": 0.026858837878448012,
+          "first_frame_stopped_through_end": 1489,
+          "first_negative_bucket_velocity_frame": 1397,
+          "axis_start": [
+            0.0016343297705070255,
+            0.42452175937563125,
+            0.4790390251498239,
+            0.8437534414257681
+          ],
+          "axis_end": [
+            0.0016277626423244456,
+            0.42453547734071234,
+            0.4789855289004221,
+            0.8438078889153798
+          ],
+          "axis_range": [
+            9.926041334972716e-06,
+            5.5571030619205875e-05,
+            7.227943000009951e-05,
+            0.0008082729773789543
+          ],
+          "axis_last15_range": [
+            2.894129951934877e-06,
+            2.275228279013941e-05,
+            7.017532305697571e-06,
+            0.00032106423713296195
+          ],
+          "bucket_mean_abs_tracking_error_mm": 8.033604398982948,
+          "bucket_last15_mean_abs_tracking_error_mm": 8.042480254946309,
+          "bucket_max_abs_speed_m_s": 0.00235404091275114,
+          "bucket_max_actual_position_m": 0.8442952324313581,
+          "bucket_max_actual_minus_reference_mm": -7.704767568641913,
+          "max_abs_total_actuator_force_by_axis": [
+            49.318914093291674,
+            173888.40394347245,
+            30419.323815195054,
+            76729.31824427322
+          ],
+          "max_abs_bucket_hold_force_N": 76903.42838881537,
+          "max_abs_bucket_drive_force_N": 235.37210710918043,
+          "max_abs_bucket_compensation_N": 23864.59877898485,
+          "final_bucket_compensation_N": 23075.14707408755,
+          "max_abs_bucket_mpm_equivalent_load_N": 47865.18049230425,
+          "max_cohort_projection_m": 0.0042936294339597225,
+          "max_global_projection_m": 0.029100770130753517,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "reverse": {
+          "frames": [
+            1491,
+            1520
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            7.440117821085059e-05,
+            0.000725823608609504,
+            0.0012009026264717454,
+            0.0242448413337979
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.18610947753700235,
+          "last15_max_bucket_angular_speed_rad_s": 0.3428419409361944,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 1491,
+          "axis_start": [
+            0.0016283467384476185,
+            0.4245251110193427,
+            0.478985195219127,
+            0.843633969908522
+          ],
+          "axis_end": [
+            0.0016479693078817015,
+            0.4246187304668541,
+            0.47917243917873553,
+            0.8369963973062509
+          ],
+          "axis_range": [
+            1.9622569434082958e-05,
+            0.00012722603682085998,
+            0.00030747840920641867,
+            0.006637572602271158
+          ],
+          "axis_last15_range": [
+            1.0550902449676849e-05,
+            3.360658930945393e-05,
+            0.0001810998623446025,
+            0.004386611219739378
+          ],
+          "bucket_mean_abs_tracking_error_mm": 5.9780169291066,
+          "bucket_last15_mean_abs_tracking_error_mm": 5.125188017800827,
+          "bucket_max_abs_speed_m_s": 0.0242448413337979,
+          "bucket_max_actual_position_m": 0.843633969908522,
+          "bucket_max_actual_minus_reference_mm": -4.976342190127436,
+          "max_abs_total_actuator_force_by_axis": [
+            66.50553875624689,
+            174174.343366975,
+            31392.529112072298,
+            73628.43072486237
+          ],
+          "max_abs_bucket_hold_force_N": 74715.94614105904,
+          "max_abs_bucket_drive_force_N": 1880.1404381725456,
+          "max_abs_bucket_compensation_N": 23080.33467895633,
+          "final_bucket_compensation_N": 12487.02859710336,
+          "max_abs_bucket_mpm_equivalent_load_N": 70119.16499090425,
+          "max_cohort_projection_m": 0.015053126029670238,
+          "max_global_projection_m": 0.015053126029670238,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        },
+        "stop": {
+          "frames": [
+            1521,
+            1580
+          ],
+          "all_hard_guards": true,
+          "last15_all_stopped": false,
+          "last15_max_abs_axis_speed": [
+            0.00015293177800410786,
+            0.0008520507095211203,
+            0.0014652345747325317,
+            0.010457978643413385
+          ],
+          "last15_max_bucket_linear_speed_m_s": 0.08397118854035523,
+          "last15_max_bucket_angular_speed_rad_s": 0.14541139433050165,
+          "first_frame_stopped_through_end": null,
+          "first_negative_bucket_velocity_frame": 1521,
+          "axis_start": [
+            0.0016487523447459818,
+            0.4246151522710494,
+            0.4792051008037931,
+            0.836712292578403
+          ],
+          "axis_end": [
+            0.0016294891388148245,
+            0.42457665699983127,
+            0.47911340469270486,
+            0.8366416147541653
+          ],
+          "axis_range": [
+            3.1599832606000414e-05,
+            0.0003077024740736345,
+            0.00024855219208103074,
+            0.004408856211087442
+          ],
+          "axis_last15_range": [
+            2.0392819261278545e-05,
+            0.00011469632743094094,
+            9.932270484835914e-05,
+            0.001536288380912132
+          ],
+          "bucket_mean_abs_tracking_error_mm": 5.8683497178143345,
+          "bucket_last15_mean_abs_tracking_error_mm": 4.390327235929922,
+          "bucket_max_abs_speed_m_s": 0.020350624431685244,
+          "bucket_max_actual_position_m": 0.8381779031350775,
+          "bucket_max_actual_minus_reference_mm": -3.822096864859903,
+          "max_abs_total_actuator_force_by_axis": [
+            97.86950523123566,
+            192248.894908407,
+            31764.2874543302,
+            87554.63975888242
+          ],
+          "max_abs_bucket_hold_force_N": 86697.50632146513,
+          "max_abs_bucket_drive_force_N": 2022.456243669915,
+          "max_abs_bucket_compensation_N": 16186.94049998742,
+          "final_bucket_compensation_N": 13981.377504461138,
+          "max_abs_bucket_mpm_equivalent_load_N": 55161.576043513785,
+          "max_cohort_projection_m": 0.019034583121538162,
+          "max_global_projection_m": 0.019034583121538162,
+          "force_scope": "60Hz boundary samples, not all native 4800Hz substep peaks; swing Nm, cylinders N"
+        }
+      },
+      "reverse_net_bucket_displacement_m": -0.006811491609128972,
+      "retention": {
+        "mode": "candidate",
+        "endpoints": {
+          "1370": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 78.92800000000001,
+              "heap_raw_liters": 79.56800000000001,
+              "inside_liters": 79.83051294423521,
+              "heap_liters": 80.47783111122679,
+              "fill_percent": 62.8254320596163,
+              "cavity_fraction_of_counted_load": 0.49798102160306884,
+              "selected_particles": 111925,
+              "cavity_particles": 8695,
+              "load_region_particles": 28059,
+              "point_support_fraction": 0.9966499162479062,
+              "load_density_quantiles": [
+                0.6546263694763184,
+                0.9989504218101501,
+                3.638162612915039
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.24845252200611867,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5917,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0016299432114698176,
+              0.0033654485377624267,
+              0.06771038384271545
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.05982905982905983
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "bd6332248b439257c42b9a476c076a256414f07c3df2bb503bdfdfeab3f11c9f"
+          },
+          "1490": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 78.77600000000001,
+              "heap_raw_liters": 76.96000000000001,
+              "inside_liters": 79.67677487957472,
+              "heap_liters": 77.84000958073614,
+              "fill_percent": 61.73140954495007,
+              "cavity_fraction_of_counted_load": 0.5058303796167873,
+              "selected_particles": 111436,
+              "cavity_particles": 8700,
+              "load_region_particles": 27713,
+              "point_support_fraction": 0.996391585176632,
+              "load_density_quantiles": [
+                0.6508245229721069,
+                0.9975659847259521,
+                3.422193336486816
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.24903874599840492,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5904,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0031819616265033484,
+              0.0040548106054350145,
+              0.05289038100217867
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.06153846153846154
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "c858addf51e2099e60b5cad4803e48d5abfbb3c5e6bbf052332be6308cfb7bbd"
+          },
+          "1520": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 89.40800000000002,
+              "heap_raw_liters": 63.640000000000015,
+              "inside_liters": 90.43034792872216,
+              "heap_liters": 64.36770023022413,
+              "fill_percent": 60.66592674805772,
+              "cavity_fraction_of_counted_load": 0.5841827400554074,
+              "selected_particles": 130831,
+              "cavity_particles": 9974,
+              "load_region_particles": 27577,
+              "point_support_fraction": 0.9963737897523298,
+              "load_density_quantiles": [
+                0.6476500630378723,
+                0.9986362457275391,
+                3.237953901290895
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.27187504299217835,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 6888,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0085893938917062,
+              0.0162213886445847,
+              0.16753924022968913
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.08907882241215574
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "a245ca58e644484e39f5ae4cc1efc38e187aca09839f2bd9891ca79d727d05a9"
+          },
+          "1580": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 89.016,
+              "heap_raw_liters": 62.512000000000015,
+              "inside_liters": 90.03386555143982,
+              "heap_liters": 63.22680196090148,
+              "fill_percent": 60.06342159505311,
+              "cavity_fraction_of_counted_load": 0.5874557837495381,
+              "selected_particles": 131217,
+              "cavity_particles": 9896,
+              "load_region_particles": 27430,
+              "point_support_fraction": 0.996718920889537,
+              "load_density_quantiles": [
+                0.6429039418697358,
+                0.9951591491699219,
+                3.1833114385604864
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.25810456099861767,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 7019,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0020042275961328713,
+              0.004380803400093395,
+              0.042439651203398404
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.06923076923076923
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-003",
+                "index": 23,
+                "volume_liters": 4.188790204786391,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-012",
+                "index": 32,
+                "volume_liters": 9.2027720799157,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "3900b6973c4ef6d3d016980f35a0c362c0ee1cb9a1f9834366ff4de35762c767"
+          }
+        },
+        "retention": {
+          "1370-1490": {
+            "initial_cavity_soil_count": 5917,
+            "same_soil_ids_still_in_cavity": 5899,
+            "same_soil_retained_fraction": 0.9969579178637823,
+            "new_soil_ids_in_cavity": 5,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_cavity_liters": 1.2312537088274251,
+                "same_sample_retained_fraction": 0.9857142857142858,
+                "relative_center_max_drift_m": 0.0034314868956203093
+              },
+              {
+                "id": "middle-008",
+                "initial_in_cavity_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.006136448178334616
+              }
+            ],
+            "scope": "cavity identities only; outside-rim heap not included in this identity metric; geometric retention is not a proven detached/stable payload"
+          },
+          "1520-1580": {
+            "initial_cavity_soil_count": 6888,
+            "same_soil_ids_still_in_cavity": 6872,
+            "same_soil_retained_fraction": 0.9976771196283392,
+            "new_soil_ids_in_cavity": 147,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_cavity_liters": 1.8331999664763883,
+                "same_sample_retained_fraction": 0.7771855010660981,
+                "relative_center_max_drift_m": 0.017570109607958965
+              },
+              {
+                "id": "middle-008",
+                "initial_in_cavity_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.03332656369693539
+              }
+            ],
+            "scope": "cavity identities only; outside-rim heap not included in this identity metric; geometric retention is not a proven detached/stable payload"
+          }
+        },
+        "training_eligible": false,
+        "off_soil_proven": false,
+        "physical_force_qualified": false,
+        "source_bindings": {
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/diagnostic-001370.npz": "bd6332248b439257c42b9a476c076a256414f07c3df2bb503bdfdfeab3f11c9f",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/diagnostic-001490.npz": "c858addf51e2099e60b5cad4803e48d5abfbb3c5e6bbf052332be6308cfb7bbd",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/diagnostic-001520.npz": "a245ca58e644484e39f5ae4cc1efc38e187aca09839f2bd9891ca79d727d05a9",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/diagnostic-001580.npz": "3900b6973c4ef6d3d016980f35a0c362c0ee1cb9a1f9834366ff4de35762c767"
+        },
+        "analysis_bindings": {
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/measure_retention.py": "ed50e5c63947a8b127d56b6e37cb793a0ed46b9573b8464d55431c6975170e32",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d"
+        }
+      },
+      "load_region_identity": {
+        "mode": "candidate",
+        "endpoints": {
+          "1370": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 78.92800000000001,
+              "heap_raw_liters": 79.56800000000001,
+              "inside_liters": 79.83051294423521,
+              "heap_liters": 80.47783111122679,
+              "fill_percent": 62.8254320596163,
+              "cavity_fraction_of_counted_load": 0.49798102160306884,
+              "selected_particles": 111925,
+              "cavity_particles": 8695,
+              "load_region_particles": 28059,
+              "point_support_fraction": 0.9966499162479062,
+              "load_density_quantiles": [
+                0.6546263694763184,
+                0.9989504218101501,
+                3.638162612915039
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.2537760970008094,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5917,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0016299432114698176,
+              0.0033654485377624267,
+              0.06771038384271545
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.05982905982905983
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "bd6332248b439257c42b9a476c076a256414f07c3df2bb503bdfdfeab3f11c9f"
+          },
+          "1490": {
+            "mixed_geometry": {
+              "method_version": "bucket-local-density-v2-weighted",
+              "measurement_cell_m": 0.02,
+              "particle_spacing_m": 0.025,
+              "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+              "smoothing_sigma_cells": 0.43749999999999994,
+              "occupancy_level": 0.4,
+              "volume_scale": 1.011434635924326,
+              "capacity_liters": 255.164729950989,
+              "inside_raw_liters": 78.77600000000001,
+              "heap_raw_liters": 76.96000000000001,
+              "inside_liters": 79.67677487957472,
+              "heap_liters": 77.84000958073614,
+              "fill_percent": 61.73140954495007,
+              "cavity_fraction_of_counted_load": 0.5058303796167873,
+              "selected_particles": 111436,
+              "cavity_particles": 8700,
+              "load_region_particles": 27713,
+              "point_support_fraction": 0.996391585176632,
+              "load_density_quantiles": [
+                0.6508245229721069,
+                0.9975659847259521,
+                3.422193336486816
+              ],
+              "bulk_touches_roi_boundary": false,
+              "quality_reasons": [],
+              "valid_estimate": true,
+              "compute_wall_s": 0.2468380569916917,
+              "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+            },
+            "cavity_soil_count": 5904,
+            "cavity_soil_relative_speed_quantiles_m_s": [
+              0.0031819616265033484,
+              0.0040548106054350145,
+              0.05289038100217867
+            ],
+            "rocks": [
+              {
+                "id": "lower-001",
+                "index": 1,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower-008",
+                "index": 8,
+                "volume_liters": 20.579526276115534,
+                "fraction_in_cavity": 0.06153846153846154
+              },
+              {
+                "id": "lower_middle-006",
+                "index": 15,
+                "volume_liters": 11.494040321933863,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-007",
+                "index": 16,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "lower_middle-009",
+                "index": 18,
+                "volume_liters": 5.575279762570685,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-000",
+                "index": 20,
+                "volume_liters": 7.23822947387088,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-002",
+                "index": 22,
+                "volume_liters": 7.2382294738708834,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-006",
+                "index": 26,
+                "volume_liters": 5.575279762570684,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-007",
+                "index": 27,
+                "volume_liters": 5.575279762570687,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-008",
+                "index": 28,
+                "volume_liters": 4.188790204786392,
+                "fraction_in_cavity": 1.0
+              },
+              {
+                "id": "middle-010",
+                "index": 30,
+                "volume_liters": 9.202772079915698,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "middle-011",
+                "index": 31,
+                "volume_liters": 3.0536280592892795,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-000",
+                "index": 33,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-001",
+                "index": 34,
+                "volume_liters": 4.849048260815844,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-002",
+                "index": 35,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-004",
+                "index": 37,
+                "volume_liters": 4.849048260815845,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-005",
+                "index": 38,
+                "volume_liters": 8.18123086872342,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-006",
+                "index": 39,
+                "volume_liters": 6.370626302704501,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-007",
+                "index": 40,
+                "volume_liters": 2.5724407845144426,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-008",
+                "index": 41,
+                "volume_liters": 6.370626302704502,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-009",
+                "index": 42,
+                "volume_liters": 3.591364001828732,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-010",
+                "index": 43,
+                "volume_liters": 2.5724407845144417,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-011",
+                "index": 44,
+                "volume_liters": 8.181230868723418,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-012",
+                "index": 45,
+                "volume_liters": 2.572440784514443,
+                "fraction_in_cavity": 0.0
+              },
+              {
+                "id": "upper-013",
+                "index": 46,
+                "volume_liters": 3.5913640018287314,
+                "fraction_in_cavity": 0.0
+              }
+            ],
+            "particle_count": 256441,
+            "rock_count": 47,
+            "snapshot_sha256": "c858addf51e2099e60b5cad4803e48d5abfbb3c5e6bbf052332be6308cfb7bbd"
+          }
+        },
+        "retention": {
+          "1370-1490": {
+            "initial_load_region_soil_count": 10796,
+            "same_soil_ids_still_in_load_region": 10429,
+            "same_soil_retained_fraction": 0.9660059281215265,
+            "new_soil_ids_in_load_region": 21,
+            "rocks": [
+              {
+                "id": "lower-008",
+                "initial_in_load_region_liters": 20.579526276115534,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.0034314868956203093
+              },
+              {
+                "id": "middle-008",
+                "initial_in_load_region_liters": 4.188790204786392,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.006136448178334616
+              },
+              {
+                "id": "upper-007",
+                "initial_in_load_region_liters": 2.5724407845144426,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.005662319775722703
+              },
+              {
+                "id": "upper-008",
+                "initial_in_load_region_liters": 6.370626302704502,
+                "same_sample_retained_fraction": 1.0,
+                "relative_center_max_drift_m": 0.006974095105104345
+              }
+            ],
+            "scope": "cavity plus connected above-rim load-region identities using canonical fill_volume quality region; matches its particle count; this is geometric retention, not proven detached payload"
+          }
+        },
+        "training_eligible": false,
+        "off_soil_proven": false,
+        "physical_force_qualified": false,
+        "source_bindings": {
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/diagnostic-001370.npz": "bd6332248b439257c42b9a476c076a256414f07c3df2bb503bdfdfeab3f11c9f",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/diagnostic-001490.npz": "c858addf51e2099e60b5cad4803e48d5abfbb3c5e6bbf052332be6308cfb7bbd"
+        },
+        "analysis_bindings": {
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+          "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+          "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/measure_load_identity.py": "aa8eedf9021cc31ba9e75b856cfcd17c15e181cfb77275149429a138f49054e9",
+          "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d"
+        }
+      },
+      "roi_sensitivity": null
+    }
+  },
+  "exact_state_checks": {
+    "baseline_prefix480": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "candidate_prefix480": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "baseline1370_vs_user_final": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    },
+    "candidate600_vs_prior_candidate": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_flags": true,
+      "particle_elastic_strain": true,
+      "particle_transform": true,
+      "particle_qd_grad": true,
+      "particle_stress": true,
+      "particle_Jp": true,
+      "rigid_qpos": true,
+      "rigid_qvel": true,
+      "rigid_reported_linear_velocity": true,
+      "rigid_reported_angular_velocity": true,
+      "mechanism_qpos": true,
+      "mechanism_qvel": true,
+      "simulation_time_s": true,
+      "grid_reference_particle_q": true,
+      "solver_grid_transform": true,
+      "solver_grid_cell_ijk": true,
+      "solver_grid_node_ijk": true,
+      "solver_ws_impulse": true,
+      "solver_ws_stress": true,
+      "solver_body_q_prev": true
+    }
+  },
+  "compiled_force_limits": {
+    "mujoco_version": "2.3.8",
+    "actuators": [
+      {
+        "id": 0,
+        "name": "Rotation",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 0,
+        "joint": "chassis"
+      },
+      {
+        "id": 1,
+        "name": "Boom",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 0,
+        "joint": "chassis piston rod"
+      },
+      {
+        "id": 2,
+        "name": "Arm",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 0,
+        "joint": "boom piston rod"
+      },
+      {
+        "id": 3,
+        "name": "Bucket",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 0,
+        "joint": "arm piston rod"
+      },
+      {
+        "id": 4,
+        "name": "Rotation hold",
+        "ctrl_limited": 0,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 1000000.0,
+        "joint": "chassis"
+      },
+      {
+        "id": 5,
+        "name": "Boom hold",
+        "ctrl_limited": 0,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 48000000.0,
+        "joint": "chassis piston rod"
+      },
+      {
+        "id": 6,
+        "name": "Arm hold",
+        "ctrl_limited": 0,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 4000000.0,
+        "joint": "boom piston rod"
+      },
+      {
+        "id": 7,
+        "name": "Bucket hold",
+        "ctrl_limited": 0,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 3000000.0,
+        "joint": "arm piston rod"
+      },
+      {
+        "id": 8,
+        "name": "Rotation drive",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 700000,
+        "joint": "chassis"
+      },
+      {
+        "id": 9,
+        "name": "Boom drive",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 700000,
+        "joint": "chassis piston rod"
+      },
+      {
+        "id": 10,
+        "name": "Arm drive",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 100000,
+        "joint": "boom piston rod"
+      },
+      {
+        "id": 11,
+        "name": "Bucket drive",
+        "ctrl_limited": 1,
+        "force_limited": 0,
+        "force_range": [
+          0,
+          0
+        ],
+        "gear": 1,
+        "gain": 100000,
+        "joint": "arm piston rod"
+      }
+    ],
+    "joints": [
+      {
+        "name": "unnamed",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "chassis",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "chassis piston cylinder",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "chassis piston rod",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "boom",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "boom piston cylinder",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "boom piston rod",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "arm",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "arm piston cylinder",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "arm piston rod",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "H link",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "bucket",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "side link",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_000",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_001",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_002",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_003",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_004",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_005",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_006",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_007",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_008",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_009",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_010",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_011",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_012",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_013",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_014",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_015",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_016",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_017",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_018",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_019",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_020",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_021",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_022",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_023",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_024",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_025",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_026",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_027",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_028",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_029",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_030",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_031",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_032",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_033",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_034",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_035",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_036",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_037",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_038",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_039",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_040",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_041",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_042",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_043",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_044",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_045",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "r1_rock_free_046",
+        "actuator_force_limited": 0,
+        "range": [
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "protocol": {
+    "status": "frozen_before_physics",
+    "source": "D115 rear-lower complete handoff",
+    "prefix_frames": 1370,
+    "prefix_commands": "original recorded manual applied commands",
+    "candidate": "unchanged D119 bucket-only half attributed MPM load, clamp +/-60000 N, slew150000 N/s, tau0.1 s, activation after480frames",
+    "phases": [
+      {
+        "frames": [
+          1371,
+          1490
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "purpose": "2s neutral load retention"
+      },
+      {
+        "frames": [
+          1491,
+          1520
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          -0.02
+        ],
+        "purpose": "0.5s low-rate reverse retreat"
+      },
+      {
+        "frames": [
+          1521,
+          1580
+        ],
+        "command": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "purpose": "1s stop after reversal"
+      }
+    ],
+    "runtime": "serial local RTX4070 cuda:0;60HzMPM/4800Hzrigid unchanged",
+    "guards": "original manual.hard_guard_checks every frame; abort and save first failed state; fresh tail commands existing ContactCommandProjector must preserve",
+    "stop_gate": "original motion.stopped for every final15frame of each neutral phase; diagnostic failure recorded, no relaxation",
+    "force_gate": "audit compiled model limits, report signed sum hold+drive per axis; no calibrated physical force cap available; no artificial force threshold added",
+    "retention": "same particle identities across each hold, cavity geometry and fixed-calibration mixed-soil/rock geometric occupancy at phase endpoints; no formal stable-payload or truck qualification",
+    "replay_gates": "23 arrays at480 exact vs D119baseline; baseline1370 exact vs user run; candidate600 exact vs previous candidate",
+    "default_control_changed": false,
+    "training_eligible": false,
+    "runner_sha256": "0b8c9c0b151fd06d3e3d503e6a1970951e8c42d1fdbc93175818961c631c35cb",
+    "v1_failure": "frame1 diagnostic stopped() adapter missing axis_velocity; recovery saved; no physics policy changes"
+  },
+  "default_enabled": false,
+  "source_bindings": {
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/report.json": "869e613b21c6055c9d079fa3b479b3cfc44250e0f77542db105ec6fa4050c8bc",
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/trace.ndjson": "3b453f0a02323597c90d59960f848c214395e67845ddacb9eb2a37b382a5b88a",
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/baseline/final-001580.diagnostic.npz": "1b5604a3964f82950c07ace2aeedf7beb1114731dfb80552f1e67537d97ae4d5",
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/report.json": "dcd006a624d4e5ed1ea4bb2aee22cffc652d5bad6229d4486223a95cbff50ff0",
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/trace.ndjson": "49c49dd28c37819fecf2ee01fccdeeec56a2a98783e4cfe2c570879ca0e0bf2a",
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/candidate/final-001580.diagnostic.npz": "3900b6973c4ef6d3d016980f35a0c362c0ee1cb9a1f9834366ff4de35762c767",
+    "/home/qunwang/wajueji/work/loaded-control-stop-retention-20260923-v2/compiled-force-limits.json": "582a5f1b0a293bdac391a7e621bf7d5b7288da36b0ec0057e771c8a942b0942b"
+  },
+  "all_exact_state_checks_pass": true,
+  "conclusion": {
+    "candidate_deployment_accepted": false,
+    "reason": "Candidate fails original tail15 stopping criteria after both2s neutral hold and1s post-reversal stop; baseline passes first hold but fails post-reversal stop. Tracking error improvement alone is insufficient.",
+    "causal_limit": "Matched initial full state and replay commands, but different material trajectory and load after frame480; these results do not isolate compensation dynamics from changed payload.",
+    "physical_force_qualified": false,
+    "off_soil_qualified": false,
+    "training_eligible": false,
+    "next_investigation": "Analyze reference velocity, actual velocity, MPM load, native rock impulse and compensation together; next candidate protocol should activate only after an identical loaded-state replay prefix, with no invented force cap or unqualified intermediate restore."
+  }
+}

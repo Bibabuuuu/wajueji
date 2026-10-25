@@ -1,0 +1,104 @@
+--- manual-before.py
++++ src/v4/run_layered_47_sparse_manual_contact_episode.py
+@@ -62,6 +62,8 @@
+ MAXIMUM_ROCK_LINEAR_SPEED_M_S = 5.0
+ MAXIMUM_ROCK_ANGULAR_SPEED_RAD_S = 25.0
+ BUCKET_INTERNAL_UPPER_TARGET_M = 0.852
++COMMAND_PREVIEW_SECONDS = 0.15
++KINEMATIC_JOINT_MARGIN_M = 0.005
+ COMMAND_LIMITS_SI = np.asarray(ACTION_SPEED_LIMIT_SI, dtype=np.float64)
+ KINEMATIC_PREVIEW_COMMAND_LIMITS_SI = np.asarray(
+     [0.12, 0.0225, 0.0225, 0.0225], dtype=np.float64)
+@@ -120,7 +122,7 @@
+ 
+ 
+ class ContactCommandProjector:
+-    """Preview joint bounds and preserve an 8 mm bucket-cylinder margin."""
++    """Limit outward curl without blocking other axes on bucket soft overshoot."""
+ 
+     def __init__(self, chain):
+         self.chain = chain
+@@ -130,10 +132,36 @@
+     def physical_bounds_ok(self, qpos) -> bool:
+         q = np.asarray(qpos, dtype=np.float64)
+         return bool(
+-            np.isfinite(q).all()
++            q.ndim == 1
++            and q.size > max(*motion.AXES, *self.chain.limits)
++            and np.isfinite(q).all()
+             and abs(q[motion.AXES[0]]) <= 2.992
+             and all(low <= q[index] <= high
+                     for index, (low, high) in self.chain.limits.items()))
++
++    def _advance_preview(self, command, dt):
++        # The legacy geometry helper applies a 5 mm margin to *every*
++        # joint, even held joints. Only for an already overshot bucket, let
++        # its preview hold or retreat from the actual position. Never clamp
++        # the pose or alter the physical bounds used by this projector.
++        limits = self.chain.limits
++        bucket = motion.AXES[3]
++        low, high = limits[bucket]
++        current = float(self.chain.q[bucket])
++        try:
++            if high - KINEMATIC_JOINT_MARGIN_M < current <= high:
++                self.chain.limits = {
++                    **limits,
++                    bucket: (low, np.nextafter(
++                        current + KINEMATIC_JOINT_MARGIN_M, np.inf)),
++                }
++            predicted, error = self.chain.advance(command, dt)
++        finally:
++            self.chain.limits = limits
++        if (current > high - KINEMATIC_JOINT_MARGIN_M
++                and predicted[bucket] > current + 1.0e-12):
++            raise ValueError("bucket_outward_soft_overshoot")
++        return predicted, error
+ 
+     def project(self, qpos, requested):
+         q = np.asarray(qpos, dtype=np.float64)
+@@ -143,9 +171,18 @@
+             raise ValueError("manual_contact_invalid_requested_command")
+         self.reason = None
+         self.bucket_end_stop_projected = False
+-        if (q[motion.AXES[3]] >= BUCKET_INTERNAL_UPPER_TARGET_M
+-                and command[3] > 0.0):
+-            command[3] = 0.0
++        if not self.physical_bounds_ok(q):
++            self.reason = "joint_working_range"
++            return np.zeros(4, dtype=np.float64)
++        # Bound the entire preview displacement, not just its starting pose.
++        # A full curl request near the end stop must not cancel a valid lift.
++        bucket_upper = min(
++            BUCKET_INTERNAL_UPPER_TARGET_M,
++            self.chain.limits[motion.AXES[3]][1] - KINEMATIC_JOINT_MARGIN_M)
++        outward_limit = max(
++            0.0, (bucket_upper - q[motion.AXES[3]]) / COMMAND_PREVIEW_SECONDS)
++        if command[3] > outward_limit:
++            command[3] = outward_limit
+             self.reason = "bucket_internal_upper_target"
+             self.bucket_end_stop_projected = True
+         if not np.any(command):
+@@ -159,10 +196,10 @@
+             scale = max(1.0, float(np.max(
+                 np.abs(command) / KINEMATIC_PREVIEW_COMMAND_LIMITS_SI)))
+             preview_command = command / scale
+-            remaining = 0.15 * scale
++            remaining = COMMAND_PREVIEW_SECONDS * scale
+             while remaining > 1.0e-12:
+                 dt = min(0.05, remaining)
+-                predicted, _ = self.chain.advance(preview_command, dt)
++                predicted, _ = self._advance_preview(preview_command, dt)
+                 if not self.physical_bounds_ok(predicted):
+                     raise ValueError("joint_working_range")
+                 remaining -= dt
+@@ -639,7 +676,9 @@
+                 "maximum_wall_seconds": MAXIMUM_WALL_SECONDS,
+                 "maximum_simulation_seconds": MAXIMUM_SIMULATION_SECONDS,
+                 "maximum_command_si": COMMAND_LIMITS_SI.tolist(),
+-                "command_preview_seconds": 0.15,
++                "command_preview_seconds": COMMAND_PREVIEW_SECONDS,
++                "bucket_soft_limit_policy": (
++                    "clip_outward_preview_allow_in_bounds_hold_or_retreat"),
+                 "kinematic_preview_command_limits_si":
+                     KINEMATIC_PREVIEW_COMMAND_LIMITS_SI.tolist(),
+                 "kinematic_preview_preserves_requested_joint_displacement":

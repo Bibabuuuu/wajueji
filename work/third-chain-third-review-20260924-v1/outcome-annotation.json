@@ -1,0 +1,9 @@
+{
+  "user_report": "又采集好了。这次还行，满斗率很高",
+  "recording_complete": true,
+  "working_fill_percent": 109.55446329475186,
+  "working_occupancy_threshold": 0.2,
+  "working_fill_meets_95": true,
+  "training_eligible": false,
+  "automatic_success_label": null
+}

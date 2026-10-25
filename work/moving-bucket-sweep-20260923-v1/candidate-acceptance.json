@@ -1,0 +1,22 @@
+{
+  "scope": "independent candidate only; no default deployment",
+  "fixed_inputs": "D-130 loaded state and original 887 applied commands",
+  "physical_configuration_changes": "only additional bucket path/contact correction and explicitly routed incremental velocity reactions",
+  "required": [
+    "all existing hard guards and Hencky guard",
+    "no source mutations",
+    "geometric real-failure points blocked; mouth bidirectional unchanged",
+    "protected endpoint first exits classified through mouth vs shell, separately from raw solver intermediate states",
+    "terminal deep shell occupancy",
+    "normal mouth unloading observed if original command duration sufficient",
+    "incremental impulse routed current step plus one-frame pending balance",
+    "runtime and correction magnitudes reported"
+  ],
+  "explicit_limits": [
+    "local rotation chord, not exact rotational CCD",
+    "native project_outside impulse remains unassigned as before",
+    "position correction is not converted to fictitious extra force",
+    "terminal pending actual-motion impulse is explicit; candidate diagnostics not resumable",
+    "same original 887 frame run ended mid-unload due wall budget; complete emptying not assumed"
+  ]
+}

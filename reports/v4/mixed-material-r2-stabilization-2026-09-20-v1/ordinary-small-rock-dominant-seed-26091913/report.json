@@ -1,0 +1,70 @@
+{
+  "heightfield_asset_sha256": "f567066321ebaf3d95f1a4074e22829ec295fdcecefa86163fe1b303cdef81e3",
+  "model_manifest_sha256": "7069b51a154cb13381658d52a3faf6191fa0cfbd3ede1070455605e1d7c36255",
+  "model_sha256": "0b4c70d5385ab34dcd2ba641b447c13e3f135c1b2b8e9bef1afa84cbf67c3b11",
+  "physics_qualified": false,
+  "pre_settling": {
+    "checks": {
+      "closure_within_limit": true,
+      "continuous_stability_window_reached": true,
+      "ground_contact_observed": true,
+      "no_forbidden_contacts": true
+    },
+    "continuous_stable_steps": 60,
+    "elapsed_s": 1.4416666666666886,
+    "final_maximum_angular_speed_rad_s": 0.0007242308390357973,
+    "final_maximum_linear_speed_m_s": 0.00015469975090745273,
+    "internal_substep_count": 3460,
+    "maximum_closure_m": 0.00018559952032367024,
+    "maximum_downward_shift_from_source_m": 0.10859661358050399,
+    "maximum_horizontal_shift_from_source_m": 0.0977027416043067,
+    "output_step_count": 173,
+    "required_continuous_stable_steps": 60,
+    "status": "pre_settling_stable",
+    "total_contact_substeps": {
+      "rock_bucket": 0,
+      "rock_ground": 3376,
+      "rock_ramp": 0,
+      "rock_rock": 2503,
+      "rock_truck": 0
+    }
+  },
+  "rebaked_verification": {
+    "checks": {
+      "closure_within_limit": true,
+      "displacement_within_limit": true,
+      "final_angular_speed_within_limit": true,
+      "final_linear_speed_within_limit": true,
+      "ground_contact_observed": true,
+      "no_forbidden_contacts": true,
+      "one_second_completed": true,
+      "twenty_rocks_preserved": true
+    },
+    "final_maximum_angular_speed_rad_s": 0.0007631456752978878,
+    "final_maximum_linear_speed_m_s": 0.00015451822980904302,
+    "forbidden_contact_count": 0,
+    "maximum_closure_m": 0.0001855995182071645,
+    "maximum_rock_displacement_m": 0.00015316415237883913,
+    "rock_ground_contact_substeps": 2400,
+    "status": "rebaked_stability_passed"
+  },
+  "scene_class": "ordinary-small-rock-dominant",
+  "scene_id": "ordinary-small-rock-dominant-seed-26091913",
+  "schema": "excavation_mixed_material_r2_stabilization_scene_report_v1",
+  "spatial_review": {
+    "checks": {
+      "all_vertices_inside_source_region": true,
+      "center_horizontal_shift_within_limit": true,
+      "original_boundary_safety_retained": true,
+      "rock_count_unchanged": true,
+      "rock_sizes_and_masses_unchanged": true,
+      "surface_penetration_within_limit": true
+    },
+    "maximum_center_horizontal_shift_m": 0.09634843157934399,
+    "minimum_boundary_clearance_m": 0.09439525007623373,
+    "minimum_vertex_analytic_surface_clearance_m": -0.00011168787830953542,
+    "source_boundary_safety_requirement_m": 0.08
+  },
+  "stable_initial_state_sha256": "3c7abdcd66fc6fe85726b76b735756c0c143680923a8ff4bd08c378055447153",
+  "status": "stable_initial_state_verified"
+}

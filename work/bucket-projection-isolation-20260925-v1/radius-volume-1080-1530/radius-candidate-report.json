@@ -1,0 +1,138 @@
+{
+  "status": "bounded_radius_candidate_passed",
+  "candidate": "radius_half_spacing_volume_match",
+  "source": "/home/qunwang/wajueji/work/bucket-projection-isolation-20260925-v1/manual-prefix-continuation-1620/state-001080.npz",
+  "source_sha256": "c2c03dfc67e5b9edd9e835d66c4109a6f25d3b50df9e141f5e7f56d8760a113f",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "start_frame": 1080,
+  "end_frame_limit": 1530,
+  "wall_limit_seconds": 180,
+  "old_default_unchanged": true,
+  "training_eligible": false,
+  "rows": [
+    {
+      "frame": 1081,
+      "occupied_2cm_cells": 9360,
+      "maximum_particles_per_cell": 18,
+      "negative_side_2cm_count": 423,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 0.0032579898834228516,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1200,
+      "occupied_2cm_cells": 9184,
+      "maximum_particles_per_cell": 19,
+      "negative_side_2cm_count": 471,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 0.9421007633209229,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1400,
+      "occupied_2cm_cells": 8907,
+      "maximum_particles_per_cell": 23,
+      "negative_side_2cm_count": 539,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 2.8599326610565186,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1490,
+      "occupied_2cm_cells": 8804,
+      "maximum_particles_per_cell": 26,
+      "negative_side_2cm_count": 505,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.0552024841308594,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1500,
+      "occupied_2cm_cells": 8779,
+      "maximum_particles_per_cell": 26,
+      "negative_side_2cm_count": 519,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.05961012840271,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1510,
+      "occupied_2cm_cells": 8691,
+      "maximum_particles_per_cell": 26,
+      "negative_side_2cm_count": 539,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.06459903717041,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1520,
+      "occupied_2cm_cells": 8421,
+      "maximum_particles_per_cell": 26,
+      "negative_side_2cm_count": 556,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.0725903511047363,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    },
+    {
+      "frame": 1530,
+      "occupied_2cm_cells": 8162,
+      "maximum_particles_per_cell": 29,
+      "negative_side_2cm_count": 571,
+      "source_particles_still_in_cavity": 12086,
+      "max_abs_particle_difference_from_P0_m": 3.0817086696624756,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    }
+  ],
+  "command_changes": [],
+  "zero_step": {
+    "physical_arrays_unchanged": {
+      "particle_q": true,
+      "particle_qd": true,
+      "particle_f": true,
+      "particle_elastic_strain": true,
+      "particle_Jp": true,
+      "particle_stress": true,
+      "particle_qd_grad": true,
+      "particle_transform": true
+    },
+    "old_radius_m": 0.011250000447034836,
+    "new_radius_m": 0.012500000186264515,
+    "old_solver_volume_m3": 1.1390625331841875e-05,
+    "new_solver_volume_m3": 1.5625000742147677e-05,
+    "old_effective_density_kg_m3": 2290.80908203125,
+    "new_effective_density_kg_m3": 1669.9998779296875,
+    "intended_density_kg_m3": 1670.0,
+    "solver_warmstart": "cleared_after_radius_change",
+    "exact_old_solver_continuation": false
+  },
+  "tracked_particle_count": 12086,
+  "frames_completed": 450,
+  "wall_seconds": 74.37733700199169,
+  "full_run_audit": {
+    "all_450_hard_guard_safe": true,
+    "all_450_material_guard_safe": true,
+    "all_450_sweep_safe": true,
+    "all_450_applied_commands_match_saved": true,
+    "source_hash_unchanged": true,
+    "input_hash_unchanged": true,
+    "maximum_material_rejections": 0,
+    "minimum_particle_z_m": -0.000995731563307345,
+    "maximum_particle_speed_m_s": 6.676863193511963
+  }
+}

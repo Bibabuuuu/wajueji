@@ -1,0 +1,163 @@
+{
+  "physics_steps_added": 0,
+  "checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v7/scoop1500/final.npz",
+    "sha256": "82e3a9f819694cba98b6c03fd7a2a48a932306145bfc52953d2ac6a059e90187"
+  },
+  "independent_flood_equals_production": true,
+  "ground_connected_particles": 248228,
+  "occupied_voxels": 90439,
+  "ground_connected_voxels": 83005,
+  "nearest_gap_m": 4.4913009233926715e-07,
+  "production": {
+    "remaining_soil_gap_m": 4.4913009233926715e-07,
+    "ground_connected_particles": 248228,
+    "connectivity_cell_m": 0.04,
+    "ground_anchor_below_z_m": 0.06,
+    "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+  },
+  "nearest": [
+    {
+      "particle_id": 37117,
+      "gap_m": 4.4913009233926715e-07,
+      "world_m": [
+        3.835777521133423,
+        0.10536058992147446,
+        1.6659889221191406
+      ],
+      "bucket_local_m": [
+        0.12654138792643854,
+        -0.2949138781708926,
+        -1.1063508598045722
+      ]
+    },
+    {
+      "particle_id": 49575,
+      "gap_m": 3.84093566312485e-06,
+      "world_m": [
+        3.836775541305542,
+        0.10125724971294403,
+        1.6651912927627563
+      ],
+      "bucket_local_m": [
+        0.12713762746462745,
+        -0.2990988769880724,
+        -1.105576301198417
+      ]
+    },
+    {
+      "particle_id": 180105,
+      "gap_m": 9.653276863065552e-06,
+      "world_m": [
+        3.7827115058898926,
+        0.6786665916442871,
+        1.6561020612716675
+      ],
+      "bucket_local_m": [
+        0.1339438061992258,
+        0.2808007081668901,
+        -1.0967882825226862
+      ]
+    },
+    {
+      "particle_id": 105112,
+      "gap_m": 9.68910510366558e-06,
+      "world_m": [
+        3.7464370727539062,
+        0.6744551658630371,
+        1.7080333232879639
+      ],
+      "bucket_local_m": [
+        0.09504502490408161,
+        0.2803921330560799,
+        -1.1469594342055478
+      ]
+    },
+    {
+      "particle_id": 41298,
+      "gap_m": 9.698399398461177e-06,
+      "world_m": [
+        3.8351759910583496,
+        0.1104726791381836,
+        1.6660982370376587
+      ],
+      "bucket_local_m": [
+        0.12645618203818743,
+        -0.2897669376427117,
+        -1.1064456622212007
+      ]
+    },
+    {
+      "particle_id": 105051,
+      "gap_m": 9.712489298045052e-06,
+      "world_m": [
+        3.7475738525390625,
+        0.6920803189277649,
+        1.7038135528564453
+      ],
+      "bucket_local_m": [
+        0.0982058088124302,
+        0.2978028782352978,
+        -1.1428826525436473
+      ]
+    },
+    {
+      "particle_id": 105086,
+      "gap_m": 9.715572999866723e-06,
+      "world_m": [
+        3.762566328048706,
+        0.6915403604507446,
+        1.6826879978179932
+      ],
+      "bucket_local_m": [
+        0.11402976485917825,
+        0.29570359056252654,
+        -1.122473087162572
+      ]
+    },
+    {
+      "particle_id": 41330,
+      "gap_m": 9.738523130277399e-06,
+      "world_m": [
+        3.8334755897521973,
+        0.10575300455093384,
+        1.6692028045654297
+      ],
+      "bucket_local_m": [
+        0.12413071153434585,
+        -0.29428373049294604,
+        -1.1094449624112153
+      ]
+    },
+    {
+      "particle_id": 102393,
+      "gap_m": 9.741755586226142e-06,
+      "world_m": [
+        3.819746494293213,
+        0.13505256175994873,
+        1.684279441833496
+      ],
+      "bucket_local_m": [
+        0.11283765699700009,
+        -0.2637130601501424,
+        -1.124010611730324
+      ]
+    },
+    {
+      "particle_id": 41738,
+      "gap_m": 9.746998337736845e-06,
+      "world_m": [
+        3.771235942840576,
+        0.3821631669998169,
+        1.716273307800293
+      ],
+      "bucket_local_m": [
+        0.08887287835109002,
+        -0.012892756141359894,
+        -1.1549201048537754
+      ]
+    }
+  ],
+  "conclusion": "v7 endpoint does not pass original 3mm gate; six-neighbor connectivity and solid distance independently reproduced",
+  "limits": "Connectivity is still the frozen 4cm voxel heuristic. Not a calibrated material/contact truth; no threshold or particle exclusion changed."
+}

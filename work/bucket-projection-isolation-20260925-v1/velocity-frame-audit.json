@@ -1,0 +1,28 @@
+{
+  "source": "runs/layered-47-loaded-transport-v1/loaded-transport-20260923-215454-962382/physics.ndjson",
+  "sample_count": 598,
+  "bucket_inertial_offset_m": [
+    0.231,
+    0,
+    -0.468
+  ],
+  "error_quantiles_m_s": [
+    [
+      0.03387842111170437,
+      0.00027907056128209943
+    ],
+    [
+      0.04842518534523134,
+      0.012746598459205078
+    ],
+    [
+      0.1312715752703,
+      0.09902324347002954
+    ]
+  ],
+  "columns": [
+    "reported_COM_as_origin",
+    "corrected_origin_velocity"
+  ],
+  "qualification": "central frame finite difference; not exact instantaneous Jacobian"
+}

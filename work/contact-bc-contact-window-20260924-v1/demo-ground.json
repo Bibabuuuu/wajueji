@@ -1,0 +1,140 @@
+{
+  "ground_reference_z_m": 0.0,
+  "guard_margin_m": 0.005,
+  "guard_validation": "Read-only evaluation on recorded states; no guarded physical rerun.",
+  "bucket_geometry": "actual display CAD vertices, existing assembly",
+  "results": [
+    {
+      "run": "manual-contact-20260924-005742-1081585",
+      "frames": 1276,
+      "minimum_bucket_mesh_z_m": 0.31271598127970535,
+      "minimum_frame": 173,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 0,
+      "first_below_2cm_frame": null
+    },
+    {
+      "run": "manual-contact-20260924-010900-1088617",
+      "frames": 1311,
+      "minimum_bucket_mesh_z_m": 0.25810583845790047,
+      "minimum_frame": 273,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 0,
+      "first_below_2cm_frame": null
+    },
+    {
+      "run": "manual-contact-20260924-083547-1327233",
+      "frames": 1723,
+      "minimum_bucket_mesh_z_m": 0.17436651007486637,
+      "minimum_frame": 636,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 0,
+      "first_below_2cm_frame": null
+    },
+    {
+      "run": "manual-contact-20260924-093202-1362929",
+      "frames": 1264,
+      "minimum_bucket_mesh_z_m": -0.0322624515705352,
+      "minimum_frame": 407,
+      "ground_guard_first_stop_frame": 344,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 116,
+      "first_below_zero_frame": 348,
+      "below_2cm_frames": 147,
+      "first_below_2cm_frame": 340
+    },
+    {
+      "run": "manual-contact-20260924-100857-1387193",
+      "frames": 1132,
+      "minimum_bucket_mesh_z_m": 0.36003900103368625,
+      "minimum_frame": 233,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 0,
+      "first_below_2cm_frame": null
+    },
+    {
+      "run": "manual-contact-20260924-110051-1421079",
+      "frames": 1461,
+      "minimum_bucket_mesh_z_m": 0.017233087420988613,
+      "minimum_frame": 861,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 17,
+      "first_below_2cm_frame": 853
+    },
+    {
+      "run": "manual-contact-20260924-110932-1426831",
+      "frames": 1408,
+      "minimum_bucket_mesh_z_m": 0.05342695428139077,
+      "minimum_frame": 540,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 0,
+      "first_below_2cm_frame": null
+    },
+    {
+      "run": "manual-contact-20260924-113555-1443279",
+      "frames": 1411,
+      "minimum_bucket_mesh_z_m": 0.3578348416069832,
+      "minimum_frame": 269,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 0,
+      "first_below_2cm_frame": null
+    },
+    {
+      "run": "manual-contact-20260924-114908-1452582",
+      "frames": 1674,
+      "minimum_bucket_mesh_z_m": 0.014875687187610565,
+      "minimum_frame": 608,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 55,
+      "first_below_2cm_frame": 557
+    },
+    {
+      "run": "manual-contact-20260924-115812-1458627",
+      "frames": 1490,
+      "minimum_bucket_mesh_z_m": 0.011542813884418468,
+      "minimum_frame": 566,
+      "ground_guard_first_stop_frame": null,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 0,
+      "first_below_zero_frame": null,
+      "below_2cm_frames": 31,
+      "first_below_2cm_frame": 546
+    },
+    {
+      "run": "bc600",
+      "frames": 600,
+      "minimum_bucket_mesh_z_m": -0.8509308929807433,
+      "minimum_frame": 590,
+      "ground_guard_first_stop_frame": 340,
+      "guard_geometry_error_m": 0.0,
+      "below_zero_frames": 260,
+      "first_below_zero_frame": 341,
+      "below_2cm_frames": 264,
+      "first_below_2cm_frame": 337
+    }
+  ]
+}

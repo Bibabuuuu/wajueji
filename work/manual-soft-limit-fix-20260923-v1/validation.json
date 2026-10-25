@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "baseline_all_1329_reproduced": true,
+    "late_130_lift_requests_preserved": true,
+    "all_predicted_poses_hard_bounded_and_closed": true,
+    "actual_pose_never_changed": true,
+    "physical_limits_restored": true,
+    "hard_bound_rejection": true,
+    "report_bindings_unchanged": true,
+    "tests26_passed": true
+  },
+  "tests_source": {
+    "/home/qunwang/wajueji/tests/v4/test_layered_47_sparse_manual_contact_episode.py": "d5e8934785119ce662069652eda5487a3f6bd34e52e65fcc5431d37e8341eddd"
+  },
+  "loaded_lift_verified": false,
+  "soil_loss_fixed": false
+}

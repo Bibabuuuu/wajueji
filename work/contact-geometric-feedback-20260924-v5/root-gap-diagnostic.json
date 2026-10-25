@@ -1,0 +1,84 @@
+{
+  "scope": "Read-only upper mouth rim diagnostic; user identified this region in a screenshot.\n\nUses saved float32 display particles and existing 4cm connectivity heuristic.\nParticle-center gap is not a physical surface clearance or calibrated trigger.\n",
+  "feature": "representative upper mouth rim line across inner width; user identified upper root region, exact CAD edge remains an approximation",
+  "local_xz": [
+    0.021459,
+    -0.157745
+  ],
+  "width_m": 0.5994900000000001,
+  "rows": [
+    {
+      "frame_end": 422,
+      "upper_rim_particle_center_gap_m": 0.32945258359720675,
+      "ground_connected_particles": 250385,
+      "nearest_world_point": [
+        5.195009708404541,
+        0.37588027119636536,
+        1.5722723007202148
+      ]
+    },
+    {
+      "frame_end": 480,
+      "upper_rim_particle_center_gap_m": 0.214855329660651,
+      "ground_connected_particles": 250564,
+      "nearest_world_point": [
+        5.270822048187256,
+        0.4260125756263733,
+        1.4923213720321655
+      ]
+    },
+    {
+      "frame_end": 540,
+      "upper_rim_particle_center_gap_m": 0.13216988074073552,
+      "ground_connected_particles": 250392,
+      "nearest_world_point": [
+        5.26332950592041,
+        0.45318666100502014,
+        1.451756238937378
+      ]
+    },
+    {
+      "frame_end": 600,
+      "upper_rim_particle_center_gap_m": 0.12170140088721387,
+      "ground_connected_particles": 250353,
+      "nearest_world_point": [
+        5.289458751678467,
+        0.34564289450645447,
+        1.437876582145691
+      ]
+    },
+    {
+      "frame_end": 633,
+      "upper_rim_particle_center_gap_m": 0.12694163761025695,
+      "ground_connected_particles": 250391,
+      "nearest_world_point": [
+        5.3508076667785645,
+        0.5738939046859741,
+        1.355337381362915
+      ]
+    },
+    {
+      "frame_end": 740,
+      "upper_rim_particle_center_gap_m": 0.07058653202782778,
+      "ground_connected_particles": 250298,
+      "nearest_world_point": [
+        5.283573150634766,
+        0.5760296583175659,
+        1.365220069885254
+      ]
+    },
+    {
+      "frame_end": 900,
+      "upper_rim_particle_center_gap_m": 0.06523246782503979,
+      "ground_connected_particles": 250123,
+      "nearest_world_point": [
+        5.085987091064453,
+        0.5998802781105042,
+        1.272537350654602
+      ]
+    }
+  ],
+  "physics_steps": 0,
+  "used_for_control": false,
+  "input_run": "runs/contact-geometric-probe-20260924-v5/contact900"
+}

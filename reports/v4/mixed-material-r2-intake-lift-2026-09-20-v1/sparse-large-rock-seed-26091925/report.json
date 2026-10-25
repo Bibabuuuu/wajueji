@@ -1,0 +1,206 @@
+{
+  "metrics": {
+    "checks": {
+      "closure_within_one_mm": true,
+      "completed_full_schedule": true,
+      "final_retained_full_rock_count": true,
+      "finite_state": true,
+      "intake_end_had_full_rock": true,
+      "no_forbidden_contacts": true,
+      "retained_rock_lifted_from_intake_end": true,
+      "retained_rocks_final_speed_within_limit": true,
+      "twenty_rock_identities_preserved": true
+    },
+    "contact_substeps": {
+      "rock_bucket": 19087,
+      "rock_ground": 64800,
+      "rock_ramp": 0,
+      "rock_rock": 0,
+      "rock_truck": 0
+    },
+    "expected_output_steps": 3240,
+    "final_observation": {
+      "center_inside_count": 2,
+      "full_envelope_inside_count": 2,
+      "full_envelope_inside_mass_kg": 4.166614173,
+      "full_envelope_inside_rock_ids": [
+        "r2-rock-010",
+        "r2-rock-019"
+      ],
+      "mouth_straddling_proxy_count": 2
+    },
+    "final_retained_full_rock_count": 2,
+    "final_retained_full_rock_ids": [
+      "r2-rock-010",
+      "r2-rock-019"
+    ],
+    "final_retained_mass_kg": 4.166614173,
+    "final_retained_maximum_speed_m_s": 0.011510278708254568,
+    "intake_end_full_rock_ids": [
+      "r2-rock-019"
+    ],
+    "lifted_retained_full_rock_ids": [
+      "r2-rock-010"
+    ],
+    "maximum_bucket_rock_force_n": 27581.275747936284,
+    "maximum_bucket_rock_torque_nm": 5407.054058917622,
+    "maximum_closure_m": 0.00034922205123260784,
+    "maximum_forbidden_contact_count": 0,
+    "output_steps_completed": 3240,
+    "phase_end_observations": {
+      "coarse_vertical_approach": {
+        "bucket_origin_world_m": [
+          5.217443857494022,
+          -0.01007739222957417,
+          0.87679134317701
+        ],
+        "cumulative_bucket_contact_substeps": 3903,
+        "maximum_bucket_rock_force_n": 27581.275747936284,
+        "maximum_bucket_rock_torque_nm": 5407.054058917622,
+        "observation": {
+          "center_inside_count": 1,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 1.066566855,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-019"
+          ],
+          "mouth_straddling_proxy_count": 0
+        },
+        "time_s": 14.499999999990873
+      },
+      "curl_intake": {
+        "bucket_origin_world_m": [
+          5.18867028776681,
+          5.285753020763721e-06,
+          0.5861897223134303
+        ],
+        "cumulative_bucket_contact_substeps": 8294,
+        "maximum_bucket_rock_force_n": 27581.275747936284,
+        "maximum_bucket_rock_torque_nm": 5407.054058917622,
+        "observation": {
+          "center_inside_count": 2,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 1.066566855,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-019"
+          ],
+          "mouth_straddling_proxy_count": 1
+        },
+        "time_s": 22.499999999983597
+      },
+      "fine_vertical_approach": {
+        "bucket_origin_world_m": [
+          5.1886656945732215,
+          -6.760022122620397e-07,
+          0.5863185112252494
+        ],
+        "cumulative_bucket_contact_substeps": 7877,
+        "maximum_bucket_rock_force_n": 27581.275747936284,
+        "maximum_bucket_rock_torque_nm": 5407.054058917622,
+        "observation": {
+          "center_inside_count": 1,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 1.066566855,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-019"
+          ],
+          "mouth_straddling_proxy_count": 0
+        },
+        "time_s": 20.499999999985416
+      },
+      "hold_after_lift": {
+        "bucket_origin_world_m": [
+          5.215362747074251,
+          3.7347440503916802e-06,
+          0.8629330254236904
+        ],
+        "cumulative_bucket_contact_substeps": 19087,
+        "maximum_bucket_rock_force_n": 27581.275747936284,
+        "maximum_bucket_rock_torque_nm": 5407.054058917622,
+        "observation": {
+          "center_inside_count": 2,
+          "full_envelope_inside_count": 2,
+          "full_envelope_inside_mass_kg": 4.166614173,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-010",
+            "r2-rock-019"
+          ],
+          "mouth_straddling_proxy_count": 2
+        },
+        "time_s": 26.999999999979504
+      },
+      "settle": {
+        "bucket_origin_world_m": [
+          4.674000812230082,
+          -1.3208550497880911e-06,
+          3.4573699653949923
+        ],
+        "cumulative_bucket_contact_substeps": 0,
+        "maximum_bucket_rock_force_n": 0.0,
+        "maximum_bucket_rock_torque_nm": 0.0,
+        "observation": {
+          "center_inside_count": 0,
+          "full_envelope_inside_count": 0,
+          "full_envelope_inside_mass_kg": 0,
+          "full_envelope_inside_rock_ids": [],
+          "mouth_straddling_proxy_count": 1
+        },
+        "time_s": 0.5000000000000081
+      },
+      "settle_after_intake": {
+        "bucket_origin_world_m": [
+          5.1886238387160555,
+          5.116643851472834e-05,
+          0.5861727411167916
+        ],
+        "cumulative_bucket_contact_substeps": 10687,
+        "maximum_bucket_rock_force_n": 27581.275747936284,
+        "maximum_bucket_rock_torque_nm": 5407.054058917622,
+        "observation": {
+          "center_inside_count": 2,
+          "full_envelope_inside_count": 1,
+          "full_envelope_inside_mass_kg": 1.066566855,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-019"
+          ],
+          "mouth_straddling_proxy_count": 2
+        },
+        "time_s": 23.499999999982688
+      },
+      "short_lift": {
+        "bucket_origin_world_m": [
+          5.215246670815987,
+          1.382597583040907e-05,
+          0.8612062960455884
+        ],
+        "cumulative_bucket_contact_substeps": 14287,
+        "maximum_bucket_rock_force_n": 27581.275747936284,
+        "maximum_bucket_rock_torque_nm": 5407.054058917622,
+        "observation": {
+          "center_inside_count": 2,
+          "full_envelope_inside_count": 2,
+          "full_envelope_inside_mass_kg": 4.166614173,
+          "full_envelope_inside_rock_ids": [
+            "r2-rock-010",
+            "r2-rock-019"
+          ],
+          "mouth_straddling_proxy_count": 2
+        },
+        "time_s": 24.999999999981323
+      }
+    },
+    "runtime_error": null,
+    "simulated_duration_s": 26.999999999979504,
+    "status": "short_lift_hold_scene_candidate",
+    "vertical_lift_from_intake_end_m_by_rock": {
+      "r2-rock-010": 0.11929951705616973,
+      "r2-rock-019": -0.00018647992310866224
+    }
+  },
+  "physics_qualified": false,
+  "scene_class": "sparse-large-rock",
+  "scene_id": "sparse-large-rock-seed-26091925",
+  "schema": "excavation_mixed_material_r2_intake_lift_scene_report_v1",
+  "scope_limit": "replays the two-scene intake trajectory plus 1.5-second lift and 2-second hold; no ten-second hold, dump, fill-rate or MPM qualification",
+  "status": "short_lift_hold_scene_candidate"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "fast_third_prepoint_qualified",
+  "checks": {
+    "source_unchanged": true,
+    "normal_second_endpoint": true,
+    "unwithdrawn_arrays_exact": true,
+    "initialized_arrays_readback_exact": true,
+    "prepare_passed": true,
+    "independent_restore_exact": true,
+    "audit_passed": true,
+    "manual_passed": true,
+    "manual_audit_arrays_equal": true,
+    "third_scoop": true,
+    "source_lineage_preserved": true,
+    "prior_inventory_preserved": true,
+    "no_duplicate_withdrawal": true,
+    "reset_persists": true,
+    "explicitly_not_continuous": true,
+    "runs/fast-contact-collection/20260924-115633-1457317/prepare_safe_zero_contact": true,
+    "runs/fast-contact-collection/20260924-115633-1457317/restore-audit_safe_zero_contact": true,
+    "runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115711-1457810_safe_zero_contact": true
+  },
+  "source": {
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-114908-1452582/final-001674.cycle.npz",
+    "size_bytes": 54005102,
+    "mtime_ns": 1790222118396110840,
+    "sha256": "73aa8f1a4e040c15aa978a22dc946260481f9b1d72f71ce559ddae2eef8c3c5c"
+  },
+  "prepoint": {
+    "path": "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz",
+    "sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b"
+  },
+  "lineage_root": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+  "cycle_index": 3,
+  "withdrawal_counts": [
+    {
+      "soil": 14529,
+      "rocks": 5
+    },
+    {
+      "soil": 9426,
+      "rocks": 2
+    }
+  ],
+  "prepare_wall_seconds": 8.36888960498618,
+  "tip_world_m": [
+    6.145101508728304,
+    0.6437725390096322,
+    1.7307196974754333
+  ],
+  "contact_xy_m": [
+    5.6478228927681355,
+    0.5916766840042811
+  ],
+  "contact_z_m": 1.0307196974754333,
+  "manual_probe": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115711-1457810",
+  "manual_audit_array_equal": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "scope": "Fast training reset preserves excavated stock; not truck delivery or continuous three-scoop completion.",
+  "evidence_sha256": {
+    "runs/fast-contact-collection/20260924-115633-1457317/prepare/report.json": "3510caab897ceaf8ecc2fe960d9b890becb1bc66951cc09f0cd8e1257b5bb689",
+    "runs/fast-contact-collection/20260924-115633-1457317/restore-audit/audit.json": "096ad63d741bcc1d7c02baab5557f4875fc32a1a4bae5e8b4de1c41eb1ef4195",
+    "runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115711-1457810/report.json": "f9b0e873282799425d2e6564eaf45d58d785a362e3c7fc9b8bb687d16b308d1c",
+    "work/third-chain-third-preparation-20260924-v1/review.py": "717f1007b016fe13cbd13ef95266f29c2b5533a44fa5f97d17aea0f1b391a2b2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "reference_commands_passed",
+  "physics_steps_added": 0,
+  "scope": "Every nominal reference pose, not closed-loop physical or kinematic rollout",
+  "count": 5174,
+  "max_normalized_command_step": 0.03333333333333335,
+  "wall_seconds": 123.83175661001587,
+  "inputs": {
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/controller.py": "88a220625360504ad29dfa791280c2f393a3b008c762068e1b5f3e617ed01bf0",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/plan.py": "bf45f906cd39b2fa12b17576300abe894c08985923c30759d049ca6d5546fb2d",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/load_tracking.py": "172d22e5a86dcdea4912e9a6b024cbcf2260ea266e06ccad6c5faaedd144fae1",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v2/runtime.py": "a1afaf556aaade87d7e9f9c7636b67160409800fd12492f1b481cf8955d2e7a0",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8"
+  }
+}

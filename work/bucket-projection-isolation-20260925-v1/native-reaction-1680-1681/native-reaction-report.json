@@ -1,0 +1,72 @@
+{
+  "status": "bounded_candidate_passed",
+  "candidate": "route_native_projection_velocity_reaction",
+  "start_frame": 1680,
+  "end_frame_limit": 1681,
+  "wall_limit_seconds": 45,
+  "source_sha256": "c50c4f6239ff165a871c166d6360d24bc4c0fe79b168c5f9e9fed84a8c6504de",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "original_default_unchanged": true,
+  "training_eligible": false,
+  "position_correction_impulse_included": false,
+  "rows": [
+    {
+      "frame": 1681,
+      "occupied_2cm_cells": 7483,
+      "maximum_particles_per_cell": 130,
+      "source_particles_still_in_cavity": 14307,
+      "max_abs_particle_difference_from_P0_m": 9.5367431640625e-07,
+      "hard_guard": true,
+      "material_guard_safe": true,
+      "sweep_safe": true
+    }
+  ],
+  "command_changes": [],
+  "guards_failed": [],
+  "zero_step_physical_arrays_unchanged": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_elastic_strain": true,
+    "particle_Jp": true,
+    "particle_stress": true,
+    "particle_qd_grad": true,
+    "particle_transform": true
+  },
+  "tracked_particle_count": 14332,
+  "frames_completed": 1,
+  "wall_seconds": 4.584057671978371,
+  "reaction": {
+    "calls": 1,
+    "routed_steps": 1,
+    "maximum_linear_balance_residual_ns": 1.1102230246251565e-16,
+    "dynamic_reaction_ns": [
+      0.06846739748064534,
+      0.13428157911300173,
+      0.10569670485754284
+    ],
+    "static_reaction_ns": [
+      -0.0007410136940440011,
+      -8.053126996363565e-08,
+      -0.005607013114762235
+    ],
+    "particle_velocity_impulse_ns": [
+      -0.06772638378660134,
+      -0.13428149858173177,
+      -0.1000896917427805
+    ],
+    "routed_dynamic_reaction_ns": [
+      0.06846739748064534,
+      0.13428157911300173,
+      0.10569670485754284
+    ],
+    "dynamic_route_residual_ns": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "corrected_particles_total": 691,
+    "static_reaction_not_routed_to_mujoco": true,
+    "position_correction_impulse_included": false
+  }
+}

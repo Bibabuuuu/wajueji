@@ -1,0 +1,107 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-182307-822279",
+  "trace_prefix_frames": 1329,
+  "trace_prefix_sha256": "d0b5946573e310483efb330203d64bd20ba0c04407ae1e82158195503f5e0836",
+  "windows": [
+    {
+      "frames": [
+        1,
+        169
+      ],
+      "end_particle_max_speed_m_s": 0.021616224199533463,
+      "end_particle_p99_speed_m_s": 0.012636463157832623,
+      "peak_particle_speed_m_s": 0.22589170932769775,
+      "peak_p99_speed_m_s": 0.03589533641934395,
+      "minimum_particle_z_m": 0.011117011308670044,
+      "max_projection_delta_m": 0.1183762002598163,
+      "max_projection_velocity_delta_m_s": 0.1697081283147473,
+      "all_commands_zero_frames": 40
+    },
+    {
+      "frames": [
+        170,
+        277
+      ],
+      "end_particle_max_speed_m_s": 0.7432814836502075,
+      "end_particle_p99_speed_m_s": 0.14552761614322662,
+      "peak_particle_speed_m_s": 0.8880438804626465,
+      "peak_p99_speed_m_s": 0.19490619003772736,
+      "minimum_particle_z_m": 0.00749235088005662,
+      "max_projection_delta_m": 0.017930561813700643,
+      "max_projection_velocity_delta_m_s": 1.0758232877605618,
+      "all_commands_zero_frames": 2
+    },
+    {
+      "frames": [
+        278,
+        600
+      ],
+      "end_particle_max_speed_m_s": 4.456079959869385,
+      "end_particle_p99_speed_m_s": 0.018338507041335106,
+      "peak_particle_speed_m_s": 7.974411487579346,
+      "peak_p99_speed_m_s": 0.6207424402236938,
+      "minimum_particle_z_m": 0.003328407183289528,
+      "max_projection_delta_m": 0.039841219845491986,
+      "max_projection_velocity_delta_m_s": 2.39047168535866,
+      "all_commands_zero_frames": 27
+    },
+    {
+      "frames": [
+        601,
+        800
+      ],
+      "end_particle_max_speed_m_s": 0.38129785656929016,
+      "end_particle_p99_speed_m_s": 0.01630553975701332,
+      "peak_particle_speed_m_s": 7.165698528289795,
+      "peak_p99_speed_m_s": 0.236222505569458,
+      "minimum_particle_z_m": 0.003981298767030239,
+      "max_projection_delta_m": 0.026555992081417974,
+      "max_projection_velocity_delta_m_s": 1.5933595819068802,
+      "all_commands_zero_frames": 42
+    },
+    {
+      "frames": [
+        801,
+        1000
+      ],
+      "end_particle_max_speed_m_s": 4.272019386291504,
+      "end_particle_p99_speed_m_s": 0.06408004462718964,
+      "peak_particle_speed_m_s": 8.17861270904541,
+      "peak_p99_speed_m_s": 0.3122379779815674,
+      "minimum_particle_z_m": 0.004332047887146473,
+      "max_projection_delta_m": 0.10091854194200735,
+      "max_projection_velocity_delta_m_s": 6.055112902007216,
+      "all_commands_zero_frames": 173
+    },
+    {
+      "frames": [
+        1001,
+        1193
+      ],
+      "end_particle_max_speed_m_s": 9.87004566192627,
+      "end_particle_p99_speed_m_s": 0.3978736400604248,
+      "peak_particle_speed_m_s": 15.850961685180664,
+      "peak_p99_speed_m_s": 0.6398797631263733,
+      "minimum_particle_z_m": -1.4294001630332787e-05,
+      "max_projection_delta_m": 0.11159554737555802,
+      "max_projection_velocity_delta_m_s": 6.695729012990878,
+      "all_commands_zero_frames": 113
+    },
+    {
+      "frames": [
+        1194,
+        1329
+      ],
+      "end_particle_max_speed_m_s": 7.1700944900512695,
+      "end_particle_p99_speed_m_s": 1.114007830619812,
+      "peak_particle_speed_m_s": 14.640865325927734,
+      "peak_p99_speed_m_s": 1.1906843185424805,
+      "minimum_particle_z_m": -0.0009734993218444288,
+      "max_projection_delta_m": 0.09310458561420266,
+      "max_projection_velocity_delta_m_s": 5.58626842870741,
+      "all_commands_zero_frames": 136
+    }
+  ],
+  "snapshot_missing_at_assessment": true,
+  "qualification": "Global metrics confirm particle motion, not the location/cause of the pictured hole. Minimum z alone cannot exclude local collision failure; no material parameters changed."
+}

@@ -1,0 +1,69 @@
+{
+  "path": "/home/qunwang/wajueji/work/soil-projection-isolation-20260923-v2/candidate-001193.npz",
+  "size_bytes": 26245193,
+  "mtime_ns": 1790161737660724382,
+  "sha256": "cc84eb8eaccd2653dcb315468de451c81359d608b7974284287f4eef227a0821",
+  "schema": "rejected_raw_diagnostic_not_checkpoint_v1",
+  "status": "rejected_raw_diagnostic_only",
+  "rejection": "causal diagnostic only; retains existing invalid Jp; never resume/train",
+  "resume_qualified": false,
+  "training_eligible": false,
+  "nonfinite_fields": {
+    "particle_Jp": {
+      "count": 11578,
+      "first_indices": [
+        [
+          44307
+        ],
+        [
+          44308
+        ],
+        [
+          44310
+        ],
+        [
+          44311
+        ],
+        [
+          44312
+        ],
+        [
+          44313
+        ],
+        [
+          44321
+        ],
+        [
+          44324
+        ],
+        [
+          44325
+        ],
+        [
+          44327
+        ],
+        [
+          44328
+        ],
+        [
+          44329
+        ],
+        [
+          44382
+        ],
+        [
+          44386
+        ],
+        [
+          44390
+        ],
+        [
+          44391
+        ]
+      ],
+      "shape": [
+        256441
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "user_selected_fast_contact_collection_branch",
+  "source_preserved": true,
+  "transport_not_a_completed_cycle": true,
+  "action": "interrupt guarded transport; preserve completed stage checkpoints and failure/recovery log"
+}

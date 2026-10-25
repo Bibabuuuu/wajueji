@@ -1,0 +1,216 @@
+{
+  "policy_sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095",
+  "interface_review": {
+    "path": "/home/qunwang/wajueji/work/contact-phase-bc-closed-loop-20260924-v1/interface-review.json",
+    "sha256": "f1410679f6b293ae7ff58315d2d1da2df66463c73c83bd1e05c8b28bb131ca5c"
+  },
+  "contact_config": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-v1.json",
+  "completion_config": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+  "cavity_config": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+  "feedback_parameters": {
+    "cut_drop_m": 0.3,
+    "cut_retract_m": 0.575,
+    "cut_pitch_rad": 0.38,
+    "translation_speed_m_s": 0.15,
+    "pitch_speed_rad_s": 0.3,
+    "position_gain_s": 1.5,
+    "preview_seconds": 0.15,
+    "ground_clearance_m": 0.03,
+    "maximum_lateral_error_m": 0.1,
+    "terrain_relative_cut": true,
+    "root_embed_m": 0.03,
+    "late_curl_no_down": true,
+    "late_curl_fraction": 0.8,
+    "command_rate_per_s": 2.0
+  },
+  "schema": "contact_multisource_lift_protocol_v1",
+  "status": "authorized_single_run_3000_frames_900_seconds",
+  "source_sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545",
+  "source_path": "/home/qunwang/wajueji/runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz",
+  "source_scoop": "first",
+  "maximum_physical_runs": 1,
+  "physical_frame_budget": 3000,
+  "physical_wall_seconds": 900,
+  "control_hz": 60,
+  "coupling_hz": 60,
+  "rigid_hz": 4800,
+  "same_instance_gate_frames": [
+    120,
+    1200
+  ],
+  "stop_on_off_soil": true,
+  "no_prefix_rerun": true,
+  "fill_95_not_required_for_process_development": true,
+  "formal_fill_target_unchanged": 0.95,
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz",
+      "sha256": "700f76be970c5754bde905837faf642cca0317fef097e31d17cf48f008ba0545"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-multisource-validation-20260924-v1/first-initialization-v3/prepoint.npz.json",
+      "sha256": "d11043295f10e2a146034f59107b55db8c0bd2a7148c9ddb9f508e42b409ff84"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-phase-bc-pilot-v1/pilot.pt",
+      "sha256": "b4bbc98cf472bcad23f89e014a025cfc933c36091ada91ced4c4cc9680d94095"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-derived-batch-20260924-v1/training-report.json",
+      "sha256": "2771c3492e9078e303a8008ab231c0ba7d99c0ad37ae0bb0f6b9d0720c67996f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-candidate-v1.json",
+      "sha256": "19b9d5c403bda9de1eca7ae67aa7b4c639c1389097af15405851f4d8e63c4db8"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-labels-20260924-v1/phase-completion-v1.json",
+      "sha256": "79b1150d043b03b45d3fd844f3e6186642962739dc795536b0a79ba383ac2bdf"
+    },
+    {
+      "path": "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json",
+      "sha256": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/reports/v4/mixed-material-r1-2026-09-19-v1/proxy-manifest.json",
+      "sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_contact_phase_bc_probe.py",
+      "sha256": "095105f50979eaccbf2064d2bccbdff6b1dbc127191b31822202dc184b43cfb4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_bc_inference.py",
+      "sha256": "bfc173a346e4647288753d46a36e264b1fe0827b618d386c38d73f60efd90195"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_live.py",
+      "sha256": "2a8f29abfb171f17640102b4380b93cb78a95ee8a41bb9ec0cc1e70dde02a432"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_bc_policy.py",
+      "sha256": "b610e60774b02afe5f9a5c220819ce82f4b1a8c446a4fd8e30b31ab688114789"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_inference.py",
+      "sha256": "4e340a9f225a0f606c9c1713ade7fc4fb3674f71b0d828f8ca7146c378775fb7"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_data.py",
+      "sha256": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_policy.py",
+      "sha256": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_bc_ground_guard.py",
+      "sha256": "fc2da166651feab62f7948e1c11ecbcc7321e79e62483f2e5463f0b567471758"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_candidate.py",
+      "sha256": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_completion.py",
+      "sha256": "c3fa5093e88b19fa27cf41ddce1b15e171fef4b06d76339eabefc806d9ae4b43"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_geometry.py",
+      "sha256": "86462ff227f5f74d2df8d2af28e287b13e1bdf4fc1bf0c168b94da84f3051656"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_geometric_feedback.py",
+      "sha256": "9065b4c9b3670e30e422151d2c5742946d4dead5e2f5f5b878a1075147673ff0"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/run_contact_geometric_probe.py",
+      "sha256": "1c824c18a487dff215b76f5e087f37903278d192dd41025791bbcc2c16be96ac"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-geometric-feedback-20260924-v1/development-geometry.json",
+      "sha256": "f745d1189c434e5632cf70ef87191a25480518cfdad8624433827e078174f61a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_cut_reference.py",
+      "sha256": "20af1cc2424cbb76ab3fd3a3e5e4c34796e5513ddb16d8505980cd8392bc6f3c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-coupling-120hz-20260924-v1/gates.py",
+      "sha256": "4a5324f9e54dece21d03d0d002e108bc554ab554abddecf9261297e481d3e093"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-coupling-120hz-20260924-v1/run_candidate.py",
+      "sha256": "fb793f6951c4fc6ce8ea9a4cbda952e13c6aa2f1495d630b37044b5dff56189b"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-coupling-120hz-20260924-v1/candidate_runtime.py",
+      "sha256": "b12f5f7422ff738ee57e9363f95d31b8110fda97bbff9d4eeb4288c55a218fb6"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/gates.py",
+      "sha256": "4a5324f9e54dece21d03d0d002e108bc554ab554abddecf9261297e481d3e093"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/predict_response.py",
+      "sha256": "6cfce720baf04cd0479be1677f815abd74b1ee29ef1953380a34668116b631da"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/run_candidate.py",
+      "sha256": "39ae6d681217e4c37b7d62d43a9b60ceda48ed4b02efedfcc018a7cf7281d17f"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/test_prototype.py",
+      "sha256": "333380b9c7a01948be0aac27e6ca819e5bd6f90465e5f14aa714bb8b55a15ad4"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/shadow.py",
+      "sha256": "8935be89aa568c9a1a5b392afd80dbf7e858ad10d94dad183931c99aab1eabba"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/candidate_runtime.py",
+      "sha256": "7ba09825807d3417529ecd3fcba1775bf89bd71f60de112b344810c0569d2fc1"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/full_response_operator.py",
+      "sha256": "e4d8084073fcfe205c758d92d8ca5aff16513e36df22453302fffdce70236925"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/build_shadow.py",
+      "sha256": "c2d9fbe32927ad3c14fbe597e129b73baf6486be6b08ebe5fc0c67868714a1ab"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/export_response.cc",
+      "sha256": "8a506ab058e985a853a5c3f5ba8dc21b0e6ee17a2e0694ef3fc722a342eb92a0"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/shadow-bridge",
+      "sha256": "f1aa84ab80d4375054e8ad4f9d2ac27966e38e8dff8ff23b0305d58d274b324c"
+    },
+    {
+      "path": "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/export-response",
+      "sha256": "31b1da9a874b815761f592bd66fe560c6bfc000ddc85a105d71f3568b422c183"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/run.sh",
+      "sha256": "3ca6f6b9122be8d27061d6820320f2cc44e97de5027058eefff7d73315bfd484"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-multisource-lift-20260924-v1/run_candidate.py",
+      "sha256": "63a84592718a68d60bad7ee6d518193e67b8c0c78e48bb9775f19c00469c949a"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-multisource-lift-20260924-v1/candidate_multisource.py",
+      "sha256": "68b9ee2bec3f2d12dd7d86245f269f198da8543db20d44bdfc67519d42a2b331"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-preview-lift-20260924-v1/lift_feedback.py",
+      "sha256": "a127962c1595565c38bde9d8b4747ec336866502aa796db0ed2eeed294227b83"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-preview-lift-20260924-v1/continuous_preview.py",
+      "sha256": "63256636a342b5fe5f2bb310aef1a5e99c6c72b41afe27aacd73b01dc9fe15e3"
+    }
+  ],
+  "authorization": "2026-09-24 user approved sequential first then second; first off-soil and audit required before second; no automatic reruns"
+}

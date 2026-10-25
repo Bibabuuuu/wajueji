@@ -1,0 +1,10 @@
+{
+  "pid": 1493335,
+  "paused": true,
+  "frame": 0,
+  "frames": 120,
+  "playback_physics_steps": 0,
+  "live_inference": false,
+  "viewer_code_sha256": "8d5ce2ef102f5f9d7df011571f8f524a5cf9a5eaccab00a72767ae1e6de251b8",
+  "screenshot_path": "/home/qunwang/wajueji/runs/contact-bc-visual-review-20260924-v1/viewer-ready.png"
+}

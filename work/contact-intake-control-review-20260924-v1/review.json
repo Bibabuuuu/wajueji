@@ -1,0 +1,425 @@
+{
+  "schema": "contact_intake_control_readonly_review_v1",
+  "status": "cpu_cached_log_and_pose_audit_passed",
+  "physics_steps_added": 0,
+  "training_updates": 0,
+  "inputs_sha256": {
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/closed_chain.py": "a1d4dd0a1a580c7c206e446d9f0257bb72e63af80c42df42a0bd20695b323bb6",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene/input/model/A.xml": "959098bed4286ae5909858acb02a22eb8b9050ef2029ebe7d2c6a5f3d4d5e320",
+    "/home/qunwang/codex-work/small-soil-20260910-v17-performance/scene_assembly.py": "ca1efcdf5162ec32fec1c70114cb6d29ffa9ec9ebc7549915756b3fd13373955",
+    "/home/qunwang/wajueji/planning/cycle_geometry.py": "4514292bd8e0d222fba5283e63ee2746b51d29602d9afb39b4cf845479eb8ad1",
+    "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/actions.ndjson": "136d8b98107aa41a1c2f1c830cb09a2e2f8b7d8a55cde2de4c04c9c8560bc7e5",
+    "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/candidate60/report.json": "c30006e1b284184f373933a3d62a1291e4656c11ea68fb33e875c2cc3242c7f7",
+    "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/actions.ndjson": "7de035794a1677b855023e5868031d4c32d11cf55b2af5a9e522288aef7c26f0",
+    "/home/qunwang/wajueji/runs/contact-multisource-lift-20260924-v1/first-candidate/report.json": "4260b88ccc602700484ee2cfec9b258aede4f8c49ffa7cbadf2e4ff988fa12ff",
+    "/home/qunwang/wajueji/runs/fast-contact-collection/20260924-115633-1457317/prepare/prepoint.npz": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/physics.ndjson": "1e963007d151251d39ed71e7a2cd4cbf04a54c642298f2e3890fa1faf49776f6",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-115812-1458627/report.json": "24fefd820688feae3acdb2c252ec9606d68c1cae8ac9a82ce99d160b7d99bd5e",
+    "/home/qunwang/wajueji/src/v4/contact_cut_reference.py": "20af1cc2424cbb76ab3fd3a3e5e4c34796e5513ddb16d8505980cd8392bc6f3c",
+    "/home/qunwang/wajueji/src/v4/contact_geometric_feedback.py": "9065b4c9b3670e30e422151d2c5742946d4dead5e2f5f5b878a1075147673ff0",
+    "/home/qunwang/wajueji/src/v4/contact_phase_candidate.py": "d097e2113cb3bdab0d63982bb78b234a44e96de5fee0dc51323f62300e12f431",
+    "/home/qunwang/wajueji/src/v4/layered_excavation_approach_planner.py": "f0e2cb0762534f3c17017b41eabadec8c69c6e9c8ab7706867132bf993068639",
+    "/home/qunwang/wajueji/work/contact-derived-demonstration-20260924-v1/fill-comparison-v2.json": "71c165129916a37c3938035e4072d3c0b11b5dae22567652e6d0eb99d5796906",
+    "/home/qunwang/wajueji/work/contact-intake-control-review-20260924-v1/review.py": "bc932ea5e7559da768acf0e08822ccc1082c237057aa69d9da341159f37d0ca0",
+    "/home/qunwang/wajueji/work/contact-preview-lift-20260924-v1/fill-review.json": "bcee5733a6a8fd38fba833593f55374fa14d991513e7a92b577d45ee389ff4ca",
+    "/home/qunwang/wajueji/work/contact-preview-lift-20260924-v1/lift_feedback.py": "a127962c1595565c38bde9d8b4747ec336866502aa796db0ed2eeed294227b83"
+  },
+  "inputs_unchanged": true,
+  "same_initial_checkpoint": true,
+  "initial_checkpoint_sha256": "a6fed857a335c95b6fb6222530b33fe73267841d77e527a712731d5edd0d896b",
+  "comparison_is_causal_ab": false,
+  "limitations": [
+    "Manual and autonomous runs share an initial checkpoint but use different physics/contact interfaces and actions.",
+    "Pose/command differences do not establish missing-load causality or quantify early spills.",
+    "D152 includes the historical preview stall; its 48.81% result does not evaluate the corrected full-entry D154 controller.",
+    "80% no-down is a confirmed user constraint; this review does not authorize its removal.",
+    "Manual endpoints use after_state; autonomous samples use before_state, with explicit state_frame_end.",
+    "The .575m target was reached before BC handoff in both audited autonomous runs."
+  ],
+  "third": {
+    "frames": 2400,
+    "state_convention": "before_state: state at frame-1 end",
+    "first_command_with_80pct_state": 1124,
+    "first_command_with_95pct_state": 1938,
+    "intervals_80_to_95": 814,
+    "simulation_seconds_80_to_95": 13.566666666666666,
+    "preview_scales_80_to_95": {
+      "0.0": 427,
+      "0.25": 1,
+      "1.0": 385,
+      "0.5": 1
+    },
+    "preview_scales_all": {
+      "1.0": 1971,
+      "0.0": 427,
+      "0.25": 1,
+      "0.5": 1
+    },
+    "zero_command_windows": [
+      {
+        "first_frame": 1124,
+        "last_frame": 1549,
+        "count": 426,
+        "command_duration_s": 7.1
+      },
+      {
+        "first_frame": 1551,
+        "last_frame": 1551,
+        "count": 1,
+        "command_duration_s": 0.016666666666666666
+      }
+    ],
+    "first_bc_curl_frame": 978,
+    "planned_cut_retract_m": 0.5750000000000002,
+    "actual_contact_to_first_bc_retract_m": 0.6061378419969152,
+    "first_bc_coordinates": [
+      5.299641867216979,
+      0.006845461902982028,
+      0.18280483055528696,
+      0.3218456369970344
+    ],
+    "soil_plan": {
+      "ground_connected_particles": 250625,
+      "observation_frame": 0,
+      "reference": "frozen_current_scoop_ground_soil",
+      "root_embed_m": 0.03,
+      "root_local_m": [
+        0.021459,
+        0.0,
+        -0.157745
+      ],
+      "root_target_xy_m": [
+        5.301355176030896,
+        0.5553855507551534
+      ],
+      "strip_counts": [
+        373,
+        614,
+        833,
+        919,
+        781,
+        764,
+        732
+      ],
+      "strip_heights_m": [
+        0.5120519161224365,
+        1.1755830824375153,
+        1.1271742582321167,
+        1.0567268729209898,
+        1.101706862449646,
+        1.225940603017807,
+        0.9650679349899292
+      ],
+      "surface_estimator": "median_of_seven_strip_z95",
+      "surface_z_m": 1.101706862449646,
+      "tip_target_z_m": 0.18528817923384802,
+      "vertical_pitch_rad": 0.2184927986558317
+    }
+  },
+  "first": {
+    "frames": 2327,
+    "state_convention": "before_state: state at frame-1 end",
+    "first_command_with_80pct_state": 483,
+    "first_command_with_95pct_state": 1780,
+    "intervals_80_to_95": 1297,
+    "simulation_seconds_80_to_95": 21.616666666666667,
+    "preview_scales_80_to_95": {
+      "0.5": 286,
+      "1.0": 595,
+      "0.25": 300,
+      "0.125": 116
+    },
+    "preview_scales_all": {
+      "1.0": 1625,
+      "0.5": 286,
+      "0.25": 300,
+      "0.125": 116
+    },
+    "zero_command_windows": [],
+    "first_bc_curl_frame": 395,
+    "planned_cut_retract_m": 0.5750000000000002,
+    "actual_contact_to_first_bc_retract_m": 0.5989526993972625,
+    "first_bc_coordinates": [
+      5.512352116672027,
+      -0.006443003575660654,
+      0.39888926579866024,
+      0.32205048490376637
+    ],
+    "soil_plan": {
+      "ground_connected_particles": 256441,
+      "observation_frame": 0,
+      "reference": "frozen_current_scoop_ground_soil",
+      "root_embed_m": 0.03,
+      "root_local_m": [
+        0.021459,
+        0.0,
+        -0.157745
+      ],
+      "root_target_xy_m": [
+        5.535676018903815,
+        -0.048991608818901015
+      ],
+      "strip_counts": [
+        940,
+        1292,
+        982,
+        1223,
+        810,
+        708,
+        910
+      ],
+      "strip_heights_m": [
+        1.3241023123264313,
+        1.3235751807689666,
+        1.3232075452804566,
+        1.32310311794281,
+        1.3230692923069,
+        1.339105343818664,
+        1.3478642284870148
+      ],
+      "surface_estimator": "median_of_seven_strip_z95",
+      "surface_z_m": 1.3235751807689666,
+      "tip_target_z_m": 0.40715649755316896,
+      "vertical_pitch_rad": 0.2184927986558317
+    }
+  },
+  "manual_80_to_95_intervals": 164,
+  "selected_radial_unit_xy": [
+    0.9945572319203383,
+    0.10419171001070214
+  ],
+  "same_source_geometry": {
+    "manual_legacy_physics": [
+      {
+        "threshold": 0.56,
+        "record_frame": 532,
+        "state_frame_end": 532,
+        "actual_closure_fraction": 0.5612205570148371,
+        "tip_world_m": [
+          5.697792883112742,
+          0.5766417172367329,
+          0.15992542674066867
+        ],
+        "tip_radial_m": 5.726862404466415,
+        "tip_lateral_m": -0.020159593673569787,
+        "pitch_rad": 0.16916276975447198,
+        "bucket_origin_world_m": [
+          5.6592736179186405,
+          0.5727433036891625,
+          1.2043516178047948
+        ]
+      },
+      {
+        "threshold": 0.64,
+        "record_frame": 580,
+        "state_frame_end": 580,
+        "actual_closure_fraction": 0.6417895355094188,
+        "tip_world_m": [
+          5.507275156334373,
+          0.569136398435128,
+          0.13016029432076293
+        ],
+        "tip_radial_m": 5.536599629489851,
+        "tip_lateral_m": -0.007773695025183658,
+        "pitch_rad": 0.330579964437813,
+        "bucket_origin_world_m": [
+          5.63623282284752,
+          0.5824631317904785,
+          1.1672318050786066
+        ]
+      },
+      {
+        "threshold": 0.8,
+        "record_frame": 650,
+        "state_frame_end": 650,
+        "actual_closure_fraction": 0.8006326194706823,
+        "tip_world_m": [
+          5.143809112539126,
+          0.5445640093252865,
+          0.21320590634386694
+        ],
+        "tip_radial_m": 5.17255160783541,
+        "tip_lateral_m": 0.0056578063139145485,
+        "pitch_rad": 0.6855874179101122,
+        "bucket_origin_world_m": [
+          5.623173879660268,
+          0.5953132450146016,
+          1.1405456149295867
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "record_frame": 695,
+        "state_frame_end": 695,
+        "actual_closure_fraction": 0.9007560558071478,
+        "tip_world_m": [
+          4.852308712405462,
+          0.5125171530180679,
+          0.3870636733580187
+        ],
+        "tip_radial_m": 4.879298760015685,
+        "tip_lateral_m": 0.004157298771988671,
+        "pitch_rad": 1.0167922256428616,
+        "bucket_origin_world_m": [
+          5.605518749386663,
+          0.5920736694174067,
+          1.1072514272730556
+        ]
+      },
+      {
+        "threshold": 0.95,
+        "record_frame": 814,
+        "state_frame_end": 814,
+        "actual_closure_fraction": 0.950157876011379,
+        "tip_world_m": [
+          4.612870570065766,
+          0.48474585788612484,
+          0.5469503652735975
+        ],
+        "tip_radial_m": 4.638270285225162,
+        "tip_lateral_m": 0.0014846258508794397,
+        "pitch_rad": 1.3018422546065402,
+        "bucket_origin_world_m": [
+          5.537138962980109,
+          0.5818730402561395,
+          1.0250918174657375
+        ]
+      },
+      {
+        "threshold": 0.99,
+        "record_frame": 984,
+        "state_frame_end": 984,
+        "actual_closure_fraction": 0.9900114985729708,
+        "tip_world_m": [
+          4.385742612247938,
+          0.2788678177263383,
+          1.0224163799072203
+        ],
+        "tip_radial_m": 4.390927747148243,
+        "tip_lateral_m": -0.179608017567344,
+        "pitch_rad": 1.6374905430711486,
+        "bucket_origin_world_m": [
+          5.418644288995081,
+          0.3445449663943949,
+          1.1677629943010908
+        ]
+      }
+    ],
+    "autonomous_full_response": [
+      {
+        "threshold": 0.56,
+        "record_frame": 975,
+        "state_frame_end": 974,
+        "actual_closure_fraction": 0.5600702667064733,
+        "tip_world_m": [
+          5.269901992105069,
+          0.5590393968006317,
+          0.18303458115808868
+        ],
+        "tip_radial_m": 5.299466408475503,
+        "tip_lateral_m": 0.006916574870219017,
+        "pitch_rad": 0.3195206358002329,
+        "bucket_origin_world_m": [
+          5.387410108423713,
+          0.5715047491338988,
+          1.2214764223752326
+        ]
+      },
+      {
+        "threshold": 0.64,
+        "record_frame": 1032,
+        "state_frame_end": 1031,
+        "actual_closure_fraction": 0.6400159118829224,
+        "tip_world_m": [
+          5.217170741559725,
+          0.5511784330940335,
+          0.19681894346265905
+        ],
+        "tip_radial_m": 5.246203114646506,
+        "tip_lateral_m": 0.00459255573128059,
+        "pitch_rad": 0.42828654880937117,
+        "bucket_origin_world_m": [
+          5.446090449373984,
+          0.5753630248003693,
+          1.2162971790803845
+        ]
+      },
+      {
+        "threshold": 0.8,
+        "record_frame": 1124,
+        "state_frame_end": 1123,
+        "actual_closure_fraction": 0.8006645051283536,
+        "tip_world_m": [
+          5.048112261442765,
+          0.5302550628533467,
+          0.2194795332488665
+        ],
+        "tip_radial_m": 5.075884738904159,
+        "tip_lateral_m": 0.0013975586774551685,
+        "pitch_rad": 0.7247548104009854,
+        "bucket_origin_world_m": [
+          5.5632642375375845,
+          0.5843666861699772,
+          1.1272324587454685
+        ]
+      },
+      {
+        "threshold": 0.9,
+        "record_frame": 1794,
+        "state_frame_end": 1793,
+        "actual_closure_fraction": 0.9001377949659539,
+        "tip_world_m": [
+          4.399213602328751,
+          0.45427494201480967,
+          0.604055512468829
+        ],
+        "tip_radial_m": 4.422601385981918,
+        "tip_lateral_m": -0.006559159067952236,
+        "pitch_rad": 1.1892998840525946,
+        "bucket_origin_world_m": [
+          5.264393789663119,
+          0.543615795597765,
+          1.183543610124985
+        ]
+      },
+      {
+        "threshold": 0.95,
+        "record_frame": 1938,
+        "state_frame_end": 1937,
+        "actual_closure_fraction": 0.9501838657399917,
+        "tip_world_m": [
+          4.118285555444862,
+          0.427913845109839,
+          0.973944083564438
+        ],
+        "tip_radial_m": 4.140455757540003,
+        "tip_lateral_m": -0.00350640504134464,
+        "pitch_rad": 1.4758363303557251,
+        "bucket_origin_world_m": [
+          5.1110409936731775,
+          0.5310669071884322,
+          1.283978090815132
+        ]
+      },
+      {
+        "threshold": 0.99,
+        "record_frame": 2110,
+        "state_frame_end": 2109,
+        "actual_closure_fraction": 0.9900084774076573,
+        "tip_world_m": [
+          3.9207472141649107,
+          0.40908274501818637,
+          1.3978424283422783
+        ],
+        "tip_radial_m": 3.942030527118548,
+        "tip_lateral_m": -0.0016531542518776754,
+        "pitch_rad": 1.8140713303309817,
+        "bucket_origin_world_m": [
+          4.959534076767838,
+          0.5174676770710566,
+          1.3591182680870169
+        ]
+      }
+    ]
+  }
+}

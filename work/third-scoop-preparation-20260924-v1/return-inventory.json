@@ -1,0 +1,10 @@
+{
+  "source_payload_particles": 10714,
+  "source_payload_in_truck_core_after_return": 9082,
+  "all_soil_in_truck_core_at_source": 11669,
+  "all_soil_in_truck_core_after_return": 22382,
+  "rock_centers_in_truck_core_after_return": 8,
+  "soil_count_unchanged": true,
+  "rock_count_unchanged": true,
+  "scope": "Point inventory only, not stable delivered mixed volume or per-rock full geometry containment."
+}

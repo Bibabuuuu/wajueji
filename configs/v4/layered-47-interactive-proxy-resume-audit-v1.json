@@ -1,0 +1,30 @@
+{
+  "schema": "excavation_layered_47_interactive_proxy_resume_audit_config_v1",
+  "status": "independent_read_only_resume_audit_nonformal_proxy",
+  "benchmark_config": {
+    "path": "configs/v4/layered-47-interactive-proxy-benchmark-v1.json",
+    "sha256": "9a33845a7de1ffc7e2e69eccf3890af5ee243c3ab894e48d13b71b147c08c88c",
+    "profile": "voxel_10cm_sparse"
+  },
+  "input_checkpoint": {
+    "path": "runs/layered-47-interactive-proxy-v1/layered-47-interactive-proxy-cuda-0-v2.npz",
+    "metadata": "runs/layered-47-interactive-proxy-v1/layered-47-interactive-proxy-cuda-0-v2.npz.json",
+    "sha256": "ade971cef81ac42f7c2694b5978df346647c559f443e8fb1006d422432f778f1",
+    "metadata_sha256": "b92fcad4609240a02116f4efe51bb44e718372c246ede15500d9bcad7256cb63"
+  },
+  "audit": {
+    "frames": 120,
+    "all_frames_must_be_strict": true,
+    "writes_checkpoint": false,
+    "writes_progress_journal": true,
+    "source_identity_rechecked_after_run": true
+  },
+  "scope": {
+    "resume_continuity_only": true,
+    "formal_a30_equivalent": false,
+    "manual_collection_eligible": false,
+    "training_eligible": false,
+    "source_checkpoint_mutated": false,
+    "new_checkpoint_written": false
+  }
+}

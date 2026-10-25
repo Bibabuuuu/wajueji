@@ -1,0 +1,53 @@
+"""Continuous second-scoop tail; review follows completion or protection exit."""
+import hashlib,json,sys,os
+from pathlib import Path
+import numpy as np
+ROOT=Path(__file__).resolve().parents[2];W=Path(__file__).resolve().parent
+SOURCE=Path(os.environ['NIGHT_CONTACT_SOURCE']).resolve()
+PROTOCOL=Path(os.environ['NIGHT_TAIL_PROTOCOL']).resolve()
+TRIAL_ROOT=ROOT/'runs/night-dual-search-20260925-v1'
+if not SOURCE.is_relative_to(TRIAL_ROOT) or not PROTOCOL.is_relative_to(TRIAL_ROOT):raise ValueError('night_trial_path_required')
+sys.path.insert(0,str(ROOT/'work/contact-full-response-20260924-v1'))
+from candidate_runtime import CandidateRuntime
+import layered_47_cycle_checkpoint as checkpoint
+def read(p):return json.loads(Path(p).read_text())
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def load_endpoint(path,*,allow_training_reset=False):
+    path=Path(path).resolve();protocol=read(PROTOCOL)
+    if path!=SOURCE or allow_training_reset or sha(path)!=protocol['source_sha256']:raise ValueError('second_tail_source')
+    meta=read(str(path)+'.json');report=read(path.parent/'report.json');control=read(path.parent/'control-state.json')
+    kind=meta['search_source_kind'];expected=1 if kind=='first' else 2 if kind=='second' else -1
+    if (meta['schema']!='layered_47_dual_search_contact_v1' or meta['stage']!='hold'
+        or meta['cycle_index']!=expected or meta.get('training_reset') is not None
+        or meta['checkpoint_sha256']!=sha(path) or meta['truck_enabled']!=(kind=='second')
+        or meta['controller_state']['native_state_kind']!='full'
+        or (meta['coupling_hz'],meta['control_hz'],meta['rigid_hz'])!=(60,60,4800)
+        or report['status']!='bounded_probe_completed' or not all(report['zero_step_arrays_exact'].values())
+        or control['frame']!=report['frames_completed'] or control['feature_last_frame']!=control['frame']
+        or control['feedback']['last_frame']!=control['frame']):raise ValueError('second_tail_checkpoint_contract')
+    if report['source']['sha256']!=meta['source_prepoint_sha256']:raise ValueError('dual_tail_prepoint_lineage')
+    fields=['candidate_bindings','control_bindings','multisource_bindings','search_bindings']
+    if kind=='second':fields+=['contact_bindings','preview_binding']
+    for field in fields:
+        for p,h in meta[field].items():
+            if sha(p)!=h:raise ValueError('second_source_code_changed:'+p)
+    for p,h in meta['runtime_bindings'].items():
+        if sha(ROOT/'src/v4'/p)!=h:raise ValueError('second_source_runtime_changed:'+p)
+    with np.load(path,allow_pickle=False) as f:arrays={k:f[k].copy() for k in f.files}
+    checkpoint.sparse._validate(arrays,256441,47);checkpoint.validate_controller(meta['controller_state'],47)
+    checkpoint.validate_material_history_policy(meta,meta['runtime_bindings']);checkpoint.validate_sweep(meta['moving_bucket_sweep_state'])
+    meta['source_identity']=checkpoint.checkpoint_identity(path);meta['source_metadata_identity']=checkpoint.checkpoint_identity(str(path)+'.json')
+    return arrays,meta
+class FinishRuntime(CandidateRuntime):
+    def __init__(self,source,output,**kw):
+        original=checkpoint.load
+        try:
+            checkpoint.load=load_endpoint
+            super().__init__(source,output,freeze_passive_jp=True,enable_truck=True,**kw)
+        finally:checkpoint.load=original
+    def save(self,path,**kw):
+        result=super().save(path,**kw);side=Path(str(path)+'.json');meta=read(side)
+        meta.update(schema='layered_47_dual_search_tail_v1',
+            tail_bindings={str(p):sha(p) for p in W.glob('*.py')},tail_protocol_sha256=sha(PROTOCOL),
+            highlevel_state=getattr(self,'highlevel_state',None),continuation_qualified=False)
+        side.write_text(json.dumps(meta,indent=2)+'\n');return result

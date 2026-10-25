@@ -1,0 +1,71 @@
+{
+  "schema": "excavation_contact_checkpoint_contract_config_v1",
+  "status": "frozen_review_blocked",
+  "contract_spec_sha256": "eff2d619a859b6a10cab6715b5d40705ed9788033e8c2e414d1a41367929b943",
+  "contract": {
+    "version": "contact_actor_checkpoint_contract_v1",
+    "checkpoint_schema": "excavation_contact_actor_bc_checkpoint_v1",
+    "checkpoint_role": "actor_training_artifact_requires_separate_runtime_admission",
+    "observation_contract": {
+      "feature_count": 2412,
+      "feature_spec_sha256": "5b3f944484ee7edfc3b2cff25ad235ad27b961e74ea4397b9a5defd8770630ad"
+    },
+    "action_contract": {
+      "schema": "excavation_four_axis_action_v1",
+      "axis_order": [
+        "swing",
+        "boom",
+        "arm",
+        "bucket"
+      ],
+      "output": "normalized_velocity",
+      "swing_output_frozen_zero": true
+    },
+    "label_contract": {
+      "schema": "excavation_contact_segment_reviewed_v1",
+      "version": "contact_segments_v1_reviewed",
+      "all_phases": [
+        "approach",
+        "penetrate_deepen",
+        "curl_load",
+        "lift_clear",
+        "off_soil_confirm",
+        "uncertain/recovery"
+      ],
+      "actor_head_phases": [
+        "penetrate_deepen",
+        "curl_load",
+        "lift_clear"
+      ],
+      "geometric_phases": [
+        "approach",
+        "off_soil_confirm"
+      ],
+      "supervisor_only_phases": [
+        "uncertain/recovery"
+      ],
+      "pending_review_is_training_ineligible": true
+    },
+    "data_contract": {
+      "allowed_episode_ids": [
+        "human-demo-20260917-101448",
+        "human-demo-20260917-091339",
+        "v4-demo-attempt-20260917-231940",
+        "v4-demo-attempt-20260918-102031",
+        "v4-demo-attempt-20260918-102212",
+        "v4-demo-attempt-20260918-102352"
+      ],
+      "sealed_holdout_episode_ids": [
+        "v4-demo-attempt-20260918-103349",
+        "v4-demo-attempt-20260918-103536"
+      ],
+      "normalization_scope": "train_split_only"
+    },
+    "runtime_contract": {
+      "route": "external_contact_handoff_router_v1",
+      "phase_classifier_role": "diagnostic_only",
+      "runtime_admission": "separate_receipt_required",
+      "recovery_owner": "safety_supervisor"
+    }
+  }
+}

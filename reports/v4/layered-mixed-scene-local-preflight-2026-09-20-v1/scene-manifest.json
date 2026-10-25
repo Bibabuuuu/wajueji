@@ -1,0 +1,1012 @@
+{
+  "activation_stage_ids": {
+    "foundation": 0,
+    "lower_fill": 1,
+    "middle_fill": 2,
+    "top_fill": 3
+  },
+  "checks": {
+    "all_activation_stages_nonempty": true,
+    "all_three_rock_layers_present": true,
+    "carve_removed_particles": true,
+    "medium_large_only_in_lower_skeleton": true,
+    "no_physics_step": true,
+    "particle_partition_closed": true,
+    "retained_particle_center_inside_rock_zero": true,
+    "rock_count_is_22": true,
+    "rock_rock_sat_no_intersection": true,
+    "rocks_within_local_patch_xy": true,
+    "small_rocks_are_count_majority": true,
+    "true_mesh_embed_ratios_exact": true
+  },
+  "construction_sequence": [
+    "foundation",
+    "lower_skeleton",
+    "lower_fill",
+    "joint_settle",
+    "middle_small_dominant",
+    "middle_fill",
+    "joint_settle",
+    "top_exposed_small",
+    "top_fill",
+    "joint_settle",
+    "remove_walls",
+    "zero_velocities",
+    "nominal_hold"
+  ],
+  "physics_step_executed": false,
+  "rock_count": 22,
+  "rocks": [
+    {
+      "achieved_embed_ratio": 0.55,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.34,
+      "fill_surface": "lower_fill",
+      "fill_surface_height_m": 0.336,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.44933060634025823,
+          -0.057414903313213445,
+          -0.017578398480141373
+        ],
+        [
+          -0.057414903313213445,
+          0.9957946449980762,
+          -0.013291943369771318
+        ],
+        [
+          -0.017578398480141373,
+          -0.013291943369771318,
+          1.1376802416789489
+        ]
+      ],
+      "layer_id": "lower_skeleton",
+      "layer_index": 0,
+      "mass_kg": 53.506768317900416,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.25,
+        -0.25,
+        0.3251603560342433
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.55,
+      "rock_id": "local-lower-large-000",
+      "size_class": "large_0p32_0p40",
+      "true_vertical_span_m": 0.21679287931513433,
+      "volume_m3": 0.020579526276115544
+    },
+    {
+      "achieved_embed_ratio": 0.5500000000000002,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.36,
+      "fill_surface": "lower_fill",
+      "fill_surface_height_m": 0.34400000000000003,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.597976229409827,
+          -0.07640865525453765,
+          -0.02339360883477967
+        ],
+        [
+          -0.07640865525453765,
+          1.3252191564078102,
+          -0.017689127038379243
+        ],
+        [
+          -0.02339360883477967,
+          -0.017689127038379243,
+          1.5140427373382017
+        ]
+      ],
+      "layer_id": "lower_skeleton",
+      "layer_index": 0,
+      "mass_kg": 63.51546363321701,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.95,
+        0.25,
+        0.33252272991861054
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.55,
+      "rock_id": "local-lower-large-001",
+      "size_class": "large_0p32_0p40",
+      "true_vertical_span_m": 0.22954540162778925,
+      "volume_m3": 0.024429024474314234
+    },
+    {
+      "achieved_embed_ratio": 0.5000000000000001,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.28,
+      "fill_surface": "lower_fill",
+      "fill_surface_height_m": 0.35000000000000003,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.17020079066014612,
+          -0.021748044316804938,
+          -0.006658476581925895
+        ],
+        [
+          -0.021748044316804938,
+          0.37719450560968143,
+          -0.005034821218547988
+        ],
+        [
+          -0.006658476581925895,
+          -0.005034821218547988,
+          0.43093898772956646
+        ]
+      ],
+      "layer_id": "lower_skeleton",
+      "layer_index": 0,
+      "mass_kg": 29.88450483702804,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.95,
+        -0.25,
+        0.35000000000000003
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.5,
+      "rock_id": "local-lower-medium-000",
+      "size_class": "medium_0p24_0p32",
+      "true_vertical_span_m": 0.17853531237716944,
+      "volume_m3": 0.011494040321933862
+    },
+    {
+      "achieved_embed_ratio": 0.49999999999999994,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.3,
+      "fill_surface": "lower_fill",
+      "fill_surface_height_m": 0.33,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.24031323519877948,
+          -0.030706924854736382,
+          -0.009401366719224083
+        ],
+        [
+          -0.030706924854736382,
+          0.5325758569668733,
+          -0.00710886342527458
+        ],
+        [
+          -0.009401366719224083,
+          -0.00710886342527458,
+          0.6084598192106327
+        ]
+      ],
+      "layer_id": "lower_skeleton",
+      "layer_index": 0,
+      "mass_kg": 36.75663404700058,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.25,
+        0.25,
+        0.33
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.5,
+      "rock_id": "local-lower-medium-001",
+      "size_class": "medium_0p24_0p32",
+      "true_vertical_span_m": 0.19128783468982438,
+      "volume_m3": 0.01413716694115407
+    },
+    {
+      "achieved_embed_ratio": 0.4199999999999998,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.2,
+      "fill_surface": "middle_fill",
+      "fill_surface_height_m": 0.5525000000000001,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.031646187351279616,
+          -0.0040437102689364806,
+          -0.0012380400617908263
+        ],
+        [
+          -0.0040437102689364806,
+          0.07013344618493808,
+          -0.0009361466239044719
+        ],
+        [
+          -0.0012380400617908263,
+          -0.0009361466239044719,
+          0.08012639594543315
+        ]
+      ],
+      "layer_id": "middle_small_dominant",
+      "layer_index": 1,
+      "mass_kg": 10.890854532444619,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.15,
+        -0.25,
+        0.5627020178501241
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.42,
+      "rock_id": "local-middle-small-000",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.1275252231265496,
+      "volume_m3": 0.004188790204786392
+    },
+    {
+      "achieved_embed_ratio": 0.4200000000000005,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "middle_fill",
+      "fill_surface_height_m": 0.5637500000000001,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.024263991179306228,
+          -0.0017020299046073303,
+          -0.0009890592922722017
+        ],
+        [
+          -0.0017020299046073303,
+          0.0292569358758434,
+          0.0005461543983850423
+        ],
+        [
+          -0.0009890592922722017,
+          0.0005461543983850423,
+          0.03377490536625728
+        ]
+      ],
+      "layer_id": "middle_small_dominant",
+      "layer_index": 1,
+      "mass_kg": 7.939432954152123,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.6,
+        -0.25,
+        0.5754662532954611
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.42,
+      "rock_id": "local-middle-small-001",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.22236589189152667,
+      "volume_m3": 0.003053628059289278
+    },
+    {
+      "achieved_embed_ratio": 0.42000000000000076,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.21,
+      "fill_surface": "middle_fill",
+      "fill_surface_height_m": 0.5750000000000001,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.04038944543985887,
+          -0.005160912860335544,
+          -0.0015800877044999915
+        ],
+        [
+          -0.005160912860335544,
+          0.08951002428042239,
+          -0.0011947866758858987
+        ],
+        [
+          -0.0015800877044999915,
+          -0.0011947866758858987,
+          0.10226384181473104
+        ]
+      ],
+      "layer_id": "middle_small_dominant",
+      "layer_index": 1,
+      "mass_kg": 12.607525478121199,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        5.05,
+        -0.25,
+        0.5857121187426302
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.42,
+      "rock_id": "local-middle-small-002",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.13390148428287707,
+      "volume_m3": 0.004849048260815845
+    },
+    {
+      "achieved_embed_ratio": 0.4200000000000002,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.19,
+      "fill_surface": "middle_fill",
+      "fill_surface_height_m": 0.545,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.03179565080224103,
+          -0.002230348177344402,
+          -0.0012960680560508576
+        ],
+        [
+          -0.002230348177344402,
+          0.038338429559158484,
+          0.0007156833517961803
+        ],
+        [
+          -0.0012960680560508576,
+          0.0007156833517961803,
+          0.04425879852034132
+        ]
+      ],
+      "layer_id": "middle_small_dominant",
+      "layer_index": 1,
+      "mass_kg": 9.3375464047547,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.15,
+        0.25,
+        0.55736715625632
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.42,
+      "rock_id": "local-middle-small-003",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.23471955255216703,
+      "volume_m3": 0.0035913640018287313
+    },
+    {
+      "achieved_embed_ratio": 0.4199999999999998,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.2,
+      "fill_surface": "middle_fill",
+      "fill_surface_height_m": 0.55625,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.031646187351279616,
+          -0.0040437102689364806,
+          -0.0012380400617908263
+        ],
+        [
+          -0.0040437102689364806,
+          0.07013344618493808,
+          -0.0009361466239044719
+        ],
+        [
+          -0.0012380400617908263,
+          -0.0009361466239044719,
+          0.08012639594543315
+        ]
+      ],
+      "layer_id": "middle_small_dominant",
+      "layer_index": 1,
+      "mass_kg": 10.890854532444619,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.6,
+        0.25,
+        0.566452017850124
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.42,
+      "rock_id": "local-middle-small-004",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.1275252231265496,
+      "volume_m3": 0.004188790204786392
+    },
+    {
+      "achieved_embed_ratio": 0.4200000000000005,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "middle_fill",
+      "fill_surface_height_m": 0.5675,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.024263991179306228,
+          -0.0017020299046073303,
+          -0.0009890592922722017
+        ],
+        [
+          -0.0017020299046073303,
+          0.0292569358758434,
+          0.0005461543983850423
+        ],
+        [
+          -0.0009890592922722017,
+          0.0005461543983850423,
+          0.03377490536625728
+        ]
+      ],
+      "layer_id": "middle_small_dominant",
+      "layer_index": 1,
+      "mass_kg": 7.939432954152123,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        5.05,
+        0.25,
+        0.579216253295461
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.42,
+      "rock_id": "local-middle-small-005",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.22236589189152667,
+      "volume_m3": 0.003053628059289278
+    },
+    {
+      "achieved_embed_ratio": 0.2699999999999999,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.793263307179916,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.018686757169057093,
+          -0.0023877704767043015,
+          -0.0007310502760868646
+        ],
+        [
+          -0.0023877704767043015,
+          0.04141309863774407,
+          -0.0005527852199493513
+        ],
+        [
+          -0.0007310502760868646,
+          -0.0005527852199493513,
+          0.047313835541818804
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 7.939432954152126,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.1,
+        -0.34,
+        0.8196610283671117
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-000",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.11477270081389462,
+      "volume_m3": 0.0030536280592892793
+    },
+    {
+      "achieved_embed_ratio": 0.2700000000000002,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.17,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.8043513250380669,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.01823242017428122,
+          -0.0012789373413743517,
+          -0.0007431977888849368
+        ],
+        [
+          -0.0012789373413743517,
+          0.02198421290044465,
+          0.00041039070603851845
+        ],
+        [
+          -0.0007431977888849368,
+          0.00041039070603851845,
+          0.025379100306852143
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 6.6883460397375485,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.43,
+        -0.34,
+        0.846918510057302
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-001",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.2100122312308863,
+      "volume_m3": 0.0025724407845144417
+    },
+    {
+      "achieved_embed_ratio": 0.2700000000000001,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.19,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.8078886749619332,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.02448721651697378,
+          -0.003128945922876046,
+          -0.0009579717996750633
+        ],
+        [
+          -0.003128945922876046,
+          0.05426792373908717,
+          -0.0007243724122822621
+        ],
+        [
+          -0.0009579717996750633,
+          -0.0007243724122822621,
+          0.06200027777315345
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 9.337546404754704,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.77,
+        -0.34,
+        0.8357529362150843
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-002",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.12114896197022211,
+      "volume_m3": 0.0035913640018287326
+    },
+    {
+      "achieved_embed_ratio": 0.26999999999999985,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.8189766928200841,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.024263991179306228,
+          -0.0017020299046073303,
+          -0.0009890592922722017
+        ],
+        [
+          -0.0017020299046073303,
+          0.0292569358758434,
+          0.0005461543983850423
+        ],
+        [
+          -0.0009890592922722017,
+          0.0005461543983850423,
+          0.03377490536625728
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 7.939432954152123,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        5.1,
+        -0.34,
+        0.8640478298992742
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-003",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.22236589189152667,
+      "volume_m3": 0.003053628059289278
+    },
+    {
+      "achieved_embed_ratio": 0.26999999999999985,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.781,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.024263991179306228,
+          -0.0017020299046073303,
+          -0.0009890592922722017
+        ],
+        [
+          -0.0017020299046073303,
+          0.0292569358758434,
+          0.0005461543983850423
+        ],
+        [
+          -0.0009890592922722017,
+          0.0005461543983850423,
+          0.03377490536625728
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 7.939432954152123,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.1,
+        0.0,
+        0.8260711370791901
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-004",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.22236589189152667,
+      "volume_m3": 0.003053628059289278
+    },
+    {
+      "achieved_embed_ratio": 0.2699999999999997,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.17,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.7886828323083442,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.01404158144813307,
+          -0.0017942157285379201,
+          -0.0005493249525044179
+        ],
+        [
+          -0.0017942157285379201,
+          0.031118582656189882,
+          -0.0004153732303053537
+        ],
+        [
+          -0.0005493249525044179,
+          -0.0004153732303053537,
+          0.03555250755246715
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 6.688346039737552,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.43,
+        0.0,
+        0.8136140134295847
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-005",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.10839643965756716,
+      "volume_m3": 0.002572440784514443
+    },
+    {
+      "achieved_embed_ratio": 0.2700000000000001,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.19,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.8113171676916558,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.03179565080224103,
+          -0.002230348177344402,
+          -0.0012960680560508576
+        ],
+        [
+          -0.002230348177344402,
+          0.038338429559158484,
+          0.0007156833517961803
+        ],
+        [
+          -0.0012960680560508576,
+          0.0007156833517961803,
+          0.04425879852034132
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 9.3375464047547,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.77,
+        0.0,
+        0.858892256830801
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-006",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.23471955255216703,
+      "volume_m3": 0.0035913640018287313
+    },
+    {
+      "achieved_embed_ratio": 0.2699999999999999,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.8190000000000001,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.018686757169057093,
+          -0.0023877704767043015,
+          -0.0007310502760868646
+        ],
+        [
+          -0.0023877704767043015,
+          0.04141309863774407,
+          -0.0005527852199493513
+        ],
+        [
+          -0.0007310502760868646,
+          -0.0005527852199493513,
+          0.047313835541818804
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 7.939432954152126,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        5.1,
+        0.0,
+        0.8453977211871958
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-007",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.11477270081389462,
+      "volume_m3": 0.0030536280592892793
+    },
+    {
+      "achieved_embed_ratio": 0.2699999999999999,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.781023307179916,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.018686757169057093,
+          -0.0023877704767043015,
+          -0.0007310502760868646
+        ],
+        [
+          -0.0023877704767043015,
+          0.04141309863774407,
+          -0.0005527852199493513
+        ],
+        [
+          -0.0007310502760868646,
+          -0.0005527852199493513,
+          0.047313835541818804
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 7.939432954152126,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.1,
+        0.34,
+        0.8074210283671117
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-008",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.11477270081389462,
+      "volume_m3": 0.0030536280592892793
+    },
+    {
+      "achieved_embed_ratio": 0.2700000000000002,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.17,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.7921113250380669,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.01823242017428122,
+          -0.0012789373413743517,
+          -0.0007431977888849368
+        ],
+        [
+          -0.0012789373413743517,
+          0.02198421290044465,
+          0.00041039070603851845
+        ],
+        [
+          -0.0007431977888849368,
+          0.00041039070603851845,
+          0.025379100306852143
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 6.6883460397375485,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.43,
+        0.34,
+        0.834678510057302
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-009",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.2100122312308863,
+      "volume_m3": 0.0025724407845144417
+    },
+    {
+      "achieved_embed_ratio": 0.2700000000000001,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.19,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.7956486749619331,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.02448721651697378,
+          -0.003128945922876046,
+          -0.0009579717996750633
+        ],
+        [
+          -0.003128945922876046,
+          0.05426792373908717,
+          -0.0007243724122822621
+        ],
+        [
+          -0.0009579717996750633,
+          -0.0007243724122822621,
+          0.06200027777315345
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 9.337546404754704,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        4.77,
+        0.34,
+        0.8235129362150843
+      ],
+      "prototype_id": "angular_block",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-010",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.12114896197022211,
+      "volume_m3": 0.0035913640018287326
+    },
+    {
+      "achieved_embed_ratio": 0.26999999999999985,
+      "density_kg_m3": 2600.0,
+      "equivalent_diameter_m": 0.18,
+      "fill_surface": "top_fill",
+      "fill_surface_height_m": 0.8067366928200841,
+      "inertia_about_com_body_kg_m2": [
+        [
+          0.024263991179306228,
+          -0.0017020299046073303,
+          -0.0009890592922722017
+        ],
+        [
+          -0.0017020299046073303,
+          0.0292569358758434,
+          0.0005461543983850423
+        ],
+        [
+          -0.0009890592922722017,
+          0.0005461543983850423,
+          0.03377490536625728
+        ]
+      ],
+      "layer_id": "top_exposed_small",
+      "layer_index": 2,
+      "mass_kg": 7.939432954152123,
+      "orientation_quaternion_wxyz": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "position_world_m": [
+        5.1,
+        0.34,
+        0.8518078298992742
+      ],
+      "prototype_id": "angular_bipyramid",
+      "requested_embed_ratio": 0.27,
+      "rock_id": "local-top-small-011",
+      "size_class": "small_0p16_0p24",
+      "true_vertical_span_m": 0.22236589189152667,
+      "volume_m3": 0.003053628059289278
+    }
+  ],
+  "schema": "excavation_layered_mixed_scene_local_manifest_v1",
+  "stable_scene_claimed": false,
+  "status": "reduced_three_layer_geometry_candidate"
+}

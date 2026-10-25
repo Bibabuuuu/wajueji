@@ -1,0 +1,5 @@
+{
+  "frame": 1,
+  "error": "KeyError('joint_bounds_ok')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/qunwang/wajueji/work/soil-projection-isolation-20260923-v1/probe.py\", line 69, in <module>\n    assert row['joint_bounds_ok'] and row['closure_m']<=.001,'mechanism_guard'\n           ~~~^^^^^^^^^^^^^^^^^^^\nKeyError: 'joint_bounds_ok'\n"
+}

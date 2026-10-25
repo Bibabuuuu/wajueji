@@ -1,0 +1,112 @@
+{
+  "status": "first_hold_values_independently_verified",
+  "retained_display_percent": 149.95719042333914,
+  "recomputed_samples": [
+    {
+      "frame": 3827,
+      "sim_time_s": 63.78333333333333,
+      "valid_estimate": true,
+      "fill_percent": 150.10306009196134,
+      "liters": 383.01006793182387,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.23123186500743032,
+      "display_only": true
+    },
+    {
+      "frame": 3842,
+      "sim_time_s": 64.03333333333333,
+      "valid_estimate": true,
+      "fill_percent": 150.5692088156017,
+      "liters": 384.19951506367084,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.23294689701288007,
+      "display_only": true
+    },
+    {
+      "frame": 3857,
+      "sim_time_s": 64.28333333333333,
+      "valid_estimate": true,
+      "fill_percent": 149.95719042333914,
+      "liters": 382.6378599858037,
+      "quality_reasons": [],
+      "capacity_liters": 255.164729950989,
+      "rocks_and_heap_included": true,
+      "occupancy_level": 0.2,
+      "calibration_status": "user_selected_threshold_not_recalibrated",
+      "compute_wall_s": 0.22889252798631787,
+      "display_only": true
+    }
+  ],
+  "physical_frames": 3857,
+  "simulation_seconds": 64.28333333333333,
+  "waiting_frames": 2612,
+  "waiting_fraction": 0.6772102670469277,
+  "longest_waits": [
+    {
+      "cursor": 186.0,
+      "first_frame": 264,
+      "last_frame": 1333,
+      "frames": 1070
+    },
+    {
+      "cursor": 290.0,
+      "first_frame": 2295,
+      "last_frame": 2382,
+      "frames": 88
+    },
+    {
+      "cursor": 1070.0,
+      "first_frame": 3468,
+      "last_frame": 3547,
+      "frames": 80
+    },
+    {
+      "cursor": 219.0,
+      "first_frame": 1545,
+      "last_frame": 1622,
+      "frames": 78
+    },
+    {
+      "cursor": 304.0,
+      "first_frame": 2461,
+      "last_frame": 2530,
+      "frames": 70
+    },
+    {
+      "cursor": 1069.0,
+      "first_frame": 3402,
+      "last_frame": 3466,
+      "frames": 65
+    },
+    {
+      "cursor": 291.0,
+      "first_frame": 2385,
+      "last_frame": 2446,
+      "frames": 62
+    },
+    {
+      "cursor": 77.0,
+      "first_frame": 79,
+      "last_frame": 130,
+      "frames": 52
+    }
+  ],
+  "mean_policy_wait_strength": [
+    0.48322418328676986,
+    0.4833009970270291,
+    0.4832682812766131,
+    0.4832095060309261
+  ],
+  "source_episode_report_sha256": "6a68bf01620f846b2712090a28e5b1a16655737713aa344f39d4d5c4b56e782f",
+  "audit_new_physical_steps": 0,
+  "training_updates": 0,
+  "scope": "First scoop only; no second-scoop or combined loading result. Historical central first used a different waiting map."
+}

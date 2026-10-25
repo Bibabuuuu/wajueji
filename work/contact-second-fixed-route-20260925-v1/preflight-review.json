@@ -1,0 +1,116 @@
+{
+  "status": "fixed_route_preflight_passed",
+  "physical_steps_added": 0,
+  "source_sha256": "f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d",
+  "reference_commands": 3398,
+  "zero_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "controller_errors": {
+    "controller_target": 0.0,
+    "controller_target_velocity": 0.0,
+    "bucket_integral_effort": 0.0,
+    "bucket_active_curl_effort": 0.0,
+    "bucket_linear_velocity_world_m_s": 0.0,
+    "bucket_angular_velocity_world_rad_s": 0.0,
+    "native_time_s": 0.0,
+    "native_last_time_s": 0.0,
+    "native_timestep_s": 0.0,
+    "native_warmstart": 0.0,
+    "native_qacc": 0.0,
+    "native_ctrl": 0.0
+  },
+  "zero_checkpoint": {
+    "path": "/home/qunwang/wajueji/runs/contact-second-fixed-route-20260925-v1/preflight/zero.npz",
+    "size_bytes": 53128118,
+    "mtime_ns": 1790275536813045465,
+    "sha256": "f750e55864d6189ff6cd149cc1574894c236a334e6817a4b88f66493fd33c84d"
+  },
+  "plan": {
+    "status": "kinematic_transport_plan_passed",
+    "physics_steps_added": 0,
+    "source": "/home/qunwang/wajueji/runs/contact-second-finish-unload-20260925-v4/physical/handoff.npz",
+    "observation": {
+      "mode": "fixed_route_static_geometry",
+      "particle_terrain_check_enabled": false,
+      "physical_particles_modified": false,
+      "scope": "transport only; next-scoop observation unchanged"
+    },
+    "carry_pitch": 1.3354499406261398,
+    "carry_cylinder_m": 0.8492213810949668,
+    "initial_clearance": {
+      "bucket_truck_m": 1.6209640341621971,
+      "bucket_terrain_m": null,
+      "mechanism_truck_m": 0.38561969788022554,
+      "mechanism_ground_m": 0.8934446407716767,
+      "closure_m": 6.970799818195594e-05
+    },
+    "stages": [
+      {
+        "name": "CLEAR_PILE",
+        "frames": 1320,
+        "minimum_clearance": {
+          "bucket_truck_m": 1.0060408913289798,
+          "mechanism_truck_m": 0.38564818029527403,
+          "mechanism_ground_m": 0.8934502918300131,
+          "closure_m": 4.440892098500626e-15
+        }
+      },
+      {
+        "name": "ALIGN",
+        "frames": 618,
+        "minimum_clearance": {
+          "bucket_truck_m": 0.06681453948416094,
+          "mechanism_truck_m": 0.037667179754187576,
+          "mechanism_ground_m": 0.9110692921329279,
+          "closure_m": 4.4275694222051243e-13
+        }
+      },
+      {
+        "name": "DUMP",
+        "frames": 1190,
+        "minimum_clearance": {
+          "bucket_truck_m": 0.5999605830873943,
+          "mechanism_truck_m": 0.02,
+          "mechanism_ground_m": 0.9110693404149622,
+          "closure_m": 3.552713678800501e-15
+        }
+      }
+    ],
+    "scope": "Fixed CLEAR_PILE/ALIGN/DUMP goals. Static truck, ground, closure and retention checks; particle terrain map disabled by user. No physical state reset."
+  },
+  "first_command": [
+    5.066109128709155e-12,
+    0.00862400111398252,
+    2.8376539112780152e-05,
+    0.0
+  ],
+  "maximum_normalized_command_step": 0.03333333333333337,
+  "plan_sha256": "b6cd813da4ec664d2c1ee7c0a6ba8d40b1d47c28376bc599b457700a52707db7",
+  "source_unchanged": true,
+  "scope": "Exact physical restore and nominal-reference CPU checks; no closed-loop physical continuation yet",
+  "wall_seconds": 165.10966912299045
+}

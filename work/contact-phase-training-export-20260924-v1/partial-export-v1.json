@@ -1,0 +1,67 @@
+{
+  "schema": "partial_causal_phase_sidecar_v1",
+  "status": "partial_only_not_complete_five_phase_dataset",
+  "run": "manual-contact-20260924-115812-1458627",
+  "source_tensor": {
+    "run": "manual-contact-20260924-115812-1458627",
+    "lineage": "659f13601ff993799d5641864bbf1cf820e1c8b8892d13ddce4d5ad0b0518ace",
+    "scoop_index": 3,
+    "rows": 1457,
+    "sequence_count": 1,
+    "path": "/home/qunwang/wajueji/local-data/contact-bc-native-tensors-20260924-v1/manual-contact-20260924-115812-1458627.npz",
+    "sha256": "c662e65ec8c34093e34915645f5e5b9ae64006dfb5d3e1d4a5b33a4146992e50",
+    "reset_mode": "fast_contact_collection_v1",
+    "material_history_policy": "zero_hardening_frozen_jp_v1",
+    "operator_retargeting_review": "pending"
+  },
+  "sidecar": {
+    "path": "/home/qunwang/wajueji/local-data/contact-bc-phase-sidecars-20260924-v1/manual-contact-20260924-115812-1458627.partial-phases.npz",
+    "sha256": "f0d82d3bcaa1dad8df6c6a27ac6e8001d32a2a5e4d894ff85e3dca4a8c4539e0"
+  },
+  "source_report": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-teacher-replay-v1/third-scoop-v2/report.json",
+    "sha256": "d3e7da8fd2a470a3706366bd5f92f355e8f3da4cd297cdf5508c96372d860c8b"
+  },
+  "source_phase_trace": {
+    "path": "/home/qunwang/wajueji/runs/contact-phase-teacher-replay-v1/third-scoop-v2/phase-trace.ndjson",
+    "sha256": "ae99e402bf48924d15cf04225d736c1e3d9e4108ed85a95b7e1ef0f478ba64cc"
+  },
+  "phase_order": [
+    "approach_contact",
+    "penetrate",
+    "curl_load",
+    "lift",
+    "off_soil"
+  ],
+  "rows": 1457,
+  "known_rows": 1203,
+  "unknown_rows": 254,
+  "phase_counts": {
+    "approach_contact": 310,
+    "penetrate": 266,
+    "curl_load": 357,
+    "lift": 270,
+    "off_soil": 0
+  },
+  "split": "validation_runs",
+  "assignment_sha256": "534be96783f332967868d3aee4c49a7b7bb5b6e4dbf4c7fae27f1ccf008be192",
+  "training_eligible": false,
+  "complete_dataset": false,
+  "original_tensor_unchanged": true,
+  "original_annotations_changed": false,
+  "policy": "Unknown rows must be excluded explicitly; -1/zero one-hot is not an approach label. No off-soil confirmation assigned.",
+  "inputs": [
+    {
+      "path": "/home/qunwang/wajueji/work/contact-phase-training-export-20260924-v1/export_partial.py",
+      "sha256": "4ea9af38967231dbb0090d983a698f892f1bf98a7dc475a337c29cee95e10fe5"
+    },
+    {
+      "path": "/home/qunwang/wajueji/src/v4/contact_phase_data.py",
+      "sha256": "65114a21435ac9011506d17d3e8a8e57e9ebd32ebdc813fb884a8c8127d61301"
+    },
+    {
+      "path": "/home/qunwang/wajueji/work/contact-bc-data-preparation-20260924-v1/tensor-manifest.json",
+      "sha256": "cfbb1264e6b7bfddb2cbe492c1c8598106ea034fe0cac5522ac22bbbd13b25df"
+    }
+  ]
+}

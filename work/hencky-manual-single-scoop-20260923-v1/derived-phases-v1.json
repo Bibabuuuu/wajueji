@@ -1,0 +1,185 @@
+{
+  "schema": "layered_47_manual_contact_posthoc_phases_v1",
+  "status": "posthoc_action_phases_derived",
+  "source_run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260923-204445-912095",
+  "source_report_sha256": "0db68ca467266fe33a7977acb30282e63e6c9d908f31a9199f3c204d29198a7a",
+  "source_physics_sha256": "0726d4528c44b5b3283577bed50fd950f8e9d7479d1afa369594f73f55c363b2",
+  "frames": 1212,
+  "original_operator_markers_preserved": true,
+  "original_operator_markers": [
+    {
+      "drive_load_axis_labels": [
+        "swing",
+        "boom",
+        "arm",
+        "bucket"
+      ],
+      "drive_load_axis_units": [
+        "N*m",
+        "N",
+        "N",
+        "N"
+      ],
+      "equivalent_drive_load_baseline": [
+        -3.3866606670943746e-08,
+        6.9919101245009825e-06,
+        -4.843518877410468e-06,
+        -1.4498939672429425e-06
+      ],
+      "kind": "phase",
+      "label": "penetrate_deepen",
+      "load_contact_thresholds_applied": false,
+      "next_frame": 20,
+      "schema": "layered_47_manual_contact_annotation_v1",
+      "sim_time_s": 0.31666666666666665,
+      "training_eligible": false,
+      "wall_monotonic_s": 92352.392836407
+    },
+    {
+      "drive_load_axis_labels": [
+        "swing",
+        "boom",
+        "arm",
+        "bucket"
+      ],
+      "drive_load_axis_units": [
+        "N*m",
+        "N",
+        "N",
+        "N"
+      ],
+      "equivalent_drive_load_baseline": [
+        7582.663359816088,
+        -128955.68003957483,
+        -9137.975437586902,
+        -182491.1449103485
+      ],
+      "kind": "phase",
+      "label": "curl_load",
+      "load_contact_thresholds_applied": false,
+      "next_frame": 532,
+      "schema": "layered_47_manual_contact_annotation_v1",
+      "sim_time_s": 8.85,
+      "training_eligible": false,
+      "wall_monotonic_s": 92650.189109634
+    },
+    {
+      "drive_load_axis_labels": [
+        "swing",
+        "boom",
+        "arm",
+        "bucket"
+      ],
+      "drive_load_axis_units": [
+        "N*m",
+        "N",
+        "N",
+        "N"
+      ],
+      "equivalent_drive_load_baseline": [
+        697.7095137376444,
+        -36850.50261522777,
+        5688.676280656516,
+        -61523.46857867932
+      ],
+      "kind": "phase",
+      "label": "lift_clear",
+      "load_contact_thresholds_applied": false,
+      "next_frame": 998,
+      "schema": "layered_47_manual_contact_annotation_v1",
+      "sim_time_s": 16.616666666666667,
+      "training_eligible": false,
+      "wall_monotonic_s": 92769.099751056
+    },
+    {
+      "drive_load_axis_labels": [
+        "swing",
+        "boom",
+        "arm",
+        "bucket"
+      ],
+      "drive_load_axis_units": [
+        "N*m",
+        "N",
+        "N",
+        "N"
+      ],
+      "equivalent_drive_load_baseline": [
+        639.5748679037151,
+        -38244.712081043064,
+        7176.600079891427,
+        -61170.386968401785
+      ],
+      "kind": "phase",
+      "label": "off_soil_confirm",
+      "load_contact_thresholds_applied": false,
+      "next_frame": 1004,
+      "schema": "layered_47_manual_contact_annotation_v1",
+      "sim_time_s": 16.716666666666665,
+      "training_eligible": false,
+      "wall_monotonic_s": 92770.745097431
+    }
+  ],
+  "operator_reported_marker_timing_inaccurate": true,
+  "method": {
+    "basis": "applied commands plus runner-owned terminal hold identity",
+    "command_window_frames": {
+      "general": 3,
+      "lift": 30,
+      "transport": 30
+    },
+    "physical_contact_or_fill_claim_from_labels": false,
+    "manual_review_required_before_training": true
+  },
+  "intervals": [
+    {
+      "label": "precontact_positioning_hold",
+      "start_frame": 1,
+      "end_frame": 25,
+      "frame_count": 25,
+      "basis": "before first sustained nonzero command"
+    },
+    {
+      "label": "penetrate_deepen",
+      "start_frame": 26,
+      "end_frame": 118,
+      "frame_count": 93,
+      "basis": "sustained excavation motion before positive bucket curl"
+    },
+    {
+      "label": "curl_load",
+      "start_frame": 119,
+      "end_frame": 227,
+      "frame_count": 109,
+      "basis": "first sustained positive bucket command through load consolidation"
+    },
+    {
+      "label": "lift_clear",
+      "start_frame": 228,
+      "end_frame": 997,
+      "frame_count": 770,
+      "basis": "first sustained positive arm command with bucket command near neutral"
+    },
+    {
+      "label": "off_soil_transport",
+      "start_frame": 998,
+      "end_frame": 1182,
+      "frame_count": 185,
+      "basis": "first sustained negative swing plus positive boom transport command"
+    },
+    {
+      "label": "terminal_zero_hold",
+      "start_frame": 1183,
+      "end_frame": 1212,
+      "frame_count": 30,
+      "basis": "runner-generated final 30-frame zero-command hold"
+    }
+  ],
+  "checks": {
+    "all_frames_partitioned_once": true,
+    "source_report_still_qualified": true,
+    "source_files_not_modified": true,
+    "terminal_hold_exactly_30_frames": true,
+    "training_eligible": false
+  }
+}

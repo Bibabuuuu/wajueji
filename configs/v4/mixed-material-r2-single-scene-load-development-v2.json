@@ -1,0 +1,36 @@
+{
+  "schema": "excavation_mixed_material_r2_single_scene_load_development_config_v2",
+  "source_v1_config": {
+    "path": "configs/v4/mixed-material-r2-single-scene-load-development-v1.json",
+    "sha256": "df2fa09f78ff9a056ea24f901fac6c62021a03e7ee9a681dbd90315ff0796dd5"
+  },
+  "source_v1_report": {
+    "path": "reports/v4/mixed-material-r2-single-scene-load-development-2026-09-20-v1/report.json",
+    "sha256": "2d0c980b6341ad22cb819eecbc24700e8e71e22c796305ca987896a3cd77bf26",
+    "required_status": "single_scene_load_development_needs_review"
+  },
+  "lift_phase_extension": {
+    "phase_name": "short_lift",
+    "source_duration_s": 1.5,
+    "candidate_duration_s": 2.0,
+    "command": [0.0, 0.02, 0.0, 0.0],
+    "rationale": "retain the v1 negative-y pre-alignment and give the nearly accepted third rock another 0.5 s of unchanged low-speed lift; do not change effective-load thresholds"
+  },
+  "acceptance": {
+    "minimum_carried_rock_count": 3,
+    "require_fill_rate_above_baseline": true,
+    "required_forbidden_contact_count": 0,
+    "maximum_closure_m": 0.001
+  },
+  "scope": {
+    "one_scene_trajectory_development": true,
+    "trajectory_grid_search": false,
+    "second_scene_confirmation": false,
+    "all_six_scene_qualification": false,
+    "dump": false,
+    "truck_cad": false,
+    "mpm_coupling": false,
+    "training": false,
+    "physics_qualified": false
+  }
+}

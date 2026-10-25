@@ -1,0 +1,19 @@
+{
+  "command": [
+    "g++",
+    "-O2",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+    "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+    "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/include",
+    "/home/qunwang/wajueji/work/contact-full-response-20260924-v1/export_response.cc",
+    "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib/libmujoco.so.2.3.8",
+    "-Wl,-rpath,/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib",
+    "-o",
+    "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/export-response"
+  ],
+  "returncode": 0,
+  "stderr": ""
+}

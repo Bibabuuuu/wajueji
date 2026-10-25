@@ -1,0 +1,22 @@
+{
+  "command": [
+    "g++",
+    "-O2",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8",
+    "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/repo/evidence/autonomous-multiscoop-2026-09-14-v1/mechanism-auto8/excavator_simulator",
+    "-I/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/include",
+    "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/shadow-bridge.cc",
+    "/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib/libmujoco.so.2.3.8",
+    "-Wl,-rpath,/home/qunwang/Documents/Codex/2026-09-22/wajueji-continuation/work/a30-layered-47-sparse-motion-v1/mujoco/lib",
+    "-o",
+    "/home/qunwang/wajueji/runs/contact-full-response-20260924-v1/shadow-bridge"
+  ],
+  "exit_code": 0,
+  "stderr": "",
+  "source": "/home/qunwang/wajueji/runs/contact-geometric-probe-20260924-v9-handoff/contact1200/physics/cycle/capacity-bridge.cc",
+  "source_sha256": "123d3ebeb7f018f587b3e47f548cb66bf0025b072c19240a31e3b6a0fb7468c4",
+  "generated_sha256": "31da6c5a1fc322216bb1ab8045feb47903581e331ed2340ba3bde3f0607c9b46"
+}

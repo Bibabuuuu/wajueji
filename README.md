@@ -1,65 +1,60 @@
 # 复杂介质工况自主挖掘
 
-本仓库整理2026年“复杂介质工况自主挖掘”参赛项目的源码、设计记录、验证结果与最终提交材料。比赛材料和后续运行依赖已经归档，当前结果与恢复入口见下文。
+面向自主挖掘与装车的仿真研究项目，结合 MPM 土体仿真、四轴轨迹控制、残差强化学习和带载运输补偿。`main` 保存最终源码、恢复工具和项目记录。
 
-> **2026-09-19 历史工作入口：** 四轴模仿学习、精确接管和最新进场漂移诊断已整理到 [`src/v4/`](src/v4/README.md)，状态与工作规则见 [`docs/v4/README.md`](docs/v4/README.md)。完整轨迹保存在本仓库内的 `local-data/`，由 Git 忽略；下文保留 2026-09-14 提交基线的历史状态。
+**[查看效果](#项目效果)** · **[快速恢复](#快速恢复)** · **[下载最终 PPT、视频与图片](https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023)**
 
-## 当前最终进度（2026-10-25更新）
+## 项目效果
 
-- **后续两铲阶段验证已完成**：第一铲仿真短保载显示满斗率为 **149.957190%（约150%）**，贴边第二铲为 **109.941335%（约110%）**；均完成1170帧参考轨迹及0.5秒保载。对应2026-10-15的D-192结果，首铲真实运卸返回后，通过原生快照续接第二铲，土堆未重置。
-- **带载举升与回转减振已有单来源验证**：D-200中举升姿态峰值误差约4.00°降至1.91°，RMS约1.52°降至0.57°；后续完整回转与停用反馈后的保持也已完成。尚未把该修复重新跑成完整两铲作业链。
-- **最终材料已归档，独立恢复包已发布**：[最终PPT、视频和图片](https://github.com/Bibabuuuu/wajueji/releases/tag/final-archive-20261023)；[完整恢复包与使用说明](https://github.com/Bibabuuuu/wajueji/releases/tag/portable-restore-20261024)。恢复包已在独立目录通过权重推理、24类初态恢复、3帧执行和显示资源加载验证，并从GitHub完整下载核对SHA256。
+![同一土堆的首铲挖掘、保载、卸料、返回与第二铲作业](docs/images/two-scoop-preview.png)
 
-上述150%和110%是当前仿真口径下挖掘后的短时保载显示值，包含堆高，尚未标定为净装车体积。已验证两铲阶段与连续三铲、第二铲运输、跨场景及实机验证分别记录，不把局部结果扩写为完整作业验收。
-
-最终源码、恢复工具和详细状态见[最终归档分支](https://github.com/Bibabuuuu/wajueji/tree/codex/portable-restore-20261024)、[状态记录](https://github.com/Bibabuuuu/wajueji/blob/codex/portable-restore-20261024/docs/CURRENT_STATUS.md)。下方保留早期基线，95.23%和76.74%不代表上述后续两铲结果。
-
-<details>
-<summary>早期基线与历史结果（2026年9月）</summary>
-
-- 单铲自主“挖取—抬升保持—回转—装车—返回”已经在冻结的 MPM 工况中完成闭环验证。
-- 同一物理实例中的三铲空载流程已经完成，49,258 个机构步连续运行，独立审计 24 项全部通过。
-- 第一条真实带土三铲 `contact-3cycle-v1` 已结束：前两铲完整通过，第三铲在卷斗阶段因新获取仅 10.41kg、未达到 20kg 开发门槛而停止，整轮不能记为成功。第一、二铲保持末帧的暂估满斗率分别为 95.23% 和 76.74%，仍需在正式演示中统一复算。
-- 提交前不从零训练强化学习，也不增加场景或随机种子评价入口。当前优先完成固定工况下三次正式演示、四项指标和视频/方案材料。
-
-</details>
-
-## 仓库结构
-
-| 路径 | 内容 |
+| 内容 | 最终记录 |
 | --- | --- |
-| `perception/` | 虚拟深度、地形重建和在线观测 |
-| `planning/` | 选点、路径生成、阶段机和执行门控 |
-| `terrain/` | 土台、物料账本、斗内与车厢区域统计 |
-| `dynamics/` | 机构适配与 MPM 桥接源码 |
-| `tests/` | 当前可复现的模块测试 |
-| `docs/` | 要求、决策、验收、排期和团队阅读材料 |
-| `evidence/` | 按日期冻结的实验源码、摘要和小型结果；不是并列的产品版本 |
-| `src/v4/` | 当前四轴模仿学习运行源码的唯一受版本管理副本 |
-| `labels/v4/` | 当前训练索引与阶段标签 |
-| `reports/v4/` | 精选 JSON 报告与审计，不含大轨迹 |
-| `local-data/` | 本地完整轨迹和快照；在仓库目录内但不上传 Git |
-| `runs/` | 后续运行输出；默认不上传 Git |
+| 首铲短保载显示满斗率 | **149.96%（约 150%）** |
+| 第二铲短保载显示满斗率 | **109.94%（约 110%）** |
+| 两铲衔接 | 首铲挖掘、运卸、返回后，通过已核验的原生快照续接第二铲，土堆不重置 |
+| 带载举升减振 | 独立运输验证中，斗姿误差峰值 **4.00° → 1.91°**，RMS **1.52° → 0.57°** |
 
-当前连续三铲的集成候选位于 `evidence/autonomous-multiscoop-2026-09-14-v1/`。它依赖同一部署根目录下的冻结场景、机构二进制和 Newton/Warp 环境，因此单独克隆本仓库还不能在普通 Windows Python 环境直接运行完整 MPM 仿真。复现入口和限制见该目录的 `README.md`。
+两铲均完成 1170 参考帧及 0.5 秒保载。满斗率为含堆尖的仿真显示指标，尚未标定为实际装车净体积；第二铲运输、第三铲、跨场景成功率及实机部署尚未验收。减振修复完成后，未重新运行完整两铲链路。详细范围见[当前状态](docs/CURRENT_STATUS.md)与[实验记录](reports/github-handoff-20261015/)。
 
-## 版本与证据规则
+完整路演视频、最终 17 页 PPT、PPT 内嵌视频和图片、可编辑流程图及答辩稿，统一下载[最终材料包](https://github.com/Bibabuuuu/wajueji/releases/download/final-archive-20261023/wajueji-final-materials-20261023.zip)。
 
-顶层模块代表正在维护的通用代码；`evidence/` 中带日期或运行名的目录代表一次不可覆盖的实验快照。失败运行也保留，用于说明修改原因和防止把不同源码、输入、日志混成一次结果。
+## 快速恢复
 
-Git 只保存源码、文档、小型 JSON/CSV 结论和选定图片。粒子状态、逐步日志、压缩包、构建产物及视频等大文件留在本地证据盘或提交材料目录，不进入普通 Git 历史。需要共享大文件时单独建立带哈希的发布包。
+**运行项目：下载 [独立恢复包（约 300 MB）](https://github.com/Bibabuuuu/wajueji/releases/download/portable-restore-20261024/wajueji-portable-restore-20261024.tar.gz)。** 它已包含冻结源码、模型与贴图、策略权重、参考轨迹、关键状态和运行后端，无需原来的代码或资源目录。兼容的 Linux/NVIDIA、Python 与依赖环境需要另行准备。
 
-## 快速阅读
+将下载的压缩包放入准备好的环境后执行：
 
-1. `docs/START-HERE.md`：五分钟了解唯一主线、真实进度和参与方式。
-2. `AGENTS.md`：队友 AI 的事实来源、修改边界和最小验证。
-3. `.planning/task.md`：当前正在做什么、边界和下一步。
-4. `docs/handoff.md`：中断后如何恢复工作。
-5. `docs/acceptance.md`：哪些能力已经通过，哪些仍未验收。
-6. `docs/decisions.md`：关键技术取舍及原因。
+```bash
+tar -xzf wajueji-portable-restore-20261024.tar.gz
+cd wajueji-portable-restore
+python restore.py check
+python restore.py smoke --output ./outputs/first-smoke
+```
 
-## 本地协作
+`check` 校验包内文件；`smoke` 恢复冻结状态、加载策略并执行 3 个物理帧，同时检查显示模型和土壤表面生成。独立目录短检已通过：24 类初态数组一致，原生恢复误差为 0，7 个原项目资源目录访问为 0。此项验证覆盖恢复启动，未重新验收完整挖掘或运输。
 
-笔记本负责整理、提交并通过可访问 GitHub 的网络推送；GPU 台式机负责长时间 MPM 仿真。每条长任务运行期间不要在对应目录中切分支、拉取或覆盖源码。任务结束后再通过 Tailscale/SSH 同步已提交版本，并用新的运行名启动后续实验。
+[恢复使用说明](deployment/README.zh-CN.md) · [恢复包与 SHA256 校验文件](https://github.com/Bibabuuuu/wajueji/releases/tag/portable-restore-20261024) · [验证回执](deployment/restore-verification-20261024.json)
 
-仓库在参赛材料冻结前应保持私有。文档包含尚未公开的实现路线、实验结果和本机协作信息；公开发布应在提交后另做脱敏与许可证检查。
+**阅读或修改源码：**
+
+```bash
+git clone https://github.com/Bibabuuuu/wajueji.git
+cd wajueji
+```
+
+Git 仓库保存源码和小型记录；大型运行资源从上面的独立恢复包获取。GitHub 自动生成的 `Source code (zip/tar.gz)` 不含这些外部运行资源。
+
+## 代码与文档
+
+| 入口 | 内容 |
+| --- | --- |
+| [src/v4/](src/v4/) | 四轴仿真、控制、策略与运行逻辑 |
+| [configs/](configs/) | 场景与实验配置 |
+| [deployment/](deployment/) | 独立恢复、打包工具和验证回执 |
+| [tests/](tests/) | 已有测试 |
+| [reports/](reports/) / [evidence/](evidence/) | 实验摘要、冻结结果与核验记录 |
+| [项目总体规划](docs/PROJECT_PLAN.md) / [当前状态](docs/CURRENT_STATUS.md) | 项目范围与最终进度 |
+| [文档索引](docs/DOCS_INDEX.md) / [归档说明](docs/FINAL_ARCHIVE.md) | 详细技术文档与历史归档入口 |
+
+最终材料仅保留提交版 PPT；大型媒体与恢复包放在 Release。历史实验记录和失败结论保留在文档与归档中，既有发布标签和冻结源码保持不变。

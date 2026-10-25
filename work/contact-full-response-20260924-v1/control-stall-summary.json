@@ -1,0 +1,110 @@
+{
+  "latched_first_frame": 1124,
+  "latched_frames": 1277,
+  "zero_action_frames": 427,
+  "zero_groups": [
+    {
+      "first": 1124,
+      "last": 1549,
+      "frames": 426
+    },
+    {
+      "first": 1551,
+      "last": 1551,
+      "frames": 1
+    }
+  ],
+  "final_feedback": {
+    "closure_fraction": 0.998469114256328,
+    "command_rate_per_s": 2.0,
+    "contact": [
+      5.905779709213895,
+      5.535755852820629e-06,
+      1.0327025829197787,
+      -0.31994111354849253
+    ],
+    "coordinates": [
+      3.945874192778732,
+      -0.00019555772849570393,
+      1.6459040815664074,
+      1.8488276613869878
+    ],
+    "cut_target": [
+      5.330779709213894,
+      0.0,
+      0.18528817923384802,
+      0.38
+    ],
+    "depth_velocity_lower": -2.190923853498839,
+    "desired_task_velocity": [
+      0.03330434601923853,
+      0.0002933365927435559,
+      0.15,
+      0.3
+    ],
+    "ground_linear_lower": -5.837526018975621,
+    "mode": "bc_with_lateral_depth_feedback",
+    "no_down_latched": true,
+    "no_down_minimum_velocity_m_s": 0.004738305452913443,
+    "no_down_preview_minimum_delta_m": 0.0,
+    "no_down_trigger_frame": 1124,
+    "normalized_requested": [
+      0.0006189385294141321,
+      0.20054001811048316,
+      0.22551527537540753,
+      0.07287772132838455
+    ],
+    "original_projection_reason": null,
+    "pitch_velocity_upper": null,
+    "predicted_task_velocity": [
+      -0.008235789276873797,
+      0.0002934650982490835,
+      0.14737325381336083,
+      0.11421467517238566
+    ],
+    "preview_minimum_clearance_m": 0.9056289028463431,
+    "preview_scale": 1.0,
+    "progress": null,
+    "root_above_surface_m": 0.4918636030236092,
+    "root_ready": true,
+    "slew_safety_override": null,
+    "soil_plan": {
+      "ground_connected_particles": 250625,
+      "observation_frame": 0,
+      "reference": "frozen_current_scoop_ground_soil",
+      "root_embed_m": 0.03,
+      "root_local_m": [
+        0.021459,
+        0.0,
+        -0.157745
+      ],
+      "root_target_xy_m": [
+        5.301355176030896,
+        0.5553855507551534
+      ],
+      "strip_counts": [
+        373,
+        614,
+        833,
+        919,
+        781,
+        764,
+        732
+      ],
+      "strip_heights_m": [
+        0.5120519161224365,
+        1.1755830824375153,
+        1.1271742582321167,
+        1.0567268729209898,
+        1.101706862449646,
+        1.225940603017807,
+        0.9650679349899292
+      ],
+      "surface_estimator": "median_of_seven_strip_z95",
+      "surface_z_m": 1.101706862449646,
+      "tip_target_z_m": 0.18528817923384802,
+      "vertical_pitch_rad": 0.2184927986558317
+    },
+    "target": null
+  }
+}

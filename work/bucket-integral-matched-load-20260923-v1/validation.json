@@ -1,0 +1,29 @@
+{
+  "verification_checks": {
+    "frozen_runner_hash": true,
+    "frozen_header_hash": true,
+    "baseline_source_bindings_current": true,
+    "baseline_frames_and_hard_guards": true,
+    "baseline_original_480_exact": true,
+    "candidate_source_bindings_current": true,
+    "candidate_frames_and_hard_guards": true,
+    "candidate_original_480_exact": true,
+    "analysis_bindings_current": true,
+    "full_state_exact_23_each": true,
+    "prefix660_trace_exact": true,
+    "python_syntax": true,
+    "cpp_unit_test": true,
+    "candidate_native_compile_artifact": true,
+    "docs_check": true,
+    "changed_docs_diff_check": true,
+    "no_active_experiment_replay": true
+  },
+  "all_verification_checks_pass": true,
+  "physics_protocol_pass": false,
+  "default_enabled": false,
+  "unit_stdout": "INTEGRAL_TEST_PASS rate/cap/neutral/reverse/unwind/deadband/invalid/surrogate\n",
+  "docs_stdout": "DOCS_CHECK_PASS core=8 active_plans=7 checked_links=14 decisions=119\n",
+  "diff_stdout": "",
+  "replay_pids": [],
+  "scope": "Artifact integrity, unit and matched-prefix verification do not override failed physical stopped gates or weak reverse latency evidence."
+}

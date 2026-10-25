@@ -1,0 +1,42 @@
+{
+  "status": "reconstruction_passed",
+  "review_sha256": "00c7faab661c2dcf56075679f2ad315ff0f8732e1db8818e6892c9e5c4467113",
+  "frames": 120,
+  "recorded_run": "/home/qunwang/wajueji/runs/contact-bc-closed-loop-20260924-v1/probe120-v2",
+  "playback_physics_steps": 0,
+  "live_inference": false,
+  "frames_reconstructed": 120,
+  "final_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "wall_seconds": 21.865352617023746,
+  "source_unchanged": true,
+  "cache_sha256": {
+    "particles.npy": "bb7245f47ff87aee912620215470580786aa7f1389fc9ee27c23463eb59b32fc",
+    "states.json": "0aafb306251c8e70b8cafac394720cc58fb4bb172042ac348c63ea4de97778ff",
+    "scene.json": "e811e51b06dedb61c7322474250b8820f749d2a6c365cf0e04015bac229c05b8"
+  }
+}

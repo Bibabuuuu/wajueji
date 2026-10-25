@@ -1,0 +1,6 @@
+{
+  "checks": "protocol runner SHA, two XMLs, all4x23 exact states, both1580frames hard-safe, immutable source/analysis bindings, stopped-gate classification, Python syntax",
+  "pass": true,
+  "default_control_changed": false,
+  "candidate_deployed": false
+}

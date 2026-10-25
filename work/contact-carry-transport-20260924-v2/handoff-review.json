@@ -1,0 +1,104 @@
+{
+  "status": "cached_command_comparison",
+  "scope": "counterfactual commands on old physical states; no corrected physical rollout",
+  "physics_steps_added": 0,
+  "initial_bias": [
+    4.592495001316116e-05,
+    0.0014007370551937237,
+    -0.006418771891844921,
+    0.00041364180033776066
+  ],
+  "samples": [
+    {
+      "frame": 2928,
+      "old_requested": [
+        -0.00018369979320468494,
+        -0.005567232809538414,
+        0.0225,
+        0.0
+      ],
+      "corrected_requested": [
+        6.855092882229741e-12,
+        3.575261478983016e-05,
+        3.75047448091248e-05,
+        0.0
+      ],
+      "actual_reference_error": [
+        -1.0699774399824946e-13,
+        -5.580533005700161e-07,
+        -5.854018440554221e-07,
+        0.0
+      ]
+    },
+    {
+      "frame": 2937,
+      "old_requested": [
+        -0.00010577987697077407,
+        -0.0053110281532267045,
+        0.0225,
+        0.0
+      ],
+      "corrected_requested": [
+        7.877198793817403e-05,
+        0.00016999592739086467,
+        0.004634525946718648,
+        0.0
+      ],
+      "actual_reference_error": [
+        -2.471240333735969e-06,
+        0.0002785452419539203,
+        -0.0018414688020644832,
+        0.0003036621695141628
+      ]
+    },
+    {
+      "frame": 2947,
+      "old_requested": [
+        -5.312412972632852e-05,
+        -0.004675234184014165,
+        0.0225,
+        0.0
+      ],
+      "corrected_requested": [
+        0.00013720461765306252,
+        0.0006451644544940294,
+        0.005913935313332397,
+        0.0
+      ],
+      "actual_reference_error": [
+        -1.3923418144781707e-05,
+        0.00020003495671638838,
+        -0.0013671276421099443,
+        0.00020443259373903455
+      ]
+    },
+    {
+      "frame": 2956,
+      "old_requested": [
+        -2.865864456271655e-05,
+        -0.0056548777628375735,
+        0.0225,
+        0.0
+      ],
+      "corrected_requested": [
+        0.00017231692192761633,
+        -0.0004322035949015923,
+        0.0019363617967198543,
+        0.0
+      ],
+      "actual_reference_error": [
+        -2.1227338668347237e-05,
+        0.0001704322485841514,
+        0.0017507396655548901,
+        -0.0005197019443680118
+      ]
+    }
+  ],
+  "inputs": {
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/final.npz": "dc7378f44d2b8204186354d0c58fd72993d3abb8ebfe29e8e84a31b9b868ae06",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/final.npz.json": "4d994034ca98732c1f6d7a9e6be94fd97222437c30d5a7391bf7ad8355a2130a",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/physical/actions.ndjson": "9bab4aae65fe6bbbd78807976ca9728c0513d87a47e7cb6744d0e9f1bca330ed",
+    "/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/reference_tracking.py": "8ad3facf7cf9e9e176f636eb4390afd8bdf0d789154c6b1f247d5c8421e01588",
+    "/home/qunwang/wajueji/evidence/autonomous-multiscoop-2026-09-14-v1/pose_goals.py": "08cc2fbff925983845b81c393a4f8e9d6c3a648f436a5781778bed600cbcef4e"
+  }
+}

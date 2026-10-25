@@ -1,0 +1,292 @@
+{
+  "status": "one_step_audit_passed",
+  "frame": 1681,
+  "source_sha256": "c50c4f6239ff165a871c166d6360d24bc4c0fe79b168c5f9e9fed84a8c6504de",
+  "input_sha256": "dd479e6addc20a3b09479dbd3c4798929707af40ccabbf890bbfcd560dcb35e6",
+  "forces_routed_to_rigid": false,
+  "position_correction_impulse_included": false,
+  "baseline_particle_positions_exact": true,
+  "original_command_exact": true,
+  "hard_guard_safe": true,
+  "material_guard_safe": true,
+  "sweep_safe": true,
+  "native_projection": {
+    "per_collider": {
+      "0": {
+        "particle_count": 5,
+        "particle_velocity_impulse_ns": [
+          0.0007410136940440011,
+          8.053126996363565e-08,
+          0.005607013114762235
+        ],
+        "reaction_impulse_ns": [
+          -0.0007410136940440011,
+          -8.053126996363565e-08,
+          -0.005607013114762235
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          -0.0028805129837031025,
+          0.0206362012056005,
+          0.00018858632986782308
+        ]
+      },
+      "14": {
+        "particle_count": 386,
+        "particle_velocity_impulse_ns": [
+          -0.03910565540633619,
+          -0.10214361270337383,
+          -0.06850285871990315
+        ],
+        "reaction_impulse_ns": [
+          0.03910565540633619,
+          0.10214361270337383,
+          0.06850285871990315
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          -0.13340592702245505,
+          -0.09509361923969824,
+          0.22403602969555939
+        ]
+      },
+      "15": {
+        "particle_count": 1,
+        "particle_velocity_impulse_ns": [
+          0.00010040670513535976,
+          0.0005873488096444219,
+          -0.0006254794311162659
+        ],
+        "reaction_impulse_ns": [
+          -0.00010040670513535976,
+          -0.0005873488096444219,
+          0.0006254794311162659
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          0.00039033635375846395,
+          -0.0023428644769910257,
+          -0.0021373784780701096
+        ]
+      },
+      "17": {
+        "particle_count": 68,
+        "particle_velocity_impulse_ns": [
+          -0.005309927410751493,
+          -0.004903364064826055,
+          -0.0025476982348615618
+        ],
+        "reaction_impulse_ns": [
+          0.005309927410751493,
+          0.004903364064826055,
+          0.0025476982348615618
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          -0.007327744885254693,
+          0.007936305482783658,
+          -1.8856385915330329e-06
+        ]
+      },
+      "21": {
+        "particle_count": 79,
+        "particle_velocity_impulse_ns": [
+          0.0004908577459453167,
+          -0.00664970778768495,
+          -0.004137394671759227
+        ],
+        "reaction_impulse_ns": [
+          -0.0004908577459453167,
+          0.00664970778768495,
+          0.004137394671759227
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          -0.009641215175492688,
+          -0.013554504719708363,
+          0.02064242265614284
+        ]
+      },
+      "29": {
+        "particle_count": 129,
+        "particle_velocity_impulse_ns": [
+          0.0,
+          0.0,
+          3.159220714893385e-10
+        ],
+        "reaction_impulse_ns": [
+          -0.0,
+          -0.0,
+          -3.159220714893385e-10
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          -9.167470298330888e-10,
+          1.1255991808512375e-09,
+          0.0
+        ]
+      },
+      "34": {
+        "particle_count": 6,
+        "particle_velocity_impulse_ns": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reaction_impulse_ns": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "37": {
+        "particle_count": 1,
+        "particle_velocity_impulse_ns": [
+          -3.875051525492612e-06,
+          -6.326217973084969e-06,
+          -3.2294040181596317e-06
+        ],
+        "reaction_impulse_ns": [
+          3.875051525492612e-06,
+          6.326217973084969e-06,
+          3.2294040181596317e-06
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          -1.1989988003338471e-05,
+          2.9041167324872743e-06,
+          8.698120667473752e-06
+        ]
+      },
+      "41": {
+        "particle_count": 11,
+        "particle_velocity_impulse_ns": [
+          -0.02463366483132154,
+          -0.021158371568825995,
+          -0.029790790116548994
+        ],
+        "reaction_impulse_ns": [
+          0.02463366483132154,
+          0.021158371568825995,
+          0.029790790116548994
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          0.02738142688008438,
+          -0.020600791675231756,
+          -0.007883000673668886
+        ]
+      },
+      "42": {
+        "particle_count": 3,
+        "particle_velocity_impulse_ns": [
+          0.0,
+          0.0,
+          -9.720679122748876e-11
+        ],
+        "reaction_impulse_ns": [
+          -0.0,
+          -0.0,
+          9.720679122748876e-11
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          2.4675999102481664e-10,
+          -3.1202426666345835e-10,
+          0.0
+        ]
+      },
+      "48": {
+        "particle_count": 2,
+        "particle_velocity_impulse_ns": [
+          -5.53923179130722e-06,
+          -7.545579962242588e-06,
+          -8.925449805075036e-05
+        ],
+        "reaction_impulse_ns": [
+          5.53923179130722e-06,
+          7.545579962242588e-06,
+          8.925449805075036e-05
+        ],
+        "reaction_angular_impulse_about_world_origin_nms": [
+          0.00018356563428361658,
+          -0.0002081303732978483,
+          6.2030686314567864e-06
+        ]
+      }
+    },
+    "total_particle_velocity_impulse_ns": [
+      -0.06772638378660134,
+      -0.13428149858173177,
+      -0.1000896917427805
+    ],
+    "total_opposite_reaction_ns": [
+      0.06772638378660134,
+      0.13428149858173177,
+      0.1000896917427806
+    ],
+    "linear_balance_residual_ns": [
+      0.0,
+      0.0,
+      9.71445146547012e-17
+    ],
+    "maximum_abs_linear_balance_residual_ns": 9.71445146547012e-17,
+    "position_corrected_count": 691,
+    "velocity_changed_count": 460
+  },
+  "collider_groups": {
+    "bucket": [
+      48
+    ],
+    "static": [
+      0
+    ],
+    "rock": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "static_group_includes_ground_and_truck": true,
+  "wall_seconds": 6.034998206014279
+}

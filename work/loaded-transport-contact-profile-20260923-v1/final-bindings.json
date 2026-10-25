@@ -1,0 +1,10 @@
+{
+  "src/v4/run_layered_47_excavation_preflight.py": "b1f2b396b5e7fcf217ca875d9870fa21fed4f08804f43ee2752ee8e31a262ca6",
+  "src/v4/mpm_static_contact_ownership.py": "08556fe8f30458dec691c4176e06241bf23c63df6aa5806ff8db6f7d1df2d1a4",
+  "src/v4/audit_layered_47_truck_physics_gate.py": "c38c884dc0004617c180707d92b882f5addf32bd87e0f8fb0115d40b94438613",
+  "src/v4/run_layered_47_sparse_manual_contact_episode.py": "a840f110283bb113359b6ba8a53c1c8641452aaee3538fab71b748667b6d849d",
+  "scripts/run_47_loaded_transport_local.sh": "14361b913f3240c9b03e4c02b8e6cefeb536dbbf86bdc1077b0f45257250f4be",
+  "tests/v4/test_mpm_static_contact_ownership.py": "2e7b7831c268156693ebe6c898a638c3982ca1a737d8412ebd7cd6182c6da5e5",
+  "tests/v4/test_excavation_wrench_reduction.py": "790df3685d260bfb40124dccda187fd520befe0739280dd9ba912c875372c1af",
+  "runs/layered-47-truck-physics-gate-v1/truck-static-gate-20260923-v6/truck-physics-gate.json": "80d2edc9fbc8663c4fad341f3745ea29e39028cb993f39265d566b56bf683e2f"
+}

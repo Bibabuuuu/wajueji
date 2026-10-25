@@ -1,0 +1,86 @@
+{
+  "status": "frozen_before_physics",
+  "kind": "bucket_conditional_integral_isolated_candidate",
+  "initial": "D115 saved complete rear-lower handoff, no APPROACH rerun",
+  "matched_prefix": "recorded600frames plus60zero-commandframes; integral exactly0 through660; both branches must match23 full numeric arrays at600 and660",
+  "integral": {
+    "ki_N_per_m_s": 1500000,
+    "cap_N": 120000,
+    "slew_N_per_s": 30000,
+    "error_deadband_m": 0.0005,
+    "nominal_kp_over_ki_s": 2,
+    "activation_s": 11,
+    "neutral": "no growth; supporting effort kept; opposing error may unwind",
+    "reverse": "no growth in old direction; opposing error unwinds",
+    "antiwindup": "bounded accumulator itself; no hidden sum",
+    "real_hydraulic_limit": false,
+    "reason_for_cap": "initial ~35mm P error corresponds~105kN;120kN gives a finite diagnostic envelope, not a physical force cap"
+  },
+  "phases": [
+    {
+      "name": "curl",
+      "frames": [
+        661,
+        1020
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0.02
+      ]
+    },
+    {
+      "name": "hold",
+      "frames": [
+        1021,
+        1140
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "reverse",
+      "frames": [
+        1141,
+        1170
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        -0.02
+      ]
+    },
+    {
+      "name": "stop",
+      "frames": [
+        1171,
+        1290
+      ],
+      "command": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "guards": "all original manual hard guards; first failure save and stop; original upper-target projection preserved",
+  "acceptance": {
+    "curl_end_last30_mean_error_m": 0.005,
+    "curl_last30_mean_error_relative_baseline_max": 0.5,
+    "actual_bucket_soft_upper_m": 0.852,
+    "stop": "both neutral phases last15 frames original motion.stopped",
+    "reverse": "negative net actual bucket displacement and <=0.2s latency to velocity below -1mm/s",
+    "qualification": "all criteria together; otherwise report partial improvement or reject, never relax after run"
+  },
+  "scope": "no lift/truck or payload-success qualification; diagnostics not training; per-rock contact decomposition observational only",
+  "runtime": "serial local RTX4070 cuda:0,1290frames each, about4-6min per process",
+  "runner_sha256": "ee39ad1ea59403459eb7fe7abce1d1dc37913927b1a7cc41a37027fde49a6e48",
+  "header_sha256": "226e9421fcae393a6084edb54c43061378d73101f88a29839bbb4be5656ebecc"
+}

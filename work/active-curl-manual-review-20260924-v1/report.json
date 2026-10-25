@@ -1,0 +1,528 @@
+{
+  "schema": "active_curl_manual_single_scoop_posthoc_v1",
+  "status": "posthoc_geometry_and_stability_audit_completed",
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585",
+  "snapshot": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/final-001276.diagnostic.npz",
+  "snapshot_sha256": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b",
+  "frames": 1276,
+  "simulation_seconds": 21.266666666666666,
+  "terminal_zero_hold_frames": 30,
+  "capacity_liters": 255.164729950989,
+  "load_geometry": {
+    "soil_only": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 86.61600000000001,
+      "heap_raw_liters": 37.144000000000005,
+      "inside_liters": 87.60642242522144,
+      "heap_liters": 37.56872811677317,
+      "fill_percent": 49.05660377358491,
+      "cavity_fraction_of_counted_load": 0.6998707175177763,
+      "selected_particles": 41153,
+      "cavity_particles": 7098,
+      "load_region_particles": 9970,
+      "point_support_fraction": 0.994383149448345,
+      "load_density_quantiles": [
+        0.5753154873847961,
+        1.1302398443222046,
+        3.4149641752243043
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.17218746300204657,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "mixed_soil_and_rock_0p0125m_samples": {
+      "method_version": "bucket-local-density-v2-weighted",
+      "measurement_cell_m": 0.02,
+      "particle_spacing_m": 0.025,
+      "particle_equivalent_volume_m3": 1.5625000000000004e-05,
+      "smoothing_sigma_cells": 0.43749999999999994,
+      "occupancy_level": 0.4,
+      "volume_scale": 1.011434635924326,
+      "capacity_liters": 255.164729950989,
+      "inside_raw_liters": 113.77600000000001,
+      "heap_raw_liters": 69.68800000000002,
+      "inside_liters": 115.07698713692614,
+      "heap_liters": 70.48485690829445,
+      "fill_percent": 72.722371967655,
+      "cavity_fraction_of_counted_load": 0.6201543627087602,
+      "selected_particles": 99025,
+      "cavity_particles": 22118,
+      "load_region_particles": 40843,
+      "point_support_fraction": 0.9984085400190975,
+      "load_density_quantiles": [
+        0.689849591255188,
+        0.998599648475647,
+        1.906018352508545
+      ],
+      "bulk_touches_roi_boundary": false,
+      "quality_reasons": [],
+      "valid_estimate": true,
+      "compute_wall_s": 0.24081735000072513,
+      "scope": "cavity plus cavity-anchored heap; no particle-speed exclusion"
+    },
+    "reported_mixed_fill_percent": 72.722371967655,
+    "cavity_soil_particles": 7098,
+    "cavity_soil_relative_speed_quantiles_m_s": [
+      0.0014623317624478111,
+      0.0072733668660335035,
+      0.010945581549351994,
+      0.08617176609654853
+    ],
+    "rock_candidates": [
+      {
+        "rock_id": "lower-008",
+        "index": 8,
+        "volume_liters": 20.579526276115534,
+        "fraction_in_cavity": 0.050522317188983853,
+        "center_bucket_m": [
+          0.05716445666176805,
+          -0.1514863392321941,
+          -0.9607607056440732
+        ]
+      },
+      {
+        "rock_id": "lower_middle-004",
+        "index": 13,
+        "volume_liters": 17.157284678805055,
+        "fraction_in_cavity": 0.9957834757834758,
+        "center_bucket_m": [
+          0.37215944214442087,
+          0.014891614030929904,
+          -0.6611793874318587
+        ]
+      },
+      {
+        "rock_id": "lower_middle-007",
+        "index": 16,
+        "volume_liters": 5.575279762570685,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          0.9568551035366224,
+          -0.391684793318593,
+          -1.0739358526848104
+        ]
+      },
+      {
+        "rock_id": "lower_middle-009",
+        "index": 18,
+        "volume_liters": 5.575279762570685,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.6286055269490691,
+          -0.7599817437566752,
+          -0.758718784536721
+        ]
+      },
+      {
+        "rock_id": "lower_middle-010",
+        "index": 19,
+        "volume_liters": 14.137166941154062,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.8976085610534803,
+          0.19407283077193327,
+          -0.16850070429238556
+        ]
+      },
+      {
+        "rock_id": "middle-000",
+        "index": 20,
+        "volume_liters": 7.23822947387088,
+        "fraction_in_cavity": 0.6136241249326871,
+        "center_bucket_m": [
+          0.21120691261607846,
+          0.12856976910100665,
+          -0.541943051046931
+        ]
+      },
+      {
+        "rock_id": "middle-002",
+        "index": 22,
+        "volume_liters": 7.2382294738708834,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.6390556270236365,
+          -0.18080606813811856,
+          -0.7892336456355347
+        ]
+      },
+      {
+        "rock_id": "middle-006",
+        "index": 26,
+        "volume_liters": 5.575279762570684,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.6469182439615315,
+          -0.5615655575507092,
+          -0.8963043780784699
+        ]
+      },
+      {
+        "rock_id": "middle-008",
+        "index": 28,
+        "volume_liters": 4.188790204786392,
+        "fraction_in_cavity": 1.0,
+        "center_bucket_m": [
+          0.44415567908160225,
+          -0.07461235380851615,
+          -0.3843966771671098
+        ]
+      },
+      {
+        "rock_id": "middle-010",
+        "index": 30,
+        "volume_liters": 9.202772079915698,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.7399275657896272,
+          0.11548918998955263,
+          -0.9738483932167961
+        ]
+      },
+      {
+        "rock_id": "middle-011",
+        "index": 31,
+        "volume_liters": 3.0536280592892795,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.5468625716700755,
+          -0.8745625287489973,
+          -0.7229946105887837
+        ]
+      },
+      {
+        "rock_id": "middle-012",
+        "index": 32,
+        "volume_liters": 9.2027720799157,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.760646041286919,
+          0.3037916662621423,
+          0.025564151970360258
+        ]
+      },
+      {
+        "rock_id": "upper-000",
+        "index": 33,
+        "volume_liters": 4.849048260815844,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.1465046336250804,
+          -0.23357197470937127,
+          -1.0639311663673945
+        ]
+      },
+      {
+        "rock_id": "upper-001",
+        "index": 34,
+        "volume_liters": 4.849048260815844,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.5496222532321386,
+          -0.6134695764441387,
+          -1.1184467076994702
+        ]
+      },
+      {
+        "rock_id": "upper-002",
+        "index": 35,
+        "volume_liters": 3.591364001828732,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.5519256154951844,
+          0.07163476396289208,
+          -1.1484461487401556
+        ]
+      },
+      {
+        "rock_id": "upper-003",
+        "index": 36,
+        "volume_liters": 8.181230868723421,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          0.03833487200636275,
+          0.17536118022607908,
+          -0.6540239700434591
+        ]
+      },
+      {
+        "rock_id": "upper-004",
+        "index": 37,
+        "volume_liters": 4.849048260815845,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.3871219203685359,
+          -0.9374353781197076,
+          -0.6067989131122498
+        ]
+      },
+      {
+        "rock_id": "upper-005",
+        "index": 38,
+        "volume_liters": 8.18123086872342,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.5769854254054914,
+          -0.6104715267884365,
+          -1.3819762257858719
+        ]
+      },
+      {
+        "rock_id": "upper-006",
+        "index": 39,
+        "volume_liters": 6.370626302704501,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.4513324018102678,
+          -0.16967510858264623,
+          -0.9933679751590739
+        ]
+      },
+      {
+        "rock_id": "upper-007",
+        "index": 40,
+        "volume_liters": 2.5724407845144426,
+        "fraction_in_cavity": 1.0,
+        "center_bucket_m": [
+          0.3943248904668322,
+          0.05220805277750005,
+          -0.2930226560233752
+        ]
+      },
+      {
+        "rock_id": "upper-008",
+        "index": 41,
+        "volume_liters": 6.370626302704502,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.0235860005662778,
+          -0.922638138269772,
+          -0.5627918991631058
+        ]
+      },
+      {
+        "rock_id": "upper-009",
+        "index": 42,
+        "volume_liters": 3.591364001828732,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.5308907684810285,
+          -0.21883504462676048,
+          -1.371237816920864
+        ]
+      },
+      {
+        "rock_id": "upper-010",
+        "index": 43,
+        "volume_liters": 2.5724407845144417,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.4556319877723443,
+          0.1366699154036001,
+          -0.7707938134674791
+        ]
+      },
+      {
+        "rock_id": "upper-011",
+        "index": 44,
+        "volume_liters": 8.181230868723418,
+        "fraction_in_cavity": 0.0,
+        "center_bucket_m": [
+          1.4612611431151612,
+          0.2643902386499065,
+          0.008471414246537232
+        ]
+      }
+    ]
+  },
+  "soil_stability": {
+    "all_final_positions_finite": true,
+    "final_minimum_z_m": 0.003027611644938588,
+    "final_particles_below_minus_5mm": 0,
+    "initial_bottom_particle_count": 55520,
+    "initial_bottom_moved_over_0p2m": 0,
+    "initial_bottom_maximum_displacement_m": 0.0951881855726242,
+    "initial_bottom_outside_expanded_footprint": 0
+  },
+  "material_guard": {
+    "all_frames_safe": true,
+    "maximum_rejection_count": 0,
+    "total_nonfinite_values": 0,
+    "maximum_F_frobenius": 1.931014235567443,
+    "minimum_Jp": 0.11640971899032593,
+    "maximum_Jp": 23969.26171875
+  },
+  "effective_payload": {
+    "bucket_origin_displacement_m": [
+      -0.5156382566102273,
+      0.6206111333282994,
+      0.7712754834608686
+    ],
+    "cavity_soil_particle_count": 7098,
+    "cavity_soil_vertical_displacement_quantiles_m": [
+      0.8113093376159668,
+      1.059951663017273,
+      1.3363906741142273,
+      1.6192049860954285,
+      1.8679916858673096
+    ],
+    "cavity_soil_total_displacement_quantiles_m": [
+      1.107805848121643,
+      1.4079709649085999,
+      1.7208915948867798,
+      2.1011977195739746,
+      2.4944229125976562
+    ],
+    "cavity_soil_final_z_quantiles_m": [
+      1.8755519390106201,
+      1.9975302815437317,
+      2.226527214050293,
+      2.3871777296066283,
+      2.5444719791412354
+    ],
+    "fully_contained_rock_count": 3,
+    "partially_contained_rock_count": 2,
+    "terminal_hold_relative_speed_max_m_s": 0.08617176609654853,
+    "assessment": "final_payload_present_after_30_frame_hold_not_individual_retention_trace"
+  },
+  "phase_annotations": {
+    "operator_markers": [
+      {
+        "drive_load_axis_labels": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ],
+        "drive_load_axis_units": [
+          "N*m",
+          "N",
+          "N",
+          "N"
+        ],
+        "equivalent_drive_load_baseline": [
+          198.1289652629393,
+          18388.038483969154,
+          -22902.3465009445,
+          -8928.361669187158
+        ],
+        "kind": "phase",
+        "label": "penetrate_deepen",
+        "load_contact_thresholds_applied": false,
+        "next_frame": 180,
+        "schema": "layered_47_manual_contact_annotation_v1",
+        "sim_time_s": 2.9833333333333334,
+        "training_eligible": false,
+        "wall_monotonic_s": 107481.462063482
+      },
+      {
+        "drive_load_axis_labels": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ],
+        "drive_load_axis_units": [
+          "N*m",
+          "N",
+          "N",
+          "N"
+        ],
+        "equivalent_drive_load_baseline": [
+          2272.273633242912,
+          26374.936932075096,
+          -52458.36929490244,
+          -28042.097643644607
+        ],
+        "kind": "phase",
+        "label": "curl_load",
+        "load_contact_thresholds_applied": false,
+        "next_frame": 290,
+        "schema": "layered_47_manual_contact_annotation_v1",
+        "sim_time_s": 4.816666666666666,
+        "training_eligible": false,
+        "wall_monotonic_s": 107501.35041756
+      },
+      {
+        "drive_load_axis_labels": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ],
+        "drive_load_axis_units": [
+          "N*m",
+          "N",
+          "N",
+          "N"
+        ],
+        "equivalent_drive_load_baseline": [
+          3641.432481834599,
+          -12981.47402312226,
+          1385.1236114902783,
+          -11355.512310865139
+        ],
+        "kind": "phase",
+        "label": "lift_clear",
+        "load_contact_thresholds_applied": false,
+        "next_frame": 642,
+        "schema": "layered_47_manual_contact_annotation_v1",
+        "sim_time_s": 10.683333333333334,
+        "training_eligible": false,
+        "wall_monotonic_s": 107565.477732709
+      },
+      {
+        "drive_load_axis_labels": [
+          "swing",
+          "boom",
+          "arm",
+          "bucket"
+        ],
+        "drive_load_axis_units": [
+          "N*m",
+          "N",
+          "N",
+          "N"
+        ],
+        "equivalent_drive_load_baseline": [
+          163.98706232665364,
+          -34845.0278459684,
+          9275.262243789231,
+          -81515.87785303865
+        ],
+        "kind": "phase",
+        "label": "off_soil_confirm",
+        "load_contact_thresholds_applied": false,
+        "next_frame": 1242,
+        "schema": "layered_47_manual_contact_annotation_v1",
+        "sim_time_s": 20.683333333333334,
+        "training_eligible": false,
+        "wall_monotonic_s": 107673.1631628
+      }
+    ],
+    "operator_reported_timing_inaccurate": false,
+    "used_for_fill_measurement": false,
+    "posthoc_reconstruction_required_before_training_review": true
+  },
+  "scope": "Final-snapshot fixed-CAD geometric diagnostic after a 30-frame zero hold. Mixed rock sampling is geometric, not a calibrated mixed mass. This does not qualify truck delivery or training data.",
+  "source_bindings": {
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/final-001276.diagnostic.npz": "f8d9d17efca968ef73360e7e45d0fbc4bfeb36c7887f026f310543c301e3186b",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/report.json": "e77264fca11a97f4adc49cfc8e3a5a4f1da07bd2fe396ca525cc9da403d1b5c0",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-005742-1081585/physics.ndjson": "c70649de29862ab53d645236496e1fc2ecb7dc9afb026d66bd7f2f59ba866f22",
+    "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/inventory-contract.json": "e9826c5c5aebc30c6551352180ffc2da84ae4e1bbe3ea5227641771dcb285eb4",
+    "/home/qunwang/codex-work/heap-fill-audit-2026-09-11/front-rim.npz": "1fd32c0fb63cc372d0cd7113d34c6e1ff58b10f7eb72f03fb9f2e76e914840f1",
+    "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/calibration-known-geometry-v1/report.json": "736f1e7e820f01eee97f60847368507f0a9e67eedc911fe7f3b04208b246454b",
+    "/home/qunwang/codex-work/fill-volume-2026-09-15-v1/fill_volume.py": "d5c9b56b5f08d46b5dd6d6fd25620373b2e77bf963998de58028c3e76ec83c4d",
+    "/home/qunwang/wajueji/work/active-curl-manual-review-20260924-v1/measure.py": "1d55f0aa787063a44941b8aff0bad7964e874df3712d5ad49070a6c9220fb0a1"
+  }
+}

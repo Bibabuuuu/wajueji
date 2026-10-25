@@ -1,0 +1,480 @@
+{
+  "status": "both_short_cases_completed",
+  "cases": [
+    {
+      "name": "loaded",
+      "source": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/policy-1/episode-0001/endpoint.npz",
+      "source_sha256": "46d3f04fa2dfc18082c17f7496e4c146f2491fdb8e08ccd0339cc6169203947a",
+      "status": "completed",
+      "frames": 887,
+      "phases": [
+        {
+          "name": "CLEAR_PILE",
+          "start_frame": 3,
+          "end_frame": 767,
+          "reference_frames": 734,
+          "hold_frames": 30,
+          "endpoint_axis_error": 0.0007465746202564016
+        },
+        {
+          "name": "ALIGN",
+          "start_frame": 767,
+          "end_frame": 887,
+          "reference_frames": 120,
+          "hold_frames": 0,
+          "endpoint_axis_error": 0.0011663085807870344
+        }
+      ],
+      "prefix_checks": [
+        {
+          "frame": 1,
+          "command_exact": true,
+          "particles_exact": true,
+          "state_exact": true
+        },
+        {
+          "frame": 2,
+          "command_exact": true,
+          "particles_exact": true,
+          "state_exact": true
+        },
+        {
+          "frame": 3,
+          "command_exact": true,
+          "particles_exact": true,
+          "state_exact": true
+        }
+      ],
+      "zero_arrays_exact": {
+        "particle_q": true,
+        "particle_qd": true,
+        "particle_f": true,
+        "particle_flags": true,
+        "particle_elastic_strain": true,
+        "particle_transform": true,
+        "particle_qd_grad": true,
+        "particle_stress": true,
+        "particle_Jp": true,
+        "rigid_ids": true,
+        "rigid_qpos": true,
+        "rigid_qvel": true,
+        "rigid_reported_linear_velocity": true,
+        "rigid_reported_angular_velocity": true,
+        "mechanism_qpos": true,
+        "mechanism_qvel": true,
+        "simulation_time_s": true,
+        "grid_reference_particle_q": true,
+        "solver_grid_transform": true,
+        "solver_grid_cell_ijk": true,
+        "solver_grid_node_ijk": true,
+        "solver_ws_impulse": true,
+        "solver_ws_stress": true,
+        "solver_body_q_prev": true
+      },
+      "zero_time_error_s": 0.0,
+      "native_restore_errors": {
+        "controller_target": 0.0,
+        "controller_target_velocity": 0.0,
+        "bucket_integral_effort": 0.0,
+        "bucket_active_curl_effort": 0.0,
+        "bucket_linear_velocity_world_m_s": 0.0,
+        "bucket_angular_velocity_world_rad_s": 0.0,
+        "native_time_s": 0.0,
+        "native_last_time_s": 0.0,
+        "native_timestep_s": 0.0,
+        "native_warmstart": 0.0,
+        "native_qacc": 0.0,
+        "native_ctrl": 0.0
+      },
+      "prefix_checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/motion-physical-short-20261015-v2/loaded/prefix3.npz",
+        "size_bytes": 53196554,
+        "mtime_ns": 1792040953989472444,
+        "sha256": "1e4c88ae4539db55639c99b8afe0981132dc5f93819507401af7b7c1b0afca3b"
+      },
+      "initial_cavity_particles": 12056,
+      "planned_frames_with_holds": 887,
+      "latest_checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/motion-physical-short-20261015-v2/loaded/align.npz",
+        "size_bytes": 53549258,
+        "mtime_ns": 1792041164315257410,
+        "sha256": "91dcbb3821a749778ae2d119007c3ec322cc85193affbe992467d2dc35fe46c9"
+      },
+      "final_cavity_particles": 12955,
+      "initial_cohort_still_in_cavity": 12037,
+      "particle_measurement_scope": "Cavity particle cohort diagnostic only; not calibrated retained fill or proof of no spill.",
+      "final_checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/motion-physical-short-20261015-v2/loaded/final.npz",
+        "size_bytes": 53549258,
+        "mtime_ns": 1792041164458260592,
+        "sha256": "91dcbb3821a749778ae2d119007c3ec322cc85193affbe992467d2dc35fe46c9"
+      },
+      "display": {
+        "status": "captured_probe",
+        "capture_origin": "live_policy_rollout",
+        "probe_status": "completed",
+        "frames": 887,
+        "playback_physics_steps": 0,
+        "live_inference": false,
+        "label": "D190 frozen edge-adjacent pair",
+        "cache_trim": {
+          "original_reserved_frames": 1001,
+          "used_frames": 888,
+          "data_offset": 128,
+          "in_place": true,
+          "particle_values_rewritten": false
+        },
+        "cache_sha256": {
+          "particles.npy": "99d471734013475cf87e6a1e584830d1f0a7537c5c0a3fce6c37eb194c87a4c7",
+          "states.json": "e86811886a16667ebf870202b13fde00d0cc3a98a9a507dc46185f7a9f4ddcdf",
+          "scene.json": "72b6ef99394d7890a1d8a826e4d50df86ad9c44d90d6bbfe97d559a98a81ee9c"
+        }
+      }
+    },
+    {
+      "name": "return",
+      "source": "/home/qunwang/wajueji/runs/edge-first-two-scoop-20261015-continuation/dump.npz",
+      "source_sha256": "26d3928d2e41fc1f5bce5020160be6faddcdca7a936dcaddd7eb65a49e1f94b3",
+      "status": "completed",
+      "frames": 2752,
+      "phases": [
+        {
+          "name": "RETURN_EXIT",
+          "start_frame": 3,
+          "end_frame": 615,
+          "reference_frames": 582,
+          "hold_frames": 30,
+          "endpoint_axis_error": 1.146045310723709e-05
+        },
+        {
+          "name": "RETURN_COORDINATED",
+          "start_frame": 615,
+          "end_frame": 2001,
+          "reference_frames": 1356,
+          "hold_frames": 30,
+          "endpoint_axis_error": 1.001572302442022e-05
+        },
+        {
+          "name": "RETURN_REFERENCE",
+          "start_frame": 2001,
+          "end_frame": 2752,
+          "reference_frames": 721,
+          "hold_frames": 30,
+          "endpoint_axis_error": 8.315956363691424e-06
+        }
+      ],
+      "prefix_checks": [
+        {
+          "frame": 1,
+          "command_exact": true,
+          "particles_exact": true,
+          "state_exact": true
+        },
+        {
+          "frame": 2,
+          "command_exact": true,
+          "particles_exact": true,
+          "state_exact": true
+        },
+        {
+          "frame": 3,
+          "command_exact": true,
+          "particles_exact": true,
+          "state_exact": true
+        }
+      ],
+      "zero_arrays_exact": {
+        "particle_q": true,
+        "particle_qd": true,
+        "particle_f": true,
+        "particle_flags": true,
+        "particle_elastic_strain": true,
+        "particle_transform": true,
+        "particle_qd_grad": true,
+        "particle_stress": true,
+        "particle_Jp": true,
+        "rigid_ids": true,
+        "rigid_qpos": true,
+        "rigid_qvel": true,
+        "rigid_reported_linear_velocity": true,
+        "rigid_reported_angular_velocity": true,
+        "mechanism_qpos": true,
+        "mechanism_qvel": true,
+        "simulation_time_s": true,
+        "grid_reference_particle_q": true,
+        "solver_grid_transform": true,
+        "solver_grid_cell_ijk": true,
+        "solver_grid_node_ijk": true,
+        "solver_ws_impulse": true,
+        "solver_ws_stress": true,
+        "solver_body_q_prev": true
+      },
+      "zero_time_error_s": 0.0,
+      "native_restore_errors": {
+        "controller_target": 0.0,
+        "controller_target_velocity": 0.0,
+        "bucket_integral_effort": 0.0,
+        "bucket_active_curl_effort": 0.0,
+        "bucket_linear_velocity_world_m_s": 0.0,
+        "bucket_angular_velocity_world_rad_s": 0.0,
+        "native_time_s": 0.0,
+        "native_last_time_s": 0.0,
+        "native_timestep_s": 0.0,
+        "native_warmstart": 0.0,
+        "native_qacc": 0.0,
+        "native_ctrl": 0.0
+      },
+      "prefix_checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/motion-physical-short-20261015-v2/return/prefix3.npz",
+        "size_bytes": 53945966,
+        "mtime_ns": 1792041170382392324,
+        "sha256": "688b6ffecd34360993a9631a7ea55c175dffc0cf06b4259dc26a589922949fb6"
+      },
+      "fresh_observation": {
+        "detached_payload_particles": 0,
+        "detached_dynamic_particles": 23270,
+        "detached_rock_ids": [
+          "lower_middle-001",
+          "lower_middle-010",
+          "middle-004",
+          "middle-012",
+          "upper-010",
+          "upper-011"
+        ],
+        "support_margin_m": 0.15,
+        "rock_to_stationary_soil_aabb_gap_m": {
+          "lower-000": 0.0,
+          "lower-001": 0.0,
+          "lower-002": 0.0,
+          "lower-003": 0.0,
+          "lower-004": 0.0,
+          "lower-005": 0.0,
+          "lower-006": 0.0,
+          "lower-007": 0.0,
+          "lower-008": 0.0,
+          "lower_middle-000": 0.0,
+          "lower_middle-001": 2.2904777300800636,
+          "lower_middle-002": 0.0,
+          "lower_middle-003": 0.0,
+          "lower_middle-004": 0.0,
+          "lower_middle-005": 0.0,
+          "lower_middle-006": 0.0,
+          "lower_middle-007": 0.0,
+          "lower_middle-008": 0.0,
+          "lower_middle-009": 0.0,
+          "lower_middle-010": 2.09981377981051,
+          "middle-000": 0.0,
+          "middle-001": 0.0,
+          "middle-002": 0.0,
+          "middle-003": 0.0,
+          "middle-004": 2.420884883808491,
+          "middle-005": 0.0,
+          "middle-006": 0.0,
+          "middle-007": 0.0,
+          "middle-008": 0.0,
+          "middle-009": 0.0,
+          "middle-010": 0.0,
+          "middle-011": 0.0,
+          "middle-012": 1.9670014707735175,
+          "upper-000": 0.0,
+          "upper-001": 0.0,
+          "upper-002": 0.0,
+          "upper-003": 0.0,
+          "upper-004": 0.0,
+          "upper-005": 0.0,
+          "upper-006": 0.0,
+          "upper-007": 0.0,
+          "upper-008": 0.0,
+          "upper-009": 0.0,
+          "upper-010": 2.002154198416249,
+          "upper-011": 2.10332854924687,
+          "upper-012": 0.0,
+          "upper-013": 0.0
+        },
+        "observation_only": true,
+        "cell_m": 0.04,
+        "scope": "Ground-connected stock; all detached soil/rocks remain in physical collision solving"
+      },
+      "selected": {
+        "entry_xy_m": [
+          5.75,
+          0.15000000000000013
+        ],
+        "surface_z_m": 1.3618695139884949,
+        "score": 0.2979115902781486,
+        "corridor_cell_count": 157,
+        "contact": {
+          "source": "rear_lower_face_from_observed_profile",
+          "contact_xy_m": [
+            5.849965990892134,
+            0.1526078084580558
+          ],
+          "contact_surface_z_m": 0.6995258033275604,
+          "outward_offset_m": 0.1,
+          "normalized_height_fraction": 0.48896837709086033,
+          "target_height_fraction": 0.4,
+          "height_fraction_band": [
+            0.3,
+            0.5
+          ],
+          "crest_surface_z_m": 1.1716885566711426,
+          "base_surface_z_m": 0.24774817377328873,
+          "face_drop_m": 0.9239403828978539,
+          "bucket_width_m": 0.6,
+          "strip_anchor_xy_m": [
+            5.75,
+            0.15000000000000013
+          ],
+          "profile": [
+            {
+              "outward_offset_m": 0.0,
+              "center_xy_m": [
+                5.75,
+                0.15000000000000013
+              ],
+              "surface_z_m": 1.1716885566711426,
+              "minimum_surface_z_m": 0.4796135127544403,
+              "maximum_surface_z_m": 1.1910969018936157,
+              "cell_count": 7
+            },
+            {
+              "outward_offset_m": 0.1,
+              "center_xy_m": [
+                5.849965990892134,
+                0.1526078084580558
+              ],
+              "surface_z_m": 0.6995258033275604,
+              "minimum_surface_z_m": 0.4983561336994171,
+              "maximum_surface_z_m": 0.7587478756904602,
+              "cell_count": 6
+            },
+            {
+              "outward_offset_m": 0.2,
+              "center_xy_m": [
+                5.949931981784267,
+                0.15521561691611144
+              ],
+              "surface_z_m": 0.24774817377328873,
+              "minimum_surface_z_m": 0.15415021777153015,
+              "maximum_surface_z_m": 0.5296948552131653,
+              "cell_count": 6
+            }
+          ],
+          "prepoint_status": "not_selected_requires_separate_clearance_plan"
+        },
+        "legacy_height_score": 0.35143377685546884,
+        "cut_opportunity": {
+          "version": "full_width_cut_opportunity_v1",
+          "score_m3": 0.2979115902781486,
+          "observed_cut_band_volume_m3": 0.33274215167760846,
+          "weakest_third_equivalent_volume_m3": 0.2630810288786887,
+          "width_band_mean_thickness_m": [
+            0.6776337176561354,
+            0.6774305684698951,
+            0.6774305684698951,
+            0.6838456706868277,
+            0.6838456706868277,
+            0.6838165438837475,
+            0.6838165438837475,
+            0.6775664799743227,
+            0.6775664799743227,
+            0.5308724800745644,
+            0.5308724800745644,
+            0.2095728334453371
+          ],
+          "material_coverage_fraction": 0.9490740740740741,
+          "width_m": 0.6,
+          "inward_length_m": 0.9,
+          "bottom_z_m": 0.34952580332756045,
+          "below_entry_m": 0.35,
+          "vertical_band_height_m": 0.7,
+          "sample_spacing_max_m": 0.05,
+          "scope": "Observed geometric cut opportunity; not retained payload or fill prediction"
+        },
+        "selection_version": "full_width_cut_opportunity_v1",
+        "future_strip_count": 0,
+        "future_entry_xy_m": [],
+        "workspace_score": 0.2979115902781486,
+        "remaining_scoops_considered": 1,
+        "adjacency": {
+          "version": "edge_inward_adjacent_entry_v1_cpu",
+          "previous_entry_xy_m": [
+            5.712791979327416,
+            0.7137969793724978
+          ],
+          "inward_sign": -1,
+          "entry_station_radius_m": 5.757212722040845,
+          "heading_delta_rad": -0.09822189927824815,
+          "nominal_entry_boundary_gap_m": -0.034019498199642784,
+          "radial_contact_difference_m": 0.09474346694390778,
+          "scope": "Entry station only; actual sweep overlap/gaps and fresh full-width material require separate audit"
+        }
+      },
+      "planned_frames_with_holds": 2752,
+      "latest_checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/motion-physical-short-20261015-v2/return/return_reference.npz",
+        "size_bytes": 53861618,
+        "mtime_ns": 1792041763550837837,
+        "sha256": "b173d3ab273e22a1ceb01e35df28c85e5dcefd6266eda99cc0f8b30d6f6b6e00"
+      },
+      "final_alignment": {
+        "trusted": true,
+        "matched_frame": 3,
+        "actual_progress": 3.0,
+        "reference_limit": 9.0,
+        "position_error_m": 0.010176418174879845,
+        "angle_error_rad": 0.0019123291786283252,
+        "joint_error_si": [
+          1.4579205648290738e-08,
+          0.0010082638521762277,
+          -7.527964145936927e-07,
+          -1.977453879087321e-06
+        ],
+        "mode": "follow"
+      },
+      "full_roi_admission": {
+        "clearance_m": 0.3437354099503851,
+        "proxy_point_world_m": [
+          5.699611723155401,
+          0.1849421446865715,
+          1.7039039861909246
+        ],
+        "cell_surface_z_m": 1.3601685762405396
+      },
+      "final_checkpoint": {
+        "path": "/home/qunwang/wajueji/runs/motion-physical-short-20261015-v2/return/final.npz",
+        "size_bytes": 53861618,
+        "mtime_ns": 1792041763740841332,
+        "sha256": "b173d3ab273e22a1ceb01e35df28c85e5dcefd6266eda99cc0f8b30d6f6b6e00"
+      },
+      "display": {
+        "status": "captured_probe",
+        "capture_origin": "live_policy_rollout",
+        "probe_status": "completed",
+        "frames": 2752,
+        "playback_physics_steps": 0,
+        "live_inference": false,
+        "label": "D190 frozen edge-adjacent pair",
+        "cache_trim": {
+          "original_reserved_frames": 3301,
+          "used_frames": 2753,
+          "data_offset": 128,
+          "in_place": true,
+          "particle_values_rewritten": false
+        },
+        "cache_sha256": {
+          "particles.npy": "92c2e80c0161d3dc013f37600d6dafd8b60b9c676677ac91798a8d22951ee633",
+          "states.json": "b0bce0f9e0e68099c0a52114e2ed2c622e1aacc568cc18e043657da0c66ece9e",
+          "scene.json": "ee332a623f434a07af5806a7a3b951fce10d9715e07e6f56190d3d73448fcfc8"
+        }
+      }
+    }
+  ],
+  "physical_frames": 3639,
+  "native_initializations": 2,
+  "inference_calls": 0,
+  "training_updates": 0,
+  "budget_sha256": "1d294f3c3d2672a5c94f82ed28ee5892075da401f2c53475bec5658305282b92",
+  "finished_epoch": 1792041770.2172341,
+  "remaining_budget_seconds": 693.686802865006
+}

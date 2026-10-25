@@ -1,0 +1,20 @@
+{
+  "schema": "phase_bc_pilot_plan_v1",
+  "status": "prepared_not_started",
+  "condition": "All nine candidate records independently audited; source split/lineage and known ground exclusion preserved; inspect endpoint differences and clearance recurrences before fit.",
+  "model": "Shared 256x256 MLP conditioned on causal five-stage one-hot plus unchanged native60 four-axis short history",
+  "feature_count": 2514,
+  "steps": 1000,
+  "maximum_training_seconds": 300,
+  "seed": 20260924,
+  "device": "cuda:0",
+  "command_dropout": 0.0,
+  "terrain_scale_floor_m": 0.25,
+  "neutral_axis_weight": 4.0,
+  "hyperparameter_reason": "Retain the previous bounded repair settings; change only phase contract and audited actual replay inputs, no parameter sweep.",
+  "normalization": "development only",
+  "validation": "same original three-episode lineage; already seen development-validation, not sealed test",
+  "training_python": "/home/qunwang/codex-work/rl-four-axis-training-2026-09-16/.venv/bin/python",
+  "original_model_changed": false,
+  "physics_rollout_authorized_by_this_file": false
+}

@@ -1,0 +1,23 @@
+{
+  "weighted_by_rows": {
+    "development": {
+      "model": 0.0671363403804043,
+      "zero_baseline": 0.30585150260090105,
+      "previous_action_baseline": 0.009888241869824496
+    },
+    "validation": {
+      "model": 0.10583785393003164,
+      "zero_baseline": 0.3028631444564347,
+      "previous_action_baseline": 0.007989709539914309
+    }
+  },
+  "closed_loop_verified": false,
+  "source_report_sha256": "12b82acfd4402d7cc33a9e951e46aeddfffbeb836d41f54e86563c72b4f8f472",
+  "implementation_sha256": {
+    "src/v4/contact_bc_data.py": "7f06ef55a1a79aca62af9f377758ab849359bd6d5355c43a59263aa314656c34",
+    "src/v4/contact_bc_policy.py": "d338f4813b60f5c36abd98264b6dcc10d9d3e40009cb74786026a6f3a928db1f",
+    "src/v4/train_contact_bc.py": "4fbae0893e8f4a216a681da19e60966d58a2cd610844592944d6e3ee442f872e",
+    "work/contact-bc-data-preparation-20260924-v1/build_index.py": "7688aec9185f7d1e7262093ccd9b118fcf7e2cf4db8cfd64dfda43e43614531f",
+    "work/contact-bc-data-preparation-20260924-v1/verify.py": "2a8bcee55755d1b8a2f8bd8ed40f999d9821c780feb58f6d04cedd5fb9a9a34c"
+  }
+}

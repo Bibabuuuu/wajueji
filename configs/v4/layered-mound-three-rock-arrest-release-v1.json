@@ -1,0 +1,48 @@
+{
+  "schema": "excavation_layered_mound_three_rock_arrest_release_config_v1",
+  "status": "single_construction_arrest_after_slow_release_ramp",
+  "base_candidate": {
+    "config_path": "configs/v4/layered-mound-three-rock-slow-release-v1.json",
+    "config_sha256": "648151bf44c51909250605bce9cb24e154d16a4d1474c157ada41878b2237bd0",
+    "runner_path": "src/v4/run_layered_mound_three_rock_slow_release.py",
+    "runner_sha256": "f64e9fb4c81ecbb1efe81161e6ff2467de58079d4673489e0ad8057bf83459a3",
+    "report_path": "results/layered-mound-three-rock-slow-release-v1.json",
+    "report_sha256": "44afe380c524f237d3d6b56e991dd7468614380a77b87215e3feced2eb1d0ee5"
+  },
+  "correction": {
+    "reason": "remove_the_measured_one_external_step_construction_velocity_before_final_detachment",
+    "change_scope": [
+      "release.one_time_external_linear_arrest_force_after_gravity_ramp"
+    ],
+    "gravity_release_frames_preserved": 60,
+    "arrest_frame_zero_based": 60,
+    "arrest_steps": 1,
+    "arrest_force_formula": "F=-mass*measured_linear_velocity/dt",
+    "angular_arrest_applied": false,
+    "required_fully_uncontrolled_frames_after_arrest": 120,
+    "target_runtime_rock_ids": ["r1-rock-000", "r1-rock-001", "r1-rock-002"],
+    "mpm_material_changed": false,
+    "rigid_damping_changed": false,
+    "stability_thresholds_changed": false,
+    "press_schedule_changed": false,
+    "cover_schedule_changed": false,
+    "gravity_release_schedule_changed": false,
+    "recurring_velocity_feedback": false
+  },
+  "acceptance": {
+    "rock_translation_during_release_allowed": true,
+    "rock_rotation_during_release_allowed": true,
+    "final_manifest_pose_required": false,
+    "one_time_construction_arrest_allowed": true,
+    "fully_uncontrolled_post_arrest_window_required": true
+  },
+  "scope": {
+    "active_rock_count": 3,
+    "other_62_rocks_active": false,
+    "full_lower_layer": false,
+    "full_scene": false,
+    "stable_scene_claimed": false,
+    "fullscale_qualified": false,
+    "training": false
+  }
+}

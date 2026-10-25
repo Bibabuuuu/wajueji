@@ -1,0 +1,30 @@
+{
+  "schema": "D156_first_transport_followup_v1",
+  "status": "authorized_followup",
+  "maximum_frames": 6000,
+  "maximum_wall_seconds": 1800,
+  "maximum_runs": 1,
+  "automatic_retry": false,
+  "authorization": {
+    "user_text": "目前没看出来，你继续你的，现在满足条件了就下一步呀。然后你这个整个过程我一会我也要看画面看整个流程",
+    "recorded_at": "2026-09-24T23:40:44.092575+08:00",
+    "scope": "从当前第一铲2927末态保斗离堆、回转、卸料、退出、返回，逐段保存完整状态和全帧画面；不重跑前缀"
+  },
+  "inputs": {
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/runtime.py": "867e4e5e7d3fcc04b334dee0b55c9f61f3319679f915157eaf1ebe3d6e51227a",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/run.py": "e03d1a6d9e4df0227367f5e32c277e709682e27ae4edceb23181db87a39a6d21",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/check_commands.py": "ee9dfb2cb237892bbe49aa47b591f214e1d2b255ead8528305f07c4491d94b4a",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/plan.py": "bf45f906cd39b2fa12b17576300abe894c08985923c30759d049ca6d5546fb2d",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/audit_result.py": "61f39e55977e4fb0709663c0bfee700a7d1fe98c2d950bb6a99241adb329cb04",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/controller.py": "472f0aabcc9d41d8835bc8767d49468fce22f25ed5ba550748dd8e1501c216a4",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/preflight.py": "ae9d7554d30a9669e9771f03d7e033094c8b13a2c36d9247f38d9b6bde083df0",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/preflight-review.json": "1ae5458dcdf26def1a96079be7fb79a0ae286cf8fbd00b8e824dd0d99d0ad80d",
+    "/home/qunwang/wajueji/work/contact-carry-transport-20260924-v1/control-review.json": "147dad68ec1ba6f8e45bf61790a64578e93bba938733aae81c4162d75a79e244",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/plan.npz": "bb78b5c7512b765002f74ea859a04b31e177adf0654ba3266f5d7d43b4b6f8b8",
+    "/home/qunwang/wajueji/runs/contact-carry-transport-20260924-v1/plan-v2/report.json": "0ce5e68a68e7d084b598f15409b2ddc3100a9d12acc25b92767cf29142021655",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/final.npz": "dc7378f44d2b8204186354d0c58fd72993d3abb8ebfe29e8e84a31b9b868ae06",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/final.npz.json": "4d994034ca98732c1f6d7a9e6be94fd97222437c30d5a7391bf7ad8355a2130a",
+    "/home/qunwang/wajueji/runs/contact-carry-handoff-20260924-v1/first-resume/control-state.json": "5fba71c03a570100b19adfa6678b416645b043393effdf57fd19a0cc6bc63dde",
+    "/home/qunwang/wajueji/work/contact-carry-handoff-tolerant-20260924-v1/review.json": "02dd604583bd64f189f7cdd3dfb993826c6af8f24880324bdaa3ae0b78a9c99b"
+  }
+}

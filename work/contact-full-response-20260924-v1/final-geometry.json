@@ -1,0 +1,54 @@
+{
+  "status": "read_only_final_five_frames",
+  "physics_steps_added": 0,
+  "final_phase": "curl_load",
+  "five_frame_gap_3mm_passed": false,
+  "measurements": [
+    {
+      "frame": 2396,
+      "remaining_soil_gap_m": 0.0,
+      "ground_connected_particles": 250112,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 2397,
+      "remaining_soil_gap_m": 8.959449921894236e-08,
+      "ground_connected_particles": 250101,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 2398,
+      "remaining_soil_gap_m": 1.0811191178128343e-06,
+      "ground_connected_particles": 250105,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 2399,
+      "remaining_soil_gap_m": 4.37333145489327e-07,
+      "ground_connected_particles": 250109,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    },
+    {
+      "frame": 2400,
+      "remaining_soil_gap_m": 1.466678929105958e-07,
+      "ground_connected_particles": 250080,
+      "connectivity_cell_m": 0.04,
+      "ground_anchor_below_z_m": 0.06,
+      "distance_scope": "particle_centers_to_solid_proxy_no_rock_clearance"
+    }
+  ],
+  "source_checkpoint_sha256": "37cb63c32f9070bcf119fac3a729be64ad6cde31593fa9f5ac8a17a6b5c6a0f2",
+  "proxy_sha256": "83f9935b1b5790045d57ed7f672b019009ebb3e67f0aa280fc4d7fca1ff6a8d7",
+  "limitations": [
+    "Does not rewrite causal phase transitions or qualify transport.",
+    "Particle centers to open solid proxy; no new rock-clearance proof."
+  ]
+}

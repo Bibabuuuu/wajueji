@@ -1,0 +1,615 @@
+{
+  "activation_particle_count": {
+    "foundation": 79970,
+    "lower_cover": 45217,
+    "lower_middle_cover": 52472,
+    "middle_cover": 41777,
+    "top_exposed": 9201,
+    "upper_cover": 36557
+  },
+  "checks": {
+    "all_particle_activation_stages_nonempty": true,
+    "approved_visual_baseline_bound": true,
+    "carve_removed_particles": true,
+    "counts_match_approved_baseline": true,
+    "five_layers_present": true,
+    "particle_partition_closed": true,
+    "physics_steps_zero": true,
+    "retained_particle_center_inside_rock_zero": true,
+    "rock_count_is_65": true,
+    "rock_rock_sat_no_intersection": false,
+    "rocks_within_mound_outer_xy": true
+  },
+  "config_sha256": "8ef0910083e167600df4bc17b7ff5abed033ba79dea6359efd02b9ba7859df32",
+  "intersection_count_by_layer_pair": {
+    "lower__lower": 9,
+    "lower__lower_middle": 2,
+    "lower_middle__lower_middle": 15,
+    "middle__middle": 9,
+    "middle__upper": 1,
+    "top__top": 15,
+    "upper__upper": 10
+  },
+  "intersections": [
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-000",
+      "penetration_lower_bound_m": 0.08623013439457816,
+      "sat_gap_m": -0.08623013439457816,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-003"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-000",
+      "penetration_lower_bound_m": 0.015454882268528536,
+      "sat_gap_m": -0.015454882268528536,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-008"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-001",
+      "penetration_lower_bound_m": 0.04013475214804152,
+      "sat_gap_m": -0.04013475214804152,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-004"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-001",
+      "penetration_lower_bound_m": 0.04769575811426019,
+      "sat_gap_m": -0.04769575811426019,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-007"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-001",
+      "penetration_lower_bound_m": 0.0985989683563595,
+      "sat_gap_m": -0.0985989683563595,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-008"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-002",
+      "penetration_lower_bound_m": 0.13608927816584204,
+      "sat_gap_m": -0.13608927816584204,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-005"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-003",
+      "penetration_lower_bound_m": 0.07075598976768616,
+      "sat_gap_m": -0.07075598976768616,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-006"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-003",
+      "penetration_lower_bound_m": 0.10097974480285288,
+      "sat_gap_m": -0.10097974480285288,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-008"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-004",
+      "penetration_lower_bound_m": 0.03402048536762203,
+      "sat_gap_m": -0.03402048536762203,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-007"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-004",
+      "penetration_lower_bound_m": 0.11311165524563438,
+      "sat_gap_m": -0.11311165524563438,
+      "second_layer_id": "lower",
+      "second_rock_id": "lower-008"
+    },
+    {
+      "first_layer_id": "lower",
+      "first_rock_id": "lower-008",
+      "penetration_lower_bound_m": 0.001130552459970447,
+      "sat_gap_m": -0.001130552459970447,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-004"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-000",
+      "penetration_lower_bound_m": 0.09213076300034784,
+      "sat_gap_m": -0.09213076300034784,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-003"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-000",
+      "penetration_lower_bound_m": 0.10055298488127529,
+      "sat_gap_m": -0.10055298488127529,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-009"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-001",
+      "penetration_lower_bound_m": 0.10227726656003755,
+      "sat_gap_m": -0.10227726656003755,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-004"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-001",
+      "penetration_lower_bound_m": 0.14508991312886899,
+      "sat_gap_m": -0.14508991312886899,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-010"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-002",
+      "penetration_lower_bound_m": 0.09614577320621787,
+      "sat_gap_m": -0.09614577320621787,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-005"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-002",
+      "penetration_lower_bound_m": 0.06217980871065332,
+      "sat_gap_m": -0.06217980871065332,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-008"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-003",
+      "penetration_lower_bound_m": 0.07959515234508618,
+      "sat_gap_m": -0.07959515234508618,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-006"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-004",
+      "penetration_lower_bound_m": 0.08632919221096724,
+      "sat_gap_m": -0.08632919221096724,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-007"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-004",
+      "penetration_lower_bound_m": 0.11493834709256134,
+      "sat_gap_m": -0.11493834709256134,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-010"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-005",
+      "penetration_lower_bound_m": 0.04055995589474959,
+      "sat_gap_m": -0.04055995589474959,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-008"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-006",
+      "penetration_lower_bound_m": 0.11491430638422795,
+      "sat_gap_m": -0.11491430638422795,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-007"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-006",
+      "penetration_lower_bound_m": 0.11191784116326531,
+      "sat_gap_m": -0.11191784116326531,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-009"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-007",
+      "penetration_lower_bound_m": 0.016162828083607916,
+      "sat_gap_m": -0.016162828083607916,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-009"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-007",
+      "penetration_lower_bound_m": 0.08900718624511483,
+      "sat_gap_m": -0.08900718624511483,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-010"
+    },
+    {
+      "first_layer_id": "lower_middle",
+      "first_rock_id": "lower_middle-008",
+      "penetration_lower_bound_m": 0.03664174637582107,
+      "sat_gap_m": -0.03664174637582107,
+      "second_layer_id": "lower_middle",
+      "second_rock_id": "lower_middle-009"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-000",
+      "penetration_lower_bound_m": 0.05347651891433092,
+      "sat_gap_m": -0.05347651891433092,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-008"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-000",
+      "penetration_lower_bound_m": 0.05386678726387628,
+      "sat_gap_m": -0.05386678726387628,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-012"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-001",
+      "penetration_lower_bound_m": 0.04785894813810909,
+      "sat_gap_m": -0.04785894813810909,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-009"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-002",
+      "penetration_lower_bound_m": 0.056180941952262975,
+      "sat_gap_m": -0.056180941952262975,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-006"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-002",
+      "penetration_lower_bound_m": 0.10866837444413635,
+      "sat_gap_m": -0.10866837444413635,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-010"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-004",
+      "penetration_lower_bound_m": 0.05169634108429433,
+      "sat_gap_m": -0.05169634108429433,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-012"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-005",
+      "penetration_lower_bound_m": 0.05700795933124403,
+      "sat_gap_m": -0.05700795933124403,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-009"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-006",
+      "penetration_lower_bound_m": 0.07388590283639818,
+      "sat_gap_m": -0.07388590283639818,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-011"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-007",
+      "penetration_lower_bound_m": 0.034580915001697576,
+      "sat_gap_m": -0.034580915001697576,
+      "second_layer_id": "middle",
+      "second_rock_id": "middle-011"
+    },
+    {
+      "first_layer_id": "middle",
+      "first_rock_id": "middle-009",
+      "penetration_lower_bound_m": 0.013842857530776742,
+      "sat_gap_m": -0.013842857530776742,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-005"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-001",
+      "penetration_lower_bound_m": 0.030632686218884597,
+      "sat_gap_m": -0.030632686218884597,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-009"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-002",
+      "penetration_lower_bound_m": 0.07019049713348657,
+      "sat_gap_m": -0.07019049713348657,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-006"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-003",
+      "penetration_lower_bound_m": 0.10964628229474238,
+      "sat_gap_m": -0.10964628229474238,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-007"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-003",
+      "penetration_lower_bound_m": 0.09536976916672302,
+      "sat_gap_m": -0.09536976916672302,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-011"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-004",
+      "penetration_lower_bound_m": 0.059088034802057265,
+      "sat_gap_m": -0.059088034802057265,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-008"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-004",
+      "penetration_lower_bound_m": 0.05057061160437981,
+      "sat_gap_m": -0.05057061160437981,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-012"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-005",
+      "penetration_lower_bound_m": 0.07263861780223912,
+      "sat_gap_m": -0.07263861780223912,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-009"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-006",
+      "penetration_lower_bound_m": 0.05559275472059522,
+      "sat_gap_m": -0.05559275472059522,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-010"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-007",
+      "penetration_lower_bound_m": 0.0025344825032771467,
+      "sat_gap_m": -0.0025344825032771467,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-008"
+    },
+    {
+      "first_layer_id": "upper",
+      "first_rock_id": "upper-007",
+      "penetration_lower_bound_m": 0.029489375968738685,
+      "sat_gap_m": -0.029489375968738685,
+      "second_layer_id": "upper",
+      "second_rock_id": "upper-011"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-000",
+      "penetration_lower_bound_m": 0.047145932130428614,
+      "sat_gap_m": -0.047145932130428614,
+      "second_layer_id": "top",
+      "second_rock_id": "top-001"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-000",
+      "penetration_lower_bound_m": 0.02909460267380437,
+      "sat_gap_m": -0.02909460267380437,
+      "second_layer_id": "top",
+      "second_rock_id": "top-005"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-000",
+      "penetration_lower_bound_m": 0.050272458375792084,
+      "sat_gap_m": -0.050272458375792084,
+      "second_layer_id": "top",
+      "second_rock_id": "top-010"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-000",
+      "penetration_lower_bound_m": 0.07583063316482352,
+      "sat_gap_m": -0.07583063316482352,
+      "second_layer_id": "top",
+      "second_rock_id": "top-013"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-001",
+      "penetration_lower_bound_m": 0.014154422571741154,
+      "sat_gap_m": -0.014154422571741154,
+      "second_layer_id": "top",
+      "second_rock_id": "top-011"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-001",
+      "penetration_lower_bound_m": 0.03117737854886249,
+      "sat_gap_m": -0.03117737854886249,
+      "second_layer_id": "top",
+      "second_rock_id": "top-013"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-002",
+      "penetration_lower_bound_m": 0.0408530089090311,
+      "sat_gap_m": -0.0408530089090311,
+      "second_layer_id": "top",
+      "second_rock_id": "top-007"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-002",
+      "penetration_lower_bound_m": 0.04313772152024731,
+      "sat_gap_m": -0.04313772152024731,
+      "second_layer_id": "top",
+      "second_rock_id": "top-012"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-004",
+      "penetration_lower_bound_m": 0.049716333858408346,
+      "sat_gap_m": -0.049716333858408346,
+      "second_layer_id": "top",
+      "second_rock_id": "top-014"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-005",
+      "penetration_lower_bound_m": 0.04639208233847292,
+      "sat_gap_m": -0.04639208233847292,
+      "second_layer_id": "top",
+      "second_rock_id": "top-015"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-006",
+      "penetration_lower_bound_m": 0.059738299907797554,
+      "sat_gap_m": -0.059738299907797554,
+      "second_layer_id": "top",
+      "second_rock_id": "top-017"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-007",
+      "penetration_lower_bound_m": 0.1060552888503945,
+      "sat_gap_m": -0.1060552888503945,
+      "second_layer_id": "top",
+      "second_rock_id": "top-008"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-007",
+      "penetration_lower_bound_m": 0.02745655252207968,
+      "sat_gap_m": -0.02745655252207968,
+      "second_layer_id": "top",
+      "second_rock_id": "top-012"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-009",
+      "penetration_lower_bound_m": 0.024899211941751542,
+      "sat_gap_m": -0.024899211941751542,
+      "second_layer_id": "top",
+      "second_rock_id": "top-012"
+    },
+    {
+      "first_layer_id": "top",
+      "first_rock_id": "top-011",
+      "penetration_lower_bound_m": 0.04098128158554881,
+      "sat_gap_m": -0.04098128158554881,
+      "second_layer_id": "top",
+      "second_rock_id": "top-016"
+    }
+  ],
+  "layer_counts": {
+    "lower": 9,
+    "lower_middle": 11,
+    "middle": 13,
+    "top": 18,
+    "upper": 14
+  },
+  "maximum_penetration_lower_bound_m": 0.14508991312886899,
+  "minimum_mound_outer_xy_margin_m": 0.27939044370345556,
+  "minimum_sat_gap_m": -0.14508991312886899,
+  "mound_particle_count_before_carve": 290468,
+  "next_gate": "derive_nonintersecting_layout_preserving_approved_visual_intent",
+  "physical_manifest_published": false,
+  "physics_input_authorized": false,
+  "physics_steps_executed": 0,
+  "removed_particle_count": 25274,
+  "removed_particle_count_by_rock_id": {
+    "lower-000": 1313,
+    "lower-001": 269,
+    "lower-002": 1564,
+    "lower-003": 908,
+    "lower-004": 1102,
+    "lower-005": 352,
+    "lower-006": 906,
+    "lower-007": 271,
+    "lower-008": 1317,
+    "lower_middle-000": 587,
+    "lower_middle-001": 737,
+    "lower_middle-002": 266,
+    "lower_middle-003": 267,
+    "lower_middle-004": 1101,
+    "lower_middle-005": 579,
+    "lower_middle-006": 735,
+    "lower_middle-007": 356,
+    "lower_middle-008": 907,
+    "lower_middle-009": 354,
+    "lower_middle-010": 899,
+    "middle-000": 465,
+    "middle-001": 595,
+    "middle-002": 474,
+    "middle-003": 278,
+    "middle-004": 191,
+    "middle-005": 196,
+    "middle-006": 351,
+    "middle-007": 358,
+    "middle-008": 274,
+    "middle-009": 358,
+    "middle-010": 591,
+    "middle-011": 197,
+    "middle-012": 587,
+    "top-000": 120,
+    "top-001": 138,
+    "top-002": 231,
+    "top-003": 258,
+    "top-004": 129,
+    "top-005": 100,
+    "top-006": 74,
+    "top-007": 171,
+    "top-008": 106,
+    "top-009": 84,
+    "top-010": 87,
+    "top-011": 238,
+    "top-012": 93,
+    "top-013": 137,
+    "top-014": 103,
+    "top-015": 146,
+    "top-016": 152,
+    "top-017": 198,
+    "upper-000": 308,
+    "upper-001": 309,
+    "upper-002": 235,
+    "upper-003": 527,
+    "upper-004": 321,
+    "upper-005": 523,
+    "upper-006": 405,
+    "upper-007": 166,
+    "upper-008": 412,
+    "upper-009": 237,
+    "upper-010": 165,
+    "upper-011": 526,
+    "upper-012": 160,
+    "upper-013": 233
+  },
+  "retained_particle_center_inside_rock_count": 0,
+  "retained_particle_count": 265194,
+  "rock_count": 65,
+  "sat_intersection_count": 61,
+  "sat_pair_count": 2080,
+  "schema": "excavation_layered_mound_preview_geometry_audit_v1",
+  "source_bank_sha256": "bc3fb89dc46f2787f1c65b8699fd5eb79d497a7bf02998c4da5b9f744622e89b",
+  "source_particle_count": 390400,
+  "status": "approved_visual_geometry_rejected_for_physics"
+}

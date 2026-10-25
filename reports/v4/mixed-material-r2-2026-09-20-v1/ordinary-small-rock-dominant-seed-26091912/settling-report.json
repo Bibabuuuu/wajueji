@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "closure_within_one_mm": true,
+    "completed_all_output_steps": true,
+    "final_time_one_second": true,
+    "finite_state_throughout": true,
+    "ground_contact_observed": true,
+    "no_forbidden_contacts": true,
+    "quaternions_normalized": true,
+    "twenty_identities_preserved": true
+  },
+  "final_maximum_angular_speed_rad_s": 0.0012222991159745275,
+  "final_maximum_linear_speed_m_s": 0.00018977919254687447,
+  "final_time_s": 0.999999999999953,
+  "internal_substep_count": 2400,
+  "maximum_angular_speed_rad_s": 13.586723386365287,
+  "maximum_closure_m": 0.00018559952020154584,
+  "maximum_downward_displacement_m": 0.12193619012922213,
+  "maximum_horizontal_displacement_m": 0.09838603211719454,
+  "maximum_linear_speed_m_s": 1.0535226064341514,
+  "maximum_quaternion_norm_error": 1.1102230246251565e-15,
+  "maximum_rock_displacement_m": 0.1566787981157484,
+  "maximum_upward_displacement_m": 0.0,
+  "maximum_vertical_displacement_m": 0.12193619012922213,
+  "model_sha256": "0bfde495b9adf301f3e76763c64b712810dee43b490134441f3514e589d508b6",
+  "output_step_count": 120,
+  "physics_qualified": false,
+  "rock_count": 20,
+  "scene_id": "ordinary-small-rock-dominant-seed-26091912",
+  "schema": "excavation_mixed_material_r2_settling_scene_report_v1",
+  "scope_limit": "one-second zero-command pure-rigid settling smoke only; not excavation, retention, dump, MPM coupling or fill-rate qualification",
+  "status": "r2_settling_smoke_passed",
+  "total_contact_substeps": {
+    "rock_bucket": 0,
+    "rock_ground": 2316,
+    "rock_ramp": 0,
+    "rock_rock": 44,
+    "rock_truck": 0
+  }
+}

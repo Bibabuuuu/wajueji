@@ -1,0 +1,57 @@
+{
+  "scope": "geometric receiver occupancy of original 6494 bucket soil particles; not stable received volume or rocks",
+  "source_count": 6494,
+  "frames": {
+    "0": {
+      "outside": 0,
+      "cavity": 0,
+      "boundary": 0,
+      "above_rim": 6494,
+      "other_owner": 0
+    },
+    "60": {
+      "outside": 0,
+      "cavity": 0,
+      "boundary": 0,
+      "above_rim": 6494,
+      "other_owner": 0
+    },
+    "120": {
+      "outside": 0,
+      "cavity": 330,
+      "boundary": 0,
+      "above_rim": 6164,
+      "other_owner": 0
+    },
+    "150": {
+      "outside": 0,
+      "cavity": 6435,
+      "boundary": 0,
+      "above_rim": 59,
+      "other_owner": 0
+    },
+    "180": {
+      "outside": 0,
+      "cavity": 6453,
+      "boundary": 0,
+      "above_rim": 41,
+      "other_owner": 0
+    }
+  },
+  "last_30_frame_always_core": 6435,
+  "last_30_frame_always_core_or_boundary": 6435,
+  "final_core_speed_m_s_quantiles": [
+    1.791953036445193e-05,
+    0.00027676159515976906,
+    0.005770363099873061,
+    2.7213680744171143
+  ],
+  "final_cohort_speed_m_s_quantiles": [
+    1.791953036445193e-05,
+    0.0002800838556140661,
+    0.00654315454885363,
+    2.7213680744171143
+  ],
+  "last_30_frame_cohort_max_displacement_m": 0.6488091349601746,
+  "stable_cargo_qualified": false
+}

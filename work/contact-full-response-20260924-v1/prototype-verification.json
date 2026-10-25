@@ -1,0 +1,46 @@
+{
+  "status": "prototype_and_zero_restore_passed",
+  "response_fitted_parameters": 0,
+  "relative_error_range": [
+    0.014263489562776496,
+    0.018776149531735203
+  ],
+  "maximum_direction_error": 0.037983204544053344,
+  "tests": 4,
+  "native_shadow_probe_steps": 320,
+  "MPM_steps": 0,
+  "zero_restore_arrays_exact": {
+    "particle_q": true,
+    "particle_qd": true,
+    "particle_f": true,
+    "particle_flags": true,
+    "particle_elastic_strain": true,
+    "particle_transform": true,
+    "particle_qd_grad": true,
+    "particle_stress": true,
+    "particle_Jp": true,
+    "rigid_ids": true,
+    "rigid_qpos": true,
+    "rigid_qvel": true,
+    "rigid_reported_linear_velocity": true,
+    "rigid_reported_angular_velocity": true,
+    "mechanism_qpos": true,
+    "mechanism_qvel": true,
+    "simulation_time_s": true,
+    "grid_reference_particle_q": true,
+    "solver_grid_transform": true,
+    "solver_grid_cell_ijk": true,
+    "solver_grid_node_ijk": true,
+    "solver_ws_impulse": true,
+    "solver_ws_stress": true,
+    "solver_body_q_prev": true
+  },
+  "prototype_wall_minutes": 9.5,
+  "scope": "interface/kernel/diagnostic only, not scene stability",
+  "limitations": [
+    "Native projection reaction remains unattributed as in baseline.",
+    "Finite-horizon linear response is local to current pose; whole-scene nonlinear validity untested.",
+    "Shadow includes no future MPM forces, but includes already pending sweep reaction on private copy.",
+    "Initial endpoint test compared rescaled values bitwise and saw 4.3e-19 roundoff; corrected to compare original scaled representation; native state equality still exact."
+  ]
+}

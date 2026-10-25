@@ -1,0 +1,27 @@
+"""Reuse the validated runner; change only isolated scope/budget/frame ceiling."""
+from pathlib import Path
+S=Path(__file__).parent
+old='second-scoop-qerror-dig-20261014-v1';new='second-scoop-qerror-long-20261014-v1'
+s=(S/'start_qerror_budget.py').read_text(encoding='utf-8').replace(old,new).replace('second_scoop_actual_joint_wait_validation','second_scoop_actual_joint_wait_long_validation').replace('1200','1800').replace('1560','7200').replace('reserve_seconds=240','reserve_seconds=300').replace('NEW20 minutes','NEW30 minutes')
+s=s.replace("old_budgets='all sealed, no reuse'", "old_budgets='all sealed, no reuse',observation_time_denominator=1560,accepted_risk='time observation may exceed training range; cached20-case sensitivity is not rollout qualification'")
+(S/'start_long_qerror_budget.py').write_text(s,encoding='utf-8')
+s=(S/'run_qerror_second.py').read_text(encoding='utf-8').replace(old,new).replace('second_scoop_actual_joint_wait_validation','second_scoop_actual_joint_wait_long_validation').replace('1200','1800').replace('1560','7200').replace('20min_save_audit_reserve','30min_save_audit_reserve').replace('New20-minute','New30-minute').replace('new20min_actual_joint_wait_dig_only','new30min7200_actual_joint_wait_dig_only')
+s=s.replace("old_replay_direct_mixing_allowed=False,scope=", "old_replay_direct_mixing_allowed=False,observation_time_denominator=1560,maximum_physical_frames=7200,scope=")
+(S/'run_long_qerror.py').write_text(s,encoding='utf-8')
+s=(S/'prepare_qerror_second.py').read_text(encoding='utf-8').replace(old,new).replace('import run_qerror_second as m','import run_long_qerror as m').replace('run_qerror_second.py','run_long_qerror.py').replace('prepare_qerror_second.py','prepare_long_qerror.py').replace('new20min_budget_open','new30min_budget_open').replace('b.remaining()>240','b.remaining()>300').replace('1560','7200')
+s=s.replace('second-scoop-full-dig-20261014-v1',old).replace('old_full_budget_closed','old_qerror_budget_closed')
+s=s.replace("code=dict(m.read(m.PRIOR/'protocol.json')['code_sha256'])", "code=dict(m.read(R/'work/second-scoop-qerror-dig-20261014-v1/protocol.json')['code_sha256'])")
+s=s.replace("for f in [W/'run_long_qerror.py'", "check('time_normalization_encoder_unchanged','self.runtime.frames/1560' in (R/'work/second-scoop-continuation-20261014-v1/yaw_transfer.py').read_text())\nfor f in [W/'run_long_qerror.py'")
+s=s.replace('新增20分钟','新增30分钟').replace('1200秒','1800秒').replace('最后240秒','最后300秒').replace('最后4分钟','最后5分钟').replace('预计5–10分钟物理','预计至多约20分钟物理').replace('实际关节等待纠偏接入：新增30分钟已授权','实际关节等待纠偏7200帧：新增30分钟已授权').replace('实际关节等待纠偏20分钟验证已授权','实际关节等待纠偏7200帧验证已授权')
+s=s.replace('用户明确选择新增30分钟','用户明确选择新增30分钟/最多7200帧，接受时间输入仍按frame/1560超出训练范围的风险；原221维编码和归一化不变。用户明确选择新增30分钟')
+(S/'prepare_long_qerror.py').write_text(s,encoding='utf-8')
+s=(S/'audit_qerror_second.py').read_text(encoding='utf-8').replace(old,new).replace('import run_qerror_second as m','import run_long_qerror as m').replace('fixed20minute_budget','fixed30minute_budget').replace('0<n<=1560','0<n<=7200').replace('max_frames=1560','max_frames=7200')
+s=s.replace("check('local_policy_clock_not_restored_world_clock'", "check('time_input_not_renormalized_to7200',p['observation_time_denominator']==1560 and p['maximum_physical_frames']==7200)\n check('local_policy_clock_not_restored_world_clock'")
+(S/'audit_long_qerror.py').write_text(s,encoding='utf-8')
+s=(S/'close_qerror_budget.py').read_text(encoding='utf-8').replace(old,new)
+(S/'close_long_qerror_budget.py').write_text(s,encoding='utf-8')
+s=(S/'diagnose_qerror_second.py').read_text(encoding='utf-8').replace(old,new).replace('import run_qerror_second as m','import run_long_qerror as m')
+(S/'diagnose_long_qerror.py').write_text(s,encoding='utf-8')
+s=(S/'monitor_qerror_second.py').read_text(encoding='utf-8').replace(old,new)
+(S/'monitor_long_qerror.py').write_text(s,encoding='utf-8')
+print('Prepared isolated7200-frame runner; original221 encoder and mapping unchanged.')

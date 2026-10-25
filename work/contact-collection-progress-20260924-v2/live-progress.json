@@ -1,0 +1,17 @@
+{
+  "run": "/home/qunwang/wajueji/runs/layered-47-sparse-manual-contact-v1/manual-contact-20260924-113555-1443279",
+  "source": {
+    "mtime_ns": 1790143972849119440,
+    "path": "/home/qunwang/wajueji/runs/layered-47-sparse-rear-lower-approach-handoff-v1/rear-lower-approach-20260923-140643-648089/approach-handoff.npz",
+    "sha256": "6344e74f809c8b5323942b211f5d62cccb6356da87bf8c85698910e1f6dfb3f4",
+    "size_bytes": 52403258
+  },
+  "paused_at_ready": true,
+  "physics_frames_at_ready": 0,
+  "restore_exact": true,
+  "gamepad_name": "Microsoft X-Box 360 pad",
+  "frames_observed": 647,
+  "all_observed_hard_guards": true,
+  "last_phase": "curl_load",
+  "scope": "Live progress snapshot; not a completed demonstration."
+}

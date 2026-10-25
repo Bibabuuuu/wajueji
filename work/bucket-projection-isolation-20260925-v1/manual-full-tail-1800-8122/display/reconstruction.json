@@ -1,0 +1,14 @@
+{
+  "status": "captured_probe",
+  "capture_origin": "live_policy_rollout",
+  "probe_status": "full_saved_input_diagnostic_passed",
+  "frames": 6322,
+  "playback_physics_steps": 0,
+  "live_inference": false,
+  "label": "BC CONTACT WINDOW REPLAY",
+  "cache_sha256": {
+    "particles.npy": "492996adc71354422bb6914878aa0350eee013f44665056ebaef3c91a9f7b992",
+    "states.json": "c648d3631662836603b97388eff57cc8c9f5366ee81ffe5e67600453c856af00",
+    "scene.json": "61649e82bfd955cd9f4947a6a1c2432d31dcbdfb8979b8971c3e1bd2fb585e9c"
+  }
+}

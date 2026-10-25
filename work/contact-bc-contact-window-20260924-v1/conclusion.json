@@ -1,0 +1,13 @@
+{
+  "behavior_accepted": false,
+  "reason": "Sustained boom lowering during curl caused ground penetration. All legacy hard checks passed but omitted bucket ground contact/clearance.",
+  "guard_implemented": true,
+  "guard_margin_m": 0.005,
+  "guard_verified": "20 tests and read-only recorded-state audit; no guarded physical rerun",
+  "source_code_after_guard": {
+    "run_contact_bc_probe.py": "a353da9f7e5eb1e19ebf3d9934d7812c8c6c11b90e84ea43c4513d29978b96f7",
+    "view_contact_bc_probe.py": "c200787a37a598e8919474c38138df2c887c12d0589b381ce89ea5df417fe21d",
+    "contact_bc_ground_guard.py": "fc2da166651feab62f7948e1c11ecbcc7321e79e62483f2e5463f0b567471758"
+  },
+  "next": "Fix bucket-ground physical contact configuration and policy transition before a longer rollout; inspect suspect old third-scoop training candidate separately."
+}
